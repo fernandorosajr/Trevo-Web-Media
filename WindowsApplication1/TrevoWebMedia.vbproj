@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08464C97-6454-410F-A6F0-63184CE79EF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TrevoWebMedia.My.MyApplication</StartupObject>
+    <RootNamespace>TrevoWebMedia</RootNamespace>
+    <AssemblyName>Trevo Web Media</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Fernando Rosa\Desktop\Trevo Media Alfa\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>0.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Trevo Web Media.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Trevo Web Media.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B04C77F4F91FBB1ED0A0671AB9B9554F8369BCC1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TrevoWebMedia_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Teste|x86'">
+    <OutputPath>bin\x86\Teste\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Teste|AnyCPU'">
+    <OutputPath>bin\Teste\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Teste|x64'">
+    <OutputPath>bin\x64\Teste\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Componentes\ControlListView\ControlVerListas.Designer.vb">
+      <DependentUpon>ControlVerListas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ControlListView\ControlVerListas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\ControlListView\SubControls\ControlItenDePasta.Designer.vb">
+      <DependentUpon>ControlItenDePasta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ControlListView\SubControls\ControlItenDePasta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\ControlListView\SubControls\ControlListIcone.Designer.vb">
+      <DependentUpon>ControlListIcone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ControlListView\SubControls\ControlListIcone.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\Control_Infor.Designer.vb">
+      <DependentUpon>Control_Infor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\Control_Infor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\Control_MenuBar.Designer.vb">
+      <DependentUpon>Control_MenuBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\Control_MenuBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.Designer.vb">
+      <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.Designer.vb">
+      <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.Designer.vb">
+      <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.Designer.vb">
+      <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_MidiasAtivas.Designer.vb">
+      <DependentUpon>ControlPainel_MidiasAtivas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_MidiasAtivas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_MidiaAberta.Designer.vb">
+      <DependentUpon>ControlPainel_MidiaAberta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_MidiaAberta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.Designer.vb">
+      <DependentUpon>ControlPainel_BibliotecaDeMidias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_Desktop.Designer.vb">
+      <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_Desktop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_Filtro.Designer.vb">
+      <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\ControlPainel_Filtro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Componentes\ControlListView\ControlVerListas.resx">
+      <DependentUpon>ControlVerListas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\ControlListView\SubControls\ControlItenDePasta.resx">
+      <DependentUpon>ControlItenDePasta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\ControlListView\SubControls\ControlListIcone.resx">
+      <DependentUpon>ControlListIcone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\Control_Infor.resx">
+      <DependentUpon>Control_Infor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\Control_MenuBar.resx">
+      <DependentUpon>Control_MenuBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_PastaIsolada.resx">
+      <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.resx">
+      <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.resx">
+      <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.resx">
+      <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_MidiasAtivas.resx">
+      <DependentUpon>ControlPainel_MidiasAtivas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_MidiaAberta.resx">
+      <DependentUpon>ControlPainel_MidiaAberta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.resx">
+      <DependentUpon>ControlPainel_BibliotecaDeMidias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_Desktop.resx">
+      <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_Filtro.resx">
+      <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.af.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar inativo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandirlista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar vermelho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nivel acima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurar branco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar inativo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seta para baixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r6_c6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PictureBox2.Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r2_c16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 3_r3_c18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Página 2_r2_c2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cançao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cançao2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAC OS X Mountain Lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAC OS X Mountain Lion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAC OS X Mountain Lionc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAC OS X Mountain Lion2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dvd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dellete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estrelaoff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estrelaon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escolha.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagem sem título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arquivo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copiar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arquivo1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maisdetalhes.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lixeira.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lixeira1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\não regeitada1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naosinalizada.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NovaPasta.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novoarq.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pasta ausente.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\naosinalizada1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pasta1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PastaProcesso.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\processo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regeitada.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renome.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renome2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodar Esquerda.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RodarDireita.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizada.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizadaAmal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizadaAzul.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizadared.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizadaRoxo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinalizadaVerde.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+    <None Include="Resources\grupo02.png" />
+    <None Include="Resources\relogio.png" />
+    <None Include="Resources\imageres_3.ico" />
+    <None Include="Resources\imageres_4.ico" />
+    <None Include="Resources\pasta raiz.png" />
+    <None Include="Resources\renomear.png" />
+    <None Include="Resources\movepara2.png" />
+    <None Include="Resources\movepara.png" />
+    <None Include="Resources\pasta winphone.png" />
+    <None Include="Resources\011.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\41.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\61.png" />
+    <None Include="Resources\71.png" />
+    <None Include="Resources\91.png" />
+    <None Include="Resources\101.png" />
+    <None Include="Resources\addi.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\add3.png" />
+    <None Include="Resources\add4.png" />
+    <Content Include="Resources\ajuda.ico" />
+    <Content Include="Resources\ajuda1.ico" />
+    <Content Include="Resources\ajuda2.ico" />
+    <Content Include="Resources\ajuda2.png" />
+    <Content Include="Resources\ajuda2~1.ico" />
+    <None Include="Resources\dellete1.png" />
+    <None Include="Resources\cançao1.jpg" />
+    <None Include="Resources\cançao21.jpg" />
+    <None Include="Resources\copypara.png" />
+    <None Include="Resources\excluir.png" />
+    <Content Include="Resources\fechar cinza.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

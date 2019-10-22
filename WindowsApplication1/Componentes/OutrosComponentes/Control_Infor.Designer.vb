@@ -71,7 +71,7 @@ Partial Class Control_Infor
         '
         'Panel299
         '
-        Me.Panel299.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Panel299.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.Panel299.Controls.Add(Me.Panel300)
         Me.Panel299.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel299.Location = New System.Drawing.Point(0, 0)
@@ -82,7 +82,7 @@ Partial Class Control_Infor
         '
         'Panel300
         '
-        Me.Panel300.BackColor = System.Drawing.Color.FromArgb(CType(CType(90, Byte), Integer), CType(CType(90, Byte), Integer), CType(CType(90, Byte), Integer))
+        Me.Panel300.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
         Me.Panel300.Controls.Add(Me.Panel301)
         Me.Panel300.Controls.Add(Me.Label33)
         Me.Panel300.Controls.Add(Me.Panel302)

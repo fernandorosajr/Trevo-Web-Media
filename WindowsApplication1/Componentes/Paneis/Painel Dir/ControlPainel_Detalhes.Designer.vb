@@ -23,16 +23,16 @@ Partial Class ControlPainel_Detalhes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Detalhes))
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0", New System.Windows.Forms.TreeNode() {TreeNode5, TreeNode6, TreeNode7})
-        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
+        Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0", New System.Windows.Forms.TreeNode() {TreeNode15, TreeNode16, TreeNode17})
+        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
         Me.Panel78 = New System.Windows.Forms.Panel()
         Me.PanelProp = New System.Windows.Forms.Panel()
         Me.PanelPropPreView = New System.Windows.Forms.Panel()
@@ -228,7 +228,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelPropPreView
         '
-        Me.PanelPropPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelPropPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelPropPreView.Controls.Add(Me.PanelEnvolvePreView)
         Me.PanelPropPreView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelPropPreView.Location = New System.Drawing.Point(0, 0)
@@ -262,7 +262,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelEnvolveVisualizar
         '
-        Me.PanelEnvolveVisualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelEnvolveVisualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEnvolveVisualizar.Controls.Add(Me.PanelEnvolvePicPreView)
         Me.PanelEnvolveVisualizar.Controls.Add(Me.BTNPicPreView)
         Me.PanelEnvolveVisualizar.Controls.Add(Me.PanelEnvolveVerPasta)
@@ -274,7 +274,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelEnvolvePicPreView
         '
-        Me.PanelEnvolvePicPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelEnvolvePicPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEnvolvePicPreView.Controls.Add(Me.PicPreView)
         Me.PanelEnvolvePicPreView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolvePicPreView.Location = New System.Drawing.Point(0, 0)
@@ -284,6 +284,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PicPreView
         '
+        Me.PicPreView.BackColor = System.Drawing.Color.Transparent
         Me.PicPreView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PicPreView.Image = CType(resources.GetObject("PicPreView.Image"), System.Drawing.Image)
         Me.PicPreView.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -296,7 +297,7 @@ Partial Class ControlPainel_Detalhes
         '
         'BTNPicPreView
         '
-        Me.BTNPicPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.BTNPicPreView.BackColor = System.Drawing.Color.Transparent
         Me.BTNPicPreView.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNPicPreView.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight
         Me.BTNPicPreView.FlatAppearance.BorderSize = 0
@@ -344,15 +345,15 @@ Partial Class ControlPainel_Detalhes
         Me.TVWFilhos.HideSelection = False
         Me.TVWFilhos.Location = New System.Drawing.Point(1, 24)
         Me.TVWFilhos.Name = "TVWFilhos"
-        TreeNode1.Name = "Node0"
-        TreeNode1.Text = "Node0"
-        TreeNode2.Name = "Node1"
-        TreeNode2.Text = "Node1"
-        TreeNode3.Name = "Node2"
-        TreeNode3.Text = "Node2"
-        TreeNode4.Name = "Node3"
-        TreeNode4.Text = "Node3"
-        Me.TVWFilhos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4})
+        TreeNode11.Name = "Node0"
+        TreeNode11.Text = "Node0"
+        TreeNode12.Name = "Node1"
+        TreeNode12.Text = "Node1"
+        TreeNode13.Name = "Node2"
+        TreeNode13.Text = "Node2"
+        TreeNode14.Name = "Node3"
+        TreeNode14.Text = "Node3"
+        Me.TVWFilhos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode11, TreeNode12, TreeNode13, TreeNode14})
         Me.TVWFilhos.ShowLines = False
         Me.TVWFilhos.Size = New System.Drawing.Size(183, 90)
         Me.TVWFilhos.TabIndex = 87
@@ -373,7 +374,7 @@ Partial Class ControlPainel_Detalhes
         '
         'Splitter2
         '
-        Me.Splitter2.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Splitter2.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Splitter2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Splitter2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Splitter2.Location = New System.Drawing.Point(185, 1)
@@ -405,7 +406,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelEnvolveIrmas
         '
-        Me.PanelEnvolveIrmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelEnvolveIrmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEnvolveIrmas.Controls.Add(Me.TVWIrmas)
         Me.PanelEnvolveIrmas.Controls.Add(Me.LBLPreViewIrmas)
         Me.PanelEnvolveIrmas.Dock = System.Windows.Forms.DockStyle.Fill
@@ -417,7 +418,7 @@ Partial Class ControlPainel_Detalhes
         '
         'TVWIrmas
         '
-        Me.TVWIrmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.TVWIrmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TVWIrmas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TVWIrmas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TVWIrmas.ForeColor = System.Drawing.Color.Gainsboro
@@ -425,26 +426,26 @@ Partial Class ControlPainel_Detalhes
         Me.TVWIrmas.HideSelection = False
         Me.TVWIrmas.Location = New System.Drawing.Point(3, 26)
         Me.TVWIrmas.Name = "TVWIrmas"
-        TreeNode5.Name = "Node0"
-        TreeNode5.Text = "Node0"
-        TreeNode6.Name = "Node1"
-        TreeNode6.Text = "Node1"
-        TreeNode7.Name = "Node2"
-        TreeNode7.Text = "Node2"
-        TreeNode8.Name = "Node0"
-        TreeNode8.Text = "Node0"
-        TreeNode9.Name = "Node1"
-        TreeNode9.Text = "Node1"
-        TreeNode10.Name = "Node2"
-        TreeNode10.Text = "Node2"
-        Me.TVWIrmas.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode8, TreeNode9, TreeNode10})
+        TreeNode15.Name = "Node0"
+        TreeNode15.Text = "Node0"
+        TreeNode16.Name = "Node1"
+        TreeNode16.Text = "Node1"
+        TreeNode17.Name = "Node2"
+        TreeNode17.Text = "Node2"
+        TreeNode18.Name = "Node0"
+        TreeNode18.Text = "Node0"
+        TreeNode19.Name = "Node1"
+        TreeNode19.Text = "Node1"
+        TreeNode20.Name = "Node2"
+        TreeNode20.Text = "Node2"
+        Me.TVWIrmas.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode18, TreeNode19, TreeNode20})
         Me.TVWIrmas.ShowLines = False
         Me.TVWIrmas.Size = New System.Drawing.Size(148, 86)
         Me.TVWIrmas.TabIndex = 87
         '
         'LBLPreViewIrmas
         '
-        Me.LBLPreViewIrmas.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.LBLPreViewIrmas.BackColor = System.Drawing.Color.Transparent
         Me.LBLPreViewIrmas.Dock = System.Windows.Forms.DockStyle.Top
         Me.LBLPreViewIrmas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         Me.LBLPreViewIrmas.ForeColor = System.Drawing.Color.Gainsboro
@@ -458,7 +459,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelLabelExpandPreView
         '
-        Me.PanelLabelExpandPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelLabelExpandPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelLabelExpandPreView.Controls.Add(Me.LBLPreView)
         Me.PanelLabelExpandPreView.Controls.Add(Me.BTNPreView)
         Me.PanelLabelExpandPreView.Dock = System.Windows.Forms.DockStyle.Top
@@ -500,7 +501,7 @@ Partial Class ControlPainel_Detalhes
         '
         'Splitter4
         '
-        Me.Splitter4.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Splitter4.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Splitter4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Splitter4.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Splitter4.Location = New System.Drawing.Point(0, 151)
@@ -511,7 +512,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelEnvolvePropGeral
         '
-        Me.PanelEnvolvePropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelEnvolvePropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEnvolvePropGeral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PanelEnvolvePropGeral.Controls.Add(Me.PanelPropGeral)
         Me.PanelEnvolvePropGeral.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -523,7 +524,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelPropGeral
         '
-        Me.PanelPropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.PanelPropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelPropGeral.Controls.Add(Me.PanelRecebeGrupoDeMetadados_AutoScroll)
         Me.PanelPropGeral.Controls.Add(Me.PanelLabelPropGeral)
         Me.PanelPropGeral.Controls.Add(Me.PanelOpcoesDeEdicaodeMetadados)
@@ -1769,7 +1770,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelLabelPropGeral
         '
-        Me.PanelLabelPropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelLabelPropGeral.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelLabelPropGeral.Controls.Add(Me.LBLPropGeral)
         Me.PanelLabelPropGeral.Controls.Add(Me.BTNExpandPropGeral)
         Me.PanelLabelPropGeral.Dock = System.Windows.Forms.DockStyle.Top
@@ -1812,7 +1813,7 @@ Partial Class ControlPainel_Detalhes
         '
         'PanelOpcoesDeEdicaodeMetadados
         '
-        Me.PanelOpcoesDeEdicaodeMetadados.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelOpcoesDeEdicaodeMetadados.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelOpcoesDeEdicaodeMetadados.Controls.Add(Me.Panel272)
         Me.PanelOpcoesDeEdicaodeMetadados.Controls.Add(Me.Panel273)
         Me.PanelOpcoesDeEdicaodeMetadados.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -1835,7 +1836,7 @@ Partial Class ControlPainel_Detalhes
         '
         'Button119
         '
-        Me.Button119.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button119.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button119.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
         Me.Button119.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button119.Cursor = System.Windows.Forms.Cursors.Hand
@@ -1862,7 +1863,7 @@ Partial Class ControlPainel_Detalhes
         '
         'Button120
         '
-        Me.Button120.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button120.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button120.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
         Me.Button120.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button120.Cursor = System.Windows.Forms.Cursors.Hand

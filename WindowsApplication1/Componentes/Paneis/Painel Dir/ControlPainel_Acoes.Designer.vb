@@ -55,6 +55,11 @@ Partial Class ControlPainel_Acoes
         Me.Panel102 = New System.Windows.Forms.Panel()
         Me.Button47 = New System.Windows.Forms.Button()
         Me.BTNAddProcesso = New System.Windows.Forms.Button()
+        Me.PanelExecutarProcesso = New System.Windows.Forms.Panel()
+        Me.Panel89 = New System.Windows.Forms.Panel()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Panel90 = New System.Windows.Forms.Panel()
+        Me.Button41 = New System.Windows.Forms.Button()
         Me.Splitter4 = New System.Windows.Forms.Splitter()
         Me.PanelAllAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelEnvolveAgrupamentos = New System.Windows.Forms.Panel()
@@ -197,11 +202,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.Button90 = New System.Windows.Forms.Button()
-        Me.PanelExecutarProcesso = New System.Windows.Forms.Panel()
-        Me.Panel89 = New System.Windows.Forms.Panel()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Panel90 = New System.Windows.Forms.Panel()
-        Me.Button41 = New System.Windows.Forms.Button()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -214,6 +214,9 @@ Partial Class ControlPainel_Acoes
         Me.Panel97.SuspendLayout()
         Me.Panel101.SuspendLayout()
         Me.Panel102.SuspendLayout()
+        Me.PanelExecutarProcesso.SuspendLayout()
+        Me.Panel89.SuspendLayout()
+        Me.Panel90.SuspendLayout()
         Me.PanelAllAgrupamentos.SuspendLayout()
         Me.PanelEnvolveAgrupamentos.SuspendLayout()
         Me.PanelTVAgrupamentos.SuspendLayout()
@@ -281,9 +284,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel245.SuspendLayout()
         Me.PanelLBLAcoes.SuspendLayout()
         Me.Panel247.SuspendLayout()
-        Me.PanelExecutarProcesso.SuspendLayout()
-        Me.Panel89.SuspendLayout()
-        Me.Panel90.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel77
@@ -297,7 +297,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel77.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel77.Location = New System.Drawing.Point(0, 0)
         Me.Panel77.Name = "Panel77"
-        Me.Panel77.Size = New System.Drawing.Size(380, 492)
+        Me.Panel77.Size = New System.Drawing.Size(380, 507)
         Me.Panel77.TabIndex = 93
         '
         'PanelAllProcessosAcoes
@@ -310,17 +310,17 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllProcessosAcoes.Location = New System.Drawing.Point(0, 283)
         Me.PanelAllProcessosAcoes.Name = "PanelAllProcessosAcoes"
         Me.PanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(380, 181)
+        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(380, 196)
         Me.PanelAllProcessosAcoes.TabIndex = 98
         '
         'PanelListaDeProcessos
         '
-        Me.PanelListaDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelListaDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelListaDeProcessos.Controls.Add(Me.PanelTVProcessosAcoes)
         Me.PanelListaDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelListaDeProcessos.Location = New System.Drawing.Point(3, 52)
         Me.PanelListaDeProcessos.Name = "PanelListaDeProcessos"
-        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(372, 124)
+        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(372, 139)
         Me.PanelListaDeProcessos.TabIndex = 90
         '
         'PanelTVProcessosAcoes
@@ -331,12 +331,12 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVProcessosAcoes.Location = New System.Drawing.Point(0, 0)
         Me.PanelTVProcessosAcoes.Name = "PanelTVProcessosAcoes"
         Me.PanelTVProcessosAcoes.Padding = New System.Windows.Forms.Padding(5)
-        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(372, 124)
+        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(372, 139)
         Me.PanelTVProcessosAcoes.TabIndex = 88
         '
         'TreeView2
         '
-        Me.TreeView2.BackColor = System.Drawing.Color.FromArgb(CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(69, Byte), Integer))
+        Me.TreeView2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.TreeView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TreeView2.CheckBoxes = True
         Me.TreeView2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -379,7 +379,7 @@ Partial Class ControlPainel_Acoes
         Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode12})
         Me.TreeView2.ShowLines = False
         Me.TreeView2.ShowNodeToolTips = True
-        Me.TreeView2.Size = New System.Drawing.Size(362, 114)
+        Me.TreeView2.Size = New System.Drawing.Size(362, 129)
         Me.TreeView2.TabIndex = 87
         '
         'PanelAddProcesso
@@ -394,7 +394,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelOpcoesDeProcessos
         '
-        Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel94)
         Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel95)
         Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel96)
@@ -421,7 +421,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button42
         '
-        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button42.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novoarq
         Me.Button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
@@ -448,7 +448,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button43
         '
-        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button43.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_raiz
         Me.Button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button43.Cursor = System.Windows.Forms.Cursors.Hand
@@ -475,7 +475,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button44
         '
-        Me.Button44.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button44.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button44.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
         Me.Button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button44.Cursor = System.Windows.Forms.Cursors.Hand
@@ -502,7 +502,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button45
         '
-        Me.Button45.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button45.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button45.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copypara
         Me.Button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button45.Cursor = System.Windows.Forms.Cursors.Hand
@@ -529,7 +529,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button46
         '
-        Me.Button46.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button46.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button46.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.movepara2
         Me.Button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button46.Cursor = System.Windows.Forms.Cursors.Hand
@@ -556,7 +556,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button47
         '
-        Me.Button47.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button47.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button47.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
         Me.Button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button47.Cursor = System.Windows.Forms.Cursors.Hand
@@ -573,7 +573,7 @@ Partial Class ControlPainel_Acoes
         '
         'BTNAddProcesso
         '
-        Me.BTNAddProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.BTNAddProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.BTNAddProcesso.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BTNAddProcesso.Dock = System.Windows.Forms.DockStyle.Top
         Me.BTNAddProcesso.FlatAppearance.BorderSize = 0
@@ -590,9 +590,76 @@ Partial Class ControlPainel_Acoes
         Me.BTNAddProcesso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BTNAddProcesso.UseVisualStyleBackColor = False
         '
+        'PanelExecutarProcesso
+        '
+        Me.PanelExecutarProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelExecutarProcesso.Controls.Add(Me.Panel89)
+        Me.PanelExecutarProcesso.Controls.Add(Me.Panel90)
+        Me.PanelExecutarProcesso.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelExecutarProcesso.Location = New System.Drawing.Point(0, 479)
+        Me.PanelExecutarProcesso.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelExecutarProcesso.Name = "PanelExecutarProcesso"
+        Me.PanelExecutarProcesso.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
+        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(380, 28)
+        Me.PanelExecutarProcesso.TabIndex = 100
+        '
+        'Panel89
+        '
+        Me.Panel89.Controls.Add(Me.Button14)
+        Me.Panel89.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel89.Location = New System.Drawing.Point(36, 2)
+        Me.Panel89.Name = "Panel89"
+        Me.Panel89.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel89.Size = New System.Drawing.Size(30, 26)
+        Me.Panel89.TabIndex = 105
+        '
+        'Button14
+        '
+        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button14.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.lixeira1
+        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button14.FlatAppearance.BorderSize = 0
+        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button14.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button14.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button14.Location = New System.Drawing.Point(1, 3)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(28, 20)
+        Me.Button14.TabIndex = 98
+        Me.Button14.UseVisualStyleBackColor = False
+        '
+        'Panel90
+        '
+        Me.Panel90.Controls.Add(Me.Button41)
+        Me.Panel90.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel90.Location = New System.Drawing.Point(6, 2)
+        Me.Panel90.Name = "Panel90"
+        Me.Panel90.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel90.Size = New System.Drawing.Size(30, 26)
+        Me.Panel90.TabIndex = 102
+        '
+        'Button41
+        '
+        Me.Button41.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button41.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.play
+        Me.Button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button41.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button41.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button41.FlatAppearance.BorderSize = 0
+        Me.Button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button41.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button41.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button41.Location = New System.Drawing.Point(1, 3)
+        Me.Button41.Name = "Button41"
+        Me.Button41.Size = New System.Drawing.Size(28, 20)
+        Me.Button41.TabIndex = 98
+        Me.Button41.UseVisualStyleBackColor = False
+        '
         'Splitter4
         '
-        Me.Splitter4.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Splitter4.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Splitter4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Splitter4.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Splitter4.Location = New System.Drawing.Point(0, 278)
@@ -614,7 +681,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelEnvolveAgrupamentos
         '
-        Me.PanelEnvolveAgrupamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelEnvolveAgrupamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEnvolveAgrupamentos.Controls.Add(Me.PanelTVAgrupamentos)
         Me.PanelEnvolveAgrupamentos.Controls.Add(Me.PanelEditorPropriedadesDoGrupo)
         Me.PanelEnvolveAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1858,7 +1925,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelEditorPropriedadesDoGrupo
         '
-        Me.PanelEditorPropriedadesDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.PanelEditorPropriedadesDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelEditorPropriedadesDoGrupo.Controls.Add(Me.PanelCorDoGrupo)
         Me.PanelEditorPropriedadesDoGrupo.Controls.Add(Me.PanelNomeDoGrupo)
         Me.PanelEditorPropriedadesDoGrupo.Dock = System.Windows.Forms.DockStyle.Top
@@ -1870,7 +1937,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelCorDoGrupo
         '
-        Me.PanelCorDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelCorDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel103)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel106)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel109)
@@ -2268,7 +2335,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelNomeDoGrupo
         '
-        Me.PanelNomeDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelNomeDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelNomeDoGrupo.Controls.Add(Me.PanelMargemDoNomeDoGrupo)
         Me.PanelNomeDoGrupo.Controls.Add(Me.PanelME)
         Me.PanelNomeDoGrupo.Controls.Add(Me.Label31)
@@ -2294,7 +2361,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelFundoDoNomeDoGrupo
         '
-        Me.PanelFundoDoNomeDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelFundoDoNomeDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelFundoDoNomeDoGrupo.Controls.Add(Me.TextBox4)
         Me.PanelFundoDoNomeDoGrupo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFundoDoNomeDoGrupo.Location = New System.Drawing.Point(1, 1)
@@ -2305,7 +2372,7 @@ Partial Class ControlPainel_Acoes
         '
         'TextBox4
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox4.ForeColor = System.Drawing.Color.Gainsboro
@@ -2349,7 +2416,7 @@ Partial Class ControlPainel_Acoes
         '
         'Panel245
         '
-        Me.Panel245.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel245.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel245.Controls.Add(Me.Button77)
         Me.Panel245.Controls.Add(Me.Button80)
         Me.Panel245.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2362,7 +2429,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button77
         '
-        Me.Button77.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button77.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button77.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupo02
         Me.Button77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button77.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2379,7 +2446,7 @@ Partial Class ControlPainel_Acoes
         '
         'Button80
         '
-        Me.Button80.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Button80.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Button80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button80.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button80.FlatAppearance.BorderSize = 0
@@ -2415,7 +2482,7 @@ Partial Class ControlPainel_Acoes
         '
         'Panel247
         '
-        Me.Panel247.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel247.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel247.Controls.Add(Me.LBLAcoes)
         Me.Panel247.Controls.Add(Me.Button90)
         Me.Panel247.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2455,80 +2522,13 @@ Partial Class ControlPainel_Acoes
         Me.Button90.TabIndex = 22
         Me.Button90.UseVisualStyleBackColor = False
         '
-        'PanelExecutarProcesso
-        '
-        Me.PanelExecutarProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.PanelExecutarProcesso.Controls.Add(Me.Panel89)
-        Me.PanelExecutarProcesso.Controls.Add(Me.Panel90)
-        Me.PanelExecutarProcesso.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelExecutarProcesso.Location = New System.Drawing.Point(0, 464)
-        Me.PanelExecutarProcesso.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelExecutarProcesso.Name = "PanelExecutarProcesso"
-        Me.PanelExecutarProcesso.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
-        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(380, 28)
-        Me.PanelExecutarProcesso.TabIndex = 100
-        '
-        'Panel89
-        '
-        Me.Panel89.Controls.Add(Me.Button14)
-        Me.Panel89.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel89.Location = New System.Drawing.Point(36, 2)
-        Me.Panel89.Name = "Panel89"
-        Me.Panel89.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel89.Size = New System.Drawing.Size(30, 26)
-        Me.Panel89.TabIndex = 105
-        '
-        'Button14
-        '
-        Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.Button14.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.lixeira1
-        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button14.FlatAppearance.BorderSize = 0
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button14.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button14.Location = New System.Drawing.Point(1, 3)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(28, 20)
-        Me.Button14.TabIndex = 98
-        Me.Button14.UseVisualStyleBackColor = False
-        '
-        'Panel90
-        '
-        Me.Panel90.Controls.Add(Me.Button41)
-        Me.Panel90.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel90.Location = New System.Drawing.Point(6, 2)
-        Me.Panel90.Name = "Panel90"
-        Me.Panel90.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel90.Size = New System.Drawing.Size(30, 26)
-        Me.Panel90.TabIndex = 102
-        '
-        'Button41
-        '
-        Me.Button41.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.Button41.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.play
-        Me.Button41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button41.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button41.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button41.FlatAppearance.BorderSize = 0
-        Me.Button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button41.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button41.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button41.Location = New System.Drawing.Point(1, 3)
-        Me.Button41.Name = "Button41"
-        Me.Button41.Size = New System.Drawing.Size(28, 20)
-        Me.Button41.TabIndex = 98
-        Me.Button41.UseVisualStyleBackColor = False
-        '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel77)
         Me.Name = "ControlPainel_Acoes"
-        Me.Size = New System.Drawing.Size(380, 492)
+        Me.Size = New System.Drawing.Size(380, 507)
         Me.Panel77.ResumeLayout(False)
         Me.PanelAllProcessosAcoes.ResumeLayout(False)
         Me.PanelListaDeProcessos.ResumeLayout(False)
@@ -2541,6 +2541,9 @@ Partial Class ControlPainel_Acoes
         Me.Panel97.ResumeLayout(False)
         Me.Panel101.ResumeLayout(False)
         Me.Panel102.ResumeLayout(False)
+        Me.PanelExecutarProcesso.ResumeLayout(False)
+        Me.Panel89.ResumeLayout(False)
+        Me.Panel90.ResumeLayout(False)
         Me.PanelAllAgrupamentos.ResumeLayout(False)
         Me.PanelEnvolveAgrupamentos.ResumeLayout(False)
         Me.PanelTVAgrupamentos.ResumeLayout(False)
@@ -2642,9 +2645,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel245.ResumeLayout(False)
         Me.PanelLBLAcoes.ResumeLayout(False)
         Me.Panel247.ResumeLayout(False)
-        Me.PanelExecutarProcesso.ResumeLayout(False)
-        Me.Panel89.ResumeLayout(False)
-        Me.Panel90.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

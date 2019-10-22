@@ -68,7 +68,6 @@ Partial Class ControlPainel_Atividades
         Me.Panel307 = New System.Windows.Forms.Panel()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label110 = New System.Windows.Forms.Label()
-        Me.Control_Infor1 = New TrevoWebMedia.Control_Infor()
         Me.Panel85.SuspendLayout()
         Me.Panel87.SuspendLayout()
         Me.Panel80.SuspendLayout()
@@ -128,7 +127,6 @@ Partial Class ControlPainel_Atividades
         '
         Me.Panel80.AutoScroll = True
         Me.Panel80.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel80.Controls.Add(Me.Control_Infor1)
         Me.Panel80.Controls.Add(Me.Panel288)
         Me.Panel80.Controls.Add(Me.Label29)
         Me.Panel80.Controls.Add(Me.Panel298)
@@ -146,7 +144,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel288.Location = New System.Drawing.Point(4, 199)
         Me.Panel288.Name = "Panel288"
         Me.Panel288.Padding = New System.Windows.Forms.Padding(0, 0, 0, 6)
-        Me.Panel288.Size = New System.Drawing.Size(384, 170)
+        Me.Panel288.Size = New System.Drawing.Size(354, 170)
         Me.Panel288.TabIndex = 12
         '
         'Panel289
@@ -157,7 +155,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel289.Location = New System.Drawing.Point(0, 0)
         Me.Panel289.Name = "Panel289"
         Me.Panel289.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel289.Size = New System.Drawing.Size(384, 164)
+        Me.Panel289.Size = New System.Drawing.Size(354, 164)
         Me.Panel289.TabIndex = 8
         '
         'Panel290
@@ -170,7 +168,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel290.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel290.Location = New System.Drawing.Point(1, 1)
         Me.Panel290.Name = "Panel290"
-        Me.Panel290.Size = New System.Drawing.Size(382, 162)
+        Me.Panel290.Size = New System.Drawing.Size(352, 162)
         Me.Panel290.TabIndex = 2
         '
         'Panel291
@@ -255,7 +253,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel293.Controls.Add(Me.FlowLayoutPanel2)
         Me.Panel293.Location = New System.Drawing.Point(70, 54)
         Me.Panel293.Name = "Panel293"
-        Me.Panel293.Size = New System.Drawing.Size(297, 100)
+        Me.Panel293.Size = New System.Drawing.Size(267, 100)
         Me.Panel293.TabIndex = 5
         '
         'Panel294
@@ -310,7 +308,7 @@ Partial Class ControlPainel_Atividades
         Me.FlowLayoutPanel2.Controls.Add(Me.Panel296)
         Me.FlowLayoutPanel2.Location = New System.Drawing.Point(35, 34)
         Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(260, 63)
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(230, 63)
         Me.FlowLayoutPanel2.TabIndex = 2
         '
         'Panel296
@@ -386,7 +384,7 @@ Partial Class ControlPainel_Atividades
         Me.Label29.Location = New System.Drawing.Point(4, 170)
         Me.Label29.Name = "Label29"
         Me.Label29.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label29.Size = New System.Drawing.Size(384, 29)
+        Me.Label29.Size = New System.Drawing.Size(354, 29)
         Me.Label29.TabIndex = 9
         Me.Label29.Text = "Semana Passada"
         '
@@ -397,7 +395,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel298.Location = New System.Drawing.Point(4, 0)
         Me.Panel298.Name = "Panel298"
         Me.Panel298.Padding = New System.Windows.Forms.Padding(0, 0, 0, 6)
-        Me.Panel298.Size = New System.Drawing.Size(384, 170)
+        Me.Panel298.Size = New System.Drawing.Size(354, 170)
         Me.Panel298.TabIndex = 11
         '
         'Panel299
@@ -408,7 +406,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel299.Location = New System.Drawing.Point(0, 0)
         Me.Panel299.Name = "Panel299"
         Me.Panel299.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel299.Size = New System.Drawing.Size(384, 164)
+        Me.Panel299.Size = New System.Drawing.Size(354, 164)
         Me.Panel299.TabIndex = 8
         '
         'Panel300
@@ -421,7 +419,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel300.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel300.Location = New System.Drawing.Point(1, 1)
         Me.Panel300.Name = "Panel300"
-        Me.Panel300.Size = New System.Drawing.Size(382, 162)
+        Me.Panel300.Size = New System.Drawing.Size(352, 162)
         Me.Panel300.TabIndex = 2
         '
         'Panel301
@@ -506,7 +504,7 @@ Partial Class ControlPainel_Atividades
         Me.Panel303.Controls.Add(Me.FlowLayoutPanel5)
         Me.Panel303.Location = New System.Drawing.Point(70, 54)
         Me.Panel303.Name = "Panel303"
-        Me.Panel303.Size = New System.Drawing.Size(297, 100)
+        Me.Panel303.Size = New System.Drawing.Size(267, 100)
         Me.Panel303.TabIndex = 5
         '
         'Panel304
@@ -561,7 +559,7 @@ Partial Class ControlPainel_Atividades
         Me.FlowLayoutPanel5.Controls.Add(Me.Panel306)
         Me.FlowLayoutPanel5.Location = New System.Drawing.Point(35, 34)
         Me.FlowLayoutPanel5.Name = "FlowLayoutPanel5"
-        Me.FlowLayoutPanel5.Size = New System.Drawing.Size(260, 63)
+        Me.FlowLayoutPanel5.Size = New System.Drawing.Size(230, 63)
         Me.FlowLayoutPanel5.TabIndex = 2
         '
         'Panel306
@@ -640,13 +638,6 @@ Partial Class ControlPainel_Atividades
         Me.Label110.Size = New System.Drawing.Size(362, 29)
         Me.Label110.TabIndex = 1
         Me.Label110.Text = "Hoje"
-        '
-        'Control_Infor1
-        '
-        Me.Control_Infor1.Location = New System.Drawing.Point(3, 375)
-        Me.Control_Infor1.Name = "Control_Infor1"
-        Me.Control_Infor1.Size = New System.Drawing.Size(389, 228)
-        Me.Control_Infor1.TabIndex = 13
         '
         'ControlPainel_Atividades
         '
@@ -741,5 +732,4 @@ Partial Class ControlPainel_Atividades
     Friend WithEvents Panel307 As Panel
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents Label110 As Label
-    Friend WithEvents Control_Infor1 As Control_Infor
 End Class

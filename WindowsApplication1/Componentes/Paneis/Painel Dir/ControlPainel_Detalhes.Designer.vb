@@ -23,16 +23,16 @@ Partial Class ControlPainel_Detalhes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Detalhes))
-        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0", New System.Windows.Forms.TreeNode() {TreeNode15, TreeNode16, TreeNode17})
-        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0", New System.Windows.Forms.TreeNode() {TreeNode5, TreeNode6, TreeNode7})
+        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
         Me.Panel78 = New System.Windows.Forms.Panel()
         Me.PanelProp = New System.Windows.Forms.Panel()
         Me.PanelPropPreView = New System.Windows.Forms.Panel()
@@ -345,15 +345,15 @@ Partial Class ControlPainel_Detalhes
         Me.TVWFilhos.HideSelection = False
         Me.TVWFilhos.Location = New System.Drawing.Point(1, 24)
         Me.TVWFilhos.Name = "TVWFilhos"
-        TreeNode11.Name = "Node0"
-        TreeNode11.Text = "Node0"
-        TreeNode12.Name = "Node1"
-        TreeNode12.Text = "Node1"
-        TreeNode13.Name = "Node2"
-        TreeNode13.Text = "Node2"
-        TreeNode14.Name = "Node3"
-        TreeNode14.Text = "Node3"
-        Me.TVWFilhos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode11, TreeNode12, TreeNode13, TreeNode14})
+        TreeNode1.Name = "Node0"
+        TreeNode1.Text = "Node0"
+        TreeNode2.Name = "Node1"
+        TreeNode2.Text = "Node1"
+        TreeNode3.Name = "Node2"
+        TreeNode3.Text = "Node2"
+        TreeNode4.Name = "Node3"
+        TreeNode4.Text = "Node3"
+        Me.TVWFilhos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4})
         Me.TVWFilhos.ShowLines = False
         Me.TVWFilhos.Size = New System.Drawing.Size(183, 90)
         Me.TVWFilhos.TabIndex = 87
@@ -426,19 +426,19 @@ Partial Class ControlPainel_Detalhes
         Me.TVWIrmas.HideSelection = False
         Me.TVWIrmas.Location = New System.Drawing.Point(3, 26)
         Me.TVWIrmas.Name = "TVWIrmas"
-        TreeNode15.Name = "Node0"
-        TreeNode15.Text = "Node0"
-        TreeNode16.Name = "Node1"
-        TreeNode16.Text = "Node1"
-        TreeNode17.Name = "Node2"
-        TreeNode17.Text = "Node2"
-        TreeNode18.Name = "Node0"
-        TreeNode18.Text = "Node0"
-        TreeNode19.Name = "Node1"
-        TreeNode19.Text = "Node1"
-        TreeNode20.Name = "Node2"
-        TreeNode20.Text = "Node2"
-        Me.TVWIrmas.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode18, TreeNode19, TreeNode20})
+        TreeNode5.Name = "Node0"
+        TreeNode5.Text = "Node0"
+        TreeNode6.Name = "Node1"
+        TreeNode6.Text = "Node1"
+        TreeNode7.Name = "Node2"
+        TreeNode7.Text = "Node2"
+        TreeNode8.Name = "Node0"
+        TreeNode8.Text = "Node0"
+        TreeNode9.Name = "Node1"
+        TreeNode9.Text = "Node1"
+        TreeNode10.Name = "Node2"
+        TreeNode10.Text = "Node2"
+        Me.TVWIrmas.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode8, TreeNode9, TreeNode10})
         Me.TVWIrmas.ShowLines = False
         Me.TVWIrmas.Size = New System.Drawing.Size(148, 86)
         Me.TVWIrmas.TabIndex = 87

@@ -637,6 +637,10 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\time2.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\pause.png" />
     <None Include="Resources\pen.png" />
     <None Include="Resources\grupo02.png" />
     <None Include="Resources\relogio.png" />
@@ -661,6 +665,7 @@
     <None Include="Resources\add2.png" />
     <None Include="Resources\add3.png" />
     <None Include="Resources\add4.png" />
+    <None Include="Resources\add51.png" />
     <Content Include="Resources\ajuda.ico" />
     <Content Include="Resources\ajuda1.ico" />
     <Content Include="Resources\ajuda2.ico" />
@@ -671,6 +676,9 @@
     <None Include="Resources\cançao21.jpg" />
     <None Include="Resources\copypara.png" />
     <None Include="Resources\excluir.png" />
+    <None Include="Resources\avancar1.png" />
+    <None Include="Resources\avancar 1.png" />
+    <None Include="Resources\Exibir painel de processos.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -174,10 +174,10 @@
     <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.Designer.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.Designer.vb">
       <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.Designer.vb">
@@ -190,6 +190,12 @@
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.Designer.vb">
+      <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\UserControl1.Designer.vb">
@@ -276,7 +282,7 @@
     <EmbeddedResource Include="Componentes\Paneis\ControlPainel_PastaIsolada.resx">
       <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Acoes.resx">
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.resx">
       <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.resx">
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.resx">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.resx">
+      <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>

@@ -42,18 +42,6 @@ Partial Class ControlPainel_Acoes
         Me.TreeView2 = New System.Windows.Forms.TreeView()
         Me.PanelAddProcesso = New System.Windows.Forms.Panel()
         Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
-        Me.Panel94 = New System.Windows.Forms.Panel()
-        Me.Button42 = New System.Windows.Forms.Button()
-        Me.Panel95 = New System.Windows.Forms.Panel()
-        Me.Button43 = New System.Windows.Forms.Button()
-        Me.Panel96 = New System.Windows.Forms.Panel()
-        Me.Button44 = New System.Windows.Forms.Button()
-        Me.Panel97 = New System.Windows.Forms.Panel()
-        Me.Button45 = New System.Windows.Forms.Button()
-        Me.Panel101 = New System.Windows.Forms.Panel()
-        Me.Button46 = New System.Windows.Forms.Button()
-        Me.Panel102 = New System.Windows.Forms.Panel()
-        Me.Button47 = New System.Windows.Forms.Button()
         Me.BTNAddProcesso = New System.Windows.Forms.Button()
         Me.PanelExecutarProcesso = New System.Windows.Forms.Panel()
         Me.Button28 = New System.Windows.Forms.Button()
@@ -203,18 +191,27 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.Button90 = New System.Windows.Forms.Button()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.Panel94 = New System.Windows.Forms.Panel()
+        Me.Button42 = New System.Windows.Forms.Button()
+        Me.Panel95 = New System.Windows.Forms.Panel()
+        Me.Button43 = New System.Windows.Forms.Button()
+        Me.Panel96 = New System.Windows.Forms.Panel()
+        Me.Button44 = New System.Windows.Forms.Button()
+        Me.Panel97 = New System.Windows.Forms.Panel()
+        Me.Button45 = New System.Windows.Forms.Button()
+        Me.Panel101 = New System.Windows.Forms.Panel()
+        Me.Button46 = New System.Windows.Forms.Button()
+        Me.Panel102 = New System.Windows.Forms.Panel()
+        Me.Button47 = New System.Windows.Forms.Button()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.Button29 = New System.Windows.Forms.Button()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
         Me.PanelTVProcessosAcoes.SuspendLayout()
         Me.PanelAddProcesso.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
-        Me.Panel94.SuspendLayout()
-        Me.Panel95.SuspendLayout()
-        Me.Panel96.SuspendLayout()
-        Me.Panel97.SuspendLayout()
-        Me.Panel101.SuspendLayout()
-        Me.Panel102.SuspendLayout()
         Me.PanelExecutarProcesso.SuspendLayout()
         Me.PanelAllAgrupamentos.SuspendLayout()
         Me.PanelEnvolveAgrupamentos.SuspendLayout()
@@ -283,6 +280,14 @@ Partial Class ControlPainel_Acoes
         Me.Panel245.SuspendLayout()
         Me.PanelLBLAcoes.SuspendLayout()
         Me.Panel247.SuspendLayout()
+        Me.Panel36.SuspendLayout()
+        Me.Panel94.SuspendLayout()
+        Me.Panel95.SuspendLayout()
+        Me.Panel96.SuspendLayout()
+        Me.Panel97.SuspendLayout()
+        Me.Panel101.SuspendLayout()
+        Me.Panel102.SuspendLayout()
+        Me.Panel37.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel77
@@ -394,181 +399,14 @@ Partial Class ControlPainel_Acoes
         'PanelOpcoesDeProcessos
         '
         Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel94)
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel95)
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel96)
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel97)
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel101)
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel102)
+        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel36)
         Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(0, 22)
         Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
-        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
+        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
         Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(372, 27)
         Me.PanelOpcoesDeProcessos.TabIndex = 96
-        '
-        'Panel94
-        '
-        Me.Panel94.Controls.Add(Me.Button42)
-        Me.Panel94.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel94.Location = New System.Drawing.Point(156, 2)
-        Me.Panel94.Name = "Panel94"
-        Me.Panel94.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel94.Size = New System.Drawing.Size(30, 25)
-        Me.Panel94.TabIndex = 107
-        '
-        'Button42
-        '
-        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button42.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novoarq
-        Me.Button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button42.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button42.FlatAppearance.BorderSize = 0
-        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button42.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button42.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button42.Location = New System.Drawing.Point(1, 3)
-        Me.Button42.Name = "Button42"
-        Me.Button42.Size = New System.Drawing.Size(28, 19)
-        Me.Button42.TabIndex = 98
-        Me.Button42.UseVisualStyleBackColor = False
-        '
-        'Panel95
-        '
-        Me.Panel95.Controls.Add(Me.Button43)
-        Me.Panel95.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel95.Location = New System.Drawing.Point(126, 2)
-        Me.Panel95.Name = "Panel95"
-        Me.Panel95.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel95.Size = New System.Drawing.Size(30, 25)
-        Me.Panel95.TabIndex = 106
-        '
-        'Button43
-        '
-        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button43.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_raiz
-        Me.Button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button43.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button43.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button43.FlatAppearance.BorderSize = 0
-        Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button43.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button43.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button43.Location = New System.Drawing.Point(1, 3)
-        Me.Button43.Name = "Button43"
-        Me.Button43.Size = New System.Drawing.Size(28, 19)
-        Me.Button43.TabIndex = 98
-        Me.Button43.UseVisualStyleBackColor = False
-        '
-        'Panel96
-        '
-        Me.Panel96.Controls.Add(Me.Button44)
-        Me.Panel96.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel96.Location = New System.Drawing.Point(96, 2)
-        Me.Panel96.Name = "Panel96"
-        Me.Panel96.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel96.Size = New System.Drawing.Size(30, 25)
-        Me.Panel96.TabIndex = 105
-        '
-        'Button44
-        '
-        Me.Button44.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button44.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
-        Me.Button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button44.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button44.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button44.FlatAppearance.BorderSize = 0
-        Me.Button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button44.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button44.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button44.Location = New System.Drawing.Point(1, 3)
-        Me.Button44.Name = "Button44"
-        Me.Button44.Size = New System.Drawing.Size(28, 19)
-        Me.Button44.TabIndex = 98
-        Me.Button44.UseVisualStyleBackColor = False
-        '
-        'Panel97
-        '
-        Me.Panel97.Controls.Add(Me.Button45)
-        Me.Panel97.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel97.Location = New System.Drawing.Point(66, 2)
-        Me.Panel97.Name = "Panel97"
-        Me.Panel97.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel97.Size = New System.Drawing.Size(30, 25)
-        Me.Panel97.TabIndex = 104
-        '
-        'Button45
-        '
-        Me.Button45.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button45.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copypara
-        Me.Button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button45.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button45.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button45.FlatAppearance.BorderSize = 0
-        Me.Button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button45.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button45.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button45.Location = New System.Drawing.Point(1, 3)
-        Me.Button45.Name = "Button45"
-        Me.Button45.Size = New System.Drawing.Size(28, 19)
-        Me.Button45.TabIndex = 98
-        Me.Button45.UseVisualStyleBackColor = False
-        '
-        'Panel101
-        '
-        Me.Panel101.Controls.Add(Me.Button46)
-        Me.Panel101.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel101.Location = New System.Drawing.Point(36, 2)
-        Me.Panel101.Name = "Panel101"
-        Me.Panel101.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel101.Size = New System.Drawing.Size(30, 25)
-        Me.Panel101.TabIndex = 103
-        '
-        'Button46
-        '
-        Me.Button46.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button46.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.movepara2
-        Me.Button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button46.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button46.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button46.FlatAppearance.BorderSize = 0
-        Me.Button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button46.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button46.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button46.Location = New System.Drawing.Point(1, 3)
-        Me.Button46.Name = "Button46"
-        Me.Button46.Size = New System.Drawing.Size(28, 19)
-        Me.Button46.TabIndex = 98
-        Me.Button46.UseVisualStyleBackColor = False
-        '
-        'Panel102
-        '
-        Me.Panel102.Controls.Add(Me.Button47)
-        Me.Panel102.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel102.Location = New System.Drawing.Point(6, 2)
-        Me.Panel102.Name = "Panel102"
-        Me.Panel102.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel102.Size = New System.Drawing.Size(30, 25)
-        Me.Panel102.TabIndex = 102
-        '
-        'Button47
-        '
-        Me.Button47.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button47.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
-        Me.Button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button47.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button47.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button47.FlatAppearance.BorderSize = 0
-        Me.Button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button47.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button47.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button47.Location = New System.Drawing.Point(1, 3)
-        Me.Button47.Name = "Button47"
-        Me.Button47.Size = New System.Drawing.Size(28, 19)
-        Me.Button47.TabIndex = 98
-        Me.Button47.UseVisualStyleBackColor = False
         '
         'BTNAddProcesso
         '
@@ -2556,6 +2394,210 @@ Partial Class ControlPainel_Acoes
         Me.Button90.TabIndex = 22
         Me.Button90.UseVisualStyleBackColor = False
         '
+        'Panel36
+        '
+        Me.Panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel36.Controls.Add(Me.Panel37)
+        Me.Panel36.Controls.Add(Me.Panel94)
+        Me.Panel36.Controls.Add(Me.Panel95)
+        Me.Panel36.Controls.Add(Me.Panel96)
+        Me.Panel36.Controls.Add(Me.Panel97)
+        Me.Panel36.Controls.Add(Me.Panel101)
+        Me.Panel36.Controls.Add(Me.Panel102)
+        Me.Panel36.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel36.Location = New System.Drawing.Point(5, 2)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(362, 25)
+        Me.Panel36.TabIndex = 0
+        '
+        'Panel94
+        '
+        Me.Panel94.Controls.Add(Me.Button42)
+        Me.Panel94.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel94.Location = New System.Drawing.Point(150, 0)
+        Me.Panel94.Name = "Panel94"
+        Me.Panel94.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel94.Size = New System.Drawing.Size(30, 23)
+        Me.Panel94.TabIndex = 113
+        '
+        'Button42
+        '
+        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button42.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novoarq
+        Me.Button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button42.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button42.FlatAppearance.BorderSize = 0
+        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button42.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button42.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button42.Location = New System.Drawing.Point(1, 3)
+        Me.Button42.Name = "Button42"
+        Me.Button42.Size = New System.Drawing.Size(28, 17)
+        Me.Button42.TabIndex = 98
+        Me.Button42.UseVisualStyleBackColor = False
+        '
+        'Panel95
+        '
+        Me.Panel95.Controls.Add(Me.Button43)
+        Me.Panel95.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel95.Location = New System.Drawing.Point(120, 0)
+        Me.Panel95.Name = "Panel95"
+        Me.Panel95.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel95.Size = New System.Drawing.Size(30, 23)
+        Me.Panel95.TabIndex = 112
+        '
+        'Button43
+        '
+        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button43.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_raiz
+        Me.Button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button43.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button43.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button43.FlatAppearance.BorderSize = 0
+        Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button43.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button43.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button43.Location = New System.Drawing.Point(1, 3)
+        Me.Button43.Name = "Button43"
+        Me.Button43.Size = New System.Drawing.Size(28, 17)
+        Me.Button43.TabIndex = 98
+        Me.Button43.UseVisualStyleBackColor = False
+        '
+        'Panel96
+        '
+        Me.Panel96.Controls.Add(Me.Button44)
+        Me.Panel96.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel96.Location = New System.Drawing.Point(90, 0)
+        Me.Panel96.Name = "Panel96"
+        Me.Panel96.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel96.Size = New System.Drawing.Size(30, 23)
+        Me.Panel96.TabIndex = 111
+        '
+        'Button44
+        '
+        Me.Button44.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button44.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
+        Me.Button44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button44.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button44.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button44.FlatAppearance.BorderSize = 0
+        Me.Button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button44.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button44.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button44.Location = New System.Drawing.Point(1, 3)
+        Me.Button44.Name = "Button44"
+        Me.Button44.Size = New System.Drawing.Size(28, 17)
+        Me.Button44.TabIndex = 98
+        Me.Button44.UseVisualStyleBackColor = False
+        '
+        'Panel97
+        '
+        Me.Panel97.Controls.Add(Me.Button45)
+        Me.Panel97.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel97.Location = New System.Drawing.Point(60, 0)
+        Me.Panel97.Name = "Panel97"
+        Me.Panel97.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel97.Size = New System.Drawing.Size(30, 23)
+        Me.Panel97.TabIndex = 110
+        '
+        'Button45
+        '
+        Me.Button45.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button45.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copypara
+        Me.Button45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button45.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button45.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button45.FlatAppearance.BorderSize = 0
+        Me.Button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button45.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button45.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button45.Location = New System.Drawing.Point(1, 3)
+        Me.Button45.Name = "Button45"
+        Me.Button45.Size = New System.Drawing.Size(28, 17)
+        Me.Button45.TabIndex = 98
+        Me.Button45.UseVisualStyleBackColor = False
+        '
+        'Panel101
+        '
+        Me.Panel101.Controls.Add(Me.Button46)
+        Me.Panel101.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel101.Location = New System.Drawing.Point(30, 0)
+        Me.Panel101.Name = "Panel101"
+        Me.Panel101.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel101.Size = New System.Drawing.Size(30, 23)
+        Me.Panel101.TabIndex = 109
+        '
+        'Button46
+        '
+        Me.Button46.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button46.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.movepara2
+        Me.Button46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button46.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button46.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button46.FlatAppearance.BorderSize = 0
+        Me.Button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button46.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button46.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button46.Location = New System.Drawing.Point(1, 3)
+        Me.Button46.Name = "Button46"
+        Me.Button46.Size = New System.Drawing.Size(28, 17)
+        Me.Button46.TabIndex = 98
+        Me.Button46.UseVisualStyleBackColor = False
+        '
+        'Panel102
+        '
+        Me.Panel102.Controls.Add(Me.Button47)
+        Me.Panel102.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel102.Location = New System.Drawing.Point(0, 0)
+        Me.Panel102.Name = "Panel102"
+        Me.Panel102.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel102.Size = New System.Drawing.Size(30, 23)
+        Me.Panel102.TabIndex = 108
+        '
+        'Button47
+        '
+        Me.Button47.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button47.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
+        Me.Button47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button47.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button47.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button47.FlatAppearance.BorderSize = 0
+        Me.Button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button47.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button47.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button47.Location = New System.Drawing.Point(1, 3)
+        Me.Button47.Name = "Button47"
+        Me.Button47.Size = New System.Drawing.Size(28, 17)
+        Me.Button47.TabIndex = 98
+        Me.Button47.UseVisualStyleBackColor = False
+        '
+        'Panel37
+        '
+        Me.Panel37.Controls.Add(Me.Button29)
+        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel37.Location = New System.Drawing.Point(333, 0)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(27, 23)
+        Me.Panel37.TabIndex = 114
+        '
+        'Button29
+        '
+        Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button29.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.time2
+        Me.Button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button29.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button29.FlatAppearance.BorderSize = 0
+        Me.Button29.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button29.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button29.Location = New System.Drawing.Point(0, 0)
+        Me.Button29.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(27, 12)
+        Me.Button29.TabIndex = 113
+        Me.Button29.UseVisualStyleBackColor = False
+        '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2569,12 +2611,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVProcessosAcoes.ResumeLayout(False)
         Me.PanelAddProcesso.ResumeLayout(False)
         Me.PanelOpcoesDeProcessos.ResumeLayout(False)
-        Me.Panel94.ResumeLayout(False)
-        Me.Panel95.ResumeLayout(False)
-        Me.Panel96.ResumeLayout(False)
-        Me.Panel97.ResumeLayout(False)
-        Me.Panel101.ResumeLayout(False)
-        Me.Panel102.ResumeLayout(False)
         Me.PanelExecutarProcesso.ResumeLayout(False)
         Me.PanelAllAgrupamentos.ResumeLayout(False)
         Me.PanelEnvolveAgrupamentos.ResumeLayout(False)
@@ -2677,6 +2713,14 @@ Partial Class ControlPainel_Acoes
         Me.Panel245.ResumeLayout(False)
         Me.PanelLBLAcoes.ResumeLayout(False)
         Me.Panel247.ResumeLayout(False)
+        Me.Panel36.ResumeLayout(False)
+        Me.Panel94.ResumeLayout(False)
+        Me.Panel95.ResumeLayout(False)
+        Me.Panel96.ResumeLayout(False)
+        Me.Panel97.ResumeLayout(False)
+        Me.Panel101.ResumeLayout(False)
+        Me.Panel102.ResumeLayout(False)
+        Me.Panel37.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2688,18 +2732,6 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents TreeView2 As TreeView
     Friend WithEvents PanelAddProcesso As Panel
     Friend WithEvents PanelOpcoesDeProcessos As Panel
-    Friend WithEvents Panel94 As Panel
-    Friend WithEvents Button42 As Button
-    Friend WithEvents Panel95 As Panel
-    Friend WithEvents Button43 As Button
-    Friend WithEvents Panel96 As Panel
-    Friend WithEvents Button44 As Button
-    Friend WithEvents Panel97 As Panel
-    Friend WithEvents Button45 As Button
-    Friend WithEvents Panel101 As Panel
-    Friend WithEvents Button46 As Button
-    Friend WithEvents Panel102 As Panel
-    Friend WithEvents Button47 As Button
     Friend WithEvents BTNAddProcesso As Button
     Friend WithEvents PanelAllAgrupamentos As Panel
     Friend WithEvents PanelEnvolveAgrupamentos As Panel
@@ -2849,4 +2881,19 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Button27 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Panel36 As Panel
+    Friend WithEvents Panel37 As Panel
+    Friend WithEvents Button29 As Button
+    Friend WithEvents Panel94 As Panel
+    Friend WithEvents Button42 As Button
+    Friend WithEvents Panel95 As Panel
+    Friend WithEvents Button43 As Button
+    Friend WithEvents Panel96 As Panel
+    Friend WithEvents Button44 As Button
+    Friend WithEvents Panel97 As Panel
+    Friend WithEvents Button45 As Button
+    Friend WithEvents Panel101 As Panel
+    Friend WithEvents Button46 As Button
+    Friend WithEvents Panel102 As Panel
+    Friend WithEvents Button47 As Button
 End Class

@@ -373,6 +373,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property criar_arquivo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("criar arquivo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property dellete() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dellete", resourceCulture)
@@ -836,6 +846,16 @@ Namespace My.Resources
         Friend ReadOnly Property NovaPasta() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NovaPasta", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property novo_arquivo_2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("novo arquivo 2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

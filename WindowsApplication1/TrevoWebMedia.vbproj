@@ -637,6 +637,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\novo arquivo 2.png" />
     <None Include="Resources\Nova pasta em agrupamentos.png" />
     <None Include="Resources\pasta-Aberta.png" />
     <None Include="Resources\pasta-11.png" />
@@ -687,6 +688,7 @@
     <None Include="Resources\Exibir painel de processos.png" />
     <None Include="Resources\arquivo.png" />
     <None Include="Resources\fechar branco2.png" />
+    <None Include="Resources\arquivo1.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

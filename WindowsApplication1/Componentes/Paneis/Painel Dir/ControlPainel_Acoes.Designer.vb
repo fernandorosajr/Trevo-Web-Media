@@ -167,7 +167,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel102 = New System.Windows.Forms.Panel()
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.Button29 = New System.Windows.Forms.Button()
-        Me.Button42 = New System.Windows.Forms.Button()
         Me.Button43 = New System.Windows.Forms.Button()
         Me.Button44 = New System.Windows.Forms.Button()
         Me.Button45 = New System.Windows.Forms.Button()
@@ -202,11 +201,12 @@ Partial Class ControlPainel_Acoes
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button30 = New System.Windows.Forms.Button()
         Me.Button14 = New System.Windows.Forms.Button()
         Me.Button77 = New System.Windows.Forms.Button()
         Me.Button80 = New System.Windows.Forms.Button()
         Me.Button90 = New System.Windows.Forms.Button()
-        Me.Button30 = New System.Windows.Forms.Button()
+        Me.Button42 = New System.Windows.Forms.Button()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -1934,23 +1934,6 @@ Partial Class ControlPainel_Acoes
         Me.Button29.TabIndex = 113
         Me.Button29.UseVisualStyleBackColor = False
         '
-        'Button42
-        '
-        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button42.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novoarq
-        Me.Button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button42.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button42.FlatAppearance.BorderSize = 0
-        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button42.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button42.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button42.Location = New System.Drawing.Point(1, 3)
-        Me.Button42.Name = "Button42"
-        Me.Button42.Size = New System.Drawing.Size(28, 17)
-        Me.Button42.TabIndex = 98
-        Me.Button42.UseVisualStyleBackColor = False
-        '
         'Button43
         '
         Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -2532,6 +2515,23 @@ Partial Class ControlPainel_Acoes
         Me.CheckBox1.TabIndex = 115
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
+        'Button30
+        '
+        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button30.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
+        Me.Button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button30.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button30.Location = New System.Drawing.Point(318, 2)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(29, 19)
+        Me.Button30.TabIndex = 116
+        Me.Button30.UseVisualStyleBackColor = False
+        '
         'Button14
         '
         Me.Button14.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -2600,22 +2600,22 @@ Partial Class ControlPainel_Acoes
         Me.Button90.TabIndex = 22
         Me.Button90.UseVisualStyleBackColor = False
         '
-        'Button30
+        'Button42
         '
-        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button30.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
-        Me.Button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button30.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button30.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button30.Location = New System.Drawing.Point(318, 2)
-        Me.Button30.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button30.Name = "Button30"
-        Me.Button30.Size = New System.Drawing.Size(29, 19)
-        Me.Button30.TabIndex = 116
-        Me.Button30.UseVisualStyleBackColor = False
+        Me.Button42.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button42.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novo_arquivo_2
+        Me.Button42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button42.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button42.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button42.FlatAppearance.BorderSize = 0
+        Me.Button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button42.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button42.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button42.Location = New System.Drawing.Point(1, 3)
+        Me.Button42.Name = "Button42"
+        Me.Button42.Size = New System.Drawing.Size(28, 17)
+        Me.Button42.TabIndex = 100
+        Me.Button42.UseVisualStyleBackColor = False
         '
         'ControlPainel_Acoes
         '
@@ -2904,7 +2904,6 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Panel37 As Panel
     Friend WithEvents Button29 As Button
     Friend WithEvents Panel94 As Panel
-    Friend WithEvents Button42 As Button
     Friend WithEvents Panel95 As Panel
     Friend WithEvents Button43 As Button
     Friend WithEvents Panel96 As Panel
@@ -2916,4 +2915,5 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Panel102 As Panel
     Friend WithEvents Button47 As Button
     Friend WithEvents Button30 As Button
+    Friend WithEvents Button42 As Button
 End Class

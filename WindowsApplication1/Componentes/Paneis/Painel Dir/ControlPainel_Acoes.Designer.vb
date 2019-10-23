@@ -206,6 +206,7 @@ Partial Class ControlPainel_Acoes
         Me.Button77 = New System.Windows.Forms.Button()
         Me.Button80 = New System.Windows.Forms.Button()
         Me.Button90 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -1296,6 +1297,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.PanelCorDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelCorDoGrupo.Controls.Add(Me.CheckBox1)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Button30)
         Me.PanelCorDoGrupo.Controls.Add(Me.Button14)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel103)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel106)
@@ -2524,7 +2526,7 @@ Partial Class ControlPainel_Acoes
         Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(317, 2)
+        Me.CheckBox1.Location = New System.Drawing.Point(288, 2)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(30, 19)
         Me.CheckBox1.TabIndex = 115
@@ -2597,6 +2599,23 @@ Partial Class ControlPainel_Acoes
         Me.Button90.Size = New System.Drawing.Size(15, 31)
         Me.Button90.TabIndex = 22
         Me.Button90.UseVisualStyleBackColor = False
+        '
+        'Button30
+        '
+        Me.Button30.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button30.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
+        Me.Button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button30.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button30.FlatAppearance.BorderSize = 0
+        Me.Button30.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button30.Location = New System.Drawing.Point(318, 2)
+        Me.Button30.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(29, 19)
+        Me.Button30.TabIndex = 116
+        Me.Button30.UseVisualStyleBackColor = False
         '
         'ControlPainel_Acoes
         '
@@ -2896,4 +2915,5 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Button46 As Button
     Friend WithEvents Panel102 As Panel
     Friend WithEvents Button47 As Button
+    Friend WithEvents Button30 As Button
 End Class

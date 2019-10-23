@@ -637,6 +637,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Nova pasta em agrupamentos.png" />
     <None Include="Resources\pasta-Aberta.png" />
     <None Include="Resources\pasta-11.png" />
     <None Include="Resources\grupo022.png" />

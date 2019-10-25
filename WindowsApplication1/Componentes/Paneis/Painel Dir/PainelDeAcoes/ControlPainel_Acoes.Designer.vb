@@ -182,9 +182,9 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel77.BackColor = System.Drawing.Color.Transparent
         Me.Panel77.Controls.Add(Me.PanelAllProcessosAcoes)
-        Me.Panel77.Controls.Add(Me.PanelExecutarProcesso)
         Me.Panel77.Controls.Add(Me.Splitter4)
         Me.Panel77.Controls.Add(Me.PanelAllAgrupamentos)
+        Me.Panel77.Controls.Add(Me.PanelExecutarProcesso)
         Me.Panel77.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel77.Location = New System.Drawing.Point(0, 32)
         Me.Panel77.Name = "Panel77"
@@ -679,6 +679,8 @@ Partial Class ControlPainel_Acoes
         Me.CHK_ShowPanelAllProcessosAcoes.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Exibir_painel_de_processos
         Me.CHK_ShowPanelAllProcessosAcoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CHK_ShowPanelAllProcessosAcoes.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CHK_ShowPanelAllProcessosAcoes.Checked = True
+        Me.CHK_ShowPanelAllProcessosAcoes.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CHK_ShowPanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Right
         Me.CHK_ShowPanelAllProcessosAcoes.FlatAppearance.BorderSize = 0
         Me.CHK_ShowPanelAllProcessosAcoes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))

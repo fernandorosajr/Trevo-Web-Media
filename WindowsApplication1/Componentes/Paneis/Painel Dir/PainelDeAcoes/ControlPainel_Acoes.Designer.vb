@@ -22,18 +22,18 @@ Partial Class ControlPainel_Acoes
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("nome.arq")
-        Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local", New System.Windows.Forms.TreeNode() {TreeNode13})
-        Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Desktop) - C:/")
-        Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Documentos) - C:/")
-        Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar", New System.Windows.Forms.TreeNode() {TreeNode15, TreeNode16})
-        Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Music) - C:/")
-        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover", New System.Windows.Forms.TreeNode() {TreeNode18})
-        Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Critério")
-        Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear", New System.Windows.Forms.TreeNode() {TreeNode20})
-        Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
-        Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar", New System.Windows.Forms.TreeNode() {TreeNode14, TreeNode17, TreeNode19, TreeNode21, TreeNode22})
-        Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode23})
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("nome.arq")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local", New System.Windows.Forms.TreeNode() {TreeNode1})
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Desktop) - C:/")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Documentos) - C:/")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar", New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode4})
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Music) - C:/")
+        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover", New System.Windows.Forms.TreeNode() {TreeNode6})
+        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Critério")
+        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear", New System.Windows.Forms.TreeNode() {TreeNode8})
+        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
+        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar", New System.Windows.Forms.TreeNode() {TreeNode2, TreeNode5, TreeNode7, TreeNode9, TreeNode10})
+        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode11})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Acoes))
         Me.Panel77 = New System.Windows.Forms.Panel()
         Me.PanelAllProcessosAcoes = New System.Windows.Forms.Panel()
@@ -119,11 +119,11 @@ Partial Class ControlPainel_Acoes
         Me.Button77 = New System.Windows.Forms.Button()
         Me.Button80 = New System.Windows.Forms.Button()
         Me.Panel246 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PanelLBLAcoes = New System.Windows.Forms.Panel()
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.Button90 = New System.Windows.Forms.Button()
-        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -142,7 +142,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.SuspendLayout()
         Me.PanelEnvolveAgrupamentos.SuspendLayout()
         Me.PanelTVAgrupamentos.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.PanelEditorPropriedadesDoGrupo.SuspendLayout()
         Me.PanelCorDoGrupo.SuspendLayout()
         Me.Panel103.SuspendLayout()
@@ -174,6 +173,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelFundoDoNomeDoGrupo.SuspendLayout()
         Me.Panel244.SuspendLayout()
         Me.Panel245.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.PanelLBLAcoes.SuspendLayout()
         Me.Panel247.SuspendLayout()
         Me.SuspendLayout()
@@ -185,11 +185,10 @@ Partial Class ControlPainel_Acoes
         Me.Panel77.Controls.Add(Me.PanelExecutarProcesso)
         Me.Panel77.Controls.Add(Me.Splitter4)
         Me.Panel77.Controls.Add(Me.PanelAllAgrupamentos)
-        Me.Panel77.Controls.Add(Me.PanelLBLAcoes)
         Me.Panel77.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel77.Location = New System.Drawing.Point(0, 0)
+        Me.Panel77.Location = New System.Drawing.Point(0, 32)
         Me.Panel77.Name = "Panel77"
-        Me.Panel77.Size = New System.Drawing.Size(380, 516)
+        Me.Panel77.Size = New System.Drawing.Size(348, 484)
         Me.Panel77.TabIndex = 93
         '
         'PanelAllProcessosAcoes
@@ -199,10 +198,10 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllProcessosAcoes.Controls.Add(Me.PanelListaDeProcessos)
         Me.PanelAllProcessosAcoes.Controls.Add(Me.PanelAddProcesso)
         Me.PanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAllProcessosAcoes.Location = New System.Drawing.Point(0, 283)
+        Me.PanelAllProcessosAcoes.Location = New System.Drawing.Point(0, 251)
         Me.PanelAllProcessosAcoes.Name = "PanelAllProcessosAcoes"
         Me.PanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(380, 205)
+        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(348, 205)
         Me.PanelAllProcessosAcoes.TabIndex = 98
         '
         'PanelListaDeProcessos
@@ -212,7 +211,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelListaDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelListaDeProcessos.Location = New System.Drawing.Point(3, 52)
         Me.PanelListaDeProcessos.Name = "PanelListaDeProcessos"
-        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(372, 148)
+        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(340, 148)
         Me.PanelListaDeProcessos.TabIndex = 90
         '
         'PanelTVProcessosAcoes
@@ -223,7 +222,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVProcessosAcoes.Location = New System.Drawing.Point(0, 0)
         Me.PanelTVProcessosAcoes.Name = "PanelTVProcessosAcoes"
         Me.PanelTVProcessosAcoes.Padding = New System.Windows.Forms.Padding(5)
-        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(372, 148)
+        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(340, 148)
         Me.PanelTVProcessosAcoes.TabIndex = 88
         '
         'TreeView2
@@ -237,42 +236,42 @@ Partial Class ControlPainel_Acoes
         Me.TreeView2.HideSelection = False
         Me.TreeView2.Location = New System.Drawing.Point(5, 5)
         Me.TreeView2.Name = "TreeView2"
-        TreeNode13.Name = "Node0"
-        TreeNode13.Text = "nome.arq"
-        TreeNode14.Name = "Node3"
-        TreeNode14.Text = "Local"
-        TreeNode15.Name = "Node2"
-        TreeNode15.Text = "(Desktop) - C:/"
-        TreeNode16.Name = "Node3"
-        TreeNode16.Text = "(Documentos) - C:/"
-        TreeNode17.ImageKey = "copypara.png"
-        TreeNode17.Name = "Node1"
-        TreeNode17.SelectedImageKey = "copypara.png"
-        TreeNode17.Text = "Copiar"
-        TreeNode18.Name = "Node5"
-        TreeNode18.Text = "(Music) - C:/"
-        TreeNode19.ImageKey = "movepara.png"
-        TreeNode19.Name = "Node4"
-        TreeNode19.SelectedImageKey = "movepara.png"
-        TreeNode19.Text = "Mover"
-        TreeNode20.Name = "Node7"
-        TreeNode20.Text = "Critério"
-        TreeNode21.Name = "Node6"
-        TreeNode21.Text = "Renomear"
-        TreeNode22.Name = "Node8"
-        TreeNode22.Text = "Excluir"
-        TreeNode23.Name = "Node1"
-        TreeNode23.Text = "Criar"
-        TreeNode24.ImageKey = "processo.ico"
-        TreeNode24.Name = "Node1"
-        TreeNode24.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        TreeNode24.SelectedImageKey = "processo.ico"
-        TreeNode24.Text = "Processo 01"
-        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode24})
+        TreeNode1.Name = "Node0"
+        TreeNode1.Text = "nome.arq"
+        TreeNode2.Name = "Node3"
+        TreeNode2.Text = "Local"
+        TreeNode3.Name = "Node2"
+        TreeNode3.Text = "(Desktop) - C:/"
+        TreeNode4.Name = "Node3"
+        TreeNode4.Text = "(Documentos) - C:/"
+        TreeNode5.ImageKey = "copypara.png"
+        TreeNode5.Name = "Node1"
+        TreeNode5.SelectedImageKey = "copypara.png"
+        TreeNode5.Text = "Copiar"
+        TreeNode6.Name = "Node5"
+        TreeNode6.Text = "(Music) - C:/"
+        TreeNode7.ImageKey = "movepara.png"
+        TreeNode7.Name = "Node4"
+        TreeNode7.SelectedImageKey = "movepara.png"
+        TreeNode7.Text = "Mover"
+        TreeNode8.Name = "Node7"
+        TreeNode8.Text = "Critério"
+        TreeNode9.Name = "Node6"
+        TreeNode9.Text = "Renomear"
+        TreeNode10.Name = "Node8"
+        TreeNode10.Text = "Excluir"
+        TreeNode11.Name = "Node1"
+        TreeNode11.Text = "Criar"
+        TreeNode12.ImageKey = "processo.ico"
+        TreeNode12.Name = "Node1"
+        TreeNode12.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        TreeNode12.SelectedImageKey = "processo.ico"
+        TreeNode12.Text = "Processo 01"
+        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode12})
         Me.TreeView2.ShowLines = False
         Me.TreeView2.ShowNodeToolTips = True
-        Me.TreeView2.Size = New System.Drawing.Size(362, 138)
-        Me.TreeView2.TabIndex = 87
+        Me.TreeView2.Size = New System.Drawing.Size(330, 138)
+        Me.TreeView2.TabIndex = 32
         '
         'PanelAddProcesso
         '
@@ -281,7 +280,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAddProcesso.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelAddProcesso.Location = New System.Drawing.Point(3, 3)
         Me.PanelAddProcesso.Name = "PanelAddProcesso"
-        Me.PanelAddProcesso.Size = New System.Drawing.Size(372, 49)
+        Me.PanelAddProcesso.Size = New System.Drawing.Size(340, 49)
         Me.PanelAddProcesso.TabIndex = 106
         '
         'PanelOpcoesDeProcessos
@@ -293,7 +292,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
         Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(372, 27)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(340, 27)
         Me.PanelOpcoesDeProcessos.TabIndex = 96
         '
         'Panel36
@@ -309,14 +308,14 @@ Partial Class ControlPainel_Acoes
         Me.Panel36.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
-        Me.Panel36.Size = New System.Drawing.Size(362, 25)
+        Me.Panel36.Size = New System.Drawing.Size(330, 25)
         Me.Panel36.TabIndex = 0
         '
         'Panel37
         '
         Me.Panel37.Controls.Add(Me.Button29)
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(347, 0)
+        Me.Panel37.Location = New System.Drawing.Point(315, 0)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(13, 23)
         Me.Panel37.TabIndex = 114
@@ -328,14 +327,13 @@ Partial Class ControlPainel_Acoes
         Me.Button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button29.Dock = System.Windows.Forms.DockStyle.Top
         Me.Button29.FlatAppearance.BorderSize = 0
-        Me.Button29.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button29.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button29.Location = New System.Drawing.Point(0, 0)
         Me.Button29.Margin = New System.Windows.Forms.Padding(0)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(13, 20)
-        Me.Button29.TabIndex = 113
+        Me.Button29.TabIndex = 31
         Me.Button29.UseVisualStyleBackColor = False
         '
         'Panel94
@@ -362,7 +360,7 @@ Partial Class ControlPainel_Acoes
         Me.Button42.Location = New System.Drawing.Point(1, 3)
         Me.Button42.Name = "Button42"
         Me.Button42.Size = New System.Drawing.Size(28, 17)
-        Me.Button42.TabIndex = 100
+        Me.Button42.TabIndex = 30
         Me.Button42.UseVisualStyleBackColor = False
         '
         'Panel95
@@ -389,7 +387,7 @@ Partial Class ControlPainel_Acoes
         Me.Button43.Location = New System.Drawing.Point(1, 3)
         Me.Button43.Name = "Button43"
         Me.Button43.Size = New System.Drawing.Size(28, 17)
-        Me.Button43.TabIndex = 98
+        Me.Button43.TabIndex = 29
         Me.Button43.UseVisualStyleBackColor = False
         '
         'Panel96
@@ -416,7 +414,7 @@ Partial Class ControlPainel_Acoes
         Me.Button44.Location = New System.Drawing.Point(1, 3)
         Me.Button44.Name = "Button44"
         Me.Button44.Size = New System.Drawing.Size(28, 17)
-        Me.Button44.TabIndex = 98
+        Me.Button44.TabIndex = 28
         Me.Button44.UseVisualStyleBackColor = False
         '
         'Panel97
@@ -443,7 +441,7 @@ Partial Class ControlPainel_Acoes
         Me.Button45.Location = New System.Drawing.Point(1, 3)
         Me.Button45.Name = "Button45"
         Me.Button45.Size = New System.Drawing.Size(28, 17)
-        Me.Button45.TabIndex = 98
+        Me.Button45.TabIndex = 27
         Me.Button45.UseVisualStyleBackColor = False
         '
         'Panel101
@@ -470,7 +468,7 @@ Partial Class ControlPainel_Acoes
         Me.Button46.Location = New System.Drawing.Point(1, 3)
         Me.Button46.Name = "Button46"
         Me.Button46.Size = New System.Drawing.Size(28, 17)
-        Me.Button46.TabIndex = 98
+        Me.Button46.TabIndex = 26
         Me.Button46.UseVisualStyleBackColor = False
         '
         'Panel102
@@ -497,7 +495,7 @@ Partial Class ControlPainel_Acoes
         Me.Button47.Location = New System.Drawing.Point(1, 3)
         Me.Button47.Name = "Button47"
         Me.Button47.Size = New System.Drawing.Size(28, 17)
-        Me.Button47.TabIndex = 98
+        Me.Button47.TabIndex = 25
         Me.Button47.UseVisualStyleBackColor = False
         '
         'BTNAddProcesso
@@ -513,8 +511,8 @@ Partial Class ControlPainel_Acoes
         Me.BTNAddProcesso.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNAddProcesso.Location = New System.Drawing.Point(0, 0)
         Me.BTNAddProcesso.Name = "BTNAddProcesso"
-        Me.BTNAddProcesso.Size = New System.Drawing.Size(372, 22)
-        Me.BTNAddProcesso.TabIndex = 97
+        Me.BTNAddProcesso.Size = New System.Drawing.Size(340, 22)
+        Me.BTNAddProcesso.TabIndex = 24
         Me.BTNAddProcesso.Text = "         Adcionar um processo"
         Me.BTNAddProcesso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BTNAddProcesso.UseVisualStyleBackColor = False
@@ -526,11 +524,11 @@ Partial Class ControlPainel_Acoes
         Me.PanelExecutarProcesso.Controls.Add(Me.Button27)
         Me.PanelExecutarProcesso.Controls.Add(Me.Button26)
         Me.PanelExecutarProcesso.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelExecutarProcesso.Location = New System.Drawing.Point(0, 488)
+        Me.PanelExecutarProcesso.Location = New System.Drawing.Point(0, 456)
         Me.PanelExecutarProcesso.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelExecutarProcesso.Name = "PanelExecutarProcesso"
         Me.PanelExecutarProcesso.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
-        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(380, 28)
+        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(348, 28)
         Me.PanelExecutarProcesso.TabIndex = 100
         '
         'Button28
@@ -540,14 +538,13 @@ Partial Class ControlPainel_Acoes
         Me.Button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button28.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button28.FlatAppearance.BorderSize = 0
-        Me.Button28.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button28.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button28.Location = New System.Drawing.Point(64, 2)
         Me.Button28.Margin = New System.Windows.Forms.Padding(0)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(29, 26)
-        Me.Button28.TabIndex = 108
+        Me.Button28.TabIndex = 35
         Me.Button28.UseVisualStyleBackColor = False
         '
         'Button27
@@ -557,14 +554,13 @@ Partial Class ControlPainel_Acoes
         Me.Button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button27.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button27.FlatAppearance.BorderSize = 0
-        Me.Button27.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button27.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button27.Location = New System.Drawing.Point(35, 2)
         Me.Button27.Margin = New System.Windows.Forms.Padding(0)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(29, 26)
-        Me.Button27.TabIndex = 107
+        Me.Button27.TabIndex = 34
         Me.Button27.UseVisualStyleBackColor = False
         '
         'Button26
@@ -574,14 +570,13 @@ Partial Class ControlPainel_Acoes
         Me.Button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button26.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button26.FlatAppearance.BorderSize = 0
-        Me.Button26.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button26.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button26.Location = New System.Drawing.Point(6, 2)
         Me.Button26.Margin = New System.Windows.Forms.Padding(0)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(29, 26)
-        Me.Button26.TabIndex = 106
+        Me.Button26.TabIndex = 33
         Me.Button26.UseVisualStyleBackColor = False
         '
         'Splitter4
@@ -589,10 +584,10 @@ Partial Class ControlPainel_Acoes
         Me.Splitter4.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Splitter4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Splitter4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Splitter4.Location = New System.Drawing.Point(0, 278)
+        Me.Splitter4.Location = New System.Drawing.Point(0, 246)
         Me.Splitter4.Name = "Splitter4"
-        Me.Splitter4.Size = New System.Drawing.Size(380, 5)
-        Me.Splitter4.TabIndex = 99
+        Me.Splitter4.Size = New System.Drawing.Size(348, 5)
+        Me.Splitter4.TabIndex = 23
         Me.Splitter4.TabStop = False
         '
         'PanelAllAgrupamentos
@@ -600,10 +595,10 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.PanelAllAgrupamentos.Controls.Add(Me.PanelEnvolveAgrupamentos)
         Me.PanelAllAgrupamentos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelAllAgrupamentos.Location = New System.Drawing.Point(0, 32)
+        Me.PanelAllAgrupamentos.Location = New System.Drawing.Point(0, 0)
         Me.PanelAllAgrupamentos.Name = "PanelAllAgrupamentos"
         Me.PanelAllAgrupamentos.Padding = New System.Windows.Forms.Padding(2, 0, 2, 2)
-        Me.PanelAllAgrupamentos.Size = New System.Drawing.Size(380, 246)
+        Me.PanelAllAgrupamentos.Size = New System.Drawing.Size(348, 246)
         Me.PanelAllAgrupamentos.TabIndex = 96
         '
         'PanelEnvolveAgrupamentos
@@ -614,7 +609,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolveAgrupamentos.Location = New System.Drawing.Point(2, 0)
         Me.PanelEnvolveAgrupamentos.Name = "PanelEnvolveAgrupamentos"
-        Me.PanelEnvolveAgrupamentos.Size = New System.Drawing.Size(376, 244)
+        Me.PanelEnvolveAgrupamentos.Size = New System.Drawing.Size(344, 244)
         Me.PanelEnvolveAgrupamentos.TabIndex = 90
         '
         'PanelTVAgrupamentos
@@ -625,7 +620,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVAgrupamentos.Location = New System.Drawing.Point(0, 44)
         Me.PanelTVAgrupamentos.Name = "PanelTVAgrupamentos"
         Me.PanelTVAgrupamentos.Padding = New System.Windows.Forms.Padding(5)
-        Me.PanelTVAgrupamentos.Size = New System.Drawing.Size(376, 200)
+        Me.PanelTVAgrupamentos.Size = New System.Drawing.Size(344, 200)
         Me.PanelTVAgrupamentos.TabIndex = 88
         '
         'Panel1
@@ -633,12 +628,11 @@ Partial Class ControlPainel_Acoes
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.ControlItemDePainelDeAcoes3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(5, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(366, 190)
-        Me.Panel1.TabIndex = 88
+        Me.Panel1.Size = New System.Drawing.Size(334, 190)
+        Me.Panel1.TabIndex = 22
         '
         'PanelEditorPropriedadesDoGrupo
         '
@@ -649,7 +643,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelEditorPropriedadesDoGrupo.Location = New System.Drawing.Point(0, 0)
         Me.PanelEditorPropriedadesDoGrupo.Name = "PanelEditorPropriedadesDoGrupo"
         Me.PanelEditorPropriedadesDoGrupo.Padding = New System.Windows.Forms.Padding(0, 1, 0, 0)
-        Me.PanelEditorPropriedadesDoGrupo.Size = New System.Drawing.Size(376, 44)
+        Me.PanelEditorPropriedadesDoGrupo.Size = New System.Drawing.Size(344, 44)
         Me.PanelEditorPropriedadesDoGrupo.TabIndex = 98
         '
         'PanelCorDoGrupo
@@ -675,7 +669,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelCorDoGrupo.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelCorDoGrupo.Name = "PanelCorDoGrupo"
         Me.PanelCorDoGrupo.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
-        Me.PanelCorDoGrupo.Size = New System.Drawing.Size(376, 21)
+        Me.PanelCorDoGrupo.Size = New System.Drawing.Size(344, 21)
         Me.PanelCorDoGrupo.TabIndex = 95
         '
         'CheckBox1
@@ -688,12 +682,11 @@ Partial Class ControlPainel_Acoes
         Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Right
         Me.CheckBox1.FlatAppearance.BorderSize = 0
         Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(288, 2)
+        Me.CheckBox1.Location = New System.Drawing.Point(256, 2)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(30, 19)
-        Me.CheckBox1.TabIndex = 115
+        Me.CheckBox1.TabIndex = 19
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
         'Button30
@@ -703,14 +696,13 @@ Partial Class ControlPainel_Acoes
         Me.Button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button30.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button30.FlatAppearance.BorderSize = 0
-        Me.Button30.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button30.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button30.Location = New System.Drawing.Point(318, 2)
+        Me.Button30.Location = New System.Drawing.Point(286, 2)
         Me.Button30.Margin = New System.Windows.Forms.Padding(0)
         Me.Button30.Name = "Button30"
         Me.Button30.Size = New System.Drawing.Size(29, 19)
-        Me.Button30.TabIndex = 116
+        Me.Button30.TabIndex = 20
         Me.Button30.UseVisualStyleBackColor = False
         '
         'Button14
@@ -720,14 +712,13 @@ Partial Class ControlPainel_Acoes
         Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button14.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button14.FlatAppearance.BorderSize = 0
-        Me.Button14.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button14.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button14.Location = New System.Drawing.Point(347, 2)
+        Me.Button14.Location = New System.Drawing.Point(315, 2)
         Me.Button14.Margin = New System.Windows.Forms.Padding(0)
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(29, 19)
-        Me.Button14.TabIndex = 112
+        Me.Button14.TabIndex = 21
         Me.Button14.UseVisualStyleBackColor = False
         '
         'Panel103
@@ -759,7 +750,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel105.Location = New System.Drawing.Point(1, 1)
         Me.Panel105.Name = "Panel105"
         Me.Panel105.Size = New System.Drawing.Size(11, 11)
-        Me.Panel105.TabIndex = 11
+        Me.Panel105.TabIndex = 18
         '
         'Panel106
         '
@@ -790,7 +781,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel108.Location = New System.Drawing.Point(1, 1)
         Me.Panel108.Name = "Panel108"
         Me.Panel108.Size = New System.Drawing.Size(11, 11)
-        Me.Panel108.TabIndex = 11
+        Me.Panel108.TabIndex = 17
         '
         'Panel109
         '
@@ -821,7 +812,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel111.Location = New System.Drawing.Point(1, 1)
         Me.Panel111.Name = "Panel111"
         Me.Panel111.Size = New System.Drawing.Size(11, 11)
-        Me.Panel111.TabIndex = 11
+        Me.Panel111.TabIndex = 16
         '
         'Panel112
         '
@@ -852,7 +843,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel204.Location = New System.Drawing.Point(1, 1)
         Me.Panel204.Name = "Panel204"
         Me.Panel204.Size = New System.Drawing.Size(11, 11)
-        Me.Panel204.TabIndex = 11
+        Me.Panel204.TabIndex = 15
         '
         'Panel205
         '
@@ -883,7 +874,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel207.Location = New System.Drawing.Point(1, 1)
         Me.Panel207.Name = "Panel207"
         Me.Panel207.Size = New System.Drawing.Size(11, 11)
-        Me.Panel207.TabIndex = 11
+        Me.Panel207.TabIndex = 14
         '
         'Panel208
         '
@@ -914,7 +905,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel210.Location = New System.Drawing.Point(1, 1)
         Me.Panel210.Name = "Panel210"
         Me.Panel210.Size = New System.Drawing.Size(11, 11)
-        Me.Panel210.TabIndex = 11
+        Me.Panel210.TabIndex = 13
         '
         'Panel211
         '
@@ -945,7 +936,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel216.Location = New System.Drawing.Point(1, 1)
         Me.Panel216.Name = "Panel216"
         Me.Panel216.Size = New System.Drawing.Size(11, 11)
-        Me.Panel216.TabIndex = 11
+        Me.Panel216.TabIndex = 12
         '
         'Panel217
         '
@@ -1007,7 +998,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel222.Location = New System.Drawing.Point(1, 1)
         Me.Panel222.Name = "Panel222"
         Me.Panel222.Size = New System.Drawing.Size(11, 11)
-        Me.Panel222.TabIndex = 11
+        Me.Panel222.TabIndex = 10
         '
         'Panel223
         '
@@ -1038,7 +1029,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel237.Location = New System.Drawing.Point(1, 1)
         Me.Panel237.Name = "Panel237"
         Me.Panel237.Size = New System.Drawing.Size(11, 11)
-        Me.Panel237.TabIndex = 11
+        Me.Panel237.TabIndex = 9
         '
         'Panel238
         '
@@ -1069,7 +1060,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel241.Location = New System.Drawing.Point(1, 1)
         Me.Panel241.Name = "Panel241"
         Me.Panel241.Size = New System.Drawing.Size(11, 11)
-        Me.Panel241.TabIndex = 11
+        Me.Panel241.TabIndex = 8
         '
         'Panel242
         '
@@ -1102,7 +1093,7 @@ Partial Class ControlPainel_Acoes
         Me.Label30.Location = New System.Drawing.Point(0, 0)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(12, 14)
-        Me.Label30.TabIndex = 101
+        Me.Label30.TabIndex = 7
         Me.Label30.Text = "x"
         '
         'PanelNomeDoGrupo
@@ -1117,7 +1108,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelNomeDoGrupo.Location = New System.Drawing.Point(0, 1)
         Me.PanelNomeDoGrupo.Name = "PanelNomeDoGrupo"
         Me.PanelNomeDoGrupo.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
-        Me.PanelNomeDoGrupo.Size = New System.Drawing.Size(376, 22)
+        Me.PanelNomeDoGrupo.Size = New System.Drawing.Size(344, 22)
         Me.PanelNomeDoGrupo.TabIndex = 96
         '
         'PanelMargemDoNomeDoGrupo
@@ -1128,7 +1119,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelMargemDoNomeDoGrupo.Location = New System.Drawing.Point(45, 3)
         Me.PanelMargemDoNomeDoGrupo.Name = "PanelMargemDoNomeDoGrupo"
         Me.PanelMargemDoNomeDoGrupo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelMargemDoNomeDoGrupo.Size = New System.Drawing.Size(278, 19)
+        Me.PanelMargemDoNomeDoGrupo.Size = New System.Drawing.Size(246, 19)
         Me.PanelMargemDoNomeDoGrupo.TabIndex = 99
         '
         'PanelFundoDoNomeDoGrupo
@@ -1139,7 +1130,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelFundoDoNomeDoGrupo.Location = New System.Drawing.Point(1, 1)
         Me.PanelFundoDoNomeDoGrupo.Name = "PanelFundoDoNomeDoGrupo"
         Me.PanelFundoDoNomeDoGrupo.Padding = New System.Windows.Forms.Padding(2)
-        Me.PanelFundoDoNomeDoGrupo.Size = New System.Drawing.Size(276, 17)
+        Me.PanelFundoDoNomeDoGrupo.Size = New System.Drawing.Size(244, 17)
         Me.PanelFundoDoNomeDoGrupo.TabIndex = 6
         '
         'TextBox4
@@ -1150,14 +1141,14 @@ Partial Class ControlPainel_Acoes
         Me.TextBox4.ForeColor = System.Drawing.Color.Gainsboro
         Me.TextBox4.Location = New System.Drawing.Point(2, 2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(272, 13)
-        Me.TextBox4.TabIndex = 10
+        Me.TextBox4.Size = New System.Drawing.Size(240, 13)
+        Me.TextBox4.TabIndex = 4
         Me.TextBox4.Text = "Agrupamento 01"
         '
         'PanelME
         '
         Me.PanelME.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelME.Location = New System.Drawing.Point(323, 3)
+        Me.PanelME.Location = New System.Drawing.Point(291, 3)
         Me.PanelME.Name = "PanelME"
         Me.PanelME.Size = New System.Drawing.Size(2, 19)
         Me.PanelME.TabIndex = 112
@@ -1172,15 +1163,15 @@ Partial Class ControlPainel_Acoes
         Me.Label31.Name = "Label31"
         Me.Label31.Padding = New System.Windows.Forms.Padding(3)
         Me.Label31.Size = New System.Drawing.Size(45, 19)
-        Me.Label31.TabIndex = 100
-        Me.Label31.Text = "Grupo:"
+        Me.Label31.TabIndex = 3
+        Me.Label31.Text = "&Grupo:"
         '
         'Panel244
         '
         Me.Panel244.BackColor = System.Drawing.Color.DimGray
         Me.Panel244.Controls.Add(Me.Panel245)
         Me.Panel244.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel244.Location = New System.Drawing.Point(325, 3)
+        Me.Panel244.Location = New System.Drawing.Point(293, 3)
         Me.Panel244.Name = "Panel244"
         Me.Panel244.Padding = New System.Windows.Forms.Padding(1)
         Me.Panel244.Size = New System.Drawing.Size(46, 19)
@@ -1206,14 +1197,13 @@ Partial Class ControlPainel_Acoes
         Me.Button77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button77.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button77.FlatAppearance.BorderSize = 0
-        Me.Button77.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button77.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button77.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button77.Location = New System.Drawing.Point(0, 0)
         Me.Button77.Margin = New System.Windows.Forms.Padding(0)
         Me.Button77.Name = "Button77"
         Me.Button77.Size = New System.Drawing.Size(29, 15)
-        Me.Button77.TabIndex = 101
+        Me.Button77.TabIndex = 5
         Me.Button77.UseVisualStyleBackColor = False
         '
         'Button80
@@ -1222,7 +1212,6 @@ Partial Class ControlPainel_Acoes
         Me.Button80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button80.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button80.FlatAppearance.BorderSize = 0
-        Me.Button80.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button80.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button80.Image = Global.TrevoWebMedia.My.Resources.Resources.escolha1
         Me.Button80.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -1230,16 +1219,27 @@ Partial Class ControlPainel_Acoes
         Me.Button80.Margin = New System.Windows.Forms.Padding(0)
         Me.Button80.Name = "Button80"
         Me.Button80.Size = New System.Drawing.Size(15, 15)
-        Me.Button80.TabIndex = 18
+        Me.Button80.TabIndex = 6
         Me.Button80.UseVisualStyleBackColor = False
         '
         'Panel246
         '
         Me.Panel246.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel246.Location = New System.Drawing.Point(371, 3)
+        Me.Panel246.Location = New System.Drawing.Point(339, 3)
         Me.Panel246.Name = "Panel246"
         Me.Panel246.Size = New System.Drawing.Size(5, 19)
         Me.Panel246.TabIndex = 113
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.Panel77)
+        Me.Panel2.Controls.Add(Me.PanelLBLAcoes)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(348, 516)
+        Me.Panel2.TabIndex = 94
         '
         'PanelLBLAcoes
         '
@@ -1249,8 +1249,8 @@ Partial Class ControlPainel_Acoes
         Me.PanelLBLAcoes.Location = New System.Drawing.Point(0, 0)
         Me.PanelLBLAcoes.Name = "PanelLBLAcoes"
         Me.PanelLBLAcoes.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.PanelLBLAcoes.Size = New System.Drawing.Size(380, 32)
-        Me.PanelLBLAcoes.TabIndex = 97
+        Me.PanelLBLAcoes.Size = New System.Drawing.Size(348, 32)
+        Me.PanelLBLAcoes.TabIndex = 98
         '
         'Panel247
         '
@@ -1260,7 +1260,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel247.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel247.Location = New System.Drawing.Point(0, 0)
         Me.Panel247.Name = "Panel247"
-        Me.Panel247.Size = New System.Drawing.Size(380, 31)
+        Me.Panel247.Size = New System.Drawing.Size(348, 31)
         Me.Panel247.TabIndex = 5
         '
         'LBLAcoes
@@ -1273,8 +1273,8 @@ Partial Class ControlPainel_Acoes
         Me.LBLAcoes.Location = New System.Drawing.Point(15, 0)
         Me.LBLAcoes.Name = "LBLAcoes"
         Me.LBLAcoes.Padding = New System.Windows.Forms.Padding(5)
-        Me.LBLAcoes.Size = New System.Drawing.Size(365, 31)
-        Me.LBLAcoes.TabIndex = 1
+        Me.LBLAcoes.Size = New System.Drawing.Size(333, 31)
+        Me.LBLAcoes.TabIndex = 2
         Me.LBLAcoes.Text = "Ações"
         '
         'Button90
@@ -1283,7 +1283,6 @@ Partial Class ControlPainel_Acoes
         Me.Button90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button90.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button90.FlatAppearance.BorderSize = 0
-        Me.Button90.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
         Me.Button90.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button90.Image = CType(resources.GetObject("Button90.Image"), System.Drawing.Image)
         Me.Button90.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -1291,25 +1290,16 @@ Partial Class ControlPainel_Acoes
         Me.Button90.Margin = New System.Windows.Forms.Padding(0)
         Me.Button90.Name = "Button90"
         Me.Button90.Size = New System.Drawing.Size(15, 31)
-        Me.Button90.TabIndex = 22
+        Me.Button90.TabIndex = 1
         Me.Button90.UseVisualStyleBackColor = False
-        '
-        'ControlItemDePainelDeAcoes3
-        '
-        Me.ControlItemDePainelDeAcoes3.AutoSize = True
-        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 0)
-        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
-        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(364, 69)
-        Me.ControlItemDePainelDeAcoes3.TabIndex = 5
         '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Panel77)
+        Me.Controls.Add(Me.Panel2)
         Me.Name = "ControlPainel_Acoes"
-        Me.Size = New System.Drawing.Size(380, 516)
+        Me.Size = New System.Drawing.Size(348, 516)
         Me.Panel77.ResumeLayout(False)
         Me.PanelAllProcessosAcoes.ResumeLayout(False)
         Me.PanelListaDeProcessos.ResumeLayout(False)
@@ -1328,8 +1318,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.ResumeLayout(False)
         Me.PanelEnvolveAgrupamentos.ResumeLayout(False)
         Me.PanelTVAgrupamentos.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.PanelEditorPropriedadesDoGrupo.ResumeLayout(False)
         Me.PanelCorDoGrupo.ResumeLayout(False)
         Me.Panel103.ResumeLayout(False)
@@ -1364,6 +1352,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelFundoDoNomeDoGrupo.PerformLayout()
         Me.Panel244.ResumeLayout(False)
         Me.Panel245.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.PanelLBLAcoes.ResumeLayout(False)
         Me.Panel247.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -1430,10 +1419,6 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Button77 As Button
     Friend WithEvents Button80 As Button
     Friend WithEvents Panel246 As Panel
-    Friend WithEvents PanelLBLAcoes As Panel
-    Friend WithEvents Panel247 As Panel
-    Friend WithEvents LBLAcoes As Label
-    Friend WithEvents Button90 As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Splitter4 As Splitter
     Friend WithEvents PanelExecutarProcesso As Panel
@@ -1458,5 +1443,9 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Button47 As Button
     Friend WithEvents Button30 As Button
     Friend WithEvents Button42 As Button
-    Friend WithEvents ControlItemDePainelDeAcoes3 As ControlItemDePainelDeAcoes
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents PanelLBLAcoes As Panel
+    Friend WithEvents Panel247 As Panel
+    Friend WithEvents LBLAcoes As Label
+    Friend WithEvents Button90 As Button
 End Class

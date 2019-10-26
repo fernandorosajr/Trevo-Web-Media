@@ -44,7 +44,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
         Me.Panel36 = New System.Windows.Forms.Panel()
         Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.Button29 = New System.Windows.Forms.Button()
+        Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
         Me.Panel94 = New System.Windows.Forms.Panel()
         Me.BTN_NovoProcessoCriar = New System.Windows.Forms.Button()
         Me.Panel95 = New System.Windows.Forms.Panel()
@@ -63,9 +63,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelTVAgrupamentos = New System.Windows.Forms.Panel()
         Me.Panel_ItensAGrupados = New System.Windows.Forms.Panel()
-        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.PanelEditorPropriedadesDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelCorDoGrupo = New System.Windows.Forms.Panel()
         Me.CHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.CheckBox()
@@ -113,8 +110,8 @@ Partial Class ControlPainel_Acoes
         Me.TXTNomeDoGrupo = New System.Windows.Forms.TextBox()
         Me.PanelME = New System.Windows.Forms.Panel()
         Me.LBLNomeDoGrupo = New System.Windows.Forms.Label()
-        Me.Panel244 = New System.Windows.Forms.Panel()
-        Me.Panel245 = New System.Windows.Forms.Panel()
+        Me.PanelMarginDoSelectNewGroup = New System.Windows.Forms.Panel()
+        Me.Panel_EnvolveBTNSelectedNewGroupType = New System.Windows.Forms.Panel()
         Me.BTNSelectedNewGroupType = New System.Windows.Forms.Button()
         Me.BTNSelectNewGroupType = New System.Windows.Forms.Button()
         Me.Panel246 = New System.Windows.Forms.Panel()
@@ -127,6 +124,9 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.BTNExpandAcoes = New System.Windows.Forms.Button()
+        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -174,8 +174,8 @@ Partial Class ControlPainel_Acoes
         Me.PanelNomeDoGrupo.SuspendLayout()
         Me.PanelMargemDoNomeDoGrupo.SuspendLayout()
         Me.PanelFundoDoNomeDoGrupo.SuspendLayout()
-        Me.Panel244.SuspendLayout()
-        Me.Panel245.SuspendLayout()
+        Me.PanelMarginDoSelectNewGroup.SuspendLayout()
+        Me.Panel_EnvolveBTNSelectedNewGroupType.SuspendLayout()
         Me.PanelExecutarProcesso.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PanelLBLAcoes.SuspendLayout()
@@ -279,6 +279,7 @@ Partial Class ControlPainel_Acoes
         '
         'PanelAddProcesso
         '
+        Me.PanelAddProcesso.AutoSize = True
         Me.PanelAddProcesso.Controls.Add(Me.PanelOpcoesDeProcessos)
         Me.PanelAddProcesso.Controls.Add(Me.BTNAddProcesso)
         Me.PanelAddProcesso.Dock = System.Windows.Forms.DockStyle.Top
@@ -291,13 +292,14 @@ Partial Class ControlPainel_Acoes
         '
         Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel36)
-        Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(0, 22)
         Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
         Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
         Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(340, 27)
         Me.PanelOpcoesDeProcessos.TabIndex = 96
+        Me.PanelOpcoesDeProcessos.Visible = False
         '
         'Panel36
         '
@@ -317,28 +319,28 @@ Partial Class ControlPainel_Acoes
         '
         'Panel37
         '
-        Me.Panel37.Controls.Add(Me.Button29)
+        Me.Panel37.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel37.Location = New System.Drawing.Point(315, 0)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(13, 23)
         Me.Panel37.TabIndex = 114
         '
-        'Button29
+        'BTN_FechaPanelOpcoesDeProcessos
         '
-        Me.Button29.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button29.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.fechar_cinza
-        Me.Button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button29.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button29.FlatAppearance.BorderSize = 0
-        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button29.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button29.Location = New System.Drawing.Point(0, 0)
-        Me.Button29.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(13, 20)
-        Me.Button29.TabIndex = 31
-        Me.Button29.UseVisualStyleBackColor = False
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.fechar_cinza
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_FechaPanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BTN_FechaPanelOpcoesDeProcessos.FlatAppearance.BorderSize = 0
+        Me.BTN_FechaPanelOpcoesDeProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_FechaPanelOpcoesDeProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(0, 0)
+        Me.BTN_FechaPanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_FechaPanelOpcoesDeProcessos.Name = "BTN_FechaPanelOpcoesDeProcessos"
+        Me.BTN_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(13, 20)
+        Me.BTN_FechaPanelOpcoesDeProcessos.TabIndex = 31
+        Me.BTN_FechaPanelOpcoesDeProcessos.UseVisualStyleBackColor = False
         '
         'Panel94
         '
@@ -578,36 +580,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados.Name = "Panel_ItensAGrupados"
         Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(334, 184)
         Me.Panel_ItensAGrupados.TabIndex = 22
-        '
-        'ControlItemDePainelDeAcoes3
-        '
-        Me.ControlItemDePainelDeAcoes3.AutoSize = True
-        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
-        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
-        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
-        '
-        'ControlItemDePainelDeAcoes2
-        '
-        Me.ControlItemDePainelDeAcoes2.AutoSize = True
-        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
-        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
-        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
-        '
-        'ControlItemDePainelDeAcoes1
-        '
-        Me.ControlItemDePainelDeAcoes1.AutoSize = True
-        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
-        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
-        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'PanelEditorPropriedadesDoGrupo
         '
@@ -1079,7 +1051,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelNomeDoGrupo.Controls.Add(Me.PanelMargemDoNomeDoGrupo)
         Me.PanelNomeDoGrupo.Controls.Add(Me.PanelME)
         Me.PanelNomeDoGrupo.Controls.Add(Me.LBLNomeDoGrupo)
-        Me.PanelNomeDoGrupo.Controls.Add(Me.Panel244)
+        Me.PanelNomeDoGrupo.Controls.Add(Me.PanelMarginDoSelectNewGroup)
         Me.PanelNomeDoGrupo.Controls.Add(Me.Panel246)
         Me.PanelNomeDoGrupo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelNomeDoGrupo.Location = New System.Drawing.Point(0, 1)
@@ -1144,29 +1116,29 @@ Partial Class ControlPainel_Acoes
         Me.LBLNomeDoGrupo.TabIndex = 3
         Me.LBLNomeDoGrupo.Text = "&Grupo:"
         '
-        'Panel244
+        'PanelMarginDoSelectNewGroup
         '
-        Me.Panel244.BackColor = System.Drawing.Color.DimGray
-        Me.Panel244.Controls.Add(Me.Panel245)
-        Me.Panel244.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel244.Location = New System.Drawing.Point(293, 3)
-        Me.Panel244.Name = "Panel244"
-        Me.Panel244.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel244.Size = New System.Drawing.Size(46, 19)
-        Me.Panel244.TabIndex = 102
+        Me.PanelMarginDoSelectNewGroup.BackColor = System.Drawing.Color.DimGray
+        Me.PanelMarginDoSelectNewGroup.Controls.Add(Me.Panel_EnvolveBTNSelectedNewGroupType)
+        Me.PanelMarginDoSelectNewGroup.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelMarginDoSelectNewGroup.Location = New System.Drawing.Point(293, 3)
+        Me.PanelMarginDoSelectNewGroup.Name = "PanelMarginDoSelectNewGroup"
+        Me.PanelMarginDoSelectNewGroup.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelMarginDoSelectNewGroup.Size = New System.Drawing.Size(46, 19)
+        Me.PanelMarginDoSelectNewGroup.TabIndex = 102
         '
-        'Panel245
+        'Panel_EnvolveBTNSelectedNewGroupType
         '
-        Me.Panel245.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel245.Controls.Add(Me.BTNSelectedNewGroupType)
-        Me.Panel245.Controls.Add(Me.BTNSelectNewGroupType)
-        Me.Panel245.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel245.Location = New System.Drawing.Point(1, 1)
-        Me.Panel245.Margin = New System.Windows.Forms.Padding(0)
-        Me.Panel245.Name = "Panel245"
-        Me.Panel245.Padding = New System.Windows.Forms.Padding(0, 0, 0, 2)
-        Me.Panel245.Size = New System.Drawing.Size(44, 17)
-        Me.Panel245.TabIndex = 6
+        Me.Panel_EnvolveBTNSelectedNewGroupType.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Controls.Add(Me.BTNSelectedNewGroupType)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Controls.Add(Me.BTNSelectNewGroupType)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Margin = New System.Windows.Forms.Padding(0)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Name = "Panel_EnvolveBTNSelectedNewGroupType"
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Padding = New System.Windows.Forms.Padding(0, 0, 0, 2)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.Size = New System.Drawing.Size(44, 17)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.TabIndex = 6
         '
         'BTNSelectedNewGroupType
         '
@@ -1333,6 +1305,36 @@ Partial Class ControlPainel_Acoes
         Me.BTNExpandAcoes.TabIndex = 1
         Me.BTNExpandAcoes.UseVisualStyleBackColor = False
         '
+        'ControlItemDePainelDeAcoes3
+        '
+        Me.ControlItemDePainelDeAcoes3.AutoSize = True
+        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
+        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
+        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
+        '
+        'ControlItemDePainelDeAcoes2
+        '
+        Me.ControlItemDePainelDeAcoes2.AutoSize = True
+        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
+        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
+        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
+        '
+        'ControlItemDePainelDeAcoes1
+        '
+        Me.ControlItemDePainelDeAcoes1.AutoSize = True
+        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
+        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
+        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
+        '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1342,6 +1344,7 @@ Partial Class ControlPainel_Acoes
         Me.Size = New System.Drawing.Size(348, 516)
         Me.Panel77.ResumeLayout(False)
         Me.PanelAllProcessosAcoes.ResumeLayout(False)
+        Me.PanelAllProcessosAcoes.PerformLayout()
         Me.PanelListaDeProcessos.ResumeLayout(False)
         Me.PanelTVProcessosAcoes.ResumeLayout(False)
         Me.PanelAddProcesso.ResumeLayout(False)
@@ -1391,8 +1394,8 @@ Partial Class ControlPainel_Acoes
         Me.PanelMargemDoNomeDoGrupo.ResumeLayout(False)
         Me.PanelFundoDoNomeDoGrupo.ResumeLayout(False)
         Me.PanelFundoDoNomeDoGrupo.PerformLayout()
-        Me.Panel244.ResumeLayout(False)
-        Me.Panel245.ResumeLayout(False)
+        Me.PanelMarginDoSelectNewGroup.ResumeLayout(False)
+        Me.Panel_EnvolveBTNSelectedNewGroupType.ResumeLayout(False)
         Me.PanelExecutarProcesso.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.PanelLBLAcoes.ResumeLayout(False)
@@ -1456,8 +1459,8 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents TXTNomeDoGrupo As TextBox
     Friend WithEvents PanelME As Panel
     Friend WithEvents LBLNomeDoGrupo As Label
-    Friend WithEvents Panel244 As Panel
-    Friend WithEvents Panel245 As Panel
+    Friend WithEvents PanelMarginDoSelectNewGroup As Panel
+    Friend WithEvents Panel_EnvolveBTNSelectedNewGroupType As Panel
     Friend WithEvents BTNSelectedNewGroupType As Button
     Friend WithEvents BTNSelectNewGroupType As Button
     Friend WithEvents Panel246 As Panel
@@ -1471,7 +1474,7 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents CHK_ShowPanelAllProcessosAcoes As CheckBox
     Friend WithEvents Panel36 As Panel
     Friend WithEvents Panel37 As Panel
-    Friend WithEvents Button29 As Button
+    Friend WithEvents BTN_FechaPanelOpcoesDeProcessos As Button
     Friend WithEvents Panel94 As Panel
     Friend WithEvents Panel95 As Panel
     Friend WithEvents Button43 As Button

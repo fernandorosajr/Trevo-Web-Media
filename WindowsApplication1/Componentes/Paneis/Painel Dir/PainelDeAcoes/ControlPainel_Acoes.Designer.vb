@@ -63,6 +63,9 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelTVAgrupamentos = New System.Windows.Forms.Panel()
         Me.Panel_ItensAGrupados = New System.Windows.Forms.Panel()
+        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.PanelEditorPropriedadesDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelCorDoGrupo = New System.Windows.Forms.Panel()
         Me.CHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.CheckBox()
@@ -124,9 +127,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.BTNExpandAcoes = New System.Windows.Forms.Button()
-        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -580,6 +580,36 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados.Name = "Panel_ItensAGrupados"
         Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(334, 184)
         Me.Panel_ItensAGrupados.TabIndex = 22
+        '
+        'ControlItemDePainelDeAcoes3
+        '
+        Me.ControlItemDePainelDeAcoes3.AutoSize = True
+        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
+        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
+        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
+        '
+        'ControlItemDePainelDeAcoes2
+        '
+        Me.ControlItemDePainelDeAcoes2.AutoSize = True
+        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
+        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
+        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
+        '
+        'ControlItemDePainelDeAcoes1
+        '
+        Me.ControlItemDePainelDeAcoes1.AutoSize = True
+        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
+        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
+        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'PanelEditorPropriedadesDoGrupo
         '
@@ -1200,7 +1230,7 @@ Partial Class ControlPainel_Acoes
         Me.BTNPararProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources._stop
         Me.BTNPararProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.BTNPararProcessos.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BTNPararProcessos.FlatAppearance.BorderSize = 0
+        Me.BTNPararProcessos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.BTNPararProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNPararProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNPararProcessos.Location = New System.Drawing.Point(64, 2)
@@ -1216,7 +1246,7 @@ Partial Class ControlPainel_Acoes
         Me.BTNPausarProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pause1
         Me.BTNPausarProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.BTNPausarProcessos.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BTNPausarProcessos.FlatAppearance.BorderSize = 0
+        Me.BTNPausarProcessos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.BTNPausarProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNPausarProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNPausarProcessos.Location = New System.Drawing.Point(35, 2)
@@ -1232,7 +1262,7 @@ Partial Class ControlPainel_Acoes
         Me.BTNExecutarProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.avancar_1
         Me.BTNExecutarProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.BTNExecutarProcessos.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BTNExecutarProcessos.FlatAppearance.BorderSize = 0
+        Me.BTNExecutarProcessos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.BTNExecutarProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNExecutarProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNExecutarProcessos.Location = New System.Drawing.Point(6, 2)
@@ -1304,36 +1334,6 @@ Partial Class ControlPainel_Acoes
         Me.BTNExpandAcoes.Size = New System.Drawing.Size(15, 31)
         Me.BTNExpandAcoes.TabIndex = 1
         Me.BTNExpandAcoes.UseVisualStyleBackColor = False
-        '
-        'ControlItemDePainelDeAcoes3
-        '
-        Me.ControlItemDePainelDeAcoes3.AutoSize = True
-        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
-        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
-        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
-        '
-        'ControlItemDePainelDeAcoes2
-        '
-        Me.ControlItemDePainelDeAcoes2.AutoSize = True
-        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
-        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
-        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
-        '
-        'ControlItemDePainelDeAcoes1
-        '
-        Me.ControlItemDePainelDeAcoes1.AutoSize = True
-        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
-        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
-        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'ControlPainel_Acoes
         '

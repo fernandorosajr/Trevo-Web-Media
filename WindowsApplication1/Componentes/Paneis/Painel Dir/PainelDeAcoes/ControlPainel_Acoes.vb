@@ -141,6 +141,86 @@ Public Class ControlPainel_Acoes
 
     Private Sub BTN_FechaPanelOpcoesDeProcessos_Click(sender As Object, e As EventArgs) Handles BTN_FechaPanelOpcoesDeProcessos.Click
         PanelOpcoesDeProcessos.Visible = False
+    End Sub
+
+
+
+    Private Sub BTNExecutarProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.MouseHover
+        BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNExecutarProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.MouseLeave
+        If BTNExecutarProcessos.Focused Then
+            BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        Else
+            BTNExecutarProcessos.FlatAppearance.BorderColor = BTNExecutarProcessos.BackColor
+        End If
+
+    End Sub
+
+    Private Sub BTNExecutarProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.GotFocus
+        BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNExecutarProcessos_LostFocus(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.LostFocus
+        BTNExecutarProcessos.FlatAppearance.BorderColor = BTNExecutarProcessos.BackColor
+
+    End Sub
+
+    Private Sub BTNPausarProcessos_Click(sender As Object, e As EventArgs) Handles BTNPausarProcessos.Click
+
+    End Sub
+
+    Private Sub BTNPausarProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNPausarProcessos.MouseHover
+        BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNPausarProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNPausarProcessos.MouseLeave
+        If BTNPausarProcessos.Focused Then
+            BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        Else
+            BTNPausarProcessos.FlatAppearance.BorderColor = BTNPausarProcessos.BackColor
+        End If
+
+    End Sub
+
+    Private Sub BTNPausarProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNPausarProcessos.GotFocus
+        BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNPausarProcessos_LostFocus(sender As Object, e As EventArgs) Handles BTNPausarProcessos.LostFocus
+        BTNPausarProcessos.FlatAppearance.BorderColor = BTNPausarProcessos.BackColor
+
+    End Sub
+
+    Private Sub BTNPararProcessos_Click(sender As Object, e As EventArgs) Handles BTNPararProcessos.Click
+
+    End Sub
+
+    Private Sub BTNPararProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNPararProcessos.MouseHover
+        BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNPararProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNPararProcessos.MouseLeave
+        If BTNPararProcessos.Focused Then
+            BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        Else
+            BTNPararProcessos.FlatAppearance.BorderColor = BTNPararProcessos.BackColor
+        End If
+    End Sub
+
+    Private Sub BTNPararProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNPararProcessos.GotFocus
+        BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+
+    End Sub
+
+    Private Sub BTNPararProcessos_LostFocus(sender As Object, e As EventArgs) Handles BTNPararProcessos.LostFocus
+        BTNPararProcessos.FlatAppearance.BorderColor = BTNPararProcessos.BackColor
 
     End Sub
 End Class

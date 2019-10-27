@@ -24,16 +24,20 @@ Partial Class ControlPainel_Acoes
     Private Sub InitializeComponent()
         Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("nome.arq")
         Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local", New System.Windows.Forms.TreeNode() {TreeNode1})
-        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Desktop) - C:/")
-        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Documentos) - C:/")
-        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar", New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode4})
-        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("(Music) - C:/")
-        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover", New System.Windows.Forms.TreeNode() {TreeNode6})
-        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Critério")
-        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear", New System.Windows.Forms.TreeNode() {TreeNode8})
-        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
-        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar", New System.Windows.Forms.TreeNode() {TreeNode2, TreeNode5, TreeNode7, TreeNode9, TreeNode10})
-        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode11})
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar", New System.Windows.Forms.TreeNode() {TreeNode2})
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local: (Desktop) - C:/")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Destino: (Documentos) - C:/")
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renome.jpg")
+        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar", New System.Windows.Forms.TreeNode() {TreeNode4, TreeNode5, TreeNode6})
+        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local: (Desktop) - C:/")
+        Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Destino: (Music) - C:/")
+        Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renome.mp3")
+        Dim TreeNode11 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover", New System.Windows.Forms.TreeNode() {TreeNode8, TreeNode9, TreeNode10})
+        Dim TreeNode12 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Critério")
+        Dim TreeNode13 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear", New System.Windows.Forms.TreeNode() {TreeNode12})
+        Dim TreeNode14 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Lixeira")
+        Dim TreeNode15 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir", New System.Windows.Forms.TreeNode() {TreeNode14})
+        Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode7, TreeNode11, TreeNode13, TreeNode15})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Acoes))
         Me.Panel77 = New System.Windows.Forms.Panel()
         Me.PanelAllProcessosAcoes = New System.Windows.Forms.Panel()
@@ -63,9 +67,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelTVAgrupamentos = New System.Windows.Forms.Panel()
         Me.Panel_ItensAGrupados = New System.Windows.Forms.Panel()
-        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.PanelEditorPropriedadesDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelCorDoGrupo = New System.Windows.Forms.Panel()
         Me.CHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.CheckBox()
@@ -127,6 +128,9 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.BTNExpandAcoes = New System.Windows.Forms.Button()
+        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -244,34 +248,42 @@ Partial Class ControlPainel_Acoes
         TreeNode1.Text = "nome.arq"
         TreeNode2.Name = "Node3"
         TreeNode2.Text = "Local"
-        TreeNode3.Name = "Node2"
-        TreeNode3.Text = "(Desktop) - C:/"
-        TreeNode4.Name = "Node3"
-        TreeNode4.Text = "(Documentos) - C:/"
-        TreeNode5.ImageKey = "copypara.png"
-        TreeNode5.Name = "Node1"
-        TreeNode5.SelectedImageKey = "copypara.png"
-        TreeNode5.Text = "Copiar"
-        TreeNode6.Name = "Node5"
-        TreeNode6.Text = "(Music) - C:/"
-        TreeNode7.ImageKey = "movepara.png"
-        TreeNode7.Name = "Node4"
-        TreeNode7.SelectedImageKey = "movepara.png"
-        TreeNode7.Text = "Mover"
-        TreeNode8.Name = "Node7"
-        TreeNode8.Text = "Critério"
-        TreeNode9.Name = "Node6"
-        TreeNode9.Text = "Renomear"
-        TreeNode10.Name = "Node8"
-        TreeNode10.Text = "Excluir"
-        TreeNode11.Name = "Node1"
-        TreeNode11.Text = "Criar"
-        TreeNode12.ImageKey = "processo.ico"
-        TreeNode12.Name = "Node1"
-        TreeNode12.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        TreeNode12.SelectedImageKey = "processo.ico"
-        TreeNode12.Text = "Processo 01"
-        Me.TVW_ListaDeProcessos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode12})
+        TreeNode3.Name = "Node1"
+        TreeNode3.Text = "Criar"
+        TreeNode4.Name = "Node2"
+        TreeNode4.Text = "Local: (Desktop) - C:/"
+        TreeNode5.Name = "Node3"
+        TreeNode5.Text = "Destino: (Documentos) - C:/"
+        TreeNode6.Name = "Nó0"
+        TreeNode6.Text = "Renome.jpg"
+        TreeNode7.ImageKey = "copypara.png"
+        TreeNode7.Name = "Node1"
+        TreeNode7.SelectedImageKey = "copypara.png"
+        TreeNode7.Text = "Copiar"
+        TreeNode8.Name = "Nó1"
+        TreeNode8.Text = "Local: (Desktop) - C:/"
+        TreeNode9.Name = "Node5"
+        TreeNode9.Text = "Destino: (Music) - C:/"
+        TreeNode10.Name = "Nó2"
+        TreeNode10.Text = "Renome.mp3"
+        TreeNode11.ImageKey = "movepara.png"
+        TreeNode11.Name = "Node4"
+        TreeNode11.SelectedImageKey = "movepara.png"
+        TreeNode11.Text = "Mover"
+        TreeNode12.Name = "Node7"
+        TreeNode12.Text = "Critério"
+        TreeNode13.Name = "Node6"
+        TreeNode13.Text = "Renomear"
+        TreeNode14.Name = "Nó3"
+        TreeNode14.Text = "Lixeira"
+        TreeNode15.Name = "Node8"
+        TreeNode15.Text = "Excluir"
+        TreeNode16.ImageKey = "processo.ico"
+        TreeNode16.Name = "Node1"
+        TreeNode16.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        TreeNode16.SelectedImageKey = "processo.ico"
+        TreeNode16.Text = "Processo 01"
+        Me.TVW_ListaDeProcessos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode16})
         Me.TVW_ListaDeProcessos.ShowLines = False
         Me.TVW_ListaDeProcessos.ShowNodeToolTips = True
         Me.TVW_ListaDeProcessos.Size = New System.Drawing.Size(330, 144)
@@ -580,36 +592,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados.Name = "Panel_ItensAGrupados"
         Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(334, 184)
         Me.Panel_ItensAGrupados.TabIndex = 22
-        '
-        'ControlItemDePainelDeAcoes3
-        '
-        Me.ControlItemDePainelDeAcoes3.AutoSize = True
-        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
-        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
-        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
-        '
-        'ControlItemDePainelDeAcoes2
-        '
-        Me.ControlItemDePainelDeAcoes2.AutoSize = True
-        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
-        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
-        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
-        '
-        'ControlItemDePainelDeAcoes1
-        '
-        Me.ControlItemDePainelDeAcoes1.AutoSize = True
-        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
-        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
-        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'PanelEditorPropriedadesDoGrupo
         '
@@ -1334,6 +1316,36 @@ Partial Class ControlPainel_Acoes
         Me.BTNExpandAcoes.Size = New System.Drawing.Size(15, 31)
         Me.BTNExpandAcoes.TabIndex = 1
         Me.BTNExpandAcoes.UseVisualStyleBackColor = False
+        '
+        'ControlItemDePainelDeAcoes3
+        '
+        Me.ControlItemDePainelDeAcoes3.AutoSize = True
+        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
+        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
+        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
+        '
+        'ControlItemDePainelDeAcoes2
+        '
+        Me.ControlItemDePainelDeAcoes2.AutoSize = True
+        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
+        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
+        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
+        '
+        'ControlItemDePainelDeAcoes1
+        '
+        Me.ControlItemDePainelDeAcoes1.AutoSize = True
+        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
+        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
+        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'ControlPainel_Acoes
         '

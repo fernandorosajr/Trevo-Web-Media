@@ -1092,6 +1092,7 @@ Partial Class MainForm
         'Button15
         '
         Me.Button15.BackColor = System.Drawing.Color.White
+        Me.Button15.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_1
         resources.ApplyResources(Me.Button15, "Button15")
         Me.Button15.FlatAppearance.BorderSize = 0
         Me.Button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender

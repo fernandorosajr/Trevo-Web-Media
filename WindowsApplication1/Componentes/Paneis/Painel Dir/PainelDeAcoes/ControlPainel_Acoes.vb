@@ -1,5 +1,33 @@
 ﻿Imports System.Drawing
+
 Public Class ControlPainel_Acoes
+
+    ' Propriedadess do controle
+    Private _colorSelectAndHover As Color
+
+    Public Property ColorSelectAndHover As Color
+        Get
+            Return _colorSelectAndHover
+        End Get
+        Set(value As Color)
+            _colorSelectAndHover = value
+
+        End Set
+    End Property
+
+    Public Property Cor02 As Color
+
+    ' Eventos do controle
+    Private Sub ControlPainel_Acoes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '  MsgBox(ColorSelect.ToString)
+
+        _colorSelectAndHover = SystemColors.HotTrack
+        '  ColorSelect = SystemColors.HotTrack
+        '   BTNAddProcesso.BackColor = ColorSelect
+        '  MsgBox(ColorSelect.ToString)
+    End Sub
+
+
     Private Sub CHK_ShowPanelAllProcessosAcoes_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.CheckedChanged
         PanelAllProcessosAcoes.Visible = CHK_ShowPanelAllProcessosAcoes.CheckState
         Splitter4.Visible = PanelAllProcessosAcoes.Visible
@@ -9,25 +37,24 @@ Public Class ControlPainel_Acoes
         Else
             PanelAllAgrupamentos.Dock = DockStyle.Fill
 
-
         End If
     End Sub
 
     Private Sub TXTNomeDoGrupo_MouseHover(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.MouseHover
-        TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+        TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
 
     Private Sub TXTNomeDoGrupo_MouseLeave(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.MouseLeave
-        TXTNomeDoGrupo.Parent.Parent.BackColor = Color.DimGray
+        'TXTNomeDoGrupo.Parent.Parent.BackColor = Color.DimGray
         If TXTNomeDoGrupo.Focused Then
-            TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+            TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         Else
             TXTNomeDoGrupo.Parent.Parent.BackColor = Color.DimGray
         End If
     End Sub
 
     Private Sub TXTNomeDoGrupo_GotFocus(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.GotFocus
-        TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+        TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         TXTNomeDoGrupo.Cursor = Cursors.IBeam
         TXTNomeDoGrupo.SelectAll()
         'TXTNomeDoGrupo.SelectionStart = 0
@@ -42,7 +69,7 @@ Public Class ControlPainel_Acoes
 
     Private Sub TXTNomeDoGrupo_TextChanged(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.TextChanged
         If TXTNomeDoGrupo.Focus Then
-            TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+            TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         End If
 
     End Sub
@@ -59,19 +86,19 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub PanelFundoDoNomeDoGrupo_MouseHover(sender As Object, e As EventArgs) Handles PanelFundoDoNomeDoGrupo.MouseHover
-        TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+        TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
 
     Private Sub PanelFundoDoNomeDoGrupo_MouseLeave(sender As Object, e As EventArgs) Handles PanelFundoDoNomeDoGrupo.MouseLeave
-        Me.Parent.Parent.BackColor = Color.DimGray
+        'PanelFundoDoNomeDoGrupo.Parent.BackColor = Color.DimGray
     End Sub
 
 
     Private Sub BTNSelectedNewGroupType_MouseHover(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.MouseHover
-        BTNSelectedNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+        BTNSelectedNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
 
         If TXTNomeDoGrupo.Focused Then
-            TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+            TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         End If
 
     End Sub
@@ -79,26 +106,26 @@ Public Class ControlPainel_Acoes
     Private Sub BTNSelectedNewGroupType_MouseLeave(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.MouseLeave
         ' BTNSelectedNewGroupType.Parent.Parent.BackColor = Color.DimGray
         If BTNSelectedNewGroupType.Focused Or BTNSelectNewGroupType.Focused Then
-            BTNSelectedNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+            BTNSelectedNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
         Else
             BTNSelectedNewGroupType.Parent.Parent.BackColor = Color.DimGray
         End If
     End Sub
 
     Private Sub Panel_EnvolveBTNSelectedNewGroupType_MouseHover(sender As Object, e As EventArgs) Handles Panel_EnvolveBTNSelectedNewGroupType.MouseHover
-        BTNSelectNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+        BTNSelectNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
 
     Private Sub Panel_EnvolveBTNSelectedNewGroupType_MouseLeave(sender As Object, e As EventArgs) Handles Panel_EnvolveBTNSelectedNewGroupType.MouseLeave
         If BTNSelectedNewGroupType.Focused Or BTNSelectNewGroupType.Focused Then
-            BTNSelectedNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+            BTNSelectedNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
         Else
             BTNSelectedNewGroupType.Parent.Parent.BackColor = Color.DimGray
         End If
     End Sub
 
     Private Sub BTNSelectedNewGroupType_GotFocus(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.GotFocus
-        BTNSelectNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+        BTNSelectNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
 
     Private Sub BTNSelectedNewGroupType_LostFocus(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.LostFocus
@@ -107,16 +134,16 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNSelectNewGroupType_MouseHover(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.MouseHover
-        BTNSelectNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+        BTNSelectNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
 
         If TXTNomeDoGrupo.Focused Then
-            TXTNomeDoGrupo.Parent.Parent.BackColor = SystemColors.HotTrack
+            TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         End If
 
     End Sub
     Private Sub BTNSelectNewGroupType_MouseLeave(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.MouseLeave
         If BTNSelectedNewGroupType.Focused Or BTNSelectNewGroupType.Focused Then
-            BTNSelectNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+            BTNSelectNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
         Else
             BTNSelectNewGroupType.Parent.Parent.BackColor = Color.DimGray
         End If
@@ -125,7 +152,7 @@ Public Class ControlPainel_Acoes
 
 
     Private Sub BTNSelectNewGroupType_GotFocus(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.GotFocus
-        BTNSelectNewGroupType.Parent.Parent.BackColor = SystemColors.HotTrack
+        BTNSelectNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
 
     Private Sub BTNSelectNewGroupType_LostFocus(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.LostFocus
@@ -146,13 +173,13 @@ Public Class ControlPainel_Acoes
 
 
     Private Sub BTNExecutarProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.MouseHover
-        BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNExecutarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
     Private Sub BTNExecutarProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.MouseLeave
         If BTNExecutarProcessos.Focused Then
-            BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+            BTNExecutarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
         Else
             BTNExecutarProcessos.FlatAppearance.BorderColor = BTNExecutarProcessos.BackColor
         End If
@@ -160,7 +187,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNExecutarProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.GotFocus
-        BTNExecutarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNExecutarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
@@ -174,13 +201,13 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNPausarProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNPausarProcessos.MouseHover
-        BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNPausarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
     Private Sub BTNPausarProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNPausarProcessos.MouseLeave
         If BTNPausarProcessos.Focused Then
-            BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+            BTNPausarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
         Else
             BTNPausarProcessos.FlatAppearance.BorderColor = BTNPausarProcessos.BackColor
         End If
@@ -188,7 +215,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNPausarProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNPausarProcessos.GotFocus
-        BTNPausarProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNPausarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
@@ -202,25 +229,33 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNPararProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNPararProcessos.MouseHover
-        BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNPararProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
     Private Sub BTNPararProcessos_MouseLeave(sender As Object, e As EventArgs) Handles BTNPararProcessos.MouseLeave
         If BTNPararProcessos.Focused Then
-            BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+            BTNPararProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
         Else
             BTNPararProcessos.FlatAppearance.BorderColor = BTNPararProcessos.BackColor
         End If
     End Sub
 
     Private Sub BTNPararProcessos_GotFocus(sender As Object, e As EventArgs) Handles BTNPararProcessos.GotFocus
-        BTNPararProcessos.FlatAppearance.BorderColor = SystemColors.HotTrack
+        BTNPararProcessos.FlatAppearance.BorderColor = _colorSelectAndHover
 
     End Sub
 
     Private Sub BTNPararProcessos_LostFocus(sender As Object, e As EventArgs) Handles BTNPararProcessos.LostFocus
         BTNPararProcessos.FlatAppearance.BorderColor = BTNPararProcessos.BackColor
+
+    End Sub
+
+    Private Sub BTNExecutarProcessos_Click(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.Click
+
+    End Sub
+
+    Private Sub PanelFundoDoNomeDoGrupo_Paint(sender As Object, e As PaintEventArgs) Handles PanelFundoDoNomeDoGrupo.Paint
 
     End Sub
 End Class

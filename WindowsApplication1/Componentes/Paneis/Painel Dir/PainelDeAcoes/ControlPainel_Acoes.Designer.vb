@@ -247,13 +247,17 @@ Partial Class ControlPainel_Acoes
         Me.TVW_ListaDeProcessos.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVW_ListaDeProcessos.FullRowSelect = True
         Me.TVW_ListaDeProcessos.HideSelection = False
+        Me.TVW_ListaDeProcessos.ImageIndex = 0
+        Me.TVW_ListaDeProcessos.ImageList = Me.ImageList1
         Me.TVW_ListaDeProcessos.Location = New System.Drawing.Point(5, 5)
         Me.TVW_ListaDeProcessos.Name = "TVW_ListaDeProcessos"
         TreeNode1.Name = "Node3"
         TreeNode1.Text = "Local"
         TreeNode2.Name = "Node0"
         TreeNode2.Text = "nome.arq"
+        TreeNode3.ImageIndex = 4
         TreeNode3.Name = "Node1"
+        TreeNode3.SelectedImageKey = "novo arquivo 2.png"
         TreeNode3.Text = "Criar"
         TreeNode4.Name = "Node2"
         TreeNode4.Text = "Local: (Desktop) - C:/"
@@ -261,9 +265,9 @@ Partial Class ControlPainel_Acoes
         TreeNode5.Text = "Destino: (Documentos) - C:/"
         TreeNode6.Name = "Nó0"
         TreeNode6.Text = "Renome.jpg"
-        TreeNode7.ImageKey = "copypara.png"
+        TreeNode7.ImageKey = "NovoProcessoCopiar.png"
         TreeNode7.Name = "Node1"
-        TreeNode7.SelectedImageKey = "copypara.png"
+        TreeNode7.SelectedImageKey = "NovoProcessoCopiar.png"
         TreeNode7.Text = "Copiar"
         TreeNode8.Name = "Nó1"
         TreeNode8.Text = "Local: (Desktop) - C:/"
@@ -271,23 +275,29 @@ Partial Class ControlPainel_Acoes
         TreeNode9.Text = "Destino: (Music) - C:/"
         TreeNode10.Name = "Nó2"
         TreeNode10.Text = "Renome.mp3"
-        TreeNode11.ImageKey = "movepara.png"
+        TreeNode11.ImageKey = "NovoProcessoMover2.png"
         TreeNode11.Name = "Node4"
-        TreeNode11.SelectedImageKey = "movepara.png"
+        TreeNode11.SelectedImageKey = "NovoProcessoMover2.png"
         TreeNode11.Text = "Mover"
         TreeNode12.Name = "Node7"
         TreeNode12.Text = "Critério"
+        TreeNode13.ImageKey = "renomear.png"
         TreeNode13.Name = "Node6"
+        TreeNode13.SelectedImageKey = "renomear.png"
         TreeNode13.Text = "Renomear"
         TreeNode14.Name = "Nó3"
         TreeNode14.Text = "Lixeira"
+        TreeNode15.ImageKey = "excluir.png"
         TreeNode15.Name = "Node8"
+        TreeNode15.SelectedImageKey = "excluir.png"
         TreeNode15.Text = "Excluir"
         TreeNode16.Name = "Nó1"
         TreeNode16.Text = "Rótulo"
         TreeNode17.Name = "Nó2"
         TreeNode17.Text = "Local"
+        TreeNode18.ImageKey = "dvd.png"
         TreeNode18.Name = "Nó0"
+        TreeNode18.SelectedImageKey = "dvd.png"
         TreeNode18.Text = "Gravar"
         TreeNode19.ImageKey = "processo.ico"
         TreeNode19.Name = "Node1"
@@ -295,6 +305,7 @@ Partial Class ControlPainel_Acoes
         TreeNode19.SelectedImageKey = "processo.ico"
         TreeNode19.Text = "Processo 01"
         Me.TVW_ListaDeProcessos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode19})
+        Me.TVW_ListaDeProcessos.SelectedImageIndex = 0
         Me.TVW_ListaDeProcessos.ShowLines = False
         Me.TVW_ListaDeProcessos.ShowNodeToolTips = True
         Me.TVW_ListaDeProcessos.Size = New System.Drawing.Size(330, 144)
@@ -1360,9 +1371,14 @@ Partial Class ControlPainel_Acoes
         '
         'ImageList1
         '
-        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "NovoProcessoMover2.png")
+        Me.ImageList1.Images.SetKeyName(1, "NovoProcessoCopiar.png")
+        Me.ImageList1.Images.SetKeyName(2, "dvd.png")
+        Me.ImageList1.Images.SetKeyName(3, "excluir.png")
+        Me.ImageList1.Images.SetKeyName(4, "novo arquivo 2.png")
+        Me.ImageList1.Images.SetKeyName(5, "renomear.png")
         '
         'ControlPainel_Acoes
         '

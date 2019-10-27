@@ -873,6 +873,36 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property NovoProcessoCopiar() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NovoProcessoCopiar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NovoProcessoMover() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NovoProcessoMover", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property NovoProcessoMover2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("NovoProcessoMover2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Página_2_r2_c2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Página 2_r2_c2", resourceCulture)

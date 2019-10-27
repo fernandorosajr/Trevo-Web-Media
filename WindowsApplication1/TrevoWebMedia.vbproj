@@ -646,6 +646,9 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\NovoProcessoMover2.png" />
+    <None Include="Resources\NovoProcessoCopiar.png" />
+    <None Include="Resources\NovoProcessoMover.png" />
     <None Include="Resources\novo arquivo 2.png" />
     <None Include="Resources\Nova pasta em agrupamentos.png" />
     <None Include="Resources\pasta-Aberta.png" />

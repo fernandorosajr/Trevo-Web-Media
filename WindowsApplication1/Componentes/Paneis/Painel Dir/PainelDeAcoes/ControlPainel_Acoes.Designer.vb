@@ -55,7 +55,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
         Me.Panel_NovoProcessoGravar = New System.Windows.Forms.Panel()
-        Me.Button43 = New System.Windows.Forms.Button()
+        Me.BTN_NovoProcessoGravar = New System.Windows.Forms.Button()
         Me.Panel96 = New System.Windows.Forms.Panel()
         Me.BTN_NovoProcessoExcluir = New System.Windows.Forms.Button()
         Me.Panel97 = New System.Windows.Forms.Panel()
@@ -348,7 +348,6 @@ Partial Class ControlPainel_Acoes
         '
         'Panel36
         '
-        Me.Panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel36.Controls.Add(Me.Panel37)
         Me.Panel36.Controls.Add(Me.Panel_NovoProcessoGravar)
         Me.Panel36.Controls.Add(Me.Panel96)
@@ -359,6 +358,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel36.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
+        Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
         Me.Panel36.Size = New System.Drawing.Size(330, 25)
         Me.Panel36.TabIndex = 0
         '
@@ -366,7 +366,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel37.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(315, 0)
+        Me.Panel37.Location = New System.Drawing.Point(317, 1)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(13, 23)
         Me.Panel37.TabIndex = 114
@@ -389,39 +389,39 @@ Partial Class ControlPainel_Acoes
         '
         'Panel_NovoProcessoGravar
         '
-        Me.Panel_NovoProcessoGravar.Controls.Add(Me.Button43)
+        Me.Panel_NovoProcessoGravar.Controls.Add(Me.BTN_NovoProcessoGravar)
         Me.Panel_NovoProcessoGravar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel_NovoProcessoGravar.Location = New System.Drawing.Point(150, 0)
+        Me.Panel_NovoProcessoGravar.Location = New System.Drawing.Point(115, 1)
         Me.Panel_NovoProcessoGravar.Name = "Panel_NovoProcessoGravar"
-        Me.Panel_NovoProcessoGravar.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel_NovoProcessoGravar.Size = New System.Drawing.Size(30, 23)
+        Me.Panel_NovoProcessoGravar.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel_NovoProcessoGravar.Size = New System.Drawing.Size(23, 23)
         Me.Panel_NovoProcessoGravar.TabIndex = 112
         '
-        'Button43
+        'BTN_NovoProcessoGravar
         '
-        Me.Button43.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button43.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.dvd
-        Me.Button43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button43.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button43.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button43.FlatAppearance.BorderSize = 0
-        Me.Button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button43.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button43.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button43.Location = New System.Drawing.Point(1, 3)
-        Me.Button43.Name = "Button43"
-        Me.Button43.Size = New System.Drawing.Size(28, 17)
-        Me.Button43.TabIndex = 29
-        Me.Button43.UseVisualStyleBackColor = False
+        Me.BTN_NovoProcessoGravar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_NovoProcessoGravar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.dvd
+        Me.BTN_NovoProcessoGravar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_NovoProcessoGravar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTN_NovoProcessoGravar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTN_NovoProcessoGravar.FlatAppearance.BorderSize = 0
+        Me.BTN_NovoProcessoGravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NovoProcessoGravar.ForeColor = System.Drawing.Color.Gainsboro
+        Me.BTN_NovoProcessoGravar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_NovoProcessoGravar.Location = New System.Drawing.Point(1, 1)
+        Me.BTN_NovoProcessoGravar.Name = "BTN_NovoProcessoGravar"
+        Me.BTN_NovoProcessoGravar.Size = New System.Drawing.Size(21, 21)
+        Me.BTN_NovoProcessoGravar.TabIndex = 29
+        Me.BTN_NovoProcessoGravar.UseVisualStyleBackColor = False
         '
         'Panel96
         '
         Me.Panel96.Controls.Add(Me.BTN_NovoProcessoExcluir)
         Me.Panel96.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel96.Location = New System.Drawing.Point(120, 0)
+        Me.Panel96.Location = New System.Drawing.Point(92, 1)
         Me.Panel96.Name = "Panel96"
-        Me.Panel96.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel96.Size = New System.Drawing.Size(30, 23)
+        Me.Panel96.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel96.Size = New System.Drawing.Size(23, 23)
         Me.Panel96.TabIndex = 111
         '
         'BTN_NovoProcessoExcluir
@@ -435,9 +435,9 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NovoProcessoExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_NovoProcessoExcluir.ForeColor = System.Drawing.Color.Gainsboro
         Me.BTN_NovoProcessoExcluir.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoExcluir.Location = New System.Drawing.Point(1, 3)
+        Me.BTN_NovoProcessoExcluir.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NovoProcessoExcluir.Name = "BTN_NovoProcessoExcluir"
-        Me.BTN_NovoProcessoExcluir.Size = New System.Drawing.Size(28, 17)
+        Me.BTN_NovoProcessoExcluir.Size = New System.Drawing.Size(21, 21)
         Me.BTN_NovoProcessoExcluir.TabIndex = 28
         Me.BTN_NovoProcessoExcluir.UseVisualStyleBackColor = False
         '
@@ -445,10 +445,10 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel97.Controls.Add(Me.BTN_NovoProcessoCopiar)
         Me.Panel97.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel97.Location = New System.Drawing.Point(90, 0)
+        Me.Panel97.Location = New System.Drawing.Point(69, 1)
         Me.Panel97.Name = "Panel97"
-        Me.Panel97.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel97.Size = New System.Drawing.Size(30, 23)
+        Me.Panel97.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel97.Size = New System.Drawing.Size(23, 23)
         Me.Panel97.TabIndex = 110
         '
         'BTN_NovoProcessoCopiar
@@ -462,9 +462,9 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NovoProcessoCopiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_NovoProcessoCopiar.ForeColor = System.Drawing.Color.Gainsboro
         Me.BTN_NovoProcessoCopiar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoCopiar.Location = New System.Drawing.Point(1, 3)
+        Me.BTN_NovoProcessoCopiar.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NovoProcessoCopiar.Name = "BTN_NovoProcessoCopiar"
-        Me.BTN_NovoProcessoCopiar.Size = New System.Drawing.Size(28, 17)
+        Me.BTN_NovoProcessoCopiar.Size = New System.Drawing.Size(21, 21)
         Me.BTN_NovoProcessoCopiar.TabIndex = 27
         Me.BTN_NovoProcessoCopiar.UseVisualStyleBackColor = False
         '
@@ -472,10 +472,10 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel101.Controls.Add(Me.BTN_NovoProcessoMover)
         Me.Panel101.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel101.Location = New System.Drawing.Point(60, 0)
+        Me.Panel101.Location = New System.Drawing.Point(46, 1)
         Me.Panel101.Name = "Panel101"
-        Me.Panel101.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel101.Size = New System.Drawing.Size(30, 23)
+        Me.Panel101.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel101.Size = New System.Drawing.Size(23, 23)
         Me.Panel101.TabIndex = 109
         '
         'BTN_NovoProcessoMover
@@ -489,20 +489,21 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NovoProcessoMover.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_NovoProcessoMover.ForeColor = System.Drawing.Color.Gainsboro
         Me.BTN_NovoProcessoMover.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoMover.Location = New System.Drawing.Point(1, 3)
+        Me.BTN_NovoProcessoMover.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NovoProcessoMover.Name = "BTN_NovoProcessoMover"
-        Me.BTN_NovoProcessoMover.Size = New System.Drawing.Size(28, 17)
+        Me.BTN_NovoProcessoMover.Size = New System.Drawing.Size(21, 21)
         Me.BTN_NovoProcessoMover.TabIndex = 26
         Me.BTN_NovoProcessoMover.UseVisualStyleBackColor = False
         '
         'Panel102
         '
+        Me.Panel102.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel102.Controls.Add(Me.BTN_NovoProcessoRenomear)
         Me.Panel102.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel102.Location = New System.Drawing.Point(30, 0)
+        Me.Panel102.Location = New System.Drawing.Point(23, 1)
         Me.Panel102.Name = "Panel102"
-        Me.Panel102.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel102.Size = New System.Drawing.Size(30, 23)
+        Me.Panel102.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel102.Size = New System.Drawing.Size(23, 23)
         Me.Panel102.TabIndex = 108
         '
         'BTN_NovoProcessoRenomear
@@ -516,20 +517,21 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NovoProcessoRenomear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_NovoProcessoRenomear.ForeColor = System.Drawing.Color.Gainsboro
         Me.BTN_NovoProcessoRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoRenomear.Location = New System.Drawing.Point(1, 3)
+        Me.BTN_NovoProcessoRenomear.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NovoProcessoRenomear.Name = "BTN_NovoProcessoRenomear"
-        Me.BTN_NovoProcessoRenomear.Size = New System.Drawing.Size(28, 17)
+        Me.BTN_NovoProcessoRenomear.Size = New System.Drawing.Size(21, 21)
         Me.BTN_NovoProcessoRenomear.TabIndex = 25
         Me.BTN_NovoProcessoRenomear.UseVisualStyleBackColor = False
         '
         'Panel94
         '
+        Me.Panel94.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel94.Controls.Add(Me.BTN_NovoProcessoCriar)
         Me.Panel94.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel94.Location = New System.Drawing.Point(0, 0)
+        Me.Panel94.Location = New System.Drawing.Point(0, 1)
         Me.Panel94.Name = "Panel94"
-        Me.Panel94.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel94.Size = New System.Drawing.Size(30, 23)
+        Me.Panel94.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel94.Size = New System.Drawing.Size(23, 23)
         Me.Panel94.TabIndex = 113
         '
         'BTN_NovoProcessoCriar
@@ -543,9 +545,9 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NovoProcessoCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTN_NovoProcessoCriar.ForeColor = System.Drawing.Color.Gainsboro
         Me.BTN_NovoProcessoCriar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoCriar.Location = New System.Drawing.Point(1, 3)
+        Me.BTN_NovoProcessoCriar.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NovoProcessoCriar.Name = "BTN_NovoProcessoCriar"
-        Me.BTN_NovoProcessoCriar.Size = New System.Drawing.Size(28, 17)
+        Me.BTN_NovoProcessoCriar.Size = New System.Drawing.Size(21, 21)
         Me.BTN_NovoProcessoCriar.TabIndex = 30
         Me.BTN_NovoProcessoCriar.UseVisualStyleBackColor = False
         '
@@ -1522,7 +1524,7 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents BTN_FechaPanelOpcoesDeProcessos As Button
     Friend WithEvents Panel94 As Panel
     Friend WithEvents Panel_NovoProcessoGravar As Panel
-    Friend WithEvents Button43 As Button
+    Friend WithEvents BTN_NovoProcessoGravar As Button
     Friend WithEvents Panel96 As Panel
     Friend WithEvents BTN_NovoProcessoExcluir As Button
     Friend WithEvents Panel97 As Panel

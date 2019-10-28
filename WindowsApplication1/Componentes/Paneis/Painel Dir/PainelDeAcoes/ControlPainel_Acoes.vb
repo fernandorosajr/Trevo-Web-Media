@@ -2,7 +2,7 @@
 
 Public Class ControlPainel_Acoes
 
-    ' Propriedadess do controle
+    ' Propriedades do controle
     Private _colorSelectAndHover As Color
 
     Public Property ColorSelectAndHover As Color
@@ -45,7 +45,6 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub TXTNomeDoGrupo_MouseLeave(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.MouseLeave
-        'TXTNomeDoGrupo.Parent.Parent.BackColor = Color.DimGray
         If TXTNomeDoGrupo.Focused Then
             TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         Else
@@ -251,11 +250,85 @@ Public Class ControlPainel_Acoes
 
     End Sub
 
-    Private Sub BTNExecutarProcessos_Click(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.Click
+    Private Sub BTN_NovoProcessoCriar_MouseHover(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCriar.MouseHover
+        BTN_NovoProcessoCriar.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoCriar_MouseLeave(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCriar.MouseLeave
+        If BTN_NovoProcessoCriar.Focused Then
+            BTN_NovoProcessoCriar.Parent.BackColor = _colorSelectAndHover
+        Else
+            BTN_NovoProcessoCriar.Parent.BackColor = BTN_NovoProcessoCriar.BackColor
+        End If
+    End Sub
+
+    Private Sub BTN_NovoProcessoCriar_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCriar.GotFocus
+        BTN_NovoProcessoCriar.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoCriar_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCriar.LostFocus
+        BTN_NovoProcessoCriar.Parent.BackColor = BTN_NovoProcessoCriar.BackColor
 
     End Sub
 
-    Private Sub PanelFundoDoNomeDoGrupo_Paint(sender As Object, e As PaintEventArgs) Handles PanelFundoDoNomeDoGrupo.Paint
+    Private Sub BTN_NovoProcessoRenomear_Click(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.Click
+
+    End Sub
+
+    Private Sub BTN_NovoProcessoRenomear_MouseHover(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.MouseHover
+        BTN_NovoProcessoRenomear.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoRenomear_MouseLeave(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.MouseLeave
+        If BTN_NovoProcessoRenomear.Focused Then
+            BTN_NovoProcessoRenomear.Parent.BackColor = _colorSelectAndHover
+        Else
+            BTN_NovoProcessoRenomear.Parent.BackColor = BTN_NovoProcessoRenomear.BackColor
+        End If
+    End Sub
+
+    Private Sub BTN_NovoProcessoRenomear_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.GotFocus
+        BTN_NovoProcessoRenomear.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoRenomear_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.LostFocus
+        BTN_NovoProcessoRenomear.Parent.BackColor = BTN_NovoProcessoRenomear.BackColor
+    End Sub
+
+    Private Sub BTN_NovoProcessoMover_Click(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.Click
+
+    End Sub
+
+    Private Sub BTN_NovoProcessoMover_MouseHover(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.MouseHover
+        BTN_NovoProcessoMover.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoMover_MouseLeave(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.MouseLeave
+        If BTN_NovoProcessoMover.Focused Then
+            BTN_NovoProcessoMover.Parent.BackColor = _colorSelectAndHover
+        Else
+            BTN_NovoProcessoMover.Parent.BackColor = BTN_NovoProcessoRenomear.BackColor
+        End If
+    End Sub
+
+    Private Sub BTN_NovoProcessoMover_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.GotFocus
+        BTN_NovoProcessoMover.Parent.BackColor = _colorSelectAndHover
+    End Sub
+
+    Private Sub BTN_NovoProcessoMover_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.LostFocus
+        BTN_NovoProcessoMover.Parent.BackColor = BTN_NovoProcessoMover.BackColor
+    End Sub
+
+    Private Sub BTN_NovoProcessoCopiar_Click(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCopiar.Click
+
+    End Sub
+
+    Private Sub BTN_NovoProcessoCopiar_MouseHover(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCopiar.MouseHover
+        Color_MouseHover(BTN_NovoProcessoCopiar.Parent)
+    End Sub
+
+    Public Sub Color_MouseHover(obj As Panel)
+        obj.BackColor = _colorSelectAndHover
 
     End Sub
 End Class

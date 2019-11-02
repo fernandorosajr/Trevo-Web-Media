@@ -22,6 +22,13 @@ Public Class ControlPainel_Acoes
         '  MsgBox(ColorSelect.ToString)
 
         _colorSelectAndHover = SystemColors.HotTrack
+
+        If CHK_ShowPanelAllProcessosAcoes.CheckState = 1 Then
+            CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = _colorSelectAndHover
+        Else
+            CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = CHK_ShowPanelAllProcessosAcoes.BackColor
+
+        End If
         '  ColorSelect = SystemColors.HotTrack
         '   BTNAddProcesso.BackColor = ColorSelect
         '  MsgBox(ColorSelect.ToString)
@@ -38,6 +45,13 @@ Public Class ControlPainel_Acoes
             PanelAllAgrupamentos.Dock = DockStyle.Fill
 
         End If
+
+        'If CHK_ShowPanelAllProcessosAcoes.CheckState = True Then
+        '    CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = _colorSelectAndHover
+        'Else
+        '    CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = CHK_ShowPanelAllProcessosAcoes.BackColor
+
+        'End If
     End Sub
 
     Private Sub TXTNomeDoGrupo_MouseHover(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.MouseHover
@@ -658,4 +672,76 @@ Public Class ControlPainel_Acoes
         Color_LostFocusForColor(Panel_SelectColorDarkGreen)
 
     End Sub
+
+    Private Sub CHK_ShowPanelAllProcessosAcoes_MouseHover(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.MouseHover
+        Color_MouseHover(CHK_ShowPanelAllProcessosAcoes)
+
+    End Sub
+
+    Private Sub CHK_ShowPanelAllProcessosAcoes_MouseLeave(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.MouseLeave
+        If CHK_ShowPanelAllProcessosAcoes.CheckState = False Then
+            Color_MouseLeave(CHK_ShowPanelAllProcessosAcoes)
+        End If
+    End Sub
+
+    Private Sub CHK_ShowPanelAllProcessosAcoes_GotFocus(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.GotFocus
+        Color_GotFocus(CHK_ShowPanelAllProcessosAcoes)
+
+    End Sub
+
+    Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
+
+    End Sub
+
+    Private Sub BTN_NewFolder_GotFocus(sender As Object, e As EventArgs) Handles BTN_NewFolder.GotFocus
+        Color_GotFocus(BTN_NewFolder)
+
+    End Sub
+
+    Private Sub BTN_NewFolder_LostFocus(sender As Object, e As EventArgs) Handles BTN_NewFolder.LostFocus
+        Color_LostFocus(BTN_NewFolder)
+
+    End Sub
+
+    Private Sub BTN_NewFolder_MouseHover(sender As Object, e As EventArgs) Handles BTN_NewFolder.MouseHover
+        Color_MouseHover(BTN_NewFolder)
+
+    End Sub
+
+    Private Sub BTN_NewFolder_MouseLeave(sender As Object, e As EventArgs) Handles BTN_NewFolder.MouseLeave
+        Color_MouseLeave(BTN_NewFolder)
+
+    End Sub
+
+    Private Sub BTN_TimeParaAgrupamentos_Click(sender As Object, e As EventArgs) Handles BTN_TimeParaAgrupamentos.Click
+
+    End Sub
+
+    Private Sub BTN_TimeParaAgrupamentos_GotFocus(sender As Object, e As EventArgs) Handles BTN_TimeParaAgrupamentos.GotFocus
+        Color_GotFocus(BTN_TimeParaAgrupamentos)
+
+    End Sub
+
+    Private Sub BTN_TimeParaAgrupamentos_LostFocus(sender As Object, e As EventArgs) Handles BTN_TimeParaAgrupamentos.LostFocus
+        Color_LostFocus(BTN_TimeParaAgrupamentos)
+
+    End Sub
+
+    Private Sub BTN_TimeParaAgrupamentos_MouseHover(sender As Object, e As EventArgs) Handles BTN_TimeParaAgrupamentos.MouseHover
+        Color_MouseHover(BTN_TimeParaAgrupamentos)
+
+    End Sub
+
+    Private Sub BTN_TimeParaAgrupamentos_MouseLeave(sender As Object, e As EventArgs) Handles BTN_TimeParaAgrupamentos.MouseLeave
+        Color_MouseLeave(BTN_TimeParaAgrupamentos)
+
+    End Sub
+
+    Private Sub CHK_ShowPanelAllProcessosAcoes_LostFocus(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.LostFocus
+        If CHK_ShowPanelAllProcessosAcoes.Checked = False Then
+            Color_LostFocus(CHK_ShowPanelAllProcessosAcoes)
+        End If
+
+    End Sub
+
 End Class

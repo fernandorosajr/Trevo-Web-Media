@@ -261,7 +261,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoCriar_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCriar.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoCriar)
+        Color_GotFocus(BTN_NovoProcessoCriar)
 
     End Sub
 
@@ -281,7 +281,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoRenomear_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoRenomear.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoRenomear)
+        Color_GotFocus(BTN_NovoProcessoRenomear)
 
     End Sub
 
@@ -300,7 +300,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoMover_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoMover)
+        Color_GotFocus(BTN_NovoProcessoMover)
     End Sub
 
     Private Sub BTN_NovoProcessoMover_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoMover.LostFocus
@@ -317,7 +317,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoCopiar_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCopiar.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoCopiar)
+        Color_GotFocus(BTN_NovoProcessoCopiar)
     End Sub
 
     Private Sub BTN_NovoProcessoCopiar_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoCopiar.LostFocus
@@ -338,7 +338,7 @@ Public Class ControlPainel_Acoes
         End If
     End Sub
 
-    Private Sub Color_GotoFocus(obj As Object)
+    Private Sub Color_GotFocus(obj As Object)
         obj.Parent.BackColor = _colorSelectAndHover
     End Sub
 
@@ -346,6 +346,9 @@ Public Class ControlPainel_Acoes
         obj.Parent.BackColor = obj.BackColor
     End Sub
 
+    Private Sub Color_LostFocusForColor(obj As Object)
+        obj.Parent.BackColor = obj.Parent.Parent.BackColor
+    End Sub
     Private Sub BTN_NovoProcessoExcluir_Click(sender As Object, e As EventArgs) Handles BTN_NovoProcessoExcluir.Click
 
     End Sub
@@ -361,7 +364,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoExcluir_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoExcluir.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoExcluir)
+        Color_GotFocus(BTN_NovoProcessoExcluir)
 
     End Sub
 
@@ -379,11 +382,280 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTN_NovoProcessoGravar_GotFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoGravar.GotFocus
-        Color_GotoFocus(BTN_NovoProcessoGravar)
+        Color_GotFocus(BTN_NovoProcessoGravar)
     End Sub
 
     Private Sub BTN_NovoProcessoGravar_LostFocus(sender As Object, e As EventArgs) Handles BTN_NovoProcessoGravar.LostFocus
         Color_LostFocus(BTN_NovoProcessoGravar)
     End Sub
 
+    Private Sub LBLSelectColorNone_Click(sender As Object, e As EventArgs) Handles LBLSelectColorNone.Click
+
+    End Sub
+
+    Private Sub LBLSelectColorNone_MouseHover(sender As Object, e As EventArgs) Handles LBLSelectColorNone.MouseHover
+        Color_MouseHover(LBLSelectColorNone)
+
+    End Sub
+
+    Private Sub LBLSelectColorNone_MouseLeave(sender As Object, e As EventArgs) Handles LBLSelectColorNone.MouseLeave
+        Color_MouseLeave(LBLSelectColorNone)
+
+    End Sub
+
+    Private Sub LBLSelectColorNone_GotFocus(sender As Object, e As EventArgs) Handles LBLSelectColorNone.GotFocus
+        Color_LostFocus(LBLSelectColorNone)
+
+    End Sub
+
+    Private Sub LBLSelectColorNone_LostFocus(sender As Object, e As EventArgs) Handles LBLSelectColorNone.LostFocus
+        Color_LostFocus(LBLSelectColorNone)
+
+    End Sub
+
+    Private Sub Panel_SelectColorWrite_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorWhite.MouseHover
+        Color_MouseHover(Panel_SelectColorWhite)
+    End Sub
+
+    Private Sub Panel_SelectColorWrite_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorWhite.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorWhite)
+    End Sub
+
+    Private Sub Panel_SelectColorWrite_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorWhite.GotFocus
+        Color_GotFocus(Panel_SelectColorWhite)
+    End Sub
+
+    Private Sub Panel_SelectColorWrite_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorWhite.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorWhite)
+    End Sub
+
+    Private Sub Panel_SelectColorGray_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorGray.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorGray_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorGray.MouseHover
+        Color_MouseHover(Panel_SelectColorGray)
+    End Sub
+
+    Private Sub Panel_SelectColorGray_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorGray.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorGray)
+    End Sub
+
+    Private Sub Panel_SelectColorGray_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorGray.GotFocus
+        Color_GotFocus(Panel_SelectColorGray)
+    End Sub
+
+    Private Sub Panel_SelectColorGray_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorGray.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorGray)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlack_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorBlack.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlack_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorBlack.MouseHover
+        Color_MouseHover(Panel_SelectColorBlack)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlack_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorBlack.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorBlack)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlack_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorBlack.GotFocus
+        Color_GotFocus(Panel_SelectColorBlack)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlack_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorBlack.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorBlack)
+
+    End Sub
+
+    Private Sub Panel_SelectColorYellow_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorYellow.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorYellow_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorYellow.GotFocus
+        Color_GotFocus(Panel_SelectColorYellow)
+
+    End Sub
+
+    Private Sub Panel_SelectColorYellow_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorYellow.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorYellow)
+
+    End Sub
+
+    Private Sub Panel_SelectColorYellow_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorYellow.MouseHover
+        Color_MouseHover(Panel_SelectColorYellow)
+
+    End Sub
+
+    Private Sub Panel_SelectColorYellow_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorYellow.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorYellow)
+
+    End Sub
+
+    Private Sub Panel_SelectColorOrange_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorOrange.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorOrange_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorOrange.GotFocus
+        Color_GotFocus(Panel_SelectColorOrange)
+    End Sub
+
+    Private Sub Panel_SelectColorOrange_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorOrange.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorOrange)
+
+    End Sub
+
+    Private Sub Panel_SelectColorOrange_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorOrange.MouseHover
+        Color_MouseHover(Panel_SelectColorOrange)
+
+    End Sub
+
+    Private Sub Panel_SelectColorOrange_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorOrange.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorOrange)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRed_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorRed.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorRed_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorRed.MouseHover
+        Color_MouseHover(Panel_SelectColorRed)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRed_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorRed.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorRed)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRed_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorRed.GotFocus
+        Color_GotFocus(Panel_SelectColorRed)
+    End Sub
+
+    Private Sub Panel_SelectColorRed_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorRed.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorRed)
+
+    End Sub
+
+    Private Sub Panel_SelectColorPurple_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorPurple.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorPurple_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorPurple.MouseHover
+        Color_MouseHover(Panel_SelectColorPurple)
+
+    End Sub
+
+    Private Sub Panel_SelectColorPurple_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorPurple.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorPurple)
+
+    End Sub
+
+    Private Sub Panel_SelectColorPurple_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorPurple.GotFocus
+        Color_GotFocus(Panel_SelectColorPurple)
+    End Sub
+
+    Private Sub Panel_SelectColorPurple_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorPurple.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorPurple)
+
+    End Sub
+
+    Private Sub Panel_SelectColorViolet_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorViolet.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorViolet_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorViolet.MouseHover
+        Color_MouseHover(Panel_SelectColorViolet)
+
+    End Sub
+
+    Private Sub Panel_SelectColorViolet_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorViolet.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorViolet)
+
+    End Sub
+
+    Private Sub Panel_SelectColorViolet_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorViolet.GotFocus
+        Color_LostFocus(Panel_SelectColorViolet)
+
+    End Sub
+
+    Private Sub Panel_SelectColorViolet_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorViolet.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorViolet)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRoyalBlue_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorRoyalBlue.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorRoyalBlue_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorRoyalBlue.MouseHover
+        Color_MouseHover(Panel_SelectColorRoyalBlue)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRoyalBlue_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorRoyalBlue.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorRoyalBlue)
+    End Sub
+
+    Private Sub Panel_SelectColorRoyalBlue_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorRoyalBlue.GotFocus
+        Color_GotFocus(Panel_SelectColorRoyalBlue)
+
+    End Sub
+
+    Private Sub Panel_SelectColorRoyalBlue_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorRoyalBlue.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorRoyalBlue)
+    End Sub
+
+    Private Sub Panel_SelectColorBlue_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorBlue.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlue_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorBlue.MouseHover
+        Color_MouseHover(Panel_SelectColorBlue)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlue_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorBlue.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorBlue)
+    End Sub
+
+    Private Sub Panel_SelectColorBlue_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorBlue.GotFocus
+        Color_GotFocus(Panel_SelectColorBlue)
+
+    End Sub
+
+    Private Sub Panel_SelectColorBlue_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorBlue.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorBlue)
+    End Sub
+
+    Private Sub Panel_SelectColorDarkGreen_Paint(sender As Object, e As PaintEventArgs) Handles Panel_SelectColorDarkGreen.Paint
+
+    End Sub
+
+    Private Sub Panel_SelectColorDarkGreen_MouseHover(sender As Object, e As EventArgs) Handles Panel_SelectColorDarkGreen.MouseHover
+        Color_MouseHover(Panel_SelectColorDarkGreen)
+
+    End Sub
+
+    Private Sub Panel_SelectColorDarkGreen_MouseLeave(sender As Object, e As EventArgs) Handles Panel_SelectColorDarkGreen.MouseLeave
+        Color_LostFocusForColor(Panel_SelectColorDarkGreen)
+
+    End Sub
+
+    Private Sub Panel_SelectColorDarkGreen_GotFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorDarkGreen.GotFocus
+        Color_GotFocus(Panel_SelectColorDarkGreen)
+
+    End Sub
+
+    Private Sub Panel_SelectColorDarkGreen_LostFocus(sender As Object, e As EventArgs) Handles Panel_SelectColorDarkGreen.LostFocus
+        Color_LostFocusForColor(Panel_SelectColorDarkGreen)
+
+    End Sub
 End Class

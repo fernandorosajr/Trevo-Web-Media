@@ -72,11 +72,11 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelTVAgrupamentos = New System.Windows.Forms.Panel()
         Me.Panel_ItensAGrupados = New System.Windows.Forms.Panel()
-        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.PanelEditorPropriedadesDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelCorDoGrupo = New System.Windows.Forms.Panel()
+        Me.Panel109 = New System.Windows.Forms.Panel()
+        Me.Panel110 = New System.Windows.Forms.Panel()
+        Me.Panel_SelectColorRoyalBlue = New System.Windows.Forms.Panel()
         Me.CHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.CheckBox()
         Me.BTN_NewFolder = New System.Windows.Forms.Button()
         Me.BTN_TimeParaAgrupamentos = New System.Windows.Forms.Button()
@@ -86,9 +86,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel106 = New System.Windows.Forms.Panel()
         Me.Panel107 = New System.Windows.Forms.Panel()
         Me.Panel_SelectColorDarkGreen = New System.Windows.Forms.Panel()
-        Me.Panel109 = New System.Windows.Forms.Panel()
-        Me.Panel110 = New System.Windows.Forms.Panel()
-        Me.Panel_SelectColorRoyalBlue = New System.Windows.Forms.Panel()
         Me.Panel112 = New System.Windows.Forms.Panel()
         Me.Panel113 = New System.Windows.Forms.Panel()
         Me.Panel_SelectColorViolet = New System.Windows.Forms.Panel()
@@ -100,7 +97,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel_SelectColorRed = New System.Windows.Forms.Panel()
         Me.Panel211 = New System.Windows.Forms.Panel()
         Me.Panel215 = New System.Windows.Forms.Panel()
-        Me.Panel_SelectColorOrangeRed = New System.Windows.Forms.Panel()
+        Me.Panel_SelectColorOrange = New System.Windows.Forms.Panel()
         Me.Panel217 = New System.Windows.Forms.Panel()
         Me.Panel218 = New System.Windows.Forms.Panel()
         Me.Panel_SelectColorYellow = New System.Windows.Forms.Panel()
@@ -109,10 +106,10 @@ Partial Class ControlPainel_Acoes
         Me.Panel_SelectColorBlack = New System.Windows.Forms.Panel()
         Me.Panel223 = New System.Windows.Forms.Panel()
         Me.Panel232 = New System.Windows.Forms.Panel()
-        Me.Panel237 = New System.Windows.Forms.Panel()
+        Me.Panel_SelectColorGray = New System.Windows.Forms.Panel()
         Me.Panel238 = New System.Windows.Forms.Panel()
         Me.Panel239 = New System.Windows.Forms.Panel()
-        Me.Panel_SelectColorGray = New System.Windows.Forms.Panel()
+        Me.Panel_SelectColorWhite = New System.Windows.Forms.Panel()
         Me.Panel242 = New System.Windows.Forms.Panel()
         Me.Panel243 = New System.Windows.Forms.Panel()
         Me.LBLSelectColorNone = New System.Windows.Forms.Label()
@@ -131,6 +128,9 @@ Partial Class ControlPainel_Acoes
         Me.BTNPararProcessos = New System.Windows.Forms.Button()
         Me.BTNPausarProcessos = New System.Windows.Forms.Button()
         Me.BTNExecutarProcessos = New System.Windows.Forms.Button()
+        Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PanelLBLAcoes = New System.Windows.Forms.Panel()
         Me.Panel247 = New System.Windows.Forms.Panel()
@@ -153,15 +153,14 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.SuspendLayout()
         Me.PanelEnvolveAgrupamentos.SuspendLayout()
         Me.PanelTVAgrupamentos.SuspendLayout()
-        Me.Panel_ItensAGrupados.SuspendLayout()
         Me.PanelEditorPropriedadesDoGrupo.SuspendLayout()
         Me.PanelCorDoGrupo.SuspendLayout()
+        Me.Panel109.SuspendLayout()
+        Me.Panel110.SuspendLayout()
         Me.Panel103.SuspendLayout()
         Me.Panel104.SuspendLayout()
         Me.Panel106.SuspendLayout()
         Me.Panel107.SuspendLayout()
-        Me.Panel109.SuspendLayout()
-        Me.Panel110.SuspendLayout()
         Me.Panel112.SuspendLayout()
         Me.Panel113.SuspendLayout()
         Me.Panel205.SuspendLayout()
@@ -619,44 +618,11 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados.AutoScroll = True
         Me.Panel_ItensAGrupados.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.Panel_ItensAGrupados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel_ItensAGrupados.Controls.Add(Me.ControlItemDePainelDeAcoes3)
-        Me.Panel_ItensAGrupados.Controls.Add(Me.ControlItemDePainelDeAcoes2)
-        Me.Panel_ItensAGrupados.Controls.Add(Me.ControlItemDePainelDeAcoes1)
         Me.Panel_ItensAGrupados.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_ItensAGrupados.Location = New System.Drawing.Point(5, 5)
         Me.Panel_ItensAGrupados.Name = "Panel_ItensAGrupados"
         Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(334, 184)
         Me.Panel_ItensAGrupados.TabIndex = 22
-        '
-        'ControlItemDePainelDeAcoes3
-        '
-        Me.ControlItemDePainelDeAcoes3.AutoSize = True
-        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
-        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
-        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
-        '
-        'ControlItemDePainelDeAcoes2
-        '
-        Me.ControlItemDePainelDeAcoes2.AutoSize = True
-        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
-        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
-        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
-        '
-        'ControlItemDePainelDeAcoes1
-        '
-        Me.ControlItemDePainelDeAcoes1.AutoSize = True
-        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
-        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
-        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
-        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
-        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
         'PanelEditorPropriedadesDoGrupo
         '
@@ -673,21 +639,21 @@ Partial Class ControlPainel_Acoes
         'PanelCorDoGrupo
         '
         Me.PanelCorDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelCorDoGrupo.Controls.Add(Me.CHK_ShowPanelAllProcessosAcoes)
-        Me.PanelCorDoGrupo.Controls.Add(Me.BTN_NewFolder)
-        Me.PanelCorDoGrupo.Controls.Add(Me.BTN_TimeParaAgrupamentos)
-        Me.PanelCorDoGrupo.Controls.Add(Me.Panel103)
-        Me.PanelCorDoGrupo.Controls.Add(Me.Panel106)
-        Me.PanelCorDoGrupo.Controls.Add(Me.Panel109)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel112)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel205)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel208)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel211)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel217)
-        Me.PanelCorDoGrupo.Controls.Add(Me.Panel220)
-        Me.PanelCorDoGrupo.Controls.Add(Me.Panel223)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel106)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel103)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel109)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel238)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel223)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel220)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel242)
+        Me.PanelCorDoGrupo.Controls.Add(Me.CHK_ShowPanelAllProcessosAcoes)
+        Me.PanelCorDoGrupo.Controls.Add(Me.BTN_NewFolder)
+        Me.PanelCorDoGrupo.Controls.Add(Me.BTN_TimeParaAgrupamentos)
         Me.PanelCorDoGrupo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelCorDoGrupo.Location = New System.Drawing.Point(0, 23)
         Me.PanelCorDoGrupo.Margin = New System.Windows.Forms.Padding(4)
@@ -695,6 +661,37 @@ Partial Class ControlPainel_Acoes
         Me.PanelCorDoGrupo.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
         Me.PanelCorDoGrupo.Size = New System.Drawing.Size(344, 21)
         Me.PanelCorDoGrupo.TabIndex = 95
+        '
+        'Panel109
+        '
+        Me.Panel109.Controls.Add(Me.Panel110)
+        Me.Panel109.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel109.Location = New System.Drawing.Point(66, 2)
+        Me.Panel109.Name = "Panel109"
+        Me.Panel109.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.Panel109.Size = New System.Drawing.Size(15, 19)
+        Me.Panel109.TabIndex = 110
+        '
+        'Panel110
+        '
+        Me.Panel110.BackColor = System.Drawing.Color.Transparent
+        Me.Panel110.Controls.Add(Me.Panel_SelectColorRoyalBlue)
+        Me.Panel110.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel110.Location = New System.Drawing.Point(1, 3)
+        Me.Panel110.Name = "Panel110"
+        Me.Panel110.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel110.Size = New System.Drawing.Size(13, 13)
+        Me.Panel110.TabIndex = 105
+        '
+        'Panel_SelectColorRoyalBlue
+        '
+        Me.Panel_SelectColorRoyalBlue.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel_SelectColorRoyalBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel_SelectColorRoyalBlue.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_SelectColorRoyalBlue.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_SelectColorRoyalBlue.Name = "Panel_SelectColorRoyalBlue"
+        Me.Panel_SelectColorRoyalBlue.Size = New System.Drawing.Size(11, 11)
+        Me.Panel_SelectColorRoyalBlue.TabIndex = 16
         '
         'CHK_ShowPanelAllProcessosAcoes
         '
@@ -751,7 +748,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel103.Controls.Add(Me.Panel104)
         Me.Panel103.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel103.Location = New System.Drawing.Point(171, 2)
+        Me.Panel103.Location = New System.Drawing.Point(81, 2)
         Me.Panel103.Name = "Panel103"
         Me.Panel103.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel103.Size = New System.Drawing.Size(15, 19)
@@ -782,7 +779,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel106.Controls.Add(Me.Panel107)
         Me.Panel106.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel106.Location = New System.Drawing.Point(156, 2)
+        Me.Panel106.Location = New System.Drawing.Point(96, 2)
         Me.Panel106.Name = "Panel106"
         Me.Panel106.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel106.Size = New System.Drawing.Size(15, 19)
@@ -809,42 +806,11 @@ Partial Class ControlPainel_Acoes
         Me.Panel_SelectColorDarkGreen.Size = New System.Drawing.Size(11, 11)
         Me.Panel_SelectColorDarkGreen.TabIndex = 17
         '
-        'Panel109
-        '
-        Me.Panel109.Controls.Add(Me.Panel110)
-        Me.Panel109.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel109.Location = New System.Drawing.Point(141, 2)
-        Me.Panel109.Name = "Panel109"
-        Me.Panel109.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
-        Me.Panel109.Size = New System.Drawing.Size(15, 19)
-        Me.Panel109.TabIndex = 110
-        '
-        'Panel110
-        '
-        Me.Panel110.BackColor = System.Drawing.Color.Transparent
-        Me.Panel110.Controls.Add(Me.Panel_SelectColorRoyalBlue)
-        Me.Panel110.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel110.Location = New System.Drawing.Point(1, 3)
-        Me.Panel110.Name = "Panel110"
-        Me.Panel110.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel110.Size = New System.Drawing.Size(13, 13)
-        Me.Panel110.TabIndex = 105
-        '
-        'Panel_SelectColorRoyalBlue
-        '
-        Me.Panel_SelectColorRoyalBlue.BackColor = System.Drawing.Color.RoyalBlue
-        Me.Panel_SelectColorRoyalBlue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel_SelectColorRoyalBlue.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_SelectColorRoyalBlue.Location = New System.Drawing.Point(1, 1)
-        Me.Panel_SelectColorRoyalBlue.Name = "Panel_SelectColorRoyalBlue"
-        Me.Panel_SelectColorRoyalBlue.Size = New System.Drawing.Size(11, 11)
-        Me.Panel_SelectColorRoyalBlue.TabIndex = 16
-        '
         'Panel112
         '
         Me.Panel112.Controls.Add(Me.Panel113)
         Me.Panel112.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel112.Location = New System.Drawing.Point(126, 2)
+        Me.Panel112.Location = New System.Drawing.Point(171, 2)
         Me.Panel112.Name = "Panel112"
         Me.Panel112.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel112.Size = New System.Drawing.Size(15, 19)
@@ -870,12 +836,13 @@ Partial Class ControlPainel_Acoes
         Me.Panel_SelectColorViolet.Name = "Panel_SelectColorViolet"
         Me.Panel_SelectColorViolet.Size = New System.Drawing.Size(11, 11)
         Me.Panel_SelectColorViolet.TabIndex = 15
+        Me.Panel_SelectColorViolet.Tag = "Violet"
         '
         'Panel205
         '
         Me.Panel205.Controls.Add(Me.Panel206)
         Me.Panel205.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel205.Location = New System.Drawing.Point(111, 2)
+        Me.Panel205.Location = New System.Drawing.Point(156, 2)
         Me.Panel205.Name = "Panel205"
         Me.Panel205.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel205.Size = New System.Drawing.Size(15, 19)
@@ -906,7 +873,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel208.Controls.Add(Me.Panel209)
         Me.Panel208.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel208.Location = New System.Drawing.Point(96, 2)
+        Me.Panel208.Location = New System.Drawing.Point(141, 2)
         Me.Panel208.Name = "Panel208"
         Me.Panel208.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel208.Size = New System.Drawing.Size(15, 19)
@@ -937,7 +904,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel211.Controls.Add(Me.Panel215)
         Me.Panel211.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel211.Location = New System.Drawing.Point(81, 2)
+        Me.Panel211.Location = New System.Drawing.Point(126, 2)
         Me.Panel211.Name = "Panel211"
         Me.Panel211.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel211.Size = New System.Drawing.Size(15, 19)
@@ -946,7 +913,7 @@ Partial Class ControlPainel_Acoes
         'Panel215
         '
         Me.Panel215.BackColor = System.Drawing.Color.Transparent
-        Me.Panel215.Controls.Add(Me.Panel_SelectColorOrangeRed)
+        Me.Panel215.Controls.Add(Me.Panel_SelectColorOrange)
         Me.Panel215.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel215.Location = New System.Drawing.Point(1, 3)
         Me.Panel215.Name = "Panel215"
@@ -954,21 +921,21 @@ Partial Class ControlPainel_Acoes
         Me.Panel215.Size = New System.Drawing.Size(13, 13)
         Me.Panel215.TabIndex = 102
         '
-        'Panel_SelectColorOrangeRed
+        'Panel_SelectColorOrange
         '
-        Me.Panel_SelectColorOrangeRed.BackColor = System.Drawing.Color.OrangeRed
-        Me.Panel_SelectColorOrangeRed.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel_SelectColorOrangeRed.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_SelectColorOrangeRed.Location = New System.Drawing.Point(1, 1)
-        Me.Panel_SelectColorOrangeRed.Name = "Panel_SelectColorOrangeRed"
-        Me.Panel_SelectColorOrangeRed.Size = New System.Drawing.Size(11, 11)
-        Me.Panel_SelectColorOrangeRed.TabIndex = 12
+        Me.Panel_SelectColorOrange.BackColor = System.Drawing.Color.Orange
+        Me.Panel_SelectColorOrange.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel_SelectColorOrange.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_SelectColorOrange.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_SelectColorOrange.Name = "Panel_SelectColorOrange"
+        Me.Panel_SelectColorOrange.Size = New System.Drawing.Size(11, 11)
+        Me.Panel_SelectColorOrange.TabIndex = 12
         '
         'Panel217
         '
         Me.Panel217.Controls.Add(Me.Panel218)
         Me.Panel217.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel217.Location = New System.Drawing.Point(66, 2)
+        Me.Panel217.Location = New System.Drawing.Point(111, 2)
         Me.Panel217.Name = "Panel217"
         Me.Panel217.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel217.Size = New System.Drawing.Size(15, 19)
@@ -999,7 +966,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.Panel220.Controls.Add(Me.Panel221)
         Me.Panel220.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel220.Location = New System.Drawing.Point(51, 2)
+        Me.Panel220.Location = New System.Drawing.Point(21, 2)
         Me.Panel220.Name = "Panel220"
         Me.Panel220.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel220.Size = New System.Drawing.Size(15, 19)
@@ -1039,7 +1006,7 @@ Partial Class ControlPainel_Acoes
         'Panel232
         '
         Me.Panel232.BackColor = System.Drawing.Color.Transparent
-        Me.Panel232.Controls.Add(Me.Panel237)
+        Me.Panel232.Controls.Add(Me.Panel_SelectColorGray)
         Me.Panel232.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel232.Location = New System.Drawing.Point(1, 3)
         Me.Panel232.Name = "Panel232"
@@ -1047,21 +1014,21 @@ Partial Class ControlPainel_Acoes
         Me.Panel232.Size = New System.Drawing.Size(13, 13)
         Me.Panel232.TabIndex = 99
         '
-        'Panel237
+        'Panel_SelectColorGray
         '
-        Me.Panel237.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel237.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel237.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel237.Location = New System.Drawing.Point(1, 1)
-        Me.Panel237.Name = "Panel237"
-        Me.Panel237.Size = New System.Drawing.Size(11, 11)
-        Me.Panel237.TabIndex = 9
+        Me.Panel_SelectColorGray.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel_SelectColorGray.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel_SelectColorGray.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_SelectColorGray.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_SelectColorGray.Name = "Panel_SelectColorGray"
+        Me.Panel_SelectColorGray.Size = New System.Drawing.Size(11, 11)
+        Me.Panel_SelectColorGray.TabIndex = 9
         '
         'Panel238
         '
         Me.Panel238.Controls.Add(Me.Panel239)
         Me.Panel238.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel238.Location = New System.Drawing.Point(21, 2)
+        Me.Panel238.Location = New System.Drawing.Point(51, 2)
         Me.Panel238.Name = "Panel238"
         Me.Panel238.Padding = New System.Windows.Forms.Padding(1, 3, 1, 3)
         Me.Panel238.Size = New System.Drawing.Size(15, 19)
@@ -1070,7 +1037,7 @@ Partial Class ControlPainel_Acoes
         'Panel239
         '
         Me.Panel239.BackColor = System.Drawing.Color.Transparent
-        Me.Panel239.Controls.Add(Me.Panel_SelectColorGray)
+        Me.Panel239.Controls.Add(Me.Panel_SelectColorWhite)
         Me.Panel239.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel239.Location = New System.Drawing.Point(1, 3)
         Me.Panel239.Name = "Panel239"
@@ -1078,15 +1045,15 @@ Partial Class ControlPainel_Acoes
         Me.Panel239.Size = New System.Drawing.Size(13, 13)
         Me.Panel239.TabIndex = 0
         '
-        'Panel_SelectColorGray
+        'Panel_SelectColorWhite
         '
-        Me.Panel_SelectColorGray.BackColor = System.Drawing.Color.White
-        Me.Panel_SelectColorGray.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel_SelectColorGray.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_SelectColorGray.Location = New System.Drawing.Point(1, 1)
-        Me.Panel_SelectColorGray.Name = "Panel_SelectColorGray"
-        Me.Panel_SelectColorGray.Size = New System.Drawing.Size(11, 11)
-        Me.Panel_SelectColorGray.TabIndex = 8
+        Me.Panel_SelectColorWhite.BackColor = System.Drawing.Color.White
+        Me.Panel_SelectColorWhite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel_SelectColorWhite.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_SelectColorWhite.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_SelectColorWhite.Name = "Panel_SelectColorWhite"
+        Me.Panel_SelectColorWhite.Size = New System.Drawing.Size(11, 11)
+        Me.Panel_SelectColorWhite.TabIndex = 8
         '
         'Panel242
         '
@@ -1106,19 +1073,20 @@ Partial Class ControlPainel_Acoes
         Me.Panel243.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel243.Location = New System.Drawing.Point(1, 1)
         Me.Panel243.Name = "Panel243"
+        Me.Panel243.Padding = New System.Windows.Forms.Padding(1)
         Me.Panel243.Size = New System.Drawing.Size(13, 17)
         Me.Panel243.TabIndex = 10
         '
         'LBLSelectColorNone
         '
-        Me.LBLSelectColorNone.AutoSize = True
-        Me.LBLSelectColorNone.Dock = System.Windows.Forms.DockStyle.Left
-        Me.LBLSelectColorNone.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!)
+        Me.LBLSelectColorNone.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.LBLSelectColorNone.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LBLSelectColorNone.Font = New System.Drawing.Font("Microsoft Tai Le", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLSelectColorNone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(21, Byte), Integer), CType(CType(21, Byte), Integer), CType(CType(21, Byte), Integer))
         Me.LBLSelectColorNone.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLSelectColorNone.Location = New System.Drawing.Point(0, 0)
+        Me.LBLSelectColorNone.Location = New System.Drawing.Point(1, 1)
         Me.LBLSelectColorNone.Name = "LBLSelectColorNone"
-        Me.LBLSelectColorNone.Size = New System.Drawing.Size(12, 14)
+        Me.LBLSelectColorNone.Size = New System.Drawing.Size(9, 13)
         Me.LBLSelectColorNone.TabIndex = 7
         Me.LBLSelectColorNone.Text = "x"
         '
@@ -1319,6 +1287,36 @@ Partial Class ControlPainel_Acoes
         Me.BTNExecutarProcessos.TabIndex = 33
         Me.BTNExecutarProcessos.UseVisualStyleBackColor = False
         '
+        'ControlItemDePainelDeAcoes3
+        '
+        Me.ControlItemDePainelDeAcoes3.AutoSize = True
+        Me.ControlItemDePainelDeAcoes3.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes3.Location = New System.Drawing.Point(0, 138)
+        Me.ControlItemDePainelDeAcoes3.Name = "ControlItemDePainelDeAcoes3"
+        Me.ControlItemDePainelDeAcoes3.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes3.TabIndex = 2
+        '
+        'ControlItemDePainelDeAcoes2
+        '
+        Me.ControlItemDePainelDeAcoes2.AutoSize = True
+        Me.ControlItemDePainelDeAcoes2.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes2.Location = New System.Drawing.Point(0, 69)
+        Me.ControlItemDePainelDeAcoes2.Name = "ControlItemDePainelDeAcoes2"
+        Me.ControlItemDePainelDeAcoes2.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes2.TabIndex = 1
+        '
+        'ControlItemDePainelDeAcoes1
+        '
+        Me.ControlItemDePainelDeAcoes1.AutoSize = True
+        Me.ControlItemDePainelDeAcoes1.BackColor = System.Drawing.Color.Transparent
+        Me.ControlItemDePainelDeAcoes1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ControlItemDePainelDeAcoes1.Location = New System.Drawing.Point(0, 0)
+        Me.ControlItemDePainelDeAcoes1.Name = "ControlItemDePainelDeAcoes1"
+        Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
+        Me.ControlItemDePainelDeAcoes1.TabIndex = 0
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
@@ -1407,16 +1405,14 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.ResumeLayout(False)
         Me.PanelEnvolveAgrupamentos.ResumeLayout(False)
         Me.PanelTVAgrupamentos.ResumeLayout(False)
-        Me.Panel_ItensAGrupados.ResumeLayout(False)
-        Me.Panel_ItensAGrupados.PerformLayout()
         Me.PanelEditorPropriedadesDoGrupo.ResumeLayout(False)
         Me.PanelCorDoGrupo.ResumeLayout(False)
+        Me.Panel109.ResumeLayout(False)
+        Me.Panel110.ResumeLayout(False)
         Me.Panel103.ResumeLayout(False)
         Me.Panel104.ResumeLayout(False)
         Me.Panel106.ResumeLayout(False)
         Me.Panel107.ResumeLayout(False)
-        Me.Panel109.ResumeLayout(False)
-        Me.Panel110.ResumeLayout(False)
         Me.Panel112.ResumeLayout(False)
         Me.Panel113.ResumeLayout(False)
         Me.Panel205.ResumeLayout(False)
@@ -1435,7 +1431,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel239.ResumeLayout(False)
         Me.Panel242.ResumeLayout(False)
         Me.Panel243.ResumeLayout(False)
-        Me.Panel243.PerformLayout()
         Me.PanelNomeDoGrupo.ResumeLayout(False)
         Me.PanelNomeDoGrupo.PerformLayout()
         Me.PanelMargemDoNomeDoGrupo.ResumeLayout(False)
@@ -1484,7 +1479,7 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Panel_SelectColorRed As Panel
     Friend WithEvents Panel211 As Panel
     Friend WithEvents Panel215 As Panel
-    Friend WithEvents Panel_SelectColorOrangeRed As Panel
+    Friend WithEvents Panel_SelectColorOrange As Panel
     Friend WithEvents Panel217 As Panel
     Friend WithEvents Panel218 As Panel
     Friend WithEvents Panel_SelectColorYellow As Panel
@@ -1493,10 +1488,10 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents Panel_SelectColorBlack As Panel
     Friend WithEvents Panel223 As Panel
     Friend WithEvents Panel232 As Panel
-    Friend WithEvents Panel237 As Panel
+    Friend WithEvents Panel_SelectColorGray As Panel
     Friend WithEvents Panel238 As Panel
     Friend WithEvents Panel239 As Panel
-    Friend WithEvents Panel_SelectColorGray As Panel
+    Friend WithEvents Panel_SelectColorWhite As Panel
     Friend WithEvents Panel242 As Panel
     Friend WithEvents Panel243 As Panel
     Friend WithEvents LBLSelectColorNone As Label

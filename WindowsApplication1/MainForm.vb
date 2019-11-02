@@ -8,17 +8,18 @@ Public Class MainForm
 
     ' Carregar Controles acessorios
     ' -------------------------------------------------------
-    Public ControlPersonalListView As New ControlVerListas
-    Public Painel_BibliotecaDeMidias As New ControlPainel_BibliotecaDeMidias
-    Public Painel_Desktop As New ControlPainel_Desktop
-    Public Painel_Filtro As New ControlPainel_Filtro
-    Public Painel_MidiaAberta As New ControlPainel_MidiaAberta
-    Public Painel_MidiasAtivas As New ControlPainel_MidiasAtivas
-    Public Painel_PastaIsolada As New ControlPainel_PastaIsolada
-    Public Painel_Atividades As New ControlPainel_Atividades
-    Public Painel_Detalhes As New ControlPainel_Detalhes
-    Public Painel_Acoes As New ControlPainel_Acoes
+    Public controlPersonalListView As New ControlVerListas
+    Public painel_BibliotecaDeMidias As New ControlPainel_BibliotecaDeMidias
+    Public painel_Desktop As New ControlPainel_Desktop
+    Public painel_Filtro As New ControlPainel_Filtro
+    Public painel_MidiaAberta As New ControlPainel_MidiaAberta
+    Public painel_MidiasAtivas As New ControlPainel_MidiasAtivas
+    Public painel_PastaIsolada As New ControlPainel_PastaIsolada
+    Public painel_Atividades As New ControlPainel_Atividades
+    Public painel_Detalhes As New ControlPainel_Detalhes
+    Public painel_Acoes As New ControlPainel_Acoes
     Public TooBarMenu As New Control_MenuBar
+    Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
 
 
@@ -129,37 +130,41 @@ Long, lpColorValues As Long) As Long
         ' TODO: Se um componente construido herdar ...
         ' ...o outro construido ele pode interagir um com o outro.
 
-        PanelRecebeBiblio.Controls.Add(Painel_BibliotecaDeMidias)
-        Painel_BibliotecaDeMidias.Dock = DockStyle.Fill
-        Painel_BibliotecaDeMidias.Visible = True
+        PanelRecebeBiblio.Controls.Add(painel_BibliotecaDeMidias)
+        painel_BibliotecaDeMidias.Dock = DockStyle.Fill
+        painel_BibliotecaDeMidias.Visible = True
 
-        Panel_Recebe_Filtro.Controls.Add(Painel_Filtro)
-        Painel_Filtro.Dock = DockStyle.Fill
-        Painel_Filtro.Visible = True
+        Panel_Recebe_Filtro.Controls.Add(painel_Filtro)
+        painel_Filtro.Dock = DockStyle.Fill
+        painel_Filtro.Visible = True
 
-        Panel_RecebeExplorer.Controls.Add(Painel_Desktop)
-        Painel_Desktop.Dock = DockStyle.Fill
-        Painel_Desktop.Visible = True
+        Panel_RecebeExplorer.Controls.Add(painel_Desktop)
+        painel_Desktop.Dock = DockStyle.Fill
+        painel_Desktop.Visible = True
 
-        Panel_RecebeMidiasAtivas.Controls.Add(Painel_MidiasAtivas)
-        Painel_MidiasAtivas.Dock = DockStyle.Fill
-        Painel_MidiasAtivas.Visible = True
+        Panel_RecebeMidiasAtivas.Controls.Add(painel_MidiasAtivas)
+        painel_MidiasAtivas.Dock = DockStyle.Fill
+        painel_MidiasAtivas.Visible = True
 
-        PanelAtividade.Controls.Add(Painel_Atividades)
-        Painel_Atividades.Dock = DockStyle.Fill
-        Painel_Atividades.Visible = True
+        PanelAtividade.Controls.Add(painel_Atividades)
+        painel_Atividades.Dock = DockStyle.Fill
+        painel_Atividades.Visible = True
 
-        PanelDetalhe.Controls.Add(Painel_Detalhes)
-        Painel_Detalhes.Dock = DockStyle.Fill
-        Painel_Detalhes.Visible = True
+        PanelDetalhe.Controls.Add(painel_Detalhes)
+        painel_Detalhes.Dock = DockStyle.Fill
+        painel_Detalhes.Visible = True
 
-        PanelAcoes.Controls.Add(Painel_Acoes)
-        Painel_Acoes.Dock = DockStyle.Fill
-        Painel_Acoes.Visible = True
+        PanelAcoes.Controls.Add(painel_Acoes)
+        painel_Acoes.Dock = DockStyle.Fill
+        painel_Acoes.Visible = True
 
         Panel_MenuBar.Controls.Add(TooBarMenu)
         TooBarMenu.Dock = DockStyle.Fill
         TooBarMenu.Visible = True
+
+        PanelLoad_ControlSelectFileAndFoldePanel.Controls.Add(_controlSelectFileAndFolderPanel)
+        _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
+        _controlSelectFileAndFolderPanel.Visible = True
 
 
 
@@ -177,9 +182,9 @@ Long, lpColorValues As Long) As Long
     End Sub
     Public Function AdcionarItemNoView(Drive As DriveInfo, Numero As Integer)
         '' Cria os suobjetos semelhantes a pastas do picasa
-        PanelRecebe.Controls.Add(ControlPersonalListView)
-        ControlPersonalListView.Visible = True
-        ControlPersonalListView.Dock = DockStyle.Fill
+        PanelRecebe.Controls.Add(controlPersonalListView)
+        controlPersonalListView.Visible = True
+        controlPersonalListView.Dock = DockStyle.Fill
     End Function
 
     Private Sub ClickingMouseRedim()
@@ -651,7 +656,7 @@ Long, lpColorValues As Long) As Long
             If Q = 6 Then
                 Me.Close()
                 End
-            ElseIf Q = 7
+            ElseIf Q = 7 Then
                 RBTNWelcome.Checked = True
                 RBTNWelcome.Checked = False
             End If
@@ -758,7 +763,7 @@ Long, lpColorValues As Long) As Long
     End Sub
 
     Private Sub MainForm_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        PanelRecebe.Controls.Remove(ControlPersonalListView)
+        PanelRecebe.Controls.Remove(controlPersonalListView)
     End Sub
 
 

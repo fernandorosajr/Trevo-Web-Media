@@ -156,6 +156,12 @@
     <Compile Include="Componentes\ControlListView\SubControls\ControlListIcone.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Componentes\OutrosComponentes\ControlSelectFileAndFoldePanel.Designer.vb">
+      <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\ControlSelectFileAndFoldePanel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\OutrosComponentes\Control_Infor.Designer.vb">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\ControlListView\SubControls\ControlListIcone.resx">
       <DependentUpon>ControlListIcone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\ControlSelectFileAndFoldePanel.resx">
+      <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\OutrosComponentes\Control_Infor.resx">
       <DependentUpon>Control_Infor.vb</DependentUpon>

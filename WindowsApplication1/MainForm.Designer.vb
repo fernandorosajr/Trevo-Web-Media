@@ -400,24 +400,7 @@ Partial Class MainForm
         Me.RBAtividade = New System.Windows.Forms.RadioButton()
         Me.RBDetalhe = New System.Windows.Forms.RadioButton()
         Me.RBAcoes = New System.Windows.Forms.RadioButton()
-        Me.PanelSelecao = New System.Windows.Forms.Panel()
-        Me.Panel100 = New System.Windows.Forms.Panel()
-        Me.Panel99 = New System.Windows.Forms.Panel()
-        Me.Panel240 = New System.Windows.Forms.Panel()
-        Me.PanelNomeEXTProp = New System.Windows.Forms.Panel()
-        Me.PanelNomeProp = New System.Windows.Forms.Panel()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Button98 = New System.Windows.Forms.Button()
-        Me.PanelEXTProp = New System.Windows.Forms.Panel()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Button96 = New System.Windows.Forms.Button()
-        Me.PanelCaminhoProp = New System.Windows.Forms.Panel()
-        Me.PanelCaminho = New System.Windows.Forms.Panel()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Button93 = New System.Windows.Forms.Button()
-        Me.Button94 = New System.Windows.Forms.Button()
-        Me.Button95 = New System.Windows.Forms.Button()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PanelLoad_ControlSelectFileAndFoldePanel = New System.Windows.Forms.Panel()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelR = New System.Windows.Forms.Panel()
         Me.Panel79 = New System.Windows.Forms.Panel()
@@ -702,16 +685,6 @@ Partial Class MainForm
         Me.PanelLateralDirGuia.SuspendLayout()
         Me.Panel98.SuspendLayout()
         Me.Panel225.SuspendLayout()
-        Me.PanelSelecao.SuspendLayout()
-        Me.Panel100.SuspendLayout()
-        Me.Panel99.SuspendLayout()
-        Me.Panel240.SuspendLayout()
-        Me.PanelNomeEXTProp.SuspendLayout()
-        Me.PanelNomeProp.SuspendLayout()
-        Me.PanelEXTProp.SuspendLayout()
-        Me.PanelCaminhoProp.SuspendLayout()
-        Me.PanelCaminho.SuspendLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelR.SuspendLayout()
         Me.Panel79.SuspendLayout()
         Me.PanelSubMenu.SuspendLayout()
@@ -3870,7 +3843,7 @@ Partial Class MainForm
         Me.PanelLateralDirContorno.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.PanelLateralDirContorno.Controls.Add(Me.PanelLateralDir)
         Me.PanelLateralDirContorno.Controls.Add(Me.PanelLateralDirGuia)
-        Me.PanelLateralDirContorno.Controls.Add(Me.PanelSelecao)
+        Me.PanelLateralDirContorno.Controls.Add(Me.PanelLoad_ControlSelectFileAndFoldePanel)
         resources.ApplyResources(Me.PanelLateralDirContorno, "PanelLateralDirContorno")
         Me.PanelLateralDirContorno.Name = "PanelLateralDirContorno"
         '
@@ -3956,155 +3929,11 @@ Partial Class MainForm
         Me.RBAcoes.Name = "RBAcoes"
         Me.RBAcoes.UseVisualStyleBackColor = True
         '
-        'PanelSelecao
+        'PanelLoad_ControlSelectFileAndFoldePanel
         '
-        Me.PanelSelecao.BackColor = System.Drawing.Color.Transparent
-        Me.PanelSelecao.Controls.Add(Me.Panel100)
-        resources.ApplyResources(Me.PanelSelecao, "PanelSelecao")
-        Me.PanelSelecao.Name = "PanelSelecao"
-        '
-        'Panel100
-        '
-        Me.Panel100.Controls.Add(Me.Panel99)
-        resources.ApplyResources(Me.Panel100, "Panel100")
-        Me.Panel100.Name = "Panel100"
-        '
-        'Panel99
-        '
-        Me.Panel99.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Panel99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel99.Controls.Add(Me.Panel240)
-        Me.Panel99.Controls.Add(Me.PanelCaminhoProp)
-        Me.Panel99.Controls.Add(Me.PictureBox16)
-        resources.ApplyResources(Me.Panel99, "Panel99")
-        Me.Panel99.Name = "Panel99"
-        '
-        'Panel240
-        '
-        Me.Panel240.BackColor = System.Drawing.Color.Transparent
-        Me.Panel240.Controls.Add(Me.PanelNomeEXTProp)
-        resources.ApplyResources(Me.Panel240, "Panel240")
-        Me.Panel240.Name = "Panel240"
-        '
-        'PanelNomeEXTProp
-        '
-        Me.PanelNomeEXTProp.BackColor = System.Drawing.Color.Transparent
-        Me.PanelNomeEXTProp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelNomeEXTProp.Controls.Add(Me.PanelNomeProp)
-        Me.PanelNomeEXTProp.Controls.Add(Me.PanelEXTProp)
-        resources.ApplyResources(Me.PanelNomeEXTProp, "PanelNomeEXTProp")
-        Me.PanelNomeEXTProp.Name = "PanelNomeEXTProp"
-        '
-        'PanelNomeProp
-        '
-        Me.PanelNomeProp.BackColor = System.Drawing.Color.Transparent
-        Me.PanelNomeProp.Controls.Add(Me.TextBox7)
-        Me.PanelNomeProp.Controls.Add(Me.Button98)
-        resources.ApplyResources(Me.PanelNomeProp, "PanelNomeProp")
-        Me.PanelNomeProp.Name = "PanelNomeProp"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.TextBox7, "TextBox7")
-        Me.TextBox7.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox7.Name = "TextBox7"
-        '
-        'Button98
-        '
-        Me.Button98.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.Button98, "Button98")
-        Me.Button98.FlatAppearance.BorderSize = 0
-        Me.Button98.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button98.Name = "Button98"
-        Me.Button98.UseVisualStyleBackColor = False
-        '
-        'PanelEXTProp
-        '
-        Me.PanelEXTProp.BackColor = System.Drawing.Color.Transparent
-        Me.PanelEXTProp.Controls.Add(Me.TextBox8)
-        Me.PanelEXTProp.Controls.Add(Me.Button96)
-        resources.ApplyResources(Me.PanelEXTProp, "PanelEXTProp")
-        Me.PanelEXTProp.Name = "PanelEXTProp"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.TextBox8, "TextBox8")
-        Me.TextBox8.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox8.Name = "TextBox8"
-        '
-        'Button96
-        '
-        Me.Button96.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.Button96, "Button96")
-        Me.Button96.FlatAppearance.BorderSize = 0
-        Me.Button96.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button96.Name = "Button96"
-        Me.Button96.UseVisualStyleBackColor = False
-        '
-        'PanelCaminhoProp
-        '
-        Me.PanelCaminhoProp.BackColor = System.Drawing.Color.Transparent
-        Me.PanelCaminhoProp.Controls.Add(Me.PanelCaminho)
-        resources.ApplyResources(Me.PanelCaminhoProp, "PanelCaminhoProp")
-        Me.PanelCaminhoProp.Name = "PanelCaminhoProp"
-        '
-        'PanelCaminho
-        '
-        Me.PanelCaminho.BackColor = System.Drawing.Color.Transparent
-        Me.PanelCaminho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PanelCaminho.Controls.Add(Me.TextBox6)
-        Me.PanelCaminho.Controls.Add(Me.Button93)
-        Me.PanelCaminho.Controls.Add(Me.Button94)
-        Me.PanelCaminho.Controls.Add(Me.Button95)
-        resources.ApplyResources(Me.PanelCaminho, "PanelCaminho")
-        Me.PanelCaminho.Name = "PanelCaminho"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.TextBox6, "TextBox6")
-        Me.TextBox6.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox6.Name = "TextBox6"
-        '
-        'Button93
-        '
-        Me.Button93.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.Button93, "Button93")
-        Me.Button93.FlatAppearance.BorderSize = 0
-        Me.Button93.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button93.Name = "Button93"
-        Me.Button93.UseVisualStyleBackColor = False
-        '
-        'Button94
-        '
-        Me.Button94.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.Button94, "Button94")
-        Me.Button94.FlatAppearance.BorderSize = 0
-        Me.Button94.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button94.Name = "Button94"
-        Me.Button94.UseVisualStyleBackColor = False
-        '
-        'Button95
-        '
-        Me.Button95.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.Button95, "Button95")
-        Me.Button95.FlatAppearance.BorderSize = 0
-        Me.Button95.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button95.Name = "Button95"
-        Me.Button95.UseVisualStyleBackColor = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.PictureBox16, "PictureBox16")
-        Me.PictureBox16.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.TabStop = False
+        Me.PanelLoad_ControlSelectFileAndFoldePanel.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.PanelLoad_ControlSelectFileAndFoldePanel, "PanelLoad_ControlSelectFileAndFoldePanel")
+        Me.PanelLoad_ControlSelectFileAndFoldePanel.Name = "PanelLoad_ControlSelectFileAndFoldePanel"
         '
         'ImageList1
         '
@@ -5391,19 +5220,6 @@ Partial Class MainForm
         Me.PanelLateralDirGuia.ResumeLayout(False)
         Me.Panel98.ResumeLayout(False)
         Me.Panel225.ResumeLayout(False)
-        Me.PanelSelecao.ResumeLayout(False)
-        Me.Panel100.ResumeLayout(False)
-        Me.Panel99.ResumeLayout(False)
-        Me.Panel240.ResumeLayout(False)
-        Me.PanelNomeEXTProp.ResumeLayout(False)
-        Me.PanelNomeProp.ResumeLayout(False)
-        Me.PanelNomeProp.PerformLayout()
-        Me.PanelEXTProp.ResumeLayout(False)
-        Me.PanelEXTProp.PerformLayout()
-        Me.PanelCaminhoProp.ResumeLayout(False)
-        Me.PanelCaminho.ResumeLayout(False)
-        Me.PanelCaminho.PerformLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelR.ResumeLayout(False)
         Me.Panel79.ResumeLayout(False)
         Me.PanelSubMenu.ResumeLayout(False)
@@ -5508,8 +5324,6 @@ Partial Class MainForm
     Friend WithEvents Panel98 As Panel
     Friend WithEvents RBAtividade As RadioButton
     Friend WithEvents RBDetalhe As RadioButton
-    Friend WithEvents PanelSelecao As Panel
-    Friend WithEvents Panel100 As Panel
     Friend WithEvents PanelR As Panel
     Friend WithEvents Splitter10 As Splitter
     Friend WithEvents Panel79 As Panel
@@ -5868,25 +5682,9 @@ Partial Class MainForm
     Friend WithEvents Label89 As Label
     Friend WithEvents Panel202 As Panel
     Friend WithEvents RBAcoes As RadioButton
-    Friend WithEvents Panel99 As Panel
     Friend WithEvents Panel224 As Panel
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents Panel225 As Panel
-    Friend WithEvents PanelCaminhoProp As Panel
-    Friend WithEvents PanelCaminho As Panel
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Button93 As Button
-    Friend WithEvents Button94 As Button
-    Friend WithEvents Button95 As Button
-    Friend WithEvents PanelNomeEXTProp As Panel
-    Friend WithEvents PanelNomeProp As Panel
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Button98 As Button
-    Friend WithEvents PanelEXTProp As Panel
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Button96 As Button
-    Friend WithEvents PictureBox16 As PictureBox
-    Friend WithEvents Panel240 As Panel
     Friend WithEvents Panel76 As Panel
     Friend WithEvents RBImagens As RadioButton
     Friend WithEvents RBDocumentos As RadioButton
@@ -5944,4 +5742,5 @@ Partial Class MainForm
     Friend WithEvents RadioButton16 As RadioButton
     Friend WithEvents RadioButton15 As RadioButton
     Friend WithEvents PanelSubMenuContorn As Panel
+    Friend WithEvents PanelLoad_ControlSelectFileAndFoldePanel As Panel
 End Class

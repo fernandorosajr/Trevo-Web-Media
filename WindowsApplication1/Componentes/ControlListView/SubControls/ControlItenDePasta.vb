@@ -17,5 +17,7 @@
 
     End Sub
 
+    Private Sub FLPanelItens_Paint(sender As Object, e As PaintEventArgs) Handles FLPanelItens.Paint
 
+    End Sub
 End Class

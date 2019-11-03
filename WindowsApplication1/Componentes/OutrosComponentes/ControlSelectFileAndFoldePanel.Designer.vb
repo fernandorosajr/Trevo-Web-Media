@@ -27,12 +27,13 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelMarginNameAndExtencao = New System.Windows.Forms.Panel()
         Me.PanelNameAndExtencao = New System.Windows.Forms.Panel()
         Me.PanelName = New System.Windows.Forms.Panel()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TXTName = New System.Windows.Forms.TextBox()
         Me.Button98 = New System.Windows.Forms.Button()
         Me.PanelEXTProp = New System.Windows.Forms.Panel()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button96 = New System.Windows.Forms.Button()
         Me.PanelMarginPath = New System.Windows.Forms.Panel()
+        Me.PanelBorderPath = New System.Windows.Forms.Panel()
         Me.PanelCaminho = New System.Windows.Forms.Panel()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Button93 = New System.Windows.Forms.Button()
@@ -40,17 +41,16 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.Button95 = New System.Windows.Forms.Button()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PanelEnvolveControl = New System.Windows.Forms.Panel()
-        Me.PanelBorderPath = New System.Windows.Forms.Panel()
         Me.PanelControl.SuspendLayout()
         Me.PanelMarginNameAndExtencao.SuspendLayout()
         Me.PanelNameAndExtencao.SuspendLayout()
         Me.PanelName.SuspendLayout()
         Me.PanelEXTProp.SuspendLayout()
         Me.PanelMarginPath.SuspendLayout()
+        Me.PanelBorderPath.SuspendLayout()
         Me.PanelCaminho.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelEnvolveControl.SuspendLayout()
-        Me.PanelBorderPath.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelControl
@@ -93,7 +93,7 @@ Partial Class ControlSelectFileAndFoldePanel
         'PanelName
         '
         Me.PanelName.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.PanelName.Controls.Add(Me.TextBox7)
+        Me.PanelName.Controls.Add(Me.TXTName)
         Me.PanelName.Controls.Add(Me.Button98)
         Me.PanelName.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelName.Location = New System.Drawing.Point(1, 1)
@@ -102,17 +102,17 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelName.Size = New System.Drawing.Size(520, 401)
         Me.PanelName.TabIndex = 93
         '
-        'TextBox7
+        'TXTName
         '
-        Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox7.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox7.Location = New System.Drawing.Point(3, 3)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(499, 13)
-        Me.TextBox7.TabIndex = 9
-        Me.TextBox7.Text = " <NOME>"
+        Me.TXTName.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTName.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTName.ForeColor = System.Drawing.Color.Gainsboro
+        Me.TXTName.Location = New System.Drawing.Point(3, 3)
+        Me.TXTName.Name = "TXTName"
+        Me.TXTName.Size = New System.Drawing.Size(499, 13)
+        Me.TXTName.TabIndex = 9
+        Me.TXTName.Text = " <NOME>"
         '
         'Button98
         '
@@ -182,6 +182,17 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelMarginPath.Padding = New System.Windows.Forms.Padding(3, 3, 3, 0)
         Me.PanelMarginPath.Size = New System.Drawing.Size(591, 23)
         Me.PanelMarginPath.TabIndex = 3
+        '
+        'PanelBorderPath
+        '
+        Me.PanelBorderPath.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorderPath.Controls.Add(Me.PanelCaminho)
+        Me.PanelBorderPath.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorderPath.Location = New System.Drawing.Point(3, 3)
+        Me.PanelBorderPath.Name = "PanelBorderPath"
+        Me.PanelBorderPath.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorderPath.Size = New System.Drawing.Size(585, 20)
+        Me.PanelBorderPath.TabIndex = 0
         '
         'PanelCaminho
         '
@@ -285,17 +296,6 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelEnvolveControl.Size = New System.Drawing.Size(642, 438)
         Me.PanelEnvolveControl.TabIndex = 4
         '
-        'PanelBorderPath
-        '
-        Me.PanelBorderPath.BackColor = System.Drawing.Color.DimGray
-        Me.PanelBorderPath.Controls.Add(Me.PanelCaminho)
-        Me.PanelBorderPath.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBorderPath.Location = New System.Drawing.Point(3, 3)
-        Me.PanelBorderPath.Name = "PanelBorderPath"
-        Me.PanelBorderPath.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorderPath.Size = New System.Drawing.Size(585, 20)
-        Me.PanelBorderPath.TabIndex = 0
-        '
         'ControlSelectFileAndFoldePanel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -311,11 +311,11 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelEXTProp.ResumeLayout(False)
         Me.PanelEXTProp.PerformLayout()
         Me.PanelMarginPath.ResumeLayout(False)
+        Me.PanelBorderPath.ResumeLayout(False)
         Me.PanelCaminho.ResumeLayout(False)
         Me.PanelCaminho.PerformLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelEnvolveControl.ResumeLayout(False)
-        Me.PanelBorderPath.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -323,7 +323,7 @@ Partial Class ControlSelectFileAndFoldePanel
     Friend WithEvents PanelMarginNameAndExtencao As Panel
     Friend WithEvents PanelNameAndExtencao As Panel
     Friend WithEvents PanelName As Panel
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents TXTName As TextBox
     Friend WithEvents Button98 As Button
     Friend WithEvents PanelEXTProp As Panel
     Friend WithEvents TextBox8 As TextBox

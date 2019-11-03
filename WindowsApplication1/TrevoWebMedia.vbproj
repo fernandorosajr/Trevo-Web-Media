@@ -138,6 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Class\Class_Configs.vb" />
     <Compile Include="Componentes\ControlListView\ControlVerListas.Designer.vb">
       <DependentUpon>ControlVerListas.vb</DependentUpon>
     </Compile>

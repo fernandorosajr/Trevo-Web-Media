@@ -19,7 +19,6 @@ Public Class ControlPainel_Acoes
 
     ' Eventos do controle
     Private Sub ControlPainel_Acoes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        '  MsgBox(ColorSelect.ToString)
 
         _colorSelectAndHover = SystemColors.HotTrack
 
@@ -29,9 +28,7 @@ Public Class ControlPainel_Acoes
             CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = CHK_ShowPanelAllProcessosAcoes.BackColor
 
         End If
-        '  ColorSelect = SystemColors.HotTrack
-        '   BTNAddProcesso.BackColor = ColorSelect
-        '  MsgBox(ColorSelect.ToString)
+
     End Sub
 
 
@@ -46,12 +43,6 @@ Public Class ControlPainel_Acoes
 
         End If
 
-        'If CHK_ShowPanelAllProcessosAcoes.CheckState = True Then
-        '    CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = _colorSelectAndHover
-        'Else
-        '    CHK_ShowPanelAllProcessosAcoes.Parent.BackColor = CHK_ShowPanelAllProcessosAcoes.BackColor
-
-        'End If
     End Sub
 
     Private Sub TXTNomeDoGrupo_MouseHover(sender As Object, e As EventArgs) Handles TXTNomeDoGrupo.MouseHover
@@ -84,28 +75,15 @@ Public Class ControlPainel_Acoes
         If TXTNomeDoGrupo.Focus Then
             TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
         End If
-
-    End Sub
-
-    Private Sub TXTNomeDoGrupo_MouseClick(sender As Object, e As MouseEventArgs) Handles TXTNomeDoGrupo.MouseClick
-        'If TXTNomeDoGrupo.SelectedText <> TXTNomeDoGrupo.Text Then
-        '    TXTNomeDoGrupo.SelectAll()
-        'End If
     End Sub
 
     Private Sub LBLNomeDoGrupo_Click(sender As Object, e As EventArgs) Handles LBLNomeDoGrupo.Click
         TXTNomeDoGrupo.Focus()
-
     End Sub
 
     Private Sub PanelFundoDoNomeDoGrupo_MouseHover(sender As Object, e As EventArgs) Handles PanelFundoDoNomeDoGrupo.MouseHover
         TXTNomeDoGrupo.Parent.Parent.BackColor = _colorSelectAndHover
     End Sub
-
-    Private Sub PanelFundoDoNomeDoGrupo_MouseLeave(sender As Object, e As EventArgs) Handles PanelFundoDoNomeDoGrupo.MouseLeave
-        'PanelFundoDoNomeDoGrupo.Parent.BackColor = Color.DimGray
-    End Sub
-
 
     Private Sub BTNSelectedNewGroupType_MouseHover(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.MouseHover
         BTNSelectedNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
@@ -117,7 +95,7 @@ Public Class ControlPainel_Acoes
     End Sub
 
     Private Sub BTNSelectedNewGroupType_MouseLeave(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.MouseLeave
-        ' BTNSelectedNewGroupType.Parent.Parent.BackColor = Color.DimGray
+
         If BTNSelectedNewGroupType.Focused Or BTNSelectNewGroupType.Focused Then
             BTNSelectedNewGroupType.Parent.Parent.BackColor = _colorSelectAndHover
         Else
@@ -175,15 +153,11 @@ Public Class ControlPainel_Acoes
 
     Private Sub BTNAddProcesso_Click(sender As Object, e As EventArgs) Handles BTNAddProcesso.Click
         PanelOpcoesDeProcessos.Visible = True
-
-
     End Sub
 
     Private Sub BTN_FechaPanelOpcoesDeProcessos_Click(sender As Object, e As EventArgs) Handles BTN_FechaPanelOpcoesDeProcessos.Click
         PanelOpcoesDeProcessos.Visible = False
     End Sub
-
-
 
     Private Sub BTNExecutarProcessos_MouseHover(sender As Object, e As EventArgs) Handles BTNExecutarProcessos.MouseHover
         BTNExecutarProcessos.FlatAppearance.BorderColor = _colorSelectAndHover

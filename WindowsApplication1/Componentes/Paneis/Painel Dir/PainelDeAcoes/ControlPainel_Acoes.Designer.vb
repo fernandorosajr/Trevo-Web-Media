@@ -74,10 +74,13 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados = New System.Windows.Forms.Panel()
         Me.PanelEditorPropriedadesDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelCorDoGrupo = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.Panel()
         Me.CHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.CheckBox()
         Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
         Me.BTN_NewFolder = New System.Windows.Forms.Button()
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos = New System.Windows.Forms.Panel()
+        Me.BTN_TimeParaAgrupamentos = New System.Windows.Forms.Button()
         Me.Panel112 = New System.Windows.Forms.Panel()
         Me.Panel113 = New System.Windows.Forms.Panel()
         Me.Panel_SelectColorViolet = New System.Windows.Forms.Panel()
@@ -114,8 +117,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel242 = New System.Windows.Forms.Panel()
         Me.Panel243 = New System.Windows.Forms.Panel()
         Me.LBLSelectColorNone = New System.Windows.Forms.Label()
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos = New System.Windows.Forms.Panel()
-        Me.BTN_TimeParaAgrupamentos = New System.Windows.Forms.Button()
         Me.PanelNomeDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelMargemDoNomeDoGrupo = New System.Windows.Forms.Panel()
         Me.PanelFundoDoNomeDoGrupo = New System.Windows.Forms.Panel()
@@ -136,23 +137,21 @@ Partial Class ControlPainel_Acoes
         Me.Panel247 = New System.Windows.Forms.Panel()
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.BTNExpandAcoes = New System.Windows.Forms.Button()
+        Me.CMS_TipoDeProcesso = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSMenuItemTipoCopia = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSMenuItemTipoMover = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSMenuItemTipoRenome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoGravacao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
-        Me.CMS_TipoDeProcesso = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -172,8 +171,10 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVAgrupamentos.SuspendLayout()
         Me.PanelEditorPropriedadesDoGrupo.SuspendLayout()
         Me.PanelCorDoGrupo.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.SuspendLayout()
         Me.PanelEnvolve_BTN_NewFolder.SuspendLayout()
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.SuspendLayout()
         Me.Panel112.SuspendLayout()
         Me.Panel113.SuspendLayout()
         Me.Panel205.SuspendLayout()
@@ -198,7 +199,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel221.SuspendLayout()
         Me.Panel242.SuspendLayout()
         Me.Panel243.SuspendLayout()
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.SuspendLayout()
         Me.PanelNomeDoGrupo.SuspendLayout()
         Me.PanelMargemDoNomeDoGrupo.SuspendLayout()
         Me.PanelFundoDoNomeDoGrupo.SuspendLayout()
@@ -209,7 +209,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelLBLAcoes.SuspendLayout()
         Me.Panel247.SuspendLayout()
         Me.CMS_TipoDeProcesso.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel77
@@ -682,6 +681,17 @@ Partial Class ControlPainel_Acoes
         Me.PanelCorDoGrupo.Size = New System.Drawing.Size(464, 21)
         Me.PanelCorDoGrupo.TabIndex = 95
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes)
+        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_NewFolder)
+        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_TimeParaAgrupamentos)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(357, 2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(102, 19)
+        Me.Panel1.TabIndex = 115
+        '
         'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
         '
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Controls.Add(Me.CHK_ShowPanelAllProcessosAcoes)
@@ -736,6 +746,32 @@ Partial Class ControlPainel_Acoes
         Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 17)
         Me.BTN_NewFolder.TabIndex = 20
         Me.BTN_NewFolder.UseVisualStyleBackColor = False
+        '
+        'PanelEnvolve_BTN_TimeParaAgrupamentos
+        '
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Controls.Add(Me.BTN_TimeParaAgrupamentos)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(70, 0)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Name = "PanelEnvolve_BTN_TimeParaAgrupamentos"
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Size = New System.Drawing.Size(32, 19)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.TabIndex = 114
+        '
+        'BTN_TimeParaAgrupamentos
+        '
+        Me.BTN_TimeParaAgrupamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_TimeParaAgrupamentos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.time2
+        Me.BTN_TimeParaAgrupamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_TimeParaAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTN_TimeParaAgrupamentos.FlatAppearance.BorderSize = 0
+        Me.BTN_TimeParaAgrupamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TimeParaAgrupamentos.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(1, 1)
+        Me.BTN_TimeParaAgrupamentos.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TimeParaAgrupamentos.Name = "BTN_TimeParaAgrupamentos"
+        Me.BTN_TimeParaAgrupamentos.Size = New System.Drawing.Size(30, 17)
+        Me.BTN_TimeParaAgrupamentos.TabIndex = 21
+        Me.BTN_TimeParaAgrupamentos.UseVisualStyleBackColor = False
         '
         'Panel112
         '
@@ -1114,32 +1150,6 @@ Partial Class ControlPainel_Acoes
         Me.LBLSelectColorNone.TabIndex = 7
         Me.LBLSelectColorNone.Text = "x"
         '
-        'PanelEnvolve_BTN_TimeParaAgrupamentos
-        '
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Controls.Add(Me.BTN_TimeParaAgrupamentos)
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(70, 0)
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Name = "PanelEnvolve_BTN_TimeParaAgrupamentos"
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Size = New System.Drawing.Size(32, 19)
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.TabIndex = 114
-        '
-        'BTN_TimeParaAgrupamentos
-        '
-        Me.BTN_TimeParaAgrupamentos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_TimeParaAgrupamentos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.time2
-        Me.BTN_TimeParaAgrupamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_TimeParaAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_TimeParaAgrupamentos.FlatAppearance.BorderSize = 0
-        Me.BTN_TimeParaAgrupamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_TimeParaAgrupamentos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_TimeParaAgrupamentos.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTN_TimeParaAgrupamentos.Name = "BTN_TimeParaAgrupamentos"
-        Me.BTN_TimeParaAgrupamentos.Size = New System.Drawing.Size(30, 17)
-        Me.BTN_TimeParaAgrupamentos.TabIndex = 21
-        Me.BTN_TimeParaAgrupamentos.UseVisualStyleBackColor = False
-        '
         'PanelNomeDoGrupo
         '
         Me.PanelNomeDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -1400,6 +1410,105 @@ Partial Class ControlPainel_Acoes
         Me.BTNExpandAcoes.TabIndex = 1
         Me.BTNExpandAcoes.UseVisualStyleBackColor = False
         '
+        'CMS_TipoDeProcesso
+        '
+        Me.CMS_TipoDeProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.CMS_TipoDeProcesso.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemTipoGravacao, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
+        Me.CMS_TipoDeProcesso.Name = "CMS_TipoDeProcesso"
+        Me.CMS_TipoDeProcesso.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(181, 204)
+        Me.CMS_TipoDeProcesso.TabStop = True
+        '
+        'TSMenuItemTipoCriacao
+        '
+        Me.TSMenuItemTipoCriacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.novo_arquivo_2
+        Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
+        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
+        '
+        'TSMenuItemSeparator1
+        '
+        Me.TSMenuItemSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemSeparator1.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemSeparator1.Name = "TSMenuItemSeparator1"
+        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
+        'TSMenuItemTipoCopia
+        '
+        Me.TSMenuItemTipoCopia.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoCopiar
+        Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
+        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
+        '
+        'TSMenuItemSeparator2
+        '
+        Me.TSMenuItemSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemSeparator2.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemSeparator2.Name = "TSMenuItemSeparator2"
+        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(177, 6)
+        '
+        'TSMenuItemTipoMover
+        '
+        Me.TSMenuItemTipoMover.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoMover.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoMover2
+        Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
+        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoMover.Text = "Tipo mover..."
+        '
+        'TSMenuItemSeparator3
+        '
+        Me.TSMenuItemSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemSeparator3.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemSeparator3.Name = "TSMenuItemSeparator3"
+        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(177, 6)
+        '
+        'TSMenuItemTipoRenome
+        '
+        Me.TSMenuItemTipoRenome.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.renomear
+        Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
+        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
+        '
+        'TSMenuItemTipoGravacao
+        '
+        Me.TSMenuItemTipoGravacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoGravacao.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoGravacao.Image = Global.TrevoWebMedia.My.Resources.Resources.media
+        Me.TSMenuItemTipoGravacao.Name = "TSMenuItemTipoGravacao"
+        Me.TSMenuItemTipoGravacao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoGravacao.Text = "Tipo gravação..."
+        '
+        'TSMenuItemSeparator4
+        '
+        Me.TSMenuItemSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemSeparator4.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemSeparator4.Name = "TSMenuItemSeparator4"
+        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(177, 6)
+        '
+        'TSMenuItemTipoExclusao
+        '
+        Me.TSMenuItemTipoExclusao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.excluir
+        Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
+        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
+        '
+        'TSMenuItemTipoComposto
+        '
+        Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
+        Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
+        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
+        '
         'ControlItemDePainelDeAcoes3
         '
         Me.ControlItemDePainelDeAcoes3.AutoSize = True
@@ -1430,117 +1539,6 @@ Partial Class ControlPainel_Acoes
         Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
         Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
-        'CMS_TipoDeProcesso
-        '
-        Me.CMS_TipoDeProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.CMS_TipoDeProcesso.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripSeparator1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripSeparator2, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ToolStripSeparator3, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripSeparator4, Me.ToolStripMenuItem8})
-        Me.CMS_TipoDeProcesso.Name = "CMS_TipoDeProcesso"
-        Me.CMS_TipoDeProcesso.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(153, 204)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem1.Text = "Criar em..."
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripSeparator1.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem2.Text = "Copiar..."
-        '
-        'ToolStripMenuItem3
-        '
-        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem3.Text = "Copiar como..."
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripSeparator2.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem4.Text = "Mover..."
-        '
-        'ToolStripMenuItem5
-        '
-        Me.ToolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem5.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem5.Text = "Mover como..."
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripSeparator3.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
-        '
-        'ToolStripMenuItem6
-        '
-        Me.ToolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem6.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem6.Text = "Renomear..."
-        '
-        'ToolStripMenuItem7
-        '
-        Me.ToolStripMenuItem7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem7.Text = "Gravar..."
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripSeparator4.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(149, 6)
-        '
-        'ToolStripMenuItem8
-        '
-        Me.ToolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.ToolStripMenuItem8.ForeColor = System.Drawing.Color.Silver
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(152, 22)
-        Me.ToolStripMenuItem8.Text = "Excluir..."
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes)
-        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_NewFolder)
-        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_TimeParaAgrupamentos)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(357, 2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(102, 19)
-        Me.Panel1.TabIndex = 115
-        '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1568,8 +1566,10 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVAgrupamentos.ResumeLayout(False)
         Me.PanelEditorPropriedadesDoGrupo.ResumeLayout(False)
         Me.PanelCorDoGrupo.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.ResumeLayout(False)
         Me.PanelEnvolve_BTN_NewFolder.ResumeLayout(False)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.ResumeLayout(False)
         Me.Panel112.ResumeLayout(False)
         Me.Panel113.ResumeLayout(False)
         Me.Panel205.ResumeLayout(False)
@@ -1594,7 +1594,6 @@ Partial Class ControlPainel_Acoes
         Me.Panel221.ResumeLayout(False)
         Me.Panel242.ResumeLayout(False)
         Me.Panel243.ResumeLayout(False)
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.ResumeLayout(False)
         Me.PanelNomeDoGrupo.ResumeLayout(False)
         Me.PanelNomeDoGrupo.PerformLayout()
         Me.PanelMargemDoNomeDoGrupo.ResumeLayout(False)
@@ -1607,7 +1606,6 @@ Partial Class ControlPainel_Acoes
         Me.PanelLBLAcoes.ResumeLayout(False)
         Me.Panel247.ResumeLayout(False)
         Me.CMS_TipoDeProcesso.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1709,17 +1707,16 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents PanelEnvolve_BTN_NewFolder As Panel
     Friend WithEvents PanelEnvolve_BTN_TimeParaAgrupamentos As Panel
     Friend WithEvents CMS_TipoDeProcesso As ContextMenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
-    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents TSMenuItemTipoCriacao As ToolStripMenuItem
+    Friend WithEvents TSMenuItemTipoCopia As ToolStripMenuItem
+    Friend WithEvents TSMenuItemTipoMover As ToolStripMenuItem
+    Friend WithEvents TSMenuItemTipoRenome As ToolStripMenuItem
+    Friend WithEvents TSMenuItemTipoGravacao As ToolStripMenuItem
+    Friend WithEvents TSMenuItemTipoExclusao As ToolStripMenuItem
+    Friend WithEvents TSMenuItemSeparator1 As ToolStripSeparator
+    Friend WithEvents TSMenuItemSeparator2 As ToolStripSeparator
+    Friend WithEvents TSMenuItemSeparator3 As ToolStripSeparator
+    Friend WithEvents TSMenuItemSeparator4 As ToolStripSeparator
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents TSMenuItemTipoComposto As ToolStripMenuItem
 End Class

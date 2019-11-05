@@ -730,4 +730,33 @@ Public Class ControlPainel_Acoes
         pMouse = System.Windows.Forms.Cursor.Position
         CMS_TipoDeProcesso.Show(pMouse)
     End Sub
+
+    Private Sub TSMenuItemTipoComposto_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoComposto.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoComposto.Image
+
+    End Sub
+
+    Private Sub TSMenuItemTipoCriacao_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoCriacao.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoCriacao.Image
+    End Sub
+
+    Private Sub TSMenuItemTipoCopia_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoCopia.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoCopia.Image
+    End Sub
+
+    Private Sub TSMenuItemTipoMover_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoMover.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoMover.Image
+    End Sub
+
+    Private Sub TSMenuItemTipoRenome_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoRenome.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoRenome.Image
+    End Sub
+
+    Private Sub TSMenuItemTipoGravacao_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoGravacao.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoGravacao.Image
+    End Sub
+
+    Private Sub TSMenuItemTipoExclusao_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoExclusao.Click
+        BTNSelectedNewGroupType.BackgroundImage = TSMenuItemTipoExclusao.Image
+    End Sub
 End Class

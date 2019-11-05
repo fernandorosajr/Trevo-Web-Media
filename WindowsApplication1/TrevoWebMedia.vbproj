@@ -656,6 +656,11 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\grupo026.png" />
+    <None Include="Resources\grupo025.png" />
+    <None Include="Resources\grupo0241.png" />
+    <None Include="Resources\grupo024.png" />
+    <None Include="Resources\grupo023.png" />
     <None Include="Resources\NovoProcessoMover2.png" />
     <None Include="Resources\NovoProcessoCopiar.png" />
     <None Include="Resources\NovoProcessoMover.png" />
@@ -711,6 +716,8 @@
     <None Include="Resources\arquivo.png" />
     <None Include="Resources\fechar branco2.png" />
     <None Include="Resources\arquivo1.png" />
+    <None Include="Resources\dvd1.png" />
+    <None Include="Resources\dvd11.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

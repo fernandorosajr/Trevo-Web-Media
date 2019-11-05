@@ -138,8 +138,9 @@ Partial Class ControlPainel_Acoes
         Me.LBLAcoes = New System.Windows.Forms.Label()
         Me.BTNExpandAcoes = New System.Windows.Forms.Button()
         Me.CMS_TipoDeProcesso = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemTipoCopia = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoMover = New System.Windows.Forms.ToolStripMenuItem()
@@ -148,7 +149,6 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoGravacao = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
@@ -1416,24 +1416,32 @@ Partial Class ControlPainel_Acoes
         Me.CMS_TipoDeProcesso.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemTipoGravacao, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
         Me.CMS_TipoDeProcesso.Name = "CMS_TipoDeProcesso"
         Me.CMS_TipoDeProcesso.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(181, 204)
+        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(158, 182)
         Me.CMS_TipoDeProcesso.TabStop = True
         '
-        'TSMenuItemTipoCriacao
+        'TSMenuItemTipoComposto
         '
-        Me.TSMenuItemTipoCriacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.Color.Silver
-        Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.novo_arquivo_2
-        Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
-        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(180, 22)
-        Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
+        Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
+        Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
+        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(157, 22)
+        Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
         '
         'TSMenuItemSeparator1
         '
         Me.TSMenuItemSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator1.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator1.Name = "TSMenuItemSeparator1"
-        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(154, 6)
+        '
+        'TSMenuItemTipoCriacao
+        '
+        Me.TSMenuItemTipoCriacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.Color.Silver
+        Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoCriacao
+        Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
+        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(157, 22)
+        Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
         '
         'TSMenuItemTipoCopia
         '
@@ -1441,7 +1449,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoCopiar
         Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
-        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
         '
         'TSMenuItemSeparator2
@@ -1449,15 +1457,15 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator2.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator2.Name = "TSMenuItemSeparator2"
-        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoMover
         '
         Me.TSMenuItemTipoMover.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemTipoMover.ForeColor = System.Drawing.Color.Silver
-        Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoMover2
+        Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoMover
         Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
-        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoMover.Text = "Tipo mover..."
         '
         'TSMenuItemSeparator3
@@ -1465,7 +1473,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator3.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator3.Name = "TSMenuItemSeparator3"
-        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoRenome
         '
@@ -1473,16 +1481,16 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.renomear
         Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
-        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
         '
         'TSMenuItemTipoGravacao
         '
         Me.TSMenuItemTipoGravacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemTipoGravacao.ForeColor = System.Drawing.Color.Silver
-        Me.TSMenuItemTipoGravacao.Image = Global.TrevoWebMedia.My.Resources.Resources.media
+        Me.TSMenuItemTipoGravacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoGravar1
         Me.TSMenuItemTipoGravacao.Name = "TSMenuItemTipoGravacao"
-        Me.TSMenuItemTipoGravacao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoGravacao.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoGravacao.Text = "Tipo gravação..."
         '
         'TSMenuItemSeparator4
@@ -1490,24 +1498,16 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator4.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator4.Name = "TSMenuItemSeparator4"
-        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoExclusao
         '
         Me.TSMenuItemTipoExclusao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.Color.Silver
-        Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.excluir
+        Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoExclusao
         Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
-        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
-        '
-        'TSMenuItemTipoComposto
-        '
-        Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.Color.Silver
-        Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
-        Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
-        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(180, 22)
-        Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
         '
         'ControlItemDePainelDeAcoes3
         '

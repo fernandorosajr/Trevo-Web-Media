@@ -543,6 +543,66 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property grupoTipoCriacao() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoCriacao", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property grupoTipoExclusao() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoExclusao", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property grupoTipoExclusao02() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoExclusao02", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property grupoTipoGravar() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoGravar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property grupoTipoGravar1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoGravar1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property grupoTipoMover() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grupoTipoMover", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Imagem_sem_título() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Imagem sem título", resourceCulture)

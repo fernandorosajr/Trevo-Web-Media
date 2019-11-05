@@ -2,6 +2,8 @@
 
 Public Class ControlPainel_Acoes
 
+    Dim pMouse As Point
+
     ' Propriedades do controle
     Private _colorSelectAndHover As Color
 
@@ -718,4 +720,14 @@ Public Class ControlPainel_Acoes
 
     End Sub
 
+    Private Sub BTNSelectNewGroupType_Click(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.Click
+        pMouse = System.Windows.Forms.Cursor.Position
+        ' MsgBox(pMouse.X)
+        CMS_TipoDeProcesso.Show(pMouse)
+    End Sub
+
+    Private Sub BTNSelectedNewGroupType_Click(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.Click
+        pMouse = System.Windows.Forms.Cursor.Position
+        CMS_TipoDeProcesso.Show(pMouse)
+    End Sub
 End Class

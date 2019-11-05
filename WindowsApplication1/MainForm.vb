@@ -84,8 +84,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-
-
     Private Sub Label1_DoubleClick(sender As Object, e As System.EventArgs) Handles Label1.DoubleClick
         Call winstate()
 
@@ -166,13 +164,7 @@ Long, lpColorValues As Long) As Long
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
         _controlSelectFileAndFolderPanel.Visible = True
 
-
-
-
-
-
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
-
 
         For fadein = 0.0 To 1.1 Step 0.1
             Me.Opacity = fadein
@@ -181,7 +173,7 @@ Long, lpColorValues As Long) As Long
         Next
     End Sub
     Public Function AdcionarItemNoView(Drive As DriveInfo, Numero As Integer)
-        '' Cria os suobjetos semelhantes a pastas do picasa
+        ' Cria os suobjetos semelhantes a pastas do picasa
         PanelRecebe.Controls.Add(controlPersonalListView)
         controlPersonalListView.Visible = True
         controlPersonalListView.Dock = DockStyle.Fill
@@ -296,13 +288,9 @@ Long, lpColorValues As Long) As Long
         Panel_MediasExplorer.Visible = RB_Midias.Checked
         Panel_RecebeExplorer.Visible = Not (RB_Midias.Checked)
 
-
-
         'If RB_Bibliotecas.Checked Then
         '    PanelEnvolveMidiaAberta.Visible = False
         '    SPRedimVisualizarMidia.Visible = False
-
-
 
         'Else
         '    PanelEnvolveMidiaAberta.Visible = True

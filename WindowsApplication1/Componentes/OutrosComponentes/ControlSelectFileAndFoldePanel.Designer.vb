@@ -28,7 +28,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelNameAndExtencao = New System.Windows.Forms.Panel()
         Me.PanelName = New System.Windows.Forms.Panel()
         Me.TXTName = New System.Windows.Forms.TextBox()
-        Me.Button98 = New System.Windows.Forms.Button()
+        Me.BTN_TXTName = New System.Windows.Forms.Button()
         Me.PanelEXTProp = New System.Windows.Forms.Panel()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button96 = New System.Windows.Forms.Button()
@@ -64,7 +64,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelControl.Margin = New System.Windows.Forms.Padding(0)
         Me.PanelControl.Name = "PanelControl"
         Me.PanelControl.Padding = New System.Windows.Forms.Padding(2)
-        Me.PanelControl.Size = New System.Drawing.Size(640, 436)
+        Me.PanelControl.Size = New System.Drawing.Size(640, 63)
         Me.PanelControl.TabIndex = 3
         '
         'PanelMarginNameAndExtencao
@@ -75,7 +75,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelMarginNameAndExtencao.Location = New System.Drawing.Point(47, 25)
         Me.PanelMarginNameAndExtencao.Name = "PanelMarginNameAndExtencao"
         Me.PanelMarginNameAndExtencao.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelMarginNameAndExtencao.Size = New System.Drawing.Size(591, 409)
+        Me.PanelMarginNameAndExtencao.Size = New System.Drawing.Size(591, 36)
         Me.PanelMarginNameAndExtencao.TabIndex = 96
         '
         'PanelNameAndExtencao
@@ -87,19 +87,19 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelNameAndExtencao.Location = New System.Drawing.Point(3, 3)
         Me.PanelNameAndExtencao.Name = "PanelNameAndExtencao"
         Me.PanelNameAndExtencao.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelNameAndExtencao.Size = New System.Drawing.Size(585, 403)
+        Me.PanelNameAndExtencao.Size = New System.Drawing.Size(585, 30)
         Me.PanelNameAndExtencao.TabIndex = 4
         '
         'PanelName
         '
         Me.PanelName.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.PanelName.Controls.Add(Me.TXTName)
-        Me.PanelName.Controls.Add(Me.Button98)
+        Me.PanelName.Controls.Add(Me.BTN_TXTName)
         Me.PanelName.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelName.Location = New System.Drawing.Point(1, 1)
         Me.PanelName.Name = "PanelName"
         Me.PanelName.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelName.Size = New System.Drawing.Size(520, 401)
+        Me.PanelName.Size = New System.Drawing.Size(520, 28)
         Me.PanelName.TabIndex = 93
         '
         'TXTName
@@ -114,22 +114,21 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.TXTName.TabIndex = 9
         Me.TXTName.Text = " <NOME>"
         '
-        'Button98
+        'BTN_TXTName
         '
-        Me.Button98.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Button98.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button98.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button98.FlatAppearance.BorderSize = 0
-        Me.Button98.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button98.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button98.Image = CType(resources.GetObject("Button98.Image"), System.Drawing.Image)
-        Me.Button98.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button98.Location = New System.Drawing.Point(502, 3)
-        Me.Button98.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button98.Name = "Button98"
-        Me.Button98.Size = New System.Drawing.Size(15, 395)
-        Me.Button98.TabIndex = 18
-        Me.Button98.UseVisualStyleBackColor = False
+        Me.BTN_TXTName.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BTN_TXTName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTName.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTName.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTName.Image = CType(resources.GetObject("BTN_TXTName.Image"), System.Drawing.Image)
+        Me.BTN_TXTName.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTName.Location = New System.Drawing.Point(502, 3)
+        Me.BTN_TXTName.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTName.Name = "BTN_TXTName"
+        Me.BTN_TXTName.Size = New System.Drawing.Size(15, 22)
+        Me.BTN_TXTName.TabIndex = 18
+        Me.BTN_TXTName.UseVisualStyleBackColor = False
         '
         'PanelEXTProp
         '
@@ -140,7 +139,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelEXTProp.Location = New System.Drawing.Point(521, 1)
         Me.PanelEXTProp.Name = "PanelEXTProp"
         Me.PanelEXTProp.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEXTProp.Size = New System.Drawing.Size(63, 401)
+        Me.PanelEXTProp.Size = New System.Drawing.Size(63, 28)
         Me.PanelEXTProp.TabIndex = 95
         '
         'TextBox8
@@ -161,14 +160,13 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.Button96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button96.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button96.FlatAppearance.BorderSize = 0
-        Me.Button96.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button96.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button96.Image = CType(resources.GetObject("Button96.Image"), System.Drawing.Image)
         Me.Button96.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button96.Location = New System.Drawing.Point(45, 3)
         Me.Button96.Margin = New System.Windows.Forms.Padding(0)
         Me.Button96.Name = "Button96"
-        Me.Button96.Size = New System.Drawing.Size(15, 395)
+        Me.Button96.Size = New System.Drawing.Size(15, 22)
         Me.Button96.TabIndex = 18
         Me.Button96.UseVisualStyleBackColor = False
         '
@@ -226,7 +224,6 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.Button93.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button93.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button93.FlatAppearance.BorderSize = 0
-        Me.Button93.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
         Me.Button93.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button93.Image = CType(resources.GetObject("Button93.Image"), System.Drawing.Image)
         Me.Button93.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -240,12 +237,11 @@ Partial Class ControlSelectFileAndFoldePanel
         'Button94
         '
         Me.Button94.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Button94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button94.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo2
+        Me.Button94.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button94.Dock = System.Windows.Forms.DockStyle.Left
         Me.Button94.FlatAppearance.BorderSize = 0
-        Me.Button94.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
         Me.Button94.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button94.Image = CType(resources.GetObject("Button94.Image"), System.Drawing.Image)
         Me.Button94.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Button94.Location = New System.Drawing.Point(3, 3)
         Me.Button94.Margin = New System.Windows.Forms.Padding(0)
@@ -260,7 +256,6 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.Button95.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button95.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button95.FlatAppearance.BorderSize = 0
-        Me.Button95.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.Button95.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button95.Image = CType(resources.GetObject("Button95.Image"), System.Drawing.Image)
         Me.Button95.ImeMode = System.Windows.Forms.ImeMode.NoControl
@@ -279,7 +274,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PictureBox16.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PictureBox16.Location = New System.Drawing.Point(2, 2)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(45, 432)
+        Me.PictureBox16.Size = New System.Drawing.Size(45, 59)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 95
         Me.PictureBox16.TabStop = False
@@ -293,7 +288,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelEnvolveControl.Margin = New System.Windows.Forms.Padding(0)
         Me.PanelEnvolveControl.Name = "PanelEnvolveControl"
         Me.PanelEnvolveControl.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolveControl.Size = New System.Drawing.Size(642, 438)
+        Me.PanelEnvolveControl.Size = New System.Drawing.Size(642, 65)
         Me.PanelEnvolveControl.TabIndex = 4
         '
         'ControlSelectFileAndFoldePanel
@@ -302,7 +297,7 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelEnvolveControl)
         Me.Name = "ControlSelectFileAndFoldePanel"
-        Me.Size = New System.Drawing.Size(642, 438)
+        Me.Size = New System.Drawing.Size(642, 65)
         Me.PanelControl.ResumeLayout(False)
         Me.PanelMarginNameAndExtencao.ResumeLayout(False)
         Me.PanelNameAndExtencao.ResumeLayout(False)
@@ -324,7 +319,7 @@ Partial Class ControlSelectFileAndFoldePanel
     Friend WithEvents PanelNameAndExtencao As Panel
     Friend WithEvents PanelName As Panel
     Friend WithEvents TXTName As TextBox
-    Friend WithEvents Button98 As Button
+    Friend WithEvents BTN_TXTName As Button
     Friend WithEvents PanelEXTProp As Panel
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Button96 As Button

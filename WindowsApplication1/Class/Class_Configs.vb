@@ -46,10 +46,10 @@ Public Class Class_Configs
     End Sub
 
     Public Sub Color_MouseLeave(obj As Object)
-        If obj.Focused Then
+        If obj.Focused = True Then
             obj.Parent.BackColor = _colorSelectAndHover
         Else
-            obj.Parent.BackColor = ColorNotSelect
+            obj.Parent.BackColor = _colorNotSelectAndHover
         End If
     End Sub
 
@@ -58,7 +58,7 @@ Public Class Class_Configs
     End Sub
 
     Public Sub Color_LostFocus(obj As Object)
-        obj.Parent.BackColor = ColorNotSelect
+          obj.Parent.BackColor = ColorNotSelect
     End Sub
 
     Public Sub Color_LostFocusForColor(obj As Object)

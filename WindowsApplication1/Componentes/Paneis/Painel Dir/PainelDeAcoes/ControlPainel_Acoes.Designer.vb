@@ -139,6 +139,20 @@ Partial Class ControlPainel_Acoes
         Me.ControlItemDePainelDeAcoes3 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes2 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
         Me.ControlItemDePainelDeAcoes1 = New TrevoWebMedia.ControlItemDePainelDeAcoes()
+        Me.CMS_TipoDeProcesso = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel77.SuspendLayout()
         Me.PanelAllProcessosAcoes.SuspendLayout()
         Me.PanelListaDeProcessos.SuspendLayout()
@@ -194,6 +208,8 @@ Partial Class ControlPainel_Acoes
         Me.Panel2.SuspendLayout()
         Me.PanelLBLAcoes.SuspendLayout()
         Me.Panel247.SuspendLayout()
+        Me.CMS_TipoDeProcesso.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel77
@@ -206,7 +222,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel77.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel77.Location = New System.Drawing.Point(0, 32)
         Me.Panel77.Name = "Panel77"
-        Me.Panel77.Size = New System.Drawing.Size(348, 484)
+        Me.Panel77.Size = New System.Drawing.Size(468, 484)
         Me.Panel77.TabIndex = 93
         '
         'PanelAllProcessosAcoes
@@ -219,7 +235,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllProcessosAcoes.Location = New System.Drawing.Point(0, 245)
         Me.PanelAllProcessosAcoes.Name = "PanelAllProcessosAcoes"
         Me.PanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(348, 211)
+        Me.PanelAllProcessosAcoes.Size = New System.Drawing.Size(468, 211)
         Me.PanelAllProcessosAcoes.TabIndex = 98
         '
         'PanelListaDeProcessos
@@ -229,7 +245,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelListaDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelListaDeProcessos.Location = New System.Drawing.Point(3, 52)
         Me.PanelListaDeProcessos.Name = "PanelListaDeProcessos"
-        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(340, 154)
+        Me.PanelListaDeProcessos.Size = New System.Drawing.Size(460, 154)
         Me.PanelListaDeProcessos.TabIndex = 90
         '
         'PanelTVProcessosAcoes
@@ -240,7 +256,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVProcessosAcoes.Location = New System.Drawing.Point(0, 0)
         Me.PanelTVProcessosAcoes.Name = "PanelTVProcessosAcoes"
         Me.PanelTVProcessosAcoes.Padding = New System.Windows.Forms.Padding(5)
-        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(340, 154)
+        Me.PanelTVProcessosAcoes.Size = New System.Drawing.Size(460, 154)
         Me.PanelTVProcessosAcoes.TabIndex = 88
         '
         'TVW_ListaDeProcessos
@@ -313,7 +329,7 @@ Partial Class ControlPainel_Acoes
         Me.TVW_ListaDeProcessos.SelectedImageIndex = 0
         Me.TVW_ListaDeProcessos.ShowLines = False
         Me.TVW_ListaDeProcessos.ShowNodeToolTips = True
-        Me.TVW_ListaDeProcessos.Size = New System.Drawing.Size(330, 144)
+        Me.TVW_ListaDeProcessos.Size = New System.Drawing.Size(450, 144)
         Me.TVW_ListaDeProcessos.TabIndex = 32
         '
         'ImageList1
@@ -335,7 +351,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAddProcesso.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelAddProcesso.Location = New System.Drawing.Point(3, 3)
         Me.PanelAddProcesso.Name = "PanelAddProcesso"
-        Me.PanelAddProcesso.Size = New System.Drawing.Size(340, 49)
+        Me.PanelAddProcesso.Size = New System.Drawing.Size(460, 49)
         Me.PanelAddProcesso.TabIndex = 106
         '
         'PanelOpcoesDeProcessos
@@ -347,7 +363,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
         Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(340, 27)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(460, 27)
         Me.PanelOpcoesDeProcessos.TabIndex = 96
         Me.PanelOpcoesDeProcessos.Visible = False
         '
@@ -364,14 +380,14 @@ Partial Class ControlPainel_Acoes
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
-        Me.Panel36.Size = New System.Drawing.Size(330, 25)
+        Me.Panel36.Size = New System.Drawing.Size(450, 25)
         Me.Panel36.TabIndex = 0
         '
         'Panel37
         '
         Me.Panel37.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(317, 1)
+        Me.Panel37.Location = New System.Drawing.Point(437, 1)
         Me.Panel37.Name = "Panel37"
         Me.Panel37.Size = New System.Drawing.Size(13, 23)
         Me.Panel37.TabIndex = 114
@@ -569,7 +585,7 @@ Partial Class ControlPainel_Acoes
         Me.BTNAddProcesso.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNAddProcesso.Location = New System.Drawing.Point(0, 0)
         Me.BTNAddProcesso.Name = "BTNAddProcesso"
-        Me.BTNAddProcesso.Size = New System.Drawing.Size(340, 22)
+        Me.BTNAddProcesso.Size = New System.Drawing.Size(460, 22)
         Me.BTNAddProcesso.TabIndex = 24
         Me.BTNAddProcesso.Text = "         Adcionar um processo"
         Me.BTNAddProcesso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -582,7 +598,7 @@ Partial Class ControlPainel_Acoes
         Me.Splitter4.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Splitter4.Location = New System.Drawing.Point(0, 240)
         Me.Splitter4.Name = "Splitter4"
-        Me.Splitter4.Size = New System.Drawing.Size(348, 5)
+        Me.Splitter4.Size = New System.Drawing.Size(468, 5)
         Me.Splitter4.TabIndex = 23
         Me.Splitter4.TabStop = False
         '
@@ -594,7 +610,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAllAgrupamentos.Location = New System.Drawing.Point(0, 0)
         Me.PanelAllAgrupamentos.Name = "PanelAllAgrupamentos"
         Me.PanelAllAgrupamentos.Padding = New System.Windows.Forms.Padding(2, 0, 2, 2)
-        Me.PanelAllAgrupamentos.Size = New System.Drawing.Size(348, 240)
+        Me.PanelAllAgrupamentos.Size = New System.Drawing.Size(468, 240)
         Me.PanelAllAgrupamentos.TabIndex = 96
         '
         'PanelEnvolveAgrupamentos
@@ -605,7 +621,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelEnvolveAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolveAgrupamentos.Location = New System.Drawing.Point(2, 0)
         Me.PanelEnvolveAgrupamentos.Name = "PanelEnvolveAgrupamentos"
-        Me.PanelEnvolveAgrupamentos.Size = New System.Drawing.Size(344, 238)
+        Me.PanelEnvolveAgrupamentos.Size = New System.Drawing.Size(464, 238)
         Me.PanelEnvolveAgrupamentos.TabIndex = 90
         '
         'PanelTVAgrupamentos
@@ -616,7 +632,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelTVAgrupamentos.Location = New System.Drawing.Point(0, 44)
         Me.PanelTVAgrupamentos.Name = "PanelTVAgrupamentos"
         Me.PanelTVAgrupamentos.Padding = New System.Windows.Forms.Padding(5)
-        Me.PanelTVAgrupamentos.Size = New System.Drawing.Size(344, 194)
+        Me.PanelTVAgrupamentos.Size = New System.Drawing.Size(464, 194)
         Me.PanelTVAgrupamentos.TabIndex = 88
         '
         'Panel_ItensAGrupados
@@ -627,7 +643,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel_ItensAGrupados.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_ItensAGrupados.Location = New System.Drawing.Point(5, 5)
         Me.Panel_ItensAGrupados.Name = "Panel_ItensAGrupados"
-        Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(334, 184)
+        Me.Panel_ItensAGrupados.Size = New System.Drawing.Size(454, 184)
         Me.Panel_ItensAGrupados.TabIndex = 22
         '
         'PanelEditorPropriedadesDoGrupo
@@ -639,14 +655,13 @@ Partial Class ControlPainel_Acoes
         Me.PanelEditorPropriedadesDoGrupo.Location = New System.Drawing.Point(0, 0)
         Me.PanelEditorPropriedadesDoGrupo.Name = "PanelEditorPropriedadesDoGrupo"
         Me.PanelEditorPropriedadesDoGrupo.Padding = New System.Windows.Forms.Padding(0, 1, 0, 0)
-        Me.PanelEditorPropriedadesDoGrupo.Size = New System.Drawing.Size(344, 44)
+        Me.PanelEditorPropriedadesDoGrupo.Size = New System.Drawing.Size(464, 44)
         Me.PanelEditorPropriedadesDoGrupo.TabIndex = 98
         '
         'PanelCorDoGrupo
         '
         Me.PanelCorDoGrupo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelCorDoGrupo.Controls.Add(Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes)
-        Me.PanelCorDoGrupo.Controls.Add(Me.PanelEnvolve_BTN_NewFolder)
+        Me.PanelCorDoGrupo.Controls.Add(Me.Panel1)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel112)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel205)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel208)
@@ -659,20 +674,19 @@ Partial Class ControlPainel_Acoes
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel223)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel220)
         Me.PanelCorDoGrupo.Controls.Add(Me.Panel242)
-        Me.PanelCorDoGrupo.Controls.Add(Me.PanelEnvolve_BTN_TimeParaAgrupamentos)
         Me.PanelCorDoGrupo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelCorDoGrupo.Location = New System.Drawing.Point(0, 23)
         Me.PanelCorDoGrupo.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelCorDoGrupo.Name = "PanelCorDoGrupo"
         Me.PanelCorDoGrupo.Padding = New System.Windows.Forms.Padding(6, 2, 5, 0)
-        Me.PanelCorDoGrupo.Size = New System.Drawing.Size(344, 21)
+        Me.PanelCorDoGrupo.Size = New System.Drawing.Size(464, 21)
         Me.PanelCorDoGrupo.TabIndex = 95
         '
         'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
         '
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Controls.Add(Me.CHK_ShowPanelAllProcessosAcoes)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(243, 2)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(6, 0)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 19)
@@ -701,7 +715,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.PanelEnvolve_BTN_NewFolder.Controls.Add(Me.BTN_NewFolder)
         Me.PanelEnvolve_BTN_NewFolder.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolve_BTN_NewFolder.Location = New System.Drawing.Point(275, 2)
+        Me.PanelEnvolve_BTN_NewFolder.Location = New System.Drawing.Point(38, 0)
         Me.PanelEnvolve_BTN_NewFolder.Name = "PanelEnvolve_BTN_NewFolder"
         Me.PanelEnvolve_BTN_NewFolder.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 19)
@@ -1104,7 +1118,7 @@ Partial Class ControlPainel_Acoes
         '
         Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Controls.Add(Me.BTN_TimeParaAgrupamentos)
         Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(307, 2)
+        Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Location = New System.Drawing.Point(70, 0)
         Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Name = "PanelEnvolve_BTN_TimeParaAgrupamentos"
         Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelEnvolve_BTN_TimeParaAgrupamentos.Size = New System.Drawing.Size(32, 19)
@@ -1138,7 +1152,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelNomeDoGrupo.Location = New System.Drawing.Point(0, 1)
         Me.PanelNomeDoGrupo.Name = "PanelNomeDoGrupo"
         Me.PanelNomeDoGrupo.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
-        Me.PanelNomeDoGrupo.Size = New System.Drawing.Size(344, 22)
+        Me.PanelNomeDoGrupo.Size = New System.Drawing.Size(464, 22)
         Me.PanelNomeDoGrupo.TabIndex = 96
         '
         'PanelMargemDoNomeDoGrupo
@@ -1149,7 +1163,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelMargemDoNomeDoGrupo.Location = New System.Drawing.Point(45, 3)
         Me.PanelMargemDoNomeDoGrupo.Name = "PanelMargemDoNomeDoGrupo"
         Me.PanelMargemDoNomeDoGrupo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelMargemDoNomeDoGrupo.Size = New System.Drawing.Size(246, 19)
+        Me.PanelMargemDoNomeDoGrupo.Size = New System.Drawing.Size(366, 19)
         Me.PanelMargemDoNomeDoGrupo.TabIndex = 99
         '
         'PanelFundoDoNomeDoGrupo
@@ -1160,7 +1174,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelFundoDoNomeDoGrupo.Location = New System.Drawing.Point(1, 1)
         Me.PanelFundoDoNomeDoGrupo.Name = "PanelFundoDoNomeDoGrupo"
         Me.PanelFundoDoNomeDoGrupo.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.PanelFundoDoNomeDoGrupo.Size = New System.Drawing.Size(244, 17)
+        Me.PanelFundoDoNomeDoGrupo.Size = New System.Drawing.Size(364, 17)
         Me.PanelFundoDoNomeDoGrupo.TabIndex = 6
         '
         'TXTNomeDoGrupo
@@ -1172,14 +1186,14 @@ Partial Class ControlPainel_Acoes
         Me.TXTNomeDoGrupo.ForeColor = System.Drawing.Color.Gainsboro
         Me.TXTNomeDoGrupo.Location = New System.Drawing.Point(8, 2)
         Me.TXTNomeDoGrupo.Name = "TXTNomeDoGrupo"
-        Me.TXTNomeDoGrupo.Size = New System.Drawing.Size(234, 13)
+        Me.TXTNomeDoGrupo.Size = New System.Drawing.Size(354, 13)
         Me.TXTNomeDoGrupo.TabIndex = 4
         Me.TXTNomeDoGrupo.Text = "Agrupamento 01"
         '
         'PanelME
         '
         Me.PanelME.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelME.Location = New System.Drawing.Point(291, 3)
+        Me.PanelME.Location = New System.Drawing.Point(411, 3)
         Me.PanelME.Name = "PanelME"
         Me.PanelME.Size = New System.Drawing.Size(2, 19)
         Me.PanelME.TabIndex = 112
@@ -1202,7 +1216,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelMarginDoSelectNewGroup.BackColor = System.Drawing.Color.DimGray
         Me.PanelMarginDoSelectNewGroup.Controls.Add(Me.Panel_EnvolveBTNSelectedNewGroupType)
         Me.PanelMarginDoSelectNewGroup.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelMarginDoSelectNewGroup.Location = New System.Drawing.Point(293, 3)
+        Me.PanelMarginDoSelectNewGroup.Location = New System.Drawing.Point(413, 3)
         Me.PanelMarginDoSelectNewGroup.Name = "PanelMarginDoSelectNewGroup"
         Me.PanelMarginDoSelectNewGroup.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelMarginDoSelectNewGroup.Size = New System.Drawing.Size(46, 19)
@@ -1256,7 +1270,7 @@ Partial Class ControlPainel_Acoes
         'Panel246
         '
         Me.Panel246.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel246.Location = New System.Drawing.Point(339, 3)
+        Me.Panel246.Location = New System.Drawing.Point(459, 3)
         Me.Panel246.Name = "Panel246"
         Me.Panel246.Size = New System.Drawing.Size(5, 19)
         Me.Panel246.TabIndex = 113
@@ -1272,7 +1286,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelExecutarProcesso.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelExecutarProcesso.Name = "PanelExecutarProcesso"
         Me.PanelExecutarProcesso.Padding = New System.Windows.Forms.Padding(6, 2, 0, 0)
-        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(348, 28)
+        Me.PanelExecutarProcesso.Size = New System.Drawing.Size(468, 28)
         Me.PanelExecutarProcesso.TabIndex = 100
         '
         'BTNPararProcessos
@@ -1331,7 +1345,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(348, 516)
+        Me.Panel2.Size = New System.Drawing.Size(468, 516)
         Me.Panel2.TabIndex = 94
         '
         'PanelLBLAcoes
@@ -1342,7 +1356,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelLBLAcoes.Location = New System.Drawing.Point(0, 0)
         Me.PanelLBLAcoes.Name = "PanelLBLAcoes"
         Me.PanelLBLAcoes.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.PanelLBLAcoes.Size = New System.Drawing.Size(348, 32)
+        Me.PanelLBLAcoes.Size = New System.Drawing.Size(468, 32)
         Me.PanelLBLAcoes.TabIndex = 98
         '
         'Panel247
@@ -1353,7 +1367,7 @@ Partial Class ControlPainel_Acoes
         Me.Panel247.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel247.Location = New System.Drawing.Point(0, 0)
         Me.Panel247.Name = "Panel247"
-        Me.Panel247.Size = New System.Drawing.Size(348, 31)
+        Me.Panel247.Size = New System.Drawing.Size(468, 31)
         Me.Panel247.TabIndex = 5
         '
         'LBLAcoes
@@ -1366,7 +1380,7 @@ Partial Class ControlPainel_Acoes
         Me.LBLAcoes.Location = New System.Drawing.Point(15, 0)
         Me.LBLAcoes.Name = "LBLAcoes"
         Me.LBLAcoes.Padding = New System.Windows.Forms.Padding(5)
-        Me.LBLAcoes.Size = New System.Drawing.Size(333, 31)
+        Me.LBLAcoes.Size = New System.Drawing.Size(453, 31)
         Me.LBLAcoes.TabIndex = 2
         Me.LBLAcoes.Text = "Ações"
         '
@@ -1416,13 +1430,124 @@ Partial Class ControlPainel_Acoes
         Me.ControlItemDePainelDeAcoes1.Size = New System.Drawing.Size(315, 69)
         Me.ControlItemDePainelDeAcoes1.TabIndex = 0
         '
+        'CMS_TipoDeProcesso
+        '
+        Me.CMS_TipoDeProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.CMS_TipoDeProcesso.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripSeparator1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripSeparator2, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ToolStripSeparator3, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripSeparator4, Me.ToolStripMenuItem8})
+        Me.CMS_TipoDeProcesso.Name = "CMS_TipoDeProcesso"
+        Me.CMS_TipoDeProcesso.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(153, 204)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Text = "Criar em..."
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripSeparator1.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem2.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem2.Text = "Copiar..."
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem3.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem3.Text = "Copiar como..."
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripSeparator2.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem4.Text = "Mover..."
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem5.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem5.Text = "Mover como..."
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripSeparator3.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(149, 6)
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem6.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem6.Text = "Renomear..."
+        '
+        'ToolStripMenuItem7
+        '
+        Me.ToolStripMenuItem7.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem7.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem7.Text = "Gravar..."
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripSeparator4.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(149, 6)
+        '
+        'ToolStripMenuItem8
+        '
+        Me.ToolStripMenuItem8.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.ToolStripMenuItem8.ForeColor = System.Drawing.Color.Silver
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem8.Text = "Excluir..."
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes)
+        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_NewFolder)
+        Me.Panel1.Controls.Add(Me.PanelEnvolve_BTN_TimeParaAgrupamentos)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel1.Location = New System.Drawing.Point(357, 2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(102, 19)
+        Me.Panel1.TabIndex = 115
+        '
         'ControlPainel_Acoes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel2)
         Me.Name = "ControlPainel_Acoes"
-        Me.Size = New System.Drawing.Size(348, 516)
+        Me.Size = New System.Drawing.Size(468, 516)
         Me.Panel77.ResumeLayout(False)
         Me.PanelAllProcessosAcoes.ResumeLayout(False)
         Me.PanelAllProcessosAcoes.PerformLayout()
@@ -1481,6 +1606,8 @@ Partial Class ControlPainel_Acoes
         Me.Panel2.ResumeLayout(False)
         Me.PanelLBLAcoes.ResumeLayout(False)
         Me.Panel247.ResumeLayout(False)
+        Me.CMS_TipoDeProcesso.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1581,4 +1708,18 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents PanelEnvolveCHK_ShowPanelAllProcessosAcoes As Panel
     Friend WithEvents PanelEnvolve_BTN_NewFolder As Panel
     Friend WithEvents PanelEnvolve_BTN_TimeParaAgrupamentos As Panel
+    Friend WithEvents CMS_TipoDeProcesso As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents Panel1 As Panel
 End Class

@@ -30,8 +30,8 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.TXTName = New System.Windows.Forms.TextBox()
         Me.BTN_TXTName = New System.Windows.Forms.Button()
         Me.PanelEXTProp = New System.Windows.Forms.Panel()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Button96 = New System.Windows.Forms.Button()
+        Me.TXTExetencao = New System.Windows.Forms.TextBox()
+        Me.BTN_TXTExetencao = New System.Windows.Forms.Button()
         Me.PanelMarginPath = New System.Windows.Forms.Panel()
         Me.PanelBorderPath = New System.Windows.Forms.Panel()
         Me.PanelCaminho = New System.Windows.Forms.Panel()
@@ -133,8 +133,8 @@ Partial Class ControlSelectFileAndFoldePanel
         'PanelEXTProp
         '
         Me.PanelEXTProp.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.PanelEXTProp.Controls.Add(Me.TextBox8)
-        Me.PanelEXTProp.Controls.Add(Me.Button96)
+        Me.PanelEXTProp.Controls.Add(Me.TXTExetencao)
+        Me.PanelEXTProp.Controls.Add(Me.BTN_TXTExetencao)
         Me.PanelEXTProp.Dock = System.Windows.Forms.DockStyle.Right
         Me.PanelEXTProp.Location = New System.Drawing.Point(521, 1)
         Me.PanelEXTProp.Name = "PanelEXTProp"
@@ -142,33 +142,33 @@ Partial Class ControlSelectFileAndFoldePanel
         Me.PanelEXTProp.Size = New System.Drawing.Size(63, 28)
         Me.PanelEXTProp.TabIndex = 95
         '
-        'TextBox8
+        'TXTExetencao
         '
-        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox8.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox8.Location = New System.Drawing.Point(3, 3)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(42, 13)
-        Me.TextBox8.TabIndex = 9
-        Me.TextBox8.Text = "EXT"
+        Me.TXTExetencao.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTExetencao.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTExetencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTExetencao.ForeColor = System.Drawing.Color.Gainsboro
+        Me.TXTExetencao.Location = New System.Drawing.Point(3, 3)
+        Me.TXTExetencao.Name = "TXTExetencao"
+        Me.TXTExetencao.Size = New System.Drawing.Size(42, 13)
+        Me.TXTExetencao.TabIndex = 9
+        Me.TXTExetencao.Text = "EXT"
         '
-        'Button96
+        'BTN_TXTExetencao
         '
-        Me.Button96.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Button96.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button96.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button96.FlatAppearance.BorderSize = 0
-        Me.Button96.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button96.Image = CType(resources.GetObject("Button96.Image"), System.Drawing.Image)
-        Me.Button96.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button96.Location = New System.Drawing.Point(45, 3)
-        Me.Button96.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button96.Name = "Button96"
-        Me.Button96.Size = New System.Drawing.Size(15, 22)
-        Me.Button96.TabIndex = 18
-        Me.Button96.UseVisualStyleBackColor = False
+        Me.BTN_TXTExetencao.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.BTN_TXTExetencao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTExetencao.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTExetencao.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTExetencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTExetencao.Image = CType(resources.GetObject("BTN_TXTExetencao.Image"), System.Drawing.Image)
+        Me.BTN_TXTExetencao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTExetencao.Location = New System.Drawing.Point(45, 3)
+        Me.BTN_TXTExetencao.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTExetencao.Name = "BTN_TXTExetencao"
+        Me.BTN_TXTExetencao.Size = New System.Drawing.Size(15, 22)
+        Me.BTN_TXTExetencao.TabIndex = 18
+        Me.BTN_TXTExetencao.UseVisualStyleBackColor = False
         '
         'PanelMarginPath
         '
@@ -321,8 +321,8 @@ Partial Class ControlSelectFileAndFoldePanel
     Friend WithEvents TXTName As TextBox
     Friend WithEvents BTN_TXTName As Button
     Friend WithEvents PanelEXTProp As Panel
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Button96 As Button
+    Friend WithEvents TXTExetencao As TextBox
+    Friend WithEvents BTN_TXTExetencao As Button
     Friend WithEvents PanelMarginPath As Panel
     Friend WithEvents PanelCaminho As Panel
     Friend WithEvents TextBox6 As TextBox

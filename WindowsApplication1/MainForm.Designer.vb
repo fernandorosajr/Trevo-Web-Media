@@ -906,7 +906,7 @@ Partial Class MainForm
         Me.Button39.FlatAppearance.BorderSize = 0
         Me.Button39.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         resources.ApplyResources(Me.Button39, "Button39")
-        Me.Button39.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button39.ForeColor = System.Drawing.Color.Silver
         Me.Button39.Name = "Button39"
         Me.Button39.UseVisualStyleBackColor = False
         '
@@ -1287,7 +1287,7 @@ Partial Class MainForm
         Me.RB_Bibliotecas.FlatAppearance.BorderSize = 0
         Me.RB_Bibliotecas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.RB_Bibliotecas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Bibliotecas.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RB_Bibliotecas.ForeColor = System.Drawing.Color.Silver
         Me.RB_Bibliotecas.Name = "RB_Bibliotecas"
         Me.RB_Bibliotecas.UseVisualStyleBackColor = False
         '
@@ -1298,7 +1298,7 @@ Partial Class MainForm
         Me.RB_ExibePanelMidiaAtiva.FlatAppearance.BorderSize = 0
         Me.RB_ExibePanelMidiaAtiva.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.RB_ExibePanelMidiaAtiva.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_ExibePanelMidiaAtiva.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RB_ExibePanelMidiaAtiva.ForeColor = System.Drawing.Color.Silver
         Me.RB_ExibePanelMidiaAtiva.Name = "RB_ExibePanelMidiaAtiva"
         Me.RB_ExibePanelMidiaAtiva.TabStop = True
         Me.RB_ExibePanelMidiaAtiva.UseVisualStyleBackColor = True
@@ -1331,7 +1331,7 @@ Partial Class MainForm
         Me.RB_Explorerr.FlatAppearance.BorderSize = 0
         Me.RB_Explorerr.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RB_Explorerr.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Explorerr.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RB_Explorerr.ForeColor = System.Drawing.Color.Silver
         Me.RB_Explorerr.Name = "RB_Explorerr"
         Me.RB_Explorerr.UseVisualStyleBackColor = False
         '
@@ -1343,7 +1343,7 @@ Partial Class MainForm
         Me.RB_Midias.FlatAppearance.BorderSize = 0
         Me.RB_Midias.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RB_Midias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Midias.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RB_Midias.ForeColor = System.Drawing.Color.Silver
         Me.RB_Midias.Name = "RB_Midias"
         Me.RB_Midias.TabStop = True
         Me.RB_Midias.UseVisualStyleBackColor = False
@@ -3904,7 +3904,7 @@ Partial Class MainForm
         Me.RBAtividade.FlatAppearance.BorderSize = 0
         Me.RBAtividade.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RBAtividade.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RBAtividade.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RBAtividade.ForeColor = System.Drawing.Color.Silver
         Me.RBAtividade.Name = "RBAtividade"
         Me.RBAtividade.TabStop = True
         Me.RBAtividade.UseVisualStyleBackColor = True
@@ -3915,7 +3915,7 @@ Partial Class MainForm
         Me.RBDetalhe.FlatAppearance.BorderSize = 0
         Me.RBDetalhe.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RBDetalhe.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RBDetalhe.ForeColor = System.Drawing.Color.Gainsboro
+        Me.RBDetalhe.ForeColor = System.Drawing.Color.Silver
         Me.RBDetalhe.Name = "RBDetalhe"
         Me.RBDetalhe.UseVisualStyleBackColor = True
         '

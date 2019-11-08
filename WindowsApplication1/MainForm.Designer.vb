@@ -1241,7 +1241,7 @@ Partial Class MainForm
         '
         'Panel_RecebeMidiasAtivas
         '
-        Me.Panel_RecebeMidiasAtivas.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Panel_RecebeMidiasAtivas.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
         resources.ApplyResources(Me.Panel_RecebeMidiasAtivas, "Panel_RecebeMidiasAtivas")
         Me.Panel_RecebeMidiasAtivas.Name = "Panel_RecebeMidiasAtivas"
         '
@@ -3858,7 +3858,7 @@ Partial Class MainForm
         '
         'PanelAtividade
         '
-        Me.PanelAtividade.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.PanelAtividade.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
         resources.ApplyResources(Me.PanelAtividade, "PanelAtividade")
         Me.PanelAtividade.Name = "PanelAtividade"
         '

@@ -193,16 +193,22 @@
     <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.Designer.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.Designer.vb">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.Designer.vb">
       <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.Designer.vb">
+      <DependentUpon>Control_EnvolveLstBGeral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\UserControl1.Designer.vb">
@@ -298,11 +304,14 @@
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.resx">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Detalhes.resx">
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.resx">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.resx">
       <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.resx">
+      <DependentUpon>Control_EnvolveLstBGeral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>

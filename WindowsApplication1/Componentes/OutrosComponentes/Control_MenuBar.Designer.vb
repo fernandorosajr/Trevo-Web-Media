@@ -28,15 +28,23 @@ Partial Class Control_MenuBar
         Me.Panel26 = New System.Windows.Forms.Panel()
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.Panel30 = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button31 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel56 = New System.Windows.Forms.Panel()
         Me.Panel57 = New System.Windows.Forms.Panel()
         Me.Panel58 = New System.Windows.Forms.Panel()
         Me.Panel59 = New System.Windows.Forms.Panel()
         Me.Button32 = New System.Windows.Forms.Button()
+        Me.Button33 = New System.Windows.Forms.Button()
         Me.Panel60 = New System.Windows.Forms.Panel()
+        Me.Button34 = New System.Windows.Forms.Button()
+        Me.Button35 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel61 = New System.Windows.Forms.Panel()
+        Me.CHKExibirArvores = New System.Windows.Forms.CheckBox()
         Me.Panel62 = New System.Windows.Forms.Panel()
         Me.Panel64 = New System.Windows.Forms.Panel()
         Me.Panel66 = New System.Windows.Forms.Panel()
@@ -57,14 +65,6 @@ Partial Class Control_MenuBar
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button31 = New System.Windows.Forms.Button()
-        Me.Button33 = New System.Windows.Forms.Button()
-        Me.Button34 = New System.Windows.Forms.Button()
-        Me.Button35 = New System.Windows.Forms.Button()
-        Me.CHKExibirArvores = New System.Windows.Forms.CheckBox()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.Panel26.SuspendLayout()
@@ -88,7 +88,7 @@ Partial Class Control_MenuBar
         Me.Panel23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel23.Location = New System.Drawing.Point(0, 0)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(846, 101)
+        Me.Panel23.Size = New System.Drawing.Size(875, 101)
         Me.Panel23.TabIndex = 11
         '
         'Panel25
@@ -99,7 +99,7 @@ Partial Class Control_MenuBar
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(846, 101)
+        Me.Panel25.Size = New System.Drawing.Size(875, 101)
         Me.Panel25.TabIndex = 6
         '
         'Panel26
@@ -134,6 +134,92 @@ Partial Class Control_MenuBar
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(108, 82)
         Me.Panel30.TabIndex = 9
+        '
+        'Button10
+        '
+        Me.Button10.AutoSize = True
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.ForeColor = System.Drawing.Color.Black
+        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
+        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button10.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button10.Location = New System.Drawing.Point(0, 23)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(108, 23)
+        Me.Button10.TabIndex = 10
+        Me.Button10.Text = "Copiar caminho"
+        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.AutoSize = True
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.ForeColor = System.Drawing.Color.Black
+        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
+        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button11.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button11.Location = New System.Drawing.Point(0, 0)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(108, 23)
+        Me.Button11.TabIndex = 9
+        Me.Button11.Text = "Novo ítem"
+        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.ForeColor = System.Drawing.Color.Black
+        Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
+        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button12.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button12.Location = New System.Drawing.Point(62, 0)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(64, 82)
+        Me.Button12.TabIndex = 8
+        Me.Button12.Text = "Nova pasta"
+        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button31
+        '
+        Me.Button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button31.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button31.FlatAppearance.BorderSize = 0
+        Me.Button31.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button31.ForeColor = System.Drawing.Color.Black
+        Me.Button31.Image = CType(resources.GetObject("Button31.Image"), System.Drawing.Image)
+        Me.Button31.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button31.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button31.Location = New System.Drawing.Point(0, 0)
+        Me.Button31.Name = "Button31"
+        Me.Button31.Size = New System.Drawing.Size(62, 82)
+        Me.Button31.TabIndex = 7
+        Me.Button31.Text = "Nova mídia"
+        Me.Button31.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button31.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -213,6 +299,28 @@ Partial Class Control_MenuBar
         Me.Button32.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button32.UseVisualStyleBackColor = True
         '
+        'Button33
+        '
+        Me.Button33.AutoSize = True
+        Me.Button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button33.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button33.FlatAppearance.BorderSize = 0
+        Me.Button33.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button33.ForeColor = System.Drawing.Color.Black
+        Me.Button33.Image = CType(resources.GetObject("Button33.Image"), System.Drawing.Image)
+        Me.Button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button33.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button33.Location = New System.Drawing.Point(1, 0)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(58, 82)
+        Me.Button33.TabIndex = 9
+        Me.Button33.Text = "Excluir"
+        Me.Button33.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button33.UseVisualStyleBackColor = True
+        '
         'Panel60
         '
         Me.Panel60.BackColor = System.Drawing.Color.LightGray
@@ -221,6 +329,48 @@ Partial Class Control_MenuBar
         Me.Panel60.Name = "Panel60"
         Me.Panel60.Size = New System.Drawing.Size(1, 82)
         Me.Panel60.TabIndex = 12
+        '
+        'Button34
+        '
+        Me.Button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button34.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button34.FlatAppearance.BorderSize = 0
+        Me.Button34.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button34.ForeColor = System.Drawing.Color.Black
+        Me.Button34.Image = CType(resources.GetObject("Button34.Image"), System.Drawing.Image)
+        Me.Button34.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button34.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button34.Location = New System.Drawing.Point(140, 0)
+        Me.Button34.Name = "Button34"
+        Me.Button34.Size = New System.Drawing.Size(65, 82)
+        Me.Button34.TabIndex = 8
+        Me.Button34.Text = "Copiar para"
+        Me.Button34.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button34.UseVisualStyleBackColor = True
+        '
+        'Button35
+        '
+        Me.Button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button35.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button35.FlatAppearance.BorderSize = 0
+        Me.Button35.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button35.ForeColor = System.Drawing.Color.Black
+        Me.Button35.Image = CType(resources.GetObject("Button35.Image"), System.Drawing.Image)
+        Me.Button35.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button35.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button35.Location = New System.Drawing.Point(75, 0)
+        Me.Button35.Name = "Button35"
+        Me.Button35.Size = New System.Drawing.Size(65, 82)
+        Me.Button35.TabIndex = 7
+        Me.Button35.Text = "Mover para"
+        Me.Button35.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button35.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -243,6 +393,27 @@ Partial Class Control_MenuBar
         Me.Panel61.Name = "Panel61"
         Me.Panel61.Size = New System.Drawing.Size(1, 95)
         Me.Panel61.TabIndex = 12
+        '
+        'CHKExibirArvores
+        '
+        Me.CHKExibirArvores.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHKExibirArvores.Dock = System.Windows.Forms.DockStyle.Left
+        Me.CHKExibirArvores.FlatAppearance.BorderSize = 0
+        Me.CHKExibirArvores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHKExibirArvores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CHKExibirArvores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHKExibirArvores.ForeColor = System.Drawing.Color.Silver
+        Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
+        Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CHKExibirArvores.Location = New System.Drawing.Point(0, 0)
+        Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
+        Me.CHKExibirArvores.Name = "CHKExibirArvores"
+        Me.CHKExibirArvores.Size = New System.Drawing.Size(75, 95)
+        Me.CHKExibirArvores.TabIndex = 19
+        Me.CHKExibirArvores.Text = "Painel navegação"
+        Me.CHKExibirArvores.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CHKExibirArvores.UseVisualStyleBackColor = True
         '
         'Panel62
         '
@@ -550,177 +721,6 @@ Partial Class Control_MenuBar
         Me.Label8.Text = "Área de Transferência"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button10
-        '
-        Me.Button10.AutoSize = True
-        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Black
-        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
-        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button10.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button10.Location = New System.Drawing.Point(0, 23)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(108, 23)
-        Me.Button10.TabIndex = 10
-        Me.Button10.Text = "Copiar caminho"
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.AutoSize = True
-        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.Color.Black
-        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
-        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button11.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button11.Location = New System.Drawing.Point(0, 0)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(108, 23)
-        Me.Button11.TabIndex = 9
-        Me.Button11.Text = "Novo ítem"
-        Me.Button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Button12
-        '
-        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.ForeColor = System.Drawing.Color.Black
-        Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button12.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button12.Location = New System.Drawing.Point(62, 0)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(64, 82)
-        Me.Button12.TabIndex = 8
-        Me.Button12.Text = "Nova pasta"
-        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button31
-        '
-        Me.Button31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button31.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button31.FlatAppearance.BorderSize = 0
-        Me.Button31.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button31.ForeColor = System.Drawing.Color.Black
-        Me.Button31.Image = CType(resources.GetObject("Button31.Image"), System.Drawing.Image)
-        Me.Button31.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button31.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button31.Location = New System.Drawing.Point(0, 0)
-        Me.Button31.Name = "Button31"
-        Me.Button31.Size = New System.Drawing.Size(62, 82)
-        Me.Button31.TabIndex = 7
-        Me.Button31.Text = "Nova mídia"
-        Me.Button31.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button31.UseVisualStyleBackColor = True
-        '
-        'Button33
-        '
-        Me.Button33.AutoSize = True
-        Me.Button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button33.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button33.FlatAppearance.BorderSize = 0
-        Me.Button33.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button33.ForeColor = System.Drawing.Color.Black
-        Me.Button33.Image = CType(resources.GetObject("Button33.Image"), System.Drawing.Image)
-        Me.Button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button33.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button33.Location = New System.Drawing.Point(1, 0)
-        Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(58, 82)
-        Me.Button33.TabIndex = 9
-        Me.Button33.Text = "Excluir"
-        Me.Button33.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button33.UseVisualStyleBackColor = True
-        '
-        'Button34
-        '
-        Me.Button34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button34.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button34.FlatAppearance.BorderSize = 0
-        Me.Button34.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button34.ForeColor = System.Drawing.Color.Black
-        Me.Button34.Image = CType(resources.GetObject("Button34.Image"), System.Drawing.Image)
-        Me.Button34.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button34.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button34.Location = New System.Drawing.Point(140, 0)
-        Me.Button34.Name = "Button34"
-        Me.Button34.Size = New System.Drawing.Size(65, 82)
-        Me.Button34.TabIndex = 8
-        Me.Button34.Text = "Copiar para"
-        Me.Button34.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button34.UseVisualStyleBackColor = True
-        '
-        'Button35
-        '
-        Me.Button35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button35.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button35.FlatAppearance.BorderSize = 0
-        Me.Button35.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button35.ForeColor = System.Drawing.Color.Black
-        Me.Button35.Image = CType(resources.GetObject("Button35.Image"), System.Drawing.Image)
-        Me.Button35.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button35.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button35.Location = New System.Drawing.Point(75, 0)
-        Me.Button35.Name = "Button35"
-        Me.Button35.Size = New System.Drawing.Size(65, 82)
-        Me.Button35.TabIndex = 7
-        Me.Button35.Text = "Mover para"
-        Me.Button35.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button35.UseVisualStyleBackColor = True
-        '
-        'CHKExibirArvores
-        '
-        Me.CHKExibirArvores.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHKExibirArvores.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CHKExibirArvores.FlatAppearance.BorderSize = 0
-        Me.CHKExibirArvores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHKExibirArvores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CHKExibirArvores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHKExibirArvores.ForeColor = System.Drawing.Color.Silver
-        Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
-        Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CHKExibirArvores.Location = New System.Drawing.Point(0, 0)
-        Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
-        Me.CHKExibirArvores.Name = "CHKExibirArvores"
-        Me.CHKExibirArvores.Size = New System.Drawing.Size(75, 95)
-        Me.CHKExibirArvores.TabIndex = 19
-        Me.CHKExibirArvores.Text = "Painel navegação"
-        Me.CHKExibirArvores.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CHKExibirArvores.UseVisualStyleBackColor = True
-        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -728,7 +728,7 @@ Partial Class Control_MenuBar
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.Panel23)
         Me.Name = "Control_MenuBar"
-        Me.Size = New System.Drawing.Size(846, 101)
+        Me.Size = New System.Drawing.Size(875, 101)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
         Me.Panel26.ResumeLayout(False)

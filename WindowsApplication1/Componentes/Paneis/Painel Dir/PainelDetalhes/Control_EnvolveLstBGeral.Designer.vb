@@ -27,30 +27,30 @@ Partial Class Control_EnvolveLstBGeral
         Me.PanelEnvolveItens = New System.Windows.Forms.Panel()
         Me.Panel265 = New System.Windows.Forms.Panel()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
+        Me.Button112 = New System.Windows.Forms.Button()
         Me.Label98 = New System.Windows.Forms.Label()
         Me.Panel266 = New System.Windows.Forms.Panel()
         Me.TextBox21 = New System.Windows.Forms.TextBox()
+        Me.Button113 = New System.Windows.Forms.Button()
         Me.Label99 = New System.Windows.Forms.Label()
         Me.Panel267 = New System.Windows.Forms.Panel()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
+        Me.Button114 = New System.Windows.Forms.Button()
         Me.Label100 = New System.Windows.Forms.Label()
         Me.Panel268 = New System.Windows.Forms.Panel()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
+        Me.Button115 = New System.Windows.Forms.Button()
         Me.Label101 = New System.Windows.Forms.Label()
         Me.Panel269 = New System.Windows.Forms.Panel()
         Me.TextBox24 = New System.Windows.Forms.TextBox()
+        Me.Button116 = New System.Windows.Forms.Button()
         Me.Label102 = New System.Windows.Forms.Label()
         Me.Panel270 = New System.Windows.Forms.Panel()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
+        Me.Button117 = New System.Windows.Forms.Button()
         Me.Label103 = New System.Windows.Forms.Label()
         Me.Panel271 = New System.Windows.Forms.Panel()
         Me.Label104 = New System.Windows.Forms.Label()
-        Me.Button112 = New System.Windows.Forms.Button()
-        Me.Button113 = New System.Windows.Forms.Button()
-        Me.Button114 = New System.Windows.Forms.Button()
-        Me.Button115 = New System.Windows.Forms.Button()
-        Me.Button116 = New System.Windows.Forms.Button()
-        Me.Button117 = New System.Windows.Forms.Button()
         Me.Button118 = New System.Windows.Forms.Button()
         Me.PanelEnvolveLstBGeral.SuspendLayout()
         Me.PanelEnvolveItens.SuspendLayout()
@@ -115,6 +115,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox20.Size = New System.Drawing.Size(317, 13)
         Me.TextBox20.TabIndex = 1
         '
+        'Button112
+        '
+        Me.Button112.AutoSize = True
+        Me.Button112.BackColor = System.Drawing.Color.Transparent
+        Me.Button112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button112.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button112.FlatAppearance.BorderSize = 0
+        Me.Button112.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button112.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button112.Image = CType(resources.GetObject("Button112.Image"), System.Drawing.Image)
+        Me.Button112.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button112.Location = New System.Drawing.Point(449, 1)
+        Me.Button112.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button112.Name = "Button112"
+        Me.Button112.Size = New System.Drawing.Size(30, 16)
+        Me.Button112.TabIndex = 22
+        Me.Button112.UseVisualStyleBackColor = False
+        '
         'Label98
         '
         Me.Label98.AutoSize = True
@@ -152,6 +170,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.Size = New System.Drawing.Size(343, 13)
         Me.TextBox21.TabIndex = 1
+        '
+        'Button113
+        '
+        Me.Button113.AutoSize = True
+        Me.Button113.BackColor = System.Drawing.Color.Transparent
+        Me.Button113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button113.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button113.FlatAppearance.BorderSize = 0
+        Me.Button113.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button113.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button113.Image = CType(resources.GetObject("Button113.Image"), System.Drawing.Image)
+        Me.Button113.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button113.Location = New System.Drawing.Point(449, 1)
+        Me.Button113.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button113.Name = "Button113"
+        Me.Button113.Size = New System.Drawing.Size(30, 16)
+        Me.Button113.TabIndex = 22
+        Me.Button113.UseVisualStyleBackColor = False
         '
         'Label99
         '
@@ -191,6 +227,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox22.Size = New System.Drawing.Size(382, 13)
         Me.TextBox22.TabIndex = 1
         '
+        'Button114
+        '
+        Me.Button114.AutoSize = True
+        Me.Button114.BackColor = System.Drawing.Color.Transparent
+        Me.Button114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button114.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button114.FlatAppearance.BorderSize = 0
+        Me.Button114.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button114.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button114.Image = CType(resources.GetObject("Button114.Image"), System.Drawing.Image)
+        Me.Button114.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button114.Location = New System.Drawing.Point(449, 1)
+        Me.Button114.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button114.Name = "Button114"
+        Me.Button114.Size = New System.Drawing.Size(30, 16)
+        Me.Button114.TabIndex = 22
+        Me.Button114.UseVisualStyleBackColor = False
+        '
         'Label100
         '
         Me.Label100.AutoSize = True
@@ -228,6 +282,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox23.Name = "TextBox23"
         Me.TextBox23.Size = New System.Drawing.Size(381, 13)
         Me.TextBox23.TabIndex = 1
+        '
+        'Button115
+        '
+        Me.Button115.AutoSize = True
+        Me.Button115.BackColor = System.Drawing.Color.Transparent
+        Me.Button115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button115.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button115.FlatAppearance.BorderSize = 0
+        Me.Button115.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button115.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button115.Image = CType(resources.GetObject("Button115.Image"), System.Drawing.Image)
+        Me.Button115.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button115.Location = New System.Drawing.Point(449, 1)
+        Me.Button115.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button115.Name = "Button115"
+        Me.Button115.Size = New System.Drawing.Size(30, 16)
+        Me.Button115.TabIndex = 22
+        Me.Button115.UseVisualStyleBackColor = False
         '
         'Label101
         '
@@ -267,6 +339,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox24.Size = New System.Drawing.Size(409, 13)
         Me.TextBox24.TabIndex = 1
         '
+        'Button116
+        '
+        Me.Button116.AutoSize = True
+        Me.Button116.BackColor = System.Drawing.Color.Transparent
+        Me.Button116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button116.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button116.FlatAppearance.BorderSize = 0
+        Me.Button116.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button116.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button116.Image = CType(resources.GetObject("Button116.Image"), System.Drawing.Image)
+        Me.Button116.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button116.Location = New System.Drawing.Point(449, 1)
+        Me.Button116.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button116.Name = "Button116"
+        Me.Button116.Size = New System.Drawing.Size(30, 16)
+        Me.Button116.TabIndex = 22
+        Me.Button116.UseVisualStyleBackColor = False
+        '
         'Label102
         '
         Me.Label102.AutoSize = True
@@ -304,6 +394,24 @@ Partial Class Control_EnvolveLstBGeral
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.Size = New System.Drawing.Size(402, 13)
         Me.TextBox25.TabIndex = 1
+        '
+        'Button117
+        '
+        Me.Button117.AutoSize = True
+        Me.Button117.BackColor = System.Drawing.Color.Transparent
+        Me.Button117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button117.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button117.FlatAppearance.BorderSize = 0
+        Me.Button117.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button117.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button117.Image = CType(resources.GetObject("Button117.Image"), System.Drawing.Image)
+        Me.Button117.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button117.Location = New System.Drawing.Point(449, 1)
+        Me.Button117.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button117.Name = "Button117"
+        Me.Button117.Size = New System.Drawing.Size(30, 16)
+        Me.Button117.TabIndex = 22
+        Me.Button117.UseVisualStyleBackColor = False
         '
         'Label103
         '
@@ -344,114 +452,6 @@ Partial Class Control_EnvolveLstBGeral
         Me.Label104.Size = New System.Drawing.Size(464, 23)
         Me.Label104.TabIndex = 1
         Me.Label104.Text = "Propriedades do Arquivo"
-        '
-        'Button112
-        '
-        Me.Button112.AutoSize = True
-        Me.Button112.BackColor = System.Drawing.Color.Transparent
-        Me.Button112.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button112.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button112.FlatAppearance.BorderSize = 0
-        Me.Button112.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button112.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button112.Image = CType(resources.GetObject("Button112.Image"), System.Drawing.Image)
-        Me.Button112.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button112.Location = New System.Drawing.Point(449, 1)
-        Me.Button112.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button112.Name = "Button112"
-        Me.Button112.Size = New System.Drawing.Size(30, 16)
-        Me.Button112.TabIndex = 22
-        Me.Button112.UseVisualStyleBackColor = False
-        '
-        'Button113
-        '
-        Me.Button113.AutoSize = True
-        Me.Button113.BackColor = System.Drawing.Color.Transparent
-        Me.Button113.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button113.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button113.FlatAppearance.BorderSize = 0
-        Me.Button113.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button113.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button113.Image = CType(resources.GetObject("Button113.Image"), System.Drawing.Image)
-        Me.Button113.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button113.Location = New System.Drawing.Point(449, 1)
-        Me.Button113.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button113.Name = "Button113"
-        Me.Button113.Size = New System.Drawing.Size(30, 16)
-        Me.Button113.TabIndex = 22
-        Me.Button113.UseVisualStyleBackColor = False
-        '
-        'Button114
-        '
-        Me.Button114.AutoSize = True
-        Me.Button114.BackColor = System.Drawing.Color.Transparent
-        Me.Button114.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button114.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button114.FlatAppearance.BorderSize = 0
-        Me.Button114.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button114.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button114.Image = CType(resources.GetObject("Button114.Image"), System.Drawing.Image)
-        Me.Button114.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button114.Location = New System.Drawing.Point(449, 1)
-        Me.Button114.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button114.Name = "Button114"
-        Me.Button114.Size = New System.Drawing.Size(30, 16)
-        Me.Button114.TabIndex = 22
-        Me.Button114.UseVisualStyleBackColor = False
-        '
-        'Button115
-        '
-        Me.Button115.AutoSize = True
-        Me.Button115.BackColor = System.Drawing.Color.Transparent
-        Me.Button115.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button115.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button115.FlatAppearance.BorderSize = 0
-        Me.Button115.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button115.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button115.Image = CType(resources.GetObject("Button115.Image"), System.Drawing.Image)
-        Me.Button115.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button115.Location = New System.Drawing.Point(449, 1)
-        Me.Button115.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button115.Name = "Button115"
-        Me.Button115.Size = New System.Drawing.Size(30, 16)
-        Me.Button115.TabIndex = 22
-        Me.Button115.UseVisualStyleBackColor = False
-        '
-        'Button116
-        '
-        Me.Button116.AutoSize = True
-        Me.Button116.BackColor = System.Drawing.Color.Transparent
-        Me.Button116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button116.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button116.FlatAppearance.BorderSize = 0
-        Me.Button116.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button116.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button116.Image = CType(resources.GetObject("Button116.Image"), System.Drawing.Image)
-        Me.Button116.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button116.Location = New System.Drawing.Point(449, 1)
-        Me.Button116.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button116.Name = "Button116"
-        Me.Button116.Size = New System.Drawing.Size(30, 16)
-        Me.Button116.TabIndex = 22
-        Me.Button116.UseVisualStyleBackColor = False
-        '
-        'Button117
-        '
-        Me.Button117.AutoSize = True
-        Me.Button117.BackColor = System.Drawing.Color.Transparent
-        Me.Button117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button117.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button117.FlatAppearance.BorderSize = 0
-        Me.Button117.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button117.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button117.Image = CType(resources.GetObject("Button117.Image"), System.Drawing.Image)
-        Me.Button117.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button117.Location = New System.Drawing.Point(449, 1)
-        Me.Button117.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button117.Name = "Button117"
-        Me.Button117.Size = New System.Drawing.Size(30, 16)
-        Me.Button117.TabIndex = 22
-        Me.Button117.UseVisualStyleBackColor = False
         '
         'Button118
         '

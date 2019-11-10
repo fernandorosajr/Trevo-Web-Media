@@ -193,6 +193,12 @@
     <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.Designer.vb">
+      <DependentUpon>ControlItemMeta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.Designer.vb">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.resx">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.resx">
+      <DependentUpon>ControlItemMeta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.resx">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>

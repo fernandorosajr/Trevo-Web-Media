@@ -163,10 +163,10 @@
     <Compile Include="Componentes\OutrosComponentes\ControlSelectFileAndFoldePanel.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\Control_Infor.Designer.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.Designer.vb">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\Control_Infor.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\OutrosComponentes\Control_MenuBar.Designer.vb">
@@ -187,10 +187,10 @@
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.Designer.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.Designer.vb">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.Designer.vb">
@@ -295,7 +295,7 @@
     <EmbeddedResource Include="Componentes\OutrosComponentes\ControlSelectFileAndFoldePanel.resx">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\Control_Infor.resx">
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.resx">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\OutrosComponentes\Control_MenuBar.resx">
@@ -307,7 +307,7 @@
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.resx">
       <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlPainel_Atividades.resx">
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.resx">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.resx">
@@ -674,6 +674,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\usu.png" />
     <None Include="Resources\grupo026.png" />
     <None Include="Resources\grupo025.png" />
     <None Include="Resources\grupo0241.png" />
@@ -736,6 +737,10 @@
     <None Include="Resources\arquivo1.png" />
     <None Include="Resources\dvd1.png" />
     <None Include="Resources\dvd11.png" />
+    <None Include="Resources\editar item.png" />
+    <None Include="Resources\editar item2.png" />
+    <None Include="Resources\editar item3.png" />
+    <None Include="Resources\editar item4.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

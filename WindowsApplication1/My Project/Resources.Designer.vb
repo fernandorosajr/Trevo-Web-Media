@@ -403,6 +403,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property editar_item4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("editar item4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property escolha() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("escolha", resourceCulture)
@@ -1416,6 +1426,16 @@ Namespace My.Resources
         Friend ReadOnly Property time2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("time2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property usu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("usu", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

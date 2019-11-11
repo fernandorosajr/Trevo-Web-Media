@@ -22,7 +22,6 @@ Partial Class ControlItemMeta
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlItemMeta))
         Me.Panel270 = New System.Windows.Forms.Panel()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label103 = New System.Windows.Forms.Label()
@@ -32,7 +31,7 @@ Partial Class ControlItemMeta
         '
         'Panel270
         '
-        Me.Panel270.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.Panel270.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Panel270.Controls.Add(Me.TextBox25)
         Me.Panel270.Controls.Add(Me.Button117)
         Me.Panel270.Controls.Add(Me.Label103)
@@ -45,13 +44,13 @@ Partial Class ControlItemMeta
         '
         'TextBox25
         '
-        Me.TextBox25.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TextBox25.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox25.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TextBox25.Location = New System.Drawing.Point(47, 1)
+        Me.TextBox25.Location = New System.Drawing.Point(53, 1)
         Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(434, 13)
+        Me.TextBox25.Size = New System.Drawing.Size(435, 13)
         Me.TextBox25.TabIndex = 1
         '
         'Label103
@@ -63,8 +62,8 @@ Partial Class ControlItemMeta
         Me.Label103.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Label103.Location = New System.Drawing.Point(0, 1)
         Me.Label103.Name = "Label103"
-        Me.Label103.Padding = New System.Windows.Forms.Padding(2)
-        Me.Label103.Size = New System.Drawing.Size(47, 17)
+        Me.Label103.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label103.Size = New System.Drawing.Size(53, 13)
         Me.Label103.TabIndex = 0
         Me.Label103.Text = "Nome:"
         '
@@ -72,17 +71,17 @@ Partial Class ControlItemMeta
         '
         Me.Button117.AutoSize = True
         Me.Button117.BackColor = System.Drawing.Color.Transparent
-        Me.Button117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button117.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.editar_item4
+        Me.Button117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button117.Dock = System.Windows.Forms.DockStyle.Right
         Me.Button117.FlatAppearance.BorderSize = 0
         Me.Button117.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
         Me.Button117.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button117.Image = CType(resources.GetObject("Button117.Image"), System.Drawing.Image)
         Me.Button117.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button117.Location = New System.Drawing.Point(481, 1)
+        Me.Button117.Location = New System.Drawing.Point(488, 1)
         Me.Button117.Margin = New System.Windows.Forms.Padding(0)
         Me.Button117.Name = "Button117"
-        Me.Button117.Size = New System.Drawing.Size(30, 16)
+        Me.Button117.Size = New System.Drawing.Size(23, 16)
         Me.Button117.TabIndex = 22
         Me.Button117.UseVisualStyleBackColor = False
         '

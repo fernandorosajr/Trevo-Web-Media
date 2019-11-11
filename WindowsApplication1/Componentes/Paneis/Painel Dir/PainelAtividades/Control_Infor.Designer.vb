@@ -22,12 +22,10 @@ Partial Class Control_Infor
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_Infor))
         Me.Panel298 = New System.Windows.Forms.Panel()
         Me.Panel299 = New System.Windows.Forms.Panel()
         Me.Panel300 = New System.Windows.Forms.Panel()
         Me.Panel301 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Panel302 = New System.Windows.Forms.Panel()
         Me.Label106 = New System.Windows.Forms.Label()
@@ -36,27 +34,32 @@ Partial Class Control_Infor
         Me.Panel304 = New System.Windows.Forms.Panel()
         Me.Label108 = New System.Windows.Forms.Label()
         Me.Panel305 = New System.Windows.Forms.Panel()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel306 = New System.Windows.Forms.Panel()
-        Me.Button126 = New System.Windows.Forms.Button()
         Me.Label109 = New System.Windows.Forms.Label()
         Me.Panel307 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Button126 = New System.Windows.Forms.Button()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel298.SuspendLayout()
         Me.Panel299.SuspendLayout()
         Me.Panel300.SuspendLayout()
         Me.Panel301.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel302.SuspendLayout()
         Me.Panel303.SuspendLayout()
         Me.Panel304.SuspendLayout()
         Me.Panel305.SuspendLayout()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanel5.SuspendLayout()
         Me.Panel306.SuspendLayout()
         Me.Panel307.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel298
@@ -83,44 +86,33 @@ Partial Class Control_Infor
         'Panel300
         '
         Me.Panel300.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Panel300.Controls.Add(Me.Panel301)
-        Me.Panel300.Controls.Add(Me.Label33)
-        Me.Panel300.Controls.Add(Me.Panel302)
+        Me.Panel300.Controls.Add(Me.Panel1)
         Me.Panel300.Controls.Add(Me.Panel303)
         Me.Panel300.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel300.Location = New System.Drawing.Point(1, 1)
         Me.Panel300.Name = "Panel300"
+        Me.Panel300.Padding = New System.Windows.Forms.Padding(8)
         Me.Panel300.Size = New System.Drawing.Size(387, 220)
         Me.Panel300.TabIndex = 2
         '
         'Panel301
         '
         Me.Panel301.Controls.Add(Me.PictureBox1)
-        Me.Panel301.Location = New System.Drawing.Point(2, 3)
+        Me.Panel301.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel301.Location = New System.Drawing.Point(0, 0)
         Me.Panel301.Name = "Panel301"
         Me.Panel301.Padding = New System.Windows.Forms.Padding(5)
         Me.Panel301.Size = New System.Drawing.Size(45, 45)
         Me.Panel301.TabIndex = 8
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Label33
         '
         Me.Label33.AutoSize = True
         Me.Label33.BackColor = System.Drawing.Color.Transparent
+        Me.Label33.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label33.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label33.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label33.Location = New System.Drawing.Point(67, 28)
+        Me.Label33.Location = New System.Drawing.Point(0, 22)
         Me.Label33.Name = "Label33"
         Me.Label33.Padding = New System.Windows.Forms.Padding(5)
         Me.Label33.Size = New System.Drawing.Size(63, 23)
@@ -131,9 +123,10 @@ Partial Class Control_Infor
         '
         Me.Panel302.Controls.Add(Me.Label106)
         Me.Panel302.Controls.Add(Me.Label107)
-        Me.Panel302.Location = New System.Drawing.Point(75, 7)
+        Me.Panel302.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel302.Location = New System.Drawing.Point(0, 0)
         Me.Panel302.Name = "Panel302"
-        Me.Panel302.Size = New System.Drawing.Size(210, 20)
+        Me.Panel302.Size = New System.Drawing.Size(326, 22)
         Me.Panel302.TabIndex = 6
         '
         'Label106
@@ -173,9 +166,9 @@ Partial Class Control_Infor
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel303.Controls.Add(Me.Panel304)
         Me.Panel303.Controls.Add(Me.FlowLayoutPanel5)
-        Me.Panel303.Location = New System.Drawing.Point(70, 54)
+        Me.Panel303.Location = New System.Drawing.Point(56, 59)
         Me.Panel303.Name = "Panel303"
-        Me.Panel303.Size = New System.Drawing.Size(302, 158)
+        Me.Panel303.Size = New System.Drawing.Size(323, 150)
         Me.Panel303.TabIndex = 5
         '
         'Panel304
@@ -210,18 +203,6 @@ Partial Class Control_Infor
         Me.Panel305.Size = New System.Drawing.Size(29, 25)
         Me.Panel305.TabIndex = 9
         '
-        'PictureBox13
-        '
-        Me.PictureBox13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox13.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
-        Me.PictureBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PictureBox13.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(29, 25)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox13.TabIndex = 2
-        Me.PictureBox13.TabStop = False
-        '
         'FlowLayoutPanel5
         '
         Me.FlowLayoutPanel5.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -230,7 +211,7 @@ Partial Class Control_Infor
         Me.FlowLayoutPanel5.Controls.Add(Me.Panel306)
         Me.FlowLayoutPanel5.Location = New System.Drawing.Point(35, 34)
         Me.FlowLayoutPanel5.Name = "FlowLayoutPanel5"
-        Me.FlowLayoutPanel5.Size = New System.Drawing.Size(265, 121)
+        Me.FlowLayoutPanel5.Size = New System.Drawing.Size(286, 113)
         Me.FlowLayoutPanel5.TabIndex = 2
         '
         'Panel306
@@ -242,24 +223,6 @@ Partial Class Control_Infor
         Me.Panel306.Name = "Panel306"
         Me.Panel306.Size = New System.Drawing.Size(155, 23)
         Me.Panel306.TabIndex = 10
-        '
-        'Button126
-        '
-        Me.Button126.AutoSize = True
-        Me.Button126.BackColor = System.Drawing.Color.Transparent
-        Me.Button126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button126.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button126.FlatAppearance.BorderSize = 0
-        Me.Button126.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button126.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button126.Image = CType(resources.GetObject("Button126.Image"), System.Drawing.Image)
-        Me.Button126.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button126.Location = New System.Drawing.Point(133, 0)
-        Me.Button126.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button126.Name = "Button126"
-        Me.Button126.Size = New System.Drawing.Size(22, 23)
-        Me.Button126.TabIndex = 23
-        Me.Button126.UseVisualStyleBackColor = False
         '
         'Label109
         '
@@ -284,6 +247,48 @@ Partial Class Control_Infor
         Me.Panel307.Size = New System.Drawing.Size(29, 23)
         Me.Panel307.TabIndex = 9
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.TrevoWebMedia.My.Resources.Resources.usu
+        Me.PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox13.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.PictureBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PictureBox13.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(29, 25)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 2
+        Me.PictureBox13.TabStop = False
+        '
+        'Button126
+        '
+        Me.Button126.AutoSize = True
+        Me.Button126.BackColor = System.Drawing.Color.Transparent
+        Me.Button126.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.editar_item4
+        Me.Button126.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button126.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button126.FlatAppearance.BorderSize = 0
+        Me.Button126.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button126.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button126.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button126.Location = New System.Drawing.Point(133, 0)
+        Me.Button126.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button126.Name = "Button126"
+        Me.Button126.Size = New System.Drawing.Size(22, 23)
+        Me.Button126.TabIndex = 23
+        Me.Button126.UseVisualStyleBackColor = False
+        '
         'PictureBox14
         '
         Me.PictureBox14.Dock = System.Windows.Forms.DockStyle.Fill
@@ -296,6 +301,26 @@ Partial Class Control_Infor
         Me.PictureBox14.TabIndex = 2
         Me.PictureBox14.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.Panel301)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(8, 8)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(371, 45)
+        Me.Panel1.TabIndex = 9
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label33)
+        Me.Panel2.Controls.Add(Me.Panel302)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(45, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(326, 45)
+        Me.Panel2.TabIndex = 9
+        '
         'Control_Infor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -306,20 +331,22 @@ Partial Class Control_Infor
         Me.Panel298.ResumeLayout(False)
         Me.Panel299.ResumeLayout(False)
         Me.Panel300.ResumeLayout(False)
-        Me.Panel300.PerformLayout()
         Me.Panel301.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel302.ResumeLayout(False)
         Me.Panel302.PerformLayout()
         Me.Panel303.ResumeLayout(False)
         Me.Panel304.ResumeLayout(False)
         Me.Panel305.ResumeLayout(False)
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.FlowLayoutPanel5.ResumeLayout(False)
         Me.Panel306.ResumeLayout(False)
         Me.Panel306.PerformLayout()
         Me.Panel307.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -344,4 +371,6 @@ Partial Class Control_Infor
     Friend WithEvents Label109 As Label
     Friend WithEvents Panel307 As Panel
     Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class

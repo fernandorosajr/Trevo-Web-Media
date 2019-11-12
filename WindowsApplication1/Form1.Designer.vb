@@ -24,70 +24,70 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"oooooooooo"}, "processo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"kkkkkkkkkkkkk"}, "arquivo1.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim ListViewItem9 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"jjjj"}, "arquivo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim TreeNode123 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode124 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode125 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode126 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
-        Dim TreeNode127 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
-        Dim TreeNode128 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir em...")
-        Dim TreeNode129 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para Lixeira")
-        Dim TreeNode130 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para...", New System.Windows.Forms.TreeNode() {TreeNode127, TreeNode128, TreeNode129})
-        Dim TreeNode131 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
-        Dim TreeNode132 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear...")
-        Dim TreeNode133 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta")
-        Dim TreeNode134 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo...")
-        Dim TreeNode135 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar...", New System.Windows.Forms.TreeNode() {TreeNode133, TreeNode134})
-        Dim TreeNode136 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo 01.html")
-        Dim TreeNode137 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo02.jpg")
-        Dim TreeNode138 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta 01", New System.Windows.Forms.TreeNode() {TreeNode136, TreeNode137})
-        Dim TreeNode139 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode138})
-        Dim TreeNode140 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode141 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode142 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode143 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode144 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode145 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode146 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim TreeNode147 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
-        Dim TreeNode148 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
-        Dim TreeNode149 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
-        Dim TreeNode150 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
-        Dim TreeNode151 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
-        Dim TreeNode152 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
-        Dim TreeNode153 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
-        Dim TreeNode154 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
-        Dim TreeNode155 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
-        Dim TreeNode156 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
-        Dim TreeNode157 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
-        Dim TreeNode158 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode157})
-        Dim TreeNode159 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
-        Dim TreeNode160 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
-        Dim TreeNode161 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
-        Dim TreeNode162 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
-        Dim TreeNode163 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
-        Dim TreeNode164 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
-        Dim TreeNode165 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
-        Dim TreeNode166 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
-        Dim TreeNode167 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
-        Dim TreeNode168 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
-        Dim TreeNode169 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
-        Dim TreeNode170 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
-        Dim TreeNode171 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
-        Dim TreeNode172 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode171})
-        Dim TreeNode173 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
-        Dim TreeNode174 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
-        Dim TreeNode175 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
-        Dim TreeNode176 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
-        Dim TreeNode177 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
-        Dim TreeNode178 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
-        Dim TreeNode179 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
-        Dim TreeNode180 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
-        Dim TreeNode181 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
-        Dim TreeNode182 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
-        Dim TreeNode183 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"oooooooooo"}, "processo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"kkkkkkkkkkkkk"}, "arquivo1.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"jjjj"}, "arquivo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim TreeNode62 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode63 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode64 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode65 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
+        Dim TreeNode66 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
+        Dim TreeNode67 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir em...")
+        Dim TreeNode68 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para Lixeira")
+        Dim TreeNode69 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para...", New System.Windows.Forms.TreeNode() {TreeNode66, TreeNode67, TreeNode68})
+        Dim TreeNode70 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
+        Dim TreeNode71 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear...")
+        Dim TreeNode72 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta")
+        Dim TreeNode73 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo...")
+        Dim TreeNode74 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar...", New System.Windows.Forms.TreeNode() {TreeNode72, TreeNode73})
+        Dim TreeNode75 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo 01.html")
+        Dim TreeNode76 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo02.jpg")
+        Dim TreeNode77 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta 01", New System.Windows.Forms.TreeNode() {TreeNode75, TreeNode76})
+        Dim TreeNode78 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode77})
+        Dim TreeNode79 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode80 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode81 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode82 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode83 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode84 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode85 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
+        Dim TreeNode86 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
+        Dim TreeNode87 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
+        Dim TreeNode88 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
+        Dim TreeNode89 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
+        Dim TreeNode90 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
+        Dim TreeNode91 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
+        Dim TreeNode92 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
+        Dim TreeNode93 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
+        Dim TreeNode94 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
+        Dim TreeNode95 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
+        Dim TreeNode96 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
+        Dim TreeNode97 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode96})
+        Dim TreeNode98 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
+        Dim TreeNode99 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
+        Dim TreeNode100 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
+        Dim TreeNode101 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
+        Dim TreeNode102 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
+        Dim TreeNode103 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
+        Dim TreeNode104 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
+        Dim TreeNode105 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
+        Dim TreeNode106 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
+        Dim TreeNode107 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
+        Dim TreeNode108 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
+        Dim TreeNode109 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim TreeNode110 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
+        Dim TreeNode111 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode110})
+        Dim TreeNode112 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
+        Dim TreeNode113 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
+        Dim TreeNode114 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
+        Dim TreeNode115 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
+        Dim TreeNode116 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
+        Dim TreeNode117 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
+        Dim TreeNode118 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
+        Dim TreeNode119 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
+        Dim TreeNode120 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
+        Dim TreeNode121 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
+        Dim TreeNode122 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel205 = New System.Windows.Forms.Panel()
@@ -205,7 +205,6 @@ Partial Class Form1
         Me.SPRedimVisualizarMidia = New System.Windows.Forms.Splitter()
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.ControlListIcone1 = New TrevoWebMedia.ControlListIcone()
         Me.TreeView8 = New System.Windows.Forms.TreeView()
         Me.Splitter4 = New System.Windows.Forms.Splitter()
         Me.Panel_Filtro = New System.Windows.Forms.Panel()
@@ -240,7 +239,6 @@ Partial Class Form1
         Me.Panel58 = New System.Windows.Forms.Panel()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.ControlPainel_Acoes1 = New TrevoWebMedia.ControlPainel_Acoes()
         Me.Panel1.SuspendLayout()
         Me.Panel205.SuspendLayout()
         Me.PanelAllLocalizar.SuspendLayout()
@@ -411,7 +409,7 @@ Partial Class Form1
         Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView1.ForeColor = System.Drawing.Color.Gainsboro
         Me.ListView1.HideSelection = False
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem7, ListViewItem8, ListViewItem9})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem4, ListViewItem5, ListViewItem6})
         Me.ListView1.Location = New System.Drawing.Point(0, 24)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(46, 0)
@@ -464,13 +462,13 @@ Partial Class Form1
         Me.TreeView11.HideSelection = False
         Me.TreeView11.Location = New System.Drawing.Point(1, 24)
         Me.TreeView11.Name = "TreeView11"
-        TreeNode123.Name = "Node0"
-        TreeNode123.Text = "Node0"
-        TreeNode124.Name = "Node1"
-        TreeNode124.Text = "Node1"
-        TreeNode125.Name = "Node2"
-        TreeNode125.Text = "Node2"
-        Me.TreeView11.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode123, TreeNode124, TreeNode125})
+        TreeNode62.Name = "Node0"
+        TreeNode62.Text = "Node0"
+        TreeNode63.Name = "Node1"
+        TreeNode63.Text = "Node1"
+        TreeNode64.Name = "Node2"
+        TreeNode64.Text = "Node2"
+        Me.TreeView11.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode62, TreeNode63, TreeNode64})
         Me.TreeView11.ShowLines = False
         Me.TreeView11.Size = New System.Drawing.Size(158, 0)
         Me.TreeView11.TabIndex = 87
@@ -717,39 +715,39 @@ Partial Class Form1
         Me.TreeView12.HideSelection = False
         Me.TreeView12.Location = New System.Drawing.Point(1, 1)
         Me.TreeView12.Name = "TreeView12"
-        TreeNode126.ImageKey = "CD.ico"
-        TreeNode126.Name = "Node1"
-        TreeNode126.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode126.SelectedImageKey = "CD.ico"
-        TreeNode126.Text = "Copiar para..."
-        TreeNode127.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode127.Name = "Node2"
-        TreeNode127.Text = "Copiar para..."
-        TreeNode128.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode128.Name = "Node4"
-        TreeNode128.Text = "Excluir em..."
-        TreeNode129.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode129.Name = "Node5"
-        TreeNode129.Text = "Mover para Lixeira"
-        TreeNode130.Name = "Node1"
-        TreeNode130.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode130.Text = "Mover para..."
-        TreeNode131.Name = "Node6"
-        TreeNode131.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode131.Text = "Excluir"
-        TreeNode132.Name = "Node7"
-        TreeNode132.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode132.Text = "Renomear..."
-        TreeNode133.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode133.Name = "Node9"
-        TreeNode133.Text = "Pasta"
-        TreeNode134.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode134.Name = "Node10"
-        TreeNode134.Text = "Arquivo..."
-        TreeNode135.Name = "Node8"
-        TreeNode135.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode135.Text = "Criar..."
-        Me.TreeView12.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode126, TreeNode130, TreeNode131, TreeNode132, TreeNode135})
+        TreeNode65.ImageKey = "CD.ico"
+        TreeNode65.Name = "Node1"
+        TreeNode65.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode65.SelectedImageKey = "CD.ico"
+        TreeNode65.Text = "Copiar para..."
+        TreeNode66.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode66.Name = "Node2"
+        TreeNode66.Text = "Copiar para..."
+        TreeNode67.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode67.Name = "Node4"
+        TreeNode67.Text = "Excluir em..."
+        TreeNode68.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode68.Name = "Node5"
+        TreeNode68.Text = "Mover para Lixeira"
+        TreeNode69.Name = "Node1"
+        TreeNode69.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode69.Text = "Mover para..."
+        TreeNode70.Name = "Node6"
+        TreeNode70.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode70.Text = "Excluir"
+        TreeNode71.Name = "Node7"
+        TreeNode71.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode71.Text = "Renomear..."
+        TreeNode72.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode72.Name = "Node9"
+        TreeNode72.Text = "Pasta"
+        TreeNode73.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode73.Name = "Node10"
+        TreeNode73.Text = "Arquivo..."
+        TreeNode74.Name = "Node8"
+        TreeNode74.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode74.Text = "Criar..."
+        Me.TreeView12.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode65, TreeNode69, TreeNode70, TreeNode71, TreeNode74})
         Me.TreeView12.ShowLines = False
         Me.TreeView12.Size = New System.Drawing.Size(229, 88)
         Me.TreeView12.TabIndex = 87
@@ -862,22 +860,22 @@ Partial Class Form1
         Me.TreeView2.HideSelection = False
         Me.TreeView2.Location = New System.Drawing.Point(5, 5)
         Me.TreeView2.Name = "TreeView2"
-        TreeNode136.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode136.Name = "Node3"
-        TreeNode136.Text = "Arquivo 01.html"
-        TreeNode137.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode137.Name = "Node0"
-        TreeNode137.Text = "Arquivo02.jpg"
-        TreeNode138.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode138.Name = "Node1"
-        TreeNode138.Text = "Pasta 01"
-        TreeNode139.BackColor = System.Drawing.Color.DimGray
-        TreeNode139.ImageKey = "PastaProcesso.ico"
-        TreeNode139.Name = "Node1"
-        TreeNode139.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode139.SelectedImageKey = "PastaProcesso.ico"
-        TreeNode139.Text = "Processo 01"
-        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode139})
+        TreeNode75.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode75.Name = "Node3"
+        TreeNode75.Text = "Arquivo 01.html"
+        TreeNode76.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode76.Name = "Node0"
+        TreeNode76.Text = "Arquivo02.jpg"
+        TreeNode77.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode77.Name = "Node1"
+        TreeNode77.Text = "Pasta 01"
+        TreeNode78.BackColor = System.Drawing.Color.DimGray
+        TreeNode78.ImageKey = "PastaProcesso.ico"
+        TreeNode78.Name = "Node1"
+        TreeNode78.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode78.SelectedImageKey = "PastaProcesso.ico"
+        TreeNode78.Text = "Processo 01"
+        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode78})
         Me.TreeView2.ShowLines = False
         Me.TreeView2.Size = New System.Drawing.Size(203, 79)
         Me.TreeView2.TabIndex = 87
@@ -1145,13 +1143,13 @@ Partial Class Form1
         Me.TreeView1.HideSelection = False
         Me.TreeView1.Location = New System.Drawing.Point(1, 24)
         Me.TreeView1.Name = "TreeView1"
-        TreeNode140.Name = "Node0"
-        TreeNode140.Text = "Node0"
-        TreeNode141.Name = "Node1"
-        TreeNode141.Text = "Node1"
-        TreeNode142.Name = "Node2"
-        TreeNode142.Text = "Node2"
-        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode140, TreeNode141, TreeNode142})
+        TreeNode79.Name = "Node0"
+        TreeNode79.Text = "Node0"
+        TreeNode80.Name = "Node1"
+        TreeNode80.Text = "Node1"
+        TreeNode81.Name = "Node2"
+        TreeNode81.Text = "Node2"
+        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode79, TreeNode80, TreeNode81})
         Me.TreeView1.ShowLines = False
         Me.TreeView1.Size = New System.Drawing.Size(133, 0)
         Me.TreeView1.TabIndex = 87
@@ -1203,15 +1201,15 @@ Partial Class Form1
         Me.TreeView3.HideSelection = False
         Me.TreeView3.Location = New System.Drawing.Point(1, 24)
         Me.TreeView3.Name = "TreeView3"
-        TreeNode143.Name = "Node0"
-        TreeNode143.Text = "Node0"
-        TreeNode144.Name = "Node1"
-        TreeNode144.Text = "Node1"
-        TreeNode145.Name = "Node2"
-        TreeNode145.Text = "Node2"
-        TreeNode146.Name = "Node3"
-        TreeNode146.Text = "Node3"
-        Me.TreeView3.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode143, TreeNode144, TreeNode145, TreeNode146})
+        TreeNode82.Name = "Node0"
+        TreeNode82.Text = "Node0"
+        TreeNode83.Name = "Node1"
+        TreeNode83.Text = "Node1"
+        TreeNode84.Name = "Node2"
+        TreeNode84.Text = "Node2"
+        TreeNode85.Name = "Node3"
+        TreeNode85.Text = "Node3"
+        Me.TreeView3.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode82, TreeNode83, TreeNode84, TreeNode85})
         Me.TreeView3.ShowLines = False
         Me.TreeView3.Size = New System.Drawing.Size(133, 75)
         Me.TreeView3.TabIndex = 87
@@ -1427,40 +1425,40 @@ Partial Class Form1
         Me.TreeView4.LabelEdit = True
         Me.TreeView4.Location = New System.Drawing.Point(1, 0)
         Me.TreeView4.Name = "TreeView4"
-        TreeNode147.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
-        TreeNode147.ImageKey = "CD-Desconhecido.ico"
-        TreeNode147.Name = "Node1"
-        TreeNode147.SelectedImageKey = "CD-Desconhecido.ico"
-        TreeNode147.Text = "Mídia Auxente"
-        TreeNode148.ForeColor = System.Drawing.Color.DodgerBlue
-        TreeNode148.ImageKey = "CDEditing.ico"
-        TreeNode148.Name = "Node2"
-        TreeNode148.SelectedImageKey = "CDEditing.ico"
-        TreeNode148.Text = "* Editando"
-        TreeNode149.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
-        TreeNode149.Name = "Node0"
-        TreeNode149.Text = "[   !  ] Erro de Leitura"
-        TreeNode150.ForeColor = System.Drawing.Color.Yellow
-        TreeNode150.ImageKey = "rum10.ico"
-        TreeNode150.Name = "Node1"
-        TreeNode150.SelectedImageKey = "rum30.ico"
-        TreeNode150.Text = "Gravando"
-        TreeNode151.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        TreeNode151.Name = "Node0"
-        TreeNode151.Text = "Pronto para Gravar"
-        TreeNode152.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        TreeNode152.Name = "Node1"
-        TreeNode152.Text = "Gravação Bem Sucedida"
-        TreeNode153.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode153.ForeColor = System.Drawing.Color.White
-        TreeNode153.Name = "Node0"
-        TreeNode153.Text = "Mídia selecionada"
-        TreeNode154.ForeColor = System.Drawing.Color.White
-        TreeNode154.Name = "Node1"
-        TreeNode154.Text = "Mídia em branco"
-        TreeNode155.Name = "Node2"
-        TreeNode155.Text = "Mídia presente"
-        Me.TreeView4.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode147, TreeNode148, TreeNode149, TreeNode150, TreeNode151, TreeNode152, TreeNode153, TreeNode154, TreeNode155})
+        TreeNode86.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
+        TreeNode86.ImageKey = "CD-Desconhecido.ico"
+        TreeNode86.Name = "Node1"
+        TreeNode86.SelectedImageKey = "CD-Desconhecido.ico"
+        TreeNode86.Text = "Mídia Auxente"
+        TreeNode87.ForeColor = System.Drawing.Color.DodgerBlue
+        TreeNode87.ImageKey = "CDEditing.ico"
+        TreeNode87.Name = "Node2"
+        TreeNode87.SelectedImageKey = "CDEditing.ico"
+        TreeNode87.Text = "* Editando"
+        TreeNode88.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        TreeNode88.Name = "Node0"
+        TreeNode88.Text = "[   !  ] Erro de Leitura"
+        TreeNode89.ForeColor = System.Drawing.Color.Yellow
+        TreeNode89.ImageKey = "rum10.ico"
+        TreeNode89.Name = "Node1"
+        TreeNode89.SelectedImageKey = "rum30.ico"
+        TreeNode89.Text = "Gravando"
+        TreeNode90.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        TreeNode90.Name = "Node0"
+        TreeNode90.Text = "Pronto para Gravar"
+        TreeNode91.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        TreeNode91.Name = "Node1"
+        TreeNode91.Text = "Gravação Bem Sucedida"
+        TreeNode92.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode92.ForeColor = System.Drawing.Color.White
+        TreeNode92.Name = "Node0"
+        TreeNode92.Text = "Mídia selecionada"
+        TreeNode93.ForeColor = System.Drawing.Color.White
+        TreeNode93.Name = "Node1"
+        TreeNode93.Text = "Mídia em branco"
+        TreeNode94.Name = "Node2"
+        TreeNode94.Text = "Mídia presente"
+        Me.TreeView4.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode86, TreeNode87, TreeNode88, TreeNode89, TreeNode90, TreeNode91, TreeNode92, TreeNode93, TreeNode94})
         Me.TreeView4.ShowLines = False
         Me.TreeView4.Size = New System.Drawing.Size(166, 55)
         Me.TreeView4.TabIndex = 87
@@ -1657,11 +1655,11 @@ Partial Class Form1
         Me.TVFiles.HideSelection = False
         Me.TVFiles.Location = New System.Drawing.Point(5, 0)
         Me.TVFiles.Name = "TVFiles"
-        TreeNode156.ImageKey = "CD.ico"
-        TreeNode156.Name = "Node1"
-        TreeNode156.SelectedImageKey = "CD.ico"
-        TreeNode156.Text = "<Selecione uma mídia>"
-        Me.TVFiles.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode156})
+        TreeNode95.ImageKey = "CD.ico"
+        TreeNode95.Name = "Node1"
+        TreeNode95.SelectedImageKey = "CD.ico"
+        TreeNode95.Text = "<Selecione uma mídia>"
+        Me.TVFiles.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode95})
         Me.TVFiles.ShowLines = False
         Me.TVFiles.Size = New System.Drawing.Size(168, 202)
         Me.TVFiles.TabIndex = 87
@@ -1757,13 +1755,13 @@ Partial Class Form1
         Me.TreeView6.HideSelection = False
         Me.TreeView6.Location = New System.Drawing.Point(0, 0)
         Me.TreeView6.Name = "TreeView6"
-        TreeNode157.Name = "Computador"
-        TreeNode157.Text = "Computador"
-        TreeNode158.ImageKey = "Desktop.ico"
-        TreeNode158.Name = "Desktop"
-        TreeNode158.SelectedImageKey = "Desktop.ico"
-        TreeNode158.Text = "Desktop"
-        Me.TreeView6.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode158})
+        TreeNode96.Name = "Computador"
+        TreeNode96.Text = "Computador"
+        TreeNode97.ImageKey = "Desktop.ico"
+        TreeNode97.Name = "Desktop"
+        TreeNode97.SelectedImageKey = "Desktop.ico"
+        TreeNode97.Text = "Desktop"
+        Me.TreeView6.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode97})
         Me.TreeView6.ShowLines = False
         Me.TreeView6.Size = New System.Drawing.Size(226, 22)
         Me.TreeView6.TabIndex = 2
@@ -1879,40 +1877,40 @@ Partial Class Form1
         Me.TreeView7.LabelEdit = True
         Me.TreeView7.Location = New System.Drawing.Point(1, 0)
         Me.TreeView7.Name = "TreeView7"
-        TreeNode159.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
-        TreeNode159.ImageKey = "CD-Desconhecido.ico"
-        TreeNode159.Name = "Node1"
-        TreeNode159.SelectedImageKey = "CD-Desconhecido.ico"
-        TreeNode159.Text = "Mídia Auxente"
-        TreeNode160.ForeColor = System.Drawing.Color.DodgerBlue
-        TreeNode160.ImageKey = "CDEditing.ico"
-        TreeNode160.Name = "Node2"
-        TreeNode160.SelectedImageKey = "CDEditing.ico"
-        TreeNode160.Text = "* Editando"
-        TreeNode161.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
-        TreeNode161.Name = "Node0"
-        TreeNode161.Text = "[   !  ] Erro de Leitura"
-        TreeNode162.ForeColor = System.Drawing.Color.Yellow
-        TreeNode162.ImageKey = "rum10.ico"
-        TreeNode162.Name = "Node1"
-        TreeNode162.SelectedImageKey = "rum30.ico"
-        TreeNode162.Text = "Gravando"
-        TreeNode163.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        TreeNode163.Name = "Node0"
-        TreeNode163.Text = "Pronto para Gravar"
-        TreeNode164.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        TreeNode164.Name = "Node1"
-        TreeNode164.Text = "Gravação Bem Sucedida"
-        TreeNode165.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode165.ForeColor = System.Drawing.Color.White
-        TreeNode165.Name = "Node0"
-        TreeNode165.Text = "Mídia selecionada"
-        TreeNode166.ForeColor = System.Drawing.Color.White
-        TreeNode166.Name = "Node1"
-        TreeNode166.Text = "Mídia em branco"
-        TreeNode167.Name = "Node2"
-        TreeNode167.Text = "Mídia presente"
-        Me.TreeView7.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode159, TreeNode160, TreeNode161, TreeNode162, TreeNode163, TreeNode164, TreeNode165, TreeNode166, TreeNode167})
+        TreeNode98.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
+        TreeNode98.ImageKey = "CD-Desconhecido.ico"
+        TreeNode98.Name = "Node1"
+        TreeNode98.SelectedImageKey = "CD-Desconhecido.ico"
+        TreeNode98.Text = "Mídia Auxente"
+        TreeNode99.ForeColor = System.Drawing.Color.DodgerBlue
+        TreeNode99.ImageKey = "CDEditing.ico"
+        TreeNode99.Name = "Node2"
+        TreeNode99.SelectedImageKey = "CDEditing.ico"
+        TreeNode99.Text = "* Editando"
+        TreeNode100.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        TreeNode100.Name = "Node0"
+        TreeNode100.Text = "[   !  ] Erro de Leitura"
+        TreeNode101.ForeColor = System.Drawing.Color.Yellow
+        TreeNode101.ImageKey = "rum10.ico"
+        TreeNode101.Name = "Node1"
+        TreeNode101.SelectedImageKey = "rum30.ico"
+        TreeNode101.Text = "Gravando"
+        TreeNode102.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        TreeNode102.Name = "Node0"
+        TreeNode102.Text = "Pronto para Gravar"
+        TreeNode103.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        TreeNode103.Name = "Node1"
+        TreeNode103.Text = "Gravação Bem Sucedida"
+        TreeNode104.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode104.ForeColor = System.Drawing.Color.White
+        TreeNode104.Name = "Node0"
+        TreeNode104.Text = "Mídia selecionada"
+        TreeNode105.ForeColor = System.Drawing.Color.White
+        TreeNode105.Name = "Node1"
+        TreeNode105.Text = "Mídia em branco"
+        TreeNode106.Name = "Node2"
+        TreeNode106.Text = "Mídia presente"
+        Me.TreeView7.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode98, TreeNode99, TreeNode100, TreeNode101, TreeNode102, TreeNode103, TreeNode104, TreeNode105, TreeNode106})
         Me.TreeView7.ShowLines = False
         Me.TreeView7.Size = New System.Drawing.Size(224, 54)
         Me.TreeView7.TabIndex = 87
@@ -1941,7 +1939,6 @@ Partial Class Form1
         'Panel19
         '
         Me.Panel19.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Panel19.Controls.Add(Me.ControlListIcone1)
         Me.Panel19.Controls.Add(Me.TreeView8)
         Me.Panel19.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel19.Location = New System.Drawing.Point(0, 0)
@@ -1949,16 +1946,6 @@ Partial Class Form1
         Me.Panel19.Padding = New System.Windows.Forms.Padding(0, 0, 0, 2)
         Me.Panel19.Size = New System.Drawing.Size(226, 248)
         Me.Panel19.TabIndex = 88
-        '
-        'ControlListIcone1
-        '
-        Me.ControlListIcone1.Etiqueta = "Titulo Prima"
-        Me.ControlListIcone1.Location = New System.Drawing.Point(32, 36)
-        Me.ControlListIcone1.MaisInformacoes = "Labelo1"
-        Me.ControlListIcone1.Mostrar_Informacoes = True
-        Me.ControlListIcone1.Name = "ControlListIcone1"
-        Me.ControlListIcone1.Size = New System.Drawing.Size(139, 171)
-        Me.ControlListIcone1.TabIndex = 99
         '
         'TreeView8
         '
@@ -1970,11 +1957,11 @@ Partial Class Form1
         Me.TreeView8.HideSelection = False
         Me.TreeView8.Location = New System.Drawing.Point(0, 0)
         Me.TreeView8.Name = "TreeView8"
-        TreeNode168.ImageKey = "CD.ico"
-        TreeNode168.Name = "Node1"
-        TreeNode168.SelectedImageKey = "CD.ico"
-        TreeNode168.Text = "<Selecione uma mídia>"
-        Me.TreeView8.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode168})
+        TreeNode107.ImageKey = "CD.ico"
+        TreeNode107.Name = "Node1"
+        TreeNode107.SelectedImageKey = "CD.ico"
+        TreeNode107.Text = "<Selecione uma mídia>"
+        Me.TreeView8.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode107})
         Me.TreeView8.ShowLines = False
         Me.TreeView8.Size = New System.Drawing.Size(226, 246)
         Me.TreeView8.TabIndex = 87
@@ -2033,17 +2020,17 @@ Partial Class Form1
         Me.TVWFiltro.FullRowSelect = True
         Me.TVWFiltro.Location = New System.Drawing.Point(1, 3)
         Me.TVWFiltro.Name = "TVWFiltro"
-        TreeNode169.Checked = True
-        TreeNode169.ImageKey = "Pasta.ico"
-        TreeNode169.Name = "Node2"
-        TreeNode169.SelectedImageKey = "Pasta.ico"
-        TreeNode169.Text = "Incluir Pastas"
-        TreeNode170.Checked = True
-        TreeNode170.ImageKey = "arquivo.ico"
-        TreeNode170.Name = "Node1"
-        TreeNode170.SelectedImageKey = "arquivo.ico"
-        TreeNode170.Text = "Incluir Arquivos"
-        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode169, TreeNode170})
+        TreeNode108.Checked = True
+        TreeNode108.ImageKey = "Pasta.ico"
+        TreeNode108.Name = "Node2"
+        TreeNode108.SelectedImageKey = "Pasta.ico"
+        TreeNode108.Text = "Incluir Pastas"
+        TreeNode109.Checked = True
+        TreeNode109.ImageKey = "arquivo.ico"
+        TreeNode109.Name = "Node1"
+        TreeNode109.SelectedImageKey = "arquivo.ico"
+        TreeNode109.Text = "Incluir Arquivos"
+        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode108, TreeNode109})
         Me.TVWFiltro.ShowLines = False
         Me.TVWFiltro.Size = New System.Drawing.Size(224, 98)
         Me.TVWFiltro.TabIndex = 2
@@ -2155,7 +2142,6 @@ Partial Class Form1
         '
         'Panel9
         '
-        Me.Panel9.Controls.Add(Me.ControlPainel_Acoes1)
         Me.Panel9.Controls.Add(Me.Panel17)
         Me.Panel9.Controls.Add(Me.PanelTeste2)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
@@ -2209,13 +2195,13 @@ Partial Class Form1
         Me.TreeView10.HideSelection = False
         Me.TreeView10.Location = New System.Drawing.Point(0, 0)
         Me.TreeView10.Name = "TreeView10"
-        TreeNode171.Name = "Computador"
-        TreeNode171.Text = "Computador"
-        TreeNode172.ImageKey = "Desktop.ico"
-        TreeNode172.Name = "Desktop"
-        TreeNode172.SelectedImageKey = "Desktop.ico"
-        TreeNode172.Text = "Desktop"
-        Me.TreeView10.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode172})
+        TreeNode110.Name = "Computador"
+        TreeNode110.Text = "Computador"
+        TreeNode111.ImageKey = "Desktop.ico"
+        TreeNode111.Name = "Desktop"
+        TreeNode111.SelectedImageKey = "Desktop.ico"
+        TreeNode111.Text = "Desktop"
+        Me.TreeView10.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode111})
         Me.TreeView10.ShowLines = False
         Me.TreeView10.Size = New System.Drawing.Size(226, 303)
         Me.TreeView10.TabIndex = 2
@@ -2252,40 +2238,40 @@ Partial Class Form1
         Me.TreeView13.LabelEdit = True
         Me.TreeView13.Location = New System.Drawing.Point(1, 0)
         Me.TreeView13.Name = "TreeView13"
-        TreeNode173.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
-        TreeNode173.ImageKey = "CD-Desconhecido.ico"
-        TreeNode173.Name = "Node1"
-        TreeNode173.SelectedImageKey = "CD-Desconhecido.ico"
-        TreeNode173.Text = "Mídia Auxente"
-        TreeNode174.ForeColor = System.Drawing.Color.DodgerBlue
-        TreeNode174.ImageKey = "CDEditing.ico"
-        TreeNode174.Name = "Node2"
-        TreeNode174.SelectedImageKey = "CDEditing.ico"
-        TreeNode174.Text = "* Editando"
-        TreeNode175.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
-        TreeNode175.Name = "Node0"
-        TreeNode175.Text = "[   !  ] Erro de Leitura"
-        TreeNode176.ForeColor = System.Drawing.Color.Yellow
-        TreeNode176.ImageKey = "rum10.ico"
-        TreeNode176.Name = "Node1"
-        TreeNode176.SelectedImageKey = "rum30.ico"
-        TreeNode176.Text = "Gravando"
-        TreeNode177.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        TreeNode177.Name = "Node0"
-        TreeNode177.Text = "Pronto para Gravar"
-        TreeNode178.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        TreeNode178.Name = "Node1"
-        TreeNode178.Text = "Gravação Bem Sucedida"
-        TreeNode179.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode179.ForeColor = System.Drawing.Color.White
-        TreeNode179.Name = "Node0"
-        TreeNode179.Text = "Mídia selecionada"
-        TreeNode180.ForeColor = System.Drawing.Color.White
-        TreeNode180.Name = "Node1"
-        TreeNode180.Text = "Mídia em branco"
-        TreeNode181.Name = "Node2"
-        TreeNode181.Text = "Mídia presente"
-        Me.TreeView13.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode173, TreeNode174, TreeNode175, TreeNode176, TreeNode177, TreeNode178, TreeNode179, TreeNode180, TreeNode181})
+        TreeNode112.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
+        TreeNode112.ImageKey = "CD-Desconhecido.ico"
+        TreeNode112.Name = "Node1"
+        TreeNode112.SelectedImageKey = "CD-Desconhecido.ico"
+        TreeNode112.Text = "Mídia Auxente"
+        TreeNode113.ForeColor = System.Drawing.Color.DodgerBlue
+        TreeNode113.ImageKey = "CDEditing.ico"
+        TreeNode113.Name = "Node2"
+        TreeNode113.SelectedImageKey = "CDEditing.ico"
+        TreeNode113.Text = "* Editando"
+        TreeNode114.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        TreeNode114.Name = "Node0"
+        TreeNode114.Text = "[   !  ] Erro de Leitura"
+        TreeNode115.ForeColor = System.Drawing.Color.Yellow
+        TreeNode115.ImageKey = "rum10.ico"
+        TreeNode115.Name = "Node1"
+        TreeNode115.SelectedImageKey = "rum30.ico"
+        TreeNode115.Text = "Gravando"
+        TreeNode116.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        TreeNode116.Name = "Node0"
+        TreeNode116.Text = "Pronto para Gravar"
+        TreeNode117.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        TreeNode117.Name = "Node1"
+        TreeNode117.Text = "Gravação Bem Sucedida"
+        TreeNode118.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode118.ForeColor = System.Drawing.Color.White
+        TreeNode118.Name = "Node0"
+        TreeNode118.Text = "Mídia selecionada"
+        TreeNode119.ForeColor = System.Drawing.Color.White
+        TreeNode119.Name = "Node1"
+        TreeNode119.Text = "Mídia em branco"
+        TreeNode120.Name = "Node2"
+        TreeNode120.Text = "Mídia presente"
+        Me.TreeView13.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode112, TreeNode113, TreeNode114, TreeNode115, TreeNode116, TreeNode117, TreeNode118, TreeNode119, TreeNode120})
         Me.TreeView13.ShowLines = False
         Me.TreeView13.Size = New System.Drawing.Size(224, 302)
         Me.TreeView13.TabIndex = 87
@@ -2355,17 +2341,17 @@ Partial Class Form1
         Me.TreeView15.FullRowSelect = True
         Me.TreeView15.Location = New System.Drawing.Point(1, 3)
         Me.TreeView15.Name = "TreeView15"
-        TreeNode182.Checked = True
-        TreeNode182.ImageKey = "Pasta.ico"
-        TreeNode182.Name = "Node2"
-        TreeNode182.SelectedImageKey = "Pasta.ico"
-        TreeNode182.Text = "Incluir Pastas"
-        TreeNode183.Checked = True
-        TreeNode183.ImageKey = "arquivo.ico"
-        TreeNode183.Name = "Node1"
-        TreeNode183.SelectedImageKey = "arquivo.ico"
-        TreeNode183.Text = "Incluir Arquivos"
-        Me.TreeView15.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode182, TreeNode183})
+        TreeNode121.Checked = True
+        TreeNode121.ImageKey = "Pasta.ico"
+        TreeNode121.Name = "Node2"
+        TreeNode121.SelectedImageKey = "Pasta.ico"
+        TreeNode121.Text = "Incluir Pastas"
+        TreeNode122.Checked = True
+        TreeNode122.ImageKey = "arquivo.ico"
+        TreeNode122.Name = "Node1"
+        TreeNode122.SelectedImageKey = "arquivo.ico"
+        TreeNode122.Text = "Incluir Arquivos"
+        Me.TreeView15.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode121, TreeNode122})
         Me.TreeView15.ShowLines = False
         Me.TreeView15.Size = New System.Drawing.Size(224, 98)
         Me.TreeView15.TabIndex = 2
@@ -2474,15 +2460,6 @@ Partial Class Form1
         Me.RadioButton6.Text = "Media"
         Me.RadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadioButton6.UseVisualStyleBackColor = False
-        '
-        'ControlPainel_Acoes1
-        '
-        Me.ControlPainel_Acoes1.ColorSelectAndHover = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ControlPainel_Acoes1.Cor02 = System.Drawing.Color.Empty
-        Me.ControlPainel_Acoes1.Location = New System.Drawing.Point(23, 12)
-        Me.ControlPainel_Acoes1.Name = "ControlPainel_Acoes1"
-        Me.ControlPainel_Acoes1.Size = New System.Drawing.Size(348, 516)
-        Me.ControlPainel_Acoes1.TabIndex = 99
         '
         'Form1
         '
@@ -2727,6 +2704,4 @@ Partial Class Form1
     Friend WithEvents Panel58 As Panel
     Friend WithEvents RadioButton5 As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents ControlListIcone1 As ControlListIcone
-    Friend WithEvents ControlPainel_Acoes1 As ControlPainel_Acoes
 End Class

@@ -32,7 +32,7 @@ Partial Class ControlVerListas
         Me.FLPanelRecebe.Location = New System.Drawing.Point(0, 0)
         Me.FLPanelRecebe.Margin = New System.Windows.Forms.Padding(0)
         Me.FLPanelRecebe.Name = "FLPanelRecebe"
-        Me.FLPanelRecebe.Size = New System.Drawing.Size(288, 0)
+        Me.FLPanelRecebe.Size = New System.Drawing.Size(274, 0)
         Me.FLPanelRecebe.TabIndex = 1
         '
         'ControlVerListas
@@ -44,7 +44,7 @@ Partial Class ControlVerListas
         Me.Controls.Add(Me.FLPanelRecebe)
         Me.Margin = New System.Windows.Forms.Padding(0)
         Me.Name = "ControlVerListas"
-        Me.Size = New System.Drawing.Size(288, 299)
+        Me.Size = New System.Drawing.Size(274, 273)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

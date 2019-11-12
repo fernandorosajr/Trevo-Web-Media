@@ -99,20 +99,25 @@
     Private Sub PanelImage_Click(sender As Object, e As EventArgs) Handles PanelImage.Click
         Me.Focus()
 
+
+
     End Sub
 
     Private Sub PanelImage_MouseEnter(sender As Object, e As EventArgs) Handles PanelImage.MouseEnter
         'If SobreCheck = False Then
         MouseSobreIcone = True
-
+        CkImage.Focus()
         MouseEntra()
         'End If
     End Sub
 
     Private Sub PanelImage_MouseLeave(sender As Object, e As EventArgs) Handles PanelImage.MouseLeave
-        MouseSobreIcone = False
 
-        MouseSai()
+        If Not (CkImage.Focused) Then
+            MouseSobreIcone = False
+            MouseSai()
+        End If
+
 
     End Sub
 
@@ -204,5 +209,12 @@
         End If
 
 
+    End Sub
+
+    Private Sub PanelBorder_MouseLeave(sender As Object, e As EventArgs) Handles PanelBorder.MouseLeave
+        If Not (CkImage.Checked) Then
+            MouseSobreIcone = False
+            MouseSai()
+        End If
     End Sub
 End Class

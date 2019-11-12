@@ -193,10 +193,10 @@
     <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.Designer.vb">
-      <DependentUpon>ControlItemMeta.vb</DependentUpon>
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.Designer.vb">
+      <DependentUpon>ControlItemMetadados.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.vb">
+    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.Designer.vb">
@@ -310,8 +310,8 @@
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.resx">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMeta.resx">
-      <DependentUpon>ControlItemMeta.vb</DependentUpon>
+    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.resx">
+      <DependentUpon>ControlItemMetadados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.resx">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>

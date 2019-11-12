@@ -23,11 +23,11 @@ Partial Class ControlPainel_Detalhes
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Detalhes))
         Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
         Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
         Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
         Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Detalhes))
         Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
         Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
         Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
@@ -40,12 +40,14 @@ Partial Class ControlPainel_Detalhes
         Me.PanelEnvolvePreView = New System.Windows.Forms.Panel()
         Me.PanelVisualizar = New System.Windows.Forms.Panel()
         Me.PanelEnvolveVisualizar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolvePicPreView = New System.Windows.Forms.Panel()
+        Me.PicPreView = New System.Windows.Forms.PictureBox()
+        Me.BTNPicPreView = New System.Windows.Forms.Button()
         Me.PanelEnvolveVerPasta = New System.Windows.Forms.Panel()
         Me.PanelEnvolveFilhos = New System.Windows.Forms.Panel()
         Me.TVWFilhos = New System.Windows.Forms.TreeView()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.LBLFilhos = New System.Windows.Forms.Label()
-        Me.PanelEnvolvePicPreView = New System.Windows.Forms.Panel()
-        Me.PicPreView = New System.Windows.Forms.PictureBox()
         Me.Splitter2 = New System.Windows.Forms.Splitter()
         Me.PanelEnvolvePreViewPasta = New System.Windows.Forms.Panel()
         Me.PanelPreViewPasta = New System.Windows.Forms.Panel()
@@ -65,27 +67,27 @@ Partial Class ControlPainel_Detalhes
         Me.Button119 = New System.Windows.Forms.Button()
         Me.Panel273 = New System.Windows.Forms.Panel()
         Me.Button120 = New System.Windows.Forms.Button()
-        Me.BTNPicPreView = New System.Windows.Forms.Button()
         Me.PanelLabelExpandPreView = New System.Windows.Forms.Panel()
         Me.LBLPreView = New System.Windows.Forms.Label()
         Me.BTNPreView = New System.Windows.Forms.Button()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.Control_EnvolveLstBGeral1 = New TrevoWebMedia.Control_EnvolveLstBGeral()
         Me.Panel78.SuspendLayout()
         Me.PanelProp.SuspendLayout()
         Me.PanelPropPreView.SuspendLayout()
         Me.PanelEnvolvePreView.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
         Me.PanelEnvolveVisualizar.SuspendLayout()
-        Me.PanelEnvolveVerPasta.SuspendLayout()
-        Me.PanelEnvolveFilhos.SuspendLayout()
         Me.PanelEnvolvePicPreView.SuspendLayout()
         CType(Me.PicPreView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelEnvolveVerPasta.SuspendLayout()
+        Me.PanelEnvolveFilhos.SuspendLayout()
         Me.PanelEnvolvePreViewPasta.SuspendLayout()
         Me.PanelPreViewPasta.SuspendLayout()
         Me.PanelEnvolveIrmas.SuspendLayout()
         Me.PanelEnvolvePropGeral.SuspendLayout()
         Me.PanelPropGeral.SuspendLayout()
         Me.PanelEnvolve_PanelRecebeGrupoDeMetadados.SuspendLayout()
+        Me.PanelRecebeGrupoDeMetadados.SuspendLayout()
         Me.PanelLabelPropGeral.SuspendLayout()
         Me.PanelOpcoesDeEdicaodeMetadados.SuspendLayout()
         Me.Panel272.SuspendLayout()
@@ -160,6 +162,48 @@ Partial Class ControlPainel_Detalhes
         Me.PanelEnvolveVisualizar.Size = New System.Drawing.Size(150, 189)
         Me.PanelEnvolveVisualizar.TabIndex = 91
         '
+        'PanelEnvolvePicPreView
+        '
+        Me.PanelEnvolvePicPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelEnvolvePicPreView.Controls.Add(Me.PicPreView)
+        Me.PanelEnvolvePicPreView.Controls.Add(Me.BTNPicPreView)
+        Me.PanelEnvolvePicPreView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolvePicPreView.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolvePicPreView.Name = "PanelEnvolvePicPreView"
+        Me.PanelEnvolvePicPreView.Size = New System.Drawing.Size(150, 189)
+        Me.PanelEnvolvePicPreView.TabIndex = 91
+        '
+        'PicPreView
+        '
+        Me.PicPreView.BackColor = System.Drawing.Color.Transparent
+        Me.PicPreView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PicPreView.Image = CType(resources.GetObject("PicPreView.Image"), System.Drawing.Image)
+        Me.PicPreView.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.PicPreView.Location = New System.Drawing.Point(0, 0)
+        Me.PicPreView.Name = "PicPreView"
+        Me.PicPreView.Size = New System.Drawing.Size(150, 169)
+        Me.PicPreView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PicPreView.TabIndex = 89
+        Me.PicPreView.TabStop = False
+        '
+        'BTNPicPreView
+        '
+        Me.BTNPicPreView.BackColor = System.Drawing.Color.Transparent
+        Me.BTNPicPreView.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNPicPreView.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight
+        Me.BTNPicPreView.FlatAppearance.BorderSize = 0
+        Me.BTNPicPreView.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.BTNPicPreView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNPicPreView.ForeColor = System.Drawing.Color.Gainsboro
+        Me.BTNPicPreView.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNPicPreView.Location = New System.Drawing.Point(0, 169)
+        Me.BTNPicPreView.Name = "BTNPicPreView"
+        Me.BTNPicPreView.Size = New System.Drawing.Size(150, 20)
+        Me.BTNPicPreView.TabIndex = 91
+        Me.BTNPicPreView.Text = "°°°"
+        Me.BTNPicPreView.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.BTNPicPreView.UseVisualStyleBackColor = False
+        '
         'PanelEnvolveVerPasta
         '
         Me.PanelEnvolveVerPasta.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
@@ -209,6 +253,17 @@ Partial Class ControlPainel_Detalhes
         Me.TVWFilhos.Size = New System.Drawing.Size(148, 164)
         Me.TVWFilhos.TabIndex = 87
         '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "pasta winphone.png")
+        Me.ImageList1.Images.SetKeyName(1, "pasta winphone1.png")
+        Me.ImageList1.Images.SetKeyName(2, "pasta-12.png")
+        Me.ImageList1.Images.SetKeyName(3, "pasta-Aberta.png")
+        Me.ImageList1.Images.SetKeyName(4, "imageres_3.ico")
+        Me.ImageList1.Images.SetKeyName(5, "imageres_4.ico")
+        '
         'LBLFilhos
         '
         Me.LBLFilhos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -222,30 +277,6 @@ Partial Class ControlPainel_Detalhes
         Me.LBLFilhos.Size = New System.Drawing.Size(148, 23)
         Me.LBLFilhos.TabIndex = 88
         Me.LBLFilhos.Text = "Filhos:"
-        '
-        'PanelEnvolvePicPreView
-        '
-        Me.PanelEnvolvePicPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelEnvolvePicPreView.Controls.Add(Me.PicPreView)
-        Me.PanelEnvolvePicPreView.Controls.Add(Me.BTNPicPreView)
-        Me.PanelEnvolvePicPreView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolvePicPreView.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolvePicPreView.Name = "PanelEnvolvePicPreView"
-        Me.PanelEnvolvePicPreView.Size = New System.Drawing.Size(150, 189)
-        Me.PanelEnvolvePicPreView.TabIndex = 91
-        '
-        'PicPreView
-        '
-        Me.PicPreView.BackColor = System.Drawing.Color.Transparent
-        Me.PicPreView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PicPreView.Image = CType(resources.GetObject("PicPreView.Image"), System.Drawing.Image)
-        Me.PicPreView.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.PicPreView.Location = New System.Drawing.Point(0, 0)
-        Me.PicPreView.Name = "PicPreView"
-        Me.PicPreView.Size = New System.Drawing.Size(150, 169)
-        Me.PicPreView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PicPreView.TabIndex = 89
-        Me.PicPreView.TabStop = False
         '
         'Splitter2
         '
@@ -385,6 +416,7 @@ Partial Class ControlPainel_Detalhes
         Me.PanelRecebeGrupoDeMetadados.AutoScroll = True
         Me.PanelRecebeGrupoDeMetadados.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.PanelRecebeGrupoDeMetadados.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PanelRecebeGrupoDeMetadados.Controls.Add(Me.Control_EnvolveLstBGeral1)
         Me.PanelRecebeGrupoDeMetadados.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelRecebeGrupoDeMetadados.Location = New System.Drawing.Point(5, 0)
         Me.PanelRecebeGrupoDeMetadados.Name = "PanelRecebeGrupoDeMetadados"
@@ -502,24 +534,6 @@ Partial Class ControlPainel_Detalhes
         Me.Button120.TabIndex = 98
         Me.Button120.UseVisualStyleBackColor = False
         '
-        'BTNPicPreView
-        '
-        Me.BTNPicPreView.BackColor = System.Drawing.Color.Transparent
-        Me.BTNPicPreView.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNPicPreView.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight
-        Me.BTNPicPreView.FlatAppearance.BorderSize = 0
-        Me.BTNPicPreView.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.BTNPicPreView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNPicPreView.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTNPicPreView.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPicPreView.Location = New System.Drawing.Point(0, 169)
-        Me.BTNPicPreView.Name = "BTNPicPreView"
-        Me.BTNPicPreView.Size = New System.Drawing.Size(150, 20)
-        Me.BTNPicPreView.TabIndex = 91
-        Me.BTNPicPreView.Text = "°°°"
-        Me.BTNPicPreView.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        Me.BTNPicPreView.UseVisualStyleBackColor = False
-        '
         'PanelLabelExpandPreView
         '
         Me.PanelLabelExpandPreView.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -562,16 +576,16 @@ Partial Class ControlPainel_Detalhes
         Me.BTNPreView.TabIndex = 22
         Me.BTNPreView.UseVisualStyleBackColor = False
         '
-        'ImageList1
+        'Control_EnvolveLstBGeral1
         '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.ImageList1.Images.SetKeyName(0, "pasta winphone.png")
-        Me.ImageList1.Images.SetKeyName(1, "pasta winphone1.png")
-        Me.ImageList1.Images.SetKeyName(2, "pasta-12.png")
-        Me.ImageList1.Images.SetKeyName(3, "pasta-Aberta.png")
-        Me.ImageList1.Images.SetKeyName(4, "imageres_3.ico")
-        Me.ImageList1.Images.SetKeyName(5, "imageres_4.ico")
+        Me.Control_EnvolveLstBGeral1.AutoScroll = True
+        Me.Control_EnvolveLstBGeral1.AutoSize = True
+        Me.Control_EnvolveLstBGeral1.BackColor = System.Drawing.Color.Transparent
+        Me.Control_EnvolveLstBGeral1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Control_EnvolveLstBGeral1.Location = New System.Drawing.Point(0, 1)
+        Me.Control_EnvolveLstBGeral1.Name = "Control_EnvolveLstBGeral1"
+        Me.Control_EnvolveLstBGeral1.Size = New System.Drawing.Size(308, 206)
+        Me.Control_EnvolveLstBGeral1.TabIndex = 0
         '
         'ControlPainel_Detalhes
         '
@@ -586,16 +600,18 @@ Partial Class ControlPainel_Detalhes
         Me.PanelEnvolvePreView.ResumeLayout(False)
         Me.PanelVisualizar.ResumeLayout(False)
         Me.PanelEnvolveVisualizar.ResumeLayout(False)
-        Me.PanelEnvolveVerPasta.ResumeLayout(False)
-        Me.PanelEnvolveFilhos.ResumeLayout(False)
         Me.PanelEnvolvePicPreView.ResumeLayout(False)
         CType(Me.PicPreView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelEnvolveVerPasta.ResumeLayout(False)
+        Me.PanelEnvolveFilhos.ResumeLayout(False)
         Me.PanelEnvolvePreViewPasta.ResumeLayout(False)
         Me.PanelPreViewPasta.ResumeLayout(False)
         Me.PanelEnvolveIrmas.ResumeLayout(False)
         Me.PanelEnvolvePropGeral.ResumeLayout(False)
         Me.PanelPropGeral.ResumeLayout(False)
         Me.PanelEnvolve_PanelRecebeGrupoDeMetadados.ResumeLayout(False)
+        Me.PanelRecebeGrupoDeMetadados.ResumeLayout(False)
+        Me.PanelRecebeGrupoDeMetadados.PerformLayout()
         Me.PanelLabelPropGeral.ResumeLayout(False)
         Me.PanelOpcoesDeEdicaodeMetadados.ResumeLayout(False)
         Me.Panel272.ResumeLayout(False)
@@ -641,4 +657,5 @@ Partial Class ControlPainel_Detalhes
     Friend WithEvents LBLPreView As Label
     Friend WithEvents BTNPreView As Button
     Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents Control_EnvolveLstBGeral1 As Control_EnvolveLstBGeral
 End Class

@@ -38,8 +38,7 @@ Partial Class Control_MenuBar
         Me.Panel58 = New System.Windows.Forms.Panel()
         Me.Panel59 = New System.Windows.Forms.Panel()
         Me.Button32 = New System.Windows.Forms.Button()
-        Me.Button33 = New System.Windows.Forms.Button()
-        Me.Panel60 = New System.Windows.Forms.Panel()
+        Me.PanelSeparador01 = New System.Windows.Forms.Panel()
         Me.Button34 = New System.Windows.Forms.Button()
         Me.Button35 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -65,6 +64,7 @@ Partial Class Control_MenuBar
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button33 = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.Panel26.SuspendLayout()
@@ -271,7 +271,7 @@ Partial Class Control_MenuBar
         '
         Me.Panel59.Controls.Add(Me.Button32)
         Me.Panel59.Controls.Add(Me.Button33)
-        Me.Panel59.Controls.Add(Me.Panel60)
+        Me.Panel59.Controls.Add(Me.PanelSeparador01)
         Me.Panel59.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel59.Location = New System.Drawing.Point(205, 0)
         Me.Panel59.Name = "Panel59"
@@ -291,7 +291,7 @@ Partial Class Control_MenuBar
         Me.Button32.ForeColor = System.Drawing.Color.Black
         Me.Button32.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Button32.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button32.Location = New System.Drawing.Point(59, 0)
+        Me.Button32.Location = New System.Drawing.Point(49, 0)
         Me.Button32.Name = "Button32"
         Me.Button32.Size = New System.Drawing.Size(66, 82)
         Me.Button32.TabIndex = 10
@@ -299,36 +299,14 @@ Partial Class Control_MenuBar
         Me.Button32.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button32.UseVisualStyleBackColor = True
         '
-        'Button33
+        'PanelSeparador01
         '
-        Me.Button33.AutoSize = True
-        Me.Button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button33.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button33.FlatAppearance.BorderSize = 0
-        Me.Button33.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button33.ForeColor = System.Drawing.Color.Black
-        Me.Button33.Image = CType(resources.GetObject("Button33.Image"), System.Drawing.Image)
-        Me.Button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button33.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button33.Location = New System.Drawing.Point(1, 0)
-        Me.Button33.Name = "Button33"
-        Me.Button33.Size = New System.Drawing.Size(58, 82)
-        Me.Button33.TabIndex = 9
-        Me.Button33.Text = "Excluir"
-        Me.Button33.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button33.UseVisualStyleBackColor = True
-        '
-        'Panel60
-        '
-        Me.Panel60.BackColor = System.Drawing.Color.LightGray
-        Me.Panel60.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel60.Location = New System.Drawing.Point(0, 0)
-        Me.Panel60.Name = "Panel60"
-        Me.Panel60.Size = New System.Drawing.Size(1, 82)
-        Me.Panel60.TabIndex = 12
+        Me.PanelSeparador01.BackColor = System.Drawing.Color.LightGray
+        Me.PanelSeparador01.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelSeparador01.Location = New System.Drawing.Point(0, 0)
+        Me.PanelSeparador01.Name = "PanelSeparador01"
+        Me.PanelSeparador01.Size = New System.Drawing.Size(1, 82)
+        Me.PanelSeparador01.TabIndex = 12
         '
         'Button34
         '
@@ -721,6 +699,28 @@ Partial Class Control_MenuBar
         Me.Label8.Text = "Área de Transferência"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button33
+        '
+        Me.Button33.AutoSize = True
+        Me.Button33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button33.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Button33.FlatAppearance.BorderSize = 0
+        Me.Button33.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button33.ForeColor = System.Drawing.Color.Black
+        Me.Button33.Image = CType(resources.GetObject("Button33.Image"), System.Drawing.Image)
+        Me.Button33.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button33.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button33.Location = New System.Drawing.Point(1, 0)
+        Me.Button33.Name = "Button33"
+        Me.Button33.Size = New System.Drawing.Size(48, 82)
+        Me.Button33.TabIndex = 9
+        Me.Button33.Text = "Excluir"
+        Me.Button33.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button33.UseVisualStyleBackColor = True
+        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -765,8 +765,7 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel58 As Panel
     Friend WithEvents Panel59 As Panel
     Friend WithEvents Button32 As Button
-    Friend WithEvents Button33 As Button
-    Friend WithEvents Panel60 As Panel
+    Friend WithEvents PanelSeparador01 As Panel
     Friend WithEvents Button34 As Button
     Friend WithEvents Button35 As Button
     Friend WithEvents Label3 As Label
@@ -792,4 +791,5 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel67 As Panel
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents Button33 As Button
 End Class

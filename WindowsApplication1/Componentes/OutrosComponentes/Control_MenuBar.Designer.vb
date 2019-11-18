@@ -25,6 +25,24 @@ Partial Class Control_MenuBar
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_MenuBar))
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -38,6 +56,8 @@ Partial Class Control_MenuBar
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.CHKExibirArvores = New System.Windows.Forms.CheckBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel62 = New System.Windows.Forms.Panel()
@@ -50,33 +70,21 @@ Partial Class Control_MenuBar
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PanelEnvolve_BTNNovaPasta = New System.Windows.Forms.Panel()
+        Me.BTNNovaPasta = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNNovaPasta = New System.Windows.Forms.Button()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.CHKExibirArvores = New System.Windows.Forms.CheckBox()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button20 = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.Panel16.SuspendLayout()
+        Me.Panel21.SuspendLayout()
+        Me.Panel17.SuspendLayout()
+        Me.Panel18.SuspendLayout()
+        Me.Panel19.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -84,22 +92,14 @@ Partial Class Control_MenuBar
         Me.Panel8.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.Panel12.SuspendLayout()
         Me.Panel62.SuspendLayout()
         Me.Panel64.SuspendLayout()
         Me.Panel66.SuspendLayout()
         Me.Panel70.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Panel14.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel16.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.Panel19.SuspendLayout()
-        Me.Panel21.SuspendLayout()
+        Me.PanelEnvolve_BTNNovaPasta.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -108,7 +108,7 @@ Partial Class Control_MenuBar
         Me.Panel23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel23.Location = New System.Drawing.Point(0, 0)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(877, 83)
+        Me.Panel23.Size = New System.Drawing.Size(837, 83)
         Me.Panel23.TabIndex = 11
         '
         'Panel25
@@ -119,8 +119,272 @@ Partial Class Control_MenuBar
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(877, 83)
+        Me.Panel25.Size = New System.Drawing.Size(837, 83)
         Me.Panel25.TabIndex = 6
+        '
+        'Panel13
+        '
+        Me.Panel13.Controls.Add(Me.Panel14)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel13.Location = New System.Drawing.Point(582, 0)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Padding = New System.Windows.Forms.Padding(3)
+        Me.Panel13.Size = New System.Drawing.Size(326, 83)
+        Me.Panel13.TabIndex = 9
+        '
+        'Panel14
+        '
+        Me.Panel14.Controls.Add(Me.Panel15)
+        Me.Panel14.Controls.Add(Me.Panel20)
+        Me.Panel14.Controls.Add(Me.Label2)
+        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel14.Location = New System.Drawing.Point(3, 3)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(320, 77)
+        Me.Panel14.TabIndex = 6
+        '
+        'Panel15
+        '
+        Me.Panel15.Controls.Add(Me.Panel16)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel15.Location = New System.Drawing.Point(0, 0)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(319, 64)
+        Me.Panel15.TabIndex = 11
+        '
+        'Panel16
+        '
+        Me.Panel16.Controls.Add(Me.Panel21)
+        Me.Panel16.Controls.Add(Me.Panel17)
+        Me.Panel16.Controls.Add(Me.Panel18)
+        Me.Panel16.Controls.Add(Me.Panel19)
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel16.Location = New System.Drawing.Point(0, 0)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(273, 64)
+        Me.Panel16.TabIndex = 20
+        '
+        'Panel21
+        '
+        Me.Panel21.Controls.Add(Me.Button19)
+        Me.Panel21.Controls.Add(Me.Button20)
+        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel21.Location = New System.Drawing.Point(181, 0)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(73, 64)
+        Me.Panel21.TabIndex = 22
+        '
+        'Button19
+        '
+        Me.Button19.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
+        Me.Button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button19.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button19.FlatAppearance.BorderSize = 0
+        Me.Button19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button19.ForeColor = System.Drawing.Color.Black
+        Me.Button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button19.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button19.Location = New System.Drawing.Point(0, 0)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(73, 44)
+        Me.Button19.TabIndex = 8
+        Me.Button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button19.UseVisualStyleBackColor = True
+        '
+        'Button20
+        '
+        Me.Button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button20.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button20.FlatAppearance.BorderSize = 0
+        Me.Button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button20.ForeColor = System.Drawing.Color.Black
+        Me.Button20.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.Button20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button20.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button20.Location = New System.Drawing.Point(0, 44)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(73, 20)
+        Me.Button20.TabIndex = 9
+        Me.Button20.Text = "Renomear"
+        Me.Button20.UseVisualStyleBackColor = True
+        '
+        'Panel17
+        '
+        Me.Panel17.Controls.Add(Me.Button10)
+        Me.Panel17.Controls.Add(Me.Button11)
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel17.Location = New System.Drawing.Point(117, 0)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(64, 64)
+        Me.Panel17.TabIndex = 2
+        '
+        'Button10
+        '
+        Me.Button10.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
+        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.ForeColor = System.Drawing.Color.Black
+        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button10.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button10.Location = New System.Drawing.Point(0, 0)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(64, 44)
+        Me.Button10.TabIndex = 8
+        Me.Button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button11.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button11.FlatAppearance.BorderSize = 0
+        Me.Button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.ForeColor = System.Drawing.Color.Black
+        Me.Button11.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button11.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button11.Location = New System.Drawing.Point(0, 44)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(64, 20)
+        Me.Button11.TabIndex = 9
+        Me.Button11.Text = "Excluir"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Panel18
+        '
+        Me.Panel18.Controls.Add(Me.Button12)
+        Me.Panel18.Controls.Add(Me.Button16)
+        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel18.Location = New System.Drawing.Point(57, 0)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(60, 64)
+        Me.Panel18.TabIndex = 1
+        '
+        'Button12
+        '
+        Me.Button12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copypara
+        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button12.FlatAppearance.BorderSize = 0
+        Me.Button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button12.ForeColor = System.Drawing.Color.Black
+        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button12.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button12.Location = New System.Drawing.Point(0, 0)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(60, 44)
+        Me.Button12.TabIndex = 8
+        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button16.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button16.FlatAppearance.BorderSize = 0
+        Me.Button16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button16.ForeColor = System.Drawing.Color.Black
+        Me.Button16.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.Button16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button16.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button16.Location = New System.Drawing.Point(0, 44)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(60, 20)
+        Me.Button16.TabIndex = 9
+        Me.Button16.Text = "Copiar para"
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Panel19
+        '
+        Me.Panel19.Controls.Add(Me.Button17)
+        Me.Panel19.Controls.Add(Me.Button18)
+        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel19.Location = New System.Drawing.Point(0, 0)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(57, 64)
+        Me.Panel19.TabIndex = 0
+        '
+        'Button17
+        '
+        Me.Button17.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.movepara
+        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button17.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button17.FlatAppearance.BorderSize = 0
+        Me.Button17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button17.ForeColor = System.Drawing.Color.Black
+        Me.Button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button17.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button17.Location = New System.Drawing.Point(0, 0)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(57, 44)
+        Me.Button17.TabIndex = 8
+        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button18.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Button18.FlatAppearance.BorderSize = 0
+        Me.Button18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.Button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button18.ForeColor = System.Drawing.Color.Black
+        Me.Button18.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.Button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button18.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button18.Location = New System.Drawing.Point(0, 44)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(57, 20)
+        Me.Button18.TabIndex = 9
+        Me.Button18.Text = "Mover para"
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.LightGray
+        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel20.Location = New System.Drawing.Point(319, 0)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(1, 64)
+        Me.Panel20.TabIndex = 10
+        '
+        'Label2
+        '
+        Me.Label2.AutoEllipsis = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label2.Location = New System.Drawing.Point(0, 64)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(320, 13)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Organizar"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel4
         '
@@ -323,6 +587,36 @@ Partial Class Control_MenuBar
         Me.Button8.Text = "Copiar"
         Me.Button8.UseVisualStyleBackColor = True
         '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.CHKExibirArvores)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel12.Location = New System.Drawing.Point(0, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(132, 64)
+        Me.Panel12.TabIndex = 22
+        '
+        'CHKExibirArvores
+        '
+        Me.CHKExibirArvores.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHKExibirArvores.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CHKExibirArvores.FlatAppearance.BorderSize = 0
+        Me.CHKExibirArvores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHKExibirArvores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CHKExibirArvores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHKExibirArvores.ForeColor = System.Drawing.Color.Black
+        Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
+        Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CHKExibirArvores.Location = New System.Drawing.Point(0, 0)
+        Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
+        Me.CHKExibirArvores.Name = "CHKExibirArvores"
+        Me.CHKExibirArvores.Size = New System.Drawing.Size(132, 64)
+        Me.CHKExibirArvores.TabIndex = 21
+        Me.CHKExibirArvores.Text = "Exibir Painel Área de Transferência"
+        Me.CHKExibirArvores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CHKExibirArvores.UseVisualStyleBackColor = True
+        '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.LightGray
@@ -379,7 +673,7 @@ Partial Class Control_MenuBar
         '
         Me.Panel70.Controls.Add(Me.Panel3)
         Me.Panel70.Controls.Add(Me.Panel2)
-        Me.Panel70.Controls.Add(Me.Panel1)
+        Me.Panel70.Controls.Add(Me.PanelEnvolve_BTNNovaPasta)
         Me.Panel70.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel70.Location = New System.Drawing.Point(0, 0)
         Me.Panel70.Name = "Panel70"
@@ -486,55 +780,57 @@ Partial Class Control_MenuBar
         Me.Button3.Text = "Mídia"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'PanelEnvolve_BTNNovaPasta
         '
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(57, 64)
-        Me.Panel1.TabIndex = 0
+        Me.PanelEnvolve_BTNNovaPasta.BackColor = System.Drawing.Color.RoyalBlue
+        Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNNovaPasta)
+        Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNOpcoes_BTNNovaPasta)
+        Me.PanelEnvolve_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_BTNNovaPasta.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_BTNNovaPasta.Name = "PanelEnvolve_BTNNovaPasta"
+        Me.PanelEnvolve_BTNNovaPasta.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolve_BTNNovaPasta.Size = New System.Drawing.Size(57, 64)
+        Me.PanelEnvolve_BTNNovaPasta.TabIndex = 0
         '
-        'Button1
+        'BTNNovaPasta
         '
-        Me.Button1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(57, 44)
-        Me.Button1.TabIndex = 8
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BTNNovaPasta.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.BTNNovaPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNNovaPasta.FlatAppearance.BorderSize = 0
+        Me.BTNNovaPasta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNNovaPasta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BTNNovaPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNNovaPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNNovaPasta.ForeColor = System.Drawing.Color.Black
+        Me.BTNNovaPasta.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNNovaPasta.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNNovaPasta.Location = New System.Drawing.Point(1, 1)
+        Me.BTNNovaPasta.Name = "BTNNovaPasta"
+        Me.BTNNovaPasta.Size = New System.Drawing.Size(55, 42)
+        Me.BTNNovaPasta.TabIndex = 8
+        Me.BTNNovaPasta.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNNovaPasta.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BTNOpcoes_BTNNovaPasta
         '
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button2.Location = New System.Drawing.Point(0, 44)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(57, 20)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Pasta"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BTNOpcoes_BTNNovaPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNOpcoes_BTNNovaPasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNNovaPasta.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNNovaPasta.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.BTNOpcoes_BTNNovaPasta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNNovaPasta.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNNovaPasta.Location = New System.Drawing.Point(1, 43)
+        Me.BTNOpcoes_BTNNovaPasta.Name = "BTNOpcoes_BTNNovaPasta"
+        Me.BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(55, 20)
+        Me.BTNOpcoes_BTNNovaPasta.TabIndex = 9
+        Me.BTNOpcoes_BTNNovaPasta.Text = "Pasta"
+        Me.BTNOpcoes_BTNNovaPasta.UseVisualStyleBackColor = True
         '
         'Panel67
         '
@@ -558,300 +854,6 @@ Partial Class Control_MenuBar
         Me.Label8.Text = "Nova"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel12
-        '
-        Me.Panel12.Controls.Add(Me.CHKExibirArvores)
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel12.Location = New System.Drawing.Point(0, 0)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(132, 64)
-        Me.Panel12.TabIndex = 22
-        '
-        'CHKExibirArvores
-        '
-        Me.CHKExibirArvores.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHKExibirArvores.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CHKExibirArvores.FlatAppearance.BorderSize = 0
-        Me.CHKExibirArvores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHKExibirArvores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CHKExibirArvores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHKExibirArvores.ForeColor = System.Drawing.Color.Black
-        Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
-        Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CHKExibirArvores.Location = New System.Drawing.Point(0, 0)
-        Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
-        Me.CHKExibirArvores.Name = "CHKExibirArvores"
-        Me.CHKExibirArvores.Size = New System.Drawing.Size(132, 64)
-        Me.CHKExibirArvores.TabIndex = 21
-        Me.CHKExibirArvores.Text = "Exibir Painel Área de Transferência"
-        Me.CHKExibirArvores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CHKExibirArvores.UseVisualStyleBackColor = True
-        '
-        'Panel13
-        '
-        Me.Panel13.Controls.Add(Me.Panel14)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel13.Location = New System.Drawing.Point(582, 0)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel13.Size = New System.Drawing.Size(326, 83)
-        Me.Panel13.TabIndex = 9
-        '
-        'Panel14
-        '
-        Me.Panel14.Controls.Add(Me.Panel15)
-        Me.Panel14.Controls.Add(Me.Panel20)
-        Me.Panel14.Controls.Add(Me.Label2)
-        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel14.Location = New System.Drawing.Point(3, 3)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(320, 77)
-        Me.Panel14.TabIndex = 6
-        '
-        'Panel15
-        '
-        Me.Panel15.Controls.Add(Me.Panel16)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel15.Location = New System.Drawing.Point(0, 0)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(319, 64)
-        Me.Panel15.TabIndex = 11
-        '
-        'Panel16
-        '
-        Me.Panel16.Controls.Add(Me.Panel21)
-        Me.Panel16.Controls.Add(Me.Panel17)
-        Me.Panel16.Controls.Add(Me.Panel18)
-        Me.Panel16.Controls.Add(Me.Panel19)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel16.Location = New System.Drawing.Point(0, 0)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(273, 64)
-        Me.Panel16.TabIndex = 20
-        '
-        'Panel17
-        '
-        Me.Panel17.Controls.Add(Me.Button10)
-        Me.Panel17.Controls.Add(Me.Button11)
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel17.Location = New System.Drawing.Point(117, 0)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(64, 64)
-        Me.Panel17.TabIndex = 2
-        '
-        'Button10
-        '
-        Me.Button10.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
-        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Black
-        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button10.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button10.Location = New System.Drawing.Point(0, 0)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(64, 44)
-        Me.Button10.TabIndex = 8
-        Me.Button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button11.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button11.FlatAppearance.BorderSize = 0
-        Me.Button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button11.ForeColor = System.Drawing.Color.Black
-        Me.Button11.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button11.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button11.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button11.Location = New System.Drawing.Point(0, 44)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(64, 20)
-        Me.Button11.TabIndex = 9
-        Me.Button11.Text = "Excluir"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Panel18
-        '
-        Me.Panel18.Controls.Add(Me.Button12)
-        Me.Panel18.Controls.Add(Me.Button16)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel18.Location = New System.Drawing.Point(57, 0)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(60, 64)
-        Me.Panel18.TabIndex = 1
-        '
-        'Button12
-        '
-        Me.Button12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copypara
-        Me.Button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button12.FlatAppearance.BorderSize = 0
-        Me.Button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button12.ForeColor = System.Drawing.Color.Black
-        Me.Button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button12.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button12.Location = New System.Drawing.Point(0, 0)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(60, 44)
-        Me.Button12.TabIndex = 8
-        Me.Button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button16
-        '
-        Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button16.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button16.FlatAppearance.BorderSize = 0
-        Me.Button16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.ForeColor = System.Drawing.Color.Black
-        Me.Button16.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button16.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button16.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button16.Location = New System.Drawing.Point(0, 44)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(60, 20)
-        Me.Button16.TabIndex = 9
-        Me.Button16.Text = "Copiar para"
-        Me.Button16.UseVisualStyleBackColor = True
-        '
-        'Panel19
-        '
-        Me.Panel19.Controls.Add(Me.Button17)
-        Me.Panel19.Controls.Add(Me.Button18)
-        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel19.Location = New System.Drawing.Point(0, 0)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(57, 64)
-        Me.Panel19.TabIndex = 0
-        '
-        'Button17
-        '
-        Me.Button17.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.movepara
-        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button17.FlatAppearance.BorderSize = 0
-        Me.Button17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button17.ForeColor = System.Drawing.Color.Black
-        Me.Button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button17.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button17.Location = New System.Drawing.Point(0, 0)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(57, 44)
-        Me.Button17.TabIndex = 8
-        Me.Button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button17.UseVisualStyleBackColor = True
-        '
-        'Button18
-        '
-        Me.Button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button18.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button18.FlatAppearance.BorderSize = 0
-        Me.Button18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button18.ForeColor = System.Drawing.Color.Black
-        Me.Button18.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button18.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button18.Location = New System.Drawing.Point(0, 44)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(57, 20)
-        Me.Button18.TabIndex = 9
-        Me.Button18.Text = "Mover para"
-        Me.Button18.UseVisualStyleBackColor = True
-        '
-        'Panel20
-        '
-        Me.Panel20.BackColor = System.Drawing.Color.LightGray
-        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(319, 0)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(1, 64)
-        Me.Panel20.TabIndex = 10
-        '
-        'Label2
-        '
-        Me.Label2.AutoEllipsis = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(0, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(320, 13)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Organizar"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel21
-        '
-        Me.Panel21.Controls.Add(Me.Button19)
-        Me.Panel21.Controls.Add(Me.Button20)
-        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel21.Location = New System.Drawing.Point(181, 0)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(73, 64)
-        Me.Panel21.TabIndex = 22
-        '
-        'Button19
-        '
-        Me.Button19.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
-        Me.Button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button19.FlatAppearance.BorderSize = 0
-        Me.Button19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button19.ForeColor = System.Drawing.Color.Black
-        Me.Button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button19.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button19.Location = New System.Drawing.Point(0, 0)
-        Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(73, 44)
-        Me.Button19.TabIndex = 8
-        Me.Button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button19.UseVisualStyleBackColor = True
-        '
-        'Button20
-        '
-        Me.Button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button20.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button20.FlatAppearance.BorderSize = 0
-        Me.Button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button20.ForeColor = System.Drawing.Color.Black
-        Me.Button20.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button20.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button20.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button20.Location = New System.Drawing.Point(0, 44)
-        Me.Button20.Name = "Button20"
-        Me.Button20.Size = New System.Drawing.Size(73, 20)
-        Me.Button20.TabIndex = 9
-        Me.Button20.Text = "Renomear"
-        Me.Button20.UseVisualStyleBackColor = True
-        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -859,9 +861,17 @@ Partial Class Control_MenuBar
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.Panel23)
         Me.Name = "Control_MenuBar"
-        Me.Size = New System.Drawing.Size(877, 83)
+        Me.Size = New System.Drawing.Size(837, 83)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel15.ResumeLayout(False)
+        Me.Panel16.ResumeLayout(False)
+        Me.Panel21.ResumeLayout(False)
+        Me.Panel17.ResumeLayout(False)
+        Me.Panel18.ResumeLayout(False)
+        Me.Panel19.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
@@ -871,22 +881,14 @@ Partial Class Control_MenuBar
         Me.Panel10.PerformLayout()
         Me.Panel9.ResumeLayout(False)
         Me.Panel9.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
         Me.Panel62.ResumeLayout(False)
         Me.Panel64.ResumeLayout(False)
         Me.Panel66.ResumeLayout(False)
         Me.Panel70.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel14.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel19.ResumeLayout(False)
-        Me.Panel21.ResumeLayout(False)
+        Me.PanelEnvolve_BTNNovaPasta.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -905,9 +907,9 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents PanelEnvolve_BTNNovaPasta As Panel
+    Friend WithEvents BTNOpcoes_BTNNovaPasta As Button
+    Friend WithEvents BTNNovaPasta As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel

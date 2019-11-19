@@ -26,8 +26,8 @@ Partial Class Control_MenuBar
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
+        Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNRenomear = New System.Windows.Forms.Panel()
         Me.BTNRenomear = New System.Windows.Forms.Button()
@@ -44,8 +44,8 @@ Partial Class Control_MenuBar
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.LBLOrganizar = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
+        Me.PanelGerenciar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
@@ -61,8 +61,8 @@ Partial Class Control_MenuBar
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.LBLGerenciar = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaNova = New System.Windows.Forms.Panel()
+        Me.PanelNova = New System.Windows.Forms.Panel()
         Me.PanelAgrupaNova = New System.Windows.Forms.Panel()
-        Me.Panel66 = New System.Windows.Forms.Panel()
         Me.Panel70 = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.BTNMaisProcessos = New System.Windows.Forms.Button()
@@ -78,24 +78,24 @@ Partial Class Control_MenuBar
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
+        Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
-        Me.Panel15.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.PanelEnvolve_BTNRenomear.SuspendLayout()
         Me.PanelEnvolve_BTNExcluir.SuspendLayout()
         Me.PanelEnvolve_BTNCopiar.SuspendLayout()
         Me.PanelEnvolve_BTNMover.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaGerenciar.SuspendLayout()
+        Me.PanelGerenciar.SuspendLayout()
         Me.PanelAgrupaGerenciar.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel12.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaNova.SuspendLayout()
+        Me.PanelNova.SuspendLayout()
         Me.PanelAgrupaNova.SuspendLayout()
-        Me.Panel66.SuspendLayout()
         Me.Panel70.SuspendLayout()
         Me.PanelEnvolve_BTNMaisProcessos.SuspendLayout()
         Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
@@ -124,7 +124,7 @@ Partial Class Control_MenuBar
         '
         'PanelEnvolve_PanelAgrupaOrganizar
         '
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Controls.Add(Me.PanelAgrupaOrganizar)
+        Me.PanelEnvolve_PanelAgrupaOrganizar.Controls.Add(Me.PanelOrganizar)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(582, 0)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Name = "PanelEnvolve_PanelAgrupaOrganizar"
@@ -132,25 +132,25 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(308, 83)
         Me.PanelEnvolve_PanelAgrupaOrganizar.TabIndex = 9
         '
+        'PanelOrganizar
+        '
+        Me.PanelOrganizar.Controls.Add(Me.PanelAgrupaOrganizar)
+        Me.PanelOrganizar.Controls.Add(Me.Panel20)
+        Me.PanelOrganizar.Controls.Add(Me.LBLOrganizar)
+        Me.PanelOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelOrganizar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelOrganizar.Name = "PanelOrganizar"
+        Me.PanelOrganizar.Size = New System.Drawing.Size(302, 77)
+        Me.PanelOrganizar.TabIndex = 6
+        '
         'PanelAgrupaOrganizar
         '
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel15)
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel20)
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.LBLOrganizar)
+        Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel16)
         Me.PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaOrganizar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelAgrupaOrganizar.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaOrganizar.Name = "PanelAgrupaOrganizar"
-        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(302, 77)
-        Me.PanelAgrupaOrganizar.TabIndex = 6
-        '
-        'Panel15
-        '
-        Me.Panel15.Controls.Add(Me.Panel16)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel15.Location = New System.Drawing.Point(0, 0)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(301, 64)
-        Me.Panel15.TabIndex = 11
+        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(301, 64)
+        Me.PanelAgrupaOrganizar.TabIndex = 11
         '
         'Panel16
         '
@@ -171,6 +171,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNRenomear.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelEnvolve_BTNRenomear.Location = New System.Drawing.Point(181, 0)
         Me.PanelEnvolve_BTNRenomear.Name = "PanelEnvolve_BTNRenomear"
+        Me.PanelEnvolve_BTNRenomear.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelEnvolve_BTNRenomear.Size = New System.Drawing.Size(73, 64)
         Me.PanelEnvolve_BTNRenomear.TabIndex = 22
         '
@@ -187,9 +188,9 @@ Partial Class Control_MenuBar
         Me.BTNRenomear.ForeColor = System.Drawing.Color.Black
         Me.BTNRenomear.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.BTNRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNRenomear.Location = New System.Drawing.Point(0, 0)
+        Me.BTNRenomear.Location = New System.Drawing.Point(1, 1)
         Me.BTNRenomear.Name = "BTNRenomear"
-        Me.BTNRenomear.Size = New System.Drawing.Size(73, 44)
+        Me.BTNRenomear.Size = New System.Drawing.Size(71, 42)
         Me.BTNRenomear.TabIndex = 8
         Me.BTNRenomear.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTNRenomear.UseVisualStyleBackColor = True
@@ -207,9 +208,9 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNRenomear.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
         Me.BTNOpcoes_BTNRenomear.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BTNOpcoes_BTNRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNRenomear.Location = New System.Drawing.Point(0, 44)
+        Me.BTNOpcoes_BTNRenomear.Location = New System.Drawing.Point(1, 43)
         Me.BTNOpcoes_BTNRenomear.Name = "BTNOpcoes_BTNRenomear"
-        Me.BTNOpcoes_BTNRenomear.Size = New System.Drawing.Size(73, 20)
+        Me.BTNOpcoes_BTNRenomear.Size = New System.Drawing.Size(71, 20)
         Me.BTNOpcoes_BTNRenomear.TabIndex = 9
         Me.BTNOpcoes_BTNRenomear.Text = "Renomear"
         Me.BTNOpcoes_BTNRenomear.UseVisualStyleBackColor = True
@@ -391,7 +392,7 @@ Partial Class Control_MenuBar
         '
         'PanelEnvolve_PanelAgrupaGerenciar
         '
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Controls.Add(Me.PanelAgrupaGerenciar)
+        Me.PanelEnvolve_PanelAgrupaGerenciar.Controls.Add(Me.PanelGerenciar)
         Me.PanelEnvolve_PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelEnvolve_PanelAgrupaGerenciar.Location = New System.Drawing.Point(228, 0)
         Me.PanelEnvolve_PanelAgrupaGerenciar.Name = "PanelEnvolve_PanelAgrupaGerenciar"
@@ -399,25 +400,25 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaGerenciar.Size = New System.Drawing.Size(354, 83)
         Me.PanelEnvolve_PanelAgrupaGerenciar.TabIndex = 8
         '
+        'PanelGerenciar
+        '
+        Me.PanelGerenciar.Controls.Add(Me.PanelAgrupaGerenciar)
+        Me.PanelGerenciar.Controls.Add(Me.Panel11)
+        Me.PanelGerenciar.Controls.Add(Me.LBLGerenciar)
+        Me.PanelGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelGerenciar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelGerenciar.Name = "PanelGerenciar"
+        Me.PanelGerenciar.Size = New System.Drawing.Size(348, 77)
+        Me.PanelGerenciar.TabIndex = 6
+        '
         'PanelAgrupaGerenciar
         '
-        Me.PanelAgrupaGerenciar.Controls.Add(Me.Panel6)
-        Me.PanelAgrupaGerenciar.Controls.Add(Me.Panel11)
-        Me.PanelAgrupaGerenciar.Controls.Add(Me.LBLGerenciar)
+        Me.PanelAgrupaGerenciar.Controls.Add(Me.Panel7)
         Me.PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaGerenciar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelAgrupaGerenciar.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaGerenciar.Name = "PanelAgrupaGerenciar"
-        Me.PanelAgrupaGerenciar.Size = New System.Drawing.Size(348, 77)
-        Me.PanelAgrupaGerenciar.TabIndex = 6
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Panel7)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(347, 64)
-        Me.Panel6.TabIndex = 11
+        Me.PanelAgrupaGerenciar.Size = New System.Drawing.Size(347, 64)
+        Me.PanelAgrupaGerenciar.TabIndex = 11
         '
         'Panel7
         '
@@ -637,7 +638,7 @@ Partial Class Control_MenuBar
         '
         'PanelEnvolve_PanelAgrupaNova
         '
-        Me.PanelEnvolve_PanelAgrupaNova.Controls.Add(Me.PanelAgrupaNova)
+        Me.PanelEnvolve_PanelAgrupaNova.Controls.Add(Me.PanelNova)
         Me.PanelEnvolve_PanelAgrupaNova.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelEnvolve_PanelAgrupaNova.Location = New System.Drawing.Point(0, 0)
         Me.PanelEnvolve_PanelAgrupaNova.Name = "PanelEnvolve_PanelAgrupaNova"
@@ -645,25 +646,25 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaNova.Size = New System.Drawing.Size(228, 83)
         Me.PanelEnvolve_PanelAgrupaNova.TabIndex = 5
         '
+        'PanelNova
+        '
+        Me.PanelNova.Controls.Add(Me.PanelAgrupaNova)
+        Me.PanelNova.Controls.Add(Me.Panel67)
+        Me.PanelNova.Controls.Add(Me.LBLNova)
+        Me.PanelNova.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelNova.Location = New System.Drawing.Point(3, 3)
+        Me.PanelNova.Name = "PanelNova"
+        Me.PanelNova.Size = New System.Drawing.Size(222, 77)
+        Me.PanelNova.TabIndex = 6
+        '
         'PanelAgrupaNova
         '
-        Me.PanelAgrupaNova.Controls.Add(Me.Panel66)
-        Me.PanelAgrupaNova.Controls.Add(Me.Panel67)
-        Me.PanelAgrupaNova.Controls.Add(Me.LBLNova)
+        Me.PanelAgrupaNova.Controls.Add(Me.Panel70)
         Me.PanelAgrupaNova.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaNova.Location = New System.Drawing.Point(3, 3)
+        Me.PanelAgrupaNova.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaNova.Name = "PanelAgrupaNova"
-        Me.PanelAgrupaNova.Size = New System.Drawing.Size(222, 77)
-        Me.PanelAgrupaNova.TabIndex = 6
-        '
-        'Panel66
-        '
-        Me.Panel66.Controls.Add(Me.Panel70)
-        Me.Panel66.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel66.Location = New System.Drawing.Point(0, 0)
-        Me.Panel66.Name = "Panel66"
-        Me.Panel66.Size = New System.Drawing.Size(221, 64)
-        Me.Panel66.TabIndex = 11
+        Me.PanelAgrupaNova.Size = New System.Drawing.Size(221, 64)
+        Me.PanelAgrupaNova.TabIndex = 11
         '
         'Panel70
         '
@@ -863,16 +864,16 @@ Partial Class Control_MenuBar
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaOrganizar.ResumeLayout(False)
+        Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.PanelEnvolve_BTNRenomear.ResumeLayout(False)
         Me.PanelEnvolve_BTNExcluir.ResumeLayout(False)
         Me.PanelEnvolve_BTNCopiar.ResumeLayout(False)
         Me.PanelEnvolve_BTNMover.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaGerenciar.ResumeLayout(False)
+        Me.PanelGerenciar.ResumeLayout(False)
         Me.PanelAgrupaGerenciar.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
@@ -881,8 +882,8 @@ Partial Class Control_MenuBar
         Me.Panel9.PerformLayout()
         Me.Panel12.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaNova.ResumeLayout(False)
+        Me.PanelNova.ResumeLayout(False)
         Me.PanelAgrupaNova.ResumeLayout(False)
-        Me.Panel66.ResumeLayout(False)
         Me.Panel70.ResumeLayout(False)
         Me.PanelEnvolve_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
@@ -894,8 +895,8 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel23 As Panel
     Friend WithEvents Panel25 As Panel
     Friend WithEvents PanelEnvolve_PanelAgrupaNova As Panel
+    Friend WithEvents PanelNova As Panel
     Friend WithEvents PanelAgrupaNova As Panel
-    Friend WithEvents Panel66 As Panel
     Friend WithEvents Panel70 As Panel
     Friend WithEvents Panel67 As Panel
     Friend WithEvents LBLNova As Label
@@ -909,8 +910,8 @@ Partial Class Control_MenuBar
     Friend WithEvents BTNOpcoes_BTNNovaPasta As Button
     Friend WithEvents BTNNovaPasta As Button
     Friend WithEvents PanelEnvolve_PanelAgrupaGerenciar As Panel
+    Friend WithEvents PanelGerenciar As Panel
     Friend WithEvents PanelAgrupaGerenciar As Panel
-    Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
@@ -926,8 +927,8 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel12 As Panel
     Friend WithEvents CHKExibirArvores As CheckBox
     Friend WithEvents PanelEnvolve_PanelAgrupaOrganizar As Panel
+    Friend WithEvents PanelOrganizar As Panel
     Friend WithEvents PanelAgrupaOrganizar As Panel
-    Friend WithEvents Panel15 As Panel
     Friend WithEvents Panel16 As Panel
     Friend WithEvents PanelEnvolve_BTNExcluir As Panel
     Friend WithEvents BTNExcluir As Button

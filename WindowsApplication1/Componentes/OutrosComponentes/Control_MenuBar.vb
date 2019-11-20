@@ -4,6 +4,38 @@
     ' Propriedades do controle
 
 
+
+    Private Sub BTNNovaMidia_MouseDown(sender As Object, e As MouseEventArgs) Handles BTNNovaMidia.MouseDown
+        BTNNovaMidia.FlatAppearance.MouseDownBackColor = Color.Goldenrod
+
+    End Sub
+
+    Private _borderColorSelectAndMouseDown As Color
+
+    Public Property BorderColorSelectAndMouseDown As Color
+        Get
+            Return _borderColorSelectAndMouseDown
+        End Get
+        Set(value As Color)
+            _borderColorSelectAndMouseDown = value
+
+        End Set
+    End Property
+
+
+    Private _backgroundColorSelectAndMouseDown As Color
+
+    Public Property BackgroundColorSelectAndMouseDown As Color
+        Get
+            Return _backgroundColorSelectAndMouseDown
+        End Get
+        Set(value As Color)
+            _backgroundColorSelectAndMouseDown = value
+
+        End Set
+    End Property
+
+
     Private _borderColorSelectAndMouseLeave As Color
 
     Public Property BorderColorSelectAndMouseLeave As Color
@@ -53,6 +85,62 @@
 
         End Set
     End Property
+
+
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseDown, BTNNovaMidia.MouseDown, BTNMaisProcessos.MouseDown, BTNMover.MouseDown, BTNCopiar.MouseDown, BTNExcluir.MouseDown, BTNRenomear.MouseDown, BTNOpcoes_BTNNovaPasta.MouseDown, BTNOpcoes_BTNNovaMidia.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNRenomear.MouseDown
+        Dim btn As Button
+        btn = CType(sender, Button)
+
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseDown
+        btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
+        Select Case btn.Name
+            Case "BTNNovaPasta"
+                BTNOpcoes_BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNNovaMidia"
+                BTNOpcoes_BTNNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNMaisProcessos"
+                BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNMover"
+                BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNCopiar"
+                BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNExcluir"
+                BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNRenomear"
+                BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNNovaPasta"
+                BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNNovaMidia"
+                BTNNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNMaisProcessos"
+                BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNMover"
+                BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNCopiar"
+                BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNExcluir"
+                BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "BTNOpcoes_BTNRenomear"
+                BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
+
+        End Select
+    End Sub
+
 
 
     Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseLeave, BTNNovaMidia.MouseLeave, BTNMaisProcessos.MouseLeave, BTNMover.MouseLeave, BTNCopiar.MouseLeave, BTNExcluir.MouseLeave, BTNRenomear.MouseLeave, BTNOpcoes_BTNNovaPasta.MouseLeave, BTNOpcoes_BTNNovaMidia.MouseLeave, BTNOpcoes_BTNMaisProcessos.MouseLeave, BTNOpcoes_BTNMover.MouseLeave, BTNOpcoes_BTNCopiar.MouseLeave, BTNOpcoes_BTNExcluir.MouseLeave, BTNOpcoes_BTNRenomear.MouseLeave
@@ -173,9 +261,14 @@
         _borderColorSelectAndMouseLeave = Color.Transparent
         _backgroundColorSelectAndMouseLeave = Color.Transparent
 
+        _borderColorSelectAndMouseDown = Color.RoyalBlue
+        _backgroundColorSelectAndMouseDown = Color.LightSkyBlue
 
     End Sub
 
+    Private Sub BTNNovaMidia_Click(sender As Object, e As EventArgs) Handles BTNNovaMidia.Click
+
+    End Sub
 
 
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04

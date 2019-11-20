@@ -832,7 +832,7 @@ Partial Class Control_MenuBar
         Me.BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNNovaMidia.FlatAppearance.BorderSize = 0
         Me.BTNNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue
         Me.BTNNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
         Me.BTNNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNNovaMidia.ForeColor = System.Drawing.Color.Black

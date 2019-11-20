@@ -211,7 +211,7 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNRenomear.Location = New System.Drawing.Point(181, 0)
         Me.PanelBorder_BTNRenomear.Name = "PanelBorder_BTNRenomear"
         Me.PanelBorder_BTNRenomear.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNRenomear.Size = New System.Drawing.Size(73, 64)
+        Me.PanelBorder_BTNRenomear.Size = New System.Drawing.Size(89, 64)
         Me.PanelBorder_BTNRenomear.TabIndex = 22
         '
         'PanelEnvolve_BTNRenomear
@@ -221,7 +221,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNRenomear.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNRenomear.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNRenomear.Name = "PanelEnvolve_BTNRenomear"
-        Me.PanelEnvolve_BTNRenomear.Size = New System.Drawing.Size(71, 62)
+        Me.PanelEnvolve_BTNRenomear.Size = New System.Drawing.Size(87, 62)
         Me.PanelEnvolve_BTNRenomear.TabIndex = 10
         '
         'BTNRenomear
@@ -240,7 +240,7 @@ Partial Class Control_MenuBar
         Me.BTNRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNRenomear.Location = New System.Drawing.Point(0, 0)
         Me.BTNRenomear.Name = "BTNRenomear"
-        Me.BTNRenomear.Size = New System.Drawing.Size(71, 42)
+        Me.BTNRenomear.Size = New System.Drawing.Size(87, 42)
         Me.BTNRenomear.TabIndex = 8
         Me.BTNRenomear.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTNRenomear.UseVisualStyleBackColor = False
@@ -261,7 +261,7 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNOpcoes_BTNRenomear.Location = New System.Drawing.Point(0, 42)
         Me.BTNOpcoes_BTNRenomear.Name = "BTNOpcoes_BTNRenomear"
-        Me.BTNOpcoes_BTNRenomear.Size = New System.Drawing.Size(71, 20)
+        Me.BTNOpcoes_BTNRenomear.Size = New System.Drawing.Size(87, 20)
         Me.BTNOpcoes_BTNRenomear.TabIndex = 9
         Me.BTNOpcoes_BTNRenomear.Text = "Renomear"
         Me.BTNOpcoes_BTNRenomear.UseVisualStyleBackColor = False
@@ -539,10 +539,10 @@ Partial Class Control_MenuBar
         '
         Me.PanelBorder_BTNSelecionarTudo.Controls.Add(Me.PanelEnvolve_BTNSelecionarTudo)
         Me.PanelBorder_BTNSelecionarTudo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_BTNSelecionarTudo.Location = New System.Drawing.Point(0, 46)
+        Me.PanelBorder_BTNSelecionarTudo.Location = New System.Drawing.Point(0, 42)
         Me.PanelBorder_BTNSelecionarTudo.Name = "PanelBorder_BTNSelecionarTudo"
         Me.PanelBorder_BTNSelecionarTudo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNSelecionarTudo.Size = New System.Drawing.Size(113, 23)
+        Me.PanelBorder_BTNSelecionarTudo.Size = New System.Drawing.Size(113, 21)
         Me.PanelBorder_BTNSelecionarTudo.TabIndex = 12
         '
         'PanelEnvolve_BTNSelecionarTudo
@@ -551,7 +551,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNSelecionarTudo.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNSelecionarTudo.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNSelecionarTudo.Name = "PanelEnvolve_BTNSelecionarTudo"
-        Me.PanelEnvolve_BTNSelecionarTudo.Size = New System.Drawing.Size(111, 21)
+        Me.PanelEnvolve_BTNSelecionarTudo.Size = New System.Drawing.Size(111, 19)
         Me.PanelEnvolve_BTNSelecionarTudo.TabIndex = 10
         '
         'BTNSelecionarTudo
@@ -571,7 +571,7 @@ Partial Class Control_MenuBar
         Me.BTNSelecionarTudo.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNSelecionarTudo.Location = New System.Drawing.Point(0, 0)
         Me.BTNSelecionarTudo.Name = "BTNSelecionarTudo"
-        Me.BTNSelecionarTudo.Size = New System.Drawing.Size(111, 21)
+        Me.BTNSelecionarTudo.Size = New System.Drawing.Size(111, 19)
         Me.BTNSelecionarTudo.TabIndex = 9
         Me.BTNSelecionarTudo.Text = "Selecionar tudo"
         Me.BTNSelecionarTudo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -581,10 +581,10 @@ Partial Class Control_MenuBar
         '
         Me.PanelBorder_BTNInverterSelecao.Controls.Add(Me.PanelEnvolve_BTNInverterSelecao)
         Me.PanelBorder_BTNInverterSelecao.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_BTNInverterSelecao.Location = New System.Drawing.Point(0, 23)
+        Me.PanelBorder_BTNInverterSelecao.Location = New System.Drawing.Point(0, 21)
         Me.PanelBorder_BTNInverterSelecao.Name = "PanelBorder_BTNInverterSelecao"
         Me.PanelBorder_BTNInverterSelecao.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNInverterSelecao.Size = New System.Drawing.Size(113, 23)
+        Me.PanelBorder_BTNInverterSelecao.Size = New System.Drawing.Size(113, 21)
         Me.PanelBorder_BTNInverterSelecao.TabIndex = 13
         '
         'PanelEnvolve_BTNInverterSelecao
@@ -593,7 +593,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNInverterSelecao.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNInverterSelecao.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNInverterSelecao.Name = "PanelEnvolve_BTNInverterSelecao"
-        Me.PanelEnvolve_BTNInverterSelecao.Size = New System.Drawing.Size(111, 21)
+        Me.PanelEnvolve_BTNInverterSelecao.Size = New System.Drawing.Size(111, 19)
         Me.PanelEnvolve_BTNInverterSelecao.TabIndex = 0
         '
         'BTNInverterSelecao
@@ -613,7 +613,7 @@ Partial Class Control_MenuBar
         Me.BTNInverterSelecao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNInverterSelecao.Location = New System.Drawing.Point(0, 0)
         Me.BTNInverterSelecao.Name = "BTNInverterSelecao"
-        Me.BTNInverterSelecao.Size = New System.Drawing.Size(111, 21)
+        Me.BTNInverterSelecao.Size = New System.Drawing.Size(111, 19)
         Me.BTNInverterSelecao.TabIndex = 11
         Me.BTNInverterSelecao.Text = "Inverter seleção"
         Me.BTNInverterSelecao.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -626,7 +626,7 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNLimparSelecao.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_BTNLimparSelecao.Name = "PanelBorder_BTNLimparSelecao"
         Me.PanelBorder_BTNLimparSelecao.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNLimparSelecao.Size = New System.Drawing.Size(113, 23)
+        Me.PanelBorder_BTNLimparSelecao.Size = New System.Drawing.Size(113, 21)
         Me.PanelBorder_BTNLimparSelecao.TabIndex = 14
         '
         'PanelEnvolve_BTNLimparSelecao
@@ -635,7 +635,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNLimparSelecao.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNLimparSelecao.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNLimparSelecao.Name = "PanelEnvolve_BTNLimparSelecao"
-        Me.PanelEnvolve_BTNLimparSelecao.Size = New System.Drawing.Size(111, 21)
+        Me.PanelEnvolve_BTNLimparSelecao.Size = New System.Drawing.Size(111, 19)
         Me.PanelEnvolve_BTNLimparSelecao.TabIndex = 0
         '
         'BTNLimparSelecao
@@ -655,7 +655,7 @@ Partial Class Control_MenuBar
         Me.BTNLimparSelecao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNLimparSelecao.Location = New System.Drawing.Point(0, 0)
         Me.BTNLimparSelecao.Name = "BTNLimparSelecao"
-        Me.BTNLimparSelecao.Size = New System.Drawing.Size(111, 21)
+        Me.BTNLimparSelecao.Size = New System.Drawing.Size(111, 19)
         Me.BTNLimparSelecao.TabIndex = 10
         Me.BTNLimparSelecao.Text = "Limpar seleção"
         Me.BTNLimparSelecao.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -676,10 +676,10 @@ Partial Class Control_MenuBar
         '
         Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Controls.Add(Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia)
         Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 46)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 42)
         Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Name = "PanelBorder_BTNCopiarParaAreaDeTransferencia"
         Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 25)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 21)
         Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.TabIndex = 12
         '
         'PanelEnvolve_BTNCopiarParaAreaDeTransferencia
@@ -688,7 +688,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Name = "PanelEnvolve_BTNCopiarParaAreaDeTransferencia"
-        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.TabIndex = 10
         '
         'BTNCopiarParaAreaDeTransferencia
@@ -708,7 +708,7 @@ Partial Class Control_MenuBar
         Me.BTNCopiarParaAreaDeTransferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
         Me.BTNCopiarParaAreaDeTransferencia.Name = "BTNCopiarParaAreaDeTransferencia"
-        Me.BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 19)
         Me.BTNCopiarParaAreaDeTransferencia.TabIndex = 9
         Me.BTNCopiarParaAreaDeTransferencia.Text = "Copiar"
         Me.BTNCopiarParaAreaDeTransferencia.UseVisualStyleBackColor = False
@@ -717,10 +717,10 @@ Partial Class Control_MenuBar
         '
         Me.PanelBorder_BTNColarDaAreaDeTranferencia.Controls.Add(Me.PanelEnvolve_BTNColarDaAreaDeTranferencia)
         Me.PanelBorder_BTNColarDaAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(0, 23)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(0, 21)
         Me.PanelBorder_BTNColarDaAreaDeTranferencia.Name = "PanelBorder_BTNColarDaAreaDeTranferencia"
         Me.PanelBorder_BTNColarDaAreaDeTranferencia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(95, 23)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(95, 21)
         Me.PanelBorder_BTNColarDaAreaDeTranferencia.TabIndex = 13
         '
         'PanelEnvolve_BTNColarDaAreaDeTranferencia
@@ -729,7 +729,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Name = "PanelEnvolve_BTNColarDaAreaDeTranferencia"
-        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 21)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.TabIndex = 11
         '
         'BTNColarDaAreaDeTranferencia
@@ -749,7 +749,7 @@ Partial Class Control_MenuBar
         Me.BTNColarDaAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
         Me.BTNColarDaAreaDeTranferencia.Name = "BTNColarDaAreaDeTranferencia"
-        Me.BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 21)
+        Me.BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 19)
         Me.BTNColarDaAreaDeTranferencia.TabIndex = 10
         Me.BTNColarDaAreaDeTranferencia.Text = "Colar"
         Me.BTNColarDaAreaDeTranferencia.UseVisualStyleBackColor = False
@@ -761,7 +761,7 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Name = "PanelBorder_BTNRecortarParaAreaDeTransferencia"
         Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 23)
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 21)
         Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.TabIndex = 14
         '
         'PanelEnvolve_BTNRecortarParaAreaDeTransferencia
@@ -770,7 +770,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Name = "PanelEnvolve_BTNRecortarParaAreaDeTransferencia"
-        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 21)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.TabIndex = 0
         '
         'BTNRecortarParaAreaDeTransferencia
@@ -790,7 +790,7 @@ Partial Class Control_MenuBar
         Me.BTNRecortarParaAreaDeTransferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
         Me.BTNRecortarParaAreaDeTransferencia.Name = "BTNRecortarParaAreaDeTransferencia"
-        Me.BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 21)
+        Me.BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 19)
         Me.BTNRecortarParaAreaDeTransferencia.TabIndex = 11
         Me.BTNRecortarParaAreaDeTransferencia.Text = "Recortar"
         Me.BTNRecortarParaAreaDeTransferencia.UseVisualStyleBackColor = False

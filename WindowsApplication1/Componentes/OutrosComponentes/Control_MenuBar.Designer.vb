@@ -29,20 +29,20 @@ Partial Class Control_MenuBar
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNRenomear = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNRenomear = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.BTNRenomear = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNRenomear = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNExcluir = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNExcluir = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
         Me.BTNExcluir = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNExcluir = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNCopiar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNCopiar = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
         Me.BTNCopiar = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNCopiar = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNMover = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNMover = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.BTNMover = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNMover = New System.Windows.Forms.Button()
         Me.Panel20 = New System.Windows.Forms.Panel()
@@ -68,16 +68,16 @@ Partial Class Control_MenuBar
         Me.PanelNova = New System.Windows.Forms.Panel()
         Me.PanelAgrupaNova = New System.Windows.Forms.Panel()
         Me.Panel70 = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.BTNMaisProcessos = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNNovaMidia = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNNovaMidia = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BTNNovaMidia = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNNovaMidia = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNNovaPasta = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNNovaPasta = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BTNNovaPasta = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNNovaPasta = New System.Windows.Forms.Button()
         Me.Panel67 = New System.Windows.Forms.Panel()
@@ -88,14 +88,14 @@ Partial Class Control_MenuBar
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
         Me.Panel16.SuspendLayout()
+        Me.PanelBorder_BTNRenomear.SuspendLayout()
         Me.PanelEnvolve_BTNRenomear.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.PanelBorder_BTNExcluir.SuspendLayout()
         Me.PanelEnvolve_BTNExcluir.SuspendLayout()
-        Me.Panel5.SuspendLayout()
+        Me.PanelBorder_BTNCopiar.SuspendLayout()
         Me.PanelEnvolve_BTNCopiar.SuspendLayout()
-        Me.Panel13.SuspendLayout()
+        Me.PanelBorder_BTNMover.SuspendLayout()
         Me.PanelEnvolve_BTNMover.SuspendLayout()
-        Me.Panel4.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaGerenciar.SuspendLayout()
         Me.PanelGerenciar.SuspendLayout()
         Me.PanelAgrupaGerenciar.SuspendLayout()
@@ -108,12 +108,12 @@ Partial Class Control_MenuBar
         Me.PanelNova.SuspendLayout()
         Me.PanelAgrupaNova.SuspendLayout()
         Me.Panel70.SuspendLayout()
+        Me.PanelBorder_BTNMaisProcessos.SuspendLayout()
         Me.PanelEnvolve_BTNMaisProcessos.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.PanelBorder_BTNNovaMidia.SuspendLayout()
         Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
-        Me.Panel2.SuspendLayout()
+        Me.PanelBorder_BTNNovaPasta.SuspendLayout()
         Me.PanelEnvolve_BTNNovaPasta.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -168,35 +168,35 @@ Partial Class Control_MenuBar
         '
         'Panel16
         '
-        Me.Panel16.Controls.Add(Me.PanelEnvolve_BTNRenomear)
-        Me.Panel16.Controls.Add(Me.PanelEnvolve_BTNExcluir)
-        Me.Panel16.Controls.Add(Me.PanelEnvolve_BTNCopiar)
-        Me.Panel16.Controls.Add(Me.PanelEnvolve_BTNMover)
+        Me.Panel16.Controls.Add(Me.PanelBorder_BTNRenomear)
+        Me.Panel16.Controls.Add(Me.PanelBorder_BTNExcluir)
+        Me.Panel16.Controls.Add(Me.PanelBorder_BTNCopiar)
+        Me.Panel16.Controls.Add(Me.PanelBorder_BTNMover)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel16.Location = New System.Drawing.Point(0, 0)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(273, 64)
         Me.Panel16.TabIndex = 20
         '
+        'PanelBorder_BTNRenomear
+        '
+        Me.PanelBorder_BTNRenomear.Controls.Add(Me.PanelEnvolve_BTNRenomear)
+        Me.PanelBorder_BTNRenomear.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNRenomear.Location = New System.Drawing.Point(181, 0)
+        Me.PanelBorder_BTNRenomear.Name = "PanelBorder_BTNRenomear"
+        Me.PanelBorder_BTNRenomear.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNRenomear.Size = New System.Drawing.Size(73, 64)
+        Me.PanelBorder_BTNRenomear.TabIndex = 22
+        '
         'PanelEnvolve_BTNRenomear
         '
-        Me.PanelEnvolve_BTNRenomear.Controls.Add(Me.Panel6)
-        Me.PanelEnvolve_BTNRenomear.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNRenomear.Location = New System.Drawing.Point(181, 0)
+        Me.PanelEnvolve_BTNRenomear.Controls.Add(Me.BTNRenomear)
+        Me.PanelEnvolve_BTNRenomear.Controls.Add(Me.BTNOpcoes_BTNRenomear)
+        Me.PanelEnvolve_BTNRenomear.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNRenomear.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNRenomear.Name = "PanelEnvolve_BTNRenomear"
-        Me.PanelEnvolve_BTNRenomear.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNRenomear.Size = New System.Drawing.Size(73, 64)
-        Me.PanelEnvolve_BTNRenomear.TabIndex = 22
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.BTNRenomear)
-        Me.Panel6.Controls.Add(Me.BTNOpcoes_BTNRenomear)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(1, 1)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(71, 62)
-        Me.Panel6.TabIndex = 10
+        Me.PanelEnvolve_BTNRenomear.Size = New System.Drawing.Size(71, 62)
+        Me.PanelEnvolve_BTNRenomear.TabIndex = 10
         '
         'BTNRenomear
         '
@@ -240,25 +240,25 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNRenomear.Text = "Renomear"
         Me.BTNOpcoes_BTNRenomear.UseVisualStyleBackColor = False
         '
+        'PanelBorder_BTNExcluir
+        '
+        Me.PanelBorder_BTNExcluir.Controls.Add(Me.PanelEnvolve_BTNExcluir)
+        Me.PanelBorder_BTNExcluir.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNExcluir.Location = New System.Drawing.Point(117, 0)
+        Me.PanelBorder_BTNExcluir.Name = "PanelBorder_BTNExcluir"
+        Me.PanelBorder_BTNExcluir.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNExcluir.Size = New System.Drawing.Size(64, 64)
+        Me.PanelBorder_BTNExcluir.TabIndex = 2
+        '
         'PanelEnvolve_BTNExcluir
         '
-        Me.PanelEnvolve_BTNExcluir.Controls.Add(Me.Panel5)
-        Me.PanelEnvolve_BTNExcluir.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNExcluir.Location = New System.Drawing.Point(117, 0)
+        Me.PanelEnvolve_BTNExcluir.Controls.Add(Me.BTNExcluir)
+        Me.PanelEnvolve_BTNExcluir.Controls.Add(Me.BTNOpcoes_BTNExcluir)
+        Me.PanelEnvolve_BTNExcluir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNExcluir.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNExcluir.Name = "PanelEnvolve_BTNExcluir"
-        Me.PanelEnvolve_BTNExcluir.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNExcluir.Size = New System.Drawing.Size(64, 64)
-        Me.PanelEnvolve_BTNExcluir.TabIndex = 2
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.BTNExcluir)
-        Me.Panel5.Controls.Add(Me.BTNOpcoes_BTNExcluir)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(1, 1)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(62, 62)
-        Me.Panel5.TabIndex = 10
+        Me.PanelEnvolve_BTNExcluir.Size = New System.Drawing.Size(62, 62)
+        Me.PanelEnvolve_BTNExcluir.TabIndex = 10
         '
         'BTNExcluir
         '
@@ -302,25 +302,25 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNExcluir.Text = "Excluir"
         Me.BTNOpcoes_BTNExcluir.UseVisualStyleBackColor = False
         '
+        'PanelBorder_BTNCopiar
+        '
+        Me.PanelBorder_BTNCopiar.Controls.Add(Me.PanelEnvolve_BTNCopiar)
+        Me.PanelBorder_BTNCopiar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNCopiar.Location = New System.Drawing.Point(57, 0)
+        Me.PanelBorder_BTNCopiar.Name = "PanelBorder_BTNCopiar"
+        Me.PanelBorder_BTNCopiar.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNCopiar.Size = New System.Drawing.Size(60, 64)
+        Me.PanelBorder_BTNCopiar.TabIndex = 1
+        '
         'PanelEnvolve_BTNCopiar
         '
-        Me.PanelEnvolve_BTNCopiar.Controls.Add(Me.Panel13)
-        Me.PanelEnvolve_BTNCopiar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNCopiar.Location = New System.Drawing.Point(57, 0)
+        Me.PanelEnvolve_BTNCopiar.Controls.Add(Me.BTNCopiar)
+        Me.PanelEnvolve_BTNCopiar.Controls.Add(Me.BTNOpcoes_BTNCopiar)
+        Me.PanelEnvolve_BTNCopiar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNCopiar.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNCopiar.Name = "PanelEnvolve_BTNCopiar"
-        Me.PanelEnvolve_BTNCopiar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNCopiar.Size = New System.Drawing.Size(60, 64)
-        Me.PanelEnvolve_BTNCopiar.TabIndex = 1
-        '
-        'Panel13
-        '
-        Me.Panel13.Controls.Add(Me.BTNCopiar)
-        Me.Panel13.Controls.Add(Me.BTNOpcoes_BTNCopiar)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel13.Location = New System.Drawing.Point(1, 1)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(58, 62)
-        Me.Panel13.TabIndex = 10
+        Me.PanelEnvolve_BTNCopiar.Size = New System.Drawing.Size(58, 62)
+        Me.PanelEnvolve_BTNCopiar.TabIndex = 10
         '
         'BTNCopiar
         '
@@ -364,25 +364,25 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNCopiar.Text = "Copiar para"
         Me.BTNOpcoes_BTNCopiar.UseVisualStyleBackColor = False
         '
+        'PanelBorder_BTNMover
+        '
+        Me.PanelBorder_BTNMover.Controls.Add(Me.PanelEnvolve_BTNMover)
+        Me.PanelBorder_BTNMover.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNMover.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_BTNMover.Name = "PanelBorder_BTNMover"
+        Me.PanelBorder_BTNMover.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNMover.Size = New System.Drawing.Size(57, 64)
+        Me.PanelBorder_BTNMover.TabIndex = 0
+        '
         'PanelEnvolve_BTNMover
         '
-        Me.PanelEnvolve_BTNMover.Controls.Add(Me.Panel4)
-        Me.PanelEnvolve_BTNMover.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNMover.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_BTNMover.Controls.Add(Me.BTNMover)
+        Me.PanelEnvolve_BTNMover.Controls.Add(Me.BTNOpcoes_BTNMover)
+        Me.PanelEnvolve_BTNMover.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNMover.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNMover.Name = "PanelEnvolve_BTNMover"
-        Me.PanelEnvolve_BTNMover.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNMover.Size = New System.Drawing.Size(57, 64)
-        Me.PanelEnvolve_BTNMover.TabIndex = 0
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.BTNMover)
-        Me.Panel4.Controls.Add(Me.BTNOpcoes_BTNMover)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(1, 1)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(55, 62)
-        Me.Panel4.TabIndex = 10
+        Me.PanelEnvolve_BTNMover.Size = New System.Drawing.Size(55, 62)
+        Me.PanelEnvolve_BTNMover.TabIndex = 10
         '
         'BTNMover
         '
@@ -655,6 +655,7 @@ Partial Class Control_MenuBar
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel12.Location = New System.Drawing.Point(0, 0)
         Me.Panel12.Name = "Panel12"
+        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
         Me.Panel12.Size = New System.Drawing.Size(137, 64)
         Me.Panel12.TabIndex = 22
         '
@@ -670,10 +671,10 @@ Partial Class Control_MenuBar
         Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
         Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CHKExibirArvores.Location = New System.Drawing.Point(0, 0)
+        Me.CHKExibirArvores.Location = New System.Drawing.Point(1, 1)
         Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
         Me.CHKExibirArvores.Name = "CHKExibirArvores"
-        Me.CHKExibirArvores.Size = New System.Drawing.Size(137, 64)
+        Me.CHKExibirArvores.Size = New System.Drawing.Size(135, 62)
         Me.CHKExibirArvores.TabIndex = 21
         Me.CHKExibirArvores.Text = "Exibir Painel Área de Transferência"
         Me.CHKExibirArvores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -733,34 +734,34 @@ Partial Class Control_MenuBar
         '
         'Panel70
         '
-        Me.Panel70.Controls.Add(Me.PanelEnvolve_BTNMaisProcessos)
-        Me.Panel70.Controls.Add(Me.PanelEnvolve_BTNNovaMidia)
-        Me.Panel70.Controls.Add(Me.PanelEnvolve_BTNNovaPasta)
+        Me.Panel70.Controls.Add(Me.PanelBorder_BTNMaisProcessos)
+        Me.Panel70.Controls.Add(Me.PanelBorder_BTNNovaMidia)
+        Me.Panel70.Controls.Add(Me.PanelBorder_BTNNovaPasta)
         Me.Panel70.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel70.Location = New System.Drawing.Point(0, 0)
         Me.Panel70.Name = "Panel70"
         Me.Panel70.Size = New System.Drawing.Size(221, 64)
         Me.Panel70.TabIndex = 20
         '
+        'PanelBorder_BTNMaisProcessos
+        '
+        Me.PanelBorder_BTNMaisProcessos.Controls.Add(Me.PanelEnvolve_BTNMaisProcessos)
+        Me.PanelBorder_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNMaisProcessos.Location = New System.Drawing.Point(117, 0)
+        Me.PanelBorder_BTNMaisProcessos.Name = "PanelBorder_BTNMaisProcessos"
+        Me.PanelBorder_BTNMaisProcessos.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNMaisProcessos.Size = New System.Drawing.Size(103, 64)
+        Me.PanelBorder_BTNMaisProcessos.TabIndex = 2
+        '
         'PanelEnvolve_BTNMaisProcessos
         '
-        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.Panel3)
-        Me.PanelEnvolve_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNMaisProcessos.Location = New System.Drawing.Point(117, 0)
+        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNMaisProcessos)
+        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNOpcoes_BTNMaisProcessos)
+        Me.PanelEnvolve_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNMaisProcessos.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNMaisProcessos.Name = "PanelEnvolve_BTNMaisProcessos"
-        Me.PanelEnvolve_BTNMaisProcessos.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNMaisProcessos.Size = New System.Drawing.Size(103, 64)
-        Me.PanelEnvolve_BTNMaisProcessos.TabIndex = 2
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.BTNMaisProcessos)
-        Me.Panel3.Controls.Add(Me.BTNOpcoes_BTNMaisProcessos)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(1, 1)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(101, 62)
-        Me.Panel3.TabIndex = 10
+        Me.PanelEnvolve_BTNMaisProcessos.Size = New System.Drawing.Size(101, 62)
+        Me.PanelEnvolve_BTNMaisProcessos.TabIndex = 10
         '
         'BTNMaisProcessos
         '
@@ -804,25 +805,25 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNMaisProcessos.Text = "Mais processos"
         Me.BTNOpcoes_BTNMaisProcessos.UseVisualStyleBackColor = False
         '
+        'PanelBorder_BTNNovaMidia
+        '
+        Me.PanelBorder_BTNNovaMidia.Controls.Add(Me.PanelEnvolve_BTNNovaMidia)
+        Me.PanelBorder_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNNovaMidia.Location = New System.Drawing.Point(57, 0)
+        Me.PanelBorder_BTNNovaMidia.Name = "PanelBorder_BTNNovaMidia"
+        Me.PanelBorder_BTNNovaMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNNovaMidia.Size = New System.Drawing.Size(60, 64)
+        Me.PanelBorder_BTNNovaMidia.TabIndex = 1
+        '
         'PanelEnvolve_BTNNovaMidia
         '
-        Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.Panel2)
-        Me.PanelEnvolve_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNNovaMidia.Location = New System.Drawing.Point(57, 0)
+        Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.BTNNovaMidia)
+        Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.BTNOpcoes_BTNNovaMidia)
+        Me.PanelEnvolve_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNNovaMidia.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNNovaMidia.Name = "PanelEnvolve_BTNNovaMidia"
-        Me.PanelEnvolve_BTNNovaMidia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNNovaMidia.Size = New System.Drawing.Size(60, 64)
-        Me.PanelEnvolve_BTNNovaMidia.TabIndex = 1
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.BTNNovaMidia)
-        Me.Panel2.Controls.Add(Me.BTNOpcoes_BTNNovaMidia)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(1, 1)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(58, 62)
-        Me.Panel2.TabIndex = 10
+        Me.PanelEnvolve_BTNNovaMidia.Size = New System.Drawing.Size(58, 62)
+        Me.PanelEnvolve_BTNNovaMidia.TabIndex = 10
         '
         'BTNNovaMidia
         '
@@ -866,26 +867,26 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNNovaMidia.Text = "Mídia"
         Me.BTNOpcoes_BTNNovaMidia.UseVisualStyleBackColor = False
         '
+        'PanelBorder_BTNNovaPasta
+        '
+        Me.PanelBorder_BTNNovaPasta.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_BTNNovaPasta.Controls.Add(Me.PanelEnvolve_BTNNovaPasta)
+        Me.PanelBorder_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNNovaPasta.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_BTNNovaPasta.Name = "PanelBorder_BTNNovaPasta"
+        Me.PanelBorder_BTNNovaPasta.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNNovaPasta.Size = New System.Drawing.Size(57, 64)
+        Me.PanelBorder_BTNNovaPasta.TabIndex = 0
+        '
         'PanelEnvolve_BTNNovaPasta
         '
-        Me.PanelEnvolve_BTNNovaPasta.BackColor = System.Drawing.Color.Transparent
-        Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.Panel1)
-        Me.PanelEnvolve_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_BTNNovaPasta.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNNovaPasta)
+        Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNOpcoes_BTNNovaPasta)
+        Me.PanelEnvolve_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNNovaPasta.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNNovaPasta.Name = "PanelEnvolve_BTNNovaPasta"
-        Me.PanelEnvolve_BTNNovaPasta.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTNNovaPasta.Size = New System.Drawing.Size(57, 64)
-        Me.PanelEnvolve_BTNNovaPasta.TabIndex = 0
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.BTNNovaPasta)
-        Me.Panel1.Controls.Add(Me.BTNOpcoes_BTNNovaPasta)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(1, 1)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(55, 62)
-        Me.Panel1.TabIndex = 10
+        Me.PanelEnvolve_BTNNovaPasta.Size = New System.Drawing.Size(55, 62)
+        Me.PanelEnvolve_BTNNovaPasta.TabIndex = 10
         '
         'BTNNovaPasta
         '
@@ -965,14 +966,14 @@ Partial Class Control_MenuBar
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
+        Me.PanelBorder_BTNRenomear.ResumeLayout(False)
         Me.PanelEnvolve_BTNRenomear.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
+        Me.PanelBorder_BTNExcluir.ResumeLayout(False)
         Me.PanelEnvolve_BTNExcluir.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
+        Me.PanelBorder_BTNCopiar.ResumeLayout(False)
         Me.PanelEnvolve_BTNCopiar.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
+        Me.PanelBorder_BTNMover.ResumeLayout(False)
         Me.PanelEnvolve_BTNMover.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaGerenciar.ResumeLayout(False)
         Me.PanelGerenciar.ResumeLayout(False)
         Me.PanelAgrupaGerenciar.ResumeLayout(False)
@@ -987,12 +988,12 @@ Partial Class Control_MenuBar
         Me.PanelNova.ResumeLayout(False)
         Me.PanelAgrupaNova.ResumeLayout(False)
         Me.Panel70.ResumeLayout(False)
+        Me.PanelBorder_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelEnvolve_BTNMaisProcessos.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
+        Me.PanelBorder_BTNNovaMidia.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
+        Me.PanelBorder_BTNNovaPasta.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaPasta.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1005,13 +1006,13 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel70 As Panel
     Friend WithEvents Panel67 As Panel
     Friend WithEvents LBLNova As Label
-    Friend WithEvents PanelEnvolve_BTNMaisProcessos As Panel
+    Friend WithEvents PanelBorder_BTNMaisProcessos As Panel
     Friend WithEvents BTNOpcoes_BTNMaisProcessos As Button
     Friend WithEvents BTNMaisProcessos As Button
-    Friend WithEvents PanelEnvolve_BTNNovaMidia As Panel
+    Friend WithEvents PanelBorder_BTNNovaMidia As Panel
     Friend WithEvents BTNOpcoes_BTNNovaMidia As Button
     Friend WithEvents BTNNovaMidia As Button
-    Friend WithEvents PanelEnvolve_BTNNovaPasta As Panel
+    Friend WithEvents PanelBorder_BTNNovaPasta As Panel
     Friend WithEvents BTNOpcoes_BTNNovaPasta As Button
     Friend WithEvents BTNNovaPasta As Button
     Friend WithEvents PanelEnvolve_PanelAgrupaGerenciar As Panel
@@ -1035,25 +1036,25 @@ Partial Class Control_MenuBar
     Friend WithEvents PanelOrganizar As Panel
     Friend WithEvents PanelAgrupaOrganizar As Panel
     Friend WithEvents Panel16 As Panel
-    Friend WithEvents PanelEnvolve_BTNExcluir As Panel
+    Friend WithEvents PanelBorder_BTNExcluir As Panel
     Friend WithEvents BTNExcluir As Button
     Friend WithEvents BTNOpcoes_BTNExcluir As Button
-    Friend WithEvents PanelEnvolve_BTNCopiar As Panel
+    Friend WithEvents PanelBorder_BTNCopiar As Panel
     Friend WithEvents BTNCopiar As Button
     Friend WithEvents BTNOpcoes_BTNCopiar As Button
-    Friend WithEvents PanelEnvolve_BTNMover As Panel
+    Friend WithEvents PanelBorder_BTNMover As Panel
     Friend WithEvents BTNMover As Button
     Friend WithEvents BTNOpcoes_BTNMover As Button
     Friend WithEvents Panel20 As Panel
     Friend WithEvents LBLOrganizar As Label
-    Friend WithEvents PanelEnvolve_BTNRenomear As Panel
+    Friend WithEvents PanelBorder_BTNRenomear As Panel
     Friend WithEvents BTNRenomear As Button
     Friend WithEvents BTNOpcoes_BTNRenomear As Button
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelEnvolve_BTNRenomear As Panel
+    Friend WithEvents PanelEnvolve_BTNExcluir As Panel
+    Friend WithEvents PanelEnvolve_BTNCopiar As Panel
+    Friend WithEvents PanelEnvolve_BTNMover As Panel
+    Friend WithEvents PanelEnvolve_BTNMaisProcessos As Panel
+    Friend WithEvents PanelEnvolve_BTNNovaMidia As Panel
+    Friend WithEvents PanelEnvolve_BTNNovaPasta As Panel
 End Class

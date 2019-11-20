@@ -1,19 +1,9 @@
 ﻿Public Class Control_MenuBar
 
 
-    ' Propriedades do controle
+    ' Propriedades do controle.
 
-
-
-    Private Sub BTNNovaMidia_MouseDown(sender As Object, e As MouseEventArgs) Handles BTNNovaMidia.MouseDown
-        BTNNovaMidia.FlatAppearance.MouseDownBackColor = Color.Goldenrod
-
-    End Sub
-
-
-
-
-    ' Propriedade da cor de quando o mouse solta o botão
+    ' Propriedade da cor de quando o mouse solta o botão.
     Private _borderColorSelectAndMouseUp As Color
 
     Public Property BorderColorSelectAndMouseUp As Color

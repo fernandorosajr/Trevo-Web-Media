@@ -53,17 +53,17 @@ Partial Class Control_MenuBar
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
+        Me.BTNInverterSelecao = New System.Windows.Forms.Button()
+        Me.BTNLimparSelecao = New System.Windows.Forms.Button()
+        Me.BTNSelecionarTudo = New System.Windows.Forms.Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.CHKExibirArvores = New System.Windows.Forms.CheckBox()
+        Me.BTNRecortarParaAreaDeTransferencia = New System.Windows.Forms.Button()
+        Me.BTNColarDaAreaDeTranferencia = New System.Windows.Forms.Button()
+        Me.BTNCopiarParaAreaDeTransferencia = New System.Windows.Forms.Button()
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.Panel()
+        Me.CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.CheckBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.LBLGerenciar = New System.Windows.Forms.Label()
+        Me.LBLGerenciarAreaDeTranferencia = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaNova = New System.Windows.Forms.Panel()
         Me.PanelNova = New System.Windows.Forms.Panel()
         Me.PanelAgrupaNova = New System.Windows.Forms.Panel()
@@ -82,6 +82,19 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNNovaPasta = New System.Windows.Forms.Button()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLNova = New System.Windows.Forms.Label()
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNSelecionarTudo = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNSelecionarTudo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNInverterSelecao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNInverterSelecao = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNLimparSelecao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNLimparSelecao = New System.Windows.Forms.Panel()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
@@ -103,7 +116,7 @@ Partial Class Control_MenuBar
         Me.Panel8.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel9.SuspendLayout()
-        Me.Panel12.SuspendLayout()
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaNova.SuspendLayout()
         Me.PanelNova.SuspendLayout()
         Me.PanelAgrupaNova.SuspendLayout()
@@ -114,6 +127,19 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
         Me.PanelBorder_BTNNovaPasta.SuspendLayout()
         Me.PanelEnvolve_BTNNovaPasta.SuspendLayout()
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.SuspendLayout()
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.SuspendLayout()
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.SuspendLayout()
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.SuspendLayout()
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.SuspendLayout()
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.SuspendLayout()
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.SuspendLayout()
+        Me.PanelBorder_BTNSelecionarTudo.SuspendLayout()
+        Me.PanelEnvolve_BTNSelecionarTudo.SuspendLayout()
+        Me.PanelBorder_BTNInverterSelecao.SuspendLayout()
+        Me.PanelEnvolve_BTNInverterSelecao.SuspendLayout()
+        Me.PanelBorder_BTNLimparSelecao.SuspendLayout()
+        Me.PanelEnvolve_BTNLimparSelecao.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -462,7 +488,7 @@ Partial Class Control_MenuBar
         '
         Me.PanelGerenciar.Controls.Add(Me.PanelAgrupaGerenciar)
         Me.PanelGerenciar.Controls.Add(Me.Panel11)
-        Me.PanelGerenciar.Controls.Add(Me.LBLGerenciar)
+        Me.PanelGerenciar.Controls.Add(Me.LBLGerenciarAreaDeTranferencia)
         Me.PanelGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelGerenciar.Location = New System.Drawing.Point(3, 3)
         Me.PanelGerenciar.Name = "PanelGerenciar"
@@ -481,7 +507,7 @@ Partial Class Control_MenuBar
         'Panel7
         '
         Me.Panel7.Controls.Add(Me.Panel8)
-        Me.Panel7.Controls.Add(Me.Panel12)
+        Me.Panel7.Controls.Add(Me.PanelBorder_CHKExibirPainelAreaDeTranferencia)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
@@ -500,185 +526,185 @@ Partial Class Control_MenuBar
         '
         'Panel10
         '
-        Me.Panel10.Controls.Add(Me.Button13)
-        Me.Panel10.Controls.Add(Me.Button14)
-        Me.Panel10.Controls.Add(Me.Button15)
+        Me.Panel10.Controls.Add(Me.PanelBorder_BTNSelecionarTudo)
+        Me.Panel10.Controls.Add(Me.PanelBorder_BTNInverterSelecao)
+        Me.Panel10.Controls.Add(Me.PanelBorder_BTNLimparSelecao)
         Me.Panel10.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel10.Location = New System.Drawing.Point(95, 0)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(115, 64)
+        Me.Panel10.Size = New System.Drawing.Size(113, 64)
         Me.Panel10.TabIndex = 23
         '
-        'Button13
+        'BTNInverterSelecao
         '
-        Me.Button13.AutoSize = True
-        Me.Button13.BackColor = System.Drawing.Color.Transparent
-        Me.Button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button13.ForeColor = System.Drawing.Color.Black
-        Me.Button13.Image = CType(resources.GetObject("Button13.Image"), System.Drawing.Image)
-        Me.Button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button13.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button13.Location = New System.Drawing.Point(0, 50)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(115, 25)
-        Me.Button13.TabIndex = 11
-        Me.Button13.Text = "Inverter seleção"
-        Me.Button13.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button13.UseVisualStyleBackColor = False
+        Me.BTNInverterSelecao.AutoSize = True
+        Me.BTNInverterSelecao.BackColor = System.Drawing.Color.Transparent
+        Me.BTNInverterSelecao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNInverterSelecao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNInverterSelecao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNInverterSelecao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNInverterSelecao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNInverterSelecao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNInverterSelecao.ForeColor = System.Drawing.Color.Black
+        Me.BTNInverterSelecao.Image = CType(resources.GetObject("BTNInverterSelecao.Image"), System.Drawing.Image)
+        Me.BTNInverterSelecao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNInverterSelecao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNInverterSelecao.Location = New System.Drawing.Point(0, 0)
+        Me.BTNInverterSelecao.Name = "BTNInverterSelecao"
+        Me.BTNInverterSelecao.Size = New System.Drawing.Size(111, 22)
+        Me.BTNInverterSelecao.TabIndex = 11
+        Me.BTNInverterSelecao.Text = "Inverter seleção"
+        Me.BTNInverterSelecao.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNInverterSelecao.UseVisualStyleBackColor = False
         '
-        'Button14
+        'BTNLimparSelecao
         '
-        Me.Button14.AutoSize = True
-        Me.Button14.BackColor = System.Drawing.Color.Transparent
-        Me.Button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button14.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button14.ForeColor = System.Drawing.Color.Black
-        Me.Button14.Image = CType(resources.GetObject("Button14.Image"), System.Drawing.Image)
-        Me.Button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button14.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button14.Location = New System.Drawing.Point(0, 25)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(115, 25)
-        Me.Button14.TabIndex = 10
-        Me.Button14.Text = "Limpar seleção"
-        Me.Button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button14.UseVisualStyleBackColor = False
+        Me.BTNLimparSelecao.AutoSize = True
+        Me.BTNLimparSelecao.BackColor = System.Drawing.Color.Transparent
+        Me.BTNLimparSelecao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNLimparSelecao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNLimparSelecao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNLimparSelecao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNLimparSelecao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNLimparSelecao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNLimparSelecao.ForeColor = System.Drawing.Color.Black
+        Me.BTNLimparSelecao.Image = CType(resources.GetObject("BTNLimparSelecao.Image"), System.Drawing.Image)
+        Me.BTNLimparSelecao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNLimparSelecao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNLimparSelecao.Location = New System.Drawing.Point(0, 0)
+        Me.BTNLimparSelecao.Name = "BTNLimparSelecao"
+        Me.BTNLimparSelecao.Size = New System.Drawing.Size(111, 22)
+        Me.BTNLimparSelecao.TabIndex = 10
+        Me.BTNLimparSelecao.Text = "Limpar seleção"
+        Me.BTNLimparSelecao.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNLimparSelecao.UseVisualStyleBackColor = False
         '
-        'Button15
+        'BTNSelecionarTudo
         '
-        Me.Button15.AutoSize = True
-        Me.Button15.BackColor = System.Drawing.Color.Transparent
-        Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button15.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.ForeColor = System.Drawing.Color.Black
-        Me.Button15.Image = CType(resources.GetObject("Button15.Image"), System.Drawing.Image)
-        Me.Button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button15.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button15.Location = New System.Drawing.Point(0, 0)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(115, 25)
-        Me.Button15.TabIndex = 9
-        Me.Button15.Text = "Selecionar tudo"
-        Me.Button15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button15.UseVisualStyleBackColor = False
+        Me.BTNSelecionarTudo.AutoSize = True
+        Me.BTNSelecionarTudo.BackColor = System.Drawing.Color.Transparent
+        Me.BTNSelecionarTudo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNSelecionarTudo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNSelecionarTudo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNSelecionarTudo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNSelecionarTudo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNSelecionarTudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNSelecionarTudo.ForeColor = System.Drawing.Color.Black
+        Me.BTNSelecionarTudo.Image = CType(resources.GetObject("BTNSelecionarTudo.Image"), System.Drawing.Image)
+        Me.BTNSelecionarTudo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNSelecionarTudo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNSelecionarTudo.Location = New System.Drawing.Point(0, 0)
+        Me.BTNSelecionarTudo.Name = "BTNSelecionarTudo"
+        Me.BTNSelecionarTudo.Size = New System.Drawing.Size(111, 23)
+        Me.BTNSelecionarTudo.TabIndex = 9
+        Me.BTNSelecionarTudo.Text = "Selecionar tudo"
+        Me.BTNSelecionarTudo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNSelecionarTudo.UseVisualStyleBackColor = False
         '
         'Panel9
         '
-        Me.Panel9.Controls.Add(Me.Button9)
-        Me.Panel9.Controls.Add(Me.Button7)
-        Me.Panel9.Controls.Add(Me.Button8)
+        Me.Panel9.Controls.Add(Me.PanelBorder_BTNCopiarParaAreaDeTransferencia)
+        Me.Panel9.Controls.Add(Me.PanelBorder_BTNColarDaAreaDeTranferencia)
+        Me.Panel9.Controls.Add(Me.PanelBorder_BTNRecortarParaAreaDeTransferencia)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel9.Location = New System.Drawing.Point(0, 0)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(95, 64)
         Me.Panel9.TabIndex = 22
         '
-        'Button9
+        'BTNRecortarParaAreaDeTransferencia
         '
-        Me.Button9.AutoSize = True
-        Me.Button9.BackColor = System.Drawing.Color.Transparent
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.Color.Black
-        Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button9.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button9.Location = New System.Drawing.Point(0, 50)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(95, 25)
-        Me.Button9.TabIndex = 11
-        Me.Button9.Text = "Recortar"
-        Me.Button9.UseVisualStyleBackColor = False
+        Me.BTNRecortarParaAreaDeTransferencia.AutoSize = True
+        Me.BTNRecortarParaAreaDeTransferencia.BackColor = System.Drawing.Color.Transparent
+        Me.BTNRecortarParaAreaDeTransferencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNRecortarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNRecortarParaAreaDeTransferencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNRecortarParaAreaDeTransferencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNRecortarParaAreaDeTransferencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNRecortarParaAreaDeTransferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRecortarParaAreaDeTransferencia.ForeColor = System.Drawing.Color.Black
+        Me.BTNRecortarParaAreaDeTransferencia.Image = CType(resources.GetObject("BTNRecortarParaAreaDeTransferencia.Image"), System.Drawing.Image)
+        Me.BTNRecortarParaAreaDeTransferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNRecortarParaAreaDeTransferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
+        Me.BTNRecortarParaAreaDeTransferencia.Name = "BTNRecortarParaAreaDeTransferencia"
+        Me.BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.BTNRecortarParaAreaDeTransferencia.TabIndex = 11
+        Me.BTNRecortarParaAreaDeTransferencia.Text = "Recortar"
+        Me.BTNRecortarParaAreaDeTransferencia.UseVisualStyleBackColor = False
         '
-        'Button7
+        'BTNColarDaAreaDeTranferencia
         '
-        Me.Button7.AutoSize = True
-        Me.Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.Color.Black
-        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button7.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button7.Location = New System.Drawing.Point(0, 25)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(95, 25)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "Colar"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.BTNColarDaAreaDeTranferencia.AutoSize = True
+        Me.BTNColarDaAreaDeTranferencia.BackColor = System.Drawing.Color.Transparent
+        Me.BTNColarDaAreaDeTranferencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNColarDaAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNColarDaAreaDeTranferencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNColarDaAreaDeTranferencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNColarDaAreaDeTranferencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNColarDaAreaDeTranferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNColarDaAreaDeTranferencia.ForeColor = System.Drawing.Color.Black
+        Me.BTNColarDaAreaDeTranferencia.Image = CType(resources.GetObject("BTNColarDaAreaDeTranferencia.Image"), System.Drawing.Image)
+        Me.BTNColarDaAreaDeTranferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNColarDaAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
+        Me.BTNColarDaAreaDeTranferencia.Name = "BTNColarDaAreaDeTranferencia"
+        Me.BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 23)
+        Me.BTNColarDaAreaDeTranferencia.TabIndex = 10
+        Me.BTNColarDaAreaDeTranferencia.Text = "Colar"
+        Me.BTNColarDaAreaDeTranferencia.UseVisualStyleBackColor = False
         '
-        'Button8
+        'BTNCopiarParaAreaDeTransferencia
         '
-        Me.Button8.AutoSize = True
-        Me.Button8.BackColor = System.Drawing.Color.Transparent
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.Color.Black
-        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button8.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button8.Location = New System.Drawing.Point(0, 0)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(95, 25)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Copiar"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.BTNCopiarParaAreaDeTransferencia.AutoSize = True
+        Me.BTNCopiarParaAreaDeTransferencia.BackColor = System.Drawing.Color.Transparent
+        Me.BTNCopiarParaAreaDeTransferencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNCopiarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNCopiarParaAreaDeTransferencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNCopiarParaAreaDeTransferencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNCopiarParaAreaDeTransferencia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNCopiarParaAreaDeTransferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNCopiarParaAreaDeTransferencia.ForeColor = System.Drawing.Color.Black
+        Me.BTNCopiarParaAreaDeTransferencia.Image = CType(resources.GetObject("BTNCopiarParaAreaDeTransferencia.Image"), System.Drawing.Image)
+        Me.BTNCopiarParaAreaDeTransferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNCopiarParaAreaDeTransferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
+        Me.BTNCopiarParaAreaDeTransferencia.Name = "BTNCopiarParaAreaDeTransferencia"
+        Me.BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.BTNCopiarParaAreaDeTransferencia.TabIndex = 9
+        Me.BTNCopiarParaAreaDeTransferencia.Text = "Copiar"
+        Me.BTNCopiarParaAreaDeTransferencia.UseVisualStyleBackColor = False
         '
-        'Panel12
+        'PanelBorder_CHKExibirPainelAreaDeTranferencia
         '
-        Me.Panel12.Controls.Add(Me.CHKExibirArvores)
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel12.Location = New System.Drawing.Point(0, 0)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel12.Size = New System.Drawing.Size(137, 64)
-        Me.Panel12.TabIndex = 22
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Controls.Add(Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia)
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Name = "PanelBorder_CHKExibirPainelAreaDeTranferencia"
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(137, 64)
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.TabIndex = 22
         '
-        'CHKExibirArvores
+        'CHKExibirPainelAreaDeTranferencia
         '
-        Me.CHKExibirArvores.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHKExibirArvores.BackColor = System.Drawing.Color.Transparent
-        Me.CHKExibirArvores.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CHKExibirArvores.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHKExibirArvores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CHKExibirArvores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHKExibirArvores.ForeColor = System.Drawing.Color.Black
-        Me.CHKExibirArvores.Image = CType(resources.GetObject("CHKExibirArvores.Image"), System.Drawing.Image)
-        Me.CHKExibirArvores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CHKExibirArvores.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CHKExibirArvores.Location = New System.Drawing.Point(1, 1)
-        Me.CHKExibirArvores.Margin = New System.Windows.Forms.Padding(0)
-        Me.CHKExibirArvores.Name = "CHKExibirArvores"
-        Me.CHKExibirArvores.Size = New System.Drawing.Size(135, 62)
-        Me.CHKExibirArvores.TabIndex = 21
-        Me.CHKExibirArvores.Text = "Exibir Painel Área de Transferência"
-        Me.CHKExibirArvores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CHKExibirArvores.UseVisualStyleBackColor = False
+        Me.CHKExibirPainelAreaDeTranferencia.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHKExibirPainelAreaDeTranferencia.BackColor = System.Drawing.Color.Transparent
+        Me.CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CHKExibirPainelAreaDeTranferencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHKExibirPainelAreaDeTranferencia.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CHKExibirPainelAreaDeTranferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHKExibirPainelAreaDeTranferencia.ForeColor = System.Drawing.Color.Black
+        Me.CHKExibirPainelAreaDeTranferencia.Image = CType(resources.GetObject("CHKExibirPainelAreaDeTranferencia.Image"), System.Drawing.Image)
+        Me.CHKExibirPainelAreaDeTranferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CHKExibirPainelAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
+        Me.CHKExibirPainelAreaDeTranferencia.Margin = New System.Windows.Forms.Padding(0)
+        Me.CHKExibirPainelAreaDeTranferencia.Name = "CHKExibirPainelAreaDeTranferencia"
+        Me.CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(135, 62)
+        Me.CHKExibirPainelAreaDeTranferencia.TabIndex = 21
+        Me.CHKExibirPainelAreaDeTranferencia.Text = "Exibir Painel Área de Transferência"
+        Me.CHKExibirPainelAreaDeTranferencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CHKExibirPainelAreaDeTranferencia.UseVisualStyleBackColor = False
         '
         'Panel11
         '
@@ -689,18 +715,18 @@ Partial Class Control_MenuBar
         Me.Panel11.Size = New System.Drawing.Size(1, 64)
         Me.Panel11.TabIndex = 10
         '
-        'LBLGerenciar
+        'LBLGerenciarAreaDeTranferencia
         '
-        Me.LBLGerenciar.AutoEllipsis = True
-        Me.LBLGerenciar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLGerenciar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLGerenciar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLGerenciar.Location = New System.Drawing.Point(0, 64)
-        Me.LBLGerenciar.Name = "LBLGerenciar"
-        Me.LBLGerenciar.Size = New System.Drawing.Size(348, 13)
-        Me.LBLGerenciar.TabIndex = 6
-        Me.LBLGerenciar.Text = "Gerenciar"
-        Me.LBLGerenciar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LBLGerenciarAreaDeTranferencia.AutoEllipsis = True
+        Me.LBLGerenciarAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLGerenciarAreaDeTranferencia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLGerenciarAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLGerenciarAreaDeTranferencia.Location = New System.Drawing.Point(0, 64)
+        Me.LBLGerenciarAreaDeTranferencia.Name = "LBLGerenciarAreaDeTranferencia"
+        Me.LBLGerenciarAreaDeTranferencia.Size = New System.Drawing.Size(348, 13)
+        Me.LBLGerenciarAreaDeTranferencia.TabIndex = 6
+        Me.LBLGerenciarAreaDeTranferencia.Text = "Gerenciar Área de Transferència"
+        Me.LBLGerenciarAreaDeTranferencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PanelEnvolve_PanelAgrupaNova
         '
@@ -952,6 +978,129 @@ Partial Class Control_MenuBar
         Me.LBLNova.Text = "Nova"
         Me.LBLNova.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PanelEnvolve_CHKExibirPainelAreaDeTranferencia
+        '
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Controls.Add(Me.CHKExibirPainelAreaDeTranferencia)
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Name = "PanelEnvolve_CHKExibirPainelAreaDeTranferencia"
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(135, 62)
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.TabIndex = 22
+        '
+        'PanelBorder_BTNCopiarParaAreaDeTransferencia
+        '
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Controls.Add(Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 50)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Name = "PanelBorder_BTNCopiarParaAreaDeTransferencia"
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 25)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.TabIndex = 12
+        '
+        'PanelEnvolve_BTNCopiarParaAreaDeTransferencia
+        '
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Controls.Add(Me.BTNCopiarParaAreaDeTransferencia)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Name = "PanelEnvolve_BTNCopiarParaAreaDeTransferencia"
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.TabIndex = 10
+        '
+        'PanelBorder_BTNColarDaAreaDeTranferencia
+        '
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Controls.Add(Me.PanelEnvolve_BTNColarDaAreaDeTranferencia)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(0, 25)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Name = "PanelBorder_BTNColarDaAreaDeTranferencia"
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(95, 25)
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.TabIndex = 13
+        '
+        'PanelEnvolve_BTNColarDaAreaDeTranferencia
+        '
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Controls.Add(Me.BTNColarDaAreaDeTranferencia)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Name = "PanelEnvolve_BTNColarDaAreaDeTranferencia"
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.Size = New System.Drawing.Size(93, 23)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.TabIndex = 11
+        '
+        'PanelBorder_BTNRecortarParaAreaDeTransferencia
+        '
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Controls.Add(Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia)
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Name = "PanelBorder_BTNRecortarParaAreaDeTransferencia"
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(95, 25)
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.TabIndex = 14
+        '
+        'PanelEnvolve_BTNRecortarParaAreaDeTransferencia
+        '
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Controls.Add(Me.BTNRecortarParaAreaDeTransferencia)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Name = "PanelEnvolve_BTNRecortarParaAreaDeTransferencia"
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.Size = New System.Drawing.Size(93, 23)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.TabIndex = 0
+        '
+        'PanelBorder_BTNSelecionarTudo
+        '
+        Me.PanelBorder_BTNSelecionarTudo.Controls.Add(Me.PanelEnvolve_BTNSelecionarTudo)
+        Me.PanelBorder_BTNSelecionarTudo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNSelecionarTudo.Location = New System.Drawing.Point(0, 48)
+        Me.PanelBorder_BTNSelecionarTudo.Name = "PanelBorder_BTNSelecionarTudo"
+        Me.PanelBorder_BTNSelecionarTudo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNSelecionarTudo.Size = New System.Drawing.Size(113, 25)
+        Me.PanelBorder_BTNSelecionarTudo.TabIndex = 12
+        '
+        'PanelEnvolve_BTNSelecionarTudo
+        '
+        Me.PanelEnvolve_BTNSelecionarTudo.Controls.Add(Me.BTNSelecionarTudo)
+        Me.PanelEnvolve_BTNSelecionarTudo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNSelecionarTudo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNSelecionarTudo.Name = "PanelEnvolve_BTNSelecionarTudo"
+        Me.PanelEnvolve_BTNSelecionarTudo.Size = New System.Drawing.Size(111, 23)
+        Me.PanelEnvolve_BTNSelecionarTudo.TabIndex = 10
+        '
+        'PanelBorder_BTNInverterSelecao
+        '
+        Me.PanelBorder_BTNInverterSelecao.Controls.Add(Me.PanelEnvolve_BTNInverterSelecao)
+        Me.PanelBorder_BTNInverterSelecao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNInverterSelecao.Location = New System.Drawing.Point(0, 24)
+        Me.PanelBorder_BTNInverterSelecao.Name = "PanelBorder_BTNInverterSelecao"
+        Me.PanelBorder_BTNInverterSelecao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNInverterSelecao.Size = New System.Drawing.Size(113, 24)
+        Me.PanelBorder_BTNInverterSelecao.TabIndex = 13
+        '
+        'PanelEnvolve_BTNInverterSelecao
+        '
+        Me.PanelEnvolve_BTNInverterSelecao.Controls.Add(Me.BTNInverterSelecao)
+        Me.PanelEnvolve_BTNInverterSelecao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNInverterSelecao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNInverterSelecao.Name = "PanelEnvolve_BTNInverterSelecao"
+        Me.PanelEnvolve_BTNInverterSelecao.Size = New System.Drawing.Size(111, 22)
+        Me.PanelEnvolve_BTNInverterSelecao.TabIndex = 0
+        '
+        'PanelBorder_BTNLimparSelecao
+        '
+        Me.PanelBorder_BTNLimparSelecao.Controls.Add(Me.PanelEnvolve_BTNLimparSelecao)
+        Me.PanelBorder_BTNLimparSelecao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNLimparSelecao.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_BTNLimparSelecao.Name = "PanelBorder_BTNLimparSelecao"
+        Me.PanelBorder_BTNLimparSelecao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNLimparSelecao.Size = New System.Drawing.Size(113, 24)
+        Me.PanelBorder_BTNLimparSelecao.TabIndex = 14
+        '
+        'PanelEnvolve_BTNLimparSelecao
+        '
+        Me.PanelEnvolve_BTNLimparSelecao.Controls.Add(Me.BTNLimparSelecao)
+        Me.PanelEnvolve_BTNLimparSelecao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNLimparSelecao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNLimparSelecao.Name = "PanelEnvolve_BTNLimparSelecao"
+        Me.PanelEnvolve_BTNLimparSelecao.Size = New System.Drawing.Size(111, 22)
+        Me.PanelEnvolve_BTNLimparSelecao.TabIndex = 0
+        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -980,10 +1129,8 @@ Partial Class Control_MenuBar
         Me.Panel7.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
         Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
-        Me.Panel12.ResumeLayout(False)
+        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaNova.ResumeLayout(False)
         Me.PanelNova.ResumeLayout(False)
         Me.PanelAgrupaNova.ResumeLayout(False)
@@ -994,6 +1141,25 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
         Me.PanelBorder_BTNNovaPasta.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaPasta.ResumeLayout(False)
+        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.ResumeLayout(False)
+        Me.PanelBorder_BTNCopiarParaAreaDeTransferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNCopiarParaAreaDeTransferencia.PerformLayout()
+        Me.PanelBorder_BTNColarDaAreaDeTranferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNColarDaAreaDeTranferencia.PerformLayout()
+        Me.PanelBorder_BTNRecortarParaAreaDeTransferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.ResumeLayout(False)
+        Me.PanelEnvolve_BTNRecortarParaAreaDeTransferencia.PerformLayout()
+        Me.PanelBorder_BTNSelecionarTudo.ResumeLayout(False)
+        Me.PanelEnvolve_BTNSelecionarTudo.ResumeLayout(False)
+        Me.PanelEnvolve_BTNSelecionarTudo.PerformLayout()
+        Me.PanelBorder_BTNInverterSelecao.ResumeLayout(False)
+        Me.PanelEnvolve_BTNInverterSelecao.ResumeLayout(False)
+        Me.PanelEnvolve_BTNInverterSelecao.PerformLayout()
+        Me.PanelBorder_BTNLimparSelecao.ResumeLayout(False)
+        Me.PanelEnvolve_BTNLimparSelecao.ResumeLayout(False)
+        Me.PanelEnvolve_BTNLimparSelecao.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1021,17 +1187,17 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents BTNRecortarParaAreaDeTransferencia As Button
+    Friend WithEvents BTNColarDaAreaDeTranferencia As Button
+    Friend WithEvents BTNCopiarParaAreaDeTransferencia As Button
     Friend WithEvents Panel11 As Panel
-    Friend WithEvents LBLGerenciar As Label
+    Friend WithEvents LBLGerenciarAreaDeTranferencia As Label
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents CHKExibirArvores As CheckBox
+    Friend WithEvents BTNInverterSelecao As Button
+    Friend WithEvents BTNLimparSelecao As Button
+    Friend WithEvents BTNSelecionarTudo As Button
+    Friend WithEvents PanelBorder_CHKExibirPainelAreaDeTranferencia As Panel
+    Friend WithEvents CHKExibirPainelAreaDeTranferencia As CheckBox
     Friend WithEvents PanelEnvolve_PanelAgrupaOrganizar As Panel
     Friend WithEvents PanelOrganizar As Panel
     Friend WithEvents PanelAgrupaOrganizar As Panel
@@ -1057,4 +1223,17 @@ Partial Class Control_MenuBar
     Friend WithEvents PanelEnvolve_BTNMaisProcessos As Panel
     Friend WithEvents PanelEnvolve_BTNNovaMidia As Panel
     Friend WithEvents PanelEnvolve_BTNNovaPasta As Panel
+    Friend WithEvents PanelEnvolve_CHKExibirPainelAreaDeTranferencia As Panel
+    Friend WithEvents PanelBorder_BTNCopiarParaAreaDeTransferencia As Panel
+    Friend WithEvents PanelEnvolve_BTNCopiarParaAreaDeTransferencia As Panel
+    Friend WithEvents PanelBorder_BTNColarDaAreaDeTranferencia As Panel
+    Friend WithEvents PanelEnvolve_BTNColarDaAreaDeTranferencia As Panel
+    Friend WithEvents PanelBorder_BTNRecortarParaAreaDeTransferencia As Panel
+    Friend WithEvents PanelEnvolve_BTNRecortarParaAreaDeTransferencia As Panel
+    Friend WithEvents PanelBorder_BTNSelecionarTudo As Panel
+    Friend WithEvents PanelEnvolve_BTNSelecionarTudo As Panel
+    Friend WithEvents PanelBorder_BTNInverterSelecao As Panel
+    Friend WithEvents PanelEnvolve_BTNInverterSelecao As Panel
+    Friend WithEvents PanelBorder_BTNLimparSelecao As Panel
+    Friend WithEvents PanelEnvolve_BTNLimparSelecao As Panel
 End Class

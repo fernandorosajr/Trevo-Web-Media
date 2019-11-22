@@ -752,6 +752,7 @@
     <None Include="Resources\colar.png" />
     <None Include="Resources\colar02.png" />
     <None Include="Resources\copiarparaareadetransferencia.png" />
+    <None Include="Resources\excluir1.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

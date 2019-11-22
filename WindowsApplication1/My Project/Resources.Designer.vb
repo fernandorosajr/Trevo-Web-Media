@@ -503,6 +503,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property excluir1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("excluir1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Exibir_painel_de_processos() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Exibir painel de processos", resourceCulture)

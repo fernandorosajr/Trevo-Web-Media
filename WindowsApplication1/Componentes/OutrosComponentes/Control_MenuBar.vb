@@ -490,6 +490,14 @@
 
     End Sub
 
+    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseDown, BTNSelecionarTudo.MouseDown, BTNRenomear.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, BTNOpcoes_BTNNovaPasta.MouseDown, BTNOpcoes_BTNNovaMidia.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNNovaPasta.MouseDown, BTNNovaMidia.MouseDown, BTNMover.MouseDown, BTNMaisProcessos.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNExcluir.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNCopiar.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown
+
+    End Sub
+
+    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseUp, BTNSelecionarTudo.MouseUp, BTNRenomear.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, BTNOpcoes_BTNNovaPasta.MouseUp, BTNOpcoes_BTNNovaMidia.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNNovaPasta.MouseUp, BTNNovaMidia.MouseUp, BTNMover.MouseUp, BTNMaisProcessos.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNExcluir.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNCopiar.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp
+
+    End Sub
+
 
 
 

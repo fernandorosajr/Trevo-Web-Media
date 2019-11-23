@@ -674,6 +674,10 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\processoRenomearGrupo04.png" />
+    <None Include="Resources\processoRenomearGrupo03.png" />
+    <None Include="Resources\processoRenomearGrupo02.png" />
+    <None Include="Resources\processoRenomearGrupo.png" />
     <None Include="Resources\inverterselecao.png" />
     <None Include="Resources\limparselecao.png" />
     <None Include="Resources\seleccionar tudo.png" />

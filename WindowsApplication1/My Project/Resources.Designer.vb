@@ -1323,6 +1323,46 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo02() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo02", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo03() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo03", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo04() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo04", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property recortar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("recortar", resourceCulture)

@@ -33,6 +33,8 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNRenomear = New System.Windows.Forms.Panel()
         Me.BTNRenomear = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNRenomear = New System.Windows.Forms.Button()
+        Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_BTNExcluir = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNExcluir = New System.Windows.Forms.Panel()
         Me.BTNExcluir = New System.Windows.Forms.Button()
@@ -121,8 +123,6 @@ Partial Class Control_MenuBar
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.PerguntarAntesDeExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
@@ -131,6 +131,7 @@ Partial Class Control_MenuBar
         Me.Panel16.SuspendLayout()
         Me.PanelBorder_BTNRenomear.SuspendLayout()
         Me.PanelEnvolve_BTNRenomear.SuspendLayout()
+        Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
         Me.PanelBorder_BTNExcluir.SuspendLayout()
         Me.PanelEnvolve_BTNExcluir.SuspendLayout()
         Me.PanelBorder_BTNCopiar.SuspendLayout()
@@ -173,7 +174,6 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNMover.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNCopiar.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNExcluir.SuspendLayout()
-        Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -263,6 +263,7 @@ Partial Class Control_MenuBar
         Me.BTNRenomear.BackColor = System.Drawing.Color.Transparent
         Me.BTNRenomear.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
         Me.BTNRenomear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNRenomear.ContextMenuStrip = Me.CMenuS_BTNOpcoes_Renomear
         Me.BTNRenomear.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNRenomear.FlatAppearance.BorderSize = 0
         Me.BTNRenomear.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -301,6 +302,20 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNRenomear.Text = "Renomear"
         Me.BTNOpcoes_BTNRenomear.UseVisualStyleBackColor = False
         '
+        'CMenuS_BTNOpcoes_Renomear
+        '
+        Me.CMenuS_BTNOpcoes_Renomear.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CMenuS_BTNOpcoes_Renomear.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
+        Me.CMenuS_BTNOpcoes_Renomear.Name = "ContextMenuStrip1"
+        Me.CMenuS_BTNOpcoes_Renomear.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMenuS_BTNOpcoes_Renomear.Size = New System.Drawing.Size(119, 26)
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
+        Me.ToolStripMenuItem2.Text = "Critérios"
+        '
         'PanelBorder_BTNExcluir
         '
         Me.PanelBorder_BTNExcluir.Controls.Add(Me.PanelEnvolve_BTNExcluir)
@@ -326,6 +341,7 @@ Partial Class Control_MenuBar
         Me.BTNExcluir.BackColor = System.Drawing.Color.Transparent
         Me.BTNExcluir.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
         Me.BTNExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNExcluir.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNExcluir
         Me.BTNExcluir.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNExcluir.FlatAppearance.BorderSize = 0
         Me.BTNExcluir.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -346,6 +362,7 @@ Partial Class Control_MenuBar
         '
         Me.BTNOpcoes_BTNExcluir.BackColor = System.Drawing.Color.Transparent
         Me.BTNOpcoes_BTNExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNExcluir.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNExcluir
         Me.BTNOpcoes_BTNExcluir.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNOpcoes_BTNExcluir.FlatAppearance.BorderSize = 0
         Me.BTNOpcoes_BTNExcluir.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -388,6 +405,7 @@ Partial Class Control_MenuBar
         Me.BTNCopiar.BackColor = System.Drawing.Color.Transparent
         Me.BTNCopiar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.copiarpara02
         Me.BTNCopiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNCopiar.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNCopiar
         Me.BTNCopiar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNCopiar.FlatAppearance.BorderSize = 0
         Me.BTNCopiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -408,6 +426,7 @@ Partial Class Control_MenuBar
         '
         Me.BTNOpcoes_BTNCopiar.BackColor = System.Drawing.Color.Transparent
         Me.BTNOpcoes_BTNCopiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNCopiar.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNCopiar
         Me.BTNOpcoes_BTNCopiar.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNOpcoes_BTNCopiar.FlatAppearance.BorderSize = 0
         Me.BTNOpcoes_BTNCopiar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -450,6 +469,7 @@ Partial Class Control_MenuBar
         Me.BTNMover.BackColor = System.Drawing.Color.Transparent
         Me.BTNMover.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.moverpara04
         Me.BTNMover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNMover.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMover
         Me.BTNMover.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNMover.FlatAppearance.BorderSize = 0
         Me.BTNMover.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -470,6 +490,7 @@ Partial Class Control_MenuBar
         '
         Me.BTNOpcoes_BTNMover.BackColor = System.Drawing.Color.Transparent
         Me.BTNOpcoes_BTNMover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNMover.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMover
         Me.BTNOpcoes_BTNMover.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNOpcoes_BTNMover.FlatAppearance.BorderSize = 0
         Me.BTNOpcoes_BTNMover.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -959,6 +980,7 @@ Partial Class Control_MenuBar
         Me.BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
         Me.BTNMaisProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupo02
         Me.BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNMaisProcessos.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisProcessos
         Me.BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNMaisProcessos.FlatAppearance.BorderSize = 0
         Me.BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -979,6 +1001,7 @@ Partial Class Control_MenuBar
         '
         Me.BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
         Me.BTNOpcoes_BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNMaisProcessos.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisProcessos
         Me.BTNOpcoes_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.BorderSize = 0
         Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -1084,6 +1107,7 @@ Partial Class Control_MenuBar
         Me.BTNNovaPasta.BackColor = System.Drawing.Color.Transparent
         Me.BTNNovaPasta.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
         Me.BTNNovaPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNNovaPasta.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNNovaPasta
         Me.BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNNovaPasta.FlatAppearance.BorderSize = 0
         Me.BTNNovaPasta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -1104,6 +1128,7 @@ Partial Class Control_MenuBar
         '
         Me.BTNOpcoes_BTNNovaPasta.BackColor = System.Drawing.Color.Transparent
         Me.BTNOpcoes_BTNNovaPasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNNovaPasta.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNNovaPasta
         Me.BTNOpcoes_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.BorderSize = 0
         Me.BTNOpcoes_BTNNovaPasta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
@@ -1331,20 +1356,6 @@ Partial Class Control_MenuBar
         Me.PerguntarAntesDeExcluirToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
         Me.PerguntarAntesDeExcluirToolStripMenuItem.Text = "Perguntar antes de excluir"
         '
-        'CMenuS_BTNOpcoes_Renomear
-        '
-        Me.CMenuS_BTNOpcoes_Renomear.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.CMenuS_BTNOpcoes_Renomear.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
-        Me.CMenuS_BTNOpcoes_Renomear.Name = "ContextMenuStrip1"
-        Me.CMenuS_BTNOpcoes_Renomear.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_Renomear.Size = New System.Drawing.Size(119, 26)
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
-        Me.ToolStripMenuItem2.Text = "Critérios"
-        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1361,6 +1372,7 @@ Partial Class Control_MenuBar
         Me.Panel16.ResumeLayout(False)
         Me.PanelBorder_BTNRenomear.ResumeLayout(False)
         Me.PanelEnvolve_BTNRenomear.ResumeLayout(False)
+        Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
         Me.PanelBorder_BTNExcluir.ResumeLayout(False)
         Me.PanelEnvolve_BTNExcluir.ResumeLayout(False)
         Me.PanelBorder_BTNCopiar.ResumeLayout(False)
@@ -1409,7 +1421,6 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNMover.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNCopiar.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNExcluir.ResumeLayout(False)
-        Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

@@ -487,7 +487,7 @@
 
     End Sub
 
-    Private Sub BTNOpcoes_BTNNovaPasta_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaPasta.Click
+    Private Sub BTNOpcoes_BTNNovaPasta_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaPasta.Click, BTNOpcoes_BTNMaisProcessos.Click, BTNOpcoes_BTNMover.Click, BTNOpcoes_BTNCopiar.Click, BTNOpcoes_BTNExcluir.Click, BTNOpcoes_BTNRenomear.Click
         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
         Dim btn As Button
@@ -497,76 +497,10 @@
 
         x -= btn.Width
 
-        CMenuS_BTNOpcoes_BTNNovaPasta.Show(x, y)
+        btn.ContextMenuStrip.Show(x, y)
 
     End Sub
 
-    Private Sub BTNOpcoes_BTNMaisProcessos_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMaisProcessos.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
-        Dim btn As Button
-
-        btn = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
-
-        x -= btn.Width
-
-        CMenuS_BTNOpcoes_BTNMaisProcessos.Show(x, y)
-    End Sub
-
-    Private Sub BTNOpcoes_BTNMover_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMover.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
-        Dim btn As Button
-
-        btn = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
-
-        x -= btn.Width
-
-        CMenuS_BTNOpcoes_BTNMover.Show(x, y)
-    End Sub
-
-    Private Sub BTNOpcoes_BTNCopiar_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNCopiar.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
-        Dim btn As Button
-
-        btn = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
-
-        x -= btn.Width
-
-        CMenuS_BTNOpcoes_BTNCopiar.Show(x, y)
-    End Sub
-
-    Private Sub BTNOpcoes_BTNExcluir_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNExcluir.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
-        Dim btn As Button
-
-        btn = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
-
-        x -= btn.Width
-
-        CMenuS_BTNOpcoes_BTNExcluir.Show(x, y)
-
-    End Sub
-
-    Private Sub BTNOpcoes_BTNRenomear_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNRenomear.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
-        Dim btn As Button
-
-        btn = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
-
-        x -= btn.Width
-        CMenuS_BTNOpcoes_Renomear.Show(x, y)
-        ' btn.ContextMenuStrip.Show(x, y)
-
-    End Sub
 
 
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04

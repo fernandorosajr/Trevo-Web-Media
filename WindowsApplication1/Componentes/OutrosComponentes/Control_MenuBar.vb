@@ -487,7 +487,7 @@
 
     End Sub
 
-    Private Sub BTNOpcoes_BTNNovaPasta_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaPasta.Click, BTNOpcoes_BTNMaisProcessos.Click, BTNOpcoes_BTNMover.Click, BTNOpcoes_BTNCopiar.Click, BTNOpcoes_BTNExcluir.Click, BTNOpcoes_BTNRenomear.Click
+    Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaPasta.Click, BTNOpcoes_BTNMaisProcessos.Click, BTNOpcoes_BTNMover.Click, BTNOpcoes_BTNCopiar.Click, BTNOpcoes_BTNExcluir.Click, BTNOpcoes_BTNRenomear.Click
         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
         Dim btn As Button
@@ -498,6 +498,14 @@
         x -= btn.Width
 
         btn.ContextMenuStrip.Show(x, y)
+
+    End Sub
+
+    Private Sub CMenuS_BTNOpcoes_BTNMaisProcessos_SubItens_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoComposto.Click, TSMenuItemTipoCriacao.Click, TSMenuItemTipoCopia.Click, TSMenuItemTipoMover.Click, TSMenuItemTipoRenome.Click, TSMenuItemTipoExclusao.Click
+        Dim menuItem As ToolStripMenuItem
+        menuItem = CType(sender, ToolStripMenuItem)
+
+        BTNMaisProcessos.BackgroundImage = menuItem.Image
 
     End Sub
 

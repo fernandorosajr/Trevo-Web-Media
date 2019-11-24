@@ -31,11 +31,6 @@
     End Property
 
 
-
-
-
-
-
     Private _borderColorSelectAndMouseDown As Color
 
     Public Property BorderColorSelectAndMouseDown As Color
@@ -112,7 +107,6 @@
     End Property
 
 
-
     Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseUp, BTNNovaMidia.MouseUp, BTNMaisProcessos.MouseUp, BTNMover.MouseUp, BTNCopiar.MouseUp, BTNExcluir.MouseUp, BTNRenomear.MouseUp, BTNOpcoes_BTNNovaPasta.MouseUp, BTNOpcoes_BTNNovaMidia.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, CHKExibirPainelAreaDeTranferencia.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNSelecionarTudo.MouseUp
 
         Dim btn As Object
@@ -126,7 +120,7 @@
 
         btn.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
         btn.Parent.BackColor = _backgroundColorSelectAndMouseUp
-        'btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseUp
+
         btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
 
 
@@ -197,16 +191,13 @@
             Case "BTNSelecionarTudo"
                 BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseUp
 
-
-
-
         End Select
+
     End Sub
 
 
 
     Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseDown, BTNNovaMidia.MouseDown, BTNMaisProcessos.MouseDown, BTNMover.MouseDown, BTNCopiar.MouseDown, BTNExcluir.MouseDown, BTNRenomear.MouseDown, BTNOpcoes_BTNNovaPasta.MouseDown, BTNOpcoes_BTNNovaMidia.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, CHKExibirPainelAreaDeTranferencia.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNSelecionarTudo.MouseDown
-
 
         Dim btn As Object
 
@@ -220,6 +211,7 @@
         btn.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
         btn.Parent.BackColor = _backgroundColorSelectAndMouseDown
         btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
 
         Select Case btn.Name
             Case "BTNNovaPasta"
@@ -290,8 +282,8 @@
             Case "BTNSelecionarTudo"
                 BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseDown
 
-
         End Select
+
     End Sub
 
 
@@ -378,7 +370,6 @@
             Case "BTNSelecionarTudo"
                 BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseLeave
 
-
         End Select
     End Sub
 
@@ -393,7 +384,6 @@
         Else
             btn = CType(sender, Button)
         End If
-
 
         btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
         btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
@@ -466,13 +456,12 @@
             Case "BTNSelecionarTudo"
                 BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseHover
 
-
-
         End Select
 
     End Sub
 
     Private Sub Control_MenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
+
         _borderColorSelectAndMouseHover = Color.RoyalBlue
         _backgroundColorSelectAndMouseHover = Color.PowderBlue
 
@@ -508,16 +497,6 @@
         BTNMaisProcessos.BackgroundImage = menuItem.Image
 
     End Sub
-
-    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseDown, BTNSelecionarTudo.MouseDown, BTNRenomear.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, BTNOpcoes_BTNNovaPasta.MouseDown, BTNOpcoes_BTNNovaMidia.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNNovaPasta.MouseDown, BTNNovaMidia.MouseDown, BTNMover.MouseDown, BTNMaisProcessos.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNExcluir.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNCopiar.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown
-
-    End Sub
-
-    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseUp, BTNSelecionarTudo.MouseUp, BTNRenomear.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, BTNOpcoes_BTNNovaPasta.MouseUp, BTNOpcoes_BTNNovaMidia.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNNovaPasta.MouseUp, BTNNovaMidia.MouseUp, BTNMover.MouseUp, BTNMaisProcessos.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNExcluir.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNCopiar.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp
-
-    End Sub
-
-
 
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04
     '  http://www.macoratti.net/vbn_evnt.htm

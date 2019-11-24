@@ -123,6 +123,8 @@ Long, lpColorValues As Long) As Long
         Next
     End Sub
 
+
+
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
         ' TODO: Se um componente construido herdar ...
@@ -550,7 +552,7 @@ Long, lpColorValues As Long) As Long
                     PanelMEsq.Visible = False
                     PanelMDir.Visible = False
 
-                    Call form_Resize()
+                    Call Form_Resize()
                 End If
             Next
 
@@ -575,7 +577,7 @@ Long, lpColorValues As Long) As Long
                     PanelMBase.Visible = True
                     PanelMEsq.Visible = True
                     PanelMDir.Visible = True
-                    Call form_Resize()
+                    Call Form_Resize()
                 End If
 
             Next
@@ -593,10 +595,10 @@ Long, lpColorValues As Long) As Long
 
     Private Sub MainForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
 
-        Call form_Resize()
+        Call Form_Resize()
 
     End Sub
-    Sub form_Resize()
+    Sub Form_Resize()
         If Me.FormBorderStyle = FormBorderStyle.None Then
             PanelHome.Top = PanelMainMenu.Top + PanelMainMenu.Height + 1
             PanelHome.Width = Me.Width - 4

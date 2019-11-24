@@ -157,6 +157,12 @@
     <Compile Include="Componentes\ControlListView\SubControls\ControlListIcone.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Componentes\OutrosComponentes\CustomControl_Test.Designer.vb">
+      <DependentUpon>CustomControl_Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\CustomControl_Test.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.Designer.vb">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </Compile>

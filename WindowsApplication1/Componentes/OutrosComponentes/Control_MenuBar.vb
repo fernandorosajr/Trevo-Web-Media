@@ -505,6 +505,15 @@
 
     End Sub
 
+    Private Sub NovaPastaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovaPastaToolStripMenuItem.Click, NovaPastaProcessoToolStripMenuItem.Click
+        Dim menuItem As ToolStripMenuItem
+        menuItem = CType(sender, ToolStripMenuItem)
+
+        BTNNovaPasta.BackgroundImage = menuItem.Image
+    End Sub
+
+
+
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04
     '  http://www.macoratti.net/vbn_evnt.htm
 

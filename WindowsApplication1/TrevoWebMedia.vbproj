@@ -298,6 +298,9 @@
     <EmbeddedResource Include="Componentes\ControlListView\SubControls\ControlListIcone.resx">
       <DependentUpon>ControlListIcone.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\CustomControl_Test.resx">
+      <DependentUpon>CustomControl_Test.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.resx">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </EmbeddedResource>
@@ -680,6 +683,16 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pastaprocesso02.png" />
+    <None Include="Resources\pastaprocesso01.png" />
+    <None Include="Resources\processoRenomearGrupo09.png" />
+    <None Include="Resources\processoRenomearGrupo08.png" />
+    <None Include="Resources\processoRenomearGrupo07.png" />
+    <None Include="Resources\processoRenomearGrupo06.png" />
+    <None Include="Resources\processoRenomearGrupo05.png" />
+    <None Include="Resources\processoCopiarGrupo03.png" />
+    <None Include="Resources\processoCopiarGrupo02.png" />
+    <None Include="Resources\processoCopiarGrupo01.png" />
     <None Include="Resources\processoRenomearGrupo04.png" />
     <None Include="Resources\processoRenomearGrupo03.png" />
     <None Include="Resources\processoRenomearGrupo02.png" />

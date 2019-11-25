@@ -66,7 +66,7 @@ Partial Class ControlPainel_Filtro
         TreeNode2.Text = "Incluir Arquivos"
         Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2})
         Me.TVWFiltro.ShowLines = False
-        Me.TVWFiltro.Size = New System.Drawing.Size(302, 218)
+        Me.TVWFiltro.Size = New System.Drawing.Size(322, 238)
         Me.TVWFiltro.TabIndex = 2
         '
         'Panel_Filtro
@@ -77,7 +77,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel_Filtro.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Filtro.Location = New System.Drawing.Point(0, 0)
         Me.Panel_Filtro.Name = "Panel_Filtro"
-        Me.Panel_Filtro.Size = New System.Drawing.Size(304, 275)
+        Me.Panel_Filtro.Size = New System.Drawing.Size(324, 295)
         Me.Panel_Filtro.TabIndex = 2
         '
         'Panel_Explorer_Prima
@@ -89,7 +89,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel_Explorer_Prima.Location = New System.Drawing.Point(0, 29)
         Me.Panel_Explorer_Prima.Name = "Panel_Explorer_Prima"
         Me.Panel_Explorer_Prima.Padding = New System.Windows.Forms.Padding(0, 1, 0, 0)
-        Me.Panel_Explorer_Prima.Size = New System.Drawing.Size(304, 246)
+        Me.Panel_Explorer_Prima.Size = New System.Drawing.Size(324, 266)
         Me.Panel_Explorer_Prima.TabIndex = 4
         '
         'Panel_ExplorarPorFiltro
@@ -100,7 +100,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel_ExplorarPorFiltro.Location = New System.Drawing.Point(0, 24)
         Me.Panel_ExplorarPorFiltro.Name = "Panel_ExplorarPorFiltro"
         Me.Panel_ExplorarPorFiltro.Padding = New System.Windows.Forms.Padding(1, 3, 1, 1)
-        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(304, 222)
+        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(324, 242)
         Me.Panel_ExplorarPorFiltro.TabIndex = 1
         '
         'Panel195
@@ -111,7 +111,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel195.Location = New System.Drawing.Point(0, 1)
         Me.Panel195.Name = "Panel195"
         Me.Panel195.Padding = New System.Windows.Forms.Padding(3, 3, 3, 0)
-        Me.Panel195.Size = New System.Drawing.Size(304, 23)
+        Me.Panel195.Size = New System.Drawing.Size(324, 23)
         Me.Panel195.TabIndex = 4
         '
         'Panel277
@@ -124,7 +124,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel277.Location = New System.Drawing.Point(3, 3)
         Me.Panel277.Name = "Panel277"
         Me.Panel277.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel277.Size = New System.Drawing.Size(298, 20)
+        Me.Panel277.Size = New System.Drawing.Size(318, 20)
         Me.Panel277.TabIndex = 93
         '
         'TextBox26
@@ -135,7 +135,7 @@ Partial Class ControlPainel_Filtro
         Me.TextBox26.ForeColor = System.Drawing.Color.Gray
         Me.TextBox26.Location = New System.Drawing.Point(3, 3)
         Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(275, 13)
+        Me.TextBox26.Size = New System.Drawing.Size(295, 13)
         Me.TextBox26.TabIndex = 9
         Me.TextBox26.Text = "    Filtrar"
         '
@@ -149,7 +149,7 @@ Partial Class ControlPainel_Filtro
         Me.Button124.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button124.Image = Global.TrevoWebMedia.My.Resources.Resources.localizar1
         Me.Button124.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button124.Location = New System.Drawing.Point(278, 3)
+        Me.Button124.Location = New System.Drawing.Point(298, 3)
         Me.Button124.Margin = New System.Windows.Forms.Padding(0)
         Me.Button124.Name = "Button124"
         Me.Button124.Size = New System.Drawing.Size(15, 12)
@@ -164,7 +164,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel34.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel34.Location = New System.Drawing.Point(0, 0)
         Me.Panel34.Name = "Panel34"
-        Me.Panel34.Size = New System.Drawing.Size(304, 29)
+        Me.Panel34.Size = New System.Drawing.Size(324, 29)
         Me.Panel34.TabIndex = 5
         '
         'Label105
@@ -177,7 +177,7 @@ Partial Class ControlPainel_Filtro
         Me.Label105.Location = New System.Drawing.Point(15, 0)
         Me.Label105.Name = "Label105"
         Me.Label105.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label105.Size = New System.Drawing.Size(289, 29)
+        Me.Label105.Size = New System.Drawing.Size(309, 29)
         Me.Label105.TabIndex = 1
         Me.Label105.Text = "Filtro"
         '
@@ -204,7 +204,7 @@ Partial Class ControlPainel_Filtro
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.Panel_Filtro)
         Me.Name = "ControlPainel_Filtro"
-        Me.Size = New System.Drawing.Size(304, 275)
+        Me.Size = New System.Drawing.Size(324, 295)
         Me.Panel_Filtro.ResumeLayout(False)
         Me.Panel_Explorer_Prima.ResumeLayout(False)
         Me.Panel_ExplorarPorFiltro.ResumeLayout(False)

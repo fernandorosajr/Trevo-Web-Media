@@ -1273,6 +1273,26 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property pastaprocesso01() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pastaprocesso01", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property pastaprocesso02() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("pastaprocesso02", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property pause() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pause", resourceCulture)
@@ -1323,6 +1343,36 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property processoCopiarGrupo01() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoCopiarGrupo01", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoCopiarGrupo02() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoCopiarGrupo02", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoCopiarGrupo03() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoCopiarGrupo03", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property processoRenomearGrupo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo", resourceCulture)
@@ -1356,6 +1406,56 @@ Namespace My.Resources
         Friend ReadOnly Property processoRenomearGrupo04() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo04", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo05() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo05", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo06() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo06", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo07() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo07", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo08() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo08", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property processoRenomearGrupo09() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("processoRenomearGrupo09", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

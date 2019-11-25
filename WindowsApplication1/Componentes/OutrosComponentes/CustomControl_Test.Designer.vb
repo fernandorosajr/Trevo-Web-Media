@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CustomControl_Test
     Inherits System.Windows.Forms.Button
 
     'Descartar substituições de controle para limpar lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,11 @@ Partial Class CustomControl_Test
     ' OBSERVAÇÃO: o procedimento a seguir é exigido pelo Designer de Componentes
     ' Ele pode ser modificado pelo Component Designer.  Não o modifique
     ' utilizando o editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-    End Sub
+        Me.SuspendLayout()
+        Me.ResumeLayout(False)
 
+    End Sub
 End Class
 

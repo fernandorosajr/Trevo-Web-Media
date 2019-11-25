@@ -93,7 +93,6 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNNovaPasta = New System.Windows.Forms.Panel()
         Me.CMenuS_BTNOpcoes_BTNNovaPasta = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLNova = New System.Windows.Forms.Label()
         Me.BTNRenomear = New System.Windows.Forms.Button()
@@ -123,6 +122,7 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoMover = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemTipoRenome = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
@@ -727,35 +727,35 @@ Partial Class Control_MenuBar
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
         '
         'TSMenuItemSeparator1
         '
         Me.TSMenuItemSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator1.Name = "TSMenuItemSeparator1"
-        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(152, 6)
+        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'TSMenuItemSeparator2
         '
         Me.TSMenuItemSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator2.Name = "TSMenuItemSeparator2"
-        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(152, 6)
+        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'TSMenuItemSeparator3
         '
         Me.TSMenuItemSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator3.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator3.Name = "TSMenuItemSeparator3"
-        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(152, 6)
+        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(177, 6)
         '
         'TSMenuItemSeparator4
         '
         Me.TSMenuItemSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator4.Name = "TSMenuItemSeparator4"
-        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(152, 6)
+        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(177, 6)
         '
         'PanelBorder_BTNNovaMidia
         '
@@ -804,19 +804,14 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaToolStripMenuItem, Me.NovaPastaProcessoToolStripMenuItem})
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Name = "CMenuS_BTNOpcoes_BTNNovaPasta"
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(184, 48)
+        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(184, 70)
         '
         'NovaPastaToolStripMenuItem
         '
+        Me.NovaPastaToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
         Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
         Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.NovaPastaToolStripMenuItem.Text = "Nova pasta"
-        '
-        'NovaPastaProcessoToolStripMenuItem
-        '
-        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
-        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova pasta processo"
         '
         'Panel67
         '
@@ -1308,7 +1303,7 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
         Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
-        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
         '
         'TSMenuItemTipoCriacao
@@ -1317,16 +1312,16 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoCriacao
         Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
-        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
         '
         'TSMenuItemTipoCopia
         '
         Me.TSMenuItemTipoCopia.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoCopiar
+        Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo05
         Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
-        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
         '
         'TSMenuItemTipoMover
@@ -1335,16 +1330,16 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoMover.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoMover
         Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
-        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoMover.Text = "Tipo mover..."
         '
         'TSMenuItemTipoRenome
         '
         Me.TSMenuItemTipoRenome.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo04
+        Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo09
         Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
-        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
         '
         'TSMenuItemTipoExclusao
@@ -1353,8 +1348,15 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoExclusao
         Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
-        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(180, 22)
         Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
+        '
+        'NovaPastaProcessoToolStripMenuItem
+        '
+        Me.NovaPastaProcessoToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaprocesso02
+        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
+        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova pasta processo"
         '
         'Control_MenuBar
         '

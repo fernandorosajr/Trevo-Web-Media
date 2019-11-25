@@ -98,7 +98,6 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.BTNMaisProcessos = New System.Windows.Forms.Button()
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
@@ -1074,15 +1073,10 @@ Partial Class Control_MenuBar
         'CMenuS_BTNOpcoes_BTNMaisProcessos
         '
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
+        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Name = "ContextMenuStrip1"
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(156, 166)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 6)
+        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(181, 182)
         '
         'TSMenuItemTipoComposto
         '
@@ -1298,7 +1292,7 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaToolStripMenuItem, Me.NovaPastaProcessoToolStripMenuItem})
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Name = "CMenuS_BTNOpcoes_BTNNovaPasta"
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(184, 70)
+        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(184, 48)
         '
         'NovaPastaToolStripMenuItem
         '
@@ -1512,7 +1506,6 @@ Partial Class Control_MenuBar
     Friend WithEvents CMenuS_BTNOpcoes_BTNExcluir As ContextMenuStrip
     Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents TSMenuItemTipoComposto As ToolStripMenuItem
     Friend WithEvents TSMenuItemSeparator1 As ToolStripSeparator
     Friend WithEvents TSMenuItemTipoCriacao As ToolStripMenuItem

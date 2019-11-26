@@ -723,6 +723,26 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property lixeira02() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lixeira02", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lixeira03() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lixeira03", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property lixeira1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lixeira1", resourceCulture)

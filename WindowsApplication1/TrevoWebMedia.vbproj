@@ -683,6 +683,8 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lixeira03.png" />
+    <None Include="Resources\lixeira02.png" />
     <None Include="Resources\pastaprocesso02.png" />
     <None Include="Resources\pastaprocesso01.png" />
     <None Include="Resources\processoRenomearGrupo09.png" />

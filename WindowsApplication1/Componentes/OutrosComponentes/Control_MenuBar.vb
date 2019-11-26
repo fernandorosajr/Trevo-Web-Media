@@ -512,6 +512,14 @@
         BTNNovaPasta.BackgroundImage = menuItem.Image
     End Sub
 
+    Private Sub ExcluirParaLixeiraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirParaLixeiraToolStripMenuItem.Click, ExcluirPermanentementeToolStripMenuItem.Click
+        Dim menuItem As ToolStripMenuItem
+        menuItem = CType(sender, ToolStripMenuItem)
+
+        BTNExcluir.BackgroundImage = menuItem.Image
+
+    End Sub
+
 
 
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04

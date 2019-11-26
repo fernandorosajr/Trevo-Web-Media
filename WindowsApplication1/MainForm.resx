@@ -10016,7 +10016,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
-        BAAAAk1TRnQBSQFMAwEBAAHIAQgByAEIARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        BAAAAk1TRnQBSQFMAwEBAAHYAQgB2AEIARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
         ARADAAEBAQABIAYAARAqAAMQARYDGAEiAxoBJAMUARwDCgEOAwEBAuAAAzABSwNfAfMDKwH8AfIC8wH/
         A/oB/wNfAfMDYQHmA0ABcAMLAQ/YAANkAecBsAHbAccB/wG/AboBvAH/A9AB/wPhAf8D9An/A/sB/wNd
         AcoDEAEVzwABAQNkAewBlgKXAf8DrQH/AcABwgHBAf8DywH/A+EB/wP3Ef8DXAHJAwoBDcgAAzABSwGr
@@ -22672,7 +22672,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        ZgAAAk1TRnQBSQFMAgEBGgEAAZABBAGQAQQBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        ZgAAAk1TRnQBSQFMAgEBGgEAAaABBAGgAQQBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABcAMAAQEBAAEgBgABcGIAAYcB3wL/tgAB5QH/AwAB/yYAAdMB/wIAAdkB/xAAAY0B4gL/AYkB4AL/
         GAACYAFZAeuaAAHmAf8CAAHlAf8CAAGGAf8eAAHcAf8CAAHbAf8CAAG5Af8IAAMWAR8BlAHkAv8BkAHj
         Av8BjAHhAv8BAAHHAeoB/wEAAcsB7wH/AQABzwHyAf8BAAHTAfUB/wEAAdcB+AH/AcMCAAH/AegBlwEA
@@ -23137,6 +23137,1197 @@
   <data name="&gt;&gt;PanelRecebe.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="RadioButton29.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton29.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
+  <data name="RadioButton29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton29.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadioButton29.Text" xml:space="preserve">
+    <value>Compositores</value>
+  </data>
+  <data name="RadioButton29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton29.Name" xml:space="preserve">
+    <value>RadioButton29</value>
+  </data>
+  <data name="&gt;&gt;RadioButton29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton29.Parent" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;RadioButton29.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton28.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton28.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton28.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 0</value>
+  </data>
+  <data name="RadioButton28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton28.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="RadioButton28.Text" xml:space="preserve">
+    <value>Gêneros</value>
+  </data>
+  <data name="RadioButton28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton28.Name" xml:space="preserve">
+    <value>RadioButton28</value>
+  </data>
+  <data name="&gt;&gt;RadioButton28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton28.Parent" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;RadioButton28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton26.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 0</value>
+  </data>
+  <data name="RadioButton26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton26.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadioButton26.Text" xml:space="preserve">
+    <value>Artistas</value>
+  </data>
+  <data name="RadioButton26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton26.Name" xml:space="preserve">
+    <value>RadioButton26</value>
+  </data>
+  <data name="&gt;&gt;RadioButton26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton26.Parent" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;RadioButton26.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton27.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton27.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 0</value>
+  </data>
+  <data name="RadioButton27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton27.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadioButton27.Text" xml:space="preserve">
+    <value>Álbuns</value>
+  </data>
+  <data name="RadioButton27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton27.Name" xml:space="preserve">
+    <value>RadioButton27</value>
+  </data>
+  <data name="&gt;&gt;RadioButton27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton27.Parent" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;RadioButton27.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButton20.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadioButton20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton20.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RadioButton20.Text" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="RadioButton20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton20.Name" xml:space="preserve">
+    <value>RadioButton20</value>
+  </data>
+  <data name="&gt;&gt;RadioButton20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton20.Parent" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;RadioButton20.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PanelMusica.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelMusica.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelMusica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>773, 28</value>
+  </data>
+  <data name="PanelMusica.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="PanelMusica.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelMusica.Name" xml:space="preserve">
+    <value>PanelMusica</value>
+  </data>
+  <data name="&gt;&gt;PanelMusica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelMusica.Parent" xml:space="preserve">
+    <value>PanelSubMenuContorn</value>
+  </data>
+  <data name="&gt;&gt;PanelMusica.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton30.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton30.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 0</value>
+  </data>
+  <data name="RadioButton30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton30.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadioButton30.Text" xml:space="preserve">
+    <value>Categorias</value>
+  </data>
+  <data name="RadioButton30.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton30.Name" xml:space="preserve">
+    <value>RadioButton30</value>
+  </data>
+  <data name="&gt;&gt;RadioButton30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton30.Parent" xml:space="preserve">
+    <value>PanelVideos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton30.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton32.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton32.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton32.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 0</value>
+  </data>
+  <data name="RadioButton32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton32.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadioButton32.Text" xml:space="preserve">
+    <value>Não assistidos</value>
+  </data>
+  <data name="RadioButton32.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton32.Name" xml:space="preserve">
+    <value>RadioButton32</value>
+  </data>
+  <data name="&gt;&gt;RadioButton32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton32.Parent" xml:space="preserve">
+    <value>PanelVideos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton32.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton33.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton33.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton33.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 0</value>
+  </data>
+  <data name="RadioButton33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton33.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadioButton33.Text" xml:space="preserve">
+    <value>Assistidos</value>
+  </data>
+  <data name="RadioButton33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton33.Name" xml:space="preserve">
+    <value>RadioButton33</value>
+  </data>
+  <data name="&gt;&gt;RadioButton33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton33.Parent" xml:space="preserve">
+    <value>PanelVideos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton33.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton34.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton34.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton34.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadioButton34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton34.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RadioButton34.Text" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="RadioButton34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="RadioButton34.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;RadioButton34.Name" xml:space="preserve">
+    <value>RadioButton34</value>
+  </data>
+  <data name="&gt;&gt;RadioButton34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton34.Parent" xml:space="preserve">
+    <value>PanelVideos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton34.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PanelVideos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelVideos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelVideos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>773, 28</value>
+  </data>
+  <data name="PanelVideos.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="PanelVideos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelVideos.Name" xml:space="preserve">
+    <value>PanelVideos</value>
+  </data>
+  <data name="&gt;&gt;PanelVideos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelVideos.Parent" xml:space="preserve">
+    <value>PanelSubMenuContorn</value>
+  </data>
+  <data name="&gt;&gt;PanelVideos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton39.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton39.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton39.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>415, 0</value>
+  </data>
+  <data name="RadioButton39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton39.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="RadioButton39.Text" xml:space="preserve">
+    <value>Marcadores</value>
+  </data>
+  <data name="RadioButton39.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton39.Name" xml:space="preserve">
+    <value>RadioButton39</value>
+  </data>
+  <data name="&gt;&gt;RadioButton39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton39.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton39.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton38.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton38.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton38.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
+  <data name="RadioButton38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton38.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="RadioButton38.Text" xml:space="preserve">
+    <value>Cronológicos</value>
+  </data>
+  <data name="RadioButton38.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton38.Name" xml:space="preserve">
+    <value>RadioButton38</value>
+  </data>
+  <data name="&gt;&gt;RadioButton38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton38.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton38.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton31.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton31.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 0</value>
+  </data>
+  <data name="RadioButton31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton31.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadioButton31.Text" xml:space="preserve">
+    <value>Câmeras</value>
+  </data>
+  <data name="RadioButton31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton31.Name" xml:space="preserve">
+    <value>RadioButton31</value>
+  </data>
+  <data name="&gt;&gt;RadioButton31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton31.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton31.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton35.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton35.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton35.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 0</value>
+  </data>
+  <data name="RadioButton35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton35.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadioButton35.Text" xml:space="preserve">
+    <value>Autores</value>
+  </data>
+  <data name="RadioButton35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton35.Name" xml:space="preserve">
+    <value>RadioButton35</value>
+  </data>
+  <data name="&gt;&gt;RadioButton35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton35.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton35.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButton36.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton36.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton36.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 0</value>
+  </data>
+  <data name="RadioButton36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton36.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadioButton36.Text" xml:space="preserve">
+    <value>Álbuns</value>
+  </data>
+  <data name="RadioButton36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton36.Name" xml:space="preserve">
+    <value>RadioButton36</value>
+  </data>
+  <data name="&gt;&gt;RadioButton36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton36.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton36.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RadioButton37.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton37.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton37.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadioButton37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton37.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RadioButton37.Text" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="RadioButton37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton37.Name" xml:space="preserve">
+    <value>RadioButton37</value>
+  </data>
+  <data name="&gt;&gt;RadioButton37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton37.Parent" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;RadioButton37.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PanelFoto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelFoto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelFoto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>773, 28</value>
+  </data>
+  <data name="PanelFoto.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="PanelFoto.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelFoto.Name" xml:space="preserve">
+    <value>PanelFoto</value>
+  </data>
+  <data name="&gt;&gt;PanelFoto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelFoto.Parent" xml:space="preserve">
+    <value>PanelSubMenuContorn</value>
+  </data>
+  <data name="&gt;&gt;PanelFoto.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton19.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 0</value>
+  </data>
+  <data name="RadioButton19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton19.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadioButton19.Text" xml:space="preserve">
+    <value>Copositores</value>
+  </data>
+  <data name="RadioButton19.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton19.Name" xml:space="preserve">
+    <value>RadioButton19</value>
+  </data>
+  <data name="&gt;&gt;RadioButton19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton19.Parent" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton19.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton62.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton62.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton62.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton62.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton62.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 0</value>
+  </data>
+  <data name="RadioButton62.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton62.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="RadioButton62.Text" xml:space="preserve">
+    <value>Gêneros</value>
+  </data>
+  <data name="RadioButton62.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton62.Name" xml:space="preserve">
+    <value>RadioButton62</value>
+  </data>
+  <data name="&gt;&gt;RadioButton62.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton62.Parent" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton62.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton63.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton63.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton63.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton63.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 0</value>
+  </data>
+  <data name="RadioButton63.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton63.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadioButton63.Text" xml:space="preserve">
+    <value>Artistas</value>
+  </data>
+  <data name="RadioButton63.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton63.Name" xml:space="preserve">
+    <value>RadioButton63</value>
+  </data>
+  <data name="&gt;&gt;RadioButton63.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton63.Parent" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton63.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton64.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton64.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton64.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 0</value>
+  </data>
+  <data name="RadioButton64.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton64.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadioButton64.Text" xml:space="preserve">
+    <value>Álbuns</value>
+  </data>
+  <data name="RadioButton64.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton64.Name" xml:space="preserve">
+    <value>RadioButton64</value>
+  </data>
+  <data name="&gt;&gt;RadioButton64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton64.Parent" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton64.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButton65.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton65.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton65.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton65.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadioButton65.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton65.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RadioButton65.Text" xml:space="preserve">
+    <value>Arquivos</value>
+  </data>
+  <data name="RadioButton65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton65.Name" xml:space="preserve">
+    <value>RadioButton65</value>
+  </data>
+  <data name="&gt;&gt;RadioButton65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton65.Parent" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;RadioButton65.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PanelArquivos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelArquivos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelArquivos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>773, 28</value>
+  </data>
+  <data name="PanelArquivos.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="PanelArquivos.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelArquivos.Name" xml:space="preserve">
+    <value>PanelArquivos</value>
+  </data>
+  <data name="&gt;&gt;PanelArquivos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelArquivos.Parent" xml:space="preserve">
+    <value>PanelSubMenuContorn</value>
+  </data>
+  <data name="&gt;&gt;PanelArquivos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButton72.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton72.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton72.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton72.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton72.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 0</value>
+  </data>
+  <data name="RadioButton72.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton72.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="RadioButton72.Text" xml:space="preserve">
+    <value>Informações !</value>
+  </data>
+  <data name="RadioButton72.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton72.Name" xml:space="preserve">
+    <value>RadioButton72</value>
+  </data>
+  <data name="&gt;&gt;RadioButton72.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton72.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton72.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadioButton66.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton66.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton66.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton66.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton66.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 0</value>
+  </data>
+  <data name="RadioButton66.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton66.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="RadioButton66.Text" xml:space="preserve">
+    <value>Erros</value>
+  </data>
+  <data name="RadioButton66.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton66.Name" xml:space="preserve">
+    <value>RadioButton66</value>
+  </data>
+  <data name="&gt;&gt;RadioButton66.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton66.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton66.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadioButton67.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton67.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton67.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton67.Location" type="System.Drawing.Point, System.Drawing">
+    <value>345, 0</value>
+  </data>
+  <data name="RadioButton67.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton67.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RadioButton67.Text" xml:space="preserve">
+    <value>Por tipo</value>
+  </data>
+  <data name="RadioButton67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton67.Name" xml:space="preserve">
+    <value>RadioButton67</value>
+  </data>
+  <data name="&gt;&gt;RadioButton67.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton67.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton67.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadioButton68.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton68.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton68.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton68.Location" type="System.Drawing.Point, System.Drawing">
+    <value>262, 0</value>
+  </data>
+  <data name="RadioButton68.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton68.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="RadioButton68.Text" xml:space="preserve">
+    <value>Gravadas</value>
+  </data>
+  <data name="RadioButton68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton68.Name" xml:space="preserve">
+    <value>RadioButton68</value>
+  </data>
+  <data name="&gt;&gt;RadioButton68.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton68.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton68.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadioButton70.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton70.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton70.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton70.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton70.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 0</value>
+  </data>
+  <data name="RadioButton70.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 28</value>
+  </data>
+  <data name="RadioButton70.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="RadioButton70.Text" xml:space="preserve">
+    <value>Não Gravadas</value>
+  </data>
+  <data name="RadioButton70.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton70.Name" xml:space="preserve">
+    <value>RadioButton70</value>
+  </data>
+  <data name="&gt;&gt;RadioButton70.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton70.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton70.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RadioButton71.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton71.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton71.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton71.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton71.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 0</value>
+  </data>
+  <data name="RadioButton71.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton71.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="RadioButton71.Text" xml:space="preserve">
+    <value>Histórico</value>
+  </data>
+  <data name="RadioButton71.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton71.Name" xml:space="preserve">
+    <value>RadioButton71</value>
+  </data>
+  <data name="&gt;&gt;RadioButton71.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton71.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton71.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="RadioButton69.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RadioButton69.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="RadioButton69.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RadioButton69.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RadioButton69.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="RadioButton69.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 28</value>
+  </data>
+  <data name="RadioButton69.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="RadioButton69.Text" xml:space="preserve">
+    <value>Gravando...</value>
+  </data>
+  <data name="RadioButton69.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RadioButton69.Name" xml:space="preserve">
+    <value>RadioButton69</value>
+  </data>
+  <data name="&gt;&gt;RadioButton69.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton69.Parent" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;RadioButton69.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PanelMidia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelMidia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelMidia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>773, 28</value>
+  </data>
+  <data name="PanelMidia.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="PanelMidia.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelMidia.Name" xml:space="preserve">
+    <value>PanelMidia</value>
+  </data>
+  <data name="&gt;&gt;PanelMidia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelMidia.Parent" xml:space="preserve">
+    <value>PanelSubMenuContorn</value>
+  </data>
+  <data name="&gt;&gt;PanelMidia.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="RadioButton44.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -23471,1197 +24662,6 @@
     <value>PanelSubMenuContorn</value>
   </data>
   <data name="&gt;&gt;PanelLivros.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton29.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton29.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton29.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 0</value>
-  </data>
-  <data name="RadioButton29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton29.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadioButton29.Text" xml:space="preserve">
-    <value>Copositores</value>
-  </data>
-  <data name="RadioButton29.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton29.Name" xml:space="preserve">
-    <value>RadioButton29</value>
-  </data>
-  <data name="&gt;&gt;RadioButton29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton29.Parent" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;RadioButton29.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton28.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton28.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton28.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 0</value>
-  </data>
-  <data name="RadioButton28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton28.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="RadioButton28.Text" xml:space="preserve">
-    <value>Gêneros</value>
-  </data>
-  <data name="RadioButton28.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton28.Name" xml:space="preserve">
-    <value>RadioButton28</value>
-  </data>
-  <data name="&gt;&gt;RadioButton28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton28.Parent" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;RadioButton28.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton26.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 0</value>
-  </data>
-  <data name="RadioButton26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton26.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="RadioButton26.Text" xml:space="preserve">
-    <value>Artistas</value>
-  </data>
-  <data name="RadioButton26.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton26.Name" xml:space="preserve">
-    <value>RadioButton26</value>
-  </data>
-  <data name="&gt;&gt;RadioButton26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton26.Parent" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;RadioButton26.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton27.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton27.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton27.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 0</value>
-  </data>
-  <data name="RadioButton27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton27.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="RadioButton27.Text" xml:space="preserve">
-    <value>Álbuns</value>
-  </data>
-  <data name="RadioButton27.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton27.Name" xml:space="preserve">
-    <value>RadioButton27</value>
-  </data>
-  <data name="&gt;&gt;RadioButton27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton27.Parent" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;RadioButton27.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadioButton20.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadioButton20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton20.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="RadioButton20.Text" xml:space="preserve">
-    <value>Arquivos</value>
-  </data>
-  <data name="RadioButton20.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton20.Name" xml:space="preserve">
-    <value>RadioButton20</value>
-  </data>
-  <data name="&gt;&gt;RadioButton20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton20.Parent" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;RadioButton20.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PanelMusica.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelMusica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelMusica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
-  </data>
-  <data name="PanelMusica.TabIndex" type="System.Int32, mscorlib">
-    <value>88</value>
-  </data>
-  <data name="PanelMusica.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelMusica.Name" xml:space="preserve">
-    <value>PanelMusica</value>
-  </data>
-  <data name="&gt;&gt;PanelMusica.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelMusica.Parent" xml:space="preserve">
-    <value>PanelSubMenuContorn</value>
-  </data>
-  <data name="&gt;&gt;PanelMusica.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton30.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton30.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton30.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 0</value>
-  </data>
-  <data name="RadioButton30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton30.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadioButton30.Text" xml:space="preserve">
-    <value>Categorias</value>
-  </data>
-  <data name="RadioButton30.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton30.Name" xml:space="preserve">
-    <value>RadioButton30</value>
-  </data>
-  <data name="&gt;&gt;RadioButton30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton30.Parent" xml:space="preserve">
-    <value>PanelVideos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton30.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton32.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton32.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton32.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 0</value>
-  </data>
-  <data name="RadioButton32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton32.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="RadioButton32.Text" xml:space="preserve">
-    <value>Não assistidos</value>
-  </data>
-  <data name="RadioButton32.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton32.Name" xml:space="preserve">
-    <value>RadioButton32</value>
-  </data>
-  <data name="&gt;&gt;RadioButton32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton32.Parent" xml:space="preserve">
-    <value>PanelVideos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton32.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton33.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton33.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton33.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 0</value>
-  </data>
-  <data name="RadioButton33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton33.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="RadioButton33.Text" xml:space="preserve">
-    <value>Assistidos</value>
-  </data>
-  <data name="RadioButton33.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton33.Name" xml:space="preserve">
-    <value>RadioButton33</value>
-  </data>
-  <data name="&gt;&gt;RadioButton33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton33.Parent" xml:space="preserve">
-    <value>PanelVideos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton33.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton34.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton34.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton34.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton34.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadioButton34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton34.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="RadioButton34.Text" xml:space="preserve">
-    <value>Arquivos</value>
-  </data>
-  <data name="RadioButton34.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="RadioButton34.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;RadioButton34.Name" xml:space="preserve">
-    <value>RadioButton34</value>
-  </data>
-  <data name="&gt;&gt;RadioButton34.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton34.Parent" xml:space="preserve">
-    <value>PanelVideos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton34.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="PanelVideos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelVideos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelVideos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
-  </data>
-  <data name="PanelVideos.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="PanelVideos.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelVideos.Name" xml:space="preserve">
-    <value>PanelVideos</value>
-  </data>
-  <data name="&gt;&gt;PanelVideos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelVideos.Parent" xml:space="preserve">
-    <value>PanelSubMenuContorn</value>
-  </data>
-  <data name="&gt;&gt;PanelVideos.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton39.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton39.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton39.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 0</value>
-  </data>
-  <data name="RadioButton39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton39.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="RadioButton39.Text" xml:space="preserve">
-    <value>Marcadores</value>
-  </data>
-  <data name="RadioButton39.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton39.Name" xml:space="preserve">
-    <value>RadioButton39</value>
-  </data>
-  <data name="&gt;&gt;RadioButton39.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton39.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton39.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton38.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton38.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton38.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton38.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 0</value>
-  </data>
-  <data name="RadioButton38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton38.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="RadioButton38.Text" xml:space="preserve">
-    <value>Cronológicos</value>
-  </data>
-  <data name="RadioButton38.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton38.Name" xml:space="preserve">
-    <value>RadioButton38</value>
-  </data>
-  <data name="&gt;&gt;RadioButton38.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton38.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton38.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton31.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton31.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton31.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 0</value>
-  </data>
-  <data name="RadioButton31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton31.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadioButton31.Text" xml:space="preserve">
-    <value>Câmeras</value>
-  </data>
-  <data name="RadioButton31.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton31.Name" xml:space="preserve">
-    <value>RadioButton31</value>
-  </data>
-  <data name="&gt;&gt;RadioButton31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton31.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton31.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton35.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton35.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton35.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 0</value>
-  </data>
-  <data name="RadioButton35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton35.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="RadioButton35.Text" xml:space="preserve">
-    <value>Autores</value>
-  </data>
-  <data name="RadioButton35.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton35.Name" xml:space="preserve">
-    <value>RadioButton35</value>
-  </data>
-  <data name="&gt;&gt;RadioButton35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton35.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton35.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadioButton36.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton36.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton36.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 0</value>
-  </data>
-  <data name="RadioButton36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton36.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="RadioButton36.Text" xml:space="preserve">
-    <value>Álbuns</value>
-  </data>
-  <data name="RadioButton36.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton36.Name" xml:space="preserve">
-    <value>RadioButton36</value>
-  </data>
-  <data name="&gt;&gt;RadioButton36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton36.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton36.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="RadioButton37.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton37.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton37.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton37.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadioButton37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton37.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="RadioButton37.Text" xml:space="preserve">
-    <value>Arquivos</value>
-  </data>
-  <data name="RadioButton37.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton37.Name" xml:space="preserve">
-    <value>RadioButton37</value>
-  </data>
-  <data name="&gt;&gt;RadioButton37.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton37.Parent" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;RadioButton37.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="PanelFoto.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelFoto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelFoto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
-  </data>
-  <data name="PanelFoto.TabIndex" type="System.Int32, mscorlib">
-    <value>90</value>
-  </data>
-  <data name="PanelFoto.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelFoto.Name" xml:space="preserve">
-    <value>PanelFoto</value>
-  </data>
-  <data name="&gt;&gt;PanelFoto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelFoto.Parent" xml:space="preserve">
-    <value>PanelSubMenuContorn</value>
-  </data>
-  <data name="&gt;&gt;PanelFoto.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadioButton19.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 0</value>
-  </data>
-  <data name="RadioButton19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton19.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadioButton19.Text" xml:space="preserve">
-    <value>Copositores</value>
-  </data>
-  <data name="RadioButton19.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton19.Name" xml:space="preserve">
-    <value>RadioButton19</value>
-  </data>
-  <data name="&gt;&gt;RadioButton19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton19.Parent" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton19.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton62.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton62.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton62.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton62.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton62.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 0</value>
-  </data>
-  <data name="RadioButton62.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton62.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="RadioButton62.Text" xml:space="preserve">
-    <value>Gêneros</value>
-  </data>
-  <data name="RadioButton62.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton62.Name" xml:space="preserve">
-    <value>RadioButton62</value>
-  </data>
-  <data name="&gt;&gt;RadioButton62.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton62.Parent" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton62.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton63.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton63.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton63.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton63.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton63.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 0</value>
-  </data>
-  <data name="RadioButton63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton63.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="RadioButton63.Text" xml:space="preserve">
-    <value>Artistas</value>
-  </data>
-  <data name="RadioButton63.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton63.Name" xml:space="preserve">
-    <value>RadioButton63</value>
-  </data>
-  <data name="&gt;&gt;RadioButton63.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton63.Parent" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton63.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton64.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton64.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton64.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 0</value>
-  </data>
-  <data name="RadioButton64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton64.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="RadioButton64.Text" xml:space="preserve">
-    <value>Álbuns</value>
-  </data>
-  <data name="RadioButton64.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton64.Name" xml:space="preserve">
-    <value>RadioButton64</value>
-  </data>
-  <data name="&gt;&gt;RadioButton64.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton64.Parent" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton64.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadioButton65.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton65.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton65.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton65.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadioButton65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton65.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="RadioButton65.Text" xml:space="preserve">
-    <value>Arquivos</value>
-  </data>
-  <data name="RadioButton65.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton65.Name" xml:space="preserve">
-    <value>RadioButton65</value>
-  </data>
-  <data name="&gt;&gt;RadioButton65.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton65.Parent" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;RadioButton65.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PanelArquivos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelArquivos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelArquivos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
-  </data>
-  <data name="PanelArquivos.TabIndex" type="System.Int32, mscorlib">
-    <value>95</value>
-  </data>
-  <data name="PanelArquivos.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelArquivos.Name" xml:space="preserve">
-    <value>PanelArquivos</value>
-  </data>
-  <data name="&gt;&gt;PanelArquivos.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelArquivos.Parent" xml:space="preserve">
-    <value>PanelSubMenuContorn</value>
-  </data>
-  <data name="&gt;&gt;PanelArquivos.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="RadioButton72.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton72.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton72.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton72.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton72.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 0</value>
-  </data>
-  <data name="RadioButton72.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton72.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="RadioButton72.Text" xml:space="preserve">
-    <value>Informações !</value>
-  </data>
-  <data name="RadioButton72.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton72.Name" xml:space="preserve">
-    <value>RadioButton72</value>
-  </data>
-  <data name="&gt;&gt;RadioButton72.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton72.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton72.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton66.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton66.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton66.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton66.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton66.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 0</value>
-  </data>
-  <data name="RadioButton66.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton66.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="RadioButton66.Text" xml:space="preserve">
-    <value>Erros</value>
-  </data>
-  <data name="RadioButton66.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton66.Name" xml:space="preserve">
-    <value>RadioButton66</value>
-  </data>
-  <data name="&gt;&gt;RadioButton66.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton66.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton66.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RadioButton67.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton67.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton67.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton67.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 0</value>
-  </data>
-  <data name="RadioButton67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton67.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="RadioButton67.Text" xml:space="preserve">
-    <value>Por tipo</value>
-  </data>
-  <data name="RadioButton67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton67.Name" xml:space="preserve">
-    <value>RadioButton67</value>
-  </data>
-  <data name="&gt;&gt;RadioButton67.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton67.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton67.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RadioButton68.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton68.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton68.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton68.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 0</value>
-  </data>
-  <data name="RadioButton68.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton68.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="RadioButton68.Text" xml:space="preserve">
-    <value>Gravadas</value>
-  </data>
-  <data name="RadioButton68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton68.Name" xml:space="preserve">
-    <value>RadioButton68</value>
-  </data>
-  <data name="&gt;&gt;RadioButton68.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton68.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton68.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="RadioButton70.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton70.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton70.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton70.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton70.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 0</value>
-  </data>
-  <data name="RadioButton70.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 28</value>
-  </data>
-  <data name="RadioButton70.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="RadioButton70.Text" xml:space="preserve">
-    <value>Não Gravadas</value>
-  </data>
-  <data name="RadioButton70.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton70.Name" xml:space="preserve">
-    <value>RadioButton70</value>
-  </data>
-  <data name="&gt;&gt;RadioButton70.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton70.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton70.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="RadioButton71.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton71.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton71.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton71.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton71.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 0</value>
-  </data>
-  <data name="RadioButton71.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton71.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="RadioButton71.Text" xml:space="preserve">
-    <value>Histórico</value>
-  </data>
-  <data name="RadioButton71.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton71.Name" xml:space="preserve">
-    <value>RadioButton71</value>
-  </data>
-  <data name="&gt;&gt;RadioButton71.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton71.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton71.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RadioButton69.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="RadioButton69.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="RadioButton69.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="RadioButton69.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RadioButton69.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="RadioButton69.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 28</value>
-  </data>
-  <data name="RadioButton69.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="RadioButton69.Text" xml:space="preserve">
-    <value>Gravando...</value>
-  </data>
-  <data name="RadioButton69.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RadioButton69.Name" xml:space="preserve">
-    <value>RadioButton69</value>
-  </data>
-  <data name="&gt;&gt;RadioButton69.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton69.Parent" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;RadioButton69.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="PanelMidia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelMidia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelMidia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
-  </data>
-  <data name="PanelMidia.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
-  </data>
-  <data name="PanelMidia.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelMidia.Name" xml:space="preserve">
-    <value>PanelMidia</value>
-  </data>
-  <data name="&gt;&gt;PanelMidia.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelMidia.Parent" xml:space="preserve">
-    <value>PanelSubMenuContorn</value>
-  </data>
-  <data name="&gt;&gt;PanelMidia.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="PanelSubMenuContorn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

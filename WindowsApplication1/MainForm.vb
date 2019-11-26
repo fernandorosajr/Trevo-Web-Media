@@ -864,6 +864,10 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
+    Private Sub ChBOrganizar_CheckedChanged(sender As Object, e As EventArgs) Handles ChBOrganizar.CheckedChanged
+
+    End Sub
+
     Private Sub RBImagens_CheckedChanged(sender As Object, e As EventArgs) Handles RBImagens.CheckedChanged
         If sender.checked Then
 

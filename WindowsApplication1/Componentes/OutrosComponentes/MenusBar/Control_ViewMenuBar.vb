@@ -106,7 +106,7 @@
     End Property
 
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseUp, BTNPaneiDireito.MouseUp, BTNMover.MouseUp, BTNCopiar.MouseUp, BTNExcluir.MouseUp, BTNRenomear.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNSelecionarTudo.MouseUp
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseUp, BTNPaneiDireito.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp
 
         Dim btn As Object
 
@@ -133,17 +133,17 @@
             'Case "BTNMaisProcessos"
             '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNMover"
-                BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNMover"
+            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNCopiar"
-                BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNCopiar"
+            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNExcluir"
-                BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNExcluir"
+            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNRenomear"
-                BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNRenomear"
+            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
 
             Case "BTNOpcoes_BTNNovaPasta"
                 BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
@@ -151,44 +151,44 @@
             Case "BTNOpcoes_BTNNovaMidia"
                 BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNOpcoes_BTNMaisProcessos"
-            '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNMaisProcessos"
+                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNMover"
-                BTNMover.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNMover"
+                '    BTNMover.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNCopiar"
-                BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNCopiar"
+                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNExcluir"
-                BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNExcluir"
+                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNRenomear"
-                BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
-
-
+                'Case "BTNOpcoes_BTNRenomear"
+                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
 
 
-            'Case "CHKExibirPainelAreaDeTranferencia"
-            '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNRecortarParaAreaDeTransferencia"
-                BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNColarDaAreaDeTranferencia"
-                BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "CHKExibirPainelAreaDeTranferencia"
+                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNCopiarParaAreaDeTransferencia"
-                BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNRecortarParaAreaDeTransferencia"
+                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNLimparSelecao"
-                BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNColarDaAreaDeTranferencia"
+                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNInverterSelecao"
-                BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNCopiarParaAreaDeTransferencia"
+                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNSelecionarTudo"
-                BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNLimparSelecao"
+                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseUp
+
+                'Case "BTNInverterSelecao"
+                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseUp
+
+                'Case "BTNSelecionarTudo"
+                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseUp
 
         End Select
 
@@ -196,7 +196,7 @@
 
 
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseDown, BTNPaneiDireito.MouseDown, BTNMover.MouseDown, BTNCopiar.MouseDown, BTNExcluir.MouseDown, BTNRenomear.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNSelecionarTudo.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseDown, BTNPaneiDireito.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown
 
         Dim btn As Object
 
@@ -222,17 +222,17 @@
             'Case "BTNMaisProcessos"
             '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNMover"
-                BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+            'Case "BTNMover"
+            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNCopiar"
-                BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+            'Case "BTNCopiar"
+            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNExcluir"
-                BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+            'Case "BTNExcluir"
+            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNRenomear"
-                BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
+            'Case "BTNRenomear"
+            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
 
             Case "BTNOpcoes_BTNNovaPasta"
                 BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
@@ -240,46 +240,46 @@
             Case "BTNOpcoes_BTNNovaMidia"
                 BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNOpcoes_BTNMaisProcessos"
-            '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNMaisProcessos"
+                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNMover"
-                BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNMover"
+                '    BTNMover.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNCopiar"
-                BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNCopiar"
+                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNExcluir"
-                BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNExcluir"
+                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNRenomear"
-                BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
-
-
+                'Case "BTNOpcoes_BTNRenomear"
+                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
 
 
 
 
-            'Case "CHKExibirPainelAreaDeTranferencia"
-            '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNRecortarParaAreaDeTransferencia"
-                BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNColarDaAreaDeTranferencia"
-                BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "CHKExibirPainelAreaDeTranferencia"
+                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNCopiarParaAreaDeTransferencia"
-                BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNRecortarParaAreaDeTransferencia"
+                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNLimparSelecao"
-                BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNColarDaAreaDeTranferencia"
+                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNInverterSelecao"
-                BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNCopiarParaAreaDeTransferencia"
+                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNSelecionarTudo"
-                BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNLimparSelecao"
+                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseDown
+
+                'Case "BTNInverterSelecao"
+                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseDown
+
+                'Case "BTNSelecionarTudo"
+                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseDown
 
         End Select
 
@@ -311,17 +311,17 @@
             'Case "BTNMaisProcessos"
             '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNMover"
-                BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
+            'Case "BTNMover"
+            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNCopiar"
-                BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
+            'Case "BTNCopiar"
+            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNExcluir"
-                BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
+            'Case "BTNExcluir"
+            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNRenomear"
-                BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
+            'Case "BTNRenomear"
+            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
 
             Case "BTNOpcoes_BTNNovaPasta"
                 BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
@@ -329,45 +329,45 @@
             Case "BTNOpcoes_BTNNovaMidia"
                 BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNOpcoes_BTNMaisProcessos"
-            '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNMaisProcessos"
+                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNMover"
-                BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNMover"
+                '    BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNCopiar"
-                BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNCopiar"
+                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNExcluir"
-                BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNExcluir"
+                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNRenomear"
-                BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
-
-
+                'Case "BTNOpcoes_BTNRenomear"
+                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
 
 
 
-            'Case "CHKExibirPainelAreaDeTranferencia"
-            '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNRecortarParaAreaDeTransferencia"
-                BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNColarDaAreaDeTranferencia"
-                BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "CHKExibirPainelAreaDeTranferencia"
+                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNCopiarParaAreaDeTransferencia"
-                BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNRecortarParaAreaDeTransferencia"
+                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNLimparSelecao"
-                BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNColarDaAreaDeTranferencia"
+                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNInverterSelecao"
-                BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNCopiarParaAreaDeTransferencia"
+                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNSelecionarTudo"
-                BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNLimparSelecao"
+                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseLeave
+
+                'Case "BTNInverterSelecao"
+                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseLeave
+
+                'Case "BTNSelecionarTudo"
+                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseLeave
 
         End Select
     End Sub
@@ -399,17 +399,17 @@
             'Case "BTNMaisProcessos"
             '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNMover"
-                BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseHover
+            'Case "BTNMover"
+            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNCopiar"
-                BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
+            'Case "BTNCopiar"
+            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNExcluir"
-                BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
+            'Case "BTNExcluir"
+            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNRenomear"
-                BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
+            'Case "BTNRenomear"
+            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
 
             Case "BTNOpcoes_BTNNovaPasta"
                 BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
@@ -417,43 +417,43 @@
             Case "BTNOpcoes_BTNNovaMidia"
                 BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNOpcoes_BTNMaisProcessos"
-            '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNMaisProcessos"
+                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNMover"
-                BTNMover.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNMover"
+                '    BTNMover.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNCopiar"
-                BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNCopiar"
+                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNExcluir"
-                BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNExcluir"
+                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNRenomear"
-                BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNRenomear"
+                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
 
 
 
-            'Case "CHKExibirPainelAreaDeTranferencia"
-            '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "CHKExibirPainelAreaDeTranferencia"
+                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNRecortarParaAreaDeTransferencia"
-                BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNRecortarParaAreaDeTransferencia"
+                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNColarDaAreaDeTranferencia"
-                BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNColarDaAreaDeTranferencia"
+                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNCopiarParaAreaDeTransferencia"
-                BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNCopiarParaAreaDeTransferencia"
+                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNLimparSelecao"
-                BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNLimparSelecao"
+                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNInverterSelecao"
-                BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNInverterSelecao"
+                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNSelecionarTudo"
-                BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNSelecionarTudo"
+                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseHover
 
         End Select
 
@@ -491,13 +491,13 @@
         BTNPainelEsquedo.BackgroundImage = menuItem.Image
     End Sub
 
-    Private Sub ExcluirParaLixeiraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirParaLixeiraToolStripMenuItem.Click, ExcluirPermanentementeToolStripMenuItem.Click
-        Dim menuItem As ToolStripMenuItem
-        menuItem = CType(sender, ToolStripMenuItem)
+    'Private Sub ExcluirParaLixeiraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirParaLixeiraToolStripMenuItem.Click, ExcluirPermanentementeToolStripMenuItem.Click
+    '    Dim menuItem As ToolStripMenuItem
+    '    menuItem = CType(sender, ToolStripMenuItem)
 
-        BTNExcluir.BackgroundImage = menuItem.Image
+    '    BTNExcluir.BackgroundImage = menuItem.Image
 
-    End Sub
+    'End Sub
 
     Private Sub Control_ViewMenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
 

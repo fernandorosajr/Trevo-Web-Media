@@ -18,7 +18,8 @@ Public Class MainForm
     Public painel_Atividades As New ControlPainel_Atividades
     Public painel_Detalhes As New ControlPainel_Detalhes
     Public painel_Acoes As New ControlPainel_Acoes
-    Public TooBarMenu As New Control_MenuBar
+    Public toolBar_Menu As New Control_MenuBar
+    Public toolBar_ViewMenu As New Control_ViewMenuBar
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
 
@@ -158,9 +159,13 @@ Long, lpColorValues As Long) As Long
         painel_Acoes.Dock = DockStyle.Fill
         painel_Acoes.Visible = True
 
-        Panel_MenuBar.Controls.Add(TooBarMenu)
-        TooBarMenu.Dock = DockStyle.Fill
-        TooBarMenu.Visible = True
+        Panel_MenuBar.Controls.Add(toolBar_Menu)
+        toolBar_Menu.Dock = DockStyle.Fill
+        toolBar_Menu.Visible = True
+
+        Panel_MenuBar.Controls.Add(toolBar_ViewMenu)
+        toolBar_ViewMenu.Dock = DockStyle.Fill
+        toolBar_ViewMenu.Visible = True
 
         PanelLoad_ControlSelectFileAndFoldePanel.Controls.Add(_controlSelectFileAndFolderPanel)
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
@@ -303,13 +308,13 @@ Long, lpColorValues As Long) As Long
     Private Sub ChecarCheckBoxs()
         Dim ChckB As New CheckBox
 
-
-
         For Each ctr As Control In Me.FLPMenu.Controls
             If TypeOf ctr Is CheckBox Then
                 '  MsgBox(this.Name.ToString)
 
                 ChckB = ctr
+
+                Panel_MenuBar.Visible = False
                 If ChckB.Checked = True Then
                     Panel_MenuBar.Visible = True
                     Exit For
@@ -319,9 +324,8 @@ Long, lpColorValues As Long) As Long
                 'g.DrawRectangle(Pen, New  _
                 'Rectangle(ctr.Location, ctr.Size))
             End If
-
-
         Next
+
     End Sub
 
     Private Sub Button39_Click(sender As System.Object, e As System.EventArgs) Handles Button39.Click
@@ -333,191 +337,49 @@ Long, lpColorValues As Long) As Long
         End If
     End Sub
 
-    Private Sub ChBExplorar_Click(sender As Object, e As System.EventArgs) Handles ChBExplorar.Click
+    Private Sub MenuItem_Click(sender As Object, e As System.EventArgs) Handles ChBInicio.Click, ChBOrganizar.Click, ChBGravar.Click, ChBExibir.Click
 
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = True
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
+        Dim chk As Object
+
+        If sender.GetType.Name.ToString = "CheckBox" Then
+            chk = CType(sender, CheckBox)
 
         Else
-
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
+            MsgBox(sender.name.ToString)
+            chk = CType(sender, Object)
         End If
 
-        Call ChecarCheckBoxs()
-    End Sub
+        'ChBInicio.Checked = False
+        'ChBOrganizar.Checked = False
+        'ChBGravar.Checked = False
+        'ChBExibir.Checked = False
 
-    Private Sub ChBInicio_Click(sender As Object, e As System.EventArgs) Handles ChBInicio.Click
+        'If sender.Checked = True Then
+        '    chk.Checked = True
+        'Else
+        '    chk.Checked = False
 
-        'MsgBox(e)
-        'ChBInicio.Checked
+        'End If
+        Dim ChckB As New Object
 
-        If sender.Checked = True Then
+        For Each ctr As Control In Me.FLPMenu.Controls
 
-            ChBInicio.Checked = True
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
+            If TypeOf ctr Is CheckBox Then
+                ChckB = ctr
 
-        Else
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
+                If ChckB.Name <> chk.name Then
+                    '    ChckB.Checked = chk.Checked
 
+                    'Else
+                    ChckB.Checked = False
 
-
-
-        End If
-        Call ChecarCheckBoxs()
-    End Sub
-
-    Private Sub ChBOrganizar_Click(sender As Object, e As System.EventArgs) Handles ChBOrganizar.Click
-
-
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = True
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-
-        Else
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        End If
-        Call ChecarCheckBoxs()
-
-    End Sub
-
-    Private Sub ChBGravar_Click(sender As Object, e As System.EventArgs) Handles ChBGravar.Click
-
-
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = True
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        Else
-
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        End If
-        Call ChecarCheckBoxs()
-
-    End Sub
-
-    Private Sub ChbPesquisar_Click(sender As Object, e As System.EventArgs) Handles ChbPesquisar.Click
-
-
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = True
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        Else
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        End If
+                End If
+            End If
+        Next
 
         Call ChecarCheckBoxs()
 
     End Sub
-
-
-
-    Private Sub ChBExibir_Click(sender As Object, e As System.EventArgs) Handles ChBExibir.Click
-
-
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = True
-            ChBAjuda.Checked = False
-        Else
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        End If
-
-        Call ChecarCheckBoxs()
-
-    End Sub
-
-
-
-    Private Sub ChBAjuda_Click(sender As Object, e As System.EventArgs) Handles ChBAjuda.Click
-
-        If sender.Checked = True Then
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = True
-        Else
-            ChBInicio.Checked = False
-            ChBExplorar.Checked = False
-            ChBOrganizar.Checked = False
-            ChBGravar.Checked = False
-            ChbPesquisar.Checked = False
-            ChBExibir.Checked = False
-            ChBAjuda.Checked = False
-        End If
-
-        Call ChecarCheckBoxs()
-
-    End Sub
-
-
 
 
 
@@ -864,9 +726,31 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub ChBOrganizar_CheckedChanged(sender As Object, e As EventArgs) Handles ChBOrganizar.CheckedChanged
+    Private Sub ChBInicio_CheckedChanged(sender As Object, e As EventArgs) Handles ChBInicio.CheckedChanged, ChBOrganizar.CheckedChanged, ChBGravar.CheckedChanged, ChBExibir.CheckedChanged
+        Dim chk As CheckBox
+
+        chk = CType(sender, CheckBox)
+
+        toolBar_Menu.Visible = ChBInicio.Checked
+        toolBar_ViewMenu.Visible = ChBExibir.Checked
+        'Select Case chk.Name
+
+        '    Case "ChBInicio"
+
+
+        '    Case "ChBOrganizar"
+
+        '    Case "ChBGravar"
+
+        '    Case "ChBExibir"
+        '        toolBar_Menu.Visible = False
+        '        toolBar_ViewMenu.Visible = True
+
+        'End Select
 
     End Sub
+
+
 
     Private Sub RBImagens_CheckedChanged(sender As Object, e As EventArgs) Handles RBImagens.CheckedChanged
         If sender.checked Then

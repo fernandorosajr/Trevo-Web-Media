@@ -287,7 +287,7 @@
 
 
 
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseLeave, BTNPaneiDireito.MouseLeave, BTNMover.MouseLeave, BTNCopiar.MouseLeave, BTNExcluir.MouseLeave, BTNRenomear.MouseLeave, BTNOpcoes_BTNPainelEsquedo.MouseLeave, BTNOpcoes_BTNPaneiDireito.MouseLeave, BTNOpcoes_BTNMover.MouseLeave, BTNOpcoes_BTNCopiar.MouseLeave, BTNOpcoes_BTNExcluir.MouseLeave, BTNOpcoes_BTNRenomear.MouseLeave, BTNRecortarParaAreaDeTransferencia.MouseLeave, BTNColarDaAreaDeTranferencia.MouseLeave, BTNCopiarParaAreaDeTransferencia.MouseLeave, BTNLimparSelecao.MouseLeave, BTNInverterSelecao.MouseLeave, BTNSelecionarTudo.MouseLeave
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseLeave, BTNPaneiDireito.MouseLeave, BTNOpcoes_BTNPainelEsquedo.MouseLeave, BTNOpcoes_BTNPaneiDireito.MouseLeave
 
         Dim btn As Object
 
@@ -373,7 +373,7 @@
     End Sub
 
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseHover, BTNPaneiDireito.MouseHover, BTNMover.MouseHover, BTNCopiar.MouseHover, BTNExcluir.MouseHover, BTNRenomear.MouseHover, BTNOpcoes_BTNPainelEsquedo.MouseHover, BTNOpcoes_BTNPaneiDireito.MouseHover, BTNOpcoes_BTNMover.MouseHover, BTNOpcoes_BTNCopiar.MouseHover, BTNOpcoes_BTNExcluir.MouseHover, BTNOpcoes_BTNRenomear.MouseHover, BTNRecortarParaAreaDeTransferencia.MouseHover, BTNColarDaAreaDeTranferencia.MouseHover, BTNCopiarParaAreaDeTransferencia.MouseHover, BTNLimparSelecao.MouseHover, BTNInverterSelecao.MouseHover, BTNSelecionarTudo.MouseHover
+    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseHover, BTNPaneiDireito.MouseHover, BTNOpcoes_BTNPainelEsquedo.MouseHover, BTNOpcoes_BTNPaneiDireito.MouseHover
 
         Dim btn As Object
 
@@ -461,7 +461,7 @@
 
 
 
-    Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNPainelEsquedo.Click, BTNOpcoes_BTNMover.Click, BTNOpcoes_BTNCopiar.Click, BTNOpcoes_BTNExcluir.Click, BTNOpcoes_BTNRenomear.Click
+    Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNPainelEsquedo.Click
         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
 
@@ -515,11 +515,11 @@
 
     End Sub
 
-    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles BTNSelecionarTudo.MouseDown, BTNRenomear.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNPaneiDireito.MouseDown, BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNMover.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNExcluir.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNCopiar.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles BTNPaneiDireito.MouseDown, BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown
 
     End Sub
 
-    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles BTNSelecionarTudo.MouseUp, BTNRenomear.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNMover.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNExcluir.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNCopiar.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp, BTNPaneiDireito.MouseUp
+    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp, BTNPaneiDireito.MouseUp
 
     End Sub
 

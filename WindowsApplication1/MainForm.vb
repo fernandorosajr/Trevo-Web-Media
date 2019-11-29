@@ -307,6 +307,8 @@ Long, lpColorValues As Long) As Long
 
     Private Sub ChecarCheckBoxs()
         Dim ChckB As New CheckBox
+        Dim _visible As Boolean
+
 
         For Each ctr As Control In Me.FLPMenu.Controls
             If TypeOf ctr Is CheckBox Then
@@ -314,17 +316,19 @@ Long, lpColorValues As Long) As Long
 
                 ChckB = ctr
 
-                Panel_MenuBar.Visible = False
+                ' Panel_MenuBar.Visible = False
                 If ChckB.Checked = True Then
-                    Panel_MenuBar.Visible = True
+                    _visible = True
                     Exit For
                 Else
-                    Panel_MenuBar.Visible = False
+                    _visible = False
                 End If
                 'g.DrawRectangle(Pen, New  _
                 'Rectangle(ctr.Location, ctr.Size))
             End If
         Next
+
+        Panel_MenuBar.Visible = _visible
 
     End Sub
 

@@ -163,6 +163,12 @@
     <Compile Include="Componentes\OutrosComponentes\CustomControl_Test.vb">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.Designer.vb">
+      <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.Designer.vb">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </Compile>
@@ -175,10 +181,10 @@
     <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\Control_MenuBar.Designer.vb">
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.Designer.vb">
       <DependentUpon>Control_MenuBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\Control_MenuBar.vb">
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.Designer.vb">
@@ -301,13 +307,16 @@
     <EmbeddedResource Include="Componentes\OutrosComponentes\CustomControl_Test.resx">
       <DependentUpon>CustomControl_Test.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.resx">
+      <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.resx">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.resx">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\Control_MenuBar.resx">
+    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.resx">
       <DependentUpon>Control_MenuBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\ControlPainel_PastaIsolada.resx">
@@ -683,6 +692,8 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\panel2.png" />
+    <None Include="Resources\panel1.png" />
     <None Include="Resources\lixeira03.png" />
     <None Include="Resources\lixeira02.png" />
     <None Include="Resources\pastaprocesso02.png" />

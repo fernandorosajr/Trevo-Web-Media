@@ -1203,6 +1203,26 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property panelDireito() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("panelDireito", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property panelEsquerdo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("panelEsquerdo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Pasta() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Pasta", resourceCulture)

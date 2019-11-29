@@ -622,4 +622,10 @@
   <data name="lixeira03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lixeira03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="panelDireito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panelEsquerdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

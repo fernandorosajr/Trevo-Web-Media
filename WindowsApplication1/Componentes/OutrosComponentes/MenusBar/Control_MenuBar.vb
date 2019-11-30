@@ -4,6 +4,33 @@
 
     ' Propriedades do controle.
 
+
+    Private _borderColorChecked As Color
+
+    Public Property BorderColorChecked As Color
+        Get
+            Return _borderColorChecked
+        End Get
+        Set(value As Color)
+            _borderColorChecked = value
+
+        End Set
+    End Property
+
+    Private _backgroundColorChecked As Color
+
+    Public Property BackgroundColorChecked As Color
+        Get
+            Return _backgroundColorChecked
+
+        End Get
+        Set(value As Color)
+            _backgroundColorChecked = value
+
+        End Set
+    End Property
+
+
     ' Propriedade da cor de quando o mouse solta o botão.
     Private _borderColorSelectAndMouseUp As Color
 
@@ -547,14 +574,20 @@
 
     Private Sub Control_MenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        _borderColorSelectAndMouseHover = Color.RoyalBlue
-        _backgroundColorSelectAndMouseHover = Color.PowderBlue
+        _borderColorChecked = Color.RoyalBlue
+        _backgroundColorChecked = Color.LightSkyBlue
+
+        '_borderColorSelectAndMouseHover = Color.RoyalBlue
+        '_backgroundColorSelectAndMouseHover = Color.PowderBlue
+
+        _borderColorSelectAndMouseHover = Color.SkyBlue
+        _backgroundColorSelectAndMouseHover = Color.LightCyan
 
         _borderColorSelectAndMouseLeave = Color.Transparent
         _backgroundColorSelectAndMouseLeave = Color.Transparent
 
-        _borderColorSelectAndMouseDown = Color.RoyalBlue
-        _backgroundColorSelectAndMouseDown = Color.LightSkyBlue
+        _borderColorSelectAndMouseDown = Color.CornflowerBlue
+        _backgroundColorSelectAndMouseDown = Color.PowderBlue
 
         _borderColorSelectAndMouseUp = _borderColorSelectAndMouseHover
         _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
@@ -602,6 +635,25 @@
         menuItem = CType(sender, ToolStripMenuItem)
 
         BTNExcluir.BackgroundImage = menuItem.Image
+
+    End Sub
+
+    Private Sub CHKExibirPainelAreaDeTranferencia_CheckedChanged(sender As Object, e As EventArgs) Handles CHKExibirPainelAreaDeTranferencia.CheckedChanged
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+
+        If chk.Checked = True Then
+            chk.Parent.Parent.BackColor = _borderColorChecked
+            chk.FlatAppearance.BorderColor = _borderColorChecked
+            chk.FlatAppearance.BorderSize = 1
+
+        Else
+            chk.Parent.Parent.BackColor = Color.Transparent
+            chk.FlatAppearance.BorderSize = 0
+        End If
+        chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
+
+
 
     End Sub
 

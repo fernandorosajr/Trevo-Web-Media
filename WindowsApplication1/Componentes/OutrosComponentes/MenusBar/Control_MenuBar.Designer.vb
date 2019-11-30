@@ -1185,6 +1185,7 @@ Partial Class Control_MenuBar
         '
         'PanelBorder_BTNNovaMidia
         '
+        Me.PanelBorder_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_BTNNovaMidia.Controls.Add(Me.PanelEnvolve_BTNNovaMidia)
         Me.PanelBorder_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelBorder_BTNNovaMidia.Location = New System.Drawing.Point(57, 0)
@@ -1195,6 +1196,7 @@ Partial Class Control_MenuBar
         '
         'PanelEnvolve_BTNNovaMidia
         '
+        Me.PanelEnvolve_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
         Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.BTNNovaMidia)
         Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.BTNOpcoes_BTNNovaMidia)
         Me.PanelEnvolve_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
@@ -1258,6 +1260,7 @@ Partial Class Control_MenuBar
         '
         'PanelEnvolve_BTNNovaPasta
         '
+        Me.PanelEnvolve_BTNNovaPasta.BackColor = System.Drawing.Color.Transparent
         Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNNovaPasta)
         Me.PanelEnvolve_BTNNovaPasta.Controls.Add(Me.BTNOpcoes_BTNNovaPasta)
         Me.PanelEnvolve_BTNNovaPasta.Dock = System.Windows.Forms.DockStyle.Fill

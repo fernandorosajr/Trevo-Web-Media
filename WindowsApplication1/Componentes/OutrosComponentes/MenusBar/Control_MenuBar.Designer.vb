@@ -363,7 +363,7 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNExcluir.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExcluirParaLixeiraToolStripMenuItem, Me.ExcluirPermanentementeToolStripMenuItem, Me.ToolStripSeparator1, Me.PerguntarAntesDeExcluirToolStripMenuItem})
         Me.CMenuS_BTNOpcoes_BTNExcluir.Name = "ContextMenuStrip1"
         Me.CMenuS_BTNOpcoes_BTNExcluir.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNExcluir.Size = New System.Drawing.Size(212, 98)
+        Me.CMenuS_BTNOpcoes_BTNExcluir.Size = New System.Drawing.Size(212, 76)
         '
         'ExcluirParaLixeiraToolStripMenuItem
         '

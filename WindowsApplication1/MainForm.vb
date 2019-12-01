@@ -385,18 +385,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-
-
-    'Private Sub CHKExibirArvores_CheckedChanged(sender As Object, e As EventArgs)
-
-    '    'Panel_Recebe_Filtro.Visible = CHKExibirArvores.Checked
-    '    PanelMedia.Visible = Not (Panel_Recebe_Filtro.Visible)
-
-    'End Sub
-
-
-
-
     Private Sub ChkWinStyle_CheckStateChanged(sender As Object, e As EventArgs) Handles ChkWinStyle.CheckStateChanged
         If ChkWinStyle.Checked Then
 
@@ -570,7 +558,6 @@ Long, lpColorValues As Long) As Long
         Panel_Recebe_Filtro.Visible = ChBFiltro.Checked
         Splitter7.Visible = ChBFiltro.Checked
 
-
     End Sub
 
     Private Sub PanelRecebe_Paint(sender As Object, e As PaintEventArgs) Handles PanelRecebe.Paint
@@ -579,10 +566,6 @@ Long, lpColorValues As Long) As Long
 
     Private Sub Button81_Click(sender As Object, e As EventArgs) Handles Button81.Click
         Form1.Show()
-
-    End Sub
-
-    Private Sub RB_Por_Arquivos_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -637,21 +620,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    'Private Sub TVFiles_MouseDoubleClick(sender As Object, e As MouseEventArgs)
-
-    '    RB_Modo_Isolamento.Visible = True
-    '    RB_Fechar_Modo_Isolamento.Visible = True
-    '    PanelModo_Isolamento.Visible = True
-    '    SPRedimVisualizarMidia.Visible = False
-    '    PanelEnvolveMidiaAberta.Visible = False
-
-
-
-
-
-
-    'End Sub
-
     Private Sub RBArquivos_CheckedChanged(sender As Object, e As EventArgs) Handles RBArquivos.CheckedChanged
         If sender.checked Then
 
@@ -665,7 +633,6 @@ Long, lpColorValues As Long) As Long
         Else
 
             PanelArquivos.Visible = False
-
 
         End If
 
@@ -737,20 +704,6 @@ Long, lpColorValues As Long) As Long
 
         toolBar_Menu.Visible = ChBInicio.Checked
         toolBar_ViewMenu.Visible = ChBExibir.Checked
-        'Select Case chk.Name
-
-        '    Case "ChBInicio"
-
-
-        '    Case "ChBOrganizar"
-
-        '    Case "ChBGravar"
-
-        '    Case "ChBExibir"
-        '        toolBar_Menu.Visible = False
-        '        toolBar_ViewMenu.Visible = True
-
-        'End Select
 
     End Sub
 
@@ -771,7 +724,6 @@ Long, lpColorValues As Long) As Long
 
             PanelFoto.Visible = False
 
-
         End If
     End Sub
 
@@ -790,22 +742,7 @@ Long, lpColorValues As Long) As Long
 
             PanelVideos.Visible = False
 
-
         End If
     End Sub
 
-    'Private Sub RB_Explorer_GotFocus(sender As Object, e As EventArgs) Handles RB_Explorer.GotFocus
-    '    RB_Modo_Isolamento.Visible = False
-    '    RB_Fechar_Modo_Isolamento.Visible = False
-    '    PanelModo_Isolamento.Visible = False
-    'End Sub
-
-    'Private Sub RB_Fechar_Modo_Isolamento_Click(sender As Object, e As EventArgs)
-    '    RB_Modo_Isolamento.Visible = False
-    '    RB_Fechar_Modo_Isolamento.Visible = False
-    '    PanelModo_Isolamento.Visible = False
-
-    '    SPRedimVisualizarMidia.Visible = True
-    '    PanelEnvolveMidiaAberta.Visible = True
-    'End Sub
 End Class

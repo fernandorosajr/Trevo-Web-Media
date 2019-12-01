@@ -25,27 +25,91 @@ Partial Class Control_ViewMenuBar
         Me.components = New System.ComponentModel.Container()
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
-        Me.PanelGerenciar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
+        Me.PanelExibirEtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.CheckBox()
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.CheckBox()
+        Me.Panel48 = New System.Windows.Forms.Panel()
+        Me.LBLGEtiquetaDeSubTitulo = New System.Windows.Forms.Label()
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo = New System.Windows.Forms.Panel()
+        Me.PanelExibirEtiquetaDeTitulo = New System.Windows.Forms.Panel()
         Me.PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.PanelEtiqueta01_Direita = New System.Windows.Forms.Panel()
-        Me.PanelEtiqueta01_Esquerda = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
+        Me.PanelLayoutDireito_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem = New System.Windows.Forms.CheckBox()
+        Me.PanelLayoutCentro_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.CheckBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.LBLGerenciarAreaDeTranferencia = New System.Windows.Forms.Label()
+        Me.LBLGEtiquetaDeTitulo = New System.Windows.Forms.Label()
+        Me.PanelEnvolve_Exibir = New System.Windows.Forms.Panel()
+        Me.PanelExibir = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBExibirEstrelas = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirEstrelas = New System.Windows.Forms.Panel()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.LabelExibir = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelExibirPaineis = New System.Windows.Forms.Panel()
         Me.PanelExibirPaineis = New System.Windows.Forms.Panel()
-        Me.PanelAgrupaNova = New System.Windows.Forms.Panel()
-        Me.PanelBorder_BTNPainelEsquedo = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTNPainelEsquedo = New System.Windows.Forms.Panel()
-        Me.BTNPainelEsquedo = New System.Windows.Forms.Button()
-        Me.BTNOpcoes_BTNPainelEsquedo = New System.Windows.Forms.Button()
-        Me.PanelBorder_BTNPaneiDireito = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTNPaneiDireito = New System.Windows.Forms.Panel()
-        Me.BTNPaneiDireito = New System.Windows.Forms.Button()
-        Me.BTNOpcoes_BTNPaneiDireito = New System.Windows.Forms.Button()
+        Me.PanelAgrupa_ExibirPanel = New System.Windows.Forms.Panel()
         Me.Panel67 = New System.Windows.Forms.Panel()
-        Me.LBLPaineis = New System.Windows.Forms.Label()
+        Me.LBLExibirPaineis = New System.Windows.Forms.Label()
         Me.CMenuS_ExibirPaineis = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -73,163 +137,99 @@ Partial Class Control_ViewMenuBar
         Me.PerguntarAntesDeExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Panel33 = New System.Windows.Forms.Panel()
-        Me.Panel41 = New System.Windows.Forms.Panel()
-        Me.Panel48 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.Panel()
-        Me.CHKExibirPainelAreaDeTranferencia = New System.Windows.Forms.CheckBox()
-        Me.Panel42 = New System.Windows.Forms.Panel()
-        Me.Panel43 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.Panel45 = New System.Windows.Forms.Panel()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.Panel34 = New System.Windows.Forms.Panel()
-        Me.Panel35 = New System.Windows.Forms.Panel()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Panel38 = New System.Windows.Forms.Panel()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.Panel39 = New System.Windows.Forms.Panel()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.Panel29 = New System.Windows.Forms.Panel()
-        Me.Panel30 = New System.Windows.Forms.Panel()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.Panel31 = New System.Windows.Forms.Panel()
-        Me.Panel32 = New System.Windows.Forms.Panel()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.Panel46 = New System.Windows.Forms.Panel()
-        Me.Panel47 = New System.Windows.Forms.Panel()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.Panel49 = New System.Windows.Forms.Panel()
-        Me.Panel50 = New System.Windows.Forms.Panel()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.Panel51 = New System.Windows.Forms.Panel()
-        Me.Panel52 = New System.Windows.Forms.Panel()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.Panel53 = New System.Windows.Forms.Panel()
-        Me.Panel54 = New System.Windows.Forms.Panel()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
-        Me.Panel55 = New System.Windows.Forms.Panel()
-        Me.Panel56 = New System.Windows.Forms.Panel()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.Panel57 = New System.Windows.Forms.Panel()
-        Me.Panel58 = New System.Windows.Forms.Panel()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBExibirFlag = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirFlag = New System.Windows.Forms.Panel()
+        Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBPainelEsquedo = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBPainelEsquedo = New System.Windows.Forms.Panel()
+        Me.CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBPainelDireito = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBPainelDireito = New System.Windows.Forms.Panel()
+        Me.CKBPainelDireito = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBPainelDireito = New System.Windows.Forms.CheckBox()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
-        Me.PanelEnvolve_PanelAgrupaGerenciar.SuspendLayout()
-        Me.PanelGerenciar.SuspendLayout()
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
+        Me.PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
+        Me.Panel20.SuspendLayout()
+        Me.Panel24.SuspendLayout()
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.SuspendLayout()
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.SuspendLayout()
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.SuspendLayout()
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.SuspendLayout()
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.SuspendLayout()
+        Me.PanelExibirEtiquetaDeTitulo.SuspendLayout()
         Me.PanelAgrupaGerenciar.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.PanelEtiqueta01_Direita.SuspendLayout()
-        Me.PanelEtiqueta01_Esquerda.SuspendLayout()
+        Me.PanelEnvolve_EtiquetaDeTitulo.SuspendLayout()
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.SuspendLayout()
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.SuspendLayout()
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.SuspendLayout()
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.SuspendLayout()
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.SuspendLayout()
+        Me.PanelEnvolve_Exibir.SuspendLayout()
+        Me.PanelExibir.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.PanelBorder_CKBExibirEstrelas.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirEstrelas.SuspendLayout()
         Me.PanelEnvolve_PanelExibirPaineis.SuspendLayout()
         Me.PanelExibirPaineis.SuspendLayout()
-        Me.PanelAgrupaNova.SuspendLayout()
-        Me.PanelBorder_BTNPainelEsquedo.SuspendLayout()
-        Me.PanelEnvolve_BTNPainelEsquedo.SuspendLayout()
-        Me.PanelBorder_BTNPaneiDireito.SuspendLayout()
-        Me.PanelEnvolve_BTNPaneiDireito.SuspendLayout()
+        Me.PanelAgrupa_ExibirPanel.SuspendLayout()
         Me.CMenuS_ExibirPaineis.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNMover.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNCopiar.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNExcluir.SuspendLayout()
         Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Panel14.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel16.SuspendLayout()
-        Me.Panel20.SuspendLayout()
-        Me.Panel24.SuspendLayout()
-        Me.Panel26.SuspendLayout()
-        Me.Panel33.SuspendLayout()
-        Me.Panel41.SuspendLayout()
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.SuspendLayout()
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.SuspendLayout()
-        Me.Panel42.SuspendLayout()
-        Me.Panel43.SuspendLayout()
-        Me.Panel44.SuspendLayout()
-        Me.Panel45.SuspendLayout()
-        Me.Panel34.SuspendLayout()
-        Me.Panel35.SuspendLayout()
-        Me.Panel36.SuspendLayout()
-        Me.Panel38.SuspendLayout()
-        Me.Panel39.SuspendLayout()
-        Me.Panel40.SuspendLayout()
-        Me.Panel27.SuspendLayout()
-        Me.Panel28.SuspendLayout()
-        Me.Panel29.SuspendLayout()
-        Me.Panel30.SuspendLayout()
-        Me.Panel31.SuspendLayout()
-        Me.Panel32.SuspendLayout()
-        Me.Panel46.SuspendLayout()
-        Me.Panel47.SuspendLayout()
-        Me.Panel49.SuspendLayout()
-        Me.Panel50.SuspendLayout()
-        Me.Panel51.SuspendLayout()
-        Me.Panel52.SuspendLayout()
-        Me.Panel53.SuspendLayout()
-        Me.Panel54.SuspendLayout()
-        Me.Panel55.SuspendLayout()
-        Me.Panel56.SuspendLayout()
-        Me.Panel57.SuspendLayout()
-        Me.Panel58.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel19.SuspendLayout()
-        Me.Panel21.SuspendLayout()
-        Me.Panel22.SuspendLayout()
+        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelBorder_CKBExibirFlag.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirFlag.SuspendLayout()
+        Me.PanelBorder_CKBPainelEsquedo.SuspendLayout()
+        Me.PanelEnvolve_CKBPainelEsquedo.SuspendLayout()
+        Me.PanelBorder_CKBPainelDireito.SuspendLayout()
+        Me.PanelEnvolve_CKBPainelDireito.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -243,9 +243,9 @@ Partial Class Control_ViewMenuBar
         '
         'Panel25
         '
-        Me.Panel25.Controls.Add(Me.Panel7)
-        Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelAgrupaGerenciar)
-        Me.Panel25.Controls.Add(Me.Panel5)
+        Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo)
+        Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo)
+        Me.Panel25.Controls.Add(Me.PanelEnvolve_Exibir)
         Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelExibirPaineis)
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
@@ -253,90 +253,1019 @@ Partial Class Control_ViewMenuBar
         Me.Panel25.Size = New System.Drawing.Size(1248, 83)
         Me.Panel25.TabIndex = 6
         '
-        'PanelEnvolve_PanelAgrupaGerenciar
+        'PanelEnvolve_PanelExibirEtiquetaDeSubTitulo
         '
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Controls.Add(Me.PanelGerenciar)
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Location = New System.Drawing.Point(402, 0)
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Name = "PanelEnvolve_PanelAgrupaGerenciar"
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Size = New System.Drawing.Size(343, 83)
-        Me.PanelEnvolve_PanelAgrupaGerenciar.TabIndex = 8
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.PanelExibirEtiquetaDeSubTitulo)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Location = New System.Drawing.Point(820, 0)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Name = "PanelEnvolve_PanelExibirEtiquetaDeSubTitulo"
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.Size = New System.Drawing.Size(409, 83)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.TabIndex = 11
         '
-        'PanelGerenciar
+        'PanelExibirEtiquetaDeSubTitulo
         '
-        Me.PanelGerenciar.Controls.Add(Me.PanelAgrupaGerenciar)
-        Me.PanelGerenciar.Controls.Add(Me.Panel11)
-        Me.PanelGerenciar.Controls.Add(Me.LBLGerenciarAreaDeTranferencia)
-        Me.PanelGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelGerenciar.Location = New System.Drawing.Point(3, 3)
-        Me.PanelGerenciar.Name = "PanelGerenciar"
-        Me.PanelGerenciar.Size = New System.Drawing.Size(337, 77)
-        Me.PanelGerenciar.TabIndex = 6
+        Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.Panel20)
+        Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.Panel48)
+        Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.LBLGEtiquetaDeSubTitulo)
+        Me.PanelExibirEtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelExibirEtiquetaDeSubTitulo.Location = New System.Drawing.Point(3, 3)
+        Me.PanelExibirEtiquetaDeSubTitulo.Name = "PanelExibirEtiquetaDeSubTitulo"
+        Me.PanelExibirEtiquetaDeSubTitulo.Size = New System.Drawing.Size(403, 77)
+        Me.PanelExibirEtiquetaDeSubTitulo.TabIndex = 6
+        '
+        'Panel20
+        '
+        Me.Panel20.Controls.Add(Me.Panel24)
+        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel20.Location = New System.Drawing.Point(0, 0)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(402, 64)
+        Me.Panel20.TabIndex = 11
+        '
+        'Panel24
+        '
+        Me.Panel24.Controls.Add(Me.PanelLayoutDireito_EtiquetaDeSubTitulo)
+        Me.Panel24.Controls.Add(Me.PanelLayoutCentro_EtiquetaDeSubTitulo)
+        Me.Panel24.Controls.Add(Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo)
+        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel24.Location = New System.Drawing.Point(0, 0)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(402, 64)
+        Me.Panel24.TabIndex = 21
+        '
+        'PanelLayoutDireito_EtiquetaDeSubTitulo
+        '
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Location = New System.Drawing.Point(236, 0)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Name = "PanelLayoutDireito_EtiquetaDeSubTitulo"
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.Size = New System.Drawing.Size(149, 64)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.TabIndex = 24
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(149, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 26
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Tamanho)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(147, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Tamanho
+        '
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Name = "CKBEtiquetaDeSubTitulo_Tamanho"
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(147, 19)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Text = "Tamanho"
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Size = New System.Drawing.Size(149, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Controls.Add(Me.CKBEtiquetaDeSubTitulo_DataDeModificacao)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Size = New System.Drawing.Size(147, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_DataDeModificacao
+        '
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Name = "CKBEtiquetaDeSubTitulo_DataDeModificacao"
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Size = New System.Drawing.Size(147, 19)
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.Text = "Data de modificação"
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_DataDeModificacao.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Controls.Add(Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(149, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 24
+        '
+        'PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao
+        '
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Controls.Add(Me.CKBEtiquetaDeSubTitulo_DataDeCriacao)
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao"
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(147, 19)
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_DataDeCriacao
+        '
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "CKBEtiquetaDeSubTitulo_DataDeCriacao"
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(147, 19)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Text = "Data de criação"
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.UseVisualStyleBackColor = False
+        '
+        'PanelLayoutCentro_EtiquetaDeSubTitulo
+        '
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Location = New System.Drawing.Point(150, 0)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Name = "PanelLayoutCentro_EtiquetaDeSubTitulo"
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.Size = New System.Drawing.Size(86, 64)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.TabIndex = 23
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Tipo
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Tipo"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(86, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 26
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Tipo)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(84, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Tipo
+        '
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Tipo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Name = "CKBEtiquetaDeSubTitulo_Tipo"
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Text = "Tipo"
+        Me.CKBEtiquetaDeSubTitulo_Tipo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Tipo.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Album
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Album"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(86, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Album
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Album)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Album"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(84, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Album
+        '
+        Me.CKBEtiquetaDeSubTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Album.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Album.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Album.Name = "CKBEtiquetaDeSubTitulo_Album"
+        Me.CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Album.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Album.Text = "Álbum"
+        Me.CKBEtiquetaDeSubTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Album.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Autor
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Autor"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(86, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.TabIndex = 24
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Autor)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(84, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Autor
+        '
+        Me.CKBEtiquetaDeSubTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Autor.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Autor.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Autor.Name = "CKBEtiquetaDeSubTitulo_Autor"
+        Me.CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Autor.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Autor.Text = "Autor"
+        Me.CKBEtiquetaDeSubTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Autor.UseVisualStyleBackColor = False
+        '
+        'PanelLayoutEsquerdo_EtiquetaDeSubTitulo
+        '
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Name = "PanelLayoutEsquerdo_EtiquetaDeSubTitulo"
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.Size = New System.Drawing.Size(150, 64)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.TabIndex = 22
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(150, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Controls.Add(Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(148, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_TamanhoDaImagem
+        '
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Name = "CKBEtiquetaDeSubTitulo_TamanhoDaImagem"
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(148, 19)
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Text = "Tamanho da imagem"
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_TamanhoDaImagem.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Legenda
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Legenda"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(150, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 24
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Legenda)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(148, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Legenda
+        '
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Name = "CKBEtiquetaDeSubTitulo_Legenda"
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(148, 19)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Text = "Legenda"
+        Me.CKBEtiquetaDeSubTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Legenda.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar
+        '
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Name = "PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar"
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(150, 21)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 23
+        '
+        'PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Controls.Add(Me.CKBEtiquetaDeSubTitulo_Ocultar)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar"
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(148, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 22
+        '
+        'CKBEtiquetaDeSubTitulo_Ocultar
+        '
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Name = "CKBEtiquetaDeSubTitulo_Ocultar"
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(148, 19)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Text = "Ocultar"
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.UseVisualStyleBackColor = False
+        '
+        'Panel48
+        '
+        Me.Panel48.BackColor = System.Drawing.Color.LightGray
+        Me.Panel48.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel48.Location = New System.Drawing.Point(402, 0)
+        Me.Panel48.Name = "Panel48"
+        Me.Panel48.Size = New System.Drawing.Size(1, 64)
+        Me.Panel48.TabIndex = 10
+        '
+        'LBLGEtiquetaDeSubTitulo
+        '
+        Me.LBLGEtiquetaDeSubTitulo.AutoEllipsis = True
+        Me.LBLGEtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLGEtiquetaDeSubTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLGEtiquetaDeSubTitulo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLGEtiquetaDeSubTitulo.Location = New System.Drawing.Point(0, 64)
+        Me.LBLGEtiquetaDeSubTitulo.Name = "LBLGEtiquetaDeSubTitulo"
+        Me.LBLGEtiquetaDeSubTitulo.Size = New System.Drawing.Size(403, 13)
+        Me.LBLGEtiquetaDeSubTitulo.TabIndex = 6
+        Me.LBLGEtiquetaDeSubTitulo.Text = "Etiqueta de Subtítulo"
+        Me.LBLGEtiquetaDeSubTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PanelEnvolve_PanelExibirEtiquetaDeTitulo
+        '
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Controls.Add(Me.PanelExibirEtiquetaDeTitulo)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Location = New System.Drawing.Point(402, 0)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Name = "PanelEnvolve_PanelExibirEtiquetaDeTitulo"
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.Size = New System.Drawing.Size(418, 83)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.TabIndex = 8
+        '
+        'PanelExibirEtiquetaDeTitulo
+        '
+        Me.PanelExibirEtiquetaDeTitulo.Controls.Add(Me.PanelAgrupaGerenciar)
+        Me.PanelExibirEtiquetaDeTitulo.Controls.Add(Me.Panel11)
+        Me.PanelExibirEtiquetaDeTitulo.Controls.Add(Me.LBLGEtiquetaDeTitulo)
+        Me.PanelExibirEtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelExibirEtiquetaDeTitulo.Location = New System.Drawing.Point(3, 3)
+        Me.PanelExibirEtiquetaDeTitulo.Name = "PanelExibirEtiquetaDeTitulo"
+        Me.PanelExibirEtiquetaDeTitulo.Size = New System.Drawing.Size(412, 77)
+        Me.PanelExibirEtiquetaDeTitulo.TabIndex = 6
         '
         'PanelAgrupaGerenciar
         '
-        Me.PanelAgrupaGerenciar.Controls.Add(Me.Panel8)
+        Me.PanelAgrupaGerenciar.Controls.Add(Me.PanelEnvolve_EtiquetaDeTitulo)
         Me.PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAgrupaGerenciar.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaGerenciar.Name = "PanelAgrupaGerenciar"
-        Me.PanelAgrupaGerenciar.Size = New System.Drawing.Size(336, 64)
+        Me.PanelAgrupaGerenciar.Size = New System.Drawing.Size(411, 64)
         Me.PanelAgrupaGerenciar.TabIndex = 11
         '
-        'Panel8
+        'PanelEnvolve_EtiquetaDeTitulo
         '
-        Me.Panel8.Controls.Add(Me.Panel1)
-        Me.Panel8.Controls.Add(Me.PanelEtiqueta01_Direita)
-        Me.Panel8.Controls.Add(Me.PanelEtiqueta01_Esquerda)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(0, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(336, 64)
-        Me.Panel8.TabIndex = 21
+        Me.PanelEnvolve_EtiquetaDeTitulo.Controls.Add(Me.PanelLayoutDireito_EtiquetaDeTitulo)
+        Me.PanelEnvolve_EtiquetaDeTitulo.Controls.Add(Me.PanelLayoutCentro_EtiquetaDeTitulo)
+        Me.PanelEnvolve_EtiquetaDeTitulo.Controls.Add(Me.PanelLayoutEsquerdo_EtiquetaDeTitulo)
+        Me.PanelEnvolve_EtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_EtiquetaDeTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_EtiquetaDeTitulo.Name = "PanelEnvolve_EtiquetaDeTitulo"
+        Me.PanelEnvolve_EtiquetaDeTitulo.Size = New System.Drawing.Size(411, 64)
+        Me.PanelEnvolve_EtiquetaDeTitulo.TabIndex = 21
         '
-        'PanelEtiqueta01_Direita
+        'PanelLayoutDireito_EtiquetaDeTitulo
         '
-        Me.PanelEtiqueta01_Direita.Controls.Add(Me.Panel57)
-        Me.PanelEtiqueta01_Direita.Controls.Add(Me.Panel55)
-        Me.PanelEtiqueta01_Direita.Controls.Add(Me.Panel53)
-        Me.PanelEtiqueta01_Direita.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEtiqueta01_Direita.Location = New System.Drawing.Point(95, 0)
-        Me.PanelEtiqueta01_Direita.Name = "PanelEtiqueta01_Direita"
-        Me.PanelEtiqueta01_Direita.Size = New System.Drawing.Size(113, 64)
-        Me.PanelEtiqueta01_Direita.TabIndex = 23
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_Album)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_Autor)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Location = New System.Drawing.Point(247, 0)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Name = "PanelLayoutDireito_EtiquetaDeTitulo"
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.Size = New System.Drawing.Size(156, 64)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.TabIndex = 24
         '
-        'PanelEtiqueta01_Esquerda
+        'PanelBorder_CKBEtiquetaDeTitulo_Album
         '
-        Me.PanelEtiqueta01_Esquerda.Controls.Add(Me.Panel51)
-        Me.PanelEtiqueta01_Esquerda.Controls.Add(Me.Panel49)
-        Me.PanelEtiqueta01_Esquerda.Controls.Add(Me.Panel46)
-        Me.PanelEtiqueta01_Esquerda.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEtiqueta01_Esquerda.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEtiqueta01_Esquerda.Name = "PanelEtiqueta01_Esquerda"
-        Me.PanelEtiqueta01_Esquerda.Size = New System.Drawing.Size(95, 64)
-        Me.PanelEtiqueta01_Esquerda.TabIndex = 22
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Name = "PanelBorder_CKBEtiquetaDeTitulo_Album"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(156, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.TabIndex = 26
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_Album
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Controls.Add(Me.CKBEtiquetaDeTitulo_Album)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Album"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(154, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_Album
+        '
+        Me.CKBEtiquetaDeTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Album.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Album.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Album.Name = "CKBEtiquetaDeTitulo_Album"
+        Me.CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(154, 19)
+        Me.CKBEtiquetaDeTitulo_Album.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Album.Text = "Álbum"
+        Me.CKBEtiquetaDeTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Album.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_Autor
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Name = "PanelBorder_CKBEtiquetaDeTitulo_Autor"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(156, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_Autor
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Controls.Add(Me.CKBEtiquetaDeTitulo_Autor)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Autor"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(154, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_Autor
+        '
+        Me.CKBEtiquetaDeTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Autor.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Autor.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Autor.Name = "CKBEtiquetaDeTitulo_Autor"
+        Me.CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(154, 19)
+        Me.CKBEtiquetaDeTitulo_Autor.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Autor.Text = "Autor"
+        Me.CKBEtiquetaDeTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Autor.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Name = "PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(156, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.TabIndex = 24
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Controls.Add(Me.CKBEtiquetaDeTitulo_TamanhoDaImagem)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(154, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_TamanhoDaImagem
+        '
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Name = "CKBEtiquetaDeTitulo_TamanhoDaImagem"
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(154, 19)
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.Text = "Tamanho de imagem"
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_TamanhoDaImagem.UseVisualStyleBackColor = False
+        '
+        'PanelLayoutCentro_EtiquetaDeTitulo
+        '
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Location = New System.Drawing.Point(95, 0)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Name = "PanelLayoutCentro_EtiquetaDeTitulo"
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.Size = New System.Drawing.Size(152, 64)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.TabIndex = 23
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_Tamanho
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Name = "PanelBorder_CKBEtiquetaDeTitulo_Tamanho"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(152, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.TabIndex = 26
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Controls.Add(Me.CKBEtiquetaDeTitulo_Tamanho)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(150, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_Tamanho
+        '
+        Me.CKBEtiquetaDeTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Tamanho.Name = "CKBEtiquetaDeTitulo_Tamanho"
+        Me.CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_Tamanho.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Tamanho.Text = "Tamanho"
+        Me.CKBEtiquetaDeTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Tamanho.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Name = "PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Size = New System.Drawing.Size(152, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Controls.Add(Me.CKBEtiquetaDeTitulo_DataDeModificacao)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Size = New System.Drawing.Size(150, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_DataDeModificacao
+        '
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Name = "CKBEtiquetaDeTitulo_DataDeModificacao"
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.Text = "Data de modificação"
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_DataDeModificacao.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Name = "PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(152, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 24
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Controls.Add(Me.CKBEtiquetaDeTitulo_DataDeCriacao)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_DataDeCriacao
+        '
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Name = "CKBEtiquetaDeTitulo_DataDeCriacao"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Text = "Data de criação"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.UseVisualStyleBackColor = False
+        '
+        'PanelLayoutEsquerdo_EtiquetaDeTitulo
+        '
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Controls.Add(Me.PanelBorder_CKBEtiquetaDeTitulo_Nome)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Name = "PanelLayoutEsquerdo_EtiquetaDeTitulo"
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.Size = New System.Drawing.Size(95, 64)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.TabIndex = 22
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_Legenda
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(0, 42)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Name = "PanelBorder_CKBEtiquetaDeTitulo_Legenda"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(95, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.TabIndex = 26
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_Legenda
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Controls.Add(Me.CKBEtiquetaDeTitulo_Legenda)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Legenda"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(93, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_Legenda
+        '
+        Me.CKBEtiquetaDeTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Legenda.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Legenda.Name = "CKBEtiquetaDeTitulo_Legenda"
+        Me.CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_Legenda.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Legenda.Text = "Legenda"
+        Me.CKBEtiquetaDeTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Legenda.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Location = New System.Drawing.Point(0, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Name = "PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(95, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 25
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Controls.Add(Me.CKBEtiquetaDeTitulo_NomeEExtencao)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(93, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_NomeEExtencao
+        '
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Name = "CKBEtiquetaDeTitulo_NomeEExtencao"
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Text = "Nome.extenção"
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBEtiquetaDeTitulo_Nome
+        '
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Name = "PanelBorder_CKBEtiquetaDeTitulo_Nome"
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(95, 21)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.TabIndex = 24
+        '
+        'PanelEnvolve_CKBEtiquetaDeTitulo_Nome
+        '
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Controls.Add(Me.CKBEtiquetaDeTitulo_Nome)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Nome"
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(93, 19)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.TabIndex = 22
+        '
+        'CKBEtiquetaDeTitulo_Nome
+        '
+        Me.CKBEtiquetaDeTitulo_Nome.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Nome.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Nome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Nome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Nome.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Nome.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Nome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Nome.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Nome.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Nome.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Nome.Name = "CKBEtiquetaDeTitulo_Nome"
+        Me.CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_Nome.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Nome.Text = "Nome"
+        Me.CKBEtiquetaDeTitulo_Nome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Nome.UseVisualStyleBackColor = False
         '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.LightGray
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(336, 0)
+        Me.Panel11.Location = New System.Drawing.Point(411, 0)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(1, 64)
         Me.Panel11.TabIndex = 10
         '
-        'LBLGerenciarAreaDeTranferencia
+        'LBLGEtiquetaDeTitulo
         '
-        Me.LBLGerenciarAreaDeTranferencia.AutoEllipsis = True
-        Me.LBLGerenciarAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLGerenciarAreaDeTranferencia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLGerenciarAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLGerenciarAreaDeTranferencia.Location = New System.Drawing.Point(0, 64)
-        Me.LBLGerenciarAreaDeTranferencia.Name = "LBLGerenciarAreaDeTranferencia"
-        Me.LBLGerenciarAreaDeTranferencia.Size = New System.Drawing.Size(337, 13)
-        Me.LBLGerenciarAreaDeTranferencia.TabIndex = 6
-        Me.LBLGerenciarAreaDeTranferencia.Text = "Etiqueta de Título"
-        Me.LBLGerenciarAreaDeTranferencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LBLGEtiquetaDeTitulo.AutoEllipsis = True
+        Me.LBLGEtiquetaDeTitulo.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLGEtiquetaDeTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLGEtiquetaDeTitulo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLGEtiquetaDeTitulo.Location = New System.Drawing.Point(0, 64)
+        Me.LBLGEtiquetaDeTitulo.Name = "LBLGEtiquetaDeTitulo"
+        Me.LBLGEtiquetaDeTitulo.Size = New System.Drawing.Size(412, 13)
+        Me.LBLGEtiquetaDeTitulo.TabIndex = 6
+        Me.LBLGEtiquetaDeTitulo.Text = "Etiqueta de Título"
+        Me.LBLGEtiquetaDeTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PanelEnvolve_Exibir
+        '
+        Me.PanelEnvolve_Exibir.Controls.Add(Me.PanelExibir)
+        Me.PanelEnvolve_Exibir.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_Exibir.Location = New System.Drawing.Point(165, 0)
+        Me.PanelEnvolve_Exibir.Name = "PanelEnvolve_Exibir"
+        Me.PanelEnvolve_Exibir.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_Exibir.Size = New System.Drawing.Size(237, 83)
+        Me.PanelEnvolve_Exibir.TabIndex = 10
+        '
+        'PanelExibir
+        '
+        Me.PanelExibir.Controls.Add(Me.Panel9)
+        Me.PanelExibir.Controls.Add(Me.Panel37)
+        Me.PanelExibir.Controls.Add(Me.LabelExibir)
+        Me.PanelExibir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelExibir.Location = New System.Drawing.Point(3, 3)
+        Me.PanelExibir.Name = "PanelExibir"
+        Me.PanelExibir.Size = New System.Drawing.Size(231, 77)
+        Me.PanelExibir.TabIndex = 6
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.Panel10)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel9.Location = New System.Drawing.Point(0, 0)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(230, 64)
+        Me.Panel9.TabIndex = 11
+        '
+        'Panel10
+        '
+        Me.Panel10.Controls.Add(Me.PanelBorder_CKBExibirFlag)
+        Me.Panel10.Controls.Add(Me.PanelBorder_CKBExibirStatusGravado)
+        Me.Panel10.Controls.Add(Me.PanelBorder_CKBExibirEstrelas)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(0, 0)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(230, 64)
+        Me.Panel10.TabIndex = 20
+        '
+        'PanelBorder_CKBExibirEstrelas
+        '
+        Me.PanelBorder_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirEstrelas.Controls.Add(Me.PanelEnvolve_CKBExibirEstrelas)
+        Me.PanelBorder_CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBExibirEstrelas.Name = "PanelBorder_CKBExibirEstrelas"
+        Me.PanelBorder_CKBExibirEstrelas.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirEstrelas.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirEstrelas.TabIndex = 23
+        '
+        'PanelEnvolve_CKBExibirEstrelas
+        '
+        Me.PanelEnvolve_CKBExibirEstrelas.Controls.Add(Me.CKBExibirEstrelas)
+        Me.PanelEnvolve_CKBExibirEstrelas.Controls.Add(Me.CKBOpcoes_CKBExibirEstrelas)
+        Me.PanelEnvolve_CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirEstrelas.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirEstrelas.Name = "PanelEnvolve_CKBExibirEstrelas"
+        Me.PanelEnvolve_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirEstrelas.TabIndex = 10
+        '
+        'Panel37
+        '
+        Me.Panel37.BackColor = System.Drawing.Color.LightGray
+        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel37.Location = New System.Drawing.Point(230, 0)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(1, 64)
+        Me.Panel37.TabIndex = 10
+        '
+        'LabelExibir
+        '
+        Me.LabelExibir.AutoEllipsis = True
+        Me.LabelExibir.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LabelExibir.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LabelExibir.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LabelExibir.Location = New System.Drawing.Point(0, 64)
+        Me.LabelExibir.Name = "LabelExibir"
+        Me.LabelExibir.Size = New System.Drawing.Size(231, 13)
+        Me.LabelExibir.TabIndex = 6
+        Me.LabelExibir.Text = "Exibir"
+        Me.LabelExibir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PanelEnvolve_PanelExibirPaineis
         '
@@ -350,149 +1279,24 @@ Partial Class Control_ViewMenuBar
         '
         'PanelExibirPaineis
         '
-        Me.PanelExibirPaineis.Controls.Add(Me.PanelAgrupaNova)
+        Me.PanelExibirPaineis.Controls.Add(Me.PanelAgrupa_ExibirPanel)
         Me.PanelExibirPaineis.Controls.Add(Me.Panel67)
-        Me.PanelExibirPaineis.Controls.Add(Me.LBLPaineis)
+        Me.PanelExibirPaineis.Controls.Add(Me.LBLExibirPaineis)
         Me.PanelExibirPaineis.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelExibirPaineis.Location = New System.Drawing.Point(3, 3)
         Me.PanelExibirPaineis.Name = "PanelExibirPaineis"
         Me.PanelExibirPaineis.Size = New System.Drawing.Size(159, 77)
         Me.PanelExibirPaineis.TabIndex = 6
         '
-        'PanelAgrupaNova
+        'PanelAgrupa_ExibirPanel
         '
-        Me.PanelAgrupaNova.Controls.Add(Me.PanelBorder_BTNPainelEsquedo)
-        Me.PanelAgrupaNova.Controls.Add(Me.PanelBorder_BTNPaneiDireito)
-        Me.PanelAgrupaNova.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaNova.Location = New System.Drawing.Point(0, 0)
-        Me.PanelAgrupaNova.Name = "PanelAgrupaNova"
-        Me.PanelAgrupaNova.Size = New System.Drawing.Size(158, 64)
-        Me.PanelAgrupaNova.TabIndex = 11
-        '
-        'PanelBorder_BTNPainelEsquedo
-        '
-        Me.PanelBorder_BTNPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_BTNPainelEsquedo.Controls.Add(Me.PanelEnvolve_BTNPainelEsquedo)
-        Me.PanelBorder_BTNPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_BTNPainelEsquedo.Location = New System.Drawing.Point(75, 0)
-        Me.PanelBorder_BTNPainelEsquedo.Name = "PanelBorder_BTNPainelEsquedo"
-        Me.PanelBorder_BTNPainelEsquedo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNPainelEsquedo.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_BTNPainelEsquedo.TabIndex = 0
-        '
-        'PanelEnvolve_BTNPainelEsquedo
-        '
-        Me.PanelEnvolve_BTNPainelEsquedo.Controls.Add(Me.BTNPainelEsquedo)
-        Me.PanelEnvolve_BTNPainelEsquedo.Controls.Add(Me.BTNOpcoes_BTNPainelEsquedo)
-        Me.PanelEnvolve_BTNPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_BTNPainelEsquedo.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_BTNPainelEsquedo.Name = "PanelEnvolve_BTNPainelEsquedo"
-        Me.PanelEnvolve_BTNPainelEsquedo.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_BTNPainelEsquedo.TabIndex = 10
-        '
-        'BTNPainelEsquedo
-        '
-        Me.BTNPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.BTNPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
-        Me.BTNPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNPainelEsquedo.FlatAppearance.BorderSize = 0
-        Me.BTNPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNPainelEsquedo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.BTNPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNPainelEsquedo.ForeColor = System.Drawing.Color.Black
-        Me.BTNPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPainelEsquedo.Location = New System.Drawing.Point(0, 0)
-        Me.BTNPainelEsquedo.Name = "BTNPainelEsquedo"
-        Me.BTNPainelEsquedo.Size = New System.Drawing.Size(73, 42)
-        Me.BTNPainelEsquedo.TabIndex = 8
-        Me.BTNPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNPainelEsquedo.UseVisualStyleBackColor = False
-        '
-        'BTNOpcoes_BTNPainelEsquedo
-        '
-        Me.BTNOpcoes_BTNPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNPainelEsquedo.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNPainelEsquedo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.BTNOpcoes_BTNPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNOpcoes_BTNPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNPainelEsquedo.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNPainelEsquedo.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.BTNOpcoes_BTNPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNPainelEsquedo.Location = New System.Drawing.Point(0, 42)
-        Me.BTNOpcoes_BTNPainelEsquedo.Name = "BTNOpcoes_BTNPainelEsquedo"
-        Me.BTNOpcoes_BTNPainelEsquedo.Size = New System.Drawing.Size(73, 20)
-        Me.BTNOpcoes_BTNPainelEsquedo.TabIndex = 9
-        Me.BTNOpcoes_BTNPainelEsquedo.Text = "Esquerdo"
-        Me.BTNOpcoes_BTNPainelEsquedo.UseVisualStyleBackColor = False
-        '
-        'PanelBorder_BTNPaneiDireito
-        '
-        Me.PanelBorder_BTNPaneiDireito.Controls.Add(Me.PanelEnvolve_BTNPaneiDireito)
-        Me.PanelBorder_BTNPaneiDireito.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_BTNPaneiDireito.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_BTNPaneiDireito.Name = "PanelBorder_BTNPaneiDireito"
-        Me.PanelBorder_BTNPaneiDireito.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNPaneiDireito.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_BTNPaneiDireito.TabIndex = 1
-        '
-        'PanelEnvolve_BTNPaneiDireito
-        '
-        Me.PanelEnvolve_BTNPaneiDireito.Controls.Add(Me.BTNPaneiDireito)
-        Me.PanelEnvolve_BTNPaneiDireito.Controls.Add(Me.BTNOpcoes_BTNPaneiDireito)
-        Me.PanelEnvolve_BTNPaneiDireito.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_BTNPaneiDireito.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_BTNPaneiDireito.Name = "PanelEnvolve_BTNPaneiDireito"
-        Me.PanelEnvolve_BTNPaneiDireito.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_BTNPaneiDireito.TabIndex = 10
-        '
-        'BTNPaneiDireito
-        '
-        Me.BTNPaneiDireito.BackColor = System.Drawing.Color.Transparent
-        Me.BTNPaneiDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
-        Me.BTNPaneiDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNPaneiDireito.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNPaneiDireito.FlatAppearance.BorderSize = 0
-        Me.BTNPaneiDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNPaneiDireito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue
-        Me.BTNPaneiDireito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNPaneiDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNPaneiDireito.ForeColor = System.Drawing.Color.Black
-        Me.BTNPaneiDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNPaneiDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPaneiDireito.Location = New System.Drawing.Point(0, 0)
-        Me.BTNPaneiDireito.Name = "BTNPaneiDireito"
-        Me.BTNPaneiDireito.Size = New System.Drawing.Size(73, 42)
-        Me.BTNPaneiDireito.TabIndex = 8
-        Me.BTNPaneiDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNPaneiDireito.UseVisualStyleBackColor = False
-        '
-        'BTNOpcoes_BTNPaneiDireito
-        '
-        Me.BTNOpcoes_BTNPaneiDireito.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNPaneiDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNPaneiDireito.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNPaneiDireito.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNPaneiDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNPaneiDireito.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.BTNOpcoes_BTNPaneiDireito.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNOpcoes_BTNPaneiDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNPaneiDireito.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNPaneiDireito.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.BTNOpcoes_BTNPaneiDireito.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNPaneiDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNPaneiDireito.Location = New System.Drawing.Point(0, 42)
-        Me.BTNOpcoes_BTNPaneiDireito.Name = "BTNOpcoes_BTNPaneiDireito"
-        Me.BTNOpcoes_BTNPaneiDireito.Size = New System.Drawing.Size(73, 20)
-        Me.BTNOpcoes_BTNPaneiDireito.TabIndex = 9
-        Me.BTNOpcoes_BTNPaneiDireito.Text = "Direito"
-        Me.BTNOpcoes_BTNPaneiDireito.UseVisualStyleBackColor = False
+        Me.PanelAgrupa_ExibirPanel.Controls.Add(Me.PanelBorder_CKBPainelDireito)
+        Me.PanelAgrupa_ExibirPanel.Controls.Add(Me.PanelBorder_CKBPainelEsquedo)
+        Me.PanelAgrupa_ExibirPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelAgrupa_ExibirPanel.Location = New System.Drawing.Point(0, 0)
+        Me.PanelAgrupa_ExibirPanel.Name = "PanelAgrupa_ExibirPanel"
+        Me.PanelAgrupa_ExibirPanel.Size = New System.Drawing.Size(158, 64)
+        Me.PanelAgrupa_ExibirPanel.TabIndex = 11
         '
         'Panel67
         '
@@ -503,18 +1307,18 @@ Partial Class Control_ViewMenuBar
         Me.Panel67.Size = New System.Drawing.Size(1, 64)
         Me.Panel67.TabIndex = 10
         '
-        'LBLPaineis
+        'LBLExibirPaineis
         '
-        Me.LBLPaineis.AutoEllipsis = True
-        Me.LBLPaineis.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLPaineis.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLPaineis.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLPaineis.Location = New System.Drawing.Point(0, 64)
-        Me.LBLPaineis.Name = "LBLPaineis"
-        Me.LBLPaineis.Size = New System.Drawing.Size(159, 13)
-        Me.LBLPaineis.TabIndex = 6
-        Me.LBLPaineis.Text = "Paineis"
-        Me.LBLPaineis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LBLExibirPaineis.AutoEllipsis = True
+        Me.LBLExibirPaineis.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLExibirPaineis.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLExibirPaineis.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLExibirPaineis.Location = New System.Drawing.Point(0, 64)
+        Me.LBLExibirPaineis.Name = "LBLExibirPaineis"
+        Me.LBLExibirPaineis.Size = New System.Drawing.Size(159, 13)
+        Me.LBLExibirPaineis.TabIndex = 6
+        Me.LBLExibirPaineis.Text = "Paineis"
+        Me.LBLExibirPaineis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CMenuS_ExibirPaineis
         '
@@ -717,1102 +1521,314 @@ Partial Class Control_ViewMenuBar
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
         Me.ToolStripMenuItem2.Text = "Critérios"
         '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel5.Location = New System.Drawing.Point(165, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel5.Size = New System.Drawing.Size(237, 83)
-        Me.Panel5.TabIndex = 10
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Panel9)
-        Me.Panel6.Controls.Add(Me.Panel37)
-        Me.Panel6.Controls.Add(Me.Label1)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(3, 3)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(231, 77)
-        Me.Panel6.TabIndex = 6
-        '
-        'Panel9
-        '
-        Me.Panel9.Controls.Add(Me.Panel10)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(0, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(230, 64)
-        Me.Panel9.TabIndex = 11
-        '
-        'Panel10
-        '
-        Me.Panel10.Controls.Add(Me.Panel12)
-        Me.Panel10.Controls.Add(Me.Panel14)
-        Me.Panel10.Controls.Add(Me.Panel17)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel10.Location = New System.Drawing.Point(0, 0)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(230, 64)
-        Me.Panel10.TabIndex = 20
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.Transparent
-        Me.Panel12.Controls.Add(Me.Panel13)
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel12.Location = New System.Drawing.Point(150, 0)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel12.Size = New System.Drawing.Size(75, 64)
-        Me.Panel12.TabIndex = 25
-        '
-        'Panel13
-        '
-        Me.Panel13.Controls.Add(Me.Button5)
-        Me.Panel13.Controls.Add(Me.Button6)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel13.Location = New System.Drawing.Point(1, 1)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(73, 62)
-        Me.Panel13.TabIndex = 10
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Black
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button5.Location = New System.Drawing.Point(0, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(73, 42)
-        Me.Button5.TabIndex = 8
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Black
-        Me.Button6.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button6.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button6.Location = New System.Drawing.Point(0, 42)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(73, 20)
-        Me.Button6.TabIndex = 9
-        Me.Button6.Text = "Flags"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Panel14
-        '
-        Me.Panel14.BackColor = System.Drawing.Color.Transparent
-        Me.Panel14.Controls.Add(Me.Panel15)
-        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel14.Location = New System.Drawing.Point(75, 0)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel14.Size = New System.Drawing.Size(75, 64)
-        Me.Panel14.TabIndex = 24
-        '
-        'Panel15
-        '
-        Me.Panel15.Controls.Add(Me.Button7)
-        Me.Panel15.Controls.Add(Me.Button8)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel15.Location = New System.Drawing.Point(1, 1)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(73, 62)
-        Me.Panel15.TabIndex = 10
-        '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.Color.Transparent
-        Me.Button7.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button7.FlatAppearance.BorderSize = 0
-        Me.Button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button7.ForeColor = System.Drawing.Color.Black
-        Me.Button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button7.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button7.Location = New System.Drawing.Point(0, 0)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(73, 42)
-        Me.Button7.TabIndex = 8
-        Me.Button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button7.UseVisualStyleBackColor = False
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.Color.Transparent
-        Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button8.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button8.FlatAppearance.BorderSize = 0
-        Me.Button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button8.ForeColor = System.Drawing.Color.Black
-        Me.Button8.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button8.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button8.Location = New System.Drawing.Point(0, 42)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(73, 20)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "Gravado?"
-        Me.Button8.UseVisualStyleBackColor = False
-        '
-        'Panel17
-        '
-        Me.Panel17.BackColor = System.Drawing.Color.Transparent
-        Me.Panel17.Controls.Add(Me.Panel18)
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel17.Location = New System.Drawing.Point(0, 0)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel17.Size = New System.Drawing.Size(75, 64)
-        Me.Panel17.TabIndex = 23
-        '
-        'Panel18
-        '
-        Me.Panel18.Controls.Add(Me.Button9)
-        Me.Panel18.Controls.Add(Me.Button10)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel18.Location = New System.Drawing.Point(1, 1)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(73, 62)
-        Me.Panel18.TabIndex = 10
-        '
-        'Button9
-        '
-        Me.Button9.BackColor = System.Drawing.Color.Transparent
-        Me.Button9.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button9.FlatAppearance.BorderSize = 0
-        Me.Button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.Color.Black
-        Me.Button9.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button9.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button9.Location = New System.Drawing.Point(0, 0)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(73, 42)
-        Me.Button9.TabIndex = 8
-        Me.Button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button9.UseVisualStyleBackColor = False
-        '
-        'Button10
-        '
-        Me.Button10.BackColor = System.Drawing.Color.Transparent
-        Me.Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button10.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button10.FlatAppearance.BorderSize = 0
-        Me.Button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.Button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button10.ForeColor = System.Drawing.Color.Black
-        Me.Button10.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button10.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button10.Location = New System.Drawing.Point(0, 42)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(73, 20)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Estrelas"
-        Me.Button10.UseVisualStyleBackColor = False
-        '
-        'Panel37
-        '
-        Me.Panel37.BackColor = System.Drawing.Color.LightGray
-        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(230, 0)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(1, 64)
-        Me.Panel37.TabIndex = 10
-        '
-        'Label1
-        '
-        Me.Label1.AutoEllipsis = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label1.Location = New System.Drawing.Point(0, 64)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(231, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Exibir"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Panel21)
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(208, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(113, 64)
-        Me.Panel1.TabIndex = 24
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.Panel16)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel7.Location = New System.Drawing.Point(745, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel7.Size = New System.Drawing.Size(343, 83)
-        Me.Panel7.TabIndex = 11
-        '
-        'Panel16
-        '
-        Me.Panel16.Controls.Add(Me.Panel20)
-        Me.Panel16.Controls.Add(Me.Panel48)
-        Me.Panel16.Controls.Add(Me.Label2)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(3, 3)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(337, 77)
-        Me.Panel16.TabIndex = 6
-        '
-        'Panel20
-        '
-        Me.Panel20.Controls.Add(Me.Panel24)
-        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel20.Location = New System.Drawing.Point(0, 0)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(336, 64)
-        Me.Panel20.TabIndex = 11
-        '
-        'Panel24
-        '
-        Me.Panel24.Controls.Add(Me.Panel26)
-        Me.Panel24.Controls.Add(Me.Panel33)
-        Me.Panel24.Controls.Add(Me.Panel41)
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(0, 0)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(336, 64)
-        Me.Panel24.TabIndex = 21
-        '
-        'Panel26
-        '
-        Me.Panel26.Controls.Add(Me.Panel31)
-        Me.Panel26.Controls.Add(Me.Panel29)
-        Me.Panel26.Controls.Add(Me.Panel27)
-        Me.Panel26.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel26.Location = New System.Drawing.Point(208, 0)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(113, 64)
-        Me.Panel26.TabIndex = 24
-        '
-        'Panel33
-        '
-        Me.Panel33.Controls.Add(Me.Panel39)
-        Me.Panel33.Controls.Add(Me.Panel36)
-        Me.Panel33.Controls.Add(Me.Panel34)
-        Me.Panel33.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel33.Location = New System.Drawing.Point(95, 0)
-        Me.Panel33.Name = "Panel33"
-        Me.Panel33.Size = New System.Drawing.Size(113, 64)
-        Me.Panel33.TabIndex = 23
-        '
-        'Panel41
-        '
-        Me.Panel41.Controls.Add(Me.Panel44)
-        Me.Panel41.Controls.Add(Me.Panel42)
-        Me.Panel41.Controls.Add(Me.PanelBorder_CHKExibirPainelAreaDeTranferencia)
-        Me.Panel41.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel41.Location = New System.Drawing.Point(0, 0)
-        Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(95, 64)
-        Me.Panel41.TabIndex = 22
-        '
-        'Panel48
-        '
-        Me.Panel48.BackColor = System.Drawing.Color.LightGray
-        Me.Panel48.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel48.Location = New System.Drawing.Point(336, 0)
-        Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(1, 64)
-        Me.Panel48.TabIndex = 10
-        '
-        'Label2
-        '
-        Me.Label2.AutoEllipsis = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label2.Location = New System.Drawing.Point(0, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(337, 13)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Etiqueta de Subtítulo"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PanelBorder_CHKExibirPainelAreaDeTranferencia
-        '
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Controls.Add(Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia)
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Name = "PanelBorder_CHKExibirPainelAreaDeTranferencia"
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(95, 21)
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.TabIndex = 23
-        '
-        'PanelEnvolve_CHKExibirPainelAreaDeTranferencia
-        '
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Controls.Add(Me.CHKExibirPainelAreaDeTranferencia)
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Name = "PanelEnvolve_CHKExibirPainelAreaDeTranferencia"
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(93, 19)
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.TabIndex = 22
-        '
-        'CHKExibirPainelAreaDeTranferencia
-        '
-        Me.CHKExibirPainelAreaDeTranferencia.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHKExibirPainelAreaDeTranferencia.BackColor = System.Drawing.Color.Transparent
-        Me.CHKExibirPainelAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CHKExibirPainelAreaDeTranferencia.FlatAppearance.BorderSize = 0
-        Me.CHKExibirPainelAreaDeTranferencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHKExibirPainelAreaDeTranferencia.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CHKExibirPainelAreaDeTranferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHKExibirPainelAreaDeTranferencia.ForeColor = System.Drawing.Color.Black
-        Me.CHKExibirPainelAreaDeTranferencia.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CHKExibirPainelAreaDeTranferencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CHKExibirPainelAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CHKExibirPainelAreaDeTranferencia.Location = New System.Drawing.Point(0, 0)
-        Me.CHKExibirPainelAreaDeTranferencia.Margin = New System.Windows.Forms.Padding(0)
-        Me.CHKExibirPainelAreaDeTranferencia.Name = "CHKExibirPainelAreaDeTranferencia"
-        Me.CHKExibirPainelAreaDeTranferencia.Size = New System.Drawing.Size(93, 19)
-        Me.CHKExibirPainelAreaDeTranferencia.TabIndex = 21
-        Me.CHKExibirPainelAreaDeTranferencia.Text = "Ocultar"
-        Me.CHKExibirPainelAreaDeTranferencia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CHKExibirPainelAreaDeTranferencia.UseVisualStyleBackColor = False
-        '
-        'Panel42
-        '
-        Me.Panel42.Controls.Add(Me.Panel43)
-        Me.Panel42.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel42.Location = New System.Drawing.Point(0, 21)
-        Me.Panel42.Name = "Panel42"
-        Me.Panel42.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel42.Size = New System.Drawing.Size(95, 21)
-        Me.Panel42.TabIndex = 24
-        '
-        'Panel43
-        '
-        Me.Panel43.Controls.Add(Me.CheckBox1)
-        Me.Panel43.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel43.Location = New System.Drawing.Point(1, 1)
-        Me.Panel43.Name = "Panel43"
-        Me.Panel43.Size = New System.Drawing.Size(93, 19)
-        Me.Panel43.TabIndex = 22
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox1.FlatAppearance.BorderSize = 0
-        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox1.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox1.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(93, 19)
-        Me.CheckBox1.TabIndex = 21
-        Me.CheckBox1.Text = "Legenda"
-        Me.CheckBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        '
-        'Panel44
-        '
-        Me.Panel44.Controls.Add(Me.Panel45)
-        Me.Panel44.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel44.Location = New System.Drawing.Point(0, 42)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel44.Size = New System.Drawing.Size(95, 21)
-        Me.Panel44.TabIndex = 25
-        '
-        'Panel45
-        '
-        Me.Panel45.Controls.Add(Me.CheckBox2)
-        Me.Panel45.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel45.Location = New System.Drawing.Point(1, 1)
-        Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(93, 19)
-        Me.Panel45.TabIndex = 22
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox2.FlatAppearance.BorderSize = 0
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox2.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox2.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(93, 19)
-        Me.CheckBox2.TabIndex = 21
-        Me.CheckBox2.Text = "Tamanho da imagem"
-        Me.CheckBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox2.UseVisualStyleBackColor = False
-        '
-        'Panel34
-        '
-        Me.Panel34.Controls.Add(Me.Panel35)
-        Me.Panel34.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel34.Location = New System.Drawing.Point(0, 0)
-        Me.Panel34.Name = "Panel34"
-        Me.Panel34.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel34.Size = New System.Drawing.Size(113, 21)
-        Me.Panel34.TabIndex = 24
-        '
-        'Panel35
-        '
-        Me.Panel35.Controls.Add(Me.CheckBox3)
-        Me.Panel35.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel35.Location = New System.Drawing.Point(1, 1)
-        Me.Panel35.Name = "Panel35"
-        Me.Panel35.Size = New System.Drawing.Size(111, 19)
-        Me.Panel35.TabIndex = 22
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox3.FlatAppearance.BorderSize = 0
-        Me.CheckBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox3.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox3.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox3.TabIndex = 21
-        Me.CheckBox3.Text = "Autor"
-        Me.CheckBox3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox3.UseVisualStyleBackColor = False
-        '
-        'Panel36
-        '
-        Me.Panel36.Controls.Add(Me.Panel38)
-        Me.Panel36.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel36.Location = New System.Drawing.Point(0, 21)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel36.Size = New System.Drawing.Size(113, 21)
-        Me.Panel36.TabIndex = 25
-        '
-        'Panel38
-        '
-        Me.Panel38.Controls.Add(Me.CheckBox4)
-        Me.Panel38.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel38.Location = New System.Drawing.Point(1, 1)
-        Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(111, 19)
-        Me.Panel38.TabIndex = 22
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox4.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox4.FlatAppearance.BorderSize = 0
-        Me.CheckBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox4.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox4.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox4.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox4.TabIndex = 21
-        Me.CheckBox4.Text = "Álbum"
-        Me.CheckBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox4.UseVisualStyleBackColor = False
-        '
-        'Panel39
-        '
-        Me.Panel39.Controls.Add(Me.Panel40)
-        Me.Panel39.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel39.Location = New System.Drawing.Point(0, 42)
-        Me.Panel39.Name = "Panel39"
-        Me.Panel39.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel39.Size = New System.Drawing.Size(113, 21)
-        Me.Panel39.TabIndex = 26
-        '
-        'Panel40
-        '
-        Me.Panel40.Controls.Add(Me.CheckBox5)
-        Me.Panel40.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel40.Location = New System.Drawing.Point(1, 1)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(111, 19)
-        Me.Panel40.TabIndex = 22
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox5.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox5.FlatAppearance.BorderSize = 0
-        Me.CheckBox5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox5.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox5.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox5.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox5.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox5.TabIndex = 21
-        Me.CheckBox5.Text = "Tipo"
-        Me.CheckBox5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox5.UseVisualStyleBackColor = False
-        '
-        'Panel27
-        '
-        Me.Panel27.Controls.Add(Me.Panel28)
-        Me.Panel27.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel27.Location = New System.Drawing.Point(0, 0)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel27.Size = New System.Drawing.Size(113, 21)
-        Me.Panel27.TabIndex = 24
-        '
-        'Panel28
-        '
-        Me.Panel28.Controls.Add(Me.CheckBox6)
-        Me.Panel28.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel28.Location = New System.Drawing.Point(1, 1)
-        Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(111, 19)
-        Me.Panel28.TabIndex = 22
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox6.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox6.FlatAppearance.BorderSize = 0
-        Me.CheckBox6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox6.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox6.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox6.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox6.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox6.TabIndex = 21
-        Me.CheckBox6.Text = "Data de criação"
-        Me.CheckBox6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox6.UseVisualStyleBackColor = False
-        '
-        'Panel29
-        '
-        Me.Panel29.Controls.Add(Me.Panel30)
-        Me.Panel29.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel29.Location = New System.Drawing.Point(0, 21)
-        Me.Panel29.Name = "Panel29"
-        Me.Panel29.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel29.Size = New System.Drawing.Size(113, 21)
-        Me.Panel29.TabIndex = 25
-        '
-        'Panel30
-        '
-        Me.Panel30.Controls.Add(Me.CheckBox7)
-        Me.Panel30.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel30.Location = New System.Drawing.Point(1, 1)
-        Me.Panel30.Name = "Panel30"
-        Me.Panel30.Size = New System.Drawing.Size(111, 19)
-        Me.Panel30.TabIndex = 22
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox7.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox7.FlatAppearance.BorderSize = 0
-        Me.CheckBox7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox7.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox7.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox7.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox7.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox7.TabIndex = 21
-        Me.CheckBox7.Text = "Data de modificação"
-        Me.CheckBox7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox7.UseVisualStyleBackColor = False
-        '
-        'Panel31
-        '
-        Me.Panel31.Controls.Add(Me.Panel32)
-        Me.Panel31.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel31.Location = New System.Drawing.Point(0, 42)
-        Me.Panel31.Name = "Panel31"
-        Me.Panel31.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel31.Size = New System.Drawing.Size(113, 21)
-        Me.Panel31.TabIndex = 26
-        '
-        'Panel32
-        '
-        Me.Panel32.Controls.Add(Me.CheckBox8)
-        Me.Panel32.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel32.Location = New System.Drawing.Point(1, 1)
-        Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(111, 19)
-        Me.Panel32.TabIndex = 22
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox8.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox8.FlatAppearance.BorderSize = 0
-        Me.CheckBox8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox8.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox8.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox8.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox8.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox8.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox8.TabIndex = 21
-        Me.CheckBox8.Text = "Tamanho"
-        Me.CheckBox8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox8.UseVisualStyleBackColor = False
-        '
-        'Panel46
-        '
-        Me.Panel46.Controls.Add(Me.Panel47)
-        Me.Panel46.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel46.Location = New System.Drawing.Point(0, 0)
-        Me.Panel46.Name = "Panel46"
-        Me.Panel46.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel46.Size = New System.Drawing.Size(95, 21)
-        Me.Panel46.TabIndex = 24
-        '
-        'Panel47
-        '
-        Me.Panel47.Controls.Add(Me.CheckBox9)
-        Me.Panel47.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel47.Location = New System.Drawing.Point(1, 1)
-        Me.Panel47.Name = "Panel47"
-        Me.Panel47.Size = New System.Drawing.Size(93, 19)
-        Me.Panel47.TabIndex = 22
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox9.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox9.FlatAppearance.BorderSize = 0
-        Me.CheckBox9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox9.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox9.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox9.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox9.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox9.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(93, 19)
-        Me.CheckBox9.TabIndex = 21
-        Me.CheckBox9.Text = "Nome"
-        Me.CheckBox9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox9.UseVisualStyleBackColor = False
-        '
-        'Panel49
-        '
-        Me.Panel49.Controls.Add(Me.Panel50)
-        Me.Panel49.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel49.Location = New System.Drawing.Point(0, 21)
-        Me.Panel49.Name = "Panel49"
-        Me.Panel49.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel49.Size = New System.Drawing.Size(95, 21)
-        Me.Panel49.TabIndex = 25
-        '
-        'Panel50
-        '
-        Me.Panel50.Controls.Add(Me.CheckBox10)
-        Me.Panel50.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel50.Location = New System.Drawing.Point(1, 1)
-        Me.Panel50.Name = "Panel50"
-        Me.Panel50.Size = New System.Drawing.Size(93, 19)
-        Me.Panel50.TabIndex = 22
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox10.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox10.FlatAppearance.BorderSize = 0
-        Me.CheckBox10.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox10.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox10.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox10.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox10.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox10.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox10.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(93, 19)
-        Me.CheckBox10.TabIndex = 21
-        Me.CheckBox10.Text = "Nome.extenção"
-        Me.CheckBox10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox10.UseVisualStyleBackColor = False
-        '
-        'Panel51
-        '
-        Me.Panel51.Controls.Add(Me.Panel52)
-        Me.Panel51.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel51.Location = New System.Drawing.Point(0, 42)
-        Me.Panel51.Name = "Panel51"
-        Me.Panel51.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel51.Size = New System.Drawing.Size(95, 21)
-        Me.Panel51.TabIndex = 26
-        '
-        'Panel52
-        '
-        Me.Panel52.Controls.Add(Me.CheckBox11)
-        Me.Panel52.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel52.Location = New System.Drawing.Point(1, 1)
-        Me.Panel52.Name = "Panel52"
-        Me.Panel52.Size = New System.Drawing.Size(93, 19)
-        Me.Panel52.TabIndex = 22
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox11.FlatAppearance.BorderSize = 0
-        Me.CheckBox11.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox11.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox11.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox11.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox11.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox11.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox11.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(93, 19)
-        Me.CheckBox11.TabIndex = 21
-        Me.CheckBox11.Text = "Legenda"
-        Me.CheckBox11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox11.UseVisualStyleBackColor = False
-        '
-        'Panel53
-        '
-        Me.Panel53.Controls.Add(Me.Panel54)
-        Me.Panel53.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel53.Location = New System.Drawing.Point(0, 0)
-        Me.Panel53.Name = "Panel53"
-        Me.Panel53.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel53.Size = New System.Drawing.Size(113, 21)
-        Me.Panel53.TabIndex = 24
-        '
-        'Panel54
-        '
-        Me.Panel54.Controls.Add(Me.CheckBox12)
-        Me.Panel54.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel54.Location = New System.Drawing.Point(1, 1)
-        Me.Panel54.Name = "Panel54"
-        Me.Panel54.Size = New System.Drawing.Size(111, 19)
-        Me.Panel54.TabIndex = 22
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox12.FlatAppearance.BorderSize = 0
-        Me.CheckBox12.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox12.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox12.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox12.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox12.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox12.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox12.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox12.TabIndex = 21
-        Me.CheckBox12.Text = "Data de criação"
-        Me.CheckBox12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox12.UseVisualStyleBackColor = False
-        '
-        'Panel55
-        '
-        Me.Panel55.Controls.Add(Me.Panel56)
-        Me.Panel55.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel55.Location = New System.Drawing.Point(0, 21)
-        Me.Panel55.Name = "Panel55"
-        Me.Panel55.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel55.Size = New System.Drawing.Size(113, 21)
-        Me.Panel55.TabIndex = 25
-        '
-        'Panel56
-        '
-        Me.Panel56.Controls.Add(Me.CheckBox13)
-        Me.Panel56.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel56.Location = New System.Drawing.Point(1, 1)
-        Me.Panel56.Name = "Panel56"
-        Me.Panel56.Size = New System.Drawing.Size(111, 19)
-        Me.Panel56.TabIndex = 22
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox13.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox13.FlatAppearance.BorderSize = 0
-        Me.CheckBox13.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox13.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox13.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox13.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox13.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox13.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox13.TabIndex = 21
-        Me.CheckBox13.Text = "Data de modificação"
-        Me.CheckBox13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox13.UseVisualStyleBackColor = False
-        '
-        'Panel57
-        '
-        Me.Panel57.Controls.Add(Me.Panel58)
-        Me.Panel57.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel57.Location = New System.Drawing.Point(0, 42)
-        Me.Panel57.Name = "Panel57"
-        Me.Panel57.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel57.Size = New System.Drawing.Size(113, 21)
-        Me.Panel57.TabIndex = 26
-        '
-        'Panel58
-        '
-        Me.Panel58.Controls.Add(Me.CheckBox14)
-        Me.Panel58.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel58.Location = New System.Drawing.Point(1, 1)
-        Me.Panel58.Name = "Panel58"
-        Me.Panel58.Size = New System.Drawing.Size(111, 19)
-        Me.Panel58.TabIndex = 22
-        '
-        'CheckBox14
-        '
-        Me.CheckBox14.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox14.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox14.FlatAppearance.BorderSize = 0
-        Me.CheckBox14.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox14.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox14.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox14.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox14.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox14.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox14.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox14.TabIndex = 21
-        Me.CheckBox14.Text = "Tamanho"
-        Me.CheckBox14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox14.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel2.Size = New System.Drawing.Size(113, 21)
-        Me.Panel2.TabIndex = 24
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.CheckBox15)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(1, 1)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(111, 19)
-        Me.Panel3.TabIndex = 22
-        '
-        'CheckBox15
-        '
-        Me.CheckBox15.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox15.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox15.FlatAppearance.BorderSize = 0
-        Me.CheckBox15.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox15.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox15.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox15.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox15.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox15.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox15.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox15.TabIndex = 21
-        Me.CheckBox15.Text = "Tamanho de imagem"
-        Me.CheckBox15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox15.UseVisualStyleBackColor = False
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.Panel19)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel4.Location = New System.Drawing.Point(0, 21)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel4.Size = New System.Drawing.Size(113, 21)
-        Me.Panel4.TabIndex = 25
-        '
-        'Panel19
-        '
-        Me.Panel19.Controls.Add(Me.CheckBox16)
-        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel19.Location = New System.Drawing.Point(1, 1)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(111, 19)
-        Me.Panel19.TabIndex = 22
-        '
-        'CheckBox16
-        '
-        Me.CheckBox16.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox16.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox16.FlatAppearance.BorderSize = 0
-        Me.CheckBox16.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox16.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox16.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox16.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox16.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox16.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox16.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox16.TabIndex = 21
-        Me.CheckBox16.Text = "Autor"
-        Me.CheckBox16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox16.UseVisualStyleBackColor = False
-        '
-        'Panel21
-        '
-        Me.Panel21.Controls.Add(Me.Panel22)
-        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel21.Location = New System.Drawing.Point(0, 42)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel21.Size = New System.Drawing.Size(113, 21)
-        Me.Panel21.TabIndex = 26
-        '
-        'Panel22
-        '
-        Me.Panel22.Controls.Add(Me.CheckBox17)
-        Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel22.Location = New System.Drawing.Point(1, 1)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(111, 19)
-        Me.Panel22.TabIndex = 22
-        '
-        'CheckBox17
-        '
-        Me.CheckBox17.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox17.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox17.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox17.FlatAppearance.BorderSize = 0
-        Me.CheckBox17.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox17.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox17.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox17.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CheckBox17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox17.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox17.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(111, 19)
-        Me.CheckBox17.TabIndex = 21
-        Me.CheckBox17.Text = "Álbum"
-        Me.CheckBox17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox17.UseVisualStyleBackColor = False
+        'CKBExibirEstrelas
+        '
+        Me.CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirEstrelas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirEstrelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirEstrelas.FlatAppearance.BorderSize = 0
+        Me.CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirEstrelas.Name = "CKBExibirEstrelas"
+        Me.CKBExibirEstrelas.Size = New System.Drawing.Size(73, 42)
+        Me.CKBExibirEstrelas.TabIndex = 22
+        Me.CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirEstrelas.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirEstrelas
+        '
+        Me.CKBOpcoes_CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirEstrelas.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirEstrelas.Name = "CKBOpcoes_CKBExibirEstrelas"
+        Me.CKBOpcoes_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBExibirEstrelas.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirEstrelas.Text = "Estrela"
+        Me.CKBOpcoes_CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirEstrelas.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBExibirStatusGravado
+        '
+        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
+        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
+        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 24
+        '
+        'PanelEnvolve_CKBExibirStatusGravado
+        '
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
+        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
+        '
+        'CKBExibirStatusGravado
+        '
+        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
+        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirStatusGravado.TabIndex = 22
+        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirStatusGravado
+        '
+        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 41)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
+        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravado?"
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBExibirFlag
+        '
+        Me.PanelBorder_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirFlag.Controls.Add(Me.PanelEnvolve_CKBExibirFlag)
+        Me.PanelBorder_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirFlag.Location = New System.Drawing.Point(150, 0)
+        Me.PanelBorder_CKBExibirFlag.Name = "PanelBorder_CKBExibirFlag"
+        Me.PanelBorder_CKBExibirFlag.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirFlag.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirFlag.TabIndex = 25
+        '
+        'PanelEnvolve_CKBExibirFlag
+        '
+        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBExibirFlag)
+        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBOpcoes_CKBExibirFlag)
+        Me.PanelEnvolve_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirFlag.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirFlag.Name = "PanelEnvolve_CKBExibirFlag"
+        Me.PanelEnvolve_CKBExibirFlag.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirFlag.TabIndex = 10
+        '
+        'CKBExibirFlag
+        '
+        Me.CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirFlag.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirFlag.FlatAppearance.BorderSize = 0
+        Me.CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirFlag.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirFlag.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirFlag.Name = "CKBExibirFlag"
+        Me.CKBExibirFlag.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirFlag.TabIndex = 22
+        Me.CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirFlag
+        '
+        Me.CKBOpcoes_CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirFlag.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirFlag.Location = New System.Drawing.Point(0, 41)
+        Me.CKBOpcoes_CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirFlag.Name = "CKBOpcoes_CKBExibirFlag"
+        Me.CKBOpcoes_CKBExibirFlag.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirFlag.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirFlag.Text = "Flag"
+        Me.CKBOpcoes_CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBPainelEsquedo
+        '
+        Me.PanelBorder_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBPainelEsquedo.Controls.Add(Me.PanelEnvolve_CKBPainelEsquedo)
+        Me.PanelBorder_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBPainelEsquedo.Name = "PanelBorder_CKBPainelEsquedo"
+        Me.PanelBorder_CKBPainelEsquedo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBPainelEsquedo.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBPainelEsquedo.TabIndex = 24
+        '
+        'PanelEnvolve_CKBPainelEsquedo
+        '
+        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBPainelEsquedo)
+        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBOpcoes_CKBPainelEsquedo)
+        Me.PanelEnvolve_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBPainelEsquedo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBPainelEsquedo.Name = "PanelEnvolve_CKBPainelEsquedo"
+        Me.PanelEnvolve_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBPainelEsquedo.TabIndex = 10
+        '
+        'CKBPainelEsquedo
+        '
+        Me.CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
+        Me.CKBPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelEsquedo.FlatAppearance.BorderSize = 0
+        Me.CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelEsquedo.Name = "CKBPainelEsquedo"
+        Me.CKBPainelEsquedo.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelEsquedo.TabIndex = 22
+        Me.CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelEsquedo.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBPainelEsquedo
+        '
+        Me.CKBOpcoes_CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBPainelEsquedo.Name = "CKBOpcoes_CKBPainelEsquedo"
+        Me.CKBOpcoes_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBPainelEsquedo.TabIndex = 23
+        Me.CKBOpcoes_CKBPainelEsquedo.Text = "Esquerdo"
+        Me.CKBOpcoes_CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBPainelEsquedo.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBPainelDireito
+        '
+        Me.PanelBorder_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBPainelDireito.Controls.Add(Me.PanelEnvolve_CKBPainelDireito)
+        Me.PanelBorder_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBPainelDireito.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBPainelDireito.Name = "PanelBorder_CKBPainelDireito"
+        Me.PanelBorder_CKBPainelDireito.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBPainelDireito.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBPainelDireito.TabIndex = 25
+        '
+        'PanelEnvolve_CKBPainelDireito
+        '
+        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBPainelDireito)
+        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBOpcoes_CKBPainelDireito)
+        Me.PanelEnvolve_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBPainelDireito.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBPainelDireito.Name = "PanelEnvolve_CKBPainelDireito"
+        Me.PanelEnvolve_CKBPainelDireito.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBPainelDireito.TabIndex = 10
+        '
+        'CKBPainelDireito
+        '
+        Me.CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
+        Me.CKBPainelDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelDireito.FlatAppearance.BorderSize = 0
+        Me.CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelDireito.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelDireito.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelDireito.Name = "CKBPainelDireito"
+        Me.CKBPainelDireito.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelDireito.TabIndex = 22
+        Me.CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelDireito.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBPainelDireito
+        '
+        Me.CKBOpcoes_CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBPainelDireito.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBPainelDireito.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBPainelDireito.Name = "CKBOpcoes_CKBPainelDireito"
+        Me.CKBOpcoes_CKBPainelDireito.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBPainelDireito.TabIndex = 23
+        Me.CKBOpcoes_CKBPainelDireito.Text = "Direito"
+        Me.CKBOpcoes_CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBPainelDireito.UseVisualStyleBackColor = False
         '
         'Control_ViewMenuBar
         '
@@ -1823,106 +1839,98 @@ Partial Class Control_ViewMenuBar
         Me.Size = New System.Drawing.Size(1248, 83)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
-        Me.PanelEnvolve_PanelAgrupaGerenciar.ResumeLayout(False)
-        Me.PanelGerenciar.ResumeLayout(False)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.ResumeLayout(False)
+        Me.PanelExibirEtiquetaDeSubTitulo.ResumeLayout(False)
+        Me.Panel20.ResumeLayout(False)
+        Me.Panel24.ResumeLayout(False)
+        Me.PanelLayoutDireito_EtiquetaDeSubTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.ResumeLayout(False)
+        Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.ResumeLayout(False)
+        Me.PanelLayoutCentro_EtiquetaDeSubTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.ResumeLayout(False)
+        Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.ResumeLayout(False)
+        Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo.ResumeLayout(False)
+        Me.PanelExibirEtiquetaDeTitulo.ResumeLayout(False)
         Me.PanelAgrupaGerenciar.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
-        Me.PanelEtiqueta01_Direita.ResumeLayout(False)
-        Me.PanelEtiqueta01_Esquerda.ResumeLayout(False)
+        Me.PanelEnvolve_EtiquetaDeTitulo.ResumeLayout(False)
+        Me.PanelLayoutDireito_EtiquetaDeTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Album.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.ResumeLayout(False)
+        Me.PanelLayoutCentro_EtiquetaDeTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.ResumeLayout(False)
+        Me.PanelLayoutEsquerdo_EtiquetaDeTitulo.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.ResumeLayout(False)
+        Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.ResumeLayout(False)
+        Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.ResumeLayout(False)
+        Me.PanelEnvolve_Exibir.ResumeLayout(False)
+        Me.PanelExibir.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirEstrelas.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirEstrelas.ResumeLayout(False)
         Me.PanelEnvolve_PanelExibirPaineis.ResumeLayout(False)
         Me.PanelExibirPaineis.ResumeLayout(False)
-        Me.PanelAgrupaNova.ResumeLayout(False)
-        Me.PanelBorder_BTNPainelEsquedo.ResumeLayout(False)
-        Me.PanelEnvolve_BTNPainelEsquedo.ResumeLayout(False)
-        Me.PanelBorder_BTNPaneiDireito.ResumeLayout(False)
-        Me.PanelEnvolve_BTNPaneiDireito.ResumeLayout(False)
+        Me.PanelAgrupa_ExibirPanel.ResumeLayout(False)
         Me.CMenuS_ExibirPaineis.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNMover.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNCopiar.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNExcluir.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel14.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel26.ResumeLayout(False)
-        Me.Panel33.ResumeLayout(False)
-        Me.Panel41.ResumeLayout(False)
-        Me.PanelBorder_CHKExibirPainelAreaDeTranferencia.ResumeLayout(False)
-        Me.PanelEnvolve_CHKExibirPainelAreaDeTranferencia.ResumeLayout(False)
-        Me.Panel42.ResumeLayout(False)
-        Me.Panel43.ResumeLayout(False)
-        Me.Panel44.ResumeLayout(False)
-        Me.Panel45.ResumeLayout(False)
-        Me.Panel34.ResumeLayout(False)
-        Me.Panel35.ResumeLayout(False)
-        Me.Panel36.ResumeLayout(False)
-        Me.Panel38.ResumeLayout(False)
-        Me.Panel39.ResumeLayout(False)
-        Me.Panel40.ResumeLayout(False)
-        Me.Panel27.ResumeLayout(False)
-        Me.Panel28.ResumeLayout(False)
-        Me.Panel29.ResumeLayout(False)
-        Me.Panel30.ResumeLayout(False)
-        Me.Panel31.ResumeLayout(False)
-        Me.Panel32.ResumeLayout(False)
-        Me.Panel46.ResumeLayout(False)
-        Me.Panel47.ResumeLayout(False)
-        Me.Panel49.ResumeLayout(False)
-        Me.Panel50.ResumeLayout(False)
-        Me.Panel51.ResumeLayout(False)
-        Me.Panel52.ResumeLayout(False)
-        Me.Panel53.ResumeLayout(False)
-        Me.Panel54.ResumeLayout(False)
-        Me.Panel55.ResumeLayout(False)
-        Me.Panel56.ResumeLayout(False)
-        Me.Panel57.ResumeLayout(False)
-        Me.Panel58.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel19.ResumeLayout(False)
-        Me.Panel21.ResumeLayout(False)
-        Me.Panel22.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirFlag.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirFlag.ResumeLayout(False)
+        Me.PanelBorder_CKBPainelEsquedo.ResumeLayout(False)
+        Me.PanelEnvolve_CKBPainelEsquedo.ResumeLayout(False)
+        Me.PanelBorder_CKBPainelDireito.ResumeLayout(False)
+        Me.PanelEnvolve_CKBPainelDireito.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel23 As Panel
     Friend WithEvents Panel25 As Panel
-    Friend WithEvents PanelEnvolve_PanelAgrupaGerenciar As Panel
-    Friend WithEvents PanelGerenciar As Panel
+    Friend WithEvents PanelEnvolve_PanelExibirEtiquetaDeTitulo As Panel
+    Friend WithEvents PanelExibirEtiquetaDeTitulo As Panel
     Friend WithEvents PanelAgrupaGerenciar As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents PanelEtiqueta01_Direita As Panel
-    Friend WithEvents PanelEtiqueta01_Esquerda As Panel
+    Friend WithEvents PanelEnvolve_EtiquetaDeTitulo As Panel
+    Friend WithEvents PanelLayoutCentro_EtiquetaDeTitulo As Panel
+    Friend WithEvents PanelLayoutEsquerdo_EtiquetaDeTitulo As Panel
     Friend WithEvents Panel11 As Panel
-    Friend WithEvents LBLGerenciarAreaDeTranferencia As Label
+    Friend WithEvents LBLGEtiquetaDeTitulo As Label
     Friend WithEvents PanelEnvolve_PanelExibirPaineis As Panel
     Friend WithEvents PanelExibirPaineis As Panel
-    Friend WithEvents PanelAgrupaNova As Panel
-    Friend WithEvents PanelBorder_BTNPaneiDireito As Panel
-    Friend WithEvents PanelEnvolve_BTNPaneiDireito As Panel
-    Friend WithEvents BTNPaneiDireito As Button
-    Friend WithEvents BTNOpcoes_BTNPaneiDireito As Button
-    Friend WithEvents PanelBorder_BTNPainelEsquedo As Panel
-    Friend WithEvents PanelEnvolve_BTNPainelEsquedo As Panel
-    Friend WithEvents BTNPainelEsquedo As Button
-    Friend WithEvents BTNOpcoes_BTNPainelEsquedo As Button
+    Friend WithEvents PanelAgrupa_ExibirPanel As Panel
     Friend WithEvents Panel67 As Panel
-    Friend WithEvents LBLPaineis As Label
+    Friend WithEvents LBLExibirPaineis As Label
     Friend WithEvents CMenuS_ExibirPaineis As ContextMenuStrip
     Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NovaPastaProcessoToolStripMenuItem As ToolStripMenuItem
@@ -1950,86 +1958,94 @@ Partial Class Control_ViewMenuBar
     Friend WithEvents PerguntarAntesDeExcluirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CMenuS_BTNOpcoes_Renomear As ContextMenuStrip
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents PanelLayoutDireito_EtiquetaDeTitulo As Panel
+    Friend WithEvents PanelEnvolve_Exibir As Panel
+    Friend WithEvents PanelExibir As Panel
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel10 As Panel
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Panel14 As Panel
-    Friend WithEvents Panel15 As Panel
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Panel17 As Panel
-    Friend WithEvents Panel18 As Panel
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents PanelBorder_CKBExibirEstrelas As Panel
+    Friend WithEvents PanelEnvolve_CKBExibirEstrelas As Panel
     Friend WithEvents Panel37 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel16 As Panel
+    Friend WithEvents LabelExibir As Label
+    Friend WithEvents PanelEnvolve_PanelExibirEtiquetaDeSubTitulo As Panel
+    Friend WithEvents PanelExibirEtiquetaDeSubTitulo As Panel
     Friend WithEvents Panel20 As Panel
     Friend WithEvents Panel24 As Panel
-    Friend WithEvents Panel26 As Panel
-    Friend WithEvents Panel33 As Panel
-    Friend WithEvents Panel41 As Panel
+    Friend WithEvents PanelLayoutDireito_EtiquetaDeSubTitulo As Panel
+    Friend WithEvents PanelLayoutCentro_EtiquetaDeSubTitulo As Panel
+    Friend WithEvents PanelLayoutEsquerdo_EtiquetaDeSubTitulo As Panel
     Friend WithEvents Panel48 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel31 As Panel
-    Friend WithEvents Panel32 As Panel
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents Panel29 As Panel
-    Friend WithEvents Panel30 As Panel
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents Panel27 As Panel
-    Friend WithEvents Panel28 As Panel
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents Panel39 As Panel
-    Friend WithEvents Panel40 As Panel
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents Panel36 As Panel
-    Friend WithEvents Panel38 As Panel
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents Panel34 As Panel
-    Friend WithEvents Panel35 As Panel
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents Panel44 As Panel
-    Friend WithEvents Panel45 As Panel
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents Panel42 As Panel
-    Friend WithEvents Panel43 As Panel
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents PanelBorder_CHKExibirPainelAreaDeTranferencia As Panel
-    Friend WithEvents PanelEnvolve_CHKExibirPainelAreaDeTranferencia As Panel
-    Friend WithEvents CHKExibirPainelAreaDeTranferencia As CheckBox
-    Friend WithEvents Panel21 As Panel
-    Friend WithEvents Panel22 As Panel
-    Friend WithEvents CheckBox17 As CheckBox
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel19 As Panel
-    Friend WithEvents CheckBox16 As CheckBox
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents CheckBox15 As CheckBox
-    Friend WithEvents Panel57 As Panel
-    Friend WithEvents Panel58 As Panel
-    Friend WithEvents CheckBox14 As CheckBox
-    Friend WithEvents Panel55 As Panel
-    Friend WithEvents Panel56 As Panel
-    Friend WithEvents CheckBox13 As CheckBox
-    Friend WithEvents Panel53 As Panel
-    Friend WithEvents Panel54 As Panel
-    Friend WithEvents CheckBox12 As CheckBox
-    Friend WithEvents Panel51 As Panel
-    Friend WithEvents Panel52 As Panel
-    Friend WithEvents CheckBox11 As CheckBox
-    Friend WithEvents Panel49 As Panel
-    Friend WithEvents Panel50 As Panel
-    Friend WithEvents CheckBox10 As CheckBox
-    Friend WithEvents Panel46 As Panel
-    Friend WithEvents Panel47 As Panel
-    Friend WithEvents CheckBox9 As CheckBox
+    Friend WithEvents LBLGEtiquetaDeSubTitulo As Label
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Tamanho As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_DataDeModificacao As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao As Panel
+    Friend WithEvents PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_DataDeCriacao As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Tipo As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Tipo As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Album As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Album As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Album As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Autor As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Autor As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_TamanhoDaImagem As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Legenda As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Legenda As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar As Panel
+    Friend WithEvents CKBEtiquetaDeSubTitulo_Ocultar As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_Album As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_Album As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_Album As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_Autor As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_Autor As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_Autor As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_TamanhoDaImagem As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_Tamanho As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_Tamanho As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_DataDeModificacao As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_DataDeCriacao As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_Legenda As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_Legenda As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_Legenda As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_NomeEExtencao As CheckBox
+    Friend WithEvents PanelBorder_CKBEtiquetaDeTitulo_Nome As Panel
+    Friend WithEvents PanelEnvolve_CKBEtiquetaDeTitulo_Nome As Panel
+    Friend WithEvents CKBEtiquetaDeTitulo_Nome As CheckBox
+    Friend WithEvents PanelBorder_CKBExibirFlag As Panel
+    Friend WithEvents PanelEnvolve_CKBExibirFlag As Panel
+    Friend WithEvents CKBExibirFlag As CheckBox
+    Friend WithEvents CKBOpcoes_CKBExibirFlag As CheckBox
+    Friend WithEvents PanelBorder_CKBExibirStatusGravado As Panel
+    Friend WithEvents PanelEnvolve_CKBExibirStatusGravado As Panel
+    Friend WithEvents CKBExibirStatusGravado As CheckBox
+    Friend WithEvents CKBOpcoes_CKBExibirStatusGravado As CheckBox
+    Friend WithEvents CKBExibirEstrelas As CheckBox
+    Friend WithEvents CKBOpcoes_CKBExibirEstrelas As CheckBox
+    Friend WithEvents PanelBorder_CKBPainelDireito As Panel
+    Friend WithEvents PanelEnvolve_CKBPainelDireito As Panel
+    Friend WithEvents CKBPainelDireito As CheckBox
+    Friend WithEvents CKBOpcoes_CKBPainelDireito As CheckBox
+    Friend WithEvents PanelBorder_CKBPainelEsquedo As Panel
+    Friend WithEvents PanelEnvolve_CKBPainelEsquedo As Panel
+    Friend WithEvents CKBPainelEsquedo As CheckBox
+    Friend WithEvents CKBOpcoes_CKBPainelEsquedo As CheckBox
 End Class

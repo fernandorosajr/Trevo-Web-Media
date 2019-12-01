@@ -3,6 +3,32 @@
 
     ' Propriedades do controle.
 
+    Private _borderColorChecked As Color
+
+    Public Property BorderColorChecked As Color
+        Get
+            Return _borderColorChecked
+        End Get
+        Set(value As Color)
+            _borderColorChecked = value
+
+        End Set
+    End Property
+
+    Private _backgroundColorChecked As Color
+
+    Public Property BackgroundColorChecked As Color
+        Get
+            Return _backgroundColorChecked
+
+        End Get
+        Set(value As Color)
+            _backgroundColorChecked = value
+
+        End Set
+    End Property
+
+
     ' Propriedade da cor de quando o mouse solta o botão.
     Private _borderColorSelectAndMouseUp As Color
 
@@ -106,8 +132,7 @@
     End Property
 
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseUp, BTNPaneiDireito.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp
-
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseUp
         Dim btn As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
@@ -124,32 +149,32 @@
 
 
         Select Case btn.Name
-            Case "BTNNovaPasta"
-                BTNOpcoes_BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNNovaMidia"
-                BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNNovaMidia"
+                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNMaisProcessos"
-            '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNMaisProcessos"
+                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNMover"
-            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNMover"
+                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNCopiar"
-            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNCopiar"
+                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNExcluir"
-            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNExcluir"
+                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
 
-            'Case "BTNRenomear"
-            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNRenomear"
+                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNNovaPasta"
-                BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNNovaPasta"
+                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "BTNOpcoes_BTNNovaMidia"
-                BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
+                'Case "BTNOpcoes_BTNNovaMidia"
+                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
 
                 'Case "BTNOpcoes_BTNMaisProcessos"
                 '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
@@ -196,7 +221,7 @@
 
 
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseDown, BTNPaneiDireito.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseDown
 
         Dim btn As Object
 
@@ -213,32 +238,32 @@
 
 
         Select Case btn.Name
-            Case "BTNNovaPasta"
-                BTNOpcoes_BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNNovaMidia"
-                BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNNovaMidia"
+                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNMaisProcessos"
-            '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNMaisProcessos"
+                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNMover"
-            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNMover"
+                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNCopiar"
-            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNCopiar"
+                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNExcluir"
-            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNExcluir"
+                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
 
-            'Case "BTNRenomear"
-            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNRenomear"
+                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNNovaPasta"
-                BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNNovaPasta"
+                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "BTNOpcoes_BTNNovaMidia"
-                BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNNovaMidia"
+                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
 
                 'Case "BTNOpcoes_BTNMaisProcessos"
                 '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
@@ -287,7 +312,7 @@
 
 
 
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseLeave, BTNPaneiDireito.MouseLeave, BTNOpcoes_BTNPainelEsquedo.MouseLeave, BTNOpcoes_BTNPaneiDireito.MouseLeave
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs)
 
         Dim btn As Object
 
@@ -302,32 +327,32 @@
         btn.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
         Select Case btn.Name
-            Case "BTNNovaPasta"
-                BTNOpcoes_BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNNovaMidia"
-                BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNNovaMidia"
+                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNMaisProcessos"
-            '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNMaisProcessos"
+                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNMover"
-            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNMover"
+                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNCopiar"
-            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNCopiar"
+                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNExcluir"
-            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNExcluir"
+                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
 
-            'Case "BTNRenomear"
-            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNRenomear"
+                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNNovaPasta"
-                BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNNovaPasta"
+                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "BTNOpcoes_BTNNovaMidia"
-                BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
+                'Case "BTNOpcoes_BTNNovaMidia"
+                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
 
                 'Case "BTNOpcoes_BTNMaisProcessos"
                 '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
@@ -373,7 +398,7 @@
     End Sub
 
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.MouseHover, BTNPaneiDireito.MouseHover, BTNOpcoes_BTNPainelEsquedo.MouseHover, BTNOpcoes_BTNPaneiDireito.MouseHover
+    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs)
 
         Dim btn As Object
 
@@ -390,32 +415,32 @@
 
 
         Select Case btn.Name
-            Case "BTNNovaPasta"
-                BTNOpcoes_BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNNovaMidia"
-                BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNNovaMidia"
+                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNMaisProcessos"
-            '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNMaisProcessos"
+                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNMover"
-            '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNMover"
+                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNCopiar"
-            '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNCopiar"
+                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNExcluir"
-            '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNExcluir"
+                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
 
-            'Case "BTNRenomear"
-            '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNRenomear"
+                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNNovaPasta"
-                BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNNovaPasta"
+                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "BTNOpcoes_BTNNovaMidia"
-                BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
+                'Case "BTNOpcoes_BTNNovaMidia"
+                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
 
                 'Case "BTNOpcoes_BTNMaisProcessos"
                 '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
@@ -461,7 +486,7 @@
 
 
 
-    Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNPainelEsquedo.Click
+    Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs)
         Dim x As Integer = System.Windows.Forms.Cursor.Position.X
         Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
 
@@ -474,56 +499,43 @@
 
     End Sub
 
-    'Private Sub CMenuS_BTNOpcoes_BTNMaisProcessos_SubItens_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoComposto.Click, TSMenuItemTipoCriacao.Click, TSMenuItemTipoCopia.Click, TSMenuItemTipoMover.Click, TSMenuItemTipoRenome.Click, TSMenuItemTipoExclusao.Click
+
+    'Private Sub NovaPastaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovaPastaToolStripMenuItem.Click, NovaPastaProcessoToolStripMenuItem.Click
     '    Dim menuItem As ToolStripMenuItem
     '    menuItem = CType(sender, ToolStripMenuItem)
 
-    '    BTNMaisProcessos.BackgroundImage = menuItem.Image
-
+    '    BTNPainelEsquedo.BackgroundImage = menuItem.Image
     'End Sub
 
-
-
-    Private Sub NovaPastaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovaPastaToolStripMenuItem.Click, NovaPastaProcessoToolStripMenuItem.Click
-        Dim menuItem As ToolStripMenuItem
-        menuItem = CType(sender, ToolStripMenuItem)
-
-        BTNPainelEsquedo.BackgroundImage = menuItem.Image
-    End Sub
-
-    'Private Sub ExcluirParaLixeiraToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExcluirParaLixeiraToolStripMenuItem.Click, ExcluirPermanentementeToolStripMenuItem.Click
-    '    Dim menuItem As ToolStripMenuItem
-    '    menuItem = CType(sender, ToolStripMenuItem)
-
-    '    BTNExcluir.BackgroundImage = menuItem.Image
-
-    'End Sub
 
     Private Sub Control_ViewMenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        _borderColorSelectAndMouseHover = Color.RoyalBlue
-        _backgroundColorSelectAndMouseHover = Color.PowderBlue
+        _borderColorChecked = Color.RoyalBlue
+        _backgroundColorChecked = Color.LightSkyBlue
+
+        _borderColorSelectAndMouseHover = Color.SkyBlue
+        _backgroundColorSelectAndMouseHover = Color.LightCyan
 
         _borderColorSelectAndMouseLeave = Color.Transparent
         _backgroundColorSelectAndMouseLeave = Color.Transparent
 
-        _borderColorSelectAndMouseDown = Color.RoyalBlue
-        _backgroundColorSelectAndMouseDown = Color.LightSkyBlue
+        _borderColorSelectAndMouseDown = Color.CornflowerBlue
+        _backgroundColorSelectAndMouseDown = Color.PowderBlue
 
         _borderColorSelectAndMouseUp = _borderColorSelectAndMouseHover
         _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
 
     End Sub
 
-    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles BTNPaneiDireito.MouseDown, BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPainelEsquedo.MouseDown, BTNOpcoes_BTNPaneiDireito.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs)
 
     End Sub
 
-    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPainelEsquedo.MouseUp, BTNOpcoes_BTNPaneiDireito.MouseUp, BTNPaneiDireito.MouseUp
+    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs)
 
     End Sub
 
-    Private Sub BTNPainelEsquedo_Click(sender As Object, e As EventArgs) Handles BTNPainelEsquedo.Click
+    Private Sub BTNPainelEsquedo_Click(sender As Object, e As EventArgs)
 
     End Sub
 

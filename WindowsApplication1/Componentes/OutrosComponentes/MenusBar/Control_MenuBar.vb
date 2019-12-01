@@ -577,9 +577,6 @@
         _borderColorChecked = Color.RoyalBlue
         _backgroundColorChecked = Color.LightSkyBlue
 
-        '_borderColorSelectAndMouseHover = Color.RoyalBlue
-        '_backgroundColorSelectAndMouseHover = Color.PowderBlue
-
         _borderColorSelectAndMouseHover = Color.SkyBlue
         _backgroundColorSelectAndMouseHover = Color.LightCyan
 

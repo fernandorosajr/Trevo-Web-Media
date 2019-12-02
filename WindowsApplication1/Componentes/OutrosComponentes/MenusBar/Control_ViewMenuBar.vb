@@ -258,6 +258,21 @@
         btn.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
         btn.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
+
+        If btn.Checked = True Then
+
+            btn.Parent.Parent.BackColor = _borderColorChecked
+            btn.Parent.BackColor = _backgroundColorChecked
+            btn.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+        Else
+
+            btn.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
+            btn.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+
+        End If
+
+
         Select Case btn.Name
             Case "CKBPainelEsquedo"
                 CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
@@ -302,9 +317,23 @@
             btn = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        'btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+        'btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+        'btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+        If btn.Checked = True Then
+
+            btn.Parent.Parent.BackColor = _borderColorChecked
+            btn.Parent.BackColor = _backgroundColorChecked
+            btn.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+        Else
+
+            btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+            btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+            btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+        End If
 
 
         Select Case btn.Name
@@ -351,9 +380,19 @@
             btn = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        If btn.Checked = True Then
+
+            btn.Parent.Parent.BackColor = _borderColorChecked
+            btn.Parent.BackColor = _backgroundColorChecked
+            btn.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+        Else
+
+            btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+            btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+            btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+        End If
 
 
         Select Case btn.Name
@@ -395,7 +434,7 @@
         If chk.Checked = True Then
             chk.Parent.Parent.BackColor = _borderColorChecked
             chk.FlatAppearance.BorderColor = _borderColorChecked
-            chk.FlatAppearance.BorderSize = 1
+            '  chk.FlatAppearance.BorderSize = 1
 
         Else
             chk.Parent.Parent.BackColor = Color.Transparent
@@ -409,8 +448,6 @@
 
             Case "CKBOpcoes_CKBPainelEsquedo"
                 CKBPainelEsquedo.Checked = CKBOpcoes_CKBPainelEsquedo.Checked
-
-
 
             Case "CKBPainelDireito"
                 CKBOpcoes_CKBPainelDireito.Checked = CKBPainelDireito.Checked

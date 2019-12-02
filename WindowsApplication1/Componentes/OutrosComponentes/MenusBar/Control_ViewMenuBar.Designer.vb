@@ -101,13 +101,31 @@ Partial Class Control_ViewMenuBar
         Me.PanelExibir = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBExibirFlag = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirFlag = New System.Windows.Forms.Panel()
+        Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBExibirEstrelas = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirEstrelas = New System.Windows.Forms.Panel()
+        Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.LabelExibir = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelExibirPaineis = New System.Windows.Forms.Panel()
         Me.PanelExibirPaineis = New System.Windows.Forms.Panel()
         Me.PanelAgrupa_ExibirPanel = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBPainelDireito = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBPainelDireito = New System.Windows.Forms.Panel()
+        Me.CKBPainelDireito = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBPainelDireito = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBPainelEsquedo = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBPainelEsquedo = New System.Windows.Forms.Panel()
+        Me.CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLExibirPaineis = New System.Windows.Forms.Label()
         Me.CMenuS_ExibirPaineis = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -137,24 +155,6 @@ Partial Class Control_ViewMenuBar
         Me.PerguntarAntesDeExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
-        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.PanelBorder_CKBExibirFlag = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBExibirFlag = New System.Windows.Forms.Panel()
-        Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBExibirFlag = New System.Windows.Forms.CheckBox()
-        Me.PanelBorder_CKBPainelEsquedo = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBPainelEsquedo = New System.Windows.Forms.Panel()
-        Me.CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
-        Me.PanelBorder_CKBPainelDireito = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBPainelDireito = New System.Windows.Forms.Panel()
-        Me.CKBPainelDireito = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBPainelDireito = New System.Windows.Forms.CheckBox()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
@@ -211,25 +211,25 @@ Partial Class Control_ViewMenuBar
         Me.PanelExibir.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel10.SuspendLayout()
+        Me.PanelBorder_CKBExibirFlag.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirFlag.SuspendLayout()
+        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
         Me.PanelBorder_CKBExibirEstrelas.SuspendLayout()
         Me.PanelEnvolve_CKBExibirEstrelas.SuspendLayout()
         Me.PanelEnvolve_PanelExibirPaineis.SuspendLayout()
         Me.PanelExibirPaineis.SuspendLayout()
         Me.PanelAgrupa_ExibirPanel.SuspendLayout()
+        Me.PanelBorder_CKBPainelDireito.SuspendLayout()
+        Me.PanelEnvolve_CKBPainelDireito.SuspendLayout()
+        Me.PanelBorder_CKBPainelEsquedo.SuspendLayout()
+        Me.PanelEnvolve_CKBPainelEsquedo.SuspendLayout()
         Me.CMenuS_ExibirPaineis.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNMover.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNCopiar.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNExcluir.SuspendLayout()
         Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
-        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
-        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
-        Me.PanelBorder_CKBExibirFlag.SuspendLayout()
-        Me.PanelEnvolve_CKBExibirFlag.SuspendLayout()
-        Me.PanelBorder_CKBPainelEsquedo.SuspendLayout()
-        Me.PanelEnvolve_CKBPainelEsquedo.SuspendLayout()
-        Me.PanelBorder_CKBPainelDireito.SuspendLayout()
-        Me.PanelEnvolve_CKBPainelDireito.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -1224,6 +1224,138 @@ Partial Class Control_ViewMenuBar
         Me.Panel10.Size = New System.Drawing.Size(230, 64)
         Me.Panel10.TabIndex = 20
         '
+        'PanelBorder_CKBExibirFlag
+        '
+        Me.PanelBorder_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirFlag.Controls.Add(Me.PanelEnvolve_CKBExibirFlag)
+        Me.PanelBorder_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirFlag.Location = New System.Drawing.Point(150, 0)
+        Me.PanelBorder_CKBExibirFlag.Name = "PanelBorder_CKBExibirFlag"
+        Me.PanelBorder_CKBExibirFlag.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirFlag.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirFlag.TabIndex = 25
+        '
+        'PanelEnvolve_CKBExibirFlag
+        '
+        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBExibirFlag)
+        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBOpcoes_CKBExibirFlag)
+        Me.PanelEnvolve_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirFlag.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirFlag.Name = "PanelEnvolve_CKBExibirFlag"
+        Me.PanelEnvolve_CKBExibirFlag.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirFlag.TabIndex = 10
+        '
+        'CKBExibirFlag
+        '
+        Me.CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirFlag.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirFlag.FlatAppearance.BorderSize = 0
+        Me.CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirFlag.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirFlag.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirFlag.Name = "CKBExibirFlag"
+        Me.CKBExibirFlag.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirFlag.TabIndex = 22
+        Me.CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirFlag
+        '
+        Me.CKBOpcoes_CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirFlag.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirFlag.Location = New System.Drawing.Point(0, 41)
+        Me.CKBOpcoes_CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirFlag.Name = "CKBOpcoes_CKBExibirFlag"
+        Me.CKBOpcoes_CKBExibirFlag.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirFlag.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirFlag.Text = "Flag"
+        Me.CKBOpcoes_CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBExibirStatusGravado
+        '
+        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
+        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
+        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 24
+        '
+        'PanelEnvolve_CKBExibirStatusGravado
+        '
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
+        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
+        '
+        'CKBExibirStatusGravado
+        '
+        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
+        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirStatusGravado.TabIndex = 22
+        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirStatusGravado
+        '
+        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 41)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
+        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravado?"
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
         'PanelBorder_CKBExibirEstrelas
         '
         Me.PanelBorder_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
@@ -1244,6 +1376,51 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBExibirEstrelas.Name = "PanelEnvolve_CKBExibirEstrelas"
         Me.PanelEnvolve_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBExibirEstrelas.TabIndex = 10
+        '
+        'CKBExibirEstrelas
+        '
+        Me.CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirEstrelas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirEstrelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirEstrelas.FlatAppearance.BorderSize = 0
+        Me.CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirEstrelas.Name = "CKBExibirEstrelas"
+        Me.CKBExibirEstrelas.Size = New System.Drawing.Size(73, 42)
+        Me.CKBExibirEstrelas.TabIndex = 22
+        Me.CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirEstrelas.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirEstrelas
+        '
+        Me.CKBOpcoes_CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirEstrelas.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirEstrelas.Name = "CKBOpcoes_CKBExibirEstrelas"
+        Me.CKBOpcoes_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBExibirEstrelas.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirEstrelas.Text = "Estrela"
+        Me.CKBOpcoes_CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirEstrelas.UseVisualStyleBackColor = False
         '
         'Panel37
         '
@@ -1297,6 +1474,138 @@ Partial Class Control_ViewMenuBar
         Me.PanelAgrupa_ExibirPanel.Name = "PanelAgrupa_ExibirPanel"
         Me.PanelAgrupa_ExibirPanel.Size = New System.Drawing.Size(158, 64)
         Me.PanelAgrupa_ExibirPanel.TabIndex = 11
+        '
+        'PanelBorder_CKBPainelDireito
+        '
+        Me.PanelBorder_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBPainelDireito.Controls.Add(Me.PanelEnvolve_CKBPainelDireito)
+        Me.PanelBorder_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBPainelDireito.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBPainelDireito.Name = "PanelBorder_CKBPainelDireito"
+        Me.PanelBorder_CKBPainelDireito.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBPainelDireito.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBPainelDireito.TabIndex = 25
+        '
+        'PanelEnvolve_CKBPainelDireito
+        '
+        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBPainelDireito)
+        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBOpcoes_CKBPainelDireito)
+        Me.PanelEnvolve_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBPainelDireito.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBPainelDireito.Name = "PanelEnvolve_CKBPainelDireito"
+        Me.PanelEnvolve_CKBPainelDireito.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBPainelDireito.TabIndex = 10
+        '
+        'CKBPainelDireito
+        '
+        Me.CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
+        Me.CKBPainelDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelDireito.FlatAppearance.BorderSize = 0
+        Me.CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelDireito.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelDireito.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelDireito.Name = "CKBPainelDireito"
+        Me.CKBPainelDireito.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelDireito.TabIndex = 22
+        Me.CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelDireito.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBPainelDireito
+        '
+        Me.CKBOpcoes_CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBPainelDireito.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBPainelDireito.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBPainelDireito.Name = "CKBOpcoes_CKBPainelDireito"
+        Me.CKBOpcoes_CKBPainelDireito.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBPainelDireito.TabIndex = 23
+        Me.CKBOpcoes_CKBPainelDireito.Text = "Direito"
+        Me.CKBOpcoes_CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBPainelDireito.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBPainelEsquedo
+        '
+        Me.PanelBorder_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBPainelEsquedo.Controls.Add(Me.PanelEnvolve_CKBPainelEsquedo)
+        Me.PanelBorder_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBPainelEsquedo.Name = "PanelBorder_CKBPainelEsquedo"
+        Me.PanelBorder_CKBPainelEsquedo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBPainelEsquedo.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBPainelEsquedo.TabIndex = 24
+        '
+        'PanelEnvolve_CKBPainelEsquedo
+        '
+        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBPainelEsquedo)
+        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBOpcoes_CKBPainelEsquedo)
+        Me.PanelEnvolve_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBPainelEsquedo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBPainelEsquedo.Name = "PanelEnvolve_CKBPainelEsquedo"
+        Me.PanelEnvolve_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBPainelEsquedo.TabIndex = 10
+        '
+        'CKBPainelEsquedo
+        '
+        Me.CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
+        Me.CKBPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelEsquedo.FlatAppearance.BorderSize = 0
+        Me.CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelEsquedo.Name = "CKBPainelEsquedo"
+        Me.CKBPainelEsquedo.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelEsquedo.TabIndex = 22
+        Me.CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelEsquedo.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBPainelEsquedo
+        '
+        Me.CKBOpcoes_CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 42)
+        Me.CKBOpcoes_CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBPainelEsquedo.Name = "CKBOpcoes_CKBPainelEsquedo"
+        Me.CKBOpcoes_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 20)
+        Me.CKBOpcoes_CKBPainelEsquedo.TabIndex = 23
+        Me.CKBOpcoes_CKBPainelEsquedo.Text = "Esquerdo"
+        Me.CKBOpcoes_CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBPainelEsquedo.UseVisualStyleBackColor = False
         '
         'Panel67
         '
@@ -1521,315 +1830,6 @@ Partial Class Control_ViewMenuBar
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
         Me.ToolStripMenuItem2.Text = "Critérios"
         '
-        'CKBExibirEstrelas
-        '
-        Me.CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirEstrelas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirEstrelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirEstrelas.FlatAppearance.BorderSize = 0
-        Me.CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirEstrelas.Name = "CKBExibirEstrelas"
-        Me.CKBExibirEstrelas.Size = New System.Drawing.Size(73, 42)
-        Me.CKBExibirEstrelas.TabIndex = 22
-        Me.CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirEstrelas.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBExibirEstrelas
-        '
-        Me.CKBOpcoes_CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirEstrelas.Location = New System.Drawing.Point(0, 42)
-        Me.CKBOpcoes_CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirEstrelas.Name = "CKBOpcoes_CKBExibirEstrelas"
-        Me.CKBOpcoes_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 20)
-        Me.CKBOpcoes_CKBExibirEstrelas.TabIndex = 23
-        Me.CKBOpcoes_CKBExibirEstrelas.Text = "Estrela"
-        Me.CKBOpcoes_CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirEstrelas.UseVisualStyleBackColor = False
-        '
-        'PanelBorder_CKBExibirStatusGravado
-        '
-        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
-        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(75, 0)
-        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
-        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 24
-        '
-        'PanelEnvolve_CKBExibirStatusGravado
-        '
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
-        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
-        '
-        'CKBExibirStatusGravado
-        '
-        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
-        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
-        Me.CKBExibirStatusGravado.TabIndex = 22
-        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBExibirStatusGravado
-        '
-        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 41)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
-        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
-        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
-        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravado?"
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'PanelBorder_CKBExibirFlag
-        '
-        Me.PanelBorder_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBExibirFlag.Controls.Add(Me.PanelEnvolve_CKBExibirFlag)
-        Me.PanelBorder_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBExibirFlag.Location = New System.Drawing.Point(150, 0)
-        Me.PanelBorder_CKBExibirFlag.Name = "PanelBorder_CKBExibirFlag"
-        Me.PanelBorder_CKBExibirFlag.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBExibirFlag.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_CKBExibirFlag.TabIndex = 25
-        '
-        'PanelEnvolve_CKBExibirFlag
-        '
-        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBExibirFlag)
-        Me.PanelEnvolve_CKBExibirFlag.Controls.Add(Me.CKBOpcoes_CKBExibirFlag)
-        Me.PanelEnvolve_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBExibirFlag.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBExibirFlag.Name = "PanelEnvolve_CKBExibirFlag"
-        Me.PanelEnvolve_CKBExibirFlag.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_CKBExibirFlag.TabIndex = 10
-        '
-        'CKBExibirFlag
-        '
-        Me.CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirFlag.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirFlag.FlatAppearance.BorderSize = 0
-        Me.CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirFlag.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirFlag.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirFlag.Name = "CKBExibirFlag"
-        Me.CKBExibirFlag.Size = New System.Drawing.Size(73, 41)
-        Me.CKBExibirFlag.TabIndex = 22
-        Me.CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirFlag.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBExibirFlag
-        '
-        Me.CKBOpcoes_CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirFlag.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirFlag.Location = New System.Drawing.Point(0, 41)
-        Me.CKBOpcoes_CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirFlag.Name = "CKBOpcoes_CKBExibirFlag"
-        Me.CKBOpcoes_CKBExibirFlag.Size = New System.Drawing.Size(73, 21)
-        Me.CKBOpcoes_CKBExibirFlag.TabIndex = 23
-        Me.CKBOpcoes_CKBExibirFlag.Text = "Flag"
-        Me.CKBOpcoes_CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirFlag.UseVisualStyleBackColor = False
-        '
-        'PanelBorder_CKBPainelEsquedo
-        '
-        Me.PanelBorder_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBPainelEsquedo.Controls.Add(Me.PanelEnvolve_CKBPainelEsquedo)
-        Me.PanelBorder_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_CKBPainelEsquedo.Name = "PanelBorder_CKBPainelEsquedo"
-        Me.PanelBorder_CKBPainelEsquedo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBPainelEsquedo.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_CKBPainelEsquedo.TabIndex = 24
-        '
-        'PanelEnvolve_CKBPainelEsquedo
-        '
-        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBPainelEsquedo)
-        Me.PanelEnvolve_CKBPainelEsquedo.Controls.Add(Me.CKBOpcoes_CKBPainelEsquedo)
-        Me.PanelEnvolve_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBPainelEsquedo.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBPainelEsquedo.Name = "PanelEnvolve_CKBPainelEsquedo"
-        Me.PanelEnvolve_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_CKBPainelEsquedo.TabIndex = 10
-        '
-        'CKBPainelEsquedo
-        '
-        Me.CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.CKBPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
-        Me.CKBPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBPainelEsquedo.FlatAppearance.BorderSize = 0
-        Me.CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
-        Me.CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
-        Me.CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBPainelEsquedo.Name = "CKBPainelEsquedo"
-        Me.CKBPainelEsquedo.Size = New System.Drawing.Size(73, 42)
-        Me.CKBPainelEsquedo.TabIndex = 22
-        Me.CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBPainelEsquedo.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBPainelEsquedo
-        '
-        Me.CKBOpcoes_CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBPainelEsquedo.Location = New System.Drawing.Point(0, 42)
-        Me.CKBOpcoes_CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBPainelEsquedo.Name = "CKBOpcoes_CKBPainelEsquedo"
-        Me.CKBOpcoes_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 20)
-        Me.CKBOpcoes_CKBPainelEsquedo.TabIndex = 23
-        Me.CKBOpcoes_CKBPainelEsquedo.Text = "Esquerdo"
-        Me.CKBOpcoes_CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBPainelEsquedo.UseVisualStyleBackColor = False
-        '
-        'PanelBorder_CKBPainelDireito
-        '
-        Me.PanelBorder_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBPainelDireito.Controls.Add(Me.PanelEnvolve_CKBPainelDireito)
-        Me.PanelBorder_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBPainelDireito.Location = New System.Drawing.Point(75, 0)
-        Me.PanelBorder_CKBPainelDireito.Name = "PanelBorder_CKBPainelDireito"
-        Me.PanelBorder_CKBPainelDireito.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBPainelDireito.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_CKBPainelDireito.TabIndex = 25
-        '
-        'PanelEnvolve_CKBPainelDireito
-        '
-        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBPainelDireito)
-        Me.PanelEnvolve_CKBPainelDireito.Controls.Add(Me.CKBOpcoes_CKBPainelDireito)
-        Me.PanelEnvolve_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBPainelDireito.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBPainelDireito.Name = "PanelEnvolve_CKBPainelDireito"
-        Me.PanelEnvolve_CKBPainelDireito.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_CKBPainelDireito.TabIndex = 10
-        '
-        'CKBPainelDireito
-        '
-        Me.CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
-        Me.CKBPainelDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
-        Me.CKBPainelDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBPainelDireito.FlatAppearance.BorderSize = 0
-        Me.CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBPainelDireito.ForeColor = System.Drawing.Color.Black
-        Me.CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBPainelDireito.Location = New System.Drawing.Point(0, 0)
-        Me.CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBPainelDireito.Name = "CKBPainelDireito"
-        Me.CKBPainelDireito.Size = New System.Drawing.Size(73, 42)
-        Me.CKBPainelDireito.TabIndex = 22
-        Me.CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBPainelDireito.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBPainelDireito
-        '
-        Me.CKBOpcoes_CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBPainelDireito.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBPainelDireito.Location = New System.Drawing.Point(0, 42)
-        Me.CKBOpcoes_CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBPainelDireito.Name = "CKBOpcoes_CKBPainelDireito"
-        Me.CKBOpcoes_CKBPainelDireito.Size = New System.Drawing.Size(73, 20)
-        Me.CKBOpcoes_CKBPainelDireito.TabIndex = 23
-        Me.CKBOpcoes_CKBPainelDireito.Text = "Direito"
-        Me.CKBOpcoes_CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBPainelDireito.UseVisualStyleBackColor = False
-        '
         'Control_ViewMenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1893,25 +1893,25 @@ Partial Class Control_ViewMenuBar
         Me.PanelExibir.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirFlag.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirFlag.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
         Me.PanelBorder_CKBExibirEstrelas.ResumeLayout(False)
         Me.PanelEnvolve_CKBExibirEstrelas.ResumeLayout(False)
         Me.PanelEnvolve_PanelExibirPaineis.ResumeLayout(False)
         Me.PanelExibirPaineis.ResumeLayout(False)
         Me.PanelAgrupa_ExibirPanel.ResumeLayout(False)
+        Me.PanelBorder_CKBPainelDireito.ResumeLayout(False)
+        Me.PanelEnvolve_CKBPainelDireito.ResumeLayout(False)
+        Me.PanelBorder_CKBPainelEsquedo.ResumeLayout(False)
+        Me.PanelEnvolve_CKBPainelEsquedo.ResumeLayout(False)
         Me.CMenuS_ExibirPaineis.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNMover.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNCopiar.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNExcluir.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
-        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.PanelBorder_CKBExibirFlag.ResumeLayout(False)
-        Me.PanelEnvolve_CKBExibirFlag.ResumeLayout(False)
-        Me.PanelBorder_CKBPainelEsquedo.ResumeLayout(False)
-        Me.PanelEnvolve_CKBPainelEsquedo.ResumeLayout(False)
-        Me.PanelBorder_CKBPainelDireito.ResumeLayout(False)
-        Me.PanelEnvolve_CKBPainelDireito.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

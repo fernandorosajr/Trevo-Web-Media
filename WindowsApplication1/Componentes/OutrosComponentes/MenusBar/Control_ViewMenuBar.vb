@@ -131,8 +131,27 @@
         End Set
     End Property
 
+    Private Sub Control_ViewMenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseUp
+        _borderColorChecked = Color.RoyalBlue
+        _backgroundColorChecked = Color.LightSkyBlue
+
+        _borderColorSelectAndMouseHover = Color.SkyBlue
+        _backgroundColorSelectAndMouseHover = Color.LightCyan
+
+        _borderColorSelectAndMouseLeave = Color.Transparent
+        _backgroundColorSelectAndMouseLeave = Color.Transparent
+
+        _borderColorSelectAndMouseDown = Color.CornflowerBlue
+        _backgroundColorSelectAndMouseDown = Color.PowderBlue
+
+        _borderColorSelectAndMouseUp = _borderColorSelectAndMouseHover
+        _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
+
+    End Sub
+
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseUp, CKBOpcoes_CKBPainelEsquedo.MouseUp, CKBPainelDireito.MouseUp, CKBOpcoes_CKBPainelDireito.MouseUp, CKBExibirEstrelas.MouseUp, CKBOpcoes_CKBExibirEstrelas.MouseUp, CKBExibirStatusGravado.MouseUp, CKBOpcoes_CKBExibirStatusGravado.MouseUp, CKBExibirFlag.MouseUp, CKBOpcoes_CKBExibirFlag.MouseUp, CKBEtiquetaDeTitulo_Nome.MouseUp, CKBEtiquetaDeTitulo_NomeEExtencao.MouseUp, CKBEtiquetaDeTitulo_Legenda.MouseUp, CKBEtiquetaDeTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeTitulo_DataDeModificacao.MouseUp, CKBEtiquetaDeTitulo_Tamanho.MouseUp, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseUp, CKBEtiquetaDeTitulo_Autor.MouseUp, CKBEtiquetaDeTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Ocultar.MouseUp, CKBEtiquetaDeSubTitulo_Legenda.MouseUp, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseUp, CKBEtiquetaDeSubTitulo_Autor.MouseUp, CKBEtiquetaDeSubTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Tipo.MouseUp, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseUp, CKBEtiquetaDeSubTitulo_Tamanho.MouseUp
+
         Dim btn As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
@@ -152,68 +171,26 @@
             Case "CKBPainelEsquedo"
                 CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNNovaMidia"
-                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNMaisProcessos"
-                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNMover"
-                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNCopiar"
-                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNExcluir"
-                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNRenomear"
-                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseUp
 
-                'Case "BTNOpcoes_BTNNovaPasta"
-                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNNovaMidia"
-                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNMaisProcessos"
-                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNMover"
-                '    BTNMover.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNCopiar"
-                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNExcluir"
-                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNOpcoes_BTNRenomear"
-                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseUp
-
-
-
-
-                'Case "CHKExibirPainelAreaDeTranferencia"
-                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNRecortarParaAreaDeTransferencia"
-                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNColarDaAreaDeTranferencia"
-                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNCopiarParaAreaDeTransferencia"
-                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNLimparSelecao"
-                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNInverterSelecao"
-                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseUp
-
-                'Case "BTNSelecionarTudo"
-                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseUp
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseUp
 
         End Select
 
@@ -221,7 +198,7 @@
 
 
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBExibirEstrelas.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_DataDeModificacao.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Ocultar.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown
 
         Dim btn As Object
 
@@ -238,81 +215,36 @@
 
 
         Select Case btn.Name
+
             Case "CKBPainelEsquedo"
                 CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNNovaMidia"
-                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNMaisProcessos"
-                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNMover"
-                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNCopiar"
-                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNExcluir"
-                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNRenomear"
-                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseDown
 
-                'Case "BTNOpcoes_BTNNovaPasta"
-                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNNovaMidia"
-                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNMaisProcessos"
-                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNMover"
-                '    BTNMover.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNCopiar"
-                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNExcluir"
-                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNOpcoes_BTNRenomear"
-                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseDown
-
-
-
-
-
-
-                'Case "CHKExibirPainelAreaDeTranferencia"
-                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNRecortarParaAreaDeTransferencia"
-                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNColarDaAreaDeTranferencia"
-                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNCopiarParaAreaDeTransferencia"
-                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNLimparSelecao"
-                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNInverterSelecao"
-                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNSelecionarTudo"
-                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseDown
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseDown
 
         End Select
 
     End Sub
 
-
-
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs)
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseLeave, CKBOpcoes_CKBPainelEsquedo.MouseLeave, CKBPainelDireito.MouseLeave, CKBOpcoes_CKBPainelDireito.MouseLeave, CKBExibirEstrelas.MouseLeave, CKBOpcoes_CKBExibirEstrelas.MouseLeave, CKBExibirStatusGravado.MouseLeave, CKBOpcoes_CKBExibirStatusGravado.MouseLeave, CKBExibirFlag.MouseLeave, CKBOpcoes_CKBExibirFlag.MouseLeave, CKBEtiquetaDeTitulo_Nome.MouseLeave, CKBEtiquetaDeTitulo_NomeEExtencao.MouseLeave, CKBEtiquetaDeTitulo_Legenda.MouseLeave, CKBEtiquetaDeTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeTitulo_DataDeModificacao.MouseLeave, CKBEtiquetaDeTitulo_Tamanho.MouseLeave, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseLeave, CKBEtiquetaDeTitulo_Autor.MouseLeave, CKBEtiquetaDeTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Ocultar.MouseLeave, CKBEtiquetaDeSubTitulo_Legenda.MouseLeave, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseLeave, CKBEtiquetaDeSubTitulo_Autor.MouseLeave, CKBEtiquetaDeSubTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Tipo.MouseLeave, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseLeave, CKBEtiquetaDeSubTitulo_Tamanho.MouseLeave
 
         Dim btn As Object
 
@@ -330,75 +262,36 @@
             Case "CKBPainelEsquedo"
                 CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNNovaMidia"
-                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNMaisProcessos"
-                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNMover"
-                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNCopiar"
-                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNExcluir"
-                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNRenomear"
-                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseLeave
 
-                'Case "BTNOpcoes_BTNNovaPasta"
-                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNNovaMidia"
-                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNMaisProcessos"
-                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNMover"
-                '    BTNMover.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNCopiar"
-                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNExcluir"
-                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNOpcoes_BTNRenomear"
-                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseLeave
 
 
 
-
-
-                'Case "CHKExibirPainelAreaDeTranferencia"
-                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNRecortarParaAreaDeTransferencia"
-                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNColarDaAreaDeTranferencia"
-                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNCopiarParaAreaDeTransferencia"
-                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNLimparSelecao"
-                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNInverterSelecao"
-                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseLeave
-
-                'Case "BTNSelecionarTudo"
-                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseLeave
 
         End Select
     End Sub
 
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs)
+
+    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseMove, CKBOpcoes_CKBPainelEsquedo.MouseMove, CKBPainelDireito.MouseMove, CKBOpcoes_CKBPainelDireito.MouseMove, CKBExibirEstrelas.MouseMove, CKBOpcoes_CKBExibirEstrelas.MouseMove, CKBExibirStatusGravado.MouseMove, CKBOpcoes_CKBExibirStatusGravado.MouseMove, CKBExibirFlag.MouseMove, CKBOpcoes_CKBExibirFlag.MouseMove, CKBEtiquetaDeTitulo_Nome.MouseMove, CKBEtiquetaDeTitulo_NomeEExtencao.MouseMove, CKBEtiquetaDeTitulo_Legenda.MouseMove, CKBEtiquetaDeTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeTitulo_DataDeModificacao.MouseMove, CKBEtiquetaDeTitulo_Tamanho.MouseMove, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseMove, CKBEtiquetaDeTitulo_Autor.MouseMove, CKBEtiquetaDeTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Ocultar.MouseMove, CKBEtiquetaDeSubTitulo_Legenda.MouseMove, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseMove, CKBEtiquetaDeSubTitulo_Autor.MouseMove, CKBEtiquetaDeSubTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Tipo.MouseMove, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseMove, CKBEtiquetaDeSubTitulo_Tamanho.MouseMove
 
         Dim btn As Object
 
@@ -418,72 +311,132 @@
             Case "CKBPainelEsquedo"
                 CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNNovaMidia"
-                '    BTNOpcoes_BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNMaisProcessos"
-                '    BTNOpcoes_BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNMover"
-                '    BTNOpcoes_BTNMover.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNCopiar"
-                '    BTNOpcoes_BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNExcluir"
-                '    BTNOpcoes_BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNRenomear"
-                '    BTNOpcoes_BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNOpcoes_BTNNovaPasta"
-                '    BTNPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNOpcoes_BTNNovaMidia"
-                '    BTNPaneiDireito.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNOpcoes_BTNMaisProcessos"
-                '    BTNMaisProcessos.BackColor = _backgroundColorSelectAndMouseHover
-
-                'Case "BTNOpcoes_BTNMover"
-                '    BTNMover.BackColor = _backgroundColorSelectAndMouseHover
-
-                'Case "BTNOpcoes_BTNCopiar"
-                '    BTNCopiar.BackColor = _backgroundColorSelectAndMouseHover
-
-                'Case "BTNOpcoes_BTNExcluir"
-                '    BTNExcluir.BackColor = _backgroundColorSelectAndMouseHover
-
-                'Case "BTNOpcoes_BTNRenomear"
-                '    BTNRenomear.BackColor = _backgroundColorSelectAndMouseHover
+        End Select
+    End Sub
 
 
 
-                'Case "CHKExibirPainelAreaDeTranferencia"
-                '    CHKExibirPainelAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNRecortarParaAreaDeTransferencia"
-                '    BTNRecortarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
+    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseHover, CKBOpcoes_CKBPainelEsquedo.MouseHover, CKBPainelDireito.MouseHover, CKBOpcoes_CKBPainelDireito.MouseHover, CKBExibirEstrelas.MouseHover, CKBOpcoes_CKBExibirEstrelas.MouseHover, CKBExibirStatusGravado.MouseHover, CKBOpcoes_CKBExibirStatusGravado.MouseHover, CKBExibirFlag.MouseHover, CKBOpcoes_CKBExibirFlag.MouseHover, CKBEtiquetaDeTitulo_Nome.MouseHover, CKBEtiquetaDeTitulo_NomeEExtencao.MouseHover, CKBEtiquetaDeTitulo_Legenda.MouseHover, CKBEtiquetaDeTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeTitulo_DataDeModificacao.MouseHover, CKBEtiquetaDeTitulo_Tamanho.MouseHover, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseHover, CKBEtiquetaDeTitulo_Autor.MouseHover, CKBEtiquetaDeTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Ocultar.MouseHover, CKBEtiquetaDeSubTitulo_Legenda.MouseHover, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseHover, CKBEtiquetaDeSubTitulo_Autor.MouseHover, CKBEtiquetaDeSubTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Tipo.MouseHover, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseHover, CKBEtiquetaDeSubTitulo_Tamanho.MouseHover
 
-                'Case "BTNColarDaAreaDeTranferencia"
-                '    BTNColarDaAreaDeTranferencia.BackColor = _backgroundColorSelectAndMouseHover
 
-                'Case "BTNCopiarParaAreaDeTransferencia"
-                '    BTNCopiarParaAreaDeTransferencia.BackColor = _backgroundColorSelectAndMouseHover
+        Dim btn As Object
 
-                'Case "BTNLimparSelecao"
-                '    BTNLimparSelecao.BackColor = _backgroundColorSelectAndMouseHover
+        If sender.GetType.Name.ToString = "CheckBox" Then
 
-                'Case "BTNInverterSelecao"
-                '    BTNInverterSelecao.BackColor = _backgroundColorSelectAndMouseHover
+            btn = CType(sender, CheckBox)
+        Else
+            btn = CType(sender, Button)
+        End If
 
-                'Case "BTNSelecionarTudo"
-                '    BTNSelecionarTudo.BackColor = _backgroundColorSelectAndMouseHover
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+
+        Select Case btn.Name
+
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
+
+
 
         End Select
 
     End Sub
 
+    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.CheckedChanged, CKBOpcoes_CKBPainelEsquedo.CheckedChanged, CKBPainelDireito.CheckedChanged, CKBOpcoes_CKBPainelDireito.CheckedChanged, CKBExibirEstrelas.CheckedChanged, CKBOpcoes_CKBExibirEstrelas.CheckedChanged, CKBExibirStatusGravado.CheckedChanged, CKBOpcoes_CKBExibirStatusGravado.CheckedChanged, CKBExibirFlag.CheckedChanged, CKBOpcoes_CKBExibirFlag.CheckedChanged, CKBEtiquetaDeTitulo_Nome.CheckedChanged, CKBEtiquetaDeTitulo_NomeEExtencao.CheckedChanged, CKBEtiquetaDeTitulo_Legenda.CheckedChanged, CKBEtiquetaDeTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeTitulo_DataDeModificacao.CheckedChanged, CKBEtiquetaDeTitulo_Tamanho.CheckedChanged, CKBEtiquetaDeTitulo_TamanhoDaImagem.CheckedChanged, CKBEtiquetaDeTitulo_Autor.CheckedChanged, CKBEtiquetaDeTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Ocultar.CheckedChanged, CKBEtiquetaDeSubTitulo_Legenda.CheckedChanged, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.CheckedChanged, CKBEtiquetaDeSubTitulo_Autor.CheckedChanged, CKBEtiquetaDeSubTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Tipo.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeModificacao.CheckedChanged, CKBEtiquetaDeSubTitulo_Tamanho.CheckedChanged
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+
+        If chk.Checked = True Then
+            chk.Parent.Parent.BackColor = _borderColorChecked
+            chk.FlatAppearance.BorderColor = _borderColorChecked
+            chk.FlatAppearance.BorderSize = 1
+
+        Else
+            chk.Parent.Parent.BackColor = Color.Transparent
+            chk.FlatAppearance.BorderSize = 0
+        End If
+        chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
+
+        Select Case chk.Name
+            Case "CKBPainelEsquedo"
+                CKBOpcoes_CKBPainelEsquedo.Checked = CKBPainelEsquedo.Checked
+
+            Case "CKBOpcoes_CKBPainelEsquedo"
+                CKBPainelEsquedo.Checked = CKBOpcoes_CKBPainelEsquedo.Checked
+
+
+
+            Case "CKBPainelDireito"
+                CKBOpcoes_CKBPainelDireito.Checked = CKBPainelDireito.Checked
+            Case "CKBOpcoes_CKBPainelDireito"
+                CKBPainelDireito.Checked = CKBOpcoes_CKBPainelDireito.Checked
+
+            Case "CKBExibirEstrelas"
+                CKBOpcoes_CKBExibirEstrelas.Checked = CKBExibirEstrelas.Checked
+
+            Case "CKBOpcoes_CKBExibirEstrelas"
+                CKBExibirEstrelas.Checked = CKBOpcoes_CKBExibirEstrelas.Checked
+
+            Case "CKBExibirStatusGravado"
+                CKBOpcoes_CKBExibirStatusGravado.Checked = CKBExibirStatusGravado.Checked
+
+            Case "CKBOpcoes_CKBExibirStatusGravado"
+                CKBExibirStatusGravado.Checked = CKBOpcoes_CKBExibirStatusGravado.Checked
+
+            Case "CKBExibirFlag"
+                CKBOpcoes_CKBExibirFlag.Checked = CKBExibirFlag.Checked
+
+            Case "CKBOpcoes_CKBExibirFlag"
+                CKBExibirFlag.Checked = CKBOpcoes_CKBExibirFlag.Checked
+        End Select
+
+    End Sub
 
 
     Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs)
@@ -508,36 +461,9 @@
     'End Sub
 
 
-    Private Sub Control_ViewMenuBar_Load(sender As Object, e As EventArgs) Handles Me.Load
 
-        _borderColorChecked = Color.RoyalBlue
-        _backgroundColorChecked = Color.LightSkyBlue
 
-        _borderColorSelectAndMouseHover = Color.SkyBlue
-        _backgroundColorSelectAndMouseHover = Color.LightCyan
 
-        _borderColorSelectAndMouseLeave = Color.Transparent
-        _backgroundColorSelectAndMouseLeave = Color.Transparent
-
-        _borderColorSelectAndMouseDown = Color.CornflowerBlue
-        _backgroundColorSelectAndMouseDown = Color.PowderBlue
-
-        _borderColorSelectAndMouseUp = _borderColorSelectAndMouseHover
-        _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
-
-    End Sub
-
-    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs)
-
-    End Sub
-
-    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs)
-
-    End Sub
-
-    Private Sub BTNPainelEsquedo_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
 
 

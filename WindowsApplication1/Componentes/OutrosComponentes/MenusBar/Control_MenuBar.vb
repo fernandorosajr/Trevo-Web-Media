@@ -136,22 +136,22 @@
 
     Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseUp, BTNNovaMidia.MouseUp, BTNMaisProcessos.MouseUp, BTNMover.MouseUp, BTNCopiar.MouseUp, BTNExcluir.MouseUp, BTNRenomear.MouseUp, BTNOpcoes_BTNNovaPasta.MouseUp, BTNOpcoes_BTNNovaMidia.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, CHKExibirPainelAreaDeTranferencia.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNSelecionarTudo.MouseUp
 
-        Dim btn As Object
+        Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
 
-            btn = CType(sender, CheckBox)
+            obj = CType(sender, CheckBox)
         Else
-            btn = CType(sender, Button)
+            obj = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseUp
+        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
+        obj.Parent.BackColor = _backgroundColorSelectAndMouseUp
 
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
+        obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
 
 
-        Select Case btn.Name
+        Select Case obj.Name
             Case "BTNNovaPasta"
                 BTNOpcoes_BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseUp
 
@@ -317,19 +317,38 @@
 
     Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseLeave, BTNNovaMidia.MouseLeave, BTNMaisProcessos.MouseLeave, BTNMover.MouseLeave, BTNCopiar.MouseLeave, BTNExcluir.MouseLeave, BTNRenomear.MouseLeave, BTNOpcoes_BTNNovaPasta.MouseLeave, BTNOpcoes_BTNNovaMidia.MouseLeave, BTNOpcoes_BTNMaisProcessos.MouseLeave, BTNOpcoes_BTNMover.MouseLeave, BTNOpcoes_BTNCopiar.MouseLeave, BTNOpcoes_BTNExcluir.MouseLeave, BTNOpcoes_BTNRenomear.MouseLeave, CHKExibirPainelAreaDeTranferencia.MouseLeave, BTNRecortarParaAreaDeTransferencia.MouseLeave, BTNColarDaAreaDeTranferencia.MouseLeave, BTNCopiarParaAreaDeTransferencia.MouseLeave, BTNLimparSelecao.MouseLeave, BTNInverterSelecao.MouseLeave, BTNSelecionarTudo.MouseLeave
 
-        Dim btn As Object
+        Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
 
-            btn = CType(sender, CheckBox)
+            obj = CType(sender, CheckBox)
         Else
-            btn = CType(sender, Button)
+            obj = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
-        Select Case btn.Name
+        If TypeOf obj Is CheckBox Then
+            If obj.Checked = True Then
+
+                obj.Parent.Parent.BackColor = _borderColorChecked
+                obj.Parent.BackColor = _backgroundColorChecked
+                obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+            Else
+
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+
+            End If
+
+        Else
+            obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
+            obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+        End If
+
+
+
+        Select Case obj.Name
             Case "BTNNovaPasta"
                 BTNOpcoes_BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseLeave
 
@@ -401,21 +420,43 @@
     End Sub
 
     Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseMove, BTNNovaMidia.MouseMove, BTNMaisProcessos.MouseMove, BTNMover.MouseMove, BTNCopiar.MouseMove, BTNExcluir.MouseMove, BTNRenomear.MouseMove, BTNOpcoes_BTNNovaPasta.MouseMove, BTNOpcoes_BTNNovaMidia.MouseMove, BTNOpcoes_BTNMaisProcessos.MouseMove, BTNOpcoes_BTNMover.MouseMove, BTNOpcoes_BTNCopiar.MouseMove, BTNOpcoes_BTNExcluir.MouseMove, BTNOpcoes_BTNRenomear.MouseMove, CHKExibirPainelAreaDeTranferencia.MouseMove, BTNRecortarParaAreaDeTransferencia.MouseMove, BTNColarDaAreaDeTranferencia.MouseMove, BTNCopiarParaAreaDeTransferencia.MouseMove, BTNLimparSelecao.MouseMove, BTNInverterSelecao.MouseMove, BTNSelecionarTudo.MouseMove
-        Dim btn As Object
+
+        Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
 
-            btn = CType(sender, CheckBox)
+            obj = CType(sender, CheckBox)
         Else
-            btn = CType(sender, Button)
+            obj = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+        If TypeOf obj Is CheckBox Then
+            If obj.Checked = True Then
+
+                obj.Parent.Parent.BackColor = _borderColorChecked
+                obj.Parent.BackColor = _backgroundColorChecked
+                obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+            Else
+
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+                obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+            End If
+
+        Else
+            obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+            obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+            obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        End If
 
 
-        Select Case btn.Name
+
+
+
+        Select Case obj.Name
             Case "BTNNovaPasta"
                 BTNOpcoes_BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseHover
 
@@ -488,21 +529,40 @@
 
     Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNNovaPasta.MouseHover, BTNNovaMidia.MouseHover, BTNMaisProcessos.MouseHover, BTNMover.MouseHover, BTNCopiar.MouseHover, BTNExcluir.MouseHover, BTNRenomear.MouseHover, BTNOpcoes_BTNNovaPasta.MouseHover, BTNOpcoes_BTNNovaMidia.MouseHover, BTNOpcoes_BTNMaisProcessos.MouseHover, BTNOpcoes_BTNMover.MouseHover, BTNOpcoes_BTNCopiar.MouseHover, BTNOpcoes_BTNExcluir.MouseHover, BTNOpcoes_BTNRenomear.MouseHover, CHKExibirPainelAreaDeTranferencia.MouseHover, BTNRecortarParaAreaDeTransferencia.MouseHover, BTNColarDaAreaDeTranferencia.MouseHover, BTNCopiarParaAreaDeTransferencia.MouseHover, BTNLimparSelecao.MouseHover, BTNInverterSelecao.MouseHover, BTNSelecionarTudo.MouseHover
 
-        Dim btn As Object
+        Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
 
-            btn = CType(sender, CheckBox)
+            obj = CType(sender, CheckBox)
         Else
-            btn = CType(sender, Button)
+            obj = CType(sender, Button)
         End If
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+        If TypeOf obj Is CheckBox Then
+            If obj.Checked = True Then
+
+                obj.Parent.Parent.BackColor = _borderColorChecked
+                obj.Parent.BackColor = _backgroundColorChecked
+                obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
+            Else
+
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+                obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+            End If
+
+        Else
+            obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+            obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+            obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        End If
 
 
-        Select Case btn.Name
+
+        Select Case obj.Name
             Case "BTNNovaPasta"
                 BTNOpcoes_BTNNovaPasta.BackColor = _backgroundColorSelectAndMouseHover
 
@@ -612,13 +672,7 @@
 
     End Sub
 
-    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseDown, BTNSelecionarTudo.MouseDown, BTNRenomear.MouseDown, BTNRecortarParaAreaDeTransferencia.MouseDown, BTNOpcoes_BTNRenomear.MouseDown, BTNOpcoes_BTNNovaPasta.MouseDown, BTNOpcoes_BTNNovaMidia.MouseDown, BTNOpcoes_BTNMover.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNOpcoes_BTNExcluir.MouseDown, BTNOpcoes_BTNCopiar.MouseDown, BTNNovaPasta.MouseDown, BTNNovaMidia.MouseDown, BTNMover.MouseDown, BTNMaisProcessos.MouseDown, BTNLimparSelecao.MouseDown, BTNInverterSelecao.MouseDown, BTNExcluir.MouseDown, BTNCopiarParaAreaDeTransferencia.MouseDown, BTNCopiar.MouseDown, BTNColarDaAreaDeTranferencia.MouseDown
 
-    End Sub
-
-    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles CHKExibirPainelAreaDeTranferencia.MouseUp, BTNSelecionarTudo.MouseUp, BTNRenomear.MouseUp, BTNRecortarParaAreaDeTransferencia.MouseUp, BTNOpcoes_BTNRenomear.MouseUp, BTNOpcoes_BTNNovaPasta.MouseUp, BTNOpcoes_BTNNovaMidia.MouseUp, BTNOpcoes_BTNMover.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNOpcoes_BTNExcluir.MouseUp, BTNOpcoes_BTNCopiar.MouseUp, BTNNovaPasta.MouseUp, BTNNovaMidia.MouseUp, BTNMover.MouseUp, BTNMaisProcessos.MouseUp, BTNLimparSelecao.MouseUp, BTNInverterSelecao.MouseUp, BTNExcluir.MouseUp, BTNCopiarParaAreaDeTransferencia.MouseUp, BTNCopiar.MouseUp, BTNColarDaAreaDeTranferencia.MouseUp
-
-    End Sub
 
     Private Sub NovaPastaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovaPastaToolStripMenuItem.Click, NovaPastaProcessoToolStripMenuItem.Click
         Dim menuItem As ToolStripMenuItem
@@ -642,7 +696,6 @@
         If chk.Checked = True Then
             chk.Parent.Parent.BackColor = _borderColorChecked
             chk.FlatAppearance.BorderColor = _borderColorChecked
-            chk.FlatAppearance.BorderSize = 1
 
         Else
             chk.Parent.Parent.BackColor = Color.Transparent
@@ -650,12 +703,7 @@
         End If
         chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
 
-
-
     End Sub
-
-
-
 
 
     '  https://imasters.com.br/dotnet/programacao-orientada-objetos-em-10-licoes-praticas-parte-04

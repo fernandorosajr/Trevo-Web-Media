@@ -492,13 +492,24 @@
     End Sub
 
     Private Sub ButtonsEtiquetaDeSubTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeSubTitulo_Ocultar.Click, CKBEtiquetaDeSubTitulo_Legenda.Click, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Click, CKBEtiquetaDeSubTitulo_Autor.Click, CKBEtiquetaDeSubTitulo_Album.Click, CKBEtiquetaDeSubTitulo_Tipo.Click, CKBEtiquetaDeSubTitulo_DataDeCriacao.Click, CKBEtiquetaDeSubTitulo_DataDeModificacao.Click, CKBEtiquetaDeSubTitulo_Tamanho.Click
+
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
+        Call ChecarCheckBoxDeEtiquetas(chk)
+
+    End Sub
+    Private Sub ButtonsEtiquetaDeTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeTitulo_Nome.Click, CKBEtiquetaDeTitulo_NomeEExtencao.Click, CKBEtiquetaDeTitulo_Legenda.Click, CKBEtiquetaDeTitulo_DataDeCriacao.Click, CKBEtiquetaDeTitulo_DataDeModificacao.Click, CKBEtiquetaDeTitulo_Tamanho.Click, CKBEtiquetaDeTitulo_TamanhoDaImagem.Click, CKBEtiquetaDeTitulo_Autor.Click, CKBEtiquetaDeTitulo_Album.Click
+
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+        Call ChecarCheckBoxDeEtiquetas(chk)
+
+    End Sub
+
+    Private Sub ChecarCheckBoxDeEtiquetas(chk As CheckBox)
 
         Dim chk_subcontrol As CheckBox
-
         For Each control In chk.Parent.Parent.Parent.Parent.Controls
-            ' MsgBox(PanelLayoutEsquerdo_EtiquetaDeTitulo.Controls.Item(0).Controls.Item(0).Controls.Item(0).Name.ToString())
 
             For Each subControl In control.Controls
                 chk_subcontrol = subControl.Controls.Item(0).Controls.Item(0)
@@ -511,58 +522,6 @@
 
             Next
         Next
-
-
-    End Sub
-    Private Sub ButtonsEtiquetaDeTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeTitulo_Nome.Click, CKBEtiquetaDeTitulo_NomeEExtencao.Click, CKBEtiquetaDeTitulo_Legenda.Click, CKBEtiquetaDeTitulo_DataDeCriacao.Click, CKBEtiquetaDeTitulo_DataDeModificacao.Click, CKBEtiquetaDeTitulo_Tamanho.Click, CKBEtiquetaDeTitulo_TamanhoDaImagem.Click, CKBEtiquetaDeTitulo_Autor.Click, CKBEtiquetaDeTitulo_Album.Click
-
-        Dim chk As CheckBox
-        chk = CType(sender, CheckBox)
-
-
-        CKBEtiquetaDeTitulo_Nome.Checked = False
-        CKBEtiquetaDeTitulo_Nome.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_Nome.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_NomeEExtencao.Checked = False
-        CKBEtiquetaDeTitulo_NomeEExtencao.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_NomeEExtencao.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_Legenda.Checked = False
-        CKBEtiquetaDeTitulo_Legenda.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_Legenda.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_DataDeCriacao.Checked = False
-        CKBEtiquetaDeTitulo_DataDeCriacao.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_DataDeCriacao.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_DataDeModificacao.Checked = False
-        CKBEtiquetaDeTitulo_DataDeModificacao.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_DataDeModificacao.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_Tamanho.Checked = False
-        CKBEtiquetaDeTitulo_Tamanho.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_Tamanho.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_TamanhoDaImagem.Checked = False
-        CKBEtiquetaDeTitulo_TamanhoDaImagem.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_TamanhoDaImagem.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_Autor.Checked = False
-        CKBEtiquetaDeTitulo_Autor.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_Autor.Parent.Parent.BackColor = Color.Transparent
-
-        CKBEtiquetaDeTitulo_Album.Checked = False
-        CKBEtiquetaDeTitulo_Album.Parent.BackColor = Color.Transparent
-        CKBEtiquetaDeTitulo_Album.Parent.Parent.BackColor = Color.Transparent
-
-
-
-        chk.Checked = True
-
-        Select Case chk.Name
-            Case ""
-        End Select
     End Sub
 
 

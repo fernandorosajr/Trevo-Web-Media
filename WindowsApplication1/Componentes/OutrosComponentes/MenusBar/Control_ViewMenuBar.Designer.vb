@@ -27,8 +27,7 @@ Partial Class Control_ViewMenuBar
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelExibirEtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelLayoutDireito_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
@@ -99,20 +98,22 @@ Partial Class Control_ViewMenuBar
         Me.LBLGEtiquetaDeTitulo = New System.Windows.Forms.Label()
         Me.PanelEnvolve_Exibir = New System.Windows.Forms.Panel()
         Me.PanelExibir = New System.Windows.Forms.Panel()
-        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.PanelDivisor02 = New System.Windows.Forms.Panel()
+        Me.PanelEnvolveButton_PanelExibir = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirEstrelas = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirEstrelas = New System.Windows.Forms.Panel()
         Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
         Me.PanelDivisor03 = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.PanelDivisor02 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirFlag = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirFlag = New System.Windows.Forms.Panel()
         Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.Panel37 = New System.Windows.Forms.Panel()
         Me.LabelExibir = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelExibirPaineis = New System.Windows.Forms.Panel()
         Me.PanelExibirPaineis = New System.Windows.Forms.Panel()
@@ -155,14 +156,11 @@ Partial Class Control_ViewMenuBar
         Me.PerguntarAntesDeExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.PanelEnvolveButton_PanelExibir = New System.Windows.Forms.Panel()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
         Me.PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
-        Me.Panel20.SuspendLayout()
-        Me.Panel24.SuspendLayout()
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.SuspendLayout()
         Me.PanelLayoutDireito_EtiquetaDeSubTitulo.SuspendLayout()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.SuspendLayout()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.SuspendLayout()
@@ -211,10 +209,11 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.SuspendLayout()
         Me.PanelEnvolve_Exibir.SuspendLayout()
         Me.PanelExibir.SuspendLayout()
-        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
-        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelEnvolveButton_PanelExibir.SuspendLayout()
         Me.PanelBorder_CKBExibirEstrelas.SuspendLayout()
         Me.PanelEnvolve_CKBExibirEstrelas.SuspendLayout()
+        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
         Me.PanelBorder_CKBExibirFlag.SuspendLayout()
         Me.PanelEnvolve_CKBExibirFlag.SuspendLayout()
         Me.PanelEnvolve_PanelExibirPaineis.SuspendLayout()
@@ -230,7 +229,6 @@ Partial Class Control_ViewMenuBar
         Me.CMenuS_BTNOpcoes_BTNCopiar.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNExcluir.SuspendLayout()
         Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
-        Me.PanelEnvolveButton_PanelExibir.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -266,7 +264,7 @@ Partial Class Control_ViewMenuBar
         '
         'PanelExibirEtiquetaDeSubTitulo
         '
-        Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.Panel20)
+        Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.PanelEnvolve_EtiquetaDeSubTitulo)
         Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.Panel48)
         Me.PanelExibirEtiquetaDeSubTitulo.Controls.Add(Me.LBLGEtiquetaDeSubTitulo)
         Me.PanelExibirEtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Fill
@@ -275,25 +273,16 @@ Partial Class Control_ViewMenuBar
         Me.PanelExibirEtiquetaDeSubTitulo.Size = New System.Drawing.Size(403, 77)
         Me.PanelExibirEtiquetaDeSubTitulo.TabIndex = 6
         '
-        'Panel20
+        'PanelEnvolve_EtiquetaDeSubTitulo
         '
-        Me.Panel20.Controls.Add(Me.Panel24)
-        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel20.Location = New System.Drawing.Point(0, 0)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(402, 64)
-        Me.Panel20.TabIndex = 11
-        '
-        'Panel24
-        '
-        Me.Panel24.Controls.Add(Me.PanelLayoutDireito_EtiquetaDeSubTitulo)
-        Me.Panel24.Controls.Add(Me.PanelLayoutCentro_EtiquetaDeSubTitulo)
-        Me.Panel24.Controls.Add(Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo)
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(0, 0)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(402, 64)
-        Me.Panel24.TabIndex = 21
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Controls.Add(Me.PanelLayoutDireito_EtiquetaDeSubTitulo)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Controls.Add(Me.PanelLayoutCentro_EtiquetaDeSubTitulo)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Controls.Add(Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Name = "PanelEnvolve_EtiquetaDeSubTitulo"
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.Size = New System.Drawing.Size(402, 64)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.TabIndex = 21
         '
         'PanelLayoutDireito_EtiquetaDeSubTitulo
         '
@@ -1205,79 +1194,18 @@ Partial Class Control_ViewMenuBar
         Me.PanelExibir.Size = New System.Drawing.Size(231, 77)
         Me.PanelExibir.TabIndex = 6
         '
-        'PanelBorder_CKBExibirStatusGravado
+        'PanelEnvolveButton_PanelExibir
         '
-        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
-        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(76, 0)
-        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
-        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 64)
-        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 24
-        '
-        'PanelEnvolve_CKBExibirStatusGravado
-        '
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
-        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
-        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
-        '
-        'CKBExibirStatusGravado
-        '
-        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
-        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
-        Me.CKBExibirStatusGravado.TabIndex = 22
-        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBExibirStatusGravado
-        '
-        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 41)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
-        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
-        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
-        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravado?"
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'PanelDivisor02
-        '
-        Me.PanelDivisor02.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelDivisor02.Location = New System.Drawing.Point(75, 0)
-        Me.PanelDivisor02.Name = "PanelDivisor02"
-        Me.PanelDivisor02.Size = New System.Drawing.Size(1, 64)
-        Me.PanelDivisor02.TabIndex = 27
+        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirEstrelas)
+        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelDivisor03)
+        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirStatusGravado)
+        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelDivisor02)
+        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirFlag)
+        Me.PanelEnvolveButton_PanelExibir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolveButton_PanelExibir.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolveButton_PanelExibir.Name = "PanelEnvolveButton_PanelExibir"
+        Me.PanelEnvolveButton_PanelExibir.Size = New System.Drawing.Size(230, 64)
+        Me.PanelEnvolveButton_PanelExibir.TabIndex = 11
         '
         'PanelBorder_CKBExibirEstrelas
         '
@@ -1353,6 +1281,80 @@ Partial Class Control_ViewMenuBar
         Me.PanelDivisor03.Size = New System.Drawing.Size(1, 64)
         Me.PanelDivisor03.TabIndex = 28
         '
+        'PanelBorder_CKBExibirStatusGravado
+        '
+        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
+        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(76, 0)
+        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
+        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 64)
+        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 24
+        '
+        'PanelEnvolve_CKBExibirStatusGravado
+        '
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
+        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
+        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
+        '
+        'CKBExibirStatusGravado
+        '
+        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
+        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirStatusGravado.TabIndex = 22
+        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBExibirStatusGravado
+        '
+        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 41)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
+        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
+        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravado?"
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'PanelDivisor02
+        '
+        Me.PanelDivisor02.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelDivisor02.Location = New System.Drawing.Point(75, 0)
+        Me.PanelDivisor02.Name = "PanelDivisor02"
+        Me.PanelDivisor02.Size = New System.Drawing.Size(1, 64)
+        Me.PanelDivisor02.TabIndex = 27
+        '
         'PanelBorder_CKBExibirFlag
         '
         Me.PanelBorder_CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
@@ -1418,6 +1420,15 @@ Partial Class Control_ViewMenuBar
         Me.CKBOpcoes_CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.CKBOpcoes_CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBOpcoes_CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'Panel37
+        '
+        Me.Panel37.BackColor = System.Drawing.Color.LightGray
+        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel37.Location = New System.Drawing.Point(230, 0)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(1, 64)
+        Me.Panel37.TabIndex = 10
         '
         'LabelExibir
         '
@@ -1827,28 +1838,6 @@ Partial Class Control_ViewMenuBar
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
         Me.ToolStripMenuItem2.Text = "Critérios"
         '
-        'Panel37
-        '
-        Me.Panel37.BackColor = System.Drawing.Color.LightGray
-        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(230, 0)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(1, 64)
-        Me.Panel37.TabIndex = 10
-        '
-        'PanelEnvolveButton_PanelExibir
-        '
-        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirEstrelas)
-        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelDivisor03)
-        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirStatusGravado)
-        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelDivisor02)
-        Me.PanelEnvolveButton_PanelExibir.Controls.Add(Me.PanelBorder_CKBExibirFlag)
-        Me.PanelEnvolveButton_PanelExibir.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolveButton_PanelExibir.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolveButton_PanelExibir.Name = "PanelEnvolveButton_PanelExibir"
-        Me.PanelEnvolveButton_PanelExibir.Size = New System.Drawing.Size(230, 64)
-        Me.PanelEnvolveButton_PanelExibir.TabIndex = 11
-        '
         'Control_ViewMenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1860,8 +1849,7 @@ Partial Class Control_ViewMenuBar
         Me.Panel25.ResumeLayout(False)
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.ResumeLayout(False)
         Me.PanelExibirEtiquetaDeSubTitulo.ResumeLayout(False)
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel24.ResumeLayout(False)
+        Me.PanelEnvolve_EtiquetaDeSubTitulo.ResumeLayout(False)
         Me.PanelLayoutDireito_EtiquetaDeSubTitulo.ResumeLayout(False)
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho.ResumeLayout(False)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.ResumeLayout(False)
@@ -1910,10 +1898,11 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.ResumeLayout(False)
         Me.PanelEnvolve_Exibir.ResumeLayout(False)
         Me.PanelExibir.ResumeLayout(False)
-        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelEnvolveButton_PanelExibir.ResumeLayout(False)
         Me.PanelBorder_CKBExibirEstrelas.ResumeLayout(False)
         Me.PanelEnvolve_CKBExibirEstrelas.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
         Me.PanelBorder_CKBExibirFlag.ResumeLayout(False)
         Me.PanelEnvolve_CKBExibirFlag.ResumeLayout(False)
         Me.PanelEnvolve_PanelExibirPaineis.ResumeLayout(False)
@@ -1929,7 +1918,6 @@ Partial Class Control_ViewMenuBar
         Me.CMenuS_BTNOpcoes_BTNCopiar.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNExcluir.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
-        Me.PanelEnvolveButton_PanelExibir.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1984,8 +1972,7 @@ Partial Class Control_ViewMenuBar
     Friend WithEvents LabelExibir As Label
     Friend WithEvents PanelEnvolve_PanelExibirEtiquetaDeSubTitulo As Panel
     Friend WithEvents PanelExibirEtiquetaDeSubTitulo As Panel
-    Friend WithEvents Panel20 As Panel
-    Friend WithEvents Panel24 As Panel
+    Friend WithEvents PanelEnvolve_EtiquetaDeSubTitulo As Panel
     Friend WithEvents PanelLayoutDireito_EtiquetaDeSubTitulo As Panel
     Friend WithEvents PanelLayoutCentro_EtiquetaDeSubTitulo As Panel
     Friend WithEvents PanelLayoutEsquerdo_EtiquetaDeSubTitulo As Panel

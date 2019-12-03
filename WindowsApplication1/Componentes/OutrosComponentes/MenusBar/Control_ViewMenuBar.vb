@@ -495,7 +495,22 @@
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
 
-        '  For Each control In
+        Dim chk_subcontrol As CheckBox
+
+        For Each control In chk.Parent.Parent.Parent.Parent.Controls
+            ' MsgBox(PanelLayoutEsquerdo_EtiquetaDeTitulo.Controls.Item(0).Controls.Item(0).Controls.Item(0).Name.ToString())
+
+            For Each subControl In control.Controls
+                chk_subcontrol = subControl.Controls.Item(0).Controls.Item(0)
+
+                If chk_subcontrol.Name <> chk.Name Then
+                    chk_subcontrol.Checked = False
+                    chk_subcontrol.Parent.BackColor = Color.Transparent
+                    chk_subcontrol.Parent.Parent.BackColor = Color.Transparent
+                End If
+
+            Next
+        Next
 
 
     End Sub
@@ -540,6 +555,8 @@
         CKBEtiquetaDeTitulo_Album.Checked = False
         CKBEtiquetaDeTitulo_Album.Parent.BackColor = Color.Transparent
         CKBEtiquetaDeTitulo_Album.Parent.Parent.BackColor = Color.Transparent
+
+
 
         chk.Checked = True
 

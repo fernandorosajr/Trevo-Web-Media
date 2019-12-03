@@ -151,7 +151,7 @@
 
     End Sub
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseUp, CKBOpcoes_CKBPainelEsquedo.MouseUp, CKBPainelDireito.MouseUp, CKBOpcoes_CKBPainelDireito.MouseUp, CKBExibirEstrelas.MouseUp, CKBOpcoes_CKBExibirEstrelas.MouseUp, CKBExibirStatusGravado.MouseUp, CKBOpcoes_CKBExibirStatusGravado.MouseUp, CKBExibirFlag.MouseUp, CKBOpcoes_CKBExibirFlag.MouseUp, CKBEtiquetaDeTitulo_Nome.MouseUp, CKBEtiquetaDeTitulo_NomeEExtencao.MouseUp, CKBEtiquetaDeTitulo_Legenda.MouseUp, CKBEtiquetaDeTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeTitulo_DataDeModificacao.MouseUp, CKBEtiquetaDeTitulo_Tamanho.MouseUp, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseUp, CKBEtiquetaDeTitulo_Autor.MouseUp, CKBEtiquetaDeTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Ocultar.MouseUp, CKBEtiquetaDeSubTitulo_Legenda.MouseUp, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseUp, CKBEtiquetaDeSubTitulo_Autor.MouseUp, CKBEtiquetaDeSubTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Tipo.MouseUp, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseUp, CKBEtiquetaDeSubTitulo_Tamanho.MouseUp
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.MouseUp, CKBOpcoes_CKBExibirMaisDetalhes.MouseUp, CKBPainelEsquedo.MouseUp, CKBOpcoes_CKBPainelEsquedo.MouseUp, CKBPainelDireito.MouseUp, CKBOpcoes_CKBPainelDireito.MouseUp, CKBExibirEstrelas.MouseUp, CKBOpcoes_CKBExibirEstrelas.MouseUp, CKBExibirStatusGravado.MouseUp, CKBOpcoes_CKBExibirStatusGravado.MouseUp, CKBExibirFlag.MouseUp, CKBOpcoes_CKBExibirFlag.MouseUp, CKBEtiquetaDeTitulo_Nome.MouseUp, CKBEtiquetaDeTitulo_NomeEExtencao.MouseUp, CKBEtiquetaDeTitulo_Legenda.MouseUp, CKBEtiquetaDeTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeTitulo_DatasRecentes.MouseUp, CKBEtiquetaDeTitulo_Tamanho.MouseUp, CKBEtiquetaDeTitulo_Resolucao.MouseUp, CKBEtiquetaDeTitulo_Autor.MouseUp, CKBEtiquetaDeTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Ocultar.MouseUp, CKBEtiquetaDeSubTitulo_Legenda.MouseUp, CKBEtiquetaDeSubTitulo_Resolucao.MouseUp, CKBEtiquetaDeSubTitulo_Autor.MouseUp, CKBEtiquetaDeSubTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Tipo.MouseUp, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseUp, CKBEtiquetaDeSubTitulo_Tamanho.MouseUp
 
         Dim btn As Object
 
@@ -193,13 +193,19 @@
             Case "CKBExibirFlag"
                 CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseUp
 
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseUp
+
         End Select
 
     End Sub
 
 
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBExibirEstrelas.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_DataDeModificacao.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Ocultar.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.MouseDown, CKBOpcoes_CKBExibirMaisDetalhes.MouseDown, CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBExibirEstrelas.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_Resolucao.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Ocultar.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_Resolucao.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown
 
         Dim btn As Object
 
@@ -242,11 +248,17 @@
             Case "CKBExibirFlag"
                 CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseDown
 
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseDown
+
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseDown
+
         End Select
 
     End Sub
 
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseLeave, CKBOpcoes_CKBPainelEsquedo.MouseLeave, CKBPainelDireito.MouseLeave, CKBOpcoes_CKBPainelDireito.MouseLeave, CKBExibirEstrelas.MouseLeave, CKBOpcoes_CKBExibirEstrelas.MouseLeave, CKBExibirStatusGravado.MouseLeave, CKBOpcoes_CKBExibirStatusGravado.MouseLeave, CKBExibirFlag.MouseLeave, CKBOpcoes_CKBExibirFlag.MouseLeave, CKBEtiquetaDeTitulo_Nome.MouseLeave, CKBEtiquetaDeTitulo_NomeEExtencao.MouseLeave, CKBEtiquetaDeTitulo_Legenda.MouseLeave, CKBEtiquetaDeTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeTitulo_DataDeModificacao.MouseLeave, CKBEtiquetaDeTitulo_Tamanho.MouseLeave, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseLeave, CKBEtiquetaDeTitulo_Autor.MouseLeave, CKBEtiquetaDeTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Ocultar.MouseLeave, CKBEtiquetaDeSubTitulo_Legenda.MouseLeave, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseLeave, CKBEtiquetaDeSubTitulo_Autor.MouseLeave, CKBEtiquetaDeSubTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Tipo.MouseLeave, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseLeave, CKBEtiquetaDeSubTitulo_Tamanho.MouseLeave
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.MouseLeave, CKBOpcoes_CKBExibirMaisDetalhes.MouseLeave, CKBPainelEsquedo.MouseLeave, CKBOpcoes_CKBPainelEsquedo.MouseLeave, CKBPainelDireito.MouseLeave, CKBOpcoes_CKBPainelDireito.MouseLeave, CKBExibirEstrelas.MouseLeave, CKBOpcoes_CKBExibirEstrelas.MouseLeave, CKBExibirStatusGravado.MouseLeave, CKBOpcoes_CKBExibirStatusGravado.MouseLeave, CKBExibirFlag.MouseLeave, CKBOpcoes_CKBExibirFlag.MouseLeave, CKBEtiquetaDeTitulo_Nome.MouseLeave, CKBEtiquetaDeTitulo_NomeEExtencao.MouseLeave, CKBEtiquetaDeTitulo_Legenda.MouseLeave, CKBEtiquetaDeTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeTitulo_Tamanho.MouseLeave, CKBEtiquetaDeTitulo_Resolucao.MouseLeave, CKBEtiquetaDeTitulo_Autor.MouseLeave, CKBEtiquetaDeTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Ocultar.MouseLeave, CKBEtiquetaDeSubTitulo_Legenda.MouseLeave, CKBEtiquetaDeSubTitulo_Resolucao.MouseLeave, CKBEtiquetaDeSubTitulo_Autor.MouseLeave, CKBEtiquetaDeSubTitulo_Album.MouseLeave, CKBEtiquetaDeSubTitulo_Tipo.MouseLeave, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseLeave, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseLeave, CKBEtiquetaDeSubTitulo_Tamanho.MouseLeave, CKBEtiquetaDeTitulo_DatasRecentes.MouseLeave
 
         Dim btn As Object
 
@@ -300,28 +312,26 @@
             Case "CKBExibirFlag"
                 CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseLeave
 
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseLeave
 
-
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseLeave
 
         End Select
     End Sub
 
 
 
-    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseMove, CKBOpcoes_CKBPainelEsquedo.MouseMove, CKBPainelDireito.MouseMove, CKBOpcoes_CKBPainelDireito.MouseMove, CKBExibirEstrelas.MouseMove, CKBOpcoes_CKBExibirEstrelas.MouseMove, CKBExibirStatusGravado.MouseMove, CKBOpcoes_CKBExibirStatusGravado.MouseMove, CKBExibirFlag.MouseMove, CKBOpcoes_CKBExibirFlag.MouseMove, CKBEtiquetaDeTitulo_Nome.MouseMove, CKBEtiquetaDeTitulo_NomeEExtencao.MouseMove, CKBEtiquetaDeTitulo_Legenda.MouseMove, CKBEtiquetaDeTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeTitulo_DataDeModificacao.MouseMove, CKBEtiquetaDeTitulo_Tamanho.MouseMove, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseMove, CKBEtiquetaDeTitulo_Autor.MouseMove, CKBEtiquetaDeTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Ocultar.MouseMove, CKBEtiquetaDeSubTitulo_Legenda.MouseMove, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseMove, CKBEtiquetaDeSubTitulo_Autor.MouseMove, CKBEtiquetaDeSubTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Tipo.MouseMove, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseMove, CKBEtiquetaDeSubTitulo_Tamanho.MouseMove
+    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.MouseMove, CKBOpcoes_CKBExibirMaisDetalhes.MouseMove, CKBPainelEsquedo.MouseMove, CKBOpcoes_CKBPainelEsquedo.MouseMove, CKBPainelDireito.MouseMove, CKBOpcoes_CKBPainelDireito.MouseMove, CKBExibirEstrelas.MouseMove, CKBOpcoes_CKBExibirEstrelas.MouseMove, CKBExibirStatusGravado.MouseMove, CKBOpcoes_CKBExibirStatusGravado.MouseMove, CKBExibirFlag.MouseMove, CKBOpcoes_CKBExibirFlag.MouseMove, CKBEtiquetaDeTitulo_Nome.MouseMove, CKBEtiquetaDeTitulo_NomeEExtencao.MouseMove, CKBEtiquetaDeTitulo_Legenda.MouseMove, CKBEtiquetaDeTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeTitulo_DatasRecentes.MouseMove, CKBEtiquetaDeTitulo_Tamanho.MouseMove, CKBEtiquetaDeTitulo_Resolucao.MouseMove, CKBEtiquetaDeTitulo_Autor.MouseMove, CKBEtiquetaDeTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Ocultar.MouseMove, CKBEtiquetaDeSubTitulo_Legenda.MouseMove, CKBEtiquetaDeSubTitulo_Resolucao.MouseMove, CKBEtiquetaDeSubTitulo_Autor.MouseMove, CKBEtiquetaDeSubTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Tipo.MouseMove, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseMove, CKBEtiquetaDeSubTitulo_Tamanho.MouseMove
 
         Dim btn As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
-
             btn = CType(sender, CheckBox)
         Else
             btn = CType(sender, Button)
         End If
-
-        'btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        'btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        'btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
 
         If btn.Checked = True Then
 
@@ -336,7 +346,6 @@
             btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
 
         End If
-
 
         Select Case btn.Name
             Case "CKBPainelEsquedo"
@@ -363,6 +372,11 @@
             Case "CKBExibirFlag"
                 CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
 
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseHover
 
         End Select
     End Sub
@@ -370,7 +384,7 @@
 
 
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.MouseHover, CKBOpcoes_CKBPainelEsquedo.MouseHover, CKBPainelDireito.MouseHover, CKBOpcoes_CKBPainelDireito.MouseHover, CKBExibirEstrelas.MouseHover, CKBOpcoes_CKBExibirEstrelas.MouseHover, CKBExibirStatusGravado.MouseHover, CKBOpcoes_CKBExibirStatusGravado.MouseHover, CKBExibirFlag.MouseHover, CKBOpcoes_CKBExibirFlag.MouseHover, CKBEtiquetaDeTitulo_Nome.MouseHover, CKBEtiquetaDeTitulo_NomeEExtencao.MouseHover, CKBEtiquetaDeTitulo_Legenda.MouseHover, CKBEtiquetaDeTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeTitulo_DataDeModificacao.MouseHover, CKBEtiquetaDeTitulo_Tamanho.MouseHover, CKBEtiquetaDeTitulo_TamanhoDaImagem.MouseHover, CKBEtiquetaDeTitulo_Autor.MouseHover, CKBEtiquetaDeTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Ocultar.MouseHover, CKBEtiquetaDeSubTitulo_Legenda.MouseHover, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.MouseHover, CKBEtiquetaDeSubTitulo_Autor.MouseHover, CKBEtiquetaDeSubTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Tipo.MouseHover, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeSubTitulo_DataDeModificacao.MouseHover, CKBEtiquetaDeSubTitulo_Tamanho.MouseHover
+    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBExibirMaisDetalhes.MouseHover, CKBExibirMaisDetalhes.MouseHover, CKBPainelEsquedo.MouseHover, CKBOpcoes_CKBPainelEsquedo.MouseHover, CKBPainelDireito.MouseHover, CKBOpcoes_CKBPainelDireito.MouseHover, CKBExibirEstrelas.MouseHover, CKBOpcoes_CKBExibirEstrelas.MouseHover, CKBExibirStatusGravado.MouseHover, CKBOpcoes_CKBExibirStatusGravado.MouseHover, CKBExibirFlag.MouseHover, CKBOpcoes_CKBExibirFlag.MouseHover, CKBEtiquetaDeTitulo_Nome.MouseHover, CKBEtiquetaDeTitulo_NomeEExtencao.MouseHover, CKBEtiquetaDeTitulo_Legenda.MouseHover, CKBEtiquetaDeTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeTitulo_Tamanho.MouseHover, CKBEtiquetaDeTitulo_Resolucao.MouseHover, CKBEtiquetaDeTitulo_Autor.MouseHover, CKBEtiquetaDeTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Ocultar.MouseHover, CKBEtiquetaDeSubTitulo_Legenda.MouseHover, CKBEtiquetaDeSubTitulo_Resolucao.MouseHover, CKBEtiquetaDeSubTitulo_Autor.MouseHover, CKBEtiquetaDeSubTitulo_Album.MouseHover, CKBEtiquetaDeSubTitulo_Tipo.MouseHover, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseHover, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseHover, CKBEtiquetaDeSubTitulo_Tamanho.MouseHover, CKBEtiquetaDeTitulo_DatasRecentes.MouseHover
 
 
         Dim btn As Object
@@ -424,12 +438,17 @@
                 CKBOpcoes_CKBExibirFlag.BackColor = _backgroundColorSelectAndMouseHover
 
 
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseHover
+
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.BackColor = _backgroundColorSelectAndMouseHover
 
         End Select
 
     End Sub
 
-    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBPainelEsquedo.CheckedChanged, CKBOpcoes_CKBPainelEsquedo.CheckedChanged, CKBPainelDireito.CheckedChanged, CKBOpcoes_CKBPainelDireito.CheckedChanged, CKBExibirEstrelas.CheckedChanged, CKBOpcoes_CKBExibirEstrelas.CheckedChanged, CKBExibirStatusGravado.CheckedChanged, CKBOpcoes_CKBExibirStatusGravado.CheckedChanged, CKBExibirFlag.CheckedChanged, CKBOpcoes_CKBExibirFlag.CheckedChanged, CKBEtiquetaDeTitulo_Nome.CheckedChanged, CKBEtiquetaDeTitulo_NomeEExtencao.CheckedChanged, CKBEtiquetaDeTitulo_Legenda.CheckedChanged, CKBEtiquetaDeTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeTitulo_DataDeModificacao.CheckedChanged, CKBEtiquetaDeTitulo_Tamanho.CheckedChanged, CKBEtiquetaDeTitulo_TamanhoDaImagem.CheckedChanged, CKBEtiquetaDeTitulo_Autor.CheckedChanged, CKBEtiquetaDeTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Ocultar.CheckedChanged, CKBEtiquetaDeSubTitulo_Legenda.CheckedChanged, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.CheckedChanged, CKBEtiquetaDeSubTitulo_Autor.CheckedChanged, CKBEtiquetaDeSubTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Tipo.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeModificacao.CheckedChanged, CKBEtiquetaDeSubTitulo_Tamanho.CheckedChanged
+    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.CheckedChanged, CKBOpcoes_CKBExibirMaisDetalhes.CheckedChanged, CKBPainelEsquedo.CheckedChanged, CKBOpcoes_CKBPainelEsquedo.CheckedChanged, CKBPainelDireito.CheckedChanged, CKBOpcoes_CKBPainelDireito.CheckedChanged, CKBExibirEstrelas.CheckedChanged, CKBOpcoes_CKBExibirEstrelas.CheckedChanged, CKBExibirStatusGravado.CheckedChanged, CKBOpcoes_CKBExibirStatusGravado.CheckedChanged, CKBExibirFlag.CheckedChanged, CKBOpcoes_CKBExibirFlag.CheckedChanged, CKBEtiquetaDeTitulo_Nome.CheckedChanged, CKBEtiquetaDeTitulo_NomeEExtencao.CheckedChanged, CKBEtiquetaDeTitulo_Legenda.CheckedChanged, CKBEtiquetaDeTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeTitulo_DatasRecentes.CheckedChanged, CKBEtiquetaDeTitulo_Tamanho.CheckedChanged, CKBEtiquetaDeTitulo_Resolucao.CheckedChanged, CKBEtiquetaDeTitulo_Autor.CheckedChanged, CKBEtiquetaDeTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Ocultar.CheckedChanged, CKBEtiquetaDeSubTitulo_Legenda.CheckedChanged, CKBEtiquetaDeSubTitulo_Resolucao.CheckedChanged, CKBEtiquetaDeSubTitulo_Autor.CheckedChanged, CKBEtiquetaDeSubTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Tipo.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeSubTitulo_DatasRecentes.CheckedChanged, CKBEtiquetaDeSubTitulo_Tamanho.CheckedChanged
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
 
@@ -439,7 +458,10 @@
             '  chk.FlatAppearance.BorderSize = 1
 
         Else
-            chk.Parent.Parent.BackColor = Color.Transparent
+            chk.Parent.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+            chk.Parent.BackColor = _borderColorSelectAndMouseLeave
+            'Color.Transparent
+
             chk.FlatAppearance.BorderSize = 0
         End If
         chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
@@ -473,6 +495,12 @@
 
             Case "CKBOpcoes_CKBExibirFlag"
                 CKBExibirFlag.Checked = CKBOpcoes_CKBExibirFlag.Checked
+
+            Case "CKBExibirMaisDetalhes"
+                CKBOpcoes_CKBExibirMaisDetalhes.Checked = CKBExibirMaisDetalhes.Checked
+
+            Case "CKBOpcoes_CKBExibirMaisDetalhes"
+                CKBExibirMaisDetalhes.Checked = CKBOpcoes_CKBExibirMaisDetalhes.Checked
         End Select
 
     End Sub
@@ -491,22 +519,24 @@
 
     End Sub
 
-    Private Sub ButtonsEtiquetaDeSubTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeSubTitulo_Ocultar.Click, CKBEtiquetaDeSubTitulo_Legenda.Click, CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Click, CKBEtiquetaDeSubTitulo_Autor.Click, CKBEtiquetaDeSubTitulo_Album.Click, CKBEtiquetaDeSubTitulo_Tipo.Click, CKBEtiquetaDeSubTitulo_DataDeCriacao.Click, CKBEtiquetaDeSubTitulo_DataDeModificacao.Click, CKBEtiquetaDeSubTitulo_Tamanho.Click
+    Private Sub ButtonsEtiquetaDeSubTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeSubTitulo_Ocultar.Click, CKBEtiquetaDeSubTitulo_Legenda.Click, CKBEtiquetaDeSubTitulo_Resolucao.Click, CKBEtiquetaDeSubTitulo_Autor.Click, CKBEtiquetaDeSubTitulo_Album.Click, CKBEtiquetaDeSubTitulo_Tipo.Click, CKBEtiquetaDeSubTitulo_DataDeCriacao.Click, CKBEtiquetaDeSubTitulo_DatasRecentes.Click, CKBEtiquetaDeSubTitulo_Tamanho.Click
 
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
-        Call ChecarCheckBoxDeEtiquetas(chk)
+        Call ChecarEMarcarCheckBoxDeEtiquetas(chk)
 
     End Sub
-    Private Sub ButtonsEtiquetaDeTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeTitulo_Nome.Click, CKBEtiquetaDeTitulo_NomeEExtencao.Click, CKBEtiquetaDeTitulo_Legenda.Click, CKBEtiquetaDeTitulo_DataDeCriacao.Click, CKBEtiquetaDeTitulo_DataDeModificacao.Click, CKBEtiquetaDeTitulo_Tamanho.Click, CKBEtiquetaDeTitulo_TamanhoDaImagem.Click, CKBEtiquetaDeTitulo_Autor.Click, CKBEtiquetaDeTitulo_Album.Click
+
+    Private Sub ButtonsEtiquetaDeTitulo_Click(sender As Object, e As EventArgs) Handles CKBEtiquetaDeTitulo_Nome.Click, CKBEtiquetaDeTitulo_NomeEExtencao.Click, CKBEtiquetaDeTitulo_Legenda.Click, CKBEtiquetaDeTitulo_DataDeCriacao.Click, CKBEtiquetaDeTitulo_Tamanho.Click, CKBEtiquetaDeTitulo_Resolucao.Click, CKBEtiquetaDeTitulo_Autor.Click, CKBEtiquetaDeTitulo_Album.Click, CKBEtiquetaDeTitulo_DatasRecentes.Click
 
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
-        Call ChecarCheckBoxDeEtiquetas(chk)
+        Call ChecarEMarcarCheckBoxDeEtiquetas(chk)
+
 
     End Sub
 
-    Private Sub ChecarCheckBoxDeEtiquetas(chk As CheckBox)
+    Private Sub ChecarEMarcarCheckBoxDeEtiquetas(chk As CheckBox)
 
         Dim chk_subcontrol As CheckBox
         For Each control In chk.Parent.Parent.Parent.Parent.Controls
@@ -522,7 +552,37 @@
 
             Next
         Next
+
+        CKBExibirMaisDetalhes.Checked = False
+        CKBOpcoes_CKBExibirMaisDetalhes.Checked = False
+
+
     End Sub
+
+    Private Sub ZerarCheckBoxDeEtiquetas(chk As CheckBox)
+
+        Dim chk_subcontrol As CheckBox
+        For Each control In chk.Parent.Parent.Parent.Parent.Controls
+
+            For Each subControl In control.Controls
+                chk_subcontrol = subControl.Controls.Item(0).Controls.Item(0)
+
+
+                chk_subcontrol.Checked = False
+                chk_subcontrol.Parent.BackColor = Color.Transparent
+                chk_subcontrol.Parent.Parent.BackColor = Color.Transparent
+
+
+            Next
+        Next
+    End Sub
+
+    Private Sub CKBExibirMaisDetalhesAndCKBOpcoes_CKBExibirMaisDetalhes_Click(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.Click, CKBOpcoes_CKBExibirMaisDetalhes.Click
+        ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeTitulo_Nome)
+        ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeSubTitulo_Ocultar)
+    End Sub
+
+
 
 
     'Private Sub NovaPastaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NovaPastaToolStripMenuItem.Click, NovaPastaProcessoToolStripMenuItem.Click

@@ -136,8 +136,8 @@
         _borderColorChecked = Color.RoyalBlue
         _backgroundColorChecked = Color.LightSkyBlue
 
-        _borderColorSelectAndMouseHover = Color.FromArgb(120, 126, 184, 239)  ' Color.SkyBlue
-        _backgroundColorSelectAndMouseHover = Color.FromArgb(120, 255, 255, 255)  'Color.LightCyan
+        _borderColorSelectAndMouseHover = Color.SkyBlue ' Color.FromArgb(120, 126, 184, 239) 
+        _backgroundColorSelectAndMouseHover = Color.LightCyan 'Color.FromArgb(120, 255, 255, 255) 
         '   126,184,239,0.8)
 
         _borderColorSelectAndMouseLeave = Color.Transparent
@@ -580,6 +580,18 @@
     Private Sub CKBExibirMaisDetalhesAndCKBOpcoes_CKBExibirMaisDetalhes_Click(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.Click, CKBOpcoes_CKBExibirMaisDetalhes.Click
         ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeTitulo_Nome)
         ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeSubTitulo_Ocultar)
+    End Sub
+
+    Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirMaisDetalhes.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBExibirMaisDetalhes.MouseDown, CKBExibirFlag.MouseDown, CKBExibirEstrelas.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_Resolucao.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown, CKBEtiquetaDeSubTitulo_Resolucao.MouseDown, CKBEtiquetaDeSubTitulo_Ocultar.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown
+
+    End Sub
+
+    Private Sub Buttons_MouseMove(sender As Object, e As MouseEventArgs) Handles CKBPainelEsquedo.MouseMove, CKBPainelDireito.MouseMove, CKBOpcoes_CKBPainelEsquedo.MouseMove, CKBOpcoes_CKBPainelDireito.MouseMove, CKBOpcoes_CKBExibirStatusGravado.MouseMove, CKBOpcoes_CKBExibirMaisDetalhes.MouseMove, CKBOpcoes_CKBExibirFlag.MouseMove, CKBOpcoes_CKBExibirEstrelas.MouseMove, CKBExibirStatusGravado.MouseMove, CKBExibirMaisDetalhes.MouseMove, CKBExibirFlag.MouseMove, CKBExibirEstrelas.MouseMove, CKBEtiquetaDeTitulo_Tamanho.MouseMove, CKBEtiquetaDeTitulo_Resolucao.MouseMove, CKBEtiquetaDeTitulo_NomeEExtencao.MouseMove, CKBEtiquetaDeTitulo_Nome.MouseMove, CKBEtiquetaDeTitulo_Legenda.MouseMove, CKBEtiquetaDeTitulo_DatasRecentes.MouseMove, CKBEtiquetaDeTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeTitulo_Autor.MouseMove, CKBEtiquetaDeTitulo_Album.MouseMove, CKBEtiquetaDeSubTitulo_Tipo.MouseMove, CKBEtiquetaDeSubTitulo_Tamanho.MouseMove, CKBEtiquetaDeSubTitulo_Resolucao.MouseMove, CKBEtiquetaDeSubTitulo_Ocultar.MouseMove, CKBEtiquetaDeSubTitulo_Legenda.MouseMove, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseMove, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseMove, CKBEtiquetaDeSubTitulo_Autor.MouseMove, CKBEtiquetaDeSubTitulo_Album.MouseMove
+
+    End Sub
+
+    Private Sub Buttons_MouseUp(sender As Object, e As MouseEventArgs) Handles CKBPainelEsquedo.MouseUp, CKBPainelDireito.MouseUp, CKBOpcoes_CKBPainelEsquedo.MouseUp, CKBOpcoes_CKBPainelDireito.MouseUp, CKBOpcoes_CKBExibirStatusGravado.MouseUp, CKBOpcoes_CKBExibirMaisDetalhes.MouseUp, CKBOpcoes_CKBExibirFlag.MouseUp, CKBOpcoes_CKBExibirEstrelas.MouseUp, CKBExibirStatusGravado.MouseUp, CKBExibirMaisDetalhes.MouseUp, CKBExibirFlag.MouseUp, CKBExibirEstrelas.MouseUp, CKBEtiquetaDeTitulo_Tamanho.MouseUp, CKBEtiquetaDeTitulo_Resolucao.MouseUp, CKBEtiquetaDeTitulo_NomeEExtencao.MouseUp, CKBEtiquetaDeTitulo_Nome.MouseUp, CKBEtiquetaDeTitulo_Legenda.MouseUp, CKBEtiquetaDeTitulo_DatasRecentes.MouseUp, CKBEtiquetaDeTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeTitulo_Autor.MouseUp, CKBEtiquetaDeTitulo_Album.MouseUp, CKBEtiquetaDeSubTitulo_Tipo.MouseUp, CKBEtiquetaDeSubTitulo_Tamanho.MouseUp, CKBEtiquetaDeSubTitulo_Resolucao.MouseUp, CKBEtiquetaDeSubTitulo_Ocultar.MouseUp, CKBEtiquetaDeSubTitulo_Legenda.MouseUp, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseUp, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseUp, CKBEtiquetaDeSubTitulo_Autor.MouseUp, CKBEtiquetaDeSubTitulo_Album.MouseUp
+
     End Sub
 
 

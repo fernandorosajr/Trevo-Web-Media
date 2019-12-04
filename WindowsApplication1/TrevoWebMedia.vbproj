@@ -692,6 +692,9 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\flag.png" />
+    <None Include="Resources\gravado.png" />
+    <None Include="Resources\panel11.png" />
     <None Include="Resources\panel2.png" />
     <None Include="Resources\panel1.png" />
     <None Include="Resources\lixeira03.png" />

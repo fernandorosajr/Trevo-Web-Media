@@ -187,6 +187,9 @@
   <data name="cançao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cançao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gravado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gravado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -274,8 +277,8 @@
   <data name="lixeira02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lixeira02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pasta-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pasta-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="copiarpara02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copiarpara02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,6 +370,9 @@
   <data name="NovoProcessoMover2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NovoProcessoMover2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pasta-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pasta-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Renome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Renome.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -387,6 +393,9 @@
   </data>
   <data name="add4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lixeira03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lixeira03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="excluir1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\excluir1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -481,6 +490,9 @@
   <data name="excluir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\excluir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="panelEsquerdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pasta raiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pasta raiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -490,8 +502,14 @@
   <data name="copypara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\copypara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="estrelaFavorito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="grupoTipoExclusao02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grupo025.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="panelDireito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="media" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -510,9 +528,6 @@
   </data>
   <data name="imageres_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageres_4.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="copiarpara02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\copiarpara02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,13 +634,7 @@
   <data name="Restaurar branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Restaurar branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lixeira03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lixeira03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="panelDireito" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="panelEsquerdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

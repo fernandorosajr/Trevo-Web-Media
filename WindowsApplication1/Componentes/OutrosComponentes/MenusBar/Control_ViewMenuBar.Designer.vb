@@ -31,33 +31,24 @@ Partial Class Control_ViewMenuBar
         Me.PanelLayoutDireito_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
         Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
         Me.PanelLayoutCentro_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.CheckBox()
         Me.PanelLayoutEsquerdo_EtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Resolucao = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.CheckBox()
         Me.Panel48 = New System.Windows.Forms.Panel()
         Me.LBLGEtiquetaDeSubTitulo = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelExibirEtiquetaDeTitulo = New System.Windows.Forms.Panel()
@@ -67,33 +58,24 @@ Partial Class Control_ViewMenuBar
         Me.PanelLayoutDireito_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Resolucao = New System.Windows.Forms.CheckBox()
         Me.PanelLayoutCentro_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_DatasRecentes = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
         Me.PanelLayoutEsquerdo_EtiquetaDeTitulo = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.Panel()
-        Me.CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.CheckBox()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.LBLGEtiquetaDeTitulo = New System.Windows.Forms.Label()
         Me.PanelEnvolve_Exibir = New System.Windows.Forms.Panel()
@@ -101,21 +83,18 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolveButton_PanelExibir = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirMaisDetalhes = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirMaisDetalhes = New System.Windows.Forms.Panel()
-        Me.CKBExibirMaisDetalhes = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirMaisDetalhes = New System.Windows.Forms.CheckBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirEstrelas = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirEstrelas = New System.Windows.Forms.Panel()
-        Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
         Me.PanelDivisor03 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
         Me.PanelDivisor02 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBExibirFlag = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBExibirFlag = New System.Windows.Forms.Panel()
-        Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBExibirFlag = New System.Windows.Forms.CheckBox()
         Me.Panel37 = New System.Windows.Forms.Panel()
         Me.LabelExibir = New System.Windows.Forms.Label()
@@ -124,29 +103,19 @@ Partial Class Control_ViewMenuBar
         Me.PanelAgrupa_ExibirPanel = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBPainelDireito = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBPainelDireito = New System.Windows.Forms.Panel()
-        Me.CKBPainelDireito = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBPainelDireito = New System.Windows.Forms.CheckBox()
         Me.PanelDivisor01 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBPainelEsquedo = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBPainelEsquedo = New System.Windows.Forms.Panel()
-        Me.CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLExibirPaineis = New System.Windows.Forms.Label()
         Me.CMenuS_ExibirPaineis = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TSMenuItemTipoCopia = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TSMenuItemTipoMover = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TSMenuItemTipoRenome = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_BTNMover = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
@@ -154,13 +123,44 @@ Partial Class Control_ViewMenuBar
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_BTNExcluir = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ExcluirParaLixeiraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExcluirPermanentementeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.PerguntarAntesDeExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.CKBEtiquetaDeSubTitulo_Tamanho = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Tipo = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Album = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Autor = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Resolucao = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Legenda = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeSubTitulo_Ocultar = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Album = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Autor = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Resolucao = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Tamanho = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_DatasRecentes = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Legenda = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao = New System.Windows.Forms.CheckBox()
+        Me.CKBEtiquetaDeTitulo_Nome = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirMaisDetalhes = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirEstrelas = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirFlag = New System.Windows.Forms.CheckBox()
+        Me.CKBPainelDireito = New System.Windows.Forms.CheckBox()
+        Me.CKBPainelEsquedo = New System.Windows.Forms.CheckBox()
+        Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoCopia = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoMover = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoRenome = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExcluirParaLixeiraToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExcluirPermanentementeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo.SuspendLayout()
@@ -321,28 +321,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(158, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_Tamanho
-        '
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Name = "CKBEtiquetaDeSubTitulo_Tamanho"
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(158, 19)
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Text = "Tamanho"
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeModificacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao)
@@ -362,28 +340,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.Size = New System.Drawing.Size(158, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_DataDeModificacao.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_DatasRecentes
-        '
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Name = "CKBEtiquetaDeSubTitulo_DatasRecentes"
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Size = New System.Drawing.Size(158, 19)
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Text = "Alterações Recentes"
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_DataDeCriacao.Controls.Add(Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao)
@@ -402,28 +358,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao"
         Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(158, 19)
         Me.PanelEnvlove_CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 22
-        '
-        'CKBEtiquetaDeSubTitulo_DataDeCriacao
-        '
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "CKBEtiquetaDeSubTitulo_DataDeCriacao"
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(158, 19)
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Text = "Criação"
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.UseVisualStyleBackColor = False
         '
         'PanelLayoutCentro_EtiquetaDeSubTitulo
         '
@@ -455,28 +389,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(84, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_Tipo
-        '
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Tipo.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Tipo.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Tipo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Name = "CKBEtiquetaDeSubTitulo_Tipo"
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(84, 19)
-        Me.CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Text = "Tipo"
-        Me.CKBEtiquetaDeSubTitulo_Tipo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Tipo.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_Album
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Album.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album)
@@ -496,28 +408,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(84, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Album.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_Album
-        '
-        Me.CKBEtiquetaDeSubTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Album.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Album.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Album.Name = "CKBEtiquetaDeSubTitulo_Album"
-        Me.CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(84, 19)
-        Me.CKBEtiquetaDeSubTitulo_Album.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Album.Text = "Álbum"
-        Me.CKBEtiquetaDeSubTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Album.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_Autor
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Autor.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor)
@@ -536,28 +426,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor"
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(84, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Autor.TabIndex = 22
-        '
-        'CKBEtiquetaDeSubTitulo_Autor
-        '
-        Me.CKBEtiquetaDeSubTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Autor.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Autor.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Autor.Name = "CKBEtiquetaDeSubTitulo_Autor"
-        Me.CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(84, 19)
-        Me.CKBEtiquetaDeSubTitulo_Autor.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Autor.Text = "Autor"
-        Me.CKBEtiquetaDeSubTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Autor.UseVisualStyleBackColor = False
         '
         'PanelLayoutEsquerdo_EtiquetaDeSubTitulo
         '
@@ -589,28 +457,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(104, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_TamanhoDaImagem.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_Resolucao
-        '
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Name = "CKBEtiquetaDeSubTitulo_Resolucao"
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Size = New System.Drawing.Size(104, 19)
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Text = "Resolução"
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_Legenda
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Legenda.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda)
@@ -630,28 +476,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(104, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 22
         '
-        'CKBEtiquetaDeSubTitulo_Legenda
-        '
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Legenda.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Name = "CKBEtiquetaDeSubTitulo_Legenda"
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(104, 19)
-        Me.CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Text = "Legenda"
-        Me.CKBEtiquetaDeSubTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Legenda.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar
         '
         Me.PanelBorder_CKBEtiquetaDeSubTitulo_Ocultar.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar)
@@ -670,28 +494,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Name = "PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar"
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(104, 19)
         Me.PanelEnvolve_CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 22
-        '
-        'CKBEtiquetaDeSubTitulo_Ocultar
-        '
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Name = "CKBEtiquetaDeSubTitulo_Ocultar"
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(104, 19)
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.Text = "Ocultar"
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeSubTitulo_Ocultar.UseVisualStyleBackColor = False
         '
         'Panel48
         '
@@ -786,28 +588,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(100, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Album.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_Album
-        '
-        Me.CKBEtiquetaDeTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Album.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Album.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Album.Name = "CKBEtiquetaDeTitulo_Album"
-        Me.CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(100, 19)
-        Me.CKBEtiquetaDeTitulo_Album.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Album.Text = "Álbum"
-        Me.CKBEtiquetaDeTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Album.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_Autor
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_Autor.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor)
@@ -827,28 +607,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(100, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Autor.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_Autor
-        '
-        Me.CKBEtiquetaDeTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Autor.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Autor.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Autor.Name = "CKBEtiquetaDeTitulo_Autor"
-        Me.CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(100, 19)
-        Me.CKBEtiquetaDeTitulo_Autor.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Autor.Text = "Autor"
-        Me.CKBEtiquetaDeTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Autor.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_TamanhoDaImagem.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem)
@@ -867,28 +625,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem"
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.Size = New System.Drawing.Size(100, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_TamanhoDaImagem.TabIndex = 22
-        '
-        'CKBEtiquetaDeTitulo_Resolucao
-        '
-        Me.CKBEtiquetaDeTitulo_Resolucao.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Resolucao.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Resolucao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Resolucao.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Resolucao.Name = "CKBEtiquetaDeTitulo_Resolucao"
-        Me.CKBEtiquetaDeTitulo_Resolucao.Size = New System.Drawing.Size(100, 19)
-        Me.CKBEtiquetaDeTitulo_Resolucao.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Resolucao.Text = "Resolução"
-        Me.CKBEtiquetaDeTitulo_Resolucao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Resolucao.UseVisualStyleBackColor = False
         '
         'PanelLayoutCentro_EtiquetaDeTitulo
         '
@@ -920,28 +656,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(150, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Tamanho.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_Tamanho
-        '
-        Me.CKBEtiquetaDeTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Tamanho.Name = "CKBEtiquetaDeTitulo_Tamanho"
-        Me.CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(150, 19)
-        Me.CKBEtiquetaDeTitulo_Tamanho.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Tamanho.Text = "Tamanho"
-        Me.CKBEtiquetaDeTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Tamanho.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeModificacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao)
@@ -961,28 +675,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.Size = New System.Drawing.Size(150, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeModificacao.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_DatasRecentes
-        '
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Name = "CKBEtiquetaDeTitulo_DatasRecentes"
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Size = New System.Drawing.Size(150, 19)
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Text = "Alterações Recentes"
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_DataDeCriacao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao)
@@ -1001,28 +693,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao"
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 22
-        '
-        'CKBEtiquetaDeTitulo_DataDeCriacao
-        '
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Name = "CKBEtiquetaDeTitulo_DataDeCriacao"
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Text = "Criação"
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.UseVisualStyleBackColor = False
         '
         'PanelLayoutEsquerdo_EtiquetaDeTitulo
         '
@@ -1054,28 +724,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Legenda.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_Legenda
-        '
-        Me.CKBEtiquetaDeTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Legenda.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Legenda.Name = "CKBEtiquetaDeTitulo_Legenda"
-        Me.CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(93, 19)
-        Me.CKBEtiquetaDeTitulo_Legenda.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Legenda.Text = "Legenda"
-        Me.CKBEtiquetaDeTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Legenda.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_NomeEExtencao.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao)
@@ -1095,28 +743,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 22
         '
-        'CKBEtiquetaDeTitulo_NomeEExtencao
-        '
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Name = "CKBEtiquetaDeTitulo_NomeEExtencao"
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(93, 19)
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Text = "Nome.extenção"
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_NomeEExtencao.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBEtiquetaDeTitulo_Nome
         '
         Me.PanelBorder_CKBEtiquetaDeTitulo_Nome.Controls.Add(Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome)
@@ -1135,28 +761,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Name = "PanelEnvolve_CKBEtiquetaDeTitulo_Nome"
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(93, 19)
         Me.PanelEnvolve_CKBEtiquetaDeTitulo_Nome.TabIndex = 22
-        '
-        'CKBEtiquetaDeTitulo_Nome
-        '
-        Me.CKBEtiquetaDeTitulo_Nome.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBEtiquetaDeTitulo_Nome.BackColor = System.Drawing.Color.Transparent
-        Me.CKBEtiquetaDeTitulo_Nome.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.BorderSize = 0
-        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBEtiquetaDeTitulo_Nome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBEtiquetaDeTitulo_Nome.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Nome.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_Nome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBEtiquetaDeTitulo_Nome.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBEtiquetaDeTitulo_Nome.Location = New System.Drawing.Point(0, 0)
-        Me.CKBEtiquetaDeTitulo_Nome.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBEtiquetaDeTitulo_Nome.Name = "CKBEtiquetaDeTitulo_Nome"
-        Me.CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(93, 19)
-        Me.CKBEtiquetaDeTitulo_Nome.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_Nome.Text = "Nome"
-        Me.CKBEtiquetaDeTitulo_Nome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBEtiquetaDeTitulo_Nome.UseVisualStyleBackColor = False
         '
         'Panel11
         '
@@ -1237,29 +841,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBExibirMaisDetalhes.Size = New System.Drawing.Size(87, 62)
         Me.PanelEnvolve_CKBExibirMaisDetalhes.TabIndex = 10
         '
-        'CKBExibirMaisDetalhes
-        '
-        Me.CKBExibirMaisDetalhes.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirMaisDetalhes.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirMaisDetalhes.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirMaisDetalhes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirMaisDetalhes.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirMaisDetalhes.FlatAppearance.BorderSize = 0
-        Me.CKBExibirMaisDetalhes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirMaisDetalhes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirMaisDetalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirMaisDetalhes.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirMaisDetalhes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirMaisDetalhes.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirMaisDetalhes.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirMaisDetalhes.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirMaisDetalhes.Name = "CKBExibirMaisDetalhes"
-        Me.CKBExibirMaisDetalhes.Size = New System.Drawing.Size(87, 42)
-        Me.CKBExibirMaisDetalhes.TabIndex = 22
-        Me.CKBExibirMaisDetalhes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirMaisDetalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirMaisDetalhes.UseVisualStyleBackColor = False
-        '
         'CKBOpcoes_CKBExibirMaisDetalhes
         '
         Me.CKBOpcoes_CKBExibirMaisDetalhes.Appearance = System.Windows.Forms.Appearance.Button
@@ -1282,6 +863,14 @@ Partial Class Control_ViewMenuBar
         Me.CKBOpcoes_CKBExibirMaisDetalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBOpcoes_CKBExibirMaisDetalhes.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(227, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1, 64)
+        Me.Panel1.TabIndex = 30
+        '
         'PanelBorder_CKBExibirEstrelas
         '
         Me.PanelBorder_CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
@@ -1302,29 +891,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBExibirEstrelas.Name = "PanelEnvolve_CKBExibirEstrelas"
         Me.PanelEnvolve_CKBExibirEstrelas.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBExibirEstrelas.TabIndex = 10
-        '
-        'CKBExibirEstrelas
-        '
-        Me.CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirEstrelas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirEstrelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirEstrelas.FlatAppearance.BorderSize = 0
-        Me.CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirEstrelas.Name = "CKBExibirEstrelas"
-        Me.CKBExibirEstrelas.Size = New System.Drawing.Size(73, 42)
-        Me.CKBExibirEstrelas.TabIndex = 22
-        Me.CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirEstrelas.UseVisualStyleBackColor = False
         '
         'CKBOpcoes_CKBExibirEstrelas
         '
@@ -1377,29 +943,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
         '
-        'CKBExibirStatusGravado
-        '
-        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
-        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
-        Me.CKBExibirStatusGravado.TabIndex = 22
-        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
         'CKBOpcoes_CKBExibirStatusGravado
         '
         Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
@@ -1450,29 +993,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBExibirFlag.Name = "PanelEnvolve_CKBExibirFlag"
         Me.PanelEnvolve_CKBExibirFlag.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBExibirFlag.TabIndex = 10
-        '
-        'CKBExibirFlag
-        '
-        Me.CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirFlag.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
-        Me.CKBExibirFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirFlag.FlatAppearance.BorderSize = 0
-        Me.CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirFlag.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirFlag.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirFlag.Name = "CKBExibirFlag"
-        Me.CKBExibirFlag.Size = New System.Drawing.Size(73, 41)
-        Me.CKBExibirFlag.TabIndex = 22
-        Me.CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirFlag.UseVisualStyleBackColor = False
         '
         'CKBOpcoes_CKBExibirFlag
         '
@@ -1571,29 +1091,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBPainelDireito.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBPainelDireito.TabIndex = 10
         '
-        'CKBPainelDireito
-        '
-        Me.CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
-        Me.CKBPainelDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
-        Me.CKBPainelDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBPainelDireito.FlatAppearance.BorderSize = 0
-        Me.CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBPainelDireito.ForeColor = System.Drawing.Color.Black
-        Me.CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBPainelDireito.Location = New System.Drawing.Point(0, 0)
-        Me.CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBPainelDireito.Name = "CKBPainelDireito"
-        Me.CKBPainelDireito.Size = New System.Drawing.Size(73, 42)
-        Me.CKBPainelDireito.TabIndex = 22
-        Me.CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBPainelDireito.UseVisualStyleBackColor = False
-        '
         'CKBOpcoes_CKBPainelDireito
         '
         Me.CKBOpcoes_CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
@@ -1644,29 +1141,6 @@ Partial Class Control_ViewMenuBar
         Me.PanelEnvolve_CKBPainelEsquedo.Name = "PanelEnvolve_CKBPainelEsquedo"
         Me.PanelEnvolve_CKBPainelEsquedo.Size = New System.Drawing.Size(73, 62)
         Me.PanelEnvolve_CKBPainelEsquedo.TabIndex = 10
-        '
-        'CKBPainelEsquedo
-        '
-        Me.CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
-        Me.CKBPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
-        Me.CKBPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBPainelEsquedo.FlatAppearance.BorderSize = 0
-        Me.CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
-        Me.CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
-        Me.CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBPainelEsquedo.Name = "CKBPainelEsquedo"
-        Me.CKBPainelEsquedo.Size = New System.Drawing.Size(73, 42)
-        Me.CKBPainelEsquedo.TabIndex = 22
-        Me.CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBPainelEsquedo.UseVisualStyleBackColor = False
         '
         'CKBOpcoes_CKBPainelEsquedo
         '
@@ -1720,20 +1194,6 @@ Partial Class Control_ViewMenuBar
         Me.CMenuS_ExibirPaineis.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.CMenuS_ExibirPaineis.Size = New System.Drawing.Size(147, 48)
         '
-        'NovaPastaToolStripMenuItem
-        '
-        Me.NovaPastaToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
-        Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
-        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
-        Me.NovaPastaToolStripMenuItem.Text = "Exibir todos"
-        '
-        'NovaPastaProcessoToolStripMenuItem
-        '
-        Me.NovaPastaProcessoToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaprocesso01
-        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
-        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
-        Me.NovaPastaProcessoToolStripMenuItem.Text = "Ocultar todos"
-        '
         'CMenuS_BTNOpcoes_BTNMaisProcessos
         '
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.WhiteSmoke
@@ -1742,38 +1202,12 @@ Partial Class Control_ViewMenuBar
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(156, 160)
         '
-        'TSMenuItemTipoComposto
-        '
-        Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
-        Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
-        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
-        '
         'TSMenuItemSeparator1
         '
         Me.TSMenuItemSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator1.Name = "TSMenuItemSeparator1"
         Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(152, 6)
-        '
-        'TSMenuItemTipoCriacao
-        '
-        Me.TSMenuItemTipoCriacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoCriacao
-        Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
-        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
-        '
-        'TSMenuItemTipoCopia
-        '
-        Me.TSMenuItemTipoCopia.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo05
-        Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
-        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
         '
         'TSMenuItemSeparator2
         '
@@ -1782,15 +1216,6 @@ Partial Class Control_ViewMenuBar
         Me.TSMenuItemSeparator2.Name = "TSMenuItemSeparator2"
         Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(152, 6)
         '
-        'TSMenuItemTipoMover
-        '
-        Me.TSMenuItemTipoMover.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoMover.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoMover
-        Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
-        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoMover.Text = "Tipo mover..."
-        '
         'TSMenuItemSeparator3
         '
         Me.TSMenuItemSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
@@ -1798,30 +1223,12 @@ Partial Class Control_ViewMenuBar
         Me.TSMenuItemSeparator3.Name = "TSMenuItemSeparator3"
         Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(152, 6)
         '
-        'TSMenuItemTipoRenome
-        '
-        Me.TSMenuItemTipoRenome.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo09
-        Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
-        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
-        '
         'TSMenuItemSeparator4
         '
         Me.TSMenuItemSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TSMenuItemSeparator4.Name = "TSMenuItemSeparator4"
         Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(152, 6)
-        '
-        'TSMenuItemTipoExclusao
-        '
-        Me.TSMenuItemTipoExclusao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
-        Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoExclusao
-        Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
-        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(155, 22)
-        Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
         '
         'CMenuS_BTNOpcoes_BTNMover
         '
@@ -1871,20 +1278,6 @@ Partial Class Control_ViewMenuBar
         Me.CMenuS_BTNOpcoes_BTNExcluir.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.CMenuS_BTNOpcoes_BTNExcluir.Size = New System.Drawing.Size(212, 76)
         '
-        'ExcluirParaLixeiraToolStripMenuItem
-        '
-        Me.ExcluirParaLixeiraToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.lixeira03
-        Me.ExcluirParaLixeiraToolStripMenuItem.Name = "ExcluirParaLixeiraToolStripMenuItem"
-        Me.ExcluirParaLixeiraToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
-        Me.ExcluirParaLixeiraToolStripMenuItem.Text = "Excluir para lixeira"
-        '
-        'ExcluirPermanentementeToolStripMenuItem
-        '
-        Me.ExcluirPermanentementeToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.excluir
-        Me.ExcluirPermanentementeToolStripMenuItem.Name = "ExcluirPermanentementeToolStripMenuItem"
-        Me.ExcluirPermanentementeToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
-        Me.ExcluirPermanentementeToolStripMenuItem.Text = "Excluir permanentemente"
-        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -1913,13 +1306,620 @@ Partial Class Control_ViewMenuBar
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
         Me.ToolStripMenuItem2.Text = "Critérios"
         '
-        'Panel1
+        'CKBEtiquetaDeSubTitulo_Tamanho
         '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(227, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1, 64)
-        Me.Panel1.TabIndex = 30
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Name = "CKBEtiquetaDeSubTitulo_Tamanho"
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Size = New System.Drawing.Size(158, 19)
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Text = "Tamanho"
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_DatasRecentes
+        '
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Name = "CKBEtiquetaDeSubTitulo_DatasRecentes"
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Size = New System.Drawing.Size(158, 19)
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Text = "Alterações Recentes"
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_DataDeCriacao
+        '
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "CKBEtiquetaDeSubTitulo_DataDeCriacao"
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(158, 19)
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Text = "Criação"
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Tipo
+        '
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Tipo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Tipo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Name = "CKBEtiquetaDeSubTitulo_Tipo"
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Tipo.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Text = "Tipo"
+        Me.CKBEtiquetaDeSubTitulo_Tipo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Tipo.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Album
+        '
+        Me.CKBEtiquetaDeSubTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Album.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Album.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Album.Name = "CKBEtiquetaDeSubTitulo_Album"
+        Me.CKBEtiquetaDeSubTitulo_Album.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Album.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Album.Text = "Álbum"
+        Me.CKBEtiquetaDeSubTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Album.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Autor
+        '
+        Me.CKBEtiquetaDeSubTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Autor.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Autor.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Autor.Name = "CKBEtiquetaDeSubTitulo_Autor"
+        Me.CKBEtiquetaDeSubTitulo_Autor.Size = New System.Drawing.Size(84, 19)
+        Me.CKBEtiquetaDeSubTitulo_Autor.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Autor.Text = "Autor"
+        Me.CKBEtiquetaDeSubTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Autor.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Resolucao
+        '
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Name = "CKBEtiquetaDeSubTitulo_Resolucao"
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Size = New System.Drawing.Size(104, 19)
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Text = "Resolução"
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Legenda
+        '
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Name = "CKBEtiquetaDeSubTitulo_Legenda"
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Size = New System.Drawing.Size(104, 19)
+        Me.CKBEtiquetaDeSubTitulo_Legenda.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Text = "Legenda"
+        Me.CKBEtiquetaDeSubTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Legenda.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeSubTitulo_Ocultar
+        '
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Name = "CKBEtiquetaDeSubTitulo_Ocultar"
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Size = New System.Drawing.Size(104, 19)
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.TabIndex = 21
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.Text = "Ocultar"
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeSubTitulo_Ocultar.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Album
+        '
+        Me.CKBEtiquetaDeTitulo_Album.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Album.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Album.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Album.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Album.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Album.Name = "CKBEtiquetaDeTitulo_Album"
+        Me.CKBEtiquetaDeTitulo_Album.Size = New System.Drawing.Size(100, 19)
+        Me.CKBEtiquetaDeTitulo_Album.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Album.Text = "Álbum"
+        Me.CKBEtiquetaDeTitulo_Album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Album.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Autor
+        '
+        Me.CKBEtiquetaDeTitulo_Autor.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Autor.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Autor.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Autor.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Autor.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Autor.Name = "CKBEtiquetaDeTitulo_Autor"
+        Me.CKBEtiquetaDeTitulo_Autor.Size = New System.Drawing.Size(100, 19)
+        Me.CKBEtiquetaDeTitulo_Autor.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Autor.Text = "Autor"
+        Me.CKBEtiquetaDeTitulo_Autor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Autor.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Resolucao
+        '
+        Me.CKBEtiquetaDeTitulo_Resolucao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Resolucao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Resolucao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Resolucao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Resolucao.Name = "CKBEtiquetaDeTitulo_Resolucao"
+        Me.CKBEtiquetaDeTitulo_Resolucao.Size = New System.Drawing.Size(100, 19)
+        Me.CKBEtiquetaDeTitulo_Resolucao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Resolucao.Text = "Resolução"
+        Me.CKBEtiquetaDeTitulo_Resolucao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Resolucao.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Tamanho
+        '
+        Me.CKBEtiquetaDeTitulo_Tamanho.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Tamanho.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Tamanho.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Tamanho.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Tamanho.Name = "CKBEtiquetaDeTitulo_Tamanho"
+        Me.CKBEtiquetaDeTitulo_Tamanho.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_Tamanho.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Tamanho.Text = "Tamanho"
+        Me.CKBEtiquetaDeTitulo_Tamanho.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Tamanho.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_DatasRecentes
+        '
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Name = "CKBEtiquetaDeTitulo_DatasRecentes"
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Text = "Alterações Recentes"
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_DataDeCriacao
+        '
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Name = "CKBEtiquetaDeTitulo_DataDeCriacao"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Text = "Criação"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Legenda
+        '
+        Me.CKBEtiquetaDeTitulo_Legenda.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Legenda.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Legenda.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Legenda.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Legenda.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Legenda.Name = "CKBEtiquetaDeTitulo_Legenda"
+        Me.CKBEtiquetaDeTitulo_Legenda.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_Legenda.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Legenda.Text = "Legenda"
+        Me.CKBEtiquetaDeTitulo_Legenda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Legenda.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_NomeEExtencao
+        '
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Name = "CKBEtiquetaDeTitulo_NomeEExtencao"
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.Text = "Nome.extenção"
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_NomeEExtencao.UseVisualStyleBackColor = False
+        '
+        'CKBEtiquetaDeTitulo_Nome
+        '
+        Me.CKBEtiquetaDeTitulo_Nome.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBEtiquetaDeTitulo_Nome.BackColor = System.Drawing.Color.Transparent
+        Me.CKBEtiquetaDeTitulo_Nome.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.BorderSize = 0
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBEtiquetaDeTitulo_Nome.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBEtiquetaDeTitulo_Nome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_Nome.ForeColor = System.Drawing.Color.Black
+        Me.CKBEtiquetaDeTitulo_Nome.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Nome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_Nome.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBEtiquetaDeTitulo_Nome.Location = New System.Drawing.Point(0, 0)
+        Me.CKBEtiquetaDeTitulo_Nome.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBEtiquetaDeTitulo_Nome.Name = "CKBEtiquetaDeTitulo_Nome"
+        Me.CKBEtiquetaDeTitulo_Nome.Size = New System.Drawing.Size(93, 19)
+        Me.CKBEtiquetaDeTitulo_Nome.TabIndex = 21
+        Me.CKBEtiquetaDeTitulo_Nome.Text = "Nome"
+        Me.CKBEtiquetaDeTitulo_Nome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBEtiquetaDeTitulo_Nome.UseVisualStyleBackColor = False
+        '
+        'CKBExibirMaisDetalhes
+        '
+        Me.CKBExibirMaisDetalhes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirMaisDetalhes.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirMaisDetalhes.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Estrelaon
+        Me.CKBExibirMaisDetalhes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirMaisDetalhes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirMaisDetalhes.FlatAppearance.BorderSize = 0
+        Me.CKBExibirMaisDetalhes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirMaisDetalhes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirMaisDetalhes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirMaisDetalhes.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirMaisDetalhes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirMaisDetalhes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirMaisDetalhes.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirMaisDetalhes.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirMaisDetalhes.Name = "CKBExibirMaisDetalhes"
+        Me.CKBExibirMaisDetalhes.Size = New System.Drawing.Size(87, 42)
+        Me.CKBExibirMaisDetalhes.TabIndex = 22
+        Me.CKBExibirMaisDetalhes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirMaisDetalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirMaisDetalhes.UseVisualStyleBackColor = False
+        '
+        'CKBExibirEstrelas
+        '
+        Me.CKBExibirEstrelas.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirEstrelas.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirEstrelas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.estrelaFavorito
+        Me.CKBExibirEstrelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirEstrelas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirEstrelas.FlatAppearance.BorderSize = 0
+        Me.CKBExibirEstrelas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirEstrelas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirEstrelas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirEstrelas.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirEstrelas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirEstrelas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirEstrelas.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirEstrelas.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirEstrelas.Name = "CKBExibirEstrelas"
+        Me.CKBExibirEstrelas.Size = New System.Drawing.Size(73, 42)
+        Me.CKBExibirEstrelas.TabIndex = 22
+        Me.CKBExibirEstrelas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirEstrelas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirEstrelas.UseVisualStyleBackColor = False
+        '
+        'CKBExibirStatusGravado
+        '
+        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.gravado
+        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
+        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirStatusGravado.TabIndex = 22
+        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'CKBExibirFlag
+        '
+        Me.CKBExibirFlag.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirFlag.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirFlag.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.flag
+        Me.CKBExibirFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirFlag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirFlag.FlatAppearance.BorderSize = 0
+        Me.CKBExibirFlag.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirFlag.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirFlag.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirFlag.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirFlag.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirFlag.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirFlag.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirFlag.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirFlag.Name = "CKBExibirFlag"
+        Me.CKBExibirFlag.Size = New System.Drawing.Size(73, 41)
+        Me.CKBExibirFlag.TabIndex = 22
+        Me.CKBExibirFlag.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirFlag.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirFlag.UseVisualStyleBackColor = False
+        '
+        'CKBPainelDireito
+        '
+        Me.CKBPainelDireito.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelDireito.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelDireito.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelDireito
+        Me.CKBPainelDireito.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelDireito.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelDireito.FlatAppearance.BorderSize = 0
+        Me.CKBPainelDireito.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelDireito.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelDireito.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelDireito.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelDireito.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelDireito.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelDireito.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelDireito.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelDireito.Name = "CKBPainelDireito"
+        Me.CKBPainelDireito.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelDireito.TabIndex = 22
+        Me.CKBPainelDireito.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelDireito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelDireito.UseVisualStyleBackColor = False
+        '
+        'CKBPainelEsquedo
+        '
+        Me.CKBPainelEsquedo.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBPainelEsquedo.BackColor = System.Drawing.Color.Transparent
+        Me.CKBPainelEsquedo.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.panelEsquerdo
+        Me.CKBPainelEsquedo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBPainelEsquedo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBPainelEsquedo.FlatAppearance.BorderSize = 0
+        Me.CKBPainelEsquedo.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBPainelEsquedo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBPainelEsquedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBPainelEsquedo.ForeColor = System.Drawing.Color.Black
+        Me.CKBPainelEsquedo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBPainelEsquedo.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBPainelEsquedo.Location = New System.Drawing.Point(0, 0)
+        Me.CKBPainelEsquedo.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBPainelEsquedo.Name = "CKBPainelEsquedo"
+        Me.CKBPainelEsquedo.Size = New System.Drawing.Size(73, 42)
+        Me.CKBPainelEsquedo.TabIndex = 22
+        Me.CKBPainelEsquedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBPainelEsquedo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBPainelEsquedo.UseVisualStyleBackColor = False
+        '
+        'NovaPastaToolStripMenuItem
+        '
+        Me.NovaPastaToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
+        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.NovaPastaToolStripMenuItem.Text = "Exibir todos"
+        '
+        'NovaPastaProcessoToolStripMenuItem
+        '
+        Me.NovaPastaProcessoToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaprocesso01
+        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
+        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.NovaPastaProcessoToolStripMenuItem.Text = "Ocultar todos"
+        '
+        'TSMenuItemTipoComposto
+        '
+        Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
+        Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
+        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
+        '
+        'TSMenuItemTipoCriacao
+        '
+        Me.TSMenuItemTipoCriacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoCriacao
+        Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
+        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
+        '
+        'TSMenuItemTipoCopia
+        '
+        Me.TSMenuItemTipoCopia.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo05
+        Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
+        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
+        '
+        'TSMenuItemTipoMover
+        '
+        Me.TSMenuItemTipoMover.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoMover.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoMover
+        Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
+        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoMover.Text = "Tipo mover..."
+        '
+        'TSMenuItemTipoRenome
+        '
+        Me.TSMenuItemTipoRenome.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo09
+        Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
+        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
+        '
+        'TSMenuItemTipoExclusao
+        '
+        Me.TSMenuItemTipoExclusao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoExclusao
+        Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
+        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(155, 22)
+        Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
+        '
+        'ExcluirParaLixeiraToolStripMenuItem
+        '
+        Me.ExcluirParaLixeiraToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.lixeira03
+        Me.ExcluirParaLixeiraToolStripMenuItem.Name = "ExcluirParaLixeiraToolStripMenuItem"
+        Me.ExcluirParaLixeiraToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.ExcluirParaLixeiraToolStripMenuItem.Text = "Excluir para lixeira"
+        '
+        'ExcluirPermanentementeToolStripMenuItem
+        '
+        Me.ExcluirPermanentementeToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.excluir
+        Me.ExcluirPermanentementeToolStripMenuItem.Name = "ExcluirPermanentementeToolStripMenuItem"
+        Me.ExcluirPermanentementeToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.ExcluirPermanentementeToolStripMenuItem.Text = "Excluir permanentemente"
         '
         'Control_ViewMenuBar
         '

@@ -447,6 +447,14 @@
         End Select
 
     End Sub
+    Private Sub CKBExibirEstrelasAndCKBOpcoes_CKBExibirEstrelas_Click(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBExibirEstrelas.Click, CKBExibirEstrelas.Click
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+
+        If chk.Checked = True Then
+            CKBExibirMaisDetalhes.Checked = False
+        End If
+    End Sub
 
     Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.CheckedChanged, CKBOpcoes_CKBExibirMaisDetalhes.CheckedChanged, CKBPainelEsquedo.CheckedChanged, CKBOpcoes_CKBPainelEsquedo.CheckedChanged, CKBPainelDireito.CheckedChanged, CKBOpcoes_CKBPainelDireito.CheckedChanged, CKBExibirEstrelas.CheckedChanged, CKBOpcoes_CKBExibirEstrelas.CheckedChanged, CKBExibirStatusGravado.CheckedChanged, CKBOpcoes_CKBExibirStatusGravado.CheckedChanged, CKBExibirFlag.CheckedChanged, CKBOpcoes_CKBExibirFlag.CheckedChanged, CKBEtiquetaDeTitulo_Nome.CheckedChanged, CKBEtiquetaDeTitulo_NomeEExtencao.CheckedChanged, CKBEtiquetaDeTitulo_Legenda.CheckedChanged, CKBEtiquetaDeTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeTitulo_DatasRecentes.CheckedChanged, CKBEtiquetaDeTitulo_Tamanho.CheckedChanged, CKBEtiquetaDeTitulo_Resolucao.CheckedChanged, CKBEtiquetaDeTitulo_Autor.CheckedChanged, CKBEtiquetaDeTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_ExibirExtensao.CheckedChanged, CKBEtiquetaDeSubTitulo_Legenda.CheckedChanged, CKBEtiquetaDeSubTitulo_Resolucao.CheckedChanged, CKBEtiquetaDeSubTitulo_Autor.CheckedChanged, CKBEtiquetaDeSubTitulo_Album.CheckedChanged, CKBEtiquetaDeSubTitulo_Tipo.CheckedChanged, CKBEtiquetaDeSubTitulo_DataDeCriacao.CheckedChanged, CKBEtiquetaDeSubTitulo_DatasRecentes.CheckedChanged, CKBEtiquetaDeSubTitulo_Tamanho.CheckedChanged
         Dim chk As CheckBox
@@ -578,8 +586,16 @@
     End Sub
 
     Private Sub CKBExibirMaisDetalhesAndCKBOpcoes_CKBExibirMaisDetalhes_Click(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.Click, CKBOpcoes_CKBExibirMaisDetalhes.Click
-        ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeTitulo_Nome)
-        ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeSubTitulo_ExibirExtensao)
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+
+        If chk.Checked = True Then
+            ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeTitulo_Nome)
+            ZerarCheckBoxDeEtiquetas(CKBEtiquetaDeSubTitulo_ExibirExtensao)
+            CKBExibirEstrelas.Checked = False
+        End If
+
+
     End Sub
 
     Private Sub Buttons_MouseDown(sender As Object, e As MouseEventArgs) Handles CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirMaisDetalhes.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBExibirMaisDetalhes.MouseDown, CKBExibirFlag.MouseDown, CKBExibirEstrelas.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_Resolucao.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown, CKBEtiquetaDeSubTitulo_Resolucao.MouseDown, CKBEtiquetaDeSubTitulo_ExibirExtensao.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown

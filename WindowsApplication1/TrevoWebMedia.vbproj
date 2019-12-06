@@ -692,6 +692,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\resolucao.png" />
     <None Include="Resources\flag.png" />
     <None Include="Resources\gravado.png" />
     <None Include="Resources\panel11.png" />
@@ -794,6 +795,16 @@
     <None Include="Resources\excluir1.png" />
     <None Include="Resources\Exibirdetalhe.png" />
     <None Include="Resources\exibirNomeDoArquivo.png" />
+    <None Include="Resources\exibirNomeCapition.png" />
+    <None Include="Resources\exibirNomeCapition1.png" />
+    <None Include="Resources\exibirdata.png" />
+    <None Include="Resources\exibirdata1.png" />
+    <None Include="Resources\album.png" />
+    <None Include="Resources\album2.png" />
+    <None Include="Resources\autor.png" />
+    <None Include="Resources\autor2.png" />
+    <None Include="Resources\exibirTamanhoDoArquivo.png" />
+    <None Include="Resources\exibirtipoDoArquivo.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

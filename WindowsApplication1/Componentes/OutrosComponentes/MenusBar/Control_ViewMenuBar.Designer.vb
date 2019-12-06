@@ -23,6 +23,7 @@ Partial Class Control_ViewMenuBar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_ViewMenuBar))
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_PanelExibirEtiquetaDeSubTitulo = New System.Windows.Forms.Panel()
@@ -1316,7 +1317,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tamanho.Image = CType(resources.GetObject("CKBEtiquetaDeSubTitulo_Tamanho.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeSubTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
@@ -1338,7 +1339,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Image = CType(resources.GetObject("CKBEtiquetaDeSubTitulo_DatasRecentes.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
@@ -1346,7 +1347,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Name = "CKBEtiquetaDeSubTitulo_DatasRecentes"
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Size = New System.Drawing.Size(158, 19)
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Text = "Alterações Recentes"
+        Me.CKBEtiquetaDeSubTitulo_DatasRecentes.Text = "Data de Modificação"
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBEtiquetaDeSubTitulo_DatasRecentes.UseVisualStyleBackColor = False
         '
@@ -1360,7 +1361,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Image = CType(resources.GetObject("CKBEtiquetaDeSubTitulo_DataDeCriacao.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
@@ -1368,7 +1369,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Name = "CKBEtiquetaDeSubTitulo_DataDeCriacao"
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Size = New System.Drawing.Size(158, 19)
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TabIndex = 21
-        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Text = "Criação"
+        Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.Text = "Data de Criação"
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBEtiquetaDeSubTitulo_DataDeCriacao.UseVisualStyleBackColor = False
         '
@@ -1382,7 +1383,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Tipo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Tipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Tipo.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Tipo.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Tipo.Image = Global.TrevoWebMedia.My.Resources.Resources.exibirtipoDoArquivo
         Me.CKBEtiquetaDeSubTitulo_Tipo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Tipo.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Tipo.Location = New System.Drawing.Point(0, 0)
@@ -1404,7 +1405,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Album.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Album.Image = CType(resources.GetObject("CKBEtiquetaDeSubTitulo_Album.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeSubTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Album.Location = New System.Drawing.Point(0, 0)
@@ -1426,7 +1427,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Autor.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Autor.Image = CType(resources.GetObject("CKBEtiquetaDeSubTitulo_Autor.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeSubTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Autor.Location = New System.Drawing.Point(0, 0)
@@ -1448,7 +1449,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.resolucao
         Me.CKBEtiquetaDeSubTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
@@ -1470,7 +1471,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeSubTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeSubTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeSubTitulo_Legenda.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeSubTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeSubTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.exibirNomeCapition1
         Me.CKBEtiquetaDeSubTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeSubTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeSubTitulo_Legenda.Location = New System.Drawing.Point(0, 0)
@@ -1514,7 +1515,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_Album.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_Album.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_Album.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Album.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Album.Image = CType(resources.GetObject("CKBEtiquetaDeTitulo_Album.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeTitulo_Album.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_Album.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_Album.Location = New System.Drawing.Point(0, 0)
@@ -1536,7 +1537,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_Autor.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_Autor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_Autor.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Autor.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Autor.Image = CType(resources.GetObject("CKBEtiquetaDeTitulo_Autor.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeTitulo_Autor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_Autor.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_Autor.Location = New System.Drawing.Point(0, 0)
@@ -1558,7 +1559,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_Resolucao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_Resolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_Resolucao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Resolucao.Image = Global.TrevoWebMedia.My.Resources.Resources.resolucao
         Me.CKBEtiquetaDeTitulo_Resolucao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_Resolucao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_Resolucao.Location = New System.Drawing.Point(0, 0)
@@ -1580,7 +1581,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_Tamanho.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_Tamanho.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_Tamanho.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Tamanho.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Tamanho.Image = CType(resources.GetObject("CKBEtiquetaDeTitulo_Tamanho.Image"), System.Drawing.Image)
         Me.CKBEtiquetaDeTitulo_Tamanho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_Tamanho.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_Tamanho.Location = New System.Drawing.Point(0, 0)
@@ -1602,7 +1603,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_DatasRecentes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_DatasRecentes.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Image = Global.TrevoWebMedia.My.Resources.Resources.exibirdata1
         Me.CKBEtiquetaDeTitulo_DatasRecentes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_DatasRecentes.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_DatasRecentes.Location = New System.Drawing.Point(0, 0)
@@ -1610,7 +1611,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_DatasRecentes.Name = "CKBEtiquetaDeTitulo_DatasRecentes"
         Me.CKBEtiquetaDeTitulo_DatasRecentes.Size = New System.Drawing.Size(150, 19)
         Me.CKBEtiquetaDeTitulo_DatasRecentes.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_DatasRecentes.Text = "Alterações Recentes"
+        Me.CKBEtiquetaDeTitulo_DatasRecentes.Text = "Data de Modificação"
         Me.CKBEtiquetaDeTitulo_DatasRecentes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBEtiquetaDeTitulo_DatasRecentes.UseVisualStyleBackColor = False
         '
@@ -1623,16 +1624,18 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.exibirdata1
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.Location = New System.Drawing.Point(0, 0)
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.Margin = New System.Windows.Forms.Padding(0)
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.Name = "CKBEtiquetaDeTitulo_DataDeCriacao"
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.Size = New System.Drawing.Size(150, 19)
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.TabIndex = 21
-        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Text = "Criação"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.Text = "Data de Criação"
+        Me.CKBEtiquetaDeTitulo_DataDeCriacao.TextAlign = System.Drawing.ContentAlignment.TopLeft
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBEtiquetaDeTitulo_DataDeCriacao.UseVisualStyleBackColor = False
         '
@@ -1646,7 +1649,7 @@ Partial Class Control_ViewMenuBar
         Me.CKBEtiquetaDeTitulo_Legenda.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
         Me.CKBEtiquetaDeTitulo_Legenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CKBEtiquetaDeTitulo_Legenda.ForeColor = System.Drawing.Color.Black
-        Me.CKBEtiquetaDeTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.panel
+        Me.CKBEtiquetaDeTitulo_Legenda.Image = Global.TrevoWebMedia.My.Resources.Resources.exibirNomeCapition1
         Me.CKBEtiquetaDeTitulo_Legenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.CKBEtiquetaDeTitulo_Legenda.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.CKBEtiquetaDeTitulo_Legenda.Location = New System.Drawing.Point(0, 0)

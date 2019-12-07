@@ -20,6 +20,8 @@ Public Class MainForm
     Public painel_Acoes As New ControlPainel_Acoes
     Public toolBar_Menu As New Control_MenuBar
     Public toolBar_ViewMenu As New Control_ViewMenuBar
+    Public toolBar_BurnMenu As New Control_BurnMenuBar
+
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
 
@@ -161,11 +163,15 @@ Long, lpColorValues As Long) As Long
 
         Panel_MenuBar.Controls.Add(toolBar_Menu)
         toolBar_Menu.Dock = DockStyle.Fill
-        toolBar_Menu.Visible = True
+        toolBar_Menu.Visible = False
 
         Panel_MenuBar.Controls.Add(toolBar_ViewMenu)
         toolBar_ViewMenu.Dock = DockStyle.Fill
-        toolBar_ViewMenu.Visible = True
+        toolBar_ViewMenu.Visible = False
+
+        Panel_MenuBar.Controls.Add(toolBar_BurnMenu)
+        toolBar_BurnMenu.Dock = DockStyle.Fill
+        toolBar_BurnMenu.Visible = False
 
         PanelLoad_ControlSelectFileAndFoldePanel.Controls.Add(_controlSelectFileAndFolderPanel)
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
@@ -689,9 +695,7 @@ Long, lpColorValues As Long) As Long
             PanelMidia.Visible = False
 
         Else
-
             PanelLivros.Visible = False
-
 
         End If
 
@@ -704,7 +708,7 @@ Long, lpColorValues As Long) As Long
 
         toolBar_Menu.Visible = ChBInicio.Checked
         toolBar_ViewMenu.Visible = ChBExibir.Checked
-
+        toolBar_BurnMenu.Visible = ChBGravar.Checked
     End Sub
 
 

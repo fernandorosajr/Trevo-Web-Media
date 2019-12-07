@@ -85,7 +85,7 @@ Partial Class MainForm
         Me.Panel_MediasExplorer = New System.Windows.Forms.Panel()
         Me.Panel_RecebeMidiasAtivas = New System.Windows.Forms.Panel()
         Me.PanelRecebeBiblio = New System.Windows.Forms.Panel()
-        Me.PanelToobar_MediasExplorer = New System.Windows.Forms.Panel()
+        Me.PanelToolBar_MediasExplorer = New System.Windows.Forms.Panel()
         Me.PanelBaseLuzLeft = New System.Windows.Forms.Panel()
         Me.PanelSombra = New System.Windows.Forms.Panel()
         Me.Panel274 = New System.Windows.Forms.Panel()
@@ -100,7 +100,7 @@ Partial Class MainForm
         Me.PanelEnvolveMidiaAberta = New System.Windows.Forms.Panel()
         Me.Splitter7 = New System.Windows.Forms.Splitter()
         Me.Panel_Recebe_Filtro = New System.Windows.Forms.Panel()
-        Me.PanelToobarBotton = New System.Windows.Forms.Panel()
+        Me.PanelToolBarBotton = New System.Windows.Forms.Panel()
         Me.PanelBottonLuz = New System.Windows.Forms.Panel()
         Me.Panel33 = New System.Windows.Forms.Panel()
         Me.ChBFiltro = New System.Windows.Forms.CheckBox()
@@ -529,12 +529,12 @@ Partial Class MainForm
         Me.PanelEnvoveMidia.SuspendLayout()
         Me.PanelTeste.SuspendLayout()
         Me.Panel_MediasExplorer.SuspendLayout()
-        Me.PanelToobar_MediasExplorer.SuspendLayout()
+        Me.PanelToolBar_MediasExplorer.SuspendLayout()
         Me.PanelBaseLuzLeft.SuspendLayout()
         Me.Panel274.SuspendLayout()
         Me.PanelToolBar.SuspendLayout()
         Me.Panel41.SuspendLayout()
-        Me.PanelToobarBotton.SuspendLayout()
+        Me.PanelToolBarBotton.SuspendLayout()
         Me.Panel33.SuspendLayout()
         Me.PanelHome.SuspendLayout()
         Me.PanelSofts.SuspendLayout()
@@ -1195,7 +1195,7 @@ Partial Class MainForm
         Me.PanelTeste.Controls.Add(Me.PanelEnvolveMidiaAberta)
         Me.PanelTeste.Controls.Add(Me.Splitter7)
         Me.PanelTeste.Controls.Add(Me.Panel_Recebe_Filtro)
-        Me.PanelTeste.Controls.Add(Me.PanelToobarBotton)
+        Me.PanelTeste.Controls.Add(Me.PanelToolBarBotton)
         resources.ApplyResources(Me.PanelTeste, "PanelTeste")
         Me.PanelTeste.Name = "PanelTeste"
         '
@@ -1204,7 +1204,7 @@ Partial Class MainForm
         Me.Panel_MediasExplorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.Panel_MediasExplorer.Controls.Add(Me.Panel_RecebeMidiasAtivas)
         Me.Panel_MediasExplorer.Controls.Add(Me.PanelRecebeBiblio)
-        Me.Panel_MediasExplorer.Controls.Add(Me.PanelToobar_MediasExplorer)
+        Me.Panel_MediasExplorer.Controls.Add(Me.PanelToolBar_MediasExplorer)
         resources.ApplyResources(Me.Panel_MediasExplorer, "Panel_MediasExplorer")
         Me.Panel_MediasExplorer.Name = "Panel_MediasExplorer"
         '
@@ -1220,13 +1220,13 @@ Partial Class MainForm
         resources.ApplyResources(Me.PanelRecebeBiblio, "PanelRecebeBiblio")
         Me.PanelRecebeBiblio.Name = "PanelRecebeBiblio"
         '
-        'PanelToobar_MediasExplorer
+        'PanelToolBar_MediasExplorer
         '
-        Me.PanelToobar_MediasExplorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelToobar_MediasExplorer.Controls.Add(Me.PanelBaseLuzLeft)
-        Me.PanelToobar_MediasExplorer.Controls.Add(Me.Panel274)
-        resources.ApplyResources(Me.PanelToobar_MediasExplorer, "PanelToobar_MediasExplorer")
-        Me.PanelToobar_MediasExplorer.Name = "PanelToobar_MediasExplorer"
+        Me.PanelToolBar_MediasExplorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelToolBar_MediasExplorer.Controls.Add(Me.PanelBaseLuzLeft)
+        Me.PanelToolBar_MediasExplorer.Controls.Add(Me.Panel274)
+        resources.ApplyResources(Me.PanelToolBar_MediasExplorer, "PanelToolBar_MediasExplorer")
+        Me.PanelToolBar_MediasExplorer.Name = "PanelToolBar_MediasExplorer"
         '
         'PanelBaseLuzLeft
         '
@@ -1343,13 +1343,13 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel_Recebe_Filtro, "Panel_Recebe_Filtro")
         Me.Panel_Recebe_Filtro.Name = "Panel_Recebe_Filtro"
         '
-        'PanelToobarBotton
+        'PanelToolBarBotton
         '
-        Me.PanelToobarBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.PanelToobarBotton.Controls.Add(Me.PanelBottonLuz)
-        Me.PanelToobarBotton.Controls.Add(Me.Panel33)
-        resources.ApplyResources(Me.PanelToobarBotton, "PanelToobarBotton")
-        Me.PanelToobarBotton.Name = "PanelToobarBotton"
+        Me.PanelToolBarBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelToolBarBotton.Controls.Add(Me.PanelBottonLuz)
+        Me.PanelToolBarBotton.Controls.Add(Me.Panel33)
+        resources.ApplyResources(Me.PanelToolBarBotton, "PanelToolBarBotton")
+        Me.PanelToolBarBotton.Name = "PanelToolBarBotton"
         '
         'PanelBottonLuz
         '
@@ -5055,12 +5055,12 @@ Partial Class MainForm
         Me.PanelEnvoveMidia.ResumeLayout(False)
         Me.PanelTeste.ResumeLayout(False)
         Me.Panel_MediasExplorer.ResumeLayout(False)
-        Me.PanelToobar_MediasExplorer.ResumeLayout(False)
+        Me.PanelToolBar_MediasExplorer.ResumeLayout(False)
         Me.PanelBaseLuzLeft.ResumeLayout(False)
         Me.Panel274.ResumeLayout(False)
         Me.PanelToolBar.ResumeLayout(False)
         Me.Panel41.ResumeLayout(False)
-        Me.PanelToobarBotton.ResumeLayout(False)
+        Me.PanelToolBarBotton.ResumeLayout(False)
         Me.Panel33.ResumeLayout(False)
         Me.PanelHome.ResumeLayout(False)
         Me.PanelHome.PerformLayout()
@@ -5706,7 +5706,7 @@ Partial Class MainForm
     Friend WithEvents Panel_MediasExplorer As Panel
     Friend WithEvents Panel_RecebeMidiasAtivas As Panel
     Friend WithEvents PanelRecebeBiblio As Panel
-    Friend WithEvents PanelToobar_MediasExplorer As Panel
+    Friend WithEvents PanelToolBar_MediasExplorer As Panel
     Friend WithEvents PanelBaseLuzLeft As Panel
     Friend WithEvents PanelSombra As Panel
     Friend WithEvents Panel274 As Panel
@@ -5721,7 +5721,7 @@ Partial Class MainForm
     Friend WithEvents PanelEnvolveMidiaAberta As Panel
     Friend WithEvents Splitter7 As Splitter
     Friend WithEvents Panel_Recebe_Filtro As Panel
-    Friend WithEvents PanelToobarBotton As Panel
+    Friend WithEvents PanelToolBarBotton As Panel
     Friend WithEvents PanelBottonLuz As Panel
     Friend WithEvents Panel33 As Panel
     Friend WithEvents ChBFiltro As CheckBox

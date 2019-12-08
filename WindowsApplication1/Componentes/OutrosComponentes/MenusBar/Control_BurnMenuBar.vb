@@ -148,8 +148,51 @@
         _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
 
     End Sub
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBAbortar.MouseUp, CKBOpcoes_CKBAbortar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
 
-    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBAbortar.CheckedChanged, CKBOpcoes_CKBAbortar.CheckedChanged
+
+        Dim obj As Object
+
+        If sender.GetType.Name.ToString = "CheckBox" Then
+
+            obj = CType(sender, CheckBox)
+        Else
+            obj = CType(sender, Object)
+        End If
+
+        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
+        obj.Parent.BackColor = _backgroundColorSelectAndMouseUp
+
+        If sender.GetType.Name.ToString = "CheckBox" Then obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
+
+
+        Select Case obj.Name
+            Case "CKBOpcoes_CKBNovaMidia"
+                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBNovaMidia"
+                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBGravarCriar"
+                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBOpcoes_CKBGravarCriar"
+                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBAbortar"
+                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "CKBOpcoes_CKBAbortar"
+                CKBAbortar.BackColor = _backgroundColorSelectAndMouseUp
+
+            Case "ComBSelectAgrupamento"
+                PanelBorder_LBL_ComBSelectAgrupamento.BackColor = _borderColorSelectAndMouseUp
+
+        End Select
+
+    End Sub
+
+    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBAbortar.CheckedChanged, CKBOpcoes_CKBAbortar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
 
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)

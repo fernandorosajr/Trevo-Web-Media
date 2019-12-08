@@ -27,102 +27,110 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.PanelGravação = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CKBAbortar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
+        Me.CKBAbortar = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBAbortar = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBGravarCriar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBGravarCriar = New System.Windows.Forms.Panel()
+        Me.CKBGravarCriar = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBGravarCriar = New System.Windows.Forms.CheckBox()
         Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.LBLOrganizar = New System.Windows.Forms.Label()
+        Me.LBLGravacao = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
         Me.PanelGerenciar = New System.Windows.Forms.Panel()
-        Me.PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.LBLGerenciarAreaDeTranferencia = New System.Windows.Forms.Label()
+        Me.PanelMargem_PanelInformacaoDaMidia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_PanelInformacaoDaMidia = New System.Windows.Forms.Panel()
+        Me.PanelInformacaoDaMidia = New System.Windows.Forms.Panel()
+        Me.Panel_LocalDaMidia = New System.Windows.Forms.Panel()
+        Me.PanelMargem_CmBLocalDaMidia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CmBLocalDaMidia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CmBLocalDaMidia = New System.Windows.Forms.Panel()
+        Me.CmBLocalDaMidia = New System.Windows.Forms.ComboBox()
+        Me.PanelEnvolve_LBLLocalDaMidia = New System.Windows.Forms.Panel()
+        Me.LBLLocalDaMidia = New System.Windows.Forms.Label()
+        Me.Panel_TipoDeMidia = New System.Windows.Forms.Panel()
+        Me.PanelMargem_CmBTipoDeMidia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_CmBTipoDeMidia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CmBTipoDeMidia = New System.Windows.Forms.Panel()
+        Me.CmBTipoDeMidia = New System.Windows.Forms.ComboBox()
+        Me.PanelEnvolve_LBLTipoDeMidia = New System.Windows.Forms.Panel()
+        Me.LBLTipoDeMidia = New System.Windows.Forms.Label()
+        Me.Panel_Rotulo = New System.Windows.Forms.Panel()
+        Me.PanelMargem_TXTRotulo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_TXTRotulo = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_TXTRotulo = New System.Windows.Forms.Panel()
+        Me.TXTRotulo = New System.Windows.Forms.TextBox()
+        Me.PanelEnvolve_LBLRotulo = New System.Windows.Forms.Panel()
+        Me.LBLRotulo = New System.Windows.Forms.Label()
+        Me.PanelEspacamento02 = New System.Windows.Forms.Panel()
+        Me.PanelLinha02 = New System.Windows.Forms.Panel()
+        Me.LBLInformacaoDaMidia = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaNova = New System.Windows.Forms.Panel()
         Me.PanelNova = New System.Windows.Forms.Panel()
-        Me.Panel70 = New System.Windows.Forms.Panel()
+        Me.PanelNovaMidia = New System.Windows.Forms.Panel()
         Me.PanelBorder_SelecaoDeAgrupamento = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_SelecaoDeAgrupamento = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PanelBorder_BTNNovaMidia = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTNNovaMidia = New System.Windows.Forms.Panel()
-        Me.Panel67 = New System.Windows.Forms.Panel()
-        Me.LBLNova = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_BTNMostrarAgrupamentos = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNMostrarAgrupamentos = New System.Windows.Forms.Panel()
+        Me.PanelBorder_LBL_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
+        Me.PanelBorder_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
+        Me.ComBSelectAgrupamento = New System.Windows.Forms.ComboBox()
+        Me.LBL_ComBSelectAgrupamento = New System.Windows.Forms.Label()
+        Me.PanelBorder_CKBNovaMidia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBNovaMidia = New System.Windows.Forms.Panel()
+        Me.CKBNovaMidia = New System.Windows.Forms.CheckBox()
+        Me.CKBOpcoes_CKBNovaMidia = New System.Windows.Forms.CheckBox()
+        Me.PanelEspacamento01 = New System.Windows.Forms.Panel()
+        Me.PanelLinha01 = New System.Windows.Forms.Panel()
+        Me.LBLNovaMidia = New System.Windows.Forms.Label()
+        Me.BTNMostrarAgrupamentos = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
-        Me.Panel16.SuspendLayout()
-        Me.Panel26.SuspendLayout()
-        Me.Panel27.SuspendLayout()
-        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
-        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelGravação.SuspendLayout()
+        Me.PanelBorder_CKBAbortar.SuspendLayout()
+        Me.PanelEnvolve_CKBAbortar.SuspendLayout()
+        Me.PanelBorder_CKBGravarCriar.SuspendLayout()
+        Me.PanelEnvolve_CKBGravarCriar.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaGerenciar.SuspendLayout()
         Me.PanelGerenciar.SuspendLayout()
-        Me.PanelAgrupaGerenciar.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel17.SuspendLayout()
-        Me.Panel22.SuspendLayout()
-        Me.Panel14.SuspendLayout()
-        Me.Panel19.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel21.SuspendLayout()
-        Me.Panel24.SuspendLayout()
-        Me.Panel10.SuspendLayout()
+        Me.PanelMargem_PanelInformacaoDaMidia.SuspendLayout()
+        Me.PanelBorder_PanelInformacaoDaMidia.SuspendLayout()
+        Me.PanelInformacaoDaMidia.SuspendLayout()
+        Me.Panel_LocalDaMidia.SuspendLayout()
+        Me.PanelMargem_CmBLocalDaMidia.SuspendLayout()
+        Me.PanelBorder_CmBLocalDaMidia.SuspendLayout()
+        Me.PanelEnvolve_CmBLocalDaMidia.SuspendLayout()
+        Me.PanelEnvolve_LBLLocalDaMidia.SuspendLayout()
+        Me.Panel_TipoDeMidia.SuspendLayout()
+        Me.PanelMargem_CmBTipoDeMidia.SuspendLayout()
+        Me.PanelBorder_CmBTipoDeMidia.SuspendLayout()
+        Me.PanelEnvolve_CmBTipoDeMidia.SuspendLayout()
+        Me.PanelEnvolve_LBLTipoDeMidia.SuspendLayout()
+        Me.Panel_Rotulo.SuspendLayout()
+        Me.PanelMargem_TXTRotulo.SuspendLayout()
+        Me.PanelBorder_TXTRotulo.SuspendLayout()
+        Me.PanelEnvolve_TXTRotulo.SuspendLayout()
+        Me.PanelEnvolve_LBLRotulo.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaNova.SuspendLayout()
         Me.PanelNova.SuspendLayout()
-        Me.Panel70.SuspendLayout()
+        Me.PanelNovaMidia.SuspendLayout()
         Me.PanelBorder_SelecaoDeAgrupamento.SuspendLayout()
         Me.PanelEnvolve_SelecaoDeAgrupamento.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.PanelBorder_BTNNovaMidia.SuspendLayout()
-        Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
+        Me.PanelBorder_BTNMostrarAgrupamentos.SuspendLayout()
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.SuspendLayout()
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.SuspendLayout()
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.SuspendLayout()
+        Me.PanelBorder_ComBSelectAgrupamento.SuspendLayout()
+        Me.PanelEnvolve_ComBSelectAgrupamento.SuspendLayout()
+        Me.PanelBorder_CKBNovaMidia.SuspendLayout()
+        Me.PanelEnvolve_CKBNovaMidia.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -131,7 +139,7 @@ Partial Class Control_BurnMenuBar
         Me.Panel23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel23.Location = New System.Drawing.Point(0, 0)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(919, 139)
+        Me.Panel23.Size = New System.Drawing.Size(922, 139)
         Me.Panel23.TabIndex = 12
         '
         'Panel25
@@ -142,7 +150,7 @@ Partial Class Control_BurnMenuBar
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(919, 139)
+        Me.Panel25.Size = New System.Drawing.Size(922, 139)
         Me.Panel25.TabIndex = 6
         '
         'PanelEnvolve_PanelAgrupaOrganizar
@@ -152,146 +160,192 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(757, 0)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Name = "PanelEnvolve_PanelAgrupaOrganizar"
         Me.PanelEnvolve_PanelAgrupaOrganizar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(308, 139)
+        Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(164, 139)
         Me.PanelEnvolve_PanelAgrupaOrganizar.TabIndex = 9
         '
         'PanelOrganizar
         '
         Me.PanelOrganizar.Controls.Add(Me.PanelAgrupaOrganizar)
         Me.PanelOrganizar.Controls.Add(Me.Panel20)
-        Me.PanelOrganizar.Controls.Add(Me.LBLOrganizar)
+        Me.PanelOrganizar.Controls.Add(Me.LBLGravacao)
         Me.PanelOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelOrganizar.Location = New System.Drawing.Point(3, 3)
         Me.PanelOrganizar.Name = "PanelOrganizar"
-        Me.PanelOrganizar.Size = New System.Drawing.Size(302, 133)
+        Me.PanelOrganizar.Size = New System.Drawing.Size(158, 133)
         Me.PanelOrganizar.TabIndex = 6
         '
         'PanelAgrupaOrganizar
         '
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel16)
+        Me.PanelAgrupaOrganizar.Controls.Add(Me.PanelGravação)
         Me.PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAgrupaOrganizar.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaOrganizar.Name = "PanelAgrupaOrganizar"
-        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(301, 120)
+        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(157, 120)
         Me.PanelAgrupaOrganizar.TabIndex = 11
         '
-        'Panel16
+        'PanelGravação
         '
-        Me.Panel16.Controls.Add(Me.Panel26)
-        Me.Panel16.Controls.Add(Me.PanelBorder_CKBExibirStatusGravado)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel16.Location = New System.Drawing.Point(0, 0)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(273, 120)
-        Me.Panel16.TabIndex = 20
+        Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBAbortar)
+        Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBGravarCriar)
+        Me.PanelGravação.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelGravação.Location = New System.Drawing.Point(0, 0)
+        Me.PanelGravação.Name = "PanelGravação"
+        Me.PanelGravação.Size = New System.Drawing.Size(157, 120)
+        Me.PanelGravação.TabIndex = 20
         '
-        'Panel26
+        'PanelBorder_CKBAbortar
         '
-        Me.Panel26.BackColor = System.Drawing.Color.Transparent
-        Me.Panel26.Controls.Add(Me.Panel27)
-        Me.Panel26.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel26.Location = New System.Drawing.Point(75, 0)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel26.Size = New System.Drawing.Size(75, 120)
-        Me.Panel26.TabIndex = 26
+        Me.PanelBorder_CKBAbortar.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
+        Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
+        Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBAbortar.Size = New System.Drawing.Size(75, 120)
+        Me.PanelBorder_CKBAbortar.TabIndex = 26
         '
-        'Panel27
+        'PanelEnvolve_CKBAbortar
         '
-        Me.Panel27.Controls.Add(Me.CheckBox1)
-        Me.Panel27.Controls.Add(Me.CheckBox2)
-        Me.Panel27.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel27.Location = New System.Drawing.Point(1, 1)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(73, 118)
-        Me.Panel27.TabIndex = 10
+        Me.PanelEnvolve_CKBAbortar.Controls.Add(Me.CKBAbortar)
+        Me.PanelEnvolve_CKBAbortar.Controls.Add(Me.CKBOpcoes_CKBAbortar)
+        Me.PanelEnvolve_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBAbortar.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBAbortar.Name = "PanelEnvolve_CKBAbortar"
+        Me.PanelEnvolve_CKBAbortar.Size = New System.Drawing.Size(73, 118)
+        Me.PanelEnvolve_CKBAbortar.TabIndex = 10
         '
-        'CheckBox2
+        'CKBAbortar
         '
-        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CheckBox2.FlatAppearance.BorderSize = 0
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox2.Location = New System.Drawing.Point(0, 97)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(73, 21)
-        Me.CheckBox2.TabIndex = 17
-        Me.CheckBox2.Text = "Abortar"
-        Me.CheckBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CheckBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox2.UseVisualStyleBackColor = False
+        Me.CKBAbortar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBAbortar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBAbortar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
+        Me.CKBAbortar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBAbortar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBAbortar.FlatAppearance.BorderSize = 0
+        Me.CKBAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBAbortar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBAbortar.ForeColor = System.Drawing.Color.Black
+        Me.CKBAbortar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBAbortar.Location = New System.Drawing.Point(0, 0)
+        Me.CKBAbortar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBAbortar.Name = "CKBAbortar"
+        Me.CKBAbortar.Size = New System.Drawing.Size(73, 97)
+        Me.CKBAbortar.TabIndex = 16
+        Me.CKBAbortar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBAbortar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBAbortar.UseVisualStyleBackColor = False
         '
-        'PanelBorder_CKBExibirStatusGravado
+        'CKBOpcoes_CKBAbortar
         '
-        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
-        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
-        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 120)
-        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 25
+        Me.CKBOpcoes_CKBAbortar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBAbortar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBAbortar.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBAbortar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBAbortar.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBAbortar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBAbortar.Location = New System.Drawing.Point(0, 97)
+        Me.CKBOpcoes_CKBAbortar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBAbortar.Name = "CKBOpcoes_CKBAbortar"
+        Me.CKBOpcoes_CKBAbortar.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBAbortar.TabIndex = 17
+        Me.CKBOpcoes_CKBAbortar.Text = "Abortar"
+        Me.CKBOpcoes_CKBAbortar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBAbortar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBAbortar.UseVisualStyleBackColor = False
         '
-        'PanelEnvolve_CKBExibirStatusGravado
+        'PanelBorder_CKBGravarCriar
         '
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
-        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 118)
-        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
+        Me.PanelBorder_CKBGravarCriar.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBGravarCriar.Controls.Add(Me.PanelEnvolve_CKBGravarCriar)
+        Me.PanelBorder_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBGravarCriar.Name = "PanelBorder_CKBGravarCriar"
+        Me.PanelBorder_CKBGravarCriar.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBGravarCriar.Size = New System.Drawing.Size(75, 120)
+        Me.PanelBorder_CKBGravarCriar.TabIndex = 25
         '
-        'CKBOpcoes_CKBExibirStatusGravado
+        'PanelEnvolve_CKBGravarCriar
         '
-        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 97)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
-        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
-        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 15
-        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravar"
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        Me.PanelEnvolve_CKBGravarCriar.Controls.Add(Me.CKBGravarCriar)
+        Me.PanelEnvolve_CKBGravarCriar.Controls.Add(Me.CKBOpcoes_CKBGravarCriar)
+        Me.PanelEnvolve_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBGravarCriar.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBGravarCriar.Name = "PanelEnvolve_CKBGravarCriar"
+        Me.PanelEnvolve_CKBGravarCriar.Size = New System.Drawing.Size(73, 118)
+        Me.PanelEnvolve_CKBGravarCriar.TabIndex = 10
+        '
+        'CKBGravarCriar
+        '
+        Me.CKBGravarCriar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBGravarCriar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBGravarCriar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Gravar2
+        Me.CKBGravarCriar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBGravarCriar.FlatAppearance.BorderSize = 0
+        Me.CKBGravarCriar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBGravarCriar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBGravarCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBGravarCriar.ForeColor = System.Drawing.Color.Black
+        Me.CKBGravarCriar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBGravarCriar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
+        Me.CKBGravarCriar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBGravarCriar.Name = "CKBGravarCriar"
+        Me.CKBGravarCriar.Size = New System.Drawing.Size(73, 97)
+        Me.CKBGravarCriar.TabIndex = 14
+        Me.CKBGravarCriar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBGravarCriar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBGravarCriar.UseVisualStyleBackColor = False
+        '
+        'CKBOpcoes_CKBGravarCriar
+        '
+        Me.CKBOpcoes_CKBGravarCriar.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBGravarCriar.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBGravarCriar.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBGravarCriar.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBGravarCriar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBGravarCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBGravarCriar.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBGravarCriar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBGravarCriar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBGravarCriar.Location = New System.Drawing.Point(0, 97)
+        Me.CKBOpcoes_CKBGravarCriar.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBGravarCriar.Name = "CKBOpcoes_CKBGravarCriar"
+        Me.CKBOpcoes_CKBGravarCriar.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBGravarCriar.TabIndex = 15
+        Me.CKBOpcoes_CKBGravarCriar.Text = "Gravar"
+        Me.CKBOpcoes_CKBGravarCriar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBGravarCriar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBGravarCriar.UseVisualStyleBackColor = False
         '
         'Panel20
         '
         Me.Panel20.BackColor = System.Drawing.Color.LightGray
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(301, 0)
+        Me.Panel20.Location = New System.Drawing.Point(157, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(1, 120)
         Me.Panel20.TabIndex = 10
         '
-        'LBLOrganizar
+        'LBLGravacao
         '
-        Me.LBLOrganizar.AutoEllipsis = True
-        Me.LBLOrganizar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLOrganizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLOrganizar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLOrganizar.Location = New System.Drawing.Point(0, 120)
-        Me.LBLOrganizar.Name = "LBLOrganizar"
-        Me.LBLOrganizar.Size = New System.Drawing.Size(302, 13)
-        Me.LBLOrganizar.TabIndex = 6
-        Me.LBLOrganizar.Text = "Organizar"
-        Me.LBLOrganizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LBLGravacao.AutoEllipsis = True
+        Me.LBLGravacao.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLGravacao.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLGravacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLGravacao.Location = New System.Drawing.Point(0, 120)
+        Me.LBLGravacao.Name = "LBLGravacao"
+        Me.LBLGravacao.Size = New System.Drawing.Size(158, 13)
+        Me.LBLGravacao.TabIndex = 6
+        Me.LBLGravacao.Text = "Gravação"
+        Me.LBLGravacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PanelEnvolve_PanelAgrupaGerenciar
         '
@@ -305,256 +359,284 @@ Partial Class Control_BurnMenuBar
         '
         'PanelGerenciar
         '
-        Me.PanelGerenciar.Controls.Add(Me.PanelAgrupaGerenciar)
-        Me.PanelGerenciar.Controls.Add(Me.Panel11)
-        Me.PanelGerenciar.Controls.Add(Me.LBLGerenciarAreaDeTranferencia)
+        Me.PanelGerenciar.Controls.Add(Me.PanelMargem_PanelInformacaoDaMidia)
+        Me.PanelGerenciar.Controls.Add(Me.PanelEspacamento02)
+        Me.PanelGerenciar.Controls.Add(Me.PanelLinha02)
+        Me.PanelGerenciar.Controls.Add(Me.LBLInformacaoDaMidia)
         Me.PanelGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelGerenciar.Location = New System.Drawing.Point(3, 3)
         Me.PanelGerenciar.Name = "PanelGerenciar"
         Me.PanelGerenciar.Size = New System.Drawing.Size(457, 133)
         Me.PanelGerenciar.TabIndex = 6
         '
-        'PanelAgrupaGerenciar
+        'PanelMargem_PanelInformacaoDaMidia
         '
-        Me.PanelAgrupaGerenciar.Controls.Add(Me.Panel7)
-        Me.PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaGerenciar.Location = New System.Drawing.Point(0, 0)
-        Me.PanelAgrupaGerenciar.Name = "PanelAgrupaGerenciar"
-        Me.PanelAgrupaGerenciar.Size = New System.Drawing.Size(456, 120)
-        Me.PanelAgrupaGerenciar.TabIndex = 11
+        Me.PanelMargem_PanelInformacaoDaMidia.Controls.Add(Me.PanelBorder_PanelInformacaoDaMidia)
+        Me.PanelMargem_PanelInformacaoDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMargem_PanelInformacaoDaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMargem_PanelInformacaoDaMidia.Name = "PanelMargem_PanelInformacaoDaMidia"
+        Me.PanelMargem_PanelInformacaoDaMidia.Size = New System.Drawing.Size(422, 120)
+        Me.PanelMargem_PanelInformacaoDaMidia.TabIndex = 11
         '
-        'Panel7
+        'PanelBorder_PanelInformacaoDaMidia
         '
-        Me.Panel7.Controls.Add(Me.Panel8)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(0, 0)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(456, 120)
-        Me.Panel7.TabIndex = 20
+        Me.PanelBorder_PanelInformacaoDaMidia.Controls.Add(Me.PanelInformacaoDaMidia)
+        Me.PanelBorder_PanelInformacaoDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_PanelInformacaoDaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_PanelInformacaoDaMidia.Name = "PanelBorder_PanelInformacaoDaMidia"
+        Me.PanelBorder_PanelInformacaoDaMidia.Size = New System.Drawing.Size(422, 120)
+        Me.PanelBorder_PanelInformacaoDaMidia.TabIndex = 20
         '
-        'Panel8
+        'PanelInformacaoDaMidia
         '
-        Me.Panel8.Controls.Add(Me.Panel17)
-        Me.Panel8.Controls.Add(Me.Panel13)
-        Me.Panel8.Controls.Add(Me.Panel6)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(0, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(456, 120)
-        Me.Panel8.TabIndex = 6
+        Me.PanelInformacaoDaMidia.Controls.Add(Me.Panel_LocalDaMidia)
+        Me.PanelInformacaoDaMidia.Controls.Add(Me.Panel_TipoDeMidia)
+        Me.PanelInformacaoDaMidia.Controls.Add(Me.Panel_Rotulo)
+        Me.PanelInformacaoDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelInformacaoDaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelInformacaoDaMidia.Name = "PanelInformacaoDaMidia"
+        Me.PanelInformacaoDaMidia.Size = New System.Drawing.Size(422, 120)
+        Me.PanelInformacaoDaMidia.TabIndex = 6
         '
-        'Panel17
+        'Panel_LocalDaMidia
         '
-        Me.Panel17.Controls.Add(Me.Panel22)
-        Me.Panel17.Controls.Add(Me.Panel19)
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel17.Location = New System.Drawing.Point(0, 45)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(456, 25)
-        Me.Panel17.TabIndex = 25
+        Me.Panel_LocalDaMidia.Controls.Add(Me.PanelMargem_CmBLocalDaMidia)
+        Me.Panel_LocalDaMidia.Controls.Add(Me.PanelEnvolve_LBLLocalDaMidia)
+        Me.Panel_LocalDaMidia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel_LocalDaMidia.Location = New System.Drawing.Point(0, 45)
+        Me.Panel_LocalDaMidia.Name = "Panel_LocalDaMidia"
+        Me.Panel_LocalDaMidia.Size = New System.Drawing.Size(422, 25)
+        Me.Panel_LocalDaMidia.TabIndex = 25
         '
-        'Panel22
+        'PanelMargem_CmBLocalDaMidia
         '
-        Me.Panel22.Controls.Add(Me.Panel14)
-        Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel22.Location = New System.Drawing.Point(75, 0)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel22.Size = New System.Drawing.Size(381, 25)
-        Me.Panel22.TabIndex = 26
+        Me.PanelMargem_CmBLocalDaMidia.Controls.Add(Me.PanelBorder_CmBLocalDaMidia)
+        Me.PanelMargem_CmBLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMargem_CmBLocalDaMidia.Location = New System.Drawing.Point(100, 0)
+        Me.PanelMargem_CmBLocalDaMidia.Name = "PanelMargem_CmBLocalDaMidia"
+        Me.PanelMargem_CmBLocalDaMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelMargem_CmBLocalDaMidia.Size = New System.Drawing.Size(322, 25)
+        Me.PanelMargem_CmBLocalDaMidia.TabIndex = 26
         '
-        'Panel14
+        'PanelBorder_CmBLocalDaMidia
         '
-        Me.Panel14.BackColor = System.Drawing.Color.DimGray
-        Me.Panel14.Controls.Add(Me.ComboBox3)
-        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel14.Location = New System.Drawing.Point(1, 1)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel14.Size = New System.Drawing.Size(379, 23)
-        Me.Panel14.TabIndex = 2
+        Me.PanelBorder_CmBLocalDaMidia.BackColor = System.Drawing.Color.LightGray
+        Me.PanelBorder_CmBLocalDaMidia.Controls.Add(Me.PanelEnvolve_CmBLocalDaMidia)
+        Me.PanelBorder_CmBLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_CmBLocalDaMidia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBorder_CmBLocalDaMidia.Name = "PanelBorder_CmBLocalDaMidia"
+        Me.PanelBorder_CmBLocalDaMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CmBLocalDaMidia.Size = New System.Drawing.Size(320, 23)
+        Me.PanelBorder_CmBLocalDaMidia.TabIndex = 2
         '
-        'ComboBox3
+        'PanelEnvolve_CmBLocalDaMidia
         '
-        Me.ComboBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(1, 1)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(377, 21)
-        Me.ComboBox3.TabIndex = 13
+        Me.PanelEnvolve_CmBLocalDaMidia.Controls.Add(Me.CmBLocalDaMidia)
+        Me.PanelEnvolve_CmBLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CmBLocalDaMidia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CmBLocalDaMidia.Name = "PanelEnvolve_CmBLocalDaMidia"
+        Me.PanelEnvolve_CmBLocalDaMidia.Size = New System.Drawing.Size(318, 21)
+        Me.PanelEnvolve_CmBLocalDaMidia.TabIndex = 14
         '
-        'Panel19
+        'CmBLocalDaMidia
         '
-        Me.Panel19.Controls.Add(Me.Label4)
-        Me.Panel19.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel19.Location = New System.Drawing.Point(0, 0)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(75, 25)
-        Me.Panel19.TabIndex = 1
+        Me.CmBLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CmBLocalDaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CmBLocalDaMidia.FormattingEnabled = True
+        Me.CmBLocalDaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.CmBLocalDaMidia.Name = "CmBLocalDaMidia"
+        Me.CmBLocalDaMidia.Size = New System.Drawing.Size(318, 21)
+        Me.CmBLocalDaMidia.TabIndex = 13
         '
-        'Label4
+        'PanelEnvolve_LBLLocalDaMidia
         '
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label4.Location = New System.Drawing.Point(21, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(54, 25)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Local:"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.PanelEnvolve_LBLLocalDaMidia.Controls.Add(Me.LBLLocalDaMidia)
+        Me.PanelEnvolve_LBLLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_LBLLocalDaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_LBLLocalDaMidia.Name = "PanelEnvolve_LBLLocalDaMidia"
+        Me.PanelEnvolve_LBLLocalDaMidia.Size = New System.Drawing.Size(100, 25)
+        Me.PanelEnvolve_LBLLocalDaMidia.TabIndex = 1
         '
-        'Panel13
+        'LBLLocalDaMidia
         '
-        Me.Panel13.Controls.Add(Me.Panel9)
-        Me.Panel13.Controls.Add(Me.Panel15)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel13.Location = New System.Drawing.Point(0, 20)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(456, 25)
-        Me.Panel13.TabIndex = 24
+        Me.LBLLocalDaMidia.Dock = System.Windows.Forms.DockStyle.Right
+        Me.LBLLocalDaMidia.Location = New System.Drawing.Point(46, 0)
+        Me.LBLLocalDaMidia.Name = "LBLLocalDaMidia"
+        Me.LBLLocalDaMidia.Size = New System.Drawing.Size(54, 25)
+        Me.LBLLocalDaMidia.TabIndex = 12
+        Me.LBLLocalDaMidia.Text = "Local:"
+        Me.LBLLocalDaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Panel9
+        'Panel_TipoDeMidia
         '
-        Me.Panel9.Controls.Add(Me.Panel18)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(75, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel9.Size = New System.Drawing.Size(381, 25)
-        Me.Panel9.TabIndex = 27
+        Me.Panel_TipoDeMidia.Controls.Add(Me.PanelMargem_CmBTipoDeMidia)
+        Me.Panel_TipoDeMidia.Controls.Add(Me.PanelEnvolve_LBLTipoDeMidia)
+        Me.Panel_TipoDeMidia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel_TipoDeMidia.Location = New System.Drawing.Point(0, 20)
+        Me.Panel_TipoDeMidia.Name = "Panel_TipoDeMidia"
+        Me.Panel_TipoDeMidia.Size = New System.Drawing.Size(422, 25)
+        Me.Panel_TipoDeMidia.TabIndex = 24
         '
-        'Panel18
+        'PanelMargem_CmBTipoDeMidia
         '
-        Me.Panel18.BackColor = System.Drawing.Color.DimGray
-        Me.Panel18.Controls.Add(Me.ComboBox2)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel18.Location = New System.Drawing.Point(1, 1)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel18.Size = New System.Drawing.Size(379, 23)
-        Me.Panel18.TabIndex = 2
+        Me.PanelMargem_CmBTipoDeMidia.Controls.Add(Me.PanelBorder_CmBTipoDeMidia)
+        Me.PanelMargem_CmBTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMargem_CmBTipoDeMidia.Location = New System.Drawing.Point(100, 0)
+        Me.PanelMargem_CmBTipoDeMidia.Name = "PanelMargem_CmBTipoDeMidia"
+        Me.PanelMargem_CmBTipoDeMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelMargem_CmBTipoDeMidia.Size = New System.Drawing.Size(322, 25)
+        Me.PanelMargem_CmBTipoDeMidia.TabIndex = 27
         '
-        'ComboBox2
+        'PanelBorder_CmBTipoDeMidia
         '
-        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(1, 1)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(377, 21)
-        Me.ComboBox2.TabIndex = 11
+        Me.PanelBorder_CmBTipoDeMidia.BackColor = System.Drawing.Color.LightGray
+        Me.PanelBorder_CmBTipoDeMidia.Controls.Add(Me.PanelEnvolve_CmBTipoDeMidia)
+        Me.PanelBorder_CmBTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_CmBTipoDeMidia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBorder_CmBTipoDeMidia.Name = "PanelBorder_CmBTipoDeMidia"
+        Me.PanelBorder_CmBTipoDeMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CmBTipoDeMidia.Size = New System.Drawing.Size(320, 23)
+        Me.PanelBorder_CmBTipoDeMidia.TabIndex = 2
         '
-        'Panel15
+        'PanelEnvolve_CmBTipoDeMidia
         '
-        Me.Panel15.Controls.Add(Me.Label3)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel15.Location = New System.Drawing.Point(0, 0)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(75, 25)
-        Me.Panel15.TabIndex = 1
+        Me.PanelEnvolve_CmBTipoDeMidia.Controls.Add(Me.CmBTipoDeMidia)
+        Me.PanelEnvolve_CmBTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CmBTipoDeMidia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CmBTipoDeMidia.Name = "PanelEnvolve_CmBTipoDeMidia"
+        Me.PanelEnvolve_CmBTipoDeMidia.Size = New System.Drawing.Size(318, 21)
+        Me.PanelEnvolve_CmBTipoDeMidia.TabIndex = 12
         '
-        'Label3
+        'CmBTipoDeMidia
         '
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label3.Location = New System.Drawing.Point(21, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 25)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "Tipo:"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.CmBTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CmBTipoDeMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CmBTipoDeMidia.FormattingEnabled = True
+        Me.CmBTipoDeMidia.Location = New System.Drawing.Point(0, 0)
+        Me.CmBTipoDeMidia.Name = "CmBTipoDeMidia"
+        Me.CmBTipoDeMidia.Size = New System.Drawing.Size(318, 21)
+        Me.CmBTipoDeMidia.TabIndex = 11
         '
-        'Panel6
+        'PanelEnvolve_LBLTipoDeMidia
         '
-        Me.Panel6.BackColor = System.Drawing.Color.Transparent
-        Me.Panel6.Controls.Add(Me.Panel12)
-        Me.Panel6.Controls.Add(Me.Panel10)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(456, 20)
-        Me.Panel6.TabIndex = 7
+        Me.PanelEnvolve_LBLTipoDeMidia.Controls.Add(Me.LBLTipoDeMidia)
+        Me.PanelEnvolve_LBLTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_LBLTipoDeMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_LBLTipoDeMidia.Name = "PanelEnvolve_LBLTipoDeMidia"
+        Me.PanelEnvolve_LBLTipoDeMidia.Size = New System.Drawing.Size(100, 25)
+        Me.PanelEnvolve_LBLTipoDeMidia.TabIndex = 1
         '
-        'Panel12
+        'LBLTipoDeMidia
         '
-        Me.Panel12.Controls.Add(Me.Panel21)
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel12.Location = New System.Drawing.Point(75, 0)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel12.Size = New System.Drawing.Size(381, 20)
-        Me.Panel12.TabIndex = 26
+        Me.LBLTipoDeMidia.Dock = System.Windows.Forms.DockStyle.Right
+        Me.LBLTipoDeMidia.Location = New System.Drawing.Point(11, 0)
+        Me.LBLTipoDeMidia.Name = "LBLTipoDeMidia"
+        Me.LBLTipoDeMidia.Size = New System.Drawing.Size(89, 25)
+        Me.LBLTipoDeMidia.TabIndex = 10
+        Me.LBLTipoDeMidia.Text = "Tipo de mídia"
+        Me.LBLTipoDeMidia.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Panel21
+        'Panel_Rotulo
         '
-        Me.Panel21.BackColor = System.Drawing.Color.DimGray
-        Me.Panel21.Controls.Add(Me.Panel24)
-        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel21.Location = New System.Drawing.Point(1, 1)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel21.Size = New System.Drawing.Size(379, 18)
-        Me.Panel21.TabIndex = 3
+        Me.Panel_Rotulo.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_Rotulo.Controls.Add(Me.PanelMargem_TXTRotulo)
+        Me.Panel_Rotulo.Controls.Add(Me.PanelEnvolve_LBLRotulo)
+        Me.Panel_Rotulo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel_Rotulo.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_Rotulo.Name = "Panel_Rotulo"
+        Me.Panel_Rotulo.Size = New System.Drawing.Size(422, 20)
+        Me.Panel_Rotulo.TabIndex = 7
         '
-        'Panel24
+        'PanelMargem_TXTRotulo
         '
-        Me.Panel24.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel24.Controls.Add(Me.TextBox1)
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(1, 1)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel24.Size = New System.Drawing.Size(377, 16)
-        Me.Panel24.TabIndex = 0
+        Me.PanelMargem_TXTRotulo.Controls.Add(Me.PanelBorder_TXTRotulo)
+        Me.PanelMargem_TXTRotulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMargem_TXTRotulo.Location = New System.Drawing.Point(100, 0)
+        Me.PanelMargem_TXTRotulo.Name = "PanelMargem_TXTRotulo"
+        Me.PanelMargem_TXTRotulo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelMargem_TXTRotulo.Size = New System.Drawing.Size(322, 20)
+        Me.PanelMargem_TXTRotulo.TabIndex = 26
         '
-        'TextBox1
+        'PanelBorder_TXTRotulo
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(1, 1)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(375, 13)
-        Me.TextBox1.TabIndex = 9
+        Me.PanelBorder_TXTRotulo.BackColor = System.Drawing.Color.LightGray
+        Me.PanelBorder_TXTRotulo.Controls.Add(Me.PanelEnvolve_TXTRotulo)
+        Me.PanelBorder_TXTRotulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_TXTRotulo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBorder_TXTRotulo.Name = "PanelBorder_TXTRotulo"
+        Me.PanelBorder_TXTRotulo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_TXTRotulo.Size = New System.Drawing.Size(320, 18)
+        Me.PanelBorder_TXTRotulo.TabIndex = 3
         '
-        'Panel10
+        'PanelEnvolve_TXTRotulo
         '
-        Me.Panel10.Controls.Add(Me.Label2)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel10.Location = New System.Drawing.Point(0, 0)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(75, 20)
-        Me.Panel10.TabIndex = 1
+        Me.PanelEnvolve_TXTRotulo.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PanelEnvolve_TXTRotulo.Controls.Add(Me.TXTRotulo)
+        Me.PanelEnvolve_TXTRotulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_TXTRotulo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_TXTRotulo.Name = "PanelEnvolve_TXTRotulo"
+        Me.PanelEnvolve_TXTRotulo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolve_TXTRotulo.Size = New System.Drawing.Size(318, 16)
+        Me.PanelEnvolve_TXTRotulo.TabIndex = 0
         '
-        'Label2
+        'TXTRotulo
         '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label2.Location = New System.Drawing.Point(21, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 20)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Rótulo:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TXTRotulo.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTRotulo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTRotulo.Location = New System.Drawing.Point(1, 1)
+        Me.TXTRotulo.Name = "TXTRotulo"
+        Me.TXTRotulo.Size = New System.Drawing.Size(316, 13)
+        Me.TXTRotulo.TabIndex = 9
         '
-        'Panel11
+        'PanelEnvolve_LBLRotulo
         '
-        Me.Panel11.BackColor = System.Drawing.Color.LightGray
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(456, 0)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(1, 120)
-        Me.Panel11.TabIndex = 10
+        Me.PanelEnvolve_LBLRotulo.Controls.Add(Me.LBLRotulo)
+        Me.PanelEnvolve_LBLRotulo.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_LBLRotulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_LBLRotulo.Name = "PanelEnvolve_LBLRotulo"
+        Me.PanelEnvolve_LBLRotulo.Size = New System.Drawing.Size(100, 20)
+        Me.PanelEnvolve_LBLRotulo.TabIndex = 1
         '
-        'LBLGerenciarAreaDeTranferencia
+        'LBLRotulo
         '
-        Me.LBLGerenciarAreaDeTranferencia.AutoEllipsis = True
-        Me.LBLGerenciarAreaDeTranferencia.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLGerenciarAreaDeTranferencia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLGerenciarAreaDeTranferencia.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLGerenciarAreaDeTranferencia.Location = New System.Drawing.Point(0, 120)
-        Me.LBLGerenciarAreaDeTranferencia.Name = "LBLGerenciarAreaDeTranferencia"
-        Me.LBLGerenciarAreaDeTranferencia.Size = New System.Drawing.Size(457, 13)
-        Me.LBLGerenciarAreaDeTranferencia.TabIndex = 6
-        Me.LBLGerenciarAreaDeTranferencia.Text = "Gerenciar Área de Transferència"
-        Me.LBLGerenciarAreaDeTranferencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LBLRotulo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.LBLRotulo.Location = New System.Drawing.Point(46, 0)
+        Me.LBLRotulo.Name = "LBLRotulo"
+        Me.LBLRotulo.Size = New System.Drawing.Size(54, 20)
+        Me.LBLRotulo.TabIndex = 8
+        Me.LBLRotulo.Text = "Rótulo:"
+        Me.LBLRotulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'PanelEspacamento02
+        '
+        Me.PanelEspacamento02.BackColor = System.Drawing.Color.Transparent
+        Me.PanelEspacamento02.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelEspacamento02.Location = New System.Drawing.Point(422, 0)
+        Me.PanelEspacamento02.Name = "PanelEspacamento02"
+        Me.PanelEspacamento02.Size = New System.Drawing.Size(34, 120)
+        Me.PanelEspacamento02.TabIndex = 12
+        '
+        'PanelLinha02
+        '
+        Me.PanelLinha02.BackColor = System.Drawing.Color.LightGray
+        Me.PanelLinha02.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelLinha02.Location = New System.Drawing.Point(456, 0)
+        Me.PanelLinha02.Name = "PanelLinha02"
+        Me.PanelLinha02.Size = New System.Drawing.Size(1, 120)
+        Me.PanelLinha02.TabIndex = 10
+        '
+        'LBLInformacaoDaMidia
+        '
+        Me.LBLInformacaoDaMidia.AutoEllipsis = True
+        Me.LBLInformacaoDaMidia.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLInformacaoDaMidia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLInformacaoDaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLInformacaoDaMidia.Location = New System.Drawing.Point(0, 120)
+        Me.LBLInformacaoDaMidia.Name = "LBLInformacaoDaMidia"
+        Me.LBLInformacaoDaMidia.Size = New System.Drawing.Size(457, 13)
+        Me.LBLInformacaoDaMidia.TabIndex = 6
+        Me.LBLInformacaoDaMidia.Text = "Informações da mídia"
+        Me.LBLInformacaoDaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PanelEnvolve_PanelAgrupaNova
         '
@@ -568,24 +650,25 @@ Partial Class Control_BurnMenuBar
         '
         'PanelNova
         '
-        Me.PanelNova.Controls.Add(Me.Panel70)
-        Me.PanelNova.Controls.Add(Me.Panel67)
-        Me.PanelNova.Controls.Add(Me.LBLNova)
+        Me.PanelNova.Controls.Add(Me.PanelNovaMidia)
+        Me.PanelNova.Controls.Add(Me.PanelEspacamento01)
+        Me.PanelNova.Controls.Add(Me.PanelLinha01)
+        Me.PanelNova.Controls.Add(Me.LBLNovaMidia)
         Me.PanelNova.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelNova.Location = New System.Drawing.Point(3, 3)
         Me.PanelNova.Name = "PanelNova"
         Me.PanelNova.Size = New System.Drawing.Size(288, 133)
         Me.PanelNova.TabIndex = 6
         '
-        'Panel70
+        'PanelNovaMidia
         '
-        Me.Panel70.Controls.Add(Me.PanelBorder_SelecaoDeAgrupamento)
-        Me.Panel70.Controls.Add(Me.PanelBorder_BTNNovaMidia)
-        Me.Panel70.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel70.Location = New System.Drawing.Point(0, 0)
-        Me.Panel70.Name = "Panel70"
-        Me.Panel70.Size = New System.Drawing.Size(287, 120)
-        Me.Panel70.TabIndex = 20
+        Me.PanelNovaMidia.Controls.Add(Me.PanelBorder_SelecaoDeAgrupamento)
+        Me.PanelNovaMidia.Controls.Add(Me.PanelBorder_CKBNovaMidia)
+        Me.PanelNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelNovaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelNovaMidia.Name = "PanelNovaMidia"
+        Me.PanelNovaMidia.Size = New System.Drawing.Size(277, 120)
+        Me.PanelNovaMidia.TabIndex = 20
         '
         'PanelBorder_SelecaoDeAgrupamento
         '
@@ -594,248 +677,220 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_SelecaoDeAgrupamento.Location = New System.Drawing.Point(88, 0)
         Me.PanelBorder_SelecaoDeAgrupamento.Name = "PanelBorder_SelecaoDeAgrupamento"
         Me.PanelBorder_SelecaoDeAgrupamento.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_SelecaoDeAgrupamento.Size = New System.Drawing.Size(199, 120)
+        Me.PanelBorder_SelecaoDeAgrupamento.Size = New System.Drawing.Size(189, 120)
         Me.PanelBorder_SelecaoDeAgrupamento.TabIndex = 2
         '
         'PanelEnvolve_SelecaoDeAgrupamento
         '
-        Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.Panel2)
-        Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.Panel1)
+        Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.PanelBorder_BTNMostrarAgrupamentos)
+        Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.PanelBorder_LBL_ComBSelectAgrupamento)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_SelecaoDeAgrupamento.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Name = "PanelEnvolve_SelecaoDeAgrupamento"
-        Me.PanelEnvolve_SelecaoDeAgrupamento.Size = New System.Drawing.Size(197, 118)
+        Me.PanelEnvolve_SelecaoDeAgrupamento.Size = New System.Drawing.Size(187, 118)
         Me.PanelEnvolve_SelecaoDeAgrupamento.TabIndex = 5
         '
-        'Panel2
+        'PanelBorder_BTNMostrarAgrupamentos
         '
-        Me.Panel2.Controls.Add(Me.Panel3)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 46)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel2.Size = New System.Drawing.Size(197, 23)
-        Me.Panel2.TabIndex = 15
+        Me.PanelBorder_BTNMostrarAgrupamentos.Controls.Add(Me.PanelEnvolve_BTNMostrarAgrupamentos)
+        Me.PanelBorder_BTNMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_BTNMostrarAgrupamentos.Location = New System.Drawing.Point(0, 46)
+        Me.PanelBorder_BTNMostrarAgrupamentos.Name = "PanelBorder_BTNMostrarAgrupamentos"
+        Me.PanelBorder_BTNMostrarAgrupamentos.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNMostrarAgrupamentos.Size = New System.Drawing.Size(187, 23)
+        Me.PanelBorder_BTNMostrarAgrupamentos.TabIndex = 15
         '
-        'Panel3
+        'PanelEnvolve_BTNMostrarAgrupamentos
         '
-        Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(1, 1)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(195, 21)
-        Me.Panel3.TabIndex = 0
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.Controls.Add(Me.BTNMostrarAgrupamentos)
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.Name = "PanelEnvolve_BTNMostrarAgrupamentos"
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.Size = New System.Drawing.Size(185, 21)
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.TabIndex = 0
         '
-        'Panel1
+        'PanelBorder_LBL_ComBSelectAgrupamento
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Panel1.Controls.Add(Me.Panel4)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel1.Size = New System.Drawing.Size(197, 46)
-        Me.Panel1.TabIndex = 0
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.BackColor = System.Drawing.Color.LightGray
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Controls.Add(Me.PanelEnvolve_LBL_ComBSelectAgrupamento)
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Name = "PanelBorder_LBL_ComBSelectAgrupamento"
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(187, 46)
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.TabIndex = 0
         '
-        'Panel4
+        'PanelEnvolve_LBL_ComBSelectAgrupamento
         '
-        Me.Panel4.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(1, 1)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Padding = New System.Windows.Forms.Padding(2)
-        Me.Panel4.Size = New System.Drawing.Size(195, 44)
-        Me.Panel4.TabIndex = 0
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Controls.Add(Me.PanelBorder_ComBSelectAgrupamento)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Controls.Add(Me.LBL_ComBSelectAgrupamento)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Name = "PanelEnvolve_LBL_ComBSelectAgrupamento"
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(2)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(185, 44)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.TabIndex = 0
         '
-        'Panel5
+        'PanelBorder_ComBSelectAgrupamento
         '
-        Me.Panel5.BackColor = System.Drawing.Color.DimGray
-        Me.Panel5.Controls.Add(Me.ComboBox1)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(2, 19)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel5.Size = New System.Drawing.Size(191, 23)
-        Me.Panel5.TabIndex = 1
+        Me.PanelBorder_ComBSelectAgrupamento.BackColor = System.Drawing.Color.LightGray
+        Me.PanelBorder_ComBSelectAgrupamento.Controls.Add(Me.PanelEnvolve_ComBSelectAgrupamento)
+        Me.PanelBorder_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_ComBSelectAgrupamento.Location = New System.Drawing.Point(2, 19)
+        Me.PanelBorder_ComBSelectAgrupamento.Name = "PanelBorder_ComBSelectAgrupamento"
+        Me.PanelBorder_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_ComBSelectAgrupamento.Size = New System.Drawing.Size(181, 23)
+        Me.PanelBorder_ComBSelectAgrupamento.TabIndex = 1
         '
-        'ComboBox1
+        'PanelEnvolve_ComBSelectAgrupamento
         '
-        Me.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(1, 1)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(189, 21)
-        Me.ComboBox1.TabIndex = 3
+        Me.PanelEnvolve_ComBSelectAgrupamento.Controls.Add(Me.ComBSelectAgrupamento)
+        Me.PanelEnvolve_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_ComBSelectAgrupamento.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_ComBSelectAgrupamento.Name = "PanelEnvolve_ComBSelectAgrupamento"
+        Me.PanelEnvolve_ComBSelectAgrupamento.Size = New System.Drawing.Size(179, 21)
+        Me.PanelEnvolve_ComBSelectAgrupamento.TabIndex = 4
         '
-        'Label1
+        'ComBSelectAgrupamento
         '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label1.Location = New System.Drawing.Point(2, 2)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(191, 17)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Nome do agrupamento"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBSelectAgrupamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComBSelectAgrupamento.FormattingEnabled = True
+        Me.ComBSelectAgrupamento.Location = New System.Drawing.Point(0, 0)
+        Me.ComBSelectAgrupamento.Name = "ComBSelectAgrupamento"
+        Me.ComBSelectAgrupamento.Size = New System.Drawing.Size(179, 21)
+        Me.ComBSelectAgrupamento.TabIndex = 3
         '
-        'PanelBorder_BTNNovaMidia
+        'LBL_ComBSelectAgrupamento
         '
-        Me.PanelBorder_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_BTNNovaMidia.Controls.Add(Me.PanelEnvolve_BTNNovaMidia)
-        Me.PanelBorder_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_BTNNovaMidia.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_BTNNovaMidia.Name = "PanelBorder_BTNNovaMidia"
-        Me.PanelBorder_BTNNovaMidia.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNNovaMidia.Size = New System.Drawing.Size(88, 120)
-        Me.PanelBorder_BTNNovaMidia.TabIndex = 1
+        Me.LBL_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(2, 2)
+        Me.LBL_ComBSelectAgrupamento.Name = "LBL_ComBSelectAgrupamento"
+        Me.LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(181, 17)
+        Me.LBL_ComBSelectAgrupamento.TabIndex = 2
+        Me.LBL_ComBSelectAgrupamento.Text = "&Nome do agrupamento"
+        Me.LBL_ComBSelectAgrupamento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PanelEnvolve_BTNNovaMidia
+        'PanelBorder_CKBNovaMidia
         '
-        Me.PanelEnvolve_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
-        Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.CheckBox3)
-        Me.PanelEnvolve_BTNNovaMidia.Controls.Add(Me.CheckBox4)
-        Me.PanelEnvolve_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_BTNNovaMidia.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_BTNNovaMidia.Name = "PanelEnvolve_BTNNovaMidia"
-        Me.PanelEnvolve_BTNNovaMidia.Size = New System.Drawing.Size(86, 118)
-        Me.PanelEnvolve_BTNNovaMidia.TabIndex = 10
+        Me.PanelBorder_CKBNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBNovaMidia.Controls.Add(Me.PanelEnvolve_CKBNovaMidia)
+        Me.PanelBorder_CKBNovaMidia.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBNovaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBNovaMidia.Name = "PanelBorder_CKBNovaMidia"
+        Me.PanelBorder_CKBNovaMidia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBNovaMidia.Size = New System.Drawing.Size(88, 120)
+        Me.PanelBorder_CKBNovaMidia.TabIndex = 1
         '
-        'Panel67
+        'PanelEnvolve_CKBNovaMidia
         '
-        Me.Panel67.BackColor = System.Drawing.Color.LightGray
-        Me.Panel67.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel67.Location = New System.Drawing.Point(287, 0)
-        Me.Panel67.Name = "Panel67"
-        Me.Panel67.Size = New System.Drawing.Size(1, 120)
-        Me.Panel67.TabIndex = 10
+        Me.PanelEnvolve_CKBNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.PanelEnvolve_CKBNovaMidia.Controls.Add(Me.CKBNovaMidia)
+        Me.PanelEnvolve_CKBNovaMidia.Controls.Add(Me.CKBOpcoes_CKBNovaMidia)
+        Me.PanelEnvolve_CKBNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBNovaMidia.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBNovaMidia.Name = "PanelEnvolve_CKBNovaMidia"
+        Me.PanelEnvolve_CKBNovaMidia.Size = New System.Drawing.Size(86, 118)
+        Me.PanelEnvolve_CKBNovaMidia.TabIndex = 10
         '
-        'LBLNova
+        'CKBNovaMidia
         '
-        Me.LBLNova.AutoEllipsis = True
-        Me.LBLNova.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLNova.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLNova.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLNova.Location = New System.Drawing.Point(0, 120)
-        Me.LBLNova.Name = "LBLNova"
-        Me.LBLNova.Size = New System.Drawing.Size(288, 13)
-        Me.LBLNova.TabIndex = 6
-        Me.LBLNova.Text = "Nova media"
-        Me.LBLNova.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBNovaMidia.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.CKBNovaMidia.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novaMedia
+        Me.CKBNovaMidia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBNovaMidia.FlatAppearance.BorderSize = 0
+        Me.CKBNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBNovaMidia.ForeColor = System.Drawing.Color.Black
+        Me.CKBNovaMidia.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBNovaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.CKBNovaMidia.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBNovaMidia.Name = "CKBNovaMidia"
+        Me.CKBNovaMidia.Size = New System.Drawing.Size(86, 97)
+        Me.CKBNovaMidia.TabIndex = 16
+        Me.CKBNovaMidia.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBNovaMidia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBNovaMidia.UseVisualStyleBackColor = False
         '
-        'CheckBox1
+        'CKBOpcoes_CKBNovaMidia
         '
-        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
-        Me.CheckBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox1.FlatAppearance.BorderSize = 0
-        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CheckBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox1.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(73, 97)
-        Me.CheckBox1.TabIndex = 16
-        Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CheckBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox1.UseVisualStyleBackColor = False
+        Me.CKBOpcoes_CKBNovaMidia.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBNovaMidia.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBNovaMidia.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBNovaMidia.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBNovaMidia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBNovaMidia.Location = New System.Drawing.Point(0, 97)
+        Me.CKBOpcoes_CKBNovaMidia.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBNovaMidia.Name = "CKBOpcoes_CKBNovaMidia"
+        Me.CKBOpcoes_CKBNovaMidia.Size = New System.Drawing.Size(86, 21)
+        Me.CKBOpcoes_CKBNovaMidia.TabIndex = 17
+        Me.CKBOpcoes_CKBNovaMidia.Text = "Nova mídia"
+        Me.CKBOpcoes_CKBNovaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBNovaMidia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBNovaMidia.UseVisualStyleBackColor = False
         '
-        'CKBExibirStatusGravado
+        'PanelEspacamento01
         '
-        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Gravar2
-        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
-        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 97)
-        Me.CKBExibirStatusGravado.TabIndex = 14
-        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        Me.PanelEspacamento01.BackColor = System.Drawing.Color.Transparent
+        Me.PanelEspacamento01.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelEspacamento01.Location = New System.Drawing.Point(277, 0)
+        Me.PanelEspacamento01.Name = "PanelEspacamento01"
+        Me.PanelEspacamento01.Size = New System.Drawing.Size(10, 120)
+        Me.PanelEspacamento01.TabIndex = 21
         '
-        'Button1
+        'PanelLinha01
         '
-        Me.Button1.AutoSize = True
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.TrevoWebMedia.My.Resources.Resources.GrupoMiniatura
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(195, 21)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Mostrar agrupamentos"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.PanelLinha01.BackColor = System.Drawing.Color.LightGray
+        Me.PanelLinha01.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelLinha01.Location = New System.Drawing.Point(287, 0)
+        Me.PanelLinha01.Name = "PanelLinha01"
+        Me.PanelLinha01.Size = New System.Drawing.Size(1, 120)
+        Me.PanelLinha01.TabIndex = 10
         '
-        'CheckBox3
+        'LBLNovaMidia
         '
-        Me.CheckBox3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox3.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novaMedia
-        Me.CheckBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CheckBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CheckBox3.FlatAppearance.BorderSize = 0
-        Me.CheckBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CheckBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox3.Location = New System.Drawing.Point(0, 0)
-        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(86, 97)
-        Me.CheckBox3.TabIndex = 16
-        Me.CheckBox3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CheckBox3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox3.UseVisualStyleBackColor = False
+        Me.LBLNovaMidia.AutoEllipsis = True
+        Me.LBLNovaMidia.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLNovaMidia.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLNovaMidia.Location = New System.Drawing.Point(0, 120)
+        Me.LBLNovaMidia.Name = "LBLNovaMidia"
+        Me.LBLNovaMidia.Size = New System.Drawing.Size(288, 13)
+        Me.LBLNovaMidia.TabIndex = 6
+        Me.LBLNovaMidia.Text = "Nova media"
+        Me.LBLNovaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'CheckBox4
+        'BTNMostrarAgrupamentos
         '
-        Me.CheckBox4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox4.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CheckBox4.FlatAppearance.BorderSize = 0
-        Me.CheckBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox4.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox4.Location = New System.Drawing.Point(0, 97)
-        Me.CheckBox4.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(86, 21)
-        Me.CheckBox4.TabIndex = 17
-        Me.CheckBox4.Text = "Nova mídia"
-        Me.CheckBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CheckBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox4.UseVisualStyleBackColor = False
+        Me.BTNMostrarAgrupamentos.AutoSize = True
+        Me.BTNMostrarAgrupamentos.BackColor = System.Drawing.Color.Transparent
+        Me.BTNMostrarAgrupamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNMostrarAgrupamentos.FlatAppearance.BorderSize = 0
+        Me.BTNMostrarAgrupamentos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.BTNMostrarAgrupamentos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.BTNMostrarAgrupamentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNMostrarAgrupamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMostrarAgrupamentos.ForeColor = System.Drawing.Color.Black
+        Me.BTNMostrarAgrupamentos.Image = Global.TrevoWebMedia.My.Resources.Resources.GrupoMiniatura
+        Me.BTNMostrarAgrupamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNMostrarAgrupamentos.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNMostrarAgrupamentos.Location = New System.Drawing.Point(0, 0)
+        Me.BTNMostrarAgrupamentos.Name = "BTNMostrarAgrupamentos"
+        Me.BTNMostrarAgrupamentos.Size = New System.Drawing.Size(185, 21)
+        Me.BTNMostrarAgrupamentos.TabIndex = 4
+        Me.BTNMostrarAgrupamentos.Text = "Mostrar agrupamentos"
+        Me.BTNMostrarAgrupamentos.UseVisualStyleBackColor = False
         '
         'Control_BurnMenuBar
         '
@@ -844,49 +899,52 @@ Partial Class Control_BurnMenuBar
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.Panel23)
         Me.Name = "Control_BurnMenuBar"
-        Me.Size = New System.Drawing.Size(919, 139)
+        Me.Size = New System.Drawing.Size(922, 139)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaOrganizar.ResumeLayout(False)
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel26.ResumeLayout(False)
-        Me.Panel27.ResumeLayout(False)
-        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelGravação.ResumeLayout(False)
+        Me.PanelBorder_CKBAbortar.ResumeLayout(False)
+        Me.PanelEnvolve_CKBAbortar.ResumeLayout(False)
+        Me.PanelBorder_CKBGravarCriar.ResumeLayout(False)
+        Me.PanelEnvolve_CKBGravarCriar.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaGerenciar.ResumeLayout(False)
         Me.PanelGerenciar.ResumeLayout(False)
-        Me.PanelAgrupaGerenciar.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel17.ResumeLayout(False)
-        Me.Panel22.ResumeLayout(False)
-        Me.Panel14.ResumeLayout(False)
-        Me.Panel19.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel21.ResumeLayout(False)
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
-        Me.Panel10.ResumeLayout(False)
+        Me.PanelMargem_PanelInformacaoDaMidia.ResumeLayout(False)
+        Me.PanelBorder_PanelInformacaoDaMidia.ResumeLayout(False)
+        Me.PanelInformacaoDaMidia.ResumeLayout(False)
+        Me.Panel_LocalDaMidia.ResumeLayout(False)
+        Me.PanelMargem_CmBLocalDaMidia.ResumeLayout(False)
+        Me.PanelBorder_CmBLocalDaMidia.ResumeLayout(False)
+        Me.PanelEnvolve_CmBLocalDaMidia.ResumeLayout(False)
+        Me.PanelEnvolve_LBLLocalDaMidia.ResumeLayout(False)
+        Me.Panel_TipoDeMidia.ResumeLayout(False)
+        Me.PanelMargem_CmBTipoDeMidia.ResumeLayout(False)
+        Me.PanelBorder_CmBTipoDeMidia.ResumeLayout(False)
+        Me.PanelEnvolve_CmBTipoDeMidia.ResumeLayout(False)
+        Me.PanelEnvolve_LBLTipoDeMidia.ResumeLayout(False)
+        Me.Panel_Rotulo.ResumeLayout(False)
+        Me.PanelMargem_TXTRotulo.ResumeLayout(False)
+        Me.PanelBorder_TXTRotulo.ResumeLayout(False)
+        Me.PanelEnvolve_TXTRotulo.ResumeLayout(False)
+        Me.PanelEnvolve_TXTRotulo.PerformLayout()
+        Me.PanelEnvolve_LBLRotulo.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaNova.ResumeLayout(False)
         Me.PanelNova.ResumeLayout(False)
-        Me.Panel70.ResumeLayout(False)
+        Me.PanelNovaMidia.ResumeLayout(False)
         Me.PanelBorder_SelecaoDeAgrupamento.ResumeLayout(False)
         Me.PanelEnvolve_SelecaoDeAgrupamento.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.PanelBorder_BTNNovaMidia.ResumeLayout(False)
-        Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
+        Me.PanelBorder_BTNMostrarAgrupamentos.ResumeLayout(False)
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.ResumeLayout(False)
+        Me.PanelEnvolve_BTNMostrarAgrupamentos.PerformLayout()
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.ResumeLayout(False)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.ResumeLayout(False)
+        Me.PanelBorder_ComBSelectAgrupamento.ResumeLayout(False)
+        Me.PanelEnvolve_ComBSelectAgrupamento.ResumeLayout(False)
+        Me.PanelBorder_CKBNovaMidia.ResumeLayout(False)
+        Me.PanelEnvolve_CKBNovaMidia.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -896,60 +954,65 @@ Partial Class Control_BurnMenuBar
     Friend WithEvents PanelEnvolve_PanelAgrupaOrganizar As Panel
     Friend WithEvents PanelOrganizar As Panel
     Friend WithEvents PanelAgrupaOrganizar As Panel
-    Friend WithEvents Panel16 As Panel
+    Friend WithEvents PanelGravação As Panel
     Friend WithEvents Panel20 As Panel
-    Friend WithEvents LBLOrganizar As Label
+    Friend WithEvents LBLGravacao As Label
     Friend WithEvents PanelEnvolve_PanelAgrupaGerenciar As Panel
     Friend WithEvents PanelGerenciar As Panel
-    Friend WithEvents PanelAgrupaGerenciar As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents LBLGerenciarAreaDeTranferencia As Label
+    Friend WithEvents PanelMargem_PanelInformacaoDaMidia As Panel
+    Friend WithEvents PanelBorder_PanelInformacaoDaMidia As Panel
+    Friend WithEvents PanelInformacaoDaMidia As Panel
+    Friend WithEvents PanelLinha02 As Panel
+    Friend WithEvents LBLInformacaoDaMidia As Label
     Friend WithEvents PanelEnvolve_PanelAgrupaNova As Panel
     Friend WithEvents PanelNova As Panel
-    Friend WithEvents Panel70 As Panel
+    Friend WithEvents PanelNovaMidia As Panel
     Friend WithEvents PanelBorder_SelecaoDeAgrupamento As Panel
     Friend WithEvents PanelEnvolve_SelecaoDeAgrupamento As Panel
-    Friend WithEvents PanelBorder_BTNNovaMidia As Panel
-    Friend WithEvents PanelEnvolve_BTNNovaMidia As Panel
-    Friend WithEvents Panel67 As Panel
-    Friend WithEvents LBLNova As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Panel10 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel17 As Panel
-    Friend WithEvents Panel14 As Panel
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Panel19 As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents Panel15 As Panel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Panel22 As Panel
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Panel18 As Panel
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Panel12 As Panel
-    Friend WithEvents Panel21 As Panel
-    Friend WithEvents Panel24 As Panel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Panel26 As Panel
-    Friend WithEvents Panel27 As Panel
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents PanelBorder_CKBExibirStatusGravado As Panel
-    Friend WithEvents PanelEnvolve_CKBExibirStatusGravado As Panel
-    Friend WithEvents CKBExibirStatusGravado As CheckBox
-    Friend WithEvents CKBOpcoes_CKBExibirStatusGravado As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents PanelBorder_CKBNovaMidia As Panel
+    Friend WithEvents PanelEnvolve_CKBNovaMidia As Panel
+    Friend WithEvents PanelLinha01 As Panel
+    Friend WithEvents LBLNovaMidia As Label
+    Friend WithEvents PanelBorder_BTNMostrarAgrupamentos As Panel
+    Friend WithEvents PanelEnvolve_BTNMostrarAgrupamentos As Panel
+    Friend WithEvents PanelBorder_LBL_ComBSelectAgrupamento As Panel
+    Friend WithEvents PanelEnvolve_LBL_ComBSelectAgrupamento As Panel
+    Friend WithEvents PanelBorder_ComBSelectAgrupamento As Panel
+    Friend WithEvents ComBSelectAgrupamento As ComboBox
+    Friend WithEvents LBL_ComBSelectAgrupamento As Label
+    Friend WithEvents Panel_Rotulo As Panel
+    Friend WithEvents PanelEnvolve_LBLRotulo As Panel
+    Friend WithEvents LBLRotulo As Label
+    Friend WithEvents Panel_LocalDaMidia As Panel
+    Friend WithEvents PanelBorder_CmBLocalDaMidia As Panel
+    Friend WithEvents CmBLocalDaMidia As ComboBox
+    Friend WithEvents PanelEnvolve_LBLLocalDaMidia As Panel
+    Friend WithEvents LBLLocalDaMidia As Label
+    Friend WithEvents Panel_TipoDeMidia As Panel
+    Friend WithEvents PanelEnvolve_LBLTipoDeMidia As Panel
+    Friend WithEvents LBLTipoDeMidia As Label
+    Friend WithEvents PanelMargem_CmBLocalDaMidia As Panel
+    Friend WithEvents PanelMargem_CmBTipoDeMidia As Panel
+    Friend WithEvents PanelBorder_CmBTipoDeMidia As Panel
+    Friend WithEvents CmBTipoDeMidia As ComboBox
+    Friend WithEvents PanelMargem_TXTRotulo As Panel
+    Friend WithEvents PanelBorder_TXTRotulo As Panel
+    Friend WithEvents PanelEnvolve_TXTRotulo As Panel
+    Friend WithEvents TXTRotulo As TextBox
+    Friend WithEvents PanelBorder_CKBAbortar As Panel
+    Friend WithEvents PanelEnvolve_CKBAbortar As Panel
+    Friend WithEvents CKBAbortar As CheckBox
+    Friend WithEvents CKBOpcoes_CKBAbortar As CheckBox
+    Friend WithEvents PanelBorder_CKBGravarCriar As Panel
+    Friend WithEvents PanelEnvolve_CKBGravarCriar As Panel
+    Friend WithEvents CKBGravarCriar As CheckBox
+    Friend WithEvents CKBOpcoes_CKBGravarCriar As CheckBox
+    Friend WithEvents CKBNovaMidia As CheckBox
+    Friend WithEvents CKBOpcoes_CKBNovaMidia As CheckBox
+    Friend WithEvents PanelEnvolve_CmBLocalDaMidia As Panel
+    Friend WithEvents PanelEnvolve_CmBTipoDeMidia As Panel
+    Friend WithEvents PanelEspacamento02 As Panel
+    Friend WithEvents PanelEspacamento01 As Panel
+    Friend WithEvents PanelEnvolve_ComBSelectAgrupamento As Panel
+    Friend WithEvents BTNMostrarAgrupamentos As Button
 End Class

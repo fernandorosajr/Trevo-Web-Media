@@ -701,6 +701,10 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\GrupoMiniatura.png" />
+    <None Include="Resources\novaMedia.png" />
+    <None Include="Resources\Gravar2.png" />
+    <None Include="Resources\Gravar.png" />
     <None Include="Resources\resolucao.png" />
     <None Include="Resources\flag.png" />
     <None Include="Resources\gravado.png" />
@@ -775,6 +779,7 @@
     <None Include="Resources\add3.png" />
     <None Include="Resources\add4.png" />
     <None Include="Resources\add51.png" />
+    <None Include="Resources\abort.png" />
     <Content Include="Resources\ajuda.ico" />
     <Content Include="Resources\ajuda1.ico" />
     <Content Include="Resources\ajuda2.ico" />

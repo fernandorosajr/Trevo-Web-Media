@@ -28,6 +28,12 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
+        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.LBLOrganizar = New System.Windows.Forms.Label()
         Me.PanelEnvolve_PanelAgrupaGerenciar = New System.Windows.Forms.Panel()
@@ -36,14 +42,22 @@ Partial Class Control_BurnMenuBar
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Panel22 = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Panel19 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
@@ -55,7 +69,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_SelecaoDeAgrupamento = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -63,43 +76,40 @@ Partial Class Control_BurnMenuBar
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PanelBorder_BTNNovaMidia = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNNovaMidia = New System.Windows.Forms.Panel()
-        Me.BTNNovaMidia = New System.Windows.Forms.Button()
-        Me.BTNOpcoes_BTNNovaMidia = New System.Windows.Forms.Button()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLNova = New System.Windows.Forms.Label()
-        Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PanelBorder_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBExibirStatusGravado = New System.Windows.Forms.Panel()
-        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.CKBOpcoes_CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
-        Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Panel27 = New System.Windows.Forms.Panel()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CKBExibirStatusGravado = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BTNNovaMidia = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNNovaMidia = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
         Me.Panel16.SuspendLayout()
+        Me.Panel26.SuspendLayout()
+        Me.Panel27.SuspendLayout()
+        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
+        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaGerenciar.SuspendLayout()
         Me.PanelGerenciar.SuspendLayout()
         Me.PanelAgrupaGerenciar.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel17.SuspendLayout()
+        Me.Panel22.SuspendLayout()
         Me.Panel14.SuspendLayout()
         Me.Panel19.SuspendLayout()
         Me.Panel13.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel18.SuspendLayout()
         Me.Panel15.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel21.SuspendLayout()
+        Me.Panel24.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaNova.SuspendLayout()
         Me.PanelNova.SuspendLayout()
@@ -113,16 +123,6 @@ Partial Class Control_BurnMenuBar
         Me.Panel5.SuspendLayout()
         Me.PanelBorder_BTNNovaMidia.SuspendLayout()
         Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
-        Me.Panel22.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        Me.Panel21.SuspendLayout()
-        Me.Panel24.SuspendLayout()
-        Me.PanelBorder_CKBExibirStatusGravado.SuspendLayout()
-        Me.PanelEnvolve_CKBExibirStatusGravado.SuspendLayout()
-        Me.Panel26.SuspendLayout()
-        Me.Panel27.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -184,6 +184,92 @@ Partial Class Control_BurnMenuBar
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(273, 120)
         Me.Panel16.TabIndex = 20
+        '
+        'Panel26
+        '
+        Me.Panel26.BackColor = System.Drawing.Color.Transparent
+        Me.Panel26.Controls.Add(Me.Panel27)
+        Me.Panel26.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel26.Location = New System.Drawing.Point(75, 0)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel26.Size = New System.Drawing.Size(75, 120)
+        Me.Panel26.TabIndex = 26
+        '
+        'Panel27
+        '
+        Me.Panel27.Controls.Add(Me.CheckBox1)
+        Me.Panel27.Controls.Add(Me.CheckBox2)
+        Me.Panel27.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel27.Location = New System.Drawing.Point(1, 1)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(73, 118)
+        Me.Panel27.TabIndex = 10
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CheckBox2.FlatAppearance.BorderSize = 0
+        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox2.ForeColor = System.Drawing.Color.Black
+        Me.CheckBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CheckBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CheckBox2.Location = New System.Drawing.Point(0, 97)
+        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(73, 21)
+        Me.CheckBox2.TabIndex = 17
+        Me.CheckBox2.Text = "Abortar"
+        Me.CheckBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CheckBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CheckBox2.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_CKBExibirStatusGravado
+        '
+        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
+        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
+        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 120)
+        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 25
+        '
+        'PanelEnvolve_CKBExibirStatusGravado
+        '
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
+        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 118)
+        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
+        '
+        'CKBOpcoes_CKBExibirStatusGravado
+        '
+        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 97)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
+        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 15
+        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravar"
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
         '
         'Panel20
         '
@@ -255,7 +341,7 @@ Partial Class Control_BurnMenuBar
         Me.Panel8.Location = New System.Drawing.Point(0, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(347, 120)
-        Me.Panel8.TabIndex = 21
+        Me.Panel8.TabIndex = 6
         '
         'Panel17
         '
@@ -266,6 +352,16 @@ Partial Class Control_BurnMenuBar
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(347, 25)
         Me.Panel17.TabIndex = 25
+        '
+        'Panel22
+        '
+        Me.Panel22.Controls.Add(Me.Panel14)
+        Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel22.Location = New System.Drawing.Point(75, 0)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel22.Size = New System.Drawing.Size(272, 25)
+        Me.Panel22.TabIndex = 26
         '
         'Panel14
         '
@@ -286,7 +382,7 @@ Partial Class Control_BurnMenuBar
         Me.ComboBox3.Location = New System.Drawing.Point(1, 1)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(268, 21)
-        Me.ComboBox3.TabIndex = 2
+        Me.ComboBox3.TabIndex = 13
         '
         'Panel19
         '
@@ -303,7 +399,7 @@ Partial Class Control_BurnMenuBar
         Me.Label4.Location = New System.Drawing.Point(21, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(54, 25)
-        Me.Label4.TabIndex = 0
+        Me.Label4.TabIndex = 12
         Me.Label4.Text = "Local:"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -316,6 +412,37 @@ Partial Class Control_BurnMenuBar
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(347, 25)
         Me.Panel13.TabIndex = 24
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.Panel18)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel9.Location = New System.Drawing.Point(75, 0)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel9.Size = New System.Drawing.Size(272, 25)
+        Me.Panel9.TabIndex = 27
+        '
+        'Panel18
+        '
+        Me.Panel18.BackColor = System.Drawing.Color.DimGray
+        Me.Panel18.Controls.Add(Me.ComboBox2)
+        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel18.Location = New System.Drawing.Point(1, 1)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel18.Size = New System.Drawing.Size(270, 23)
+        Me.Panel18.TabIndex = 2
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(1, 1)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(268, 21)
+        Me.ComboBox2.TabIndex = 11
         '
         'Panel15
         '
@@ -332,7 +459,7 @@ Partial Class Control_BurnMenuBar
         Me.Label3.Location = New System.Drawing.Point(21, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(54, 25)
-        Me.Label3.TabIndex = 0
+        Me.Label3.TabIndex = 10
         Me.Label3.Text = "Tipo:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -345,7 +472,48 @@ Partial Class Control_BurnMenuBar
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(347, 20)
-        Me.Panel6.TabIndex = 23
+        Me.Panel6.TabIndex = 7
+        '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.Panel21)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(75, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel12.Size = New System.Drawing.Size(272, 20)
+        Me.Panel12.TabIndex = 26
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.DimGray
+        Me.Panel21.Controls.Add(Me.Panel24)
+        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel21.Location = New System.Drawing.Point(1, 1)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel21.Size = New System.Drawing.Size(270, 18)
+        Me.Panel21.TabIndex = 3
+        '
+        'Panel24
+        '
+        Me.Panel24.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel24.Controls.Add(Me.TextBox1)
+        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel24.Location = New System.Drawing.Point(1, 1)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel24.Size = New System.Drawing.Size(268, 16)
+        Me.Panel24.TabIndex = 0
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TextBox1.Location = New System.Drawing.Point(1, 1)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(266, 13)
+        Me.TextBox1.TabIndex = 9
         '
         'Panel10
         '
@@ -362,7 +530,7 @@ Partial Class Control_BurnMenuBar
         Me.Label2.Location = New System.Drawing.Point(21, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(54, 20)
-        Me.Label2.TabIndex = 0
+        Me.Label2.TabIndex = 8
         Me.Label2.Text = "Rótulo:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
@@ -437,7 +605,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_SelecaoDeAgrupamento.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Name = "PanelEnvolve_SelecaoDeAgrupamento"
         Me.PanelEnvolve_SelecaoDeAgrupamento.Size = New System.Drawing.Size(197, 118)
-        Me.PanelEnvolve_SelecaoDeAgrupamento.TabIndex = 10
+        Me.PanelEnvolve_SelecaoDeAgrupamento.TabIndex = 5
         '
         'Panel2
         '
@@ -457,28 +625,6 @@ Partial Class Control_BurnMenuBar
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(195, 21)
         Me.Panel3.TabIndex = 0
-        '
-        'Button1
-        '
-        Me.Button1.AutoSize = True
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(195, 21)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Mostrar agrupamentos"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -522,7 +668,7 @@ Partial Class Control_BurnMenuBar
         Me.ComboBox1.Location = New System.Drawing.Point(1, 1)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(189, 21)
-        Me.ComboBox1.TabIndex = 2
+        Me.ComboBox1.TabIndex = 3
         '
         'Label1
         '
@@ -530,7 +676,7 @@ Partial Class Control_BurnMenuBar
         Me.Label1.Location = New System.Drawing.Point(2, 2)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(191, 17)
-        Me.Label1.TabIndex = 0
+        Me.Label1.TabIndex = 2
         Me.Label1.Text = "Nome do agrupamento"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -556,48 +702,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_BTNNovaMidia.Size = New System.Drawing.Size(86, 118)
         Me.PanelEnvolve_BTNNovaMidia.TabIndex = 10
         '
-        'BTNNovaMidia
-        '
-        Me.BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
-        Me.BTNNovaMidia.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoGravar1
-        Me.BTNNovaMidia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNNovaMidia.FlatAppearance.BorderSize = 0
-        Me.BTNNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue
-        Me.BTNNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNNovaMidia.ForeColor = System.Drawing.Color.Black
-        Me.BTNNovaMidia.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNNovaMidia.Location = New System.Drawing.Point(0, 0)
-        Me.BTNNovaMidia.Name = "BTNNovaMidia"
-        Me.BTNNovaMidia.Size = New System.Drawing.Size(86, 98)
-        Me.BTNNovaMidia.TabIndex = 8
-        Me.BTNNovaMidia.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNNovaMidia.UseVisualStyleBackColor = False
-        '
-        'BTNOpcoes_BTNNovaMidia
-        '
-        Me.BTNOpcoes_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNNovaMidia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNOpcoes_BTNNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNNovaMidia.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNNovaMidia.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.BTNOpcoes_BTNNovaMidia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNNovaMidia.Location = New System.Drawing.Point(0, 98)
-        Me.BTNOpcoes_BTNNovaMidia.Name = "BTNOpcoes_BTNNovaMidia"
-        Me.BTNOpcoes_BTNNovaMidia.Size = New System.Drawing.Size(86, 20)
-        Me.BTNOpcoes_BTNNovaMidia.TabIndex = 9
-        Me.BTNOpcoes_BTNNovaMidia.Text = "Nova Mídia"
-        Me.BTNOpcoes_BTNNovaMidia.UseVisualStyleBackColor = False
-        '
         'Panel67
         '
         Me.Panel67.BackColor = System.Drawing.Color.LightGray
@@ -620,180 +724,11 @@ Partial Class Control_BurnMenuBar
         Me.LBLNova.Text = "Nova media"
         Me.LBLNova.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel22
-        '
-        Me.Panel22.Controls.Add(Me.Panel14)
-        Me.Panel22.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel22.Location = New System.Drawing.Point(75, 0)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel22.Size = New System.Drawing.Size(272, 25)
-        Me.Panel22.TabIndex = 26
-        '
-        'Panel9
-        '
-        Me.Panel9.Controls.Add(Me.Panel18)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(75, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel9.Size = New System.Drawing.Size(272, 25)
-        Me.Panel9.TabIndex = 27
-        '
-        'Panel18
-        '
-        Me.Panel18.BackColor = System.Drawing.Color.DimGray
-        Me.Panel18.Controls.Add(Me.ComboBox2)
-        Me.Panel18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel18.Location = New System.Drawing.Point(1, 1)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel18.Size = New System.Drawing.Size(270, 23)
-        Me.Panel18.TabIndex = 2
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(1, 1)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(268, 21)
-        Me.ComboBox2.TabIndex = 2
-        '
-        'Panel12
-        '
-        Me.Panel12.Controls.Add(Me.Panel21)
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel12.Location = New System.Drawing.Point(75, 0)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel12.Size = New System.Drawing.Size(272, 20)
-        Me.Panel12.TabIndex = 26
-        '
-        'Panel21
-        '
-        Me.Panel21.BackColor = System.Drawing.Color.DimGray
-        Me.Panel21.Controls.Add(Me.Panel24)
-        Me.Panel21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel21.Location = New System.Drawing.Point(1, 1)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel21.Size = New System.Drawing.Size(270, 18)
-        Me.Panel21.TabIndex = 3
-        '
-        'Panel24
-        '
-        Me.Panel24.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Panel24.Controls.Add(Me.TextBox1)
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(1, 1)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel24.Size = New System.Drawing.Size(268, 16)
-        Me.Panel24.TabIndex = 0
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.Location = New System.Drawing.Point(1, 1)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(266, 13)
-        Me.TextBox1.TabIndex = 1
-        '
-        'PanelBorder_CKBExibirStatusGravado
-        '
-        Me.PanelBorder_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBExibirStatusGravado.Controls.Add(Me.PanelEnvolve_CKBExibirStatusGravado)
-        Me.PanelBorder_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_CKBExibirStatusGravado.Name = "PanelBorder_CKBExibirStatusGravado"
-        Me.PanelBorder_CKBExibirStatusGravado.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBExibirStatusGravado.Size = New System.Drawing.Size(75, 120)
-        Me.PanelBorder_CKBExibirStatusGravado.TabIndex = 25
-        '
-        'PanelEnvolve_CKBExibirStatusGravado
-        '
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Controls.Add(Me.CKBOpcoes_CKBExibirStatusGravado)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBExibirStatusGravado.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBExibirStatusGravado.Name = "PanelEnvolve_CKBExibirStatusGravado"
-        Me.PanelEnvolve_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 118)
-        Me.PanelEnvolve_CKBExibirStatusGravado.TabIndex = 10
-        '
-        'CKBExibirStatusGravado
-        '
-        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.gravado
-        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
-        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
-        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 97)
-        Me.CKBExibirStatusGravado.TabIndex = 22
-        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'CKBOpcoes_CKBExibirStatusGravado
-        '
-        Me.CKBOpcoes_CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBOpcoes_CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
-        Me.CKBOpcoes_CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBOpcoes_CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBOpcoes_CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBOpcoes_CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBOpcoes_CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 97)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBOpcoes_CKBExibirStatusGravado.Name = "CKBOpcoes_CKBExibirStatusGravado"
-        Me.CKBOpcoes_CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 21)
-        Me.CKBOpcoes_CKBExibirStatusGravado.TabIndex = 23
-        Me.CKBOpcoes_CKBExibirStatusGravado.Text = "Gravar"
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBOpcoes_CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CKBOpcoes_CKBExibirStatusGravado.UseVisualStyleBackColor = False
-        '
-        'Panel26
-        '
-        Me.Panel26.BackColor = System.Drawing.Color.Transparent
-        Me.Panel26.Controls.Add(Me.Panel27)
-        Me.Panel26.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel26.Location = New System.Drawing.Point(75, 0)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel26.Size = New System.Drawing.Size(75, 120)
-        Me.Panel26.TabIndex = 26
-        '
-        'Panel27
-        '
-        Me.Panel27.Controls.Add(Me.CheckBox1)
-        Me.Panel27.Controls.Add(Me.CheckBox2)
-        Me.Panel27.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel27.Location = New System.Drawing.Point(1, 1)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(73, 118)
-        Me.Panel27.TabIndex = 10
-        '
         'CheckBox1
         '
         Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.gravado
+        Me.CheckBox1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
         Me.CheckBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckBox1.FlatAppearance.BorderSize = 0
@@ -807,32 +742,97 @@ Partial Class Control_BurnMenuBar
         Me.CheckBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(73, 97)
-        Me.CheckBox1.TabIndex = 22
+        Me.CheckBox1.TabIndex = 16
         Me.CheckBox1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.CheckBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
-        'CheckBox2
+        'CKBExibirStatusGravado
         '
-        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.CheckBox2.FlatAppearance.BorderSize = 0
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CheckBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CheckBox2.Location = New System.Drawing.Point(0, 97)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(0)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(73, 21)
-        Me.CheckBox2.TabIndex = 23
-        Me.CheckBox2.Text = "Abortar"
-        Me.CheckBox2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CheckBox2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.CheckBox2.UseVisualStyleBackColor = False
+        Me.CKBExibirStatusGravado.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBExibirStatusGravado.BackColor = System.Drawing.Color.Transparent
+        Me.CKBExibirStatusGravado.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Gravar2
+        Me.CKBExibirStatusGravado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CKBExibirStatusGravado.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBExibirStatusGravado.FlatAppearance.BorderSize = 0
+        Me.CKBExibirStatusGravado.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBExibirStatusGravado.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBExibirStatusGravado.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBExibirStatusGravado.ForeColor = System.Drawing.Color.Black
+        Me.CKBExibirStatusGravado.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.CKBExibirStatusGravado.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBExibirStatusGravado.Location = New System.Drawing.Point(0, 0)
+        Me.CKBExibirStatusGravado.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBExibirStatusGravado.Name = "CKBExibirStatusGravado"
+        Me.CKBExibirStatusGravado.Size = New System.Drawing.Size(73, 97)
+        Me.CKBExibirStatusGravado.TabIndex = 14
+        Me.CKBExibirStatusGravado.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.CKBExibirStatusGravado.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.CKBExibirStatusGravado.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.AutoSize = True
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Image = Global.TrevoWebMedia.My.Resources.Resources.GrupoMiniatura
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button1.Location = New System.Drawing.Point(0, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(195, 21)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Mostrar agrupamentos"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BTNNovaMidia
+        '
+        Me.BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.BTNNovaMidia.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novaMedia
+        Me.BTNNovaMidia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNNovaMidia.FlatAppearance.BorderSize = 0
+        Me.BTNNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSkyBlue
+        Me.BTNNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNNovaMidia.ForeColor = System.Drawing.Color.Black
+        Me.BTNNovaMidia.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNNovaMidia.Location = New System.Drawing.Point(0, 0)
+        Me.BTNNovaMidia.Name = "BTNNovaMidia"
+        Me.BTNNovaMidia.Size = New System.Drawing.Size(86, 98)
+        Me.BTNNovaMidia.TabIndex = 0
+        Me.BTNNovaMidia.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNNovaMidia.UseVisualStyleBackColor = False
+        '
+        'BTNOpcoes_BTNNovaMidia
+        '
+        Me.BTNOpcoes_BTNNovaMidia.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNNovaMidia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNNovaMidia.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BTNOpcoes_BTNNovaMidia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNOpcoes_BTNNovaMidia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNNovaMidia.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNNovaMidia.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.BTNOpcoes_BTNNovaMidia.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNNovaMidia.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNNovaMidia.Location = New System.Drawing.Point(0, 98)
+        Me.BTNOpcoes_BTNNovaMidia.Name = "BTNOpcoes_BTNNovaMidia"
+        Me.BTNOpcoes_BTNNovaMidia.Size = New System.Drawing.Size(86, 20)
+        Me.BTNOpcoes_BTNNovaMidia.TabIndex = 1
+        Me.BTNOpcoes_BTNNovaMidia.Text = "Nova Mídia"
+        Me.BTNOpcoes_BTNNovaMidia.UseVisualStyleBackColor = False
         '
         'Control_BurnMenuBar
         '
@@ -848,17 +848,28 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
+        Me.Panel26.ResumeLayout(False)
+        Me.Panel27.ResumeLayout(False)
+        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
+        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaGerenciar.ResumeLayout(False)
         Me.PanelGerenciar.ResumeLayout(False)
         Me.PanelAgrupaGerenciar.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Panel17.ResumeLayout(False)
+        Me.Panel22.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
         Me.Panel19.ResumeLayout(False)
         Me.Panel13.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel18.ResumeLayout(False)
         Me.Panel15.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel21.ResumeLayout(False)
+        Me.Panel24.ResumeLayout(False)
+        Me.Panel24.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaNova.ResumeLayout(False)
         Me.PanelNova.ResumeLayout(False)
@@ -873,17 +884,6 @@ Partial Class Control_BurnMenuBar
         Me.Panel5.ResumeLayout(False)
         Me.PanelBorder_BTNNovaMidia.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
-        Me.Panel22.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel12.ResumeLayout(False)
-        Me.Panel21.ResumeLayout(False)
-        Me.Panel24.ResumeLayout(False)
-        Me.Panel24.PerformLayout()
-        Me.PanelBorder_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.PanelEnvolve_CKBExibirStatusGravado.ResumeLayout(False)
-        Me.Panel26.ResumeLayout(False)
-        Me.Panel27.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

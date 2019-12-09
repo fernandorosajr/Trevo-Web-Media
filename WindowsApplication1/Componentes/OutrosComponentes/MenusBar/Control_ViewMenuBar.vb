@@ -204,7 +204,6 @@
     End Sub
 
 
-
     Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBExibirMaisDetalhes.MouseDown, CKBOpcoes_CKBExibirMaisDetalhes.MouseDown, CKBPainelEsquedo.MouseDown, CKBOpcoes_CKBPainelEsquedo.MouseDown, CKBPainelDireito.MouseDown, CKBOpcoes_CKBPainelDireito.MouseDown, CKBExibirEstrelas.MouseDown, CKBOpcoes_CKBExibirEstrelas.MouseDown, CKBExibirStatusGravado.MouseDown, CKBOpcoes_CKBExibirStatusGravado.MouseDown, CKBExibirFlag.MouseDown, CKBOpcoes_CKBExibirFlag.MouseDown, CKBEtiquetaDeTitulo_Nome.MouseDown, CKBEtiquetaDeTitulo_NomeEExtencao.MouseDown, CKBEtiquetaDeTitulo_Legenda.MouseDown, CKBEtiquetaDeTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeTitulo_Tamanho.MouseDown, CKBEtiquetaDeTitulo_Resolucao.MouseDown, CKBEtiquetaDeTitulo_Autor.MouseDown, CKBEtiquetaDeTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_ExibirExtensao.MouseDown, CKBEtiquetaDeSubTitulo_Legenda.MouseDown, CKBEtiquetaDeSubTitulo_Resolucao.MouseDown, CKBEtiquetaDeSubTitulo_Autor.MouseDown, CKBEtiquetaDeSubTitulo_Album.MouseDown, CKBEtiquetaDeSubTitulo_Tipo.MouseDown, CKBEtiquetaDeSubTitulo_DataDeCriacao.MouseDown, CKBEtiquetaDeSubTitulo_DatasRecentes.MouseDown, CKBEtiquetaDeSubTitulo_Tamanho.MouseDown
 
         Dim btn As Object
@@ -447,6 +446,8 @@
         End Select
 
     End Sub
+
+
     Private Sub CKBExibirEstrelasAndCKBOpcoes_CKBExibirEstrelas_Click(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBExibirEstrelas.Click, CKBExibirEstrelas.Click
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)

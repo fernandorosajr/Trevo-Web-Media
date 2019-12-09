@@ -89,6 +89,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEspacamento01 = New System.Windows.Forms.Panel()
         Me.PanelLinha01 = New System.Windows.Forms.Panel()
         Me.LBLNovaMidia = New System.Windows.Forms.Label()
+        Me.PanelEspacamento04 = New System.Windows.Forms.Panel()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
@@ -140,7 +141,7 @@ Partial Class Control_BurnMenuBar
         Me.Panel23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel23.Location = New System.Drawing.Point(0, 0)
         Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(922, 139)
+        Me.Panel23.Size = New System.Drawing.Size(941, 139)
         Me.Panel23.TabIndex = 12
         '
         'Panel25
@@ -151,7 +152,7 @@ Partial Class Control_BurnMenuBar
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(922, 139)
+        Me.Panel25.Size = New System.Drawing.Size(941, 139)
         Me.Panel25.TabIndex = 6
         '
         'PanelEnvolve_PanelAgrupaOrganizar
@@ -187,6 +188,7 @@ Partial Class Control_BurnMenuBar
         'PanelGravação
         '
         Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBAbortar)
+        Me.PanelGravação.Controls.Add(Me.PanelEspacamento04)
         Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBGravarCriar)
         Me.PanelGravação.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelGravação.Location = New System.Drawing.Point(0, 0)
@@ -199,7 +201,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBAbortar.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
         Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(75, 0)
+        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(76, 0)
         Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
         Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelBorder_CKBAbortar.Size = New System.Drawing.Size(75, 120)
@@ -903,6 +905,14 @@ Partial Class Control_BurnMenuBar
         Me.LBLNovaMidia.Text = "Nova media"
         Me.LBLNovaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PanelEspacamento04
+        '
+        Me.PanelEspacamento04.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEspacamento04.Location = New System.Drawing.Point(75, 0)
+        Me.PanelEspacamento04.Name = "PanelEspacamento04"
+        Me.PanelEspacamento04.Size = New System.Drawing.Size(1, 120)
+        Me.PanelEspacamento04.TabIndex = 27
+        '
         'Control_BurnMenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -910,7 +920,7 @@ Partial Class Control_BurnMenuBar
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Controls.Add(Me.Panel23)
         Me.Name = "Control_BurnMenuBar"
-        Me.Size = New System.Drawing.Size(922, 139)
+        Me.Size = New System.Drawing.Size(941, 139)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
         Me.PanelEnvolve_PanelAgrupaOrganizar.ResumeLayout(False)
@@ -1026,4 +1036,5 @@ Partial Class Control_BurnMenuBar
     Friend WithEvents PanelEnvolve_ComBSelectAgrupamento As Panel
     Friend WithEvents CKBMostrarAgrupamentos As CheckBox
     Friend WithEvents PanelEspacamento03 As Panel
+    Friend WithEvents PanelEspacamento04 As Panel
 End Class

@@ -32,6 +32,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
         Me.CKBAbortar = New System.Windows.Forms.CheckBox()
         Me.CKBOpcoes_CKBAbortar = New System.Windows.Forms.CheckBox()
+        Me.PanelEspacamento04 = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBGravarCriar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBGravarCriar = New System.Windows.Forms.Panel()
         Me.CKBGravarCriar = New System.Windows.Forms.CheckBox()
@@ -89,7 +90,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelEspacamento01 = New System.Windows.Forms.Panel()
         Me.PanelLinha01 = New System.Windows.Forms.Panel()
         Me.LBLNovaMidia = New System.Windows.Forms.Label()
-        Me.PanelEspacamento04 = New System.Windows.Forms.Panel()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
@@ -261,6 +261,14 @@ Partial Class Control_BurnMenuBar
         Me.CKBOpcoes_CKBAbortar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.CKBOpcoes_CKBAbortar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.CKBOpcoes_CKBAbortar.UseVisualStyleBackColor = False
+        '
+        'PanelEspacamento04
+        '
+        Me.PanelEspacamento04.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEspacamento04.Location = New System.Drawing.Point(75, 0)
+        Me.PanelEspacamento04.Name = "PanelEspacamento04"
+        Me.PanelEspacamento04.Size = New System.Drawing.Size(1, 120)
+        Me.PanelEspacamento04.TabIndex = 27
         '
         'PanelBorder_CKBGravarCriar
         '
@@ -679,7 +687,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_SelecaoDeAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBorder_SelecaoDeAgrupamento.Location = New System.Drawing.Point(88, 0)
         Me.PanelBorder_SelecaoDeAgrupamento.Name = "PanelBorder_SelecaoDeAgrupamento"
-        Me.PanelBorder_SelecaoDeAgrupamento.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_SelecaoDeAgrupamento.Padding = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.PanelBorder_SelecaoDeAgrupamento.Size = New System.Drawing.Size(189, 120)
         Me.PanelBorder_SelecaoDeAgrupamento.TabIndex = 2
         '
@@ -689,16 +697,16 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.PanelEspacamento03)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Controls.Add(Me.PanelBorder_LBL_ComBSelectAgrupamento)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_SelecaoDeAgrupamento.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_SelecaoDeAgrupamento.Location = New System.Drawing.Point(1, 0)
         Me.PanelEnvolve_SelecaoDeAgrupamento.Name = "PanelEnvolve_SelecaoDeAgrupamento"
-        Me.PanelEnvolve_SelecaoDeAgrupamento.Size = New System.Drawing.Size(187, 118)
+        Me.PanelEnvolve_SelecaoDeAgrupamento.Size = New System.Drawing.Size(187, 120)
         Me.PanelEnvolve_SelecaoDeAgrupamento.TabIndex = 5
         '
         'PanelBorder_CKBMostrarAgrupamentos
         '
         Me.PanelBorder_CKBMostrarAgrupamentos.Controls.Add(Me.PanelEnvolve_CKBMostrarAgrupamentos)
         Me.PanelBorder_CKBMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBorder_CKBMostrarAgrupamentos.Location = New System.Drawing.Point(0, 45)
+        Me.PanelBorder_CKBMostrarAgrupamentos.Location = New System.Drawing.Point(0, 47)
         Me.PanelBorder_CKBMostrarAgrupamentos.Name = "PanelBorder_CKBMostrarAgrupamentos"
         Me.PanelBorder_CKBMostrarAgrupamentos.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelBorder_CKBMostrarAgrupamentos.Size = New System.Drawing.Size(187, 23)
@@ -739,7 +747,7 @@ Partial Class Control_BurnMenuBar
         'PanelEspacamento03
         '
         Me.PanelEspacamento03.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelEspacamento03.Location = New System.Drawing.Point(0, 44)
+        Me.PanelEspacamento03.Location = New System.Drawing.Point(0, 46)
         Me.PanelEspacamento03.Name = "PanelEspacamento03"
         Me.PanelEspacamento03.Size = New System.Drawing.Size(187, 1)
         Me.PanelEspacamento03.TabIndex = 16
@@ -752,7 +760,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_LBL_ComBSelectAgrupamento.Name = "PanelBorder_LBL_ComBSelectAgrupamento"
         Me.PanelBorder_LBL_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(187, 44)
+        Me.PanelBorder_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(187, 46)
         Me.PanelBorder_LBL_ComBSelectAgrupamento.TabIndex = 0
         '
         'PanelEnvolve_LBL_ComBSelectAgrupamento
@@ -764,7 +772,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Name = "PanelEnvolve_LBL_ComBSelectAgrupamento"
         Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(2)
-        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(185, 42)
+        Me.PanelEnvolve_LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(185, 44)
         Me.PanelEnvolve_LBL_ComBSelectAgrupamento.TabIndex = 0
         '
         'PanelBorder_ComBSelectAgrupamento
@@ -772,7 +780,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_ComBSelectAgrupamento.BackColor = System.Drawing.Color.LightGray
         Me.PanelBorder_ComBSelectAgrupamento.Controls.Add(Me.PanelEnvolve_ComBSelectAgrupamento)
         Me.PanelBorder_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBorder_ComBSelectAgrupamento.Location = New System.Drawing.Point(2, 17)
+        Me.PanelBorder_ComBSelectAgrupamento.Location = New System.Drawing.Point(2, 19)
         Me.PanelBorder_ComBSelectAgrupamento.Name = "PanelBorder_ComBSelectAgrupamento"
         Me.PanelBorder_ComBSelectAgrupamento.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelBorder_ComBSelectAgrupamento.Size = New System.Drawing.Size(181, 23)
@@ -802,7 +810,7 @@ Partial Class Control_BurnMenuBar
         Me.LBL_ComBSelectAgrupamento.Dock = System.Windows.Forms.DockStyle.Top
         Me.LBL_ComBSelectAgrupamento.Location = New System.Drawing.Point(2, 2)
         Me.LBL_ComBSelectAgrupamento.Name = "LBL_ComBSelectAgrupamento"
-        Me.LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(181, 15)
+        Me.LBL_ComBSelectAgrupamento.Size = New System.Drawing.Size(181, 17)
         Me.LBL_ComBSelectAgrupamento.TabIndex = 2
         Me.LBL_ComBSelectAgrupamento.Text = "&Nome do agrupamento"
         Me.LBL_ComBSelectAgrupamento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -904,14 +912,6 @@ Partial Class Control_BurnMenuBar
         Me.LBLNovaMidia.TabIndex = 6
         Me.LBLNovaMidia.Text = "Nova media"
         Me.LBLNovaMidia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PanelEspacamento04
-        '
-        Me.PanelEspacamento04.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEspacamento04.Location = New System.Drawing.Point(75, 0)
-        Me.PanelEspacamento04.Name = "PanelEspacamento04"
-        Me.PanelEspacamento04.Size = New System.Drawing.Size(1, 120)
-        Me.PanelEspacamento04.TabIndex = 27
         '
         'Control_BurnMenuBar
         '

@@ -138,8 +138,8 @@
         _backgroundColorSelectAndMouseHover = Color.LightCyan 'Color.FromArgb(120, 255, 255, 255) 
         '   126,184,239,0.8)
 
-        _borderColorSelectAndMouseLeave = Color.Transparent
-        _backgroundColorSelectAndMouseLeave = Color.Transparent
+        _borderColorSelectAndMouseLeave = Color.WhiteSmoke
+        _backgroundColorSelectAndMouseLeave = Color.WhiteSmoke
 
         _borderColorSelectAndMouseDown = Color.CornflowerBlue
         _backgroundColorSelectAndMouseDown = Color.PowderBlue
@@ -150,7 +150,8 @@
     End Sub
 
     Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBAbortar.MouseUp, CKBOpcoes_CKBAbortar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
-        
+        'Ocorre qunado o mouse solta o objeto
+
         Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
@@ -194,6 +195,7 @@
 
 
     Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBAbortar.MouseDown, CKBOpcoes_CKBAbortar.MouseDown, CKBMostrarAgrupamentos.MouseDown, ComBSelectAgrupamento.MouseDown, TXTRotulo.MouseDown, CmBTipoDeMidia.MouseDown, CmBLocalDaMidia.MouseDown, LBL_ComBSelectAgrupamento.MouseDown
+        ' Ocorre quando o usuario presciona o botão do mouse
 
         Dim btn As Object
 
@@ -238,6 +240,7 @@
 
     Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBAbortar.MouseLeave, CKBOpcoes_CKBAbortar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave, ComBSelectAgrupamento.MouseLeave, TXTRotulo.MouseLeave, CmBTipoDeMidia.MouseLeave, CmBLocalDaMidia.MouseLeave, LBL_ComBSelectAgrupamento.MouseLeave
 
+        ' Ocorre quando o mouse sai do objeto
         Dim obj As Object
 
         Select Case sender.GetType.Name.ToString
@@ -264,6 +267,12 @@
             Case "TextBox"
                 obj = CType(sender, TextBox)
                 obj.parent.parent.backcolor = Color.LightGray
+
+            Case "Label"
+                obj = CType(sender, Label)
+
+                obj.parent.parent.backcolor = Color.LightGray
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
             Case Else
 
@@ -300,7 +309,7 @@
 
     Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBAbortar.MouseMove, CKBOpcoes_CKBAbortar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
 
-
+        ' Ocorre quando o mouse passa por cima do elemento
         Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
@@ -354,6 +363,7 @@
     End Sub
 
     Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBAbortar.MouseHover, CKBOpcoes_CKBAbortar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
+        ' parece ocorrer quando o mouse para sobre um objeto
 
         Dim obj As Object
 

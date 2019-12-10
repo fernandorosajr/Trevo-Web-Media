@@ -273,7 +273,7 @@ Partial Class ControlSelectFileAndFoldePanel
         '
         Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox16.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PictureBox16.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.PictureBox16.Image = Global.TrevoWebMedia.My.Resources.Resources.meuEstiloDePasta01
         Me.PictureBox16.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PictureBox16.Location = New System.Drawing.Point(2, 2)
         Me.PictureBox16.Name = "PictureBox16"

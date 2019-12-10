@@ -262,11 +262,11 @@
 
             Case "ComboBox"
                 obj = CType(sender, ComboBox)
-                obj.parent.parent.backcolor = Color.LightGray
+                If Not (obj.Focused) Then obj.parent.parent.backcolor = Color.LightGray
 
             Case "TextBox"
                 obj = CType(sender, TextBox)
-                obj.parent.parent.backcolor = Color.LightGray
+                If Not (obj.Focused) Then obj.parent.parent.backcolor = Color.LightGray
 
             Case "Label"
                 obj = CType(sender, Label)
@@ -328,7 +328,9 @@
                 obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
 
             End If
+
         Else
+
             obj = CType(sender, Object)
 
             obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
@@ -337,9 +339,8 @@
 
         End If
 
-
-
         Select Case obj.Name
+
             Case "CKBNovaMidia"
                 CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseHover
 
@@ -357,7 +358,6 @@
 
             Case "CKBAbortar"
                 CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseHover
-
 
         End Select
     End Sub
@@ -392,9 +392,6 @@
             '  obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
 
         End If
-
-
-
 
         Select Case obj.Name
 
@@ -443,25 +440,77 @@
             Case "CKBNovaMidia"
                 CKBOpcoes_CKBNovaMidia.Checked = CKBNovaMidia.Checked
 
+                PanelEnvolve_PanelAgrupaGerenciar.Visible = chk.CheckState
+                PanelBorder_CKBGravarCriar.Enabled = chk.CheckState
+
+              '  PanelBorder_CKBAbortar.Enabled = Not (PanelBorder_CKBGravarCriar.Enabled)
+
             Case "CKBOpcoes_CKBNovaMidia"
                 CKBNovaMidia.Checked = CKBOpcoes_CKBNovaMidia.Checked
 
             Case "CKBGravarCriar"
                 CKBOpcoes_CKBGravarCriar.Checked = CKBGravarCriar.Checked
+                PanelBorder_CKBGravarCriar.Enabled = False
+
+                PanelBorder_CKBAbortar.Enabled = chk.Checked
+
 
             Case "CKBOpcoes_CKBGravarCriar"
                 CKBGravarCriar.Checked = CKBOpcoes_CKBGravarCriar.Checked
 
             Case "CKBAbortar"
+
+                CKBGravarCriar.Checked = False
+                PanelBorder_CKBGravarCriar.Enabled = True
                 CKBOpcoes_CKBAbortar.Checked = CKBAbortar.Checked
+
+
+                'Dim msg As Byte
+
+                'If chk.Checked = True Then
+                '    msg = MsgBox("Você está preste a abortar a gravação da mídia. Se continuar a gravação estará perdida.Tem certeza que que continuar?", MsgBoxStyle.YesNo)
+
+                'End If
+
+                'If msg = 6 Then
+
+
+
+                'Else
+
+                '    chk.Checked = True
+
+                'End If
+
 
             Case "CKBOpcoes_CKBAbortar"
                 CKBAbortar.Checked = CKBOpcoes_CKBAbortar.Checked
-
+                CKBAbortar.Checked = False
+                PanelBorder_CKBAbortar.Enabled = False
 
         End Select
 
     End Sub
 
+    Private Sub CKBAbortarAndCKBOpcoes_CKBAbortar_Click(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBAbortar.Click, CKBAbortar.Click
 
+    End Sub
+
+    Private Sub TXTRotulo_GotFocus(sender As Object, e As EventArgs) Handles TXTRotulo.GotFocus, ComBSelectAgrupamento.GotFocus, CmBTipoDeMidia.GotFocus, CmBLocalDaMidia.GotFocus
+
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+
+    End Sub
+
+    Private Sub TXTRotulo_LostFocus(sender As Object, e As EventArgs) Handles TXTRotulo.LostFocus, ComBSelectAgrupamento.LostFocus, CmBTipoDeMidia.LostFocus, CmBLocalDaMidia.LostFocus
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.Parent.Parent.BackColor = Color.LightGray
+
+
+    End Sub
 End Class

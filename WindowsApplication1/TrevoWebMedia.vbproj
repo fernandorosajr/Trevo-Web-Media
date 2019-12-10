@@ -701,6 +701,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\meuEstiloDePasta01.png" />
     <None Include="Resources\GrupoMiniatura.png" />
     <None Include="Resources\novaMedia.png" />
     <None Include="Resources\Gravar2.png" />

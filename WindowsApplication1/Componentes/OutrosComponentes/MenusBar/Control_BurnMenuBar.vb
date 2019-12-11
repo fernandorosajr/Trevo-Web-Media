@@ -454,47 +454,61 @@
 
                 PanelBorder_CKBAbortar.Enabled = chk.Checked
 
-
             Case "CKBOpcoes_CKBGravarCriar"
                 CKBGravarCriar.Checked = CKBOpcoes_CKBGravarCriar.Checked
 
             Case "CKBAbortar"
+                Dim podeAbortar As Boolean = AbortBurnMedia(chk)
 
-                CKBGravarCriar.Checked = False
-                PanelBorder_CKBGravarCriar.Enabled = True
-                CKBOpcoes_CKBAbortar.Checked = CKBAbortar.Checked
+                If podeAbortar = True Then
+                    CKBGravarCriar.Checked = False
+                    PanelBorder_CKBGravarCriar.Enabled = True
+                    CKBOpcoes_CKBAbortar.Checked = CKBAbortar.Checked
 
+                Else
+                    chk.Checked = True
 
-                'Dim msg As Byte
-
-                'If chk.Checked = True Then
-                '    msg = MsgBox("Você está preste a abortar a gravação da mídia. Se continuar a gravação estará perdida.Tem certeza que que continuar?", MsgBoxStyle.YesNo)
-
-                'End If
-
-                'If msg = 6 Then
-
-
-
-                'Else
-
-                '    chk.Checked = True
-
-                'End If
-
+                End If
 
             Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.Checked = CKBOpcoes_CKBAbortar.Checked
-                CKBAbortar.Checked = False
-                PanelBorder_CKBAbortar.Enabled = False
+                MsgBox(chk.Checked)
+
+                Dim podeAbortar As Boolean = AbortBurnMedia(chk)
+
+                If podeAbortar = True Then
+                    CKBGravarCriar.Checked = False
+                    PanelBorder_CKBGravarCriar.Enabled = True
+                    CKBAbortar.Checked = CKBOpcoes_CKBAbortar.Checked
+                    CKBAbortar.Checked = False
+                    PanelBorder_CKBAbortar.Enabled = False
+
+                Else
+                    chk.Checked = True
+
+                End If
+
+
+
 
         End Select
 
     End Sub
 
-    Private Sub CKBAbortarAndCKBOpcoes_CKBAbortar_Click(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBAbortar.Click, CKBAbortar.Click
+    Private Function AbortBurnMedia(chk As CheckBox) As Boolean
 
-    End Sub
+        Dim x As Byte
+        x = MsgBox("Você está preste a abortar a gravação da mídia. Se continuar a gravação estará perdida.Tem certeza que que continuar?", MsgBoxStyle.YesNo)
+
+        If x = 6 Then
+            Return True
+
+        Else
+            Return False
+
+        End If
+
+    End Function
+
 
     Private Sub TXTRotulo_GotFocus(sender As Object, e As EventArgs) Handles TXTRotulo.GotFocus, ComBSelectAgrupamento.GotFocus, CmBTipoDeMidia.GotFocus, CmBLocalDaMidia.GotFocus
 

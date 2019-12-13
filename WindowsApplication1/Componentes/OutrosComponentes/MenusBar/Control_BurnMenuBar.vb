@@ -149,7 +149,11 @@
 
     End Sub
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBAbortar.MouseUp, CKBOpcoes_CKBAbortar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
+    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseUp, BTNAbortar.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNMaisProcessos.MouseUp
+
+    End Sub
+
+    Private Sub Objects_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
         'Ocorre qunado o mouse solta o objeto
 
         Dim obj As Object
@@ -180,39 +184,96 @@
             Case "CKBOpcoes_CKBGravarCriar"
                 CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "CKBAbortar"
-                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNAbortar"
+            '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseUp
+            '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseUp
 
-            Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.BackColor = _backgroundColorSelectAndMouseUp
+            'Case "BTNOpcoes_BTNAbortar"
+            '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseUp
+            '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseUp
 
             Case "ComBSelectAgrupamento"
                 PanelBorder_LBL_ComBSelectAgrupamento.BackColor = _borderColorSelectAndMouseUp
 
         End Select
 
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("MOUSEUP")
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine(" ________________________________________________________ ")
+
     End Sub
 
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseDown, BTNAbortar.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNMaisProcessos.MouseDown, BTNPastaTeste.MouseDown, BTOpcoes_BTNPastaTeste.MouseDown
+        Dim btn As Button
+        btn = CType(sender, Button)
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBAbortar.MouseDown, CKBOpcoes_CKBAbortar.MouseDown, CKBMostrarAgrupamentos.MouseDown, ComBSelectAgrupamento.MouseDown, TXTRotulo.MouseDown, CmBTipoDeMidia.MouseDown, CmBLocalDaMidia.MouseDown, LBL_ComBSelectAgrupamento.MouseDown
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseDown
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+        btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
+        Select Case btn.Name
+            Case "BTNOpcoes_BTNAbortar"
+                ' BTNAbortar.b
+
+            Case "BTNAbortar"
+                ' BTNAbortar.b
+
+            Case "BTNOpcoes_BTNMaisProcessos"
+                ' BTNAbortar.b
+
+            Case "BTNMaisProcessos"
+                ' BTNAbortar.b
+
+            Case "BTOpcoes_BTNPastaTeste"
+                ' BTNAbortar.b
+
+            Case "BTNPastaTeste"
+                ' BTNAbortar.b
+
+        End Select
+
+    End Sub
+
+    Private Sub Objects_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown, ComBSelectAgrupamento.MouseDown, TXTRotulo.MouseDown, CmBTipoDeMidia.MouseDown, CmBLocalDaMidia.MouseDown, LBL_ComBSelectAgrupamento.MouseDown
+
         ' Ocorre quando o usuario presciona o botão do mouse
 
-        Dim btn As Object
+        Dim obj As Object
 
         If sender.GetType.Name.ToString = "CheckBox" Then
 
-            btn = CType(sender, CheckBox)
+            obj = CType(sender, CheckBox)
         Else
-            btn = CType(sender, Object)
+            obj = CType(sender, Object)
         End If
 
 
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseDown
-        If sender.GetType.Name.ToString = "CheckBox" Then btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+        obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
 
+        If sender.GetType.Name.ToString = "CheckBox" Then obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
 
-        Select Case btn.Name
+        Select Case obj.Name
 
             Case "CKBNovaMidia"
                 CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
@@ -226,19 +287,49 @@
             Case "CKBGravarCriar"
                 CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNOpcoes_BTNAbortar"
+                '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
+                '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
 
-            Case "CKBAbortar"
-                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseDown
+                'Case "BTNAbortar"
+                '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
+                '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
 
 
         End Select
 
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("MOUSEDOWN")
+
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine(" ________________________________________________________ ")
+
     End Sub
 
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseLeave, BTNAbortar.MouseLeave, BTNOpcoes_BTNMaisProcessos.MouseLeave, BTNMaisProcessos.MouseLeave
 
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBAbortar.MouseLeave, CKBOpcoes_CKBAbortar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave, ComBSelectAgrupamento.MouseLeave, TXTRotulo.MouseLeave, CmBTipoDeMidia.MouseLeave, CmBLocalDaMidia.MouseLeave, LBL_ComBSelectAgrupamento.MouseLeave
+    End Sub
+
+    Private Sub Objects_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave, ComBSelectAgrupamento.MouseLeave, TXTRotulo.MouseLeave, CmBTipoDeMidia.MouseLeave, CmBLocalDaMidia.MouseLeave, LBL_ComBSelectAgrupamento.MouseLeave
 
         ' Ocorre quando o mouse sai do objeto
         Dim obj As Object
@@ -259,6 +350,13 @@
                     obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
                 End If
+
+            Case "Button"
+                obj = CType(sender, Button)
+                ' If Not (obj.Focused) Then obj.parent.parent.backcolor = Color.LightGray
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+
 
             Case "ComboBox"
                 obj = CType(sender, ComboBox)
@@ -297,17 +395,47 @@
             Case "CKBGravarCriar"
                 CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "BTNOpcoes_BTNAbortar"
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
 
-            Case "CKBAbortar"
-                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+            Case "BTNAbortar"
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
 
         End Select
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("MOUSLEAVE")
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
+    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseMove, BTNAbortar.MouseMove, BTNOpcoes_BTNMaisProcessos.MouseMove, BTNMaisProcessos.MouseMove
 
-    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBAbortar.MouseMove, CKBOpcoes_CKBAbortar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
+    End Sub
+
+    Private Sub Objects_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
+
 
         ' Ocorre quando o mouse passa por cima do elemento
         Dim obj As Object
@@ -353,16 +481,48 @@
             Case "CKBGravarCriar"
                 CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.BackColor = _backgroundColorSelectAndMouseHover
+            Case "BTNOpcoes_BTNAbortar"
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "CKBAbortar"
-                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseHover
+            Case "BTNAbortar"
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
 
         End Select
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("MOUSEMOVE")
+
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBAbortar.MouseHover, CKBOpcoes_CKBAbortar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
+    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseHover, BTNAbortar.MouseHover, BTNOpcoes_BTNMaisProcessos.MouseHover, BTNMaisProcessos.MouseHover
+
+    End Sub
+
+    Private Sub Objects_MouseHover(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
+
         ' parece ocorrer quando o mouse para sobre um objeto
 
         Dim obj As Object
@@ -407,17 +567,44 @@
             Case "CKBGravarCriar"
                 CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "CKBOpcoes_CKBAbortar"
-                CKBAbortar.BackColor = _backgroundColorSelectAndMouseHover
+            Case "BTNOpcoes_BTNAbortar"
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
 
-            Case "CKBAbortar"
-                CKBOpcoes_CKBAbortar.BackColor = _backgroundColorSelectAndMouseHover
+            Case "BTNAbortar"
+                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
 
         End Select
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("MOUSEHOVER")
+        Debug.WriteLine("  ")
 
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+
+        Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
-    Private Sub Buttons_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBAbortar.CheckedChanged, CKBOpcoes_CKBAbortar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
+    Private Sub Objects_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
 
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
@@ -463,14 +650,14 @@
                 If podeAbortar = True Then
                     CKBGravarCriar.Checked = False
                     PanelBorder_CKBGravarCriar.Enabled = True
-                    CKBOpcoes_CKBAbortar.Checked = CKBAbortar.Checked
+                    ' CKBOpcoes_BTNAbortar.Checked = BTNAbortar.Checked
 
                 Else
                     chk.Checked = True
 
                 End If
 
-            Case "CKBOpcoes_CKBAbortar"
+            Case "BTNOpcoes_BTNAbortar"
                 MsgBox(chk.Checked)
 
                 Dim podeAbortar As Boolean = AbortBurnMedia(chk)
@@ -478,8 +665,8 @@
                 If podeAbortar = True Then
                     CKBGravarCriar.Checked = False
                     PanelBorder_CKBGravarCriar.Enabled = True
-                    CKBAbortar.Checked = CKBOpcoes_CKBAbortar.Checked
-                    CKBAbortar.Checked = False
+                    '  BTNAbortar.Checked = CKBOpcoes_BTNAbortar.Checked
+                    ' BTNAbortar.Checked = False
                     PanelBorder_CKBAbortar.Enabled = False
 
                 Else
@@ -525,6 +712,38 @@
 
         obj.Parent.Parent.BackColor = Color.LightGray
 
+
+    End Sub
+
+
+
+    Private Sub BTNMaisProcessos_Click(sender As Object, e As EventArgs) Handles BTNMaisProcessos.Click
+
+        'MsgBox(BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        'MsgBox(BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine("  ")
+        Debug.WriteLine(" ________________________________________________________ ")
+        Debug.WriteLine("CLICK")
+        'Debug.WriteLine("  ")
+
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
+
+        'Debug.WriteLine("  ")
+        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
+        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNMaisProcessos.Parent.Parent.Name & BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine("  ")
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Name & BTNOpcoes_BTNMaisProcessos.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.BackColor.ToString)
+        Debug.WriteLine(BTNOpcoes_BTNMaisProcessos.Parent.Parent.Name & BTNOpcoes_BTNMaisProcessos.Parent.Parent.BackColor.ToString)
+
+        Debug.WriteLine(" ________________________________________________________ ")
 
     End Sub
 End Class

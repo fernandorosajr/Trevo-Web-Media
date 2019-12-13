@@ -326,6 +326,12 @@
     End Sub
 
     Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseLeave, BTNAbortar.MouseLeave, BTNOpcoes_BTNMaisProcessos.MouseLeave, BTNMaisProcessos.MouseLeave
+        Dim btn As Button
+        btn = CType(sender, Button)
+
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
+        ' btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
 
     End Sub
 
@@ -431,7 +437,12 @@
     End Sub
 
     Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseMove, BTNAbortar.MouseMove, BTNOpcoes_BTNMaisProcessos.MouseMove, BTNMaisProcessos.MouseMove
+        Dim btn As Button
+        btn = CType(sender, Button)
 
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
     End Sub
 
     Private Sub Objects_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
@@ -518,6 +529,12 @@
     End Sub
 
     Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseHover, BTNAbortar.MouseHover, BTNOpcoes_BTNMaisProcessos.MouseHover, BTNMaisProcessos.MouseHover
+        Dim btn As Button
+        btn = CType(sender, Button)
+
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
 
     End Sub
 

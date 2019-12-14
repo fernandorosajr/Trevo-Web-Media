@@ -28,10 +28,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.PanelGravação = New System.Windows.Forms.Panel()
-        Me.PanelBorder_BTNMaisProcessos = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
-        Me.BTNMaisProcessos = New System.Windows.Forms.Button()
-        Me.BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.Button()
         Me.PanelBorder_CKBAbortar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
         Me.BTNAbortar = New System.Windows.Forms.Button()
@@ -100,8 +96,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
         Me.PanelGravação.SuspendLayout()
-        Me.PanelBorder_BTNMaisProcessos.SuspendLayout()
-        Me.PanelEnvolve_BTNMaisProcessos.SuspendLayout()
         Me.PanelBorder_CKBAbortar.SuspendLayout()
         Me.PanelEnvolve_CKBAbortar.SuspendLayout()
         Me.PanelBorder_CKBGravarCriar.SuspendLayout()
@@ -193,7 +187,6 @@ Partial Class Control_BurnMenuBar
         '
         'PanelGravação
         '
-        Me.PanelGravação.Controls.Add(Me.PanelBorder_BTNMaisProcessos)
         Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBAbortar)
         Me.PanelGravação.Controls.Add(Me.PanelEspacamento04)
         Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBGravarCriar)
@@ -203,70 +196,12 @@ Partial Class Control_BurnMenuBar
         Me.PanelGravação.Size = New System.Drawing.Size(456, 120)
         Me.PanelGravação.TabIndex = 20
         '
-        'PanelBorder_BTNMaisProcessos
-        '
-        Me.PanelBorder_BTNMaisProcessos.Controls.Add(Me.PanelEnvolve_BTNMaisProcessos)
-        Me.PanelBorder_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_BTNMaisProcessos.Location = New System.Drawing.Point(151, 0)
-        Me.PanelBorder_BTNMaisProcessos.Name = "PanelBorder_BTNMaisProcessos"
-        Me.PanelBorder_BTNMaisProcessos.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNMaisProcessos.Size = New System.Drawing.Size(123, 120)
-        Me.PanelBorder_BTNMaisProcessos.TabIndex = 28
-        '
-        'PanelEnvolve_BTNMaisProcessos
-        '
-        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNMaisProcessos)
-        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNOpcoes_BTNMaisProcessos)
-        Me.PanelEnvolve_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_BTNMaisProcessos.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_BTNMaisProcessos.Name = "PanelEnvolve_BTNMaisProcessos"
-        Me.PanelEnvolve_BTNMaisProcessos.Size = New System.Drawing.Size(121, 118)
-        Me.PanelEnvolve_BTNMaisProcessos.TabIndex = 10
-        '
-        'BTNMaisProcessos
-        '
-        Me.BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
-        Me.BTNMaisProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupo02
-        Me.BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNMaisProcessos.FlatAppearance.BorderSize = 0
-        Me.BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNMaisProcessos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue
-        Me.BTNMaisProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMaisProcessos.ForeColor = System.Drawing.Color.Black
-        Me.BTNMaisProcessos.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNMaisProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNMaisProcessos.Location = New System.Drawing.Point(0, 0)
-        Me.BTNMaisProcessos.Name = "BTNMaisProcessos"
-        Me.BTNMaisProcessos.Size = New System.Drawing.Size(121, 98)
-        Me.BTNMaisProcessos.TabIndex = 8
-        Me.BTNMaisProcessos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNMaisProcessos.UseVisualStyleBackColor = False
-        '
-        'BTNOpcoes_BTNMaisProcessos
-        '
-        Me.BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNMaisProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNMaisProcessos.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNMaisProcessos.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.BTNOpcoes_BTNMaisProcessos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNMaisProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNMaisProcessos.Location = New System.Drawing.Point(0, 98)
-        Me.BTNOpcoes_BTNMaisProcessos.Name = "BTNOpcoes_BTNMaisProcessos"
-        Me.BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(121, 20)
-        Me.BTNOpcoes_BTNMaisProcessos.TabIndex = 9
-        Me.BTNOpcoes_BTNMaisProcessos.Text = "Mais agrupamentos"
-        Me.BTNOpcoes_BTNMaisProcessos.UseVisualStyleBackColor = False
-        '
         'PanelBorder_CKBAbortar
         '
         Me.PanelBorder_CKBAbortar.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
         Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBAbortar.Enabled = False
         Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(76, 0)
         Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
         Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
@@ -334,6 +269,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBGravarCriar.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_CKBGravarCriar.Controls.Add(Me.PanelEnvolve_CKBGravarCriar)
         Me.PanelBorder_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_CKBGravarCriar.Enabled = False
         Me.PanelBorder_CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_CKBGravarCriar.Name = "PanelBorder_CKBGravarCriar"
         Me.PanelBorder_CKBGravarCriar.Padding = New System.Windows.Forms.Padding(1)
@@ -987,8 +923,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
         Me.PanelGravação.ResumeLayout(False)
-        Me.PanelBorder_BTNMaisProcessos.ResumeLayout(False)
-        Me.PanelEnvolve_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelBorder_CKBAbortar.ResumeLayout(False)
         Me.PanelEnvolve_CKBAbortar.ResumeLayout(False)
         Me.PanelBorder_CKBGravarCriar.ResumeLayout(False)
@@ -1099,8 +1033,4 @@ Partial Class Control_BurnMenuBar
     Friend WithEvents PanelEspacamento04 As Panel
     Friend WithEvents BTNAbortar As Button
     Friend WithEvents BTNOpcoes_BTNAbortar As Button
-    Friend WithEvents PanelBorder_BTNMaisProcessos As Panel
-    Friend WithEvents PanelEnvolve_BTNMaisProcessos As Panel
-    Friend WithEvents BTNMaisProcessos As Button
-    Friend WithEvents BTNOpcoes_BTNMaisProcessos As Button
 End Class

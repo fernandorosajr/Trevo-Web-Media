@@ -692,19 +692,16 @@
 
                 If obj.Checked = True Then
                     BTNAbortar.BackColor = _backgroundColorChecked
-
                 Else
                     BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
-
                 End If
 
             Case "BTNAbortar"
+
                 If obj.Checked = True Then
                     BTNOpcoes_BTNAbortar.BackColor = _backgroundColorChecked
-
                 Else
                     BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
-
                 End If
 
         End Select
@@ -769,48 +766,17 @@
 
                 CKBOpcoes_CKBGravarCriar.Checked = CKBGravarCriar.Checked
                 ExibirTelaGravando(chk.Checked)
-                'PanelBorder_CKBGravarCriar.Enabled = False
-                'PanelBorder_CKBAbortar.Enabled = chk.Checked
 
             Case "CKBOpcoes_CKBGravarCriar"
                 CKBGravarCriar.Checked = CKBOpcoes_CKBGravarCriar.Checked
 
-                'PanelBorder_CKBAbortar.Enabled = chk.Checked
-
-            Case "CKBAbortar"
-                Dim podeAbortar As Boolean = AbortBurnMedia()
-
-                If podeAbortar = True Then
-                    CKBGravarCriar.Checked = False
-                    PanelBorder_CKBGravarCriar.Enabled = True
-                    ' CKBOpcoes_BTNAbortar.Checked = BTNAbortar.Checked
-
-                Else
-                    chk.Checked = True
-
-                End If
-
-            Case "BTNOpcoes_BTNAbortar"
-                MsgBox(chk.Checked)
-
-                Dim podeAbortar As Boolean = AbortBurnMedia()
-
-                If podeAbortar = True Then
-                    CKBGravarCriar.Checked = False
-                    PanelBorder_CKBGravarCriar.Enabled = True
-                    '  BTNAbortar.Checked = CKBOpcoes_BTNAbortar.Checked
-                    ' BTNAbortar.Checked = False
-                    PanelBorder_CKBAbortar.Enabled = False
-
-                Else
-                    chk.Checked = True
-
-                End If
         End Select
 
     End Sub
 
     Private Sub ExibirTelaGravando(exibir As Boolean)
+        ' Mostra comportamento dos componentes como se estivesse gravando...
+        ' ... quando exibir for verdadeiro.
 
         PanelBorder_CKBGravarCriar.Enabled = Not (exibir)
         CKBGravarCriar.Checked = exibir
@@ -819,22 +785,19 @@
     End Sub
 
     Private Sub BTNAbortarAndBTNOpcoes_BTNAbortar_Click(sender As Object, e As EventArgs) Handles BTNAbortar.Click, BTNOpcoes_BTNAbortar.Click
-        ExibirTelaGravando(AbortBurnMedia())
+        ExibirTelaGravando(ContinueBurningToMedia())
 
     End Sub
 
-    Private Function AbortBurnMedia() As Boolean
+    Private Function ContinueBurningToMedia() As Boolean
 
         Dim x As Byte
         x = MsgBox("Você está preste a abortar a gravação da mídia. Se continuar a gravação estará perdida.Tem certeza que que continuar?", MsgBoxStyle.YesNo)
 
-
         If x = 6 Then
             Return False
-
         Else
             Return True
-
         End If
 
     End Function
@@ -853,7 +816,6 @@
         obj = CType(sender, Object)
 
         obj.Parent.Parent.BackColor = Color.LightGray
-
 
     End Sub
 

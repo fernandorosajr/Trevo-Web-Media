@@ -24,10 +24,10 @@ Partial Class Control_BurnMenuBar
     Private Sub InitializeComponent()
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
-        Me.PanelOrganizar = New System.Windows.Forms.Panel()
-        Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
-        Me.PanelGravação = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_Gravacao = New System.Windows.Forms.Panel()
+        Me.PanelBorder_Gravacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_AgruparGravacao = New System.Windows.Forms.Panel()
+        Me.PanelAgruparGravacao = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBAbortar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
         Me.BTNAbortar = New System.Windows.Forms.Button()
@@ -92,10 +92,10 @@ Partial Class Control_BurnMenuBar
         Me.LBLNovaMidia = New System.Windows.Forms.Label()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
-        Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
-        Me.PanelOrganizar.SuspendLayout()
-        Me.PanelAgrupaOrganizar.SuspendLayout()
-        Me.PanelGravação.SuspendLayout()
+        Me.PanelEnvolve_Gravacao.SuspendLayout()
+        Me.PanelBorder_Gravacao.SuspendLayout()
+        Me.PanelEnvolve_AgruparGravacao.SuspendLayout()
+        Me.PanelAgruparGravacao.SuspendLayout()
         Me.PanelBorder_CKBAbortar.SuspendLayout()
         Me.PanelEnvolve_CKBAbortar.SuspendLayout()
         Me.PanelBorder_CKBGravarCriar.SuspendLayout()
@@ -146,7 +146,7 @@ Partial Class Control_BurnMenuBar
         '
         'Panel25
         '
-        Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelAgrupaOrganizar)
+        Me.Panel25.Controls.Add(Me.PanelEnvolve_Gravacao)
         Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelAgrupaGerenciar)
         Me.Panel25.Controls.Add(Me.PanelEnvolve_PanelAgrupaNova)
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
@@ -155,46 +155,46 @@ Partial Class Control_BurnMenuBar
         Me.Panel25.Size = New System.Drawing.Size(1266, 139)
         Me.Panel25.TabIndex = 6
         '
-        'PanelEnvolve_PanelAgrupaOrganizar
+        'PanelEnvolve_Gravacao
         '
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Controls.Add(Me.PanelOrganizar)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(757, 0)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Name = "PanelEnvolve_PanelAgrupaOrganizar"
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(463, 139)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.TabIndex = 9
+        Me.PanelEnvolve_Gravacao.Controls.Add(Me.PanelBorder_Gravacao)
+        Me.PanelEnvolve_Gravacao.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_Gravacao.Location = New System.Drawing.Point(757, 0)
+        Me.PanelEnvolve_Gravacao.Name = "PanelEnvolve_Gravacao"
+        Me.PanelEnvolve_Gravacao.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_Gravacao.Size = New System.Drawing.Size(180, 139)
+        Me.PanelEnvolve_Gravacao.TabIndex = 9
         '
-        'PanelOrganizar
+        'PanelBorder_Gravacao
         '
-        Me.PanelOrganizar.Controls.Add(Me.PanelAgrupaOrganizar)
-        Me.PanelOrganizar.Controls.Add(Me.Panel20)
-        Me.PanelOrganizar.Controls.Add(Me.LBLGravacao)
-        Me.PanelOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelOrganizar.Location = New System.Drawing.Point(3, 3)
-        Me.PanelOrganizar.Name = "PanelOrganizar"
-        Me.PanelOrganizar.Size = New System.Drawing.Size(457, 133)
-        Me.PanelOrganizar.TabIndex = 6
+        Me.PanelBorder_Gravacao.Controls.Add(Me.PanelEnvolve_AgruparGravacao)
+        Me.PanelBorder_Gravacao.Controls.Add(Me.Panel20)
+        Me.PanelBorder_Gravacao.Controls.Add(Me.LBLGravacao)
+        Me.PanelBorder_Gravacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_Gravacao.Location = New System.Drawing.Point(3, 3)
+        Me.PanelBorder_Gravacao.Name = "PanelBorder_Gravacao"
+        Me.PanelBorder_Gravacao.Size = New System.Drawing.Size(174, 133)
+        Me.PanelBorder_Gravacao.TabIndex = 6
         '
-        'PanelAgrupaOrganizar
+        'PanelEnvolve_AgruparGravacao
         '
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.PanelGravação)
-        Me.PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAgrupaOrganizar.Location = New System.Drawing.Point(0, 0)
-        Me.PanelAgrupaOrganizar.Name = "PanelAgrupaOrganizar"
-        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(456, 120)
-        Me.PanelAgrupaOrganizar.TabIndex = 11
+        Me.PanelEnvolve_AgruparGravacao.Controls.Add(Me.PanelAgruparGravacao)
+        Me.PanelEnvolve_AgruparGravacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_AgruparGravacao.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_AgruparGravacao.Name = "PanelEnvolve_AgruparGravacao"
+        Me.PanelEnvolve_AgruparGravacao.Size = New System.Drawing.Size(173, 120)
+        Me.PanelEnvolve_AgruparGravacao.TabIndex = 11
         '
-        'PanelGravação
+        'PanelAgruparGravacao
         '
-        Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBAbortar)
-        Me.PanelGravação.Controls.Add(Me.PanelEspacamento04)
-        Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBGravarCriar)
-        Me.PanelGravação.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelGravação.Location = New System.Drawing.Point(0, 0)
-        Me.PanelGravação.Name = "PanelGravação"
-        Me.PanelGravação.Size = New System.Drawing.Size(456, 120)
-        Me.PanelGravação.TabIndex = 20
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_CKBAbortar)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelEspacamento04)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_CKBGravarCriar)
+        Me.PanelAgruparGravacao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelAgruparGravacao.Location = New System.Drawing.Point(0, 0)
+        Me.PanelAgruparGravacao.Name = "PanelAgruparGravacao"
+        Me.PanelAgruparGravacao.Size = New System.Drawing.Size(173, 120)
+        Me.PanelAgruparGravacao.TabIndex = 20
         '
         'PanelBorder_CKBAbortar
         '
@@ -202,10 +202,10 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
         Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelBorder_CKBAbortar.Enabled = False
-        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(76, 0)
+        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(87, 0)
         Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
         Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBAbortar.Size = New System.Drawing.Size(75, 120)
+        Me.PanelBorder_CKBAbortar.Size = New System.Drawing.Size(80, 120)
         Me.PanelBorder_CKBAbortar.TabIndex = 26
         '
         'PanelEnvolve_CKBAbortar
@@ -215,7 +215,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_CKBAbortar.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_CKBAbortar.Name = "PanelEnvolve_CKBAbortar"
-        Me.PanelEnvolve_CKBAbortar.Size = New System.Drawing.Size(73, 118)
+        Me.PanelEnvolve_CKBAbortar.Size = New System.Drawing.Size(78, 118)
         Me.PanelEnvolve_CKBAbortar.TabIndex = 10
         '
         'BTNAbortar
@@ -232,7 +232,7 @@ Partial Class Control_BurnMenuBar
         Me.BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNAbortar.Location = New System.Drawing.Point(0, 0)
         Me.BTNAbortar.Name = "BTNAbortar"
-        Me.BTNAbortar.Size = New System.Drawing.Size(73, 98)
+        Me.BTNAbortar.Size = New System.Drawing.Size(78, 98)
         Me.BTNAbortar.TabIndex = 10
         Me.BTNAbortar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTNAbortar.UseVisualStyleBackColor = False
@@ -246,12 +246,11 @@ Partial Class Control_BurnMenuBar
         Me.BTNOpcoes_BTNAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
         Me.BTNOpcoes_BTNAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNOpcoes_BTNAbortar.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNAbortar.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
         Me.BTNOpcoes_BTNAbortar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.BTNOpcoes_BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.BTNOpcoes_BTNAbortar.Location = New System.Drawing.Point(0, 98)
         Me.BTNOpcoes_BTNAbortar.Name = "BTNOpcoes_BTNAbortar"
-        Me.BTNOpcoes_BTNAbortar.Size = New System.Drawing.Size(73, 20)
+        Me.BTNOpcoes_BTNAbortar.Size = New System.Drawing.Size(78, 20)
         Me.BTNOpcoes_BTNAbortar.TabIndex = 11
         Me.BTNOpcoes_BTNAbortar.Text = "Abortar"
         Me.BTNOpcoes_BTNAbortar.UseVisualStyleBackColor = False
@@ -259,7 +258,7 @@ Partial Class Control_BurnMenuBar
         'PanelEspacamento04
         '
         Me.PanelEspacamento04.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEspacamento04.Location = New System.Drawing.Point(75, 0)
+        Me.PanelEspacamento04.Location = New System.Drawing.Point(86, 0)
         Me.PanelEspacamento04.Name = "PanelEspacamento04"
         Me.PanelEspacamento04.Size = New System.Drawing.Size(1, 120)
         Me.PanelEspacamento04.TabIndex = 27
@@ -273,7 +272,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_CKBGravarCriar.Name = "PanelBorder_CKBGravarCriar"
         Me.PanelBorder_CKBGravarCriar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBGravarCriar.Size = New System.Drawing.Size(75, 120)
+        Me.PanelBorder_CKBGravarCriar.Size = New System.Drawing.Size(86, 120)
         Me.PanelBorder_CKBGravarCriar.TabIndex = 25
         '
         'PanelEnvolve_CKBGravarCriar
@@ -283,7 +282,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_CKBGravarCriar.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_CKBGravarCriar.Name = "PanelEnvolve_CKBGravarCriar"
-        Me.PanelEnvolve_CKBGravarCriar.Size = New System.Drawing.Size(73, 118)
+        Me.PanelEnvolve_CKBGravarCriar.Size = New System.Drawing.Size(84, 118)
         Me.PanelEnvolve_CKBGravarCriar.TabIndex = 10
         '
         'CKBGravarCriar
@@ -303,7 +302,7 @@ Partial Class Control_BurnMenuBar
         Me.CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
         Me.CKBGravarCriar.Margin = New System.Windows.Forms.Padding(0)
         Me.CKBGravarCriar.Name = "CKBGravarCriar"
-        Me.CKBGravarCriar.Size = New System.Drawing.Size(73, 97)
+        Me.CKBGravarCriar.Size = New System.Drawing.Size(84, 97)
         Me.CKBGravarCriar.TabIndex = 14
         Me.CKBGravarCriar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.CKBGravarCriar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -324,7 +323,7 @@ Partial Class Control_BurnMenuBar
         Me.CKBOpcoes_CKBGravarCriar.Location = New System.Drawing.Point(0, 97)
         Me.CKBOpcoes_CKBGravarCriar.Margin = New System.Windows.Forms.Padding(0)
         Me.CKBOpcoes_CKBGravarCriar.Name = "CKBOpcoes_CKBGravarCriar"
-        Me.CKBOpcoes_CKBGravarCriar.Size = New System.Drawing.Size(73, 21)
+        Me.CKBOpcoes_CKBGravarCriar.Size = New System.Drawing.Size(84, 21)
         Me.CKBOpcoes_CKBGravarCriar.TabIndex = 15
         Me.CKBOpcoes_CKBGravarCriar.Text = "Gravar"
         Me.CKBOpcoes_CKBGravarCriar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -335,7 +334,7 @@ Partial Class Control_BurnMenuBar
         '
         Me.Panel20.BackColor = System.Drawing.Color.LightGray
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(456, 0)
+        Me.Panel20.Location = New System.Drawing.Point(173, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(1, 120)
         Me.Panel20.TabIndex = 10
@@ -348,7 +347,7 @@ Partial Class Control_BurnMenuBar
         Me.LBLGravacao.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.LBLGravacao.Location = New System.Drawing.Point(0, 120)
         Me.LBLGravacao.Name = "LBLGravacao"
-        Me.LBLGravacao.Size = New System.Drawing.Size(457, 13)
+        Me.LBLGravacao.Size = New System.Drawing.Size(174, 13)
         Me.LBLGravacao.TabIndex = 6
         Me.LBLGravacao.Text = "Gravação"
         Me.LBLGravacao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -919,10 +918,10 @@ Partial Class Control_BurnMenuBar
         Me.Size = New System.Drawing.Size(1266, 139)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.ResumeLayout(False)
-        Me.PanelOrganizar.ResumeLayout(False)
-        Me.PanelAgrupaOrganizar.ResumeLayout(False)
-        Me.PanelGravação.ResumeLayout(False)
+        Me.PanelEnvolve_Gravacao.ResumeLayout(False)
+        Me.PanelBorder_Gravacao.ResumeLayout(False)
+        Me.PanelEnvolve_AgruparGravacao.ResumeLayout(False)
+        Me.PanelAgruparGravacao.ResumeLayout(False)
         Me.PanelBorder_CKBAbortar.ResumeLayout(False)
         Me.PanelEnvolve_CKBAbortar.ResumeLayout(False)
         Me.PanelBorder_CKBGravarCriar.ResumeLayout(False)
@@ -967,10 +966,10 @@ Partial Class Control_BurnMenuBar
 
     Friend WithEvents Panel23 As Panel
     Friend WithEvents Panel25 As Panel
-    Friend WithEvents PanelEnvolve_PanelAgrupaOrganizar As Panel
-    Friend WithEvents PanelOrganizar As Panel
-    Friend WithEvents PanelAgrupaOrganizar As Panel
-    Friend WithEvents PanelGravação As Panel
+    Friend WithEvents PanelEnvolve_Gravacao As Panel
+    Friend WithEvents PanelBorder_Gravacao As Panel
+    Friend WithEvents PanelEnvolve_AgruparGravacao As Panel
+    Friend WithEvents PanelAgruparGravacao As Panel
     Friend WithEvents Panel20 As Panel
     Friend WithEvents LBLGravacao As Label
     Friend WithEvents PanelEnvolve_PanelAgrupaGerenciar As Panel

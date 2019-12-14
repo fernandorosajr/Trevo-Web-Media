@@ -267,7 +267,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBAbortar.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
         Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBAbortar.Enabled = False
         Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(76, 0)
         Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
         Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
@@ -335,7 +334,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelBorder_CKBGravarCriar.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_CKBGravarCriar.Controls.Add(Me.PanelEnvolve_CKBGravarCriar)
         Me.PanelBorder_CKBGravarCriar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBGravarCriar.Enabled = False
         Me.PanelBorder_CKBGravarCriar.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_CKBGravarCriar.Name = "PanelBorder_CKBGravarCriar"
         Me.PanelBorder_CKBGravarCriar.Padding = New System.Windows.Forms.Padding(1)

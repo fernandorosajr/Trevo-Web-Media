@@ -106,26 +106,26 @@
     End Property
 
 
-    Private _borderColorSelectAndMouseHover As Color
+    Private _borderColorSelectAndMouseOver As Color
 
     Public Property BorderColorSelectAndMouseHover As Color
         Get
-            Return _borderColorSelectAndMouseHover
+            Return _borderColorSelectAndMouseOver
         End Get
         Set(value As Color)
-            _borderColorSelectAndMouseHover = value
+            _borderColorSelectAndMouseOver = value
 
         End Set
     End Property
 
-    Private _backgroundColorSelectAndMouseHover As Color
+    Private _backgroundColorSelectAndMouseOver As Color
 
     Public Property BackgroundColorSelectAndMouseHover As Color
         Get
-            Return _backgroundColorSelectAndMouseHover
+            Return _backgroundColorSelectAndMouseOver
         End Get
         Set(value As Color)
-            _backgroundColorSelectAndMouseHover = value
+            _backgroundColorSelectAndMouseOver = value
 
         End Set
     End Property
@@ -134,8 +134,8 @@
         _borderColorChecked = Color.RoyalBlue
         _backgroundColorChecked = Color.LightSkyBlue
 
-        _borderColorSelectAndMouseHover = Color.SkyBlue ' Color.FromArgb(120, 126, 184, 239) 
-        _backgroundColorSelectAndMouseHover = Color.LightCyan 'Color.FromArgb(120, 255, 255, 255) 
+        _borderColorSelectAndMouseOver = Color.SkyBlue ' Color.FromArgb(120, 126, 184, 239) 
+        _backgroundColorSelectAndMouseOver = Color.LightCyan 'Color.FromArgb(120, 255, 255, 255) 
         '   126,184,239,0.8)
 
         _borderColorSelectAndMouseLeave = Color.WhiteSmoke
@@ -144,11 +144,14 @@
         _borderColorSelectAndMouseDown = Color.CornflowerBlue
         _backgroundColorSelectAndMouseDown = Color.PowderBlue
 
-        _borderColorSelectAndMouseUp = _borderColorSelectAndMouseHover
-        _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseHover
+        _borderColorSelectAndMouseUp = _borderColorSelectAndMouseOver
+        _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseOver
 
     End Sub
 
+    'Private Sub CheckBoxs_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBMostrarAgrupamentos.MouseUp
+
+    'End Sub
 
 
     Private Sub Objects_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
@@ -156,31 +159,66 @@
 
         Dim obj As Object
 
-        If sender.GetType.Name.ToString = "CheckBox" Then
+        Select Case sender.GetType.Name.ToString
+            Case "CheckBox"
 
-            obj = CType(sender, CheckBox)
-        Else
-            obj = CType(sender, Object)
-        End If
+                obj = CType(sender, CheckBox)
+                If obj.Checked = True Then
 
-        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
-        obj.Parent.BackColor = _backgroundColorSelectAndMouseUp
+                    obj.Parent.Parent.BackColor = _borderColorChecked
+                    obj.Parent.BackColor = _backgroundColorChecked
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
 
-        If sender.GetType.Name.ToString = "CheckBox" Then obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
+                Else
+                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
+                    obj.Parent.BackColor = _backgroundColorSelectAndMouseUp
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseUp
 
+                End If
+
+            Case Else
+                obj = CType(sender, Object)
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseUp
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseUp
+
+        End Select
 
         Select Case obj.Name
             Case "CKBOpcoes_CKBNovaMidia"
-                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+                If obj.Checked = True Then
+                    CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+
+                    CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+                End If
 
             Case "CKBNovaMidia"
-                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseUp
+
+                End If
 
             Case "CKBGravarCriar"
-                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+
+                End If
 
             Case "CKBOpcoes_CKBGravarCriar"
-                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+                If obj.Checked = True Then
+                    CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseUp
+
+                End If
 
             'Case "BTNAbortar"
             '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseUp
@@ -247,46 +285,83 @@
 
     End Sub
 
+    Private Sub CheckBoxs_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown
+
+
+    End Sub
+
     Private Sub Objects_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown, ComBSelectAgrupamento.MouseDown, TXTRotulo.MouseDown, CmBTipoDeMidia.MouseDown, CmBLocalDaMidia.MouseDown, LBL_ComBSelectAgrupamento.MouseDown
 
         ' Ocorre quando o usuario presciona o botão do mouse
 
         Dim obj As Object
 
+        Select Case sender.GetType.Name.ToString
+            Case "CheckBox"
+                obj = CType(sender, CheckBox)
+
+                If obj.Checked = True Then
+
+                    obj.Parent.Parent.BackColor = _borderColorChecked
+                    obj.Parent.BackColor = _backgroundColorChecked
+                    obj.FlatAppearance.MouseDownBackColor = _backgroundColorChecked
+
+                Else
+                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+                    obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
+                    obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
+                End If
+
+            Case Else
+                obj = CType(sender, Object)
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
+
+        End Select
+
+
         If sender.GetType.Name.ToString = "CheckBox" Then
-
-            obj = CType(sender, CheckBox)
-        Else
-            obj = CType(sender, Object)
-        End If
-
-
-        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
-        obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
-
-        If sender.GetType.Name.ToString = "CheckBox" Then
-            If obj.Checked = True Then
-                obj.FlatAppearance.MouseDownBackColor = _backgroundColorChecked
-
-            Else
-                obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
-
-            End If
         End If
 
         Select Case obj.Name
 
             Case "CKBNovaMidia"
-                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+
+                End If
 
             Case "CKBOpcoes_CKBNovaMidia"
-                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+
+                If obj.Checked = True Then
+                    CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseDown
+
+                End If
 
             Case "CKBOpcoes_CKBGravarCriar"
-                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseDown
+                If obj.Checked = True Then
+                    CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseDown
+
+                End If
 
             Case "CKBGravarCriar"
-                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseDown
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseDown
+
+                End If
 
                 'Case "BTNOpcoes_BTNAbortar"
                 '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
@@ -296,21 +371,11 @@
                 '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
                 '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
 
-
         End Select
 
         Debug.WriteLine("  ")
         Debug.WriteLine(" ________________________________________________________ ")
         Debug.WriteLine("MOUSEDOWN")
-
-        'Debug.WriteLine("  ")
-
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-
-        'Debug.WriteLine("  ")
-        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
-        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
 
         Debug.WriteLine("  ")
         Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
@@ -336,19 +401,27 @@
 
     End Sub
 
+    Private Sub CheckBoxs_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave
+
+
+    End Sub
+
     Private Sub Objects_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave, ComBSelectAgrupamento.MouseLeave, TXTRotulo.MouseLeave, CmBTipoDeMidia.MouseLeave, CmBLocalDaMidia.MouseLeave, LBL_ComBSelectAgrupamento.MouseLeave
 
         ' Ocorre quando o mouse sai do objeto
         Dim obj As Object
 
         Select Case sender.GetType.Name.ToString
-            Case "CheckBox"
-                obj = CType(sender, CheckBox)
 
+            Case "CheckBox"
+
+                obj = CType(sender, CheckBox)
                 If obj.Checked = True Then
 
                     obj.Parent.Parent.BackColor = _borderColorChecked
                     obj.Parent.BackColor = _backgroundColorChecked
+
+                    obj.FlatAppearance.CheckedBackColor = _backgroundColorChecked
                     obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
 
                 Else
@@ -361,7 +434,7 @@
 
             Case "Button"
                 obj = CType(sender, Button)
-                ' If Not (obj.Focused) Then obj.parent.parent.backcolor = Color.LightGray
+
                 obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
                 obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
@@ -375,6 +448,7 @@
                 If Not (obj.Focused) Then obj.parent.parent.backcolor = Color.LightGray
 
             Case "Label"
+
                 obj = CType(sender, Label)
 
                 obj.parent.parent.backcolor = Color.LightGray
@@ -392,24 +466,58 @@
 
         Select Case obj.Name
             Case "CKBNovaMidia"
-                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
             Case "CKBOpcoes_CKBNovaMidia"
-                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
             Case "CKBOpcoes_CKBGravarCriar"
-                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
             Case "CKBGravarCriar"
-                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
             Case "BTNOpcoes_BTNAbortar"
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
             Case "BTNAbortar"
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+                If obj.Checked = True Then
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseLeave
+
+                End If
 
         End Select
 
@@ -438,13 +546,19 @@
         Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
+
     Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseMove, BTNAbortar.MouseMove, BTNOpcoes_BTNMaisProcessos.MouseMove, BTNMaisProcessos.MouseMove
         Dim btn As Button
         btn = CType(sender, Button)
 
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseOver
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
+    End Sub
+
+    Private Sub CheckBoxs_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove
+
+
     End Sub
 
     Private Sub Objects_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
@@ -465,40 +579,78 @@
 
                 Else
 
-                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-                    obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
-                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+                    obj.Parent.BackColor = _backgroundColorSelectAndMouseOver
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
 
                 End If
 
             Case Else
                 obj = CType(sender, Object)
 
-                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-                obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseOver
         End Select
 
         Select Case obj.Name
 
             Case "CKBNovaMidia"
-                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
             Case "CKBOpcoes_CKBNovaMidia"
-                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "CKBOpcoes_CKBGravarCriar"
-                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "CKBGravarCriar"
-                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "BTNOpcoes_BTNAbortar"
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+
+                If obj.Checked = True Then
+                    BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
             Case "BTNAbortar"
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
         End Select
 
@@ -528,71 +680,114 @@
         Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
-    Private Sub Buttons_MouseHover(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseHover, BTNAbortar.MouseHover, BTNOpcoes_BTNMaisProcessos.MouseHover, BTNMaisProcessos.MouseHover
+    Private Sub Buttons_MouseOver(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseHover, BTNAbortar.MouseHover, BTNOpcoes_BTNMaisProcessos.MouseHover, BTNMaisProcessos.MouseHover
         Dim btn As Button
         btn = CType(sender, Button)
 
-        btn.Parent.BackColor = _backgroundColorSelectAndMouseHover
-        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseOver
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+        btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
 
     End Sub
 
-    Private Sub Objects_MouseHover(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
+    Private Sub CheckBoxs_MouseOver(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover
+
+
+    End Sub
+
+    Private Sub Objects_MouseOver(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
 
         ' parece ocorrer quando o mouse para sobre um objeto
 
         Dim obj As Object
 
-        If sender.GetType.Name.ToString = "CheckBox" Then
+        Select Case sender.GetType.Name.ToString
+            Case "CheckBox"
+                obj = CType(sender, CheckBox)
 
-            obj = CType(sender, CheckBox)
+                If obj.Checked = True Then
 
-            If obj.Checked = True Then
+                    obj.Parent.Parent.BackColor = _borderColorChecked
+                    obj.Parent.BackColor = _backgroundColorChecked
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
 
-                obj.Parent.Parent.BackColor = _borderColorChecked
-                obj.Parent.BackColor = _backgroundColorChecked
-                obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+                Else
 
-            Else
+                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+                    obj.Parent.BackColor = _backgroundColorSelectAndMouseOver
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
 
-                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-                obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
-                obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+                End If
 
-            End If
-        Else
-            obj = CType(sender, Object)
+            Case Else
+                obj = CType(sender, Object)
 
-            obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-            obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
-            '  obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
-
-        End If
+                obj.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
+                obj.Parent.BackColor = _backgroundColorSelectAndMouseOver
+        End Select
 
         Select Case obj.Name
 
             Case "CKBNovaMidia"
-                CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
             Case "CKBOpcoes_CKBNovaMidia"
-                CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBNovaMidia.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBNovaMidia.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "CKBOpcoes_CKBGravarCriar"
-                CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "CKBGravarCriar"
-                CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorChecked
+
+                Else
+                    CKBOpcoes_CKBGravarCriar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
+
 
             Case "BTNOpcoes_BTNAbortar"
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+
+                If obj.Checked = True Then
+                    BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
             Case "BTNAbortar"
-                BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
-                BTNAbortar.BackColor = _backgroundColorSelectAndMouseHover
+                If obj.Checked = True Then
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorChecked
+
+                Else
+                    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseOver
+
+                End If
 
         End Select
+
         Debug.WriteLine("  ")
         Debug.WriteLine(" ________________________________________________________ ")
         Debug.WriteLine("MOUSEHOVER")
@@ -619,6 +814,12 @@
 
 
         Debug.WriteLine(" ________________________________________________________ ")
+    End Sub
+
+
+    Private Sub CheckBoxs_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
+
+
     End Sub
 
     Private Sub Objects_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
@@ -718,7 +919,7 @@
         Dim obj As Object
         obj = CType(sender, Object)
 
-        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+        obj.Parent.Parent.BackColor = _borderColorSelectAndMouseOver
 
     End Sub
 

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Control_BurnMenuBar
     Inherits System.Windows.Forms.UserControl
 
     'O UserControl substitui o descarte para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Control_BurnMenuBar
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
@@ -28,10 +28,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.PanelGravação = New System.Windows.Forms.Panel()
-        Me.PanelBorder_BTNPastaTeste = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTNPastaTeste = New System.Windows.Forms.Panel()
-        Me.BTNPastaTeste = New System.Windows.Forms.Button()
-        Me.BTOpcoes_BTNPastaTeste = New System.Windows.Forms.Button()
         Me.PanelBorder_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.BTNMaisProcessos = New System.Windows.Forms.Button()
@@ -104,8 +100,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
         Me.PanelGravação.SuspendLayout()
-        Me.PanelBorder_BTNPastaTeste.SuspendLayout()
-        Me.PanelEnvolve_BTNPastaTeste.SuspendLayout()
         Me.PanelBorder_BTNMaisProcessos.SuspendLayout()
         Me.PanelEnvolve_BTNMaisProcessos.SuspendLayout()
         Me.PanelBorder_CKBAbortar.SuspendLayout()
@@ -199,7 +193,6 @@ Partial Class Control_BurnMenuBar
         '
         'PanelGravação
         '
-        Me.PanelGravação.Controls.Add(Me.PanelBorder_BTNPastaTeste)
         Me.PanelGravação.Controls.Add(Me.PanelBorder_BTNMaisProcessos)
         Me.PanelGravação.Controls.Add(Me.PanelBorder_CKBAbortar)
         Me.PanelGravação.Controls.Add(Me.PanelEspacamento04)
@@ -209,51 +202,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelGravação.Name = "PanelGravação"
         Me.PanelGravação.Size = New System.Drawing.Size(456, 120)
         Me.PanelGravação.TabIndex = 20
-        '
-        'PanelBorder_BTNPastaTeste
-        '
-        Me.PanelBorder_BTNPastaTeste.Controls.Add(Me.PanelEnvolve_BTNPastaTeste)
-        Me.PanelBorder_BTNPastaTeste.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_BTNPastaTeste.Location = New System.Drawing.Point(274, 0)
-        Me.PanelBorder_BTNPastaTeste.Name = "PanelBorder_BTNPastaTeste"
-        Me.PanelBorder_BTNPastaTeste.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNPastaTeste.Size = New System.Drawing.Size(140, 120)
-        Me.PanelBorder_BTNPastaTeste.TabIndex = 29
-        '
-        'PanelEnvolve_BTNPastaTeste
-        '
-        Me.PanelEnvolve_BTNPastaTeste.Controls.Add(Me.BTNPastaTeste)
-        Me.PanelEnvolve_BTNPastaTeste.Controls.Add(Me.BTOpcoes_BTNPastaTeste)
-        Me.PanelEnvolve_BTNPastaTeste.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_BTNPastaTeste.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_BTNPastaTeste.Name = "PanelEnvolve_BTNPastaTeste"
-        Me.PanelEnvolve_BTNPastaTeste.Size = New System.Drawing.Size(138, 118)
-        Me.PanelEnvolve_BTNPastaTeste.TabIndex = 1
-        '
-        'BTNPastaTeste
-        '
-        Me.BTNPastaTeste.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.meuEstiloDePasta01
-        Me.BTNPastaTeste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNPastaTeste.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNPastaTeste.FlatAppearance.BorderSize = 0
-        Me.BTNPastaTeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNPastaTeste.Location = New System.Drawing.Point(0, 0)
-        Me.BTNPastaTeste.Name = "BTNPastaTeste"
-        Me.BTNPastaTeste.Size = New System.Drawing.Size(138, 97)
-        Me.BTNPastaTeste.TabIndex = 0
-        Me.BTNPastaTeste.UseVisualStyleBackColor = True
-        '
-        'BTOpcoes_BTNPastaTeste
-        '
-        Me.BTOpcoes_BTNPastaTeste.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTOpcoes_BTNPastaTeste.FlatAppearance.BorderSize = 0
-        Me.BTOpcoes_BTNPastaTeste.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTOpcoes_BTNPastaTeste.Location = New System.Drawing.Point(0, 97)
-        Me.BTOpcoes_BTNPastaTeste.Name = "BTOpcoes_BTNPastaTeste"
-        Me.BTOpcoes_BTNPastaTeste.Size = New System.Drawing.Size(138, 21)
-        Me.BTOpcoes_BTNPastaTeste.TabIndex = 1
-        Me.BTOpcoes_BTNPastaTeste.Text = "Button2"
-        Me.BTOpcoes_BTNPastaTeste.UseVisualStyleBackColor = True
         '
         'PanelBorder_BTNMaisProcessos
         '
@@ -1041,8 +989,6 @@ Partial Class Control_BurnMenuBar
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
         Me.PanelGravação.ResumeLayout(False)
-        Me.PanelBorder_BTNPastaTeste.ResumeLayout(False)
-        Me.PanelEnvolve_BTNPastaTeste.ResumeLayout(False)
         Me.PanelBorder_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelEnvolve_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelBorder_CKBAbortar.ResumeLayout(False)
@@ -1159,8 +1105,4 @@ Partial Class Control_BurnMenuBar
     Friend WithEvents PanelEnvolve_BTNMaisProcessos As Panel
     Friend WithEvents BTNMaisProcessos As Button
     Friend WithEvents BTNOpcoes_BTNMaisProcessos As Button
-    Friend WithEvents PanelBorder_BTNPastaTeste As Panel
-    Friend WithEvents BTNPastaTeste As Button
-    Friend WithEvents BTOpcoes_BTNPastaTeste As Button
-    Friend WithEvents PanelEnvolve_BTNPastaTeste As Panel
 End Class

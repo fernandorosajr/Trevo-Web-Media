@@ -149,9 +149,7 @@
 
     End Sub
 
-    Private Sub Buttons_MouseUp(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseUp, BTNAbortar.MouseUp, BTNOpcoes_BTNMaisProcessos.MouseUp, BTNMaisProcessos.MouseUp
 
-    End Sub
 
     Private Sub Objects_MouseUp(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseUp, CKBNovaMidia.MouseUp, CKBGravarCriar.MouseUp, CKBOpcoes_CKBGravarCriar.MouseUp, CKBMostrarAgrupamentos.MouseUp, ComBSelectAgrupamento.MouseUp, TXTRotulo.MouseUp, CmBTipoDeMidia.MouseUp, CmBLocalDaMidia.MouseUp, LBL_ComBSelectAgrupamento.MouseUp
         'Ocorre qunado o mouse solta o objeto
@@ -223,7 +221,7 @@
 
     End Sub
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseDown, BTNAbortar.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNMaisProcessos.MouseDown, BTNPastaTeste.MouseDown, BTOpcoes_BTNPastaTeste.MouseDown
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseDown, BTNAbortar.MouseDown, BTNOpcoes_BTNMaisProcessos.MouseDown, BTNMaisProcessos.MouseDown
         Dim btn As Button
         btn = CType(sender, Button)
 
@@ -244,11 +242,6 @@
             Case "BTNMaisProcessos"
                 ' BTNAbortar.b
 
-            Case "BTOpcoes_BTNPastaTeste"
-                ' BTNAbortar.b
-
-            Case "BTNPastaTeste"
-                ' BTNAbortar.b
 
         End Select
 
@@ -271,7 +264,15 @@
         obj.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
         obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
 
-        If sender.GetType.Name.ToString = "CheckBox" Then obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+        If sender.GetType.Name.ToString = "CheckBox" Then
+            If obj.Checked = True Then
+                obj.FlatAppearance.MouseDownBackColor = _backgroundColorChecked
+
+            Else
+                obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
+            End If
+        End If
 
         Select Case obj.Name
 
@@ -354,6 +355,7 @@
 
                     obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
                     obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
+                    '  obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseLeave
 
                 End If
 
@@ -451,32 +453,30 @@
         ' Ocorre quando o mouse passa por cima do elemento
         Dim obj As Object
 
-        If sender.GetType.Name.ToString = "CheckBox" Then
-            obj = CType(sender, CheckBox)
+        Select Case sender.GetType.Name.ToString
+            Case "CheckBox"
+                obj = CType(sender, CheckBox)
 
-            If obj.Checked = True Then
+                If obj.Checked = True Then
 
-                obj.Parent.Parent.BackColor = _borderColorChecked
-                obj.Parent.BackColor = _backgroundColorChecked
-                obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+                    obj.Parent.Parent.BackColor = _borderColorChecked
+                    obj.Parent.BackColor = _backgroundColorChecked
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
 
-            Else
+                Else
+
+                    obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
+                    obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
+
+                End If
+
+            Case Else
+                obj = CType(sender, Object)
 
                 obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
                 obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
-                obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
-
-            End If
-
-        Else
-
-            obj = CType(sender, Object)
-
-            obj.Parent.Parent.BackColor = _borderColorSelectAndMouseHover
-            obj.Parent.BackColor = _backgroundColorSelectAndMouseHover
-            '   obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseHover
-
-        End If
+        End Select
 
         Select Case obj.Name
 
@@ -629,16 +629,19 @@
         If chk.Checked = True Then
             chk.Parent.Parent.BackColor = _borderColorChecked
             chk.FlatAppearance.BorderColor = _borderColorChecked
+            chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
+
             '  chk.FlatAppearance.BorderSize = 1
 
         Else
             chk.Parent.Parent.BackColor = _backgroundColorSelectAndMouseLeave
             chk.Parent.BackColor = _borderColorSelectAndMouseLeave
+            chk.FlatAppearance.CheckedBackColor = _backgroundColorSelectAndMouseLeave
+
             'Color.Transparent
 
             chk.FlatAppearance.BorderSize = 0
         End If
-        chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
 
         Select Case chk.Name
             Case "CKBNovaMidia"
@@ -690,10 +693,6 @@
                     chk.Checked = True
 
                 End If
-
-
-
-
         End Select
 
     End Sub

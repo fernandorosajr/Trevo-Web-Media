@@ -285,14 +285,14 @@
 
     End Sub
 
-    Private Sub CheckBoxs_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown
+    'Private Sub CheckBoxs_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown
 
 
-    End Sub
+    'End Sub
 
     Private Sub Objects_MouseDown(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseDown, CKBNovaMidia.MouseDown, CKBGravarCriar.MouseDown, CKBOpcoes_CKBGravarCriar.MouseDown, CKBMostrarAgrupamentos.MouseDown, ComBSelectAgrupamento.MouseDown, TXTRotulo.MouseDown, CmBTipoDeMidia.MouseDown, CmBLocalDaMidia.MouseDown, LBL_ComBSelectAgrupamento.MouseDown
 
-        ' Ocorre quando o usuario presciona o botão do mouse
+        ' Ocorre quando o usuario preciona o botão do mouse
 
         Dim obj As Object
 
@@ -311,6 +311,8 @@
                     obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
                     obj.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
 
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
+
                 End If
 
             Case Else
@@ -319,10 +321,6 @@
                 obj.Parent.BackColor = _backgroundColorSelectAndMouseDown
 
         End Select
-
-
-        If sender.GetType.Name.ToString = "CheckBox" Then
-        End If
 
         Select Case obj.Name
 
@@ -363,14 +361,6 @@
 
                 End If
 
-                'Case "BTNOpcoes_BTNAbortar"
-                '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
-                '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
-
-                'Case "BTNAbortar"
-                '    BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
-                '    BTNOpcoes_BTNAbortar.BackColor = _backgroundColorSelectAndMouseDown
-
         End Select
 
         Debug.WriteLine("  ")
@@ -401,10 +391,10 @@
 
     End Sub
 
-    Private Sub CheckBoxs_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave
+    'Private Sub CheckBoxs_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave
 
 
-    End Sub
+    'End Sub
 
     Private Sub Objects_MouseLeave(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseLeave, CKBNovaMidia.MouseLeave, CKBGravarCriar.MouseLeave, CKBOpcoes_CKBGravarCriar.MouseLeave, CKBMostrarAgrupamentos.MouseLeave, ComBSelectAgrupamento.MouseLeave, TXTRotulo.MouseLeave, CmBTipoDeMidia.MouseLeave, CmBLocalDaMidia.MouseLeave, LBL_ComBSelectAgrupamento.MouseLeave
 
@@ -428,7 +418,7 @@
 
                     obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
                     obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
-                    '  obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseLeave
+                    obj.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseLeave
 
                 End If
 
@@ -437,7 +427,6 @@
 
                 obj.Parent.Parent.BackColor = _borderColorSelectAndMouseLeave
                 obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
-
 
             Case "ComboBox"
                 obj = CType(sender, ComboBox)
@@ -462,7 +451,6 @@
                 obj.Parent.BackColor = _backgroundColorSelectAndMouseLeave
 
         End Select
-
 
         Select Case obj.Name
             Case "CKBNovaMidia"
@@ -524,14 +512,6 @@
         Debug.WriteLine("  ")
         Debug.WriteLine(" ________________________________________________________ ")
         Debug.WriteLine("MOUSLEAVE")
-        'Debug.WriteLine("  ")
-
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-
-        'Debug.WriteLine("  ")
-        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
-        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
 
         Debug.WriteLine("  ")
         Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
@@ -546,7 +526,6 @@
         Debug.WriteLine(" ________________________________________________________ ")
     End Sub
 
-
     Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNAbortar.MouseMove, BTNAbortar.MouseMove, BTNOpcoes_BTNMaisProcessos.MouseMove, BTNMaisProcessos.MouseMove
         Dim btn As Button
         btn = CType(sender, Button)
@@ -556,13 +535,12 @@
         btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
     End Sub
 
-    Private Sub CheckBoxs_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove
+    'Private Sub CheckBoxs_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove
 
 
-    End Sub
+    'End Sub
 
     Private Sub Objects_MouseMove(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseMove, CKBNovaMidia.MouseMove, CKBGravarCriar.MouseMove, CKBOpcoes_CKBGravarCriar.MouseMove, CKBMostrarAgrupamentos.MouseMove, ComBSelectAgrupamento.MouseMove, TXTRotulo.MouseMove, CmBTipoDeMidia.MouseMove, CmBLocalDaMidia.MouseMove, LBL_ComBSelectAgrupamento.MouseMove
-
 
         ' Ocorre quando o mouse passa por cima do elemento
         Dim obj As Object
@@ -658,15 +636,6 @@
         Debug.WriteLine(" ________________________________________________________ ")
         Debug.WriteLine("MOUSEMOVE")
 
-        'Debug.WriteLine("  ")
-
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-        'Debug.WriteLine(obj.Name & obj.BackColor.ToString)
-
-        'Debug.WriteLine("  ")
-        'Debug.WriteLine(obj.Parent.Name & obj.Parent.BackColor.ToString)
-        'Debug.WriteLine(obj.Parent.Parent.Name & obj.Parent.Parent.BackColor.ToString)
-
         Debug.WriteLine("  ")
         Debug.WriteLine(BTNMaisProcessos.Name & BTNMaisProcessos.BackColor.ToString)
         Debug.WriteLine(BTNMaisProcessos.Parent.Name & BTNMaisProcessos.Parent.BackColor.ToString)
@@ -690,10 +659,10 @@
 
     End Sub
 
-    Private Sub CheckBoxs_MouseOver(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover
+    'Private Sub CheckBoxs_MouseOver(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover
 
 
-    End Sub
+    'End Sub
 
     Private Sub Objects_MouseOver(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.MouseHover, CKBNovaMidia.MouseHover, CKBGravarCriar.MouseHover, CKBOpcoes_CKBGravarCriar.MouseHover, CKBMostrarAgrupamentos.MouseHover, ComBSelectAgrupamento.MouseHover, TXTRotulo.MouseHover, CmBTipoDeMidia.MouseHover, CmBLocalDaMidia.MouseHover, LBL_ComBSelectAgrupamento.MouseHover
 
@@ -817,39 +786,41 @@
     End Sub
 
 
-    Private Sub CheckBoxs_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
+    'Private Sub CheckBoxs_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
 
 
-    End Sub
+    'End Sub
 
     Private Sub Objects_CheckedChanged(sender As Object, e As EventArgs) Handles CKBOpcoes_CKBNovaMidia.CheckedChanged, CKBNovaMidia.CheckedChanged, CKBGravarCriar.CheckedChanged, CKBOpcoes_CKBGravarCriar.CheckedChanged, CKBMostrarAgrupamentos.CheckedChanged
 
         Dim chk As CheckBox
         chk = CType(sender, CheckBox)
 
-        If chk.Checked = True Then
-            chk.Parent.Parent.BackColor = _borderColorChecked
-            chk.FlatAppearance.BorderColor = _borderColorChecked
-            chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
+        Select Case chk.Checked
+            Case True
+                chk.Parent.Parent.BackColor = _borderColorChecked
+                chk.FlatAppearance.BorderColor = _borderColorChecked
 
-            '  chk.FlatAppearance.BorderSize = 1
+                '    chk.FlatAppearance.MouseOverBackColor = _backgroundColorChecked
 
-        Else
-            chk.Parent.Parent.BackColor = _backgroundColorSelectAndMouseLeave
-            chk.Parent.BackColor = _borderColorSelectAndMouseLeave
-            chk.FlatAppearance.CheckedBackColor = _backgroundColorSelectAndMouseLeave
+                chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
+            Case Else
+                chk.Parent.Parent.BackColor = Color.Transparent '_backgroundColorSelectAndMouseLeave
+                chk.Parent.BackColor = Color.Transparent ' _borderColorSelectAndMouseLeave
+                ' chk.FlatAppearance.CheckedBackColor = Color.Transparent ' _backgroundColorSelectAndMouseLeave
 
-            'Color.Transparent
+                'Color.Transparent
 
-            chk.FlatAppearance.BorderSize = 0
-        End If
+                '   chk.FlatAppearance.BorderSize = 0
 
+        End Select
+        '   chk.FlatAppearance.CheckedBackColor = _backgroundColorChecked
         Select Case chk.Name
             Case "CKBNovaMidia"
                 CKBOpcoes_CKBNovaMidia.Checked = CKBNovaMidia.Checked
 
-                PanelEnvolve_PanelAgrupaGerenciar.Visible = chk.CheckState
-                PanelBorder_CKBGravarCriar.Enabled = chk.CheckState
+                PanelEnvolve_PanelAgrupaGerenciar.Visible = chk.Checked
+                PanelBorder_CKBGravarCriar.Enabled = chk.Checked
 
               '  PanelBorder_CKBAbortar.Enabled = Not (PanelBorder_CKBGravarCriar.Enabled)
 

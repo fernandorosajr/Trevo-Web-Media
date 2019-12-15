@@ -28,12 +28,12 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
         Me.PanelOrganizar = New System.Windows.Forms.Panel()
         Me.PanelAgrupaOrganizar = New System.Windows.Forms.Panel()
+        Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.PanelBorder_BTNRenomear = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNRenomear = New System.Windows.Forms.Panel()
         Me.BTNRenomear = New System.Windows.Forms.Button()
-        Me.CMenuS_BTNOpcoes_Renomear = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.BTNOpcoes_BTNRenomear = New System.Windows.Forms.Button()
         Me.PanelBorder_BTNExcluir = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNExcluir = New System.Windows.Forms.Panel()
@@ -122,19 +122,15 @@ Partial Class Control_MenuBar
         Me.BTNOpcoes_BTNNovaPasta = New System.Windows.Forms.Button()
         Me.Panel67 = New System.Windows.Forms.Panel()
         Me.LBLNova = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_PanelAgrupaOrganizar.SuspendLayout()
         Me.PanelOrganizar.SuspendLayout()
         Me.PanelAgrupaOrganizar.SuspendLayout()
+        Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.PanelBorder_BTNRenomear.SuspendLayout()
         Me.PanelEnvolve_BTNRenomear.SuspendLayout()
-        Me.CMenuS_BTNOpcoes_Renomear.SuspendLayout()
         Me.PanelBorder_BTNExcluir.SuspendLayout()
         Me.PanelEnvolve_BTNExcluir.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNExcluir.SuspendLayout()
@@ -177,8 +173,6 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNNovaPasta.SuspendLayout()
         Me.PanelEnvolve_BTNNovaPasta.SuspendLayout()
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -208,7 +202,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(611, 0)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Name = "PanelEnvolve_PanelAgrupaOrganizar"
         Me.PanelEnvolve_PanelAgrupaOrganizar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(425, 89)
+        Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(287, 89)
         Me.PanelEnvolve_PanelAgrupaOrganizar.TabIndex = 9
         '
         'PanelOrganizar
@@ -219,18 +213,31 @@ Partial Class Control_MenuBar
         Me.PanelOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelOrganizar.Location = New System.Drawing.Point(3, 3)
         Me.PanelOrganizar.Name = "PanelOrganizar"
-        Me.PanelOrganizar.Size = New System.Drawing.Size(419, 83)
+        Me.PanelOrganizar.Size = New System.Drawing.Size(281, 83)
         Me.PanelOrganizar.TabIndex = 6
         '
         'PanelAgrupaOrganizar
         '
-        Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel1)
         Me.PanelAgrupaOrganizar.Controls.Add(Me.Panel16)
         Me.PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAgrupaOrganizar.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaOrganizar.Name = "PanelAgrupaOrganizar"
-        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(418, 70)
+        Me.PanelAgrupaOrganizar.Size = New System.Drawing.Size(280, 70)
         Me.PanelAgrupaOrganizar.TabIndex = 11
+        '
+        'CMenuS_BTNOpcoes_Renomear
+        '
+        Me.CMenuS_BTNOpcoes_Renomear.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CMenuS_BTNOpcoes_Renomear.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
+        Me.CMenuS_BTNOpcoes_Renomear.Name = "ContextMenuStrip1"
+        Me.CMenuS_BTNOpcoes_Renomear.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMenuS_BTNOpcoes_Renomear.Size = New System.Drawing.Size(119, 26)
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
+        Me.ToolStripMenuItem2.Text = "Critérios"
         '
         'Panel16
         '
@@ -285,20 +292,6 @@ Partial Class Control_MenuBar
         Me.BTNRenomear.TabIndex = 8
         Me.BTNRenomear.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.BTNRenomear.UseVisualStyleBackColor = False
-        '
-        'CMenuS_BTNOpcoes_Renomear
-        '
-        Me.CMenuS_BTNOpcoes_Renomear.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.CMenuS_BTNOpcoes_Renomear.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2})
-        Me.CMenuS_BTNOpcoes_Renomear.Name = "ContextMenuStrip1"
-        Me.CMenuS_BTNOpcoes_Renomear.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_Renomear.Size = New System.Drawing.Size(119, 26)
-        '
-        'ToolStripMenuItem2
-        '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(118, 22)
-        Me.ToolStripMenuItem2.Text = "Critérios"
         '
         'BTNOpcoes_BTNRenomear
         '
@@ -594,7 +587,7 @@ Partial Class Control_MenuBar
         '
         Me.Panel20.BackColor = System.Drawing.Color.LightGray
         Me.Panel20.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel20.Location = New System.Drawing.Point(418, 0)
+        Me.Panel20.Location = New System.Drawing.Point(280, 0)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(1, 70)
         Me.Panel20.TabIndex = 10
@@ -607,7 +600,7 @@ Partial Class Control_MenuBar
         Me.LBLOrganizar.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.LBLOrganizar.Location = New System.Drawing.Point(0, 70)
         Me.LBLOrganizar.Name = "LBLOrganizar"
-        Me.LBLOrganizar.Size = New System.Drawing.Size(419, 13)
+        Me.LBLOrganizar.Size = New System.Drawing.Size(281, 13)
         Me.LBLOrganizar.TabIndex = 6
         Me.LBLOrganizar.Text = "Organizar"
         Me.LBLOrganizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1364,66 +1357,6 @@ Partial Class Control_MenuBar
         Me.LBLNova.Text = "Nova"
         Me.LBLNova.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(273, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel1.Size = New System.Drawing.Size(89, 70)
-        Me.Panel1.TabIndex = 23
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(1, 1)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(87, 68)
-        Me.Panel2.TabIndex = 10
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.ContextMenuStrip = Me.CMenuS_BTNOpcoes_Renomear
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 48)
-        Me.Button1.TabIndex = 8
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.ContextMenuStrip = Me.CMenuS_BTNOpcoes_Renomear
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button2.Location = New System.Drawing.Point(0, 48)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(87, 20)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Renomear"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
         'Control_MenuBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1437,10 +1370,10 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaOrganizar.ResumeLayout(False)
         Me.PanelOrganizar.ResumeLayout(False)
         Me.PanelAgrupaOrganizar.ResumeLayout(False)
+        Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.PanelBorder_BTNRenomear.ResumeLayout(False)
         Me.PanelEnvolve_BTNRenomear.ResumeLayout(False)
-        Me.CMenuS_BTNOpcoes_Renomear.ResumeLayout(False)
         Me.PanelBorder_BTNExcluir.ResumeLayout(False)
         Me.PanelEnvolve_BTNExcluir.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNExcluir.ResumeLayout(False)
@@ -1489,8 +1422,6 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNNovaPasta.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaPasta.ResumeLayout(False)
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1594,8 +1525,4 @@ Partial Class Control_MenuBar
     Friend WithEvents PerguntarAntesDeExcluirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CMenuS_BTNOpcoes_Renomear As ContextMenuStrip
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
 End Class

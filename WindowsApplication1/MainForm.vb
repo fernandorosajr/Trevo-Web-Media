@@ -21,14 +21,13 @@ Public Class MainForm
     Public toolBar_Menu As New Control_MenuBar
     Public toolBar_ViewMenu As New Control_ViewMenuBar
     Public toolBar_BurnMenu As New Control_BurnMenuBar
+    Public toolBar_OrganizeMenu As New Control_OrganizeMenuBar
 
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
-
-
-
-
     ' -------------------------------------------------------
+
+
 
     Dim pMouse As Point
     Dim state As Integer
@@ -172,6 +171,10 @@ Long, lpColorValues As Long) As Long
         Panel_MenuBar.Controls.Add(toolBar_BurnMenu)
         toolBar_BurnMenu.Dock = DockStyle.Fill
         toolBar_BurnMenu.Visible = False
+
+        Panel_MenuBar.Controls.Add(toolBar_OrganizeMenu)
+        toolBar_OrganizeMenu.Dock = DockStyle.Fill
+        toolBar_OrganizeMenu.Visible = False
 
         PanelLoad_ControlSelectFileAndFoldePanel.Controls.Add(_controlSelectFileAndFolderPanel)
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
@@ -709,6 +712,8 @@ Long, lpColorValues As Long) As Long
         toolBar_Menu.Visible = ChBInicio.Checked
         toolBar_ViewMenu.Visible = ChBExibir.Checked
         toolBar_BurnMenu.Visible = ChBGravar.Checked
+        toolBar_OrganizeMenu.Visible = ChBOrganizar.Checked
+
     End Sub
 
 

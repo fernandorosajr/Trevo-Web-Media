@@ -30,21 +30,21 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelAgruparGravacao = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBAbortar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
-        Me.BTNAbortar = New System.Windows.Forms.Button()
         Me.BTNOpcoes_BTNAbortar = New System.Windows.Forms.Button()
         Me.PanelEspacamento04 = New System.Windows.Forms.Panel()
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.LBLOrganizar = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PanelEspacamento02 = New System.Windows.Forms.Panel()
         Me.PanelEspacamento01 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BTNAbortar = New System.Windows.Forms.Button()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
         Me.PanelEnvolve_Gravacao.SuspendLayout()
@@ -142,25 +142,6 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelEnvolve_CKBAbortar.Size = New System.Drawing.Size(110, 118)
         Me.PanelEnvolve_CKBAbortar.TabIndex = 10
         '
-        'BTNAbortar
-        '
-        Me.BTNAbortar.BackColor = System.Drawing.Color.Transparent
-        Me.BTNAbortar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
-        Me.BTNAbortar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNAbortar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNAbortar.FlatAppearance.BorderSize = 0
-        Me.BTNAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNAbortar.ForeColor = System.Drawing.Color.Black
-        Me.BTNAbortar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNAbortar.Location = New System.Drawing.Point(0, 0)
-        Me.BTNAbortar.Name = "BTNAbortar"
-        Me.BTNAbortar.Size = New System.Drawing.Size(110, 97)
-        Me.BTNAbortar.TabIndex = 10
-        Me.BTNAbortar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNAbortar.UseVisualStyleBackColor = False
-        '
         'BTNOpcoes_BTNAbortar
         '
         Me.BTNOpcoes_BTNAbortar.BackColor = System.Drawing.Color.Transparent
@@ -230,25 +211,6 @@ Partial Class Control_OrganizeMenuBar
         Me.Panel2.Size = New System.Drawing.Size(106, 118)
         Me.Panel2.TabIndex = 10
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 97)
-        Me.Button1.TabIndex = 10
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.Transparent
@@ -288,25 +250,6 @@ Partial Class Control_OrganizeMenuBar
         Me.Panel4.Size = New System.Drawing.Size(106, 118)
         Me.Panel4.TabIndex = 10
         '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button3.Location = New System.Drawing.Point(0, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 97)
-        Me.Button3.TabIndex = 10
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = False
-        '
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Transparent
@@ -340,6 +283,63 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelEspacamento01.Name = "PanelEspacamento01"
         Me.PanelEspacamento01.Size = New System.Drawing.Size(1, 120)
         Me.PanelEspacamento01.TabIndex = 31
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.Transparent
+        Me.Button3.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.abort
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button3.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button3.Location = New System.Drawing.Point(0, 0)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(106, 97)
+        Me.Button3.TabIndex = 10
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Button1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomearEmLote
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Button1.Location = New System.Drawing.Point(0, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(106, 97)
+        Me.Button1.TabIndex = 10
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'BTNAbortar
+        '
+        Me.BTNAbortar.BackColor = System.Drawing.Color.Transparent
+        Me.BTNAbortar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomearEmLote
+        Me.BTNAbortar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNAbortar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNAbortar.FlatAppearance.BorderSize = 0
+        Me.BTNAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNAbortar.ForeColor = System.Drawing.Color.Black
+        Me.BTNAbortar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNAbortar.Location = New System.Drawing.Point(0, 0)
+        Me.BTNAbortar.Name = "BTNAbortar"
+        Me.BTNAbortar.Size = New System.Drawing.Size(110, 97)
+        Me.BTNAbortar.TabIndex = 10
+        Me.BTNAbortar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNAbortar.UseVisualStyleBackColor = False
         '
         'Control_OrganizeMenuBar
         '

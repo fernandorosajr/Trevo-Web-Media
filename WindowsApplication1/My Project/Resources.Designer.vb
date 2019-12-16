@@ -1773,6 +1773,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property renomearEmLote() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("renomearEmLote", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property resolucao() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("resolucao", resourceCulture)

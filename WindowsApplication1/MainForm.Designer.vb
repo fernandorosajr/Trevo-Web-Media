@@ -768,6 +768,7 @@ Partial Class MainForm
         'Label1
         '
         Me.Label1.AutoEllipsis = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(68, Byte), Integer))
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.Gainsboro
         Me.Label1.Name = "Label1"
@@ -898,7 +899,7 @@ Partial Class MainForm
         'Button39
         '
         Me.Button39.AutoEllipsis = True
-        Me.Button39.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button39.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.Button39.FlatAppearance.BorderSize = 0
         Me.Button39.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         resources.ApplyResources(Me.Button39, "Button39")
@@ -1254,7 +1255,7 @@ Partial Class MainForm
         resources.ApplyResources(Me.RB_Bibliotecas, "RB_Bibliotecas")
         Me.RB_Bibliotecas.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RB_Bibliotecas.FlatAppearance.BorderSize = 0
-        Me.RB_Bibliotecas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RB_Bibliotecas.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.RB_Bibliotecas.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.RB_Bibliotecas.ForeColor = System.Drawing.Color.Silver
         Me.RB_Bibliotecas.Name = "RB_Bibliotecas"
@@ -1265,7 +1266,7 @@ Partial Class MainForm
         resources.ApplyResources(Me.RB_ExibePanelMidiaAtiva, "RB_ExibePanelMidiaAtiva")
         Me.RB_ExibePanelMidiaAtiva.Checked = True
         Me.RB_ExibePanelMidiaAtiva.FlatAppearance.BorderSize = 0
-        Me.RB_ExibePanelMidiaAtiva.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RB_ExibePanelMidiaAtiva.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.RB_ExibePanelMidiaAtiva.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.RB_ExibePanelMidiaAtiva.ForeColor = System.Drawing.Color.Silver
         Me.RB_ExibePanelMidiaAtiva.Name = "RB_ExibePanelMidiaAtiva"

@@ -10409,9 +10409,6 @@
   <data name="Panel_Recebe_Filtro.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 382</value>
   </data>
-  <data name="Panel_Recebe_Filtro.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 0</value>
-  </data>
   <data name="Panel_Recebe_Filtro.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 132</value>
   </data>

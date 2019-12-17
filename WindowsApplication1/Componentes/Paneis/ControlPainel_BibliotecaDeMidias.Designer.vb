@@ -22,6 +22,7 @@ Partial Class ControlPainel_BibliotecaDeMidias
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
         Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
         Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
         Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
@@ -31,31 +32,80 @@ Partial Class ControlPainel_BibliotecaDeMidias
         Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
         Dim TreeNode9 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
         Dim TreeNode10 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
         Me.PanelBiblioMidia = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
+        Me.TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.TreeView()
+        Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.PanelEnvolveTVWBiblioMedias = New System.Windows.Forms.Panel()
         Me.TVWBiblioMedias = New System.Windows.Forms.TreeView()
-        Me.PanelEnvolveMidiaAberta = New System.Windows.Forms.Panel()
-        Me.Panel32 = New System.Windows.Forms.Panel()
-        Me.TVFiles = New System.Windows.Forms.TreeView()
-        Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.PanelBiblioMidia.SuspendLayout()
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
         Me.PanelEnvolveTVWBiblioMedias.SuspendLayout()
-        Me.PanelEnvolveMidiaAberta.SuspendLayout()
-        Me.Panel32.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelBiblioMidia
         '
         Me.PanelBiblioMidia.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.PanelBiblioMidia.Controls.Add(Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia)
         Me.PanelBiblioMidia.Controls.Add(Me.Splitter1)
-        Me.PanelBiblioMidia.Controls.Add(Me.PanelEnvolveMidiaAberta)
         Me.PanelBiblioMidia.Controls.Add(Me.PanelEnvolveTVWBiblioMedias)
         Me.PanelBiblioMidia.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBiblioMidia.Location = New System.Drawing.Point(0, 0)
         Me.PanelBiblioMidia.Name = "PanelBiblioMidia"
         Me.PanelBiblioMidia.Size = New System.Drawing.Size(366, 492)
         Me.PanelBiblioMidia.TabIndex = 17
+        '
+        'PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia
+        '
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.Controls.Add(Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia)
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.Location = New System.Drawing.Point(0, 170)
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.Name = "PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia"
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.Size = New System.Drawing.Size(366, 322)
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.TabIndex = 90
+        '
+        'PanelBorder_TVFilesAndFoldersOfTheOpenMedia
+        '
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Controls.Add(Me.TVFilesAndFoldersOfTheOpenMedia)
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Name = "PanelBorder_TVFilesAndFoldersOfTheOpenMedia"
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.Size = New System.Drawing.Size(366, 322)
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.TabIndex = 88
+        '
+        'TVFilesAndFoldersOfTheOpenMedia
+        '
+        Me.TVFilesAndFoldersOfTheOpenMedia.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TVFilesAndFoldersOfTheOpenMedia.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TVFilesAndFoldersOfTheOpenMedia.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TVFilesAndFoldersOfTheOpenMedia.ForeColor = System.Drawing.Color.Gainsboro
+        Me.TVFilesAndFoldersOfTheOpenMedia.FullRowSelect = True
+        Me.TVFilesAndFoldersOfTheOpenMedia.HideSelection = False
+        Me.TVFilesAndFoldersOfTheOpenMedia.Location = New System.Drawing.Point(1, 1)
+        Me.TVFilesAndFoldersOfTheOpenMedia.Name = "TVFilesAndFoldersOfTheOpenMedia"
+        TreeNode1.ImageKey = "CD.ico"
+        TreeNode1.Name = "Node1"
+        TreeNode1.SelectedImageKey = "CD.ico"
+        TreeNode1.Text = "<Selecione uma mídia>"
+        Me.TVFilesAndFoldersOfTheOpenMedia.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
+        Me.TVFilesAndFoldersOfTheOpenMedia.ShowLines = False
+        Me.TVFilesAndFoldersOfTheOpenMedia.Size = New System.Drawing.Size(364, 320)
+        Me.TVFilesAndFoldersOfTheOpenMedia.TabIndex = 87
+        '
+        'Splitter1
+        '
+        Me.Splitter1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Splitter1.Location = New System.Drawing.Point(0, 167)
+        Me.Splitter1.Name = "Splitter1"
+        Me.Splitter1.Size = New System.Drawing.Size(366, 3)
+        Me.Splitter1.TabIndex = 88
+        Me.Splitter1.TabStop = False
         '
         'PanelEnvolveTVWBiblioMedias
         '
@@ -70,7 +120,7 @@ Partial Class ControlPainel_BibliotecaDeMidias
         '
         'TVWBiblioMedias
         '
-        Me.TVWBiblioMedias.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.TVWBiblioMedias.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TVWBiblioMedias.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TVWBiblioMedias.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TVWBiblioMedias.ForeColor = System.Drawing.Color.Silver
@@ -116,55 +166,6 @@ Partial Class ControlPainel_BibliotecaDeMidias
         Me.TVWBiblioMedias.Size = New System.Drawing.Size(364, 165)
         Me.TVWBiblioMedias.TabIndex = 87
         '
-        'PanelEnvolveMidiaAberta
-        '
-        Me.PanelEnvolveMidiaAberta.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.PanelEnvolveMidiaAberta.Controls.Add(Me.Panel32)
-        Me.PanelEnvolveMidiaAberta.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolveMidiaAberta.Location = New System.Drawing.Point(0, 167)
-        Me.PanelEnvolveMidiaAberta.Name = "PanelEnvolveMidiaAberta"
-        Me.PanelEnvolveMidiaAberta.Size = New System.Drawing.Size(366, 325)
-        Me.PanelEnvolveMidiaAberta.TabIndex = 90
-        '
-        'Panel32
-        '
-        Me.Panel32.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Panel32.Controls.Add(Me.TVFiles)
-        Me.Panel32.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel32.Location = New System.Drawing.Point(0, 0)
-        Me.Panel32.Name = "Panel32"
-        Me.Panel32.Size = New System.Drawing.Size(366, 325)
-        Me.Panel32.TabIndex = 88
-        '
-        'TVFiles
-        '
-        Me.TVFiles.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.TVFiles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TVFiles.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TVFiles.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TVFiles.FullRowSelect = True
-        Me.TVFiles.HideSelection = False
-        Me.TVFiles.Location = New System.Drawing.Point(0, 0)
-        Me.TVFiles.Name = "TVFiles"
-        TreeNode1.ImageKey = "CD.ico"
-        TreeNode1.Name = "Node1"
-        TreeNode1.SelectedImageKey = "CD.ico"
-        TreeNode1.Text = "<Selecione uma mídia>"
-        Me.TVFiles.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
-        Me.TVFiles.ShowLines = False
-        Me.TVFiles.Size = New System.Drawing.Size(366, 325)
-        Me.TVFiles.TabIndex = 87
-        '
-        'Splitter1
-        '
-        Me.Splitter1.BackColor = System.Drawing.Color.Gray
-        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Splitter1.Location = New System.Drawing.Point(0, 167)
-        Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(366, 3)
-        Me.Splitter1.TabIndex = 88
-        Me.Splitter1.TabStop = False
-        '
         'ControlPainel_BibliotecaDeMidias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -174,9 +175,9 @@ Partial Class ControlPainel_BibliotecaDeMidias
         Me.Name = "ControlPainel_BibliotecaDeMidias"
         Me.Size = New System.Drawing.Size(366, 492)
         Me.PanelBiblioMidia.ResumeLayout(False)
+        Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.ResumeLayout(False)
+        Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.ResumeLayout(False)
         Me.PanelEnvolveTVWBiblioMedias.ResumeLayout(False)
-        Me.PanelEnvolveMidiaAberta.ResumeLayout(False)
-        Me.Panel32.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -185,7 +186,7 @@ Partial Class ControlPainel_BibliotecaDeMidias
     Friend WithEvents PanelEnvolveTVWBiblioMedias As Panel
     Friend WithEvents TVWBiblioMedias As TreeView
     Friend WithEvents Splitter1 As Splitter
-    Friend WithEvents PanelEnvolveMidiaAberta As Panel
-    Friend WithEvents Panel32 As Panel
-    Friend WithEvents TVFiles As TreeView
+    Friend WithEvents PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia As Panel
+    Friend WithEvents PanelBorder_TVFilesAndFoldersOfTheOpenMedia As Panel
+    Friend WithEvents TVFilesAndFoldersOfTheOpenMedia As TreeView
 End Class

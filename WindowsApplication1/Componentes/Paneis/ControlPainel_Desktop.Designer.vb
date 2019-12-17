@@ -24,40 +24,55 @@ Partial Class ControlPainel_Desktop
     Private Sub InitializeComponent()
         Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
         Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode1})
-        Me.TreeView10 = New System.Windows.Forms.TreeView()
+        Me.TVWDesktop = New System.Windows.Forms.TreeView()
+        Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
+        Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TreeView10
+        'TVWDesktop
         '
-        Me.TreeView10.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.TreeView10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TreeView10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TreeView10.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TreeView10.FullRowSelect = True
-        Me.TreeView10.HideSelection = False
-        Me.TreeView10.Location = New System.Drawing.Point(0, 0)
-        Me.TreeView10.Name = "TreeView10"
+        Me.TVWDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TVWDesktop.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TVWDesktop.ForeColor = System.Drawing.Color.Gainsboro
+        Me.TVWDesktop.FullRowSelect = True
+        Me.TVWDesktop.HideSelection = False
+        Me.TVWDesktop.Location = New System.Drawing.Point(1, 1)
+        Me.TVWDesktop.Name = "TVWDesktop"
         TreeNode1.Name = "Computador"
         TreeNode1.Text = "Computador"
         TreeNode2.ImageKey = "Desktop.ico"
         TreeNode2.Name = "Desktop"
         TreeNode2.SelectedImageKey = "Desktop.ico"
         TreeNode2.Text = "Desktop"
-        Me.TreeView10.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
-        Me.TreeView10.ShowLines = False
-        Me.TreeView10.Size = New System.Drawing.Size(322, 455)
-        Me.TreeView10.TabIndex = 3
+        Me.TVWDesktop.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
+        Me.TVWDesktop.ShowLines = False
+        Me.TVWDesktop.Size = New System.Drawing.Size(320, 453)
+        Me.TVWDesktop.TabIndex = 3
         '
-        'UserControl2
+        'PanelBorder_TVWDesktop
+        '
+        Me.PanelBorder_TVWDesktop.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_TVWDesktop.Controls.Add(Me.TVWDesktop)
+        Me.PanelBorder_TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_TVWDesktop.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_TVWDesktop.Name = "PanelBorder_TVWDesktop"
+        Me.PanelBorder_TVWDesktop.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(322, 455)
+        Me.PanelBorder_TVWDesktop.TabIndex = 4
+        '
+        'ControlPainel_Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.TreeView10)
-        Me.Name = "UserControl2"
+        Me.Controls.Add(Me.PanelBorder_TVWDesktop)
+        Me.Name = "ControlPainel_Desktop"
         Me.Size = New System.Drawing.Size(322, 455)
+        Me.PanelBorder_TVWDesktop.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents TreeView10 As TreeView
+    Friend WithEvents TVWDesktop As TreeView
+    Friend WithEvents PanelBorder_TVWDesktop As Panel
 End Class

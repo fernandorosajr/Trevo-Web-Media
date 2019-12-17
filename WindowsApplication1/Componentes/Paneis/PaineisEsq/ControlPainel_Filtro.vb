@@ -1,5 +1,5 @@
 ﻿Public Class ControlPainel_Filtro
-    Private Sub BTNLBLTitle_Click(sender As Object, e As EventArgs) Handles BTNLBLTitle.Click
+    Private Sub BTNLBLTitle_Click(sender As Object, e As EventArgs) Handles BTNLBLTitle.Click, LBLTitle.DoubleClick
 
         If Panel_Filtro.AutoSize = False Then
 
@@ -9,8 +9,9 @@
             Panel_Border.AutoSize = True
             Me.AutoSize = True
             Me.Parent.AutoSize = True
-            PanelTXTFiltrar.Dock = DockStyle.Top
+            '  Panel_Explorer_Prima.Dock = DockStyle.Top
             Me.Dock = DockStyle.Top
+            Panel_Explorer_Prima.Visible = False
 
         Else
 
@@ -21,9 +22,12 @@
             Me.AutoSize = False
             Me.Parent.AutoSize = False
             Me.Dock = DockStyle.Fill
-            PanelTXTFiltrar.Dock = DockStyle.Fill
+            '  Panel_Explorer_Prima.Dock = DockStyle.Fill
+            Panel_Explorer_Prima.Visible = True
+
 
         End If
+
     End Sub
 
     Private Sub ControlPainel_Filtro_Load(sender As Object, e As EventArgs) Handles Me.Load

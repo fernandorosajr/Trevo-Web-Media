@@ -163,46 +163,40 @@
     <Compile Include="Componentes\OutrosComponentes\CustomControl_Test.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_BurnMenuBar.Designer.vb">
+    <Compile Include="Componentes\MenusBar\Control_BurnMenuBar.Designer.vb">
       <DependentUpon>Control_BurnMenuBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_BurnMenuBar.vb">
+    <Compile Include="Componentes\MenusBar\Control_BurnMenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar.Designer.vb">
+    <Compile Include="Componentes\MenusBar\Control_OrganizeMenuBar.Designer.vb">
       <DependentUpon>Control_OrganizeMenuBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar.vb">
+    <Compile Include="Componentes\MenusBar\Control_OrganizeMenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.Designer.vb">
-      <DependentUpon>Control_OrganizeMenuBar02.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.Designer.vb">
+    <Compile Include="Componentes\MenusBar\Control_ViewMenuBar.Designer.vb">
       <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.vb">
+    <Compile Include="Componentes\MenusBar\Control_ViewMenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\ControlSelectFileAndFoldePanel.Designer.vb">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\ControlSelectFileAndFoldePanel.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelAtividades\Control_Infor.Designer.vb">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelAtividades\Control_Infor.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.Designer.vb">
+    <Compile Include="Componentes\MenusBar\Control_MenuBar.Designer.vb">
       <DependentUpon>Control_MenuBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.vb">
+    <Compile Include="Componentes\MenusBar\Control_MenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.Designer.vb">
@@ -211,40 +205,40 @@
     <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlPainel_Acoes.Designer.vb">
       <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlPainel_Acoes.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelAtividades\ControlPainel_Atividades.Designer.vb">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelAtividades\ControlPainel_Atividades.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlItemMetadados.Designer.vb">
       <DependentUpon>ControlItemMetadados.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlItemMetadados.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlPainel_Detalhes.Designer.vb">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlPainel_Detalhes.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlItemDePainelDeAcoes.Designer.vb">
       <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlItemDePainelDeAcoes.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\Control_EnvolveLstBGeral.Designer.vb">
       <DependentUpon>Control_EnvolveLstBGeral.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.vb">
+    <Compile Include="Componentes\Paneis\PaineisDir\PainelDetalhes\Control_EnvolveLstBGeral.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\UserControl1.Designer.vb">
@@ -277,10 +271,10 @@
     <Compile Include="Componentes\Paneis\ControlPainel_Desktop.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_Filtro.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.Designer.vb">
       <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_Filtro.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form1.Designer.vb">
@@ -325,46 +319,43 @@
     <EmbeddedResource Include="Componentes\OutrosComponentes\CustomControl_Test.resx">
       <DependentUpon>CustomControl_Test.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_BurnMenuBar.resx">
+    <EmbeddedResource Include="Componentes\MenusBar\Control_BurnMenuBar.resx">
       <DependentUpon>Control_BurnMenuBar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar.resx">
+    <EmbeddedResource Include="Componentes\MenusBar\Control_OrganizeMenuBar.resx">
       <DependentUpon>Control_OrganizeMenuBar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.resx">
-      <DependentUpon>Control_OrganizeMenuBar02.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.resx">
+    <EmbeddedResource Include="Componentes\MenusBar\Control_ViewMenuBar.resx">
       <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\ControlSelectFileAndFoldePanel.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\ControlSelectFileAndFoldePanel.resx">
       <DependentUpon>ControlSelectFileAndFoldePanel.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\Control_Infor.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelAtividades\Control_Infor.resx">
       <DependentUpon>Control_Infor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_MenuBar.resx">
+    <EmbeddedResource Include="Componentes\MenusBar\Control_MenuBar.resx">
       <DependentUpon>Control_MenuBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\ControlPainel_PastaIsolada.resx">
       <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlPainel_Acoes.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlPainel_Acoes.resx">
       <DependentUpon>ControlPainel_Acoes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelAtividades\ControlPainel_Atividades.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelAtividades\ControlPainel_Atividades.resx">
       <DependentUpon>ControlPainel_Atividades.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlItemMetadados.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlItemMetadados.resx">
       <DependentUpon>ControlItemMetadados.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\ControlPainel_Detalhes.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDetalhes\ControlPainel_Detalhes.resx">
       <DependentUpon>ControlPainel_Detalhes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDeAcoes\ControlItemDePainelDeAcoes.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlItemDePainelDeAcoes.resx">
       <DependentUpon>ControlItemDePainelDeAcoes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\Painel Dir\PainelDetalhes\Control_EnvolveLstBGeral.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDetalhes\Control_EnvolveLstBGeral.resx">
       <DependentUpon>Control_EnvolveLstBGeral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
@@ -382,7 +373,7 @@
     <EmbeddedResource Include="Componentes\Paneis\ControlPainel_Desktop.resx">
       <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_Filtro.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.resx">
       <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">

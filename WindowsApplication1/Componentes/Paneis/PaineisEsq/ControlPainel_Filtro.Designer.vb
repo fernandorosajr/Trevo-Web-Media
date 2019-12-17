@@ -22,8 +22,8 @@ Partial Class ControlPainel_Filtro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Filtro))
         Me.TVWFiltro = New System.Windows.Forms.TreeView()
         Me.Panel_Filtro = New System.Windows.Forms.Panel()
@@ -36,6 +36,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel34 = New System.Windows.Forms.Panel()
         Me.Label105 = New System.Windows.Forms.Label()
         Me.Button121 = New System.Windows.Forms.Button()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.Panel_Filtro.SuspendLayout()
         Me.Panel_Explorer_Prima.SuspendLayout()
         Me.Panel_ExplorarPorFiltro.SuspendLayout()
@@ -54,17 +55,17 @@ Partial Class ControlPainel_Filtro
         Me.TVWFiltro.FullRowSelect = True
         Me.TVWFiltro.Location = New System.Drawing.Point(1, 3)
         Me.TVWFiltro.Name = "TVWFiltro"
-        TreeNode1.Checked = True
-        TreeNode1.ImageKey = "Pasta.ico"
-        TreeNode1.Name = "Node2"
-        TreeNode1.SelectedImageKey = "Pasta.ico"
-        TreeNode1.Text = "Incluir Pastas"
-        TreeNode2.Checked = True
-        TreeNode2.ImageKey = "arquivo.ico"
-        TreeNode2.Name = "Node1"
-        TreeNode2.SelectedImageKey = "arquivo.ico"
-        TreeNode2.Text = "Incluir Arquivos"
-        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2})
+        TreeNode5.Checked = True
+        TreeNode5.ImageKey = "Pasta.ico"
+        TreeNode5.Name = "Node2"
+        TreeNode5.SelectedImageKey = "Pasta.ico"
+        TreeNode5.Text = "Incluir Pastas"
+        TreeNode6.Checked = True
+        TreeNode6.ImageKey = "arquivo.ico"
+        TreeNode6.Name = "Node1"
+        TreeNode6.SelectedImageKey = "arquivo.ico"
+        TreeNode6.Text = "Incluir Arquivos"
+        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode5, TreeNode6})
         Me.TVWFiltro.ShowLines = False
         Me.TVWFiltro.Size = New System.Drawing.Size(322, 238)
         Me.TVWFiltro.TabIndex = 2
@@ -95,6 +96,7 @@ Partial Class ControlPainel_Filtro
         'Panel_ExplorarPorFiltro
         '
         Me.Panel_ExplorarPorFiltro.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel_ExplorarPorFiltro.Controls.Add(Me.CheckedListBox1)
         Me.Panel_ExplorarPorFiltro.Controls.Add(Me.TVWFiltro)
         Me.Panel_ExplorarPorFiltro.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_ExplorarPorFiltro.Location = New System.Drawing.Point(0, 24)
@@ -198,6 +200,18 @@ Partial Class ControlPainel_Filtro
         Me.Button121.TabIndex = 22
         Me.Button121.UseVisualStyleBackColor = False
         '
+        'CheckedListBox1
+        '
+        Me.CheckedListBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Items.AddRange(New Object() {"00", "99", "oo", "ooi", "ii"})
+        Me.CheckedListBox1.Location = New System.Drawing.Point(4, 205)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(316, 34)
+        Me.CheckedListBox1.TabIndex = 3
+        '
         'ControlPainel_Filtro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,4 +241,5 @@ Partial Class ControlPainel_Filtro
     Friend WithEvents Panel34 As Panel
     Friend WithEvents Label105 As Label
     Friend WithEvents Button121 As Button
+    Friend WithEvents CheckedListBox1 As CheckedListBox
 End Class

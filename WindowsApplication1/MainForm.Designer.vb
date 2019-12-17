@@ -1359,7 +1359,7 @@ Partial Class MainForm
         '
         'Panel33
         '
-        Me.Panel33.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel33.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel33.Controls.Add(Me.ChBFiltro)
         Me.Panel33.Controls.Add(Me.CheckBox8)
         Me.Panel33.Controls.Add(Me.Button13)

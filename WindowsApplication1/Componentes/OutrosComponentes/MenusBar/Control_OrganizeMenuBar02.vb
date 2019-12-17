@@ -1,4 +1,4 @@
-﻿Public Class Control_OrganizeMenuBar
+﻿Public Class Control_OrganizeMenuBar02
     ' Propriedades do controle.
 
     Private _borderColorChecked As Color
@@ -166,8 +166,17 @@
         _borderColorSelectAndMouseUp = _borderColorSelectAndMouseOver
         _backgroundColorSelectAndMouseUp = _backgroundColorSelectAndMouseOver
     End Sub
+    Private Sub B_MouseDown(sender As Object, e As EventArgs) Handles BTNMover.MouseDown
+        Dim btn As Button
+        btn = CType(sender, Button)
 
-    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNProcurarDuplicados.MouseDown, BTNProcurarDuplicados.MouseDown, BTNRenomearEmLotes.MouseDown, BTNOpcoes_BTNRenomearEmLotes.MouseDown, BTNAgruparExibicao.MouseDown, BTNOpcoes_BTNAgruparExibicao.MouseDown, BTNCompararPastas.MouseDown, BTNOpcoes_BTNCompararPastas.MouseDown
+        btn.Parent.BackColor = _backgroundColorSelectAndMouseDown
+        btn.Parent.Parent.BackColor = _borderColorSelectAndMouseDown
+        btn.FlatAppearance.MouseDownBackColor = _backgroundColorSelectAndMouseDown
+
+    End Sub
+    Private Sub Buttons_MouseDown(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMover.MouseDown, BTNMover.MouseDown
+
         Dim btn As Button
         btn = CType(sender, Button)
 
@@ -188,12 +197,12 @@
             Case "BTNMaisProcessos"
                 ' BTNAbortar.b
 
+
         End Select
 
     End Sub
 
-    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNProcurarDuplicados.MouseLeave, BTNProcurarDuplicados.MouseLeave, BTNRenomearEmLotes.MouseLeave, BTNOpcoes_BTNRenomearEmLotes.MouseLeave, BTNAgruparExibicao.MouseLeave, BTNOpcoes_BTNAgruparExibicao.MouseLeave, BTNCompararPastas.MouseLeave, BTNOpcoes_BTNCompararPastas.MouseLeave
-
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMover.MouseLeave, BTNMover.MouseLeave
         Dim btn As Button
         btn = CType(sender, Button)
 
@@ -203,8 +212,7 @@
 
     End Sub
 
-    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNProcurarDuplicados.MouseMove, BTNProcurarDuplicados.MouseMove, BTNRenomearEmLotes.MouseMove, BTNOpcoes_BTNRenomearEmLotes.MouseMove, BTNAgruparExibicao.MouseMove, BTNOpcoes_BTNAgruparExibicao.MouseMove, BTNCompararPastas.MouseMove, BTNOpcoes_BTNCompararPastas.MouseMove
-
+    Private Sub Buttons_MouseMove(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMover.MouseMove, BTNMover.MouseMove
         Dim btn As Button
         btn = CType(sender, Button)
 
@@ -213,8 +221,7 @@
         btn.FlatAppearance.MouseOverBackColor = _backgroundColorSelectAndMouseOver
     End Sub
 
-    Private Sub Buttons_MouseOver(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNProcurarDuplicados.MouseHover, BTNProcurarDuplicados.MouseHover, BTNRenomearEmLotes.MouseHover, BTNOpcoes_BTNRenomearEmLotes.MouseHover, BTNAgruparExibicao.MouseHover, BTNOpcoes_BTNAgruparExibicao.MouseHover, BTNCompararPastas.MouseHover, BTNOpcoes_BTNCompararPastas.MouseHover
-
+    Private Sub Buttons_MouseOver(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNMover.MouseHover, BTNMover.MouseHover
         Dim btn As Button
         btn = CType(sender, Button)
 

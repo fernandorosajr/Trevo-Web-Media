@@ -175,6 +175,12 @@
     <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.Designer.vb">
+      <DependentUpon>Control_OrganizeMenuBar02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.Designer.vb">
       <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>
     </Compile>
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar.resx">
       <DependentUpon>Control_OrganizeMenuBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_OrganizeMenuBar02.resx">
+      <DependentUpon>Control_OrganizeMenuBar02.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\OutrosComponentes\MenusBar\Control_ViewMenuBar.resx">
       <DependentUpon>Control_ViewMenuBar.vb</DependentUpon>

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Control_OrganizeMenuBar
     Inherits System.Windows.Forms.UserControl
 
     'O UserControl substitui o descarte para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,49 +20,49 @@ Partial Class Control_OrganizeMenuBar
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_Gravacao = New System.Windows.Forms.Panel()
-        Me.PanelBorder_Gravacao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_Organizar = New System.Windows.Forms.Panel()
+        Me.PanelBorder_Organizar = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_AgruparGravacao = New System.Windows.Forms.Panel()
         Me.PanelAgruparGravacao = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNCompararPastas = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNCompararPastas = New System.Windows.Forms.Panel()
+        Me.BTNCompararPastas = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNCompararPastas = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNAgruparExibicao = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNAgruparExibicao = New System.Windows.Forms.Panel()
+        Me.BTNAgruparExibicao = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNAgruparExibicao = New System.Windows.Forms.Button()
         Me.PanelEspacamento02 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNRenomearEmLotes = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNRenomearEmLotes = New System.Windows.Forms.Panel()
+        Me.BTNRenomearEmLotes = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNRenomearEmLotes = New System.Windows.Forms.Button()
         Me.PanelEspacamento04 = New System.Windows.Forms.Panel()
-        Me.PanelBorder_CKBAbortar = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_CKBAbortar = New System.Windows.Forms.Panel()
-        Me.BTNOpcoes_BTNAbortar = New System.Windows.Forms.Button()
+        Me.PanelBorder_BTNProcurarDuplicados = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNProcurarDuplicados = New System.Windows.Forms.Panel()
+        Me.BTNProcurarDuplicados = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNProcurarDuplicados = New System.Windows.Forms.Button()
         Me.PanelEspacamento01 = New System.Windows.Forms.Panel()
         Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.LBLOrganizar = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.BTNAbortar = New System.Windows.Forms.Button()
+        Me.LBLOrganizacaoAvancada = New System.Windows.Forms.Label()
         Me.Panel23.SuspendLayout()
         Me.Panel25.SuspendLayout()
-        Me.PanelEnvolve_Gravacao.SuspendLayout()
-        Me.PanelBorder_Gravacao.SuspendLayout()
+        Me.PanelEnvolve_Organizar.SuspendLayout()
+        Me.PanelBorder_Organizar.SuspendLayout()
         Me.PanelEnvolve_AgruparGravacao.SuspendLayout()
         Me.PanelAgruparGravacao.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.PanelBorder_CKBAbortar.SuspendLayout()
-        Me.PanelEnvolve_CKBAbortar.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.PanelBorder_BTNCompararPastas.SuspendLayout()
+        Me.PanelEnvolve_BTNCompararPastas.SuspendLayout()
+        Me.PanelBorder_BTNAgruparExibicao.SuspendLayout()
+        Me.PanelEnvolve_BTNAgruparExibicao.SuspendLayout()
+        Me.PanelBorder_BTNRenomearEmLotes.SuspendLayout()
+        Me.PanelEnvolve_BTNRenomearEmLotes.SuspendLayout()
+        Me.PanelBorder_BTNProcurarDuplicados.SuspendLayout()
+        Me.PanelEnvolve_BTNProcurarDuplicados.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel23
@@ -76,33 +76,33 @@ Partial Class Control_OrganizeMenuBar
         '
         'Panel25
         '
-        Me.Panel25.Controls.Add(Me.PanelEnvolve_Gravacao)
+        Me.Panel25.Controls.Add(Me.PanelEnvolve_Organizar)
         Me.Panel25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel25.Location = New System.Drawing.Point(0, 0)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(1266, 139)
         Me.Panel25.TabIndex = 6
         '
-        'PanelEnvolve_Gravacao
+        'PanelEnvolve_Organizar
         '
-        Me.PanelEnvolve_Gravacao.Controls.Add(Me.PanelBorder_Gravacao)
-        Me.PanelEnvolve_Gravacao.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_Gravacao.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolve_Gravacao.Name = "PanelEnvolve_Gravacao"
-        Me.PanelEnvolve_Gravacao.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_Gravacao.Size = New System.Drawing.Size(456, 139)
-        Me.PanelEnvolve_Gravacao.TabIndex = 9
+        Me.PanelEnvolve_Organizar.Controls.Add(Me.PanelBorder_Organizar)
+        Me.PanelEnvolve_Organizar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_Organizar.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_Organizar.Name = "PanelEnvolve_Organizar"
+        Me.PanelEnvolve_Organizar.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_Organizar.Size = New System.Drawing.Size(456, 139)
+        Me.PanelEnvolve_Organizar.TabIndex = 9
         '
-        'PanelBorder_Gravacao
+        'PanelBorder_Organizar
         '
-        Me.PanelBorder_Gravacao.Controls.Add(Me.PanelEnvolve_AgruparGravacao)
-        Me.PanelBorder_Gravacao.Controls.Add(Me.Panel20)
-        Me.PanelBorder_Gravacao.Controls.Add(Me.LBLOrganizar)
-        Me.PanelBorder_Gravacao.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBorder_Gravacao.Location = New System.Drawing.Point(3, 3)
-        Me.PanelBorder_Gravacao.Name = "PanelBorder_Gravacao"
-        Me.PanelBorder_Gravacao.Size = New System.Drawing.Size(450, 133)
-        Me.PanelBorder_Gravacao.TabIndex = 6
+        Me.PanelBorder_Organizar.Controls.Add(Me.PanelEnvolve_AgruparGravacao)
+        Me.PanelBorder_Organizar.Controls.Add(Me.Panel20)
+        Me.PanelBorder_Organizar.Controls.Add(Me.LBLOrganizacaoAvancada)
+        Me.PanelBorder_Organizar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_Organizar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelBorder_Organizar.Name = "PanelBorder_Organizar"
+        Me.PanelBorder_Organizar.Size = New System.Drawing.Size(450, 133)
+        Me.PanelBorder_Organizar.TabIndex = 6
         '
         'PanelEnvolve_AgruparGravacao
         '
@@ -115,12 +115,12 @@ Partial Class Control_OrganizeMenuBar
         '
         'PanelAgruparGravacao
         '
-        Me.PanelAgruparGravacao.Controls.Add(Me.Panel5)
-        Me.PanelAgruparGravacao.Controls.Add(Me.Panel3)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_BTNCompararPastas)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_BTNAgruparExibicao)
         Me.PanelAgruparGravacao.Controls.Add(Me.PanelEspacamento02)
-        Me.PanelAgruparGravacao.Controls.Add(Me.Panel1)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_BTNRenomearEmLotes)
         Me.PanelAgruparGravacao.Controls.Add(Me.PanelEspacamento04)
-        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_CKBAbortar)
+        Me.PanelAgruparGravacao.Controls.Add(Me.PanelBorder_BTNProcurarDuplicados)
         Me.PanelAgruparGravacao.Controls.Add(Me.PanelEspacamento01)
         Me.PanelAgruparGravacao.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAgruparGravacao.Location = New System.Drawing.Point(0, 0)
@@ -128,44 +128,121 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelAgruparGravacao.Size = New System.Drawing.Size(449, 120)
         Me.PanelAgruparGravacao.TabIndex = 20
         '
-        'Panel3
+        'PanelBorder_BTNCompararPastas
         '
-        Me.Panel3.BackColor = System.Drawing.Color.Transparent
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel3.Location = New System.Drawing.Point(223, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel3.Size = New System.Drawing.Size(108, 120)
-        Me.Panel3.TabIndex = 29
+        Me.PanelBorder_BTNCompararPastas.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_BTNCompararPastas.Controls.Add(Me.PanelEnvolve_BTNCompararPastas)
+        Me.PanelBorder_BTNCompararPastas.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNCompararPastas.Location = New System.Drawing.Point(331, 0)
+        Me.PanelBorder_BTNCompararPastas.Name = "PanelBorder_BTNCompararPastas"
+        Me.PanelBorder_BTNCompararPastas.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNCompararPastas.Size = New System.Drawing.Size(108, 120)
+        Me.PanelBorder_BTNCompararPastas.TabIndex = 32
         '
-        'Panel4
+        'PanelEnvolve_BTNCompararPastas
         '
-        Me.Panel4.Controls.Add(Me.Button3)
-        Me.Panel4.Controls.Add(Me.Button4)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(1, 1)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(106, 118)
-        Me.Panel4.TabIndex = 10
+        Me.PanelEnvolve_BTNCompararPastas.Controls.Add(Me.BTNCompararPastas)
+        Me.PanelEnvolve_BTNCompararPastas.Controls.Add(Me.BTNOpcoes_BTNCompararPastas)
+        Me.PanelEnvolve_BTNCompararPastas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNCompararPastas.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNCompararPastas.Name = "PanelEnvolve_BTNCompararPastas"
+        Me.PanelEnvolve_BTNCompararPastas.Size = New System.Drawing.Size(106, 118)
+        Me.PanelEnvolve_BTNCompararPastas.TabIndex = 10
         '
-        'Button4
+        'BTNCompararPastas
         '
-        Me.Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button4.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button4.Location = New System.Drawing.Point(0, 97)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(106, 21)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Agrupar exibição"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.BTNCompararPastas.BackColor = System.Drawing.Color.Transparent
+        Me.BTNCompararPastas.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.CompararPastas
+        Me.BTNCompararPastas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNCompararPastas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNCompararPastas.FlatAppearance.BorderSize = 0
+        Me.BTNCompararPastas.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNCompararPastas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNCompararPastas.ForeColor = System.Drawing.Color.Black
+        Me.BTNCompararPastas.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNCompararPastas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNCompararPastas.Location = New System.Drawing.Point(0, 0)
+        Me.BTNCompararPastas.Name = "BTNCompararPastas"
+        Me.BTNCompararPastas.Size = New System.Drawing.Size(106, 97)
+        Me.BTNCompararPastas.TabIndex = 6
+        Me.BTNCompararPastas.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNCompararPastas.UseVisualStyleBackColor = False
+        '
+        'BTNOpcoes_BTNCompararPastas
+        '
+        Me.BTNOpcoes_BTNCompararPastas.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNCompararPastas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNCompararPastas.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNCompararPastas.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNCompararPastas.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNCompararPastas.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNCompararPastas.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNCompararPastas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNCompararPastas.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNCompararPastas.Location = New System.Drawing.Point(0, 97)
+        Me.BTNOpcoes_BTNCompararPastas.Name = "BTNOpcoes_BTNCompararPastas"
+        Me.BTNOpcoes_BTNCompararPastas.Size = New System.Drawing.Size(106, 21)
+        Me.BTNOpcoes_BTNCompararPastas.TabIndex = 7
+        Me.BTNOpcoes_BTNCompararPastas.Text = "Comparar pastas"
+        Me.BTNOpcoes_BTNCompararPastas.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_BTNAgruparExibicao
+        '
+        Me.PanelBorder_BTNAgruparExibicao.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_BTNAgruparExibicao.Controls.Add(Me.PanelEnvolve_BTNAgruparExibicao)
+        Me.PanelBorder_BTNAgruparExibicao.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNAgruparExibicao.Location = New System.Drawing.Point(223, 0)
+        Me.PanelBorder_BTNAgruparExibicao.Name = "PanelBorder_BTNAgruparExibicao"
+        Me.PanelBorder_BTNAgruparExibicao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNAgruparExibicao.Size = New System.Drawing.Size(108, 120)
+        Me.PanelBorder_BTNAgruparExibicao.TabIndex = 29
+        '
+        'PanelEnvolve_BTNAgruparExibicao
+        '
+        Me.PanelEnvolve_BTNAgruparExibicao.Controls.Add(Me.BTNAgruparExibicao)
+        Me.PanelEnvolve_BTNAgruparExibicao.Controls.Add(Me.BTNOpcoes_BTNAgruparExibicao)
+        Me.PanelEnvolve_BTNAgruparExibicao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNAgruparExibicao.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNAgruparExibicao.Name = "PanelEnvolve_BTNAgruparExibicao"
+        Me.PanelEnvolve_BTNAgruparExibicao.Size = New System.Drawing.Size(106, 118)
+        Me.PanelEnvolve_BTNAgruparExibicao.TabIndex = 10
+        '
+        'BTNAgruparExibicao
+        '
+        Me.BTNAgruparExibicao.BackColor = System.Drawing.Color.Transparent
+        Me.BTNAgruparExibicao.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.AgruparExibicao03
+        Me.BTNAgruparExibicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNAgruparExibicao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNAgruparExibicao.FlatAppearance.BorderSize = 0
+        Me.BTNAgruparExibicao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNAgruparExibicao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNAgruparExibicao.ForeColor = System.Drawing.Color.Black
+        Me.BTNAgruparExibicao.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNAgruparExibicao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNAgruparExibicao.Location = New System.Drawing.Point(0, 0)
+        Me.BTNAgruparExibicao.Name = "BTNAgruparExibicao"
+        Me.BTNAgruparExibicao.Size = New System.Drawing.Size(106, 97)
+        Me.BTNAgruparExibicao.TabIndex = 4
+        Me.BTNAgruparExibicao.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNAgruparExibicao.UseVisualStyleBackColor = False
+        '
+        'BTNOpcoes_BTNAgruparExibicao
+        '
+        Me.BTNOpcoes_BTNAgruparExibicao.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNAgruparExibicao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNAgruparExibicao.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNAgruparExibicao.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNAgruparExibicao.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNAgruparExibicao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNAgruparExibicao.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNAgruparExibicao.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNAgruparExibicao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNAgruparExibicao.Location = New System.Drawing.Point(0, 97)
+        Me.BTNOpcoes_BTNAgruparExibicao.Name = "BTNOpcoes_BTNAgruparExibicao"
+        Me.BTNOpcoes_BTNAgruparExibicao.Size = New System.Drawing.Size(106, 21)
+        Me.BTNOpcoes_BTNAgruparExibicao.TabIndex = 5
+        Me.BTNOpcoes_BTNAgruparExibicao.Text = "Agrupar exibição"
+        Me.BTNOpcoes_BTNAgruparExibicao.UseVisualStyleBackColor = False
         '
         'PanelEspacamento02
         '
@@ -175,44 +252,63 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelEspacamento02.Size = New System.Drawing.Size(1, 120)
         Me.PanelEspacamento02.TabIndex = 30
         '
-        'Panel1
+        'PanelBorder_BTNRenomearEmLotes
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(114, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel1.Size = New System.Drawing.Size(108, 120)
-        Me.Panel1.TabIndex = 28
+        Me.PanelBorder_BTNRenomearEmLotes.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_BTNRenomearEmLotes.Controls.Add(Me.PanelEnvolve_BTNRenomearEmLotes)
+        Me.PanelBorder_BTNRenomearEmLotes.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNRenomearEmLotes.Location = New System.Drawing.Point(114, 0)
+        Me.PanelBorder_BTNRenomearEmLotes.Name = "PanelBorder_BTNRenomearEmLotes"
+        Me.PanelBorder_BTNRenomearEmLotes.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNRenomearEmLotes.Size = New System.Drawing.Size(108, 120)
+        Me.PanelBorder_BTNRenomearEmLotes.TabIndex = 28
         '
-        'Panel2
+        'PanelEnvolve_BTNRenomearEmLotes
         '
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(1, 1)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(106, 118)
-        Me.Panel2.TabIndex = 10
+        Me.PanelEnvolve_BTNRenomearEmLotes.Controls.Add(Me.BTNRenomearEmLotes)
+        Me.PanelEnvolve_BTNRenomearEmLotes.Controls.Add(Me.BTNOpcoes_BTNRenomearEmLotes)
+        Me.PanelEnvolve_BTNRenomearEmLotes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNRenomearEmLotes.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNRenomearEmLotes.Name = "PanelEnvolve_BTNRenomearEmLotes"
+        Me.PanelEnvolve_BTNRenomearEmLotes.Size = New System.Drawing.Size(106, 118)
+        Me.PanelEnvolve_BTNRenomearEmLotes.TabIndex = 10
         '
-        'Button2
+        'BTNRenomearEmLotes
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button2.Location = New System.Drawing.Point(0, 97)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 21)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "Renomear em lotes"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.BTNRenomearEmLotes.BackColor = System.Drawing.Color.Transparent
+        Me.BTNRenomearEmLotes.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomearEmLote
+        Me.BTNRenomearEmLotes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNRenomearEmLotes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNRenomearEmLotes.FlatAppearance.BorderSize = 0
+        Me.BTNRenomearEmLotes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNRenomearEmLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRenomearEmLotes.ForeColor = System.Drawing.Color.Black
+        Me.BTNRenomearEmLotes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNRenomearEmLotes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNRenomearEmLotes.Location = New System.Drawing.Point(0, 0)
+        Me.BTNRenomearEmLotes.Name = "BTNRenomearEmLotes"
+        Me.BTNRenomearEmLotes.Size = New System.Drawing.Size(106, 97)
+        Me.BTNRenomearEmLotes.TabIndex = 2
+        Me.BTNRenomearEmLotes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNRenomearEmLotes.UseVisualStyleBackColor = False
+        '
+        'BTNOpcoes_BTNRenomearEmLotes
+        '
+        Me.BTNOpcoes_BTNRenomearEmLotes.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNRenomearEmLotes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNRenomearEmLotes.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNRenomearEmLotes.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNRenomearEmLotes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNRenomearEmLotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNRenomearEmLotes.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNRenomearEmLotes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNRenomearEmLotes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNRenomearEmLotes.Location = New System.Drawing.Point(0, 97)
+        Me.BTNOpcoes_BTNRenomearEmLotes.Name = "BTNOpcoes_BTNRenomearEmLotes"
+        Me.BTNOpcoes_BTNRenomearEmLotes.Size = New System.Drawing.Size(106, 21)
+        Me.BTNOpcoes_BTNRenomearEmLotes.TabIndex = 3
+        Me.BTNOpcoes_BTNRenomearEmLotes.Text = "Renomear em lotes"
+        Me.BTNOpcoes_BTNRenomearEmLotes.UseVisualStyleBackColor = False
         '
         'PanelEspacamento04
         '
@@ -222,44 +318,63 @@ Partial Class Control_OrganizeMenuBar
         Me.PanelEspacamento04.Size = New System.Drawing.Size(1, 120)
         Me.PanelEspacamento04.TabIndex = 27
         '
-        'PanelBorder_CKBAbortar
+        'PanelBorder_BTNProcurarDuplicados
         '
-        Me.PanelBorder_CKBAbortar.BackColor = System.Drawing.Color.Transparent
-        Me.PanelBorder_CKBAbortar.Controls.Add(Me.PanelEnvolve_CKBAbortar)
-        Me.PanelBorder_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBorder_CKBAbortar.Location = New System.Drawing.Point(1, 0)
-        Me.PanelBorder_CKBAbortar.Name = "PanelBorder_CKBAbortar"
-        Me.PanelBorder_CKBAbortar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_CKBAbortar.Size = New System.Drawing.Size(112, 120)
-        Me.PanelBorder_CKBAbortar.TabIndex = 26
+        Me.PanelBorder_BTNProcurarDuplicados.BackColor = System.Drawing.Color.Transparent
+        Me.PanelBorder_BTNProcurarDuplicados.Controls.Add(Me.PanelEnvolve_BTNProcurarDuplicados)
+        Me.PanelBorder_BTNProcurarDuplicados.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBorder_BTNProcurarDuplicados.Location = New System.Drawing.Point(1, 0)
+        Me.PanelBorder_BTNProcurarDuplicados.Name = "PanelBorder_BTNProcurarDuplicados"
+        Me.PanelBorder_BTNProcurarDuplicados.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_BTNProcurarDuplicados.Size = New System.Drawing.Size(112, 120)
+        Me.PanelBorder_BTNProcurarDuplicados.TabIndex = 26
         '
-        'PanelEnvolve_CKBAbortar
+        'PanelEnvolve_BTNProcurarDuplicados
         '
-        Me.PanelEnvolve_CKBAbortar.Controls.Add(Me.BTNAbortar)
-        Me.PanelEnvolve_CKBAbortar.Controls.Add(Me.BTNOpcoes_BTNAbortar)
-        Me.PanelEnvolve_CKBAbortar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_CKBAbortar.Location = New System.Drawing.Point(1, 1)
-        Me.PanelEnvolve_CKBAbortar.Name = "PanelEnvolve_CKBAbortar"
-        Me.PanelEnvolve_CKBAbortar.Size = New System.Drawing.Size(110, 118)
-        Me.PanelEnvolve_CKBAbortar.TabIndex = 10
+        Me.PanelEnvolve_BTNProcurarDuplicados.Controls.Add(Me.BTNProcurarDuplicados)
+        Me.PanelEnvolve_BTNProcurarDuplicados.Controls.Add(Me.BTNOpcoes_BTNProcurarDuplicados)
+        Me.PanelEnvolve_BTNProcurarDuplicados.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_BTNProcurarDuplicados.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_BTNProcurarDuplicados.Name = "PanelEnvolve_BTNProcurarDuplicados"
+        Me.PanelEnvolve_BTNProcurarDuplicados.Size = New System.Drawing.Size(110, 118)
+        Me.PanelEnvolve_BTNProcurarDuplicados.TabIndex = 10
         '
-        'BTNOpcoes_BTNAbortar
+        'BTNProcurarDuplicados
         '
-        Me.BTNOpcoes_BTNAbortar.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNAbortar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNAbortar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNAbortar.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNAbortar.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNAbortar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNAbortar.Location = New System.Drawing.Point(0, 97)
-        Me.BTNOpcoes_BTNAbortar.Name = "BTNOpcoes_BTNAbortar"
-        Me.BTNOpcoes_BTNAbortar.Size = New System.Drawing.Size(110, 21)
-        Me.BTNOpcoes_BTNAbortar.TabIndex = 11
-        Me.BTNOpcoes_BTNAbortar.Text = "Procurar duplicados"
-        Me.BTNOpcoes_BTNAbortar.UseVisualStyleBackColor = False
+        Me.BTNProcurarDuplicados.BackColor = System.Drawing.Color.Transparent
+        Me.BTNProcurarDuplicados.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pesquisarDuplicados
+        Me.BTNProcurarDuplicados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNProcurarDuplicados.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNProcurarDuplicados.FlatAppearance.BorderSize = 0
+        Me.BTNProcurarDuplicados.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNProcurarDuplicados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNProcurarDuplicados.ForeColor = System.Drawing.Color.Black
+        Me.BTNProcurarDuplicados.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNProcurarDuplicados.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNProcurarDuplicados.Location = New System.Drawing.Point(0, 0)
+        Me.BTNProcurarDuplicados.Name = "BTNProcurarDuplicados"
+        Me.BTNProcurarDuplicados.Size = New System.Drawing.Size(110, 97)
+        Me.BTNProcurarDuplicados.TabIndex = 0
+        Me.BTNProcurarDuplicados.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNProcurarDuplicados.UseVisualStyleBackColor = False
+        '
+        'BTNOpcoes_BTNProcurarDuplicados
+        '
+        Me.BTNOpcoes_BTNProcurarDuplicados.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNProcurarDuplicados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNProcurarDuplicados.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNProcurarDuplicados.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNProcurarDuplicados.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNProcurarDuplicados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNProcurarDuplicados.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNProcurarDuplicados.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNProcurarDuplicados.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNProcurarDuplicados.Location = New System.Drawing.Point(0, 97)
+        Me.BTNOpcoes_BTNProcurarDuplicados.Name = "BTNOpcoes_BTNProcurarDuplicados"
+        Me.BTNOpcoes_BTNProcurarDuplicados.Size = New System.Drawing.Size(110, 21)
+        Me.BTNOpcoes_BTNProcurarDuplicados.TabIndex = 1
+        Me.BTNOpcoes_BTNProcurarDuplicados.Text = "Procurar duplicados"
+        Me.BTNOpcoes_BTNProcurarDuplicados.UseVisualStyleBackColor = False
         '
         'PanelEspacamento01
         '
@@ -278,133 +393,18 @@ Partial Class Control_OrganizeMenuBar
         Me.Panel20.Size = New System.Drawing.Size(1, 120)
         Me.Panel20.TabIndex = 10
         '
-        'LBLOrganizar
+        'LBLOrganizacaoAvancada
         '
-        Me.LBLOrganizar.AutoEllipsis = True
-        Me.LBLOrganizar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.LBLOrganizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
-        Me.LBLOrganizar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.LBLOrganizar.Location = New System.Drawing.Point(0, 120)
-        Me.LBLOrganizar.Name = "LBLOrganizar"
-        Me.LBLOrganizar.Size = New System.Drawing.Size(450, 13)
-        Me.LBLOrganizar.TabIndex = 6
-        Me.LBLOrganizar.Text = "Organizar"
-        Me.LBLOrganizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Transparent
-        Me.Panel5.Controls.Add(Me.Panel6)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel5.Location = New System.Drawing.Point(331, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel5.Size = New System.Drawing.Size(108, 120)
-        Me.Panel5.TabIndex = 32
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Button5)
-        Me.Panel6.Controls.Add(Me.Button6)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(1, 1)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(106, 118)
-        Me.Panel6.TabIndex = 10
-        '
-        'Button6
-        '
-        Me.Button6.BackColor = System.Drawing.Color.Transparent
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button6.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Button6.FlatAppearance.BorderSize = 0
-        Me.Button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Black
-        Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button6.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button6.Location = New System.Drawing.Point(0, 97)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(106, 21)
-        Me.Button6.TabIndex = 11
-        Me.Button6.Text = "Comparar pastas"
-        Me.Button6.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.CompararPastas
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Black
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button5.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button5.Location = New System.Drawing.Point(0, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(106, 97)
-        Me.Button5.TabIndex = 10
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.AgruparExibicao03
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button3.Location = New System.Drawing.Point(0, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 97)
-        Me.Button3.TabIndex = 10
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomearEmLote
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 97)
-        Me.Button1.TabIndex = 10
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'BTNAbortar
-        '
-        Me.BTNAbortar.BackColor = System.Drawing.Color.Transparent
-        Me.BTNAbortar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pesquisarDuplicados
-        Me.BTNAbortar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNAbortar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNAbortar.FlatAppearance.BorderSize = 0
-        Me.BTNAbortar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNAbortar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNAbortar.ForeColor = System.Drawing.Color.Black
-        Me.BTNAbortar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNAbortar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNAbortar.Location = New System.Drawing.Point(0, 0)
-        Me.BTNAbortar.Name = "BTNAbortar"
-        Me.BTNAbortar.Size = New System.Drawing.Size(110, 97)
-        Me.BTNAbortar.TabIndex = 10
-        Me.BTNAbortar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNAbortar.UseVisualStyleBackColor = False
+        Me.LBLOrganizacaoAvancada.AutoEllipsis = True
+        Me.LBLOrganizacaoAvancada.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LBLOrganizacaoAvancada.ForeColor = System.Drawing.Color.FromArgb(CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.LBLOrganizacaoAvancada.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLOrganizacaoAvancada.Location = New System.Drawing.Point(0, 120)
+        Me.LBLOrganizacaoAvancada.Name = "LBLOrganizacaoAvancada"
+        Me.LBLOrganizacaoAvancada.Size = New System.Drawing.Size(450, 13)
+        Me.LBLOrganizacaoAvancada.TabIndex = 6
+        Me.LBLOrganizacaoAvancada.Text = "Organização Avançada"
+        Me.LBLOrganizacaoAvancada.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Control_OrganizeMenuBar
         '
@@ -415,47 +415,47 @@ Partial Class Control_OrganizeMenuBar
         Me.Size = New System.Drawing.Size(1266, 139)
         Me.Panel23.ResumeLayout(False)
         Me.Panel25.ResumeLayout(False)
-        Me.PanelEnvolve_Gravacao.ResumeLayout(False)
-        Me.PanelBorder_Gravacao.ResumeLayout(False)
+        Me.PanelEnvolve_Organizar.ResumeLayout(False)
+        Me.PanelBorder_Organizar.ResumeLayout(False)
         Me.PanelEnvolve_AgruparGravacao.ResumeLayout(False)
         Me.PanelAgruparGravacao.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.PanelBorder_CKBAbortar.ResumeLayout(False)
-        Me.PanelEnvolve_CKBAbortar.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
+        Me.PanelBorder_BTNCompararPastas.ResumeLayout(False)
+        Me.PanelEnvolve_BTNCompararPastas.ResumeLayout(False)
+        Me.PanelBorder_BTNAgruparExibicao.ResumeLayout(False)
+        Me.PanelEnvolve_BTNAgruparExibicao.ResumeLayout(False)
+        Me.PanelBorder_BTNRenomearEmLotes.ResumeLayout(False)
+        Me.PanelEnvolve_BTNRenomearEmLotes.ResumeLayout(False)
+        Me.PanelBorder_BTNProcurarDuplicados.ResumeLayout(False)
+        Me.PanelEnvolve_BTNProcurarDuplicados.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel23 As Panel
     Friend WithEvents Panel25 As Panel
-    Friend WithEvents PanelEnvolve_Gravacao As Panel
-    Friend WithEvents PanelBorder_Gravacao As Panel
+    Friend WithEvents PanelEnvolve_Organizar As Panel
+    Friend WithEvents PanelBorder_Organizar As Panel
     Friend WithEvents PanelEnvolve_AgruparGravacao As Panel
     Friend WithEvents PanelAgruparGravacao As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents PanelBorder_BTNAgruparExibicao As Panel
+    Friend WithEvents PanelEnvolve_BTNAgruparExibicao As Panel
+    Friend WithEvents BTNAgruparExibicao As Button
+    Friend WithEvents BTNOpcoes_BTNAgruparExibicao As Button
     Friend WithEvents PanelEspacamento02 As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents PanelBorder_BTNRenomearEmLotes As Panel
+    Friend WithEvents PanelEnvolve_BTNRenomearEmLotes As Panel
+    Friend WithEvents BTNRenomearEmLotes As Button
+    Friend WithEvents BTNOpcoes_BTNRenomearEmLotes As Button
     Friend WithEvents PanelEspacamento04 As Panel
-    Friend WithEvents PanelBorder_CKBAbortar As Panel
-    Friend WithEvents PanelEnvolve_CKBAbortar As Panel
-    Friend WithEvents BTNAbortar As Button
-    Friend WithEvents BTNOpcoes_BTNAbortar As Button
+    Friend WithEvents PanelBorder_BTNProcurarDuplicados As Panel
+    Friend WithEvents PanelEnvolve_BTNProcurarDuplicados As Panel
+    Friend WithEvents BTNProcurarDuplicados As Button
+    Friend WithEvents BTNOpcoes_BTNProcurarDuplicados As Button
     Friend WithEvents PanelEspacamento01 As Panel
     Friend WithEvents Panel20 As Panel
-    Friend WithEvents LBLOrganizar As Label
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents LBLOrganizacaoAvancada As Label
+    Friend WithEvents PanelBorder_BTNCompararPastas As Panel
+    Friend WithEvents PanelEnvolve_BTNCompararPastas As Panel
+    Friend WithEvents BTNCompararPastas As Button
+    Friend WithEvents BTNOpcoes_BTNCompararPastas As Button
 End Class

@@ -710,6 +710,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pesquisarDuplicados.png" />
     <None Include="Resources\renomearEmLote.png" />
     <None Include="Resources\meuEstiloDePasta01.png" />
     <None Include="Resources\GrupoMiniatura.png" />
@@ -791,6 +792,11 @@
     <None Include="Resources\add4.png" />
     <None Include="Resources\add51.png" />
     <None Include="Resources\abort.png" />
+    <None Include="Resources\AgruparExibicao.png" />
+    <None Include="Resources\AgruparExibicao2.png" />
+    <None Include="Resources\AgruparExibicao01.png" />
+    <None Include="Resources\AgruparExibicao02.png" />
+    <None Include="Resources\AgruparExibicao03.png" />
     <Content Include="Resources\ajuda.ico" />
     <Content Include="Resources\ajuda1.ico" />
     <Content Include="Resources\ajuda2.ico" />
@@ -830,6 +836,7 @@
     <None Include="Resources\autor2.png" />
     <None Include="Resources\exibirTamanhoDoArquivo.png" />
     <None Include="Resources\exibirtipoDoArquivo.png" />
+    <None Include="Resources\CompararPastas.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

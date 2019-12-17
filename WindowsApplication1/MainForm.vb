@@ -129,6 +129,7 @@ Long, lpColorValues As Long) As Long
 
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        'Panel_Recebe_Filtro.AutoSize = True
 
         ' TODO: Se um componente construido herdar ...
         ' ...o outro construido ele pode interagir um com o outro.

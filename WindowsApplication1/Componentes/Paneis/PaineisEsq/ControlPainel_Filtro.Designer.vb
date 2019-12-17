@@ -22,26 +22,32 @@ Partial Class ControlPainel_Filtro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
-        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Filtro))
         Me.TVWFiltro = New System.Windows.Forms.TreeView()
-        Me.Panel_Filtro = New System.Windows.Forms.Panel()
+        Me.Panel_Border = New System.Windows.Forms.Panel()
         Me.Panel_Explorer_Prima = New System.Windows.Forms.Panel()
         Me.Panel_ExplorarPorFiltro = New System.Windows.Forms.Panel()
-        Me.Panel195 = New System.Windows.Forms.Panel()
-        Me.Panel277 = New System.Windows.Forms.Panel()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.Button124 = New System.Windows.Forms.Button()
-        Me.Panel34 = New System.Windows.Forms.Panel()
-        Me.Label105 = New System.Windows.Forms.Label()
-        Me.Button121 = New System.Windows.Forms.Button()
-        Me.Panel_Filtro.SuspendLayout()
+        Me.PanelTXTFiltrar = New System.Windows.Forms.Panel()
+        Me.PanelBorder_TXTFiltrar = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_TXTFiltrar = New System.Windows.Forms.Panel()
+        Me.TXTFiltrar = New System.Windows.Forms.TextBox()
+        Me.BTN_TXTFiltrar = New System.Windows.Forms.Button()
+        Me.Panel_LBLTitle = New System.Windows.Forms.Panel()
+        Me.LBLTitle = New System.Windows.Forms.Label()
+        Me.BTNLBLTitle = New System.Windows.Forms.Button()
+        Me.Panel_Filtro = New System.Windows.Forms.Panel()
+        Me.PanelMargin = New System.Windows.Forms.Panel()
+        Me.Panel_Border.SuspendLayout()
         Me.Panel_Explorer_Prima.SuspendLayout()
         Me.Panel_ExplorarPorFiltro.SuspendLayout()
-        Me.Panel195.SuspendLayout()
-        Me.Panel277.SuspendLayout()
-        Me.Panel34.SuspendLayout()
+        Me.PanelTXTFiltrar.SuspendLayout()
+        Me.PanelBorder_TXTFiltrar.SuspendLayout()
+        Me.PanelEnvolve_TXTFiltrar.SuspendLayout()
+        Me.Panel_LBLTitle.SuspendLayout()
+        Me.Panel_Filtro.SuspendLayout()
+        Me.PanelMargin.SuspendLayout()
         Me.SuspendLayout()
         '
         'TVWFiltro
@@ -54,42 +60,43 @@ Partial Class ControlPainel_Filtro
         Me.TVWFiltro.FullRowSelect = True
         Me.TVWFiltro.Location = New System.Drawing.Point(3, 3)
         Me.TVWFiltro.Name = "TVWFiltro"
-        TreeNode7.Checked = True
-        TreeNode7.ImageKey = "Pasta.ico"
-        TreeNode7.Name = "Node2"
-        TreeNode7.SelectedImageKey = "Pasta.ico"
-        TreeNode7.Text = "Incluir Pastas"
-        TreeNode8.Checked = True
-        TreeNode8.ImageKey = "arquivo.ico"
-        TreeNode8.Name = "Node1"
-        TreeNode8.SelectedImageKey = "arquivo.ico"
-        TreeNode8.Text = "Incluir Arquivos"
-        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode7, TreeNode8})
+        TreeNode1.Checked = True
+        TreeNode1.ImageKey = "Pasta.ico"
+        TreeNode1.Name = "Node2"
+        TreeNode1.SelectedImageKey = "Pasta.ico"
+        TreeNode1.Text = "Incluir Pastas"
+        TreeNode2.Checked = True
+        TreeNode2.ImageKey = "arquivo.ico"
+        TreeNode2.Name = "Node1"
+        TreeNode2.SelectedImageKey = "arquivo.ico"
+        TreeNode2.Text = "Incluir Arquivos"
+        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2})
         Me.TVWFiltro.ShowLines = False
-        Me.TVWFiltro.Size = New System.Drawing.Size(318, 234)
+        Me.TVWFiltro.Size = New System.Drawing.Size(316, 232)
         Me.TVWFiltro.TabIndex = 2
         '
-        'Panel_Filtro
+        'Panel_Border
         '
-        Me.Panel_Filtro.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Panel_Filtro.Controls.Add(Me.Panel_Explorer_Prima)
-        Me.Panel_Filtro.Controls.Add(Me.Panel34)
-        Me.Panel_Filtro.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_Filtro.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_Filtro.Name = "Panel_Filtro"
-        Me.Panel_Filtro.Size = New System.Drawing.Size(324, 295)
-        Me.Panel_Filtro.TabIndex = 2
+        Me.Panel_Border.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Panel_Border.Controls.Add(Me.Panel_Explorer_Prima)
+        Me.Panel_Border.Controls.Add(Me.Panel_LBLTitle)
+        Me.Panel_Border.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_Border.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_Border.Name = "Panel_Border"
+        Me.Panel_Border.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel_Border.Size = New System.Drawing.Size(324, 295)
+        Me.Panel_Border.TabIndex = 2
         '
         'Panel_Explorer_Prima
         '
         Me.Panel_Explorer_Prima.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Panel_Explorer_Prima.Controls.Add(Me.Panel_ExplorarPorFiltro)
-        Me.Panel_Explorer_Prima.Controls.Add(Me.Panel195)
+        Me.Panel_Explorer_Prima.Controls.Add(Me.PanelTXTFiltrar)
         Me.Panel_Explorer_Prima.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_Explorer_Prima.Location = New System.Drawing.Point(0, 29)
+        Me.Panel_Explorer_Prima.Location = New System.Drawing.Point(1, 30)
         Me.Panel_Explorer_Prima.Name = "Panel_Explorer_Prima"
         Me.Panel_Explorer_Prima.Padding = New System.Windows.Forms.Padding(0, 1, 0, 0)
-        Me.Panel_Explorer_Prima.Size = New System.Drawing.Size(324, 266)
+        Me.Panel_Explorer_Prima.Size = New System.Drawing.Size(322, 264)
         Me.Panel_Explorer_Prima.TabIndex = 4
         '
         'Panel_ExplorarPorFiltro
@@ -100,103 +107,131 @@ Partial Class ControlPainel_Filtro
         Me.Panel_ExplorarPorFiltro.Location = New System.Drawing.Point(0, 26)
         Me.Panel_ExplorarPorFiltro.Name = "Panel_ExplorarPorFiltro"
         Me.Panel_ExplorarPorFiltro.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(324, 240)
+        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(322, 238)
         Me.Panel_ExplorarPorFiltro.TabIndex = 1
         '
-        'Panel195
+        'PanelTXTFiltrar
         '
-        Me.Panel195.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel195.Controls.Add(Me.Panel277)
-        Me.Panel195.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel195.Location = New System.Drawing.Point(0, 1)
-        Me.Panel195.Name = "Panel195"
-        Me.Panel195.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel195.Size = New System.Drawing.Size(324, 25)
-        Me.Panel195.TabIndex = 4
+        Me.PanelTXTFiltrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelTXTFiltrar.Controls.Add(Me.PanelBorder_TXTFiltrar)
+        Me.PanelTXTFiltrar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelTXTFiltrar.Location = New System.Drawing.Point(0, 1)
+        Me.PanelTXTFiltrar.Name = "PanelTXTFiltrar"
+        Me.PanelTXTFiltrar.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelTXTFiltrar.Size = New System.Drawing.Size(322, 25)
+        Me.PanelTXTFiltrar.TabIndex = 4
         '
-        'Panel277
+        'PanelBorder_TXTFiltrar
         '
-        Me.Panel277.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel277.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel277.Controls.Add(Me.TextBox26)
-        Me.Panel277.Controls.Add(Me.Button124)
-        Me.Panel277.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel277.Location = New System.Drawing.Point(3, 3)
-        Me.Panel277.Name = "Panel277"
-        Me.Panel277.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel277.Size = New System.Drawing.Size(318, 19)
-        Me.Panel277.TabIndex = 93
+        Me.PanelBorder_TXTFiltrar.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_TXTFiltrar.Controls.Add(Me.PanelEnvolve_TXTFiltrar)
+        Me.PanelBorder_TXTFiltrar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_TXTFiltrar.Location = New System.Drawing.Point(3, 3)
+        Me.PanelBorder_TXTFiltrar.Name = "PanelBorder_TXTFiltrar"
+        Me.PanelBorder_TXTFiltrar.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_TXTFiltrar.Size = New System.Drawing.Size(316, 19)
+        Me.PanelBorder_TXTFiltrar.TabIndex = 19
         '
-        'TextBox26
+        'PanelEnvolve_TXTFiltrar
         '
-        Me.TextBox26.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox26.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox26.ForeColor = System.Drawing.Color.Gray
-        Me.TextBox26.Location = New System.Drawing.Point(3, 3)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(295, 13)
-        Me.TextBox26.TabIndex = 9
-        Me.TextBox26.Text = "    Filtrar"
+        Me.PanelEnvolve_TXTFiltrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelEnvolve_TXTFiltrar.Controls.Add(Me.TXTFiltrar)
+        Me.PanelEnvolve_TXTFiltrar.Controls.Add(Me.BTN_TXTFiltrar)
+        Me.PanelEnvolve_TXTFiltrar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_TXTFiltrar.Location = New System.Drawing.Point(1, 1)
+        Me.PanelEnvolve_TXTFiltrar.Name = "PanelEnvolve_TXTFiltrar"
+        Me.PanelEnvolve_TXTFiltrar.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEnvolve_TXTFiltrar.Size = New System.Drawing.Size(314, 17)
+        Me.PanelEnvolve_TXTFiltrar.TabIndex = 93
         '
-        'Button124
+        'TXTFiltrar
         '
-        Me.Button124.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button124.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button124.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button124.FlatAppearance.BorderSize = 0
-        Me.Button124.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button124.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button124.Image = Global.TrevoWebMedia.My.Resources.Resources.localizar1
-        Me.Button124.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button124.Location = New System.Drawing.Point(298, 3)
-        Me.Button124.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button124.Name = "Button124"
-        Me.Button124.Size = New System.Drawing.Size(15, 11)
-        Me.Button124.TabIndex = 18
-        Me.Button124.UseVisualStyleBackColor = False
+        Me.TXTFiltrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTFiltrar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTFiltrar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTFiltrar.ForeColor = System.Drawing.Color.Gray
+        Me.TXTFiltrar.Location = New System.Drawing.Point(3, 3)
+        Me.TXTFiltrar.Name = "TXTFiltrar"
+        Me.TXTFiltrar.Size = New System.Drawing.Size(293, 13)
+        Me.TXTFiltrar.TabIndex = 9
+        Me.TXTFiltrar.Text = "    Filtrar"
         '
-        'Panel34
+        'BTN_TXTFiltrar
         '
-        Me.Panel34.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel34.Controls.Add(Me.Label105)
-        Me.Panel34.Controls.Add(Me.Button121)
-        Me.Panel34.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel34.Location = New System.Drawing.Point(0, 0)
-        Me.Panel34.Name = "Panel34"
-        Me.Panel34.Size = New System.Drawing.Size(324, 29)
-        Me.Panel34.TabIndex = 5
+        Me.BTN_TXTFiltrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_TXTFiltrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTFiltrar.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTFiltrar.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.BTN_TXTFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTFiltrar.Image = Global.TrevoWebMedia.My.Resources.Resources.localizar1
+        Me.BTN_TXTFiltrar.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTFiltrar.Location = New System.Drawing.Point(296, 3)
+        Me.BTN_TXTFiltrar.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTFiltrar.Name = "BTN_TXTFiltrar"
+        Me.BTN_TXTFiltrar.Size = New System.Drawing.Size(15, 11)
+        Me.BTN_TXTFiltrar.TabIndex = 18
+        Me.BTN_TXTFiltrar.UseVisualStyleBackColor = False
         '
-        'Label105
+        'Panel_LBLTitle
         '
-        Me.Label105.BackColor = System.Drawing.Color.Transparent
-        Me.Label105.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label105.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Label105.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Label105.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Label105.Location = New System.Drawing.Point(15, 0)
-        Me.Label105.Name = "Label105"
-        Me.Label105.Padding = New System.Windows.Forms.Padding(5)
-        Me.Label105.Size = New System.Drawing.Size(309, 29)
-        Me.Label105.TabIndex = 1
-        Me.Label105.Text = "Filtro"
+        Me.Panel_LBLTitle.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel_LBLTitle.Controls.Add(Me.LBLTitle)
+        Me.Panel_LBLTitle.Controls.Add(Me.BTNLBLTitle)
+        Me.Panel_LBLTitle.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel_LBLTitle.Location = New System.Drawing.Point(1, 1)
+        Me.Panel_LBLTitle.Name = "Panel_LBLTitle"
+        Me.Panel_LBLTitle.Size = New System.Drawing.Size(322, 29)
+        Me.Panel_LBLTitle.TabIndex = 5
         '
-        'Button121
+        'LBLTitle
         '
-        Me.Button121.BackColor = System.Drawing.Color.Transparent
-        Me.Button121.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button121.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button121.FlatAppearance.BorderSize = 0
-        Me.Button121.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button121.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button121.Image = CType(resources.GetObject("Button121.Image"), System.Drawing.Image)
-        Me.Button121.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button121.Location = New System.Drawing.Point(0, 0)
-        Me.Button121.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button121.Name = "Button121"
-        Me.Button121.Size = New System.Drawing.Size(15, 29)
-        Me.Button121.TabIndex = 22
-        Me.Button121.UseVisualStyleBackColor = False
+        Me.LBLTitle.BackColor = System.Drawing.Color.Transparent
+        Me.LBLTitle.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LBLTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.LBLTitle.ForeColor = System.Drawing.Color.Gainsboro
+        Me.LBLTitle.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.LBLTitle.Location = New System.Drawing.Point(15, 0)
+        Me.LBLTitle.Name = "LBLTitle"
+        Me.LBLTitle.Padding = New System.Windows.Forms.Padding(5)
+        Me.LBLTitle.Size = New System.Drawing.Size(307, 29)
+        Me.LBLTitle.TabIndex = 1
+        Me.LBLTitle.Text = "Filtro"
+        '
+        'BTNLBLTitle
+        '
+        Me.BTNLBLTitle.BackColor = System.Drawing.Color.Transparent
+        Me.BTNLBLTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNLBLTitle.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNLBLTitle.FlatAppearance.BorderSize = 0
+        Me.BTNLBLTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNLBLTitle.Image = CType(resources.GetObject("BTNLBLTitle.Image"), System.Drawing.Image)
+        Me.BTNLBLTitle.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNLBLTitle.Location = New System.Drawing.Point(0, 0)
+        Me.BTNLBLTitle.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNLBLTitle.Name = "BTNLBLTitle"
+        Me.BTNLBLTitle.Size = New System.Drawing.Size(15, 29)
+        Me.BTNLBLTitle.TabIndex = 22
+        Me.BTNLBLTitle.UseVisualStyleBackColor = False
+        '
+        'Panel_Filtro
+        '
+        Me.Panel_Filtro.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel_Filtro.Controls.Add(Me.PanelMargin)
+        Me.Panel_Filtro.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_Filtro.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_Filtro.Name = "Panel_Filtro"
+        Me.Panel_Filtro.Size = New System.Drawing.Size(324, 295)
+        Me.Panel_Filtro.TabIndex = 3
+        '
+        'PanelMargin
+        '
+        Me.PanelMargin.Controls.Add(Me.Panel_Border)
+        Me.PanelMargin.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelMargin.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMargin.Name = "PanelMargin"
+        Me.PanelMargin.Size = New System.Drawing.Size(324, 295)
+        Me.PanelMargin.TabIndex = 3
         '
         'ControlPainel_Filtro
         '
@@ -205,26 +240,32 @@ Partial Class ControlPainel_Filtro
         Me.Controls.Add(Me.Panel_Filtro)
         Me.Name = "ControlPainel_Filtro"
         Me.Size = New System.Drawing.Size(324, 295)
-        Me.Panel_Filtro.ResumeLayout(False)
+        Me.Panel_Border.ResumeLayout(False)
         Me.Panel_Explorer_Prima.ResumeLayout(False)
         Me.Panel_ExplorarPorFiltro.ResumeLayout(False)
-        Me.Panel195.ResumeLayout(False)
-        Me.Panel277.ResumeLayout(False)
-        Me.Panel277.PerformLayout()
-        Me.Panel34.ResumeLayout(False)
+        Me.PanelTXTFiltrar.ResumeLayout(False)
+        Me.PanelBorder_TXTFiltrar.ResumeLayout(False)
+        Me.PanelEnvolve_TXTFiltrar.ResumeLayout(False)
+        Me.PanelEnvolve_TXTFiltrar.PerformLayout()
+        Me.Panel_LBLTitle.ResumeLayout(False)
+        Me.Panel_Filtro.ResumeLayout(False)
+        Me.PanelMargin.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents TVWFiltro As TreeView
-    Friend WithEvents Panel_Filtro As Panel
+    Friend WithEvents Panel_Border As Panel
     Friend WithEvents Panel_Explorer_Prima As Panel
     Friend WithEvents Panel_ExplorarPorFiltro As Panel
-    Friend WithEvents Panel195 As Panel
-    Friend WithEvents Panel277 As Panel
-    Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents Button124 As Button
-    Friend WithEvents Panel34 As Panel
-    Friend WithEvents Label105 As Label
-    Friend WithEvents Button121 As Button
+    Friend WithEvents PanelTXTFiltrar As Panel
+    Friend WithEvents PanelEnvolve_TXTFiltrar As Panel
+    Friend WithEvents TXTFiltrar As TextBox
+    Friend WithEvents BTN_TXTFiltrar As Button
+    Friend WithEvents Panel_LBLTitle As Panel
+    Friend WithEvents LBLTitle As Label
+    Friend WithEvents BTNLBLTitle As Button
+    Friend WithEvents Panel_Filtro As Panel
+    Friend WithEvents PanelMargin As Panel
+    Friend WithEvents PanelBorder_TXTFiltrar As Panel
 End Class

@@ -1333,14 +1333,14 @@ Partial Class MainForm
         '
         'Splitter7
         '
-        Me.Splitter7.BackColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Splitter7.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         resources.ApplyResources(Me.Splitter7, "Splitter7")
         Me.Splitter7.Name = "Splitter7"
         Me.Splitter7.TabStop = False
         '
         'Panel_Recebe_Filtro
         '
-        Me.Panel_Recebe_Filtro.BackColor = System.Drawing.Color.Gray
+        Me.Panel_Recebe_Filtro.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
         resources.ApplyResources(Me.Panel_Recebe_Filtro, "Panel_Recebe_Filtro")
         Me.Panel_Recebe_Filtro.Name = "Panel_Recebe_Filtro"
         '

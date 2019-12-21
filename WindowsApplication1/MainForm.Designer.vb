@@ -83,6 +83,8 @@ Partial Class MainForm
         Me.PanelEnvoveMidia = New System.Windows.Forms.Panel()
         Me.PanelTeste = New System.Windows.Forms.Panel()
         Me.Panel_MediasExplorer = New System.Windows.Forms.Panel()
+        Me.Panel_RecebeMidiasAtivas = New System.Windows.Forms.Panel()
+        Me.PanelRecebeBiblio = New System.Windows.Forms.Panel()
         Me.PanelToolBar_MediasExplorer = New System.Windows.Forms.Panel()
         Me.PanelBaseLuzLeft = New System.Windows.Forms.Panel()
         Me.PanelSombra = New System.Windows.Forms.Panel()
@@ -95,6 +97,7 @@ Partial Class MainForm
         Me.RB_Explorerr = New System.Windows.Forms.RadioButton()
         Me.RB_Midias = New System.Windows.Forms.RadioButton()
         Me.SPRedimVisualizarMidia = New System.Windows.Forms.Splitter()
+        Me.PanelEnvolveMidiaAberta = New System.Windows.Forms.Panel()
         Me.Splitter7 = New System.Windows.Forms.Splitter()
         Me.Panel_Recebe_Filtro = New System.Windows.Forms.Panel()
         Me.PanelToolBarBotton = New System.Windows.Forms.Panel()
@@ -507,9 +510,6 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PanelEnvolveMidiaAberta = New System.Windows.Forms.Panel()
-        Me.PanelRecebeBiblio = New System.Windows.Forms.Panel()
-        Me.Panel_RecebeMidiasAtivas = New System.Windows.Forms.Panel()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -1209,6 +1209,18 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel_MediasExplorer, "Panel_MediasExplorer")
         Me.Panel_MediasExplorer.Name = "Panel_MediasExplorer"
         '
+        'Panel_RecebeMidiasAtivas
+        '
+        Me.Panel_RecebeMidiasAtivas.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
+        resources.ApplyResources(Me.Panel_RecebeMidiasAtivas, "Panel_RecebeMidiasAtivas")
+        Me.Panel_RecebeMidiasAtivas.Name = "Panel_RecebeMidiasAtivas"
+        '
+        'PanelRecebeBiblio
+        '
+        Me.PanelRecebeBiblio.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        resources.ApplyResources(Me.PanelRecebeBiblio, "PanelRecebeBiblio")
+        Me.PanelRecebeBiblio.Name = "PanelRecebeBiblio"
+        '
         'PanelToolBar_MediasExplorer
         '
         Me.PanelToolBar_MediasExplorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -1312,6 +1324,12 @@ Partial Class MainForm
         resources.ApplyResources(Me.SPRedimVisualizarMidia, "SPRedimVisualizarMidia")
         Me.SPRedimVisualizarMidia.Name = "SPRedimVisualizarMidia"
         Me.SPRedimVisualizarMidia.TabStop = False
+        '
+        'PanelEnvolveMidiaAberta
+        '
+        Me.PanelEnvolveMidiaAberta.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        resources.ApplyResources(Me.PanelEnvolveMidiaAberta, "PanelEnvolveMidiaAberta")
+        Me.PanelEnvolveMidiaAberta.Name = "PanelEnvolveMidiaAberta"
         '
         'Splitter7
         '
@@ -4990,24 +5008,6 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
-        '
-        'PanelEnvolveMidiaAberta
-        '
-        Me.PanelEnvolveMidiaAberta.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        resources.ApplyResources(Me.PanelEnvolveMidiaAberta, "PanelEnvolveMidiaAberta")
-        Me.PanelEnvolveMidiaAberta.Name = "PanelEnvolveMidiaAberta"
-        '
-        'PanelRecebeBiblio
-        '
-        Me.PanelRecebeBiblio.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        resources.ApplyResources(Me.PanelRecebeBiblio, "PanelRecebeBiblio")
-        Me.PanelRecebeBiblio.Name = "PanelRecebeBiblio"
-        '
-        'Panel_RecebeMidiasAtivas
-        '
-        Me.Panel_RecebeMidiasAtivas.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
-        resources.ApplyResources(Me.Panel_RecebeMidiasAtivas, "Panel_RecebeMidiasAtivas")
-        Me.Panel_RecebeMidiasAtivas.Name = "Panel_RecebeMidiasAtivas"
         '
         'MainForm
         '

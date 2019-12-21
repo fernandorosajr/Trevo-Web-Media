@@ -199,10 +199,10 @@
     <Compile Include="Componentes\MenusBar\Control_MenuBar.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastaIsolada.Designer.vb">
       <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_PastaIsolada.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastaIsolada.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlPainel_Acoes.Designer.vb">
@@ -247,28 +247,28 @@
     <Compile Include="Componentes\Paneis\UserControl1.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_MidiasAtivas.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiasAtivas.Designer.vb">
       <DependentUpon>ControlPainel_MidiasAtivas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_MidiasAtivas.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiasAtivas.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_MidiaAberta.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiaAberta.Designer.vb">
       <DependentUpon>ControlPainel_MidiaAberta.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_MidiaAberta.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiaAberta.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_BibliotecaDeMidias.Designer.vb">
       <DependentUpon>ControlPainel_BibliotecaDeMidias.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_BibliotecaDeMidias.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_Desktop.Designer.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Desktop.Designer.vb">
       <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\ControlPainel_Desktop.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Desktop.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.Designer.vb">
@@ -337,7 +337,7 @@
     <EmbeddedResource Include="Componentes\MenusBar\Control_MenuBar.resx">
       <DependentUpon>Control_MenuBar.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_PastaIsolada.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastaIsolada.resx">
       <DependentUpon>ControlPainel_PastaIsolada.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDeAcoes\ControlPainel_Acoes.resx">
@@ -361,16 +361,16 @@
     <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_MidiasAtivas.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiasAtivas.resx">
       <DependentUpon>ControlPainel_MidiasAtivas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_MidiaAberta.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_MidiaAberta.resx">
       <DependentUpon>ControlPainel_MidiaAberta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_BibliotecaDeMidias.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_BibliotecaDeMidias.resx">
       <DependentUpon>ControlPainel_BibliotecaDeMidias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\ControlPainel_Desktop.resx">
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Desktop.resx">
       <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.resx">

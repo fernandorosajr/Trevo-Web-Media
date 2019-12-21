@@ -129,6 +129,9 @@ Long, lpColorValues As Long) As Long
 
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+        ' https://www.codeproject.com/Articles/14801/How-to-skin-scrollbars-for-Panels-in-C
+
         'Panel_Recebe_Filtro.AutoSize = True
 
         ' TODO: Se um componente construido herdar ...

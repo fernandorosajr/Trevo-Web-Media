@@ -22,9 +22,10 @@ Partial Class ControlPainel_Desktop
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Computador")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Desktop", New System.Windows.Forms.TreeNode() {TreeNode1})
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Desktop))
         Me.TVWDesktop = New System.Windows.Forms.TreeView()
+        Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.SuspendLayout()
@@ -37,18 +38,21 @@ Partial Class ControlPainel_Desktop
         Me.TVWDesktop.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVWDesktop.FullRowSelect = True
         Me.TVWDesktop.HideSelection = False
+        Me.TVWDesktop.ImageIndex = 0
+        Me.TVWDesktop.ImageList = Me.IMGList
         Me.TVWDesktop.Location = New System.Drawing.Point(1, 1)
         Me.TVWDesktop.Name = "TVWDesktop"
-        TreeNode1.Name = "Computador"
-        TreeNode1.Text = "Computador"
-        TreeNode2.ImageKey = "Desktop.ico"
-        TreeNode2.Name = "Desktop"
-        TreeNode2.SelectedImageKey = "Desktop.ico"
-        TreeNode2.Text = "Desktop"
-        Me.TVWDesktop.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
+        Me.TVWDesktop.SelectedImageIndex = 0
         Me.TVWDesktop.ShowLines = False
         Me.TVWDesktop.Size = New System.Drawing.Size(320, 453)
         Me.TVWDesktop.TabIndex = 3
+        '
+        'IMGList
+        '
+        Me.IMGList.ImageStream = CType(resources.GetObject("IMGList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
+        Me.IMGList.Images.SetKeyName(0, "Desktop")
+        Me.IMGList.Images.SetKeyName(1, "Computador")
         '
         'PanelBorder_TVWDesktop
         '
@@ -75,4 +79,5 @@ Partial Class ControlPainel_Desktop
 
     Friend WithEvents TVWDesktop As TreeView
     Friend WithEvents PanelBorder_TVWDesktop As Panel
+    Friend WithEvents IMGList As ImageList
 End Class

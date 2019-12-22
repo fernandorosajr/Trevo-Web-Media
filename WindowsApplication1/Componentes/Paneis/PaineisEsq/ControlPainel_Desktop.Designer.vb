@@ -24,28 +24,28 @@ Partial Class ControlPainel_Desktop
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Desktop))
-        Me.TVWDesktop = New System.Windows.Forms.TreeView()
+        Me.TVWFilesAndFolders = New System.Windows.Forms.TreeView()
         Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TVWDesktop
+        'TVWFilesAndFolders
         '
-        Me.TVWDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TVWDesktop.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TVWDesktop.ForeColor = System.Drawing.Color.Gainsboro
-        Me.TVWDesktop.FullRowSelect = True
-        Me.TVWDesktop.HideSelection = False
-        Me.TVWDesktop.ImageIndex = 0
-        Me.TVWDesktop.ImageList = Me.IMGList
-        Me.TVWDesktop.Location = New System.Drawing.Point(1, 1)
-        Me.TVWDesktop.Name = "TVWDesktop"
-        Me.TVWDesktop.SelectedImageIndex = 0
-        Me.TVWDesktop.ShowLines = False
-        Me.TVWDesktop.Size = New System.Drawing.Size(320, 453)
-        Me.TVWDesktop.TabIndex = 3
+        Me.TVWFilesAndFolders.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TVWFilesAndFolders.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TVWFilesAndFolders.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TVWFilesAndFolders.ForeColor = System.Drawing.Color.Gainsboro
+        Me.TVWFilesAndFolders.FullRowSelect = True
+        Me.TVWFilesAndFolders.HideSelection = False
+        Me.TVWFilesAndFolders.ImageIndex = 0
+        Me.TVWFilesAndFolders.ImageList = Me.IMGList
+        Me.TVWFilesAndFolders.Location = New System.Drawing.Point(1, 1)
+        Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
+        Me.TVWFilesAndFolders.SelectedImageIndex = 0
+        Me.TVWFilesAndFolders.ShowLines = False
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(320, 453)
+        Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList
         '
@@ -53,11 +53,16 @@ Partial Class ControlPainel_Desktop
         Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
         Me.IMGList.Images.SetKeyName(0, "Desktop")
         Me.IMGList.Images.SetKeyName(1, "Computador")
+        Me.IMGList.Images.SetKeyName(2, "Imagens")
+        Me.IMGList.Images.SetKeyName(3, "Documentos")
+        Me.IMGList.Images.SetKeyName(4, "Musicas")
+        Me.IMGList.Images.SetKeyName(5, "pastaFechada")
+        Me.IMGList.Images.SetKeyName(6, "pastaAberta")
         '
         'PanelBorder_TVWDesktop
         '
         Me.PanelBorder_TVWDesktop.BackColor = System.Drawing.Color.DimGray
-        Me.PanelBorder_TVWDesktop.Controls.Add(Me.TVWDesktop)
+        Me.PanelBorder_TVWDesktop.Controls.Add(Me.TVWFilesAndFolders)
         Me.PanelBorder_TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBorder_TVWDesktop.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TVWDesktop.Name = "PanelBorder_TVWDesktop"
@@ -77,7 +82,7 @@ Partial Class ControlPainel_Desktop
 
     End Sub
 
-    Friend WithEvents TVWDesktop As TreeView
+    Friend WithEvents TVWFilesAndFolders As TreeView
     Friend WithEvents PanelBorder_TVWDesktop As Panel
     Friend WithEvents IMGList As ImageList
 End Class

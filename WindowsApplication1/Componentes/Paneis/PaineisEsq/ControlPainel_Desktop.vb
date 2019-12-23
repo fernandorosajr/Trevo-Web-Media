@@ -1,4 +1,5 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
+Imports System.IO
 
 
 Public Class ControlPainel_Desktop
@@ -118,7 +119,74 @@ Public Class ControlPainel_Desktop
         ' TODO: Tratar e adicionar driveres em Meu Computador
         '__________________________________________________________________
 
+        Dim nomeDoDrive As String
+        Dim tipoDeDrive As String
+        Dim rotuloDoDrive As String
+        Dim todoDrive As String
+        Dim tamanhoDoDrive As String
+        Dim iconeDoDrive As String
 
+        For Each drive As DriveInfo In My.Computer.FileSystem.Drives
+
+            nomeDoDrive = drive.Name
+            tipoDeDrive = drive.DriveType
+
+            ' Escolhe o tipo de icone de acordo com o drive 
+            Select Case drive.DriveType
+
+                Case 0
+                    tipoDeDrive = "Unknown"
+
+                Case 1
+                    tipoDeDrive = "NoRootDirectory"
+
+                Case 2
+                    tipoDeDrive = "Removable"
+                    iconeDoDrive = "Pen.ico"
+
+                Case 3
+                    tipoDeDrive = "Fixed"
+                    iconeDoDrive = "HD.ico"
+
+                Case 4
+                    tipoDeDrive = "Network"
+
+                Case 5
+                    tipoDeDrive = "CD Rom"
+                    iconeDoDrive = "DVD.ico"
+
+                Case 6
+                    tipoDeDrive = "Ram"
+
+            End Select
+
+            rotuloDoDrive = ""
+
+            If drive.IsReady Then
+                rotuloDoDrive = CType(drive.VolumeLabel.ToString, String)
+                tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
+            End If
+
+            If Not rotuloDoDrive Is Nothing Then
+                If rotuloDoDrive = "" Then
+                    If tipoDeDrive.ToString = "Fixed" Then
+                        rotuloDoDrive = "Disco Local"
+                    ElseIf tipoDeDrive.ToString = "CDRom" Then
+                        rotuloDoDrive = "Unidade de Disco Removível"
+                    End If
+                End If
+                todoDrive = rotuloDoDrive & " (" & nomeDoDrive.Substring(0, 2) & ")"
+            Else
+                todoDrive = "(" & nomeDoDrive.Substring(0, 2) & ")"
+            End If
+            tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
+
+            ' Este Parametro abaixo é provisorio
+            ' Será excluido se for desnecessario.
+
+            tvNode.Nodes.Add("", "", "none.ico", "none.ico")
+
+        Next
 
 
     End Sub

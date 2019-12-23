@@ -1,7 +1,10 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 
+
 Public Class ControlPainel_Desktop
     Dim tipoDeArquivo As String
+    Dim carregaArquivosNaArvore As Boolean
+    Dim caminhoDaPastaSelecionada As String
 
     Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadTree()
@@ -68,8 +71,55 @@ Public Class ControlPainel_Desktop
             nome = drD.Name
             tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaAberta").Tag = drD.FullName
 
-
         Next
+
+        '###############################################################
+        '_______________________________________________________________
+
+        ' TODO: Instruções para carregar os arquivos de Area de Trabalho
+        '__________________________________________________________________
+
+        ' se CarregarArquivosNaArvore for verdadeiro entao...
+        ' carrega arquivos
+        carregaArquivosNaArvore = True
+
+        If carregaArquivosNaArvore = True Then
+            caminhoDaPastaSelecionada = tvNodeDeDesktop.Tag
+
+            Dim dirFiles As New IO.DirectoryInfo(caminhoDaPastaSelecionada)
+            Dim dirArq01 As IO.FileInfo() = dirFiles.GetFiles()
+            Dim dra As IO.FileInfo
+
+            Dim iconImage As String
+            Dim ext As String
+
+            For Each dra In dirArq01
+
+                ext = dra.Extension
+                Select Case ext.ToLower
+                    Case ".jpg", ".jpeg", ".gif"
+
+                        iconImage = "Documentos"
+
+                    Case Else
+                        iconImage = "Documentos"
+
+                End Select
+
+                nome = dra.Name
+                tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, iconImage, iconImage).Tag = dra.FullName
+
+            Next
+
+        End If
+
+        '###############################################################
+        '_______________________________________________________________
+        ' TODO: Tratar e adicionar driveres em Meu Computador
+        '__________________________________________________________________
+
+
+
 
     End Sub
 

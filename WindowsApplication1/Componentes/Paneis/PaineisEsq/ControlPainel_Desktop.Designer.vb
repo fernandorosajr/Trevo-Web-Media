@@ -58,6 +58,9 @@ Partial Class ControlPainel_Desktop
         Me.IMGList.Images.SetKeyName(4, "Musicas")
         Me.IMGList.Images.SetKeyName(5, "pastaAberta")
         Me.IMGList.Images.SetKeyName(6, "pastaFechada")
+        Me.IMGList.Images.SetKeyName(7, "hd")
+        Me.IMGList.Images.SetKeyName(8, "DVD")
+        Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
         '
         'PanelBorder_TVWDesktop
         '

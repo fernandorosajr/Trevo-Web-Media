@@ -146,14 +146,14 @@ Public Class ControlPainel_Desktop
 
                 Case 3
                     tipoDeDrive = "Fixed"
-                    iconeDoDrive = "HD.ico"
+                    iconeDoDrive = "hd"
 
                 Case 4
                     tipoDeDrive = "Network"
 
                 Case 5
                     tipoDeDrive = "CD Rom"
-                    iconeDoDrive = "DVD.ico"
+                    iconeDoDrive = "DVD"
 
                 Case 6
                     tipoDeDrive = "Ram"
@@ -171,8 +171,10 @@ Public Class ControlPainel_Desktop
                 If rotuloDoDrive = "" Then
                     If tipoDeDrive.ToString = "Fixed" Then
                         rotuloDoDrive = "Disco Local"
-                    ElseIf tipoDeDrive.ToString = "CDRom" Then
+                    ElseIf tipoDeDrive.ToString = "CD Rom" Then
                         rotuloDoDrive = "Unidade de Disco Removível"
+                        iconeDoDrive = "UnidadeVazia"
+
                     End If
                 End If
                 todoDrive = rotuloDoDrive & " (" & nomeDoDrive.Substring(0, 2) & ")"

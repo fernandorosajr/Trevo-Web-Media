@@ -201,4 +201,46 @@ Public Class ControlPainel_Desktop
 
     End Function
 
+    Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
+        Try
+            Dim tsNode As TreeNode
+
+            tsNode = TVWFilesAndFolders.SelectedNode
+
+            Select Case tsNode.Name
+                Case "Computador"
+
+                Case "Desktop"
+
+                Case Else
+                    If tsNode.Tag <> Nothing Then
+                        Dim dir As New DirectoryInfo(tsNode.Tag)
+
+                        If dir.Exists = True Then
+                            Dim dirSub As DirectoryInfo() = dir.GetDirectories
+                            Dim dirArq1 As FileInfo() = dir.GetFiles()
+
+                            Dim drA As FileInfo
+                            Dim drD As DirectoryInfo
+
+                            Dim nodde As TreeNode
+
+                            If tsNode.Nodes.Count <> 0 Then
+                                tsNode.Nodes.Clear()
+                            End If
+
+                            For Each drD In dirSub
+                                nodde = tsNode.Nodes.Add(tsNode.Name & "\" & drD.Name, drD.Name, "pastaFechada", "pastaAberta")
+                                nodde.Tag = drD.FullName
+
+                            Next
+                        End If
+                    Else
+
+                    End If
+            End Select
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

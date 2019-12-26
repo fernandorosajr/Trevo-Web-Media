@@ -186,7 +186,7 @@ Public Class ControlPainel_Desktop
             ' Este Parametro abaixo é provisorio
             ' Será excluido se for desnecessario.
 
-            tvNode.Nodes.Add("", "", "none.ico", "none.ico")
+            ' tvNode.Nodes.Add("", "", "none.ico", "none.ico")
 
         Next
 
@@ -236,7 +236,29 @@ Public Class ControlPainel_Desktop
                             Next
                         End If
                     Else
+                        If tsNode.Parent.Name = "Computador" Then
+                            Dim drive01 As New DriveInfo(tsNode.Name)
 
+                            If drive01.IsReady = False Then
+                                tsNode.Nodes.Clear()
+                                tsNode.Nodes.Add("O dispositivo não está acessivel.")
+                                Exit Sub
+                            End If
+
+                            Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
+                            Dim subDirForDrive As IO.DirectoryInfo() = dirDriv01.Root.GetDirectories
+
+                            Dim SDrD As IO.DirectoryInfo
+                            Dim Nodde As TreeNode
+                            'MsgBox(TSNode.Name)
+                            tsNode.Nodes.Clear()
+
+                            For Each SDrD In subDirForDrive
+                                Nodde = tsNode.Nodes.Add(tsNode.Name & "\" & SDrD.Name, SDrD.Name, "pastaFechada", "pastaAberta")
+                                Nodde.Tag = SDrD.FullName
+                            Next
+
+                        End If
                     End If
             End Select
         Catch ex As Exception

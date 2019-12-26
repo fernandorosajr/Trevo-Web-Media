@@ -242,11 +242,15 @@ Public Class ControlPainel_Desktop
                                 tsNode.Nodes.Clear()
                             End If
 
+                            TVWFilesAndFolders.UseWaitCursor = True
+
                             For Each drD In dirSub
                                 nodde = tsNode.Nodes.Add(tsNode.Name & "\" & drD.Name, drD.Name, "pastaFechada", "pastaAberta")
                                 nodde.Tag = drD.FullName
 
                             Next
+                            TVWFilesAndFolders.UseWaitCursor = False
+
                         End If
                     Else
                         If tsNode.Parent.Name = "Computador" Then
@@ -266,10 +270,13 @@ Public Class ControlPainel_Desktop
                             'MsgBox(TSNode.Name)
                             tsNode.Nodes.Clear()
 
+                            TVWFilesAndFolders.UseWaitCursor = True
+
                             For Each SDrD In subDirForDrive
                                 Nodde = tsNode.Nodes.Add(tsNode.Name & "\" & SDrD.Name, SDrD.Name, "pastaFechada", "pastaAberta")
                                 Nodde.Tag = SDrD.FullName
                             Next
+                            TVWFilesAndFolders.UseWaitCursor = False
 
                         End If
                     End If
@@ -282,6 +289,7 @@ Public Class ControlPainel_Desktop
             tsNode.Nodes.Clear()
             tsNode.Nodes.Add(tsNode.Name & "\info", ex.Message, "info", "info")
             tsNode.Expand()
+            TVWFilesAndFolders.UseWaitCursor = False
 
         End Try
     End Sub

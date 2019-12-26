@@ -181,28 +181,25 @@ Public Class ControlPainel_Desktop
             End If
 
             If Not rotuloDoDrive Is Nothing Then
+
                 If rotuloDoDrive = "" Then
                     If tipoDeDrive.ToString = "Fixed" Then
                         rotuloDoDrive = "Disco Local"
                     ElseIf tipoDeDrive.ToString = "CD Rom" Then
                         rotuloDoDrive = "Unidade de Disco Removível"
                         iconeDoDrive = "UnidadeVazia"
-
                     End If
                 End If
+
                 todoDrive = rotuloDoDrive & " (" & nomeDoDrive.Substring(0, 2) & ")"
             Else
                 todoDrive = "(" & nomeDoDrive.Substring(0, 2) & ")"
             End If
+
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
-
-            ' Este Parametro abaixo é provisorio
-            ' Será excluido se for desnecessario.
-
-            ' tvNode.Nodes.Add("", "", "none.ico", "none.ico")
+            tvNode.Tag = nomeDoDrive
 
         Next
-
 
     End Sub
 
@@ -273,6 +270,9 @@ Public Class ControlPainel_Desktop
 
                         End If
                     End If
+                    _caminho = TVWFilesAndFolders.SelectedNode.Tag
+                    MsgBox(_caminho)
+
             End Select
         Catch ex As Exception
 

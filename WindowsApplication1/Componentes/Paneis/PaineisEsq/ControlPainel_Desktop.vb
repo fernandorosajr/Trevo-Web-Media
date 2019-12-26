@@ -7,6 +7,19 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
+    ' Propriedade de caminho
+    Private _caminho As String
+    Public Property Caminho As String
+        Get
+            Return _caminho
+
+        End Get
+        Set(value As String)
+            _caminho = value
+
+        End Set
+    End Property
+
     Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
         LoadTree()
 

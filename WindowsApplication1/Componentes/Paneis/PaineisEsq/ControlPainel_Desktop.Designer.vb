@@ -61,6 +61,7 @@ Partial Class ControlPainel_Desktop
         Me.IMGList.Images.SetKeyName(7, "hd")
         Me.IMGList.Images.SetKeyName(8, "DVD")
         Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
+        Me.IMGList.Images.SetKeyName(10, "info")
         '
         'PanelBorder_TVWDesktop
         '

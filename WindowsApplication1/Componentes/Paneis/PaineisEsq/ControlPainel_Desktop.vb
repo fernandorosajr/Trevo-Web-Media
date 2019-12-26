@@ -212,10 +212,13 @@ Public Class ControlPainel_Desktop
     End Function
 
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
+        Dim tsNode As TreeNode
         Try
-            Dim tsNode As TreeNode
 
             tsNode = TVWFilesAndFolders.SelectedNode
+
+            _caminho = TVWFilesAndFolders.SelectedNode.Tag
+            ' MsgBox(_caminho)
 
             Select Case tsNode.Name
                 Case "Computador"
@@ -270,11 +273,15 @@ Public Class ControlPainel_Desktop
 
                         End If
                     End If
-                    _caminho = TVWFilesAndFolders.SelectedNode.Tag
-                    MsgBox(_caminho)
+
+
 
             End Select
         Catch ex As Exception
+            ' MsgBox(ex.Message)
+            tsNode.Nodes.Clear()
+            tsNode.Nodes.Add(tsNode.Name & "\info", ex.Message, "info", "info")
+            tsNode.Expand()
 
         End Try
     End Sub

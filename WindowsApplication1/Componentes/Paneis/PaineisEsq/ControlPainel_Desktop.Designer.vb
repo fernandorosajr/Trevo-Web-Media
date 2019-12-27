@@ -44,7 +44,7 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
         Me.TVWFilesAndFolders.SelectedImageIndex = 0
         Me.TVWFilesAndFolders.ShowLines = False
-        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(320, 453)
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 339)
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList
@@ -71,7 +71,7 @@ Partial Class ControlPainel_Desktop
         Me.PanelBorder_TVWDesktop.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TVWDesktop.Name = "PanelBorder_TVWDesktop"
         Me.PanelBorder_TVWDesktop.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(322, 455)
+        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(308, 341)
         Me.PanelBorder_TVWDesktop.TabIndex = 4
         '
         'ControlPainel_Desktop
@@ -80,7 +80,7 @@ Partial Class ControlPainel_Desktop
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelBorder_TVWDesktop)
         Me.Name = "ControlPainel_Desktop"
-        Me.Size = New System.Drawing.Size(322, 455)
+        Me.Size = New System.Drawing.Size(308, 341)
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
         Me.ResumeLayout(False)
 

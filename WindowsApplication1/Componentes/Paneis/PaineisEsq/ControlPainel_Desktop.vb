@@ -1,6 +1,10 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 Imports System.IO
-
+' TODO: Menu de contexto
+' TODO: O que fazer quando expande a pasta
+' TODO: 
+' TODO:
+' TODO:
 
 Public Class ControlPainel_Desktop
     Dim tipoDeArquivo As String
@@ -21,10 +25,18 @@ Public Class ControlPainel_Desktop
     End Property
 
     Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
-        LoadTree()
+        '  LoadTree()
 
     End Sub
+    Public Sub New()
 
+        ' This call is required by the designer.
+        InitializeComponent()
+        LoadTree()
+        'PopulateTreeView()
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
     Private Sub LoadTree()
         Dim tvRoot As TreeNode
         Dim tvNode As TreeNode
@@ -214,6 +226,7 @@ Public Class ControlPainel_Desktop
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
         Dim tsNode As TreeNode
         Try
+            System.Windows.Forms.Application.DoEvents()
 
             tsNode = TVWFilesAndFolders.SelectedNode
 
@@ -239,6 +252,9 @@ Public Class ControlPainel_Desktop
                             Dim nodde As TreeNode
 
                             If tsNode.Nodes.Count <> 0 Then
+                                ' TODO: Adicionar algoritimo de atualização da media: criar função  
+                                ' TODO: Aplicar função criada em um evento de expansção de node ou seleção.
+                                ' TODO:
                                 tsNode.Nodes.Clear()
                             End If
 
@@ -249,20 +265,23 @@ Public Class ControlPainel_Desktop
                                 nodde.Tag = drD.FullName
 
                             Next
-                            TVWFilesAndFolders.UseWaitCursor = False
 
-                        End If
-                    Else
-                        If tsNode.Parent.Name = "Computador" Then
-                            Dim drive01 As New DriveInfo(tsNode.Name)
+                            If tsNode.Parent.Name = "Computador" Then
+                                Dim drive01 As New DriveInfo(tsNode.Name)
 
-                            If drive01.IsReady = False Then
-                                tsNode.Nodes.Clear()
-                                tsNode.Nodes.Add("O dispositivo não está acessivel.")
-                                Exit Sub
+                                If drive01.IsReady = False Then
+                                    tsNode.Nodes.Clear()
+                                    tsNode.Nodes.Add("O dispositivo não está acessivel.")
+                                    Exit Sub
+                                End If
+
+                                TVWFilesAndFolders.UseWaitCursor = False
+
                             End If
+                        Else
 
-                            Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
+
+                        Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
                             Dim subDirForDrive As IO.DirectoryInfo() = dirDriv01.Root.GetDirectories
 
                             Dim SDrD As IO.DirectoryInfo
@@ -280,10 +299,8 @@ Public Class ControlPainel_Desktop
 
                         End If
                     End If
-
-
-
             End Select
+
         Catch ex As Exception
             ' MsgBox(ex.Message)
             tsNode.Nodes.Clear()

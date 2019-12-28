@@ -231,7 +231,9 @@ Public Class ControlPainel_Desktop
             tsNode = TVWFilesAndFolders.SelectedNode
 
             _caminho = TVWFilesAndFolders.SelectedNode.Tag
-            ' MsgBox(_caminho)
+
+
+            MsgBox(_caminho)
 
             Select Case tsNode.Name
                 Case "Computador"
@@ -267,11 +269,14 @@ Public Class ControlPainel_Desktop
                             Next
 
                             If tsNode.Parent.Name = "Computador" Then
+
+                                MsgBox(tsNode.FullPath)
+
                                 Dim drive01 As New DriveInfo(tsNode.Name)
 
                                 If drive01.IsReady = False Then
                                     tsNode.Nodes.Clear()
-                                    tsNode.Nodes.Add("O dispositivo não está acessivel.")
+                                    tsNode.Nodes.Add("O dispositivo não está acessível.")
                                     Exit Sub
                                 End If
 
@@ -280,8 +285,7 @@ Public Class ControlPainel_Desktop
                             End If
                         Else
 
-
-                        Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
+                            Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
                             Dim subDirForDrive As IO.DirectoryInfo() = dirDriv01.Root.GetDirectories
 
                             Dim SDrD As IO.DirectoryInfo
@@ -302,7 +306,7 @@ Public Class ControlPainel_Desktop
             End Select
 
         Catch ex As Exception
-            ' MsgBox(ex.Message)
+            ' MsgBox(ex)
             tsNode.Nodes.Clear()
             tsNode.Nodes.Add(tsNode.Name & "\info", ex.Message, "info", "info")
             tsNode.Expand()

@@ -233,7 +233,7 @@ Public Class ControlPainel_Desktop
             _caminho = TVWFilesAndFolders.SelectedNode.Tag
 
 
-            MsgBox(_caminho)
+            ' MsgBox(_caminho)
 
             Select Case tsNode.Name
                 Case "Computador"
@@ -267,10 +267,13 @@ Public Class ControlPainel_Desktop
                                 nodde.Tag = drD.FullName
 
                             Next
+                            TVWFilesAndFolders.UseWaitCursor = False
 
                             If tsNode.Parent.Name = "Computador" Then
 
-                                MsgBox(tsNode.FullPath)
+                                Dim fullName As String
+                                fullName = tsNode.FullPath
+                                If fullName.IndexOf(":") = -1 Then Exit Sub
 
                                 Dim drive01 As New DriveInfo(tsNode.Name)
 

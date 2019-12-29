@@ -57,27 +57,27 @@ Public Class ControlPainel_Desktop
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Documentos", "Documentos", "Documentos", "Documentos")
         tvRoot.Tag = SpecialDirectories.MyDocuments
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("MyMusic", "Músicas", "Musicas", "Musicas")
         tvRoot.Tag = SpecialDirectories.MyMusic
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("MyPictures", "Imagens", "Imagens", "Imagens")
         tvRoot.Tag = SpecialDirectories.MyPictures
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.ProgramFiles
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Programs", "Programs", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.Programs
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Temp", "Temp", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.Temp
-        tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
         tvNodeDeComputador.Expand()
 
 
@@ -103,7 +103,7 @@ Public Class ControlPainel_Desktop
             nome = drD.Name
             tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaAberta")
             tvRoot.Tag = drD.FullName
-            tvRoot.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+            tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
         Next
 
         '###############################################################
@@ -217,7 +217,7 @@ Public Class ControlPainel_Desktop
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
             tvNode.Tag = nomeDoDrive
-            tvNode.Nodes.Add("carregando", "carregando...").Tag = "carregando"
+            tvNode.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         Next
 
@@ -240,9 +240,6 @@ Public Class ControlPainel_Desktop
 
             _caminho = TVWFilesAndFolders.SelectedNode.Tag
 
-
-            ' MsgBox(_caminho)
-
             Select Case tsNode.Name
                 Case "Computador"
 
@@ -256,28 +253,15 @@ Public Class ControlPainel_Desktop
                             Dim dirSub As DirectoryInfo() = dir.GetDirectories
                             Dim dirArq1 As FileInfo() = dir.GetFiles()
 
-                            Dim drA As FileInfo
-                            Dim drD As DirectoryInfo
+                            '        TODO: Adicionar algoritimo de atualização da media: criar função  
+                            '        TODO: Aplicar função criada em um evento de expansção de node ou seleção.
+                            '        TODO: http://www.macoratti.net/13/12/vbn_list1.htm
 
-                            Dim nodde As TreeNode
+                            AtualizarDiretorio(tsNode)
 
-                            If tsNode.Nodes.Count <> 0 Then
-                                ' TODO: Adicionar algoritimo de atualização da media: criar função  
-                                ' TODO: Aplicar função criada em um evento de expansção de node ou seleção.
-                                ' TODO: http://www.macoratti.net/13/12/vbn_list1.htm
-                                '   tsNode.Nodes.Clear()
-                                AtualizarDiretorio(tsNode)
-                            End If
 
                             TVWFilesAndFolders.UseWaitCursor = True
 
-                            For Each drD In dirSub
-                                nodde = tsNode.Nodes.Add(tsNode.Name & "\" & drD.Name, drD.Name, "pastaFechada", "pastaAberta")
-                                nodde.Tag = drD.FullName
-                                nodde.Nodes.Add("")
-
-
-                            Next
                             TVWFilesAndFolders.UseWaitCursor = False
 
                             If tsNode.Parent.Name = "Computador" Then
@@ -299,29 +283,14 @@ Public Class ControlPainel_Desktop
                             End If
                         Else
 
-                            Dim dirDriv01 As New DirectoryInfo(tsNode.Name)
-                            Dim subDirForDrive As IO.DirectoryInfo() = dirDriv01.Root.GetDirectories
-
-                            Dim SDrD As IO.DirectoryInfo
-                            Dim Nodde As TreeNode
-                            'MsgBox(TSNode.Name)
-                            tsNode.Nodes.Clear()
-
-                            TVWFilesAndFolders.UseWaitCursor = True
-
-                            For Each SDrD In subDirForDrive
-                                Nodde = tsNode.Nodes.Add(tsNode.Name & "\" & SDrD.Name, SDrD.Name, "pastaFechada", "pastaAberta")
-                                Nodde.Tag = SDrD.FullName
-                                Nodde.Nodes.Add("")
-                            Next
                             TVWFilesAndFolders.UseWaitCursor = False
-
+                            AtualizarDiretorio(tsNode)
                         End If
                     End If
             End Select
 
         Catch ex As Exception
-            ' MsgBox(ex)
+
             tsNode.Nodes.Clear()
             tsNode.Nodes.Add(tsNode.Name & "\info", ex.Message, "info", "info")
             tsNode.Expand()
@@ -335,12 +304,11 @@ Public Class ControlPainel_Desktop
         Dim dir As DirectoryInfo
 
         Dim tNode As TreeNode = node
-        Dim tNodeExcluir As TreeNode = Nothing
         Dim subTNode As TreeNode
-        Dim subTNodeExcluir As TreeNode
         Dim adicionarAListaDeDiretorios As New ArrayList
 
         Dim adicionar As Boolean
+
         For Each subTNode In tNode.Nodes
             Dim dirCheck As New DirectoryInfo(subTNode.Tag)
             If dirCheck.Exists = False Then
@@ -359,35 +327,17 @@ Public Class ControlPainel_Desktop
 
                 End If
             Next
-            adicionarAListaDeDiretorios.Add(dir)
+
+            If tNode.Nodes.Count = 0 Then adicionar = True
+            If adicionar = True Then adicionarAListaDeDiretorios.Add(dir)
 
         Next
-        'For Each subTNode In tNode.Nodes
-        '    For Each dir In subDirectories
-        '        If subTNode.Tag <> dir.FullName Then
-        '            excluir = True
-        '            tNodeExcluir = subTNode
-        '        Else
-        '            adicionarAListaDeDiretorios.Add(dir)
-        '            excluir = False
-
-        '        End If
-        '    Next
-        'Next
-
-        'For Each subTNode In tNode.Nodes
-        '    For Each subTNodeExcluir In tNodeExcluir.Nodes
-
-        '        If subTNodeExcluir.Tag = subTNode.Tag Then
-        '            tNode.Nodes.Remove(subTNode)
-
-        '        End If
-
-        '    Next
-        'Next
 
         For Each dirAdd As DirectoryInfo In adicionarAListaDeDiretorios
-            tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
+
+            subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
+            subTNode.Tag = dirAdd.FullName
+            subTNode.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
 
         Next
 

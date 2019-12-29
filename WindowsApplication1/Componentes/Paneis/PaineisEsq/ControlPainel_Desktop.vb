@@ -57,27 +57,27 @@ Public Class ControlPainel_Desktop
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Documentos", "Documentos", "Documentos", "Documentos")
         tvRoot.Tag = SpecialDirectories.MyDocuments
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("MyMusic", "Músicas", "Musicas", "Musicas")
         tvRoot.Tag = SpecialDirectories.MyMusic
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("MyPictures", "Imagens", "Imagens", "Imagens")
         tvRoot.Tag = SpecialDirectories.MyPictures
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.ProgramFiles
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Programs", "Programs", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.Programs
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Temp", "Temp", "pastaFechada", "pastaAberta")
         tvRoot.Tag = SpecialDirectories.Temp
-        tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
         tvNodeDeComputador.Expand()
 
 
@@ -103,7 +103,7 @@ Public Class ControlPainel_Desktop
             nome = drD.Name
             tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaAberta")
             tvRoot.Tag = drD.FullName
-            tvRoot.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+            tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
         Next
 
         '###############################################################
@@ -217,7 +217,7 @@ Public Class ControlPainel_Desktop
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
             tvNode.Tag = nomeDoDrive
-            tvNode.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+            tvNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         Next
 
@@ -337,7 +337,7 @@ Public Class ControlPainel_Desktop
 
             subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
             subTNode.Tag = dirAdd.FullName
-            subTNode.Nodes.Add("carregando", "Carregando...", "info", "info").Tag = "carregando"
+            subTNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         Next
 

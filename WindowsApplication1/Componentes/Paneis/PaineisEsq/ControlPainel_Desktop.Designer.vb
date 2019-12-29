@@ -34,6 +34,7 @@ Partial Class ControlPainel_Desktop
         '
         Me.TVWFilesAndFolders.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TVWFilesAndFolders.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TVWFilesAndFolders.CheckBoxes = True
         Me.TVWFilesAndFolders.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TVWFilesAndFolders.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVWFilesAndFolders.FullRowSelect = True

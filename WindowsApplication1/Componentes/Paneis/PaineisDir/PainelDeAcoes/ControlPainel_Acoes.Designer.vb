@@ -52,7 +52,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAddProcesso = New System.Windows.Forms.Panel()
         Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
         Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.Panel_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
         Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
         Me.Panel_NovoProcessoGravar = New System.Windows.Forms.Panel()
         Me.BTN_NovoProcessoGravar = New System.Windows.Forms.Button()
@@ -159,7 +159,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAddProcesso.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
         Me.Panel36.SuspendLayout()
-        Me.Panel37.SuspendLayout()
+        Me.Panel_FechaPanelOpcoesDeProcessos.SuspendLayout()
         Me.Panel_NovoProcessoGravar.SuspendLayout()
         Me.Panel96.SuspendLayout()
         Me.Panel97.SuspendLayout()
@@ -368,7 +368,7 @@ Partial Class ControlPainel_Acoes
         '
         'Panel36
         '
-        Me.Panel36.Controls.Add(Me.Panel37)
+        Me.Panel36.Controls.Add(Me.Panel_FechaPanelOpcoesDeProcessos)
         Me.Panel36.Controls.Add(Me.Panel_NovoProcessoGravar)
         Me.Panel36.Controls.Add(Me.Panel96)
         Me.Panel36.Controls.Add(Me.Panel97)
@@ -382,14 +382,14 @@ Partial Class ControlPainel_Acoes
         Me.Panel36.Size = New System.Drawing.Size(289, 25)
         Me.Panel36.TabIndex = 0
         '
-        'Panel37
+        'Panel_FechaPanelOpcoesDeProcessos
         '
-        Me.Panel37.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
-        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel37.Location = New System.Drawing.Point(276, 1)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(13, 23)
-        Me.Panel37.TabIndex = 114
+        Me.Panel_FechaPanelOpcoesDeProcessos.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
+        Me.Panel_FechaPanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(276, 1)
+        Me.Panel_FechaPanelOpcoesDeProcessos.Name = "Panel_FechaPanelOpcoesDeProcessos"
+        Me.Panel_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(13, 23)
+        Me.Panel_FechaPanelOpcoesDeProcessos.TabIndex = 114
         '
         'BTN_FechaPanelOpcoesDeProcessos
         '
@@ -1416,7 +1416,7 @@ Partial Class ControlPainel_Acoes
         Me.CMS_TipoDeProcesso.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemTipoGravacao, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
         Me.CMS_TipoDeProcesso.Name = "CMS_TipoDeProcesso"
         Me.CMS_TipoDeProcesso.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(181, 204)
+        Me.CMS_TipoDeProcesso.Size = New System.Drawing.Size(158, 182)
         Me.CMS_TipoDeProcesso.TabStop = True
         '
         'TSMenuItemTipoComposto
@@ -1424,7 +1424,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoComposto.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoComposto.Image = Global.TrevoWebMedia.My.Resources.Resources.grupo02
         Me.TSMenuItemTipoComposto.Name = "TSMenuItemTipoComposto"
-        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoComposto.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoComposto.Text = "Tipo c&omposto"
         '
         'TSMenuItemSeparator1
@@ -1432,7 +1432,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator1.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator1.Name = "TSMenuItemSeparator1"
-        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator1.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoCriacao
         '
@@ -1440,7 +1440,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoCriacao.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoCriacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoCriacao
         Me.TSMenuItemTipoCriacao.Name = "TSMenuItemTipoCriacao"
-        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoCriacao.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoCriacao.Text = "Tipo criação..."
         '
         'TSMenuItemTipoCopia
@@ -1449,7 +1449,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoCopia.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoCopia.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo05
         Me.TSMenuItemTipoCopia.Name = "TSMenuItemTipoCopia"
-        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoCopia.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoCopia.Text = "Tipo cópia..."
         '
         'TSMenuItemSeparator2
@@ -1457,7 +1457,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator2.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator2.Name = "TSMenuItemSeparator2"
-        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator2.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoMover
         '
@@ -1465,7 +1465,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoMover.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoMover.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoMover
         Me.TSMenuItemTipoMover.Name = "TSMenuItemTipoMover"
-        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoMover.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoMover.Text = "Tipo mover..."
         '
         'TSMenuItemSeparator3
@@ -1473,7 +1473,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator3.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator3.Name = "TSMenuItemSeparator3"
-        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator3.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoRenome
         '
@@ -1481,7 +1481,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoRenome.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.processoRenomearGrupo04
         Me.TSMenuItemTipoRenome.Name = "TSMenuItemTipoRenome"
-        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoRenome.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoRenome.Text = "Tipo renome..."
         '
         'TSMenuItemTipoGravacao
@@ -1490,7 +1490,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoGravacao.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoGravacao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoGravar1
         Me.TSMenuItemTipoGravacao.Name = "TSMenuItemTipoGravacao"
-        Me.TSMenuItemTipoGravacao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoGravacao.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoGravacao.Text = "Tipo gravação..."
         '
         'TSMenuItemSeparator4
@@ -1498,7 +1498,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemSeparator4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
         Me.TSMenuItemSeparator4.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemSeparator4.Name = "TSMenuItemSeparator4"
-        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(177, 6)
+        Me.TSMenuItemSeparator4.Size = New System.Drawing.Size(154, 6)
         '
         'TSMenuItemTipoExclusao
         '
@@ -1506,7 +1506,7 @@ Partial Class ControlPainel_Acoes
         Me.TSMenuItemTipoExclusao.ForeColor = System.Drawing.Color.Silver
         Me.TSMenuItemTipoExclusao.Image = Global.TrevoWebMedia.My.Resources.Resources.grupoTipoExclusao
         Me.TSMenuItemTipoExclusao.Name = "TSMenuItemTipoExclusao"
-        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(180, 22)
+        Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(157, 22)
         Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
         '
         'ControlItemDePainelDeAcoes3
@@ -1554,7 +1554,7 @@ Partial Class ControlPainel_Acoes
         Me.PanelAddProcesso.ResumeLayout(False)
         Me.PanelOpcoesDeProcessos.ResumeLayout(False)
         Me.Panel36.ResumeLayout(False)
-        Me.Panel37.ResumeLayout(False)
+        Me.Panel_FechaPanelOpcoesDeProcessos.ResumeLayout(False)
         Me.Panel_NovoProcessoGravar.ResumeLayout(False)
         Me.Panel96.ResumeLayout(False)
         Me.Panel97.ResumeLayout(False)
@@ -1675,7 +1675,7 @@ Partial Class ControlPainel_Acoes
     Friend WithEvents BTN_TimeParaAgrupamentos As Button
     Friend WithEvents CHK_ShowPanelAllProcessosAcoes As CheckBox
     Friend WithEvents Panel36 As Panel
-    Friend WithEvents Panel37 As Panel
+    Friend WithEvents Panel_FechaPanelOpcoesDeProcessos As Panel
     Friend WithEvents BTN_FechaPanelOpcoesDeProcessos As Button
     Friend WithEvents Panel94 As Panel
     Friend WithEvents Panel_NovoProcessoGravar As Panel

@@ -232,22 +232,26 @@ Public Class ControlPainel_Desktop
     End Function
 
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
+
         Dim tsNode As TreeNode
+        System.Windows.Forms.Application.DoEvents()
+        tsNode = TVWFilesAndFolders.SelectedNode
+        _caminho = TVWFilesAndFolders.SelectedNode.Tag
+        CarregarDiretorio(tsNode)
+
+    End Sub
+
+    Sub CarregarDiretorio(node As TreeNode)
+
         Try
-            System.Windows.Forms.Application.DoEvents()
-
-            tsNode = TVWFilesAndFolders.SelectedNode
-
-            _caminho = TVWFilesAndFolders.SelectedNode.Tag
-
-            Select Case tsNode.Name
+            Select Case node.Name
                 Case "Computador"
 
                 Case "Desktop"
 
                 Case Else
-                    If tsNode.Tag <> Nothing Then
-                        Dim dir As New DirectoryInfo(tsNode.Tag)
+                    If node.Tag <> Nothing Then
+                        Dim dir As New DirectoryInfo(node.Tag)
 
                         If dir.Exists = True Then
                             Dim dirSub As DirectoryInfo() = dir.GetDirectories
@@ -257,24 +261,24 @@ Public Class ControlPainel_Desktop
                             '        TODO: Aplicar função criada em um evento de expansção de node ou seleção.
                             '        TODO: http://www.macoratti.net/13/12/vbn_list1.htm
 
-                            AtualizarDiretorio(tsNode)
+                            AtualizarDiretorio(node)
 
 
                             TVWFilesAndFolders.UseWaitCursor = True
 
                             TVWFilesAndFolders.UseWaitCursor = False
 
-                            If tsNode.Parent.Name = "Computador" Then
+                            If node.Parent.Name = "Computador" Then
 
                                 Dim fullName As String
-                                fullName = tsNode.FullPath
+                                fullName = node.FullPath
                                 If fullName.IndexOf(":") = -1 Then Exit Sub
 
-                                Dim drive01 As New DriveInfo(tsNode.Name)
+                                Dim drive01 As New DriveInfo(node.Name)
 
                                 If drive01.IsReady = False Then
-                                    tsNode.Nodes.Clear()
-                                    tsNode.Nodes.Add("O dispositivo não está acessível.")
+                                    node.Nodes.Clear()
+                                    node.Nodes.Add("O dispositivo não está acessível.")
                                     Exit Sub
                                 End If
 
@@ -284,16 +288,16 @@ Public Class ControlPainel_Desktop
                         Else
 
                             TVWFilesAndFolders.UseWaitCursor = False
-                            AtualizarDiretorio(tsNode)
+                            AtualizarDiretorio(node)
                         End If
                     End If
             End Select
 
         Catch ex As Exception
 
-            tsNode.Nodes.Clear()
-            tsNode.Nodes.Add(tsNode.Name & "\info", ex.Message, "info", "info")
-            tsNode.Expand()
+            node.Nodes.Clear()
+            node.Nodes.Add(node.Name & "\info", ex.Message, "info", "info")
+            node.Expand()
             TVWFilesAndFolders.UseWaitCursor = False
 
         End Try
@@ -342,5 +346,14 @@ Public Class ControlPainel_Desktop
         Next
 
 
+    End Sub
+
+    Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
+        Dim node As TreeNode
+        node = CType(e.Node, TreeNode)
+
+        '  MsgBox(node.Tag)
+
+        CarregarDiretorio(node)
     End Sub
 End Class

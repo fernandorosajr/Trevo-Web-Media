@@ -29,33 +29,18 @@ Partial Class ControlPainel_Desktop
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
         Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
         Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Panel_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
-        Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
-        Me.Panel_NovoProcessoGravar = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoGravar = New System.Windows.Forms.Button()
-        Me.Panel96 = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoExcluir = New System.Windows.Forms.Button()
-        Me.Panel97 = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoCopiar = New System.Windows.Forms.Button()
-        Me.Panel101 = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoMover = New System.Windows.Forms.Button()
-        Me.Panel102 = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoRenomear = New System.Windows.Forms.Button()
-        Me.Panel94 = New System.Windows.Forms.Panel()
-        Me.BTN_NovoProcessoCriar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
+        Me.BTN_NewFolder = New System.Windows.Forms.Button()
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.Panel()
+        Me.CHK_ShowCheck = New System.Windows.Forms.CheckBox()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
         Me.Panel36.SuspendLayout()
-        Me.Panel_FechaPanelOpcoesDeProcessos.SuspendLayout()
-        Me.Panel_NovoProcessoGravar.SuspendLayout()
-        Me.Panel96.SuspendLayout()
-        Me.Panel97.SuspendLayout()
-        Me.Panel101.SuspendLayout()
-        Me.Panel102.SuspendLayout()
-        Me.Panel94.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.PanelEnvolve_BTN_NewFolder.SuspendLayout()
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.SuspendLayout()
         Me.SuspendLayout()
         '
         'TVWFilesAndFolders
@@ -118,208 +103,14 @@ Partial Class ControlPainel_Desktop
         '
         'Panel36
         '
-        Me.Panel36.Controls.Add(Me.Panel_FechaPanelOpcoesDeProcessos)
-        Me.Panel36.Controls.Add(Me.Panel_NovoProcessoGravar)
-        Me.Panel36.Controls.Add(Me.Panel96)
-        Me.Panel36.Controls.Add(Me.Panel97)
-        Me.Panel36.Controls.Add(Me.Panel101)
-        Me.Panel36.Controls.Add(Me.Panel102)
-        Me.Panel36.Controls.Add(Me.Panel94)
+        Me.Panel36.Controls.Add(Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes)
+        Me.Panel36.Controls.Add(Me.PanelEnvolve_BTN_NewFolder)
         Me.Panel36.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
         Me.Panel36.Size = New System.Drawing.Size(298, 28)
         Me.Panel36.TabIndex = 0
-        '
-        'Panel_FechaPanelOpcoesDeProcessos
-        '
-        Me.Panel_FechaPanelOpcoesDeProcessos.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
-        Me.Panel_FechaPanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(285, 1)
-        Me.Panel_FechaPanelOpcoesDeProcessos.Name = "Panel_FechaPanelOpcoesDeProcessos"
-        Me.Panel_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(13, 26)
-        Me.Panel_FechaPanelOpcoesDeProcessos.TabIndex = 114
-        '
-        'BTN_FechaPanelOpcoesDeProcessos
-        '
-        Me.BTN_FechaPanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.fechar_cinza
-        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_FechaPanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BTN_FechaPanelOpcoesDeProcessos.FlatAppearance.BorderSize = 0
-        Me.BTN_FechaPanelOpcoesDeProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_FechaPanelOpcoesDeProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(0, 0)
-        Me.BTN_FechaPanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTN_FechaPanelOpcoesDeProcessos.Name = "BTN_FechaPanelOpcoesDeProcessos"
-        Me.BTN_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(13, 20)
-        Me.BTN_FechaPanelOpcoesDeProcessos.TabIndex = 31
-        Me.BTN_FechaPanelOpcoesDeProcessos.UseVisualStyleBackColor = False
-        '
-        'Panel_NovoProcessoGravar
-        '
-        Me.Panel_NovoProcessoGravar.Controls.Add(Me.BTN_NovoProcessoGravar)
-        Me.Panel_NovoProcessoGravar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel_NovoProcessoGravar.Location = New System.Drawing.Point(110, 1)
-        Me.Panel_NovoProcessoGravar.Name = "Panel_NovoProcessoGravar"
-        Me.Panel_NovoProcessoGravar.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel_NovoProcessoGravar.Size = New System.Drawing.Size(19, 26)
-        Me.Panel_NovoProcessoGravar.TabIndex = 112
-        '
-        'BTN_NovoProcessoGravar
-        '
-        Me.BTN_NovoProcessoGravar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoGravar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.dvd
-        Me.BTN_NovoProcessoGravar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoGravar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoGravar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoGravar.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoGravar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoGravar.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoGravar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoGravar.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoGravar.Name = "BTN_NovoProcessoGravar"
-        Me.BTN_NovoProcessoGravar.Size = New System.Drawing.Size(17, 24)
-        Me.BTN_NovoProcessoGravar.TabIndex = 29
-        Me.BTN_NovoProcessoGravar.UseVisualStyleBackColor = False
-        '
-        'Panel96
-        '
-        Me.Panel96.Controls.Add(Me.BTN_NovoProcessoExcluir)
-        Me.Panel96.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel96.Location = New System.Drawing.Point(92, 1)
-        Me.Panel96.Name = "Panel96"
-        Me.Panel96.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel96.Size = New System.Drawing.Size(18, 26)
-        Me.Panel96.TabIndex = 111
-        '
-        'BTN_NovoProcessoExcluir
-        '
-        Me.BTN_NovoProcessoExcluir.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoExcluir.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.excluir
-        Me.BTN_NovoProcessoExcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoExcluir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoExcluir.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoExcluir.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoExcluir.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoExcluir.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoExcluir.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoExcluir.Name = "BTN_NovoProcessoExcluir"
-        Me.BTN_NovoProcessoExcluir.Size = New System.Drawing.Size(16, 24)
-        Me.BTN_NovoProcessoExcluir.TabIndex = 28
-        Me.BTN_NovoProcessoExcluir.UseVisualStyleBackColor = False
-        '
-        'Panel97
-        '
-        Me.Panel97.Controls.Add(Me.BTN_NovoProcessoCopiar)
-        Me.Panel97.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel97.Location = New System.Drawing.Point(69, 1)
-        Me.Panel97.Name = "Panel97"
-        Me.Panel97.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel97.Size = New System.Drawing.Size(23, 26)
-        Me.Panel97.TabIndex = 110
-        '
-        'BTN_NovoProcessoCopiar
-        '
-        Me.BTN_NovoProcessoCopiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoCopiar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoCopiar
-        Me.BTN_NovoProcessoCopiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoCopiar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoCopiar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoCopiar.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoCopiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoCopiar.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoCopiar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoCopiar.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoCopiar.Name = "BTN_NovoProcessoCopiar"
-        Me.BTN_NovoProcessoCopiar.Size = New System.Drawing.Size(21, 24)
-        Me.BTN_NovoProcessoCopiar.TabIndex = 27
-        Me.BTN_NovoProcessoCopiar.UseVisualStyleBackColor = False
-        '
-        'Panel101
-        '
-        Me.Panel101.Controls.Add(Me.BTN_NovoProcessoMover)
-        Me.Panel101.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel101.Location = New System.Drawing.Point(46, 1)
-        Me.Panel101.Name = "Panel101"
-        Me.Panel101.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel101.Size = New System.Drawing.Size(23, 26)
-        Me.Panel101.TabIndex = 109
-        '
-        'BTN_NovoProcessoMover
-        '
-        Me.BTN_NovoProcessoMover.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoMover.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.NovoProcessoMover2
-        Me.BTN_NovoProcessoMover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoMover.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoMover.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoMover.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoMover.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoMover.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoMover.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoMover.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoMover.Name = "BTN_NovoProcessoMover"
-        Me.BTN_NovoProcessoMover.Size = New System.Drawing.Size(21, 24)
-        Me.BTN_NovoProcessoMover.TabIndex = 26
-        Me.BTN_NovoProcessoMover.UseVisualStyleBackColor = False
-        '
-        'Panel102
-        '
-        Me.Panel102.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel102.Controls.Add(Me.BTN_NovoProcessoRenomear)
-        Me.Panel102.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel102.Location = New System.Drawing.Point(23, 1)
-        Me.Panel102.Name = "Panel102"
-        Me.Panel102.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel102.Size = New System.Drawing.Size(23, 26)
-        Me.Panel102.TabIndex = 108
-        '
-        'BTN_NovoProcessoRenomear
-        '
-        Me.BTN_NovoProcessoRenomear.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoRenomear.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.renomear
-        Me.BTN_NovoProcessoRenomear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoRenomear.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoRenomear.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoRenomear.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoRenomear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoRenomear.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoRenomear.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoRenomear.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoRenomear.Name = "BTN_NovoProcessoRenomear"
-        Me.BTN_NovoProcessoRenomear.Size = New System.Drawing.Size(21, 24)
-        Me.BTN_NovoProcessoRenomear.TabIndex = 25
-        Me.BTN_NovoProcessoRenomear.UseVisualStyleBackColor = False
-        '
-        'Panel94
-        '
-        Me.Panel94.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel94.Controls.Add(Me.BTN_NovoProcessoCriar)
-        Me.Panel94.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel94.Location = New System.Drawing.Point(0, 1)
-        Me.Panel94.Name = "Panel94"
-        Me.Panel94.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel94.Size = New System.Drawing.Size(23, 26)
-        Me.Panel94.TabIndex = 113
-        '
-        'BTN_NovoProcessoCriar
-        '
-        Me.BTN_NovoProcessoCriar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NovoProcessoCriar.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.novo_arquivo_2
-        Me.BTN_NovoProcessoCriar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NovoProcessoCriar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTN_NovoProcessoCriar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NovoProcessoCriar.FlatAppearance.BorderSize = 0
-        Me.BTN_NovoProcessoCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NovoProcessoCriar.ForeColor = System.Drawing.Color.Gainsboro
-        Me.BTN_NovoProcessoCriar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NovoProcessoCriar.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NovoProcessoCriar.Name = "BTN_NovoProcessoCriar"
-        Me.BTN_NovoProcessoCriar.Size = New System.Drawing.Size(21, 24)
-        Me.BTN_NovoProcessoCriar.TabIndex = 30
-        Me.BTN_NovoProcessoCriar.UseVisualStyleBackColor = False
         '
         'Panel2
         '
@@ -340,6 +131,61 @@ Partial Class ControlPainel_Desktop
         Me.Panel1.Size = New System.Drawing.Size(308, 3)
         Me.Panel1.TabIndex = 98
         '
+        'PanelEnvolve_BTN_NewFolder
+        '
+        Me.PanelEnvolve_BTN_NewFolder.Controls.Add(Me.BTN_NewFolder)
+        Me.PanelEnvolve_BTN_NewFolder.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolve_BTN_NewFolder.Location = New System.Drawing.Point(0, 1)
+        Me.PanelEnvolve_BTN_NewFolder.Name = "PanelEnvolve_BTN_NewFolder"
+        Me.PanelEnvolve_BTN_NewFolder.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 26)
+        Me.PanelEnvolve_BTN_NewFolder.TabIndex = 114
+        '
+        'BTN_NewFolder
+        '
+        Me.BTN_NewFolder.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_NewFolder.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
+        Me.BTN_NewFolder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_NewFolder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTN_NewFolder.FlatAppearance.BorderSize = 0
+        Me.BTN_NewFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NewFolder.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_NewFolder.Location = New System.Drawing.Point(1, 1)
+        Me.BTN_NewFolder.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_NewFolder.Name = "BTN_NewFolder"
+        Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 24)
+        Me.BTN_NewFolder.TabIndex = 20
+        Me.BTN_NewFolder.UseVisualStyleBackColor = False
+        '
+        'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
+        '
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Controls.Add(Me.CHK_ShowCheck)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(32, 1)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 26)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.TabIndex = 115
+        '
+        'CHK_ShowCheck
+        '
+        Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CHK_ShowCheck.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Exibir_painel_de_processos
+        Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CHK_ShowCheck.Checked = True
+        Me.CHK_ShowCheck.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CHK_ShowCheck.FlatAppearance.BorderSize = 0
+        Me.CHK_ShowCheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
+        Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
+        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 24)
+        Me.CHK_ShowCheck.TabIndex = 19
+        Me.CHK_ShowCheck.UseVisualStyleBackColor = False
+        '
         'ControlPainel_Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -350,14 +196,9 @@ Partial Class ControlPainel_Desktop
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
         Me.PanelOpcoesDeProcessos.ResumeLayout(False)
         Me.Panel36.ResumeLayout(False)
-        Me.Panel_FechaPanelOpcoesDeProcessos.ResumeLayout(False)
-        Me.Panel_NovoProcessoGravar.ResumeLayout(False)
-        Me.Panel96.ResumeLayout(False)
-        Me.Panel97.ResumeLayout(False)
-        Me.Panel101.ResumeLayout(False)
-        Me.Panel102.ResumeLayout(False)
-        Me.Panel94.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.PanelEnvolve_BTN_NewFolder.ResumeLayout(False)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -367,20 +208,10 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents IMGList As ImageList
     Friend WithEvents PanelOpcoesDeProcessos As Panel
     Friend WithEvents Panel36 As Panel
-    Friend WithEvents Panel_FechaPanelOpcoesDeProcessos As Panel
-    Friend WithEvents BTN_FechaPanelOpcoesDeProcessos As Button
-    Friend WithEvents Panel_NovoProcessoGravar As Panel
-    Friend WithEvents BTN_NovoProcessoGravar As Button
-    Friend WithEvents Panel96 As Panel
-    Friend WithEvents BTN_NovoProcessoExcluir As Button
-    Friend WithEvents Panel97 As Panel
-    Friend WithEvents BTN_NovoProcessoCopiar As Button
-    Friend WithEvents Panel101 As Panel
-    Friend WithEvents BTN_NovoProcessoMover As Button
-    Friend WithEvents Panel102 As Panel
-    Friend WithEvents BTN_NovoProcessoRenomear As Button
-    Friend WithEvents Panel94 As Panel
-    Friend WithEvents BTN_NovoProcessoCriar As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelEnvolve_BTN_NewFolder As Panel
+    Friend WithEvents BTN_NewFolder As Button
+    Friend WithEvents PanelEnvolveCHK_ShowPanelAllProcessosAcoes As Panel
+    Friend WithEvents CHK_ShowCheck As CheckBox
 End Class

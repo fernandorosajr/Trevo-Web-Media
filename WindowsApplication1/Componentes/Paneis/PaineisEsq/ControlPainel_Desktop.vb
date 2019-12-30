@@ -356,4 +356,8 @@ Public Class ControlPainel_Desktop
 
         CarregarDiretorio(node)
     End Sub
+
+    Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
+        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
+    End Sub
 End Class

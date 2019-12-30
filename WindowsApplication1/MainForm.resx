@@ -9890,7 +9890,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
-        BAAAAk1TRnQBSQFMAwEBAAHAAQkBwAEJARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        BAAAAk1TRnQBSQFMAwEBAAHIAQkByAEJARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
         ARADAAEBAQABIAYAARAqAAMQARYDGAEiAxoBJAMUARwDCgEOAwEBAuAAAzABSwNfAfMDKwH8AfIC8wH/
         A/oB/wNfAfMDYQHmA0ABcAMLAQ/YAANkAecBsAHbAccB/wG/AboBvAH/A9AB/wPhAf8D9An/A/sB/wNd
         AcoDEAEVzwABAQNkAewBlgKXAf8DrQH/AcABwgHBAf8DywH/A+EB/wP3Ef8DXAHJAwoBDcgAAzABSwGr
@@ -9918,7 +9918,7 @@
     <value>0, 30</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 86</value>
+    <value>252, 86</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -9942,7 +9942,7 @@
     <value>0, 30</value>
   </data>
   <data name="PanelRecebeBiblio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 86</value>
+    <value>252, 86</value>
   </data>
   <data name="PanelRecebeBiblio.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -9966,7 +9966,7 @@
     <value>0, 1</value>
   </data>
   <data name="PanelSombra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 1</value>
+    <value>252, 1</value>
   </data>
   <data name="PanelSombra.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -9990,7 +9990,7 @@
     <value>0, 28</value>
   </data>
   <data name="PanelBaseLuzLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 2</value>
+    <value>252, 2</value>
   </data>
   <data name="PanelBaseLuzLeft.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -10092,7 +10092,7 @@
     <value>0, 0</value>
   </data>
   <data name="Panel274.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 30</value>
+    <value>252, 30</value>
   </data>
   <data name="Panel274.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -10116,7 +10116,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelToolBar_MediasExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 30</value>
+    <value>252, 30</value>
   </data>
   <data name="PanelToolBar_MediasExplorer.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -10143,7 +10143,7 @@
     <value>0, 0, 0, 1</value>
   </data>
   <data name="Panel_MediasExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 117</value>
+    <value>252, 117</value>
   </data>
   <data name="Panel_MediasExplorer.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -10170,7 +10170,7 @@
     <value>0, 0, 0, 1</value>
   </data>
   <data name="Panel_RecebeExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 117</value>
+    <value>252, 117</value>
   </data>
   <data name="Panel_RecebeExplorer.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -10275,7 +10275,7 @@
     <value>5, 3, 5, 0</value>
   </data>
   <data name="Panel41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 23</value>
+    <value>252, 23</value>
   </data>
   <data name="Panel41.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -10302,7 +10302,7 @@
     <value>0, 0, 0, 3</value>
   </data>
   <data name="PanelToolBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 26</value>
+    <value>252, 26</value>
   </data>
   <data name="PanelToolBar.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -10329,7 +10329,7 @@
     <value>0, 143</value>
   </data>
   <data name="SPRedimVisualizarMidia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 5</value>
+    <value>252, 5</value>
   </data>
   <data name="SPRedimVisualizarMidia.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -10356,7 +10356,7 @@
     <value>0, 148</value>
   </data>
   <data name="PanelEnvolveMidiaAberta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 229</value>
+    <value>252, 229</value>
   </data>
   <data name="PanelEnvolveMidiaAberta.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -10386,7 +10386,7 @@
     <value>0, 377</value>
   </data>
   <data name="Splitter7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 5</value>
+    <value>252, 5</value>
   </data>
   <data name="Splitter7.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -10413,7 +10413,7 @@
     <value>0, 0, 0, 1</value>
   </data>
   <data name="Panel_Recebe_Filtro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 132</value>
+    <value>252, 132</value>
   </data>
   <data name="Panel_Recebe_Filtro.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -10437,7 +10437,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelBottonLuz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 1</value>
+    <value>252, 1</value>
   </data>
   <data name="PanelBottonLuz.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -10564,7 +10564,7 @@
     <value>NoControl</value>
   </data>
   <data name="Button13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 3</value>
+    <value>219, 3</value>
   </data>
   <data name="Button13.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 20</value>
@@ -10600,7 +10600,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="Panel33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 26</value>
+    <value>252, 26</value>
   </data>
   <data name="Panel33.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -10624,7 +10624,7 @@
     <value>0, 514</value>
   </data>
   <data name="PanelToolBarBotton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 26</value>
+    <value>252, 26</value>
   </data>
   <data name="PanelToolBarBotton.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -10648,7 +10648,7 @@
     <value>2, 0</value>
   </data>
   <data name="PanelTeste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 540</value>
+    <value>252, 540</value>
   </data>
   <data name="PanelTeste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -10675,7 +10675,7 @@
     <value>2, 0, 0, 0</value>
   </data>
   <data name="PanelEnvoveMidia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 540</value>
+    <value>254, 540</value>
   </data>
   <data name="PanelEnvoveMidia.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -10702,7 +10702,7 @@
     <value>0, 5, 0, 5</value>
   </data>
   <data name="PanelMedia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 550</value>
+    <value>254, 550</value>
   </data>
   <data name="PanelMedia.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -10726,7 +10726,7 @@
     <value>3, 174</value>
   </data>
   <data name="Panel_Left.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 550</value>
+    <value>254, 550</value>
   </data>
   <data name="Panel_Left.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -22173,7 +22173,7 @@
     <value>NoControl</value>
   </data>
   <data name="Splitter5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 174</value>
+    <value>257, 174</value>
   </data>
   <data name="Splitter5.Size" type="System.Drawing.Size, System.Drawing">
     <value>5, 550</value>
@@ -22546,7 +22546,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        ZgAAAk1TRnQBSQFMAgEBGgEAAYgBBQGIAQUBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        ZgAAAk1TRnQBSQFMAgEBGgEAAZABBQGQAQUBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABcAMAAQEBAAEgBgABcGIAAYcB3wL/tgAB5QH/AwAB/yYAAdMB/wIAAdkB/xAAAY0B4gL/AYkB4AL/
         GAACYAFZAeuaAAHmAf8CAAHlAf8CAAGGAf8eAAHcAf8CAAHbAf8CAAG5Af8IAAMWAR8BlAHkAv8BkAHj
         Av8BjAHhAv8BAAHHAeoB/wEAAcsB7wH/AQABzwHyAf8BAAHTAfUB/wEAAdcB+AH/AcMCAAH/AegBlwEA
@@ -22994,7 +22994,7 @@
     <value>0, 55</value>
   </data>
   <data name="PanelRecebe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 457</value>
+    <value>748, 457</value>
   </data>
   <data name="PanelRecebe.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -23252,7 +23252,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelFoto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelFoto.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -23552,7 +23552,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelArquivos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelArquivos.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
@@ -23852,7 +23852,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelMidia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelMidia.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -24191,7 +24191,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelLivros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelLivros.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -24410,7 +24410,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelMusica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelMusica.TabIndex" type="System.Int32, mscorlib">
     <value>88</value>
@@ -24596,7 +24596,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelVideos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelVideos.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -24623,7 +24623,7 @@
     <value>0, 25</value>
   </data>
   <data name="PanelSubMenuContorn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 28</value>
+    <value>748, 28</value>
   </data>
   <data name="PanelSubMenuContorn.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -24647,7 +24647,7 @@
     <value>0, 1</value>
   </data>
   <data name="Panel196.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 1</value>
+    <value>748, 1</value>
   </data>
   <data name="Panel196.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -24671,7 +24671,7 @@
     <value>0, 53</value>
   </data>
   <data name="PanelBaseLuz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 2</value>
+    <value>748, 2</value>
   </data>
   <data name="PanelBaseLuz.TabIndex" type="System.Int32, mscorlib">
     <value>93</value>
@@ -24753,7 +24753,7 @@
     <value>NoControl</value>
   </data>
   <data name="BTNMenu01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>758, 0</value>
+    <value>733, 0</value>
   </data>
   <data name="BTNMenu01.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -25062,7 +25062,7 @@
     <value>3, 1, 3, 0</value>
   </data>
   <data name="Panel76.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 21</value>
+    <value>748, 21</value>
   </data>
   <data name="Panel76.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -25089,7 +25089,7 @@
     <value>0, 0, 0, 4</value>
   </data>
   <data name="Panel194.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 25</value>
+    <value>748, 25</value>
   </data>
   <data name="Panel194.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -25113,7 +25113,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelSubMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 55</value>
+    <value>748, 55</value>
   </data>
   <data name="PanelSubMenu.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -25137,7 +25137,7 @@
     <value>0, 0</value>
   </data>
   <data name="Panel199.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 1</value>
+    <value>748, 1</value>
   </data>
   <data name="Panel199.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -25269,7 +25269,7 @@
     <value>Right</value>
   </data>
   <data name="Panel201.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 1</value>
+    <value>300, 1</value>
   </data>
   <data name="Panel201.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 23</value>
@@ -25783,7 +25783,7 @@
     <value>Right</value>
   </data>
   <data name="Panel203.Location" type="System.Drawing.Point, System.Drawing">
-    <value>343, 1</value>
+    <value>318, 1</value>
   </data>
   <data name="Panel203.Size" type="System.Drawing.Size, System.Drawing">
     <value>429, 23</value>
@@ -26299,7 +26299,7 @@
     <value>1, 1, 1, 1</value>
   </data>
   <data name="Panel200.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 25</value>
+    <value>748, 25</value>
   </data>
   <data name="Panel200.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -26323,7 +26323,7 @@
     <value>0, 1</value>
   </data>
   <data name="PanelFundao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 25</value>
+    <value>748, 25</value>
   </data>
   <data name="PanelFundao.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -26350,7 +26350,7 @@
     <value>0, 1, 0, 0</value>
   </data>
   <data name="Panel197.Size" type="System.Drawing.Size, System.Drawing">
-    <value>773, 26</value>
+    <value>748, 26</value>
   </data>
   <data name="Panel197.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -26374,7 +26374,7 @@
     <value>0, 5</value>
   </data>
   <data name="Panel79.Size" type="System.Drawing.Size, System.Drawing">
-    <value>775, 540</value>
+    <value>750, 540</value>
   </data>
   <data name="Panel79.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -26395,13 +26395,13 @@
     <value>Fill</value>
   </data>
   <data name="PanelR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 174</value>
+    <value>262, 174</value>
   </data>
   <data name="PanelR.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 5, 0, 5</value>
   </data>
   <data name="PanelR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>775, 550</value>
+    <value>750, 550</value>
   </data>
   <data name="PanelR.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>

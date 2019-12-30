@@ -58,7 +58,7 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
         Me.TVWFilesAndFolders.SelectedImageIndex = 0
         Me.TVWFilesAndFolders.ShowLines = False
-        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 306)
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 308)
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList
@@ -98,7 +98,7 @@ Partial Class ControlPainel_Desktop
         Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
         Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(308, 30)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(308, 28)
         Me.PanelOpcoesDeProcessos.TabIndex = 97
         '
         'Panel36
@@ -109,24 +109,24 @@ Partial Class ControlPainel_Desktop
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
-        Me.Panel36.Size = New System.Drawing.Size(298, 28)
+        Me.Panel36.Size = New System.Drawing.Size(298, 26)
         Me.Panel36.TabIndex = 0
         '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.TVWFilesAndFolders)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 33)
+        Me.Panel2.Location = New System.Drawing.Point(0, 31)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel2.Size = New System.Drawing.Size(308, 308)
+        Me.Panel2.Size = New System.Drawing.Size(308, 310)
         Me.Panel2.TabIndex = 99
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 30)
+        Me.Panel1.Location = New System.Drawing.Point(0, 28)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(308, 3)
         Me.Panel1.TabIndex = 98
@@ -138,7 +138,7 @@ Partial Class ControlPainel_Desktop
         Me.PanelEnvolve_BTN_NewFolder.Location = New System.Drawing.Point(0, 1)
         Me.PanelEnvolve_BTN_NewFolder.Name = "PanelEnvolve_BTN_NewFolder"
         Me.PanelEnvolve_BTN_NewFolder.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 26)
+        Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 24)
         Me.PanelEnvolve_BTN_NewFolder.TabIndex = 114
         '
         'BTN_NewFolder
@@ -153,7 +153,7 @@ Partial Class ControlPainel_Desktop
         Me.BTN_NewFolder.Location = New System.Drawing.Point(1, 1)
         Me.BTN_NewFolder.Margin = New System.Windows.Forms.Padding(0)
         Me.BTN_NewFolder.Name = "BTN_NewFolder"
-        Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 24)
+        Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 22)
         Me.BTN_NewFolder.TabIndex = 20
         Me.BTN_NewFolder.UseVisualStyleBackColor = False
         '
@@ -164,7 +164,7 @@ Partial Class ControlPainel_Desktop
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(32, 1)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 26)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 24)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.TabIndex = 115
         '
         'CHK_ShowCheck
@@ -182,7 +182,7 @@ Partial Class ControlPainel_Desktop
         Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
         Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
-        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 24)
+        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 22)
         Me.CHK_ShowCheck.TabIndex = 19
         Me.CHK_ShowCheck.UseVisualStyleBackColor = False
         '

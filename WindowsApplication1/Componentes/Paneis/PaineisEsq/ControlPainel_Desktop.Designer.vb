@@ -27,20 +27,37 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders = New System.Windows.Forms.TreeView()
         Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
-        Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
-        Me.Panel36 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
-        Me.BTN_NewFolder = New System.Windows.Forms.Button()
+        Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
+        Me.Panel36 = New System.Windows.Forms.Panel()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.Panel()
         Me.CHK_ShowCheck = New System.Windows.Forms.CheckBox()
+        Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
+        Me.BTN_NewFolder = New System.Windows.Forms.Button()
+        Me.CMItens = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ExpamdirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarComoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RenomearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoverParaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgrupamentoSelecionadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
         Me.Panel36.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.PanelEnvolve_BTN_NewFolder.SuspendLayout()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.SuspendLayout()
+        Me.PanelEnvolve_BTN_NewFolder.SuspendLayout()
+        Me.CMItens.SuspendLayout()
         Me.SuspendLayout()
         '
         'TVWFilesAndFolders
@@ -89,6 +106,25 @@ Partial Class ControlPainel_Desktop
         Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(308, 341)
         Me.PanelBorder_TVWDesktop.TabIndex = 4
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.TVWFilesAndFolders)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 31)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel2.Size = New System.Drawing.Size(308, 310)
+        Me.Panel2.TabIndex = 99
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 28)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(308, 3)
+        Me.Panel1.TabIndex = 98
+        '
         'PanelOpcoesDeProcessos
         '
         Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -112,24 +148,32 @@ Partial Class ControlPainel_Desktop
         Me.Panel36.Size = New System.Drawing.Size(298, 26)
         Me.Panel36.TabIndex = 0
         '
-        'Panel2
+        'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
         '
-        Me.Panel2.Controls.Add(Me.TVWFilesAndFolders)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 31)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel2.Size = New System.Drawing.Size(308, 310)
-        Me.Panel2.TabIndex = 99
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Controls.Add(Me.CHK_ShowCheck)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(32, 1)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 24)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.TabIndex = 115
         '
-        'Panel1
+        'CHK_ShowCheck
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 28)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(308, 3)
-        Me.Panel1.TabIndex = 98
+        Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CHK_ShowCheck.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Exibir_painel_de_processos
+        Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CHK_ShowCheck.FlatAppearance.BorderSize = 0
+        Me.CHK_ShowCheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
+        Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
+        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 22)
+        Me.CHK_ShowCheck.TabIndex = 19
+        Me.CHK_ShowCheck.UseVisualStyleBackColor = False
         '
         'PanelEnvolve_BTN_NewFolder
         '
@@ -157,34 +201,101 @@ Partial Class ControlPainel_Desktop
         Me.BTN_NewFolder.TabIndex = 20
         Me.BTN_NewFolder.UseVisualStyleBackColor = False
         '
-        'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
+        'CMItens
         '
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Controls.Add(Me.CHK_ShowCheck)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(32, 1)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 24)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.TabIndex = 115
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Name = "CMItens"
+        Me.CMItens.Size = New System.Drawing.Size(243, 242)
         '
-        'CHK_ShowCheck
+        'ExpamdirToolStripMenuItem
         '
-        Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.CHK_ShowCheck.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Exibir_painel_de_processos
-        Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CHK_ShowCheck.Checked = True
-        Me.CHK_ShowCheck.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CHK_ShowCheck.FlatAppearance.BorderSize = 0
-        Me.CHK_ShowCheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
-        Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
-        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 22)
-        Me.CHK_ShowCheck.TabIndex = 19
-        Me.CHK_ShowCheck.UseVisualStyleBackColor = False
+        Me.ExpamdirToolStripMenuItem.Name = "ExpamdirToolStripMenuItem"
+        Me.ExpamdirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ExpamdirToolStripMenuItem.Text = "Expamdir"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(239, 6)
+        '
+        'NovaPastaToolStripMenuItem
+        '
+        Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
+        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.NovaPastaToolStripMenuItem.Text = "Nova Pasta"
+        '
+        'CopiarComoToolStripMenuItem
+        '
+        Me.CopiarComoToolStripMenuItem.Name = "CopiarComoToolStripMenuItem"
+        Me.CopiarComoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarComoToolStripMenuItem.Text = "Copiar como..."
+        '
+        'CopiarParaToolStripMenuItem
+        '
+        Me.CopiarParaToolStripMenuItem.Name = "CopiarParaToolStripMenuItem"
+        Me.CopiarParaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarParaToolStripMenuItem.Text = "Copiar para..."
+        '
+        'CopiarParaÁreaDeTranferênciaToolStripMenuItem
+        '
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Name = "CopiarParaÁreaDeTranferênciaToolStripMenuItem"
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Text = "Copiar para área de tranferência"
+        '
+        'RenomearToolStripMenuItem
+        '
+        Me.RenomearToolStripMenuItem.Name = "RenomearToolStripMenuItem"
+        Me.RenomearToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.RenomearToolStripMenuItem.Text = "Renomear"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(239, 6)
+        '
+        'ExcluirToolStripMenuItem
+        '
+        Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
+        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ExcluirToolStripMenuItem.Text = "Excluir"
+        '
+        'MoverParaProcessoToolStripMenuItem
+        '
+        Me.MoverParaProcessoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoAgrupamentoToolStripMenuItem, Me.AgrupamentoSelecionadoToolStripMenuItem})
+        Me.MoverParaProcessoToolStripMenuItem.Name = "MoverParaProcessoToolStripMenuItem"
+        Me.MoverParaProcessoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.MoverParaProcessoToolStripMenuItem.Text = "Mover para agrupamento..."
+        '
+        'NovoAgrupamentoToolStripMenuItem
+        '
+        Me.NovoAgrupamentoToolStripMenuItem.Name = "NovoAgrupamentoToolStripMenuItem"
+        Me.NovoAgrupamentoToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.NovoAgrupamentoToolStripMenuItem.Text = "Novo agrupamento"
+        '
+        'AgrupamentoSelecionadoToolStripMenuItem
+        '
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Name = "AgrupamentoSelecionadoToolStripMenuItem"
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Text = "Agrupamento selecionado"
+        '
+        'ProcessarToolStripMenuItem
+        '
+        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
+        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ProcessarToolStripMenuItem.Text = "Processar"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(239, 6)
+        '
+        'PropriedadesToolStripMenuItem
+        '
+        Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
+        Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
         'ControlPainel_Desktop
         '
@@ -194,11 +305,12 @@ Partial Class ControlPainel_Desktop
         Me.Name = "ControlPainel_Desktop"
         Me.Size = New System.Drawing.Size(308, 341)
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.PanelOpcoesDeProcessos.ResumeLayout(False)
         Me.Panel36.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.PanelEnvolve_BTN_NewFolder.ResumeLayout(False)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.ResumeLayout(False)
+        Me.PanelEnvolve_BTN_NewFolder.ResumeLayout(False)
+        Me.CMItens.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -214,4 +326,20 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents BTN_NewFolder As Button
     Friend WithEvents PanelEnvolveCHK_ShowPanelAllProcessosAcoes As Panel
     Friend WithEvents CHK_ShowCheck As CheckBox
+    Friend WithEvents CMItens As ContextMenuStrip
+    Friend WithEvents ExpamdirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarComoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaÁreaDeTranferênciaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RenomearToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ExcluirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MoverParaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovoAgrupamentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AgrupamentoSelecionadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProcessarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
 End Class

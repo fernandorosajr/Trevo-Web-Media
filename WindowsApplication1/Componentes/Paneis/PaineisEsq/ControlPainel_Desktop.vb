@@ -2,7 +2,7 @@
 Imports System.IO
 Imports System.Collections
 ' TODO: Menu de contexto
-' TODO: O que fazer quando expande a pasta
+' TODO: O que fazer quando expande a pasta(OK)
 ' TODO: 
 ' TODO:
 ' TODO:
@@ -26,7 +26,12 @@ Public Class ControlPainel_Desktop
     End Property
 
     Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
-        '  LoadTree()
+
+        If CHK_ShowCheck.Checked = 1 Then
+            'TVWFilesAndFolders.CheckBoxes = True
+
+        End If
+        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
 
     End Sub
     Public Sub New()
@@ -67,18 +72,20 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = SpecialDirectories.MyPictures
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
-        tvRoot.Tag = SpecialDirectories.ProgramFiles
-        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+        'tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
+        'tvRoot.Tag = SpecialDirectories.ProgramFiles
+        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("Programs", "Programs", "pastaFechada", "pastaAberta")
-        tvRoot.Tag = SpecialDirectories.Programs
-        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+        'tvRoot = tvNodeDeComputador.Nodes.Add("Programs", "Programs", "pastaFechada", "pastaAberta")
+        'tvRoot.Tag = SpecialDirectories.Programs
+        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("Temp", "Temp", "pastaFechada", "pastaAberta")
-        tvRoot.Tag = SpecialDirectories.Temp
-        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-        tvNodeDeComputador.Expand()
+        'tvRoot = tvNodeDeComputador.Nodes.Add("Temp", "Temp", "pastaFechada", "pastaAberta")
+        'tvRoot.Tag = SpecialDirectories.Temp
+        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+        'tvNodeDeComputador.Expand()
+
+        ' MsgBox(SpecialDirectories.AllUsersApplicationData)
 
 
         'TODO: ( INCOMPLETO ) Encontra SubPastas da Area de trabalho e as adicionar 
@@ -103,6 +110,8 @@ Public Class ControlPainel_Desktop
             nome = drD.Name
             tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaAberta")
             tvRoot.Tag = drD.FullName
+            tvRoot.ContextMenuStrip = Me.CMItens
+
             tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
         Next
 
@@ -216,6 +225,8 @@ Public Class ControlPainel_Desktop
             End If
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
+            tvRoot.ContextMenuStrip = Me.CMItens
+
             tvNode.Tag = nomeDoDrive
             tvNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
@@ -257,9 +268,11 @@ Public Class ControlPainel_Desktop
                             Dim dirSub As DirectoryInfo() = dir.GetDirectories
                             Dim dirArq1 As FileInfo() = dir.GetFiles()
 
-                            '        TODO: Adicionar algoritimo de atualização da media: criar função  
-                            '        TODO: Aplicar função criada em um evento de expansção de node ou seleção.
+                            '        TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
+                            '        TODO: Aplicar função criada em um evento de expansção de node ou seleção. (OK)
                             '        TODO: http://www.macoratti.net/13/12/vbn_list1.htm
+                            '        TODO: Adicionar pasta download
+                            '        eXCLUIR PASTAS especiais.
 
                             AtualizarDiretorio(node)
 
@@ -341,10 +354,10 @@ Public Class ControlPainel_Desktop
 
             subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
             subTNode.Tag = dirAdd.FullName
+            subTNode.ContextMenuStrip = Me.CMItens
+
             subTNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-
         Next
-
 
     End Sub
 

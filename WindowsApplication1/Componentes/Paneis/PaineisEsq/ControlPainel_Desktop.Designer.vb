@@ -51,6 +51,10 @@ Partial Class ControlPainel_Desktop
         Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoverParaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
@@ -203,9 +207,9 @@ Partial Class ControlPainel_Desktop
         '
         'CMItens
         '
-        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(243, 242)
+        Me.CMItens.Size = New System.Drawing.Size(243, 286)
         '
         'ExpamdirToolStripMenuItem
         '
@@ -297,6 +301,30 @@ Partial Class ControlPainel_Desktop
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
+        'MoverParaPastaProcessoToolStripMenuItem
+        '
+        Me.MoverParaPastaProcessoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaProcessoToolStripMenuItem, Me.ToolStripSeparator4, Me.ToolStripMenuItem2})
+        Me.MoverParaPastaProcessoToolStripMenuItem.Name = "MoverParaPastaProcessoToolStripMenuItem"
+        Me.MoverParaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.MoverParaPastaProcessoToolStripMenuItem.Text = "Mover para Pasta Processo"
+        '
+        'NovaPastaProcessoToolStripMenuItem
+        '
+        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
+        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova Pasta Processo"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(180, 6)
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(183, 22)
+        Me.ToolStripMenuItem2.Text = "..."
+        '
         'ControlPainel_Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -342,4 +370,8 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents ProcessarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MoverParaPastaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovaPastaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
 End Class

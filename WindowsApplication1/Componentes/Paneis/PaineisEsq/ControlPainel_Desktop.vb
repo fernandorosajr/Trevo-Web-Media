@@ -115,45 +115,45 @@ Public Class ControlPainel_Desktop
             tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
         Next
 
-        '###############################################################
-        '_______________________________________________________________
+        ''###############################################################
+        ''_______________________________________________________________
 
-        ' TODO: Instruções para carregar os arquivos de Area de Trabalho
-        '__________________________________________________________________
+        '' TODO: Instruções para carregar os arquivos de Area de Trabalho
+        ''__________________________________________________________________
 
-        ' se CarregarArquivosNaArvore for verdadeiro entao...
-        ' carrega arquivos
-        carregaArquivosNaArvore = True
+        '' se CarregarArquivosNaArvore for verdadeiro entao...
+        '' carrega arquivos
+        'carregaArquivosNaArvore = True
 
-        If carregaArquivosNaArvore = True Then
-            caminhoDaPastaSelecionada = tvNodeDeDesktop.Tag
+        'If carregaArquivosNaArvore = True Then
+        '    caminhoDaPastaSelecionada = tvNodeDeDesktop.Tag
 
-            Dim dirFiles As New IO.DirectoryInfo(caminhoDaPastaSelecionada)
-            Dim dirArq01 As IO.FileInfo() = dirFiles.GetFiles()
-            Dim dra As IO.FileInfo
+        '    Dim dirFiles As New IO.DirectoryInfo(caminhoDaPastaSelecionada)
+        '    Dim dirArq01 As IO.FileInfo() = dirFiles.GetFiles()
+        '    Dim dra As IO.FileInfo
 
-            Dim iconImage As String
-            Dim ext As String
+        '    Dim iconImage As String
+        '    Dim ext As String
 
-            For Each dra In dirArq01
+        '    For Each dra In dirArq01
 
-                ext = dra.Extension
-                Select Case ext.ToLower
-                    Case ".jpg", ".jpeg", ".gif"
+        '        ext = dra.Extension
+        '        Select Case ext.ToLower
+        '            Case ".jpg", ".jpeg", ".gif"
 
-                        iconImage = "Documentos"
+        '                iconImage = "Documentos"
 
-                    Case Else
-                        iconImage = "Documentos"
+        '            Case Else
+        '                iconImage = "Documentos"
 
-                End Select
+        '        End Select
 
-                nome = dra.Name
-                tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, iconImage, iconImage).Tag = dra.FullName
+        '        nome = dra.Name
+        '        tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, iconImage, iconImage).Tag = dra.FullName
 
-            Next
+        '    Next
 
-        End If
+        'End If
 
         '###############################################################
         '_______________________________________________________________

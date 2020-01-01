@@ -210,13 +210,13 @@ Partial Class ControlPainel_Desktop
         '
         Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(243, 264)
+        Me.CMItens.Size = New System.Drawing.Size(243, 286)
         '
         'ExpamdirToolStripMenuItem
         '
         Me.ExpamdirToolStripMenuItem.Name = "ExpamdirToolStripMenuItem"
         Me.ExpamdirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.ExpamdirToolStripMenuItem.Text = "Expamdir"
+        Me.ExpamdirToolStripMenuItem.Text = "Expandir"
         '
         'ToolStripSeparator1
         '

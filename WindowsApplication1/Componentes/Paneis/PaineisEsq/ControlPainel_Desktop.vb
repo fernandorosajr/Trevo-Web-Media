@@ -49,6 +49,8 @@ Public Class ControlPainel_Desktop
         Dim tvNodeDeComputador As TreeNode
         Dim tvNodeDeDesktop As TreeNode
 
+        Dim delimitadores() As Char = {"\"c, "/"c}
+
         ' Filtrar os tipos de arquivos que se deseja ver no Explorer 
         tipoDeArquivo = "*.*"
 
@@ -72,6 +74,22 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = SpecialDirectories.MyPictures
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
+
+        Dim listaDeDiretorios As String()
+        Dim caminhoDaPastaDoUsuario As String
+        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadores)
+
+        caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
+        Dim dir As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Downloads")
+
+        If dir.Exists = False Then
+            MkDir(caminhoDaPastaDoUsuario & "\Downloads")
+        End If
+
+        tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Downloads", "Downloads", "down", "down")
+        tvRoot.Tag = caminhoDaPastaDoUsuario & "\Downloads"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+
         'tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
         'tvRoot.Tag = SpecialDirectories.ProgramFiles
         'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
@@ -92,11 +110,11 @@ Public Class ControlPainel_Desktop
         '_________________________________________________________________
 
         Dim AreaDeTrabalho As String
-        Dim SubPastaDaAreaDeTrabalho As String
+        'Dim SubPastaDaAreaDeTrabalho As String
         Dim NomeDasSubPastasDaAreaDeTrabalho() As String
-        Dim nomeDaSubPastaDaAreaDeTrabalho As String
+        ' Dim nomeDaSubPastaDaAreaDeTrabalho As String
         Dim nome As String
-        Dim delimitadores() As Char = {"\"c, "/"c}
+
 
         AreaDeTrabalho = SpecialDirectories.Desktop
         NomeDasSubPastasDaAreaDeTrabalho = SepararPalavras(AreaDeTrabalho, delimitadores)

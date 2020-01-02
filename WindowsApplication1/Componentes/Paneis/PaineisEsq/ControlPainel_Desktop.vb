@@ -80,9 +80,26 @@ Public Class ControlPainel_Desktop
         listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadores)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
-        Dim dir As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Downloads")
+        Dim dir As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Videos")
 
         If dir.Exists = False Then
+            MkDir(caminhoDaPastaDoUsuario & "\Videos")
+        End If
+
+        tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Videos", "Videos", "Videos", "Videos")
+        tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
+        tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+
+
+
+        'Dim listaDeDiretorios As String()
+        'Dim caminhoDaPastaDoUsuario As String
+        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadores)
+
+        caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
+        Dim dir2 As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Downloads")
+
+        If dir2.Exists = False Then
             MkDir(caminhoDaPastaDoUsuario & "\Downloads")
         End If
 

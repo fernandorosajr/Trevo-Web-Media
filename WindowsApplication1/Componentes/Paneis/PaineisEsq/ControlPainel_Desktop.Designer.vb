@@ -48,13 +48,13 @@ Partial Class ControlPainel_Desktop
         Me.MoverParaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgrupamentoSelecionadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoverParaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
@@ -97,7 +97,8 @@ Partial Class ControlPainel_Desktop
         Me.IMGList.Images.SetKeyName(8, "DVD")
         Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
         Me.IMGList.Images.SetKeyName(10, "info")
-        Me.IMGList.Images.SetKeyName(11, "down")
+        Me.IMGList.Images.SetKeyName(11, "Videos")
+        Me.IMGList.Images.SetKeyName(12, "down")
         '
         'PanelBorder_TVWDesktop
         '
@@ -210,7 +211,7 @@ Partial Class ControlPainel_Desktop
         '
         Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(243, 286)
+        Me.CMItens.Size = New System.Drawing.Size(243, 264)
         '
         'ExpamdirToolStripMenuItem
         '
@@ -285,23 +286,6 @@ Partial Class ControlPainel_Desktop
         Me.AgrupamentoSelecionadoToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
         Me.AgrupamentoSelecionadoToolStripMenuItem.Text = "Agrupamento selecionado"
         '
-        'ProcessarToolStripMenuItem
-        '
-        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
-        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.ProcessarToolStripMenuItem.Text = "Processar"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(239, 6)
-        '
-        'PropriedadesToolStripMenuItem
-        '
-        Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
-        Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
-        '
         'MoverParaPastaProcessoToolStripMenuItem
         '
         Me.MoverParaPastaProcessoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaProcessoToolStripMenuItem, Me.ToolStripSeparator4, Me.ToolStripMenuItem2})
@@ -325,6 +309,23 @@ Partial Class ControlPainel_Desktop
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(183, 22)
         Me.ToolStripMenuItem2.Text = "..."
+        '
+        'ProcessarToolStripMenuItem
+        '
+        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
+        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ProcessarToolStripMenuItem.Text = "Processar"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(239, 6)
+        '
+        'PropriedadesToolStripMenuItem
+        '
+        Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
+        Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
         'ControlPainel_Desktop
         '

@@ -139,6 +139,12 @@
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Class\Class_Configs.vb" />
+    <Compile Include="Componentes\ControlesDeVisualizacao\ControlGroupsViews.Designer.vb">
+      <DependentUpon>ControlGroupsViews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\ControlesDeVisualizacao\ControlGroupsViews.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\ControlListView\ControlVerListas.Designer.vb">
       <DependentUpon>ControlVerListas.vb</DependentUpon>
     </Compile>

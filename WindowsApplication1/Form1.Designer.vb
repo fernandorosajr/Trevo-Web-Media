@@ -24,43 +24,43 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim ListViewItem25 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"oooooooooo"}, "processo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim ListViewItem26 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"kkkkkkkkkkkkk"}, "arquivo1.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim ListViewItem27 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"jjjj"}, "arquivo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
-        Dim TreeNode273 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode274 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode275 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode276 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
-        Dim TreeNode277 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
-        Dim TreeNode278 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir em...")
-        Dim TreeNode279 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para Lixeira")
-        Dim TreeNode280 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para...", New System.Windows.Forms.TreeNode() {TreeNode277, TreeNode278, TreeNode279})
-        Dim TreeNode281 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
-        Dim TreeNode282 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear...")
-        Dim TreeNode283 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta")
-        Dim TreeNode284 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo...")
-        Dim TreeNode285 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar...", New System.Windows.Forms.TreeNode() {TreeNode283, TreeNode284})
-        Dim TreeNode286 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo 01.html")
-        Dim TreeNode287 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo02.jpg")
-        Dim TreeNode288 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta 01", New System.Windows.Forms.TreeNode() {TreeNode286, TreeNode287})
-        Dim TreeNode289 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode288})
-        Dim TreeNode290 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode291 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode292 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode293 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
-        Dim TreeNode294 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
-        Dim TreeNode295 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
-        Dim TreeNode296 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
-        Dim TreeNode297 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
-        Dim TreeNode298 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
-        Dim TreeNode299 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
-        Dim TreeNode300 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
-        Dim TreeNode301 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
-        Dim TreeNode302 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
-        Dim TreeNode303 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
-        Dim TreeNode304 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
-        Dim TreeNode305 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
-        Dim TreeNode306 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
+        Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"oooooooooo"}, "processo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"kkkkkkkkkkkkk"}, "arquivo1.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim ListViewItem9 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"jjjj"}, "arquivo.ico", System.Drawing.Color.Gainsboro, System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer)), New System.Drawing.Font("Microsoft Sans Serif", 8.25!))
+        Dim TreeNode69 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode70 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode71 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode72 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
+        Dim TreeNode73 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Copiar para...")
+        Dim TreeNode74 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir em...")
+        Dim TreeNode75 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para Lixeira")
+        Dim TreeNode76 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mover para...", New System.Windows.Forms.TreeNode() {TreeNode73, TreeNode74, TreeNode75})
+        Dim TreeNode77 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Excluir")
+        Dim TreeNode78 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Renomear...")
+        Dim TreeNode79 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta")
+        Dim TreeNode80 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo...")
+        Dim TreeNode81 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Criar...", New System.Windows.Forms.TreeNode() {TreeNode79, TreeNode80})
+        Dim TreeNode82 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo 01.html")
+        Dim TreeNode83 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo02.jpg")
+        Dim TreeNode84 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta 01", New System.Windows.Forms.TreeNode() {TreeNode82, TreeNode83})
+        Dim TreeNode85 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode84})
+        Dim TreeNode86 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode87 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode88 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode89 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node0")
+        Dim TreeNode90 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node1")
+        Dim TreeNode91 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node2")
+        Dim TreeNode92 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Node3")
+        Dim TreeNode93 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia Auxente")
+        Dim TreeNode94 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("* Editando")
+        Dim TreeNode95 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("[   !  ] Erro de Leitura")
+        Dim TreeNode96 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravando")
+        Dim TreeNode97 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pronto para Gravar")
+        Dim TreeNode98 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravação Bem Sucedida")
+        Dim TreeNode99 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia selecionada")
+        Dim TreeNode100 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia em branco")
+        Dim TreeNode101 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Mídia presente")
+        Dim TreeNode102 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel205 = New System.Windows.Forms.Panel()
@@ -162,10 +162,38 @@ Partial Class Form1
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.PanelViewGroup = New System.Windows.Forms.Panel()
         Me.PanelDireita = New System.Windows.Forms.Panel()
-        Me.PanelCarregaFolder = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel_Envolve = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.PanelMarginPath = New System.Windows.Forms.Panel()
+        Me.PanelBorderPath = New System.Windows.Forms.Panel()
+        Me.PanelPath = New System.Windows.Forms.Panel()
+        Me.TXTPath = New System.Windows.Forms.TextBox()
+        Me.BTNExpandiPath = New System.Windows.Forms.Button()
+        Me.BTNIconPath = New System.Windows.Forms.Button()
+        Me.BTN_TXTPath = New System.Windows.Forms.Button()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PanelMarginNameAndExtencao = New System.Windows.Forms.Panel()
+        Me.PanelNameAndExtencao = New System.Windows.Forms.Panel()
+        Me.PanelName = New System.Windows.Forms.Panel()
+        Me.TXTName = New System.Windows.Forms.TextBox()
+        Me.BTN_TXTName = New System.Windows.Forms.Button()
+        Me.PanelEXTProp = New System.Windows.Forms.Panel()
+        Me.TXTExetencao = New System.Windows.Forms.TextBox()
+        Me.BTN_TXTExetencao = New System.Windows.Forms.Button()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
+        Me.Panel_Envolve = New System.Windows.Forms.Panel()
+        Me.PanelCarregaFolder = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel205.SuspendLayout()
         Me.PanelAllLocalizar.SuspendLayout()
@@ -215,7 +243,23 @@ Partial Class Form1
         Me.PanelViewGroup.SuspendLayout()
         Me.PanelDireita.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.PanelMarginPath.SuspendLayout()
+        Me.PanelBorderPath.SuspendLayout()
+        Me.PanelPath.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.FlowLayoutPanel3.SuspendLayout()
+        Me.PanelMarginNameAndExtencao.SuspendLayout()
+        Me.PanelNameAndExtencao.SuspendLayout()
+        Me.PanelName.SuspendLayout()
+        Me.PanelEXTProp.SuspendLayout()
+        Me.Panel14.SuspendLayout()
+        Me.FlowLayoutPanel2.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
+        Me.Panel12.SuspendLayout()
         Me.Panel_Envolve.SuspendLayout()
+        Me.Panel16.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -311,7 +355,7 @@ Partial Class Form1
         Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView1.ForeColor = System.Drawing.Color.Gainsboro
         Me.ListView1.HideSelection = False
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem25, ListViewItem26, ListViewItem27})
+        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem7, ListViewItem8, ListViewItem9})
         Me.ListView1.Location = New System.Drawing.Point(0, 24)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(46, 0)
@@ -364,13 +408,13 @@ Partial Class Form1
         Me.TreeView11.HideSelection = False
         Me.TreeView11.Location = New System.Drawing.Point(1, 24)
         Me.TreeView11.Name = "TreeView11"
-        TreeNode273.Name = "Node0"
-        TreeNode273.Text = "Node0"
-        TreeNode274.Name = "Node1"
-        TreeNode274.Text = "Node1"
-        TreeNode275.Name = "Node2"
-        TreeNode275.Text = "Node2"
-        Me.TreeView11.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode273, TreeNode274, TreeNode275})
+        TreeNode69.Name = "Node0"
+        TreeNode69.Text = "Node0"
+        TreeNode70.Name = "Node1"
+        TreeNode70.Text = "Node1"
+        TreeNode71.Name = "Node2"
+        TreeNode71.Text = "Node2"
+        Me.TreeView11.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode69, TreeNode70, TreeNode71})
         Me.TreeView11.ShowLines = False
         Me.TreeView11.Size = New System.Drawing.Size(158, 0)
         Me.TreeView11.TabIndex = 87
@@ -617,39 +661,39 @@ Partial Class Form1
         Me.TreeView12.HideSelection = False
         Me.TreeView12.Location = New System.Drawing.Point(1, 1)
         Me.TreeView12.Name = "TreeView12"
-        TreeNode276.ImageKey = "CD.ico"
-        TreeNode276.Name = "Node1"
-        TreeNode276.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode276.SelectedImageKey = "CD.ico"
-        TreeNode276.Text = "Copiar para..."
-        TreeNode277.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode277.Name = "Node2"
-        TreeNode277.Text = "Copiar para..."
-        TreeNode278.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode278.Name = "Node4"
-        TreeNode278.Text = "Excluir em..."
-        TreeNode279.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode279.Name = "Node5"
-        TreeNode279.Text = "Mover para Lixeira"
-        TreeNode280.Name = "Node1"
-        TreeNode280.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode280.Text = "Mover para..."
-        TreeNode281.Name = "Node6"
-        TreeNode281.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode281.Text = "Excluir"
-        TreeNode282.Name = "Node7"
-        TreeNode282.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode282.Text = "Renomear..."
-        TreeNode283.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode283.Name = "Node9"
-        TreeNode283.Text = "Pasta"
-        TreeNode284.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode284.Name = "Node10"
-        TreeNode284.Text = "Arquivo..."
-        TreeNode285.Name = "Node8"
-        TreeNode285.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode285.Text = "Criar..."
-        Me.TreeView12.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode276, TreeNode280, TreeNode281, TreeNode282, TreeNode285})
+        TreeNode72.ImageKey = "CD.ico"
+        TreeNode72.Name = "Node1"
+        TreeNode72.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode72.SelectedImageKey = "CD.ico"
+        TreeNode72.Text = "Copiar para..."
+        TreeNode73.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode73.Name = "Node2"
+        TreeNode73.Text = "Copiar para..."
+        TreeNode74.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode74.Name = "Node4"
+        TreeNode74.Text = "Excluir em..."
+        TreeNode75.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode75.Name = "Node5"
+        TreeNode75.Text = "Mover para Lixeira"
+        TreeNode76.Name = "Node1"
+        TreeNode76.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode76.Text = "Mover para..."
+        TreeNode77.Name = "Node6"
+        TreeNode77.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode77.Text = "Excluir"
+        TreeNode78.Name = "Node7"
+        TreeNode78.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode78.Text = "Renomear..."
+        TreeNode79.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode79.Name = "Node9"
+        TreeNode79.Text = "Pasta"
+        TreeNode80.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode80.Name = "Node10"
+        TreeNode80.Text = "Arquivo..."
+        TreeNode81.Name = "Node8"
+        TreeNode81.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode81.Text = "Criar..."
+        Me.TreeView12.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode72, TreeNode76, TreeNode77, TreeNode78, TreeNode81})
         Me.TreeView12.ShowLines = False
         Me.TreeView12.Size = New System.Drawing.Size(229, 88)
         Me.TreeView12.TabIndex = 87
@@ -762,22 +806,22 @@ Partial Class Form1
         Me.TreeView2.HideSelection = False
         Me.TreeView2.Location = New System.Drawing.Point(5, 5)
         Me.TreeView2.Name = "TreeView2"
-        TreeNode286.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode286.Name = "Node3"
-        TreeNode286.Text = "Arquivo 01.html"
-        TreeNode287.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode287.Name = "Node0"
-        TreeNode287.Text = "Arquivo02.jpg"
-        TreeNode288.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        TreeNode288.Name = "Node1"
-        TreeNode288.Text = "Pasta 01"
-        TreeNode289.BackColor = System.Drawing.Color.DimGray
-        TreeNode289.ImageKey = "PastaProcesso.ico"
-        TreeNode289.Name = "Node1"
-        TreeNode289.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        TreeNode289.SelectedImageKey = "PastaProcesso.ico"
-        TreeNode289.Text = "Processo 01"
-        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode289})
+        TreeNode82.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode82.Name = "Node3"
+        TreeNode82.Text = "Arquivo 01.html"
+        TreeNode83.BackColor = System.Drawing.Color.FromArgb(CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode83.Name = "Node0"
+        TreeNode83.Text = "Arquivo02.jpg"
+        TreeNode84.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        TreeNode84.Name = "Node1"
+        TreeNode84.Text = "Pasta 01"
+        TreeNode85.BackColor = System.Drawing.Color.DimGray
+        TreeNode85.ImageKey = "PastaProcesso.ico"
+        TreeNode85.Name = "Node1"
+        TreeNode85.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        TreeNode85.SelectedImageKey = "PastaProcesso.ico"
+        TreeNode85.Text = "Processo 01"
+        Me.TreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode85})
         Me.TreeView2.ShowLines = False
         Me.TreeView2.Size = New System.Drawing.Size(203, 79)
         Me.TreeView2.TabIndex = 87
@@ -1045,13 +1089,13 @@ Partial Class Form1
         Me.TreeView1.HideSelection = False
         Me.TreeView1.Location = New System.Drawing.Point(1, 24)
         Me.TreeView1.Name = "TreeView1"
-        TreeNode290.Name = "Node0"
-        TreeNode290.Text = "Node0"
-        TreeNode291.Name = "Node1"
-        TreeNode291.Text = "Node1"
-        TreeNode292.Name = "Node2"
-        TreeNode292.Text = "Node2"
-        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode290, TreeNode291, TreeNode292})
+        TreeNode86.Name = "Node0"
+        TreeNode86.Text = "Node0"
+        TreeNode87.Name = "Node1"
+        TreeNode87.Text = "Node1"
+        TreeNode88.Name = "Node2"
+        TreeNode88.Text = "Node2"
+        Me.TreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode86, TreeNode87, TreeNode88})
         Me.TreeView1.ShowLines = False
         Me.TreeView1.Size = New System.Drawing.Size(133, 0)
         Me.TreeView1.TabIndex = 87
@@ -1103,15 +1147,15 @@ Partial Class Form1
         Me.TreeView3.HideSelection = False
         Me.TreeView3.Location = New System.Drawing.Point(1, 24)
         Me.TreeView3.Name = "TreeView3"
-        TreeNode293.Name = "Node0"
-        TreeNode293.Text = "Node0"
-        TreeNode294.Name = "Node1"
-        TreeNode294.Text = "Node1"
-        TreeNode295.Name = "Node2"
-        TreeNode295.Text = "Node2"
-        TreeNode296.Name = "Node3"
-        TreeNode296.Text = "Node3"
-        Me.TreeView3.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode293, TreeNode294, TreeNode295, TreeNode296})
+        TreeNode89.Name = "Node0"
+        TreeNode89.Text = "Node0"
+        TreeNode90.Name = "Node1"
+        TreeNode90.Text = "Node1"
+        TreeNode91.Name = "Node2"
+        TreeNode91.Text = "Node2"
+        TreeNode92.Name = "Node3"
+        TreeNode92.Text = "Node3"
+        Me.TreeView3.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode89, TreeNode90, TreeNode91, TreeNode92})
         Me.TreeView3.ShowLines = False
         Me.TreeView3.Size = New System.Drawing.Size(133, 75)
         Me.TreeView3.TabIndex = 87
@@ -1327,40 +1371,40 @@ Partial Class Form1
         Me.TreeView4.LabelEdit = True
         Me.TreeView4.Location = New System.Drawing.Point(1, 0)
         Me.TreeView4.Name = "TreeView4"
-        TreeNode297.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
-        TreeNode297.ImageKey = "CD-Desconhecido.ico"
-        TreeNode297.Name = "Node1"
-        TreeNode297.SelectedImageKey = "CD-Desconhecido.ico"
-        TreeNode297.Text = "Mídia Auxente"
-        TreeNode298.ForeColor = System.Drawing.Color.DodgerBlue
-        TreeNode298.ImageKey = "CDEditing.ico"
-        TreeNode298.Name = "Node2"
-        TreeNode298.SelectedImageKey = "CDEditing.ico"
-        TreeNode298.Text = "* Editando"
-        TreeNode299.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
-        TreeNode299.Name = "Node0"
-        TreeNode299.Text = "[   !  ] Erro de Leitura"
-        TreeNode300.ForeColor = System.Drawing.Color.Yellow
-        TreeNode300.ImageKey = "rum10.ico"
-        TreeNode300.Name = "Node1"
-        TreeNode300.SelectedImageKey = "rum30.ico"
-        TreeNode300.Text = "Gravando"
-        TreeNode301.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        TreeNode301.Name = "Node0"
-        TreeNode301.Text = "Pronto para Gravar"
-        TreeNode302.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        TreeNode302.Name = "Node1"
-        TreeNode302.Text = "Gravação Bem Sucedida"
-        TreeNode303.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
-        TreeNode303.ForeColor = System.Drawing.Color.White
-        TreeNode303.Name = "Node0"
-        TreeNode303.Text = "Mídia selecionada"
-        TreeNode304.ForeColor = System.Drawing.Color.White
-        TreeNode304.Name = "Node1"
-        TreeNode304.Text = "Mídia em branco"
-        TreeNode305.Name = "Node2"
-        TreeNode305.Text = "Mídia presente"
-        Me.TreeView4.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode297, TreeNode298, TreeNode299, TreeNode300, TreeNode301, TreeNode302, TreeNode303, TreeNode304, TreeNode305})
+        TreeNode93.ForeColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(121, Byte), Integer))
+        TreeNode93.ImageKey = "CD-Desconhecido.ico"
+        TreeNode93.Name = "Node1"
+        TreeNode93.SelectedImageKey = "CD-Desconhecido.ico"
+        TreeNode93.Text = "Mídia Auxente"
+        TreeNode94.ForeColor = System.Drawing.Color.DodgerBlue
+        TreeNode94.ImageKey = "CDEditing.ico"
+        TreeNode94.Name = "Node2"
+        TreeNode94.SelectedImageKey = "CDEditing.ico"
+        TreeNode94.Text = "* Editando"
+        TreeNode95.ForeColor = System.Drawing.Color.FromArgb(CType(CType(220, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer))
+        TreeNode95.Name = "Node0"
+        TreeNode95.Text = "[   !  ] Erro de Leitura"
+        TreeNode96.ForeColor = System.Drawing.Color.Yellow
+        TreeNode96.ImageKey = "rum10.ico"
+        TreeNode96.Name = "Node1"
+        TreeNode96.SelectedImageKey = "rum30.ico"
+        TreeNode96.Text = "Gravando"
+        TreeNode97.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        TreeNode97.Name = "Node0"
+        TreeNode97.Text = "Pronto para Gravar"
+        TreeNode98.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        TreeNode98.Name = "Node1"
+        TreeNode98.Text = "Gravação Bem Sucedida"
+        TreeNode99.BackColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(44, Byte), Integer))
+        TreeNode99.ForeColor = System.Drawing.Color.White
+        TreeNode99.Name = "Node0"
+        TreeNode99.Text = "Mídia selecionada"
+        TreeNode100.ForeColor = System.Drawing.Color.White
+        TreeNode100.Name = "Node1"
+        TreeNode100.Text = "Mídia em branco"
+        TreeNode101.Name = "Node2"
+        TreeNode101.Text = "Mídia presente"
+        Me.TreeView4.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode93, TreeNode94, TreeNode95, TreeNode96, TreeNode97, TreeNode98, TreeNode99, TreeNode100, TreeNode101})
         Me.TreeView4.ShowLines = False
         Me.TreeView4.Size = New System.Drawing.Size(166, 55)
         Me.TreeView4.TabIndex = 87
@@ -1557,11 +1601,11 @@ Partial Class Form1
         Me.TVFiles.HideSelection = False
         Me.TVFiles.Location = New System.Drawing.Point(5, 0)
         Me.TVFiles.Name = "TVFiles"
-        TreeNode306.ImageKey = "CD.ico"
-        TreeNode306.Name = "Node1"
-        TreeNode306.SelectedImageKey = "CD.ico"
-        TreeNode306.Text = "<Selecione uma mídia>"
-        Me.TVFiles.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode306})
+        TreeNode102.ImageKey = "CD.ico"
+        TreeNode102.Name = "Node1"
+        TreeNode102.SelectedImageKey = "CD.ico"
+        TreeNode102.Text = "<Selecione uma mídia>"
+        Me.TVFiles.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode102})
         Me.TVFiles.ShowLines = False
         Me.TVFiles.Size = New System.Drawing.Size(168, 202)
         Me.TVFiles.TabIndex = 87
@@ -1606,16 +1650,6 @@ Partial Class Form1
         Me.PanelDireita.Size = New System.Drawing.Size(272, 482)
         Me.PanelDireita.TabIndex = 0
         '
-        'PanelCarregaFolder
-        '
-        Me.PanelCarregaFolder.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelCarregaFolder.AutoSize = True
-        Me.PanelCarregaFolder.Location = New System.Drawing.Point(3, 3)
-        Me.PanelCarregaFolder.Name = "PanelCarregaFolder"
-        Me.PanelCarregaFolder.Size = New System.Drawing.Size(411, 546)
-        Me.PanelCarregaFolder.TabIndex = 1
-        '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.DimGray
@@ -1627,6 +1661,334 @@ Partial Class Form1
         Me.Panel11.Size = New System.Drawing.Size(242, 242)
         Me.Panel11.TabIndex = 0
         '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Panel10.Controls.Add(Me.Panel13)
+        Me.Panel10.Controls.Add(Me.Panel12)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(1, 1)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(240, 240)
+        Me.Panel10.TabIndex = 0
+        '
+        'Panel13
+        '
+        Me.Panel13.Controls.Add(Me.Panel16)
+        Me.Panel13.Controls.Add(Me.PanelMarginNameAndExtencao)
+        Me.Panel13.Controls.Add(Me.Panel14)
+        Me.Panel13.Controls.Add(Me.PanelMarginPath)
+        Me.Panel13.Controls.Add(Me.Panel15)
+        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel13.Location = New System.Drawing.Point(0, 15)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Padding = New System.Windows.Forms.Padding(5)
+        Me.Panel13.Size = New System.Drawing.Size(240, 225)
+        Me.Panel13.TabIndex = 1
+        '
+        'PanelMarginPath
+        '
+        Me.PanelMarginPath.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMarginPath.Controls.Add(Me.PanelBorderPath)
+        Me.PanelMarginPath.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelMarginPath.Location = New System.Drawing.Point(5, 17)
+        Me.PanelMarginPath.Name = "PanelMarginPath"
+        Me.PanelMarginPath.Padding = New System.Windows.Forms.Padding(3, 3, 3, 0)
+        Me.PanelMarginPath.Size = New System.Drawing.Size(230, 23)
+        Me.PanelMarginPath.TabIndex = 100
+        '
+        'PanelBorderPath
+        '
+        Me.PanelBorderPath.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorderPath.Controls.Add(Me.PanelPath)
+        Me.PanelBorderPath.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorderPath.Location = New System.Drawing.Point(3, 3)
+        Me.PanelBorderPath.Name = "PanelBorderPath"
+        Me.PanelBorderPath.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorderPath.Size = New System.Drawing.Size(224, 20)
+        Me.PanelBorderPath.TabIndex = 0
+        '
+        'PanelPath
+        '
+        Me.PanelPath.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.PanelPath.Controls.Add(Me.TXTPath)
+        Me.PanelPath.Controls.Add(Me.BTNExpandiPath)
+        Me.PanelPath.Controls.Add(Me.BTNIconPath)
+        Me.PanelPath.Controls.Add(Me.BTN_TXTPath)
+        Me.PanelPath.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelPath.Location = New System.Drawing.Point(1, 1)
+        Me.PanelPath.Name = "PanelPath"
+        Me.PanelPath.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelPath.Size = New System.Drawing.Size(222, 18)
+        Me.PanelPath.TabIndex = 93
+        '
+        'TXTPath
+        '
+        Me.TXTPath.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.TXTPath.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTPath.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TXTPath.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTPath.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTPath.Location = New System.Drawing.Point(33, 3)
+        Me.TXTPath.Name = "TXTPath"
+        Me.TXTPath.Size = New System.Drawing.Size(171, 13)
+        Me.TXTPath.TabIndex = 9
+        Me.TXTPath.Text = "  C:/"
+        '
+        'BTNExpandiPath
+        '
+        Me.BTNExpandiPath.BackColor = System.Drawing.Color.Transparent
+        Me.BTNExpandiPath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNExpandiPath.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNExpandiPath.FlatAppearance.BorderSize = 0
+        Me.BTNExpandiPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNExpandiPath.Image = CType(resources.GetObject("BTNExpandiPath.Image"), System.Drawing.Image)
+        Me.BTNExpandiPath.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNExpandiPath.Location = New System.Drawing.Point(18, 3)
+        Me.BTNExpandiPath.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNExpandiPath.Name = "BTNExpandiPath"
+        Me.BTNExpandiPath.Size = New System.Drawing.Size(15, 12)
+        Me.BTNExpandiPath.TabIndex = 20
+        Me.BTNExpandiPath.UseVisualStyleBackColor = False
+        '
+        'BTNIconPath
+        '
+        Me.BTNIconPath.BackColor = System.Drawing.Color.Transparent
+        Me.BTNIconPath.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo2
+        Me.BTNIconPath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNIconPath.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNIconPath.FlatAppearance.BorderSize = 0
+        Me.BTNIconPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNIconPath.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNIconPath.Location = New System.Drawing.Point(3, 3)
+        Me.BTNIconPath.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNIconPath.Name = "BTNIconPath"
+        Me.BTNIconPath.Size = New System.Drawing.Size(15, 12)
+        Me.BTNIconPath.TabIndex = 19
+        Me.BTNIconPath.UseVisualStyleBackColor = False
+        '
+        'BTN_TXTPath
+        '
+        Me.BTN_TXTPath.BackColor = System.Drawing.Color.Transparent
+        Me.BTN_TXTPath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTPath.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTPath.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTPath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTPath.Image = CType(resources.GetObject("BTN_TXTPath.Image"), System.Drawing.Image)
+        Me.BTN_TXTPath.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTPath.Location = New System.Drawing.Point(204, 3)
+        Me.BTN_TXTPath.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTPath.Name = "BTN_TXTPath"
+        Me.BTN_TXTPath.Size = New System.Drawing.Size(15, 12)
+        Me.BTN_TXTPath.TabIndex = 18
+        Me.BTN_TXTPath.UseVisualStyleBackColor = False
+        '
+        'Panel15
+        '
+        Me.Panel15.Controls.Add(Me.FlowLayoutPanel3)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel15.Location = New System.Drawing.Point(5, 5)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(230, 12)
+        Me.Panel15.TabIndex = 99
+        '
+        'FlowLayoutPanel3
+        '
+        Me.FlowLayoutPanel3.Controls.Add(Me.Label4)
+        Me.FlowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(230, 12)
+        Me.FlowLayoutPanel3.TabIndex = 2
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label4.Location = New System.Drawing.Point(3, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(43, 13)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Origem:"
+        '
+        'PanelMarginNameAndExtencao
+        '
+        Me.PanelMarginNameAndExtencao.BackColor = System.Drawing.Color.Transparent
+        Me.PanelMarginNameAndExtencao.Controls.Add(Me.PanelNameAndExtencao)
+        Me.PanelMarginNameAndExtencao.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelMarginNameAndExtencao.Location = New System.Drawing.Point(5, 52)
+        Me.PanelMarginNameAndExtencao.Name = "PanelMarginNameAndExtencao"
+        Me.PanelMarginNameAndExtencao.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelMarginNameAndExtencao.Size = New System.Drawing.Size(230, 27)
+        Me.PanelMarginNameAndExtencao.TabIndex = 97
+        '
+        'PanelNameAndExtencao
+        '
+        Me.PanelNameAndExtencao.BackColor = System.Drawing.Color.DimGray
+        Me.PanelNameAndExtencao.Controls.Add(Me.PanelName)
+        Me.PanelNameAndExtencao.Controls.Add(Me.PanelEXTProp)
+        Me.PanelNameAndExtencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelNameAndExtencao.Location = New System.Drawing.Point(3, 3)
+        Me.PanelNameAndExtencao.Name = "PanelNameAndExtencao"
+        Me.PanelNameAndExtencao.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelNameAndExtencao.Size = New System.Drawing.Size(224, 21)
+        Me.PanelNameAndExtencao.TabIndex = 4
+        '
+        'PanelName
+        '
+        Me.PanelName.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.PanelName.Controls.Add(Me.TXTName)
+        Me.PanelName.Controls.Add(Me.BTN_TXTName)
+        Me.PanelName.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelName.Location = New System.Drawing.Point(1, 1)
+        Me.PanelName.Name = "PanelName"
+        Me.PanelName.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelName.Size = New System.Drawing.Size(159, 19)
+        Me.PanelName.TabIndex = 93
+        '
+        'TXTName
+        '
+        Me.TXTName.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.TXTName.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTName.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TXTName.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTName.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTName.Location = New System.Drawing.Point(3, 3)
+        Me.TXTName.Name = "TXTName"
+        Me.TXTName.Size = New System.Drawing.Size(138, 13)
+        Me.TXTName.TabIndex = 9
+        Me.TXTName.Text = " <NOME>"
+        '
+        'BTN_TXTName
+        '
+        Me.BTN_TXTName.BackColor = System.Drawing.Color.Transparent
+        Me.BTN_TXTName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTName.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTName.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTName.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTName.Image = CType(resources.GetObject("BTN_TXTName.Image"), System.Drawing.Image)
+        Me.BTN_TXTName.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTName.Location = New System.Drawing.Point(141, 3)
+        Me.BTN_TXTName.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTName.Name = "BTN_TXTName"
+        Me.BTN_TXTName.Size = New System.Drawing.Size(15, 13)
+        Me.BTN_TXTName.TabIndex = 18
+        Me.BTN_TXTName.UseVisualStyleBackColor = False
+        '
+        'PanelEXTProp
+        '
+        Me.PanelEXTProp.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.PanelEXTProp.Controls.Add(Me.TXTExetencao)
+        Me.PanelEXTProp.Controls.Add(Me.BTN_TXTExetencao)
+        Me.PanelEXTProp.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelEXTProp.Location = New System.Drawing.Point(160, 1)
+        Me.PanelEXTProp.Name = "PanelEXTProp"
+        Me.PanelEXTProp.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelEXTProp.Size = New System.Drawing.Size(63, 19)
+        Me.PanelEXTProp.TabIndex = 95
+        '
+        'TXTExetencao
+        '
+        Me.TXTExetencao.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.TXTExetencao.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TXTExetencao.Cursor = System.Windows.Forms.Cursors.Default
+        Me.TXTExetencao.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTExetencao.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTExetencao.Location = New System.Drawing.Point(3, 3)
+        Me.TXTExetencao.Name = "TXTExetencao"
+        Me.TXTExetencao.Size = New System.Drawing.Size(42, 13)
+        Me.TXTExetencao.TabIndex = 9
+        Me.TXTExetencao.Text = "EXT"
+        '
+        'BTN_TXTExetencao
+        '
+        Me.BTN_TXTExetencao.BackColor = System.Drawing.Color.Transparent
+        Me.BTN_TXTExetencao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTN_TXTExetencao.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_TXTExetencao.FlatAppearance.BorderSize = 0
+        Me.BTN_TXTExetencao.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_TXTExetencao.Image = CType(resources.GetObject("BTN_TXTExetencao.Image"), System.Drawing.Image)
+        Me.BTN_TXTExetencao.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_TXTExetencao.Location = New System.Drawing.Point(45, 3)
+        Me.BTN_TXTExetencao.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_TXTExetencao.Name = "BTN_TXTExetencao"
+        Me.BTN_TXTExetencao.Size = New System.Drawing.Size(15, 13)
+        Me.BTN_TXTExetencao.TabIndex = 18
+        Me.BTN_TXTExetencao.UseVisualStyleBackColor = False
+        '
+        'Panel14
+        '
+        Me.Panel14.Controls.Add(Me.FlowLayoutPanel2)
+        Me.Panel14.Controls.Add(Me.FlowLayoutPanel1)
+        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel14.Location = New System.Drawing.Point(5, 40)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(230, 12)
+        Me.Panel14.TabIndex = 98
+        '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.Controls.Add(Me.Label2)
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(163, 12)
+        Me.FlowLayoutPanel2.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label2.Location = New System.Drawing.Point(3, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 13)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Nome:"
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.Controls.Add(Me.Label1)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(163, 0)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(67, 12)
+        Me.FlowLayoutPanel1.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(25, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Ext:"
+        '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.BTN_FechaPanelOpcoesDeProcessos)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel12.Location = New System.Drawing.Point(0, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(240, 15)
+        Me.Panel12.TabIndex = 0
+        '
+        'BTN_FechaPanelOpcoesDeProcessos
+        '
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackColor = System.Drawing.Color.Transparent
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.fechar_cinza
+        Me.BTN_FechaPanelOpcoesDeProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_FechaPanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTN_FechaPanelOpcoesDeProcessos.FlatAppearance.BorderSize = 0
+        Me.BTN_FechaPanelOpcoesDeProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_FechaPanelOpcoesDeProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(219, 0)
+        Me.BTN_FechaPanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_FechaPanelOpcoesDeProcessos.Name = "BTN_FechaPanelOpcoesDeProcessos"
+        Me.BTN_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(21, 15)
+        Me.BTN_FechaPanelOpcoesDeProcessos.TabIndex = 32
+        Me.BTN_FechaPanelOpcoesDeProcessos.UseVisualStyleBackColor = False
+        '
         'Panel_Envolve
         '
         Me.Panel_Envolve.AutoScroll = True
@@ -1637,14 +1999,34 @@ Partial Class Form1
         Me.Panel_Envolve.Size = New System.Drawing.Size(712, 482)
         Me.Panel_Envolve.TabIndex = 2
         '
-        'Panel10
+        'PanelCarregaFolder
         '
-        Me.Panel10.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel10.Location = New System.Drawing.Point(1, 1)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(240, 240)
-        Me.Panel10.TabIndex = 0
+        Me.PanelCarregaFolder.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PanelCarregaFolder.AutoSize = True
+        Me.PanelCarregaFolder.Location = New System.Drawing.Point(3, 3)
+        Me.PanelCarregaFolder.Name = "PanelCarregaFolder"
+        Me.PanelCarregaFolder.Size = New System.Drawing.Size(411, 546)
+        Me.PanelCarregaFolder.TabIndex = 1
+        '
+        'Panel16
+        '
+        Me.Panel16.Controls.Add(Me.Panel17)
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel16.Location = New System.Drawing.Point(5, 79)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
+        Me.Panel16.Size = New System.Drawing.Size(230, 21)
+        Me.Panel16.TabIndex = 101
+        '
+        'Panel17
+        '
+        Me.Panel17.BackColor = System.Drawing.Color.DimGray
+        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel17.Location = New System.Drawing.Point(5, 10)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(220, 1)
+        Me.Panel17.TabIndex = 0
         '
         'Form1
         '
@@ -1709,8 +2091,30 @@ Partial Class Form1
         Me.PanelViewGroup.ResumeLayout(False)
         Me.PanelDireita.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel13.ResumeLayout(False)
+        Me.PanelMarginPath.ResumeLayout(False)
+        Me.PanelBorderPath.ResumeLayout(False)
+        Me.PanelPath.ResumeLayout(False)
+        Me.PanelPath.PerformLayout()
+        Me.Panel15.ResumeLayout(False)
+        Me.FlowLayoutPanel3.ResumeLayout(False)
+        Me.FlowLayoutPanel3.PerformLayout()
+        Me.PanelMarginNameAndExtencao.ResumeLayout(False)
+        Me.PanelNameAndExtencao.ResumeLayout(False)
+        Me.PanelName.ResumeLayout(False)
+        Me.PanelName.PerformLayout()
+        Me.PanelEXTProp.ResumeLayout(False)
+        Me.PanelEXTProp.PerformLayout()
+        Me.Panel14.ResumeLayout(False)
+        Me.FlowLayoutPanel2.ResumeLayout(False)
+        Me.FlowLayoutPanel2.PerformLayout()
+        Me.FlowLayoutPanel1.ResumeLayout(False)
+        Me.FlowLayoutPanel1.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
         Me.Panel_Envolve.ResumeLayout(False)
         Me.Panel_Envolve.PerformLayout()
+        Me.Panel16.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1819,4 +2223,32 @@ Partial Class Form1
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Panel_Envolve As Panel
     Friend WithEvents Panel10 As Panel
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents BTN_FechaPanelOpcoesDeProcessos As Button
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents PanelMarginNameAndExtencao As Panel
+    Friend WithEvents PanelNameAndExtencao As Panel
+    Friend WithEvents PanelName As Panel
+    Friend WithEvents TXTName As TextBox
+    Friend WithEvents BTN_TXTName As Button
+    Friend WithEvents PanelEXTProp As Panel
+    Friend WithEvents TXTExetencao As TextBox
+    Friend WithEvents BTN_TXTExetencao As Button
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PanelMarginPath As Panel
+    Friend WithEvents PanelBorderPath As Panel
+    Friend WithEvents PanelPath As Panel
+    Friend WithEvents TXTPath As TextBox
+    Friend WithEvents BTNExpandiPath As Button
+    Friend WithEvents BTNIconPath As Button
+    Friend WithEvents BTN_TXTPath As Button
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents Panel17 As Panel
 End Class

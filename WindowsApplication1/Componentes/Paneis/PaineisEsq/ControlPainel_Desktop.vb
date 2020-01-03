@@ -304,10 +304,10 @@ Public Class ControlPainel_Desktop
                             Dim dirArq1 As FileInfo() = dir.GetFiles()
 
                             '        TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
-                            '        TODO: Aplicar função criada em um evento de expansção de node ou seleção. (OK)
+                            '        TODO: Aplicar função criada em um evento de expansão de node ou seleção. (OK)
                             '        TODO: http://www.macoratti.net/13/12/vbn_list1.htm
-                            '        TODO: Adicionar pasta download
-                            '        eXCLUIR PASTAS especiais.
+                            '        TODO: Adicionar pasta download (OK)
+                            '        eXCLUIR PASTAS especiais. (OK)
 
                             AtualizarDiretorio(node)
 

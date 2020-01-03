@@ -22,19 +22,43 @@ Partial Class ControlPainel_MidiasAtivas
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
-        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("TVMEDIAS")
+        Me.components = New System.ComponentModel.Container()
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("TVMEDIAS")
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_MidiasAtivas))
         Me.PanelMidiaAtiva = New System.Windows.Forms.Panel()
-        Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
         Me.TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.TreeView()
+        Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.PanelEnvolveTVMedias = New System.Windows.Forms.Panel()
         Me.TVMedias = New System.Windows.Forms.TreeView()
+        Me.CMItens = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ExpamdirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarComoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RenomearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoverParaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgrupamentoSelecionadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoverParaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelMidiaAtiva.SuspendLayout()
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
         Me.PanelEnvolveTVMedias.SuspendLayout()
+        Me.CMItens.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelMidiaAtiva
@@ -47,16 +71,6 @@ Partial Class ControlPainel_MidiasAtivas
         Me.PanelMidiaAtiva.Name = "PanelMidiaAtiva"
         Me.PanelMidiaAtiva.Size = New System.Drawing.Size(284, 435)
         Me.PanelMidiaAtiva.TabIndex = 1
-        '
-        'Splitter1
-        '
-        Me.Splitter1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
-        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Splitter1.Location = New System.Drawing.Point(0, 106)
-        Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(284, 3)
-        Me.Splitter1.TabIndex = 92
-        Me.Splitter1.TabStop = False
         '
         'PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia
         '
@@ -87,16 +101,29 @@ Partial Class ControlPainel_MidiasAtivas
         Me.TVFilesAndFoldersOfTheOpenMedia.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVFilesAndFoldersOfTheOpenMedia.FullRowSelect = True
         Me.TVFilesAndFoldersOfTheOpenMedia.HideSelection = False
+        Me.TVFilesAndFoldersOfTheOpenMedia.ImageIndex = 0
+        Me.TVFilesAndFoldersOfTheOpenMedia.ImageList = Me.IMGList
         Me.TVFilesAndFoldersOfTheOpenMedia.Location = New System.Drawing.Point(1, 1)
         Me.TVFilesAndFoldersOfTheOpenMedia.Name = "TVFilesAndFoldersOfTheOpenMedia"
-        TreeNode3.ImageKey = "CD.ico"
-        TreeNode3.Name = "Node1"
-        TreeNode3.SelectedImageKey = "CD.ico"
-        TreeNode3.Text = "<Selecione uma mídia>"
-        Me.TVFilesAndFoldersOfTheOpenMedia.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode3})
+        TreeNode1.ImageKey = "DVD"
+        TreeNode1.Name = "Node1"
+        TreeNode1.SelectedImageKey = "DVD"
+        TreeNode1.Text = "<Selecione uma mídia>"
+        Me.TVFilesAndFoldersOfTheOpenMedia.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
+        Me.TVFilesAndFoldersOfTheOpenMedia.SelectedImageIndex = 0
         Me.TVFilesAndFoldersOfTheOpenMedia.ShowLines = False
         Me.TVFilesAndFoldersOfTheOpenMedia.Size = New System.Drawing.Size(282, 324)
         Me.TVFilesAndFoldersOfTheOpenMedia.TabIndex = 87
+        '
+        'Splitter1
+        '
+        Me.Splitter1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.Splitter1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Splitter1.Location = New System.Drawing.Point(0, 106)
+        Me.Splitter1.Name = "Splitter1"
+        Me.Splitter1.Size = New System.Drawing.Size(284, 3)
+        Me.Splitter1.TabIndex = 92
+        Me.Splitter1.TabStop = False
         '
         'PanelEnvolveTVMedias
         '
@@ -117,14 +144,156 @@ Partial Class ControlPainel_MidiasAtivas
         Me.TVMedias.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVMedias.FullRowSelect = True
         Me.TVMedias.HideSelection = False
+        Me.TVMedias.ImageIndex = 0
+        Me.TVMedias.ImageList = Me.IMGList
         Me.TVMedias.Location = New System.Drawing.Point(1, 1)
         Me.TVMedias.Name = "TVMedias"
-        TreeNode4.Name = "Node0"
-        TreeNode4.Text = "TVMEDIAS"
-        Me.TVMedias.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode4})
+        TreeNode2.Name = "Node0"
+        TreeNode2.Text = "TVMEDIAS"
+        Me.TVMedias.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
+        Me.TVMedias.SelectedImageIndex = 0
         Me.TVMedias.ShowLines = False
         Me.TVMedias.Size = New System.Drawing.Size(282, 104)
         Me.TVMedias.TabIndex = 87
+        '
+        'CMItens
+        '
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Name = "CMItens"
+        Me.CMItens.Size = New System.Drawing.Size(243, 264)
+        '
+        'ExpamdirToolStripMenuItem
+        '
+        Me.ExpamdirToolStripMenuItem.Name = "ExpamdirToolStripMenuItem"
+        Me.ExpamdirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ExpamdirToolStripMenuItem.Text = "Expandir"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(239, 6)
+        '
+        'NovaPastaToolStripMenuItem
+        '
+        Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
+        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.NovaPastaToolStripMenuItem.Text = "Nova Pasta"
+        '
+        'CopiarComoToolStripMenuItem
+        '
+        Me.CopiarComoToolStripMenuItem.Name = "CopiarComoToolStripMenuItem"
+        Me.CopiarComoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarComoToolStripMenuItem.Text = "Copiar como..."
+        '
+        'CopiarParaToolStripMenuItem
+        '
+        Me.CopiarParaToolStripMenuItem.Name = "CopiarParaToolStripMenuItem"
+        Me.CopiarParaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarParaToolStripMenuItem.Text = "Copiar para..."
+        '
+        'CopiarParaÁreaDeTranferênciaToolStripMenuItem
+        '
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Name = "CopiarParaÁreaDeTranferênciaToolStripMenuItem"
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Text = "Copiar para área de tranferência"
+        '
+        'RenomearToolStripMenuItem
+        '
+        Me.RenomearToolStripMenuItem.Name = "RenomearToolStripMenuItem"
+        Me.RenomearToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.RenomearToolStripMenuItem.Text = "Renomear"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(239, 6)
+        '
+        'ExcluirToolStripMenuItem
+        '
+        Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
+        Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ExcluirToolStripMenuItem.Text = "Excluir"
+        '
+        'MoverParaProcessoToolStripMenuItem
+        '
+        Me.MoverParaProcessoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoAgrupamentoToolStripMenuItem, Me.AgrupamentoSelecionadoToolStripMenuItem})
+        Me.MoverParaProcessoToolStripMenuItem.Name = "MoverParaProcessoToolStripMenuItem"
+        Me.MoverParaProcessoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.MoverParaProcessoToolStripMenuItem.Text = "Mover para agrupamento..."
+        '
+        'NovoAgrupamentoToolStripMenuItem
+        '
+        Me.NovoAgrupamentoToolStripMenuItem.Name = "NovoAgrupamentoToolStripMenuItem"
+        Me.NovoAgrupamentoToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.NovoAgrupamentoToolStripMenuItem.Text = "Novo agrupamento"
+        '
+        'AgrupamentoSelecionadoToolStripMenuItem
+        '
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Name = "AgrupamentoSelecionadoToolStripMenuItem"
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Text = "Agrupamento selecionado"
+        '
+        'MoverParaPastaProcessoToolStripMenuItem
+        '
+        Me.MoverParaPastaProcessoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaProcessoToolStripMenuItem, Me.ToolStripSeparator4, Me.ToolStripMenuItem2})
+        Me.MoverParaPastaProcessoToolStripMenuItem.Name = "MoverParaPastaProcessoToolStripMenuItem"
+        Me.MoverParaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.MoverParaPastaProcessoToolStripMenuItem.Text = "Mover para Pasta Processo"
+        '
+        'NovaPastaProcessoToolStripMenuItem
+        '
+        Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
+        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova Pasta Processo"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(180, 6)
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(183, 22)
+        Me.ToolStripMenuItem2.Text = "..."
+        '
+        'ProcessarToolStripMenuItem
+        '
+        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
+        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ProcessarToolStripMenuItem.Text = "Processar"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(239, 6)
+        '
+        'PropriedadesToolStripMenuItem
+        '
+        Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
+        Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
+        '
+        'IMGList
+        '
+        Me.IMGList.ImageStream = CType(resources.GetObject("IMGList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
+        Me.IMGList.Images.SetKeyName(0, "Desktop")
+        Me.IMGList.Images.SetKeyName(1, "Computador")
+        Me.IMGList.Images.SetKeyName(2, "Imagens")
+        Me.IMGList.Images.SetKeyName(3, "Documentos")
+        Me.IMGList.Images.SetKeyName(4, "Musicas")
+        Me.IMGList.Images.SetKeyName(5, "pastaAberta")
+        Me.IMGList.Images.SetKeyName(6, "pastaFechada")
+        Me.IMGList.Images.SetKeyName(7, "hd")
+        Me.IMGList.Images.SetKeyName(8, "DVD")
+        Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
+        Me.IMGList.Images.SetKeyName(10, "info")
+        Me.IMGList.Images.SetKeyName(11, "Videos")
+        Me.IMGList.Images.SetKeyName(12, "down")
+        Me.IMGList.Images.SetKeyName(13, "dvd")
         '
         'ControlPainel_MidiasAtivas
         '
@@ -137,6 +306,7 @@ Partial Class ControlPainel_MidiasAtivas
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.ResumeLayout(False)
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.ResumeLayout(False)
         Me.PanelEnvolveTVMedias.ResumeLayout(False)
+        Me.CMItens.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -147,4 +317,25 @@ Partial Class ControlPainel_MidiasAtivas
     Friend WithEvents PanelBorder_TVFilesAndFoldersOfTheOpenMedia As Panel
     Friend WithEvents TVFilesAndFoldersOfTheOpenMedia As TreeView
     Friend WithEvents Splitter1 As Splitter
+    Friend WithEvents CMItens As ContextMenuStrip
+    Friend WithEvents ExpamdirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarComoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaÁreaDeTranferênciaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RenomearToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ExcluirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MoverParaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovoAgrupamentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AgrupamentoSelecionadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MoverParaPastaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovaPastaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ProcessarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IMGList As ImageList
 End Class

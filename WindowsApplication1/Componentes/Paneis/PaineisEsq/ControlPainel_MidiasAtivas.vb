@@ -4,27 +4,59 @@
     End Sub
 
     Private Sub ControlPainel_MidiasAtivas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim nomeDr As String
+        Dim nomeDoDrive As String
+        Dim tipoDeDrive As String
+        Dim iconeDoDrive As String
+        Dim rotuloDoDrive As String
 
         Try
             Me.TVMedias.Nodes.Clear()
             ' Encontra os driveres  de dispositivos existentes.
             Dim node As New TreeNode
 
-            For Each driveMaster In My.Computer.FileSystem.Drives
+            For Each drive In My.Computer.FileSystem.Drives
 
-                nomeDr = driveMaster.Name
+                nomeDoDrive = drive.Name
+                tipoDeDrive = drive.DriveType
 
-                If driveMaster.IsReady Then
+                Select Case drive.DriveType
+                    Case 0
+                        tipoDeDrive = "Unknown"
 
-                    nomeDr = nomeDr.Substring(0, CInt(nomeDr.Count) - 1)
-                    node = Me.TVMedias.Nodes.Add(CStr(driveMaster.Name), driveMaster.VolumeLabel & " (" & nomeDr & ")", "dvd", "dvd")
-                    node.Tag = nomeDr
+                    Case 1
+                        tipoDeDrive = "NoRootDirectory"
+
+                    Case 2
+                        tipoDeDrive = "Removable"
+                        iconeDoDrive = "Pen.ico"
+
+                    Case 3
+                        tipoDeDrive = "Fixed"
+                        iconeDoDrive = "hd"
+
+                    Case 4
+                        tipoDeDrive = "Network"
+
+                    Case 5
+                        tipoDeDrive = "CD Rom"
+                        iconeDoDrive = "DVD"
+
+                    Case 6
+                        tipoDeDrive = "Ram"
+
+                End Select
+                rotuloDoDrive = ""
+
+                If drive.IsReady Then
+
+                    nomeDoDrive = nomeDoDrive.Substring(0, CInt(nomeDoDrive.Count) - 1)
+                    node = Me.TVMedias.Nodes.Add(CStr(drive.Name), drive.VolumeLabel & " (" & nomeDoDrive & ")", iconeDoDrive, iconeDoDrive)
+                    node.Tag = nomeDoDrive
 
                 Else
 
-                    node = Me.TVMedias.Nodes.Add(CStr(driveMaster.Name), CStr(driveMaster.Name), "UnidadeVazia", "UnidadeVazia")
-                    node.Tag = nomeDr
+                    node = Me.TVMedias.Nodes.Add(CStr(drive.Name), CStr(drive.Name), "UnidadeVazia", "UnidadeVazia")
+                    node.Tag = nomeDoDrive
 
                 End If
                 ' AdcionarItemNoView(DriveMaster, Int(My.Computer.FileSystem.Drives.Count))
@@ -39,7 +71,7 @@
             '  ControlPersonalListView.Dock = DockStyle.Fill
 
         Catch ex As Exception
-            MsgBox(Err.Description & Chr(13) & nomeDr)
+            MsgBox(Err.Description & Chr(13) & nomeDoDrive)
 
         End Try
 
@@ -74,7 +106,8 @@
 
             TVFilesAndFoldersOfTheOpenMedia.Nodes.Clear()
 
-            node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, "dvd", "dvd")
+            node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, TVMedias.SelectedNode.ImageKey, TVMedias.SelectedNode.SelectedImageKey)
+            '"dvd", "dvd")
 
             For Each DrD In DirDir01
                 Nome = DrD.Name

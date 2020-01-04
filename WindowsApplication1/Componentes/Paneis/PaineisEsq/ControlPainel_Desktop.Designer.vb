@@ -99,6 +99,7 @@ Partial Class ControlPainel_Desktop
         Me.IMGList.Images.SetKeyName(10, "info")
         Me.IMGList.Images.SetKeyName(11, "Videos")
         Me.IMGList.Images.SetKeyName(12, "down")
+        Me.IMGList.Images.SetKeyName(13, "Pen.ico")
         '
         'PanelBorder_TVWDesktop
         '

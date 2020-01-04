@@ -1,6 +1,8 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 Imports System.IO
 Imports System.Collections
+
+'http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
 ' TODO: Menu de contexto
 ' TODO: O que fazer quando expande a pasta(OK)
 ' TODO: 

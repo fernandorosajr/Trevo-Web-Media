@@ -59,6 +59,7 @@
                     node.Tag = nomeDoDrive
 
                 End If
+                ' tvRoot.ContextMenuStrip = Me.CMItens
                 ' AdcionarItemNoView(DriveMaster, Int(My.Computer.FileSystem.Drives.Count))
 
                 '         PanelRecebe.Controls.Add(ControlPersonalListView)
@@ -91,7 +92,7 @@
 
             If Not (DriveI.IsReady) Then
                 TVFilesAndFoldersOfTheOpenMedia.Nodes.Clear()
-                node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text)
+                node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, Me.TVMedias.SelectedNode.ImageKey, Me.TVMedias.SelectedNode.SelectedImageKey)
                 node.Nodes.Add("Mensagem", "<O dispositivo não está pronto.>", "info", "info")
 
                 node.ExpandAll()
@@ -113,6 +114,7 @@
                 Nome = DrD.Name
                 subNode = node.Nodes.Add(TVMedias.SelectedNode.Tag & "\" & Nome, Nome, "pastaFechada", "pastaAberta")
                 subNode.Tag = DrD.FullName
+                subNode.ContextMenuStrip = Me.CMItens
                 subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
             Next
             node.Expand()

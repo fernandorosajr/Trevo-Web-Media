@@ -53,7 +53,7 @@ Partial Class ControlPainel_MidiasAtivas
         Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
+        Me.IMGList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelMidiaAtiva.SuspendLayout()
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
@@ -102,7 +102,7 @@ Partial Class ControlPainel_MidiasAtivas
         Me.TVFilesAndFoldersOfTheOpenMedia.FullRowSelect = True
         Me.TVFilesAndFoldersOfTheOpenMedia.HideSelection = False
         Me.TVFilesAndFoldersOfTheOpenMedia.ImageIndex = 0
-        Me.TVFilesAndFoldersOfTheOpenMedia.ImageList = Me.IMGList
+        Me.TVFilesAndFoldersOfTheOpenMedia.ImageList = Me.IMGList1
         Me.TVFilesAndFoldersOfTheOpenMedia.Location = New System.Drawing.Point(1, 1)
         Me.TVFilesAndFoldersOfTheOpenMedia.Name = "TVFilesAndFoldersOfTheOpenMedia"
         TreeNode1.ImageKey = "DVD"
@@ -145,7 +145,7 @@ Partial Class ControlPainel_MidiasAtivas
         Me.TVMedias.FullRowSelect = True
         Me.TVMedias.HideSelection = False
         Me.TVMedias.ImageIndex = 0
-        Me.TVMedias.ImageList = Me.IMGList
+        Me.TVMedias.ImageList = Me.IMGList1
         Me.TVMedias.Location = New System.Drawing.Point(1, 1)
         Me.TVMedias.Name = "TVMedias"
         TreeNode2.Name = "Node0"
@@ -276,24 +276,24 @@ Partial Class ControlPainel_MidiasAtivas
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
-        'IMGList
+        'IMGList1
         '
-        Me.IMGList.ImageStream = CType(resources.GetObject("IMGList.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
-        Me.IMGList.Images.SetKeyName(0, "Desktop")
-        Me.IMGList.Images.SetKeyName(1, "Computador")
-        Me.IMGList.Images.SetKeyName(2, "Imagens")
-        Me.IMGList.Images.SetKeyName(3, "Documentos")
-        Me.IMGList.Images.SetKeyName(4, "Musicas")
-        Me.IMGList.Images.SetKeyName(5, "pastaAberta")
-        Me.IMGList.Images.SetKeyName(6, "pastaFechada")
-        Me.IMGList.Images.SetKeyName(7, "hd")
-        Me.IMGList.Images.SetKeyName(8, "DVD")
-        Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
-        Me.IMGList.Images.SetKeyName(10, "info")
-        Me.IMGList.Images.SetKeyName(11, "Videos")
-        Me.IMGList.Images.SetKeyName(12, "down")
-        Me.IMGList.Images.SetKeyName(13, "dvd")
+        Me.IMGList1.ImageStream = CType(resources.GetObject("IMGList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.IMGList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.IMGList1.Images.SetKeyName(0, "Desktop")
+        Me.IMGList1.Images.SetKeyName(1, "Computador")
+        Me.IMGList1.Images.SetKeyName(2, "Imagens")
+        Me.IMGList1.Images.SetKeyName(3, "Documentos")
+        Me.IMGList1.Images.SetKeyName(4, "Musicas")
+        Me.IMGList1.Images.SetKeyName(5, "pastaAberta")
+        Me.IMGList1.Images.SetKeyName(6, "pastaFechada")
+        Me.IMGList1.Images.SetKeyName(7, "hd")
+        Me.IMGList1.Images.SetKeyName(8, "DVD")
+        Me.IMGList1.Images.SetKeyName(9, "UnidadeVazia")
+        Me.IMGList1.Images.SetKeyName(10, "info")
+        Me.IMGList1.Images.SetKeyName(11, "Videos")
+        Me.IMGList1.Images.SetKeyName(12, "down")
+        Me.IMGList1.Images.SetKeyName(13, "Pen.ico")
         '
         'ControlPainel_MidiasAtivas
         '
@@ -337,5 +337,5 @@ Partial Class ControlPainel_MidiasAtivas
     Friend WithEvents ProcessarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents IMGList As ImageList
+    Friend WithEvents IMGList1 As ImageList
 End Class

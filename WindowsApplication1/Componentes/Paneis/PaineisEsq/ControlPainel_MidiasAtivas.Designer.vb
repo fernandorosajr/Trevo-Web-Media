@@ -24,12 +24,13 @@ Partial Class ControlPainel_MidiasAtivas
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("<Selecione uma mídia>")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("TVMEDIAS")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_MidiasAtivas))
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("TVMEDIAS")
         Me.PanelMidiaAtiva = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.Panel()
         Me.TVFilesAndFoldersOfTheOpenMedia = New System.Windows.Forms.TreeView()
+        Me.IMGList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.PanelEnvolveTVMedias = New System.Windows.Forms.Panel()
         Me.TVMedias = New System.Windows.Forms.TreeView()
@@ -53,7 +54,6 @@ Partial Class ControlPainel_MidiasAtivas
         Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.IMGList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelMidiaAtiva.SuspendLayout()
         Me.PanelEnvolve_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
         Me.PanelBorder_TVFilesAndFoldersOfTheOpenMedia.SuspendLayout()
@@ -114,6 +114,25 @@ Partial Class ControlPainel_MidiasAtivas
         Me.TVFilesAndFoldersOfTheOpenMedia.ShowLines = False
         Me.TVFilesAndFoldersOfTheOpenMedia.Size = New System.Drawing.Size(282, 324)
         Me.TVFilesAndFoldersOfTheOpenMedia.TabIndex = 87
+        '
+        'IMGList1
+        '
+        Me.IMGList1.ImageStream = CType(resources.GetObject("IMGList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.IMGList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.IMGList1.Images.SetKeyName(0, "Desktop")
+        Me.IMGList1.Images.SetKeyName(1, "Computador")
+        Me.IMGList1.Images.SetKeyName(2, "Imagens")
+        Me.IMGList1.Images.SetKeyName(3, "Documentos")
+        Me.IMGList1.Images.SetKeyName(4, "Musicas")
+        Me.IMGList1.Images.SetKeyName(5, "pastaAberta")
+        Me.IMGList1.Images.SetKeyName(6, "pastaFechada")
+        Me.IMGList1.Images.SetKeyName(7, "hd")
+        Me.IMGList1.Images.SetKeyName(8, "DVD")
+        Me.IMGList1.Images.SetKeyName(9, "UnidadeVazia")
+        Me.IMGList1.Images.SetKeyName(10, "info")
+        Me.IMGList1.Images.SetKeyName(11, "Videos")
+        Me.IMGList1.Images.SetKeyName(12, "down")
+        Me.IMGList1.Images.SetKeyName(13, "Pen.ico")
         '
         'Splitter1
         '
@@ -275,25 +294,6 @@ Partial Class ControlPainel_MidiasAtivas
         Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
-        '
-        'IMGList1
-        '
-        Me.IMGList1.ImageStream = CType(resources.GetObject("IMGList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.IMGList1.TransparentColor = System.Drawing.Color.Transparent
-        Me.IMGList1.Images.SetKeyName(0, "Desktop")
-        Me.IMGList1.Images.SetKeyName(1, "Computador")
-        Me.IMGList1.Images.SetKeyName(2, "Imagens")
-        Me.IMGList1.Images.SetKeyName(3, "Documentos")
-        Me.IMGList1.Images.SetKeyName(4, "Musicas")
-        Me.IMGList1.Images.SetKeyName(5, "pastaAberta")
-        Me.IMGList1.Images.SetKeyName(6, "pastaFechada")
-        Me.IMGList1.Images.SetKeyName(7, "hd")
-        Me.IMGList1.Images.SetKeyName(8, "DVD")
-        Me.IMGList1.Images.SetKeyName(9, "UnidadeVazia")
-        Me.IMGList1.Images.SetKeyName(10, "info")
-        Me.IMGList1.Images.SetKeyName(11, "Videos")
-        Me.IMGList1.Images.SetKeyName(12, "down")
-        Me.IMGList1.Images.SetKeyName(13, "Pen.ico")
         '
         'ControlPainel_MidiasAtivas
         '

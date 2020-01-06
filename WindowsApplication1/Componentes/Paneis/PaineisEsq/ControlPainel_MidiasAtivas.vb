@@ -1,7 +1,18 @@
-﻿Public Class ControlPainel_MidiasAtivas
-    Private Sub PanelMidiaAtiva_Paint(sender As Object, e As PaintEventArgs) Handles PanelMidiaAtiva.Paint
+﻿Imports System.IO
 
-    End Sub
+Public Class ControlPainel_MidiasAtivas
+
+    Private _caminho As String
+    Public Property Caminho As String
+        Get
+            Return _caminho
+
+        End Get
+        Set(value As String)
+            _caminho = value
+
+        End Set
+    End Property
 
     Private Sub ControlPainel_MidiasAtivas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim nomeDoDrive As String
@@ -79,9 +90,14 @@
 
     End Sub
 
-
     Private Sub TVMedias_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVMedias.AfterSelect
 
+        _caminho = TVMedias.SelectedNode.Tag
+        CarregarDiretorio()
+
+    End Sub
+
+    Sub CarregarDiretorio()
         Dim node As TreeNode
         Dim subNode As TreeNode
 
@@ -129,38 +145,84 @@
 
 
     End Sub
-    'Private Sub TVMedias_AfterSelect(sender As Object, e As TreeViewEventArgs)
 
-    '    Dim DriveI As New IO.DriveInfo(TVMedias.SelectedNode.Tag)
+    Private Sub TVFilesAndFoldersOfTheOpenMedia_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVFilesAndFoldersOfTheOpenMedia.AfterSelect
+        Dim node As TreeNode
+        node = TVFilesAndFoldersOfTheOpenMedia.SelectedNode
 
-    '    Dim DirDir As New IO.DirectoryInfo(TVMedias.SelectedNode.Tag)
-    '    Dim Nodo As TreeNode
+        _caminho = TVFilesAndFoldersOfTheOpenMedia.SelectedNode.Tag
+        CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node)
 
-    '    If Not (DriveI.IsReady) Then
-    '        TVFiles.Nodes.Clear()
-    '        Nodo = TVFiles.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text)
-    '        Nodo.Nodes.Add("<O dispositivo não está pronto.>")
+    End Sub
 
-    '        Nodo.ExpandAll()
-    '        Exit Sub
+    Sub CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node As TreeNode)
+        Try
+            If node.Tag <> Nothing Then
+                Dim dir As New DirectoryInfo(node.Tag)
+                If dir.Exists = True Then
 
-    '    End If
+                    AtualizarDireitorio(node)
+                Else
+                    '   AtualizarDireitorio(node)
+                    TVFilesAndFoldersOfTheOpenMedia.Nodes.Remove(node)
+                    TVFilesAndFoldersOfTheOpenMedia.UseWaitCursor = False
 
-    '    Dim DirDir01 As IO.DirectoryInfo() = DirDir.Root.GetDirectories
-    '    Dim DrD As IO.DirectoryInfo
+                End If
+            End If
+        Catch ex As Exception
 
-    '    Dim Nome As String
+        End Try
+    End Sub
+    Sub AtualizarDireitorio(NodeLabelEditEventArgs As TreeNode)
+        Dim directory As New DirectoryInfo(NodeLabelEditEventArgs.Tag)
+        Dim subDirectories As DirectoryInfo() = directory.GetDirectories
+        Dim dir As DirectoryInfo
 
-    '    TVFiles.Nodes.Clear()
+        Dim tNode As TreeNode = NodeLabelEditEventArgs
+        Dim subTNode As TreeNode
+        Dim adicionarAListaDeDiretorios As New ArrayList
 
-    '    Nodo = TVFiles.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text)
+        Dim adicionar As Boolean
 
-    '    For Each DrD In DirDir01
-    '        Nome = DrD.Name
-    '        Nodo.Nodes.Add(TVMedias.SelectedNode.Tag & "\" & Nome, Nome)
+        For Each subTNode In tNode.Nodes
+            Dim dirCheck As New DirectoryInfo(subTNode.Tag)
+            If dirCheck.Exists = False Then
+                tNode.Nodes.Remove(subTNode)
+            End If
 
-    '    Next
-    '    Nodo.ExpandAll()
-    'End Sub
+        Next
 
+        For Each dir In subDirectories
+            For Each subTNode In tNode.Nodes
+                If dir.FullName = subTNode.Tag Then
+                    adicionar = False
+                    Exit For
+
+                Else
+                    adicionar = True
+
+                End If
+            Next
+
+            If tNode.Nodes.Count = 0 Then adicionar = True
+            If adicionar = True Then adicionarAListaDeDiretorios.Add(dir)
+
+        Next
+
+        For Each dirAdd As DirectoryInfo In adicionarAListaDeDiretorios
+
+            subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
+            subTNode.Tag = dirAdd.FullName
+            subTNode.ContextMenuStrip = Me.CMItens
+
+            subTNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+        Next
+    End Sub
+
+    Private Sub TVFilesAndFoldersOfTheOpenMedia_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVFilesAndFoldersOfTheOpenMedia.NodeMouseClick
+        Dim node As TreeNode
+        node = CType(e.Node, TreeNode)
+
+        CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node)
+    End Sub
 End Class

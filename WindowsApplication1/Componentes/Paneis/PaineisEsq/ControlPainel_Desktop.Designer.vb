@@ -169,7 +169,7 @@ Partial Class ControlPainel_Desktop
         '
         Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
         Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.CHK_ShowCheck.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Exibir_painel_de_processos
+        Me.CHK_ShowCheck.BackgroundImage = CType(resources.GetObject("CHK_ShowCheck.BackgroundImage"), System.Drawing.Image)
         Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill

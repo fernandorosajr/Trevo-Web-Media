@@ -336,9 +336,10 @@ Public Class ControlPainel_Desktop
 
                             End If
                         Else
-
+                            TVWFilesAndFolders.Nodes.Remove(node)
+                            ' AtualizarDiretorio(node)
                             TVWFilesAndFolders.UseWaitCursor = False
-                            AtualizarDiretorio(node)
+
                         End If
                     End If
             End Select
@@ -401,8 +402,6 @@ Public Class ControlPainel_Desktop
     Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
-
-        '  MsgBox(node.Tag)
 
         CarregarDiretorio(node)
     End Sub

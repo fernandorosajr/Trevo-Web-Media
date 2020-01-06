@@ -4,10 +4,13 @@ Imports System.Collections
 Imports Microsoft.VisualBasic
 
 'http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
-' TODO: Menu de contexto
-' TODO: O que fazer quando expande a pasta(OK)
-' TODO: 
-' TODO:
+' TODO: Desenhar Menu de contexto
+' TODO: Criar Função renomearPasta
+' TODO: Criar função renomearVolume
+' TODO: Criar função remover pasta
+' TODO: Aperfeiçoar eventos relacionados com a  propriedade LabelEdit.
+' Não pode renomear Desktop nem as pastas de virtuais de bibliotecas.
+
 ' TODO:
 
 Public Class ControlPainel_Desktop
@@ -245,9 +248,11 @@ Public Class ControlPainel_Desktop
             If drive.IsReady Then
                 rotuloDoDrive = CType(drive.VolumeLabel.ToString, String)
                 tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
+
             End If
 
             If Not rotuloDoDrive Is Nothing Then
+                'drive.VolumeLabel = "WWW"
 
                 If rotuloDoDrive = "" Then
                     If tipoDeDrive.ToString = "Fixed" Then
@@ -467,7 +472,7 @@ Public Class ControlPainel_Desktop
         nomeDaPasta = LTrim(nomeDaPasta)
         nomeDaPasta = RTrim(nomeDaPasta)
 
-        Dim _caminho As New DirectoryInfo(caminho)
+        Dim _caminho As New DirectoryInfo(caminho & "\")
         Dim _destino As New DirectoryInfo(caminho & "\" & nomeDaPasta)
 
 
@@ -478,8 +483,10 @@ Public Class ControlPainel_Desktop
                 Return False
 
             ElseIf _destino.Exists = True Then
-                excecao = "A pasta já existe."
-                MsgBox(excecao)
+                If _caminho.FullName <> _destino.FullName Then
+                    excecao = "A pasta já existe."
+                    MsgBox(excecao)
+                End If
                 Return False
 
             Else

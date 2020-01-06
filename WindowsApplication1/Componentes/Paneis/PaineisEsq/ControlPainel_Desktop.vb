@@ -60,6 +60,7 @@ Public Class ControlPainel_Desktop
         ' Cria o nódulo "Computador", seus submódulos e o expande
         tvRoot = TVWFilesAndFolders.Nodes.Add("Computador", "Computador", "Computador", "Computador")
         tvNodeDeComputador = tvRoot
+        tvNodeDeComputador.Tag = "Computador"
 
         tvRoot = tvNodeDeComputador.Nodes.Add("Desktop", "Área de Trabalho", "Desktop", "Desktop")
         tvNodeDeDesktop = tvRoot
@@ -402,9 +403,13 @@ Public Class ControlPainel_Desktop
 
     Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
         Dim node As TreeNode
-        node = CType(e.Node, TreeNode)
 
+        node = CType(e.Node, TreeNode)
         CarregarDiretorio(node)
+
+        Dim _caminho As New DirectoryInfo(node.Tag)
+        TVWFilesAndFolders.LabelEdit = _caminho.Exists
+
     End Sub
 
     Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
@@ -418,35 +423,75 @@ Public Class ControlPainel_Desktop
         Dim x As String
         Dim criadaPasta As Boolean
 
-        x = InputBox("Nova Pasta")
+        Try
+            If node.Tag IsNot (Nothing) Then
+                Dim prompt As String
+                Dim title As String
+                Dim defaultResponse As String
 
-        criadaPasta = CriarNovaPasta(node.Tag, x)
-        If criadaPasta = True Then
-            subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaAberta")
-            subNode.Tag = node.Tag & "\" & x
+                prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
+                title = "Criar nova pasta"
+                defaultResponse = "Nova Pasta"
+                x = InputBox(prompt, title, defaultResponse)
+                ' MsgBox(x)
 
-            subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+                criadaPasta = CriarNovaPasta(node.Tag, x)
+                If criadaPasta = True Then
+                    subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaAberta")
+                    subNode.Tag = node.Tag & "\" & x
+
+                    subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+                    subNode.ContextMenuStrip = CMItens
 
 
-        End If
+                End If
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
     End Sub
 
     Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
+
+        Dim excecao As String
+        Dim mensagemDeExcecao As String
 
         If caminho = Nothing Then
             Return False
             Exit Function
         End If
 
-        Dim _caminho As New DirectoryInfo(caminho)
-        Try
+        nomeDaPasta = LTrim(nomeDaPasta)
+        nomeDaPasta = RTrim(nomeDaPasta)
 
-            If _caminho.Exists = True Then
-                MkDir(caminho & "\" & nomeDaPasta)
-                Return True
+        Dim _caminho As New DirectoryInfo(caminho)
+        Dim _destino As New DirectoryInfo(caminho & "\" & nomeDaPasta)
+
+
+        Try
+            If _caminho.Exists = False Then
+                excecao = "O caminho não existe."
+                MsgBox(excecao)
+                Return False
+
+            ElseIf _destino.Exists = True Then
+                excecao = "A pasta já existe."
+                MsgBox(excecao)
+                Return False
 
             Else
-                Return False
+                If nomeDaPasta <> "" Then
+                    MkDir(caminho & "\" & nomeDaPasta)
+                    Return True
+
+                Else
+                    Return False
+
+                End If
+                ' Return True
 
             End If
 

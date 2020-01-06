@@ -55,6 +55,7 @@ Partial Class ControlPainel_Desktop
         Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TornarPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.PanelOpcoesDeProcessos.SuspendLayout()
@@ -80,6 +81,7 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders.SelectedImageIndex = 0
         Me.TVWFilesAndFolders.ShowLines = False
         Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 308)
+        Me.TVWFilesAndFolders.StateImageList = Me.IMGList
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList
@@ -210,9 +212,9 @@ Partial Class ControlPainel_Desktop
         '
         'CMItens
         '
-        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.TornarPastaProcessoToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(243, 264)
+        Me.CMItens.Size = New System.Drawing.Size(243, 286)
         '
         'ExpamdirToolStripMenuItem
         '
@@ -328,6 +330,12 @@ Partial Class ControlPainel_Desktop
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
+        'TornarPastaProcessoToolStripMenuItem
+        '
+        Me.TornarPastaProcessoToolStripMenuItem.Name = "TornarPastaProcessoToolStripMenuItem"
+        Me.TornarPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.TornarPastaProcessoToolStripMenuItem.Text = "Tornar Pasta Processo"
+        '
         'ControlPainel_Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -377,4 +385,5 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents NovaPastaProcessoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents TornarPastaProcessoToolStripMenuItem As ToolStripMenuItem
 End Class

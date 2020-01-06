@@ -1,6 +1,7 @@
 ﻿Imports Microsoft.VisualBasic.FileIO
 Imports System.IO
 Imports System.Collections
+Imports Microsoft.VisualBasic
 
 'http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
 ' TODO: Menu de contexto
@@ -409,4 +410,46 @@ Public Class ControlPainel_Desktop
     Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
         TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
     End Sub
+
+    Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
+        Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
+        Dim subNode As TreeNode
+
+        Dim x As String
+        Dim criadaPasta As Boolean
+
+        x = InputBox("Nova Pasta")
+
+        criadaPasta = CriarNovaPasta(node.Tag, x)
+        If criadaPasta = True Then
+            subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaAberta")
+            subNode.Tag = node.Tag & "\" & x
+
+            subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+
+
+        End If
+    End Sub
+
+    Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
+
+        Dim _caminho As New DirectoryInfo(caminho)
+        Try
+
+            If _caminho.Exists = True Then
+                MkDir(caminho & "\" & nomeDaPasta)
+                Return True
+
+            Else
+                Return False
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+
+        End Try
+
+    End Function
 End Class

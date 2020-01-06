@@ -433,6 +433,11 @@ Public Class ControlPainel_Desktop
 
     Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
 
+        If caminho = Nothing Then
+            Return False
+            Exit Function
+        End If
+
         Dim _caminho As New DirectoryInfo(caminho)
         Try
 

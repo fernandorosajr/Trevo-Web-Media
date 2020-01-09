@@ -298,6 +298,12 @@ Public Class ControlPainel_Desktop
     Sub CarregarDiretorio(node As TreeNode)
 
         Try
+            ' TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
+            ' TODO: Aplicar função criada em um evento de expansão de node ou seleção. (OK)
+            ' TODO: http://www.macoratti.net/13/12/vbn_list1.htm
+            ' TODO: Adicionar pasta download (OK)
+            ' eXCLUIR PASTAS especiais. (OK)
+
             Select Case node.Name
                 Case "Computador"
 
@@ -307,50 +313,31 @@ Public Class ControlPainel_Desktop
                     If node.Tag <> Nothing Then
                         Dim dir As New DirectoryInfo(node.Tag)
 
-                        If dir.Exists = True Then
-                            Dim dirSub As DirectoryInfo() = dir.GetDirectories
-                            Dim dirArq1 As FileInfo() = dir.GetFiles()
+                        If EDrive(node.Tag) = True Then
+                            Dim drive01 As New DriveInfo(node.Name)
 
-                            '        TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
-                            '        TODO: Aplicar função criada em um evento de expansão de node ou seleção. (OK)
-                            '        TODO: http://www.macoratti.net/13/12/vbn_list1.htm
-                            '        TODO: Adicionar pasta download (OK)
-                            '        eXCLUIR PASTAS especiais. (OK)
+                            If drive01.IsReady = True Then
+                                AtualizarDiretorio(node)
+                            Else
 
-                            AtualizarDiretorio(node)
-
-
-                            TVWFilesAndFolders.UseWaitCursor = True
-
-                            TVWFilesAndFolders.UseWaitCursor = False
-
-                            If node.Parent.Name = "Computador" Then
-
-                                Dim fullName As String
-                                fullName = node.FullPath
-                                If EDrive(fullName) = False Then Exit Sub
-                                '  If fullName.IndexOf(":") = -1 Then
-
-                                Dim drive01 As New DriveInfo(node.Name)
-
-                                If drive01.IsReady = False Then
-                                    node.Nodes.Clear()
-                                    node.Nodes.Add("O dispositivo não está acessível.")
-                                    Exit Sub
-                                End If
-
-                                TVWFilesAndFolders.UseWaitCursor = False
+                                node.Nodes.Clear()
+                                node.Nodes.Add("Mensagem", "<O dispositivo não está acessível.>", "info", "info").Tag = "Mensagem"
+                                Exit Sub
 
                             End If
 
                         Else
-                            If EDrive(node.Tag) = False And node.Tag <> "Mensagem" Then
-                                TVWFilesAndFolders.Nodes.Remove(node)
+                            If dir.Exists = True Then
+                                AtualizarDiretorio(node)
+
+                            Else
+                                If node.Tag <> "Mensagem" Then
+                                    TVWFilesAndFolders.Nodes.Remove(node)
+                                End If
                             End If
-                            ' AtualizarDiretorio(node)
-                            TVWFilesAndFolders.UseWaitCursor = False
 
                         End If
+
                     End If
             End Select
 
@@ -517,11 +504,15 @@ Public Class ControlPainel_Desktop
     Function EDrive(caminho As String) As Boolean
         Dim fullName As String
         fullName = caminho
-        If fullName.IndexOf(":") = -1 Then
-            Return False
+
+        ' MsgBox(fullName.Count)
+
+        If fullName.IndexOf(":") <> -1 And fullName.Count = 3 Then
+            Return True
 
         Else
-            Return True
+            Return False
+
 
         End If
     End Function

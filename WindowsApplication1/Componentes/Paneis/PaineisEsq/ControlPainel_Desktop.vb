@@ -9,7 +9,8 @@ Imports Microsoft.VisualBasic
 ' TODO: Criar função renomearVolume
 ' TODO: Criar função remover pasta
 ' TODO: Aperfeiçoar eventos relacionados com a  propriedade LabelEdit.
-' Não pode renomear Desktop nem as pastas de virtuais de bibliotecas.
+' Não pode renomear Desktop nem as pastas de virtuais de bibliotecas
+' TODO: Adicionar botões excluir, etc.
 
 ' TODO:
 
@@ -96,8 +97,6 @@ Public Class ControlPainel_Desktop
         tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Videos", "Videos", "Videos", "Videos")
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-
-
 
         'Dim listaDeDiretorios As String()
         'Dim caminhoDaPastaDoUsuario As String
@@ -329,7 +328,8 @@ Public Class ControlPainel_Desktop
 
                                 Dim fullName As String
                                 fullName = node.FullPath
-                                If fullName.IndexOf(":") = -1 Then Exit Sub
+                                If EDrive(fullName) = False Then Exit Sub
+                                '  If fullName.IndexOf(":") = -1 Then
 
                                 Dim drive01 As New DriveInfo(node.Name)
 
@@ -342,8 +342,11 @@ Public Class ControlPainel_Desktop
                                 TVWFilesAndFolders.UseWaitCursor = False
 
                             End If
+
                         Else
-                            TVWFilesAndFolders.Nodes.Remove(node)
+                            If EDrive(node.Tag) = False And node.Tag <> "Mensagem" Then
+                                TVWFilesAndFolders.Nodes.Remove(node)
+                            End If
                             ' AtualizarDiretorio(node)
                             TVWFilesAndFolders.UseWaitCursor = False
 
@@ -354,7 +357,7 @@ Public Class ControlPainel_Desktop
         Catch ex As Exception
 
             node.Nodes.Clear()
-            node.Nodes.Add(node.Name & "\info", ex.Message, "info", "info")
+            node.Nodes.Add(node.Name & "\info", ex.Message, "info", "info").Tag = "Mensagem"
             node.Expand()
             TVWFilesAndFolders.UseWaitCursor = False
 
@@ -414,7 +417,9 @@ Public Class ControlPainel_Desktop
 
         Dim _caminho As New DirectoryInfo(node.Tag)
         TVWFilesAndFolders.LabelEdit = _caminho.Exists
-
+        If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
+        ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
+        ' TODO:https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
     End Sub
 
     Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
@@ -462,7 +467,6 @@ Public Class ControlPainel_Desktop
     Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
 
         Dim excecao As String
-        Dim mensagemDeExcecao As String
 
         If caminho = Nothing Then
             Return False
@@ -509,4 +513,23 @@ Public Class ControlPainel_Desktop
         End Try
 
     End Function
+
+    Function EDrive(caminho As String) As Boolean
+        Dim fullName As String
+        fullName = caminho
+        If fullName.IndexOf(":") = -1 Then
+            Return False
+
+        Else
+            Return True
+
+        End If
+    End Function
+
+    Sub editarNode(node As TreeNode)
+        If Not node.IsEditing Then
+            node.BeginEdit()
+        End If
+    End Sub
+
 End Class

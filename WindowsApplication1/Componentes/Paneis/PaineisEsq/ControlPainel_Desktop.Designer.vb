@@ -81,7 +81,6 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders.SelectedImageIndex = 0
         Me.TVWFilesAndFolders.ShowLines = False
         Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 308)
-        Me.TVWFilesAndFolders.StateImageList = Me.IMGList
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList

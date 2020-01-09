@@ -109,7 +109,8 @@ Public Class ControlPainel_MidiasAtivas
             If Not (DriveI.IsReady) Then
                 TVFilesAndFoldersOfTheOpenMedia.Nodes.Clear()
                 node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, Me.TVMedias.SelectedNode.ImageKey, Me.TVMedias.SelectedNode.SelectedImageKey)
-                node.Nodes.Add("Mensagem", "<O dispositivo não está pronto.>", "info", "info")
+                node.Nodes.Add("Mensagem", "<O dispositivo não está pronto.>", "info", "info").Tag = "Mensagem"
+
 
                 node.ExpandAll()
                 Exit Sub

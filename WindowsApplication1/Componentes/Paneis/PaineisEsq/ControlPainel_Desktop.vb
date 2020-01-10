@@ -19,6 +19,8 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
+    Dim driveNome As String
+
     ' Propriedade de caminho
     Private _caminho As String
     Public Property Caminho As String
@@ -77,7 +79,7 @@ Public Class ControlPainel_Desktop
 
         If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
-        ' TODO:https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
+        ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
     End Sub
 
     Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
@@ -104,14 +106,13 @@ Public Class ControlPainel_Desktop
                 ' MsgBox(x)
 
                 criadaPasta = CriarNovaPasta(node.Tag, x)
+
                 If criadaPasta = True Then
                     subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaFechada")
                     subNode.Tag = node.Tag & "\" & x
 
                     subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
                     subNode.ContextMenuStrip = CMItens
-
-
                 End If
 
             End If
@@ -217,29 +218,12 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Downloads"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        'tvRoot = tvNodeDeComputador.Nodes.Add("ProgramFiles", "ProgramFiles", "pastaFechada", "pastaAberta")
-        'tvRoot.Tag = SpecialDirectories.ProgramFiles
-        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-
-        'tvRoot = tvNodeDeComputador.Nodes.Add("Programs", "Programs", "pastaFechada", "pastaAberta")
-        'tvRoot.Tag = SpecialDirectories.Programs
-        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-
-        'tvRoot = tvNodeDeComputador.Nodes.Add("Temp", "Temp", "pastaFechada", "pastaAberta")
-        'tvRoot.Tag = SpecialDirectories.Temp
-        'tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-        'tvNodeDeComputador.Expand()
-
-        ' MsgBox(SpecialDirectories.AllUsersApplicationData)
-
 
         'TODO: ( INCOMPLETO ) Encontra SubPastas da Area de trabalho e as adicionar 
         '_________________________________________________________________
 
         Dim AreaDeTrabalho As String
-        'Dim SubPastaDaAreaDeTrabalho As String
         Dim NomeDasSubPastasDaAreaDeTrabalho() As String
-        ' Dim nomeDaSubPastaDaAreaDeTrabalho As String
         Dim nome As String
 
 
@@ -355,7 +339,6 @@ Public Class ControlPainel_Desktop
             End If
 
             If Not rotuloDoDrive Is Nothing Then
-                'drive.VolumeLabel = "WWW"
 
                 If rotuloDoDrive = "" Then
                     If tipoDeDrive.ToString = "Fixed" Then
@@ -546,19 +529,24 @@ Public Class ControlPainel_Desktop
         Dim fullName As String
         fullName = caminho
 
-        ' MsgBox(fullName.Count)
-
         If fullName.IndexOf(":") <> -1 And fullName.Count = 3 Then
             Return True
 
         Else
             Return False
 
-
         End If
     End Function
 
     Sub editarNode(node As TreeNode)
+        ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
+        ' https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
+        If EDrive(node.Tag) = True Then
+            Dim drive As New DriveInfo(node.Tag)
+            driveNome = node.Text
+            node.Text = drive.VolumeLabel
+        End If
+
         If Not node.IsEditing Then
             node.BeginEdit()
         End If

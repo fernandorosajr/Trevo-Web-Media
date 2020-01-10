@@ -32,15 +32,6 @@ Public Class ControlPainel_Desktop
         End Set
     End Property
 
-    Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
-
-        If CHK_ShowCheck.Checked = 1 Then
-            'TVWFilesAndFolders.CheckBoxes = True
-
-        End If
-        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
-
-    End Sub
     Public Sub New()
 
         ' This call is required by the designer.
@@ -50,6 +41,119 @@ Public Class ControlPainel_Desktop
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
+
+    Private Sub ControlPainel_Desktop_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        If CHK_ShowCheck.Checked = 1 Then
+            'TVWFilesAndFolders.CheckBoxes = True
+
+        End If
+        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
+
+    End Sub
+
+    Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
+        Dim node As TreeNode
+
+        node = CType(e.Node, TreeNode)
+        CarregarDiretorio(node)
+
+        Dim _caminho As New DirectoryInfo(node.Tag)
+
+        If node.Name = "Computador" Then
+            TVWFilesAndFolders.LabelEdit = False
+
+        ElseIf node.Parent.Name = "Computador" Then
+            If EDrive(node.Tag) = True Then
+                TVWFilesAndFolders.LabelEdit = _caminho.Exists
+
+            Else
+                TVWFilesAndFolders.LabelEdit = False
+            End If
+
+        Else
+            TVWFilesAndFolders.LabelEdit = _caminho.Exists
+        End If
+
+        If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
+        ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
+        ' TODO:https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
+    End Sub
+
+    Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
+        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
+    End Sub
+
+    Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
+        Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
+        Dim subNode As TreeNode
+
+        Dim x As String
+        Dim criadaPasta As Boolean
+
+        Try
+            If node.Tag IsNot (Nothing) Then
+                Dim prompt As String
+                Dim title As String
+                Dim defaultResponse As String
+
+                prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
+                title = "Criar nova pasta"
+                defaultResponse = "Nova Pasta"
+                x = InputBox(prompt, title, defaultResponse)
+                ' MsgBox(x)
+
+                criadaPasta = CriarNovaPasta(node.Tag, x)
+                If criadaPasta = True Then
+                    subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaFechada")
+                    subNode.Tag = node.Tag & "\" & x
+
+                    subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+                    subNode.ContextMenuStrip = CMItens
+
+
+                End If
+
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
+    Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
+
+        Dim tsNode As TreeNode
+        System.Windows.Forms.Application.DoEvents()
+        tsNode = TVWFilesAndFolders.SelectedNode
+        _caminho = TVWFilesAndFolders.SelectedNode.Tag
+        CarregarDiretorio(tsNode)
+
+    End Sub
+
+    Private Sub TVWFilesAndFolders_AfterExpand(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterExpand
+        Dim node As TreeNode
+        node = CType(e.Node, TreeNode)
+        If node.Name = "Computador" Then Exit Sub
+        If node.Name <> "Desktop" And node.Parent.Name <> "Computador" Then
+            node.ImageKey = "pastaAberta"
+            node.SelectedImageKey = "pastaAberta"
+        End If
+
+    End Sub
+
+    Private Sub TVWFilesAndFolders_AfterCollapse(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterCollapse
+        Dim node As TreeNode
+        node = CType(e.Node, TreeNode)
+        If node.Name = "Computador" Then Exit Sub
+        If node.Name <> "Desktop" And node.Parent.Name <> "Computador" Then
+            node.ImageKey = "pastaFechada"
+            node.SelectedImageKey = "pastaFechada"
+        End If
+
+    End Sub
+
     Private Sub LoadTree()
         Dim tvRoot As TreeNode
         Dim tvNode As TreeNode
@@ -149,7 +253,7 @@ Public Class ControlPainel_Desktop
 
         For Each drD In dirDir01
             nome = drD.Name
-            tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaAberta")
+            tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaFechada")
             tvRoot.Tag = drD.FullName
             tvRoot.ContextMenuStrip = Me.CMItens
 
@@ -285,16 +389,6 @@ Public Class ControlPainel_Desktop
 
     End Function
 
-    Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
-
-        Dim tsNode As TreeNode
-        System.Windows.Forms.Application.DoEvents()
-        tsNode = TVWFilesAndFolders.SelectedNode
-        _caminho = TVWFilesAndFolders.SelectedNode.Tag
-        CarregarDiretorio(tsNode)
-
-    End Sub
-
     Sub CarregarDiretorio(node As TreeNode)
 
         Try
@@ -313,30 +407,31 @@ Public Class ControlPainel_Desktop
                     If node.Tag <> Nothing Then
                         Dim dir As New DirectoryInfo(node.Tag)
 
-                        If EDrive(node.Tag) = True Then
-                            Dim drive01 As New DriveInfo(node.Name)
+                        Select Case EDrive(node.Tag)
+                            Case True
+                                Dim drive01 As New DriveInfo(node.Name)
 
-                            If drive01.IsReady = True Then
-                                AtualizarDiretorio(node)
-                            Else
+                                If drive01.IsReady = True Then
+                                    AtualizarDiretorio(node)
+                                Else
 
-                                node.Nodes.Clear()
-                                node.Nodes.Add("Mensagem", "<O dispositivo não está acessível.>", "info", "info").Tag = "Mensagem"
-                                Exit Sub
+                                    node.Nodes.Clear()
+                                    node.Nodes.Add("Mensagem", "<O dispositivo não está acessível.>", "info", "info").Tag = "Mensagem"
+                                    Exit Sub
 
-                            End If
-
-                        Else
-                            If dir.Exists = True Then
-                                AtualizarDiretorio(node)
-
-                            Else
-                                If node.Tag <> "Mensagem" Then
-                                    TVWFilesAndFolders.Nodes.Remove(node)
                                 End If
-                            End If
 
-                        End If
+                            Case Else
+
+                                If dir.Exists = True Then
+                                    AtualizarDiretorio(node)
+
+                                Else
+                                    If node.Tag <> "Mensagem" Then
+                                        TVWFilesAndFolders.Nodes.Remove(node)
+                                    End If
+                                End If
+                        End Select
 
                     End If
             End Select
@@ -350,6 +445,7 @@ Public Class ControlPainel_Desktop
 
         End Try
     End Sub
+
     Private Sub AtualizarDiretorio(node As TreeNode)
         Dim directory As New DirectoryInfo(node.Tag)
         Dim subDirectories As DirectoryInfo() = directory.GetDirectories
@@ -387,68 +483,13 @@ Public Class ControlPainel_Desktop
 
         For Each dirAdd As DirectoryInfo In adicionarAListaDeDiretorios
 
-            subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaAberta")
+            subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaFechada")
             subTNode.Tag = dirAdd.FullName
             subTNode.ContextMenuStrip = Me.CMItens
 
             subTNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
         Next
 
-    End Sub
-
-    Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
-        Dim node As TreeNode
-
-        node = CType(e.Node, TreeNode)
-        CarregarDiretorio(node)
-
-        Dim _caminho As New DirectoryInfo(node.Tag)
-        TVWFilesAndFolders.LabelEdit = _caminho.Exists
-        If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
-        ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
-        ' TODO:https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
-    End Sub
-
-    Private Sub CHK_ShowCheck_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowCheck.CheckedChanged
-        TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
-    End Sub
-
-    Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
-        Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
-        Dim subNode As TreeNode
-
-        Dim x As String
-        Dim criadaPasta As Boolean
-
-        Try
-            If node.Tag IsNot (Nothing) Then
-                Dim prompt As String
-                Dim title As String
-                Dim defaultResponse As String
-
-                prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
-                title = "Criar nova pasta"
-                defaultResponse = "Nova Pasta"
-                x = InputBox(prompt, title, defaultResponse)
-                ' MsgBox(x)
-
-                criadaPasta = CriarNovaPasta(node.Tag, x)
-                If criadaPasta = True Then
-                    subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaAberta")
-                    subNode.Tag = node.Tag & "\" & x
-
-                    subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
-                    subNode.ContextMenuStrip = CMItens
-
-
-                End If
-
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-
-        End Try
     End Sub
 
     Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean

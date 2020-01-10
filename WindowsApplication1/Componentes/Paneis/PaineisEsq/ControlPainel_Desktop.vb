@@ -552,4 +552,27 @@ Public Class ControlPainel_Desktop
         End If
     End Sub
 
+    Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
+        If Not (e.Label Is Nothing) Then
+            If e.Label.Length > 0 Then
+
+                If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
+                    e.Node.EndEdit(False)
+                Else
+                    e.CancelEdit = True
+
+                    MessageBox.Show("Arquivos e pastas não podem conter os seguintes caracteres e seus nomes:" &
+                    Microsoft.VisualBasic.ControlChars.Cr &
+                    "\ " & "/ " & "| " & ": " & "* " & "? " & """" & " < " & ">",
+                    "Nomear/Renomear pasta")
+                    e.Node.BeginEdit()
+                End If
+
+            Else
+                MessageBox.Show("O nome da pasta não pode ficar em branco")
+                e.Node.BeginEdit()
+
+            End If
+        End If
+    End Sub
 End Class

@@ -19,7 +19,9 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
-    Dim driveNome As String
+    Dim driveName As String
+    Dim texto As String
+    Dim delimitadoresDeCaminhoDePasta() As Char = {"\"c, "/"c}
 
     ' Propriedade de caminho
     Private _caminho As String
@@ -77,7 +79,7 @@ Public Class ControlPainel_Desktop
             TVWFilesAndFolders.LabelEdit = _caminho.Exists
         End If
 
-        If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
+        '    If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
     End Sub
@@ -161,8 +163,6 @@ Public Class ControlPainel_Desktop
         Dim tvNodeDeComputador As TreeNode
         Dim tvNodeDeDesktop As TreeNode
 
-        Dim delimitadores() As Char = {"\"c, "/"c}
-
         ' Filtrar os tipos de arquivos que se deseja ver no Explorer 
         tipoDeArquivo = "*.*"
 
@@ -190,7 +190,7 @@ Public Class ControlPainel_Desktop
 
         Dim listaDeDiretorios As String()
         Dim caminhoDaPastaDoUsuario As String
-        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadores)
+        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
         Dim dir As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Videos")
@@ -205,7 +205,7 @@ Public Class ControlPainel_Desktop
 
         'Dim listaDeDiretorios As String()
         'Dim caminhoDaPastaDoUsuario As String
-        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadores)
+        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
         Dim dir2 As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Downloads")
@@ -228,7 +228,7 @@ Public Class ControlPainel_Desktop
 
 
         AreaDeTrabalho = SpecialDirectories.Desktop
-        NomeDasSubPastasDaAreaDeTrabalho = SepararPalavras(AreaDeTrabalho, delimitadores)
+        NomeDasSubPastasDaAreaDeTrabalho = SepararPalavras(AreaDeTrabalho, delimitadoresDeCaminhoDePasta)
 
 
         Dim dirDir As New IO.DirectoryInfo(AreaDeTrabalho)
@@ -543,7 +543,7 @@ Public Class ControlPainel_Desktop
         ' https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
         If EDrive(node.Tag) = True Then
             Dim drive As New DriveInfo(node.Tag)
-            driveNome = node.Text
+            driveName = node.Text
             node.Text = drive.VolumeLabel
         End If
 
@@ -553,6 +553,10 @@ Public Class ControlPainel_Desktop
     End Sub
 
     Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
+
+        Dim _caminho As String()
+
+        texto = e.Node.Text
         If Not (e.Label Is Nothing) Then
             If e.Label.Length > 0 Then
 
@@ -561,7 +565,7 @@ Public Class ControlPainel_Desktop
                 Else
                     e.CancelEdit = True
 
-                    MessageBox.Show("Arquivos e pastas não podem conter os seguintes caracteres e seus nomes:" &
+                    MessageBox.Show("Arquivos e pastas não podem conter os seguintes caracteres em seus nomes:" &
                     Microsoft.VisualBasic.ControlChars.Cr &
                     "\ " & "/ " & "| " & ": " & "* " & "? " & """" & " < " & ">",
                     "Nomear/Renomear pasta")
@@ -569,9 +573,19 @@ Public Class ControlPainel_Desktop
                 End If
 
             Else
-                MessageBox.Show("O nome da pasta não pode ficar em branco")
-                e.Node.BeginEdit()
 
+                If EDrive(e.Node.Tag) = True Then
+
+                Else
+                    MessageBox.Show("O nome da pasta não pode ficar em branco")
+                    e.Node.Text = texto
+                    e.Node.BeginEdit()
+                End If
+            End If
+        Else
+            If e.Node.Text = "" Then
+                _caminho = SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
+                e.Node.Text = _caminho(_caminho.Count - 1)
             End If
         End If
     End Sub

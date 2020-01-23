@@ -19,8 +19,6 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
-    Dim driveName As String
-    Dim texto As String
     Dim delimitadoresDeCaminhoDePasta() As Char = {"\"c, "/"c}
 
     ' Propriedade de caminho
@@ -68,9 +66,9 @@ Public Class ControlPainel_Desktop
             TVWFilesAndFolders.LabelEdit = False
 
         ElseIf node.Parent.Name = "Computador" Then
+
             If EDrive(node.Tag) = True Then
                 TVWFilesAndFolders.LabelEdit = _caminho.Exists
-
             Else
                 TVWFilesAndFolders.LabelEdit = False
             End If
@@ -79,7 +77,7 @@ Public Class ControlPainel_Desktop
             TVWFilesAndFolders.LabelEdit = _caminho.Exists
         End If
 
-        '    If TVWFilesAndFolders.LabelEdit = True Then editarNode(node)
+        If TVWFilesAndFolders.LabelEdit = True Then EditarNode(node)
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
     End Sub
@@ -128,7 +126,7 @@ Public Class ControlPainel_Desktop
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
 
         Dim tsNode As TreeNode
-        System.Windows.Forms.Application.DoEvents()
+        ' System.Windows.Forms.Application.DoEvents()
         tsNode = TVWFilesAndFolders.SelectedNode
         _caminho = TVWFilesAndFolders.SelectedNode.Tag
         CarregarDiretorio(tsNode)
@@ -513,55 +511,128 @@ Public Class ControlPainel_Desktop
                     Return False
 
                 End If
-                ' Return True
-
             End If
 
         Catch ex As Exception
             MsgBox(ex.Message)
             Return False
-
         End Try
 
     End Function
 
     Function EDrive(caminho As String) As Boolean
+
         Dim fullName As String
         fullName = caminho
 
         If fullName.IndexOf(":") <> -1 And fullName.Count = 3 Then
             Return True
-
         Else
             Return False
-
         End If
+
     End Function
 
-    Sub editarNode(node As TreeNode)
+    Sub EditarNode(node As TreeNode)
+        Dim x As String
+        Dim prompt As String
+        Dim title As String
+        Dim defaultResponse As String
+
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
-        If EDrive(node.Tag) = True Then
-            Dim drive As New DriveInfo(node.Tag)
-            driveName = node.Text
-            node.Text = drive.VolumeLabel
-        End If
 
         If Not node.IsEditing Then
-            node.BeginEdit()
+            If EDrive(node.Tag) = True Then
+                Dim drive As New DriveInfo(node.Tag)
+
+                prompt = "Editar volume da unidade " & node.Tag
+                title = "Renomear Unidade"
+                defaultResponse = drive.VolumeLabel
+
+                x = InputBox(prompt, title, defaultResponse)
+            Else
+                node.BeginEdit()
+            End If
+
         End If
     End Sub
+    Function RenomearPasta(caminho As String, newName As String) As String
 
+        Dim oldPath, newPath As String
+        Dim directoryInfo As New DirectoryInfo(caminho)
+
+        oldPath = Trim(caminho)
+        newPath = directoryInfo.Parent.FullName & "\" & Trim(newName)
+
+        Try
+
+            If directoryInfo.Exists = True Then
+                Rename(oldPath, newPath)
+                Return newPath
+            End If
+
+        Catch ex As Exception
+            Return oldPath
+        End Try
+
+    End Function
     Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
 
         Dim _caminho As String()
 
-        texto = e.Node.Text
+        Dim node As TreeNode
+        node = CType(e.Node, TreeNode)
+
+        Dim drive As New DriveInfo(e.Node.Tag)
+        Dim rotuloDoDrive As String
+        Dim tamanhoDoDrive As String
+        Dim letraDaUnidade As String
+        Dim todoDrive As String
+
         If Not (e.Label Is Nothing) Then
             If e.Label.Length > 0 Then
 
                 If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
+
                     e.Node.EndEdit(False)
+                    node.Tag = RenomearPasta(node.Tag, e.Label)
+
+
+                    'If EDrive(e.Node.Tag) = True Then
+
+                    '    letraDaUnidade = drive.Name
+
+                    '    If drive.IsReady Then
+                    '        rotuloDoDrive = CType(e.Label, String)
+
+                    '        tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
+                    '    End If
+
+                    '    If Not rotuloDoDrive Is Nothing Then
+                    '        If rotuloDoDrive = "" Then
+                    '            If drive.DriveType = 3 Then
+                    '                rotuloDoDrive = "Disco Local"
+
+                    '            ElseIf drive.DriveType = 5 Then
+                    '                rotuloDoDrive = "Unidade de Disco Removível"
+                    '                ' iconeDoDrive = "UnidadeVazia"
+                    '            End If
+                    '        End If
+                    '        todoDrive = rotuloDoDrive & " (" & letraDaUnidade.Substring(0, 2) & ")"
+                    '    Else
+
+                    '        todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                    '    End If
+
+                    '    'e.Node.Text = e.Label.Insert(3, todoDrive)
+                    '    e.Node.Text = todoDrive
+                    '    e.Node.EndEdit(False)
+                    'Else
+
+                    '    e.Node.EndEdit(False)
+                    'End If
+
                 Else
                     e.CancelEdit = True
 
@@ -576,17 +647,24 @@ Public Class ControlPainel_Desktop
 
                 If EDrive(e.Node.Tag) = True Then
 
+                    letraDaUnidade = drive.Name
+                    todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                    e.Node.Text = todoDrive
+                    'todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                    e.Node.BeginEdit()
                 Else
                     MessageBox.Show("O nome da pasta não pode ficar em branco")
-                    e.Node.Text = texto
                     e.Node.BeginEdit()
                 End If
             End If
         Else
             If e.Node.Text = "" Then
                 _caminho = SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
-                e.Node.Text = _caminho(_caminho.Count - 1)
+                node.Text = _caminho(_caminho.Count - 1)
             End If
         End If
+
     End Sub
+
+
 End Class

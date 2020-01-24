@@ -289,6 +289,12 @@
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\DialogRenameVolume.Designer.vb">
+      <DependentUpon>DialogRenameVolume.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DialogRenameVolume.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -384,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DialogRenameVolume.resx">
+      <DependentUpon>DialogRenameVolume.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.af.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

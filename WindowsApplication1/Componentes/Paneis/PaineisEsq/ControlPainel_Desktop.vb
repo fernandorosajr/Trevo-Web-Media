@@ -534,6 +534,7 @@ Public Class ControlPainel_Desktop
     End Function
 
     Sub EditarNode(node As TreeNode)
+
         Dim x As String
         Dim prompt As String
         Dim title As String
@@ -542,21 +543,37 @@ Public Class ControlPainel_Desktop
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
 
-        If Not node.IsEditing Then
-            If EDrive(node.Tag) = True Then
-                Dim drive As New DriveInfo(node.Tag)
+        Try
+            If Not node.IsEditing Then
+                If EDrive(node.Tag) = True Then
+                    Dim drive As New DriveInfo(node.Tag)
 
-                prompt = "Editar volume da unidade " & node.Tag
-                title = "Renomear Unidade"
-                defaultResponse = drive.VolumeLabel
+                    prompt = "Editar volume da unidade " & node.Tag
+                    title = "Renomear Unidade"
+                    defaultResponse = drive.VolumeLabel
 
-                x = InputBox(prompt, title, defaultResponse)
-            Else
-                node.BeginEdit()
+                    '   x = InputBox(prompt, title, defaultResponse)
+                    DialogRenameVolume.TextBox1.Text = defaultResponse
+                    DialogRenameVolume.ShowDialog()
+
+                    If x = False Then
+                        MsgBox("sss")
+                        Exit Sub
+                    End If
+                    ' drive.VolumeLabel = Trim(x)
+
+                    node.EndEdit(False)
+
+                Else
+                    node.BeginEdit()
+                End If
             End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
 
-        End If
     End Sub
+
     Function RenomearPasta(caminho As String, newName As String) As String
 
         Dim oldPath, newPath As String
@@ -665,6 +682,5 @@ Public Class ControlPainel_Desktop
         End If
 
     End Sub
-
 
 End Class

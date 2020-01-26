@@ -540,6 +540,8 @@ Public Class ControlPainel_Desktop
         Dim title As String
         Dim defaultResponse As String
 
+        Dim FRMInputBox As New FRMDialogInputBox
+
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
 
@@ -548,21 +550,28 @@ Public Class ControlPainel_Desktop
                 If EDrive(node.Tag) = True Then
                     Dim drive As New DriveInfo(node.Tag)
 
-                    prompt = "Editar volume da unidade " & node.Tag
+                    prompt = "Editar volume da unidade " & """" & node.Tag & """" &
+                        Chr(13) & "Volume atual : " & """" & drive.VolumeLabel & """"
+
                     title = "Renomear Unidade"
                     defaultResponse = drive.VolumeLabel
 
-                    '   x = InputBox(prompt, title, defaultResponse)
-                    DialogRenameVolume.TextBox1.Text = defaultResponse
-                    DialogRenameVolume.ShowDialog()
+                    FRMInputBox.Prompt = prompt
+                    FRMInputBox.Title = title
+                    FRMInputBox.DefaultResponse = defaultResponse
 
-                    If x = False Then
-                        MsgBox("sss")
-                        Exit Sub
+                    FRMInputBox.ShowDialog()
+
+                    If FRMInputBox.DialogResult = DialogResult.OK Then
+
+                        If drive.VolumeLabel <> FRMInputBox.Result Then
+                            drive.VolumeLabel = FRMInputBox.Result
+                            node.EndEdit(False)
+                        End If
+
+                    ElseIf FRMInputBox.DialogResult = DialogResult.Cancel Then
+
                     End If
-                    ' drive.VolumeLabel = Trim(x)
-
-                    node.EndEdit(False)
 
                 Else
                     node.BeginEdit()

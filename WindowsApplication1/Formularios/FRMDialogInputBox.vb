@@ -81,4 +81,5 @@ Public Class FRMDialogInputBox
         TxtResponse.SelectionStart = 0
         TxtResponse.SelectionLength = TxtResponse.Text.Length
     End Sub
+
 End Class

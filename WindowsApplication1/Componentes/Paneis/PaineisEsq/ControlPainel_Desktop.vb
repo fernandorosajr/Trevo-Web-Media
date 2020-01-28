@@ -3,6 +3,8 @@ Imports System.IO
 Imports System.Collections
 Imports Microsoft.VisualBasic
 
+'Imports TrevoWebMedia.DriveAnalysisClass
+
 'http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
 ' TODO: Desenhar Menu de contexto
 ' TODO: Criar Função renomearPasta
@@ -134,6 +136,7 @@ Public Class ControlPainel_Desktop
     End Sub
 
     Private Sub TVWFilesAndFolders_AfterExpand(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterExpand
+
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
         If node.Name = "Computador" Then Exit Sub
@@ -145,6 +148,7 @@ Public Class ControlPainel_Desktop
     End Sub
 
     Private Sub TVWFilesAndFolders_AfterCollapse(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterCollapse
+
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
         If node.Name = "Computador" Then Exit Sub
@@ -201,8 +205,6 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        'Dim listaDeDiretorios As String()
-        'Dim caminhoDaPastaDoUsuario As String
         listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
@@ -294,63 +296,19 @@ Public Class ControlPainel_Desktop
         Dim tamanhoDoDrive As String
         Dim iconeDoDrive As String
 
+        Dim driveAnalys As New DriveAnalysisClass
+
         For Each drive As DriveInfo In My.Computer.FileSystem.Drives
 
             nomeDoDrive = drive.Name
             tipoDeDrive = drive.DriveType
 
-            ' Escolhe o tipo de icone de acordo com o drive 
-            Select Case drive.DriveType
-
-                Case 0
-                    tipoDeDrive = "Unknown"
-
-                Case 1
-                    tipoDeDrive = "NoRootDirectory"
-
-                Case 2
-                    tipoDeDrive = "Removable"
-                    iconeDoDrive = "Pen.ico"
-
-                Case 3
-                    tipoDeDrive = "Fixed"
-                    iconeDoDrive = "hd"
-
-                Case 4
-                    tipoDeDrive = "Network"
-
-                Case 5
-                    tipoDeDrive = "CD Rom"
-                    iconeDoDrive = "DVD"
-
-                Case 6
-                    tipoDeDrive = "Ram"
-
-            End Select
-
             rotuloDoDrive = ""
 
-            If drive.IsReady Then
-                rotuloDoDrive = CType(drive.VolumeLabel.ToString, String)
-                tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
-
-            End If
-
-            If Not rotuloDoDrive Is Nothing Then
-
-                If rotuloDoDrive = "" Then
-                    If tipoDeDrive.ToString = "Fixed" Then
-                        rotuloDoDrive = "Disco Local"
-                    ElseIf tipoDeDrive.ToString = "CD Rom" Then
-                        rotuloDoDrive = "Unidade de Disco Removível"
-                        iconeDoDrive = "UnidadeVazia"
-                    End If
-                End If
-
-                todoDrive = rotuloDoDrive & " (" & nomeDoDrive.Substring(0, 2) & ")"
-            Else
-                todoDrive = "(" & nomeDoDrive.Substring(0, 2) & ")"
-            End If
+            driveAnalys.ReturnLabelVolumeDisplay(drive)
+            nomeDoDrive = driveAnalys.NomeDoDrive
+            todoDrive = driveAnalys.TodoDrive
+            iconeDoDrive = driveAnalys.IconeDoDrive
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
             tvRoot.ContextMenuStrip = Me.CMItens
@@ -574,6 +532,9 @@ Public Class ControlPainel_Desktop
                     End If
 
                 Else
+                    'TODO: Editar regras de interação com pastas durante a criação
+                    ' Checar se pasta existe
+                    ' se existe, perguntar para qual nome renomear ou mesclar.
                     node.BeginEdit()
                 End If
             End If

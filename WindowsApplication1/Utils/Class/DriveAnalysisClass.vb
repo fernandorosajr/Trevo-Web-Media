@@ -51,6 +51,18 @@ Public Class DriveAnalysisClass
         End Set
     End Property
 
+    Function EDrive(caminho As String) As Boolean
+
+        Dim fullName As String
+        fullName = caminho
+
+        If fullName.IndexOf(":") <> -1 And fullName.Count = 3 Then
+            Return True
+        Else
+            Return False
+        End If
+
+    End Function
 
     Function ReturnLabelVolumeDisplay(drive As DriveInfo) As String
 

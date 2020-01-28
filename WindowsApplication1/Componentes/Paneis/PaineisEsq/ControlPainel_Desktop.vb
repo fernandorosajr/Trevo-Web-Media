@@ -21,6 +21,9 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
+    Dim usesDirectories As UsesDirectoriesClass
+    Dim driveAnalysis As DriveAnalysisClass
+
     Dim delimitadoresDeCaminhoDePasta() As Char = {"\"c, "/"c}
 
     ' Propriedade de caminho
@@ -69,7 +72,7 @@ Public Class ControlPainel_Desktop
 
         ElseIf node.Parent.Name = "Computador" Then
 
-            If EDrive(node.Tag) = True Then
+            If driveAnalysis.EDrive(node.Tag) = True Then
                 TVWFilesAndFolders.LabelEdit = _caminho.Exists
             Else
                 TVWFilesAndFolders.LabelEdit = False
@@ -107,7 +110,10 @@ Public Class ControlPainel_Desktop
                 x = InputBox(prompt, title, defaultResponse)
                 ' MsgBox(x)
 
-                criadaPasta = CriarNovaPasta(node.Tag, x)
+                criadaPasta = usesDirectories.CriarNovaPasta(node.Tag, x)
+                'TODO: Editar regras de interação com pastas durante a criação
+                ' Checar se pasta existe
+                ' se existe, perguntar para qual nome renomear ou mesclar.
 
                 If criadaPasta = True Then
                     subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaFechada")
@@ -285,9 +291,7 @@ Public Class ControlPainel_Desktop
         'End If
 
         '###############################################################
-        '_______________________________________________________________
-        ' TODO: Tratar e adicionar driveres em Meu Computador
-        '__________________________________________________________________
+
 
         Dim nomeDoDrive As String
         Dim tipoDeDrive As String
@@ -296,7 +300,7 @@ Public Class ControlPainel_Desktop
         Dim tamanhoDoDrive As String
         Dim iconeDoDrive As String
 
-        Dim driveAnalys As New DriveAnalysisClass
+        Dim drive_Analys As New DriveAnalysisClass
 
         For Each drive As DriveInfo In My.Computer.FileSystem.Drives
 
@@ -305,10 +309,10 @@ Public Class ControlPainel_Desktop
 
             rotuloDoDrive = ""
 
-            driveAnalys.ReturnLabelVolumeDisplay(drive)
-            nomeDoDrive = driveAnalys.NomeDoDrive
-            todoDrive = driveAnalys.TodoDrive
-            iconeDoDrive = driveAnalys.IconeDoDrive
+            drive_Analys.ReturnLabelVolumeDisplay(drive)
+            nomeDoDrive = drive_Analys.NomeDoDrive
+            todoDrive = drive_Analys.TodoDrive
+            iconeDoDrive = drive_Analys.IconeDoDrive
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
             tvRoot.ContextMenuStrip = Me.CMItens
@@ -346,7 +350,7 @@ Public Class ControlPainel_Desktop
                     If node.Tag <> Nothing Then
                         Dim dir As New DirectoryInfo(node.Tag)
 
-                        Select Case EDrive(node.Tag)
+                        Select Case driveAnalysis.EDrive(node.Tag)
                             Case True
                                 Dim drive01 As New DriveInfo(node.Name)
 
@@ -431,66 +435,6 @@ Public Class ControlPainel_Desktop
 
     End Sub
 
-    Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
-
-        Dim excecao As String
-
-        If caminho = Nothing Then
-            Return False
-            Exit Function
-        End If
-
-        nomeDaPasta = LTrim(nomeDaPasta)
-        nomeDaPasta = RTrim(nomeDaPasta)
-
-        Dim _caminho As New DirectoryInfo(caminho & "\")
-        Dim _destino As New DirectoryInfo(caminho & "\" & nomeDaPasta)
-
-
-        Try
-            If _caminho.Exists = False Then
-                excecao = "O caminho não existe."
-                MsgBox(excecao)
-                Return False
-
-            ElseIf _destino.Exists = True Then
-                If _caminho.FullName <> _destino.FullName Then
-                    excecao = "A pasta já existe."
-                    MsgBox(excecao)
-                End If
-                Return False
-
-            Else
-                If nomeDaPasta <> "" Then
-                    MkDir(caminho & "\" & nomeDaPasta)
-                    Return True
-
-                Else
-                    Return False
-
-                End If
-            End If
-
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            Return False
-        End Try
-
-    End Function
-
-    Function EDrive(caminho As String) As Boolean
-
-        Dim fullName As String
-        fullName = caminho
-
-        If fullName.IndexOf(":") <> -1 And fullName.Count = 3 Then
-            Return True
-        Else
-            Return False
-        End If
-
-    End Function
-
     Sub EditarNode(node As TreeNode)
 
         Dim x As String
@@ -505,7 +449,7 @@ Public Class ControlPainel_Desktop
 
         Try
             If Not node.IsEditing Then
-                If EDrive(node.Tag) = True Then
+                If driveAnalysis.EDrive(node.Tag) = True Then
                     Dim drive As New DriveInfo(node.Tag)
 
                     prompt = "Editar volume da unidade " & """" & node.Tag & """" &
@@ -532,9 +476,7 @@ Public Class ControlPainel_Desktop
                     End If
 
                 Else
-                    'TODO: Editar regras de interação com pastas durante a criação
-                    ' Checar se pasta existe
-                    ' se existe, perguntar para qual nome renomear ou mesclar.
+
                     node.BeginEdit()
                 End If
             End If
@@ -544,26 +486,7 @@ Public Class ControlPainel_Desktop
 
     End Sub
 
-    Function RenomearPasta(caminho As String, newName As String) As String
 
-        Dim oldPath, newPath As String
-        Dim directoryInfo As New DirectoryInfo(caminho)
-
-        oldPath = Trim(caminho)
-        newPath = directoryInfo.Parent.FullName & "\" & Trim(newName)
-
-        Try
-
-            If directoryInfo.Exists = True Then
-                Rename(oldPath, newPath)
-                Return newPath
-            End If
-
-        Catch ex As Exception
-            Return oldPath
-        End Try
-
-    End Function
     Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
 
         Dim _caminho As String()
@@ -583,10 +506,10 @@ Public Class ControlPainel_Desktop
                 If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
 
                     e.Node.EndEdit(False)
-                    node.Tag = RenomearPasta(node.Tag, e.Label)
+                    node.Tag = usesDirectories.RenomearPasta(node.Tag, e.Label)
 
 
-                    'If EDrive(e.Node.Tag) = True Then
+                    'If driveAnalysis.EDrive(e.Node.Tag) = True Then
 
                     '    letraDaUnidade = drive.Name
 
@@ -632,7 +555,7 @@ Public Class ControlPainel_Desktop
 
             Else
 
-                If EDrive(e.Node.Tag) = True Then
+                If driveAnalysis.EDrive(e.Node.Tag) = True Then
 
                     letraDaUnidade = drive.Name
                     todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"

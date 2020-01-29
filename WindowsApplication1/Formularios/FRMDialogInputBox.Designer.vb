@@ -104,7 +104,7 @@ Partial Class FRMDialogInputBox
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
-        'DialogRenameVolume
+        'FRMDialogInputBox
         '
         Me.AcceptButton = Me.OK_Button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -115,10 +115,11 @@ Partial Class FRMDialogInputBox
         Me.Controls.Add(Me.LBLPrompt)
         Me.Controls.Add(Me.TxtResponse)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.ForeColor = System.Drawing.Color.DarkGray
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "DialogRenameVolume"
+        Me.Name = "FRMDialogInputBox"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "DialogRenameVolume"

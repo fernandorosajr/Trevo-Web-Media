@@ -1,26 +1,48 @@
 ﻿Imports System.IO
 
+Public Enum Actions As Byte
+    None = 0
+    Copy = 1
+    Delete = 2
+    MoveToTrash = 3
+    Move = 4
+    Rename = 5
+    Merge = 6
+    Open = 7
+End Enum
 
 Public Class UsesDirectoriesClass
 
     Function RenomearPasta(caminho As String, newName As String) As String
 
         Dim oldPath, newPath As String
-        Dim directoryInfo As New DirectoryInfo(caminho)
+        Dim caminho_DirectoryInfo As New DirectoryInfo(caminho)
 
         oldPath = Trim(caminho)
-        newPath = directoryInfo.Parent.FullName & "\" & Trim(newName)
+        newPath = caminho_DirectoryInfo.Parent.FullName & "\" & Trim(newName)
 
         Try
 
-            If directoryInfo.Exists = True Then
-                Rename(oldPath, newPath)
-                Return newPath
+            If caminho_DirectoryInfo.Exists = True Then
+
+                Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
+
+                If newPath_DirectoryInfo.Exists = True Then
+
+
+                Else
+                    Rename(oldPath, newPath)
+                    Return newPath
+                End If
             End If
 
         Catch ex As Exception
             Return oldPath
         End Try
+
+    End Function
+
+    Function CompararNomeDasPastasEExecutarAcao(action As String)
 
     End Function
 

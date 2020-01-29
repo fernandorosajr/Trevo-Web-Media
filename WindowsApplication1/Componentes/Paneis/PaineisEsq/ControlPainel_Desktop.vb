@@ -21,8 +21,8 @@ Public Class ControlPainel_Desktop
     Dim carregaArquivosNaArvore As Boolean
     Dim caminhoDaPastaSelecionada As String
 
-    Dim usesDirectories As UsesDirectoriesClass
-    Dim driveAnalysis As DriveAnalysisClass
+    Dim usesDirectories As New UsesDirectoriesClass
+    Dim driveAnalysis As New DriveAnalysisClass
 
     Dim delimitadoresDeCaminhoDePasta() As Char = {"\"c, "/"c}
 

@@ -19,7 +19,7 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
 
-    Private Sub BTNSubstitui_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNSubstitui.MouseMove
+    Private Sub BTNSubstitui_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNSubstituir.MouseMove
         Panel_LBLInfo.Visible = True
         LBLInfo.Text = "Exclui pasta destino e seus conteúdos e a substitui pela pasta de origem."
     End Sub
@@ -30,13 +30,49 @@ Public Class FRMDialogConflictingFolders
 
     End Sub
 
-    Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub FRMDialogConflictingFolders_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        Panel_LBLInfo.Visible = False
 
     End Sub
 
-    Private Sub FRMDialogConflictingFolders_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+    Private Sub Panel_LBLOutrasOpcoes_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_LBLOutrasOpcoes.MouseMove
         Panel_LBLInfo.Visible = False
-        'LBLInfo.Text = "Exclui pasta destino e seus conteúdos e a substitui pela pasta de origem."
+    End Sub
+
+    Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeOrigem.LinkClicked
+        PanelEnvolve_TXTNomeDaOrigem.Left = LNKLRenomeOrigem.Left
+        PanelEnvolve_TXTNomeDaOrigem.Width = LBLValueOrigem.Width
+
+        PanelEnvolve_TXTNomeDaOrigem.Visible = Not (PanelBorder_TXTNomeDaOrigem.Visible)
+
+        TXTNomeDaOrigem.Focus()
+
+    End Sub
+
+    Private Sub BTNConfirmarRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeOrigem.Click
+        PanelEnvolve_TXTNomeDaOrigem.Visible = False
+    End Sub
+
+    Private Sub BTNCancelaRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeOrigem.Click
+        PanelEnvolve_TXTNomeDaOrigem.Visible = False
+
+    End Sub
+
+    Private Sub BTNConfirmarRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeDestino.Click
+        PanelEnvolve_TXTNomeDoDestino.Visible = False
+    End Sub
+
+    Private Sub BTNCancelaRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeDestino.Click
+        PanelEnvolve_TXTNomeDoDestino.Visible = False
+    End Sub
+
+    Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeDestino.LinkClicked
+        PanelEnvolve_TXTNomeDoDestino.Left = LNKLRenomeDestino.Left
+        PanelEnvolve_TXTNomeDoDestino.Width = LBLValueDestino.Width
+
+        PanelEnvolve_TXTNomeDoDestino.Visible = Not (PanelEnvolve_TXTNomeDoDestino.Visible)
+
+        TXTNomeDoDestino.Focus()
 
     End Sub
 End Class

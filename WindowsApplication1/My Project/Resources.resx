@@ -160,9 +160,6 @@
   <data name="avancar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avancar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="recortar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\recortar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -265,8 +262,8 @@
   <data name="Rodar Esquerda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rodar Esquerda.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MAC OS X Mountain Lion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MAC OS X Mountain Lion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exibirdetalhe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exibirdetalhe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="processoRenomearGrupo04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\processoRenomearGrupo04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -360,6 +357,9 @@
   </data>
   <data name="MAC OS X Mountain Lionc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MAC OS X Mountain Lionc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pasta raiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pasta raiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AgruparExibicao02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AgruparExibicao02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -526,6 +526,9 @@
   <data name="pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MAC OS X Mountain Lion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAC OS X Mountain Lion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dvd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dvd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -541,8 +544,8 @@
   <data name="panelEsquerdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pasta raiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pasta raiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="undo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="processoCopiarGrupo02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\processoCopiarGrupo02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -685,14 +688,17 @@
   <data name="GrupoMiniatura" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GrupoMiniatura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Exibirdetalhe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exibirdetalhe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maximizar branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maximizar branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grupoTipoGravar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dvd11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="novaMedia" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\novaMedia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -730,7 +736,7 @@
   <data name="Restaurar branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Restaurar branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="undo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -33,7 +33,6 @@ Public Class ControlPainel_Acoes
 
     End Sub
 
-
     Private Sub CHK_ShowPanelAllProcessosAcoes_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_ShowPanelAllProcessosAcoes.CheckedChanged
         PanelAllProcessosAcoes.Visible = CHK_ShowPanelAllProcessosAcoes.CheckState
         Splitter4.Visible = PanelAllProcessosAcoes.Visible

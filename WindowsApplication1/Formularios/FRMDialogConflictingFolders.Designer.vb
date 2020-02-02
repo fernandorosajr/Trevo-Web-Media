@@ -61,6 +61,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameOrigem = New System.Windows.Forms.Label()
         Me.PanelEnvolve_LNKLRenomeDestino = New System.Windows.Forms.Panel()
         Me.LBLRenameDestino = New System.Windows.Forms.Label()
+        Me.PanelBorder_Panel_LBLInfo = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.Panel_LBLInfo.SuspendLayout()
@@ -74,6 +75,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelPadding_TXTNomeDoDestino.SuspendLayout()
         Me.PanelEnvolve_LNKLRenomeOrigem.SuspendLayout()
         Me.PanelEnvolve_LNKLRenomeDestino.SuspendLayout()
+        Me.PanelBorder_Panel_LBLInfo.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -104,6 +106,8 @@ Partial Class FRMDialogConflictingFolders
         Me.OK_Button.Name = "OK_Button"
         Me.OK_Button.Size = New System.Drawing.Size(75, 23)
         Me.OK_Button.TabIndex = 17
+        Me.OK_Button.Tag = "Confirma o renome da(s) pasta(s) envolvida(s) no conflito segundo configurações a" &
+    "cima."
         Me.OK_Button.Text = "Renomear"
         Me.OK_Button.UseVisualStyleBackColor = False
         '
@@ -119,6 +123,7 @@ Partial Class FRMDialogConflictingFolders
         Me.Cancel_Button.Name = "Cancel_Button"
         Me.Cancel_Button.Size = New System.Drawing.Size(74, 23)
         Me.Cancel_Button.TabIndex = 18
+        Me.Cancel_Button.Tag = "Cancela o processo de renome e fecha a janela de diálogo."
         Me.Cancel_Button.Text = "Cancelar"
         '
         'LBLTitleOrigem
@@ -330,11 +335,10 @@ Partial Class FRMDialogConflictingFolders
         '
         Me.Panel_LBLInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel_LBLInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Panel_LBLInfo.Controls.Add(Me.LBLInfo)
-        Me.Panel_LBLInfo.Location = New System.Drawing.Point(12, 26)
+        Me.Panel_LBLInfo.Controls.Add(Me.PanelBorder_Panel_LBLInfo)
+        Me.Panel_LBLInfo.Location = New System.Drawing.Point(12, 316)
         Me.Panel_LBLInfo.Name = "Panel_LBLInfo"
-        Me.Panel_LBLInfo.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel_LBLInfo.Size = New System.Drawing.Size(109, 111)
+        Me.Panel_LBLInfo.Size = New System.Drawing.Size(107, 111)
         Me.Panel_LBLInfo.TabIndex = 104
         Me.Panel_LBLInfo.Visible = False
         '
@@ -346,14 +350,13 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLInfo.Location = New System.Drawing.Point(1, 1)
         Me.LBLInfo.Name = "LBLInfo"
         Me.LBLInfo.Padding = New System.Windows.Forms.Padding(1)
-        Me.LBLInfo.Size = New System.Drawing.Size(107, 109)
+        Me.LBLInfo.Size = New System.Drawing.Size(105, 109)
         Me.LBLInfo.TabIndex = 0
         Me.LBLInfo.Text = "Exclui pasta destino e seus conteúdos e a substitui pela pasta de origem"
         Me.LBLInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_LBLOutrasOpcoes
         '
-        Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.Panel_LBLInfo)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.BTNIgnorar)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.Panel16)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.LBLOutrasOpcoes)
@@ -439,7 +442,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNRendo.Name = "BTNRendo"
         Me.BTNRendo.Size = New System.Drawing.Size(22, 23)
         Me.BTNRendo.TabIndex = 19
-        Me.BTNRendo.Tag = "Desfazer"
+        Me.BTNRendo.Tag = "Desfaz os critérios de renome estabelecidos acima pelo usuário."
         Me.BTNRendo.Visible = False
         '
         'PictureBox1
@@ -589,6 +592,16 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameDestino.Text = "Novo nome:"
         Me.LBLRenameDestino.Visible = False
         '
+        'PanelBorder_Panel_LBLInfo
+        '
+        Me.PanelBorder_Panel_LBLInfo.Controls.Add(Me.LBLInfo)
+        Me.PanelBorder_Panel_LBLInfo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_Panel_LBLInfo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_Panel_LBLInfo.Name = "PanelBorder_Panel_LBLInfo"
+        Me.PanelBorder_Panel_LBLInfo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_Panel_LBLInfo.Size = New System.Drawing.Size(107, 111)
+        Me.PanelBorder_Panel_LBLInfo.TabIndex = 2
+        '
         'FRMDialogConflictingFolders
         '
         Me.AcceptButton = Me.OK_Button
@@ -597,6 +610,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(469, 441)
+        Me.Controls.Add(Me.Panel_LBLInfo)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDoDestino)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDaOrigem)
         Me.Controls.Add(Me.BTNRendo)
@@ -637,6 +651,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_LNKLRenomeOrigem.PerformLayout()
         Me.PanelEnvolve_LNKLRenomeDestino.ResumeLayout(False)
         Me.PanelEnvolve_LNKLRenomeDestino.PerformLayout()
+        Me.PanelBorder_Panel_LBLInfo.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -680,4 +695,5 @@ Partial Class FRMDialogConflictingFolders
     Friend WithEvents LBLRenameOrigem As Label
     Friend WithEvents PanelEnvolve_LNKLRenomeDestino As Panel
     Friend WithEvents LBLRenameDestino As Label
+    Friend WithEvents PanelBorder_Panel_LBLInfo As Panel
 End Class

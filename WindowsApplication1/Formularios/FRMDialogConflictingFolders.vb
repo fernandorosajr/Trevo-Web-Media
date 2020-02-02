@@ -54,20 +54,21 @@ Public Class FRMDialogConflictingFolders
         Me.Close()
     End Sub
 
-    Private Sub Buttons_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNMesclar.MouseMove, BTNSubstituir.MouseMove, BTNIgnorar.MouseMove
+    Private Sub Buttons_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNMesclar.MouseMove, BTNSubstituir.MouseMove, BTNIgnorar.MouseMove, OK_Button.MouseMove, Cancel_Button.MouseMove, BTNRendo.MouseMove
         Dim btn As Button
         btn = CType(sender, Button)
-        ExibirEAtualizarHelp(btn)
-    End Sub
 
+        Select Case btn.Name
+            Case "BTNMesclar", "BTNSubstituir", "BTNIgnorar"
+                ExibirEAtualizarHelp(btn, New Point(12, 316))
 
-    Private Sub FRMDialogConflictingFolders_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
-        Panel_LBLInfo.Visible = False
+            Case "OK_Button", "Cancel_Button", "BTNRendo"
+                ExibirEAtualizarHelp(btn, New Point(12, 170))
 
-    End Sub
+            Case Else
+                Panel_LBLInfo.Visible = False
 
-    Private Sub Panel_LBLOutrasOpcoes_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_LBLOutrasOpcoes.MouseMove
-        Panel_LBLInfo.Visible = False
+        End Select
     End Sub
 
     Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeOrigem.LinkClicked
@@ -156,11 +157,25 @@ Public Class FRMDialogConflictingFolders
 
         Select Case btn.Name
             Case "BTNMesclar", "BTNSubstituir", "BTNIgnorar"
-                ExibirEAtualizarHelp(btn)
+                ExibirEAtualizarHelp(btn, New Point(12, 316))
+
+            Case "OK_Button", "Cancel_Button", "BTNRendo"
+                ExibirEAtualizarHelp(btn, New Point(12, 170))
+
             Case Else
                 Panel_LBLInfo.Visible = False
+
         End Select
     End Sub
+
+    Private Sub OK_Button_MouseLeave(sender As Object, e As EventArgs) Handles _
+        OK_Button.MouseLeave, Cancel_Button.MouseLeave,
+        BTNMesclar.MouseLeave, BTNSubstituir.MouseLeave,
+        BTNSubstituir.MouseLeave, BTNRendo.MouseLeave, BTNIgnorar.MouseLeave
+
+        Panel_LBLInfo.Visible = False
+    End Sub
+
 
     Private Sub Buttons_LostFocus(sender As Object, e As EventArgs) _
         Handles OK_Button.LostFocus, Cancel_Button.LostFocus,
@@ -173,11 +188,13 @@ Public Class FRMDialogConflictingFolders
         btn = CType(sender, Button)
 
         btn.FlatAppearance.BorderColor = _borderColorLostFocus
-
+        Panel_LBLInfo.Visible = False
     End Sub
-    Sub ExibirEAtualizarHelp(btn As Object)
+
+    Sub ExibirEAtualizarHelp(btn As Object, location As Point)
         Panel_LBLInfo.Visible = True
         LBLInfo.Text = btn.Tag
+        Panel_LBLInfo.Location = location
     End Sub
 
     Private Sub TextBoxes_GotFocus(sender As Object, e As EventArgs) Handles TXTNomeDaOrigem.GotFocus, TXTNomeDoDestino.GotFocus

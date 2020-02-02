@@ -1,34 +1,47 @@
 ﻿Imports System.Windows.Forms
 
 Public Class FRMDialogConflictingFolders
-    ' Propriedades do controle
-    Private _colorGotFocus As Color
 
-    Public Property ColorGotFocus As Color
+    ' Propriedades do controle
+    Private _backColorCursorMouseLeave As Color
+    Public Property BackColorCursorMouseLeave As Color
         Get
-            Return _colorGotFocus
+            Return _backColorCursorMouseLeave
         End Get
         Set(value As Color)
-            _colorGotFocus = value
+            _backColorCursorMouseLeave = value
 
         End Set
     End Property
 
-    Private _colorLostFocus As Color
 
-    Public Property ColorLostFocus As Color
+    Private _borderColorGotFocus As Color
+
+    Public Property BorderColorGotFocus As Color
         Get
-            Return _colorLostFocus
+            Return _borderColorGotFocus
         End Get
         Set(value As Color)
-            _colorLostFocus = value
+            _borderColorGotFocus = value
+
+        End Set
+    End Property
+
+    Private _borderColorLostFocus As Color
+
+    Public Property BordeColorLostFocus As Color
+        Get
+            Return _borderColorLostFocus
+        End Get
+        Set(value As Color)
+            _borderColorLostFocus = value
         End Set
     End Property
 
     Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles Me.Load
-        _colorGotFocus = SystemColors.HotTrack
-        _colorLostFocus = BTNMesclar.BackColor
-
+        _borderColorGotFocus = SystemColors.HotTrack
+        _borderColorLostFocus = BTNMesclar.BackColor
+        _backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
     End Sub
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
@@ -134,13 +147,12 @@ Public Class FRMDialogConflictingFolders
         BTNMesclar.GotFocus, BTNSubstituir.GotFocus,
         BTNSubstituir.GotFocus, BTNRendo.GotFocus,
         BTNCancelaRenomeDeDestino.GotFocus, BTNCancelaRenomeDeOrigem.GotFocus,
-        BTNConfirmarRenomeDeDestino.GotFocus, BTNCancelaRenomeDeOrigem.GotFocus,
-        BTNIgnorar.GotFocus
+        BTNConfirmarRenomeDeDestino.GotFocus, BTNCancelaRenomeDeOrigem.GotFocus, BTNIgnorar.GotFocus
 
         Dim btn As Button
         btn = CType(sender, Button)
 
-        btn.FlatAppearance.BorderColor = _colorGotFocus
+        btn.FlatAppearance.BorderColor = _borderColorGotFocus
 
         Select Case btn.Name
             Case "BTNMesclar", "BTNSubstituir", "BTNIgnorar"
@@ -155,13 +167,12 @@ Public Class FRMDialogConflictingFolders
         BTNMesclar.LostFocus, BTNSubstituir.LostFocus,
         BTNSubstituir.LostFocus, BTNRendo.LostFocus,
         BTNCancelaRenomeDeDestino.LostFocus, BTNCancelaRenomeDeOrigem.LostFocus,
-        BTNConfirmarRenomeDeDestino.LostFocus, BTNCancelaRenomeDeOrigem.LostFocus,
-        BTNIgnorar.LostFocus
+        BTNConfirmarRenomeDeDestino.LostFocus, BTNCancelaRenomeDeOrigem.LostFocus, BTNIgnorar.LostFocus
 
         Dim btn As Button
         btn = CType(sender, Button)
 
-        btn.FlatAppearance.BorderColor = _colorLostFocus
+        btn.FlatAppearance.BorderColor = _borderColorLostFocus
 
     End Sub
     Sub ExibirEAtualizarHelp(btn As Object)
@@ -169,11 +180,58 @@ Public Class FRMDialogConflictingFolders
         LBLInfo.Text = btn.Tag
     End Sub
 
-    Private Sub BTNSubstituir_Click(sender As Object, e As EventArgs) Handles BTNSubstituir.Click
+    Private Sub TextBoxes_GotFocus(sender As Object, e As EventArgs) Handles TXTNomeDaOrigem.GotFocus, TXTNomeDoDestino.GotFocus
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+        Dim backColor As Color = _backColorCursorMouseLeave
+        Dim borderColor As Color = _borderColorGotFocus
 
+        txt.Parent.Parent.BackColor = borderColor
+        txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+        txt.Cursor = Cursors.IBeam
+        txt.BackColor = backColor
+        txt.Parent.BackColor = backColor
+        'Color.FromArgb(120, 45, 45, 48) 'Color.FromArgb(120, 255, 255, 255) 
     End Sub
 
-    Private Sub BTNIgnorar_Click(sender As Object, e As EventArgs) Handles BTNIgnorar.Click
+    Private Sub TextBoxes_LostFocus(sender As Object, e As EventArgs) Handles TXTNomeDoDestino.LostFocus, TXTNomeDaOrigem.LostFocus
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+        Dim cor As Color = Color.FromArgb(63, 63, 66)
 
+        txt.Parent.Parent.BackColor = _borderColorLostFocus
+        txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+        txt.Cursor = Cursors.Arrow
+        txt.BackColor = cor
+        txt.Parent.BackColor = cor
     End Sub
+
+    Private Sub TextBoxes_MouseMove(sender As Object, e As MouseEventArgs) Handles TXTNomeDoDestino.MouseMove, TXTNomeDaOrigem.MouseMove
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+        Dim cor As Color = _borderColorGotFocus
+
+        txt.Parent.Parent.BackColor = cor
+        If txt.Focused = True Then
+            txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+        Else
+            txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+        End If
+    End Sub
+
+    Private Sub TextBoxes_MouseLeave(sender As Object, e As EventArgs) Handles TXTNomeDoDestino.MouseLeave, TXTNomeDaOrigem.MouseLeave
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+        Dim corLostFocus As Color = _borderColorLostFocus
+        Dim corGotFocus As Color = _borderColorGotFocus
+
+        If txt.Focused = True Then
+            txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+            txt.Parent.Parent.BackColor = corGotFocus
+        Else
+            txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
+            txt.Parent.Parent.BackColor = corLostFocus
+        End If
+    End Sub
+
 End Class

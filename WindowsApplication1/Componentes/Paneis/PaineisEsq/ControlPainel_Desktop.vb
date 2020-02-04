@@ -91,12 +91,44 @@ Public Class ControlPainel_Desktop
         TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
     End Sub
 
+    Public Function DevolverNomeDaPasta(caminho As String, nomeParaPesquisa As String)
+        Dim directoryArrayList As New ArrayList
+        Dim drive As New DirectoryInfo(caminho)
+        Dim driveDestino As New DirectoryInfo(caminho & "\" & nomeParaPesquisa)
+        Dim pesquisa As String
+
+        If drive.Exists = True Then
+            If driveDestino.Exists = True Then
+                directoryArrayList.AddRange(drive.GetDirectories())
+
+                For x As Integer = 2 To directoryArrayList.Count
+                    pesquisa = nomeParaPesquisa & " (" & x & ")"
+
+                    Dim query = From pasta As DirectoryInfo In directoryArrayList
+                                Where pasta.Name.IndexOf(pesquisa) = 0
+                                Select pasta
+
+                    If query.Count = 0 Then
+                        Return pesquisa
+                        Exit For
+                    End If
+                Next
+            End If
+
+        Else
+            Return nomeParaPesquisa
+        End If
+
+        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq
+        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
+    End Function
+
     Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
         Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
         Dim subNode As TreeNode
 
         Dim x As String
-        Dim criadaPasta As Boolean
+        Dim _podeCriarNovaPasta As Boolean
 
         Try
             If node.Tag IsNot (Nothing) Then
@@ -106,16 +138,16 @@ Public Class ControlPainel_Desktop
 
                 prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
                 title = "Criar nova pasta"
-                defaultResponse = "Nova Pasta"
+                defaultResponse = DevolverNomeDaPasta(node.Tag, "Nova pasta")
                 x = InputBox(prompt, title, defaultResponse)
-                ' MsgBox(x)
 
-                criadaPasta = usesDirectories.CriarNovaPasta(node.Tag, x)
+
+                _podeCriarNovaPasta = usesDirectories.PodeCriarNovaPasta(node.Tag, x)
                 'TODO: Editar regras de interação com pastas durante a criação
                 ' Checar se pasta existe
                 ' se existe, perguntar para qual nome renomear ou mesclar.
 
-                If criadaPasta = True Then
+                If _podeCriarNovaPasta = True Then
                     subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaFechada")
                     subNode.Tag = node.Tag & "\" & x
 

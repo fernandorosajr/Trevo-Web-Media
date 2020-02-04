@@ -28,7 +28,7 @@ Public Class UsesDirectoriesClass
                 Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
 
                 If newPath_DirectoryInfo.Exists = True Then
-
+                    ' TODO: Carregar form de Conflito de pasta
 
                 Else
                     Rename(oldPath, newPath)
@@ -46,7 +46,7 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function CriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
+    Function PodeCriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
 
         Dim excecao As String
 

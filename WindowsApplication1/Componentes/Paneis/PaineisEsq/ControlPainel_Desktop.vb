@@ -101,8 +101,8 @@ Public Class ControlPainel_Desktop
             If driveDestino.Exists = True Then
                 directoryArrayList.AddRange(drive.GetDirectories())
 
-                For x As Integer = 2 To directoryArrayList.Count
-                    pesquisa = nomeParaPesquisa & " (" & x & ")"
+                For x As Integer = 0 To directoryArrayList.Count
+                    pesquisa = nomeParaPesquisa & " (" & x + 2 & ")"
 
                     Dim query = From pasta As DirectoryInfo In directoryArrayList
                                 Where pasta.Name.IndexOf(pesquisa) = 0
@@ -113,10 +113,16 @@ Public Class ControlPainel_Desktop
                         Exit For
                     End If
                 Next
+
+            Else
+
+                Return nomeParaPesquisa
             End If
 
         Else
-            Return nomeParaPesquisa
+
+            'TODO: Atualizar Pasta
+            ' A Pasta Destino não existe
         End If
 
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq

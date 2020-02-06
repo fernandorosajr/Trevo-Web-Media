@@ -26,10 +26,39 @@ Public Class UsesDirectoriesClass
             If caminho_DirectoryInfo.Exists = True Then
 
                 Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
+                Dim oldPath_DirectoryInfo As New DirectoryInfo(oldPath)
+
+                Dim oldPathDestino As String
+                Dim newPathDestino As String
+
+                Dim oldPathOrigem As String
+                Dim newPathOrigem As String
 
                 If newPath_DirectoryInfo.Exists = True Then
                     ' TODO: Carregar form de Conflito de pasta
+                    ' TODO: Estudar esta função: Fazer Algoritimo.
+                    oldPathDestino = newPath
+                    newPathDestino = newPath
 
+                    oldPathOrigem = oldPath
+                    newPathOrigem = newPath
+
+                    Dim FRM As New FRMDialogConflictingFolders
+
+                    FRM.Title = "Conflito entre pastas"
+                    FRM.PastaOrigem = oldPath
+                    FRM.PastaDestino = newPath
+
+                    FRM.OldPathDestino = newPath
+                    FRM.NewPathDestino = newPath
+                    FRM.OldPathOrigem = oldPath
+                    FRM.NewPathOrigem = newPath
+
+                    FRM.LBLNomeDaPasta.Text = newName
+                    FRM.ShowDialog()
+
+
+                    Return oldPath
                 Else
                     Rename(oldPath, newPath)
                     Return newPath

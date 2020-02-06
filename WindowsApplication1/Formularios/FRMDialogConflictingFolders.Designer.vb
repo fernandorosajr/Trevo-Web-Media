@@ -41,6 +41,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLNomeDaPasta = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
         Me.Panel_LBLInfo = New System.Windows.Forms.Panel()
+        Me.PanelBorder_Panel_LBLInfo = New System.Windows.Forms.Panel()
         Me.LBLInfo = New System.Windows.Forms.Label()
         Me.Panel_LBLOutrasOpcoes = New System.Windows.Forms.Panel()
         Me.PanelBorder_TXTNomeDaOrigem = New System.Windows.Forms.Panel()
@@ -61,10 +62,10 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameOrigem = New System.Windows.Forms.Label()
         Me.PanelEnvolve_LNKLRenomeDestino = New System.Windows.Forms.Panel()
         Me.LBLRenameDestino = New System.Windows.Forms.Label()
-        Me.PanelBorder_Panel_LBLInfo = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.Panel_LBLInfo.SuspendLayout()
+        Me.PanelBorder_Panel_LBLInfo.SuspendLayout()
         Me.Panel_LBLOutrasOpcoes.SuspendLayout()
         Me.PanelBorder_TXTNomeDaOrigem.SuspendLayout()
         Me.PanelPadding_TXTNomeDaOrigem.SuspendLayout()
@@ -75,7 +76,6 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelPadding_TXTNomeDoDestino.SuspendLayout()
         Me.PanelEnvolve_LNKLRenomeOrigem.SuspendLayout()
         Me.PanelEnvolve_LNKLRenomeDestino.SuspendLayout()
-        Me.PanelBorder_Panel_LBLInfo.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -342,6 +342,16 @@ Partial Class FRMDialogConflictingFolders
         Me.Panel_LBLInfo.TabIndex = 104
         Me.Panel_LBLInfo.Visible = False
         '
+        'PanelBorder_Panel_LBLInfo
+        '
+        Me.PanelBorder_Panel_LBLInfo.Controls.Add(Me.LBLInfo)
+        Me.PanelBorder_Panel_LBLInfo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_Panel_LBLInfo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_Panel_LBLInfo.Name = "PanelBorder_Panel_LBLInfo"
+        Me.PanelBorder_Panel_LBLInfo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_Panel_LBLInfo.Size = New System.Drawing.Size(107, 111)
+        Me.PanelBorder_Panel_LBLInfo.TabIndex = 2
+        '
         'LBLInfo
         '
         Me.LBLInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
@@ -592,16 +602,6 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameDestino.Text = "Novo nome:"
         Me.LBLRenameDestino.Visible = False
         '
-        'PanelBorder_Panel_LBLInfo
-        '
-        Me.PanelBorder_Panel_LBLInfo.Controls.Add(Me.LBLInfo)
-        Me.PanelBorder_Panel_LBLInfo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBorder_Panel_LBLInfo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBorder_Panel_LBLInfo.Name = "PanelBorder_Panel_LBLInfo"
-        Me.PanelBorder_Panel_LBLInfo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_Panel_LBLInfo.Size = New System.Drawing.Size(107, 111)
-        Me.PanelBorder_Panel_LBLInfo.TabIndex = 2
-        '
         'FRMDialogConflictingFolders
         '
         Me.AcceptButton = Me.OK_Button
@@ -637,6 +637,7 @@ Partial Class FRMDialogConflictingFolders
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel16.ResumeLayout(False)
         Me.Panel_LBLInfo.ResumeLayout(False)
+        Me.PanelBorder_Panel_LBLInfo.ResumeLayout(False)
         Me.Panel_LBLOutrasOpcoes.ResumeLayout(False)
         Me.PanelBorder_TXTNomeDaOrigem.ResumeLayout(False)
         Me.PanelPadding_TXTNomeDaOrigem.ResumeLayout(False)
@@ -651,7 +652,6 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_LNKLRenomeOrigem.PerformLayout()
         Me.PanelEnvolve_LNKLRenomeDestino.ResumeLayout(False)
         Me.PanelEnvolve_LNKLRenomeDestino.PerformLayout()
-        Me.PanelBorder_Panel_LBLInfo.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

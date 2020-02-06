@@ -1,8 +1,10 @@
 ﻿Imports System.Windows.Forms
+Imports System.IO
 
 Public Class FRMDialogConflictingFolders
 
-    ' Propriedades do controle
+
+    ' Propriedades do configuração
     Private _backColorCursorMouseLeave As Color
     Public Property BackColorCursorMouseLeave As Color
         Get
@@ -28,7 +30,6 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Private _borderColorLostFocus As Color
-
     Public Property BordeColorLostFocus As Color
         Get
             Return _borderColorLostFocus
@@ -38,10 +39,229 @@ Public Class FRMDialogConflictingFolders
         End Set
     End Property
 
-    Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles Me.Load
+    ' Propriedades 
+    Dim _title As String
+    Public Property Title As String
+        Get
+            Return _title
+
+        End Get
+        Set(value As String)
+            _title = value
+            Me.Text = _title
+        End Set
+    End Property
+
+    Dim _pastaOrigem As String
+    Public Property PastaOrigem As String
+        Get
+            Return _pastaOrigem
+
+        End Get
+        Set(value As String)
+            _pastaOrigem = value
+            LBLValueOrigem.Text = _pastaOrigem
+
+            If _oldPathOrigem <> _newPathOrigem Then
+                TelaParaOrigemDiferente()
+
+            Else
+                TelaParaOrigemIgual()
+            End If
+        End Set
+    End Property
+
+    Dim _pastaDestino As String
+    Public Property PastaDestino As String
+        Get
+            Return _pastaDestino
+
+        End Get
+        Set(value As String)
+            _pastaDestino = value
+
+            LBLValueDestino.Text = _pastaDestino
+
+            'If _oldPathDestino <> _newPathDestino Then ' Then
+            '    TelaParDestinoDiferente()
+
+            'Else
+            '    TelaParaDestinoIgual()
+            'End If
+
+        End Set
+    End Property
+
+    Dim _oldPathDestino As String
+    Public Property OldPathDestino As String
+        Get
+            Return _oldPathDestino
+        End Get
+        Set(value As String)
+            _oldPathDestino = value
+
+            If _oldPathDestino <> _newPathDestino Then ' Then
+                TelaParaDestinoDiferente()
+
+            Else
+                TelaParaDestinoIgual()
+            End If
+
+        End Set
+    End Property
+
+    Dim _newPathDestino As String
+    Public Property NewPathDestino As String
+        Get
+            Return _newPathDestino
+        End Get
+        Set(value As String)
+            _newPathDestino = value
+
+            If _oldPathDestino <> _newPathDestino Then ' Then
+                TelaParaDestinoDiferente()
+
+            Else
+                TelaParaDestinoIgual()
+            End If
+        End Set
+    End Property
+
+    Dim _oldPathOrigem As String
+    Public Property OldPathOrigem As String
+        Get
+            Return _oldPathOrigem
+
+        End Get
+        Set(value As String)
+            _oldPathOrigem = value
+
+            If _oldPathOrigem <> _newPathOrigem Then
+                TelaParaOrigemDiferente()
+
+            Else
+                TelaParaOrigemIgual()
+            End If
+        End Set
+    End Property
+
+    Dim _newPathOrigem As String
+    Public Property NewPathOrigem As String
+        Get
+            Return _newPathOrigem
+        End Get
+        Set(value As String)
+            _newPathOrigem = value
+
+            If _oldPathOrigem <> _newPathOrigem Then
+                TelaParaOrigemDiferente()
+            Else
+                TelaParaOrigemIgual()
+            End If
+        End Set
+    End Property
+
+    Sub TelaParaOrigemDiferente()
+        PanelEnvolve_TXTNomeDaOrigem.Visible = False
+        LNKLRenomeOrigem.Text = _newPathOrigem
+        LBLRenameOrigem.Visible = True
+        BTNRendo.Visible = True
+        LNKLRenomeOrigem.Visible = True
+    End Sub
+
+    Sub TelaParaOrigemIgual()
+        PanelEnvolve_TXTNomeDaOrigem.Visible = False
+        LNKLRenomeOrigem.Text = "Clique aqui para renomear pasta de origem"
+        LBLRenameOrigem.Visible = False
+        LNKLRenomeOrigem.Visible = True
+
+    End Sub
+
+    Sub TelaParaDestinoDiferente()
+        PanelEnvolve_TXTNomeDoDestino.Visible = False
+        LNKLRenomeDestino.Text = _newPathDestino
+        LBLRenameDestino.Visible = True
+        BTNRendo.Visible = True
+        LNKLRenomeDestino.Visible = True
+    End Sub
+
+    Sub TelaParaDestinoIgual()
+        PanelEnvolve_TXTNomeDoDestino.Visible = False
+        LNKLRenomeDestino.Text = "Clique aqui para renomear pasta de destino"
+        LBLRenameDestino.Visible = False
+        LNKLRenomeDestino.Visible = True
+    End Sub
+
+    Sub TelaDeEdicaoDeOrigem()
+        PanelEnvolve_TXTNomeDaOrigem.Left = LBLValueOrigem.Left - 15
+        PanelEnvolve_TXTNomeDaOrigem.Width = LBLValueOrigem.Width
+
+        PanelEnvolve_TXTNomeDaOrigem.Visible = Not (PanelBorder_TXTNomeDaOrigem.Visible)
+        LNKLRenomeOrigem.Visible = False
+        LBLRenameOrigem.Visible = False
+    End Sub
+
+    Sub TelaDeEdicaoDeDestino()
+        PanelEnvolve_TXTNomeDoDestino.Left = LBLValueDestino.Left - 15
+        PanelEnvolve_TXTNomeDoDestino.Width = LBLValueDestino.Width
+        LNKLRenomeDestino.Visible = False
+        PanelEnvolve_TXTNomeDoDestino.Visible = Not (PanelEnvolve_TXTNomeDoDestino.Visible)
+        LBLRenameDestino.Visible = False
+    End Sub
+
+
+    'Dim _defaultResponse As String
+    'Public Property DefaultResponse
+    '    Get
+    '        Return _defaultResponse
+    '    End Get
+    '    Set(value)
+    '        _defaultResponse = value
+    '        TxtResponse.Text = value
+    '    End Set
+    'End Property
+
+    'Dim _prompt As String
+    'Public Property Prompt As String
+    '    Get
+    '        Return _prompt
+    '    End Get
+    '    Set(value As String)
+    '        _prompt = value
+    '        LBLPrompt.Text = value
+    '    End Set
+    'End Property
+
+
+
+    Public Sub New()
+        If _pastaOrigem <> Nothing Then
+            Dim pastaOrigemDirectoryInfo As New DirectoryInfo(_pastaOrigem)
+
+        End If
+        If PastaDestino <> Nothing Then
+            Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
+            LBLNomeDaPasta.Text = pastaDestinoDirectoryInfo.Name
+
+        End If
+        ' This call is required by the designer.
+        InitializeComponent()
         _borderColorGotFocus = SystemColors.HotTrack
         _borderColorLostFocus = BTNMesclar.BackColor
         _backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
+
+        'PopulateTreeView()
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
+    Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles Me.Load
+        '_borderColorGotFocus = SystemColors.HotTrack
+        '_borderColorLostFocus = BTNMesclar.BackColor
+        '_backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
+
+        'LBLNomeDaPasta.Text = pastaDestinoDirectoryInfo.Name
+
+
     End Sub
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
@@ -72,63 +292,72 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeOrigem.LinkClicked
-        PanelEnvolve_TXTNomeDaOrigem.Left = LBLValueOrigem.Left - 15
-        PanelEnvolve_TXTNomeDaOrigem.Width = LBLValueOrigem.Width
+        Dim _newPathOrigem_DirectoryInfo As New DirectoryInfo(_newPathOrigem)
 
-        PanelEnvolve_TXTNomeDaOrigem.Visible = Not (PanelBorder_TXTNomeDaOrigem.Visible)
-        LNKLRenomeOrigem.Visible = False
-        LBLRenameOrigem.Visible = False
+        If _newPathOrigem_DirectoryInfo.Exists = True Then
+            TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
+        End If
+
+        TelaDeEdicaoDeOrigem()
+
         TXTNomeDaOrigem.Focus()
-
     End Sub
 
     Private Sub BTNConfirmarRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeOrigem.Click
-        PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        LNKLRenomeOrigem.Text = "Novo nome: {novoNomeDaOrigem}"
-        LBLRenameOrigem.Visible = True
-        BTNRendo.Visible = True
-        LNKLRenomeOrigem.Visible = True
+        If _oldPathOrigem = _newPathOrigem Then
+            TelaParaOrigemIgual()
+            BTNMesclar.Focus()
 
-        OK_Button.Focus()
+        Else
+            TelaParaOrigemDiferente()
+            OK_Button.Focus()
+        End If
 
     End Sub
 
     Private Sub BTNCancelaRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeOrigem.Click
-        PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        LNKLRenomeOrigem.Text = "Clique aqui para renomear pasta de origem"
-        LBLRenameOrigem.Visible = False
-        LNKLRenomeOrigem.Visible = True
-        BTNMesclar.Focus()
+        If _oldPathOrigem = _newPathOrigem Then
+            TelaParaOrigemIgual()
+            BTNMesclar.Focus()
+
+        Else
+            TelaParaOrigemDiferente()
+            OK_Button.Focus()
+        End If
     End Sub
 
     Private Sub BTNConfirmarRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeDestino.Click
-        PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = "Novo nome: {novoNomeDaDestino}"
-        LBLRenameDestino.Visible = True
-        BTNRendo.Visible = True
-        LNKLRenomeDestino.Visible = True
-        OK_Button.Focus()
-
+        If _oldPathDestino = _newPathDestino Then
+            TelaParaDestinoIgual()
+            BTNMesclar.Focus()
+        Else
+            TelaParaDestinoDiferente()
+            OK_Button.Focus()
+        End If
     End Sub
 
     Private Sub BTNCancelaRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeDestino.Click
-        PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = "Clique aqui para renomear pasta de destino"
-        LBLRenameDestino.Visible = False
-        LNKLRenomeDestino.Visible = True
-        BTNMesclar.Focus()
+
+        If _oldPathDestino = _newPathDestino Then
+            TelaParaDestinoIgual()
+            BTNMesclar.Focus()
+        Else
+            TelaParaDestinoDiferente()
+            OK_Button.Focus()
+        End If
 
     End Sub
 
     Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeDestino.LinkClicked
-        PanelEnvolve_TXTNomeDoDestino.Left = LBLValueDestino.Left - 15
-        PanelEnvolve_TXTNomeDoDestino.Width = LBLValueDestino.Width
-        LNKLRenomeDestino.Visible = False
-        PanelEnvolve_TXTNomeDoDestino.Visible = Not (PanelEnvolve_TXTNomeDoDestino.Visible)
-        LBLRenameDestino.Visible = False
+        Dim _newPathDestino_DirectoryInfo As New DirectoryInfo(_newPathDestino)
 
-        TXTNomeDoDestino.Focus()
+        If _newPathDestino_DirectoryInfo.Exists = True Then
+            TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
+        End If
 
+        TelaDeEdicaoDeDestino()
+
+        TXTNomeDaOrigem.Focus()
     End Sub
 
     Private Sub BTNRendo_Click(sender As Object, e As EventArgs) Handles BTNRendo.Click

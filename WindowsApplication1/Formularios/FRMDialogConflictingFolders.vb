@@ -2,9 +2,32 @@
 Imports System.IO
 
 Public Class FRMDialogConflictingFolders
+    Dim novoCaminhoDeOrigemModificado As String
+    Dim novoNomeDaPastaOrigemModificado As String
 
+    Dim novoCaminhoDeDestinoModificado As String
+    Dim novoNomeDaPastaDestinoModificado As String
+
+    Dim rendoOldPathOrigem As String
+    Dim rendoNewPathOrigem As String
+
+    Dim rendoOldPathDestino As String
+    Dim rendoNewPathDestino As String
+
+    Private EstadoDaTela As Integer
 
     ' Propriedades do configuração
+    Private _borderColorError As Color
+    Public Property BorderColorError As Color
+        Get
+            Return _borderColorError
+        End Get
+        Set(value As Color)
+            _borderColorError = value
+
+        End Set
+    End Property
+
     Private _backColorCursorMouseLeave As Color
     Public Property BackColorCursorMouseLeave As Color
         Get
@@ -15,7 +38,6 @@ Public Class FRMDialogConflictingFolders
 
         End Set
     End Property
-
 
     Private _borderColorGotFocus As Color
 
@@ -44,8 +66,8 @@ Public Class FRMDialogConflictingFolders
     Public Property Title As String
         Get
             Return _title
-
         End Get
+
         Set(value As String)
             _title = value
             Me.Text = _title
@@ -58,13 +80,13 @@ Public Class FRMDialogConflictingFolders
             Return _pastaOrigem
 
         End Get
+
         Set(value As String)
             _pastaOrigem = value
             LBLValueOrigem.Text = _pastaOrigem
 
             If _oldPathOrigem <> _newPathOrigem Then
                 TelaParaOrigemDiferente()
-
             Else
                 TelaParaOrigemIgual()
             End If
@@ -75,20 +97,12 @@ Public Class FRMDialogConflictingFolders
     Public Property PastaDestino As String
         Get
             Return _pastaDestino
-
         End Get
+
         Set(value As String)
             _pastaDestino = value
 
             LBLValueDestino.Text = _pastaDestino
-
-            'If _oldPathDestino <> _newPathDestino Then ' Then
-            '    TelaParDestinoDiferente()
-
-            'Else
-            '    TelaParaDestinoIgual()
-            'End If
-
         End Set
     End Property
 
@@ -97,16 +111,15 @@ Public Class FRMDialogConflictingFolders
         Get
             Return _oldPathDestino
         End Get
+
         Set(value As String)
             _oldPathDestino = value
 
-            If _oldPathDestino <> _newPathDestino Then ' Then
+            If _oldPathDestino <> _newPathDestino Then
                 TelaParaDestinoDiferente()
-
             Else
                 TelaParaDestinoIgual()
             End If
-
         End Set
     End Property
 
@@ -115,12 +128,12 @@ Public Class FRMDialogConflictingFolders
         Get
             Return _newPathDestino
         End Get
+
         Set(value As String)
             _newPathDestino = value
 
-            If _oldPathDestino <> _newPathDestino Then ' Then
+            If _oldPathDestino <> _newPathDestino Then
                 TelaParaDestinoDiferente()
-
             Else
                 TelaParaDestinoIgual()
             End If
@@ -131,8 +144,8 @@ Public Class FRMDialogConflictingFolders
     Public Property OldPathOrigem As String
         Get
             Return _oldPathOrigem
-
         End Get
+
         Set(value As String)
             _oldPathOrigem = value
 
@@ -165,8 +178,8 @@ Public Class FRMDialogConflictingFolders
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
         LNKLRenomeOrigem.Text = _newPathOrigem
         LBLRenameOrigem.Visible = True
-        BTNRendo.Visible = True
         LNKLRenomeOrigem.Visible = True
+
     End Sub
 
     Sub TelaParaOrigemIgual()
@@ -181,7 +194,6 @@ Public Class FRMDialogConflictingFolders
         PanelEnvolve_TXTNomeDoDestino.Visible = False
         LNKLRenomeDestino.Text = _newPathDestino
         LBLRenameDestino.Visible = True
-        BTNRendo.Visible = True
         LNKLRenomeDestino.Visible = True
     End Sub
 
@@ -207,6 +219,17 @@ Public Class FRMDialogConflictingFolders
         LNKLRenomeDestino.Visible = False
         PanelEnvolve_TXTNomeDoDestino.Visible = Not (PanelEnvolve_TXTNomeDoDestino.Visible)
         LBLRenameDestino.Visible = False
+    End Sub
+
+    Sub TelaLimpaDeVariaveis()
+        LBLRenameOrigem.Visible = False
+        LBLRenameDestino.Visible = False
+        PanelEnvolve_TXTNomeDaOrigem.Visible = False
+        PanelEnvolve_TXTNomeDoDestino.Visible = False
+        LNKLRenomeOrigem.Text = "Renomear pasta de origem."
+        LNKLRenomeDestino.Text = "Renomear pasta de destino."
+        LNKLRenomeOrigem.Visible = True
+        LNKLRenomeDestino.Visible = True
     End Sub
 
 
@@ -249,18 +272,18 @@ Public Class FRMDialogConflictingFolders
         _borderColorGotFocus = SystemColors.HotTrack
         _borderColorLostFocus = BTNMesclar.BackColor
         _backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
+        _borderColorError = Color.Red
 
         'PopulateTreeView()
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
     Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles Me.Load
-        '_borderColorGotFocus = SystemColors.HotTrack
-        '_borderColorLostFocus = BTNMesclar.BackColor
-        '_backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
+        rendoOldPathOrigem = _oldPathOrigem
+        rendoNewPathOrigem = _newPathOrigem
 
-        'LBLNomeDaPasta.Text = pastaDestinoDirectoryInfo.Name
-
+        rendoOldPathDestino = _oldPathDestino
+        rendoNewPathDestino = _newPathDestino
 
     End Sub
 
@@ -294,9 +317,7 @@ Public Class FRMDialogConflictingFolders
     Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeOrigem.LinkClicked
         Dim _newPathOrigem_DirectoryInfo As New DirectoryInfo(_newPathOrigem)
 
-        If _newPathOrigem_DirectoryInfo.Exists = True Then
-            TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
-        End If
+        TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
 
         TelaDeEdicaoDeOrigem()
 
@@ -304,6 +325,21 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub BTNConfirmarRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeOrigem.Click
+        Dim _newPathOrigemDirectoryInfo As New DirectoryInfo(_newPathOrigem)
+        If Trim(TXTNomeDaOrigem.Text) = "" Or TXTNomeDaOrigem.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
+
+            MsgBox("Nome da pasta inválido")
+            TXTNomeDaOrigem.Text = _newPathOrigemDirectoryInfo.Name
+            TXTNomeDaOrigem.Focus()
+            Exit Sub
+        End If
+
+        If _newPathOrigem <> novoCaminhoDeOrigemModificado Then
+            BTNRendo.Visible = True
+        End If
+
+        _newPathOrigem = novoCaminhoDeOrigemModificado
+
         If _oldPathOrigem = _newPathOrigem Then
             TelaParaOrigemIgual()
             BTNMesclar.Focus()
@@ -316,6 +352,7 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub BTNCancelaRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeOrigem.Click
+
         If _oldPathOrigem = _newPathOrigem Then
             TelaParaOrigemIgual()
             BTNMesclar.Focus()
@@ -324,9 +361,26 @@ Public Class FRMDialogConflictingFolders
             TelaParaOrigemDiferente()
             OK_Button.Focus()
         End If
+
     End Sub
 
     Private Sub BTNConfirmarRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeDestino.Click
+
+        Dim _newPathOrigemDirectoryInfo As New DirectoryInfo(_newPathDestino)
+        If Trim(TXTNomeDoDestino.Text) = "" Or TXTNomeDoDestino.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
+
+            MsgBox("Nome da pasta inválido")
+            TXTNomeDoDestino.Text = _newPathOrigemDirectoryInfo.Name
+            TXTNomeDoDestino.Focus()
+            Exit Sub
+        End If
+
+        If _newPathDestino <> novoCaminhoDeDestinoModificado Then
+            BTNRendo.Visible = True
+        End If
+
+        _newPathDestino = novoCaminhoDeDestinoModificado
+
         If _oldPathDestino = _newPathDestino Then
             TelaParaDestinoIgual()
             BTNMesclar.Focus()
@@ -334,6 +388,7 @@ Public Class FRMDialogConflictingFolders
             TelaParaDestinoDiferente()
             OK_Button.Focus()
         End If
+
     End Sub
 
     Private Sub BTNCancelaRenomeDeDestino_Click(sender As Object, e As EventArgs) Handles BTNCancelaRenomeDeDestino.Click
@@ -351,9 +406,7 @@ Public Class FRMDialogConflictingFolders
     Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeDestino.LinkClicked
         Dim _newPathDestino_DirectoryInfo As New DirectoryInfo(_newPathDestino)
 
-        If _newPathDestino_DirectoryInfo.Exists = True Then
-            TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
-        End If
+        TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
 
         TelaDeEdicaoDeDestino()
 
@@ -361,15 +414,15 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub BTNRendo_Click(sender As Object, e As EventArgs) Handles BTNRendo.Click
-        LBLRenameOrigem.Visible = False
-        LBLRenameDestino.Visible = False
-        PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = "Clique aqui para renomear pasta de destino"
-        LNKLRenomeOrigem.Text = "Clique aqui para renomear pasta de origem"
+
+        OldPathOrigem = rendoOldPathOrigem
+        NewPathOrigem = rendoNewPathOrigem
+
+        OldPathDestino = rendoOldPathDestino
+        NewPathDestino = rendoNewPathDestino
+
         BTNRendo.Visible = False
-        LNKLRenomeOrigem.Visible = True
-        LNKLRenomeDestino.Visible = True
+
     End Sub
 
     Private Sub Buttons_GotFocus(sender As Object, e As EventArgs) _
@@ -431,12 +484,19 @@ Public Class FRMDialogConflictingFolders
         txt = CType(sender, TextBox)
         Dim backColor As Color = _backColorCursorMouseLeave
         Dim borderColor As Color = _borderColorGotFocus
+        Dim borderColorError As Color = _borderColorError
+
+        If Trim(txt.Text) = "" Or txt.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
+            txt.Parent.BackColor = borderColorError
+        Else
+            txt.Parent.BackColor = backColor
+        End If
 
         txt.Parent.Parent.BackColor = borderColor
         txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
         txt.Cursor = Cursors.IBeam
         txt.BackColor = backColor
-        txt.Parent.BackColor = backColor
+
         'Color.FromArgb(120, 45, 45, 48) 'Color.FromArgb(120, 255, 255, 255) 
     End Sub
 
@@ -456,8 +516,15 @@ Public Class FRMDialogConflictingFolders
         Dim txt As TextBox
         txt = CType(sender, TextBox)
         Dim cor As Color = _borderColorGotFocus
+        Dim BorderColorError As Color = _borderColorError
+        '  txt.Parent.Parent.BackColor = cor
 
-        txt.Parent.Parent.BackColor = cor
+        If Trim(txt.Text) = "" Or txt.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
+            txt.Parent.Parent.BackColor = BorderColorError
+        Else
+            txt.Parent.Parent.BackColor = cor
+        End If
+
         If txt.Focused = True Then
             txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
         Else
@@ -474,10 +541,53 @@ Public Class FRMDialogConflictingFolders
         If txt.Focused = True Then
             txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
             txt.Parent.Parent.BackColor = corGotFocus
+
+            If Trim(txt.Text) = "" Or txt.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
+                txt.Parent.Parent.BackColor = BorderColorError
+            Else
+                txt.Parent.Parent.BackColor = corGotFocus
+            End If
+
         Else
             txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
             txt.Parent.Parent.BackColor = corLostFocus
         End If
     End Sub
 
+    Private Sub TXTNomeDaOrigem_TextChanged(sender As Object, e As EventArgs) Handles TXTNomeDaOrigem.TextChanged
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+
+        If _newPathOrigem <> Nothing Then
+            If txt.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Or Trim(txt.Text) = "" Or txt.Text.Length = 0 Then
+
+                Dim _newPathOrigemDirectoryInfo As New DirectoryInfo(_newPathOrigem)
+                novoNomeDaPastaOrigemModificado = Trim(txt.Text)
+                novoCaminhoDeOrigemModificado = _newPathOrigemDirectoryInfo.Parent.FullName & "\" & novoNomeDaPastaOrigemModificado
+
+                If txt.Focused = True Then txt.Parent.Parent.BackColor = _borderColorGotFocus
+            Else
+                If txt.Focused = True Then txt.Parent.Parent.BackColor = _borderColorError
+            End If
+        End If
+
+    End Sub
+
+    Private Sub TXTNomeDoDestino_TextChanged(sender As Object, e As EventArgs) Handles TXTNomeDoDestino.TextChanged
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
+
+        If _newPathDestino <> Nothing Then
+            If txt.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Or Trim(txt.Text) = "" Or txt.Text.Length = 0 Then
+
+                Dim _newPathOrigemDirectoryInfo As New DirectoryInfo(_newPathDestino)
+                novoNomeDaPastaDestinoModificado = Trim(txt.Text)
+                novoCaminhoDeDestinoModificado = _newPathOrigemDirectoryInfo.Parent.FullName & "\" & novoNomeDaPastaDestinoModificado
+
+                If txt.Focused = True Then txt.Parent.Parent.BackColor = _borderColorGotFocus
+            Else
+                If txt.Focused = True Then txt.Parent.Parent.BackColor = _borderColorError
+            End If
+        End If
+    End Sub
 End Class

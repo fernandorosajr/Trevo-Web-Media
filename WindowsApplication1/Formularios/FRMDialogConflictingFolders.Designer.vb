@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FRMDialogConflictingFolders
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FRMDialogConflictingFolders
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
@@ -134,7 +134,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLTitleOrigem.AutoEllipsis = True
         Me.LBLTitleOrigem.AutoSize = True
         Me.LBLTitleOrigem.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitleOrigem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLTitleOrigem.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitleOrigem.Location = New System.Drawing.Point(136, 144)
         Me.LBLTitleOrigem.Name = "LBLTitleOrigem"
         Me.LBLTitleOrigem.Size = New System.Drawing.Size(50, 13)
@@ -149,7 +149,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLTitleDestino.AutoEllipsis = True
         Me.LBLTitleDestino.AutoSize = True
         Me.LBLTitleDestino.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitleDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLTitleDestino.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitleDestino.Location = New System.Drawing.Point(136, 192)
         Me.LBLTitleDestino.Name = "LBLTitleDestino"
         Me.LBLTitleDestino.Size = New System.Drawing.Size(54, 13)
@@ -161,7 +161,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueOrigem.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLValueOrigem.AutoEllipsis = True
-        Me.LBLValueOrigem.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLValueOrigem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValueOrigem.Location = New System.Drawing.Point(204, 144)
         Me.LBLValueOrigem.Name = "LBLValueOrigem"
         Me.LBLValueOrigem.Size = New System.Drawing.Size(253, 17)
@@ -173,7 +173,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueDestino.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLValueDestino.AutoEllipsis = True
-        Me.LBLValueDestino.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLValueDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValueDestino.Location = New System.Drawing.Point(204, 192)
         Me.LBLValueDestino.Name = "LBLValueDestino"
         Me.LBLValueDestino.Size = New System.Drawing.Size(253, 17)
@@ -186,7 +186,7 @@ Partial Class FRMDialogConflictingFolders
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLTitle02.AutoEllipsis = True
         Me.LBLTitle02.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle02.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitle02.Location = New System.Drawing.Point(136, 112)
         Me.LBLTitle02.Name = "LBLTitle02"
         Me.LBLTitle02.Size = New System.Drawing.Size(321, 20)
@@ -204,7 +204,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LNKLRenomeOrigem.Size = New System.Drawing.Size(258, 13)
         Me.LNKLRenomeOrigem.TabIndex = 5
         Me.LNKLRenomeOrigem.TabStop = True
-        Me.LNKLRenomeOrigem.Text = "Clique aqui para renomear  pasta de origem"
+        Me.LNKLRenomeOrigem.Text = "Renomear pasta de origem."
         '
         'LNKLRenomeDestino
         '
@@ -217,7 +217,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LNKLRenomeDestino.Size = New System.Drawing.Size(258, 13)
         Me.LNKLRenomeDestino.TabIndex = 12
         Me.LNKLRenomeDestino.TabStop = True
-        Me.LNKLRenomeDestino.Text = "Clique aqui para renomear pasta de destino"
+        Me.LNKLRenomeDestino.Text = "Renomear pasta de destino."
         '
         'LBLOutrasOpcoes
         '
@@ -225,7 +225,7 @@ Partial Class FRMDialogConflictingFolders
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLOutrasOpcoes.AutoEllipsis = True
         Me.LBLOutrasOpcoes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLOutrasOpcoes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLOutrasOpcoes.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLOutrasOpcoes.Location = New System.Drawing.Point(136, 26)
         Me.LBLOutrasOpcoes.Name = "LBLOutrasOpcoes"
         Me.LBLOutrasOpcoes.Size = New System.Drawing.Size(321, 20)
@@ -324,7 +324,7 @@ Partial Class FRMDialogConflictingFolders
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLTitle01.AutoEllipsis = True
         Me.LBLTitle01.Font = New System.Drawing.Font("Microsoft Tai Le", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle01.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLTitle01.ForeColor = System.Drawing.Color.LightGray
         Me.LBLTitle01.Location = New System.Drawing.Point(132, 24)
         Me.LBLTitle01.Name = "LBLTitle01"
         Me.LBLTitle01.Size = New System.Drawing.Size(322, 47)
@@ -570,7 +570,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameOrigem.AutoEllipsis = True
         Me.LBLRenameOrigem.AutoSize = True
         Me.LBLRenameOrigem.Dock = System.Windows.Forms.DockStyle.Left
-        Me.LBLRenameOrigem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLRenameOrigem.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLRenameOrigem.Location = New System.Drawing.Point(0, 0)
         Me.LBLRenameOrigem.Name = "LBLRenameOrigem"
         Me.LBLRenameOrigem.Size = New System.Drawing.Size(65, 13)
@@ -594,7 +594,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLRenameDestino.AutoEllipsis = True
         Me.LBLRenameDestino.AutoSize = True
         Me.LBLRenameDestino.Dock = System.Windows.Forms.DockStyle.Left
-        Me.LBLRenameDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLRenameDestino.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLRenameDestino.Location = New System.Drawing.Point(0, 0)
         Me.LBLRenameDestino.Name = "LBLRenameDestino"
         Me.LBLRenameDestino.Size = New System.Drawing.Size(65, 13)

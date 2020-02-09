@@ -25,8 +25,8 @@ Public Class UsesDirectoriesClass
 
             If caminho_DirectoryInfo.Exists = True Then
 
-                Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
                 Dim oldPath_DirectoryInfo As New DirectoryInfo(oldPath)
+                Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
 
                 Dim oldPathDestino As String
                 Dim newPathDestino As String
@@ -49,14 +49,33 @@ Public Class UsesDirectoriesClass
                     FRM.PastaOrigem = oldPath
                     FRM.PastaDestino = newPath
 
-                    FRM.OldPathDestino = newPath
-                    FRM.NewPathDestino = newPath
                     FRM.OldPathOrigem = oldPath
                     FRM.NewPathOrigem = newPath
+                    FRM.OldPathDestino = newPath
+                    FRM.NewPathDestino = newPath
 
-                    FRM.LBLNomeDaPasta.Text = newName
+                    FRM.LBLNomeDaPasta.Text = """" & newName & """"
                     FRM.ShowDialog()
 
+                    oldPathDestino = FRM.OldPathDestino
+                    newPathDestino = FRM.NewPathDestino
+
+                    oldPathOrigem = FRM.OldPathOrigem
+                    newPathOrigem = FRM.NewPathOrigem
+
+                    Select Case FRM.DialogResult
+                        Case DialogResult.OK
+                            MoverPasta(oldPathOrigem, newPathOrigem)
+                            MoverPasta(oldPathDestino, newPathDestino)
+
+                            'If FRM.NewPathDestino <> FRM.OldPathDestino Then
+                            '    If FRM.NewPathDestino = FRM.NewPathOrigem Then
+                            '        ' RenomearEMesclarPasta(_origem, _destino, _novoNomeDaPasta)
+
+                            '    End If
+                            'End If
+
+                    End Select
 
                     Return oldPath
                 Else
@@ -66,8 +85,16 @@ Public Class UsesDirectoriesClass
             End If
 
         Catch ex As Exception
+
+            MsgBox(ex.Message)
             Return oldPath
         End Try
+
+    End Function
+    Function MoverPasta(_sourceDirectoryName As String, _destinationDirectoryName As String)
+        My.Computer.FileSystem.CopyDirectory(_sourceDirectoryName, _destinationDirectoryName, False)
+        ' https://docs.microsoft.com/pt-br/dotnet/api/system.collections.idictionary?view=netframework-4.8
+        'https://docs.microsoft.com/pt-br/dotnet/api/microsoft.visualbasic.fileio.filesystem.copydirectory?view=netframework-4.8
 
     End Function
 

@@ -90,6 +90,8 @@ Public Class FRMDialogConflictingFolders
             Else
                 TelaParaOrigemIgual()
             End If
+            RefreshButtons()
+
         End Set
     End Property
 
@@ -120,6 +122,8 @@ Public Class FRMDialogConflictingFolders
             Else
                 TelaParaDestinoIgual()
             End If
+            RefreshButtons()
+
         End Set
     End Property
 
@@ -137,6 +141,8 @@ Public Class FRMDialogConflictingFolders
             Else
                 TelaParaDestinoIgual()
             End If
+            RefreshButtons()
+
         End Set
     End Property
 
@@ -155,6 +161,8 @@ Public Class FRMDialogConflictingFolders
             Else
                 TelaParaOrigemIgual()
             End If
+            RefreshButtons()
+
         End Set
     End Property
 
@@ -171,6 +179,8 @@ Public Class FRMDialogConflictingFolders
             Else
                 TelaParaOrigemIgual()
             End If
+            RefreshButtons()
+
         End Set
     End Property
 
@@ -184,7 +194,7 @@ Public Class FRMDialogConflictingFolders
 
     Sub TelaParaOrigemIgual()
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        LNKLRenomeOrigem.Text = "Clique aqui para renomear pasta de origem"
+        LNKLRenomeOrigem.Text = "renomear pasta de origem."
         LBLRenameOrigem.Visible = False
         LNKLRenomeOrigem.Visible = True
 
@@ -199,7 +209,7 @@ Public Class FRMDialogConflictingFolders
 
     Sub TelaParaDestinoIgual()
         PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = "Clique aqui para renomear pasta de destino"
+        LNKLRenomeDestino.Text = "Renomear pasta de destino."
         LBLRenameDestino.Visible = False
         LNKLRenomeDestino.Visible = True
     End Sub
@@ -284,7 +294,31 @@ Public Class FRMDialogConflictingFolders
 
         rendoOldPathDestino = _oldPathDestino
         rendoNewPathDestino = _newPathDestino
+        RefreshButtons()
 
+    End Sub
+
+    Sub RefreshButtons()
+        If _newPathDestino = _newPathOrigem Then
+            OK_Button.Enabled = False
+            PanelEnvolveButtons.Enabled = True
+
+            OK_Button.BackColor = Color.FromArgb(73, 73, 76)
+            OK_Button.FlatAppearance.BorderColor = OK_Button.BackColor
+
+            BTNMesclar.BackColor = Color.FromArgb(83, 83, 86)
+            BTNMesclar.FlatAppearance.BorderColor = BTNMesclar.BackColor
+        Else
+            OK_Button.Enabled = True
+            PanelEnvolveButtons.Enabled = False
+
+            OK_Button.BackColor = Color.FromArgb(83, 83, 86)
+            OK_Button.FlatAppearance.BorderColor = OK_Button.BackColor
+
+            BTNMesclar.BackColor = Color.FromArgb(73, 73, 76)
+            BTNMesclar.FlatAppearance.BorderColor = BTNMesclar.BackColor
+
+        End If
     End Sub
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
@@ -334,11 +368,12 @@ Public Class FRMDialogConflictingFolders
             Exit Sub
         End If
 
-        If _newPathOrigem <> novoCaminhoDeOrigemModificado Then
+        NewPathOrigem = novoCaminhoDeOrigemModificado
+
+        If _newPathOrigem <> rendoNewPathOrigem Then
             BTNRendo.Visible = True
         End If
 
-        _newPathOrigem = novoCaminhoDeOrigemModificado
 
         If _oldPathOrigem = _newPathOrigem Then
             TelaParaOrigemIgual()
@@ -375,11 +410,11 @@ Public Class FRMDialogConflictingFolders
             Exit Sub
         End If
 
-        If _newPathDestino <> novoCaminhoDeDestinoModificado Then
+        NewPathDestino = novoCaminhoDeDestinoModificado
+
+        If _newPathDestino <> rendoNewPathDestino Then
             BTNRendo.Visible = True
         End If
-
-        _newPathDestino = novoCaminhoDeDestinoModificado
 
         If _oldPathDestino = _newPathDestino Then
             TelaParaDestinoIgual()
@@ -589,5 +624,10 @@ Public Class FRMDialogConflictingFolders
                 If txt.Focused = True Then txt.Parent.Parent.BackColor = _borderColorError
             End If
         End If
+    End Sub
+
+    Private Sub BTNMesclar_Click(sender As Object, e As EventArgs) Handles BTNMesclar.Click
+        Me.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.Close()
     End Sub
 End Class

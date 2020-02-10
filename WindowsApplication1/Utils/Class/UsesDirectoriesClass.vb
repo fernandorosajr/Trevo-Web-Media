@@ -92,7 +92,39 @@ Public Class UsesDirectoriesClass
 
     End Function
     Function MoverPasta(_sourceDirectoryName As String, _destinationDirectoryName As String)
-        My.Computer.FileSystem.CopyDirectory(_sourceDirectoryName, _destinationDirectoryName, False)
+
+        Try
+            My.Computer.FileSystem.CopyDirectory(_sourceDirectoryName, _destinationDirectoryName, False)
+
+        Catch ex As Exception
+            Dim info As String
+            ' MsgBox(ex.Data.ToString)
+            For Each dado As String In ex.Data.Values
+                MsgBox(dado)
+            Next
+
+            For Each strKey In ex.Data.Keys
+                info = (ex.Data(strKey))
+
+                Dim fileInfo As FileInfo
+                'Dim fileName As String
+                'Dim fullPath As String
+
+                fileInfo = My.Computer.FileSystem.GetFileInfo(strKey)
+
+                'fileName = fileInfo.Name
+
+                'fullPath = My.Computer.FileSystem.CombinePath(_destinationDirectoryName, fileName)
+
+                If fileInfo.Exists = True Then
+                    ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths
+                End If
+
+                MsgBox(strKey)
+            Next
+
+        End Try
+
         ' https://docs.microsoft.com/pt-br/dotnet/api/system.collections.idictionary?view=netframework-4.8
         'https://docs.microsoft.com/pt-br/dotnet/api/microsoft.visualbasic.fileio.filesystem.copydirectory?view=netframework-4.8
 
@@ -147,4 +179,5 @@ Public Class UsesDirectoriesClass
         End Try
 
     End Function
+
 End Class

@@ -91,43 +91,7 @@ Public Class ControlPainel_Desktop
         TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
     End Sub
 
-    Public Function DevolverNomeDaPasta(caminho As String, nomeParaPesquisa As String)
-        Dim directoryArrayList As New ArrayList
-        Dim drive As New DirectoryInfo(caminho)
-        Dim driveDestino As New DirectoryInfo(caminho & "\" & nomeParaPesquisa)
-        Dim pesquisa As String
 
-        If drive.Exists = True Then
-            If driveDestino.Exists = True Then
-                directoryArrayList.AddRange(drive.GetDirectories())
-
-                For x As Integer = 0 To directoryArrayList.Count
-                    pesquisa = nomeParaPesquisa & " (" & x + 2 & ")"
-
-                    Dim query = From pasta As DirectoryInfo In directoryArrayList
-                                Where pasta.Name.IndexOf(pesquisa) = 0
-                                Select pasta
-
-                    If query.Count = 0 Then
-                        Return pesquisa
-                        Exit For
-                    End If
-                Next
-
-            Else
-
-                Return nomeParaPesquisa
-            End If
-
-        Else
-
-            'TODO: Atualizar Pasta
-            ' A Pasta Destino não existe
-        End If
-
-        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq
-        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
-    End Function
 
     Private Sub BTN_NewFolder_Click(sender As Object, e As EventArgs) Handles BTN_NewFolder.Click
         Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
@@ -135,6 +99,8 @@ Public Class ControlPainel_Desktop
 
         Dim x As String
         Dim _podeCriarNovaPasta As Boolean
+
+        Dim usesDirectoriesClass As New UsesDirectoriesClass
 
         Try
             If node.Tag IsNot (Nothing) Then
@@ -144,7 +110,7 @@ Public Class ControlPainel_Desktop
 
                 prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
                 title = "Criar nova pasta"
-                defaultResponse = DevolverNomeDaPasta(node.Tag, "Nova pasta")
+                defaultResponse = usesDirectoriesClass.DevolverNomeDaPasta(node.Tag, "Nova pasta")
                 x = InputBox(prompt, title, defaultResponse)
 
 

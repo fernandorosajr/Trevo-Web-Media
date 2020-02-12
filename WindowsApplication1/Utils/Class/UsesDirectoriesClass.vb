@@ -96,31 +96,46 @@ Public Class UsesDirectoriesClass
         Try
             My.Computer.FileSystem.CopyDirectory(_sourceDirectoryName, _destinationDirectoryName, False)
 
+            If _sourceDirectoryName <> _destinationDirectoryName Then
+                'TODO: deletar _sourceDirectoryName
+            End If
         Catch ex As Exception
             Dim info As String
-            ' MsgBox(ex.Data.ToString)
-            For Each dado As String In ex.Data.Values
-                MsgBox(dado)
-            Next
+
+            'For Each dado As String In ex.Data.Values
+            '    MsgBox(dado)
+            'Next
 
             For Each strKey In ex.Data.Keys
                 info = (ex.Data(strKey))
 
                 Dim fileInfo As FileInfo
-                'Dim fileName As String
-                'Dim fullPath As String
-
                 fileInfo = My.Computer.FileSystem.GetFileInfo(strKey)
 
-                'fileName = fileInfo.Name
-
-                'fullPath = My.Computer.FileSystem.CombinePath(_destinationDirectoryName, fileName)
-
                 If fileInfo.Exists = True Then
+
+                    Dim novoNomeDoArquivo As String
+                    Dim manipularArquivo As New UsesFilesClass
+
+                    novoNomeDoArquivo = manipularArquivo.DevolverNomeDoArquivo(fileInfo.FullName, _destinationDirectoryName & "\" & fileInfo.Name, False)
+
+                    My.Computer.FileSystem.MoveFile(fileInfo.FullName.ToString,
+                         novoNomeDoArquivo,
+                        FileIO.UIOption.AllDialogs,
+                        FileIO.UICancelOption.ThrowException)
+
+                    Dim dir As DirectoryInfo
+                    dir = New DirectoryInfo(_sourceDirectoryName)
+
+                    If dir.Exists = True Then
+                        If _sourceDirectoryName <> _destinationDirectoryName Then
+                            'TODO: deletar _sourceDirectoryName
+                        End If
+                    End If
+
                     ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths
                 End If
 
-                MsgBox(strKey)
             Next
 
         End Try

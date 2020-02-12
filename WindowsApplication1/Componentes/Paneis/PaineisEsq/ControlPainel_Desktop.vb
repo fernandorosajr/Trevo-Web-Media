@@ -140,7 +140,7 @@ Public Class ControlPainel_Desktop
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
 
         Dim tsNode As TreeNode
-        ' System.Windows.Forms.Application.DoEvents()
+
         tsNode = TVWFilesAndFolders.SelectedNode
         _caminho = TVWFilesAndFolders.SelectedNode.Tag
         CarregarDiretorio(tsNode)
@@ -354,7 +354,7 @@ Public Class ControlPainel_Desktop
                                 Dim drive01 As New DriveInfo(node.Name)
 
                                 If drive01.IsReady = True Then
-                                    AtualizarDiretorio(node)
+                                    AtualizarDiretorioNoTreeView(node)
                                 Else
 
                                     node.Nodes.Clear()
@@ -366,7 +366,7 @@ Public Class ControlPainel_Desktop
                             Case Else
 
                                 If dir.Exists = True Then
-                                    AtualizarDiretorio(node)
+                                    AtualizarDiretorioNoTreeView(node)
 
                                 Else
                                     If node.Tag <> "Mensagem" Then
@@ -388,7 +388,8 @@ Public Class ControlPainel_Desktop
         End Try
     End Sub
 
-    Private Sub AtualizarDiretorio(node As TreeNode)
+    Private Sub AtualizarDiretorioNoTreeView(node As TreeNode)
+
         Dim directory As New DirectoryInfo(node.Tag)
         Dim subDirectories As DirectoryInfo() = directory.GetDirectories
         Dim dir As DirectoryInfo
@@ -400,6 +401,9 @@ Public Class ControlPainel_Desktop
         Dim adicionar As Boolean
 
         For Each subTNode In tNode.Nodes
+            ' TODO : Incluir uma condição para checar se existe _
+            ' node repetido e exclui lo.
+
             Dim dirCheck As New DirectoryInfo(subTNode.Tag)
             If dirCheck.Exists = False Then
                 tNode.Nodes.Remove(subTNode)
@@ -493,86 +497,97 @@ Public Class ControlPainel_Desktop
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
 
-        Dim drive As New DriveInfo(e.Node.Tag)
         Dim rotuloDoDrive As String
         Dim tamanhoDoDrive As String
         Dim letraDaUnidade As String
         Dim todoDrive As String
 
-        If Not (e.Label Is Nothing) Then
-            If e.Label.Length > 0 Then
+        Try
+            Dim drive As DriveInfo
+            If e.Node.Tag <> "carregando" Then
+                drive = New DriveInfo(e.Node.Tag)
+            Else
+                e.Node.EndEdit(True)
+                e.CancelEdit = True
+            End If
 
-                If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
+            If Not (e.Label Is Nothing) Then
+                If e.Label.Length > 0 Then
 
-                    e.Node.EndEdit(False)
-                    node.Tag = usesDirectories.RenomearPasta(node.Tag, e.Label)
+                    If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
 
+                        e.Node.EndEdit(False)
+                        node.Tag = usesDirectories.RenomearPasta(node.Tag, e.Label)
+                        AtualizarDiretorioNoTreeView(node.Parent)
 
-                    'If driveAnalysis.EDrive(e.Node.Tag) = True Then
+                        'If driveAnalysis.EDrive(e.Node.Tag) = True Then
 
-                    '    letraDaUnidade = drive.Name
+                        '    letraDaUnidade = drive.Name
 
-                    '    If drive.IsReady Then
-                    '        rotuloDoDrive = CType(e.Label, String)
+                        '    If drive.IsReady Then
+                        '        rotuloDoDrive = CType(e.Label, String)
 
-                    '        tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
-                    '    End If
+                        '        tamanhoDoDrive = CStr(drive.TotalSize.ToString & " Kb")
+                        '    End If
 
-                    '    If Not rotuloDoDrive Is Nothing Then
-                    '        If rotuloDoDrive = "" Then
-                    '            If drive.DriveType = 3 Then
-                    '                rotuloDoDrive = "Disco Local"
+                        '    If Not rotuloDoDrive Is Nothing Then
+                        '        If rotuloDoDrive = "" Then
+                        '            If drive.DriveType = 3 Then
+                        '                rotuloDoDrive = "Disco Local"
 
-                    '            ElseIf drive.DriveType = 5 Then
-                    '                rotuloDoDrive = "Unidade de Disco Removível"
-                    '                ' iconeDoDrive = "UnidadeVazia"
-                    '            End If
-                    '        End If
-                    '        todoDrive = rotuloDoDrive & " (" & letraDaUnidade.Substring(0, 2) & ")"
-                    '    Else
+                        '            ElseIf drive.DriveType = 5 Then
+                        '                rotuloDoDrive = "Unidade de Disco Removível"
+                        '                ' iconeDoDrive = "UnidadeVazia"
+                        '            End If
+                        '        End If
+                        '        todoDrive = rotuloDoDrive & " (" & letraDaUnidade.Substring(0, 2) & ")"
+                        '    Else
 
-                    '        todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
-                    '    End If
+                        '        todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                        '    End If
 
-                    '    'e.Node.Text = e.Label.Insert(3, todoDrive)
-                    '    e.Node.Text = todoDrive
-                    '    e.Node.EndEdit(False)
-                    'Else
+                        '    'e.Node.Text = e.Label.Insert(3, todoDrive)
+                        '    e.Node.Text = todoDrive
+                        '    e.Node.EndEdit(False)
+                        'Else
 
-                    '    e.Node.EndEdit(False)
-                    'End If
+                        '    e.Node.EndEdit(False)
+                        'End If
 
-                Else
-                    e.CancelEdit = True
+                    Else
+                        e.CancelEdit = True
 
-                    MessageBox.Show("Arquivos e pastas não podem conter os seguintes caracteres em seus nomes:" &
+                        MessageBox.Show("Arquivos e pastas não podem conter os seguintes caracteres em seus nomes:" &
                     Microsoft.VisualBasic.ControlChars.Cr &
                     "\ " & "/ " & "| " & ": " & "* " & "? " & """" & " < " & ">",
                     "Nomear/Renomear pasta")
-                    e.Node.BeginEdit()
-                End If
+                        e.Node.BeginEdit()
+                    End If
 
-            Else
-
-                If driveAnalysis.EDrive(e.Node.Tag) = True Then
-
-                    letraDaUnidade = drive.Name
-                    todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
-                    e.Node.Text = todoDrive
-                    'todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
-                    e.Node.BeginEdit()
                 Else
-                    MessageBox.Show("O nome da pasta não pode ficar em branco")
-                    e.Node.BeginEdit()
+
+                    If driveAnalysis.EDrive(e.Node.Tag) = True Then
+
+                        letraDaUnidade = drive.Name
+                        todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                        e.Node.Text = todoDrive
+                        'todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                        e.Node.BeginEdit()
+                    Else
+                        MessageBox.Show("O nome da pasta não pode ficar em branco")
+                        e.Node.BeginEdit()
+                    End If
+                End If
+            Else
+                If e.Node.Text = "" Then
+                    _caminho = StringFunctions.SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
+                    node.Text = _caminho(_caminho.Count - 1)
                 End If
             End If
-        Else
-            If e.Node.Text = "" Then
-                _caminho = StringFunctions.SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
-                node.Text = _caminho(_caminho.Count - 1)
-            End If
-        End If
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 
 End Class

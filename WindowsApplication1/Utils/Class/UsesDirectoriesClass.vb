@@ -77,7 +77,7 @@ Public Class UsesDirectoriesClass
 
                     End Select
 
-                    Return oldPath
+                    Return newPath
                 Else
                     Rename(oldPath, newPath)
                     Return newPath

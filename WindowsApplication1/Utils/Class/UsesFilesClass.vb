@@ -43,11 +43,10 @@ Public Class UsesFilesClass
             End If
         End If
 
-
-
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
     End Function
+
     Function NomeDoArquivoSemExtensao(nome As FileInfo) As String
 
         Dim _nomeDoArquivoSemExtensao As String

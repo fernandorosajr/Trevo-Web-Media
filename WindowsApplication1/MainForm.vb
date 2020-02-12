@@ -111,11 +111,10 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub Form1_Activated(sender As Object, e As System.EventArgs) Handles Me.Activated
-        Label1.Text = Me.Text
+    'Private Sub Form1_Activated(sender As Object, e As System.EventArgs) Handles Me.Activated
+    '    Label1.Text = Me.Text
 
-
-    End Sub
+    'End Sub
 
     Private Sub Form1_FormClosing(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         For fadeout = 90 To 10 Step -10
@@ -136,6 +135,8 @@ Long, lpColorValues As Long) As Long
 
         ' TODO: Se um componente construido herdar ...
         ' ...o outro construido ele pode interagir um com o outro.
+
+        Label1.Text = Me.Text
 
         PanelRecebeBiblio.Controls.Add(painel_BibliotecaDeMidias)
         painel_BibliotecaDeMidias.Dock = DockStyle.Fill

@@ -324,6 +324,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />
+    <Compile Include="Utils\Class\StringFunctionsClass.vb" />
     <Compile Include="Utils\Class\UsesDirectoriesClass.vb" />
     <Compile Include="Utils\Class\UsesFilesClass.vb" />
   </ItemGroup>

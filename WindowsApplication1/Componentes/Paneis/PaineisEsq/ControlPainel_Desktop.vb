@@ -26,6 +26,8 @@ Public Class ControlPainel_Desktop
 
     Dim delimitadoresDeCaminhoDePasta() As Char = {"\"c, "/"c}
 
+    Dim StringFunctions As New StringFunctionsClass
+
     ' Propriedade de caminho
     Private _caminho As String
     Public Property Caminho As String
@@ -202,7 +204,7 @@ Public Class ControlPainel_Desktop
 
         Dim listaDeDiretorios As String()
         Dim caminhoDaPastaDoUsuario As String
-        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
+        listaDeDiretorios = StringFunctions.SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
         Dim dir As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Videos")
@@ -215,7 +217,7 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        listaDeDiretorios = SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
+        listaDeDiretorios = StringFunctions.SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
         Dim dir2 As New DirectoryInfo(caminhoDaPastaDoUsuario & "\Downloads")
@@ -238,7 +240,7 @@ Public Class ControlPainel_Desktop
 
 
         AreaDeTrabalho = SpecialDirectories.Desktop
-        NomeDasSubPastasDaAreaDeTrabalho = SepararPalavras(AreaDeTrabalho, delimitadoresDeCaminhoDePasta)
+        NomeDasSubPastasDaAreaDeTrabalho = StringFunctions.SepararPalavras(AreaDeTrabalho, delimitadoresDeCaminhoDePasta)
 
 
         Dim dirDir As New IO.DirectoryInfo(AreaDeTrabalho)
@@ -328,13 +330,6 @@ Public Class ControlPainel_Desktop
 
     End Sub
 
-    Function SepararPalavras(ByVal quebrarPalavras As String, ByVal delimitadores() As Char) As String()
-
-        Dim palavras() As String
-        palavras = quebrarPalavras.Split(delimitadores)
-        Return palavras
-
-    End Function
 
     Sub CarregarDiretorio(node As TreeNode)
 
@@ -573,7 +568,7 @@ Public Class ControlPainel_Desktop
             End If
         Else
             If e.Node.Text = "" Then
-                _caminho = SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
+                _caminho = StringFunctions.SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
                 node.Text = _caminho(_caminho.Count - 1)
             End If
         End If

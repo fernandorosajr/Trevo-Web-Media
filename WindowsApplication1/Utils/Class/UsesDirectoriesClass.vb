@@ -1,4 +1,5 @@
 ﻿Imports System.IO
+Imports TrevoWebMedia.StructuresModules
 
 Public Enum Actions As Byte
     None = 0
@@ -13,60 +14,73 @@ End Enum
 
 Public Class UsesDirectoriesClass
 
-    Function RenomearPasta(caminho As String, newName As String) As String
+    'Public Structure CaminhosDeRenomeDePastas
+    '    Public oldPathOrigem As String
+    '    Public newPathOrigem As String
+    '    Public oldPathDestino As String
+    '    Public newPathDestino As String
 
-        Dim oldPath, newPath As String
+    '    Public oldPath As String
+    '    Public newPath As String
+    'End Structure
+
+    'Public _foldersPathsOperations As CaminhosDeRenomeDePastas
+
+    Function RenomearPasta(caminho As String, newName As String) As Object
+
+        Dim _foldersPathsOperations As CaminhosDeRenomeDePastas
+        '  Dim oldPath, newPath As String
         Dim caminho_DirectoryInfo As New DirectoryInfo(caminho)
 
-        oldPath = Trim(caminho)
-        newPath = caminho_DirectoryInfo.Parent.FullName & "\" & Trim(newName)
+        _foldersPathsOperations.oldPath = Trim(caminho)
+        _foldersPathsOperations.newPath = caminho_DirectoryInfo.Parent.FullName & "\" & Trim(newName)
 
         Try
 
             If caminho_DirectoryInfo.Exists = True Then
 
-                Dim oldPath_DirectoryInfo As New DirectoryInfo(oldPath)
-                Dim newPath_DirectoryInfo As New DirectoryInfo(newPath)
+                Dim oldPath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.oldPath)
+                Dim newPath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.newPath)
 
-                Dim oldPathDestino As String
-                Dim newPathDestino As String
+                'Dim oldPathDestino As String
+                'Dim newPathDestino As String
 
-                Dim oldPathOrigem As String
-                Dim newPathOrigem As String
+                'Dim oldPathOrigem As String
+                'Dim newPathOrigem As String
 
                 If newPath_DirectoryInfo.Exists = True Then
-                    ' TODO: Carregar form de Conflito de pasta
+                    ' TODO: Renomear Pastas Antes de Mover
                     ' TODO: Estudar esta função: Fazer Algoritimo.
-                    oldPathDestino = newPath
-                    newPathDestino = newPath
+                    _foldersPathsOperations.oldPathDestino = _foldersPathsOperations.newPath
+                    _foldersPathsOperations.newPathDestino = _foldersPathsOperations.newPath
 
-                    oldPathOrigem = oldPath
-                    newPathOrigem = newPath
+                    _foldersPathsOperations.oldPathOrigem = _foldersPathsOperations.oldPath
+                    _foldersPathsOperations.newPathOrigem = _foldersPathsOperations.newPath
 
                     Dim FRM As New FRMDialogConflictingFolders
 
                     FRM.Title = "Conflito entre pastas"
-                    FRM.PastaOrigem = oldPath
-                    FRM.PastaDestino = newPath
+                    FRM.PastaOrigem = _foldersPathsOperations.oldPath
+                    FRM.PastaDestino = _foldersPathsOperations.newPath
 
-                    FRM.OldPathOrigem = oldPath
-                    FRM.NewPathOrigem = newPath
-                    FRM.OldPathDestino = newPath
-                    FRM.NewPathDestino = newPath
+                    FRM.OldPathOrigem = _foldersPathsOperations.oldPath
+                    FRM.NewPathOrigem = _foldersPathsOperations.newPath
+                    FRM.OldPathDestino = _foldersPathsOperations.newPath
+                    FRM.NewPathDestino = _foldersPathsOperations.newPath
 
                     FRM.LBLNomeDaPasta.Text = """" & newName & """"
                     FRM.ShowDialog()
 
-                    oldPathDestino = FRM.OldPathDestino
-                    newPathDestino = FRM.NewPathDestino
+                    _foldersPathsOperations.oldPathDestino = FRM.OldPathDestino
+                    _foldersPathsOperations.newPathDestino = FRM.NewPathDestino
 
-                    oldPathOrigem = FRM.OldPathOrigem
-                    newPathOrigem = FRM.NewPathOrigem
+                    _foldersPathsOperations.oldPathOrigem = FRM.OldPathOrigem
+                    _foldersPathsOperations.newPathOrigem = FRM.NewPathOrigem
 
                     Select Case FRM.DialogResult
                         Case DialogResult.OK
-                            MoverPasta(oldPathOrigem, newPathOrigem)
-                            MoverPasta(oldPathDestino, newPathDestino)
+                            MoverPasta(_foldersPathsOperations.oldPathOrigem, _foldersPathsOperations.newPathOrigem)
+                            MoverPasta(_foldersPathsOperations.oldPathDestino, _foldersPathsOperations.newPathDestino)
 
                             'If FRM.NewPathDestino <> FRM.OldPathDestino Then
                             '    If FRM.NewPathDestino = FRM.NewPathOrigem Then
@@ -77,17 +91,17 @@ Public Class UsesDirectoriesClass
 
                     End Select
 
-                    Return newPath
+                    Return _foldersPathsOperations 'newPath
                 Else
-                    Rename(oldPath, newPath)
-                    Return newPath
+                    Rename(_foldersPathsOperations.oldPath, _foldersPathsOperations.newPath)
+                    Return _foldersPathsOperations 'newPath
                 End If
             End If
 
         Catch ex As Exception
 
             MsgBox(ex.Message)
-            Return oldPath
+            Return _foldersPathsOperations 'oldPath
         End Try
 
     End Function
@@ -231,5 +245,10 @@ Public Class UsesDirectoriesClass
 
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
+    End Function
+
+    Function FolderExist(path As String) As Boolean
+        Dim _caminho As New DirectoryInfo(path)
+        Return _caminho.Exists
     End Function
 End Class

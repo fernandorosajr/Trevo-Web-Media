@@ -84,7 +84,7 @@ Public Class ControlPainel_Desktop
             TVWFilesAndFolders.LabelEdit = _caminho.Exists
         End If
 
-        If TVWFilesAndFolders.LabelEdit = True Then EditarNode(node)
+        '  If TVWFilesAndFolders.LabelEdit = True Then EditarNode(node)
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
     End Sub
@@ -389,6 +389,10 @@ Public Class ControlPainel_Desktop
     End Sub
 
     Private Sub AtualizarDiretorioNoTreeView(node As TreeNode)
+        ' Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
+
+        ' TODO: Tratar ClonedNode
+        Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
 
         Dim directory As New DirectoryInfo(node.Tag)
         Dim subDirectories As DirectoryInfo() = directory.GetDirectories
@@ -410,10 +414,20 @@ Public Class ControlPainel_Desktop
             End If
         Next
 
+        'Dim i As Integer
+        'For Each subTNode In tNode.Nodes
+        '    For Each subTNode2 In tNode.Nodes
+        '        If subTNode.Tag = subTNode2.tag Then i += 1
+        '        If i >= 2 Then tNode.Nodes.Remove(subTNode2)
+        '    Next
+        '    i = 0
+        'Next
+
         For Each dir In subDirectories
 
             For Each subTNode In tNode.Nodes
                 If dir.FullName = subTNode.Tag Then
+                    subTNode.Text = dir.Name
                     adicionar = False
                     Exit For
                 Else
@@ -497,10 +511,22 @@ Public Class ControlPainel_Desktop
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
 
+        ' TODO: Tratar ClonedNode
+        Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
+
         Dim rotuloDoDrive As String
         Dim tamanhoDoDrive As String
         Dim letraDaUnidade As String
         Dim todoDrive As String
+
+        Dim _caminhosDeRenomeDePastas As CaminhosDeRenomeDePastas
+
+        Dim _newPath As String
+        Dim _oldPath As String
+        Dim _newPathDestino As String
+        Dim _newPathOrigem As String
+        Dim _oldPathDestino As String
+        Dim _oldPathOrigem As String
 
         Try
             Dim drive As DriveInfo
@@ -517,8 +543,88 @@ Public Class ControlPainel_Desktop
                     If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
 
                         e.Node.EndEdit(False)
-                        node.Tag = usesDirectories.RenomearPasta(node.Tag, e.Label)
-                        AtualizarDiretorioNoTreeView(node.Parent)
+                        _caminhosDeRenomeDePastas = usesDirectories.RenomearPasta(node.Tag, e.Label)
+
+                        _newPath = _caminhosDeRenomeDePastas.newPath
+                        _oldPath = _caminhosDeRenomeDePastas.oldPath
+                        _newPathDestino = _caminhosDeRenomeDePastas.newPathDestino
+                        _newPathOrigem = _caminhosDeRenomeDePastas.newPathOrigem
+                        _oldPathDestino = _caminhosDeRenomeDePastas.oldPathDestino
+                        _oldPathOrigem = _caminhosDeRenomeDePastas.oldPathOrigem
+
+
+                        If _oldPathOrigem <> _newPathOrigem Then
+                            ' e se  _oldPathOrigem = _newPathOrigem ?
+                            For Each tnode As TreeNode In node.Parent.Nodes
+                                If NodeTagExiste(_newPathOrigem, node.Parent) = False Then
+                                    If usesDirectories.FolderExist(_newPathOrigem) = True Then
+                                        If tnode.Tag = _oldPathOrigem Then
+                                            Dim dir As New DirectoryInfo(_newPathOrigem)
+                                            tnode.Tag = dir.FullName
+                                            tnode.Text = dir.Name
+                                            tnode.Name = tnode.Tag
+                                        End If
+                                    End If
+                                Else
+                                    SearchAndRemoveTagNode(_oldPathOrigem, node.Parent)
+                                End If
+                            Next
+                        Else
+                            If _oldPathOrigem <> _oldPathDestino Then
+                                If _newPathDestino = _oldPathDestino Then
+
+                                    For Each tnode As TreeNode In node.Parent.Nodes
+
+                                        If tnode.Tag = _oldPathOrigem Then
+                                            If NodeTagExiste(_oldPathDestino, node.Parent) = True Then
+                                                tnode.Remove()
+                                            Else
+                                                Dim dir As New DirectoryInfo(_oldPathDestino)
+                                                tnode.Tag = dir.FullName
+                                                tnode.Text = dir.Name
+                                                tnode.Name = tnode.Tag
+                                            End If
+                                        End If
+                                    Next
+
+                                End If
+                            End If
+                        End If
+
+                        If _oldPathDestino <> _newPathDestino Then
+                            ' e se  _oldPathOrigem = _newPathOrigem ?
+                            For Each tnode As TreeNode In node.Parent.Nodes
+                                If NodeTagExiste(_newPathDestino, node.Parent) = False Then
+                                    If usesDirectories.FolderExist(_newPathDestino) = True Then
+                                        If tnode.Tag = _oldPathDestino Then
+                                            Dim dir As New DirectoryInfo(_oldPathDestino)
+                                            tnode.Tag = dir.FullName
+                                            tnode.Text = dir.Name
+                                            tnode.Name = tnode.Tag
+                                        End If
+                                    End If
+                                Else
+                                    If _oldPathDestino = _newPathOrigem Then
+                                        SearchAndRemoveTagNode(_oldPathOrigem, node.Parent)
+                                    End If
+                                End If
+                            Next
+                        End If
+
+                        'If _caminhosDeRenomeDePastas.oldPathDestino = _caminhosDeRenomeDePastas.newPathDestino Then
+
+                        'Else
+                        '    For Each tnode As TreeNode In node.Parent.Nodes
+                        '        If tnode.Tag = _caminhosDeRenomeDePastas.oldPathDestino Then
+                        '            RenameNodeFolder(_caminhosDeRenomeDePastas.newPathDestino, tnode)
+
+                        '        End If
+                        '    Next
+                        'End If
+                        '  node.Tag = usesDirectories.RenomearPasta(node.Tag, e.Label)
+
+
+                        'AtualizarDiretorioNoTreeView(node.Parent)
 
                         'If driveAnalysis.EDrive(e.Node.Tag) = True Then
 
@@ -590,4 +696,49 @@ Public Class ControlPainel_Desktop
         End Try
     End Sub
 
+    Function NodeTagExiste(tag As String, nodeParent As TreeNode) As Boolean
+        For Each tnode2 As TreeNode In nodeParent.Nodes
+            If tnode2.Tag = tag Then
+                Return True
+                Exit Function
+            End If
+        Next
+        Return False
+    End Function
+
+    Sub SearchAndRemoveTagNode(tag As String, nodeParent As TreeNode)
+        For Each tnode As TreeNode In nodeParent.Nodes
+            If tnode.Tag = tag Then
+                tnode.Remove()
+            End If
+        Next
+    End Sub
+
+    Sub SearchAndRenameNodeTag(newNodePath_Tag As String, nodeParent As TreeNode)
+        Dim dir As New DirectoryInfo(newNodePath_Tag)
+
+        If dir.Exists Then
+            For Each tnode As TreeNode In nodeParent.Nodes
+                tnode.Tag = dir.FullName
+                tnode.Text = dir.Name
+                tnode.Name = tnode.Tag
+            Next
+        End If
+
+    End Sub
+
+    Sub RenameNodeFolder(newNodePath_Tag As String, node As TreeNode)
+        Dim dir As New DirectoryInfo(newNodePath_Tag)
+
+        If dir.Exists Then
+            node.Tag = dir.FullName
+            node.Text = dir.Name
+            node.Name = node.Tag
+        End If
+
+    End Sub
+
+    Private Sub RenomearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenomearToolStripMenuItem.Click
+        If TVWFilesAndFolders.LabelEdit = True Then EditarNode(TVWFilesAndFolders.SelectedNode)
+    End Sub
 End Class

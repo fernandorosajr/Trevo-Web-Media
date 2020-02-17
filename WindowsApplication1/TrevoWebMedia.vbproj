@@ -325,6 +325,7 @@
     </Compile>
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />
     <Compile Include="Utils\Class\StringFunctionsClass.vb" />
+    <Compile Include="Utils\Modules\StructuresModules.vb" />
     <Compile Include="Utils\Class\UsesDirectoriesClass.vb" />
     <Compile Include="Utils\Class\UsesFilesClass.vb" />
   </ItemGroup>
@@ -394,6 +395,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Desktop.resx">
       <DependentUpon>ControlPainel_Desktop.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.resx">
       <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>

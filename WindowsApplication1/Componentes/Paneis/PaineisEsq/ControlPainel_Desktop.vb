@@ -230,10 +230,6 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Downloads"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-
-        'TODO: ( INCOMPLETO ) Encontra SubPastas da Area de trabalho e as adicionar 
-        '_________________________________________________________________
-
         Dim AreaDeTrabalho As String
         Dim NomeDasSubPastasDaAreaDeTrabalho() As String
         Dim nome As String
@@ -334,11 +330,7 @@ Public Class ControlPainel_Desktop
     Sub Load_MainDirectories(node As TreeNode)
 
         Try
-            ' TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
-            ' TODO: Aplicar função criada em um evento de expansão de node ou seleção. (OK)
             ' TODO: http://www.macoratti.net/13/12/vbn_list1.htm
-            ' TODO: Adicionar pasta download (OK)
-            ' eXCLUIR PASTAS especiais. (OK)
 
             Select Case node.Name
                 Case "Computador"
@@ -391,26 +383,26 @@ Public Class ControlPainel_Desktop
     Private Sub AtualizarDiretorioNoTreeView(node As TreeNode)
         ' Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
 
-        ' TODO: Tratar ClonedNode
-        Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
-
         Dim directory As New DirectoryInfo(node.Tag)
         Dim subDirectories As DirectoryInfo() = directory.GetDirectories
         Dim dir As DirectoryInfo
 
         Dim tNode As TreeNode = node
         Dim subTNode As TreeNode
+        ' TODO: Tratar ClonedNode
+        Dim clonedNode As TreeNode = CType(node.Clone(), TreeNode)
+
         Dim adicionarAListaDeDiretorios As New ArrayList
 
         Dim adicionar As Boolean
 
-        For Each subTNode In tNode.Nodes
+        For Each subTNode In clonedNode.Nodes
             ' TODO : Incluir uma condição para checar se existe _
             ' node repetido e exclui lo.
 
             Dim dirCheck As New DirectoryInfo(subTNode.Tag)
             If dirCheck.Exists = False Then
-                tNode.Nodes.Remove(subTNode)
+                clonedNode.Nodes.Remove(subTNode)
             End If
         Next
 
@@ -425,7 +417,7 @@ Public Class ControlPainel_Desktop
 
         For Each dir In subDirectories
 
-            For Each subTNode In tNode.Nodes
+            For Each subTNode In clonedNode.Nodes
                 If dir.FullName = subTNode.Tag Then
                     subTNode.Text = dir.Name
                     adicionar = False
@@ -436,18 +428,26 @@ Public Class ControlPainel_Desktop
                 End If
             Next
 
-            If tNode.Nodes.Count = 0 Then adicionar = True
+            If clonedNode.Nodes.Count = 0 Then adicionar = True
             If adicionar = True Then adicionarAListaDeDiretorios.Add(dir)
 
         Next
 
         For Each dirAdd As DirectoryInfo In adicionarAListaDeDiretorios
 
-            subTNode = tNode.Nodes.Add(tNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaFechada")
+            subTNode = clonedNode.Nodes.Add(clonedNode.Name & "\" & dirAdd.Name, dirAdd.Name, "pastaFechada", "pastaFechada")
             subTNode.Tag = dirAdd.FullName
             subTNode.ContextMenuStrip = Me.CMItens
 
             subTNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+        Next
+
+        tNode.Nodes.Clear()
+
+        Dim var As Integer
+        For Each subNode As TreeNode In clonedNode.Nodes
+            tNode.Nodes.Insert(var, subNode)
+            var += 1
         Next
 
     End Sub
@@ -553,10 +553,11 @@ Public Class ControlPainel_Desktop
                         _sourceOldPath = _caminhosDeRenomeDePastas.sourceOldPath
 
 
+                        Dim clonedParentNode As TreeNode = CType(node.Parent.Clone(), TreeNode)
                         If _sourceOldPath <> _sourceNewPath Then
-                            ' e se  _oldPathOrigem = _newPathOrigem ?
-                            For Each tnode As TreeNode In node.Parent.Nodes
-                                If NodeTagExist(_sourceNewPath, node.Parent) = False Then
+
+                            For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
+                                If NodeTagExist(_sourceNewPath, clonedParentNode) = False Then   'node.Parent) = False Then
                                     If usesDirectories.FolderExist(_sourceNewPath) = True Then
                                         If tnode.Tag = _sourceOldPath Then
                                             Dim dir As New DirectoryInfo(_sourceNewPath)
@@ -566,17 +567,18 @@ Public Class ControlPainel_Desktop
                                         End If
                                     End If
                                 Else
-                                    SearchAndRemoveTagNode(_sourceOldPath, node.Parent)
+                                    SearchAndRemoveTagNode(_sourceOldPath, clonedParentNode)   'node.Parent)
                                 End If
                             Next
+
                         Else
                             If _sourceOldPath <> _destinationOldPath Then
                                 If _destinationNewPath = _destinationOldPath Then
 
-                                    For Each tnode As TreeNode In node.Parent.Nodes
+                                    For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
 
                                         If tnode.Tag = _sourceOldPath Then
-                                            If NodeTagExist(_destinationOldPath, node.Parent) = True Then
+                                            If NodeTagExist(_destinationOldPath, clonedParentNode) = True Then 'node.Parent) = True Then
                                                 tnode.Remove()
                                             Else
                                                 Dim dir As New DirectoryInfo(_destinationOldPath)
@@ -592,9 +594,9 @@ Public Class ControlPainel_Desktop
                         End If
 
                         If _destinationOldPath <> _destinationNewPath Then
-                            ' e se  _oldPathOrigem = _newPathOrigem ?
-                            For Each tnode As TreeNode In node.Parent.Nodes
-                                If NodeTagExist(_destinationNewPath, node.Parent) = False Then
+
+                            For Each tnode As TreeNode In clonedParentNode.Nodes   'node.Parent.Nodes
+                                If NodeTagExist(_destinationNewPath, clonedParentNode) = False Then 'node.Parent) = False Then
                                     If usesDirectories.FolderExist(_destinationNewPath) = True Then
                                         If tnode.Tag = _destinationOldPath Then
                                             Dim dir As New DirectoryInfo(_destinationOldPath)
@@ -605,11 +607,22 @@ Public Class ControlPainel_Desktop
                                     End If
                                 Else
                                     If _destinationOldPath = _sourceNewPath Then
-                                        SearchAndRemoveTagNode(_sourceOldPath, node.Parent)
+                                        SearchAndRemoveTagNode(_sourceOldPath, clonedParentNode) 'node.Parent)
                                     End If
                                 End If
                             Next
                         End If
+
+                        ' clonedParentNode
+                        ' node.Parent.Nodes.Clear()
+                        Dim nodeParent = node.Parent
+                        nodeParent.Nodes.Clear()
+
+                        Dim var As Integer
+                        For Each subNode As TreeNode In clonedParentNode.Nodes
+                            nodeParent.Nodes.Insert(var, subNode)
+                            var += 1
+                        Next
 
                         'If _caminhosDeRenomeDePastas.oldPathDestino = _caminhosDeRenomeDePastas.newPathDestino Then
 

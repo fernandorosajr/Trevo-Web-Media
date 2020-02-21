@@ -65,23 +65,23 @@ Public Class ControlPainel_Desktop
         Dim node As TreeNode
 
         node = CType(e.Node, TreeNode)
-        CarregarDiretorio(node)
+        Load_MainDirectories(node)
 
-        Dim _caminho As New DirectoryInfo(node.Tag)
+        Dim _path As New DirectoryInfo(node.Tag)
 
         If node.Name = "Computador" Then
             TVWFilesAndFolders.LabelEdit = False
 
         ElseIf node.Parent.Name = "Computador" Then
 
-            If driveAnalysis.EDrive(node.Tag) = True Then
-                TVWFilesAndFolders.LabelEdit = _caminho.Exists
+            If driveAnalysis.IsDrive(node.Tag) = True Then
+                TVWFilesAndFolders.LabelEdit = _path.Exists
             Else
                 TVWFilesAndFolders.LabelEdit = False
             End If
 
         Else
-            TVWFilesAndFolders.LabelEdit = _caminho.Exists
+            TVWFilesAndFolders.LabelEdit = _path.Exists
         End If
 
         '  If TVWFilesAndFolders.LabelEdit = True Then EditarNode(node)
@@ -99,8 +99,8 @@ Public Class ControlPainel_Desktop
         Dim node As TreeNode = TVWFilesAndFolders.SelectedNode
         Dim subNode As TreeNode
 
-        Dim x As String
-        Dim _podeCriarNovaPasta As Boolean
+        Dim folderName As String
+        Dim _novaPastaFoiCriada As Boolean
 
         Dim usesDirectoriesClass As New UsesDirectoriesClass
 
@@ -112,18 +112,18 @@ Public Class ControlPainel_Desktop
 
                 prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
                 title = "Criar nova pasta"
-                defaultResponse = usesDirectoriesClass.DevolverNomeDaPasta(node.Tag, "Nova pasta")
-                x = InputBox(prompt, title, defaultResponse)
+                defaultResponse = usesDirectoriesClass.ReturnNonExistentFolderName(node.Tag, "Nova pasta")
+                folderName = InputBox(prompt, title, defaultResponse)
 
 
-                _podeCriarNovaPasta = usesDirectories.PodeCriarNovaPasta(node.Tag, x)
+                _novaPastaFoiCriada = usesDirectories.CreateNewFolder(node.Tag, folderName)
                 'TODO: Editar regras de interação com pastas durante a criação
                 ' Checar se pasta existe
                 ' se existe, perguntar para qual nome renomear ou mesclar.
 
-                If _podeCriarNovaPasta = True Then
-                    subNode = node.Nodes.Add(node.Tag & "\" & x, x, "pastaFechada", "pastaFechada")
-                    subNode.Tag = node.Tag & "\" & x
+                If _novaPastaFoiCriada = True Then
+                    subNode = node.Nodes.Add(node.Tag & "\" & folderName, folderName, "pastaFechada", "pastaFechada")
+                    subNode.Tag = node.Tag & "\" & folderName
 
                     subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
                     subNode.ContextMenuStrip = CMItens
@@ -143,7 +143,7 @@ Public Class ControlPainel_Desktop
 
         tsNode = TVWFilesAndFolders.SelectedNode
         _caminho = TVWFilesAndFolders.SelectedNode.Tag
-        CarregarDiretorio(tsNode)
+        Load_MainDirectories(tsNode)
 
     End Sub
 
@@ -331,7 +331,7 @@ Public Class ControlPainel_Desktop
     End Sub
 
 
-    Sub CarregarDiretorio(node As TreeNode)
+    Sub Load_MainDirectories(node As TreeNode)
 
         Try
             ' TODO: Adicionar algoritimo de atualização da media: criar função (OK) 
@@ -349,7 +349,7 @@ Public Class ControlPainel_Desktop
                     If node.Tag <> Nothing Then
                         Dim dir As New DirectoryInfo(node.Tag)
 
-                        Select Case driveAnalysis.EDrive(node.Tag)
+                        Select Case driveAnalysis.IsDrive(node.Tag)
                             Case True
                                 Dim drive01 As New DriveInfo(node.Name)
 
@@ -466,7 +466,7 @@ Public Class ControlPainel_Desktop
 
         Try
             If Not node.IsEditing Then
-                If driveAnalysis.EDrive(node.Tag) = True Then
+                If driveAnalysis.IsDrive(node.Tag) = True Then
                     Dim drive As New DriveInfo(node.Tag)
 
                     prompt = "Editar volume da unidade " & """" & node.Tag & """" &
@@ -506,7 +506,7 @@ Public Class ControlPainel_Desktop
 
     Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
 
-        Dim _caminho As String()
+        Dim _path As String()
 
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
@@ -517,16 +517,16 @@ Public Class ControlPainel_Desktop
         Dim rotuloDoDrive As String
         Dim tamanhoDoDrive As String
         Dim letraDaUnidade As String
-        Dim todoDrive As String
+        Dim allDrive As String
 
-        Dim _caminhosDeRenomeDePastas As CaminhosDeRenomeDePastas
+        Dim _caminhosDeRenomeDePastas As FoldersPathsOperations
 
-        Dim _newPath As String
-        Dim _oldPath As String
-        Dim _newPathDestino As String
-        Dim _newPathOrigem As String
-        Dim _oldPathDestino As String
-        Dim _oldPathOrigem As String
+        Dim _destinationPath As String
+        Dim _sourcePath As String
+        Dim _destinationNewPath As String
+        Dim _sourceNewPath As String
+        Dim _destinationOldPath As String
+        Dim _sourceOldPath As String
 
         Try
             Dim drive As DriveInfo
@@ -543,43 +543,43 @@ Public Class ControlPainel_Desktop
                     If e.Label.IndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) = -1 Then
 
                         e.Node.EndEdit(False)
-                        _caminhosDeRenomeDePastas = usesDirectories.RenomearPasta(node.Tag, e.Label)
+                        _caminhosDeRenomeDePastas = usesDirectories.RenameFolder(node.Tag, e.Label)
 
-                        _newPath = _caminhosDeRenomeDePastas.newPath
-                        _oldPath = _caminhosDeRenomeDePastas.oldPath
-                        _newPathDestino = _caminhosDeRenomeDePastas.newPathDestino
-                        _newPathOrigem = _caminhosDeRenomeDePastas.newPathOrigem
-                        _oldPathDestino = _caminhosDeRenomeDePastas.oldPathDestino
-                        _oldPathOrigem = _caminhosDeRenomeDePastas.oldPathOrigem
+                        _destinationPath = _caminhosDeRenomeDePastas.destinationPath
+                        _sourcePath = _caminhosDeRenomeDePastas.sourcePath
+                        _destinationNewPath = _caminhosDeRenomeDePastas.destinationNewPath
+                        _sourceNewPath = _caminhosDeRenomeDePastas.sourceNewPath
+                        _destinationOldPath = _caminhosDeRenomeDePastas.destinationOldPath
+                        _sourceOldPath = _caminhosDeRenomeDePastas.sourceOldPath
 
 
-                        If _oldPathOrigem <> _newPathOrigem Then
+                        If _sourceOldPath <> _sourceNewPath Then
                             ' e se  _oldPathOrigem = _newPathOrigem ?
                             For Each tnode As TreeNode In node.Parent.Nodes
-                                If NodeTagExiste(_newPathOrigem, node.Parent) = False Then
-                                    If usesDirectories.FolderExist(_newPathOrigem) = True Then
-                                        If tnode.Tag = _oldPathOrigem Then
-                                            Dim dir As New DirectoryInfo(_newPathOrigem)
+                                If NodeTagExist(_sourceNewPath, node.Parent) = False Then
+                                    If usesDirectories.FolderExist(_sourceNewPath) = True Then
+                                        If tnode.Tag = _sourceOldPath Then
+                                            Dim dir As New DirectoryInfo(_sourceNewPath)
                                             tnode.Tag = dir.FullName
                                             tnode.Text = dir.Name
                                             tnode.Name = tnode.Tag
                                         End If
                                     End If
                                 Else
-                                    SearchAndRemoveTagNode(_oldPathOrigem, node.Parent)
+                                    SearchAndRemoveTagNode(_sourceOldPath, node.Parent)
                                 End If
                             Next
                         Else
-                            If _oldPathOrigem <> _oldPathDestino Then
-                                If _newPathDestino = _oldPathDestino Then
+                            If _sourceOldPath <> _destinationOldPath Then
+                                If _destinationNewPath = _destinationOldPath Then
 
                                     For Each tnode As TreeNode In node.Parent.Nodes
 
-                                        If tnode.Tag = _oldPathOrigem Then
-                                            If NodeTagExiste(_oldPathDestino, node.Parent) = True Then
+                                        If tnode.Tag = _sourceOldPath Then
+                                            If NodeTagExist(_destinationOldPath, node.Parent) = True Then
                                                 tnode.Remove()
                                             Else
-                                                Dim dir As New DirectoryInfo(_oldPathDestino)
+                                                Dim dir As New DirectoryInfo(_destinationOldPath)
                                                 tnode.Tag = dir.FullName
                                                 tnode.Text = dir.Name
                                                 tnode.Name = tnode.Tag
@@ -591,21 +591,21 @@ Public Class ControlPainel_Desktop
                             End If
                         End If
 
-                        If _oldPathDestino <> _newPathDestino Then
+                        If _destinationOldPath <> _destinationNewPath Then
                             ' e se  _oldPathOrigem = _newPathOrigem ?
                             For Each tnode As TreeNode In node.Parent.Nodes
-                                If NodeTagExiste(_newPathDestino, node.Parent) = False Then
-                                    If usesDirectories.FolderExist(_newPathDestino) = True Then
-                                        If tnode.Tag = _oldPathDestino Then
-                                            Dim dir As New DirectoryInfo(_oldPathDestino)
+                                If NodeTagExist(_destinationNewPath, node.Parent) = False Then
+                                    If usesDirectories.FolderExist(_destinationNewPath) = True Then
+                                        If tnode.Tag = _destinationOldPath Then
+                                            Dim dir As New DirectoryInfo(_destinationOldPath)
                                             tnode.Tag = dir.FullName
                                             tnode.Text = dir.Name
                                             tnode.Name = tnode.Tag
                                         End If
                                     End If
                                 Else
-                                    If _oldPathDestino = _newPathOrigem Then
-                                        SearchAndRemoveTagNode(_oldPathOrigem, node.Parent)
+                                    If _destinationOldPath = _sourceNewPath Then
+                                        SearchAndRemoveTagNode(_sourceOldPath, node.Parent)
                                     End If
                                 End If
                             Next
@@ -672,11 +672,11 @@ Public Class ControlPainel_Desktop
 
                 Else
 
-                    If driveAnalysis.EDrive(e.Node.Tag) = True Then
+                    If driveAnalysis.IsDrive(e.Node.Tag) = True Then
 
                         letraDaUnidade = drive.Name
-                        todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
-                        e.Node.Text = todoDrive
+                        allDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
+                        e.Node.Text = allDrive
                         'todoDrive = "(" & letraDaUnidade.Substring(0, 2) & ")"
                         e.Node.BeginEdit()
                     Else
@@ -686,8 +686,8 @@ Public Class ControlPainel_Desktop
                 End If
             Else
                 If e.Node.Text = "" Then
-                    _caminho = StringFunctions.SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
-                    node.Text = _caminho(_caminho.Count - 1)
+                    _path = StringFunctions.SepararPalavras(e.Node.Tag, delimitadoresDeCaminhoDePasta)
+                    node.Text = _path(_path.Count - 1)
                 End If
             End If
 
@@ -696,7 +696,7 @@ Public Class ControlPainel_Desktop
         End Try
     End Sub
 
-    Function NodeTagExiste(tag As String, nodeParent As TreeNode) As Boolean
+    Function NodeTagExist(tag As String, nodeParent As TreeNode) As Boolean
         For Each tnode2 As TreeNode In nodeParent.Nodes
             If tnode2.Tag = tag Then
                 Return True

@@ -75,7 +75,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _pastaOrigem As String
-    Public Property PastaOrigem As String
+    Public Property SourcePath As String
         Get
             Return _pastaOrigem
 
@@ -96,7 +96,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _pastaDestino As String
-    Public Property PastaDestino As String
+    Public Property DestinationPath As String
         Get
             Return _pastaDestino
         End Get
@@ -109,7 +109,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _oldPathDestino As String
-    Public Property OldPathDestino As String
+    Public Property DestinationOldPath As String
         Get
             Return _oldPathDestino
         End Get
@@ -128,7 +128,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _newPathDestino As String
-    Public Property NewPathDestino As String
+    Public Property DestinationNewPath As String
         Get
             Return _newPathDestino
         End Get
@@ -147,7 +147,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _oldPathOrigem As String
-    Public Property OldPathOrigem As String
+    Public Property SourceOldPath As String
         Get
             Return _oldPathOrigem
         End Get
@@ -167,7 +167,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Dim _newPathOrigem As String
-    Public Property NewPathOrigem As String
+    Public Property SourceNewPath As String
         Get
             Return _newPathOrigem
         End Get
@@ -186,32 +186,32 @@ Public Class FRMDialogConflictingFolders
 
     Sub TelaParaOrigemDiferente()
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        LNKLRenomeOrigem.Text = _newPathOrigem
+        LNKLRenameSource.Text = _newPathOrigem
         LBLRenameOrigem.Visible = True
-        LNKLRenomeOrigem.Visible = True
+        LNKLRenameSource.Visible = True
 
     End Sub
 
     Sub TelaParaOrigemIgual()
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
-        LNKLRenomeOrigem.Text = "renomear pasta de origem."
+        LNKLRenameSource.Text = "renomear pasta de origem."
         LBLRenameOrigem.Visible = False
-        LNKLRenomeOrigem.Visible = True
+        LNKLRenameSource.Visible = True
 
     End Sub
 
     Sub TelaParaDestinoDiferente()
         PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = _newPathDestino
+        LNKLRenameDestination.Text = _newPathDestino
         LBLRenameDestino.Visible = True
-        LNKLRenomeDestino.Visible = True
+        LNKLRenameDestination.Visible = True
     End Sub
 
     Sub TelaParaDestinoIgual()
         PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeDestino.Text = "Renomear pasta de destino."
+        LNKLRenameDestination.Text = "Renomear pasta de destino."
         LBLRenameDestino.Visible = False
-        LNKLRenomeDestino.Visible = True
+        LNKLRenameDestination.Visible = True
     End Sub
 
     Sub TelaDeEdicaoDeOrigem()
@@ -219,14 +219,14 @@ Public Class FRMDialogConflictingFolders
         PanelEnvolve_TXTNomeDaOrigem.Width = LBLValueOrigem.Width
 
         PanelEnvolve_TXTNomeDaOrigem.Visible = Not (PanelBorder_TXTNomeDaOrigem.Visible)
-        LNKLRenomeOrigem.Visible = False
+        LNKLRenameSource.Visible = False
         LBLRenameOrigem.Visible = False
     End Sub
 
     Sub TelaDeEdicaoDeDestino()
         PanelEnvolve_TXTNomeDoDestino.Left = LBLValueDestino.Left - 15
         PanelEnvolve_TXTNomeDoDestino.Width = LBLValueDestino.Width
-        LNKLRenomeDestino.Visible = False
+        LNKLRenameDestination.Visible = False
         PanelEnvolve_TXTNomeDoDestino.Visible = Not (PanelEnvolve_TXTNomeDoDestino.Visible)
         LBLRenameDestino.Visible = False
     End Sub
@@ -236,10 +236,10 @@ Public Class FRMDialogConflictingFolders
         LBLRenameDestino.Visible = False
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
         PanelEnvolve_TXTNomeDoDestino.Visible = False
-        LNKLRenomeOrigem.Text = "Renomear pasta de origem."
-        LNKLRenomeDestino.Text = "Renomear pasta de destino."
-        LNKLRenomeOrigem.Visible = True
-        LNKLRenomeDestino.Visible = True
+        LNKLRenameSource.Text = "Renomear pasta de origem."
+        LNKLRenameDestination.Text = "Renomear pasta de destino."
+        LNKLRenameSource.Visible = True
+        LNKLRenameDestination.Visible = True
     End Sub
 
 
@@ -272,9 +272,9 @@ Public Class FRMDialogConflictingFolders
             Dim pastaOrigemDirectoryInfo As New DirectoryInfo(_pastaOrigem)
 
         End If
-        If PastaDestino <> Nothing Then
+        If DestinationPath <> Nothing Then
             Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
-            LBLNomeDaPasta.Text = pastaDestinoDirectoryInfo.Name
+            LBLFolderName.Text = pastaDestinoDirectoryInfo.Name
 
         End If
         ' This call is required by the designer.
@@ -348,7 +348,7 @@ Public Class FRMDialogConflictingFolders
         End Select
     End Sub
 
-    Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeOrigem.LinkClicked
+    Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenameSource.LinkClicked
         Dim _newPathOrigem_DirectoryInfo As New DirectoryInfo(_newPathOrigem)
 
         TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
@@ -368,7 +368,7 @@ Public Class FRMDialogConflictingFolders
             Exit Sub
         End If
 
-        NewPathOrigem = novoCaminhoDeOrigemModificado
+        SourceNewPath = novoCaminhoDeOrigemModificado
 
         If _newPathOrigem <> rendoNewPathOrigem Then
             BTNRendo.Visible = True
@@ -410,7 +410,7 @@ Public Class FRMDialogConflictingFolders
             Exit Sub
         End If
 
-        NewPathDestino = novoCaminhoDeDestinoModificado
+        DestinationNewPath = novoCaminhoDeDestinoModificado
 
         If _newPathDestino <> rendoNewPathDestino Then
             BTNRendo.Visible = True
@@ -438,7 +438,7 @@ Public Class FRMDialogConflictingFolders
 
     End Sub
 
-    Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenomeDestino.LinkClicked
+    Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenameDestination.LinkClicked
         Dim _newPathDestino_DirectoryInfo As New DirectoryInfo(_newPathDestino)
 
         TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
@@ -450,11 +450,11 @@ Public Class FRMDialogConflictingFolders
 
     Private Sub BTNRendo_Click(sender As Object, e As EventArgs) Handles BTNRendo.Click
 
-        OldPathOrigem = rendoOldPathOrigem
-        NewPathOrigem = rendoNewPathOrigem
+        SourceOldPath = rendoOldPathOrigem
+        SourceNewPath = rendoNewPathOrigem
 
-        OldPathDestino = rendoOldPathDestino
-        NewPathDestino = rendoNewPathDestino
+        DestinationOldPath = rendoOldPathDestino
+        DestinationNewPath = rendoNewPathDestino
 
         BTNRendo.Visible = False
 

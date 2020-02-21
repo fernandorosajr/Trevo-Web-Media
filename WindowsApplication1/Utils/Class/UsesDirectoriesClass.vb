@@ -1,5 +1,7 @@
 ﻿Imports System.IO
+
 Imports TrevoWebMedia.StructuresModules
+
 
 Public Enum Actions As Byte
     None = 0
@@ -26,61 +28,61 @@ Public Class UsesDirectoriesClass
 
     'Public _foldersPathsOperations As CaminhosDeRenomeDePastas
 
-    Function RenomearPasta(caminho As String, newName As String) As Object
+    Function RenameFolder(path As String, newName As String) As Object
 
-        Dim _foldersPathsOperations As CaminhosDeRenomeDePastas
+        Dim _foldersPathsOperations As FoldersPathsOperations
         '  Dim oldPath, newPath As String
-        Dim caminho_DirectoryInfo As New DirectoryInfo(caminho)
+        Dim path_DirectoryInfo As New DirectoryInfo(path)
 
-        _foldersPathsOperations.oldPath = Trim(caminho)
-        _foldersPathsOperations.newPath = caminho_DirectoryInfo.Parent.FullName & "\" & Trim(newName)
+        _foldersPathsOperations.sourcePath = Trim(path)
+        _foldersPathsOperations.destinationPath = path_DirectoryInfo.Parent.FullName & "\" & Trim(newName)
+
+        _foldersPathsOperations.sourceOldPath = _foldersPathsOperations.sourcePath
+        _foldersPathsOperations.sourceNewPath = _foldersPathsOperations.sourcePath
+        _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
+        _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
 
         Try
 
-            If caminho_DirectoryInfo.Exists = True Then
+            If path_DirectoryInfo.Exists = True Then
 
-                Dim oldPath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.oldPath)
-                Dim newPath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.newPath)
+                Dim sourcePath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.sourcePath)
+                Dim destinationPath_DirectoryInfo As New DirectoryInfo(_foldersPathsOperations.destinationPath)
 
-                'Dim oldPathDestino As String
-                'Dim newPathDestino As String
 
-                'Dim oldPathOrigem As String
-                'Dim newPathOrigem As String
-
-                If newPath_DirectoryInfo.Exists = True Then
+                If destinationPath_DirectoryInfo.Exists = True Then
                     ' TODO: Renomear Pastas Antes de Mover
                     ' TODO: Estudar esta função: Fazer Algoritimo.
-                    _foldersPathsOperations.oldPathDestino = _foldersPathsOperations.newPath
-                    _foldersPathsOperations.newPathDestino = _foldersPathsOperations.newPath
+                    _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
+                    _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
 
-                    _foldersPathsOperations.oldPathOrigem = _foldersPathsOperations.oldPath
-                    _foldersPathsOperations.newPathOrigem = _foldersPathsOperations.newPath
+                    _foldersPathsOperations.sourceOldPath = _foldersPathsOperations.sourcePath
+                    _foldersPathsOperations.sourceNewPath = _foldersPathsOperations.destinationPath
 
                     Dim FRM As New FRMDialogConflictingFolders
 
                     FRM.Title = "Conflito entre pastas"
-                    FRM.PastaOrigem = _foldersPathsOperations.oldPath
-                    FRM.PastaDestino = _foldersPathsOperations.newPath
+                    FRM.SourcePath = _foldersPathsOperations.sourcePath
+                    FRM.DestinationPath = _foldersPathsOperations.destinationPath
 
-                    FRM.OldPathOrigem = _foldersPathsOperations.oldPath
-                    FRM.NewPathOrigem = _foldersPathsOperations.newPath
-                    FRM.OldPathDestino = _foldersPathsOperations.newPath
-                    FRM.NewPathDestino = _foldersPathsOperations.newPath
+                    FRM.SourceOldPath = _foldersPathsOperations.sourcePath
+                    FRM.SourceNewPath = _foldersPathsOperations.destinationPath
+                    FRM.DestinationOldPath = _foldersPathsOperations.destinationPath
+                    FRM.DestinationNewPath = _foldersPathsOperations.destinationPath
 
-                    FRM.LBLNomeDaPasta.Text = """" & newName & """"
+                    FRM.LBLFolderName.Text = """" & newName & """"
                     FRM.ShowDialog()
 
-                    _foldersPathsOperations.oldPathDestino = FRM.OldPathDestino
-                    _foldersPathsOperations.newPathDestino = FRM.NewPathDestino
+                    _foldersPathsOperations.destinationOldPath = FRM.DestinationOldPath
+                    _foldersPathsOperations.destinationNewPath = FRM.DestinationNewPath
 
-                    _foldersPathsOperations.oldPathOrigem = FRM.OldPathOrigem
-                    _foldersPathsOperations.newPathOrigem = FRM.NewPathOrigem
+                    _foldersPathsOperations.sourceOldPath = FRM.SourceOldPath
+                    _foldersPathsOperations.sourceNewPath = FRM.SourceNewPath
 
                     Select Case FRM.DialogResult
                         Case DialogResult.OK
-                            MoverPasta(_foldersPathsOperations.oldPathOrigem, _foldersPathsOperations.newPathOrigem)
-                            MoverPasta(_foldersPathsOperations.oldPathDestino, _foldersPathsOperations.newPathDestino)
+                            MoveFolder(_foldersPathsOperations.sourceOldPath, _foldersPathsOperations.sourceNewPath, False)
+                            MoveFolder(_foldersPathsOperations.destinationOldPath, _foldersPathsOperations.destinationNewPath, False)
 
                             'If FRM.NewPathDestino <> FRM.OldPathDestino Then
                             '    If FRM.NewPathDestino = FRM.NewPathOrigem Then
@@ -93,7 +95,7 @@ Public Class UsesDirectoriesClass
 
                     Return _foldersPathsOperations 'newPath
                 Else
-                    Rename(_foldersPathsOperations.oldPath, _foldersPathsOperations.newPath)
+                    Rename(_foldersPathsOperations.sourcePath, _foldersPathsOperations.destinationPath)
                     Return _foldersPathsOperations 'newPath
                 End If
             End If
@@ -105,10 +107,10 @@ Public Class UsesDirectoriesClass
         End Try
 
     End Function
-    Function MoverPasta(_sourceDirectoryName As String, _destinationDirectoryName As String)
+    Function MoveFolder(_sourceDirectoryName As String, _destinationDirectoryName As String, overwrite As Boolean)
 
         Try
-            My.Computer.FileSystem.CopyDirectory(_sourceDirectoryName, _destinationDirectoryName, False)
+            My.Computer.FileSystem.MoveDirectory(_sourceDirectoryName, _destinationDirectoryName, overwrite)
 
             If _sourceDirectoryName <> _destinationDirectoryName Then
                 'TODO: deletar _sourceDirectoryName
@@ -123,18 +125,22 @@ Public Class UsesDirectoriesClass
             For Each strKey In ex.Data.Keys
                 info = (ex.Data(strKey))
 
-                Dim fileInfo As FileInfo
-                fileInfo = My.Computer.FileSystem.GetFileInfo(strKey)
+                Dim sourceFileInfo As FileInfo
+                sourceFileInfo = My.Computer.FileSystem.GetFileInfo(strKey)
 
-                If fileInfo.Exists = True Then
+                If sourceFileInfo.Exists = True Then
 
-                    Dim novoNomeDoArquivo As String
-                    Dim manipularArquivo As New UsesFilesClass
+                    Dim newFileName As String
+                    Dim usesFilesClass As New UsesFilesClass
 
-                    novoNomeDoArquivo = manipularArquivo.DevolverNomeDoArquivo(fileInfo.FullName, _destinationDirectoryName & "\" & fileInfo.Name, False)
+                    If overwrite = False Then
+                        newFileName = usesFilesClass.ReturnsNonExistentFileName(sourceFileInfo.FullName, _destinationDirectoryName & "\" & sourceFileInfo.Name)
+                    Else
+                        newFileName = _destinationDirectoryName & "\" & sourceFileInfo.Name
+                    End If
 
-                    My.Computer.FileSystem.MoveFile(fileInfo.FullName.ToString,
-                         novoNomeDoArquivo,
+                    My.Computer.FileSystem.MoveFile(sourceFileInfo.FullName.ToString,
+                         newFileName,
                         FileIO.UIOption.AllDialogs,
                         FileIO.UICancelOption.ThrowException)
 
@@ -163,37 +169,36 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function PodeCriarNovaPasta(caminho As String, nomeDaPasta As String) As Boolean
+    Function CreateNewFolder(path As String, folderName As String) As Boolean
 
-        Dim excecao As String
+        Dim exception As String
 
-        If caminho = Nothing Then
+        If path = Nothing Then
             Return False
             Exit Function
         End If
 
-        nomeDaPasta = LTrim(nomeDaPasta)
-        nomeDaPasta = RTrim(nomeDaPasta)
+        folderName = Trim(folderName)
 
-        Dim _caminho As New DirectoryInfo(caminho & "\")
-        Dim _destino As New DirectoryInfo(caminho & "\" & nomeDaPasta)
+        Dim _path As New DirectoryInfo(path & "\")
+        Dim _destination As New DirectoryInfo(path & "\" & folderName)
 
         Try
-            If _caminho.Exists = False Then
-                excecao = "O caminho não existe."
-                MsgBox(excecao)
+            If _path.Exists = False Then
+                exception = "O caminho não existe."
+                MsgBox(exception)
                 Return False
 
-            ElseIf _destino.Exists = True Then
-                If _caminho.FullName <> _destino.FullName Then
-                    excecao = "A pasta já existe."
-                    MsgBox(excecao)
+            ElseIf _destination.Exists = True Then
+                If _path.FullName <> _destination.FullName Then
+                    exception = "A pasta já existe."
+                    MsgBox(exception)
                 End If
                 Return False
 
             Else
-                If nomeDaPasta <> "" Then
-                    MkDir(caminho & "\" & nomeDaPasta)
+                If folderName <> "" Then
+                    MkDir(path & "\" & folderName)
                     Return True
 
                 Else
@@ -209,38 +214,40 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Public Function DevolverNomeDaPasta(caminho As String, nomeParaPesquisa As String)
+    Public Function ReturnNonExistentFolderName(path As String, folderNameForSearch As String)
         Dim directoryArrayList As New ArrayList
-        Dim drive As New DirectoryInfo(caminho)
-        Dim driveDestino As New DirectoryInfo(caminho & "\" & nomeParaPesquisa)
-        Dim pesquisa As String
+        Dim drive As New DirectoryInfo(path)
+        Dim destinationDrive As New DirectoryInfo(path & "\" & folderNameForSearch)
+        Dim search As String
 
         If drive.Exists = True Then
-            If driveDestino.Exists = True Then
+            If destinationDrive.Exists = True Then
                 directoryArrayList.AddRange(drive.GetDirectories())
 
                 For x As Integer = 0 To directoryArrayList.Count
-                    pesquisa = nomeParaPesquisa & " (" & x + 2 & ")"
+                    search = folderNameForSearch & " (" & x + 2 & ")"
 
-                    Dim query = From pasta As DirectoryInfo In directoryArrayList
-                                Where pasta.Name.IndexOf(pesquisa) = 0
-                                Select pasta
+                    Dim query = From folder As DirectoryInfo In directoryArrayList
+                                Where folder.Name.IndexOf(search) = 0
+                                Select folder
 
                     If query.Count = 0 Then
-                        Return pesquisa
+                        Return search
                         Exit For
                     End If
                 Next
 
             Else
 
-                Return nomeParaPesquisa
+                Return folderNameForSearch
             End If
 
         Else
 
             'TODO: Atualizar Pasta
             ' A Pasta Destino não existe
+            Return folderNameForSearch
+
         End If
 
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq
@@ -248,7 +255,7 @@ Public Class UsesDirectoriesClass
     End Function
 
     Function FolderExist(path As String) As Boolean
-        Dim _caminho As New DirectoryInfo(path)
-        Return _caminho.Exists
+
+        Return My.Computer.FileSystem.DirectoryExists(path)
     End Function
 End Class

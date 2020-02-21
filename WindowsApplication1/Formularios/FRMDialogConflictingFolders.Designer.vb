@@ -30,15 +30,15 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueOrigem = New System.Windows.Forms.Label()
         Me.LBLValueDestino = New System.Windows.Forms.Label()
         Me.LBLTitle02 = New System.Windows.Forms.Label()
-        Me.LNKLRenomeOrigem = New System.Windows.Forms.LinkLabel()
-        Me.LNKLRenomeDestino = New System.Windows.Forms.LinkLabel()
+        Me.LNKLRenameSource = New System.Windows.Forms.LinkLabel()
+        Me.LNKLRenameDestination = New System.Windows.Forms.LinkLabel()
         Me.LBLOutrasOpcoes = New System.Windows.Forms.Label()
         Me.BTNMesclar = New System.Windows.Forms.Button()
         Me.BTNSubstituir = New System.Windows.Forms.Button()
         Me.BTNIgnorar = New System.Windows.Forms.Button()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.LBLNomeDaPasta = New System.Windows.Forms.Label()
+        Me.LBLFolderName = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
         Me.Panel_LBLInfo = New System.Windows.Forms.Panel()
         Me.PanelBorder_Panel_LBLInfo = New System.Windows.Forms.Panel()
@@ -197,29 +197,29 @@ Partial Class FRMDialogConflictingFolders
         '
         'LNKLRenomeOrigem
         '
-        Me.LNKLRenomeOrigem.AutoEllipsis = True
-        Me.LNKLRenomeOrigem.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LNKLRenomeOrigem.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LNKLRenomeOrigem.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLRenomeOrigem.Location = New System.Drawing.Point(65, 0)
-        Me.LNKLRenomeOrigem.Name = "LNKLRenomeOrigem"
-        Me.LNKLRenomeOrigem.Size = New System.Drawing.Size(258, 13)
-        Me.LNKLRenomeOrigem.TabIndex = 5
-        Me.LNKLRenomeOrigem.TabStop = True
-        Me.LNKLRenomeOrigem.Text = "Renomear pasta de origem."
+        Me.LNKLRenameSource.AutoEllipsis = True
+        Me.LNKLRenameSource.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LNKLRenameSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLRenameSource.Location = New System.Drawing.Point(65, 0)
+        Me.LNKLRenameSource.Name = "LNKLRenomeOrigem"
+        Me.LNKLRenameSource.Size = New System.Drawing.Size(258, 13)
+        Me.LNKLRenameSource.TabIndex = 5
+        Me.LNKLRenameSource.TabStop = True
+        Me.LNKLRenameSource.Text = "Renomear pasta de origem."
         '
         'LNKLRenomeDestino
         '
-        Me.LNKLRenomeDestino.AutoEllipsis = True
-        Me.LNKLRenomeDestino.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LNKLRenomeDestino.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LNKLRenomeDestino.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLRenomeDestino.Location = New System.Drawing.Point(65, 0)
-        Me.LNKLRenomeDestino.Name = "LNKLRenomeDestino"
-        Me.LNKLRenomeDestino.Size = New System.Drawing.Size(258, 13)
-        Me.LNKLRenomeDestino.TabIndex = 12
-        Me.LNKLRenomeDestino.TabStop = True
-        Me.LNKLRenomeDestino.Text = "Renomear pasta de destino."
+        Me.LNKLRenameDestination.AutoEllipsis = True
+        Me.LNKLRenameDestination.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LNKLRenameDestination.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLRenameDestination.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLRenameDestination.Location = New System.Drawing.Point(65, 0)
+        Me.LNKLRenameDestination.Name = "LNKLRenomeDestino"
+        Me.LNKLRenameDestination.Size = New System.Drawing.Size(258, 13)
+        Me.LNKLRenameDestination.TabIndex = 12
+        Me.LNKLRenameDestination.TabStop = True
+        Me.LNKLRenameDestination.Text = "Renomear pasta de destino."
         '
         'LBLOutrasOpcoes
         '
@@ -309,16 +309,16 @@ Partial Class FRMDialogConflictingFolders
         '
         'LBLNomeDaPasta
         '
-        Me.LBLNomeDaPasta.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.LBLFolderName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLNomeDaPasta.AutoEllipsis = True
-        Me.LBLNomeDaPasta.Font = New System.Drawing.Font("Microsoft Tai Le", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLNomeDaPasta.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LBLNomeDaPasta.Location = New System.Drawing.Point(135, 71)
-        Me.LBLNomeDaPasta.Name = "LBLNomeDaPasta"
-        Me.LBLNomeDaPasta.Size = New System.Drawing.Size(322, 24)
-        Me.LBLNomeDaPasta.TabIndex = 1
-        Me.LBLNomeDaPasta.Text = "S-1-5-21-1603654266-2086531289-494476911-1002"
+        Me.LBLFolderName.AutoEllipsis = True
+        Me.LBLFolderName.Font = New System.Drawing.Font("Microsoft Tai Le", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLFolderName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLFolderName.Location = New System.Drawing.Point(135, 71)
+        Me.LBLFolderName.Name = "LBLNomeDaPasta"
+        Me.LBLFolderName.Size = New System.Drawing.Size(322, 24)
+        Me.LBLFolderName.TabIndex = 1
+        Me.LBLFolderName.Text = "S-1-5-21-1603654266-2086531289-494476911-1002"
         '
         'LBLTitle01
         '
@@ -570,7 +570,7 @@ Partial Class FRMDialogConflictingFolders
         '
         Me.PanelEnvolve_LNKLRenomeOrigem.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelEnvolve_LNKLRenomeOrigem.Controls.Add(Me.LNKLRenomeOrigem)
+        Me.PanelEnvolve_LNKLRenomeOrigem.Controls.Add(Me.LNKLRenameSource)
         Me.PanelEnvolve_LNKLRenomeOrigem.Controls.Add(Me.LBLRenameOrigem)
         Me.PanelEnvolve_LNKLRenomeOrigem.Location = New System.Drawing.Point(136, 161)
         Me.PanelEnvolve_LNKLRenomeOrigem.Name = "PanelEnvolve_LNKLRenomeOrigem"
@@ -594,7 +594,7 @@ Partial Class FRMDialogConflictingFolders
         '
         Me.PanelEnvolve_LNKLRenomeDestino.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LNKLRenomeDestino)
+        Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LNKLRenameDestination)
         Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LBLRenameDestino)
         Me.PanelEnvolve_LNKLRenomeDestino.Location = New System.Drawing.Point(136, 207)
         Me.PanelEnvolve_LNKLRenomeDestino.Name = "PanelEnvolve_LNKLRenomeDestino"
@@ -625,7 +625,7 @@ Partial Class FRMDialogConflictingFolders
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDoDestino)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDaOrigem)
         Me.Controls.Add(Me.BTNRendo)
-        Me.Controls.Add(Me.LBLNomeDaPasta)
+        Me.Controls.Add(Me.LBLFolderName)
         Me.Controls.Add(Me.LBLTitle02)
         Me.Controls.Add(Me.LBLValueDestino)
         Me.Controls.Add(Me.LBLValueOrigem)
@@ -677,15 +677,15 @@ Partial Class FRMDialogConflictingFolders
     Friend WithEvents LBLValueOrigem As Label
     Friend WithEvents LBLValueDestino As Label
     Friend WithEvents LBLTitle02 As Label
-    Friend WithEvents LNKLRenomeOrigem As LinkLabel
-    Friend WithEvents LNKLRenomeDestino As LinkLabel
+    Friend WithEvents LNKLRenameSource As LinkLabel
+    Friend WithEvents LNKLRenameDestination As LinkLabel
     Friend WithEvents LBLOutrasOpcoes As Label
     Friend WithEvents BTNMesclar As Button
     Friend WithEvents BTNSubstituir As Button
     Friend WithEvents BTNIgnorar As Button
     Friend WithEvents Panel16 As Panel
     Friend WithEvents Panel17 As Panel
-    Friend WithEvents LBLNomeDaPasta As Label
+    Friend WithEvents LBLFolderName As Label
     Friend WithEvents LBLTitle01 As Label
     Friend WithEvents Panel_LBLInfo As Panel
     Friend WithEvents LBLInfo As Label

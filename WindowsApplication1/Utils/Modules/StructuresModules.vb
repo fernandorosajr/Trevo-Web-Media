@@ -1,16 +1,16 @@
 ﻿Module StructuresModules
 
-    Public Structure CaminhosDeRenomeDePastas
-        Public oldPathOrigem As String
-        Public newPathOrigem As String
-        Public oldPathDestino As String
-        Public newPathDestino As String
+    Public Structure FoldersPathsOperations
+        Public sourceOldPath As String
+        Public sourceNewPath As String
+        Public destinationOldPath As String
+        Public destinationNewPath As String
 
-        Public oldPath As String
-        Public newPath As String
+        Public sourcePath As String
+        Public destinationPath As String
     End Structure
 
-    Public _caminhosDasOperacoesComPastas As CaminhosDeRenomeDePastas
+    Public _foldersPathsOperations As FoldersPathsOperations
 
     Public Structure employeem
         Public givenName As String

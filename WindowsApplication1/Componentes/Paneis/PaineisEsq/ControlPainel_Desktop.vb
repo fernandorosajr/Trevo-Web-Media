@@ -63,7 +63,7 @@ Public Class ControlPainel_Desktop
 
     Private Sub TVWFilesAndFolders_NodeMouseClick(sender As Object, e As TreeNodeMouseClickEventArgs) Handles TVWFilesAndFolders.NodeMouseClick
         Dim node As TreeNode
-
+        '  TODO: E se vc usar  um clone de node 
         node = CType(e.Node, TreeNode)
         Load_MainDirectories(node)
 
@@ -558,7 +558,7 @@ Public Class ControlPainel_Desktop
 
                             For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
                                 If NodeTagExist(_sourceNewPath, clonedParentNode) = False Then   'node.Parent) = False Then
-                                    If usesDirectories.FolderExist(_sourceNewPath) = True Then
+                                    If My.Computer.FileSystem.DirectoryExists(_sourceNewPath) = True Then ' usesDirectories.FolderExist(_sourceNewPath) = True Then
                                         If tnode.Tag = _sourceOldPath Then
                                             Dim dir As New DirectoryInfo(_sourceNewPath)
                                             tnode.Tag = dir.FullName
@@ -620,8 +620,11 @@ Public Class ControlPainel_Desktop
 
                         Dim var As Integer
                         For Each subNode As TreeNode In clonedParentNode.Nodes
-                            nodeParent.Nodes.Insert(var, subNode)
-                            var += 1
+                            If My.Computer.FileSystem.DirectoryExists(subNode.Tag) Then
+                                nodeParent.Nodes.Insert(var, subNode)
+                                var += 1
+                            End If
+
                         Next
 
                         'If _caminhosDeRenomeDePastas.oldPathDestino = _caminhosDeRenomeDePastas.newPathDestino Then
@@ -720,11 +723,26 @@ Public Class ControlPainel_Desktop
     End Function
 
     Sub SearchAndRemoveTagNode(tag As String, nodeParent As TreeNode)
-        For Each tnode As TreeNode In nodeParent.Nodes
-            If tnode.Tag = tag Then
-                tnode.Remove()
-            End If
-        Next
+        'TODO : Corrigir erro:
+        ' 'Referência de objeto não definida para uma instância de um objeto' 
+        ' Quando exclui node.
+        Dim arrayRemove As New ArrayList
+
+        Try
+            For Each tnode As TreeNode In nodeParent.Nodes
+                If tnode.Tag = tag Then
+                    'tnode.Remove()
+                    arrayRemove.Add(tnode.Clone())
+                End If
+            Next
+
+            For Each nodeRemove As TreeNode In arrayRemove
+                nodeParent.Nodes.Remove(nodeRemove)
+            Next
+
+        Catch ex As Exception
+            MsgBox("Erro na instrução" & Chr(13) & "SearchAndRemoveTagNode" & Chr(13) & """" & ex.Message & """")
+        End Try
     End Sub
 
     Sub SearchAndRenameNodeTag(newNodePath_Tag As String, nodeParent As TreeNode)

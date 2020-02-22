@@ -102,7 +102,7 @@ Public Class UsesDirectoriesClass
 
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+            MsgBox("Erro na função" & Chr(13) & "RenameFolder" & Chr(13) & """" & ex.Message & """")
             Return _foldersPathsOperations 'oldPath
         End Try
 
@@ -208,7 +208,8 @@ Public Class UsesDirectoriesClass
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Erro na função" & Chr(13) & "CreateNewFolder" & Chr(13) & """" & ex.Message & """")
+
             Return False
         End Try
 

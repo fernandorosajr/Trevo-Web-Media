@@ -132,7 +132,8 @@ Public Class ControlPainel_Desktop
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+
+            MsgBox("Erro no Evento" & Chr(13) & "BTN_NewFolder_Click" & Chr(13) & """" & ex.Message & """")
 
         End Try
     End Sub
@@ -452,7 +453,7 @@ Public Class ControlPainel_Desktop
 
     End Sub
 
-    Sub EditarNode(node As TreeNode)
+    Sub EditeNode(node As TreeNode)
 
         Dim x As String
         Dim prompt As String
@@ -498,7 +499,9 @@ Public Class ControlPainel_Desktop
                 End If
             End If
         Catch ex As Exception
-            MsgBox(ex.Message)
+
+            MsgBox("Erro na instrução" & Chr(13) & "EditeNode" & Chr(13) & """" & ex.Message & """")
+
         End Try
 
     End Sub
@@ -708,7 +711,8 @@ Public Class ControlPainel_Desktop
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("Erro na Evento" & Chr(13) & "TVWFilesAndFolders_AfterLabelEdit" & Chr(13) & """" & ex.Message & """")
+
         End Try
     End Sub
 
@@ -723,9 +727,7 @@ Public Class ControlPainel_Desktop
     End Function
 
     Sub SearchAndRemoveTagNode(tag As String, nodeParent As TreeNode)
-        'TODO : Corrigir erro:
-        ' 'Referência de objeto não definida para uma instância de um objeto' 
-        ' Quando exclui node.
+
         Dim arrayRemove As New ArrayList
 
         Try
@@ -770,6 +772,6 @@ Public Class ControlPainel_Desktop
     End Sub
 
     Private Sub RenomearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenomearToolStripMenuItem.Click
-        If TVWFilesAndFolders.LabelEdit = True Then EditarNode(TVWFilesAndFolders.SelectedNode)
+        If TVWFilesAndFolders.LabelEdit = True Then EditeNode(TVWFilesAndFolders.SelectedNode)
     End Sub
 End Class

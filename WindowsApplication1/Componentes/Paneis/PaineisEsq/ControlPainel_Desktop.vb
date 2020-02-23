@@ -535,8 +535,10 @@ Public Class ControlPainel_Desktop
             Dim drive As DriveInfo
             If e.Node.Tag <> "carregando" Then
                 drive = New DriveInfo(e.Node.Tag)
+                'e.Node.EndEdit(True)
+                'e.CancelEdit = True
             Else
-                e.Node.EndEdit(True)
+                e.Node.EndEdit(False)
                 e.CancelEdit = True
             End If
 
@@ -559,29 +561,35 @@ Public Class ControlPainel_Desktop
                         Dim clonedParentNode As TreeNode = CType(node.Parent.Clone(), TreeNode)
                         If _sourceOldPath <> _sourceNewPath Then
 
-                            For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
-                                If NodeTagExist(_sourceNewPath, clonedParentNode) = False Then   'node.Parent) = False Then
+                            Dim _sourceNewPath_Exist As Boolean = NodeTagExist(_sourceNewPath, clonedParentNode)
+
+                            If _sourceNewPath_Exist = False Then   'node.Parent) = False Then
                                     If My.Computer.FileSystem.DirectoryExists(_sourceNewPath) = True Then ' usesDirectories.FolderExist(_sourceNewPath) = True Then
+
+                                    For Each tnode As TreeNode In clonedParentNode.Nodes   'node.Parent.Nodes
                                         If tnode.Tag = _sourceOldPath Then
                                             Dim dir As New DirectoryInfo(_sourceNewPath)
                                             tnode.Tag = dir.FullName
                                             tnode.Text = dir.Name
                                             tnode.Name = tnode.Tag
                                         End If
-                                    End If
+                                    Next
+
+                                End If
                                 Else
                                     SearchAndRemoveTagNode(_sourceOldPath, clonedParentNode)   'node.Parent)
                                 End If
-                            Next
 
-                        Else
+
+                                Else
                             If _sourceOldPath <> _destinationOldPath Then
                                 If _destinationNewPath = _destinationOldPath Then
 
-                                    For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
+                                    Dim _destinationOldPathNode_Exist As Boolean = NodeTagExist(_destinationOldPath, clonedParentNode)
 
+                                    For Each tnode As TreeNode In clonedParentNode.Nodes 'node.Parent.Nodes
                                         If tnode.Tag = _sourceOldPath Then
-                                            If NodeTagExist(_destinationOldPath, clonedParentNode) = True Then 'node.Parent) = True Then
+                                            If _destinationOldPathNode_Exist = True Then 'node.Parent) = True Then
                                                 tnode.Remove()
                                             Else
                                                 Dim dir As New DirectoryInfo(_destinationOldPath)

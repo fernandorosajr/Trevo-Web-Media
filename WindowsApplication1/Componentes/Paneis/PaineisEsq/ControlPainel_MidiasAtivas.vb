@@ -152,11 +152,11 @@ Public Class ControlPainel_MidiasAtivas
         node = TVFilesAndFoldersOfTheOpenMedia.SelectedNode
 
         _caminho = TVFilesAndFoldersOfTheOpenMedia.SelectedNode.Tag
-        CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node)
+        LoadDirectoryInTVFilesAndFoldersOfTheOpenMedia(node)
 
     End Sub
 
-    Sub CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node As TreeNode)
+    Sub LoadDirectoryInTVFilesAndFoldersOfTheOpenMedia(node As TreeNode)
         Try
             If node.Tag <> Nothing Then
                 Dim dir As New DirectoryInfo(node.Tag)
@@ -174,6 +174,7 @@ Public Class ControlPainel_MidiasAtivas
 
         End Try
     End Sub
+
     Sub AtualizarDireitorio(NodeLabelEditEventArgs As TreeNode)
         Dim directory As New DirectoryInfo(NodeLabelEditEventArgs.Tag)
         Dim subDirectories As DirectoryInfo() = directory.GetDirectories
@@ -224,6 +225,6 @@ Public Class ControlPainel_MidiasAtivas
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
 
-        CarregarDiretorioEmTVFilesAndFoldersOfTheOpenMedia(node)
+        LoadDirectoryInTVFilesAndFoldersOfTheOpenMedia(node)
     End Sub
 End Class

@@ -195,27 +195,27 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLTitle02.TabIndex = 2
         Me.LBLTitle02.Text = "O que deseja fazer?"
         '
-        'LNKLRenomeOrigem
+        'LNKLRenameSource
         '
         Me.LNKLRenameSource.AutoEllipsis = True
         Me.LNKLRenameSource.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LNKLRenameSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
         Me.LNKLRenameSource.Location = New System.Drawing.Point(65, 0)
-        Me.LNKLRenameSource.Name = "LNKLRenomeOrigem"
+        Me.LNKLRenameSource.Name = "LNKLRenameSource"
         Me.LNKLRenameSource.Size = New System.Drawing.Size(258, 13)
         Me.LNKLRenameSource.TabIndex = 5
         Me.LNKLRenameSource.TabStop = True
         Me.LNKLRenameSource.Text = "Renomear pasta de origem."
         '
-        'LNKLRenomeDestino
+        'LNKLRenameDestination
         '
         Me.LNKLRenameDestination.AutoEllipsis = True
         Me.LNKLRenameDestination.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LNKLRenameDestination.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LNKLRenameDestination.LinkColor = System.Drawing.Color.Orange
         Me.LNKLRenameDestination.Location = New System.Drawing.Point(65, 0)
-        Me.LNKLRenameDestination.Name = "LNKLRenomeDestino"
+        Me.LNKLRenameDestination.Name = "LNKLRenameDestination"
         Me.LNKLRenameDestination.Size = New System.Drawing.Size(258, 13)
         Me.LNKLRenameDestination.TabIndex = 12
         Me.LNKLRenameDestination.TabStop = True
@@ -307,7 +307,7 @@ Partial Class FRMDialogConflictingFolders
         Me.Panel17.Size = New System.Drawing.Size(311, 1)
         Me.Panel17.TabIndex = 0
         '
-        'LBLNomeDaPasta
+        'LBLFolderName
         '
         Me.LBLFolderName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -315,7 +315,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLFolderName.Font = New System.Drawing.Font("Microsoft Tai Le", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLFolderName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLFolderName.Location = New System.Drawing.Point(135, 71)
-        Me.LBLFolderName.Name = "LBLNomeDaPasta"
+        Me.LBLFolderName.Name = "LBLFolderName"
         Me.LBLFolderName.Size = New System.Drawing.Size(322, 24)
         Me.LBLFolderName.TabIndex = 1
         Me.LBLFolderName.Text = "S-1-5-21-1603654266-2086531289-494476911-1002"

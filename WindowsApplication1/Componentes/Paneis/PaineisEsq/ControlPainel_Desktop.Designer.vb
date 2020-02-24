@@ -36,7 +36,7 @@ Partial Class ControlPainel_Desktop
         Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
         Me.BTN_NewFolder = New System.Windows.Forms.Button()
         Me.CMItens = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ExpamdirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExpandirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CopiarComoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,6 +45,9 @@ Partial Class ControlPainel_Desktop
         Me.RenomearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AbrirComExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem18 = New System.Windows.Forms.ToolStripSeparator()
         Me.TornarPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoverParaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -211,15 +214,15 @@ Partial Class ControlPainel_Desktop
         '
         'CMItens
         '
-        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpamdirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.TornarPastaProcessoToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpandirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.ToolStripSeparator9, Me.AbrirComExplorerToolStripMenuItem, Me.ToolStripMenuItem18, Me.TornarPastaProcessoToolStripMenuItem, Me.MoverParaProcessoToolStripMenuItem, Me.MoverParaPastaProcessoToolStripMenuItem, Me.ProcessarToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(243, 308)
+        Me.CMItens.Size = New System.Drawing.Size(243, 320)
         '
-        'ExpamdirToolStripMenuItem
+        'ExpandirToolStripMenuItem
         '
-        Me.ExpamdirToolStripMenuItem.Name = "ExpamdirToolStripMenuItem"
-        Me.ExpamdirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.ExpamdirToolStripMenuItem.Text = "Expandir"
+        Me.ExpandirToolStripMenuItem.Name = "ExpandirToolStripMenuItem"
+        Me.ExpandirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ExpandirToolStripMenuItem.Text = "Expandir"
         '
         'ToolStripSeparator1
         '
@@ -231,7 +234,7 @@ Partial Class ControlPainel_Desktop
         '
         Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
         Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.NovaPastaToolStripMenuItem.Text = "Nova Pasta"
+        Me.NovaPastaToolStripMenuItem.Text = "Nova Pasta...."
         '
         'CopiarComoToolStripMenuItem
         '
@@ -255,7 +258,7 @@ Partial Class ControlPainel_Desktop
         '
         Me.RenomearToolStripMenuItem.Name = "RenomearToolStripMenuItem"
         Me.RenomearToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.RenomearToolStripMenuItem.Text = "Renomear"
+        Me.RenomearToolStripMenuItem.Text = "Renomear..."
         '
         'ToolStripSeparator2
         '
@@ -268,6 +271,22 @@ Partial Class ControlPainel_Desktop
         Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
         Me.ExcluirToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.ExcluirToolStripMenuItem.Text = "Excluir"
+        '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(239, 6)
+        '
+        'AbrirComExplorerToolStripMenuItem
+        '
+        Me.AbrirComExplorerToolStripMenuItem.Name = "AbrirComExplorerToolStripMenuItem"
+        Me.AbrirComExplorerToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.AbrirComExplorerToolStripMenuItem.Text = "Abrir com Explorer"
+        '
+        'ToolStripMenuItem18
+        '
+        Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
+        Me.ToolStripMenuItem18.Size = New System.Drawing.Size(239, 6)
         '
         'TornarPastaProcessoToolStripMenuItem
         '
@@ -320,6 +339,7 @@ Partial Class ControlPainel_Desktop
         '
         'ProcessarToolStripMenuItem
         '
+        Me.ProcessarToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.avancar_1
         Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
         Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.ProcessarToolStripMenuItem.Text = "Processar"
@@ -365,7 +385,7 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents PanelEnvolveCHK_ShowPanelAllProcessosAcoes As Panel
     Friend WithEvents CHK_ShowCheck As CheckBox
     Friend WithEvents CMItens As ContextMenuStrip
-    Friend WithEvents ExpamdirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExpandirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CopiarComoToolStripMenuItem As ToolStripMenuItem
@@ -385,4 +405,7 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents TornarPastaProcessoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents AbrirComExplorerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem18 As ToolStripSeparator
 End Class

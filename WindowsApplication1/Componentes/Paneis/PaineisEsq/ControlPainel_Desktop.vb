@@ -83,7 +83,7 @@ Public Class ControlPainel_Desktop
         Else
             TVWFilesAndFolders.LabelEdit = _path.Exists
         End If
-
+        ' MsgBox(node.Level)
         '  If TVWFilesAndFolders.LabelEdit = True Then EditarNode(node)
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode.beginedit?view=netframework-4.8#System_Windows_Forms_TreeNode_BeginEdit
         ' TODO: https://docs.microsoft.com/pt-br/dotnet/api/system.windows.forms.treenode?view=netframework-4.8
@@ -318,7 +318,7 @@ Public Class ControlPainel_Desktop
             iconeDoDrive = drive_Analys.IconeDoDrive
 
             tvNode = tvNodeDeComputador.Nodes.Add(nomeDoDrive.Substring(0, 2), todoDrive, iconeDoDrive, iconeDoDrive)
-            tvRoot.ContextMenuStrip = Me.CMItens
+            tvNode.ContextMenuStrip = Me.CMItens
 
             tvNode.Tag = nomeDoDrive
             tvNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
@@ -538,7 +538,7 @@ Public Class ControlPainel_Desktop
                 'e.Node.EndEdit(True)
                 'e.CancelEdit = True
             Else
-                e.Node.EndEdit(False)
+                e.Node.EndEdit(True)
                 e.CancelEdit = True
             End If
 
@@ -624,12 +624,12 @@ Public Class ControlPainel_Desktop
                             Next
                         End If
 
-                        ' clonedParentNode
-                        ' node.Parent.Nodes.Clear()
                         Dim nodeParent = node.Parent
                         nodeParent.Nodes.Clear()
 
+                        'nodeParent.Nodes.AddRange(New System.Windows.Forms.TreeNode() {clonedParentNode.Nodes})
                         Dim var As Integer
+
                         For Each subNode As TreeNode In clonedParentNode.Nodes
                             If My.Computer.FileSystem.DirectoryExists(subNode.Tag) Then
                                 nodeParent.Nodes.Insert(var, subNode)
@@ -637,6 +637,7 @@ Public Class ControlPainel_Desktop
                             End If
 
                         Next
+
 
                         'If _caminhosDeRenomeDePastas.oldPathDestino = _caminhosDeRenomeDePastas.newPathDestino Then
 
@@ -782,4 +783,5 @@ Public Class ControlPainel_Desktop
     Private Sub RenomearToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RenomearToolStripMenuItem.Click
         If TVWFilesAndFolders.LabelEdit = True Then EditeNode(TVWFilesAndFolders.SelectedNode)
     End Sub
+
 End Class

@@ -16,7 +16,7 @@ Public Class FRMDialogConflictingFolders
 
     Private EstadoDaTela As Integer
 
-    ' Propriedades do configuração
+    ' Propriedades de configuração de cores
     Private _borderColorError As Color
     Public Property BorderColorError As Color
         Get
@@ -58,6 +58,17 @@ Public Class FRMDialogConflictingFolders
         End Get
         Set(value As Color)
             _borderColorLostFocus = value
+        End Set
+    End Property
+
+    Private _txtBoxBackColorLostFocus As Color
+
+    Public Property TXTBoxBackColorLostFocus As Color
+        Get
+            Return _txtBoxBackColorLostFocus
+        End Get
+        Set(value As Color)
+            _txtBoxBackColorLostFocus = value
         End Set
     End Property
 
@@ -243,29 +254,6 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
 
-    'Dim _defaultResponse As String
-    'Public Property DefaultResponse
-    '    Get
-    '        Return _defaultResponse
-    '    End Get
-    '    Set(value)
-    '        _defaultResponse = value
-    '        TxtResponse.Text = value
-    '    End Set
-    'End Property
-
-    'Dim _prompt As String
-    'Public Property Prompt As String
-    '    Get
-    '        Return _prompt
-    '    End Get
-    '    Set(value As String)
-    '        _prompt = value
-    '        LBLPrompt.Text = value
-    '    End Set
-    'End Property
-
-
 
     Public Sub New()
         If _pastaOrigem <> Nothing Then
@@ -283,6 +271,8 @@ Public Class FRMDialogConflictingFolders
         _borderColorLostFocus = BTNMesclar.BackColor
         _backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
         _borderColorError = Color.Red
+        _txtBoxBackColorLostFocus = Color.FromArgb(63, 63, 66)
+
 
         'PopulateTreeView()
         ' Add any initialization after the InitializeComponent() call.
@@ -485,7 +475,7 @@ Public Class FRMDialogConflictingFolders
         End Select
     End Sub
 
-    Private Sub OK_Button_MouseLeave(sender As Object, e As EventArgs) Handles _
+    Private Sub Buttons_MouseLeave(sender As Object, e As EventArgs) Handles _
         OK_Button.MouseLeave, Cancel_Button.MouseLeave,
         BTNMesclar.MouseLeave, BTNSubstituir.MouseLeave,
         BTNSubstituir.MouseLeave, BTNRendo.MouseLeave, BTNIgnorar.MouseLeave
@@ -538,13 +528,13 @@ Public Class FRMDialogConflictingFolders
     Private Sub TextBoxes_LostFocus(sender As Object, e As EventArgs) Handles TXTNomeDoDestino.LostFocus, TXTNomeDaOrigem.LostFocus
         Dim txt As TextBox
         txt = CType(sender, TextBox)
-        Dim cor As Color = Color.FromArgb(63, 63, 66)
+        Dim _corDeFundoDoTXTBoxLostFocus As Color = _borderColorLostFocus ' Color.FromArgb(63, 63, 66)
 
         txt.Parent.Parent.BackColor = _borderColorLostFocus
         txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
         txt.Cursor = Cursors.Arrow
-        txt.BackColor = cor
-        txt.Parent.BackColor = cor
+        txt.BackColor = _corDeFundoDoTXTBoxLostFocus
+        txt.Parent.BackColor = _corDeFundoDoTXTBoxLostFocus
     End Sub
 
     Private Sub TextBoxes_MouseMove(sender As Object, e As MouseEventArgs) Handles TXTNomeDoDestino.MouseMove, TXTNomeDaOrigem.MouseMove

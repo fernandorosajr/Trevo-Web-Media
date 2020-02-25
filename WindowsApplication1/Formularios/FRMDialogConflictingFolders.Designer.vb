@@ -36,8 +36,8 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNMesclar = New System.Windows.Forms.Button()
         Me.BTNSubstituir = New System.Windows.Forms.Button()
         Me.BTNIgnorar = New System.Windows.Forms.Button()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_PanelDivisor = New System.Windows.Forms.Panel()
+        Me.PanelDivisor = New System.Windows.Forms.Panel()
         Me.LBLFolderName = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
         Me.Panel_LBLInfo = New System.Windows.Forms.Panel()
@@ -64,7 +64,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_LNKLRenomeDestino = New System.Windows.Forms.Panel()
         Me.LBLRenameDestino = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.Panel16.SuspendLayout()
+        Me.PanelEnvolve_PanelDivisor.SuspendLayout()
         Me.Panel_LBLInfo.SuspendLayout()
         Me.PanelBorder_Panel_LBLInfo.SuspendLayout()
         Me.Panel_LBLOutrasOpcoes.SuspendLayout()
@@ -287,25 +287,25 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNIgnorar.Tag = "Nada será feito."
         Me.BTNIgnorar.Text = "Ignorar e fechar "
         '
-        'Panel16
+        'PanelEnvolve_PanelDivisor
         '
-        Me.Panel16.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.PanelEnvolve_PanelDivisor.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel16.Controls.Add(Me.Panel17)
-        Me.Panel16.Location = New System.Drawing.Point(136, 0)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
-        Me.Panel16.Size = New System.Drawing.Size(321, 21)
-        Me.Panel16.TabIndex = 102
+        Me.PanelEnvolve_PanelDivisor.Controls.Add(Me.PanelDivisor)
+        Me.PanelEnvolve_PanelDivisor.Location = New System.Drawing.Point(136, 0)
+        Me.PanelEnvolve_PanelDivisor.Name = "PanelEnvolve_PanelDivisor"
+        Me.PanelEnvolve_PanelDivisor.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
+        Me.PanelEnvolve_PanelDivisor.Size = New System.Drawing.Size(321, 21)
+        Me.PanelEnvolve_PanelDivisor.TabIndex = 102
         '
-        'Panel17
+        'PanelDivisor
         '
-        Me.Panel17.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel17.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel17.Location = New System.Drawing.Point(5, 10)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(311, 1)
-        Me.Panel17.TabIndex = 0
+        Me.PanelDivisor.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelDivisor.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelDivisor.Location = New System.Drawing.Point(5, 10)
+        Me.PanelDivisor.Name = "PanelDivisor"
+        Me.PanelDivisor.Size = New System.Drawing.Size(311, 1)
+        Me.PanelDivisor.TabIndex = 0
         '
         'LBLFolderName
         '
@@ -369,7 +369,7 @@ Partial Class FRMDialogConflictingFolders
         '
         'Panel_LBLOutrasOpcoes
         '
-        Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.Panel16)
+        Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.PanelEnvolve_PanelDivisor)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.LBLOutrasOpcoes)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.PanelEnvolveButtons)
         Me.Panel_LBLOutrasOpcoes.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -646,7 +646,7 @@ Partial Class FRMDialogConflictingFolders
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FRMDialogConflictingFolders"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.Panel16.ResumeLayout(False)
+        Me.PanelEnvolve_PanelDivisor.ResumeLayout(False)
         Me.Panel_LBLInfo.ResumeLayout(False)
         Me.PanelBorder_Panel_LBLInfo.ResumeLayout(False)
         Me.Panel_LBLOutrasOpcoes.ResumeLayout(False)
@@ -683,8 +683,8 @@ Partial Class FRMDialogConflictingFolders
     Friend WithEvents BTNMesclar As Button
     Friend WithEvents BTNSubstituir As Button
     Friend WithEvents BTNIgnorar As Button
-    Friend WithEvents Panel16 As Panel
-    Friend WithEvents Panel17 As Panel
+    Friend WithEvents PanelEnvolve_PanelDivisor As Panel
+    Friend WithEvents PanelDivisor As Panel
     Friend WithEvents LBLFolderName As Label
     Friend WithEvents LBLTitle01 As Label
     Friend WithEvents Panel_LBLInfo As Panel

@@ -458,6 +458,7 @@ Public Class ControlPainel_Desktop
         Dim x As String
         Dim prompt As String
         Dim title As String
+        Dim h1 As String
         Dim defaultResponse As String
 
         Dim FRMInputBox As New FRMDialogInputBox
@@ -474,10 +475,12 @@ Public Class ControlPainel_Desktop
                         Chr(13) & "Volume atual : " & """" & drive.VolumeLabel & """"
 
                     title = "Renomear Unidade"
+                    h1 = "Editar volume da unidade:"
                     defaultResponse = drive.VolumeLabel
 
                     FRMInputBox.Prompt = prompt
                     FRMInputBox.Title = title
+                    FRMInputBox.H1 = h1
                     FRMInputBox.DefaultResponse = defaultResponse
 
                     FRMInputBox.ShowDialog()

@@ -70,6 +70,18 @@ Public Class FRMDialogInputBox
         End Set
     End Property
 
+    Dim _h1 As String
+    Public Property H1 As String
+        Get
+            Return _h1
+
+        End Get
+        Set(value As String)
+            _h1 = value
+            Me.LBLTitle01.Text = _h1
+        End Set
+    End Property
+
     Dim _prompt As String
     Public Property Prompt As String
         Get

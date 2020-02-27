@@ -8,7 +8,7 @@ Imports Microsoft.VisualBasic
 'http://www.andrealveslima.com.br/blog/index.php/2017/04/12/utilizando-api-google-drive-no-c-e-vb-net/
 ' TODO: Desenhar Menu de contexto
 ' TODO: Criar Função renomearPasta
-' TODO: Criar função renomearVolume
+' TODO: Criar função renomearVolume (OK)
 ' TODO: Criar função remover pasta
 ' TODO: Aperfeiçoar eventos relacionados com a  propriedade LabelEdit.
 ' Não pode renomear Desktop nem as pastas de virtuais de bibliotecas
@@ -611,7 +611,7 @@ Public Class ControlPainel_Desktop
 
                             For Each tnode As TreeNode In clonedParentNode.Nodes   'node.Parent.Nodes
                                 If NodeTagExist(_destinationNewPath, clonedParentNode) = False Then 'node.Parent) = False Then
-                                    If usesDirectories.FolderExist(_destinationNewPath) = True Then
+                                    If My.Computer.FileSystem.DirectoryExists(_destinationNewPath) = True Then
                                         If tnode.Tag = _destinationOldPath Then
                                             Dim dir As New DirectoryInfo(_destinationOldPath)
                                             tnode.Tag = dir.FullName

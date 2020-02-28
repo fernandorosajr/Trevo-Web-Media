@@ -30,8 +30,11 @@ Public Class UsesDirectoriesClass
 
     Function RenameFolder(path As String, newName As String) As Object
 
+
+        ' Renomeia a pasta apresentando o seu caminho completo e um novo nome.
+
         Dim _foldersPathsOperations As FoldersPathsOperations
-        '  Dim oldPath, newPath As String
+
         Dim path_DirectoryInfo As New DirectoryInfo(path)
 
         _foldersPathsOperations.sourcePath = Trim(path)
@@ -109,12 +112,50 @@ Public Class UsesDirectoriesClass
     End Function
     Function MoveFolder(_sourceDirectoryName As String, _destinationDirectoryName As String, overwrite As Boolean)
 
+        Dim ListaDeArquivos As New ArrayList()
+
+        Dim newFileName As String
+        Dim usesFiles As New UsesFilesClass
+
         Try
-            My.Computer.FileSystem.MoveDirectory(_sourceDirectoryName, _destinationDirectoryName, overwrite)
+
+            ListaDeArquivos.AddRange(AddFolderInList(_sourceDirectoryName))
+            'My.Computer.FileSystem.MoveDirectory(_sourceDirectoryName, _destinationDirectoryName, overwrite)
+
+            If My.Computer.FileSystem.DirectoryExists(_destinationDirectoryName) = False Then MkDir(_destinationDirectoryName)
+
+            ' TODO: Continuar Editando a função
+            Dim caminhoDeOrigemDoArquivo As String
+            Dim subCaminhoDeDestinoDoArquivo As String
+
+            For Each file As FileInfo In ListaDeArquivos
+
+                If _sourceDirectoryName <> file.DirectoryName Then
+                    subCaminhoDeDestinoDoArquivo = _destinationDirectoryName & "\" & DevolveNomeDaPasta(file.DirectoryName)
+                    ' TODO: Se a pasta já existe, faz o que?
+                Else
+                    subCaminhoDeDestinoDoArquivo = _destinationDirectoryName '& "\" & file.DirectoryName
+
+                End If
+
+                If overwrite = False Then
+                    newFileName = usesFiles.ReturnsNonExistentFileName(file.FullName, subCaminhoDeDestinoDoArquivo & "\" & file.Name)
+                Else
+                    'TODO: Tratar este destino. Ele deve mudar de acordo com as subPastas.
+                    newFileName = subCaminhoDeDestinoDoArquivo & "\" & file.Name
+                End If
+
+                My.Computer.FileSystem.MoveFile(file.FullName.ToString,
+                         newFileName,
+                        FileIO.UIOption.AllDialogs,
+                        FileIO.UICancelOption.ThrowException)
+
+            Next
 
             If _sourceDirectoryName <> _destinationDirectoryName Then
                 'TODO: deletar _sourceDirectoryName
             End If
+
         Catch ex As Exception
             Dim info As String
 
@@ -130,11 +171,8 @@ Public Class UsesDirectoriesClass
 
                 If sourceFileInfo.Exists = True Then
 
-                    Dim newFileName As String
-                    Dim usesFilesClass As New UsesFilesClass
-
                     If overwrite = False Then
-                        newFileName = usesFilesClass.ReturnsNonExistentFileName(sourceFileInfo.FullName, _destinationDirectoryName & "\" & sourceFileInfo.Name)
+                        newFileName = usesFiles.ReturnsNonExistentFileName(sourceFileInfo.FullName, _destinationDirectoryName & "\" & sourceFileInfo.Name)
                     Else
                         newFileName = _destinationDirectoryName & "\" & sourceFileInfo.Name
                     End If
@@ -165,8 +203,17 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function CompararNomeDasPastasEExecutarAcao(action As String)
+    Function AddFolderInList(path As String) As ArrayList
+        Dim ListaDeArquivos As New ArrayList()
+        Dim directoryInfo As New DirectoryInfo(path)
 
+        ListaDeArquivos.AddRange(directoryInfo.GetFiles)
+
+        For Each subDir As DirectoryInfo In directoryInfo.GetDirectories()
+            ListaDeArquivos.AddRange(AddFolderInList(subDir.FullName))
+        Next
+
+        Return ListaDeArquivos
     End Function
 
     Function CreateNewFolder(path As String, folderName As String) As Boolean
@@ -255,8 +302,16 @@ Public Class UsesDirectoriesClass
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
     End Function
 
-    Function FolderExist(path As String) As Boolean
+    Public Function DevolveNomeDaPasta(path As String) As String
 
-        Return My.Computer.FileSystem.DirectoryExists(path)
+        Dim dir As New DirectoryInfo(path)
+        Return dir.Name
     End Function
+
+    Public Function GetPathFolder(path As String) As String
+
+        Dim dir As New DirectoryInfo(path)
+        Return dir.Parent.FullName
+    End Function
+
 End Class

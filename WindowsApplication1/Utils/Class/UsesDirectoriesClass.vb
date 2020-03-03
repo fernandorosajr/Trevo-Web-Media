@@ -42,6 +42,7 @@ Public Class UsesDirectoriesClass
 
         _foldersPathsOperations.sourceOldPath = _foldersPathsOperations.sourcePath
         _foldersPathsOperations.sourceNewPath = _foldersPathsOperations.sourcePath
+
         _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
         _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
 
@@ -56,33 +57,22 @@ Public Class UsesDirectoriesClass
                 If destinationPath_DirectoryInfo.Exists = True Then
                     ' TODO: Renomear Pastas Antes de Mover
                     ' TODO: Estudar esta função: Fazer Algoritimo.
-                    _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
-                    _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
+                    Dim title As String = "Conflito entre pastas"
+                    Dim resultadoDeCarregarFormDeConflitoDePasta As New ArrayList()
 
                     _foldersPathsOperations.sourceOldPath = _foldersPathsOperations.sourcePath
                     _foldersPathsOperations.sourceNewPath = _foldersPathsOperations.destinationPath
 
-                    Dim FRM As New FRMDialogConflictingFolders
+                    _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
+                    _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
 
-                    FRM.Title = "Conflito entre pastas"
-                    FRM.SourcePath = _foldersPathsOperations.sourcePath
-                    FRM.DestinationPath = _foldersPathsOperations.destinationPath
+                    resultadoDeCarregarFormDeConflitoDePasta = CarregarFormDeConflitoDePasta(_foldersPathsOperations, newName, title)
+                    _foldersPathsOperations = resultadoDeCarregarFormDeConflitoDePasta(0)
 
-                    FRM.SourceOldPath = _foldersPathsOperations.sourcePath
-                    FRM.SourceNewPath = _foldersPathsOperations.destinationPath
-                    FRM.DestinationOldPath = _foldersPathsOperations.destinationPath
-                    FRM.DestinationNewPath = _foldersPathsOperations.destinationPath
 
-                    FRM.LBLFolderName.Text = """" & newName & """"
-                    FRM.ShowDialog()
 
-                    _foldersPathsOperations.destinationOldPath = FRM.DestinationOldPath
-                    _foldersPathsOperations.destinationNewPath = FRM.DestinationNewPath
 
-                    _foldersPathsOperations.sourceOldPath = FRM.SourceOldPath
-                    _foldersPathsOperations.sourceNewPath = FRM.SourceNewPath
-
-                    Select Case FRM.DialogResult
+                    Select Case resultadoDeCarregarFormDeConflitoDePasta(1)
                         Case DialogResult.OK
                             MoveFolder(_foldersPathsOperations.sourceOldPath, _foldersPathsOperations.sourceNewPath, False)
                             MoveFolder(_foldersPathsOperations.destinationOldPath, _foldersPathsOperations.destinationNewPath, False)
@@ -110,6 +100,37 @@ Public Class UsesDirectoriesClass
         End Try
 
     End Function
+
+    Function CarregarFormDeConflitoDePasta(_foldersPathsOperations As Object, newName As String, title As String) As ArrayList
+
+        Dim FRM As New FRMDialogConflictingFolders
+        Dim resultado As New ArrayList()
+
+
+        FRM.Title = title
+        FRM.SourcePath = _foldersPathsOperations.sourcePath
+        FRM.DestinationPath = _foldersPathsOperations.destinationPath
+
+        FRM.SourceOldPath = _foldersPathsOperations.sourceOldPath                       '_foldersPathsOperations.sourcePath
+        FRM.SourceNewPath = _foldersPathsOperations.sourceNewPath   '_foldersPathsOperations.destinationPath
+        FRM.DestinationOldPath = _foldersPathsOperations.destinationOldPath '.destinationPath
+        FRM.DestinationNewPath = _foldersPathsOperations.destinationNewPath '.destinationPath
+
+        FRM.LBLFolderName.Text = """" & newName & """"
+        FRM.ShowDialog()
+
+        _foldersPathsOperations.destinationOldPath = FRM.DestinationOldPath
+        _foldersPathsOperations.destinationNewPath = FRM.DestinationNewPath
+
+        _foldersPathsOperations.sourceOldPath = FRM.SourceOldPath
+        _foldersPathsOperations.sourceNewPath = FRM.SourceNewPath
+
+        resultado.Add(_foldersPathsOperations)
+        resultado.Add(FRM.DialogResult)
+
+        Return resultado
+    End Function
+
     Function MoveFolder(_sourceDirectoryName As String, _destinationDirectoryName As String, overwrite As Boolean)
 
         Dim ListaDeArquivos As New ArrayList()
@@ -133,6 +154,7 @@ Public Class UsesDirectoriesClass
                 If _sourceDirectoryName <> file.DirectoryName Then
                     subCaminhoDeDestinoDoArquivo = _destinationDirectoryName & "\" & DevolveNomeDaPasta(file.DirectoryName)
                     ' TODO: Se a pasta já existe, faz o que?
+
                 Else
                     subCaminhoDeDestinoDoArquivo = _destinationDirectoryName '& "\" & file.DirectoryName
 

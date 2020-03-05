@@ -102,35 +102,34 @@ Public Class ControlPainel_MidiasAtivas
         Dim subNode As TreeNode
 
         Try
-            Dim DriveI As New IO.DriveInfo(TVMedias.SelectedNode.Tag)
+            Dim drive As New IO.DriveInfo(TVMedias.SelectedNode.Tag)
 
-            Dim DirDir As New IO.DirectoryInfo(TVMedias.SelectedNode.Tag)
+            Dim directory As New IO.DirectoryInfo(TVMedias.SelectedNode.Tag)
 
-            If Not (DriveI.IsReady) Then
+            If Not (drive.IsReady) Then
                 TVFilesAndFoldersOfTheOpenMedia.Nodes.Clear()
                 node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, Me.TVMedias.SelectedNode.ImageKey, Me.TVMedias.SelectedNode.SelectedImageKey)
                 node.Nodes.Add("Mensagem", "<O dispositivo não está pronto.>", "info", "info").Tag = "Mensagem"
-
 
                 node.ExpandAll()
                 Exit Sub
 
             End If
 
-            Dim DirDir01 As IO.DirectoryInfo() = DirDir.Root.GetDirectories
-            Dim DrD As IO.DirectoryInfo
+            Dim subDirectories As IO.DirectoryInfo() = directory.Root.GetDirectories
+            Dim subDirectory As IO.DirectoryInfo
 
-            Dim Nome As String
+            Dim subDirectoryName As String
 
             TVFilesAndFoldersOfTheOpenMedia.Nodes.Clear()
 
             node = TVFilesAndFoldersOfTheOpenMedia.Nodes.Add(TVMedias.SelectedNode.Tag, Me.TVMedias.SelectedNode.Text, TVMedias.SelectedNode.ImageKey, TVMedias.SelectedNode.SelectedImageKey)
             '"dvd", "dvd")
 
-            For Each DrD In DirDir01
-                Nome = DrD.Name
-                subNode = node.Nodes.Add(TVMedias.SelectedNode.Tag & "\" & Nome, Nome, "pastaFechada", "pastaAberta")
-                subNode.Tag = DrD.FullName
+            For Each subDirectory In subDirectories
+                subDirectoryName = subDirectory.Name
+                subNode = node.Nodes.Add(TVMedias.SelectedNode.Tag & "\" & subDirectoryName, subDirectoryName, "pastaFechada", "pastaAberta")
+                subNode.Tag = subDirectory.FullName
                 subNode.ContextMenuStrip = Me.CMItens
                 subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
             Next

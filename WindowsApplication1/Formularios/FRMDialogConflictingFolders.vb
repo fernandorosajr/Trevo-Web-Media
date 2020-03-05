@@ -40,7 +40,6 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Private _borderColorGotFocus As Color
-
     Public Property BorderColorGotFocus As Color
         Get
             Return _borderColorGotFocus
@@ -260,11 +259,13 @@ Public Class FRMDialogConflictingFolders
             Dim pastaOrigemDirectoryInfo As New DirectoryInfo(_pastaOrigem)
 
         End If
+
         If DestinationPath <> Nothing Then
             Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
             LBLFolderName.Text = pastaDestinoDirectoryInfo.Name
 
         End If
+
         ' This call is required by the designer.
         InitializeComponent()
         _borderColorGotFocus = SystemColors.HotTrack
@@ -349,6 +350,7 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub BTNConfirmarRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNConfirmarRenomeDeOrigem.Click
+
         Dim _newPathOrigemDirectoryInfo As New DirectoryInfo(_newPathOrigem)
         If Trim(TXTNomeDaOrigem.Text) = "" Or TXTNomeDaOrigem.Text.LastIndexOfAny(New Char() {"\"c, "/"c, "|"c, ":"c, "*"c, "?"c, """"c, "<"c, ">"c}) > -1 Then
 

@@ -1,7 +1,5 @@
 ﻿Imports System.IO
 
-Imports TrevoWebMedia.StructuresModules
-
 
 Public Enum Actions As Byte
     None = 0
@@ -113,6 +111,7 @@ Public Class UsesDirectoriesClass
 
         FRM.SourceOldPath = _foldersPathsOperations.sourceOldPath                       '_foldersPathsOperations.sourcePath
         FRM.SourceNewPath = _foldersPathsOperations.sourceNewPath   '_foldersPathsOperations.destinationPath
+
         FRM.DestinationOldPath = _foldersPathsOperations.destinationOldPath '.destinationPath
         FRM.DestinationNewPath = _foldersPathsOperations.destinationNewPath '.destinationPath
 
@@ -140,7 +139,7 @@ Public Class UsesDirectoriesClass
 
         Try
 
-            ListaDeArquivos.AddRange(AddFolderInList(_sourceDirectoryName))
+            ListaDeArquivos.AddRange(AddFilesInList(_sourceDirectoryName))
             'My.Computer.FileSystem.MoveDirectory(_sourceDirectoryName, _destinationDirectoryName, overwrite)
 
             If My.Computer.FileSystem.DirectoryExists(_destinationDirectoryName) = False Then MkDir(_destinationDirectoryName)
@@ -225,14 +224,14 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function AddFolderInList(path As String) As ArrayList
+    Function AddFilesInList(path As String) As ArrayList
         Dim ListaDeArquivos As New ArrayList()
         Dim directoryInfo As New DirectoryInfo(path)
 
         ListaDeArquivos.AddRange(directoryInfo.GetFiles)
 
         For Each subDir As DirectoryInfo In directoryInfo.GetDirectories()
-            ListaDeArquivos.AddRange(AddFolderInList(subDir.FullName))
+            ListaDeArquivos.AddRange(AddFilesInList(subDir.FullName))
         Next
 
         Return ListaDeArquivos

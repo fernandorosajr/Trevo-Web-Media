@@ -19,6 +19,8 @@ Public Class UsesFilesClass
 
 
         If DestinationFileName.Exists = True Then
+            ' My.Computer.FileSystem.FileExists()
+
             fileArrayList.AddRange(dir.GetFiles())
 
             For x As Integer = 0 To fileArrayList.Count

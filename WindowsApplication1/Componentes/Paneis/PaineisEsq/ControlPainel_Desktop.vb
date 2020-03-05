@@ -385,13 +385,34 @@ Public Class ControlPainel_Desktop
 
         Dim subNode As TreeNode
 
-        pathSubTNode = node.Parent.Tag & "\" & node.Text
+        If node.Parent IsNot Nothing Then
 
-        cloneSubTNode.Name = pathSubTNode
-        cloneSubTNode.Tag = pathSubTNode
+            If driveAnalysis.IsDrive(node.Parent.Tag) Then
+                pathSubTNode = node.Parent.Tag & node.Text
+
+            Else
+                pathSubTNode = node.Parent.Tag & "\" & node.Text
+
+            End If
+
+            cloneSubTNode.Name = pathSubTNode
+            cloneSubTNode.Tag = pathSubTNode
+        Else
+            If driveAnalysis.IsDrive(node.Tag) Then
+                pathSubTNode = node.Tag
+
+                cloneSubTNode.Name = pathSubTNode.Substring(0, (pathSubTNode.Count - 1))
+                cloneSubTNode.Tag = pathSubTNode
+            End If
+        End If
 
         For Each subNode In cloneSubTNode.Nodes
-            AtualizarSubNode(subNode)
+
+            'If clonedNode.Nodes.Item(0).Tag <> "carregando" And clonedNode.Nodes.Item(0).Tag <> "Mensagem" Then
+            If subNode.Tag <> "carregando" And subNode.Tag <> "Mensagem" Then
+                AtualizarSubNode(subNode)
+
+            End If
         Next
 
         node.Nodes.Clear()
@@ -425,15 +446,19 @@ Public Class ControlPainel_Desktop
         Dim adicionar As Boolean
         Dim nodeDoble As TreeNode
 
+        If clonedNode.Nodes.Count <> 0 Then
+            If clonedNode.Nodes.Item(0).Tag <> "carregando" And clonedNode.Nodes.Item(0).Tag <> "Mensagem" Then
+                AtualizarSubNode(clonedNode)
+            End If
+        End If
+
         For Each subTNode In clonedNode.Nodes
             ' TODO : Incluir uma condição para checar se existe _
             ' node repetido e exclui lo.
 
             Dim dirCheck As New DirectoryInfo(subTNode.Tag)
 
-            If subTNode.Nodes.Item(0).Tag <> "carregando" And subTNode.Nodes.Item(0).Tag <> "Mensagem" Then
-                AtualizarSubNode(subTNode)
-            End If
+
 
 
             If nodeDoble IsNot Nothing Then
@@ -551,7 +576,6 @@ Public Class ControlPainel_Desktop
 
     End Sub
 
-
     Private Sub TVWFilesAndFolders_AfterLabelEdit(sender As Object, e As NodeLabelEditEventArgs) Handles TVWFilesAndFolders.AfterLabelEdit
 
         Dim _path As String()
@@ -607,10 +631,10 @@ Public Class ControlPainel_Desktop
                         ' TODO: Programar testes. 
                         ' https://www.youtube.com/watch?v=jOa4u8p2hN0 
 
-                        ' TODO : (OK) Entender pq ele está duplicando as as pastas e pq elas estão com as TAGs erradas.
+                        ' TODO: (OK) Entender pq ele está duplicando as as pastas e pq elas estão com as TAGs erradas.
                         ' TODO: SOLUÇÃO: Excluir a node ao inves de renomeá-la OU Atualizar as Subnodes depois de renomear o node pai.
                         ' TODO: Pode criar uma fução que cria um nodeFolder e substituir as ações.
-                        ' TODO : TRATAMENTO DE NODE!: Este bloco pode ir para uma classe a parte?
+                        ' TODO: TRATAMENTO DE NODE!: Este bloco pode ir para uma classe a parte?
 
                         Dim clonedParentNode As TreeNode = CType(node.Parent.Clone(), TreeNode)
                         If _sourceOldPath <> _sourceNewPath Then

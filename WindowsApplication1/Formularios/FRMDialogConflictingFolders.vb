@@ -252,8 +252,6 @@ Public Class FRMDialogConflictingFolders
         LNKLRenameDestination.Visible = True
     End Sub
 
-
-
     Public Sub New()
         If _pastaOrigem <> Nothing Then
             Dim pastaOrigemDirectoryInfo As New DirectoryInfo(_pastaOrigem)
@@ -262,7 +260,7 @@ Public Class FRMDialogConflictingFolders
 
         If DestinationPath <> Nothing Then
             Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
-            LBLFolderName.Text = pastaDestinoDirectoryInfo.Name
+            LBLFolderName.Text = """" & pastaDestinoDirectoryInfo.Name & """"
 
         End If
 
@@ -279,6 +277,7 @@ Public Class FRMDialogConflictingFolders
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
+
     Private Sub FRMDialogConflictingFolders_Load(sender As Object, e As EventArgs) Handles Me.Load
         rendoOldPathOrigem = _oldPathOrigem
         rendoNewPathOrigem = _newPathOrigem
@@ -287,6 +286,11 @@ Public Class FRMDialogConflictingFolders
         rendoNewPathDestino = _newPathDestino
         RefreshButtons()
 
+        If DestinationPath <> Nothing Then
+            Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
+            LBLFolderName.Text = """" & pastaDestinoDirectoryInfo.Name & """"
+
+        End If
     End Sub
 
     Sub RefreshButtons()

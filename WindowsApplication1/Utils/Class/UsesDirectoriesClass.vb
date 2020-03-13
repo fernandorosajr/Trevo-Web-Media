@@ -64,7 +64,7 @@ Public Class UsesDirectoriesClass
                     _foldersPathsOperations.destinationOldPath = _foldersPathsOperations.destinationPath
                     _foldersPathsOperations.destinationNewPath = _foldersPathsOperations.destinationPath
 
-                    resultadoDeCarregarFormDeConflitoDePasta = CarregarFormDeConflitoDePasta(_foldersPathsOperations, newName, title)
+                    resultadoDeCarregarFormDeConflitoDePasta = CarregarFormDeConflitoDePasta(_foldersPathsOperations)
                     _foldersPathsOperations = resultadoDeCarregarFormDeConflitoDePasta(0)
 
 
@@ -72,8 +72,8 @@ Public Class UsesDirectoriesClass
 
                     Select Case resultadoDeCarregarFormDeConflitoDePasta(1)
                         Case DialogResult.OK
-                            MoveFolder(_foldersPathsOperations.sourceOldPath, _foldersPathsOperations.sourceNewPath, False)
-                            MoveFolder(_foldersPathsOperations.destinationOldPath, _foldersPathsOperations.destinationNewPath, False)
+                            MoveFolder(_foldersPathsOperations.sourceOldPath, _foldersPathsOperations.sourceNewPath, False, 0)
+                            MoveFolder(_foldersPathsOperations.destinationOldPath, _foldersPathsOperations.destinationNewPath, False, 0)
 
                             'If FRM.NewPathDestino <> FRM.OldPathDestino Then
                             '    If FRM.NewPathDestino = FRM.NewPathOrigem Then
@@ -99,13 +99,12 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function CarregarFormDeConflitoDePasta(_foldersPathsOperations As Object, newName As String, title As String) As ArrayList
+    Function CarregarFormDeConflitoDePasta(_foldersPathsOperations As Object) As ArrayList
 
         Dim FRM As New FRMDialogConflictingFolders
         Dim resultado As New ArrayList()
 
-
-        FRM.Title = title
+        FRM.Title = "Conflito entre pastas"
         FRM.SourcePath = _foldersPathsOperations.sourcePath
         FRM.DestinationPath = _foldersPathsOperations.destinationPath
 
@@ -115,7 +114,6 @@ Public Class UsesDirectoriesClass
         FRM.DestinationOldPath = _foldersPathsOperations.destinationOldPath '.destinationPath
         FRM.DestinationNewPath = _foldersPathsOperations.destinationNewPath '.destinationPath
 
-        FRM.LBLFolderName.Text = """" & newName & """"
         FRM.ShowDialog()
 
         _foldersPathsOperations.destinationOldPath = FRM.DestinationOldPath
@@ -130,17 +128,32 @@ Public Class UsesDirectoriesClass
         Return resultado
     End Function
 
-    Function MoveFolder(_sourceDirectoryName As String, _destinationDirectoryName As String, overwrite As Boolean)
+    Function MoveFolder(_sourceDirectoryName As String, _destinationDirectoryName As String, overwrite As Boolean, memoria As DialogResult)
 
         Dim ListaDeArquivos As New ArrayList()
+        Dim ListaDePastas As New ArrayList()
 
         Dim newFileName As String
         Dim usesFiles As New UsesFilesClass
 
-        Try
+        Dim _foldersPathsOperations As FoldersPathsOperations
 
-            ListaDeArquivos.AddRange(AddFilesInList(_sourceDirectoryName))
-            'My.Computer.FileSystem.MoveDirectory(_sourceDirectoryName, _destinationDirectoryName, overwrite)
+        Dim resultadoDeCarregarFormDeConflitoDePasta As New ArrayList()
+
+        Try
+            ListaDePastas.AddRange(AddFoldersInList(_sourceDirectoryName, True))
+
+            For Each PastaItem As DirectoryInfo In ListaDePastas
+                If My.Computer.FileSystem.DirectoryExists(PastaItem.FullName) = True Then
+
+                    If memoria = DialogResult.None Then
+
+                        resultadoDeCarregarFormDeConflitoDePasta = CarregarFormDeConflitoDePasta(_foldersPathsOperations)
+                    End If
+
+                End If
+            Next
+            ' ListaDeArquivos.AddRange(AddFilesInList(_sourceDirectoryName))
 
             If My.Computer.FileSystem.DirectoryExists(_destinationDirectoryName) = False Then MkDir(_destinationDirectoryName)
 
@@ -162,7 +175,7 @@ Public Class UsesDirectoriesClass
                 If overwrite = False Then
                     newFileName = usesFiles.ReturnsNonExistentFileName(file.FullName, subCaminhoDeDestinoDoArquivo & "\" & file.Name)
                 Else
-                    'TODO: Tratar este destino. Ele deve mudar de acordo com as subPastas.
+
                     newFileName = subCaminhoDeDestinoDoArquivo & "\" & file.Name
                 End If
 
@@ -224,17 +237,31 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Function AddFilesInList(path As String) As ArrayList
-        Dim ListaDeArquivos As New ArrayList()
+    Function AddFoldersInList(path As String, addRootFolder As Boolean) As ArrayList
+        Dim listaDePastas As New ArrayList()
         Dim directoryInfo As New DirectoryInfo(path)
 
-        ListaDeArquivos.AddRange(directoryInfo.GetFiles)
+        If addRootFolder = True Then listaDePastas.Add(directoryInfo)
+        listaDePastas.AddRange(directoryInfo.GetDirectories)
 
         For Each subDir As DirectoryInfo In directoryInfo.GetDirectories()
-            ListaDeArquivos.AddRange(AddFilesInList(subDir.FullName))
+            listaDePastas.AddRange(AddFoldersInList(subDir.FullName, False))
         Next
 
-        Return ListaDeArquivos
+        Return listaDePastas
+    End Function
+
+    Function AddFilesInList(path As String) As ArrayList
+        Dim listaDeArquivos As New ArrayList()
+        Dim directoryInfo As New DirectoryInfo(path)
+
+        listaDeArquivos.AddRange(directoryInfo.GetFiles)
+
+        For Each subDir As DirectoryInfo In directoryInfo.GetDirectories()
+            listaDeArquivos.AddRange(AddFilesInList(subDir.FullName))
+        Next
+
+        Return listaDeArquivos
     End Function
 
     Function CreateNewFolder(path As String, folderName As String) As Boolean

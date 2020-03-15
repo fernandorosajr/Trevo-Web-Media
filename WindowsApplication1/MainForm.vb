@@ -581,7 +581,8 @@ Long, lpColorValues As Long) As Long
 
     Private Sub Button81_Click(sender As Object, e As EventArgs) Handles Button81.Click
         ' Form1.Show()
-        FRMDialogConflictingFolders.ShowDialog()
+        ' FRMDialogConflictingFolders.ShowDialog()
+        FRMDialogFileConflictForm.ShowDialog()
 
     End Sub
 

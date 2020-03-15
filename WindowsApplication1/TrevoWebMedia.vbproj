@@ -144,6 +144,12 @@
     <Compile Include="Formularios\FRMDialogConflictingFolders.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\FRMDialogFileConflictForm.Designer.vb">
+      <DependentUpon>FRMDialogFileConflictForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Utils\Class\Class_Configs.vb" />
     <Compile Include="Componentes\ControlesDeVisualizacao\ControlGroupsViews.Designer.vb">
       <DependentUpon>ControlGroupsViews.vb</DependentUpon>
@@ -405,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMDialogConflictingFolders.resx">
       <DependentUpon>FRMDialogConflictingFolders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMDialogFileConflictForm.resx">
+      <DependentUpon>FRMDialogFileConflictForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMDialogInputBox.resx">
       <DependentUpon>FRMDialogInputBox.vb</DependentUpon>

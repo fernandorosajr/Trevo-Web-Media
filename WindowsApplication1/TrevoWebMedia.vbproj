@@ -749,6 +749,9 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\undo_blue_min_24x24.png" />
+    <None Include="Resources\undo_blue.png" />
+    <None Include="Resources\penDefault_min_24X24.png" />
     <None Include="Resources\remove.png" />
     <None Include="Resources\undo %281%29.png" />
     <None Include="Resources\undo.png" />
@@ -883,6 +886,8 @@
     <None Include="Resources\exibirtipoDoArquivo.png" />
     <None Include="Resources\CompararPastas.png" />
     <None Include="Resources\check.png" />
+    <None Include="Resources\check_min_24x24.png" />
+    <None Include="Resources\Decidir_min_24x24.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

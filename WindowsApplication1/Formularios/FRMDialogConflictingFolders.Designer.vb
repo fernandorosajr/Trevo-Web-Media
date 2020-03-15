@@ -167,7 +167,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueOrigem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValueOrigem.Location = New System.Drawing.Point(204, 144)
         Me.LBLValueOrigem.Name = "LBLValueOrigem"
-        Me.LBLValueOrigem.Size = New System.Drawing.Size(261, 17)
+        Me.LBLValueOrigem.Size = New System.Drawing.Size(305, 17)
         Me.LBLValueOrigem.TabIndex = 4
         Me.LBLValueOrigem.Text = "<origem>"
         '
@@ -179,7 +179,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValueDestino.Location = New System.Drawing.Point(204, 192)
         Me.LBLValueDestino.Name = "LBLValueDestino"
-        Me.LBLValueDestino.Size = New System.Drawing.Size(261, 17)
+        Me.LBLValueDestino.Size = New System.Drawing.Size(305, 17)
         Me.LBLValueDestino.TabIndex = 11
         Me.LBLValueDestino.Text = "<destino>"
         '
@@ -192,7 +192,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitle02.Location = New System.Drawing.Point(136, 112)
         Me.LBLTitle02.Name = "LBLTitle02"
-        Me.LBLTitle02.Size = New System.Drawing.Size(329, 20)
+        Me.LBLTitle02.Size = New System.Drawing.Size(373, 20)
         Me.LBLTitle02.TabIndex = 2
         Me.LBLTitle02.Text = "O que deseja fazer?"
         '
@@ -204,7 +204,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
         Me.LNKLRenameSource.Location = New System.Drawing.Point(65, 0)
         Me.LNKLRenameSource.Name = "LNKLRenameSource"
-        Me.LNKLRenameSource.Size = New System.Drawing.Size(266, 13)
+        Me.LNKLRenameSource.Size = New System.Drawing.Size(310, 13)
         Me.LNKLRenameSource.TabIndex = 5
         Me.LNKLRenameSource.TabStop = True
         Me.LNKLRenameSource.Text = "Renomear pasta de origem."
@@ -217,7 +217,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LNKLRenameDestination.LinkColor = System.Drawing.Color.Orange
         Me.LNKLRenameDestination.Location = New System.Drawing.Point(65, 0)
         Me.LNKLRenameDestination.Name = "LNKLRenameDestination"
-        Me.LNKLRenameDestination.Size = New System.Drawing.Size(266, 13)
+        Me.LNKLRenameDestination.Size = New System.Drawing.Size(310, 13)
         Me.LNKLRenameDestination.TabIndex = 12
         Me.LNKLRenameDestination.TabStop = True
         Me.LNKLRenameDestination.Text = "Renomear pasta de destino."
@@ -231,7 +231,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLOutrasOpcoes.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLOutrasOpcoes.Location = New System.Drawing.Point(136, 28)
         Me.LBLOutrasOpcoes.Name = "LBLOutrasOpcoes"
-        Me.LBLOutrasOpcoes.Size = New System.Drawing.Size(329, 20)
+        Me.LBLOutrasOpcoes.Size = New System.Drawing.Size(373, 20)
         Me.LBLOutrasOpcoes.TabIndex = 20
         Me.LBLOutrasOpcoes.Text = "Outras opções:"
         '
@@ -249,7 +249,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNMesclar.ForeColor = System.Drawing.Color.LightGray
         Me.BTNMesclar.Location = New System.Drawing.Point(11, 10)
         Me.BTNMesclar.Name = "BTNMesclar"
-        Me.BTNMesclar.Size = New System.Drawing.Size(329, 23)
+        Me.BTNMesclar.Size = New System.Drawing.Size(373, 23)
         Me.BTNMesclar.TabIndex = 21
         Me.BTNMesclar.Tag = "Mescla pastas no destino. Se houver arquivos de mesmo nome será perguntado o que " &
     "fazer."
@@ -267,7 +267,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNSubstituir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNSubstituir.Location = New System.Drawing.Point(11, 39)
         Me.BTNSubstituir.Name = "BTNSubstituir"
-        Me.BTNSubstituir.Size = New System.Drawing.Size(329, 23)
+        Me.BTNSubstituir.Size = New System.Drawing.Size(373, 23)
         Me.BTNSubstituir.TabIndex = 22
         Me.BTNSubstituir.Tag = "Exclui pasta destino e seus conteúdos e a substitui pela pasta de origem."
         Me.BTNSubstituir.Text = "Substituir "
@@ -283,7 +283,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNIgnorar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNIgnorar.Location = New System.Drawing.Point(11, 68)
         Me.BTNIgnorar.Name = "BTNIgnorar"
-        Me.BTNIgnorar.Size = New System.Drawing.Size(329, 23)
+        Me.BTNIgnorar.Size = New System.Drawing.Size(373, 23)
         Me.BTNIgnorar.TabIndex = 23
         Me.BTNIgnorar.Tag = "Nada será feito."
         Me.BTNIgnorar.Text = "Ignorar e fechar "
@@ -296,7 +296,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_PanelDivisor.Location = New System.Drawing.Point(136, 2)
         Me.PanelEnvolve_PanelDivisor.Name = "PanelEnvolve_PanelDivisor"
         Me.PanelEnvolve_PanelDivisor.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
-        Me.PanelEnvolve_PanelDivisor.Size = New System.Drawing.Size(329, 21)
+        Me.PanelEnvolve_PanelDivisor.Size = New System.Drawing.Size(373, 21)
         Me.PanelEnvolve_PanelDivisor.TabIndex = 102
         '
         'PanelDivisor
@@ -305,7 +305,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelDivisor.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelDivisor.Location = New System.Drawing.Point(5, 10)
         Me.PanelDivisor.Name = "PanelDivisor"
-        Me.PanelDivisor.Size = New System.Drawing.Size(319, 1)
+        Me.PanelDivisor.Size = New System.Drawing.Size(363, 1)
         Me.PanelDivisor.TabIndex = 0
         '
         'LBLFolderName
@@ -317,7 +317,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLFolderName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLFolderName.Location = New System.Drawing.Point(135, 71)
         Me.LBLFolderName.Name = "LBLFolderName"
-        Me.LBLFolderName.Size = New System.Drawing.Size(330, 24)
+        Me.LBLFolderName.Size = New System.Drawing.Size(374, 24)
         Me.LBLFolderName.TabIndex = 1
         Me.LBLFolderName.Text = "S-1-5-21-1603654266-2086531289-494476911-1002"
         '
@@ -330,7 +330,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLTitle01.ForeColor = System.Drawing.Color.LightGray
         Me.LBLTitle01.Location = New System.Drawing.Point(132, 24)
         Me.LBLTitle01.Name = "LBLTitle01"
-        Me.LBLTitle01.Size = New System.Drawing.Size(330, 47)
+        Me.LBLTitle01.Size = New System.Drawing.Size(374, 47)
         Me.LBLTitle01.TabIndex = 0
         Me.LBLTitle01.Text = "Este destino já contém uma pasta chamada:"
         '
@@ -377,7 +377,7 @@ Partial Class FRMDialogConflictingFolders
         Me.Panel_LBLOutrasOpcoes.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel_LBLOutrasOpcoes.Location = New System.Drawing.Point(0, 287)
         Me.Panel_LBLOutrasOpcoes.Name = "Panel_LBLOutrasOpcoes"
-        Me.Panel_LBLOutrasOpcoes.Size = New System.Drawing.Size(477, 167)
+        Me.Panel_LBLOutrasOpcoes.Size = New System.Drawing.Size(521, 167)
         Me.Panel_LBLOutrasOpcoes.TabIndex = 106
         '
         'ChBMemorizarAcao
@@ -400,7 +400,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolveButtons.Controls.Add(Me.BTNIgnorar)
         Me.PanelEnvolveButtons.Location = New System.Drawing.Point(124, 35)
         Me.PanelEnvolveButtons.Name = "PanelEnvolveButtons"
-        Me.PanelEnvolveButtons.Size = New System.Drawing.Size(350, 100)
+        Me.PanelEnvolveButtons.Size = New System.Drawing.Size(394, 100)
         Me.PanelEnvolveButtons.TabIndex = 103
         '
         'PanelBorder_TXTNomeDaOrigem
@@ -411,7 +411,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelBorder_TXTNomeDaOrigem.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TXTNomeDaOrigem.Name = "PanelBorder_TXTNomeDaOrigem"
         Me.PanelBorder_TXTNomeDaOrigem.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.PanelBorder_TXTNomeDaOrigem.Size = New System.Drawing.Size(179, 19)
+        Me.PanelBorder_TXTNomeDaOrigem.Size = New System.Drawing.Size(223, 19)
         Me.PanelBorder_TXTNomeDaOrigem.TabIndex = 6
         '
         'PanelPadding_TXTNomeDaOrigem
@@ -422,7 +422,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelPadding_TXTNomeDaOrigem.Location = New System.Drawing.Point(0, 0)
         Me.PanelPadding_TXTNomeDaOrigem.Name = "PanelPadding_TXTNomeDaOrigem"
         Me.PanelPadding_TXTNomeDaOrigem.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.PanelPadding_TXTNomeDaOrigem.Size = New System.Drawing.Size(179, 18)
+        Me.PanelPadding_TXTNomeDaOrigem.Size = New System.Drawing.Size(223, 18)
         Me.PanelPadding_TXTNomeDaOrigem.TabIndex = 6
         '
         'TXTNomeDaOrigem
@@ -434,7 +434,7 @@ Partial Class FRMDialogConflictingFolders
         Me.TXTNomeDaOrigem.ForeColor = System.Drawing.Color.DarkGray
         Me.TXTNomeDaOrigem.Location = New System.Drawing.Point(8, 2)
         Me.TXTNomeDaOrigem.Name = "TXTNomeDaOrigem"
-        Me.TXTNomeDaOrigem.Size = New System.Drawing.Size(169, 13)
+        Me.TXTNomeDaOrigem.Size = New System.Drawing.Size(213, 13)
         Me.TXTNomeDaOrigem.TabIndex = 7
         Me.TXTNomeDaOrigem.Text = "Pasta 01"
         '
@@ -499,7 +499,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_TXTNomeDaOrigem.Controls.Add(Me.BTNConfirmarRenomeDeOrigem)
         Me.PanelEnvolve_TXTNomeDaOrigem.Location = New System.Drawing.Point(287, 141)
         Me.PanelEnvolve_TXTNomeDaOrigem.Name = "PanelEnvolve_TXTNomeDaOrigem"
-        Me.PanelEnvolve_TXTNomeDaOrigem.Size = New System.Drawing.Size(179, 38)
+        Me.PanelEnvolve_TXTNomeDaOrigem.Size = New System.Drawing.Size(223, 38)
         Me.PanelEnvolve_TXTNomeDaOrigem.TabIndex = 6
         Me.PanelEnvolve_TXTNomeDaOrigem.Visible = False
         '
@@ -512,7 +512,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_TXTNomeDoDestino.Controls.Add(Me.BTNConfirmarRenomeDeDestino)
         Me.PanelEnvolve_TXTNomeDoDestino.Location = New System.Drawing.Point(287, 189)
         Me.PanelEnvolve_TXTNomeDoDestino.Name = "PanelEnvolve_TXTNomeDoDestino"
-        Me.PanelEnvolve_TXTNomeDoDestino.Size = New System.Drawing.Size(180, 38)
+        Me.PanelEnvolve_TXTNomeDoDestino.Size = New System.Drawing.Size(224, 38)
         Me.PanelEnvolve_TXTNomeDoDestino.TabIndex = 13
         Me.PanelEnvolve_TXTNomeDoDestino.Visible = False
         '
@@ -524,7 +524,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelBorder_TXTNomeDoDestino.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TXTNomeDoDestino.Name = "PanelBorder_TXTNomeDoDestino"
         Me.PanelBorder_TXTNomeDoDestino.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.PanelBorder_TXTNomeDoDestino.Size = New System.Drawing.Size(180, 19)
+        Me.PanelBorder_TXTNomeDoDestino.Size = New System.Drawing.Size(224, 19)
         Me.PanelBorder_TXTNomeDoDestino.TabIndex = 109
         '
         'PanelPadding_TXTNomeDoDestino
@@ -535,7 +535,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelPadding_TXTNomeDoDestino.Location = New System.Drawing.Point(0, 0)
         Me.PanelPadding_TXTNomeDoDestino.Name = "PanelPadding_TXTNomeDoDestino"
         Me.PanelPadding_TXTNomeDoDestino.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.PanelPadding_TXTNomeDoDestino.Size = New System.Drawing.Size(180, 18)
+        Me.PanelPadding_TXTNomeDoDestino.Size = New System.Drawing.Size(224, 18)
         Me.PanelPadding_TXTNomeDoDestino.TabIndex = 12
         '
         'TXTNomeDoDestino
@@ -547,7 +547,7 @@ Partial Class FRMDialogConflictingFolders
         Me.TXTNomeDoDestino.ForeColor = System.Drawing.Color.DarkGray
         Me.TXTNomeDoDestino.Location = New System.Drawing.Point(8, 2)
         Me.TXTNomeDoDestino.Name = "TXTNomeDoDestino"
-        Me.TXTNomeDoDestino.Size = New System.Drawing.Size(170, 13)
+        Me.TXTNomeDoDestino.Size = New System.Drawing.Size(214, 13)
         Me.TXTNomeDoDestino.TabIndex = 14
         Me.TXTNomeDoDestino.Text = "Pasta 01"
         '
@@ -587,7 +587,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_LNKLRenomeOrigem.Controls.Add(Me.LBLRenameOrigem)
         Me.PanelEnvolve_LNKLRenomeOrigem.Location = New System.Drawing.Point(136, 161)
         Me.PanelEnvolve_LNKLRenomeOrigem.Name = "PanelEnvolve_LNKLRenomeOrigem"
-        Me.PanelEnvolve_LNKLRenomeOrigem.Size = New System.Drawing.Size(331, 13)
+        Me.PanelEnvolve_LNKLRenomeOrigem.Size = New System.Drawing.Size(375, 13)
         Me.PanelEnvolve_LNKLRenomeOrigem.TabIndex = 5
         '
         'LBLRenameOrigem
@@ -611,7 +611,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LBLRenameDestino)
         Me.PanelEnvolve_LNKLRenomeDestino.Location = New System.Drawing.Point(136, 207)
         Me.PanelEnvolve_LNKLRenomeDestino.Name = "PanelEnvolve_LNKLRenomeDestino"
-        Me.PanelEnvolve_LNKLRenomeDestino.Size = New System.Drawing.Size(331, 13)
+        Me.PanelEnvolve_LNKLRenomeDestino.Size = New System.Drawing.Size(375, 13)
         Me.PanelEnvolve_LNKLRenomeDestino.TabIndex = 12
         '
         'LBLRenameDestino
@@ -633,7 +633,7 @@ Partial Class FRMDialogConflictingFolders
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(477, 454)
+        Me.ClientSize = New System.Drawing.Size(521, 454)
         Me.Controls.Add(Me.Panel_LBLInfo)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDoDestino)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDaOrigem)

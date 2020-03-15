@@ -72,6 +72,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     ' Propriedades 
+
     Dim _title As String
     Public Property Title As String
         Get
@@ -84,6 +85,7 @@ Public Class FRMDialogConflictingFolders
         End Set
     End Property
 
+    '  Propriedadee de Caminho
     Dim _pastaOrigem As String
     Public Property SourcePath As String
         Get
@@ -194,6 +196,18 @@ Public Class FRMDialogConflictingFolders
         End Set
     End Property
 
+    ' Propriedade de memoria.
+    Private _memoria As Color
+    Public Property Memoria As Object
+        Get
+            Return _memoria
+        End Get
+        Set(value As Object)
+            _memoria = value
+
+        End Set
+    End Property
+
     Sub TelaParaOrigemDiferente()
         PanelEnvolve_TXTNomeDaOrigem.Visible = False
         LNKLRenameSource.Text = _newPathOrigem
@@ -289,8 +303,8 @@ Public Class FRMDialogConflictingFolders
         If DestinationPath <> Nothing Then
             Dim pastaDestinoDirectoryInfo As New DirectoryInfo(_pastaDestino)
             LBLFolderName.Text = """" & pastaDestinoDirectoryInfo.Name & """"
-
         End If
+
     End Sub
 
     Sub RefreshButtons()
@@ -318,6 +332,13 @@ Public Class FRMDialogConflictingFolders
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.OK
+
+        If ChBMemorizarAcao.Checked = True Then
+            Memoria = Me.DialogResult
+        Else
+            Memoria = False
+        End If
+
         Me.Close()
     End Sub
 
@@ -624,6 +645,38 @@ Public Class FRMDialogConflictingFolders
 
     Private Sub BTNMesclar_Click(sender As Object, e As EventArgs) Handles BTNMesclar.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.OK
+
+        If ChBMemorizarAcao.Checked = True Then
+            Memoria = Me.DialogResult
+        Else
+            Memoria = DialogResult.None
+
+        End If
+
         Me.Close()
+    End Sub
+
+    Private Sub BTNSubstituir_Click(sender As Object, e As EventArgs) Handles BTNSubstituir.Click
+        Me.DialogResult = System.Windows.Forms.DialogResult.Yes
+
+        If ChBMemorizarAcao.Checked = True Then
+            Memoria = Me.DialogResult
+        Else
+            Memoria = DialogResult.None
+        End If
+
+        Me.Close()
+    End Sub
+
+    Private Sub BTNIgnorar_Click(sender As Object, e As EventArgs) Handles BTNIgnorar.Click
+        Memoria = DialogResult.None
+
+    End Sub
+
+    Private Sub ChBMemorizarAcao_CheckedChanged(sender As Object, e As EventArgs) Handles ChBMemorizarAcao.CheckedChanged
+        Dim chk As CheckBox
+        chk = CType(sender, CheckBox)
+        Memoria = DialogResult.None
+
     End Sub
 End Class

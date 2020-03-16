@@ -173,6 +173,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _select() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("select", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property _stop() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("stop", resourceCulture)
@@ -326,6 +336,16 @@ Namespace My.Resources
         Friend ReadOnly Property arquivo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("arquivo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property arquivo01() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("arquivo01", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1216,6 +1236,26 @@ Namespace My.Resources
         Friend ReadOnly Property menu3() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("menu3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuDefault() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuDefault", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuDefault_min_17x17() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuDefault_min_17x17", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

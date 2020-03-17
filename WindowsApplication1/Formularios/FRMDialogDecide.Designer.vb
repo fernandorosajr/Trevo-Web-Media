@@ -80,16 +80,16 @@ Partial Class FRMDialogDecide
         Me.ChBMemorizarAcao = New System.Windows.Forms.CheckBox()
         Me.PanelConteudo = New System.Windows.Forms.Panel()
         Me.PanelMenuLateral = New System.Windows.Forms.Panel()
-        Me.BTNMenuExpand = New System.Windows.Forms.Button()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
         Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.BTNMenuExpand = New System.Windows.Forms.Button()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel14.SuspendLayout()
@@ -813,62 +813,6 @@ Partial Class FRMDialogDecide
         Me.PanelMenuLateral.Size = New System.Drawing.Size(43, 475)
         Me.PanelMenuLateral.TabIndex = 109
         '
-        'BTNMenuExpand
-        '
-        Me.BTNMenuExpand.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTNMenuExpand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNMenuExpand.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNMenuExpand.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNMenuExpand.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMenuExpand.Image = Global.TrevoWebMedia.My.Resources.Resources.menuDefault_min_17x17
-        Me.BTNMenuExpand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNMenuExpand.Location = New System.Drawing.Point(8, 24)
-        Me.BTNMenuExpand.Name = "BTNMenuExpand"
-        Me.BTNMenuExpand.Size = New System.Drawing.Size(28, 23)
-        Me.BTNMenuExpand.TabIndex = 2
-        Me.BTNMenuExpand.Tag = "Selecionar"
-        '
-        'Panel20
-        '
-        Me.Panel20.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel20.Location = New System.Drawing.Point(20, 5)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(61, 68)
-        Me.Panel20.TabIndex = 0
-        '
-        'Panel24
-        '
-        Me.Panel24.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel24.Location = New System.Drawing.Point(20, 5)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(61, 68)
-        Me.Panel24.TabIndex = 0
-        '
-        'Panel12
-        '
-        Me.Panel12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel12.Location = New System.Drawing.Point(20, 5)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(61, 68)
-        Me.Panel12.TabIndex = 0
-        '
-        'Panel4
-        '
-        Me.Panel4.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(20, 5)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(61, 68)
-        Me.Panel4.TabIndex = 0
-        '
         'LinkLabel10
         '
         Me.LinkLabel10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -937,6 +881,62 @@ Partial Class FRMDialogDecide
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(1, 475)
         Me.Panel28.TabIndex = 111
+        '
+        'BTNMenuExpand
+        '
+        Me.BTNMenuExpand.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNMenuExpand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNMenuExpand.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNMenuExpand.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNMenuExpand.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMenuExpand.Image = Global.TrevoWebMedia.My.Resources.Resources.menuDefault_min_17x17
+        Me.BTNMenuExpand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNMenuExpand.Location = New System.Drawing.Point(8, 24)
+        Me.BTNMenuExpand.Name = "BTNMenuExpand"
+        Me.BTNMenuExpand.Size = New System.Drawing.Size(28, 23)
+        Me.BTNMenuExpand.TabIndex = 2
+        Me.BTNMenuExpand.Tag = "Selecionar"
+        '
+        'Panel20
+        '
+        Me.Panel20.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel20.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel20.Location = New System.Drawing.Point(20, 5)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(61, 68)
+        Me.Panel20.TabIndex = 0
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel24.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel24.Location = New System.Drawing.Point(20, 5)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(61, 68)
+        Me.Panel24.TabIndex = 0
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(20, 5)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(61, 68)
+        Me.Panel12.TabIndex = 0
+        '
+        'Panel4
+        '
+        Me.Panel4.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(20, 5)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(61, 68)
+        Me.Panel4.TabIndex = 0
         '
         'FRMDialogDecide
         '

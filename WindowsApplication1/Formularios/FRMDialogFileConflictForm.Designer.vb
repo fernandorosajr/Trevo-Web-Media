@@ -28,8 +28,12 @@ Partial Class FRMDialogFileConflictForm
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
         Me.PanelEnvolveButtons = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ChBMemorizarAcao = New System.Windows.Forms.CheckBox()
+        Me.BTNSubstituir = New System.Windows.Forms.Button()
+        Me.BTNMesclar = New System.Windows.Forms.Button()
+        Me.BTNIgnorar = New System.Windows.Forms.Button()
         Me.LBLFolderName = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -42,10 +46,6 @@ Partial Class FRMDialogFileConflictForm
         Me.PanelEnvolve_PanelDivisor = New System.Windows.Forms.Panel()
         Me.PanelDivisor = New System.Windows.Forms.Panel()
         Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.BTNSubstituir = New System.Windows.Forms.Button()
-        Me.BTNMesclar = New System.Windows.Forms.Button()
-        Me.BTNIgnorar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelEnvolveButtons.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -110,6 +110,27 @@ Partial Class FRMDialogFileConflictForm
         Me.PanelEnvolveButtons.Size = New System.Drawing.Size(459, 186)
         Me.PanelEnvolveButtons.TabIndex = 104
         '
+        'Button2
+        '
+        Me.Button2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button2.AutoEllipsis = True
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Ignore
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Image = Global.TrevoWebMedia.My.Resources.Resources.Decidir_min_24x24
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(14, 120)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(438, 30)
+        Me.Button2.TabIndex = 107
+        Me.Button2.Tag = "Nada será feito."
+        Me.Button2.Text = "       Deixe-me decidir sobre cada arquivo"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'Button1
         '
         Me.Button1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
@@ -138,6 +159,71 @@ Partial Class FRMDialogFileConflictForm
         Me.ChBMemorizarAcao.TabIndex = 105
         Me.ChBMemorizarAcao.Text = "Memorizar ação"
         Me.ChBMemorizarAcao.UseVisualStyleBackColor = True
+        '
+        'BTNSubstituir
+        '
+        Me.BTNSubstituir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNSubstituir.AutoEllipsis = True
+        Me.BTNSubstituir.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNSubstituir.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.BTNSubstituir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNSubstituir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNSubstituir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNSubstituir.Image = Global.TrevoWebMedia.My.Resources.Resources.penDefault_min_24X24
+        Me.BTNSubstituir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNSubstituir.Location = New System.Drawing.Point(14, 48)
+        Me.BTNSubstituir.Name = "BTNSubstituir"
+        Me.BTNSubstituir.Size = New System.Drawing.Size(370, 30)
+        Me.BTNSubstituir.TabIndex = 22
+        Me.BTNSubstituir.Tag = ""
+        Me.BTNSubstituir.Text = "       Renomear todos no destino"
+        Me.BTNSubstituir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'BTNMesclar
+        '
+        Me.BTNMesclar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNMesclar.AutoEllipsis = True
+        Me.BTNMesclar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNMesclar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNMesclar.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.BTNMesclar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNMesclar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMesclar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNMesclar.ForeColor = System.Drawing.Color.LightGray
+        Me.BTNMesclar.Image = Global.TrevoWebMedia.My.Resources.Resources.check_min_24x24
+        Me.BTNMesclar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNMesclar.Location = New System.Drawing.Point(14, 12)
+        Me.BTNMesclar.Name = "BTNMesclar"
+        Me.BTNMesclar.Size = New System.Drawing.Size(438, 30)
+        Me.BTNMesclar.TabIndex = 21
+        Me.BTNMesclar.Tag = "Mescla pastas no destino. Se houver arquivos de mesmo nome será perguntado o que " &
+    "fazer."
+        Me.BTNMesclar.Text = "       Substituir os arquivos no destino"
+        Me.BTNMesclar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNMesclar.UseVisualStyleBackColor = False
+        '
+        'BTNIgnorar
+        '
+        Me.BTNIgnorar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNIgnorar.AutoEllipsis = True
+        Me.BTNIgnorar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BTNIgnorar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNIgnorar.DialogResult = System.Windows.Forms.DialogResult.Ignore
+        Me.BTNIgnorar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNIgnorar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNIgnorar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNIgnorar.Image = Global.TrevoWebMedia.My.Resources.Resources.undo_blue_min_24x24
+        Me.BTNIgnorar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNIgnorar.Location = New System.Drawing.Point(14, 84)
+        Me.BTNIgnorar.Name = "BTNIgnorar"
+        Me.BTNIgnorar.Size = New System.Drawing.Size(438, 30)
+        Me.BTNIgnorar.TabIndex = 23
+        Me.BTNIgnorar.Tag = ""
+        Me.BTNIgnorar.Text = "       Ignorar estes aruivos"
+        Me.BTNIgnorar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LBLFolderName
         '
@@ -287,92 +373,6 @@ Partial Class FRMDialogFileConflictForm
         Me.IMGList.ImageStream = CType(resources.GetObject("IMGList.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
         Me.IMGList.Images.SetKeyName(0, "check_min_24x24.png")
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.AutoEllipsis = True
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Ignore
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Image = Global.TrevoWebMedia.My.Resources.Resources.Decidir_min_24x24
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(14, 120)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(438, 30)
-        Me.Button2.TabIndex = 107
-        Me.Button2.Tag = "Nada será feito."
-        Me.Button2.Text = "       Deixe-me decidir sobre cada arquivo"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'BTNSubstituir
-        '
-        Me.BTNSubstituir.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTNSubstituir.AutoEllipsis = True
-        Me.BTNSubstituir.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNSubstituir.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.BTNSubstituir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNSubstituir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNSubstituir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNSubstituir.Image = Global.TrevoWebMedia.My.Resources.Resources.penDefault_min_24X24
-        Me.BTNSubstituir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNSubstituir.Location = New System.Drawing.Point(14, 48)
-        Me.BTNSubstituir.Name = "BTNSubstituir"
-        Me.BTNSubstituir.Size = New System.Drawing.Size(370, 30)
-        Me.BTNSubstituir.TabIndex = 22
-        Me.BTNSubstituir.Tag = ""
-        Me.BTNSubstituir.Text = "       Renomear todos no destino"
-        Me.BTNSubstituir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'BTNMesclar
-        '
-        Me.BTNMesclar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTNMesclar.AutoEllipsis = True
-        Me.BTNMesclar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNMesclar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNMesclar.DialogResult = System.Windows.Forms.DialogResult.OK
-        Me.BTNMesclar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNMesclar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMesclar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNMesclar.ForeColor = System.Drawing.Color.LightGray
-        Me.BTNMesclar.Image = Global.TrevoWebMedia.My.Resources.Resources.check_min_24x24
-        Me.BTNMesclar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNMesclar.Location = New System.Drawing.Point(14, 12)
-        Me.BTNMesclar.Name = "BTNMesclar"
-        Me.BTNMesclar.Size = New System.Drawing.Size(438, 30)
-        Me.BTNMesclar.TabIndex = 21
-        Me.BTNMesclar.Tag = "Mescla pastas no destino. Se houver arquivos de mesmo nome será perguntado o que " &
-    "fazer."
-        Me.BTNMesclar.Text = "       Substituir os arquivos no destino"
-        Me.BTNMesclar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNMesclar.UseVisualStyleBackColor = False
-        '
-        'BTNIgnorar
-        '
-        Me.BTNIgnorar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTNIgnorar.AutoEllipsis = True
-        Me.BTNIgnorar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.BTNIgnorar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNIgnorar.DialogResult = System.Windows.Forms.DialogResult.Ignore
-        Me.BTNIgnorar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNIgnorar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNIgnorar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNIgnorar.Image = Global.TrevoWebMedia.My.Resources.Resources.undo_blue_min_24x24
-        Me.BTNIgnorar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNIgnorar.Location = New System.Drawing.Point(14, 84)
-        Me.BTNIgnorar.Name = "BTNIgnorar"
-        Me.BTNIgnorar.Size = New System.Drawing.Size(438, 30)
-        Me.BTNIgnorar.TabIndex = 23
-        Me.BTNIgnorar.Tag = ""
-        Me.BTNIgnorar.Text = "       Ignorar estes aruivos"
-        Me.BTNIgnorar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'FRMDialogFileConflictForm
         '

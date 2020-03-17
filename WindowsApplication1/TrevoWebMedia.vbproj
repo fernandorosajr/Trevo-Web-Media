@@ -156,6 +156,12 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\FRMDialogRenameCriterio.Designer.vb">
+      <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMDialogRenameCriterio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Utils\Class\Class_Configs.vb" />
     <Compile Include="Componentes\ControlesDeVisualizacao\ControlGroupsViews.Designer.vb">
       <DependentUpon>ControlGroupsViews.vb</DependentUpon>
@@ -426,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMDialogInputBox.resx">
       <DependentUpon>FRMDialogInputBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMDialogRenameCriterio.resx">
+      <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.af.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -759,6 +768,8 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\plus.png" />
     <None Include="Resources\menuDefault_min_17x17.png" />
     <None Include="Resources\select.png" />
     <None Include="Resources\menuDefault.png" />

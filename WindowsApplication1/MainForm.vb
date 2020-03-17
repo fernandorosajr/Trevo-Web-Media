@@ -743,6 +743,7 @@ Long, lpColorValues As Long) As Long
         End If
     End Sub
 
+
     Private Sub RBVideos_CheckedChanged(sender As Object, e As EventArgs) Handles RBVideos.CheckedChanged
         If sender.checked Then
 
@@ -763,6 +764,11 @@ Long, lpColorValues As Long) As Long
 
     Private Sub CheckBox19_Click(sender As Object, e As EventArgs) Handles CheckBox19.Click
         FRMDialogDecide.ShowDialog()
+
+    End Sub
+
+    Private Sub CheckBox20_Click(sender As Object, e As EventArgs) Handles CheckBox20.Click
+        FRMDialogRenameCriterio.ShowDialog()
 
     End Sub
 End Class

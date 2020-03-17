@@ -156,10 +156,10 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMDialogRenameCriterio.Designer.vb">
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FRMDialogRenameCriterio.vb">
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utils\Class\Class_Configs.vb" />
@@ -433,7 +433,7 @@
     <EmbeddedResource Include="Formularios\FRMDialogInputBox.resx">
       <DependentUpon>FRMDialogInputBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FRMDialogRenameCriterio.resx">
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.af.resx">
@@ -914,6 +914,9 @@
     <None Include="Resources\Decidir_min_24x24.png" />
     <None Include="Resources\arquivo01.png" />
     <Content Include="Resources\fechar cinza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

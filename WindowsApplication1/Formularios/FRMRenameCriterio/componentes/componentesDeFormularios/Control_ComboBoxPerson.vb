@@ -1,4 +1,4 @@
-﻿Public Class ControlComboBoxPerson
+﻿Public Class Control_ComboBoxPerson
 
     Dim funcoesDeString As New StringFunctionsClass
     Private _options As String

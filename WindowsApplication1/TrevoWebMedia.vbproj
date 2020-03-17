@@ -156,10 +156,10 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\ControlComboBoxPerson.Designer.vb">
-      <DependentUpon>ControlComboBoxPerson.vb</DependentUpon>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.Designer.vb">
+      <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\ControlComboBoxPerson.vb">
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
@@ -439,8 +439,8 @@
     <EmbeddedResource Include="Formularios\FRMDialogInputBox.resx">
       <DependentUpon>FRMDialogInputBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\ControlComboBoxPerson.resx">
-      <DependentUpon>ControlComboBoxPerson.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.resx">
+      <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>

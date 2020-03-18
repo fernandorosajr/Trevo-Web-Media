@@ -11,47 +11,76 @@
         End Set
     End Property
 
-    Dim separador() As Char = {vbCrLf}
+    ReadOnly separador() As Char = {";"c, vbCrLf} ' {vbCrLf}
 
-    Private _lista As ArrayList
+    Private _lista As New ArrayList()
     Public Property Lista As String
         'Dim listaArray As New ArrayList()
         Get
-            Dim listaReturn As String = ""
+            Dim listaEmString As String = ""
             'Return _lista
             For Each str As String In _lista
-                listaReturn = listaReturn & str & vbCrLf
+                listaEmString = listaEmString & str & vbCrLf ' ";" 'vbCrLf
+
             Next
 
-            Return listaReturn
+            Return listaEmString
 
         End Get
         Set(value As String)
-            Dim listaAux As New ArrayList()
-            Dim listaReturn() As String
+
+            Dim valueInStringList() As String
             'listaAux.AddRange(value.Split(vbCrLf))
             '_lista = listaAux
-
-            listaReturn = funcoesDeString.SepararPalavras(value, {vbCrLf})
-            _lista.AddRange(listaReturn)
+            If value Is Nothing Then
+                value = "val1;val2"
+            End If
+            valueInStringList = funcoesDeString.SepararPalavras(value, separador)  ' {vbCrLf})
+            _lista.AddRange(valueInStringList)
 
         End Set
     End Property
 
-    Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim novaLinha As String
+    Public Sub New()
+
+        ' Esta chamada é requerida pelo designer.
+        InitializeComponent()
+
+        ' Adicione qualquer inicialização após a chamada InitializeComponent().
+
+        Dim newLine As String
         Dim _value As String = ""
 
         For x = 0 To 5
-            novaLinha = ("Teste " & (x + 1)) & vbCrLf
-            _value = _value & novaLinha
+            newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
+            _value = _value & newLine
 
         Next
-        Options = _value
 
-        ' Lista = Options
+        Options = _value
+        Lista = Options
+
+    End Sub
+    Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
+    Private Sub NoneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NoneToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub CMS_TipoDeProcesso_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles CMS_TipoDeProcesso.Opening
+
+    End Sub
+
+    Private Sub CMS_TipoDeProcesso_Click(sender As Object, e As EventArgs) Handles CMS_TipoDeProcesso.Click
+        Dim menuO As ContextMenuStrip
+        menuO = CType(sender, ContextMenuStrip)
+        Dim tsmi As ToolStripMenuItem
 
 
+        For Each tsmi In menuO.Items
+            tsmi.ShortcutKeyDisplayString = "Merged Item"
+        Next tsmi
+    End Sub
 End Class

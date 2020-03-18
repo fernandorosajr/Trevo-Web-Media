@@ -652,15 +652,11 @@
     End Sub
 
     Private Sub ButtonsContextMenu_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaPasta.Click, BTNOpcoes_BTNMaisProcessos.Click, BTNOpcoes_BTNMover.Click, BTNOpcoes_BTNCopiar.Click, BTNOpcoes_BTNExcluir.Click, BTNOpcoes_BTNRenomear.Click
-        Dim x As Integer = System.Windows.Forms.Cursor.Position.X
-        Dim y As Integer = System.Windows.Forms.Cursor.Position.Y
+
 
         Dim btn As Button = CType(sender, Button)
-        'pMouse = System.Windows.Forms.Cursor.Position
 
-        x -= btn.Width
-
-        btn.ContextMenuStrip.Show(x, y)
+        btn.ContextMenuStrip.Show(btn, 0, btn.Height)
 
     End Sub
 
@@ -718,6 +714,10 @@
     End Sub
 
     Private Sub BTNNovaPasta_Click(sender As Object, e As EventArgs) Handles BTNNovaPasta.Click
+
+    End Sub
+
+    Private Sub BTNOpcoes_BTNNovaMidia_Click(sender As Object, e As EventArgs) Handles BTNOpcoes_BTNNovaMidia.Click
 
     End Sub
 

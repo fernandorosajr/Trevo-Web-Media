@@ -544,7 +544,7 @@ Long, lpColorValues As Long) As Long
 
         'CTMenuVisualizacao.Top = Int(pMouse.Y)  ' + BTNMenu01.Height
         'CTMenuVisualizacao.Left = Int(pMouse.X)
-        CTMenuVisualizacao.Show(pMouse)
+        CTMenuVisualizacao.Show(BTNMenu01, 0, BTNMenu01.Height) '(pMouse)
 
 
     End Sub

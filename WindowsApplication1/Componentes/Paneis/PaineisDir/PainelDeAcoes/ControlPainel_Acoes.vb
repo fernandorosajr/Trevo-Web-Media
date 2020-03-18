@@ -719,15 +719,11 @@ Public Class ControlPainel_Acoes
 
     End Sub
 
-    Private Sub BTNSelectNewGroupType_Click(sender As Object, e As EventArgs) Handles BTNSelectNewGroupType.Click
-        pMouse = System.Windows.Forms.Cursor.Position
-        ' MsgBox(pMouse.X)
-        CMS_TipoDeProcesso.Show(pMouse)
-    End Sub
+    Private Sub BTNSelectedNewGroupType_Click(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.Click, BTNSelectNewGroupType.Click
+        Dim btn As Button
+        btn = CType(sender, Button)
 
-    Private Sub BTNSelectedNewGroupType_Click(sender As Object, e As EventArgs) Handles BTNSelectedNewGroupType.Click
-        pMouse = System.Windows.Forms.Cursor.Position
-        CMS_TipoDeProcesso.Show(pMouse)
+        CMS_TipoDeProcesso.Show(BTNSelectedNewGroupType, -1 * (CMS_TipoDeProcesso.Width - BTNSelectedNewGroupType.Width), (btn.Height + 4)) '(pMouse)
     End Sub
 
     Private Sub TSMenuItemTipoComposto_Click(sender As Object, e As EventArgs) Handles TSMenuItemTipoComposto.Click

@@ -1,4 +1,5 @@
 ﻿Public Class Control_ComboBoxPerson
+    'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
 
     Dim funcoesDeString As New StringFunctionsClass
     Private _options As String
@@ -62,6 +63,7 @@
 
     End Sub
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddMenuItens()
 
     End Sub
 
@@ -69,11 +71,37 @@
 
     End Sub
 
-    Private Sub CMS_TipoDeProcesso_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles CMS_TipoDeProcesso.Opening
+    Private Sub CMS_TipoDeProcesso_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles CMS_Menu.Opening
 
     End Sub
 
-    Private Sub CMS_TipoDeProcesso_Click(sender As Object, e As EventArgs) Handles CMS_TipoDeProcesso.Click
+    Private Sub OptionClick(sender As Object, e As EventArgs)
+        Dim itemClicked As New ToolStripMenuItem
+        itemClicked = CType(sender, ToolStripMenuItem)
+        MsgBox("You have selected the item " &
+            itemClicked.Text)
+    End Sub
+
+    Sub AddMenuItens()
+
+
+        ' Item.Text = "Run Time Option" & RunTimeMenuToolStripMenuItem
+        'DropDownItems.Count.ToString
+        ' RunTimeMenuToolStripMenuItem.DropDownItems.Add(Item)
+
+        For Each labelItem As String In _lista
+            Dim Item As New ToolStripMenuItem
+
+            Item.Text = labelItem
+
+            AddHandler Item.Click, New System.EventHandler(AddressOf OptionClick)
+
+            CMS_Menu.Items.Add(Item)
+        Next
+
+    End Sub
+
+    Private Sub CMS_Menu_Click(sender As Object, e As EventArgs) Handles CMS_Menu.Click
         Dim menuO As ContextMenuStrip
         menuO = CType(sender, ContextMenuStrip)
         Dim tsmi As ToolStripMenuItem

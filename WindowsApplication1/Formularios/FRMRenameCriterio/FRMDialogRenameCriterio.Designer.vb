@@ -109,6 +109,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
         Me.LBLTitle02 = New System.Windows.Forms.Label()
         Me.PanelBorder = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel29.SuspendLayout()
@@ -1195,6 +1196,18 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelBorder.Size = New System.Drawing.Size(596, 231)
         Me.PanelBorder.TabIndex = 111
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.ForeColor = System.Drawing.Color.DarkGray
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Nome", "Texto", "Coisas ", "Augustos", "Domingos", "Celular", "Pintura"})
+        Me.ComboBox1.Location = New System.Drawing.Point(413, 0)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(213, 21)
+        Me.ComboBox1.TabIndex = 112
+        '
         'FRMDialogRenameCriterio
         '
         Me.AcceptButton = Me.OK_Button
@@ -1203,6 +1216,7 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(662, 402)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.PanelBorder)
         Me.Controls.Add(Me.LBLTitle02)
         Me.Controls.Add(Me.LBLFolderName)
@@ -1362,4 +1376,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel28 As Panel
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

@@ -25,52 +25,40 @@ Partial Class Control_ComboBoxPerson
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_ComboBoxPerson))
         Me.PanelCombo = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PanelBackground_LNKLabelCombo = New System.Windows.Forms.Panel()
         Me.LNKLLabelCombo = New System.Windows.Forms.LinkLabel()
         Me.CMS_Menu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_BTNExpandCombo = New System.Windows.Forms.Panel()
         Me.BTNExpandCombo = New System.Windows.Forms.Button()
+        Me.PanelBorder_PanelCombo = New System.Windows.Forms.Panel()
         Me.PanelCombo.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel9.SuspendLayout()
+        Me.PanelBackground_LNKLabelCombo.SuspendLayout()
+        Me.PanelEnvolve_BTNExpandCombo.SuspendLayout()
+        Me.PanelBorder_PanelCombo.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelCombo
         '
         Me.PanelCombo.BackColor = System.Drawing.Color.Transparent
-        Me.PanelCombo.Controls.Add(Me.Panel5)
+        Me.PanelCombo.Controls.Add(Me.PanelBorder_PanelCombo)
         Me.PanelCombo.Controls.Add(Me.Panel8)
-        Me.PanelCombo.Controls.Add(Me.Panel9)
         Me.PanelCombo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelCombo.Location = New System.Drawing.Point(0, 0)
         Me.PanelCombo.Name = "PanelCombo"
         Me.PanelCombo.Size = New System.Drawing.Size(233, 21)
         Me.PanelCombo.TabIndex = 3
         '
-        'Panel5
+        'PanelBackground_LNKLabelCombo
         '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.Panel7)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(1, 1, 0, 1)
-        Me.Panel5.Size = New System.Drawing.Size(213, 21)
-        Me.Panel5.TabIndex = 2
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel7.Controls.Add(Me.LNKLLabelCombo)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(1, 1)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.Panel7.Size = New System.Drawing.Size(212, 19)
-        Me.Panel7.TabIndex = 0
+        Me.PanelBackground_LNKLabelCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelBackground_LNKLabelCombo.Controls.Add(Me.LNKLLabelCombo)
+        Me.PanelBackground_LNKLabelCombo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackground_LNKLabelCombo.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBackground_LNKLabelCombo.Name = "PanelBackground_LNKLabelCombo"
+        Me.PanelBackground_LNKLabelCombo.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
+        Me.PanelBackground_LNKLabelCombo.Size = New System.Drawing.Size(211, 19)
+        Me.PanelBackground_LNKLabelCombo.TabIndex = 0
         '
         'LNKLLabelCombo
         '
@@ -84,7 +72,7 @@ Partial Class Control_ComboBoxPerson
         Me.LNKLLabelCombo.LinkColor = System.Drawing.Color.DarkGray
         Me.LNKLLabelCombo.Location = New System.Drawing.Point(8, 2)
         Me.LNKLLabelCombo.Name = "LNKLLabelCombo"
-        Me.LNKLLabelCombo.Size = New System.Drawing.Size(202, 15)
+        Me.LNKLLabelCombo.Size = New System.Drawing.Size(201, 15)
         Me.LNKLLabelCombo.TabIndex = 2
         Me.LNKLLabelCombo.TabStop = True
         Me.LNKLLabelCombo.Text = "<Selecione>"
@@ -102,21 +90,20 @@ Partial Class Control_ComboBoxPerson
         'Panel8
         '
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel8.Location = New System.Drawing.Point(213, 0)
+        Me.Panel8.Location = New System.Drawing.Point(232, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1, 21)
         Me.Panel8.TabIndex = 1
         '
-        'Panel9
+        'PanelEnvolve_BTNExpandCombo
         '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.BTNExpandCombo)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(214, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(0, 1, 1, 1)
-        Me.Panel9.Size = New System.Drawing.Size(19, 21)
-        Me.Panel9.TabIndex = 0
+        Me.PanelEnvolve_BTNExpandCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelEnvolve_BTNExpandCombo.Controls.Add(Me.BTNExpandCombo)
+        Me.PanelEnvolve_BTNExpandCombo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelEnvolve_BTNExpandCombo.Location = New System.Drawing.Point(212, 1)
+        Me.PanelEnvolve_BTNExpandCombo.Name = "PanelEnvolve_BTNExpandCombo"
+        Me.PanelEnvolve_BTNExpandCombo.Size = New System.Drawing.Size(19, 19)
+        Me.PanelEnvolve_BTNExpandCombo.TabIndex = 0
         '
         'BTNExpandCombo
         '
@@ -128,12 +115,24 @@ Partial Class Control_ComboBoxPerson
         Me.BTNExpandCombo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNExpandCombo.Image = CType(resources.GetObject("BTNExpandCombo.Image"), System.Drawing.Image)
         Me.BTNExpandCombo.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNExpandCombo.Location = New System.Drawing.Point(0, 1)
+        Me.BTNExpandCombo.Location = New System.Drawing.Point(0, 0)
         Me.BTNExpandCombo.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNExpandCombo.Name = "BTNExpandCombo"
-        Me.BTNExpandCombo.Size = New System.Drawing.Size(18, 19)
+        Me.BTNExpandCombo.Size = New System.Drawing.Size(19, 19)
         Me.BTNExpandCombo.TabIndex = 20
         Me.BTNExpandCombo.UseVisualStyleBackColor = False
+        '
+        'PanelBorder_PanelCombo
+        '
+        Me.PanelBorder_PanelCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelBorder_PanelCombo.Controls.Add(Me.PanelBackground_LNKLabelCombo)
+        Me.PanelBorder_PanelCombo.Controls.Add(Me.PanelEnvolve_BTNExpandCombo)
+        Me.PanelBorder_PanelCombo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder_PanelCombo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_PanelCombo.Name = "PanelBorder_PanelCombo"
+        Me.PanelBorder_PanelCombo.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder_PanelCombo.Size = New System.Drawing.Size(232, 21)
+        Me.PanelBorder_PanelCombo.TabIndex = 2
         '
         'Control_ComboBoxPerson
         '
@@ -144,19 +143,19 @@ Partial Class Control_ComboBoxPerson
         Me.Name = "Control_ComboBoxPerson"
         Me.Size = New System.Drawing.Size(233, 193)
         Me.PanelCombo.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
+        Me.PanelBackground_LNKLabelCombo.ResumeLayout(False)
+        Me.PanelEnvolve_BTNExpandCombo.ResumeLayout(False)
+        Me.PanelBorder_PanelCombo.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents PanelCombo As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel7 As Panel
+    Friend WithEvents PanelBackground_LNKLabelCombo As Panel
     Friend WithEvents LNKLLabelCombo As LinkLabel
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
+    Friend WithEvents PanelEnvolve_BTNExpandCombo As Panel
     Friend WithEvents BTNExpandCombo As Button
     Friend WithEvents CMS_Menu As ContextMenuStrip
+    Friend WithEvents PanelBorder_PanelCombo As Panel
 End Class

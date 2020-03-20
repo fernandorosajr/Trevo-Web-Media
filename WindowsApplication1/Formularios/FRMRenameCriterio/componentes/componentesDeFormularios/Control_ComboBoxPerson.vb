@@ -8,8 +8,73 @@
         Teste04 = 4
     End Enum
 
-    Private _testandoEnum As TesteDeEnum
+    ' Propriedades de configuração de cores
+    Private _borderColorError As Color
+    Public Property BorderColorError As Color
+        Get
+            Return _borderColorError
+        End Get
+        Set(value As Color)
+            _borderColorError = value
 
+        End Set
+    End Property
+
+    Private _backColorCursorMouseLeave As Color
+    Public Property BackColorCursorMouseLeave As Color
+        Get
+            Return _backColorCursorMouseLeave
+        End Get
+        Set(value As Color)
+            _backColorCursorMouseLeave = value
+
+        End Set
+    End Property
+
+    Private _borderColorGotFocus As Color
+    Public Property BorderColorGotFocus As Color
+        Get
+            Return _borderColorGotFocus
+        End Get
+        Set(value As Color)
+            _borderColorGotFocus = value
+
+        End Set
+    End Property
+
+    Private _borderColorLostFocus As Color
+    Public Property BordeColorLostFocus As Color
+        Get
+            Return _borderColorLostFocus
+        End Get
+        Set(value As Color)
+            _borderColorLostFocus = value
+        End Set
+    End Property
+
+    Private _txtBoxBackColorLostFocus As Color
+    Public Property TXTBoxBackColorLostFocus As Color
+        Get
+            Return _txtBoxBackColorLostFocus
+        End Get
+        Set(value As Color)
+            _txtBoxBackColorLostFocus = value
+        End Set
+    End Property
+
+    Private _bgColorLostFocus As Color
+    Public Property BgColorLostFocus As Color
+        Get
+            Return _bgColorLostFocus
+        End Get
+        Set(value As Color)
+            _bgColorLostFocus = value
+        End Set
+    End Property
+
+    ' __________________________________________________
+
+    Private _testandoEnum As TesteDeEnum
     Public Property TestandoEnum As TesteDeEnum
         Get
             Return _testandoEnum

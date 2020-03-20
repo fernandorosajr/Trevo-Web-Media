@@ -61,7 +61,6 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     Private _txtBoxBackColorLostFocus As Color
-
     Public Property TXTBoxBackColorLostFocus As Color
         Get
             Return _txtBoxBackColorLostFocus
@@ -71,8 +70,17 @@ Public Class FRMDialogConflictingFolders
         End Set
     End Property
 
-    ' Propriedades 
+    Private _bgColorLostFocus As Color
+    Public Property BgColorLostFocus As Color
+        Get
+            Return _bgColorLostFocus
+        End Get
+        Set(value As Color)
+            _bgColorLostFocus = value
+        End Set
+    End Property
 
+    ' Propriedades 
     Dim _title As String
     Public Property Title As String
         Get
@@ -281,11 +289,11 @@ Public Class FRMDialogConflictingFolders
         ' This call is required by the designer.
         InitializeComponent()
         _borderColorGotFocus = SystemColors.HotTrack
-        _borderColorLostFocus = BTNMesclar.BackColor
+        _borderColorLostFocus = BTNMesclar.BackColor ' Me.BackColor 
         _backColorCursorMouseLeave = Color.FromArgb(45, 45, 48)
         _borderColorError = Color.Red
         _txtBoxBackColorLostFocus = Color.FromArgb(63, 63, 66)
-
+        _bgColorLostFocus = Me.BackColor
 
         'PopulateTreeView()
         ' Add any initialization after the InitializeComponent() call.
@@ -365,9 +373,11 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub LNKLRenomeOrigem_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenameSource.LinkClicked
-        Dim _newPathOrigem_DirectoryInfo As New DirectoryInfo(_newPathOrigem)
+        If _newPathOrigem <> Nothing Then
+            Dim _newPathOrigem_DirectoryInfo As New DirectoryInfo(_newPathOrigem)
+            TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
 
-        TXTNomeDaOrigem.Text = _newPathOrigem_DirectoryInfo.Name
+        End If
 
         TelaDeEdicaoDeOrigem()
 
@@ -456,9 +466,11 @@ Public Class FRMDialogConflictingFolders
     End Sub
 
     Private Sub LNKLRenomeDestino_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLRenameDestination.LinkClicked
-        Dim _newPathDestino_DirectoryInfo As New DirectoryInfo(_newPathDestino)
+        If _newPathDestino <> Nothing Then
+            Dim _newPathDestino_DirectoryInfo As New DirectoryInfo(_newPathDestino)
+            TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
 
-        TXTNomeDoDestino.Text = _newPathDestino_DirectoryInfo.Name
+        End If
 
         TelaDeEdicaoDeDestino()
 
@@ -510,7 +522,6 @@ Public Class FRMDialogConflictingFolders
         Panel_LBLInfo.Visible = False
     End Sub
 
-
     Private Sub Buttons_LostFocus(sender As Object, e As EventArgs) _
         Handles OK_Button.LostFocus, Cancel_Button.LostFocus,
         BTNMesclar.LostFocus, BTNSubstituir.LostFocus,
@@ -555,13 +566,14 @@ Public Class FRMDialogConflictingFolders
     Private Sub TextBoxes_LostFocus(sender As Object, e As EventArgs) Handles TXTNomeDoDestino.LostFocus, TXTNomeDaOrigem.LostFocus
         Dim txt As TextBox
         txt = CType(sender, TextBox)
-        Dim _corDeFundoDoTXTBoxLostFocus As Color = _borderColorLostFocus ' Color.FromArgb(63, 63, 66)
+        Dim _corDeFundoDoTXTBoxLostFocus As Color = _bgColorLostFocus  ' _borderColorLostFocus ' Color.FromArgb(63, 63, 66)
 
         txt.Parent.Parent.BackColor = _borderColorLostFocus
         txt.Parent.Parent.Padding = New Padding(0, 0, 0, 1)
         txt.Cursor = Cursors.Arrow
         txt.BackColor = _corDeFundoDoTXTBoxLostFocus
         txt.Parent.BackColor = _corDeFundoDoTXTBoxLostFocus
+
     End Sub
 
     Private Sub TextBoxes_MouseMove(sender As Object, e As MouseEventArgs) Handles TXTNomeDoDestino.MouseMove, TXTNomeDaOrigem.MouseMove
@@ -679,4 +691,5 @@ Public Class FRMDialogConflictingFolders
         Memoria = DialogResult.None
 
     End Sub
+
 End Class

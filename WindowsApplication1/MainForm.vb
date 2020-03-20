@@ -771,4 +771,9 @@ Long, lpColorValues As Long) As Long
         FRMDialogRenameCriterio.ShowDialog()
 
     End Sub
+
+    Private Sub CheckBox21_Click(sender As Object, e As EventArgs) Handles CheckBox21.Click
+        FRMDialogConflictingFolders.ShowDialog()
+
+    End Sub
 End Class

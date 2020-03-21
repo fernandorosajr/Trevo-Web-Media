@@ -1,12 +1,29 @@
 ﻿Public Class Control_ComboBoxPerson
     'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
 
+    Private configs As Class_Configs
+
+    ' Dim myColor As Color = Color.Green
+    ' Dim iColor As Integer = myColor.ToArgb()
+    ' Dim sColor As String = iColor.ToString
+
+    ' 'To restore:
+
+    'sColor = "-16744448" 'from text file
+    'iColor = CInt(sColor)
+    'myColor = Color.FromArgb(iColor)
+
+
     Public Enum TesteDeEnum
         Teste01 = 1
         Teste02 = 2
         Teste03 = 3
         Teste04 = 4
     End Enum
+
+    Public cor As Color = ColorTranslator.FromWin32(Color.Aqua.ToArgb)
+    Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
+    Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(63, 63, 66))
 
     ' Propriedades de configuração de cores
     Private _borderColorError As Color
@@ -168,23 +185,24 @@
 
         Next
 
+        ' Carrega as cores do componente
+#Disable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+        _borderColorGotFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorGotFocus) 'SystemColors.HotTrack
+        _borderColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorLostFocus) ' Me.BackColor 
+        _backColorCursorMouseLeave = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._backColorCursorMouseLeave) 'Color.FromArgb(45, 45, 48)
+        _borderColorError = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorError)  ' Color.Red
+        _txtBoxBackColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._txtBoxBackColorLostFocus)  'Color.FromArgb(63, 63, 66)
+        _bgColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._bgColorLostFocus)   'Me.BackColor
+#Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+
         Options = _value
         Lista = Options
-
         ShortcutKeyDisplay = True
 
     End Sub
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AddMenuItens()
         LoadShotCutKey()
-
-    End Sub
-
-    Private Sub NoneToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub CMS_TipoDeProcesso_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles CMS_Menu.Opening
 
     End Sub
 
@@ -236,12 +254,16 @@
     End Sub
 
     Private Sub CMS_Menu_Click(sender As Object, e As EventArgs) Handles CMS_Menu.Click
+        LNKLLabelCombo.BackColor = _txtBoxBackColorLostFocus
+        LNKLLabelCombo.Parent.BackColor = LNKLLabelCombo.BackColor '_bgColorLostFocus
 
+        BTNExpandCombo.Focus()
     End Sub
 
     Private Sub LNKLLabelCombo_Click(sender As Object, e As EventArgs) Handles LNKLLabelCombo.Click
         Dim link As LinkLabel
         link = CType(sender, LinkLabel)
+        link.Focus()
 
         ExpandCombo()
 
@@ -256,4 +278,105 @@
         CMS_Menu.Show(LNKLLabelCombo, 0, LNKLLabelCombo.Height + 3)
     End Sub
 
+    Private Sub LNKLLabelCombo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLLabelCombo.LinkClicked
+        ' LNKLLabelCombo.BackColor = cor2
+        TXT.Text = textCor2
+    End Sub
+
+    Private Sub Objects_MouseMove(sender As Object, e As MouseEventArgs) Handles LNKLLabelCombo.MouseMove, BTNExpandCombo.MouseMove
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.Parent.Parent.BackColor = _borderColorGotFocus
+
+        Select Case obj.Name
+            Case "LNKLLabelCombo"
+                If obj.Focused = True Then
+                    obj.BackColor = _backColorCursorMouseLeave
+                Else
+                    obj.BackColor = _txtBoxBackColorLostFocus
+                End If
+                obj.Parent.BackColor = obj.BackColor
+
+            Case Else
+                If obj.Focused = True Then
+                    LNKLLabelCombo.BackColor = _txtBoxBackColorLostFocus
+                    LNKLLabelCombo.Parent.BackColor = LNKLLabelCombo.BackColor
+                Else
+                    LNKLLabelCombo.BackColor = _backColorCursorMouseLeave
+                    LNKLLabelCombo.Parent.BackColor = LNKLLabelCombo.BackColor
+                End If
+                obj.Parent.BackColor = obj.BackColor
+        End Select
+
+    End Sub
+
+    Private Sub Objects_MouseLeave(sender As Object, e As EventArgs) Handles LNKLLabelCombo.MouseLeave, BTNExpandCombo.MouseLeave
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        If obj.Focused = True Then
+            obj.Parent.Parent.BackColor = _borderColorGotFocus
+
+        Else
+            obj.Parent.Parent.BackColor = _borderColorLostFocus
+
+        End If
+
+    End Sub
+
+    Private Sub LNKLLabelCombo_MouseLeave(sender As Object, e As EventArgs) Handles LNKLLabelCombo.MouseLeave
+        Dim obj As LinkLabel
+        obj = CType(sender, LinkLabel)
+
+        If obj.Focused = True Then
+            obj.BackColor = _backColorCursorMouseLeave
+        Else
+            obj.BackColor = _txtBoxBackColorLostFocus
+        End If
+        obj.Parent.BackColor = obj.BackColor
+
+    End Sub
+
+    Private Sub Objects_GotFocus(sender As Object, e As EventArgs) Handles LNKLLabelCombo.GotFocus, BTNExpandCombo.GotFocus
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.Parent.Parent.BackColor = _borderColorGotFocus
+
+        Select Case obj.Name
+            Case "LNKLLabelCombo"
+                obj.BackColor = _backColorCursorMouseLeave
+                obj.Parent.BackColor = obj.BackColor
+
+            Case Else
+                LNKLLabelCombo.BackColor = _txtBoxBackColorLostFocus
+                LNKLLabelCombo.Parent.BackColor = LNKLLabelCombo.BackColor '_bgColorLostFocus
+
+                obj.BackColor = _txtBoxBackColorLostFocus
+                obj.Parent.BackColor = LNKLLabelCombo.BackColor '_bgColorLostFocus
+
+        End Select
+
+    End Sub
+
+    Private Sub Objects_LostFocus(sender As Object, e As EventArgs) Handles LNKLLabelCombo.LostFocus, BTNExpandCombo.LostFocus
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.BackColor = _bgColorLostFocus
+        obj.Parent.BackColor = obj.BackColor
+
+    End Sub
+
+    Private Sub Control_ComboBoxPerson_LostFocus(sender As Object, e As EventArgs) Handles Me.LostFocus
+        BTNExpandCombo.BackColor = _bgColorLostFocus
+        BTNExpandCombo.Parent.BackColor = BTNExpandCombo.BackColor
+
+        LNKLLabelCombo.BackColor = _bgColorLostFocus
+        LNKLLabelCombo.Parent.BackColor = LNKLLabelCombo.BackColor
+
+        BTNExpandCombo.Parent.Parent.BackColor = _borderColorLostFocus
+
+    End Sub
 End Class

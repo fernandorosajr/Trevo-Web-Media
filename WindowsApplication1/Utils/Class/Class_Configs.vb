@@ -1,6 +1,36 @@
 ﻿Imports System.Drawing
 
+
 Public Class Class_Configs
+
+    Public myColor As Color = Color.Green
+    Public iColor As Integer = myColor.ToArgb()
+    Public sColor As String = iColor.ToString
+
+    Public cor As Color = ColorTranslator.FromWin32(CInt(Color.Aqua.ToArgb))
+
+    Public Structure TrevoSystemColor
+        Public _borderColorGotFocus As Color  '= SystemColors.HotTrack
+        Public _borderColorLostFocus As Color 'BTNMesclar.BackColor ' Me.BackColor 
+        Public _backColorCursorMouseLeave As Color ' Color.FromArgb(45, 45, 48)
+        Public _borderColorError As Color  ' = Color.Red
+        Public _txtBoxBackColorLostFocus As Color '= Color.FromArgb(63, 63, 66)
+        Public _bgColorLostFocus As Color '= Me.BackColor
+    End Structure
+
+    Public ColorBiblio As TrevoSystemColorEnum
+    Public Enum TrevoSystemColorEnum
+        _borderColorGotFocus = 13395456 '= SystemColors.HotTrack
+        _borderColorLostFocus = 5657427 'BTNMesclar.BackColor ' Me.BackColor 
+        _backColorCursorMouseLeave = 3157293 ' Color.FromArgb(45, 45, 48)
+        _borderColorError = 255  ' = Color.Red
+        _txtBoxBackColorLostFocus = 4341567  '= Color.FromArgb(63, 63, 66)
+        _bgColorLostFocus = 4341567 '= Me.BackColor
+
+    End Enum
+
+    Public _TrevoSystemColor As TrevoSystemColor
+
     Public ColorSelect As Color
     Public ColorNotSelect As Color
 
@@ -10,6 +40,7 @@ Public Class Class_Configs
     Public Property ColorSelectAndHover As Color
         Get
             Return _colorSelectAndHover
+
         End Get
         Set(value As Color)
             _colorSelectAndHover = value

@@ -205,7 +205,7 @@ Public Class FRMDialogConflictingFolders
     End Property
 
     ' Propriedade de memoria.
-    Private _memoria As Color
+    Private _memoria As Object
     Public Property Memoria As Object
         Get
             Return _memoria

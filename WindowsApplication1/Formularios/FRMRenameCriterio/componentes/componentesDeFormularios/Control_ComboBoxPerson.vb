@@ -179,9 +179,10 @@
         Dim newLine As String
         Dim _value As String = ""
 
+        'Options
         For x = 0 To 5
             newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
-            _value = _value & newLine
+            _value &= newLine
 
         Next
 
@@ -199,23 +200,26 @@
         Lista = Options
         ShortcutKeyDisplay = True
 
+        AddMenuItens()
+
     End Sub
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AddMenuItens()
         LoadShotCutKey()
 
     End Sub
 
-    Private Sub OptionClick(sender As Object, e As EventArgs)
+    Private Function OptionClick(sender As Object, e As EventArgs)
         Dim itemClicked As New ToolStripMenuItem
         itemClicked = CType(sender, ToolStripMenuItem)
         ' MsgBox("You have selected the item " & itemClicked.Text)
 
+        MsgBox(itemClicked.Name)
         LNKLLabelCombo.Text = itemClicked.Text
 
-    End Sub
+        Return itemClicked.Text
+    End Function
 
-    Function AddMenuItens()
+    Sub AddMenuItens()
 
         For Each labelItem As String In _lista
             If Trim(labelItem) <> "" Then
@@ -232,8 +236,7 @@
             End If
         Next
 
-        Return True
-    End Function
+    End Sub
 
     Sub LoadShotCutKey()
 
@@ -281,6 +284,8 @@
     Private Sub LNKLLabelCombo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLLabelCombo.LinkClicked
         ' LNKLLabelCombo.BackColor = cor2
         TXT.Text = textCor2
+        ExpandCombo()
+
     End Sub
 
     Private Sub Objects_MouseMove(sender As Object, e As MouseEventArgs) Handles LNKLLabelCombo.MouseMove, BTNExpandCombo.MouseMove
@@ -366,6 +371,7 @@
 
         obj.BackColor = _bgColorLostFocus
         obj.Parent.BackColor = obj.BackColor
+        obj.Parent.Parent.BackColor = _borderColorLostFocus
 
     End Sub
 
@@ -378,5 +384,12 @@
 
         BTNExpandCombo.Parent.Parent.BackColor = _borderColorLostFocus
 
+    End Sub
+
+    Private Sub LNKLLabelCombo_KeyDown(sender As Object, e As KeyEventArgs) Handles LNKLLabelCombo.KeyDown
+        If e.KeyCode = Keys.Enter Or e.KeyCode = Keys.Space Or e.KeyCode = Keys.Down Or e.KeyCode = Keys.F12 Or e.KeyCode = Keys.LWin Then
+            ExpandCombo()
+
+        End If
     End Sub
 End Class

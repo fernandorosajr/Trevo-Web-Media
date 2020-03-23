@@ -45,7 +45,7 @@ Partial Class Control_ComboBoxPerson
         Me.PanelCombo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelCombo.Location = New System.Drawing.Point(0, 0)
         Me.PanelCombo.Name = "PanelCombo"
-        Me.PanelCombo.Size = New System.Drawing.Size(233, 21)
+        Me.PanelCombo.Size = New System.Drawing.Size(283, 21)
         Me.PanelCombo.TabIndex = 3
         '
         'PanelBorder_PanelCombo
@@ -57,7 +57,7 @@ Partial Class Control_ComboBoxPerson
         Me.PanelBorder_PanelCombo.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_PanelCombo.Name = "PanelBorder_PanelCombo"
         Me.PanelBorder_PanelCombo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_PanelCombo.Size = New System.Drawing.Size(233, 21)
+        Me.PanelBorder_PanelCombo.Size = New System.Drawing.Size(283, 21)
         Me.PanelBorder_PanelCombo.TabIndex = 2
         '
         'PanelBackground_LNKLabelCombo
@@ -69,13 +69,13 @@ Partial Class Control_ComboBoxPerson
         Me.PanelBackground_LNKLabelCombo.Location = New System.Drawing.Point(1, 1)
         Me.PanelBackground_LNKLabelCombo.Name = "PanelBackground_LNKLabelCombo"
         Me.PanelBackground_LNKLabelCombo.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.PanelBackground_LNKLabelCombo.Size = New System.Drawing.Size(212, 19)
+        Me.PanelBackground_LNKLabelCombo.Size = New System.Drawing.Size(262, 19)
         Me.PanelBackground_LNKLabelCombo.TabIndex = 0
         '
         'TXT
         '
         Me.TXT.Dock = System.Windows.Forms.DockStyle.Right
-        Me.TXT.Location = New System.Drawing.Point(110, 2)
+        Me.TXT.Location = New System.Drawing.Point(160, 2)
         Me.TXT.Name = "TXT"
         Me.TXT.Size = New System.Drawing.Size(100, 20)
         Me.TXT.TabIndex = 3
@@ -93,7 +93,7 @@ Partial Class Control_ComboBoxPerson
         Me.LNKLLabelCombo.LinkColor = System.Drawing.Color.DarkGray
         Me.LNKLLabelCombo.Location = New System.Drawing.Point(8, 2)
         Me.LNKLLabelCombo.Name = "LNKLLabelCombo"
-        Me.LNKLLabelCombo.Size = New System.Drawing.Size(202, 15)
+        Me.LNKLLabelCombo.Size = New System.Drawing.Size(252, 15)
         Me.LNKLLabelCombo.TabIndex = 2
         Me.LNKLLabelCombo.TabStop = True
         Me.LNKLLabelCombo.Text = "<Selecione>"
@@ -113,7 +113,7 @@ Partial Class Control_ComboBoxPerson
         Me.PanelEnvolve_BTNExpandCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelEnvolve_BTNExpandCombo.Controls.Add(Me.BTNExpandCombo)
         Me.PanelEnvolve_BTNExpandCombo.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolve_BTNExpandCombo.Location = New System.Drawing.Point(213, 1)
+        Me.PanelEnvolve_BTNExpandCombo.Location = New System.Drawing.Point(263, 1)
         Me.PanelEnvolve_BTNExpandCombo.Name = "PanelEnvolve_BTNExpandCombo"
         Me.PanelEnvolve_BTNExpandCombo.Size = New System.Drawing.Size(19, 19)
         Me.PanelEnvolve_BTNExpandCombo.TabIndex = 0
@@ -141,8 +141,10 @@ Partial Class Control_ComboBoxPerson
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.Controls.Add(Me.PanelCombo)
+        Me.MaximumSize = New System.Drawing.Size(0, 42)
+        Me.MinimumSize = New System.Drawing.Size(50, 21)
         Me.Name = "Control_ComboBoxPerson"
-        Me.Size = New System.Drawing.Size(233, 193)
+        Me.Size = New System.Drawing.Size(283, 42)
         Me.PanelCombo.ResumeLayout(False)
         Me.PanelBorder_PanelCombo.ResumeLayout(False)
         Me.PanelBackground_LNKLabelCombo.ResumeLayout(False)

@@ -15,6 +15,7 @@
 
 
     Public Enum TesteDeEnum
+        TesteDeEnum00 = 0
         TesteDeEnum01 = 1
         TesteDeEnum02 = 2
         TesteDeEnum03 = 3
@@ -91,6 +92,41 @@
 
     ' __________________________________________________
 
+    'TESTE DE PROPRIEDADES
+
+    Private _testeDeArrayList As New ArrayList
+    Public Property TesteDeArrayList As ArrayList
+        Get
+            Return _testeDeArrayList
+        End Get
+        Set(value As ArrayList)
+            _testeDeArrayList = value
+
+        End Set
+    End Property
+
+    Private _testeDeListOfString As New List(Of String)
+    Public Property TesteDeListOfString As List(Of String)
+        Get
+            Return _testeDeListOfString
+        End Get
+        Set(value As List(Of String))
+            _testeDeListOfString = value
+
+        End Set
+    End Property
+
+    Private _testeDeListOfTreeNode As New List(Of TreeNode)
+    Public Property TesteDeListOfTreeNode As List(Of TreeNode)
+        Get
+            Return _testeDeListOfTreeNode
+        End Get
+        Set(value As List(Of TreeNode))
+            _testeDeListOfTreeNode = value
+
+        End Set
+    End Property
+
     Private _testandoEnum As TesteDeEnum
     Public Property TestandoEnum As TesteDeEnum
         Get
@@ -116,6 +152,18 @@
             _testeDeEstrutura = value
         End Set
     End Property
+
+    'Private _testeListOfEstrutura As New List(Of TesteDeEstrutura)
+    'Public Property TestandoListOfEstrutura As List(Of TesteDeEstrutura)
+    '    Get
+    '        Return _testeListOfEstrutura
+    '    End Get
+    '    Set(value As List(Of TesteDeEstrutura))
+    '        _testeListOfEstrutura = value
+    '    End Set
+    'End Property
+    ' ________________________________________________________
+
 
     Private _options As String
     Public Property Options As String

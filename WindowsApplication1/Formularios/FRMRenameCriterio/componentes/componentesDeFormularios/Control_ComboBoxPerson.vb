@@ -15,10 +15,10 @@
 
 
     Public Enum TesteDeEnum
-        Teste01 = 1
-        Teste02 = 2
-        Teste03 = 3
-        Teste04 = 4
+        TesteDeEnum01 = 1
+        TesteDeEnum02 = 2
+        TesteDeEnum03 = 3
+        TesteDeEnum04 = 4
     End Enum
 
     Public cor As Color = ColorTranslator.FromWin32(Color.Aqua.ToArgb)
@@ -117,29 +117,26 @@
         End Set
     End Property
 
-    Dim funcoesDeString As New StringFunctionsClass
-
     Private _options As String
     Public Property Options As String
         Get
             Return _options
         End Get
         Set(value As String)
+
+            'Dim textoParaLista As String = ""
+            'For Each item In value.Split({";"c})
+            '    textoParaLista += (item + vbCrLf)
+            'Next
+
+            Lista = value
             _options = value
         End Set
     End Property
 
-    Private _shortcutKeyDisplay As Boolean
-    Public Property ShortcutKeyDisplay As Boolean
-        Get
-            Return _shortcutKeyDisplay
-        End Get
-        Set(value As Boolean)
-            _shortcutKeyDisplay = value
-        End Set
-    End Property
-
     ReadOnly separador() As Char = {";"c, vbCrLf} ' {vbCrLf}
+
+    ReadOnly funcoesDeString As New StringFunctionsClass
 
     Private _lista As New ArrayList()
     Public Property Lista As String
@@ -158,13 +155,37 @@
         Set(value As String)
 
             Dim valueInStringList() As String
-            'listaAux.AddRange(value.Split(vbCrLf))
-            '_lista = listaAux
+
             If value Is Nothing Then
-                value = "val1;val2"
+                value = "_;"
             End If
             valueInStringList = funcoesDeString.SepararPalavras(value, separador)  ' {vbCrLf})
+            _lista.Clear()
             _lista.AddRange(valueInStringList)
+
+            AddMenuItens()
+
+        End Set
+    End Property
+
+    Private _shortcutKeyDisplay As Boolean
+    Public Property ShortcutKeyDisplay As Boolean
+        Get
+            Return _shortcutKeyDisplay
+        End Get
+        Set(value As Boolean)
+            _shortcutKeyDisplay = value
+        End Set
+    End Property
+
+    Private _selected As Object
+    Public Property Selected As Object
+        Get
+            Return _selected
+
+        End Get
+        Set(value As Object)
+            _selected = value
 
         End Set
     End Property
@@ -180,11 +201,19 @@
         Dim _value As String = ""
 
         'Options
-        For x = 0 To 5
-            newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
-            _value &= newLine
+        If Options IsNot Nothing Then
 
-        Next
+            For x = 0 To 5
+                newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
+                _value &= newLine
+
+            Next
+
+            Options = _value
+
+        End If
+
+        ShortcutKeyDisplay = True
 
         ' Carrega as cores do componente
 #Disable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
@@ -196,9 +225,6 @@
         _bgColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._bgColorLostFocus)   'Me.BackColor
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
 
-        Options = _value
-        Lista = Options
-        ShortcutKeyDisplay = True
 
         AddMenuItens()
 
@@ -215,12 +241,14 @@
 
         MsgBox(itemClicked.Name)
         LNKLLabelCombo.Text = itemClicked.Text
+        _selected = itemClicked.Text
 
         Return itemClicked.Text
     End Function
 
     Sub AddMenuItens()
 
+        CMS_Menu.Items.Clear()
         For Each labelItem As String In _lista
             If Trim(labelItem) <> "" Then
 

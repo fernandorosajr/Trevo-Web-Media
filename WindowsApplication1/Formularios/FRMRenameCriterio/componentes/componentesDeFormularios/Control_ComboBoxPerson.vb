@@ -1,7 +1,10 @@
 ﻿Public Class Control_ComboBoxPerson
     'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
 
+
+
     Private configs As Class_Configs
+
 
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
@@ -90,6 +93,17 @@
         End Set
     End Property
 
+    Private _comboBoxPersonSlave As Control_ComboBoxPerson
+    Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
+
+        Get
+            Return _comboBoxPersonSlave
+        End Get
+        Set(value As Control_ComboBoxPerson)
+            _comboBoxPersonSlave = value
+        End Set
+    End Property
+
     ' __________________________________________________
 
     'TESTE DE PROPRIEDADES
@@ -164,21 +178,16 @@
     'End Property
     ' ________________________________________________________
 
-
     Private _options As String
     Public Property Options As String
         Get
             Return _options
+
         End Get
         Set(value As String)
-
-            'Dim textoParaLista As String = ""
-            'For Each item In value.Split({";"c})
-            '    textoParaLista += (item + vbCrLf)
-            'Next
-
             Lista = value
             _options = value
+
         End Set
     End Property
 
@@ -277,6 +286,7 @@
         AddMenuItens()
 
     End Sub
+
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadShotCutKey()
 
@@ -311,6 +321,26 @@
 
             End If
         Next
+
+    End Sub
+
+    Sub AddHandlerInMenu(obj As ToolStripMenuItem)
+
+        'CMS_Menu.Items.Clear()
+        'For Each labelItem As String In _lista
+        'If Trim(labelItem) <> "" Then
+
+        'Dim Item As New ToolStripMenuItem With {
+        '.Text = labelItem,
+        '.ForeColor = Color.DarkGray,
+        '.Width = Me.Width
+        '       }
+
+        AddHandler obj.Click, New System.EventHandler(AddressOf OptionClick)
+        'CMS_Menu.Items.Add(Item)
+
+        '   End If
+        'Next
 
     End Sub
 
@@ -351,6 +381,13 @@
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
         ExpandCombo()
 
+
+        Dim comboBoxPerson As New Control_ComboBoxPerson
+
+        Me.Controls.Add(comboBoxPerson)
+        comboBoxPerson.Dock = DockStyle.Top
+        comboBoxPerson.Options = "Q;W;E"
+        comboBoxPerson.Visible = True
     End Sub
 
     Public Sub ExpandCombo()

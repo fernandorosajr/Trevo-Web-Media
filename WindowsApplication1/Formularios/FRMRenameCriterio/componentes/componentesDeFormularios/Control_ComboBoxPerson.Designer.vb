@@ -30,11 +30,13 @@ Partial Class Control_ComboBoxPerson
         Me.TXT = New System.Windows.Forms.TextBox()
         Me.LNKLLabelCombo = New System.Windows.Forms.LinkLabel()
         Me.CMS_Menu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelEnvolve_BTNExpandCombo = New System.Windows.Forms.Panel()
         Me.BTNExpandCombo = New System.Windows.Forms.Button()
         Me.PanelCombo.SuspendLayout()
         Me.PanelBorder_PanelCombo.SuspendLayout()
         Me.PanelBackground_LNKLabelCombo.SuspendLayout()
+        Me.CMS_Menu.SuspendLayout()
         Me.PanelEnvolve_BTNExpandCombo.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,7 +47,7 @@ Partial Class Control_ComboBoxPerson
         Me.PanelCombo.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelCombo.Location = New System.Drawing.Point(0, 0)
         Me.PanelCombo.Name = "PanelCombo"
-        Me.PanelCombo.Size = New System.Drawing.Size(281, 21)
+        Me.PanelCombo.Size = New System.Drawing.Size(286, 21)
         Me.PanelCombo.TabIndex = 3
         '
         'PanelBorder_PanelCombo
@@ -57,7 +59,7 @@ Partial Class Control_ComboBoxPerson
         Me.PanelBorder_PanelCombo.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_PanelCombo.Name = "PanelBorder_PanelCombo"
         Me.PanelBorder_PanelCombo.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_PanelCombo.Size = New System.Drawing.Size(281, 21)
+        Me.PanelBorder_PanelCombo.Size = New System.Drawing.Size(286, 21)
         Me.PanelBorder_PanelCombo.TabIndex = 2
         '
         'PanelBackground_LNKLabelCombo
@@ -69,13 +71,13 @@ Partial Class Control_ComboBoxPerson
         Me.PanelBackground_LNKLabelCombo.Location = New System.Drawing.Point(1, 1)
         Me.PanelBackground_LNKLabelCombo.Name = "PanelBackground_LNKLabelCombo"
         Me.PanelBackground_LNKLabelCombo.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.PanelBackground_LNKLabelCombo.Size = New System.Drawing.Size(260, 19)
+        Me.PanelBackground_LNKLabelCombo.Size = New System.Drawing.Size(265, 19)
         Me.PanelBackground_LNKLabelCombo.TabIndex = 0
         '
         'TXT
         '
         Me.TXT.Dock = System.Windows.Forms.DockStyle.Right
-        Me.TXT.Location = New System.Drawing.Point(158, 2)
+        Me.TXT.Location = New System.Drawing.Point(163, 2)
         Me.TXT.Name = "TXT"
         Me.TXT.Size = New System.Drawing.Size(100, 20)
         Me.TXT.TabIndex = 3
@@ -93,7 +95,7 @@ Partial Class Control_ComboBoxPerson
         Me.LNKLLabelCombo.LinkColor = System.Drawing.Color.DarkGray
         Me.LNKLLabelCombo.Location = New System.Drawing.Point(8, 2)
         Me.LNKLLabelCombo.Name = "LNKLLabelCombo"
-        Me.LNKLLabelCombo.Size = New System.Drawing.Size(250, 15)
+        Me.LNKLLabelCombo.Size = New System.Drawing.Size(255, 15)
         Me.LNKLLabelCombo.TabIndex = 2
         Me.LNKLLabelCombo.TabStop = True
         Me.LNKLLabelCombo.Text = "<Selecione>"
@@ -103,17 +105,27 @@ Partial Class Control_ComboBoxPerson
         'CMS_Menu
         '
         Me.CMS_Menu.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.CMS_Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.CMS_Menu.Name = "CMS_TipoDeProcesso"
         Me.CMS_Menu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMS_Menu.Size = New System.Drawing.Size(61, 4)
+        Me.CMS_Menu.Size = New System.Drawing.Size(254, 26)
         Me.CMS_Menu.TabStop = True
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.ShortcutKeyDisplayString = ""
+        Me.ToolStripMenuItem1.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(253, 22)
+        Me.ToolStripMenuItem1.Text = "ToolStripMenuItem1"
         '
         'PanelEnvolve_BTNExpandCombo
         '
         Me.PanelEnvolve_BTNExpandCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelEnvolve_BTNExpandCombo.Controls.Add(Me.BTNExpandCombo)
         Me.PanelEnvolve_BTNExpandCombo.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelEnvolve_BTNExpandCombo.Location = New System.Drawing.Point(261, 1)
+        Me.PanelEnvolve_BTNExpandCombo.Location = New System.Drawing.Point(266, 1)
         Me.PanelEnvolve_BTNExpandCombo.Name = "PanelEnvolve_BTNExpandCombo"
         Me.PanelEnvolve_BTNExpandCombo.Size = New System.Drawing.Size(19, 19)
         Me.PanelEnvolve_BTNExpandCombo.TabIndex = 0
@@ -142,11 +154,12 @@ Partial Class Control_ComboBoxPerson
         Me.AutoSize = True
         Me.Controls.Add(Me.PanelCombo)
         Me.Name = "Control_ComboBoxPerson"
-        Me.Size = New System.Drawing.Size(281, 42)
+        Me.Size = New System.Drawing.Size(286, 45)
         Me.PanelCombo.ResumeLayout(False)
         Me.PanelBorder_PanelCombo.ResumeLayout(False)
         Me.PanelBackground_LNKLabelCombo.ResumeLayout(False)
         Me.PanelBackground_LNKLabelCombo.PerformLayout()
+        Me.CMS_Menu.ResumeLayout(False)
         Me.PanelEnvolve_BTNExpandCombo.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -160,4 +173,5 @@ Partial Class Control_ComboBoxPerson
     Friend WithEvents CMS_Menu As ContextMenuStrip
     Friend WithEvents PanelBorder_PanelCombo As Panel
     Friend WithEvents TXT As TextBox
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
 End Class

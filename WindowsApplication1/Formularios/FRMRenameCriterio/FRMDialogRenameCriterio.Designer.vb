@@ -241,7 +241,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(594, 229)
+        Me.Panel1.Size = New System.Drawing.Size(596, 229)
         Me.Panel1.TabIndex = 9
         '
         'Panel29
@@ -253,7 +253,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel29.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel29.Location = New System.Drawing.Point(0, 108)
         Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(594, 54)
+        Me.Panel29.Size = New System.Drawing.Size(596, 54)
         Me.Panel29.TabIndex = 2
         '
         'Panel30
@@ -263,7 +263,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel30.Location = New System.Drawing.Point(0, 0)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Padding = New System.Windows.Forms.Padding(13)
-        Me.Panel30.Size = New System.Drawing.Size(540, 53)
+        Me.Panel30.Size = New System.Drawing.Size(542, 53)
         Me.Panel30.TabIndex = 4
         '
         'TableLayoutPanel6
@@ -273,7 +273,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160.0!))
         Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178.0!))
+        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180.0!))
         Me.TableLayoutPanel6.Controls.Add(Me.Panel31, 4, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Panel34, 2, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Panel39, 0, 0)
@@ -282,7 +282,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(514, 27)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(516, 27)
         Me.TableLayoutPanel6.TabIndex = 5
         '
         'Panel31
@@ -496,7 +496,7 @@ Partial Class FRMDialogRenameCriterio
         '
         Me.Panel44.Controls.Add(Me.TableLayoutPanel7)
         Me.Panel44.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel44.Location = New System.Drawing.Point(540, 0)
+        Me.Panel44.Location = New System.Drawing.Point(542, 0)
         Me.Panel44.Name = "Panel44"
         Me.Panel44.Size = New System.Drawing.Size(54, 53)
         Me.Panel44.TabIndex = 3
@@ -549,7 +549,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel45.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel45.Location = New System.Drawing.Point(0, 53)
         Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(594, 1)
+        Me.Panel45.Size = New System.Drawing.Size(596, 1)
         Me.Panel45.TabIndex = 0
         '
         'Panel2
@@ -561,7 +561,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 54)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(594, 54)
+        Me.Panel2.Size = New System.Drawing.Size(596, 54)
         Me.Panel2.TabIndex = 1
         '
         'Panel12
@@ -571,7 +571,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel12.Location = New System.Drawing.Point(0, 0)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Padding = New System.Windows.Forms.Padding(13)
-        Me.Panel12.Size = New System.Drawing.Size(540, 53)
+        Me.Panel12.Size = New System.Drawing.Size(542, 53)
         Me.Panel12.TabIndex = 4
         '
         'TableLayoutPanel4
@@ -581,7 +581,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160.0!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.Panel14, 4, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Panel17, 2, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.Panel22, 0, 0)
@@ -590,7 +590,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 1
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(514, 27)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(516, 27)
         Me.TableLayoutPanel4.TabIndex = 5
         '
         'Panel14
@@ -804,7 +804,7 @@ Partial Class FRMDialogRenameCriterio
         '
         Me.Panel27.Controls.Add(Me.TableLayoutPanel5)
         Me.Panel27.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel27.Location = New System.Drawing.Point(540, 0)
+        Me.Panel27.Location = New System.Drawing.Point(542, 0)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(54, 53)
         Me.Panel27.TabIndex = 3
@@ -857,7 +857,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel28.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel28.Location = New System.Drawing.Point(0, 53)
         Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(594, 1)
+        Me.Panel28.Size = New System.Drawing.Size(596, 1)
         Me.Panel28.TabIndex = 0
         '
         'PanelElemento
@@ -869,7 +869,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelElemento.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelElemento.Location = New System.Drawing.Point(0, 0)
         Me.PanelElemento.Name = "PanelElemento"
-        Me.PanelElemento.Size = New System.Drawing.Size(594, 54)
+        Me.PanelElemento.Size = New System.Drawing.Size(596, 54)
         Me.PanelElemento.TabIndex = 0
         '
         'Panel13
@@ -879,7 +879,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel13.Location = New System.Drawing.Point(0, 0)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Padding = New System.Windows.Forms.Padding(13)
-        Me.Panel13.Size = New System.Drawing.Size(540, 53)
+        Me.Panel13.Size = New System.Drawing.Size(542, 53)
         Me.Panel13.TabIndex = 4
         '
         'TableLayoutPanel3
@@ -889,7 +889,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.PanelTXT, 4, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.PanelCombo, 2, 0)
         Me.TableLayoutPanel3.Controls.Add(Me.PanelComboBoxPerson, 0, 0)
@@ -898,7 +898,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(514, 27)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(516, 27)
         Me.TableLayoutPanel3.TabIndex = 5
         '
         'PanelTXT
@@ -1114,7 +1114,7 @@ Partial Class FRMDialogRenameCriterio
         '
         Me.Panel4.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(540, 0)
+        Me.Panel4.Location = New System.Drawing.Point(542, 0)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(54, 53)
         Me.Panel4.TabIndex = 3
@@ -1167,7 +1167,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
         Me.PanelMagemBotton.Name = "PanelMagemBotton"
-        Me.PanelMagemBotton.Size = New System.Drawing.Size(594, 1)
+        Me.PanelMagemBotton.Size = New System.Drawing.Size(596, 1)
         Me.PanelMagemBotton.TabIndex = 0
         '
         'LBLTitle02
@@ -1193,7 +1193,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelBorder.Location = New System.Drawing.Point(31, 102)
         Me.PanelBorder.Name = "PanelBorder"
         Me.PanelBorder.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder.Size = New System.Drawing.Size(596, 231)
+        Me.PanelBorder.Size = New System.Drawing.Size(598, 231)
         Me.PanelBorder.TabIndex = 111
         '
         'ComboBox1
@@ -1203,9 +1203,9 @@ Partial Class FRMDialogRenameCriterio
         Me.ComboBox1.ForeColor = System.Drawing.Color.DarkGray
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Nome", "Texto", "Coisas ", "Augustos", "Domingos", "Celular", "Pintura"})
-        Me.ComboBox1.Location = New System.Drawing.Point(32, 354)
+        Me.ComboBox1.Location = New System.Drawing.Point(489, 22)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(213, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(140, 21)
         Me.ComboBox1.TabIndex = 112
         '
         'FRMDialogRenameCriterio
@@ -1377,5 +1377,4 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel28 As Panel
     Friend WithEvents ComboBox1 As ComboBox
-
 End Class

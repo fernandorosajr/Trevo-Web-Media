@@ -517,7 +517,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'Button8
         '
-        Me.Button8.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.plus
+        Me.Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), System.Drawing.Image)
         Me.Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -531,7 +531,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'Button9
         '
-        Me.Button9.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.minus
+        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
         Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button9.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -825,7 +825,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'Button4
         '
-        Me.Button4.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.plus
+        Me.Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), System.Drawing.Image)
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -839,7 +839,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'Button5
         '
-        Me.Button5.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.minus
+        Me.Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), System.Drawing.Image)
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -1135,7 +1135,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'BTNCancelaRenomeDeOrigem
         '
-        Me.BTNCancelaRenomeDeOrigem.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.plus
+        Me.BTNCancelaRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNCancelaRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
         Me.BTNCancelaRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.BTNCancelaRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BTNCancelaRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -1149,7 +1149,7 @@ Partial Class FRMDialogRenameCriterio
         '
         'BTNConfirmarRenomeDeOrigem
         '
-        Me.BTNConfirmarRenomeDeOrigem.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.minus
+        Me.BTNConfirmarRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNConfirmarRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
         Me.BTNConfirmarRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.BTNConfirmarRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BTNConfirmarRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -1203,7 +1203,7 @@ Partial Class FRMDialogRenameCriterio
         Me.ComboBox1.ForeColor = System.Drawing.Color.DarkGray
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Nome", "Texto", "Coisas ", "Augustos", "Domingos", "Celular", "Pintura"})
-        Me.ComboBox1.Location = New System.Drawing.Point(413, 0)
+        Me.ComboBox1.Location = New System.Drawing.Point(32, 354)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(213, 21)
         Me.ComboBox1.TabIndex = 112
@@ -1377,4 +1377,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel28 As Panel
     Friend WithEvents ComboBox1 As ComboBox
+
 End Class

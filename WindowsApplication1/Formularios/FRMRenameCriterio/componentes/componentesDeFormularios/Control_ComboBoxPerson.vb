@@ -1,10 +1,15 @@
-﻿Public Class Control_ComboBoxPerson
+﻿Imports System
+Imports System.ComponentModel
+Imports System.Collections.ObjectModel
+
+Public Class Control_ComboBoxPerson
     'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
 
 
 
     Private configs As Class_Configs
 
+    Const _textDefault As String = "<Selecione>"
 
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
@@ -92,18 +97,22 @@
             _bgColorLostFocus = value
         End Set
     End Property
+    ' Propriedades de configurações internas
+    ' __________________________________________________
 
-    Private _comboBoxPersonSlave As Control_ComboBoxPerson
-    Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
 
+    Public _textDisplay As String
+    Public Property TextDisplay As String
         Get
-            Return _comboBoxPersonSlave
+            Return _textDisplay
         End Get
-        Set(value As Control_ComboBoxPerson)
-            _comboBoxPersonSlave = value
+        Set(value As String)
+
+            _textDisplay = value
+            LNKLLabelCombo.Text = _textDisplay 'value
+
         End Set
     End Property
-
     ' __________________________________________________
 
     'TESTE DE PROPRIEDADES
@@ -178,6 +187,20 @@
     'End Property
     ' ________________________________________________________
 
+    '    Public Property Value() As Decimal
+    '        Get
+    '            Return CDec(GetValue(ValueProperty))
+    '        End Get
+    '        Set(ByVal value As Decimal)
+    '            SetValue(ValueProperty, value)
+    '        End Set
+    '    End Property
+
+    '    [Category("Appearance")]
+    '[Description("The text displayed by the control.")] 
+    '[Browsable(true), EditorBrowsable(EditorBrowsableState.Always)]
+
+
     Private _options As String
     Public Property Options As String
         Get
@@ -187,6 +210,71 @@
         Set(value As String)
             Lista = value
             _options = value
+
+        End Set
+    End Property
+
+    ' Propriedades de configuração dos Slaves
+
+    Private _comboBoxPersonSlave As Control_ComboBoxPerson
+    <Category("Configuração do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
+
+        Get
+            Return _comboBoxPersonSlave
+        End Get
+        Set(value As Control_ComboBoxPerson)
+            _comboBoxPersonSlave = value
+        End Set
+    End Property
+
+
+    Dim _comboBoxPersonSlaveLists As New Collections.Specialized.StringCollection
+    <Category("Configuração do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property ComboBoxPersonSlaveLists() As Collections.Specialized.StringCollection
+        'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
+        Get
+            Return _comboBoxPersonSlaveLists
+        End Get
+        Set(ByVal value As Collections.Specialized.StringCollection)
+            _comboBoxPersonSlaveLists = value
+        End Set
+    End Property
+
+    '____________________________________________________________________________________
+
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Dim _subItems As New List(Of Collections.Specialized.StringCollection)
+    <Category("Minha Categoria")>
+    <Description("Teste de descrição")>
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
+    Public Property SubItems() As List(Of Collections.Specialized.StringCollection)
+        'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
+        Get
+            Return _subItems
+        End Get
+        Set(ByVal value As List(Of Collections.Specialized.StringCollection))
+            _subItems = value
+        End Set
+    End Property
+
+    'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
+    'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
+    'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
+    Private _optionsList As List(Of String)
+
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property OptionsList As List(Of String)
+        Get
+            Return _optionsList
+
+        End Get
+        Set(value As List(Of String))
+
+            _optionsList = value
 
         End Set
     End Property
@@ -214,7 +302,7 @@
             Dim valueInStringList() As String
 
             If value Is Nothing Then
-                value = "_;"
+                value = " ;"
             End If
             valueInStringList = funcoesDeString.SepararPalavras(value, separador)  ' {vbCrLf})
             _lista.Clear()
@@ -284,12 +372,13 @@
 
 
         AddMenuItens()
+        If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
     End Sub
 
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadShotCutKey()
-
+        LNKLLabelCombo.Text = _textDisplay
     End Sub
 
     Private Function OptionClick(sender As Object, e As EventArgs)
@@ -308,7 +397,7 @@
 
         CMS_Menu.Items.Clear()
         For Each labelItem As String In _lista
-            If Trim(labelItem) <> "" Then
+            If labelItem <> "" Then
 
                 Dim Item As New ToolStripMenuItem With {
                     .Text = labelItem,
@@ -380,7 +469,6 @@
 
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
         ExpandCombo()
-
 
         Dim comboBoxPerson As New Control_ComboBoxPerson
 

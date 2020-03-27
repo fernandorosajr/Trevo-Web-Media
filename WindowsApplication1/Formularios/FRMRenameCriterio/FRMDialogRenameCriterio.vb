@@ -1,4 +1,5 @@
 ﻿Imports System.Windows.Forms
+'TODO: Remover controle em tenpos de execução : https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time
 
 Public Class FRMDialogRenameCriterio
     ' TODO :https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-layer-objects-on-windows-forms

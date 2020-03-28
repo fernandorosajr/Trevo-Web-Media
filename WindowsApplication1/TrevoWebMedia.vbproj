@@ -113,6 +113,9 @@
     <PlatformTarget>x64</PlatformTarget>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -138,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Componentes\Tests\AngleTestControl.Designer.vb">
+      <DependentUpon>AngleTestControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Tests\AngleTestControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Formularios\FRMDialogConflictingFolders.Designer.vb">
       <DependentUpon>FRMDialogConflictingFolders.vb</DependentUpon>
     </Compile>
@@ -423,6 +432,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.resx">
       <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Tests\AngleTestControl.resx">
+      <DependentUpon>AngleTestControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

@@ -53,30 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property vvv() As String
-            Get
-                Return CType(Me("vvv"),String)
-            End Get
-            Set
-                Me("vvv") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
-        Public Property bbb() As String
-            Get
-                Return CType(Me("bbb"),String)
-            End Get
-            Set
-                Me("bbb") = value
-            End Set
-        End Property
     End Class
 End Namespace
 

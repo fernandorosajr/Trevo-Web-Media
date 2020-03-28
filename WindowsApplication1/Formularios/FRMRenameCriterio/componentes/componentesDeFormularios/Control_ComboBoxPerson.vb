@@ -1,11 +1,11 @@
 ﻿Imports System
 Imports System.ComponentModel
+Imports System.ComponentModel.Design
 Imports System.Collections.ObjectModel
+Imports System.Drawing.Design
 
 Public Class Control_ComboBoxPerson
     'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
-
-
 
     Private configs As Class_Configs
 
@@ -176,15 +176,30 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
-    'Private _testeListOfEstrutura As New List(Of TesteDeEstrutura)
-    'Public Property TestandoListOfEstrutura As List(Of TesteDeEstrutura)
-    '    Get
-    '        Return _testeListOfEstrutura
-    '    End Get
-    '    Set(value As List(Of TesteDeEstrutura))
-    '        _testeListOfEstrutura = value
-    '    End Set
-    'End Property
+    Private _myList As List(Of String) = New List(Of String)()
+
+    '<Editor(GetType(MyStringCollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
+    '<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
+    Public Property MyList As List(Of String)
+        Get
+            Return _myList
+        End Get
+        Set(ByVal value As List(Of String))
+            _myList = value
+        End Set
+    End Property
+
+    Private Icollection As ICollection
+    '<EditorAttribute(GetType(System.ComponentModel.Design.CollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
+    Public Property testCollection() As ICollection
+        Get
+            Return Icollection
+        End Get
+        Set
+            Icollection = Value
+        End Set
+    End Property
+
     ' ________________________________________________________
 
     '    Public Property Value() As Decimal
@@ -220,7 +235,6 @@ Public Class Control_ComboBoxPerson
     <Category("Configuração do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
     Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
-
         Get
             Return _comboBoxPersonSlave
         End Get
@@ -228,7 +242,6 @@ Public Class Control_ComboBoxPerson
             _comboBoxPersonSlave = value
         End Set
     End Property
-
 
     Dim _comboBoxPersonSlaveLists As New Collections.Specialized.StringCollection
     <Category("Configuração do Slave")>
@@ -313,6 +326,8 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
+    '-----------------------------------------------------------------
+
     Private _shortcutKeyDisplay As Boolean
     Public Property ShortcutKeyDisplay As Boolean
         Get
@@ -384,11 +399,16 @@ Public Class Control_ComboBoxPerson
     Private Function OptionClick(sender As Object, e As EventArgs)
         Dim itemClicked As New ToolStripMenuItem
         itemClicked = CType(sender, ToolStripMenuItem)
-        ' MsgBox("You have selected the item " & itemClicked.Text)
 
         MsgBox(itemClicked.Name)
         LNKLLabelCombo.Text = itemClicked.Text
         _selected = itemClicked.Text
+
+
+        If _comboBoxPersonSlave IsNot Nothing Then
+            _comboBoxPersonSlave.Lista = Me._comboBoxPersonSlaveLists.Item(0)
+
+        End If
 
         Return itemClicked.Text
     End Function

@@ -385,7 +385,6 @@ Public Class Control_ComboBoxPerson
         _bgColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._bgColorLostFocus)   'Me.BackColor
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
 
-
         AddMenuItens()
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
@@ -406,7 +405,11 @@ Public Class Control_ComboBoxPerson
 
 
         If _comboBoxPersonSlave IsNot Nothing Then
-            _comboBoxPersonSlave.Lista = Me._comboBoxPersonSlaveLists.Item(0)
+            MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
+
+            If _comboBoxPersonSlaveLists.Count > 0 Then
+                _comboBoxPersonSlave.Lista = Me._comboBoxPersonSlaveLists.Item(0)
+            End If
 
         End If
 
@@ -503,7 +506,7 @@ Public Class Control_ComboBoxPerson
     End Sub
 
     Private Sub LNKLLabelCombo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLLabelCombo.LinkClicked
-        ' LNKLLabelCombo.BackColor = cor2
+
         TXT.Text = textCor2
         ExpandCombo()
 

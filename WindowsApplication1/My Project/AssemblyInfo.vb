@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("Trevosoft")> 
 <Assembly: AssemblyProduct("Trevo Web Media")>
-<Assembly: AssemblyCopyright("Copyright © Trevosoft 2018")>
+<Assembly: AssemblyCopyright("Copyright © Trevosoft 2021")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

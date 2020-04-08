@@ -103,6 +103,9 @@ Public Class ControlPainel_Desktop
         Dim usesDirectoriesClass As New UsesDirectoriesClass
 
         Try
+
+            If node Is Nothing Then Exit Sub
+            MsgBox(node.Text & " " & node.Name)
             If node.Tag IsNot (Nothing) Then
                 Dim prompt As String
                 Dim title As String

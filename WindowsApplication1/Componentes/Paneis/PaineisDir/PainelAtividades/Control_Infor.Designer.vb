@@ -238,7 +238,7 @@ Partial Class Control_Infor
         'PictureBox13
         '
         Me.PictureBox13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox13.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.PictureBox13.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_11
         Me.PictureBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PictureBox13.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox13.Name = "PictureBox13"
@@ -312,7 +312,7 @@ Partial Class Control_Infor
         'PictureBox14
         '
         Me.PictureBox14.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox14.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
+        Me.PictureBox14.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_11
         Me.PictureBox14.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.PictureBox14.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox14.Name = "PictureBox14"

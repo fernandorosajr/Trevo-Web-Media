@@ -45,18 +45,18 @@ Partial Class ControlListIcone
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PanelBorder.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel6.SuspendLayout()
@@ -88,7 +88,7 @@ Partial Class ControlListIcone
         'PanelImage
         '
         Me.PanelImage.BackColor = System.Drawing.Color.Transparent
-        Me.PanelImage.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone
+        Me.PanelImage.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.meuEstiloDePasta01
         Me.PanelImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.PanelImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PanelImage.Dock = System.Windows.Forms.DockStyle.Fill
@@ -341,22 +341,6 @@ Partial Class ControlListIcone
         Me.Panel13.Size = New System.Drawing.Size(139, 17)
         Me.Panel13.TabIndex = 12
         '
-        'Panel14
-        '
-        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel14.Location = New System.Drawing.Point(0, 0)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(29, 17)
-        Me.Panel14.TabIndex = 14
-        '
-        'Panel15
-        '
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel15.Location = New System.Drawing.Point(110, 0)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(29, 17)
-        Me.Panel15.TabIndex = 15
-        '
         'Panel16
         '
         Me.Panel16.Controls.Add(Me.PictureBox6)
@@ -436,6 +420,22 @@ Partial Class ControlListIcone
         Me.PictureBox10.TabStop = False
         Me.PictureBox10.UseWaitCursor = True
         '
+        'Panel15
+        '
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel15.Location = New System.Drawing.Point(110, 0)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(29, 17)
+        Me.Panel15.TabIndex = 15
+        '
+        'Panel14
+        '
+        Me.Panel14.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel14.Location = New System.Drawing.Point(0, 0)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(29, 17)
+        Me.Panel14.TabIndex = 14
+        '
         'Panel17
         '
         Me.Panel17.Controls.Add(Me.Panel18)
@@ -447,15 +447,6 @@ Partial Class ControlListIcone
         Me.Panel17.Size = New System.Drawing.Size(139, 17)
         Me.Panel17.TabIndex = 13
         Me.Panel17.Visible = False
-        '
-        'Label2
-        '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label2.Location = New System.Drawing.Point(2, 2)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "100%"
         '
         'Panel18
         '
@@ -474,6 +465,15 @@ Partial Class ControlListIcone
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(72, 13)
         Me.Panel19.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label2.Location = New System.Drawing.Point(2, 2)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "100%"
         '
         'ControlListIcone
         '

@@ -1003,16 +1003,6 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property maximizar() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("maximizar", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property maximizar_branco() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("maximizar branco", resourceCulture)
@@ -1353,16 +1343,6 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property pasta_winphone() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("pasta winphone", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property pasta_winphone1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pasta winphone1", resourceCulture)
@@ -1416,16 +1396,6 @@ Namespace My.Resources
         Friend ReadOnly Property pause1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pause1", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property pen() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("pen", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

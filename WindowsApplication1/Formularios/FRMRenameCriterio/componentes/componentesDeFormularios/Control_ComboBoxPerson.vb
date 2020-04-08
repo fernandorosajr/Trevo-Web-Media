@@ -243,6 +243,8 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
+    ' TODO : Estudar manipulação de eventos https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/events/
+
     Dim _comboBoxPersonSlaveLists As New Collections.Specialized.StringCollection
     <Category("Configuração do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
@@ -493,12 +495,13 @@ Public Class Control_ComboBoxPerson
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
         ExpandCombo()
 
-        Dim comboBoxPerson As New Control_ComboBoxPerson
+        'Dim comboBoxPerson As New Control_ComboBoxPerson
 
-        Me.Controls.Add(comboBoxPerson)
-        comboBoxPerson.Dock = DockStyle.Top
-        comboBoxPerson.Options = "Q;W;E"
-        comboBoxPerson.Visible = True
+        'Me.Controls.Add(comboBoxPerson)
+        'comboBoxPerson.Dock = DockStyle.Top
+        'comboBoxPerson.Options = "Q;W;E"
+        'comboBoxPerson.Visible = True
+
     End Sub
 
     Public Sub ExpandCombo()

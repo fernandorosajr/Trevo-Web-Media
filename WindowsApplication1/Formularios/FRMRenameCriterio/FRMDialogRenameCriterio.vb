@@ -31,7 +31,6 @@ Public Class FRMDialogRenameCriterio
     End Sub
 
     Private Sub FRMDialogRenameCriterio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' TODO : Estudar manipulação de eventos https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/events/
 
         comboBoxPerson01.Width = 150
 

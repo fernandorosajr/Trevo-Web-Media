@@ -1377,4 +1377,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel28 As Panel
     Friend WithEvents ComboBox1 As ComboBox
+    ' Friend WithEvents Control_ComboBoxPerson1 As Control_ComboBoxPerson
 End Class

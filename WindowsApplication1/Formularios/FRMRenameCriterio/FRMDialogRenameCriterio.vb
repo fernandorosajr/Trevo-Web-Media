@@ -37,7 +37,7 @@ Public Class FRMDialogRenameCriterio
         Me.Controls.Add(comboBoxPerson01)
         comboBoxPerson01.BringToFront()
         comboBoxPerson01.ComboBoxPersonSlave = comboBoxPerson02
-        comboBoxPerson01.ComboBoxPersonSlave.Options = "Eu sou o SubCombo; Sou escravo do Combo 1; OK"
+        comboBoxPerson01.ComboBoxPersonSlave.OptionsList = "Eu sou o SubCombo; Sou escravo do Combo 1; OK"
 
         comboBoxPerson02.Left = comboBoxPerson01.Left + comboBoxPerson01.Width + 8
 

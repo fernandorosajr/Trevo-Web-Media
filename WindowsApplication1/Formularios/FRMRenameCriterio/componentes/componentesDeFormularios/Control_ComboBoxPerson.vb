@@ -216,23 +216,10 @@ Public Class Control_ComboBoxPerson
     '[Browsable(true), EditorBrowsable(EditorBrowsableState.Always)]
 
 
-    Private _options As String
-    Public Property Options As String
-        Get
-            Return _options
-
-        End Get
-        Set(value As String)
-            Lista = value
-            _options = value
-
-        End Set
-    End Property
-
     ' Propriedades de configuração dos Slaves
 
     Private _comboBoxPersonSlave As Control_ComboBoxPerson
-    <Category("Configuração do Slave")>
+    <Category("Configurações do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
     Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
         Get
@@ -240,13 +227,23 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Control_ComboBoxPerson)
             _comboBoxPersonSlave = value
+
+            If Me._defaultOptionsListSlave Is Nothing Then
+                If value IsNot Nothing Then
+                    If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Or _comboBoxPersonSlave.DefaultOptionsList = "" Then
+                        Me._defaultOptionsListSlave = _comboBoxPersonSlave.OptionsList
+                    End If
+
+                End If
+            End If
+
         End Set
     End Property
 
     ' TODO : Estudar manipulação de eventos https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/events/
 
     Dim _comboBoxPersonSlaveLists As New Collections.Specialized.StringCollection
-    <Category("Configuração do Slave")>
+    <Category("Configurações do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property ComboBoxPersonSlaveLists() As Collections.Specialized.StringCollection
@@ -259,75 +256,95 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
-    '____________________________________________________________________________________
 
-    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
-    Dim _subItems As New List(Of Collections.Specialized.StringCollection)
-    <Category("Minha Categoria")>
-    <Description("Teste de descrição")>
-    <DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
-    Public Property SubItems() As List(Of Collections.Specialized.StringCollection)
-        'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
+    Private _defaultOptionsListSlave As String
+    <Category("Configurações do Slave")>
+    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
+    Public Property DefaultOptionsListSlave As String
         Get
-            Return _subItems
+            Return _defaultOptionsListSlave
         End Get
-        Set(ByVal value As List(Of Collections.Specialized.StringCollection))
-            _subItems = value
+
+        Set(value As String)
+            _defaultOptionsListSlave = value
+
         End Set
     End Property
 
     'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
     'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
     'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
-    Private _optionsList As List(Of String)
 
-    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
-    Public Property OptionsList As List(Of String)
-        Get
-            Return _optionsList
-
-        End Get
-        Set(value As List(Of String))
-
-            _optionsList = value
-
-        End Set
-    End Property
-
-    ReadOnly separador() As Char = {";"c, vbCrLf} ' {vbCrLf}
+   
+    ReadOnly separador() As Char = {";"c, vbCrLf, vbLf, vbCr} ' {vbCrLf}
 
     ReadOnly funcoesDeString As New StringFunctionsClass
 
-    Private _lista As New ArrayList()
-    Public Property Lista As String
-
+    Private _optionListCommaSeparated As String
+    Private _optionsList As New ArrayList()
+    <Category("Lista de Opções")>
+    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
+    Public Property OptionsList As String
         Get
-            Dim listaEmString As String = ""
 
-            For Each str As String In _lista
-                listaEmString = listaEmString & str & vbCrLf ' ";" 'vbCrLf
-
-            Next
-
-            Return listaEmString
+            Return Get_ListOptions(_optionsList)
 
         End Get
         Set(value As String)
 
-            Dim valueInStringList() As String
-
-            If value Is Nothing Then
-                value = " ;"
-            End If
-            valueInStringList = funcoesDeString.SepararPalavras(value, separador)  ' {vbCrLf})
-            _lista.Clear()
-            _lista.AddRange(valueInStringList)
-
+            _optionListCommaSeparated = value
+            _optionsList = Set_ListOptions(value)
             AddMenuItens()
 
         End Set
     End Property
 
+    Private _defaultOptionListCommaSeparated As String
+    Private _defaultOptionsList As New ArrayList()
+    <Category("Lista de Opções")>
+    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
+    Public Property DefaultOptionsList As String
+        Get
+
+            Return Get_ListOptions(_defaultOptionsList)
+
+        End Get
+        Set(value As String)
+            _defaultOptionListCommaSeparated = value
+            _defaultOptionsList = Set_ListOptions(value)
+
+            If _optionsList Is Nothing Then
+                _optionsList = _defaultOptionsList
+            End If
+
+            AddMenuItens()
+        End Set
+    End Property
+
+    Private Function Get_ListOptions(_optsList As ArrayList) As String
+
+        Dim StringList As String = ""
+
+        Dim x As Integer = 0
+        For Each str As String In _optsList
+            If _optsList.Count = x Then
+                StringList = StringList & str
+            Else
+                StringList = StringList & str & ";" 'vbCrLf
+            End If
+            x += 1
+        Next
+        Return StringList
+    End Function
+
+    Private Function Set_ListOptions(value As String) As ArrayList
+        Dim valueInStringList As New ArrayList
+
+        valueInStringList.Clear()
+        valueInStringList.AddRange(funcoesDeString.SepararPalavras(value, separador))
+
+        Return valueInStringList
+    End Function
     '-----------------------------------------------------------------
 
     Private _shortcutKeyDisplay As Boolean
@@ -359,21 +376,21 @@ Public Class Control_ComboBoxPerson
 
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
 
-        Dim newLine As String
-        Dim _value As String = ""
+        'Dim newLine As String
+        'Dim _value As String = ""
 
         'Options
-        If Options IsNot Nothing Then
+        'If OptionsList IsNot Nothing Then
 
-            For x = 0 To 5
-                newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
-                _value &= newLine
+        '    For x = 0 To 5
+        '        newLine = ("Teste " & (x + 1)) & ";" 'vbCrLf
+        '        _value &= newLine
 
-            Next
+        '    Next
 
-            Options = _value
+        '    OptionsList = _value
 
-        End If
+        'End If
 
         ShortcutKeyDisplay = True
 
@@ -410,7 +427,7 @@ Public Class Control_ComboBoxPerson
             MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
-                _comboBoxPersonSlave.Lista = Me._comboBoxPersonSlaveLists.Item(0)
+                _comboBoxPersonSlave.OptionsList = Me._comboBoxPersonSlaveLists.Item(0)
             End If
 
         End If
@@ -421,7 +438,7 @@ Public Class Control_ComboBoxPerson
     Sub AddMenuItens()
 
         CMS_Menu.Items.Clear()
-        For Each labelItem As String In _lista
+        For Each labelItem As String In _optionsList
             If labelItem <> "" Then
 
                 Dim Item As New ToolStripMenuItem With {
@@ -495,12 +512,7 @@ Public Class Control_ComboBoxPerson
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
         ExpandCombo()
 
-        'Dim comboBoxPerson As New Control_ComboBoxPerson
 
-        'Me.Controls.Add(comboBoxPerson)
-        'comboBoxPerson.Dock = DockStyle.Top
-        'comboBoxPerson.Options = "Q;W;E"
-        'comboBoxPerson.Visible = True
 
     End Sub
 

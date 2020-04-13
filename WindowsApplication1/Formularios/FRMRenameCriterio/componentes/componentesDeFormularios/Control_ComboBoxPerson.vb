@@ -10,6 +10,7 @@ Public Class Control_ComboBoxPerson
     Private configs As Class_Configs
 
     Const _textDefault As String = "<Selecione>"
+    Const LabelMenuItem As String = "MenuItem_"
 
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
@@ -33,6 +34,25 @@ Public Class Control_ComboBoxPerson
     Public cor As Color = ColorTranslator.FromWin32(Color.Aqua.ToArgb)
     Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
     Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(63, 63, 66))
+
+
+    Public Enum ReturnTypeEnum
+        IntegerType = 0
+        StringType = 1
+        MenuItemType = 2
+    End Enum
+
+    Private _returnType As ReturnTypeEnum
+    Public Property ReturnType As ReturnTypeEnum
+        Get
+            Return _returnType
+        End Get
+        Set(value As ReturnTypeEnum)
+            _returnType = value
+        End Set
+    End Property
+
+    Public returnValue As Object
 
     ' Propriedades de configuração de cores
     Private _borderColorError As Color
@@ -270,12 +290,49 @@ Public Class Control_ComboBoxPerson
 
         End Set
     End Property
+    ' -------------------------------------------------------------------------
+
+    'Private _comboBoxPersonSlave As Control_ComboBoxPerson
+    '<Category("Configurações do Slave")>
+    '<Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    'Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
+    '    Get
+    '        Return _comboBoxPersonSlave
+    '    End Get
+    '    Set(value As Control_ComboBoxPerson)
+    '        _comboBoxPersonSlave = value
+
+    '        If Me._defaultOptionsListSlave Is Nothing Then
+    '            If value IsNot Nothing Then
+    '                If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Or _comboBoxPersonSlave.DefaultOptionsList = "" Then
+    '                    Me._defaultOptionsListSlave = _comboBoxPersonSlave.OptionsList
+    '                End If
+
+    '            End If
+    '        End If
+
+    '    End Set
+    'End Property
+
+    Private _selected As ContextMenuStrip = CMS_Menu
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    Public Property Selected As ToolStripMenuItem
+        Get
+            Return _selected.Items(1)
+
+        End Get
+        Set(value As ToolStripMenuItem)
+            _selected = value.GetCurrentParent
+
+        End Set
+    End Property
 
     'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
     'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
     'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
 
-   
+
     ReadOnly separador() As Char = {";"c, vbCrLf, vbLf, vbCr} ' {vbCrLf}
 
     ReadOnly funcoesDeString As New StringFunctionsClass
@@ -357,17 +414,7 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
-    Private _selected As Object
-    Public Property Selected As Object
-        Get
-            Return _selected
 
-        End Get
-        Set(value As Object)
-            _selected = value
-
-        End Set
-    End Property
 
     Public Sub New()
 
@@ -418,10 +465,17 @@ Public Class Control_ComboBoxPerson
         Dim itemClicked As New ToolStripMenuItem
         itemClicked = CType(sender, ToolStripMenuItem)
 
+        Dim checked As Boolean = itemClicked.Checked
+
         MsgBox(itemClicked.Name)
         LNKLLabelCombo.Text = itemClicked.Text
-        _selected = itemClicked.Text
+        ' _selected = itemClicked
 
+        For Each item As ToolStripMenuItem In CMS_Menu.Items
+            If itemClicked.Name <> item.Name Then
+                item.Checked = False
+            End If
+        Next
 
         If _comboBoxPersonSlave IsNot Nothing Then
             MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
@@ -435,18 +489,31 @@ Public Class Control_ComboBoxPerson
         Return itemClicked.Text
     End Function
 
+    Sub SelectItemClicked(itemClicked As ToolStripMenuItem)
+
+    End Sub
+
     Sub AddMenuItens()
 
         CMS_Menu.Items.Clear()
+
+        Dim x As Integer = CMS_Menu.Items.Count
+        Dim name As String
+
         For Each labelItem As String In _optionsList
+
             If labelItem <> "" Then
 
+                name = LabelMenuItem.ToString + x.ToString
                 Dim Item As New ToolStripMenuItem With {
                     .Text = labelItem,
+                    .Name = name,
                     .ForeColor = Color.DarkGray,
-                    .Width = Me.Width
+                    .Width = Me.Width,
+                    .CheckOnClick = True
                 }
 
+                x += 1
                 AddHandler Item.Click, New System.EventHandler(AddressOf OptionClick)
                 CMS_Menu.Items.Add(Item)
 

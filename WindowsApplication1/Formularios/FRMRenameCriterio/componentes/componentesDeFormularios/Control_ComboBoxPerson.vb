@@ -314,17 +314,55 @@ Public Class Control_ComboBoxPerson
     '    End Set
     'End Property
 
-    Private _selected As ContextMenuStrip = CMS_Menu
-    <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
-    Public Property Selected As ToolStripMenuItem
-        Get
-            Return _selected.Items(1)
 
+    ' Define a local variable to store the property value.
+    Private propertyValue As String
+    ' Define the property.
+    Public Property Prop1() As String
+        Get
+            ' The Get property procedure is called when the value
+            ' of a property is retrieved.
+            Return propertyValue
+        End Get
+        Set(ByVal value As String)
+            ' The Set property procedure is called when the value 
+            ' of a property is modified.  The value to be assigned
+            ' is passed in the argument to Set.
+            propertyValue = value
+        End Set
+    End Property
+
+
+
+    Private SelectedItem As ToolStripMenuItem
+    Private _selected As List(Of ToolStripMenuItem)
+    <Category("Configurações do Slave")>
+    <Description("Seleciona item de menu expecífico.")>
+    Public Property Selected() As ToolStripMenuItem
+        Get
+
+            For Each item As ToolStripMenuItem In _selected
+                If item.Checked = True Then
+                    SelectedItem = item
+
+                Else
+                    SelectedItem = Nothing
+                End If
+            Next
+
+            Return SelectedItem
         End Get
         Set(value As ToolStripMenuItem)
-            _selected = value.GetCurrentParent
 
+            For Each item As ToolStripMenuItem In _selected
+                If item.Name <> value.Name Then
+                    item.Checked = False
+                Else
+                    item.Checked = True
+                End If
+            Next
+
+            SelectedItem = value
         End Set
     End Property
 
@@ -453,6 +491,14 @@ Public Class Control_ComboBoxPerson
 
         AddMenuItens()
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
+
+
+        If _selected IsNot Nothing Then _selected.Clear()
+
+        For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
+            _selected.Add(MenuItem)
+        Next
+
 
     End Sub
 

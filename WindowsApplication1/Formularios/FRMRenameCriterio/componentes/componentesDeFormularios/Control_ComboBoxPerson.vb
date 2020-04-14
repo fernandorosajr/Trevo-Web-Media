@@ -12,6 +12,9 @@ Public Class Control_ComboBoxPerson
     Const _textDefault As String = "<Selecione>"
     Const LabelMenuItem As String = "MenuItem_"
 
+    Private _nivel As Integer
+
+
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
     ' Dim sColor As String = iColor.ToString
@@ -238,6 +241,7 @@ Public Class Control_ComboBoxPerson
 
     ' Propriedades de configuração dos Slaves
 
+    Public ComboBoxPersonMaster As Control_ComboBoxPerson
     Private _comboBoxPersonSlave As Control_ComboBoxPerson
     <Category("Configurações do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
@@ -247,6 +251,7 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Control_ComboBoxPerson)
             _comboBoxPersonSlave = value
+            _comboBoxPersonSlave.ComboBoxPersonMaster = Me
 
             If Me._defaultOptionsListSlave Is Nothing Then
                 If value IsNot Nothing Then

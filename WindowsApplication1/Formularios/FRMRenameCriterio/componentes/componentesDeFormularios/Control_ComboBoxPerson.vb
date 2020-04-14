@@ -12,8 +12,16 @@ Public Class Control_ComboBoxPerson
     Const _textDefault As String = "<Selecione>"
     Const LabelMenuItem As String = "MenuItem_"
 
-    Private _nivel As Integer
+    Public _nivel As Integer
+    'Public  Property Nivel As Integer
+    '    Get
+    '        Return _nivel
 
+    '    End Get
+    '    Set(value As Integer)
+    '        _nivel = value
+    '    End Set
+    'End Property
 
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
@@ -199,18 +207,6 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
-    Private _myList As List(Of String) = New List(Of String)()
-
-    '<Editor(GetType(MyStringCollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
-    '<DesignerSerializationVisibility(DesignerSerializationVisibility.Content)>
-    Public Property MyList As List(Of String)
-        Get
-            Return _myList
-        End Get
-        Set(ByVal value As List(Of String))
-            _myList = value
-        End Set
-    End Property
 
     Private Icollection As ICollection
     '<EditorAttribute(GetType(System.ComponentModel.Design.CollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
@@ -252,6 +248,7 @@ Public Class Control_ComboBoxPerson
         Set(value As Control_ComboBoxPerson)
             _comboBoxPersonSlave = value
             _comboBoxPersonSlave.ComboBoxPersonMaster = Me
+            _comboBoxPersonSlave._nivel = _nivel + 1
 
             If Me._defaultOptionsListSlave Is Nothing Then
                 If value IsNot Nothing Then
@@ -319,24 +316,41 @@ Public Class Control_ComboBoxPerson
     '    End Set
     'End Property
 
+    ' ---------------------------------------------------
+    ' Propriedade se dados 
+    Public Structure ReturnItem
+        Dim ID As Integer
+        Dim str As String
+    End Structure
 
-    ' Define a local variable to store the property value.
-    Private propertyValue As String
+    <Category("Dados")>
+    <Description("Define uma estrutura de retorno de dados.")>
+    Private _dataReturn As ReturnItem
     ' Define the property.
-    Public Property Prop1() As String
+    Public Property DataReturn() As ReturnItem
         Get
-            ' The Get property procedure is called when the value
-            ' of a property is retrieved.
-            Return propertyValue
+            Return _dataReturn
         End Get
-        Set(ByVal value As String)
-            ' The Set property procedure is called when the value 
-            ' of a property is modified.  The value to be assigned
-            ' is passed in the argument to Set.
-            propertyValue = value
+        Set(ByVal value As ReturnItem)
+            _dataReturn = value
         End Set
     End Property
 
+    Dim _returnStringList As New Collections.Specialized.StringCollection
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property ReturnStringList() As Collections.Specialized.StringCollection
+        'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
+        Get
+            Return _returnStringList
+        End Get
+        Set(ByVal value As Collections.Specialized.StringCollection)
+            _returnStringList = value
+        End Set
+    End Property
+
+    '------------------------------------------------------------
 
 
     Private SelectedItem As ToolStripMenuItem
@@ -504,6 +518,7 @@ Public Class Control_ComboBoxPerson
             _selected.Add(MenuItem)
         Next
 
+        _nivel = 0
 
     End Sub
 

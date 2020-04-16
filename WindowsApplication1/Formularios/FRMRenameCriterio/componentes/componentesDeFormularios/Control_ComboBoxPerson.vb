@@ -12,16 +12,18 @@ Public Class Control_ComboBoxPerson
     Const _textDefault As String = "<Selecione>"
     Const LabelMenuItem As String = "MenuItem_"
 
-    Public _nivel As Integer
-    'Public  Property Nivel As Integer
-    '    Get
-    '        Return _nivel
+    Private _nivel As Integer
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    Public Property Nivel As Integer
+        Get
+            Return _nivel
 
-    '    End Get
-    '    Set(value As Integer)
-    '        _nivel = value
-    '    End Set
-    'End Property
+        End Get
+        Set(value As Integer)
+            _nivel = value
+        End Set
+    End Property
 
     ' Dim myColor As Color = Color.Green
     ' Dim iColor As Integer = myColor.ToArgb()
@@ -236,6 +238,16 @@ Public Class Control_ComboBoxPerson
 
 
     ' Propriedades de configuração dos Slaves
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    Public Property ComboBoxPersonMasterProp As Control_ComboBoxPerson
+        Get
+            Return ComboBoxPersonMaster
+        End Get
+        Set(value As Control_ComboBoxPerson)
+            ComboBoxPersonMaster = value
+        End Set
+    End Property
 
     Public ComboBoxPersonMaster As Control_ComboBoxPerson
     Private _comboBoxPersonSlave As Control_ComboBoxPerson
@@ -247,8 +259,19 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Control_ComboBoxPerson)
             _comboBoxPersonSlave = value
-            _comboBoxPersonSlave.ComboBoxPersonMaster = Me
-            _comboBoxPersonSlave._nivel = _nivel + 1
+
+            If value IsNot Nothing Then
+
+                _comboBoxPersonSlave.ComboBoxPersonMaster = Me
+
+                If _comboBoxPersonSlave.ComboBoxPersonMaster IsNot Nothing Then
+                    _comboBoxPersonSlave._nivel = _comboBoxPersonSlave.ComboBoxPersonMaster._nivel + 1
+
+                Else
+                    _nivel = 0
+                End If
+
+            End If
 
             If Me._defaultOptionsListSlave Is Nothing Then
                 If value IsNot Nothing Then
@@ -359,29 +382,33 @@ Public Class Control_ComboBoxPerson
     <Description("Seleciona item de menu expecífico.")>
     Public Property Selected() As ToolStripMenuItem
         Get
+            If _selected IsNot Nothing Then
+                For Each item As ToolStripMenuItem In _selected
+                    If item.Checked = True Then
+                        SelectedItem = item
 
-            For Each item As ToolStripMenuItem In _selected
-                If item.Checked = True Then
-                    SelectedItem = item
+                    Else
+                        SelectedItem = Nothing
+                    End If
+                Next
 
-                Else
-                    SelectedItem = Nothing
-                End If
-            Next
-
+            End If
             Return SelectedItem
+
         End Get
         Set(value As ToolStripMenuItem)
+            If _selected IsNot Nothing Then
+                For Each item As ToolStripMenuItem In _selected
+                    If item.Name <> value.Name Then
+                        item.Checked = False
+                    Else
+                        item.Checked = True
+                    End If
+                Next
 
-            For Each item As ToolStripMenuItem In _selected
-                If item.Name <> value.Name Then
-                    item.Checked = False
-                Else
-                    item.Checked = True
-                End If
-            Next
-
+            End If
             SelectedItem = value
+
         End Set
     End Property
 
@@ -512,19 +539,20 @@ Public Class Control_ComboBoxPerson
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
 
-        If _selected IsNot Nothing Then _selected.Clear()
+        'If _selected IsNot Nothing Then _selected.Clear()
 
-        For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
-            _selected.Add(MenuItem)
-        Next
+        'For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
+        '    _selected.Add(MenuItem)
+        'Next
 
         _nivel = 0
-
+        SelectedItem = Nothing
     End Sub
 
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadShotCutKey()
         LNKLLabelCombo.Text = _textDisplay
+        AddMenuItens()
     End Sub
 
     Private Function OptionClick(sender As Object, e As EventArgs)
@@ -532,6 +560,8 @@ Public Class Control_ComboBoxPerson
         itemClicked = CType(sender, ToolStripMenuItem)
 
         Dim checked As Boolean = itemClicked.Checked
+
+        Dim _returnItem As New ReturnItem
 
         MsgBox(itemClicked.Name)
         LNKLLabelCombo.Text = itemClicked.Text
@@ -543,6 +573,7 @@ Public Class Control_ComboBoxPerson
             End If
         Next
 
+        ' Aqui injeta no slave a lista de slave criada no master
         If _comboBoxPersonSlave IsNot Nothing Then
             MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
@@ -551,6 +582,12 @@ Public Class Control_ComboBoxPerson
             End If
 
         End If
+
+        '--------------------------------------------
+
+        _returnItem = itemClicked.Tag
+
+        MsgBox("Text =  " + _returnItem.str + Chr(13) + "ID: " + _returnItem.ID.ToString)
 
         Return itemClicked.Text
     End Function
@@ -564,9 +601,19 @@ Public Class Control_ComboBoxPerson
         CMS_Menu.Items.Clear()
 
         Dim x As Integer = CMS_Menu.Items.Count
+        Dim y As Integer = 0
         Dim name As String
 
         For Each labelItem As String In _optionsList
+
+            Dim _returnItem As New ReturnItem
+
+            If _returnStringList.Count > 0 Then
+                'MsgBox(_returnStringList.Item(y).ToString)
+                _returnItem.str = _returnStringList.Item(y)
+            End If
+
+            _returnItem.ID = AddID_InReturnItem(y)
 
             If labelItem <> "" Then
 
@@ -576,9 +623,11 @@ Public Class Control_ComboBoxPerson
                     .Name = name,
                     .ForeColor = Color.DarkGray,
                     .Width = Me.Width,
+                    .Tag = _returnItem,
                     .CheckOnClick = True
                 }
 
+                y += 1
                 x += 1
                 AddHandler Item.Click, New System.EventHandler(AddressOf OptionClick)
                 CMS_Menu.Items.Add(Item)
@@ -587,6 +636,20 @@ Public Class Control_ComboBoxPerson
         Next
 
     End Sub
+
+    Private Function AddID_InReturnItem(y As Integer) As Integer
+        Dim int As Integer
+
+        If _nivel > 0 Then
+            int = Me.ComboBoxPersonMaster._optionsList.Count + y
+
+        Else
+            int = y
+        End If
+
+        Return int
+
+    End Function
 
     Sub AddHandlerInMenu(obj As ToolStripMenuItem)
 
@@ -644,8 +707,6 @@ Public Class Control_ComboBoxPerson
 
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
         ExpandCombo()
-
-
 
     End Sub
 

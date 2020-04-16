@@ -382,17 +382,7 @@ Public Class Control_ComboBoxPerson
     <Description("Seleciona item de menu expecífico.")>
     Public Property Selected() As ToolStripMenuItem
         Get
-            If _selected IsNot Nothing Then
-                For Each item As ToolStripMenuItem In _selected
-                    If item.Checked = True Then
-                        SelectedItem = item
-
-                    Else
-                        SelectedItem = Nothing
-                    End If
-                Next
-
-            End If
+            ReturnSelected()
             Return SelectedItem
 
         End Get
@@ -411,7 +401,21 @@ Public Class Control_ComboBoxPerson
 
         End Set
     End Property
+    Function ReturnSelected()
+        ' Dim _selectedItem As ToolStripMenuItem = Nothing
+        If _selected IsNot Nothing Then
+            For Each item As ToolStripMenuItem In _selected
+                If item.Checked = True Then
+                    SelectedItem = item
+                    Exit for 
+                Else
+                    SelectedItem = Nothing
+                End If
+            Next
 
+        End If
+        Return SelectedItem
+    End Function
     'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
     'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
     'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
@@ -539,14 +543,14 @@ Public Class Control_ComboBoxPerson
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
 
-        'If _selected IsNot Nothing Then _selected.Clear()
+        If _selected IsNot Nothing Then _selected.Clear()
 
-        'For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
-        '    _selected.Add(MenuItem)
-        'Next
+        For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
+            _selected.Add(MenuItem)
+        Next
 
         _nivel = 0
-        SelectedItem = Nothing
+        'SelectedItem = Nothing
     End Sub
 
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -564,8 +568,18 @@ Public Class Control_ComboBoxPerson
         Dim _returnItem As New ReturnItem
 
         MsgBox(itemClicked.Name)
+
+        'ReturnSelected()
         LNKLLabelCombo.Text = itemClicked.Text
-        ' _selected = itemClicked
+        Selected = itemClicked
+
+        If Selected IsNot Nothing Then
+
+            MsgBox("Selecionado : " + Selected.Text)
+        Else
+
+            MsgBox("Nao Selecionado : ")
+        End If
 
         For Each item As ToolStripMenuItem In CMS_Menu.Items
             If itemClicked.Name <> item.Name Then

@@ -50,9 +50,13 @@ Public Class Control_ComboBoxPerson
 
 
     Public Enum ReturnTypeEnum
-        IntegerType = 0
-        StringType = 1
-        MenuItemType = 2
+
+        None = 0
+        IntegerType = 1
+        StringType = 2
+        MenuItemType = 3
+        StructureType = 4
+
     End Enum
 
     Private _returnType As ReturnTypeEnum

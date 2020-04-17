@@ -1,4 +1,10 @@
-﻿Imports System.Windows.Forms
+﻿Imports System
+Imports System.ComponentModel
+Imports System.ComponentModel.Design
+Imports System.Collections.ObjectModel
+Imports System.Drawing.Design
+
+Imports System.Windows.Forms
 'TODO: Remover controle em tenpos de execução : https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time
 
 Public Class FRMDialogRenameCriterio
@@ -32,12 +38,18 @@ Public Class FRMDialogRenameCriterio
 
     Private Sub FRMDialogRenameCriterio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        '  Dim value As New Collections.Specialized.StringCollection
+
         comboBoxPerson01.Width = 150
+        ' value.Add()
 
         Me.Controls.Add(comboBoxPerson01)
         comboBoxPerson01.BringToFront()
         comboBoxPerson01.ComboBoxPersonSlave = comboBoxPerson02
-        comboBoxPerson01.ComboBoxPersonSlave.OptionsList = "Eu sou o SubCombo; Sou escravo do Combo 1; OK"
+
+        comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("Eu sou o SubCombo")
+        comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("Sou escravo do Combo 1")
+        comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("; OK")
 
         comboBoxPerson02.Left = comboBoxPerson01.Left + comboBoxPerson01.Width + 8
 

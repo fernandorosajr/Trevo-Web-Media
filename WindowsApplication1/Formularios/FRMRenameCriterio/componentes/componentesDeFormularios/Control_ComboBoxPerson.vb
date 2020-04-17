@@ -281,7 +281,7 @@ Public Class Control_ComboBoxPerson
 
             If Me._defaultOptionsListSlave Is Nothing Then
                 If value IsNot Nothing Then
-                    If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Or _comboBoxPersonSlave.DefaultOptionsList = "" Then
+                    If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Then
                         Me._defaultOptionsListSlave = _comboBoxPersonSlave.OptionsList
                     End If
 
@@ -308,15 +308,15 @@ Public Class Control_ComboBoxPerson
     End Property
 
 
-    Private _defaultOptionsListSlave As String
+    Private _defaultOptionsListSlave As Collections.Specialized.StringCollection
     <Category("Configurações do Slave")>
     <Description("Define uma lista de opções para este objeto separada por vírgula.")>
-    Public Property DefaultOptionsListSlave As String
+    Public Property DefaultOptionsListSlave As Collections.Specialized.StringCollection
         Get
             Return _defaultOptionsListSlave
         End Get
 
-        Set(value As String)
+        Set(value As Collections.Specialized.StringCollection)
             _defaultOptionsListSlave = value
 
         End Set
@@ -349,7 +349,7 @@ Public Class Control_ComboBoxPerson
     ' Propriedade se dados 
     Public Structure ReturnItem
         Dim ID As Integer
-        Dim str As String
+        Dim key As String
     End Structure
 
     <Category("Dados")>
@@ -413,7 +413,7 @@ Public Class Control_ComboBoxPerson
             For Each item As ToolStripMenuItem In _selected
                 If item.Checked = True Then
                     SelectedItem = item
-                    Exit for 
+                    Exit For
                 Else
                     SelectedItem = Nothing
                 End If
@@ -432,37 +432,41 @@ Public Class Control_ComboBoxPerson
     ReadOnly funcoesDeString As New StringFunctionsClass
 
     Private _optionListCommaSeparated As String
-    Private _optionsList As New ArrayList()
-    <Category("Lista de Opções")>
-    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
-    Public Property OptionsList As String
+    Private _optionsList As Collections.Specialized.StringCollection
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property OptionsList() As Collections.Specialized.StringCollection
         Get
 
-            Return Get_ListOptions(_optionsList)
+            ' Return Get_ListOptions(_optionsList)
+            Return _optionsList
 
         End Get
-        Set(value As String)
+        Set(value As Collections.Specialized.StringCollection)
 
-            _optionListCommaSeparated = value
-            _optionsList = Set_ListOptions(value)
+            ' _optionListCommaSeparated = value
+            _optionsList = (value)
             AddMenuItens()
 
         End Set
     End Property
 
     Private _defaultOptionListCommaSeparated As String
-    Private _defaultOptionsList As New ArrayList()
-    <Category("Lista de Opções")>
-    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
-    Public Property DefaultOptionsList As String
+    Private _defaultOptionsList As Collections.Specialized.StringCollection
+    <Category("Configurações do Slave")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property DefaultOptionsList() As Collections.Specialized.StringCollection
         Get
 
-            Return Get_ListOptions(_defaultOptionsList)
+            'Return Get_ListOptions(_defaultOptionsList)
+            Return (_defaultOptionsList)
 
         End Get
-        Set(value As String)
-            _defaultOptionListCommaSeparated = value
-            _defaultOptionsList = Set_ListOptions(value)
+        Set(value As Collections.Specialized.StringCollection)
+            '  _defaultOptionListCommaSeparated = value
+            _defaultOptionsList = (value)
 
             If _optionsList Is Nothing Then
                 _optionsList = _defaultOptionsList
@@ -511,6 +515,9 @@ Public Class Control_ComboBoxPerson
 
 
     Public Sub New()
+        Dim list As New Collections.Specialized.StringCollection From {
+            ""
+        }
 
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
@@ -557,6 +564,8 @@ Public Class Control_ComboBoxPerson
 
         _nivel = 0
 
+        _optionsList = list
+
     End Sub
 
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -601,7 +610,8 @@ Public Class Control_ComboBoxPerson
             MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
-                _comboBoxPersonSlave.OptionsList = Me._comboBoxPersonSlaveLists.Item(0)
+                ' _comboBoxPersonSlave.OptionsList = Me._comboBoxPersonSlaveLists.Item(0)
+                ' TODO : Converter o item separado por virgula em  As Collections.Specialized.StringCollection
             End If
 
         End If
@@ -625,11 +635,11 @@ Public Class Control_ComboBoxPerson
 
             Case ReturnTypeEnum.StructureType
                 Retornar = _returnItem
-                MsgBox("Text =  " + _returnItem.str + Chr(13) + "ID: " + _returnItem.ID.ToString)
+                MsgBox("Text =  " + _returnItem.key + Chr(13) + "ID: " + _returnItem.ID.ToString)
 
 
             Case ReturnTypeEnum.StringType
-                Retornar = _returnItem.str
+                Retornar = _returnItem.key
                 MsgBox("A KEY é " + Retornar)
 
             Case ReturnTypeEnum.Text
@@ -657,21 +667,22 @@ Public Class Control_ComboBoxPerson
         Dim y As Integer = 0
         Dim name As String
 
-        For Each labelItem As String In _optionsList
+        If _optionsList IsNot Nothing Then
+            For Each labelItem As String In _optionsList
 
-            Dim _returnItem As New ReturnItem
+                Dim _returnItem As New ReturnItem
 
-            If _returnStringList.Count > 0 Then
-                'MsgBox(_returnStringList.Item(y).ToString)
-                _returnItem.str = _returnStringList.Item(y)
-            End If
+                If _returnStringList.Count > 0 Then
+                    'MsgBox(_returnStringList.Item(y).ToString)
+                    _returnItem.key = _returnStringList.Item(y)
+                End If
 
-            _returnItem.ID = AddID_InReturnItem(y)
+                _returnItem.ID = AddID_InReturnItem(y)
 
-            If labelItem <> "" Then
+                If labelItem <> "" Then
 
-                name = LabelMenuItem.ToString + x.ToString
-                Dim Item As New ToolStripMenuItem With {
+                    name = LabelMenuItem.ToString + x.ToString
+                    Dim Item As New ToolStripMenuItem With {
                     .Text = labelItem,
                     .Name = name,
                     .ForeColor = Color.DarkGray,
@@ -680,13 +691,15 @@ Public Class Control_ComboBoxPerson
                     .CheckOnClick = True
                 }
 
-                y += 1
-                x += 1
-                AddHandler Item.Click, New System.EventHandler(AddressOf OptionClick)
-                CMS_Menu.Items.Add(Item)
+                    y += 1
+                    x += 1
+                    AddHandler Item.Click, New System.EventHandler(AddressOf OptionClick)
+                    CMS_Menu.Items.Add(Item)
 
-            End If
-        Next
+                End If
+            Next
+
+        End If
 
     End Sub
 

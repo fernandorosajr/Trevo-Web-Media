@@ -48,18 +48,20 @@ Public Class Control_ComboBoxPerson
     Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
     Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(63, 63, 66))
 
-
     Public Enum ReturnTypeEnum
 
         None = 0
         IntegerType = 1
         StringType = 2
-        MenuItemType = 3
-        StructureType = 4
+        Text = 3
+        MenuItemType = 4
+        StructureType = 5
 
     End Enum
 
     Private _returnType As ReturnTypeEnum
+    <Category("Lista de Opções")>
+    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
     Public Property ReturnType As ReturnTypeEnum
         Get
             Return _returnType
@@ -554,7 +556,7 @@ Public Class Control_ComboBoxPerson
         Next
 
         _nivel = 0
-        'SelectedItem = Nothing
+
     End Sub
 
     Private Sub ControlComboBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -563,13 +565,16 @@ Public Class Control_ComboBoxPerson
         AddMenuItens()
     End Sub
 
-    Private Function OptionClick(sender As Object, e As EventArgs)
+    Private Function OptionClick(sender As Object, e As EventArgs) As Object
         Dim itemClicked As New ToolStripMenuItem
+
         itemClicked = CType(sender, ToolStripMenuItem)
 
         Dim checked As Boolean = itemClicked.Checked
 
         Dim _returnItem As New ReturnItem
+
+        Dim Retornar As Object = ""
 
         MsgBox(itemClicked.Name)
 
@@ -605,9 +610,39 @@ Public Class Control_ComboBoxPerson
 
         _returnItem = itemClicked.Tag
 
-        MsgBox("Text =  " + _returnItem.str + Chr(13) + "ID: " + _returnItem.ID.ToString)
+        Select Case _returnType
 
-        Return itemClicked.Text
+            Case ReturnTypeEnum.None
+                Retornar = Nothing
+                MsgBox("O retorno é Nothing")
+
+            Case ReturnTypeEnum.IntegerType
+                Retornar = _returnItem.ID
+                MsgBox(VarType(Retornar))
+
+            Case ReturnTypeEnum.MenuItemType
+                Retornar = itemClicked
+
+            Case ReturnTypeEnum.StructureType
+                Retornar = _returnItem
+                MsgBox("Text =  " + _returnItem.str + Chr(13) + "ID: " + _returnItem.ID.ToString)
+
+
+            Case ReturnTypeEnum.StringType
+                Retornar = _returnItem.str
+                MsgBox("A KEY é " + Retornar)
+
+            Case ReturnTypeEnum.Text
+                Retornar = itemClicked.Text
+                MsgBox("O texto é  " + Retornar)
+
+
+            Case Else
+
+        End Select
+
+        Return Retornar
+
     End Function
 
     Sub SelectItemClicked(itemClicked As ToolStripMenuItem)

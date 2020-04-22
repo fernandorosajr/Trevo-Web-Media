@@ -51,11 +51,11 @@ Public Class Control_ComboBoxPerson
     Public Enum ReturnTypeEnum
 
         None = 0
-        IntegerType = 1
-        StringType = 2
-        Text = 3
+        ID = 1
+        [String] = 2
+        ItemClickedText = 3
         MenuItemType = 4
-        StructureType = 5
+        [Structure] = 5
 
     End Enum
 
@@ -252,6 +252,7 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Control_ComboBoxPerson)
             ComboBoxPersonMaster = value
+            AddMenuItens()
         End Set
     End Property
 
@@ -259,6 +260,7 @@ Public Class Control_ComboBoxPerson
     Private _comboBoxPersonSlave As Control_ComboBoxPerson
     <Category("Configurações do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
         Get
             Return _comboBoxPersonSlave
@@ -277,15 +279,20 @@ Public Class Control_ComboBoxPerson
                     _nivel = 0
                 End If
 
-            End If
+                'If Me._defaultOptionsListSlave Is Nothing Then
 
-            If Me._defaultOptionsListSlave Is Nothing Then
-                If value IsNot Nothing Then
-                    If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Then
-                        Me._defaultOptionsListSlave = _comboBoxPersonSlave.OptionsList
-                    End If
+                '    If _comboBoxPersonSlave.DefaultOptionsList Is Nothing Then
+                '        Me._defaultOptionsListSlave = _comboBoxPersonSlave.OptionsList
+                '        _comboBoxPersonSlave._defaultOptionsList = Me._defaultOptionsListSlave
 
-                End If
+                '    Else
+                '        Me._defaultOptionsListSlave = _comboBoxPersonSlave.DefaultOptionsList
+                '    End If
+
+                'Else
+                '    _comboBoxPersonSlave._defaultOptionsList = Me._defaultOptionsListSlave
+                'End If
+
             End If
 
         End Set
@@ -307,20 +314,19 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
-
-    Private _defaultOptionsListSlave As Collections.Specialized.StringCollection
+    Private _defaultOptionsListSlave As New Collections.Specialized.StringCollection
     <Category("Configurações do Slave")>
-    <Description("Define uma lista de opções para este objeto separada por vírgula.")>
-    Public Property DefaultOptionsListSlave As Collections.Specialized.StringCollection
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property DefaultOptionsListSlave() As Collections.Specialized.StringCollection
         Get
             Return _defaultOptionsListSlave
         End Get
-
         Set(value As Collections.Specialized.StringCollection)
             _defaultOptionsListSlave = value
-
         End Set
     End Property
+
     ' -------------------------------------------------------------------------
 
     'Private _comboBoxPersonSlave As Control_ComboBoxPerson
@@ -349,18 +355,18 @@ Public Class Control_ComboBoxPerson
     ' Propriedade se dados 
     Public Structure ReturnItem
         Dim ID As Integer
-        Dim key As String
+        Dim [String] As String
     End Structure
 
     <Category("Dados")>
     <Description("Define uma estrutura de retorno de dados.")>
-    Private _dataReturn As ReturnItem
+    Private _dataReturn As Object
     ' Define the property.
-    Public Property DataReturn() As ReturnItem
+    Public Property DataReturn() As Object
         Get
             Return _dataReturn
         End Get
-        Set(ByVal value As ReturnItem)
+        Set(ByVal value As Object)
             _dataReturn = value
         End Set
     End Property
@@ -446,13 +452,18 @@ Public Class Control_ComboBoxPerson
         Set(value As Collections.Specialized.StringCollection)
 
             ' _optionListCommaSeparated = value
+
             _optionsList = (value)
+
+            If _defaultOptionsList Is Nothing Then
+                _defaultOptionsList = _optionsList
+            End If
             AddMenuItens()
 
         End Set
     End Property
 
-    Private _defaultOptionListCommaSeparated As String
+    Private _defaultOptionsListCommaSeparated As String
     Private _defaultOptionsList As Collections.Specialized.StringCollection
     <Category("Configurações do Slave")>
     <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
@@ -466,7 +477,7 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Collections.Specialized.StringCollection)
             '  _defaultOptionListCommaSeparated = value
-            _defaultOptionsList = (value)
+            _defaultOptionsList = value
 
             If _optionsList Is Nothing Then
                 _optionsList = _defaultOptionsList
@@ -515,9 +526,9 @@ Public Class Control_ComboBoxPerson
 
 
     Public Sub New()
-        Dim list As New Collections.Specialized.StringCollection From {
-            ""
-        }
+        Dim list As New Collections.Specialized.StringCollection 'From {
+        '   ""
+        '}
 
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
@@ -585,40 +596,47 @@ Public Class Control_ComboBoxPerson
 
         Dim Retornar As Object = ""
 
-        MsgBox(itemClicked.Name)
-
-        'ReturnSelected()
         LNKLLabelCombo.Text = itemClicked.Text
         Selected = itemClicked
-
-        If Selected IsNot Nothing Then
-
-            MsgBox("Selecionado : " + Selected.Text)
-        Else
-
-            MsgBox("Nao Selecionado : ")
-        End If
 
         For Each item As ToolStripMenuItem In CMS_Menu.Items
             If itemClicked.Name <> item.Name Then
                 item.Checked = False
+
+            Else
+                item.Checked = True
+
             End If
         Next
+
+        _returnItem = itemClicked.Tag
 
         ' Aqui injeta no slave a lista de slave criada no master
         If _comboBoxPersonSlave IsNot Nothing Then
             MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
-                ' _comboBoxPersonSlave.OptionsList = Me._comboBoxPersonSlaveLists.Item(0)
                 ' TODO : Converter o item separado por virgula em  As Collections.Specialized.StringCollection
+                If (CInt(_returnItem.ID)) <= (_comboBoxPersonSlaveLists.Count - 1) Then
+                    _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(Me._comboBoxPersonSlaveLists.Item(_returnItem.ID), separador)
+                    _comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
+                    _comboBoxPersonSlave.Selected = Nothing
+
+                Else
+                    If Me.DefaultOptionsList IsNot Nothing Then
+                        _comboBoxPersonSlave.OptionsList = Me.DefaultOptionsListSlave
+                        _comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
+                        _comboBoxPersonSlave.Selected = Nothing
+
+                    End If
+
+                End If
+
             End If
 
         End If
 
         '--------------------------------------------
-
-        _returnItem = itemClicked.Tag
 
         Select Case _returnType
 
@@ -626,23 +644,24 @@ Public Class Control_ComboBoxPerson
                 Retornar = Nothing
                 MsgBox("O retorno é Nothing")
 
-            Case ReturnTypeEnum.IntegerType
+            Case ReturnTypeEnum.ID
                 Retornar = _returnItem.ID
-                MsgBox(VarType(Retornar))
+                MsgBox("ID = " & Retornar)
 
             Case ReturnTypeEnum.MenuItemType
                 Retornar = itemClicked
+                MsgBox("Retonando intem clicado")
 
-            Case ReturnTypeEnum.StructureType
+            Case ReturnTypeEnum.Structure
                 Retornar = _returnItem
-                MsgBox("Text =  " + _returnItem.key + Chr(13) + "ID: " + _returnItem.ID.ToString)
+                MsgBox("KEY =  " + _returnItem.String + Chr(13) + "ID: " + _returnItem.ID.ToString)
 
 
-            Case ReturnTypeEnum.StringType
-                Retornar = _returnItem.key
+            Case ReturnTypeEnum.String
+                Retornar = _returnItem.String
                 MsgBox("A KEY é " + Retornar)
 
-            Case ReturnTypeEnum.Text
+            Case ReturnTypeEnum.ItemClickedText
                 Retornar = itemClicked.Text
                 MsgBox("O texto é  " + Retornar)
 
@@ -651,6 +670,7 @@ Public Class Control_ComboBoxPerson
 
         End Select
 
+        DataReturn = Retornar
         Return Retornar
 
     End Function
@@ -673,8 +693,16 @@ Public Class Control_ComboBoxPerson
                 Dim _returnItem As New ReturnItem
 
                 If _returnStringList.Count > 0 Then
+
                     'MsgBox(_returnStringList.Item(y).ToString)
-                    _returnItem.key = _returnStringList.Item(y)
+                    If _optionsList.Count > _returnStringList.Count And y = _returnStringList.Count Then
+                        _returnStringList.Add("")
+                        _returnItem.String = _returnStringList.Item(y)
+
+                    Else
+                        _returnItem.String = _returnStringList.Item(y)
+
+                    End If
                 End If
 
                 _returnItem.ID = AddID_InReturnItem(y)
@@ -703,14 +731,11 @@ Public Class Control_ComboBoxPerson
 
     End Sub
 
-    Private Function AddID_InReturnItem(y As Integer) As Integer
-        Dim int As Integer
+    Private Function AddID_InReturnItem(ByVal y As Integer) As Integer
+        Dim int As Integer = y
 
         If _nivel > 0 Then
             int = Me.ComboBoxPersonMaster._optionsList.Count + y
-
-        Else
-            int = y
         End If
 
         Return int
@@ -768,7 +793,7 @@ Public Class Control_ComboBoxPerson
         link.Focus()
 
         ExpandCombo()
-
+        Me.Focus()
     End Sub
 
     Private Sub BTNExpandCombo_Click(sender As Object, e As EventArgs) Handles BTNExpandCombo.Click
@@ -784,6 +809,8 @@ Public Class Control_ComboBoxPerson
 
         TXT.Text = textCor2
         ExpandCombo()
+
+        Me.Focus()
 
     End Sub
 
@@ -888,7 +915,7 @@ Public Class Control_ComboBoxPerson
     Private Sub LNKLLabelCombo_KeyDown(sender As Object, e As KeyEventArgs) Handles LNKLLabelCombo.KeyDown
         If e.KeyCode = Keys.Enter Or e.KeyCode = Keys.Space Or e.KeyCode = Keys.Down Or e.KeyCode = Keys.F12 Or e.KeyCode = Keys.LWin Then
             ExpandCombo()
-
         End If
     End Sub
+
 End Class

@@ -110,7 +110,6 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle02 = New System.Windows.Forms.Label()
         Me.PanelBorder = New System.Windows.Forms.Panel()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Control_ComboBoxPerson1 = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel29.SuspendLayout()
@@ -1209,37 +1208,6 @@ Partial Class FRMDialogRenameCriterio
         Me.ComboBox1.Size = New System.Drawing.Size(140, 21)
         Me.ComboBox1.TabIndex = 112
         '
-        'Control_ComboBoxPerson1
-        '
-        Me.Control_ComboBoxPerson1.AutoSize = True
-        Me.Control_ComboBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Control_ComboBoxPerson1.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_ComboBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Control_ComboBoxPerson1.BorderColorError = System.Drawing.Color.Red
-        Me.Control_ComboBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_ComboBoxPerson1.ComboBoxPersonMasterProp = Nothing
-        Me.Control_ComboBoxPerson1.ComboBoxPersonSlave = Nothing
-        Me.Control_ComboBoxPerson1.ComboBoxPersonSlaveLists = CType(resources.GetObject("Control_ComboBoxPerson1.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.Control_ComboBoxPerson1.DefaultOptionsList = Nothing
-        Me.Control_ComboBoxPerson1.DefaultOptionsListSlave = Nothing
-        Me.Control_ComboBoxPerson1.Location = New System.Drawing.Point(57, 343)
-        Me.Control_ComboBoxPerson1.Name = "Control_ComboBoxPerson1"
-        Me.Control_ComboBoxPerson1.Nivel = 0
-        Me.Control_ComboBoxPerson1.OptionsList = CType(resources.GetObject("Control_ComboBoxPerson1.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.Control_ComboBoxPerson1.ReturnStringList = CType(resources.GetObject("Control_ComboBoxPerson1.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.Control_ComboBoxPerson1.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.StructureType
-        Me.Control_ComboBoxPerson1.Selected = Nothing
-        Me.Control_ComboBoxPerson1.ShortcutKeyDisplay = True
-        Me.Control_ComboBoxPerson1.Size = New System.Drawing.Size(159, 32)
-        Me.Control_ComboBoxPerson1.TabIndex = 113
-        Me.Control_ComboBoxPerson1.TestandoEnum = TrevoWebMedia.Control_ComboBoxPerson.TesteDeEnum.TesteDeEnum00
-        Me.Control_ComboBoxPerson1.testCollection = Nothing
-        Me.Control_ComboBoxPerson1.TesteDeArrayList = CType(resources.GetObject("Control_ComboBoxPerson1.TesteDeArrayList"), System.Collections.ArrayList)
-        Me.Control_ComboBoxPerson1.TesteDeListOfString = CType(resources.GetObject("Control_ComboBoxPerson1.TesteDeListOfString"), System.Collections.Generic.List(Of String))
-        Me.Control_ComboBoxPerson1.TesteDeListOfTreeNode = CType(resources.GetObject("Control_ComboBoxPerson1.TesteDeListOfTreeNode"), System.Collections.Generic.List(Of System.Windows.Forms.TreeNode))
-        Me.Control_ComboBoxPerson1.TextDisplay = "<Selecione>"
-        Me.Control_ComboBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
         'FRMDialogRenameCriterio
         '
         Me.AcceptButton = Me.OK_Button
@@ -1248,7 +1216,6 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(662, 402)
-        Me.Controls.Add(Me.Control_ComboBoxPerson1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.PanelBorder)
         Me.Controls.Add(Me.LBLTitle02)
@@ -1321,7 +1288,6 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.PanelBorder.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
@@ -1411,5 +1377,4 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Button5 As Button
     Friend WithEvents Panel28 As Panel
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Control_ComboBoxPerson1 As Control_ComboBoxPerson
 End Class

@@ -141,12 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Componentes\Tests\AngleTestControl.Designer.vb">
-      <DependentUpon>AngleTestControl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Componentes\Tests\AngleTestControl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="Formularios\FRMDialogConflictingFolders.Designer.vb">
       <DependentUpon>FRMDialogConflictingFolders.vb</DependentUpon>
     </Compile>
@@ -169,6 +163,12 @@
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.Designer.vb">
+      <DependentUpon>Control_RenameOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
@@ -433,9 +433,6 @@
     <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Filtro.resx">
       <DependentUpon>ControlPainel_Filtro.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Tests\AngleTestControl.resx">
-      <DependentUpon>AngleTestControl.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -453,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.resx">
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.resx">
+      <DependentUpon>Control_RenameOption.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>

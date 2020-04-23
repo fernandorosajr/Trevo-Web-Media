@@ -162,91 +162,9 @@ Public Class Control_ComboBoxPerson
 
     'TESTE DE PROPRIEDADES
 
-    Private _testeDeArrayList As New ArrayList
-    Public Property TesteDeArrayList As ArrayList
-        Get
-            Return _testeDeArrayList
-        End Get
-        Set(value As ArrayList)
-            _testeDeArrayList = value
 
-        End Set
-    End Property
-
-    Private _testeDeListOfString As New List(Of String)
-    Public Property TesteDeListOfString As List(Of String)
-        Get
-            Return _testeDeListOfString
-        End Get
-        Set(value As List(Of String))
-            _testeDeListOfString = value
-
-        End Set
-    End Property
-
-    Private _testeDeListOfTreeNode As New List(Of TreeNode)
-    Public Property TesteDeListOfTreeNode As List(Of TreeNode)
-        Get
-            Return _testeDeListOfTreeNode
-        End Get
-        Set(value As List(Of TreeNode))
-            _testeDeListOfTreeNode = value
-
-        End Set
-    End Property
-
-    Private _testandoEnum As TesteDeEnum
-    Public Property TestandoEnum As TesteDeEnum
-        Get
-            Return _testandoEnum
-        End Get
-        Set(value As TesteDeEnum)
-            _testandoEnum = value
-        End Set
-    End Property
-
-    Public Structure TesteDeEstrutura
-        Public teste01 As String
-        Public teste02 As String
-        Public teste03 As TesteDeEnum
-    End Structure
-
-    Private _testeDeEstrutura As TesteDeEstrutura
-    Public Property TestandoEstrutura As TesteDeEstrutura
-        Get
-            Return _testeDeEstrutura
-        End Get
-        Set(value As TesteDeEstrutura)
-            _testeDeEstrutura = value
-        End Set
-    End Property
-
-
-    Private Icollection As ICollection
-    '<EditorAttribute(GetType(System.ComponentModel.Design.CollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
-    Public Property TestCollection() As ICollection
-        Get
-            Return Icollection
-        End Get
-        Set
-            Icollection = Value
-        End Set
-    End Property
 
     ' ________________________________________________________
-
-    '    Public Property Value() As Decimal
-    '        Get
-    '            Return CDec(GetValue(ValueProperty))
-    '        End Get
-    '        Set(ByVal value As Decimal)
-    '            SetValue(ValueProperty, value)
-    '        End Set
-    '    End Property
-
-    '    [Category("Appearance")]
-    '[Description("The text displayed by the control.")] 
-    '[Browsable(true), EditorBrowsable(EditorBrowsableState.Always)]
 
 
     ' Propriedades de configuração dos Slaves

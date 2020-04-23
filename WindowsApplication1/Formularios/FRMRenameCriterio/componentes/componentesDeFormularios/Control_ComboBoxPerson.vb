@@ -60,7 +60,7 @@ Public Class Control_ComboBoxPerson
     End Enum
 
     Private _returnType As ReturnTypeEnum
-    <Category("Lista de Opções")>
+    <Category("Dados")>
     <Description("Define uma lista de opções para este objeto separada por vírgula.")>
     Public Property ReturnType As ReturnTypeEnum
         Get
@@ -75,6 +75,7 @@ Public Class Control_ComboBoxPerson
 
     ' Propriedades de configuração de cores
     Private _borderColorError As Color
+    <Category("Aparência")>
     Public Property BorderColorError As Color
         Get
             Return _borderColorError
@@ -86,6 +87,7 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _backColorCursorMouseLeave As Color
+    <Category("Aparência")>
     Public Property BackColorCursorMouseLeave As Color
         Get
             Return _backColorCursorMouseLeave
@@ -97,6 +99,7 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _borderColorGotFocus As Color
+    <Category("Aparência")>
     Public Property BorderColorGotFocus As Color
         Get
             Return _borderColorGotFocus
@@ -108,6 +111,7 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _borderColorLostFocus As Color
+    <Category("Aparência")>
     Public Property BordeColorLostFocus As Color
         Get
             Return _borderColorLostFocus
@@ -118,6 +122,7 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _txtBoxBackColorLostFocus As Color
+    <Category("Aparência")>
     Public Property TXTBoxBackColorLostFocus As Color
         Get
             Return _txtBoxBackColorLostFocus
@@ -128,6 +133,7 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _bgColorLostFocus As Color
+    <Category("Aparência")>
     Public Property BgColorLostFocus As Color
         Get
             Return _bgColorLostFocus
@@ -218,7 +224,7 @@ Public Class Control_ComboBoxPerson
 
     Private Icollection As ICollection
     '<EditorAttribute(GetType(System.ComponentModel.Design.CollectionEditor), GetType(System.Drawing.Design.UITypeEditor))>
-    Public Property testCollection() As ICollection
+    Public Property TestCollection() As ICollection
         Get
             Return Icollection
         End Get
@@ -244,23 +250,23 @@ Public Class Control_ComboBoxPerson
 
 
     ' Propriedades de configuração dos Slaves
+    Public _comboBoxPersonMaster As Control_ComboBoxPerson
+
     <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
-    Public Property ComboBoxPersonMasterProp As Control_ComboBoxPerson
+    <Description("Determina o ComboBoxPerson Pai ou Master.")>
+    Public Property ComboBoxPersonMaster As Control_ComboBoxPerson
         Get
-            Return ComboBoxPersonMaster
+            Return _comboBoxPersonMaster
         End Get
         Set(value As Control_ComboBoxPerson)
-            ComboBoxPersonMaster = value
+            _comboBoxPersonMaster = value
             AddMenuItens()
         End Set
     End Property
 
-    Public ComboBoxPersonMaster As Control_ComboBoxPerson
     Private _comboBoxPersonSlave As Control_ComboBoxPerson
     <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
-    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    <Description("Determina o ComboBoxPerson Filho ou Slave.")>
     Public Property ComboBoxPersonSlave As Control_ComboBoxPerson
         Get
             Return _comboBoxPersonSlave
@@ -270,14 +276,17 @@ Public Class Control_ComboBoxPerson
 
             If value IsNot Nothing Then
 
-                _comboBoxPersonSlave.ComboBoxPersonMaster = Me
+                _comboBoxPersonSlave._comboBoxPersonMaster = Me
 
-                If _comboBoxPersonSlave.ComboBoxPersonMaster IsNot Nothing Then
-                    _comboBoxPersonSlave._nivel = _comboBoxPersonSlave.ComboBoxPersonMaster._nivel + 1
+                If _comboBoxPersonSlave._comboBoxPersonMaster IsNot Nothing Then
+                    _comboBoxPersonSlave._nivel = _comboBoxPersonSlave._comboBoxPersonMaster._nivel + 1
 
                 Else
                     _nivel = 0
                 End If
+
+                _comboBoxPersonSlave._defaultOptionsList = Me._defaultOptionsListSlave
+
 
                 'If Me._defaultOptionsListSlave Is Nothing Then
 
@@ -315,8 +324,8 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Private _defaultOptionsListSlave As New Collections.Specialized.StringCollection
-    <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Category("Dados")>
+    <Description("Determina uma lista de itens de opções padrão para ser aplicado no ComboBoxPersonSlave quando não há uma lista de opções disponíveis.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property DefaultOptionsListSlave() As Collections.Specialized.StringCollection
         Get
@@ -324,6 +333,11 @@ Public Class Control_ComboBoxPerson
         End Get
         Set(value As Collections.Specialized.StringCollection)
             _defaultOptionsListSlave = value
+
+            If Me._comboBoxPersonSlave IsNot Nothing Then
+                _comboBoxPersonSlave.DefaultOptionsList = value
+            End If
+
         End Set
     End Property
 
@@ -358,10 +372,10 @@ Public Class Control_ComboBoxPerson
         Dim [String] As String
     End Structure
 
-    <Category("Dados")>
-    <Description("Define uma estrutura de retorno de dados.")>
-    Private _dataReturn As Object
     ' Define the property.
+    Private _dataReturn As Object
+    <Category("Dados")>
+    <Description("Retorna dados do componente.")>
     Public Property DataReturn() As Object
         Get
             Return _dataReturn
@@ -372,8 +386,8 @@ Public Class Control_ComboBoxPerson
     End Property
 
     Dim _returnStringList As New Collections.Specialized.StringCollection
-    <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Category("Dados")>
+    <Description("Determina uma lista em formato texto para ser retornada na ordem da lista de opções.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property ReturnStringList() As Collections.Specialized.StringCollection
         'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
@@ -390,8 +404,8 @@ Public Class Control_ComboBoxPerson
 
     Private SelectedItem As ToolStripMenuItem
     Private _selected As List(Of ToolStripMenuItem)
-    <Category("Configurações do Slave")>
-    <Description("Seleciona item de menu expecífico.")>
+    <Category("Dados")>
+    <Description("Seleciona e retorna um item de menu expecífico.")>
     Public Property Selected() As ToolStripMenuItem
         Get
             ReturnSelected()
@@ -439,20 +453,15 @@ Public Class Control_ComboBoxPerson
 
     Private _optionListCommaSeparated As String
     Private _optionsList As Collections.Specialized.StringCollection
-    <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Category("Dados")>
+    <Description("Determina a lista de itens de menu de opções.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property OptionsList() As Collections.Specialized.StringCollection
         Get
-
-            ' Return Get_ListOptions(_optionsList)
             Return _optionsList
 
         End Get
         Set(value As Collections.Specialized.StringCollection)
-
-            ' _optionListCommaSeparated = value
-
             _optionsList = (value)
 
             If _defaultOptionsList Is Nothing Then
@@ -463,10 +472,23 @@ Public Class Control_ComboBoxPerson
         End Set
     End Property
 
+    Private _listaDeOpçõesPadrão As Collections.Specialized.StringCollection
+    <Category("Indeterminado")>
+    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    Public Property ListaDeOpçõesPadrão() As Collections.Specialized.StringCollection
+        Get
+            Return _listaDeOpçõesPadrão
+        End Get
+        Set(value As Collections.Specialized.StringCollection)
+            _listaDeOpçõesPadrão = value
+        End Set
+    End Property
+
     Private _defaultOptionsListCommaSeparated As String
     Private _defaultOptionsList As Collections.Specialized.StringCollection
-    <Category("Configurações do Slave")>
-    <Description("Produz um grupo de listas para os menus do ComboBoxPersonSlave. Introduza ponto e vírgula para separar cada item de cada lista.")>
+    <Category("Dados")>
+    <Description("Determina uma lista de opções padrão do componente.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
     Public Property DefaultOptionsList() As Collections.Specialized.StringCollection
         Get
@@ -481,6 +503,10 @@ Public Class Control_ComboBoxPerson
 
             If _optionsList Is Nothing Then
                 _optionsList = _defaultOptionsList
+            End If
+
+            If _comboBoxPersonMaster IsNot Nothing Then
+                _comboBoxPersonMaster._defaultOptionsListSlave = value
             End If
 
             AddMenuItens()
@@ -613,7 +639,7 @@ Public Class Control_ComboBoxPerson
 
         ' Aqui injeta no slave a lista de slave criada no master
         If _comboBoxPersonSlave IsNot Nothing Then
-            MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
+            ' MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
                 ' TODO : Converter o item separado por virgula em  As Collections.Specialized.StringCollection
@@ -642,28 +668,28 @@ Public Class Control_ComboBoxPerson
 
             Case ReturnTypeEnum.None
                 Retornar = Nothing
-                MsgBox("O retorno é Nothing")
+               ' MsgBox("O retorno é Nothing")
 
             Case ReturnTypeEnum.ID
                 Retornar = _returnItem.ID
-                MsgBox("ID = " & Retornar)
+             '   MsgBox("ID = " & Retornar)
 
             Case ReturnTypeEnum.MenuItemType
                 Retornar = itemClicked
-                MsgBox("Retonando intem clicado")
+              '  MsgBox("Retonando intem clicado")
 
             Case ReturnTypeEnum.Structure
                 Retornar = _returnItem
-                MsgBox("KEY =  " + _returnItem.String + Chr(13) + "ID: " + _returnItem.ID.ToString)
+              '  MsgBox("KEY =  " + _returnItem.String + Chr(13) + "ID: " + _returnItem.ID.ToString)
 
 
             Case ReturnTypeEnum.String
                 Retornar = _returnItem.String
-                MsgBox("A KEY é " + Retornar)
+              '  MsgBox("A KEY é " + Retornar)
 
             Case ReturnTypeEnum.ItemClickedText
                 Retornar = itemClicked.Text
-                MsgBox("O texto é  " + Retornar)
+                '  MsgBox("O texto é  " + Retornar)
 
 
             Case Else
@@ -735,7 +761,7 @@ Public Class Control_ComboBoxPerson
         Dim int As Integer = y
 
         If _nivel > 0 Then
-            int = Me.ComboBoxPersonMaster._optionsList.Count + y
+            int = Me._comboBoxPersonMaster._optionsList.Count + y
         End If
 
         Return int

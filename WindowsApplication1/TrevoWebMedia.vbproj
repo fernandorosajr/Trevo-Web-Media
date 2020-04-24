@@ -466,6 +466,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.af.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

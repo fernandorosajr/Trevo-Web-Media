@@ -22,60 +22,32 @@ Partial Class FRMDialogRenameCriterio
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRMDialogRenameCriterio))
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.OK_Button = New System.Windows.Forms.Button()
         Me.Cancel_Button = New System.Windows.Forms.Button()
         Me.LBLFolderName = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PanelElemento = New System.Windows.Forms.Panel()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.LBLTitle02 = New System.Windows.Forms.Label()
+        Me.PanelRecebe = New System.Windows.Forms.Panel()
         Me.PanelTXT = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.PanelCombo = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.PanelComboBoxPerson = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PanelDiivisor = New System.Windows.Forms.Panel()
-        Me.PanelBorderBTN = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PanelMagemBotton = New System.Windows.Forms.Panel()
-        Me.LBLTitle02 = New System.Windows.Forms.Label()
-        Me.PanelBorder = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.BTNMenu01 = New System.Windows.Forms.Button()
-        Me.BTNCancelaRenomeDeOrigem = New System.Windows.Forms.Button()
-        Me.BTNConfirmarRenomeDeOrigem = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LBLRenameOrigem = New System.Windows.Forms.Label()
+        Me.LBLValueOrigem = New System.Windows.Forms.Label()
+        Me.LNKLRenameSource = New System.Windows.Forms.LinkLabel()
+        Me.LBLTitleOrigem = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.PanelElemento.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.TableLayoutPanel3.SuspendLayout()
         Me.PanelTXT.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel11.SuspendLayout()
-        Me.PanelCombo.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.PanelComboBoxPerson.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.PanelBorderBTN.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
-        Me.PanelBorder.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -86,7 +58,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(486, 349)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(486, 429)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -146,66 +118,38 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle01.TabIndex = 7
         Me.LBLTitle01.Text = "Defina os critérios de renome dos arquivos em lote"
         '
-        'Panel1
+        'LBLTitle02
         '
-        Me.Panel1.AutoScroll = True
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PanelElemento)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(1, 1)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(596, 229)
-        Me.Panel1.TabIndex = 9
+        Me.LBLTitle02.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLTitle02.AutoEllipsis = True
+        Me.LBLTitle02.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLTitle02.Location = New System.Drawing.Point(31, 83)
+        Me.LBLTitle02.Name = "LBLTitle02"
+        Me.LBLTitle02.Size = New System.Drawing.Size(596, 29)
+        Me.LBLTitle02.TabIndex = 110
+        Me.LBLTitle02.Text = "Lista dos critérios"
         '
-        'PanelElemento
+        'PanelRecebe
         '
-        Me.PanelElemento.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelElemento.Controls.Add(Me.Panel13)
-        Me.PanelElemento.Controls.Add(Me.Panel4)
-        Me.PanelElemento.Controls.Add(Me.PanelMagemBotton)
-        Me.PanelElemento.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelElemento.Location = New System.Drawing.Point(0, 0)
-        Me.PanelElemento.Name = "PanelElemento"
-        Me.PanelElemento.Size = New System.Drawing.Size(596, 54)
-        Me.PanelElemento.TabIndex = 0
-        '
-        'Panel13
-        '
-        Me.Panel13.Controls.Add(Me.TableLayoutPanel3)
-        Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel13.Location = New System.Drawing.Point(0, 0)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Padding = New System.Windows.Forms.Padding(13)
-        Me.Panel13.Size = New System.Drawing.Size(542, 53)
-        Me.Panel13.TabIndex = 4
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.ColumnCount = 5
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.PanelTXT, 4, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.PanelCombo, 2, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.PanelComboBoxPerson, 0, 0)
-        Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(13, 13)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 1
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(516, 27)
-        Me.TableLayoutPanel3.TabIndex = 5
+        Me.PanelRecebe.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PanelRecebe.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelRecebe.Location = New System.Drawing.Point(31, 103)
+        Me.PanelRecebe.Name = "PanelRecebe"
+        Me.PanelRecebe.Size = New System.Drawing.Size(598, 190)
+        Me.PanelRecebe.TabIndex = 111
         '
         'PanelTXT
         '
         Me.PanelTXT.BackColor = System.Drawing.Color.Transparent
         Me.PanelTXT.Controls.Add(Me.Panel10)
-        Me.PanelTXT.Location = New System.Drawing.Point(339, 3)
+        Me.PanelTXT.Location = New System.Drawing.Point(387, 12)
         Me.PanelTXT.Name = "PanelTXT"
         Me.PanelTXT.Size = New System.Drawing.Size(169, 21)
-        Me.PanelTXT.TabIndex = 3
+        Me.PanelTXT.TabIndex = 112
         '
         'Panel10
         '
@@ -241,257 +185,118 @@ Partial Class FRMDialogRenameCriterio
         Me.TextBox2.TabIndex = 0
         Me.TextBox2.Text = "ooooooooooo"
         '
-        'PanelCombo
+        'Panel1
         '
-        Me.PanelCombo.BackColor = System.Drawing.Color.Transparent
-        Me.PanelCombo.Controls.Add(Me.Panel5)
-        Me.PanelCombo.Controls.Add(Me.Panel8)
-        Me.PanelCombo.Controls.Add(Me.Panel9)
-        Me.PanelCombo.Location = New System.Drawing.Point(171, 3)
-        Me.PanelCombo.Name = "PanelCombo"
-        Me.PanelCombo.Size = New System.Drawing.Size(154, 21)
-        Me.PanelCombo.TabIndex = 2
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel5.Controls.Add(Me.Panel7)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(1, 1, 0, 1)
-        Me.Panel5.Size = New System.Drawing.Size(134, 21)
-        Me.Panel5.TabIndex = 2
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel7.Controls.Add(Me.LinkLabel1)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(1, 1)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.Panel7.Size = New System.Drawing.Size(133, 19)
-        Me.Panel7.TabIndex = 0
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.LightGray
-        Me.LinkLabel1.AutoEllipsis = True
-        Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LinkLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.LinkLabel1.LinkArea = New System.Windows.Forms.LinkArea(0, 100)
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.DarkGray
-        Me.LinkLabel1.Location = New System.Drawing.Point(8, 2)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(123, 15)
-        Me.LinkLabel1.TabIndex = 2
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "LinkLabel1"
-        Me.LinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.LinkLabel1.UseCompatibleTextRendering = True
-        '
-        'Panel8
-        '
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel8.Location = New System.Drawing.Point(134, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(1, 21)
-        Me.Panel8.TabIndex = 1
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel9.Controls.Add(Me.Button1)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel9.Location = New System.Drawing.Point(135, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(0, 1, 1, 1)
-        Me.Panel9.Size = New System.Drawing.Size(19, 21)
-        Me.Panel9.TabIndex = 0
-        '
-        'PanelComboBoxPerson
-        '
-        Me.PanelComboBoxPerson.BackColor = System.Drawing.Color.Transparent
-        Me.PanelComboBoxPerson.Controls.Add(Me.Panel6)
-        Me.PanelComboBoxPerson.Controls.Add(Me.PanelDiivisor)
-        Me.PanelComboBoxPerson.Controls.Add(Me.PanelBorderBTN)
-        Me.PanelComboBoxPerson.Location = New System.Drawing.Point(3, 3)
-        Me.PanelComboBoxPerson.Name = "PanelComboBoxPerson"
-        Me.PanelComboBoxPerson.Size = New System.Drawing.Size(154, 21)
-        Me.PanelComboBoxPerson.TabIndex = 1
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.Panel3)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Padding = New System.Windows.Forms.Padding(1, 1, 0, 1)
-        Me.Panel6.Size = New System.Drawing.Size(134, 21)
-        Me.Panel6.TabIndex = 2
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.TextBox1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(1, 1)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
-        Me.Panel3.Size = New System.Drawing.Size(133, 19)
-        Me.Panel3.TabIndex = 0
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.ForeColor = System.Drawing.Color.DarkGray
-        Me.TextBox1.Location = New System.Drawing.Point(8, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(123, 13)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "ooooooooooo"
-        '
-        'PanelDiivisor
-        '
-        Me.PanelDiivisor.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelDiivisor.Location = New System.Drawing.Point(134, 0)
-        Me.PanelDiivisor.Name = "PanelDiivisor"
-        Me.PanelDiivisor.Size = New System.Drawing.Size(1, 21)
-        Me.PanelDiivisor.TabIndex = 1
-        '
-        'PanelBorderBTN
-        '
-        Me.PanelBorderBTN.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelBorderBTN.Controls.Add(Me.BTNMenu01)
-        Me.PanelBorderBTN.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelBorderBTN.Location = New System.Drawing.Point(135, 0)
-        Me.PanelBorderBTN.Name = "PanelBorderBTN"
-        Me.PanelBorderBTN.Padding = New System.Windows.Forms.Padding(0, 1, 1, 1)
-        Me.PanelBorderBTN.Size = New System.Drawing.Size(19, 21)
-        Me.PanelBorderBTN.TabIndex = 0
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel4.Location = New System.Drawing.Point(542, 0)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(54, 53)
-        Me.Panel4.TabIndex = 3
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 2
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.BTNCancelaRenomeDeOrigem, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.BTNConfirmarRenomeDeOrigem, 0, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 15)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(42, 21)
-        Me.TableLayoutPanel2.TabIndex = 1
-        '
-        'PanelMagemBotton
-        '
-        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
-        Me.PanelMagemBotton.Name = "PanelMagemBotton"
-        Me.PanelMagemBotton.Size = New System.Drawing.Size(596, 1)
-        Me.PanelMagemBotton.TabIndex = 0
-        '
-        'LBLTitle02
-        '
-        Me.LBLTitle02.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLTitle02.AutoEllipsis = True
-        Me.LBLTitle02.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle02.Location = New System.Drawing.Point(31, 83)
-        Me.LBLTitle02.Name = "LBLTitle02"
-        Me.LBLTitle02.Size = New System.Drawing.Size(596, 17)
-        Me.LBLTitle02.TabIndex = 110
-        Me.LBLTitle02.Text = "Lista dos critérios"
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Location = New System.Drawing.Point(31, 329)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(1)
+        Me.Panel1.Size = New System.Drawing.Size(598, 88)
+        Me.Panel1.TabIndex = 113
         '
-        'PanelBorder
+        'Panel2
         '
-        Me.PanelBorder.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Controls.Add(Me.PanelTXT)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.LBLRenameOrigem)
+        Me.Panel2.Controls.Add(Me.LBLValueOrigem)
+        Me.Panel2.Controls.Add(Me.LNKLRenameSource)
+        Me.Panel2.Controls.Add(Me.LBLTitleOrigem)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(1, 1)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(596, 86)
+        Me.Panel2.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoEllipsis = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label1.Location = New System.Drawing.Point(31, 309)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(596, 30)
+        Me.Label1.TabIndex = 111
+        Me.Label1.Text = "Visualizar exemplo"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(140, 15)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(83, 13)
+        Me.Label2.TabIndex = 113
+        Me.Label2.Text = "C:/MinhaPasta/"
+        '
+        'LBLRenameOrigem
+        '
+        Me.LBLRenameOrigem.AutoEllipsis = True
+        Me.LBLRenameOrigem.AutoSize = True
+        Me.LBLRenameOrigem.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLRenameOrigem.Location = New System.Drawing.Point(39, 36)
+        Me.LBLRenameOrigem.Name = "LBLRenameOrigem"
+        Me.LBLRenameOrigem.Size = New System.Drawing.Size(95, 13)
+        Me.LBLRenameOrigem.TabIndex = 8
+        Me.LBLRenameOrigem.Text = "Nome de exemplo:"
+        '
+        'LBLValueOrigem
+        '
+        Me.LBLValueOrigem.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLValueOrigem.AutoEllipsis = True
+        Me.LBLValueOrigem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLValueOrigem.Location = New System.Drawing.Point(143, 57)
+        Me.LBLValueOrigem.Name = "LBLValueOrigem"
+        Me.LBLValueOrigem.Size = New System.Drawing.Size(435, 13)
+        Me.LBLValueOrigem.TabIndex = 7
+        Me.LBLValueOrigem.Text = "Meu Arquivo.txt"
+        '
+        'LNKLRenameSource
+        '
+        Me.LNKLRenameSource.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LNKLRenameSource.AutoEllipsis = True
+        Me.LNKLRenameSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLRenameSource.Location = New System.Drawing.Point(143, 36)
+        Me.LNKLRenameSource.Name = "LNKLRenameSource"
+        Me.LNKLRenameSource.Size = New System.Drawing.Size(435, 13)
+        Me.LNKLRenameSource.TabIndex = 9
+        Me.LNKLRenameSource.TabStop = True
+        Me.LNKLRenameSource.Text = "Meu Arquivo.txt"
+        '
+        'LBLTitleOrigem
+        '
+        Me.LBLTitleOrigem.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelBorder.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelBorder.Controls.Add(Me.Panel1)
-        Me.PanelBorder.Location = New System.Drawing.Point(31, 102)
-        Me.PanelBorder.Name = "PanelBorder"
-        Me.PanelBorder.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder.Size = New System.Drawing.Size(598, 231)
-        Me.PanelBorder.TabIndex = 111
+        Me.LBLTitleOrigem.AutoEllipsis = True
+        Me.LBLTitleOrigem.AutoSize = True
+        Me.LBLTitleOrigem.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLTitleOrigem.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLTitleOrigem.Location = New System.Drawing.Point(16, 15)
+        Me.LBLTitleOrigem.Name = "LBLTitleOrigem"
+        Me.LBLTitleOrigem.Size = New System.Drawing.Size(118, 13)
+        Me.LBLTitleOrigem.TabIndex = 6
+        Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
-        'Button1
+        'Label3
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button1.Location = New System.Drawing.Point(0, 1)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(18, 19)
-        Me.Button1.TabIndex = 20
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'BTNMenu01
-        '
-        Me.BTNMenu01.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTNMenu01.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNMenu01.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNMenu01.FlatAppearance.BorderSize = 0
-        Me.BTNMenu01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMenu01.Image = CType(resources.GetObject("BTNMenu01.Image"), System.Drawing.Image)
-        Me.BTNMenu01.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNMenu01.Location = New System.Drawing.Point(0, 1)
-        Me.BTNMenu01.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTNMenu01.Name = "BTNMenu01"
-        Me.BTNMenu01.Size = New System.Drawing.Size(18, 19)
-        Me.BTNMenu01.TabIndex = 20
-        Me.BTNMenu01.UseVisualStyleBackColor = False
-        '
-        'BTNCancelaRenomeDeOrigem
-        '
-        Me.BTNCancelaRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNCancelaRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNCancelaRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNCancelaRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNCancelaRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNCancelaRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNCancelaRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNCancelaRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
-        Me.BTNCancelaRenomeDeOrigem.Name = "BTNCancelaRenomeDeOrigem"
-        Me.BTNCancelaRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNCancelaRenomeDeOrigem.TabIndex = 11
-        Me.BTNCancelaRenomeDeOrigem.Tag = ""
-        '
-        'BTNConfirmarRenomeDeOrigem
-        '
-        Me.BTNConfirmarRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNConfirmarRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNConfirmarRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNConfirmarRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNConfirmarRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNConfirmarRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNConfirmarRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNConfirmarRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
-        Me.BTNConfirmarRenomeDeOrigem.Name = "BTNConfirmarRenomeDeOrigem"
-        Me.BTNConfirmarRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNConfirmarRenomeDeOrigem.TabIndex = 10
-        Me.BTNConfirmarRenomeDeOrigem.Tag = ""
+        Me.Label3.AutoEllipsis = True
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label3.Location = New System.Drawing.Point(69, 57)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(65, 13)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = "Novo nome:"
         '
         'FRMDialogRenameCriterio
         '
@@ -500,12 +305,14 @@ Partial Class FRMDialogRenameCriterio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(662, 402)
-        Me.Controls.Add(Me.PanelBorder)
+        Me.ClientSize = New System.Drawing.Size(662, 482)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
         Me.Controls.Add(Me.LBLFolderName)
         Me.Controls.Add(Me.LBLTitle01)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.DarkGray
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MaximizeBox = False
@@ -515,26 +322,13 @@ Partial Class FRMDialogRenameCriterio
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FRMDialogRenameCriterio"
         Me.TableLayoutPanel1.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.PanelElemento.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
-        Me.TableLayoutPanel3.ResumeLayout(False)
         Me.PanelTXT.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
-        Me.PanelCombo.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.PanelComboBoxPerson.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.PanelBorderBTN.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
-        Me.PanelBorder.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -543,33 +337,19 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents Cancel_Button As System.Windows.Forms.Button
     Friend WithEvents LBLFolderName As Label
     Friend WithEvents LBLTitle01 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents PanelElemento As Panel
     Friend WithEvents LBLTitle02 As Label
-    Friend WithEvents PanelMagemBotton As Panel
-    Friend WithEvents PanelComboBoxPerson As Panel
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents PanelDiivisor As Panel
-    Friend WithEvents PanelBorderBTN As Panel
-    Friend WithEvents BTNMenu01 As Button
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PanelRecebe As Panel
     Friend WithEvents PanelTXT As Panel
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Panel11 As Panel
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents PanelCombo As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents BTNCancelaRenomeDeOrigem As Button
-    Friend WithEvents BTNConfirmarRenomeDeOrigem As Button
-    Friend WithEvents Panel13 As Panel
-    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents PanelBorder As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents LBLRenameOrigem As Label
+    Friend WithEvents LBLValueOrigem As Label
+    Friend WithEvents LNKLRenameSource As LinkLabel
+    Friend WithEvents LBLTitleOrigem As Label
 End Class

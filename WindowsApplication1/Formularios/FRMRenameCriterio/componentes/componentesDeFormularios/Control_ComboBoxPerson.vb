@@ -158,6 +158,28 @@ Public Class Control_ComboBoxPerson
 
         End Set
     End Property
+
+    Private _automaticSelect As Boolean
+    Public Property AutomaticSelect As Boolean
+        Get
+            Return _automaticSelect
+        End Get
+        Set(value As Boolean)
+            _automaticSelect = value
+
+        End Set
+    End Property
+
+    Private _hideWhenEmptyList As Boolean
+    Public Property HideWhenEmptyList As Boolean
+        Get
+            Return _hideWhenEmptyList
+        End Get
+        Set(value As Boolean)
+            _hideWhenEmptyList = value
+
+        End Set
+    End Property
     ' __________________________________________________
 
     'TESTE DE PROPRIEDADES
@@ -527,6 +549,57 @@ Public Class Control_ComboBoxPerson
         LoadShotCutKey()
         LNKLLabelCombo.Text = _textDisplay
         AddMenuItens()
+
+        PerformAutomaticSelection(0)
+
+    End Sub
+
+    Public Sub PerformAutomaticSelection(index As Integer)
+        Dim y As Integer = CMS_Menu.Items.Count - 1
+
+        If _automaticSelect = True Then
+            If _selected Is Nothing Then
+                'If _optionsList IsNot Nothing And _optionsList.Count > 0 Then
+                If CMS_Menu.Items.Count > 0 Then
+                    If index > y Then index = y
+
+                    '  If CMS_Menu.Items.Count = 0 Then Exit Sub
+
+                    SelectedItem = CMS_Menu.Items.Item(index)
+                    Me.LNKLLabelCombo.Text = SelectedItem.Text
+
+                Else
+                    Me.LNKLLabelCombo.Text = TextDisplay
+                    Me.Selected = Nothing
+                End If
+            End If
+
+        End If
+    End Sub
+
+    Public Sub PerformHideWhenEmptyList()
+        If _comboBoxPersonSlave IsNot Nothing Then
+
+            If _hideWhenEmptyList = True Then
+
+                If _comboBoxPersonSlave.CMS_Menu.Items.Count = 0 Then
+
+                    _comboBoxPersonSlave.Visible = False
+
+                Else
+
+                    _comboBoxPersonSlave.Visible = True
+
+                End If
+
+
+            Else
+                _comboBoxPersonSlave.Visible = True
+
+            End If
+
+        End If
+
     End Sub
 
     Private Function OptionClick(sender As Object, e As EventArgs) As Object
@@ -549,7 +622,7 @@ Public Class Control_ComboBoxPerson
 
             Else
                 item.Checked = True
-
+                _returnItem = item.Tag
             End If
         Next
 
@@ -560,11 +633,17 @@ Public Class Control_ComboBoxPerson
             ' MsgBox("Quantidade de listas Slave: " & _comboBoxPersonSlaveLists.Count)
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
-                ' TODO : Converter o item separado por virgula em  As Collections.Specialized.StringCollection
+
                 If (CInt(_returnItem.ID)) <= (_comboBoxPersonSlaveLists.Count - 1) Then
-                    _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(Me._comboBoxPersonSlaveLists.Item(_returnItem.ID), separador)
-                    _comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
-                    _comboBoxPersonSlave.Selected = Nothing
+
+                    Dim strSlaveList As String
+                    strSlaveList = Me._comboBoxPersonSlaveLists.Item(_returnItem.ID)
+
+                    _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(strSlaveList, separador)
+
+                    _comboBoxPersonSlave.PerformAutomaticSelection(0)
+
+                    PerformHideWhenEmptyList()
 
                 Else
                     If Me.DefaultOptionsList IsNot Nothing Then

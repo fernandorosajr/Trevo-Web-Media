@@ -31,14 +31,14 @@ Partial Class Control_RenameOption
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.PanelEnvolve_ComBPMaster = New System.Windows.Forms.Panel()
-        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.BTNCancelaRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.BTNConfirmarRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
+        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.TableLPContainer.SuspendLayout()
@@ -144,67 +144,6 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPMaster.Size = New System.Drawing.Size(154, 21)
         Me.PanelEnvolve_ComBPMaster.TabIndex = 4
         '
-        'ComBPMaster
-        '
-        Me.ComBPMaster.AutomaticSelect = True
-        Me.ComBPMaster.AutoSize = True
-        Me.ComBPMaster.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBPMaster.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBPMaster.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBPMaster.BorderColorError = System.Drawing.Color.Red
-        Me.ComBPMaster.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBPMaster.ComboBoxPersonMaster = Nothing
-        Me.ComBPMaster.ComboBoxPersonSlave = Me.ComBPSlave
-        Me.ComBPMaster.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPMaster.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.DataReturn = Nothing
-        Me.ComBPMaster.DefaultOptionsList = CType(resources.GetObject("ComBPMaster.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.DefaultOptionsListSlave = CType(resources.GetObject("ComBPMaster.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComBPMaster.HideWhenEmptyList = False
-        Me.ComBPMaster.ListaDeOpçõesPadrão = Nothing
-        Me.ComBPMaster.Location = New System.Drawing.Point(0, 0)
-        Me.ComBPMaster.Name = "ComBPMaster"
-        Me.ComBPMaster.Nivel = 0
-        Me.ComBPMaster.OptionsList = CType(resources.GetObject("ComBPMaster.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.ReturnStringList = CType(resources.GetObject("ComBPMaster.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
-        Me.ComBPMaster.ShortcutKeyDisplay = True
-        Me.ComBPMaster.Size = New System.Drawing.Size(154, 21)
-        Me.ComBPMaster.TabIndex = 0
-        Me.ComBPMaster.TextDisplay = "Texto"
-        Me.ComBPMaster.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
-        'ComBPSlave
-        '
-        Me.ComBPSlave.AutomaticSelect = True
-        Me.ComBPSlave.AutoSize = True
-        Me.ComBPSlave.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBPSlave.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBPSlave.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBPSlave.BorderColorError = System.Drawing.Color.Red
-        Me.ComBPSlave.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBPSlave.ComboBoxPersonMaster = Me.ComBPMaster
-        Me.ComBPSlave.ComboBoxPersonSlave = Nothing
-        Me.ComBPSlave.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPSlave.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.DataReturn = Nothing
-        Me.ComBPSlave.DefaultOptionsList = CType(resources.GetObject("ComBPSlave.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.DefaultOptionsListSlave = CType(resources.GetObject("ComBPSlave.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComBPSlave.HideWhenEmptyList = False
-        Me.ComBPSlave.ListaDeOpçõesPadrão = Nothing
-        Me.ComBPSlave.Location = New System.Drawing.Point(0, 0)
-        Me.ComBPSlave.Name = "ComBPSlave"
-        Me.ComBPSlave.Nivel = 1
-        Me.ComBPSlave.OptionsList = CType(resources.GetObject("ComBPSlave.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.ReturnStringList = CType(resources.GetObject("ComBPSlave.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
-        Me.ComBPSlave.Selected = Nothing
-        Me.ComBPSlave.ShortcutKeyDisplay = True
-        Me.ComBPSlave.Size = New System.Drawing.Size(154, 21)
-        Me.ComBPSlave.TabIndex = 0
-        Me.ComBPSlave.TextDisplay = "<Selecione>"
-        Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
         'PanelEnvolve_ComBPSlave
         '
         Me.PanelEnvolve_ComBPSlave.Controls.Add(Me.ComBPSlave)
@@ -273,6 +212,67 @@ Partial Class Control_RenameOption
         Me.PanelMagemBotton.Name = "PanelMagemBotton"
         Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
         Me.PanelMagemBotton.TabIndex = 0
+        '
+        'ComBPMaster
+        '
+        Me.ComBPMaster.AutomaticSelect = True
+        Me.ComBPMaster.AutoSize = True
+        Me.ComBPMaster.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBPMaster.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBPMaster.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBPMaster.BorderColorError = System.Drawing.Color.Red
+        Me.ComBPMaster.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBPMaster.ComboBoxPersonMaster = Nothing
+        Me.ComBPMaster.ComboBoxPersonSlave = Me.ComBPSlave
+        Me.ComBPMaster.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPMaster.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DataReturn = Nothing
+        Me.ComBPMaster.DefaultOptionsList = CType(resources.GetObject("ComBPMaster.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DefaultOptionsListSlave = CType(resources.GetObject("ComBPMaster.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPMaster.HideWhenEmptyList = False
+        Me.ComBPMaster.ListaDeOpçõesPadrão = Nothing
+        Me.ComBPMaster.Location = New System.Drawing.Point(0, 0)
+        Me.ComBPMaster.Name = "ComBPMaster"
+        Me.ComBPMaster.Nivel = 0
+        Me.ComBPMaster.OptionsList = CType(resources.GetObject("ComBPMaster.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.ReturnStringList = CType(resources.GetObject("ComBPMaster.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.MenuItemType
+        Me.ComBPMaster.ShortcutKeyDisplay = True
+        Me.ComBPMaster.Size = New System.Drawing.Size(154, 21)
+        Me.ComBPMaster.TabIndex = 0
+        Me.ComBPMaster.TextDisplay = "Texto"
+        Me.ComBPMaster.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        '
+        'ComBPSlave
+        '
+        Me.ComBPSlave.AutomaticSelect = True
+        Me.ComBPSlave.AutoSize = True
+        Me.ComBPSlave.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBPSlave.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBPSlave.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBPSlave.BorderColorError = System.Drawing.Color.Red
+        Me.ComBPSlave.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBPSlave.ComboBoxPersonMaster = Me.ComBPMaster
+        Me.ComBPSlave.ComboBoxPersonSlave = Nothing
+        Me.ComBPSlave.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPSlave.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DataReturn = Nothing
+        Me.ComBPSlave.DefaultOptionsList = CType(resources.GetObject("ComBPSlave.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DefaultOptionsListSlave = CType(resources.GetObject("ComBPSlave.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPSlave.HideWhenEmptyList = False
+        Me.ComBPSlave.ListaDeOpçõesPadrão = Nothing
+        Me.ComBPSlave.Location = New System.Drawing.Point(0, 0)
+        Me.ComBPSlave.Name = "ComBPSlave"
+        Me.ComBPSlave.Nivel = 1
+        Me.ComBPSlave.OptionsList = CType(resources.GetObject("ComBPSlave.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.ReturnStringList = CType(resources.GetObject("ComBPSlave.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
+        Me.ComBPSlave.SelectedItem = Nothing
+        Me.ComBPSlave.ShortcutKeyDisplay = True
+        Me.ComBPSlave.Size = New System.Drawing.Size(154, 21)
+        Me.ComBPSlave.TabIndex = 0
+        Me.ComBPSlave.TextDisplay = "<Selecione>"
+        Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
         'Control_RenameOption
         '

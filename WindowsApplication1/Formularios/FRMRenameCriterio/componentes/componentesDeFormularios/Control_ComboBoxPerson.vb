@@ -342,46 +342,31 @@ Public Class Control_ComboBoxPerson
     '------------------------------------------------------------
 
 
-    Private SelectedItem As ToolStripMenuItem
-    Private _selected As List(Of ToolStripMenuItem)
+    Private _selectedItem As ToolStripMenuItem
+    'Private _selected As List(Of ToolStripMenuItem)
     <Category("Dados")>
     <Description("Seleciona e retorna um item de menu expecífico.")>
-    Public Property Selected() As ToolStripMenuItem
+    Public Property SelectedItem() As ToolStripMenuItem
         Get
-            ReturnSelected()
-            Return SelectedItem
+            'ReturnSelected()
+            Return _selectedItem
 
         End Get
         Set(value As ToolStripMenuItem)
-            If _selected IsNot Nothing Then
-                For Each item As ToolStripMenuItem In _selected
-                    If item.Name <> value.Name Then
-                        item.Checked = False
-                    Else
-                        item.Checked = True
-                    End If
-                Next
+
+
+            _selectedItem = value
+
+            If value IsNot Nothing Then
+                LNKLLabelCombo.Text = value.Text
+                SelectItemClicked(value)
 
             End If
-            SelectedItem = value
 
         End Set
     End Property
-    Function ReturnSelected()
-        ' Dim _selectedItem As ToolStripMenuItem = Nothing
-        If _selected IsNot Nothing Then
-            For Each item As ToolStripMenuItem In _selected
-                If item.Checked = True Then
-                    SelectedItem = item
-                    Exit For
-                Else
-                    SelectedItem = Nothing
-                End If
-            Next
 
-        End If
-        Return SelectedItem
-    End Function
+
     'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
     'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
     'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
@@ -533,12 +518,6 @@ Public Class Control_ComboBoxPerson
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
 
-        If _selected IsNot Nothing Then _selected.Clear()
-
-        For Each MenuItem As ToolStripMenuItem In CMS_Menu.Items
-            _selected.Add(MenuItem)
-        Next
-
         _nivel = 0
 
         _optionsList = list
@@ -558,21 +537,22 @@ Public Class Control_ComboBoxPerson
         Dim y As Integer = CMS_Menu.Items.Count - 1
 
         If _automaticSelect = True Then
-            If _selected Is Nothing Then
-                'If _optionsList IsNot Nothing And _optionsList.Count > 0 Then
-                If CMS_Menu.Items.Count > 0 Then
-                    If index > y Then index = y
+            'If _selected Is Nothing Then
+            'If _optionsList IsNot Nothing And _optionsList.Count > 0 Then
+            If CMS_Menu.Items.Count > 0 Then
+                If index > y Then index = y
 
-                    '  If CMS_Menu.Items.Count = 0 Then Exit Sub
+                '  If CMS_Menu.Items.Count = 0 Then Exit Sub
 
-                    SelectedItem = CMS_Menu.Items.Item(index)
-                    Me.LNKLLabelCombo.Text = SelectedItem.Text
+                _selectedItem = CMS_Menu.Items.Item(index)
+                Me.LNKLLabelCombo.Text = _selectedItem.Text
+                _selectedItem.Checked = True
 
-                Else
-                    Me.LNKLLabelCombo.Text = TextDisplay
-                    Me.Selected = Nothing
-                End If
+            Else
+                Me.LNKLLabelCombo.Text = TextDisplay
+                Me.SelectedItem = Nothing
             End If
+            ' End If
 
         End If
     End Sub
@@ -603,28 +583,12 @@ Public Class Control_ComboBoxPerson
     End Sub
 
     Private Function OptionClick(sender As Object, e As EventArgs) As Object
-        Dim itemClicked As New ToolStripMenuItem
 
-        itemClicked = CType(sender, ToolStripMenuItem)
+        Dim itemClicked As ToolStripMenuItem = CType(sender, ToolStripMenuItem)
 
         Dim checked As Boolean = itemClicked.Checked
 
         Dim _returnItem As New ReturnItem
-
-        Dim Retornar As Object = ""
-
-        LNKLLabelCombo.Text = itemClicked.Text
-        Selected = itemClicked
-
-        For Each item As ToolStripMenuItem In CMS_Menu.Items
-            If itemClicked.Name <> item.Name Then
-                item.Checked = False
-
-            Else
-                item.Checked = True
-                _returnItem = item.Tag
-            End If
-        Next
 
         _returnItem = itemClicked.Tag
 
@@ -649,7 +613,7 @@ Public Class Control_ComboBoxPerson
                     If Me.DefaultOptionsList IsNot Nothing Then
                         _comboBoxPersonSlave.OptionsList = Me.DefaultOptionsListSlave
                         _comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
-                        _comboBoxPersonSlave.Selected = Nothing
+                        _comboBoxPersonSlave.SelectedItem = Nothing
 
                     End If
 
@@ -660,6 +624,33 @@ Public Class Control_ComboBoxPerson
         End If
 
         '--------------------------------------------
+
+        'Dim Retornar As Object = SelectItemClicked(itemClicked)
+        SelectedItem = itemClicked
+        Return SelectedItem.Tag
+
+    End Function
+
+    Public Function SelectItemClicked(itemClicked As ToolStripMenuItem)
+
+        Dim _returnItem As New ReturnItem
+        Dim Retornar As Object = ""
+
+        ' LNKLLabelCombo.Text = itemClicked.Text
+        ' Selected = itemClicked
+
+
+        For Each item As ToolStripMenuItem In CMS_Menu.Items
+            If itemClicked.Name <> item.Name Then
+                item.Checked = False
+
+            Else
+                item.Checked = True
+
+            End If
+        Next
+
+        _returnItem = itemClicked.Tag
 
         Select Case _returnType
 
@@ -688,19 +679,15 @@ Public Class Control_ComboBoxPerson
                 Retornar = itemClicked.Text
                 '  MsgBox("O texto é  " + Retornar)
 
-
             Case Else
 
         End Select
 
         DataReturn = Retornar
+
         Return Retornar
 
     End Function
-
-    Sub SelectItemClicked(itemClicked As ToolStripMenuItem)
-
-    End Sub
 
     Sub AddMenuItens()
 

@@ -42,12 +42,16 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelTXT.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel11.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -299,6 +303,48 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle03.TabIndex = 111
         Me.LBLTitle03.Text = "Visualizar exemplo"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(187, 77)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
+        Me.TextBox1.TabIndex = 115
+        Me.TextBox1.Text = "sssssssssssssssssssssssssssss"
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
+        Me.Panel1.Location = New System.Drawing.Point(34, 432)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(248, 38)
+        Me.Panel1.TabIndex = 117
+        '
+        'Control_TextBoxPerson1
+        '
+        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.Cross
+        Me.Control_TextBoxPerson1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Control_TextBoxPerson1.ErrorDisplay = False
+        Me.Control_TextBoxPerson1.LeftIndentation = 6
+        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(0, 0)
+        Me.Control_TextBoxPerson1.MaximumSize = New System.Drawing.Size(0, 21)
+        Me.Control_TextBoxPerson1.MinimumSize = New System.Drawing.Size(5, 21)
+        Me.Control_TextBoxPerson1.MultiLine = False
+        Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
+        Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson1.Placeholder = "Digite sua senha..."
+        Me.Control_TextBoxPerson1.RightIndentation = 0
+        Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(248, 21)
+        Me.Control_TextBoxPerson1.TabIndex = 116
+        Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(248, 21)
+        Me.Control_TextBoxPerson1.Txt = ""
+        Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson1.WordWrap = False
+        '
         'FRMDialogRenameCriterio
         '
         Me.AcceptButton = Me.OK_Button
@@ -307,6 +353,8 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(662, 482)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
@@ -330,7 +378,9 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelBorder_Visualizar.ResumeLayout(False)
         Me.PanelVisualizar.ResumeLayout(False)
         Me.PanelVisualizar.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
@@ -353,4 +403,9 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LBLValue_NovoNome As Label
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
+    'Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
+    Friend WithEvents Panel1 As Panel
+    'Friend WithEvents Control_TextBoxPerson2 As Control_TextBoxPerson
 End Class

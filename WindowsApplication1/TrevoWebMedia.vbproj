@@ -177,6 +177,12 @@
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextBoxPerson.Designer.vb">
+      <DependentUpon>Control_TextBoxPerson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextBoxPerson.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </Compile>
@@ -463,6 +469,9 @@
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.resx">
       <DependentUpon>Control_RenameOption.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextBoxPerson.resx">
+      <DependentUpon>Control_TextBoxPerson.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>

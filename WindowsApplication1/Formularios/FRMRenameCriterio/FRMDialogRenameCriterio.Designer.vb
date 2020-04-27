@@ -36,6 +36,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelBorder_Visualizar = New System.Windows.Forms.Panel()
         Me.PanelVisualizar = New System.Windows.Forms.Panel()
         Me.LBL_ValueOrigemDoExemplo = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
@@ -43,7 +44,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Control_TextBoxPerson2 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelTXT.SuspendLayout()
@@ -227,6 +228,14 @@ Partial Class FRMDialogRenameCriterio
         Me.LBL_ValueOrigemDoExemplo.TabIndex = 113
         Me.LBL_ValueOrigemDoExemplo.Text = "C:/MinhaPasta/"
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
+        Me.Panel1.Location = New System.Drawing.Point(56, 423)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(248, 47)
+        Me.Panel1.TabIndex = 117
+        '
         'LBLNovoNome
         '
         Me.LBLNovoNome.AutoEllipsis = True
@@ -311,23 +320,44 @@ Partial Class FRMDialogRenameCriterio
         Me.TextBox1.TabIndex = 115
         Me.TextBox1.Text = "sssssssssssssssssssssssssssss"
         '
-        'Panel1
+        'Control_TextBoxPerson2
         '
-        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
-        Me.Panel1.Location = New System.Drawing.Point(34, 432)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(248, 38)
-        Me.Panel1.TabIndex = 117
+        Me.Control_TextBoxPerson2.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson2.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.Control_TextBoxPerson2.ErrorDisplay = False
+        Me.Control_TextBoxPerson2.ForeColor = System.Drawing.Color.MediumAquamarine
+        Me.Control_TextBoxPerson2.LeftIndentation = 6
+        Me.Control_TextBoxPerson2.Location = New System.Drawing.Point(321, 77)
+        Me.Control_TextBoxPerson2.MaximumSize = New System.Drawing.Size(0, 19)
+        Me.Control_TextBoxPerson2.MinimumSize = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.MultiLine = False
+        Me.Control_TextBoxPerson2.Name = "Control_TextBoxPerson2"
+        Me.Control_TextBoxPerson2.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson2.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson2.PersonBorder = New System.Windows.Forms.Padding(0, 0, 0, 1)
+        Me.Control_TextBoxPerson2.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson2.Placeholder = "Digite aqui ..."
+        Me.Control_TextBoxPerson2.Read_Only = False
+        Me.Control_TextBoxPerson2.RightIndentation = 0
+        Me.Control_TextBoxPerson2.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson2.Size = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.TabIndex = 116
+        Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.Txt = "Saluton"
+        Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson2.WordWrap = True
         '
         'Control_TextBoxPerson1
         '
-        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.Cross
+        Me.Control_TextBoxPerson1.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
         Me.Control_TextBoxPerson1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Control_TextBoxPerson1.ErrorDisplay = False
         Me.Control_TextBoxPerson1.LeftIndentation = 6
         Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(0, 0)
-        Me.Control_TextBoxPerson1.MaximumSize = New System.Drawing.Size(0, 21)
-        Me.Control_TextBoxPerson1.MinimumSize = New System.Drawing.Size(5, 21)
+        Me.Control_TextBoxPerson1.MaximumSize = New System.Drawing.Size(0, 19)
+        Me.Control_TextBoxPerson1.MinimumSize = New System.Drawing.Size(248, 21)
         Me.Control_TextBoxPerson1.MultiLine = False
         Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
         Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
@@ -335,6 +365,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(1)
         Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
         Me.Control_TextBoxPerson1.Placeholder = "Digite sua senha..."
+        Me.Control_TextBoxPerson1.Read_Only = False
         Me.Control_TextBoxPerson1.RightIndentation = 0
         Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
         Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(248, 21)
@@ -353,6 +384,7 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(662, 482)
+        Me.Controls.Add(Me.Control_TextBoxPerson2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
@@ -403,9 +435,9 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LBLValue_NovoNome As Label
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
-    'Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
     Friend WithEvents Panel1 As Panel
-    'Friend WithEvents Control_TextBoxPerson2 As Control_TextBoxPerson
+    Friend WithEvents Control_TextBoxPerson2 As Control_TextBoxPerson
+
 End Class

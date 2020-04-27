@@ -26,7 +26,7 @@ Public Class Class_Configs
         _borderColorError = 255  ' = Color.Red
         _txtBoxBackColorLostFocus = 4341567  '= Color.FromArgb(63, 63, 66)
         _bgColorLostFocus = 4341567 '= Me.BackColor
-
+        _foreColorActive = 11119017
     End Enum
 
     Public _TrevoSystemColor As TrevoSystemColor

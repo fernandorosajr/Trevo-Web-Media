@@ -2,6 +2,12 @@
 Imports System.ComponentModel
 
 Public Class Control_TextBoxPerson
+
+    Public cor As Color = ColorTranslator.FromWin32(Color.DarkGray.ToArgb)
+    Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
+    Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(63, 63, 66))
+
+
     Dim DefaultHeight As Integer = 21
 
     Dim _defaultSize As New Size(100, 21)
@@ -10,11 +16,11 @@ Public Class Control_TextBoxPerson
 
     Dim _defaultBorder As New Padding(1, 1, 1, 1)
 
-
     Dim _minVerticalSize As Integer = 19
 
     Dim _defaultPaddingText As New Padding(2, 2, 2, 2)
-    'Dim DefaultFont As New Font(Me.Font)
+
+    Private configs As Class_Configs
 
     Private _leftIndentation As Integer = 6
     <Category("Aparência")>
@@ -59,7 +65,6 @@ Public Class Control_TextBoxPerson
     End Property
 
     Dim _changeCursorFocus As Boolean
-
     <Category("Comportamento")>
     <Description("Altera o cursor quando o Textbox do componente recebe foco.")>
     Public Property ChangeCursorFocus As Boolean
@@ -112,7 +117,7 @@ Public Class Control_TextBoxPerson
     Private _txt As String
     <Category("Aparência")>
     <Description("Texto associado ao controle.")>
-    Public Property Txt As String
+    Public Property TXT As String
         Get
             Return _txt
 
@@ -145,6 +150,127 @@ Public Class Control_TextBoxPerson
         Set(value As Cursor)
             _cursorTxt = value
             TXTBox.Cursor = _cursorTxt
+
+        End Set
+    End Property
+
+
+    ' Propriedades de configuração de cores
+    '________________________________________________________
+
+    Private _borderColorError As Color
+    <Category("Aparência")>
+    Public Property BorderColorError As Color
+        Get
+            Return _borderColorError
+        End Get
+        Set(value As Color)
+            _borderColorError = value
+
+        End Set
+    End Property
+
+    Private _backColorCursorMouseLeave As Color
+    <Category("Aparência")>
+    Public Property BackColorCursorMouseLeave As Color
+        Get
+            Return _backColorCursorMouseLeave
+        End Get
+        Set(value As Color)
+            _backColorCursorMouseLeave = value
+
+        End Set
+    End Property
+
+    Private _borderColorGotFocus As Color
+    <Category("Aparência")>
+    Public Property BorderColorGotFocus As Color
+        Get
+            Return _borderColorGotFocus
+        End Get
+        Set(value As Color)
+            _borderColorGotFocus = value
+
+        End Set
+    End Property
+
+    Private _borderColorLostFocus As Color
+    <Category("Aparência")>
+    Public Property BordeColorLostFocus As Color
+        Get
+            Return _borderColorLostFocus
+        End Get
+        Set(value As Color)
+            _borderColorLostFocus = value
+        End Set
+    End Property
+
+    Private _txtBoxBackColorLostFocus As Color
+    <Category("Aparência")>
+    Public Property TXTBoxBackColorLostFocus As Color
+        Get
+            Return _txtBoxBackColorLostFocus
+        End Get
+        Set(value As Color)
+            _txtBoxBackColorLostFocus = value
+        End Set
+    End Property
+
+    Private _bgColorLostFocus As Color
+    <Category("Aparência")>
+    Public Property BgColorLostFocus As Color
+        Get
+            Return _bgColorLostFocus
+        End Get
+        Set(value As Color)
+            _bgColorLostFocus = value
+        End Set
+    End Property
+
+
+    Private _foreColorActive As Color
+    Public Property ForeColorActive As Color
+        Get
+            Return _foreColorActive
+
+        End Get
+        Set(value As Color)
+            _foreColorActive = value
+            Me.ForeColor = value
+            TXTBox.ForeColor = value
+
+        End Set
+    End Property
+    ' __________________________________________________________
+    ' Propriedades de TXT
+    '____________________________________________________________
+    Private _characterCasing As CharacterCasing
+    <Category("Comportamento")>
+    <Description("Indica se todos os caracteres devem ser mantido, ou convertidos em maiúsculos ou minúsculos.")>
+    Public Property CharacterCasing As CharacterCasing
+        Get
+            Return _characterCasing
+
+        End Get
+        Set(value As CharacterCasing)
+            _characterCasing = value
+            TXTBox.CharacterCasing = _characterCasing
+
+        End Set
+    End Property
+
+
+    Private _hideSelection As Boolean = True
+    <Category("Comportamento")>
+    <Description("Indica se a seleção deve ser ocultada quando o controle perde foco.")>
+    Public Property HideSelection As Boolean
+        Get
+            Return _hideSelection
+
+        End Get
+        Set(value As Boolean)
+            _hideSelection = value
+            TXTBox.HideSelection = value
 
         End Set
     End Property
@@ -337,8 +463,6 @@ Public Class Control_TextBoxPerson
         End Set
     End Property
 
-
-
     Public Sub New()
 
         ' Esta chamada é requerida pelo designer.
@@ -350,7 +474,22 @@ Public Class Control_TextBoxPerson
         Me.Padding = _defaultMargin
         _wordWrap = TXTBox.WordWrap
         _cursorTxt = TXTBox.Cursor
+        _characterCasing = TXTBox.CharacterCasing
+
         AtualizarPaddingText()
+
+#Disable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+        _borderColorGotFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorGotFocus) 'SystemColors.HotTrack
+        _borderColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorLostFocus) ' Me.BackColor 
+        _backColorCursorMouseLeave = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._backColorCursorMouseLeave) 'Color.FromArgb(45, 45, 48)
+        _borderColorError = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._borderColorError)  ' Color.Red
+        _txtBoxBackColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._txtBoxBackColorLostFocus)  'Color.FromArgb(63, 63, 66)
+        _bgColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._bgColorLostFocus)   'Me.BackColor
+
+        _foreColorActive = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._foreColorActive)
+#Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+
+        Me.ForeColor = _foreColorActive
 
     End Sub
 
@@ -391,7 +530,7 @@ Public Class Control_TextBoxPerson
     End Sub
 
     Private Sub TXTBox_LostFocus(sender As Object, e As EventArgs) Handles TXTBox.LostFocus
-        Txt = TXTBox.Text
+        TXT = TXTBox.Text
         AplicarPassWordChar()
         'If _txt = "" Or _txt = Nothing Then
         '    '  TXTBox.PasswordChar = ""
@@ -407,5 +546,15 @@ Public Class Control_TextBoxPerson
 
     Private Sub Control_TextBoxPerson_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
         _thisSize = New Size(Me.Width, Me.Height)
+    End Sub
+
+    Private Sub Control_TextBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TXTBox.Parent.BackColor = cor
+        '  TXTBox.Text
+        Me.TXT = ColorTranslator.ToWin32(cor)
+    End Sub
+
+    Private Sub Control_TextBoxPerson_ForeColorChanged(sender As Object, e As EventArgs) Handles Me.ForeColorChanged
+        _foreColorActive = Me.ForeColor
     End Sub
 End Class

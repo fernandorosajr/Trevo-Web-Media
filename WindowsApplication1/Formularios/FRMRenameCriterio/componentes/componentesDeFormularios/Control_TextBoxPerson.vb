@@ -3,10 +3,10 @@ Imports System.ComponentModel
 
 Public Class Control_TextBoxPerson
 
-    Public cor As Color = ColorTranslator.FromWin32(Color.DarkGray.ToArgb)
+    Public cor As Color = ColorTranslator.FromWin32(Color.Gray.ToArgb)
     Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
-    Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(63, 63, 66))
-
+    Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86))
+    ' 83; 83; 86
 
     Dim DefaultHeight As Integer = 21
 
@@ -127,9 +127,11 @@ Public Class Control_TextBoxPerson
 
             If value = "" Then
                 TXTBox.Text = _placeholder
+                TXTBox.ForeColor = _foreColorPlaceholder
 
             Else
                 TXTBox.Text = value
+                TXTBox.ForeColor = _foreColorActive
 
             End If
 
@@ -237,10 +239,26 @@ Public Class Control_TextBoxPerson
         Set(value As Color)
             _foreColorActive = value
             Me.ForeColor = value
-            TXTBox.ForeColor = value
+
+            AtualizarForeColor()
 
         End Set
     End Property
+
+
+    Private Property _foreColorPlaceholder As Color
+    Public Property ForeColorPlaceholder As Color
+        Get
+            Return _foreColorPlaceholder
+        End Get
+        Set(value As Color)
+            _foreColorPlaceholder = value
+
+            AtualizarForeColor()
+
+        End Set
+    End Property
+
     ' __________________________________________________________
     ' Propriedades de TXT
     '____________________________________________________________
@@ -487,6 +505,7 @@ Public Class Control_TextBoxPerson
         _bgColorLostFocus = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._bgColorLostFocus)   'Me.BackColor
 
         _foreColorActive = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._foreColorActive)
+        _foreColorPlaceholder = ColorTranslator.FromWin32(configs.TrevoSystemColorEnum._foreColorPlaceholder)
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
 
         Me.ForeColor = _foreColorActive
@@ -501,6 +520,16 @@ Public Class Control_TextBoxPerson
         Else
             TXTBox.PasswordChar = _passwordChar
             'TXTBox.UseSystemPasswordChar = UseSystemPasswordChar
+
+        End If
+    End Sub
+
+    Sub AtualizarForeColor()
+        If _txt = Nothing Or _txt = "" Then
+            TXTBox.ForeColor = _foreColorPlaceholder
+
+        Else
+            TXTBox.ForeColor = _foreColorActive
 
         End If
     End Sub
@@ -532,16 +561,40 @@ Public Class Control_TextBoxPerson
     Private Sub TXTBox_LostFocus(sender As Object, e As EventArgs) Handles TXTBox.LostFocus
         TXT = TXTBox.Text
         AplicarPassWordChar()
-        'If _txt = "" Or _txt = Nothing Then
-        '    '  TXTBox.PasswordChar = ""
-        '    TXTBox.UseSystemPasswordChar = False
-        'End If
+
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.BackColor = _bgColorLostFocus
+        obj.Parent.BackColor = obj.BackColor
+        obj.Parent.Parent.BackColor = _borderColorLostFocus
+
     End Sub
 
     Private Sub TXTBox_GotFocus(sender As Object, e As EventArgs) Handles TXTBox.GotFocus
         TXTBox.Text = _txt
         TXTBox.PasswordChar = PasswordChar
-        'TXTBox.UseSystemPasswordChar = UseSystemPasswordChar
+        TXTBox.ForeColor = _foreColorActive
+
+
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+        obj.Parent.Parent.BackColor = _borderColorGotFocus
+
+        Select Case obj.Name
+            Case "TXTBox"
+                obj.BackColor = _backColorCursorMouseLeave
+                obj.Parent.BackColor = obj.BackColor
+
+            Case Else
+                TXTBox.BackColor = _txtBoxBackColorLostFocus
+                TXTBox.Parent.BackColor = TXTBox.BackColor '_bgColorLostFocus
+
+                obj.BackColor = _txtBoxBackColorLostFocus
+                obj.Parent.BackColor = TXTBox.BackColor '_bgColorLostFocus
+
+        End Select
     End Sub
 
     Private Sub Control_TextBoxPerson_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
@@ -549,12 +602,93 @@ Public Class Control_TextBoxPerson
     End Sub
 
     Private Sub Control_TextBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TXTBox.Parent.BackColor = cor
-        '  TXTBox.Text
-        Me.TXT = ColorTranslator.ToWin32(cor)
+        'TXTBox.Parent.BackColor = ColorTranslator.FromWin32(textCor2) 'cor
+        ''  TXTBox.Text
+        'Me.TXT = ColorTranslator.ToWin32(cor) 'textCor2 
     End Sub
 
     Private Sub Control_TextBoxPerson_ForeColorChanged(sender As Object, e As EventArgs) Handles Me.ForeColorChanged
         _foreColorActive = Me.ForeColor
+    End Sub
+
+    Private Sub TXTBox_TextChanged(sender As Object, e As EventArgs) Handles TXTBox.TextChanged
+
+    End Sub
+
+    Private Sub TXTBox_MouseLeave(sender As Object, e As EventArgs) Handles TXTBox.MouseLeave, PanelEnvolveTXT.MouseLeave
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+
+        'Select Case obj.Name
+        '    Case "TXTBox"
+        '        If obj.Focused = True Then
+        '            obj.BackColor = _backColorCursorMouseLeave
+        '            ' obj.Parent.BackColor = _backColorCursorMouseLeave
+        '        Else
+        '            obj.BackColor = _txtBoxBackColorLostFocus
+        '            ' obj.Parent.BackColor = _txtBoxBackColorLostFocus
+        '            PanelBorder.BackColor = Color.Coral '  _borderColorLostFocus
+        '        End If
+        '        obj.Parent.BackColor = obj.BackColor
+
+
+        '    Case Else
+
+
+
+        'End Select
+
+        If TXTBox.Focused = True Then
+            TXTBox.BackColor = _backColorCursorMouseLeave
+
+        Else
+            TXTBox.BackColor = _txtBoxBackColorLostFocus
+
+            PanelBorder.BackColor = _borderColorLostFocus ' Color.Coral 
+        End If
+        TXTBox.Parent.BackColor = obj.BackColor
+    End Sub
+
+    Private Sub TXTBox_MouseMove(sender As Object, e As MouseEventArgs) Handles TXTBox.MouseMove, PanelEnvolveTXT.MouseMove
+
+        Dim obj As Object
+        obj = CType(sender, Object)
+
+
+        'Select Case obj.Name
+        '    Case "TXTBox"
+
+        '        If obj.Focused = True Then
+        '            PanelBorder.BackColor = _borderColorGotFocus
+        '            obj.BackColor = _backColorCursorMouseLeave
+
+        '        Else
+        '            '  PanelBorder.BackColor = _borderColorLostFocus
+        '            obj.BackColor = _txtBoxBackColorLostFocus
+
+        '        End If
+        '        obj.Parent.BackColor = obj.BackColor
+
+        '    Case Else
+        '        ' obj.Parent.BackColor = _borderColorGotFocus
+
+
+        'End Select
+
+        If TXTBox.Focused = True Then
+            PanelBorder.BackColor = _borderColorGotFocus
+            TXTBox.BackColor = _backColorCursorMouseLeave
+            TXTBox.Parent.BackColor = TXTBox.BackColor
+
+        Else
+            '  PanelBorder.BackColor = _borderColorLostFocus
+            TXTBox.BackColor = _txtBoxBackColorLostFocus
+            TXTBox.Parent.BackColor = TXTBox.BackColor
+
+        End If
+        ' obj.Parent.BackColor = obj.BackColor
+        PanelBorder.BackColor = _borderColorGotFocus
+
     End Sub
 End Class

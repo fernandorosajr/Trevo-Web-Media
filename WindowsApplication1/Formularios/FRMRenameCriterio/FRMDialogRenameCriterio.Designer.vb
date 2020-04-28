@@ -296,7 +296,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson1.TabIndex = 116
         Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(248, 21)
-        Me.Control_TextBoxPerson1.TXT = "11119017"
+        Me.Control_TextBoxPerson1.TXT = ""
         Me.Control_TextBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson1.WordWrap = False
@@ -333,7 +333,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson2.TabIndex = 116
         Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(184, 20)
-        Me.Control_TextBoxPerson2.TXT = "11119017"
+        Me.Control_TextBoxPerson2.TXT = ""
         Me.Control_TextBoxPerson2.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson2.WordWrap = True
@@ -355,11 +355,12 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson3.HideSelection = True
         Me.Control_TextBoxPerson3.LeftIndentation = 6
         Me.Control_TextBoxPerson3.Location = New System.Drawing.Point(0, 26)
+        Me.Control_TextBoxPerson3.MinimumSize = New System.Drawing.Size(248, 21)
         Me.Control_TextBoxPerson3.MultiLine = False
         Me.Control_TextBoxPerson3.Name = "Control_TextBoxPerson3"
         Me.Control_TextBoxPerson3.PaddingText = New System.Windows.Forms.Padding(2)
         Me.Control_TextBoxPerson3.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Control_TextBoxPerson3.PersonBorder = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Me.Control_TextBoxPerson3.PersonBorder = New System.Windows.Forms.Padding(1)
         Me.Control_TextBoxPerson3.PersonCSSMargin = New System.Windows.Forms.Padding(0, 0, 0, 0)
         Me.Control_TextBoxPerson3.Placeholder = Nothing
         Me.Control_TextBoxPerson3.Read_Only = False
@@ -369,7 +370,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson3.TabIndex = 118
         Me.Control_TextBoxPerson3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Control_TextBoxPerson3.ThisSize = New System.Drawing.Size(248, 21)
-        Me.Control_TextBoxPerson3.TXT = "11119017"
+        Me.Control_TextBoxPerson3.TXT = ""
         Me.Control_TextBoxPerson3.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson3.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson3.WordWrap = True

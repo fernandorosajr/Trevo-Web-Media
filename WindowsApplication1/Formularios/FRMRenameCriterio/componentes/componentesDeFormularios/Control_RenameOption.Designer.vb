@@ -28,6 +28,7 @@ Partial Class Control_RenameOption
         Me.TableLPContainer = New System.Windows.Forms.TableLayoutPanel()
         Me.PanelEnvolve_ComBPMaster = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.BTNCancelaRenomeDeOrigem = New System.Windows.Forms.Button()
@@ -35,16 +36,15 @@ Partial Class Control_RenameOption
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
         Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.TableLPContainer.SuspendLayout()
         Me.PanelEnvolve_ComBPMaster.SuspendLayout()
         Me.PanelEnvolve_ComBPSlave.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.PanelRightButtons.SuspendLayout()
         Me.TableLPButtons.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelElemento
@@ -105,6 +105,15 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPSlave.Name = "PanelEnvolve_ComBPSlave"
         Me.PanelEnvolve_ComBPSlave.Size = New System.Drawing.Size(154, 21)
         Me.PanelEnvolve_ComBPSlave.TabIndex = 5
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(339, 3)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(173, 21)
+        Me.Panel1.TabIndex = 6
         '
         'PanelRightButtons
         '
@@ -227,15 +236,6 @@ Partial Class Control_RenameOption
         Me.ComBPSlave.TextDisplay = "<Selecione>"
         Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(339, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(173, 21)
-        Me.Panel1.TabIndex = 6
-        '
         'Control_TextBoxPerson1
         '
         Me.Control_TextBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -243,7 +243,7 @@ Partial Class Control_RenameOption
         Me.Control_TextBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.Control_TextBoxPerson1.BorderColorError = System.Drawing.Color.Red
         Me.Control_TextBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_TextBoxPerson1.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson1.ChangeCursorFocus = True
         Me.Control_TextBoxPerson1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
         Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
         Me.Control_TextBoxPerson1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -251,7 +251,7 @@ Partial Class Control_RenameOption
         Me.Control_TextBoxPerson1.ForeColor = System.Drawing.Color.DarkGray
         Me.Control_TextBoxPerson1.ForeColorActive = System.Drawing.Color.DarkGray
         Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.Control_TextBoxPerson1.HideSelection = True
+        Me.Control_TextBoxPerson1.HideSelection = False
         Me.Control_TextBoxPerson1.LeftIndentation = 6
         Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(0, 0)
         Me.Control_TextBoxPerson1.MaximumSize = New System.Drawing.Size(0, 19)
@@ -261,7 +261,7 @@ Partial Class Control_RenameOption
         Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
         Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
         Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
         Me.Control_TextBoxPerson1.Placeholder = "Digite algo ..."
         Me.Control_TextBoxPerson1.Read_Only = False
         Me.Control_TextBoxPerson1.RightIndentation = 0
@@ -289,9 +289,9 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPMaster.PerformLayout()
         Me.PanelEnvolve_ComBPSlave.ResumeLayout(False)
         Me.PanelEnvolve_ComBPSlave.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.PanelRightButtons.ResumeLayout(False)
         Me.TableLPButtons.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

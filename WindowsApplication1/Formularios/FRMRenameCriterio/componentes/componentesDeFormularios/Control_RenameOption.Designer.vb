@@ -31,12 +31,12 @@ Partial Class Control_RenameOption
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
-        Me.BTNCancelaRenomeDeOrigem = New System.Windows.Forms.Button()
-        Me.BTNConfirmarRenomeDeOrigem = New System.Windows.Forms.Button()
+        Me.BTNAddRenomeDeOrigem = New System.Windows.Forms.Button()
+        Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
         Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
+        Me.TXTPerson = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.TableLPContainer.SuspendLayout()
@@ -108,7 +108,7 @@ Partial Class Control_RenameOption
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Control_TextBoxPerson1)
+        Me.Panel1.Controls.Add(Me.TXTPerson)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(339, 3)
         Me.Panel1.Name = "Panel1"
@@ -129,8 +129,8 @@ Partial Class Control_RenameOption
         Me.TableLPButtons.ColumnCount = 2
         Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
         Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.Controls.Add(Me.BTNCancelaRenomeDeOrigem, 1, 0)
-        Me.TableLPButtons.Controls.Add(Me.BTNConfirmarRenomeDeOrigem, 0, 0)
+        Me.TableLPButtons.Controls.Add(Me.BTNAddRenomeDeOrigem, 1, 0)
+        Me.TableLPButtons.Controls.Add(Me.BTNRemoveRenomeDeOrigem, 0, 0)
         Me.TableLPButtons.Location = New System.Drawing.Point(0, 15)
         Me.TableLPButtons.Name = "TableLPButtons"
         Me.TableLPButtons.RowCount = 1
@@ -138,33 +138,33 @@ Partial Class Control_RenameOption
         Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
         Me.TableLPButtons.TabIndex = 1
         '
-        'BTNCancelaRenomeDeOrigem
+        'BTNAddRenomeDeOrigem
         '
-        Me.BTNCancelaRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNCancelaRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNCancelaRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNCancelaRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNCancelaRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNCancelaRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNCancelaRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNCancelaRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
-        Me.BTNCancelaRenomeDeOrigem.Name = "BTNCancelaRenomeDeOrigem"
-        Me.BTNCancelaRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNCancelaRenomeDeOrigem.TabIndex = 11
-        Me.BTNCancelaRenomeDeOrigem.Tag = ""
+        Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNAddRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNAddRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNAddRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNAddRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
+        Me.BTNAddRenomeDeOrigem.Name = "BTNAddRenomeDeOrigem"
+        Me.BTNAddRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNAddRenomeDeOrigem.TabIndex = 11
+        Me.BTNAddRenomeDeOrigem.Tag = ""
         '
-        'BTNConfirmarRenomeDeOrigem
+        'BTNRemoveRenomeDeOrigem
         '
-        Me.BTNConfirmarRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNConfirmarRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNConfirmarRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNConfirmarRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNConfirmarRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNConfirmarRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNConfirmarRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNConfirmarRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
-        Me.BTNConfirmarRenomeDeOrigem.Name = "BTNConfirmarRenomeDeOrigem"
-        Me.BTNConfirmarRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNConfirmarRenomeDeOrigem.TabIndex = 10
-        Me.BTNConfirmarRenomeDeOrigem.Tag = ""
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNRemoveRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNRemoveRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNRemoveRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRemoveRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
+        Me.BTNRemoveRenomeDeOrigem.Name = "BTNRemoveRenomeDeOrigem"
+        Me.BTNRemoveRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNRemoveRenomeDeOrigem.TabIndex = 10
+        Me.BTNRemoveRenomeDeOrigem.Tag = ""
         '
         'PanelMagemBotton
         '
@@ -236,44 +236,46 @@ Partial Class Control_RenameOption
         Me.ComBPSlave.TextDisplay = "<Selecione>"
         Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
-        'Control_TextBoxPerson1
+        'TXTPerson
         '
-        Me.Control_TextBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Control_TextBoxPerson1.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Control_TextBoxPerson1.BorderColorError = System.Drawing.Color.Red
-        Me.Control_TextBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_TextBoxPerson1.ChangeCursorFocus = True
-        Me.Control_TextBoxPerson1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.Control_TextBoxPerson1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Control_TextBoxPerson1.ErrorDisplay = False
-        Me.Control_TextBoxPerson1.ForeColor = System.Drawing.Color.DarkGray
-        Me.Control_TextBoxPerson1.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.Control_TextBoxPerson1.HideSelection = False
-        Me.Control_TextBoxPerson1.LeftIndentation = 6
-        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(0, 0)
-        Me.Control_TextBoxPerson1.MaximumSize = New System.Drawing.Size(0, 19)
-        Me.Control_TextBoxPerson1.MinimumSize = New System.Drawing.Size(173, 21)
-        Me.Control_TextBoxPerson1.MultiLine = False
-        Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
-        Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
-        Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.Control_TextBoxPerson1.Placeholder = "Digite algo ..."
-        Me.Control_TextBoxPerson1.Read_Only = False
-        Me.Control_TextBoxPerson1.RightIndentation = 0
-        Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(173, 21)
-        Me.Control_TextBoxPerson1.TabIndex = 0
-        Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(173, 21)
-        Me.Control_TextBoxPerson1.TXT = Nothing
-        Me.Control_TextBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
-        Me.Control_TextBoxPerson1.WordWrap = True
+        Me.TXTPerson.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTPerson.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPerson.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.TXTPerson.BorderColorError = System.Drawing.Color.Red
+        Me.TXTPerson.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TXTPerson.ChangeCursorFocus = True
+        Me.TXTPerson.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.TXTPerson.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.TXTPerson.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTPerson.ErrorDisplay = False
+        Me.TXTPerson.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPerson.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPerson.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTPerson.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.TXTPerson.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.TXTPerson.HideSelection = False
+        Me.TXTPerson.LeftIndentation = 6
+        Me.TXTPerson.Location = New System.Drawing.Point(0, 0)
+        Me.TXTPerson.MaximumSize = New System.Drawing.Size(0, 19)
+        Me.TXTPerson.MinimumSize = New System.Drawing.Size(173, 21)
+        Me.TXTPerson.MultiLine = False
+        Me.TXTPerson.Name = "TXTPerson"
+        Me.TXTPerson.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.TXTPerson.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TXTPerson.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.TXTPerson.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.TXTPerson.Placeholder = "Digite algo ..."
+        Me.TXTPerson.Read_Only = False
+        Me.TXTPerson.RightIndentation = 0
+        Me.TXTPerson.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.TXTPerson.Size = New System.Drawing.Size(173, 21)
+        Me.TXTPerson.TabIndex = 0
+        Me.TXTPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TXTPerson.ThisSize = New System.Drawing.Size(173, 21)
+        Me.TXTPerson.TXT = Nothing
+        Me.TXTPerson.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPerson.UseSystemPasswordChar = False
+        Me.TXTPerson.WordWrap = True
         '
         'Control_RenameOption
         '
@@ -301,13 +303,13 @@ Partial Class Control_RenameOption
     Friend WithEvents TableLPContainer As TableLayoutPanel
     Friend WithEvents PanelRightButtons As Panel
     Friend WithEvents TableLPButtons As TableLayoutPanel
-    Friend WithEvents BTNCancelaRenomeDeOrigem As Button
-    Friend WithEvents BTNConfirmarRenomeDeOrigem As Button
+    Friend WithEvents BTNAddRenomeDeOrigem As Button
+    Friend WithEvents BTNRemoveRenomeDeOrigem As Button
     Friend WithEvents PanelMagemBotton As Panel
     Friend WithEvents PanelEnvolve_ComBPMaster As Panel
     Friend WithEvents ComBPMaster As Control_ComboBoxPerson
     Friend WithEvents PanelEnvolve_ComBPSlave As Panel
     Friend WithEvents ComBPSlave As Control_ComboBoxPerson
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
+    Friend WithEvents TXTPerson As Control_TextBoxPerson
 End Class

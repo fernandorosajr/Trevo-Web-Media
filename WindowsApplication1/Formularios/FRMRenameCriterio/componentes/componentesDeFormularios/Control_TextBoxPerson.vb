@@ -111,6 +111,14 @@ Public Class Control_TextBoxPerson
         Set(value As Boolean)
             _errorDisplay = value
 
+            If _errorDisplay = True Then
+                PanelBorder.BackColor = _borderColorError
+
+            Else
+                PanelBorder.BackColor = _borderColorLostFocus
+
+            End If
+
         End Set
     End Property
 
@@ -168,6 +176,14 @@ Public Class Control_TextBoxPerson
         End Get
         Set(value As Color)
             _borderColorError = value
+
+            If _errorDisplay = True Then
+                PanelBorder.BackColor = _borderColorError
+
+            Else
+                PanelBorder.BackColor = _borderColorLostFocus
+
+            End If
 
         End Set
     End Property
@@ -567,7 +583,17 @@ Public Class Control_TextBoxPerson
 
         obj.BackColor = _bgColorLostFocus
         obj.Parent.BackColor = obj.BackColor
-        obj.Parent.Parent.BackColor = _borderColorLostFocus
+
+        If _errorDisplay = True Then
+            PanelBorder.BackColor = _borderColorError
+        Else
+            PanelBorder.BackColor = _borderColorLostFocus
+        End If
+
+        If _changeCursorFocus = True Then
+            TXTBox.Cursor = Me.Cursor
+            PanelEnvolveTXT.Cursor = TXTBox.Cursor
+        End If
 
     End Sub
 
@@ -580,7 +606,14 @@ Public Class Control_TextBoxPerson
         Dim obj As Object
         obj = CType(sender, Object)
 
-        obj.Parent.Parent.BackColor = _borderColorGotFocus
+        '        obj.Parent.Parent.BackColor = _borderColorGotFocus
+
+        If _errorDisplay = True Then
+            PanelBorder.BackColor = _borderColorError
+        Else
+            PanelBorder.BackColor = _borderColorGotFocus
+        End If
+
 
         Select Case obj.Name
             Case "TXTBox"
@@ -595,6 +628,10 @@ Public Class Control_TextBoxPerson
                 obj.Parent.BackColor = TXTBox.BackColor '_bgColorLostFocus
 
         End Select
+
+        TXTBox.Cursor = _cursorTxt
+        PanelEnvolveTXT.Cursor = TXTBox.Cursor
+
     End Sub
 
     Private Sub Control_TextBoxPerson_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
@@ -619,76 +656,74 @@ Public Class Control_TextBoxPerson
         Dim obj As Object
         obj = CType(sender, Object)
 
-
-        'Select Case obj.Name
-        '    Case "TXTBox"
-        '        If obj.Focused = True Then
-        '            obj.BackColor = _backColorCursorMouseLeave
-        '            ' obj.Parent.BackColor = _backColorCursorMouseLeave
-        '        Else
-        '            obj.BackColor = _txtBoxBackColorLostFocus
-        '            ' obj.Parent.BackColor = _txtBoxBackColorLostFocus
-        '            PanelBorder.BackColor = Color.Coral '  _borderColorLostFocus
-        '        End If
-        '        obj.Parent.BackColor = obj.BackColor
-
-
-        '    Case Else
-
-
-
-        'End Select
-
         If TXTBox.Focused = True Then
             TXTBox.BackColor = _backColorCursorMouseLeave
+
+            ' AtualizarCursor()
+
+            'If _changeCursorFocus = True Then
+            TXTBox.Cursor = _cursorTxt
+            PanelEnvolveTXT.Cursor = TXTBox.Cursor
 
         Else
             TXTBox.BackColor = _txtBoxBackColorLostFocus
 
-            PanelBorder.BackColor = _borderColorLostFocus ' Color.Coral 
+            If _errorDisplay = True Then
+                PanelBorder.BackColor = _borderColorError
+            Else
+                PanelBorder.BackColor = _borderColorLostFocus
+            End If
+
+            If _changeCursorFocus = True Then
+                TXTBox.Cursor = Me.Cursor
+                PanelEnvolveTXT.Cursor = TXTBox.Cursor
+            Else
+                TXTBox.Cursor = _cursorTxt
+                PanelEnvolveTXT.Cursor = TXTBox.Cursor
+            End If
+
         End If
-        TXTBox.Parent.BackColor = obj.BackColor
+            TXTBox.Parent.BackColor = obj.BackColor
+
     End Sub
 
     Private Sub TXTBox_MouseMove(sender As Object, e As MouseEventArgs) Handles TXTBox.MouseMove, PanelEnvolveTXT.MouseMove
-
-        Dim obj As Object
-        obj = CType(sender, Object)
-
-
-        'Select Case obj.Name
-        '    Case "TXTBox"
-
-        '        If obj.Focused = True Then
-        '            PanelBorder.BackColor = _borderColorGotFocus
-        '            obj.BackColor = _backColorCursorMouseLeave
-
-        '        Else
-        '            '  PanelBorder.BackColor = _borderColorLostFocus
-        '            obj.BackColor = _txtBoxBackColorLostFocus
-
-        '        End If
-        '        obj.Parent.BackColor = obj.BackColor
-
-        '    Case Else
-        '        ' obj.Parent.BackColor = _borderColorGotFocus
-
-
-        'End Select
 
         If TXTBox.Focused = True Then
             PanelBorder.BackColor = _borderColorGotFocus
             TXTBox.BackColor = _backColorCursorMouseLeave
             TXTBox.Parent.BackColor = TXTBox.BackColor
 
+            TXTBox.Cursor = _cursorTxt
+            PanelEnvolveTXT.Cursor = TXTBox.Cursor
+
         Else
             '  PanelBorder.BackColor = _borderColorLostFocus
             TXTBox.BackColor = _txtBoxBackColorLostFocus
             TXTBox.Parent.BackColor = TXTBox.BackColor
 
+            If _changeCursorFocus = True Then
+                TXTBox.Cursor = Me.Cursor
+                PanelEnvolveTXT.Cursor = TXTBox.Cursor
+            Else
+                TXTBox.Cursor = _cursorTxt
+                PanelEnvolveTXT.Cursor = TXTBox.Cursor
+            End If
+
         End If
         ' obj.Parent.BackColor = obj.BackColor
-        PanelBorder.BackColor = _borderColorGotFocus
+
+        If _errorDisplay = True Then
+            PanelBorder.BackColor = _borderColorError
+        Else
+            PanelBorder.BackColor = _borderColorGotFocus
+        End If
 
     End Sub
+
+    Private Sub PanelEnvolveTXT_Click(sender As Object, e As EventArgs) Handles PanelEnvolveTXT.Click
+        TXTBox.Focus()
+
+    End Sub
+
 End Class

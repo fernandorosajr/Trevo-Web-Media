@@ -164,7 +164,6 @@ Public Class Control_TextBoxPerson
         End Set
     End Property
 
-
     ' Propriedades de configuração de cores
     '________________________________________________________
 
@@ -278,6 +277,19 @@ Public Class Control_TextBoxPerson
     ' __________________________________________________________
     ' Propriedades de TXT
     '____________________________________________________________
+
+    Private _font As Font
+    Public Property Fonte As Font
+        Get
+            Return _font
+
+        End Get
+        Set(value As Font)
+            _font = value
+
+        End Set
+    End Property
+
     Private _characterCasing As CharacterCasing
     <Category("Comportamento")>
     <Description("Indica se todos os caracteres devem ser mantido, ou convertidos em maiúsculos ou minúsculos.")>
@@ -526,6 +538,9 @@ Public Class Control_TextBoxPerson
 
         Me.ForeColor = _foreColorActive
 
+        Me.Font = TXTBox.Font
+        _font = Me.Font
+
     End Sub
 
     Sub AplicarPassWordChar()
@@ -726,4 +741,8 @@ Public Class Control_TextBoxPerson
 
     End Sub
 
+    Private Sub Control_TextBoxPerson_FontChanged(sender As Object, e As EventArgs) Handles Me.FontChanged
+        TXTBox.Font = Me.Font
+
+    End Sub
 End Class

@@ -31,7 +31,6 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe = New System.Windows.Forms.Panel()
         Me.PanelBorder_Visualizar = New System.Windows.Forms.Panel()
         Me.PanelVisualizar = New System.Windows.Forms.Panel()
-        Me.Control_TextBoxPerson2 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.LBL_ValueOrigemDoExemplo = New System.Windows.Forms.Label()
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
@@ -39,9 +38,10 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Control_TextBoxPerson3 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
-        Me.LBLTitle03 = New System.Windows.Forms.Label()
+        Me.Control_TextBoxPerson2 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -168,44 +168,6 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelVisualizar.Size = New System.Drawing.Size(596, 86)
         Me.PanelVisualizar.TabIndex = 0
         '
-        'Control_TextBoxPerson2
-        '
-        Me.Control_TextBoxPerson2.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Control_TextBoxPerson2.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson2.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Control_TextBoxPerson2.BorderColorError = System.Drawing.Color.Red
-        Me.Control_TextBoxPerson2.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_TextBoxPerson2.ChangeCursorFocus = False
-        Me.Control_TextBoxPerson2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.Control_TextBoxPerson2.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.Control_TextBoxPerson2.ErrorDisplay = False
-        Me.Control_TextBoxPerson2.ForeColor = System.Drawing.Color.MediumAquamarine
-        Me.Control_TextBoxPerson2.ForeColorActive = System.Drawing.Color.MediumAquamarine
-        Me.Control_TextBoxPerson2.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.Control_TextBoxPerson2.HideSelection = True
-        Me.Control_TextBoxPerson2.LeftIndentation = 6
-        Me.Control_TextBoxPerson2.Location = New System.Drawing.Point(394, 52)
-        Me.Control_TextBoxPerson2.MaximumSize = New System.Drawing.Size(0, 19)
-        Me.Control_TextBoxPerson2.MinimumSize = New System.Drawing.Size(184, 20)
-        Me.Control_TextBoxPerson2.MultiLine = False
-        Me.Control_TextBoxPerson2.Name = "Control_TextBoxPerson2"
-        Me.Control_TextBoxPerson2.PaddingText = New System.Windows.Forms.Padding(2)
-        Me.Control_TextBoxPerson2.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Control_TextBoxPerson2.PersonBorder = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.Control_TextBoxPerson2.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.Control_TextBoxPerson2.Placeholder = "Digite aqui ..."
-        Me.Control_TextBoxPerson2.Read_Only = False
-        Me.Control_TextBoxPerson2.RightIndentation = 0
-        Me.Control_TextBoxPerson2.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.Control_TextBoxPerson2.Size = New System.Drawing.Size(184, 20)
-        Me.Control_TextBoxPerson2.TabIndex = 116
-        Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(184, 20)
-        Me.Control_TextBoxPerson2.TXT = ""
-        Me.Control_TextBoxPerson2.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
-        Me.Control_TextBoxPerson2.WordWrap = True
-        '
         'LBL_ValueOrigemDoExemplo
         '
         Me.LBL_ValueOrigemDoExemplo.AutoSize = True
@@ -288,6 +250,19 @@ Partial Class FRMDialogRenameCriterio
         Me.Panel1.Size = New System.Drawing.Size(248, 47)
         Me.Panel1.TabIndex = 117
         '
+        'LBLTitle03
+        '
+        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLTitle03.AutoEllipsis = True
+        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 309)
+        Me.LBLTitle03.Name = "LBLTitle03"
+        Me.LBLTitle03.Size = New System.Drawing.Size(596, 30)
+        Me.LBLTitle03.TabIndex = 111
+        Me.LBLTitle03.Text = "Visualizar exemplo"
+        '
         'Control_TextBoxPerson3
         '
         Me.Control_TextBoxPerson3.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -300,6 +275,8 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson3.CursorTxt = System.Windows.Forms.Cursors.IBeam
         Me.Control_TextBoxPerson3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Control_TextBoxPerson3.ErrorDisplay = False
+        Me.Control_TextBoxPerson3.Font = New System.Drawing.Font("Lucida Console", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson3.Fonte = Nothing
         Me.Control_TextBoxPerson3.ForeColor = System.Drawing.Color.DarkGray
         Me.Control_TextBoxPerson3.ForeColorActive = System.Drawing.Color.DarkGray
         Me.Control_TextBoxPerson3.ForeColorPlaceholder = System.Drawing.Color.Gray
@@ -310,7 +287,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson3.MinimumSize = New System.Drawing.Size(248, 21)
         Me.Control_TextBoxPerson3.MultiLine = False
         Me.Control_TextBoxPerson3.Name = "Control_TextBoxPerson3"
-        Me.Control_TextBoxPerson3.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson3.PaddingText = New System.Windows.Forms.Padding(2, 5, 2, 2)
         Me.Control_TextBoxPerson3.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
         Me.Control_TextBoxPerson3.PersonBorder = New System.Windows.Forms.Padding(1)
         Me.Control_TextBoxPerson3.PersonCSSMargin = New System.Windows.Forms.Padding(0)
@@ -322,7 +299,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson3.TabIndex = 118
         Me.Control_TextBoxPerson3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.Control_TextBoxPerson3.ThisSize = New System.Drawing.Size(248, 21)
-        Me.Control_TextBoxPerson3.TXT = ""
+        Me.Control_TextBoxPerson3.TXT = "Alô, Olá!"
         Me.Control_TextBoxPerson3.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson3.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson3.WordWrap = True
@@ -339,6 +316,8 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
         Me.Control_TextBoxPerson1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Control_TextBoxPerson1.ErrorDisplay = False
+        Me.Control_TextBoxPerson1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson1.Fonte = Nothing
         Me.Control_TextBoxPerson1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Control_TextBoxPerson1.ForeColorActive = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
@@ -366,18 +345,45 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson1.WordWrap = False
         '
-        'LBLTitle03
+        'Control_TextBoxPerson2
         '
-        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLTitle03.AutoEllipsis = True
-        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 309)
-        Me.LBLTitle03.Name = "LBLTitle03"
-        Me.LBLTitle03.Size = New System.Drawing.Size(596, 30)
-        Me.LBLTitle03.TabIndex = 111
-        Me.LBLTitle03.Text = "Visualizar exemplo"
+        Me.Control_TextBoxPerson2.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Control_TextBoxPerson2.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson2.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Control_TextBoxPerson2.BorderColorError = System.Drawing.Color.Red
+        Me.Control_TextBoxPerson2.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Control_TextBoxPerson2.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.Control_TextBoxPerson2.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.Control_TextBoxPerson2.ErrorDisplay = False
+        Me.Control_TextBoxPerson2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson2.Fonte = Nothing
+        Me.Control_TextBoxPerson2.ForeColor = System.Drawing.Color.MediumAquamarine
+        Me.Control_TextBoxPerson2.ForeColorActive = System.Drawing.Color.MediumAquamarine
+        Me.Control_TextBoxPerson2.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.Control_TextBoxPerson2.HideSelection = True
+        Me.Control_TextBoxPerson2.LeftIndentation = 6
+        Me.Control_TextBoxPerson2.Location = New System.Drawing.Point(394, 52)
+        Me.Control_TextBoxPerson2.MaximumSize = New System.Drawing.Size(0, 19)
+        Me.Control_TextBoxPerson2.MinimumSize = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.MultiLine = False
+        Me.Control_TextBoxPerson2.Name = "Control_TextBoxPerson2"
+        Me.Control_TextBoxPerson2.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson2.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson2.PersonBorder = New System.Windows.Forms.Padding(0, 0, 0, 1)
+        Me.Control_TextBoxPerson2.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson2.Placeholder = "Digite aqui ..."
+        Me.Control_TextBoxPerson2.Read_Only = False
+        Me.Control_TextBoxPerson2.RightIndentation = 0
+        Me.Control_TextBoxPerson2.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson2.Size = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.TabIndex = 116
+        Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(184, 20)
+        Me.Control_TextBoxPerson2.TXT = ""
+        Me.Control_TextBoxPerson2.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson2.WordWrap = True
         '
         'FRMDialogRenameCriterio
         '

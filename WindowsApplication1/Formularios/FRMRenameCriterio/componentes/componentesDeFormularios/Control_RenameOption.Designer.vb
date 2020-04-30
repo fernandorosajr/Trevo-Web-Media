@@ -27,16 +27,16 @@ Partial Class Control_RenameOption
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.TableLPContainer = New System.Windows.Forms.TableLayoutPanel()
         Me.PanelEnvolve_ComBPMaster = New System.Windows.Forms.Panel()
+        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TXTPerson = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.BTNAddRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
-        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.TXTPerson = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.TableLPContainer.SuspendLayout()
@@ -96,84 +96,6 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPMaster.Name = "PanelEnvolve_ComBPMaster"
         Me.PanelEnvolve_ComBPMaster.Size = New System.Drawing.Size(154, 21)
         Me.PanelEnvolve_ComBPMaster.TabIndex = 4
-        '
-        'PanelEnvolve_ComBPSlave
-        '
-        Me.PanelEnvolve_ComBPSlave.Controls.Add(Me.ComBPSlave)
-        Me.PanelEnvolve_ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_ComBPSlave.Location = New System.Drawing.Point(171, 3)
-        Me.PanelEnvolve_ComBPSlave.Name = "PanelEnvolve_ComBPSlave"
-        Me.PanelEnvolve_ComBPSlave.Size = New System.Drawing.Size(154, 21)
-        Me.PanelEnvolve_ComBPSlave.TabIndex = 5
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.TXTPerson)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel1.Location = New System.Drawing.Point(339, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(173, 21)
-        Me.Panel1.TabIndex = 6
-        '
-        'PanelRightButtons
-        '
-        Me.PanelRightButtons.Controls.Add(Me.TableLPButtons)
-        Me.PanelRightButtons.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelRightButtons.Location = New System.Drawing.Point(541, 0)
-        Me.PanelRightButtons.Name = "PanelRightButtons"
-        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 53)
-        Me.PanelRightButtons.TabIndex = 3
-        '
-        'TableLPButtons
-        '
-        Me.TableLPButtons.ColumnCount = 2
-        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.Controls.Add(Me.BTNAddRenomeDeOrigem, 1, 0)
-        Me.TableLPButtons.Controls.Add(Me.BTNRemoveRenomeDeOrigem, 0, 0)
-        Me.TableLPButtons.Location = New System.Drawing.Point(0, 15)
-        Me.TableLPButtons.Name = "TableLPButtons"
-        Me.TableLPButtons.RowCount = 1
-        Me.TableLPButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
-        Me.TableLPButtons.TabIndex = 1
-        '
-        'BTNAddRenomeDeOrigem
-        '
-        Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNAddRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNAddRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNAddRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNAddRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
-        Me.BTNAddRenomeDeOrigem.Name = "BTNAddRenomeDeOrigem"
-        Me.BTNAddRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNAddRenomeDeOrigem.TabIndex = 11
-        Me.BTNAddRenomeDeOrigem.Tag = ""
-        '
-        'BTNRemoveRenomeDeOrigem
-        '
-        Me.BTNRemoveRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNRemoveRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNRemoveRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNRemoveRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNRemoveRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNRemoveRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
-        Me.BTNRemoveRenomeDeOrigem.Name = "BTNRemoveRenomeDeOrigem"
-        Me.BTNRemoveRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNRemoveRenomeDeOrigem.TabIndex = 10
-        Me.BTNRemoveRenomeDeOrigem.Tag = ""
-        '
-        'PanelMagemBotton
-        '
-        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
-        Me.PanelMagemBotton.Name = "PanelMagemBotton"
-        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
-        Me.PanelMagemBotton.TabIndex = 0
         '
         'ComBPMaster
         '
@@ -236,6 +158,24 @@ Partial Class Control_RenameOption
         Me.ComBPSlave.TextDisplay = "<Selecione>"
         Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
+        'PanelEnvolve_ComBPSlave
+        '
+        Me.PanelEnvolve_ComBPSlave.Controls.Add(Me.ComBPSlave)
+        Me.PanelEnvolve_ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_ComBPSlave.Location = New System.Drawing.Point(171, 3)
+        Me.PanelEnvolve_ComBPSlave.Name = "PanelEnvolve_ComBPSlave"
+        Me.PanelEnvolve_ComBPSlave.Size = New System.Drawing.Size(154, 21)
+        Me.PanelEnvolve_ComBPSlave.TabIndex = 5
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.TXTPerson)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(339, 3)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(173, 21)
+        Me.Panel1.TabIndex = 6
+        '
         'TXTPerson
         '
         Me.TXTPerson.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -276,6 +216,66 @@ Partial Class Control_RenameOption
         Me.TXTPerson.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TXTPerson.UseSystemPasswordChar = False
         Me.TXTPerson.WordWrap = True
+        '
+        'PanelRightButtons
+        '
+        Me.PanelRightButtons.Controls.Add(Me.TableLPButtons)
+        Me.PanelRightButtons.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelRightButtons.Location = New System.Drawing.Point(541, 0)
+        Me.PanelRightButtons.Name = "PanelRightButtons"
+        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 53)
+        Me.PanelRightButtons.TabIndex = 3
+        '
+        'TableLPButtons
+        '
+        Me.TableLPButtons.ColumnCount = 2
+        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.Controls.Add(Me.BTNAddRenomeDeOrigem, 1, 0)
+        Me.TableLPButtons.Controls.Add(Me.BTNRemoveRenomeDeOrigem, 0, 0)
+        Me.TableLPButtons.Location = New System.Drawing.Point(0, 16)
+        Me.TableLPButtons.Name = "TableLPButtons"
+        Me.TableLPButtons.RowCount = 1
+        Me.TableLPButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
+        Me.TableLPButtons.TabIndex = 1
+        '
+        'BTNAddRenomeDeOrigem
+        '
+        Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNAddRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNAddRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNAddRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNAddRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
+        Me.BTNAddRenomeDeOrigem.Name = "BTNAddRenomeDeOrigem"
+        Me.BTNAddRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNAddRenomeDeOrigem.TabIndex = 11
+        Me.BTNAddRenomeDeOrigem.Tag = ""
+        '
+        'BTNRemoveRenomeDeOrigem
+        '
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNRemoveRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNRemoveRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNRemoveRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRemoveRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
+        Me.BTNRemoveRenomeDeOrigem.Name = "BTNRemoveRenomeDeOrigem"
+        Me.BTNRemoveRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNRemoveRenomeDeOrigem.TabIndex = 10
+        Me.BTNRemoveRenomeDeOrigem.Tag = ""
+        '
+        'PanelMagemBotton
+        '
+        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
+        Me.PanelMagemBotton.Name = "PanelMagemBotton"
+        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
+        Me.PanelMagemBotton.TabIndex = 0
         '
         'Control_RenameOption
         '

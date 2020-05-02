@@ -38,7 +38,6 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -52,7 +51,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(503, 429)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(502, 450)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -95,7 +94,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLExplicacao.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLExplicacao.Location = New System.Drawing.Point(31, 50)
         Me.LBLExplicacao.Name = "LBLExplicacao"
-        Me.LBLExplicacao.Size = New System.Drawing.Size(613, 24)
+        Me.LBLExplicacao.Size = New System.Drawing.Size(612, 24)
         Me.LBLExplicacao.TabIndex = 8
         Me.LBLExplicacao.Text = "Explicação...."
         '
@@ -108,7 +107,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle01.ForeColor = System.Drawing.Color.LightGray
         Me.LBLTitle01.Location = New System.Drawing.Point(27, 22)
         Me.LBLTitle01.Name = "LBLTitle01"
-        Me.LBLTitle01.Size = New System.Drawing.Size(617, 28)
+        Me.LBLTitle01.Size = New System.Drawing.Size(616, 28)
         Me.LBLTitle01.TabIndex = 7
         Me.LBLTitle01.Text = "Defina os critérios de renome dos arquivos em lote"
         '
@@ -121,7 +120,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitle02.Location = New System.Drawing.Point(31, 83)
         Me.LBLTitle02.Name = "LBLTitle02"
-        Me.LBLTitle02.Size = New System.Drawing.Size(613, 29)
+        Me.LBLTitle02.Size = New System.Drawing.Size(612, 29)
         Me.LBLTitle02.TabIndex = 110
         Me.LBLTitle02.Text = "Lista dos critérios"
         '
@@ -133,7 +132,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelRecebe.Location = New System.Drawing.Point(31, 103)
         Me.PanelRecebe.Name = "PanelRecebe"
-        Me.PanelRecebe.Size = New System.Drawing.Size(615, 190)
+        Me.PanelRecebe.Size = New System.Drawing.Size(614, 218)
         Me.PanelRecebe.TabIndex = 111
         '
         'PanelBorder_Visualizar
@@ -142,10 +141,10 @@ Partial Class FRMDialogRenameCriterio
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelBorder_Visualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelBorder_Visualizar.Controls.Add(Me.PanelVisualizar)
-        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 329)
+        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 350)
         Me.PanelBorder_Visualizar.Name = "PanelBorder_Visualizar"
         Me.PanelBorder_Visualizar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(615, 88)
+        Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(614, 88)
         Me.PanelBorder_Visualizar.TabIndex = 113
         '
         'PanelVisualizar
@@ -160,7 +159,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelVisualizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelVisualizar.Location = New System.Drawing.Point(1, 1)
         Me.PanelVisualizar.Name = "PanelVisualizar"
-        Me.PanelVisualizar.Size = New System.Drawing.Size(613, 86)
+        Me.PanelVisualizar.Size = New System.Drawing.Size(612, 86)
         Me.PanelVisualizar.TabIndex = 0
         '
         'LBL_ValueOrigemDoExemplo
@@ -201,9 +200,9 @@ Partial Class FRMDialogRenameCriterio
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLValue_NovoNome.AutoEllipsis = True
         Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(128, 57)
+        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(122, 57)
         Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
-        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(467, 13)
+        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(472, 13)
         Me.LBLValue_NovoNome.TabIndex = 7
         Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
         '
@@ -216,7 +215,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
         Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(125, 36)
         Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
-        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(470, 13)
+        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(469, 13)
         Me.LNKLNomeDoExemplo.TabIndex = 9
         Me.LNKLNomeDoExemplo.TabStop = True
         Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
@@ -243,21 +242,11 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle03.AutoEllipsis = True
         Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 309)
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 330)
         Me.LBLTitle03.Name = "LBLTitle03"
-        Me.LBLTitle03.Size = New System.Drawing.Size(613, 30)
+        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
         Me.LBLTitle03.TabIndex = 111
         Me.LBLTitle03.Text = "Visualizar exemplo"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Boa", "Comida", "Lida", "Trabalho"})
-        Me.ComboBox1.Location = New System.Drawing.Point(159, 54)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(159, 21)
-        Me.ComboBox1.TabIndex = 114
         '
         'FRMDialogRenameCriterio
         '
@@ -266,8 +255,7 @@ Partial Class FRMDialogRenameCriterio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(679, 482)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.ClientSize = New System.Drawing.Size(678, 503)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
@@ -306,5 +294,4 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LBLValue_NovoNome As Label
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
-    Friend WithEvents ComboBox1 As ComboBox
 End Class

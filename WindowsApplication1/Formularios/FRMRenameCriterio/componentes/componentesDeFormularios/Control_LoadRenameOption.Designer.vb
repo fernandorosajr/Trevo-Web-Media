@@ -43,7 +43,7 @@ Partial Class Control_LoadRenameOption
         'Panel_LoadRenameOption
         '
         Me.Panel_LoadRenameOption.AutoScroll = True
-        Me.Panel_LoadRenameOption.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
+        Me.Panel_LoadRenameOption.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel_LoadRenameOption.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_LoadRenameOption.Location = New System.Drawing.Point(0, 0)
         Me.Panel_LoadRenameOption.Name = "Panel_LoadRenameOption"

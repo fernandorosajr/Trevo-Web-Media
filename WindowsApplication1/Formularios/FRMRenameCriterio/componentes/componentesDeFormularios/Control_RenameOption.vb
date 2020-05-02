@@ -37,7 +37,6 @@ Public Class Control_RenameOption
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
         _id = 0
 
-
     End Sub
 
     'Public Sub Finalize()
@@ -59,11 +58,18 @@ Public Class Control_RenameOption
         ' Me.Parent.Visible = False
 
         For Each item As Control_RenameOption In Me.Parent.Controls
+
+            item.TabIndex = item.ID
+            ' item.Width = Me.Parent.Width
+
             listControl(item.ID) = item
+
         Next
 
         Me.Parent.Controls.AddRange(listControl.Reverse.ToArray)
-        Me.Parent.Refresh()
+
+        'Me.Parent.Visible = True
+        ' Me.Parent.Refresh()
 
         'For x As Integer = 0 To Me.Parent.Controls.Count - 1
         '    For Each item As Control_RenameOption In Me.Parent.Controls
@@ -75,7 +81,6 @@ Public Class Control_RenameOption
         '    Next
         'Next
 
-        '   Me.Parent.Visible = True
 
 
     End Sub
@@ -115,14 +120,16 @@ Public Class Control_RenameOption
 
         IndexarRenameOption(ID)
 
+
         renameOption.ID = ID + 1  'Me.Parent.Controls.Count - 1  '
 
-        renameOption.Visible = True
+        renameOption.Width = Me.Parent.Width
 
         renameOption.TXTPerson.TXT = "Saluton" + renameOption.ID.ToString
 
-        OrdenarRenameOption()
+        renameOption.Visible = True
 
+        OrdenarRenameOption()
         'Dim ord As Byte
         'Dim b As New MsgBoxStyle
 

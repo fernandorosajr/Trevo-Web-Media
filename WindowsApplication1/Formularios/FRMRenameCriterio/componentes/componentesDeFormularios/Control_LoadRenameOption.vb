@@ -28,6 +28,7 @@
         Me.Panel_LoadRenameOption.Controls.Add(CtlRenameOptPrima)
         CtlRenameOptPrima.Dock = DockStyle.Top
         CtlRenameOptPrima.Visible = True
+        CtlRenameOptPrima.TabIndex = 0
 
         If CtlRenameOptPrima IsNot Nothing Then
             _listControl.Add(CtlRenameOptPrima)

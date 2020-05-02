@@ -809,6 +809,7 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\minus_inativo_50.png" />
     <None Include="Resources\minus.png" />
     <None Include="Resources\plus.png" />
     <None Include="Resources\menuDefault_min_17x17.png" />

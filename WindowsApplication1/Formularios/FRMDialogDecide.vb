@@ -50,9 +50,8 @@ Public Class FRMDialogDecide
             Case True
                 btn.Text = btn.Tag
                 Me.Width = 755
-                Me.PanelMenuLateral.Dock = DockStyle.Fill
 
-                Me.PanelConteudo.Dock = DockStyle.Right
+                Me.PanelMenuLateral.Width = 173
 
             Case Else
                 btn.Text = ""
@@ -60,7 +59,7 @@ Public Class FRMDialogDecide
                 Me.PanelMenuLateral.Width = 43
                 Me.PanelMenuLateral.Dock = DockStyle.Left
 
-                ' Me.PanelConteudo.Dock = DockStyle.Fill
+
         End Select
 
     End Sub

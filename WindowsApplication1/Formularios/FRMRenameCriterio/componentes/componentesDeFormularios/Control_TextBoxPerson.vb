@@ -411,16 +411,16 @@ Public Class Control_TextBoxPerson
             Select Case value
                 Case True
                     PanelTXT.Dock = DockStyle.Fill
-                    Me.MaximumSize = New Size(0, 0)
-                    Me.MinimumSize = New Size(5, 5)
+                  '  Me.MaximumSize = New Size(0, 0)
+                  '  Me.MinimumSize = New Size(5, 5)
                    ' Me.Size = New Size(_thisSize.Width, 21)
 
 
                 Case False
                     PanelTXT.Dock = DockStyle.Fill
-                    Me.MaximumSize = New Size(0, _minVerticalSize)
-                    Me.MinimumSize = New Size(5, _minVerticalSize)
-
+                    'Me.MaximumSize = New Size(0, _minVerticalSize)
+                    'Me.MinimumSize = New Size(5, _minVerticalSize)
+                    Me.Height = _minVerticalSize
                     ' Me.Size = New Size(Me.Size.Width, 21)
 
             End Select
@@ -581,10 +581,10 @@ Public Class Control_TextBoxPerson
         _minVerticalSize = 19 + (Me.Padding.Top + Me.Padding.Bottom) + (_personBorder.Top + _personBorder.Bottom) + (_paddingText.Top + _paddingText.Bottom)
 
         If _multiLine = True Then
-            Me.MinimumSize = New Size(5, 5)
+            ' Me.MinimumSize = New Size(5, 5)
         Else
-            Me.MinimumSize = New Size(Me.Width, _minVerticalSize)
-
+            'Me.MinimumSize = New Size(5, _minVerticalSize)
+            Me.Height = _minVerticalSize
         End If
 
     End Sub
@@ -647,10 +647,6 @@ Public Class Control_TextBoxPerson
         TXTBox.Cursor = _cursorTxt
         PanelEnvolveTXT.Cursor = TXTBox.Cursor
 
-    End Sub
-
-    Private Sub Control_TextBoxPerson_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
-        _thisSize = New Size(Me.Width, Me.Height)
     End Sub
 
     Private Sub Control_TextBoxPerson_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -745,4 +741,14 @@ Public Class Control_TextBoxPerson
         TXTBox.Font = Me.Font
 
     End Sub
+
+
+    Private Sub Control_TextBoxPerson_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
+        If _multiLine = False Then
+            Me.Height = _minVerticalSize
+        End If
+
+        _thisSize = New Size(Me.Width, Me.Height)
+    End Sub
+
 End Class

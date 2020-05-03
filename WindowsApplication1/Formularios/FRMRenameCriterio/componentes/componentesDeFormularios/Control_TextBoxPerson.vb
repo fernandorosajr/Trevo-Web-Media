@@ -660,6 +660,8 @@ Public Class Control_TextBoxPerson
     End Sub
 
     Private Sub TXTBox_TextChanged(sender As Object, e As EventArgs) Handles TXTBox.TextChanged
+        Dim txt As TextBox
+        txt = CType(sender, TextBox)
 
     End Sub
 
@@ -751,4 +753,7 @@ Public Class Control_TextBoxPerson
         _thisSize = New Size(Me.Width, Me.Height)
     End Sub
 
+    Private Sub Control_TextBoxPerson_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
+        TXTBox.Focus()
+    End Sub
 End Class

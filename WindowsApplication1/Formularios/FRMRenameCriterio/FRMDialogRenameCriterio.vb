@@ -69,4 +69,16 @@ Public Class FRMDialogRenameCriterio
 
     End Sub
 
+    Private Sub LNKLNomeDoExemplo_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LNKLNomeDoExemplo.LinkClicked
+
+
+
+        TXTCNovoNome.Filho = LNKLNomeDoExemplo
+
+        TXTCNovoNome.ValueStr = LNKLNomeDoExemplo.Text
+
+        TXTCNovoNome.Focus()
+
+        TXTCNovoNome.Visible = True
+    End Sub
 End Class

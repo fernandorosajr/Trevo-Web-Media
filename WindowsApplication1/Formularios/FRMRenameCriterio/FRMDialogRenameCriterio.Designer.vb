@@ -31,6 +31,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe = New System.Windows.Forms.Panel()
         Me.PanelBorder_Visualizar = New System.Windows.Forms.Panel()
         Me.PanelVisualizar = New System.Windows.Forms.Panel()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LBL_ValueOrigemDoExemplo = New System.Windows.Forms.Label()
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
@@ -156,11 +157,24 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelVisualizar.Controls.Add(Me.LBLValue_NovoNome)
         Me.PanelVisualizar.Controls.Add(Me.LNKLNomeDoExemplo)
         Me.PanelVisualizar.Controls.Add(Me.LBLTitleOrigem)
+        Me.PanelVisualizar.Controls.Add(Me.TXTCNovoNome)
         Me.PanelVisualizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelVisualizar.Location = New System.Drawing.Point(1, 1)
         Me.PanelVisualizar.Name = "PanelVisualizar"
         Me.PanelVisualizar.Size = New System.Drawing.Size(612, 86)
         Me.PanelVisualizar.TabIndex = 0
+        '
+        'TXTCNovoNome
+        '
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(120, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(472, 39)
+        Me.TXTCNovoNome.TabIndex = 114
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
         '
         'LBL_ValueOrigemDoExemplo
         '
@@ -294,4 +308,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LBLValue_NovoNome As Label
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
+    Friend WithEvents TXTCNovoNome As Control_TextConfirm
 End Class

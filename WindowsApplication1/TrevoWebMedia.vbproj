@@ -183,6 +183,12 @@
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextBoxPerson.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextConfirm.Designer.vb">
+      <DependentUpon>Control_TextConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextConfirm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </Compile>
@@ -456,6 +462,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMDialogFileConflictForm.resx">
       <DependentUpon>FRMDialogFileConflictForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMDialogInputBox.resx">
       <DependentUpon>FRMDialogInputBox.vb</DependentUpon>
@@ -472,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextBoxPerson.resx">
       <DependentUpon>Control_TextBoxPerson.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextConfirm.resx">
+      <DependentUpon>Control_TextConfirm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>

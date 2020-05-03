@@ -18,8 +18,12 @@
 
         End Get
         Set(value As Control)
+
             _filho = value
-            ValueStr = _filho.Text
+            If Filho IsNot Nothing Then
+                ValueStr = _filho.Text
+
+            End If
 
         End Set
     End Property

@@ -7,7 +7,14 @@ Imports System.Drawing.Design
 Public Class Control_ComboBoxPerson
     'TODO : https://www.w3computing.com/vb2008/manipulating-menus-runtime/
 
+
+    ReadOnly separador() As Char = {";"c, vbCrLf, vbLf, vbCr} ' {vbCrLf}
+
+    'Importação de Classes
+    '--------------------------------------------------
+    ReadOnly funcoesDeString As New StringFunctionsClass
     Private configs As Class_Configs
+    ' -------------------------------------------------
 
     Const _textDefault As String = "<Selecione>"
     Const LabelMenuItem As String = "MenuItem_"
@@ -430,11 +437,6 @@ Public Class Control_ComboBoxPerson
     'TODO: https://social.msdn.microsoft.com/Forums/windows/en-US/c285e8a8-61bc-4749-9014-84b0d0bb659e/how-can-implement-a-string-collection-editor-in-a-property-grid?forum=winformsdesigner
     'https://www.google.com/search?sxsrf=ALeKk02rGEBszY8SHCv-eCPi2UVYZyoRqA%3A1585238742647&ei=1tJ8XvubJ-6k5OUPobyH-Ag&q=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&oq=System.Windows.Forms.Design.StringCollectionEditor+visual+basic&gs_l=psy-ab.3...1793.7682..8133...0.0..0.283.2800.0j11j4......0....1..gws-wiz.......35i39j0i10i203j0i10i30j33i160j33i10i160j33i21.WceAM9D1PAw&ved=0ahUKEwj73o7BwrjoAhVuErkGHSHeAY8Q4dUDCAs&uact=5
     'https://www.google.com/search?q=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&oq=user+control+property+usar+outro+editor+para+cole%C3%A7oes+de+string&aqs=chrome..69i57.41799j0j4&sourceid=chrome&ie=UTF-8
-
-
-    ReadOnly separador() As Char = {";"c, vbCrLf, vbLf, vbCr} ' {vbCrLf}
-
-    ReadOnly funcoesDeString As New StringFunctionsClass
 
     Private _optionListCommaSeparated As String
     Private _optionsList As Collections.Specialized.StringCollection

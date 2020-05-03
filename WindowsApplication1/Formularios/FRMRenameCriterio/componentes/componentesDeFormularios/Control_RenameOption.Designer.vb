@@ -31,9 +31,9 @@ Partial Class Control_RenameOption
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
+        Me.PanelMagemBotton = New System.Windows.Forms.Panel()
         Me.BTNAddRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
-        Me.PanelMagemBotton = New System.Windows.Forms.Panel()
         Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.TXTPerson = New TrevoWebMedia.Control_TextBoxPerson()
@@ -85,7 +85,7 @@ Partial Class Control_RenameOption
         Me.TableLPContainer.Name = "TableLPContainer"
         Me.TableLPContainer.RowCount = 1
         Me.TableLPContainer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLPContainer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLPContainer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLPContainer.Size = New System.Drawing.Size(515, 27)
         Me.TableLPContainer.TabIndex = 5
         '
@@ -139,6 +139,15 @@ Partial Class Control_RenameOption
         Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
         Me.TableLPButtons.TabIndex = 1
         '
+        'PanelMagemBotton
+        '
+        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
+        Me.PanelMagemBotton.Name = "PanelMagemBotton"
+        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
+        Me.PanelMagemBotton.TabIndex = 0
+        '
         'BTNAddRenomeDeOrigem
         '
         Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
@@ -167,15 +176,6 @@ Partial Class Control_RenameOption
         Me.BTNRemoveRenomeDeOrigem.TabIndex = 10
         Me.BTNRemoveRenomeDeOrigem.Tag = ""
         '
-        'PanelMagemBotton
-        '
-        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 53)
-        Me.PanelMagemBotton.Name = "PanelMagemBotton"
-        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
-        Me.PanelMagemBotton.TabIndex = 0
-        '
         'ComBPMaster
         '
         Me.ComBPMaster.AutomaticSelect = True
@@ -191,7 +191,10 @@ Partial Class Control_RenameOption
         Me.ComBPMaster.DataReturn = Nothing
         Me.ComBPMaster.DefaultOptionsList = CType(resources.GetObject("ComBPMaster.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
         Me.ComBPMaster.DefaultOptionsListSlave = CType(resources.GetObject("ComBPMaster.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DisplayAp = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
         Me.ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPMaster.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBPMaster.ForeColorPlaceholder = System.Drawing.Color.Gray
         Me.ComBPMaster.HideWhenEmptyList = False
         Me.ComBPMaster.ListaDeOpçõesPadrão = Nothing
         Me.ComBPMaster.Location = New System.Drawing.Point(0, 0)
@@ -221,7 +224,10 @@ Partial Class Control_RenameOption
         Me.ComBPSlave.DataReturn = Nothing
         Me.ComBPSlave.DefaultOptionsList = CType(resources.GetObject("ComBPSlave.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
         Me.ComBPSlave.DefaultOptionsListSlave = CType(resources.GetObject("ComBPSlave.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DisplayAp = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
         Me.ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPSlave.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBPSlave.ForeColorPlaceholder = System.Drawing.Color.Gray
         Me.ComBPSlave.HideWhenEmptyList = False
         Me.ComBPSlave.ListaDeOpçõesPadrão = Nothing
         Me.ComBPSlave.Location = New System.Drawing.Point(0, 0)

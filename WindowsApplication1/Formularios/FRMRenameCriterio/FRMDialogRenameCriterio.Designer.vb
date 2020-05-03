@@ -31,14 +31,15 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe = New System.Windows.Forms.Panel()
         Me.PanelBorder_Visualizar = New System.Windows.Forms.Panel()
         Me.PanelVisualizar = New System.Windows.Forms.Panel()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LBL_ValueOrigemDoExemplo = New System.Windows.Forms.Label()
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
+        Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
-        Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
+        Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -52,7 +53,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(502, 450)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(502, 454)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -133,7 +134,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelRecebe.Location = New System.Drawing.Point(31, 103)
         Me.PanelRecebe.Name = "PanelRecebe"
-        Me.PanelRecebe.Size = New System.Drawing.Size(614, 218)
+        Me.PanelRecebe.Size = New System.Drawing.Size(614, 213)
         Me.PanelRecebe.TabIndex = 111
         '
         'PanelBorder_Visualizar
@@ -142,10 +143,10 @@ Partial Class FRMDialogRenameCriterio
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelBorder_Visualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelBorder_Visualizar.Controls.Add(Me.PanelVisualizar)
-        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 350)
+        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 346)
         Me.PanelBorder_Visualizar.Name = "PanelBorder_Visualizar"
         Me.PanelBorder_Visualizar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(614, 88)
+        Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(614, 94)
         Me.PanelBorder_Visualizar.TabIndex = 113
         '
         'PanelVisualizar
@@ -154,33 +155,21 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelVisualizar.Controls.Add(Me.LBL_ValueOrigemDoExemplo)
         Me.PanelVisualizar.Controls.Add(Me.LBLNovoNome)
         Me.PanelVisualizar.Controls.Add(Me.LBLNomeDoExemplo)
-        Me.PanelVisualizar.Controls.Add(Me.LBLValue_NovoNome)
-        Me.PanelVisualizar.Controls.Add(Me.LNKLNomeDoExemplo)
         Me.PanelVisualizar.Controls.Add(Me.LBLTitleOrigem)
         Me.PanelVisualizar.Controls.Add(Me.TXTCNovoNome)
+        Me.PanelVisualizar.Controls.Add(Me.LBLValue_NovoNome)
+        Me.PanelVisualizar.Controls.Add(Me.LNKLNomeDoExemplo)
         Me.PanelVisualizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelVisualizar.Location = New System.Drawing.Point(1, 1)
         Me.PanelVisualizar.Name = "PanelVisualizar"
-        Me.PanelVisualizar.Size = New System.Drawing.Size(612, 86)
+        Me.PanelVisualizar.Size = New System.Drawing.Size(612, 92)
         Me.PanelVisualizar.TabIndex = 0
-        '
-        'TXTCNovoNome
-        '
-        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(120, 34)
-        Me.TXTCNovoNome.Name = "TXTCNovoNome"
-        Me.TXTCNovoNome.Size = New System.Drawing.Size(472, 39)
-        Me.TXTCNovoNome.TabIndex = 114
-        Me.TXTCNovoNome.ValueStr = Nothing
-        Me.TXTCNovoNome.Visible = False
         '
         'LBL_ValueOrigemDoExemplo
         '
         Me.LBL_ValueOrigemDoExemplo.AutoSize = True
         Me.LBL_ValueOrigemDoExemplo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBL_ValueOrigemDoExemplo.Location = New System.Drawing.Point(122, 15)
+        Me.LBL_ValueOrigemDoExemplo.Location = New System.Drawing.Point(127, 15)
         Me.LBL_ValueOrigemDoExemplo.Name = "LBL_ValueOrigemDoExemplo"
         Me.LBL_ValueOrigemDoExemplo.Size = New System.Drawing.Size(97, 13)
         Me.LBL_ValueOrigemDoExemplo.TabIndex = 113
@@ -191,7 +180,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNovoNome.AutoEllipsis = True
         Me.LBLNovoNome.AutoSize = True
         Me.LBLNovoNome.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLNovoNome.Location = New System.Drawing.Point(51, 57)
+        Me.LBLNovoNome.Location = New System.Drawing.Point(56, 57)
         Me.LBLNovoNome.Name = "LBLNovoNome"
         Me.LBLNovoNome.Size = New System.Drawing.Size(65, 13)
         Me.LBLNovoNome.TabIndex = 10
@@ -202,37 +191,11 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNomeDoExemplo.AutoEllipsis = True
         Me.LBLNomeDoExemplo.AutoSize = True
         Me.LBLNomeDoExemplo.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLNomeDoExemplo.Location = New System.Drawing.Point(21, 36)
+        Me.LBLNomeDoExemplo.Location = New System.Drawing.Point(26, 36)
         Me.LBLNomeDoExemplo.Name = "LBLNomeDoExemplo"
         Me.LBLNomeDoExemplo.Size = New System.Drawing.Size(95, 13)
         Me.LBLNomeDoExemplo.TabIndex = 8
         Me.LBLNomeDoExemplo.Text = "Nome de exemplo:"
-        '
-        'LBLValue_NovoNome
-        '
-        Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLValue_NovoNome.AutoEllipsis = True
-        Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(122, 57)
-        Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
-        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(472, 13)
-        Me.LBLValue_NovoNome.TabIndex = 7
-        Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
-        '
-        'LNKLNomeDoExemplo
-        '
-        Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LNKLNomeDoExemplo.AutoEllipsis = True
-        Me.LNKLNomeDoExemplo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(125, 36)
-        Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
-        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(469, 13)
-        Me.LNKLNomeDoExemplo.TabIndex = 9
-        Me.LNKLNomeDoExemplo.TabStop = True
-        Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
         '
         'LBLTitleOrigem
         '
@@ -243,11 +206,37 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem.AutoSize = True
         Me.LBLTitleOrigem.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLTitleOrigem.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitleOrigem.Location = New System.Drawing.Point(16, 15)
+        Me.LBLTitleOrigem.Location = New System.Drawing.Point(21, 15)
         Me.LBLTitleOrigem.Name = "LBLTitleOrigem"
         Me.LBLTitleOrigem.Size = New System.Drawing.Size(100, 13)
         Me.LBLTitleOrigem.TabIndex = 6
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
+        '
+        'LBLValue_NovoNome
+        '
+        Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLValue_NovoNome.AutoEllipsis = True
+        Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(127, 57)
+        Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
+        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(467, 13)
+        Me.LBLValue_NovoNome.TabIndex = 7
+        Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
+        '
+        'LNKLNomeDoExemplo
+        '
+        Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LNKLNomeDoExemplo.AutoEllipsis = True
+        Me.LNKLNomeDoExemplo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(130, 36)
+        Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
+        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(464, 13)
+        Me.LNKLNomeDoExemplo.TabIndex = 9
+        Me.LNKLNomeDoExemplo.TabStop = True
+        Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
         '
         'LBLTitle03
         '
@@ -256,11 +245,67 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle03.AutoEllipsis = True
         Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 330)
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
         Me.LBLTitle03.Name = "LBLTitle03"
         Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
         Me.LBLTitle03.TabIndex = 111
         Me.LBLTitle03.Text = "Visualizar exemplo"
+        '
+        'Control_TextBoxPerson1
+        '
+        Me.Control_TextBoxPerson1.ActiveValidate = False
+        Me.Control_TextBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Control_TextBoxPerson1.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Control_TextBoxPerson1.BorderColorError = System.Drawing.Color.Red
+        Me.Control_TextBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Control_TextBoxPerson1.ByChar = False
+        Me.Control_TextBoxPerson1.ByText = False
+        Me.Control_TextBoxPerson1.ByValue = False
+        Me.Control_TextBoxPerson1.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.Control_TextBoxPerson1.ErrorDisplay = False
+        Me.Control_TextBoxPerson1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson1.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson1.ForeColor = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson1.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.Control_TextBoxPerson1.HideSelection = True
+        Me.Control_TextBoxPerson1.LeftIndentation = 6
+        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(38, 457)
+        Me.Control_TextBoxPerson1.MultiLine = False
+        Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
+        Me.Control_TextBoxPerson1.NoneOfThisChar = ";" & Global.Microsoft.VisualBasic.ChrW(0) & ";" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson1.Placeholder = Nothing
+        Me.Control_TextBoxPerson1.Read_Only = False
+        Me.Control_TextBoxPerson1.RightIndentation = 0
+        Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(194, 19)
+        Me.Control_TextBoxPerson1.SpaceError = False
+        Me.Control_TextBoxPerson1.TabIndex = 114
+        Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(100, 21)
+        Me.Control_TextBoxPerson1.TXT = Nothing
+        Me.Control_TextBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson1.WordWrap = True
+        '
+        'TXTCNovoNome
+        '
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(125, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 39)
+        Me.TXTCNovoNome.TabIndex = 114
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
         '
         'FRMDialogRenameCriterio
         '
@@ -269,7 +314,8 @@ Partial Class FRMDialogRenameCriterio
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(678, 503)
+        Me.ClientSize = New System.Drawing.Size(678, 507)
+        Me.Controls.Add(Me.Control_TextBoxPerson1)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
@@ -309,4 +355,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
+    Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
 End Class

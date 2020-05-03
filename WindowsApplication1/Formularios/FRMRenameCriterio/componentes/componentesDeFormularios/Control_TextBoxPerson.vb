@@ -3,6 +3,21 @@ Imports System.ComponentModel
 
 Public Class Control_TextBoxPerson
 
+    ' Importação de Classes
+    '--------------------------------
+    ReadOnly funcoesDeString As New StringFunctionsClass
+
+    Private configs As Class_Configs
+
+    '-------------------------------------
+    Public Enum ValidateOptionEnum
+        None = 0
+        [Char] = 1
+        Vazio = 2
+        [Text] = 3
+
+    End Enum
+
     Public cor As Color = ColorTranslator.FromWin32(Color.Gray.ToArgb)
     Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
     Public textCor2 As Integer = ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86))
@@ -20,7 +35,115 @@ Public Class Control_TextBoxPerson
 
     Dim _defaultPaddingText As New Padding(2, 2, 2, 2)
 
-    Private configs As Class_Configs
+
+    ' Propriedades de Validação
+    '------------------------------------------------
+    Private foundError As Boolean
+
+    Private _activeValidate As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property ActiveValidate As Boolean
+        Get
+            Return _activeValidate
+
+        End Get
+        Set(value As Boolean)
+            _activeValidate = value
+
+        End Set
+    End Property
+
+    Private _byText As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property ByText As Boolean
+        Get
+            Return _byText
+
+        End Get
+        Set(value As Boolean)
+            _byText = value
+
+        End Set
+    End Property
+
+    Private _byChar As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property ByChar As Boolean
+        Get
+            Return _byChar
+
+        End Get
+        Set(value As Boolean)
+            _byChar = value
+
+        End Set
+    End Property
+
+    Private _byValue As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property ByValue As Boolean
+        Get
+            Return _byValue
+
+        End Get
+        Set(value As Boolean)
+            _byValue = value
+
+        End Set
+    End Property
+
+    Private _spaceError As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property SpaceError As Boolean
+        Get
+            Return _spaceError
+
+        End Get
+        Set(value As Boolean)
+            _spaceError = value
+
+        End Set
+    End Property
+    Private _noneOfThisChar As List(Of Char)
+    Private _noneOfThisChar_STRING As String 'As Char()
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property NoneOfThisChar As String  'As List(Of Char)   ' () As Collections.Specialized.StringCollection
+        Get
+            Dim texto As String = ""
+
+            If _noneOfThisChar IsNot Nothing Then
+                For Each x In _noneOfThisChar
+
+                    texto = texto + ";" + x
+
+                Next
+
+                ' texto = _char.ToString
+
+            End If
+
+            Return texto  '_noneOfThisChar
+
+        End Get
+        Set(value As String)   ' As  List(Of Char)) 'Collections.Specialized.StringCollection)
+
+            If value IsNot Nothing Then
+
+                _noneOfThisChar_STRING = value  'funcoesDeString.ConverterParaListChar(value, {";"c})
+                _noneOfThisChar = funcoesDeString.ConverterParaListChar(value, {";"c})
+
+            End If
+
+        End Set
+    End Property
+
+    '---------------------------------------------------------
 
     Private _leftIndentation As Integer = 6
     <Category("Aparência")>
@@ -696,7 +819,7 @@ Public Class Control_TextBoxPerson
             End If
 
         End If
-            TXTBox.Parent.BackColor = obj.BackColor
+        TXTBox.Parent.BackColor = obj.BackColor
 
     End Sub
 

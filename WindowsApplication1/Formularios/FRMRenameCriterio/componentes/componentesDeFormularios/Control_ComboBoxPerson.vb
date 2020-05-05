@@ -657,7 +657,6 @@ Public Class Control_ComboBoxPerson
 
                 End If
 
-
             Else
                 _comboBoxPersonSlave.Visible = True
 

@@ -35,11 +35,11 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -212,6 +212,29 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem.TabIndex = 6
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
+        'TXTCNovoNome
+        '
+        Me.TXTCNovoNome.ActiveValidate = True
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.ByChar = False
+        Me.TXTCNovoNome.ByText = False
+        Me.TXTCNovoNome.ByValue = False
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(125, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.NoneOfThisChar = ""
+        Me.TXTCNovoNome.NoneOfThisText = Nothing
+        Me.TXTCNovoNome.NoneOfThisValue = Nothing
+        Me.TXTCNovoNome.RequiredChar = ""
+        Me.TXTCNovoNome.RequiredText = Nothing
+        Me.TXTCNovoNome.RequiredValue = Nothing
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
+        Me.TXTCNovoNome.SpaceError = True
+        Me.TXTCNovoNome.TabIndex = 114
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
+        '
         'LBLValue_NovoNome
         '
         Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -253,13 +276,13 @@ Partial Class FRMDialogRenameCriterio
         '
         'Control_TextBoxPerson1
         '
-        Me.Control_TextBoxPerson1.ActiveValidate = False
+        Me.Control_TextBoxPerson1.ActiveValidate = True
         Me.Control_TextBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.Control_TextBoxPerson1.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.Control_TextBoxPerson1.BorderColorError = System.Drawing.Color.Red
         Me.Control_TextBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_TextBoxPerson1.ByChar = False
+        Me.Control_TextBoxPerson1.ByChar = True
         Me.Control_TextBoxPerson1.ByText = False
         Me.Control_TextBoxPerson1.ByValue = False
         Me.Control_TextBoxPerson1.ChangeCursorFocus = False
@@ -273,39 +296,32 @@ Partial Class FRMDialogRenameCriterio
         Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
         Me.Control_TextBoxPerson1.HideSelection = True
         Me.Control_TextBoxPerson1.LeftIndentation = 6
-        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(38, 457)
+        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(32, 457)
         Me.Control_TextBoxPerson1.MultiLine = False
         Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
-        Me.Control_TextBoxPerson1.NoneOfThisChar = ";" & Global.Microsoft.VisualBasic.ChrW(0) & ";" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson1.NoneOfThisChar = "/ "
+        Me.Control_TextBoxPerson1.NoneOfThisText = "luzia"
+        Me.Control_TextBoxPerson1.NoneOfThisValue = Nothing
         Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2)
         Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(0, 0, 0, 2)
         Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0)
         Me.Control_TextBoxPerson1.Placeholder = Nothing
         Me.Control_TextBoxPerson1.Read_Only = False
+        Me.Control_TextBoxPerson1.RequiredChar = "@."
+        Me.Control_TextBoxPerson1.RequiredText = "gmail"
+        Me.Control_TextBoxPerson1.RequiredValue = Nothing
         Me.Control_TextBoxPerson1.RightIndentation = 0
         Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(194, 19)
+        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(194, 21)
         Me.Control_TextBoxPerson1.SpaceError = False
         Me.Control_TextBoxPerson1.TabIndex = 114
         Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(100, 21)
+        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(194, 21)
         Me.Control_TextBoxPerson1.TXT = Nothing
         Me.Control_TextBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
         Me.Control_TextBoxPerson1.WordWrap = True
-        '
-        'TXTCNovoNome
-        '
-        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(125, 34)
-        Me.TXTCNovoNome.Name = "TXTCNovoNome"
-        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 39)
-        Me.TXTCNovoNome.TabIndex = 114
-        Me.TXTCNovoNome.ValueStr = Nothing
-        Me.TXTCNovoNome.Visible = False
         '
         'FRMDialogRenameCriterio
         '

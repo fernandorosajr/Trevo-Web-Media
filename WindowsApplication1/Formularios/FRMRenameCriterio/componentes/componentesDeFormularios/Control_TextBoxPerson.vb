@@ -38,7 +38,7 @@ Public Class Control_TextBoxPerson
 
     ' Propriedades de Validação
     '------------------------------------------------
-    Private foundError As Boolean
+
 
     Private _activeValidate As Boolean
     <Category("Validação")>
@@ -50,6 +50,34 @@ Public Class Control_TextBoxPerson
         End Get
         Set(value As Boolean)
             _activeValidate = value
+
+        End Set
+    End Property
+
+    Private _requiredText As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property RequiredText As String
+        Get
+            Return _requiredText
+
+        End Get
+        Set(value As String)
+            _requiredText = value
+
+        End Set
+    End Property
+
+    Private _noneOfThisText As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property NoneOfThisText As String
+        Get
+            Return _noneOfThisText
+
+        End Get
+        Set(value As String)
+            _noneOfThisText = value
 
         End Set
     End Property
@@ -68,6 +96,72 @@ Public Class Control_TextBoxPerson
         End Set
     End Property
 
+
+    Private _noneOfThisChar() As Char
+    Private _noneOfThisChar_STRING As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property NoneOfThisChar As String
+        Get
+            Dim texto As String = ""
+
+            If _noneOfThisChar IsNot Nothing Then
+                For Each x In _noneOfThisChar
+                    texto += x
+
+                Next
+
+            End If
+
+
+            Return texto
+
+        End Get
+        Set(value As String)
+
+            If value IsNot Nothing Then
+
+                Dim _char() As Char = value.ToCharArray
+                _noneOfThisChar = value.ToCharArray
+                _noneOfThisChar_STRING = value
+                '   _noneOfThisChar02 = funcoesDeString.ConverterParaListChar(value, {";"c})
+            End If
+
+        End Set
+    End Property
+
+    Private _requiredChar() As Char
+    Private _requiredChar_STRING As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property RequiredChar As String
+        Get
+            Dim texto As String = ""
+
+            If _requiredChar IsNot Nothing Then
+                For Each x In _requiredChar
+                    texto += x
+
+                Next
+
+            End If
+
+            Return texto
+
+        End Get
+        Set(value As String)
+
+            If value IsNot Nothing Then
+
+                Dim _char() As Char = value.ToCharArray
+                _requiredChar = value.ToCharArray
+                _requiredChar_STRING = value
+
+            End If
+
+        End Set
+    End Property
+
     Private _byChar As Boolean
     <Category("Validação")>
     <Description("Recebe caracteres .")>
@@ -81,6 +175,44 @@ Public Class Control_TextBoxPerson
 
         End Set
     End Property
+
+
+
+
+
+
+
+
+    Private _requiredValue As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property RequiredValue As String
+        Get
+            Return _requiredValue
+
+        End Get
+        Set(value As String)
+            _requiredValue = value
+
+        End Set
+    End Property
+
+    Private _noneOfThisValue As String
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property NoneOfThisValue As String
+        Get
+            Return _noneOfThisValue
+
+        End Get
+        Set(value As String)
+            _noneOfThisValue = value
+
+        End Set
+    End Property
+
+
+
 
     Private _byValue As Boolean
     <Category("Validação")>
@@ -109,39 +241,8 @@ Public Class Control_TextBoxPerson
 
         End Set
     End Property
-    Private _noneOfThisChar As List(Of Char)
-    Private _noneOfThisChar_STRING As String 'As Char()
-    <Category("Validação")>
-    <Description("Recebe caracteres .")>
-    Public Property NoneOfThisChar As String  'As List(Of Char)   ' () As Collections.Specialized.StringCollection
-        Get
-            Dim texto As String = ""
 
-            If _noneOfThisChar IsNot Nothing Then
-                For Each x In _noneOfThisChar
 
-                    texto = texto + ";" + x
-
-                Next
-
-                ' texto = _char.ToString
-
-            End If
-
-            Return texto  '_noneOfThisChar
-
-        End Get
-        Set(value As String)   ' As  List(Of Char)) 'Collections.Specialized.StringCollection)
-
-            If value IsNot Nothing Then
-
-                _noneOfThisChar_STRING = value  'funcoesDeString.ConverterParaListChar(value, {";"c})
-                _noneOfThisChar = funcoesDeString.ConverterParaListChar(value, {";"c})
-
-            End If
-
-        End Set
-    End Property
 
     '---------------------------------------------------------
 
@@ -155,9 +256,6 @@ Public Class Control_TextBoxPerson
 
         Set(value As Integer)
 
-            'If value = Nothing Or value = "" Then
-            '    value = 0
-            'End If
 
             _leftIndentation = value
 
@@ -175,10 +273,6 @@ Public Class Control_TextBoxPerson
 
         End Get
         Set(value As Integer)
-
-            'If value = Nothing Or value = "" Then
-            '    value = 0
-            'End If
 
             _rightIndentation = value
 
@@ -238,13 +332,18 @@ Public Class Control_TextBoxPerson
                 PanelBorder.BackColor = _borderColorError
 
             Else
-                PanelBorder.BackColor = _borderColorLostFocus
+                If TXTBox.Focused = True Then
+                    PanelBorder.BackColor = _borderColorGotFocus
+                Else
+                    PanelBorder.BackColor = _borderColorLostFocus
+
+                End If
 
             End If
 
         End Set
     End Property
-
+    Dim itIsPlaceholder As Boolean
     Private _txt As String
     <Category("Aparência")>
     <Description("Texto associado ao controle.")>
@@ -783,8 +882,23 @@ Public Class Control_TextBoxPerson
     End Sub
 
     Private Sub TXTBox_TextChanged(sender As Object, e As EventArgs) Handles TXTBox.TextChanged
-        Dim txt As TextBox
-        txt = CType(sender, TextBox)
+        'Dim txt As TextBox
+        'txt = CType(sender, TextBox)
+
+        '_txt = TXTBox.Text
+
+
+        'If _txt IsNot Nothing Then
+        '    ErrorDisplay = Validar(_txt)
+
+        'Else
+        '    ErrorDisplay = Validar("")
+
+        'End If
+
+    End Sub
+
+    Private Sub TXTBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTBox.KeyPress
 
     End Sub
 
@@ -879,4 +993,152 @@ Public Class Control_TextBoxPerson
     Private Sub Control_TextBoxPerson_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
         TXTBox.Focus()
     End Sub
+
+    Function Validar(dadoStr As String) As Boolean
+
+        Dim foundError As Boolean = False
+
+        If _activeValidate = True Then
+
+            Dim foundValueError As Boolean = False
+            Dim foundRequiredValueError As Boolean = False
+
+            Dim foundCharError As Boolean = False
+            Dim foundRequiredCharError As Boolean = False
+
+            Dim foundTextError As Boolean = False
+            Dim foundRequiredTextError As Boolean = False
+
+            Dim foundSpaceError As Boolean = False
+
+
+            If ByValue = True Then
+                If _noneOfThisValue IsNot Nothing Or _noneOfThisValue <> "" Then
+                    If dadoStr = _noneOfThisValue Then
+                        foundValueError = True
+                    Else
+                        foundValueError = False
+
+                    End If
+
+                End If
+
+                If _requiredValue IsNot Nothing Or _requiredValue <> "" Then
+
+                    If dadoStr <> _requiredValue Then
+                        foundRequiredValueError = True
+
+                    Else
+                        foundRequiredValueError = False
+
+                    End If
+
+                End If
+
+            End If
+
+            If ByChar = True Then
+                If _noneOfThisChar IsNot Nothing Or _noneOfThisChar.Count > 0 Then
+                    If dadoStr.LastIndexOfAny(_noneOfThisChar) <> -1 Then
+                        foundCharError = True
+
+                    Else
+                        foundCharError = False
+                    End If
+
+                End If
+
+                If _requiredChar IsNot Nothing Or _requiredChar.Count > 0 Then
+
+
+                    Dim _char As Char
+                    For Each _char In _requiredChar
+
+                        Dim _chars() As Char
+                        _chars = {_char}
+
+                        foundRequiredCharError = ConfereChar(dadoStr, _chars)
+
+                        If foundRequiredCharError = True Then Exit For
+
+                    Next
+
+                End If
+
+            End If
+
+            If ByText = True Then
+                If _noneOfThisText IsNot Nothing Or _noneOfThisText <> "" Then
+
+
+                    If dadoStr.Contains(_noneOfThisText) = True Then
+                        foundTextError = True
+
+                    Else
+                        foundTextError = False
+                    End If
+                End If
+
+                If _requiredText IsNot Nothing Or _requiredText <> "" Then
+                    If dadoStr.Contains(_requiredText) = False Then
+                        foundRequiredTextError = True
+                    Else
+
+                        foundRequiredTextError = False
+                    End If
+                End If
+            End If
+
+            If _spaceError = True Then
+                If Trim(dadoStr) = "" Then
+                    foundSpaceError = True
+                End If
+            Else
+                foundSpaceError = False
+
+            End If
+
+            If foundSpaceError = True Or
+               foundValueError = True Or
+               foundRequiredValueError = True Or
+               foundCharError = True Or
+               foundRequiredCharError = True Or
+               foundTextError = True Or
+               foundRequiredTextError = True Then
+
+                foundError = True
+
+            Else
+                foundError = False
+            End If
+        End If
+
+        Return foundError
+
+    End Function
+
+    Function ConfereChar(dadoStr As String, _chars() As Char) As Boolean
+        Dim h As String
+        Dim foundRequiredCharError As Boolean = True
+
+        For i = 0 To dadoStr.Length - 1
+
+            h = dadoStr.Chars(i)
+
+            If h.LastIndexOfAny(_chars) = -1 Then
+                foundRequiredCharError = True
+
+            Else
+                foundRequiredCharError = False
+                Exit For
+
+            End If
+
+        Next
+
+        Return foundRequiredCharError
+
+    End Function
+
+
 End Class

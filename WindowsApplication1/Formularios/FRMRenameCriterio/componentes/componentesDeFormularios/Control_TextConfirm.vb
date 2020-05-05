@@ -3,6 +3,21 @@ Imports System.ComponentModel
 
 Public Class Control_TextConfirm
 
+    Private _placeholder As String
+    <Category("Aparência")>
+    <Description("Determina um texto de suporte quando a propriedade Txt não contiver nenhum valor.")>
+    Public Property Placeholder As String
+        Get
+            Return _placeholder
+        End Get
+        Set(value As String)
+            _placeholder = value
+
+            TXTValue.Placeholder = _placeholder
+
+        End Set
+    End Property
+
     ' Propriedades de Validação
     '------------------------------------------------
 
@@ -248,6 +263,14 @@ Public Class Control_TextConfirm
         End Set
     End Property
 
+    Sub New()
+
+        ' Esta chamada é requerida pelo designer.
+        InitializeComponent()
+        _placeholder = TXTValue.Placeholder
+        ' Adicione qualquer inicialização após a chamada InitializeComponent().
+
+    End Sub
     Private Sub BTNConfirmarAlterarValor_Click(sender As Object, e As EventArgs) Handles BTNConfirmarAlterarValor.Click
 
 

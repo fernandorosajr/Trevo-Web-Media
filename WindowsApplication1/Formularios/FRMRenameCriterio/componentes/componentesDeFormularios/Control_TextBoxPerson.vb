@@ -902,6 +902,20 @@ Public Class Control_TextBoxPerson
 
     End Sub
 
+    Private Sub TXTBox_KeyDown(sender As Object, e As KeyEventArgs) Handles TXTBox.KeyDown
+
+    End Sub
+
+    Private Sub TXTBox_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTBox.KeyUp
+
+        If TXTBox.Text <> "" Then
+            _txt = TXTBox.Text
+
+        End If
+
+        ErrorDisplay = Validar(_txt)
+
+    End Sub
     Private Sub TXTBox_MouseLeave(sender As Object, e As EventArgs) Handles TXTBox.MouseLeave, PanelEnvolveTXT.MouseLeave
         Dim obj As Object
         obj = CType(sender, Object)

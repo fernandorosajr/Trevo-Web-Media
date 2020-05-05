@@ -908,10 +908,9 @@ Public Class Control_TextBoxPerson
 
     Private Sub TXTBox_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTBox.KeyUp
 
-        If TXTBox.Text <> "" Then
-            _txt = TXTBox.Text
 
-        End If
+        _txt = TXTBox.Text
+
 
         ErrorDisplay = Validar(_txt)
 
@@ -1106,6 +1105,10 @@ Public Class Control_TextBoxPerson
             If _spaceError = True Then
                 If Trim(dadoStr) = "" Then
                     foundSpaceError = True
+
+                Else
+                    foundSpaceError = False
+
                 End If
             Else
                 foundSpaceError = False

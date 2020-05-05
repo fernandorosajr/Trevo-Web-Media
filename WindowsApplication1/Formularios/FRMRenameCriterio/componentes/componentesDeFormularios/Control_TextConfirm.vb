@@ -250,20 +250,19 @@ Public Class Control_TextConfirm
 
     Private Sub BTNConfirmarAlterarValor_Click(sender As Object, e As EventArgs) Handles BTNConfirmarAlterarValor.Click
 
-        TXTValue.ErrorDisplay = False
 
-        ValueStr = TXTValue.TXT
+        If TXTValue.ErrorDisplay = True Then
+            Me.Visible = True
 
-        If _valueStr <> "" Then
 
-            Me.Visible = False
+        Else
 
+            ValueStr = TXTValue.TXT
             If _filho IsNot Nothing Then
                 _filho.Text = _valueStr
 
+                Me.Visible = False
             End If
-        Else
-            TXTValue.ErrorDisplay = True
 
         End If
 

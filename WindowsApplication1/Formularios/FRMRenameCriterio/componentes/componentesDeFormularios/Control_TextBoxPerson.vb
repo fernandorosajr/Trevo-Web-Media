@@ -10,13 +10,6 @@ Public Class Control_TextBoxPerson
     Private configs As Class_Configs
 
     '-------------------------------------
-    Public Enum ValidateOptionEnum
-        None = 0
-        [Char] = 1
-        Vazio = 2
-        [Text] = 3
-
-    End Enum
 
     Public cor As Color = ColorTranslator.FromWin32(Color.Gray.ToArgb)
     Public cor2 As Color = ColorTranslator.FromWin32(ColorTranslator.ToWin32(Color.FromArgb(83, 83, 86)))
@@ -343,7 +336,7 @@ Public Class Control_TextBoxPerson
 
         End Set
     End Property
-    Dim itIsPlaceholder As Boolean
+
     Private _txt As String
     <Category("Aparência")>
     <Description("Texto associado ao controle.")>

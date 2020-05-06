@@ -965,6 +965,7 @@
     <None Include="Resources\check_min_24x24.png" />
     <None Include="Resources\Decidir_min_24x24.png" />
     <None Include="Resources\arquivo01.png" />
+    <None Include="Resources\check_inativo.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
   <ItemGroup />

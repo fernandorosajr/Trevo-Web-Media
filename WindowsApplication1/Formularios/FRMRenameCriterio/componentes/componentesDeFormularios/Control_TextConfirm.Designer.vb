@@ -23,9 +23,9 @@ Partial Class Control_TextConfirm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PanelEnvolve_TXTNomeDoDestino = New System.Windows.Forms.Panel()
+        Me.TXTValue = New TrevoWebMedia.Control_TextBoxPerson()
         Me.BTNCancelarAlterarValor = New System.Windows.Forms.Button()
         Me.BTNConfirmarAlterarValor = New System.Windows.Forms.Button()
-        Me.TXTValue = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelEnvolve_TXTNomeDoDestino.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,34 +40,6 @@ Partial Class Control_TextConfirm
         Me.PanelEnvolve_TXTNomeDoDestino.Name = "PanelEnvolve_TXTNomeDoDestino"
         Me.PanelEnvolve_TXTNomeDoDestino.Size = New System.Drawing.Size(332, 41)
         Me.PanelEnvolve_TXTNomeDoDestino.TabIndex = 14
-        '
-        'BTNCancelarAlterarValor
-        '
-        Me.BTNCancelarAlterarValor.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.remove
-        Me.BTNCancelarAlterarValor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNCancelarAlterarValor.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNCancelarAlterarValor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNCancelarAlterarValor.FlatAppearance.BorderSize = 0
-        Me.BTNCancelarAlterarValor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNCancelarAlterarValor.Location = New System.Drawing.Point(28, 22)
-        Me.BTNCancelarAlterarValor.Name = "BTNCancelarAlterarValor"
-        Me.BTNCancelarAlterarValor.Size = New System.Drawing.Size(15, 15)
-        Me.BTNCancelarAlterarValor.TabIndex = 16
-        Me.BTNCancelarAlterarValor.Tag = ""
-        '
-        'BTNConfirmarAlterarValor
-        '
-        Me.BTNConfirmarAlterarValor.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.check
-        Me.BTNConfirmarAlterarValor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNConfirmarAlterarValor.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNConfirmarAlterarValor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNConfirmarAlterarValor.FlatAppearance.BorderSize = 0
-        Me.BTNConfirmarAlterarValor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNConfirmarAlterarValor.Location = New System.Drawing.Point(9, 22)
-        Me.BTNConfirmarAlterarValor.Name = "BTNConfirmarAlterarValor"
-        Me.BTNConfirmarAlterarValor.Size = New System.Drawing.Size(15, 15)
-        Me.BTNConfirmarAlterarValor.TabIndex = 15
-        Me.BTNConfirmarAlterarValor.Tag = ""
         '
         'TXTValue
         '
@@ -111,13 +83,41 @@ Partial Class Control_TextConfirm
         Me.TXTValue.ScrollBar = System.Windows.Forms.ScrollBars.None
         Me.TXTValue.Size = New System.Drawing.Size(332, 20)
         Me.TXTValue.SpaceError = False
-        Me.TXTValue.TabIndex = 17
+        Me.TXTValue.TabIndex = 0
         Me.TXTValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.TXTValue.ThisSize = New System.Drawing.Size(332, 20)
         Me.TXTValue.TXT = Nothing
         Me.TXTValue.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TXTValue.UseSystemPasswordChar = False
         Me.TXTValue.WordWrap = True
+        '
+        'BTNCancelarAlterarValor
+        '
+        Me.BTNCancelarAlterarValor.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.remove
+        Me.BTNCancelarAlterarValor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNCancelarAlterarValor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNCancelarAlterarValor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNCancelarAlterarValor.FlatAppearance.BorderSize = 0
+        Me.BTNCancelarAlterarValor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNCancelarAlterarValor.Location = New System.Drawing.Point(28, 22)
+        Me.BTNCancelarAlterarValor.Name = "BTNCancelarAlterarValor"
+        Me.BTNCancelarAlterarValor.Size = New System.Drawing.Size(15, 15)
+        Me.BTNCancelarAlterarValor.TabIndex = 2
+        Me.BTNCancelarAlterarValor.Tag = ""
+        '
+        'BTNConfirmarAlterarValor
+        '
+        Me.BTNConfirmarAlterarValor.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.check
+        Me.BTNConfirmarAlterarValor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNConfirmarAlterarValor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNConfirmarAlterarValor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNConfirmarAlterarValor.FlatAppearance.BorderSize = 0
+        Me.BTNConfirmarAlterarValor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNConfirmarAlterarValor.Location = New System.Drawing.Point(9, 22)
+        Me.BTNConfirmarAlterarValor.Name = "BTNConfirmarAlterarValor"
+        Me.BTNConfirmarAlterarValor.Size = New System.Drawing.Size(15, 15)
+        Me.BTNConfirmarAlterarValor.TabIndex = 1
+        Me.BTNConfirmarAlterarValor.Tag = ""
         '
         'Control_TextConfirm
         '

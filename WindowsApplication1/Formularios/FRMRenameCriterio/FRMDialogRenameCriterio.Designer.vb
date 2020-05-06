@@ -282,12 +282,12 @@ Partial Class FRMDialogRenameCriterio
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(678, 507)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
+        Me.Controls.Add(Me.LBLTitle03)
         Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
         Me.Controls.Add(Me.LBLExplicacao)
         Me.Controls.Add(Me.LBLTitle01)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.LBLTitle03)
         Me.ForeColor = System.Drawing.Color.DarkGray
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MaximizeBox = False

@@ -243,6 +243,15 @@ Public Class Control_TextConfirm
             _valueStr = value
             TXTValue.TXT = value
 
+            If TXTValue.ErrorDisplay = True Then
+                Me.BTNConfirmarAlterarValor.BackgroundImage = My.Resources.check_inativo
+                Me.BTNConfirmarAlterarValor.Enabled = False
+
+            Else
+                Me.BTNConfirmarAlterarValor.BackgroundImage = My.Resources.check
+                Me.BTNConfirmarAlterarValor.Enabled = True
+            End If
+
         End Set
     End Property
 
@@ -277,6 +286,8 @@ Public Class Control_TextConfirm
         If TXTValue.ErrorDisplay = True Then
             Me.Visible = True
 
+            Me.BTNConfirmarAlterarValor.BackgroundImage = My.Resources.check_inativo
+            Me.BTNConfirmarAlterarValor.Enabled = False
 
         Else
 
@@ -303,5 +314,70 @@ Public Class Control_TextConfirm
 
     Private Sub Control_TextConfirm_GotFocus(sender As Object, e As EventArgs) Handles Me.GotFocus
         TXTValue.Focus()
+    End Sub
+
+    Private Sub TXTValue_Load(sender As Object, e As EventArgs) Handles TXTValue.Load
+
+    End Sub
+
+    Private Sub TXTValue_Click(sender As Object, e As EventArgs) Handles TXTValue.Click
+
+    End Sub
+
+    Private Sub BTNConfirmarAlterarValor_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNConfirmarAlterarValor.MouseMove
+
+        DisplayBTNConfig()
+
+    End Sub
+
+    Private Sub PanelEnvolve_TXTNomeDoDestino_MouseMove(sender As Object, e As MouseEventArgs) Handles PanelEnvolve_TXTNomeDoDestino.MouseMove, TXTValue.MouseMove, BTNConfirmarAlterarValor.MouseMove, BTNCancelarAlterarValor.MouseMove
+        DisplayBTNConfig()
+
+    End Sub
+
+    Private Sub TXTValue_GotFocus(sender As Object, e As EventArgs) Handles TXTValue.GotFocus, BTNConfirmarAlterarValor.GotFocus
+        DisplayBTNConfig()
+
+    End Sub
+
+    Private Sub TXTValue_LostFocus(sender As Object, e As EventArgs) Handles TXTValue.LostFocus, BTNCancelarAlterarValor.LostFocus, BTNConfirmarAlterarValor.LostFocus
+        DisplayBTNConfig()
+
+    End Sub
+
+    Sub DisplayBTNConfig()
+        If TXTValue.ErrorDisplay = True Then
+            Me.BTNConfirmarAlterarValor.BackgroundImage = My.Resources.check_inativo
+            Me.BTNConfirmarAlterarValor.Enabled = False
+        Else
+
+            Me.BTNConfirmarAlterarValor.BackgroundImage = My.Resources.check
+            Me.BTNConfirmarAlterarValor.Enabled = True
+        End If
+
+    End Sub
+
+    Private Sub BTNCancelarAlterarValor_GotFocus(sender As Object, e As EventArgs) Handles BTNCancelarAlterarValor.GotFocus
+
+
+        If ((Control.ModifierKeys And Keys.Shift) = Keys.Shift) Then
+            '   MsgBox("Pressed " + Keys.Shift.ToString())
+            DisplayBTNConfig()
+        Else
+
+
+            If BTNConfirmarAlterarValor.Enabled = False Then
+                DisplayBTNConfig()
+
+                If BTNConfirmarAlterarValor.Enabled = True Then
+                    BTNConfirmarAlterarValor.Focus()
+                End If
+
+            Else
+                DisplayBTNConfig()
+
+            End If
+        End If
+
     End Sub
 End Class

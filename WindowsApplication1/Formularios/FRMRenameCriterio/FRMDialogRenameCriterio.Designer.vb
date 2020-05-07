@@ -37,8 +37,8 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -70,7 +70,7 @@ Partial Class FRMDialogRenameCriterio
         Me.OK_Button.Location = New System.Drawing.Point(3, 3)
         Me.OK_Button.Name = "OK_Button"
         Me.OK_Button.Size = New System.Drawing.Size(67, 23)
-        Me.OK_Button.TabIndex = 0
+        Me.OK_Button.TabIndex = 14
         Me.OK_Button.Text = "OK"
         Me.OK_Button.UseVisualStyleBackColor = False
         '
@@ -83,7 +83,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Cancel_Button.Location = New System.Drawing.Point(76, 3)
         Me.Cancel_Button.Name = "Cancel_Button"
         Me.Cancel_Button.Size = New System.Drawing.Size(67, 23)
-        Me.Cancel_Button.TabIndex = 1
+        Me.Cancel_Button.TabIndex = 15
         Me.Cancel_Button.Text = "Cancelar"
         '
         'LBLExplicacao
@@ -96,7 +96,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLExplicacao.Location = New System.Drawing.Point(31, 50)
         Me.LBLExplicacao.Name = "LBLExplicacao"
         Me.LBLExplicacao.Size = New System.Drawing.Size(612, 24)
-        Me.LBLExplicacao.TabIndex = 8
+        Me.LBLExplicacao.TabIndex = 1
         Me.LBLExplicacao.Text = "Explicação...."
         '
         'LBLTitle01
@@ -109,7 +109,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle01.Location = New System.Drawing.Point(27, 22)
         Me.LBLTitle01.Name = "LBLTitle01"
         Me.LBLTitle01.Size = New System.Drawing.Size(616, 28)
-        Me.LBLTitle01.TabIndex = 7
+        Me.LBLTitle01.TabIndex = 0
         Me.LBLTitle01.Text = "Defina os critérios de renome dos arquivos em lote"
         '
         'LBLTitle02
@@ -122,7 +122,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitle02.Location = New System.Drawing.Point(31, 83)
         Me.LBLTitle02.Name = "LBLTitle02"
         Me.LBLTitle02.Size = New System.Drawing.Size(612, 29)
-        Me.LBLTitle02.TabIndex = 110
+        Me.LBLTitle02.TabIndex = 2
         Me.LBLTitle02.Text = "Lista dos critérios"
         '
         'PanelRecebe
@@ -134,7 +134,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelRecebe.Location = New System.Drawing.Point(31, 103)
         Me.PanelRecebe.Name = "PanelRecebe"
         Me.PanelRecebe.Size = New System.Drawing.Size(614, 213)
-        Me.PanelRecebe.TabIndex = 111
+        Me.PanelRecebe.TabIndex = 3
         '
         'PanelBorder_Visualizar
         '
@@ -146,7 +146,7 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelBorder_Visualizar.Name = "PanelBorder_Visualizar"
         Me.PanelBorder_Visualizar.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(614, 94)
-        Me.PanelBorder_Visualizar.TabIndex = 113
+        Me.PanelBorder_Visualizar.TabIndex = 5
         '
         'PanelVisualizar
         '
@@ -156,13 +156,13 @@ Partial Class FRMDialogRenameCriterio
         Me.PanelVisualizar.Controls.Add(Me.LBLNomeDoExemplo)
         Me.PanelVisualizar.Controls.Add(Me.LBLTitleOrigem)
         Me.PanelVisualizar.Controls.Add(Me.TXTCNovoNome)
-        Me.PanelVisualizar.Controls.Add(Me.LNKLNomeDoExemplo)
         Me.PanelVisualizar.Controls.Add(Me.LBLValue_NovoNome)
+        Me.PanelVisualizar.Controls.Add(Me.LNKLNomeDoExemplo)
         Me.PanelVisualizar.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelVisualizar.Location = New System.Drawing.Point(1, 1)
         Me.PanelVisualizar.Name = "PanelVisualizar"
         Me.PanelVisualizar.Size = New System.Drawing.Size(612, 92)
-        Me.PanelVisualizar.TabIndex = 0
+        Me.PanelVisualizar.TabIndex = 6
         '
         'LBL_ValueOrigemDoExemplo
         '
@@ -171,7 +171,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBL_ValueOrigemDoExemplo.Location = New System.Drawing.Point(127, 15)
         Me.LBL_ValueOrigemDoExemplo.Name = "LBL_ValueOrigemDoExemplo"
         Me.LBL_ValueOrigemDoExemplo.Size = New System.Drawing.Size(97, 13)
-        Me.LBL_ValueOrigemDoExemplo.TabIndex = 113
+        Me.LBL_ValueOrigemDoExemplo.TabIndex = 8
         Me.LBL_ValueOrigemDoExemplo.Text = "C:/MinhaPasta/"
         '
         'LBLNovoNome
@@ -182,7 +182,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNovoNome.Location = New System.Drawing.Point(56, 57)
         Me.LBLNovoNome.Name = "LBLNovoNome"
         Me.LBLNovoNome.Size = New System.Drawing.Size(65, 13)
-        Me.LBLNovoNome.TabIndex = 10
+        Me.LBLNovoNome.TabIndex = 12
         Me.LBLNovoNome.Text = "Novo nome:"
         '
         'LBLNomeDoExemplo
@@ -193,7 +193,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNomeDoExemplo.Location = New System.Drawing.Point(26, 36)
         Me.LBLNomeDoExemplo.Name = "LBLNomeDoExemplo"
         Me.LBLNomeDoExemplo.Size = New System.Drawing.Size(95, 13)
-        Me.LBLNomeDoExemplo.TabIndex = 8
+        Me.LBLNomeDoExemplo.TabIndex = 9
         Me.LBLNomeDoExemplo.Text = "Nome de exemplo:"
         '
         'LBLTitleOrigem
@@ -208,7 +208,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem.Location = New System.Drawing.Point(21, 15)
         Me.LBLTitleOrigem.Name = "LBLTitleOrigem"
         Me.LBLTitleOrigem.Size = New System.Drawing.Size(100, 13)
-        Me.LBLTitleOrigem.TabIndex = 6
+        Me.LBLTitleOrigem.TabIndex = 7
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
         'LNKLNomeDoExemplo
@@ -221,7 +221,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(130, 36)
         Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
         Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(464, 13)
-        Me.LNKLNomeDoExemplo.TabIndex = 9
+        Me.LNKLNomeDoExemplo.TabIndex = 11
         Me.LNKLNomeDoExemplo.TabStop = True
         Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
         '
@@ -234,8 +234,21 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLValue_NovoNome.Location = New System.Drawing.Point(127, 57)
         Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
         Me.LBLValue_NovoNome.Size = New System.Drawing.Size(467, 13)
-        Me.LBLValue_NovoNome.TabIndex = 7
+        Me.LBLValue_NovoNome.TabIndex = 13
         Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
+        '
+        'LBLTitle03
+        '
+        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLTitle03.AutoEllipsis = True
+        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
+        Me.LBLTitle03.Name = "LBLTitle03"
+        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
+        Me.LBLTitle03.TabIndex = 4
+        Me.LBLTitle03.Text = "Visualizar exemplo"
         '
         'TXTCNovoNome
         '
@@ -251,27 +264,15 @@ Partial Class FRMDialogRenameCriterio
         Me.TXTCNovoNome.NoneOfThisChar = ""
         Me.TXTCNovoNome.NoneOfThisText = Nothing
         Me.TXTCNovoNome.NoneOfThisValue = Nothing
+        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
         Me.TXTCNovoNome.RequiredChar = ""
         Me.TXTCNovoNome.RequiredText = Nothing
         Me.TXTCNovoNome.RequiredValue = Nothing
         Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
         Me.TXTCNovoNome.SpaceError = True
-        Me.TXTCNovoNome.TabIndex = 114
+        Me.TXTCNovoNome.TabIndex = 10
         Me.TXTCNovoNome.ValueStr = Nothing
         Me.TXTCNovoNome.Visible = False
-        '
-        'LBLTitle03
-        '
-        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLTitle03.AutoEllipsis = True
-        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
-        Me.LBLTitle03.Name = "LBLTitle03"
-        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
-        Me.LBLTitle03.TabIndex = 111
-        Me.LBLTitle03.Text = "Visualizar exemplo"
         '
         'FRMDialogRenameCriterio
         '

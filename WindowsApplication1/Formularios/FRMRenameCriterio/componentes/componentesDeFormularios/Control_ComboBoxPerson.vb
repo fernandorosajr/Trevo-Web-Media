@@ -613,23 +613,29 @@ Public Class Control_ComboBoxPerson
 
         PerformAutomaticSelection(0)
 
-        AtualizarForeColor()
-
-
     End Sub
 
     Public Sub PerformAutomaticSelection(index As Integer)
         Dim y As Integer = CMS_Menu.Items.Count - 1
 
         If _automaticSelect = True Then
-            'If _selected Is Nothing Then
-            'If _optionsList IsNot Nothing And _optionsList.Count > 0 Then
+
+            Dim _returnItem As New ReturnItem
+
             If CMS_Menu.Items.Count > 0 Then
                 If index > y Then index = y
 
-                '  If CMS_Menu.Items.Count = 0 Then Exit Sub
+
+                For Each i As ToolStripMenuItem In CMS_Menu.Items
+                    i.Checked = False
+                Next
 
                 _selectedItem = CMS_Menu.Items.Item(index)
+
+                _returnItem = _selectedItem.Tag
+
+                Add_comboBoxPersonSlaveListsIn_comboBoxPersonSlave(_returnItem.ID)
+
                 Me.LNKLLabelCombo.Text = _selectedItem.Text
                 _selectedItem.Checked = True
 
@@ -666,7 +672,7 @@ Public Class Control_ComboBoxPerson
 
     End Sub
 
-    Private Function OptionClick(sender As Object, e As EventArgs) As Object
+    Public Function OptionClick(sender As Object, e As EventArgs) As Object
 
         Dim itemClicked As ToolStripMenuItem = CType(sender, ToolStripMenuItem)
 
@@ -684,12 +690,13 @@ Public Class Control_ComboBoxPerson
 
                 If (CInt(_returnItem.ID)) <= (_comboBoxPersonSlaveLists.Count - 1) Then
 
-                    Dim strSlaveList As String
-                    strSlaveList = Me._comboBoxPersonSlaveLists.Item(_returnItem.ID)
+                    ' TODO: Transformar isto em uma FUNÇÃO
+                    '_____________________________________________________________________
 
-                    _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(strSlaveList, separador)
+                    Add_comboBoxPersonSlaveListsIn_comboBoxPersonSlave(_returnItem.ID)
+                    '_____________________________________________________________________
 
-                    _comboBoxPersonSlave.PerformAutomaticSelection(0)
+                    '_comboBoxPersonSlave.PerformAutomaticSelection(0)
 
                     PerformHideWhenEmptyList()
 
@@ -717,6 +724,18 @@ Public Class Control_ComboBoxPerson
         Return SelectedItem.Tag
 
     End Function
+
+    Sub Add_comboBoxPersonSlaveListsIn_comboBoxPersonSlave(_id As Integer)
+
+        If Me._comboBoxPersonSlaveLists.Count > 0 Then
+            Dim strSlaveList As String
+            strSlaveList = Me._comboBoxPersonSlaveLists.Item(_id)
+
+            _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(strSlaveList, separador)
+            _comboBoxPersonSlave.PerformAutomaticSelection(0)
+        End If
+
+    End Sub
 
     Public Function SelectItemClicked(itemClicked As ToolStripMenuItem)
 
@@ -827,6 +846,11 @@ Public Class Control_ComboBoxPerson
         End If
 
     End Sub
+
+    'Function PassarFuncao(OptionClick)
+    '    AddHandler SelectedItem.Click, New System.EventHandler(AddressOf OptionClick)
+    '    '  CMS_Menu.Items.Add(Item)
+    'End Function
 
     Private Function AddID_InReturnItem(ByVal y As Integer) As Integer
         Dim int As Integer = y

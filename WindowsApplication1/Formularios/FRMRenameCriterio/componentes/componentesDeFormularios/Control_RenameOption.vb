@@ -4,9 +4,34 @@ Imports System.Reflection
 
 Public Class Control_RenameOption
 
+    Public Enum DisplayTelaEnum
 
+        Texto = 0
+        NovaExtensao = 1
+        NomeDoArquivoAtual = 2
+        NumeroDeSequencia = 3
+        LetraDaSequencia = 4
+        DataEHora = 5
+        Metadados = 6
+        NomeDaPasta = 7
+        SubstituicaoDeString = 8
 
-    Private _pai As Control_LoadRenameOption
+    End Enum
+
+    Private _selectDisplayTela As DisplayTelaEnum
+    Public Property SelectDisplayTela As DisplayTelaEnum
+        Get
+            Return _selectDisplayTela
+
+        End Get
+        Set(value As DisplayTelaEnum)
+            _selectDisplayTela = value
+            DisplayInterface()
+
+        End Set
+    End Property
+
+    Public LoadRenameOptionsParent As Control_LoadRenameOption
 
     Private _activeDelete As Boolean
     Public Property ActiveDelete As Boolean
@@ -54,6 +79,19 @@ Public Class Control_RenameOption
         End Set
     End Property
 
+    Private _returnStringData As Object
+    Public Property ReturnStringData As String
+        Get
+            Return _returnStringData
+
+        End Get
+        Set(value As String)
+            _returnStringData = value
+
+        End Set
+    End Property
+
+
     Sub New()
 
         ' Esta chamada é requerida pelo designer.
@@ -62,16 +100,224 @@ Public Class Control_RenameOption
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
         _id = 0
 
-        'Dim pai As Control_LoadRenameOption =
         ActiveDelete = False
 
+    End Sub
+
+    Sub ExibirTelaTexto()
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+        PanelEnvolve_ComBPSlave.Controls.Add(TXTPerson)
+        PanelEnvolve_TXT.Controls.Add(ComBPSlave)
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+    End Sub
+
+    Sub ExibirNovaExtensao()
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+
+        PanelEnvolve_ComBPSlave.Controls.Add(TXTPerson)
+        PanelEnvolve_TXT.Controls.Add(ComBPSlave)
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+    End Sub
+
+    Sub ExibirTelaNomeDoArquivoAtual()
+
+        Panel_Right.Visible = True
+        PanelEnvolve_TXT.Visible = False
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+
+        ComBPMaster.PerformAutomaticSelection(2)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
+        Panel_Right.Controls.Add(TXTPerson)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+        '
+
+        ' Adicionar Nova lista
+        ' _____-----------------------------------------------------_____
+
+        Dim listItem As New Collections.Specialized.StringCollection
+
+        listItem.AddRange({" Como o Original", " MAIÚSCULAS", " minúsculas"})
+
+        ComBRight.OptionsList = listItem
+        ComBRight.PerformAutomaticSelection(0)
+
+        ' _____-----------------------------------------------------_____
 
 
     End Sub
 
-    'Public Sub Finalize()
+    Sub ExibirTelaNumeroDeSequencia()
 
-    'End Sub
+        Panel_Right.Visible = True
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = False
+        PanelSubstituir.Visible = False
+
+        ComBPMaster.PerformAutomaticSelection(3)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(TXTPerson)
+        PanelEnvolve_TXT.Controls.Add(ComBPSlave)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+    End Sub
+
+
+    Sub ExibirTelaLetraDaSequencia()
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+        ComBPMaster.PerformAutomaticSelection(4)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
+        PanelEnvolve_TXT.Controls.Add(TXTPerson)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+    End Sub
+
+
+    Sub ExibirTelaDataEHora()
+
+
+        Panel_Right.Visible = True
+        PanelEnvolve_TXT.Visible = False
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+        ComBPMaster.PerformAutomaticSelection(5)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
+        PanelEnvolve_TXT.Controls.Add(TXTPerson)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+        ' Adicionar Nova lista
+        ' _____-----------------------------------------------------_____
+
+        Dim listItem As New Collections.Specialized.StringCollection
+
+        listItem.AddRange({"DDMMAAAA", "DDMMAA", "MMDDAAAA", "MMDDAA", "AAAAMMDD", "AAMMDD", "AAAA", "DD", "MM", "AA", "HHMMSS", "HHMM", "HH", "MM", "SS", "Semana, Dia de Mês de Ano", "Mês (escrito)", "Dia da Semana"})
+
+        ComBRight.OptionsList = listItem
+        ComBRight.PerformAutomaticSelection(0)
+
+        ' _____-----------------------------------------------------_____
+
+    End Sub
+
+    Sub ExibirTelaMetadados()
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+        ComBPMaster.PerformAutomaticSelection(6)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBRight)
+        PanelEnvolve_TXT.Controls.Add(ComBPSlave)
+        PanelEnvolve_ComBRight.Controls.Add(TXTPerson)
+
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+        ' Adicionar Nova lista
+        ' _____-----------------------------------------------------_____
+
+        Dim listItem As New Collections.Specialized.StringCollection
+
+        listItem.AddRange({"Título"})
+
+        ComBRight.OptionsList = listItem
+        ComBRight.PerformAutomaticSelection(0)
+
+        ' _____-----------------------------------------------------_____
+    End Sub
+
+
+    Sub ExibirTelaNomeDaPasta()
+
+        ComBPMaster.PerformAutomaticSelection(6)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
+        PanelEnvolve_TXT.Controls.Add(TXTPerson)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = True
+        PanelEnvolve_ComBRight.Visible = True
+        PanelSubstituir.Visible = False
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+    End Sub
+
+    Sub ExibirTelaSubstituicaoDeString()
+
+        ComBPMaster.PerformAutomaticSelection(7)
+
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
+        PanelEnvolve_TXT.Controls.Add(TXTPerson)
+        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+
+
+        Panel_Right.Visible = False
+        PanelEnvolve_TXT.Visible = True
+        PanelEnvolve_ComBPSlave.Visible = False
+        PanelEnvolve_ComBRight.Visible = True
+
+        PanelSubstituir.Visible = True
+        PanelSubstituir.Dock = DockStyle.Fill
+
+        Me.Height = 111
+
+        TableLPContainer.Dock = DockStyle.Top
+        TableLPContainer.Height = 28
+
+        ' TXTPPesquisar.TXT = PanelSubstituir.Dock.ToString
+    End Sub
 
     Sub MostrarOrdem()
         For Each item In Me.Parent.Controls
@@ -156,9 +402,9 @@ Public Class Control_RenameOption
 
             'OrdenarRenameOption()
 
-            If _pai.Panel_LoadRenameOption.Controls.Count = 1 Then
+            If LoadRenameOptionsParent.Panel_LoadRenameOption.Controls.Count = 1 Then
                 Dim item As Control_RenameOption
-                item = _pai.Panel_LoadRenameOption.Controls.Item(0)
+                item = LoadRenameOptionsParent.Panel_LoadRenameOption.Controls.Item(0)
 
                 'item.BTNRemoveRenomeDeOrigem.BackgroundImage = My.Resources.minus_inativo_50
                 item.ActiveDelete = False
@@ -174,12 +420,13 @@ Public Class Control_RenameOption
 
 
     Private Sub BTNAddRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNAddRenomeDeOrigem.Click
+
+        ' TODO: Remover
+        ExibirTelaSubstituicaoDeString()
+
         Dim renameOption As New Control_RenameOption
 
         Me.Parent.Controls.Add(renameOption)
-
-
-        ' Me.BTNRemoveRenomeDeOrigem.BackgroundImage = My.Resources.minus
 
         Me.ActiveDelete = True
 
@@ -187,29 +434,17 @@ Public Class Control_RenameOption
 
         IndexarRenameOption(ID)
 
-
-        renameOption.ID = ID + 1  'Me.Parent.Controls.Count - 1  '
-
+        renameOption.ID = ID + 1
         renameOption.Width = Me.Parent.Width
-
-        'renameOption.BTNRemoveRenomeDeOrigem.BackgroundImage = My.Resources.minus
-
         renameOption.ActiveDelete = True
-
         renameOption.TXTPerson.TXT = "Saluton" + renameOption.ID.ToString
-
         renameOption.Visible = True
 
         OrdenarRenameOption()
-        'Dim ord As Byte
-        'Dim b As New MsgBoxStyle
 
-        '#Disable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
-        '        ord = MsgBox("Mostrar ordem?", b.YesNo, "Ordem")
-        '        If ord = 6 Then
-        '            MostrarOrdem
-        '        End If
-        '#Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
+    End Sub
+
+    Sub GravarStringData()
 
     End Sub
 
@@ -218,11 +453,75 @@ Public Class Control_RenameOption
 
         If Me.Parent.Parent.Parent.Parent IsNot Nothing Then
             If TypeOf (Me.Parent.Parent.Parent.Parent) Is Control_LoadRenameOption Then
-                _pai = Me.Parent.Parent.Parent.Parent
+                LoadRenameOptionsParent = Me.Parent.Parent.Parent.Parent
 
             End If
         End If
 
+        'ExibirTelaNomeDoArquivoAtual()
+        'ExibirTelaTexto()
+        'ExibirTelaNumeroDeSequencia()
+        'ExibirTelaLetraDaSequencia()
+
+        'ExibirTelaDataEHora()
+
+        'ExibirTelaMetadados()
+
+        'ExibirTelaNomeDaPasta()
+
     End Sub
 
+    Private Sub Control_RenameOption_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+
+    End Sub
+
+    Public Function DisplayInterface()
+
+        If ComBPMaster.SelectedItem IsNot Nothing Then
+            Dim indice As Integer = ComBPMaster.SelectedItem.Tag.ID
+
+            Select Case indice
+
+                Case DisplayTelaEnum.Texto
+                    ExibirTelaTexto()
+
+                Case DisplayTelaEnum.NovaExtensao
+                    ExibirNovaExtensao()
+
+                Case DisplayTelaEnum.NomeDoArquivoAtual
+                    ExibirTelaNomeDoArquivoAtual()
+
+                Case DisplayTelaEnum.NumeroDeSequencia
+                    ExibirTelaNumeroDeSequencia()
+
+                Case DisplayTelaEnum.LetraDaSequencia
+                    ExibirTelaLetraDaSequencia()
+
+                Case DisplayTelaEnum.DataEHora
+                    ExibirTelaDataEHora()
+
+                Case DisplayTelaEnum.Metadados
+                    ExibirTelaMetadados()
+
+                Case DisplayTelaEnum.NomeDaPasta
+                    ExibirTelaNomeDaPasta()
+
+                Case DisplayTelaEnum.SubstituicaoDeString
+                    ExibirTelaSubstituicaoDeString()
+
+            End Select
+
+            MsgBox(indice)
+        End If
+
+    End Function
+
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+
+        If ComBPMaster.SelectedItem IsNot Nothing Then
+            AddHandler ComBPMaster.SelectedItem.Click, New System.EventHandler(AddressOf DisplayInterface)
+
+        End If
+        'DisplayInterface()
+    End Sub
 End Class

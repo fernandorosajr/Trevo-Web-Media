@@ -91,14 +91,14 @@ Public Class Control_ComboBoxPerson
 
     Public returnValue As Object
 
-    Private _displayAp As DisplayAparenceEnum
-    Public Property DisplayAp As DisplayAparenceEnum
+    Private _displayAparence As DisplayAparenceEnum
+    Public Property DisplayAparence As DisplayAparenceEnum
         Get
-            Return _displayAp
+            Return _displayAparence
 
         End Get
         Set(value As DisplayAparenceEnum)
-            _displayAp = value
+            _displayAparence = value
             Display()
 
         End Set
@@ -592,7 +592,7 @@ Public Class Control_ComboBoxPerson
 
     End Sub
 
-    Sub AtualizarForeColor()
+    Public Sub AtualizarForeColor()
         If SelectedItem Is Nothing Then
             LNKLLabelCombo.LinkColor = _foreColorPlaceholder
 
@@ -624,7 +624,6 @@ Public Class Control_ComboBoxPerson
 
             If CMS_Menu.Items.Count > 0 Then
                 If index > y Then index = y
-
 
                 For Each i As ToolStripMenuItem In CMS_Menu.Items
                     i.Checked = False
@@ -688,13 +687,14 @@ Public Class Control_ComboBoxPerson
 
             If _comboBoxPersonSlaveLists.Count > 0 Then
 
+                ' TODO: Talvez isto devesse ser uma função unica
+                ' ___________________________________________________________________
+                ' ___________________________________________________________________
                 If (CInt(_returnItem.ID)) <= (_comboBoxPersonSlaveLists.Count - 1) Then
+                    ' TODO: Esta condição é repetida dentro da função em sequeucia
 
-                    ' TODO: Transformar isto em uma FUNÇÃO
-                    '_____________________________________________________________________
-
+                    ' TODO: Transformar isto em uma FUNÇÃO (OK)
                     Add_comboBoxPersonSlaveListsIn_comboBoxPersonSlave(_returnItem.ID)
-                    '_____________________________________________________________________
 
                     '_comboBoxPersonSlave.PerformAutomaticSelection(0)
 
@@ -703,10 +703,16 @@ Public Class Control_ComboBoxPerson
                 Else
                     If Me.DefaultOptionsList IsNot Nothing Then
                         _comboBoxPersonSlave.OptionsList = Me.DefaultOptionsListSlave
+                        '_comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
                         _comboBoxPersonSlave.LNKLLabelCombo.Text = _comboBoxPersonSlave.TextDisplay
+
                         _comboBoxPersonSlave.SelectedItem = Nothing
+                        _comboBoxPersonSlave.AtualizarForeColor()
 
                     End If
+
+                    ' ___________________________________________________________________
+                    ' ___________________________________________________________________
 
                 End If
 
@@ -729,10 +735,15 @@ Public Class Control_ComboBoxPerson
 
         If Me._comboBoxPersonSlaveLists.Count > 0 Then
             Dim strSlaveList As String
-            strSlaveList = Me._comboBoxPersonSlaveLists.Item(_id)
 
-            _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(strSlaveList, separador)
-            _comboBoxPersonSlave.PerformAutomaticSelection(0)
+            If _id <= Me._comboBoxPersonSlaveLists.Count - 1 Then
+
+                strSlaveList = Me._comboBoxPersonSlaveLists.Item(_id)
+
+                _comboBoxPersonSlave.OptionsList = funcoesDeString.ConverteStringEmColectionString(strSlaveList, separador)
+
+                _comboBoxPersonSlave.PerformAutomaticSelection(0)
+            End If
         End If
 
     End Sub
@@ -941,10 +952,10 @@ Public Class Control_ComboBoxPerson
         obj = CType(sender, Object)
 
         If LNKLLabelCombo.Focused = True Then
-            _displayAp = DisplayAparenceEnum.MouseMoveFocus
+            _displayAparence = DisplayAparenceEnum.MouseMoveFocus
 
         Else
-            _displayAp = DisplayAparenceEnum.MouseMoveUnFocus
+            _displayAparence = DisplayAparenceEnum.MouseMoveUnFocus
 
         End If
 
@@ -953,7 +964,7 @@ Public Class Control_ComboBoxPerson
     End Sub
     Sub Display()
 
-        Select Case _displayAp
+        Select Case _displayAparence
 
             Case DisplayAparenceEnum.None
 
@@ -984,10 +995,10 @@ Public Class Control_ComboBoxPerson
         obj = CType(sender, Object)
 
         If LNKLLabelCombo.Focused = True Or BTNExpandCombo.Focused = True Then
-            _displayAp = DisplayAparenceEnum.MouseLeaveFocus
+            _displayAparence = DisplayAparenceEnum.MouseLeaveFocus
 
         Else
-            _displayAp = DisplayAparenceEnum.MouseLeaveUnFocus
+            _displayAparence = DisplayAparenceEnum.MouseLeaveUnFocus
 
         End If
 
@@ -1013,7 +1024,7 @@ Public Class Control_ComboBoxPerson
         obj = CType(sender, Object)
 
 
-        _displayAp = DisplayAparenceEnum.MouseMoveFocus
+        _displayAparence = DisplayAparenceEnum.MouseMoveFocus
 
         Display()
 
@@ -1022,7 +1033,7 @@ Public Class Control_ComboBoxPerson
 
     Private Sub Objects_LostFocus(sender As Object, e As EventArgs) Handles LNKLLabelCombo.LostFocus, BTNExpandCombo.LostFocus
 
-        _displayAp = DisplayAparenceEnum.MouseLeaveUnFocus
+        _displayAparence = DisplayAparenceEnum.MouseLeaveUnFocus
 
         Display()
 

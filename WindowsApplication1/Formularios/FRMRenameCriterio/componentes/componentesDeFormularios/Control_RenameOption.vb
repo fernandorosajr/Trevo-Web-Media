@@ -178,8 +178,6 @@ Public Class Control_RenameOption
         PanelEnvolve_ComBRight.Visible = False
         PanelSubstituir.Visible = False
 
-        ComBPMaster.PerformAutomaticSelection(3)
-
         PanelEnvolve_ComBPSlave.Controls.Add(TXTPerson)
         PanelEnvolve_TXT.Controls.Add(ComBPSlave)
         PanelEnvolve_ComBRight.Controls.Add(ComBRight)
@@ -250,8 +248,6 @@ Public Class Control_RenameOption
         PanelEnvolve_ComBRight.Visible = True
         PanelSubstituir.Visible = False
 
-        ComBPMaster.PerformAutomaticSelection(6)
-
         PanelEnvolve_ComBPSlave.Controls.Add(ComBRight)
         PanelEnvolve_TXT.Controls.Add(ComBPSlave)
         PanelEnvolve_ComBRight.Controls.Add(TXTPerson)
@@ -276,8 +272,6 @@ Public Class Control_RenameOption
 
     Sub ExibirTelaNomeDaPasta()
 
-        ComBPMaster.PerformAutomaticSelection(6)
-
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         PanelEnvolve_TXT.Controls.Add(TXTPerson)
         PanelEnvolve_ComBRight.Controls.Add(ComBRight)
@@ -295,8 +289,6 @@ Public Class Control_RenameOption
     End Sub
 
     Sub ExibirTelaSubstituicaoDeString()
-
-        ComBPMaster.PerformAutomaticSelection(7)
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         PanelEnvolve_TXT.Controls.Add(TXTPerson)
@@ -316,7 +308,6 @@ Public Class Control_RenameOption
         TableLPContainer.Dock = DockStyle.Top
         TableLPContainer.Height = 28
 
-        ' TXTPPesquisar.TXT = PanelSubstituir.Dock.ToString
     End Sub
 
     Sub MostrarOrdem()
@@ -328,36 +319,17 @@ Public Class Control_RenameOption
     Sub OrdenarRenameOption()
         'TODO: https://csharp.net-tutorials.com/pt/439/linq/organizando-dados-os-metodos-orderby-thenby/
 
-
         Dim listControl(Me.Parent.Controls.Count - 1) As Control
-
-        ' Me.Parent.Visible = False
 
         For Each item As Control_RenameOption In Me.Parent.Controls
 
             item.TabIndex = item.ID
-            ' item.Width = Me.Parent.Width
 
             listControl(item.ID) = item
 
         Next
 
         Me.Parent.Controls.AddRange(listControl.Reverse.ToArray)
-
-        'Me.Parent.Visible = True
-        ' Me.Parent.Refresh()
-
-        'For x As Integer = 0 To Me.Parent.Controls.Count - 1
-        '    For Each item As Control_RenameOption In Me.Parent.Controls
-        '        If item.ID = x Then
-        '            item.BringToFront()
-
-        '            Exit For
-        '        End If
-        '    Next
-        'Next
-
-
 
     End Sub
 
@@ -388,41 +360,27 @@ Public Class Control_RenameOption
 
     Private Sub BTNRemoveRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNRemoveRenomeDeOrigem.Click
 
-        '  Dim pai As Control_LoadRenameOption = Me.Parent.Parent.Parent.Parent
-
-
         If Me.Parent.Controls.Count > 1 Then
-
 
             RemoverIndice(Me.ID)
 
             Me.Finalize()
             Me.Parent.Controls.Remove(Me)
 
-
-            'OrdenarRenameOption()
-
             If LoadRenameOptionsParent.Panel_LoadRenameOption.Controls.Count = 1 Then
                 Dim item As Control_RenameOption
                 item = LoadRenameOptionsParent.Panel_LoadRenameOption.Controls.Item(0)
 
-                'item.BTNRemoveRenomeDeOrigem.BackgroundImage = My.Resources.minus_inativo_50
                 item.ActiveDelete = False
 
             End If
 
-
-
         End If
-
 
     End Sub
 
 
     Private Sub BTNAddRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNAddRenomeDeOrigem.Click
-
-        ' TODO: Remover
-        ExibirTelaSubstituicaoDeString()
 
         Dim renameOption As New Control_RenameOption
 
@@ -458,16 +416,8 @@ Public Class Control_RenameOption
             End If
         End If
 
-        'ExibirTelaNomeDoArquivoAtual()
-        'ExibirTelaTexto()
-        'ExibirTelaNumeroDeSequencia()
-        'ExibirTelaLetraDaSequencia()
-
-        'ExibirTelaDataEHora()
-
-        'ExibirTelaMetadados()
-
-        'ExibirTelaNomeDaPasta()
+        AplicarEventoNosSubItensDeMenu(ComBPMaster.CMS_Menu)
+        ExibirTelaTexto()
 
     End Sub
 
@@ -475,7 +425,7 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Public Function DisplayInterface()
+    Public Sub DisplayInterface()
 
         If ComBPMaster.SelectedItem IsNot Nothing Then
             Dim indice As Integer = ComBPMaster.SelectedItem.Tag.ID
@@ -511,17 +461,22 @@ Public Class Control_RenameOption
 
             End Select
 
-            MsgBox(indice)
         End If
 
-    End Function
-
-    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
-
-        If ComBPMaster.SelectedItem IsNot Nothing Then
-            AddHandler ComBPMaster.SelectedItem.Click, New System.EventHandler(AddressOf DisplayInterface)
-
-        End If
-        'DisplayInterface()
     End Sub
+
+    Sub AplicarAcaoDeTela()
+        Me.SelectDisplayTela = Me.ComBPMaster.SelectedItem.Tag.ID
+
+    End Sub
+
+    Sub AplicarEventoNosSubItensDeMenu(menu As ContextMenuStrip)
+
+        For Each item As ToolStripMenuItem In menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf AplicarAcaoDeTela)
+
+        Next
+
+    End Sub
+
 End Class

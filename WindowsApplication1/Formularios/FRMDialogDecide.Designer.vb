@@ -28,41 +28,6 @@ Partial Class FRMDialogDecide
         Me.LBLFolderName = New System.Windows.Forms.Label()
         Me.LBLTitle01 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PanelItem = New System.Windows.Forms.Panel()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.LNKLRenameSource = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.PanelDivisor = New System.Windows.Forms.Panel()
-        Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.ChBMemorizarAcao = New System.Windows.Forms.CheckBox()
-        Me.PanelConteudo = New System.Windows.Forms.Panel()
-        Me.PanelMenuLateral = New System.Windows.Forms.Panel()
-        Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
-        Me.BTNMenuExpand = New System.Windows.Forms.Button()
-        Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -86,33 +51,57 @@ Partial Class FRMDialogDecide
         Me.Panel23 = New System.Windows.Forms.Panel()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.PanelItem = New System.Windows.Forms.Panel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LNKLRenameSource = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.PanelDivisor = New System.Windows.Forms.Panel()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ChBMemorizarAcao = New System.Windows.Forms.CheckBox()
+        Me.PanelConteudo = New System.Windows.Forms.Panel()
+        Me.PanelMenuLateral = New System.Windows.Forms.Panel()
+        Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel10 = New System.Windows.Forms.LinkLabel()
+        Me.BTNMenuExpand = New System.Windows.Forms.Button()
+        Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Panel24 = New System.Windows.Forms.Panel()
         Me.Panel29 = New System.Windows.Forms.Panel()
-        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.Panel34 = New System.Windows.Forms.Panel()
         Me.Panel27 = New System.Windows.Forms.Panel()
         Me.LinkLabel9 = New System.Windows.Forms.LinkLabel()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.Panel31 = New System.Windows.Forms.Panel()
         Me.Panel26 = New System.Windows.Forms.Panel()
         Me.LinkLabel8 = New System.Windows.Forms.LinkLabel()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.Panel30 = New System.Windows.Forms.Panel()
-        Me.Panel31 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.PanelItem.SuspendLayout()
-        Me.Panel15.SuspendLayout()
-        Me.Panel16.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        Me.Panel11.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Panel25.SuspendLayout()
-        Me.PanelConteudo.SuspendLayout()
-        Me.PanelMenuLateral.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel7.SuspendLayout()
@@ -123,7 +112,23 @@ Partial Class FRMDialogDecide
         Me.Panel20.SuspendLayout()
         Me.Panel21.SuspendLayout()
         Me.Panel22.SuspendLayout()
+        Me.PanelItem.SuspendLayout()
+        Me.Panel15.SuspendLayout()
+        Me.Panel16.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.Panel13.SuspendLayout()
+        Me.Panel25.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.PanelConteudo.SuspendLayout()
+        Me.PanelMenuLateral.SuspendLayout()
+        Me.Panel32.SuspendLayout()
+        Me.Panel33.SuspendLayout()
         Me.Panel27.SuspendLayout()
         Me.Panel26.SuspendLayout()
         Me.SuspendLayout()
@@ -207,431 +212,6 @@ Partial Class FRMDialogDecide
         Me.Panel1.Size = New System.Drawing.Size(485, 297)
         Me.Panel1.TabIndex = 104
         '
-        'PanelItem
-        '
-        Me.PanelItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelItem.Controls.Add(Me.Panel15)
-        Me.PanelItem.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelItem.Location = New System.Drawing.Point(0, 0)
-        Me.PanelItem.Name = "PanelItem"
-        Me.PanelItem.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
-        Me.PanelItem.Size = New System.Drawing.Size(485, 131)
-        Me.PanelItem.TabIndex = 1
-        '
-        'Panel15
-        '
-        Me.Panel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel15.Controls.Add(Me.Panel16)
-        Me.Panel15.Controls.Add(Me.Label10)
-        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel15.Location = New System.Drawing.Point(0, 0)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(485, 130)
-        Me.Panel15.TabIndex = 0
-        '
-        'Panel16
-        '
-        Me.Panel16.Controls.Add(Me.TableLayoutPanel2)
-        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel16.Location = New System.Drawing.Point(0, 26)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(485, 104)
-        Me.Panel16.TabIndex = 9
-        '
-        'Label10
-        '
-        Me.Label10.AutoEllipsis = True
-        Me.Label10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label10.Location = New System.Drawing.Point(0, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
-        Me.Label10.Size = New System.Drawing.Size(485, 26)
-        Me.Label10.TabIndex = 7
-        Me.Label10.Text = "<nome original do arquivo...>"
-        '
-        'Panel9
-        '
-        Me.Panel9.Controls.Add(Me.Panel10)
-        Me.Panel9.Controls.Add(Me.Panel11)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(245, 3)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(237, 98)
-        Me.Panel9.TabIndex = 9
-        '
-        'Panel10
-        '
-        Me.Panel10.Controls.Add(Me.Label4)
-        Me.Panel10.Controls.Add(Me.Label5)
-        Me.Panel10.Controls.Add(Me.LinkLabel2)
-        Me.Panel10.Controls.Add(Me.LinkLabel3)
-        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel10.Location = New System.Drawing.Point(81, 0)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Padding = New System.Windows.Forms.Padding(3, 10, 10, 10)
-        Me.Panel10.Size = New System.Drawing.Size(156, 98)
-        Me.Panel10.TabIndex = 2
-        '
-        'Label4
-        '
-        Me.Label4.AutoEllipsis = True
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.LightGray
-        Me.Label4.Location = New System.Drawing.Point(3, 51)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(143, 15)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "00 KB"
-        '
-        'Label5
-        '
-        Me.Label5.AutoEllipsis = True
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.LightGray
-        Me.Label5.Location = New System.Drawing.Point(3, 36)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(143, 15)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "00/00/00 00:00"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoEllipsis = True
-        Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.Orange
-        Me.LinkLabel2.Location = New System.Drawing.Point(3, 23)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(143, 13)
-        Me.LinkLabel2.TabIndex = 10
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "<Nome>"
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoEllipsis = True
-        Me.LinkLabel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.Orange
-        Me.LinkLabel3.Location = New System.Drawing.Point(3, 10)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(143, 13)
-        Me.LinkLabel3.TabIndex = 11
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "<caminho>"
-        '
-        'Panel11
-        '
-        Me.Panel11.Controls.Add(Me.Panel12)
-        Me.Panel11.Controls.Add(Me.CheckBox2)
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel11.Location = New System.Drawing.Point(0, 0)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Padding = New System.Windows.Forms.Padding(5, 5, 0, 5)
-        Me.Panel11.Size = New System.Drawing.Size(81, 98)
-        Me.Panel11.TabIndex = 1
-        '
-        'Panel12
-        '
-        Me.Panel12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel12.Location = New System.Drawing.Point(20, 5)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(61, 88)
-        Me.Panel12.TabIndex = 0
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.CheckAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox2.Location = New System.Drawing.Point(5, 5)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 88)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'Panel6
-        '
-        Me.Panel6.Controls.Add(Me.Panel8)
-        Me.Panel6.Controls.Add(Me.Panel5)
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(3, 3)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(236, 98)
-        Me.Panel6.TabIndex = 8
-        '
-        'Panel8
-        '
-        Me.Panel8.Controls.Add(Me.Label3)
-        Me.Panel8.Controls.Add(Me.Label2)
-        Me.Panel8.Controls.Add(Me.LNKLRenameSource)
-        Me.Panel8.Controls.Add(Me.LinkLabel1)
-        Me.Panel8.Controls.Add(Me.Panel29)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel8.Location = New System.Drawing.Point(81, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Padding = New System.Windows.Forms.Padding(3, 10, 10, 10)
-        Me.Panel8.Size = New System.Drawing.Size(155, 98)
-        Me.Panel8.TabIndex = 2
-        '
-        'Label3
-        '
-        Me.Label3.AutoEllipsis = True
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.LightGray
-        Me.Label3.Location = New System.Drawing.Point(3, 51)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(141, 15)
-        Me.Label3.TabIndex = 9
-        Me.Label3.Text = "00 KB"
-        '
-        'Label2
-        '
-        Me.Label2.AutoEllipsis = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.LightGray
-        Me.Label2.Location = New System.Drawing.Point(3, 36)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(141, 15)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "00/00/00 00:00"
-        '
-        'LNKLRenameSource
-        '
-        Me.LNKLRenameSource.AutoEllipsis = True
-        Me.LNKLRenameSource.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LNKLRenameSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLRenameSource.Location = New System.Drawing.Point(3, 23)
-        Me.LNKLRenameSource.Name = "LNKLRenameSource"
-        Me.LNKLRenameSource.Size = New System.Drawing.Size(141, 13)
-        Me.LNKLRenameSource.TabIndex = 10
-        Me.LNKLRenameSource.TabStop = True
-        Me.LNKLRenameSource.Text = "<Nome>"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoEllipsis = True
-        Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Orange
-        Me.LinkLabel1.Location = New System.Drawing.Point(3, 10)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(141, 13)
-        Me.LinkLabel1.TabIndex = 11
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "<caminho>"
-        '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.Panel4)
-        Me.Panel5.Controls.Add(Me.CheckBox1)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Padding = New System.Windows.Forms.Padding(5, 5, 0, 5)
-        Me.Panel5.Size = New System.Drawing.Size(81, 98)
-        Me.Panel5.TabIndex = 1
-        '
-        'Panel4
-        '
-        Me.Panel4.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel4.Location = New System.Drawing.Point(20, 5)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(61, 88)
-        Me.Panel4.TabIndex = 0
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.CheckAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.CheckBox1.Location = New System.Drawing.Point(5, 5)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 88)
-        Me.CheckBox1.TabIndex = 1
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'Panel13
-        '
-        Me.Panel13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel13.Controls.Add(Me.Panel1)
-        Me.Panel13.Controls.Add(Me.PanelDivisor)
-        Me.Panel13.Controls.Add(Me.Panel25)
-        Me.Panel13.Location = New System.Drawing.Point(17, 93)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(485, 319)
-        Me.Panel13.TabIndex = 105
-        '
-        'PanelDivisor
-        '
-        Me.PanelDivisor.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelDivisor.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelDivisor.Location = New System.Drawing.Point(0, 21)
-        Me.PanelDivisor.Name = "PanelDivisor"
-        Me.PanelDivisor.Size = New System.Drawing.Size(485, 1)
-        Me.PanelDivisor.TabIndex = 1
-        '
-        'Panel25
-        '
-        Me.Panel25.Controls.Add(Me.TableLayoutPanel4)
-        Me.Panel25.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel25.Location = New System.Drawing.Point(0, 0)
-        Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(485, 21)
-        Me.Panel25.TabIndex = 105
-        '
-        'ChBMemorizarAcao
-        '
-        Me.ChBMemorizarAcao.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ChBMemorizarAcao.AutoEllipsis = True
-        Me.ChBMemorizarAcao.Location = New System.Drawing.Point(25, 418)
-        Me.ChBMemorizarAcao.Name = "ChBMemorizarAcao"
-        Me.ChBMemorizarAcao.Size = New System.Drawing.Size(318, 54)
-        Me.ChBMemorizarAcao.TabIndex = 106
-        Me.ChBMemorizarAcao.Text = "Ignorar arquivos com mesma data e tamanho."
-        Me.ChBMemorizarAcao.UseVisualStyleBackColor = True
-        '
-        'PanelConteudo
-        '
-        Me.PanelConteudo.Controls.Add(Me.ChBMemorizarAcao)
-        Me.PanelConteudo.Controls.Add(Me.Panel13)
-        Me.PanelConteudo.Controls.Add(Me.LBLFolderName)
-        Me.PanelConteudo.Controls.Add(Me.LBLTitle01)
-        Me.PanelConteudo.Controls.Add(Me.TableLayoutPanel1)
-        Me.PanelConteudo.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelConteudo.Location = New System.Drawing.Point(43, 0)
-        Me.PanelConteudo.Name = "PanelConteudo"
-        Me.PanelConteudo.Size = New System.Drawing.Size(522, 475)
-        Me.PanelConteudo.TabIndex = 108
-        '
-        'PanelMenuLateral
-        '
-        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel13)
-        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel12)
-        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel11)
-        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel10)
-        Me.PanelMenuLateral.Controls.Add(Me.BTNMenuExpand)
-        Me.PanelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelMenuLateral.Location = New System.Drawing.Point(0, 0)
-        Me.PanelMenuLateral.Name = "PanelMenuLateral"
-        Me.PanelMenuLateral.Size = New System.Drawing.Size(43, 475)
-        Me.PanelMenuLateral.TabIndex = 109
-        '
-        'LinkLabel13
-        '
-        Me.LinkLabel13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LinkLabel13.AutoEllipsis = True
-        Me.LinkLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LinkLabel13.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel13.LinkColor = System.Drawing.Color.DarkGray
-        Me.LinkLabel13.Location = New System.Drawing.Point(32, 117)
-        Me.LinkLabel13.Name = "LinkLabel13"
-        Me.LinkLabel13.Size = New System.Drawing.Size(0, 35)
-        Me.LinkLabel13.TabIndex = 16
-        Me.LinkLabel13.TabStop = True
-        Me.LinkLabel13.Text = "Manter arquivos com data mais antigos"
-        '
-        'LinkLabel12
-        '
-        Me.LinkLabel12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LinkLabel12.AutoEllipsis = True
-        Me.LinkLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LinkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel12.LinkColor = System.Drawing.Color.DarkGray
-        Me.LinkLabel12.Location = New System.Drawing.Point(32, 215)
-        Me.LinkLabel12.Name = "LinkLabel12"
-        Me.LinkLabel12.Size = New System.Drawing.Size(0, 31)
-        Me.LinkLabel12.TabIndex = 15
-        Me.LinkLabel12.TabStop = True
-        Me.LinkLabel12.Text = "Manter os arquivos de MENOR tamanho"
-        '
-        'LinkLabel11
-        '
-        Me.LinkLabel11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LinkLabel11.AutoEllipsis = True
-        Me.LinkLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LinkLabel11.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel11.LinkColor = System.Drawing.Color.DarkGray
-        Me.LinkLabel11.Location = New System.Drawing.Point(32, 165)
-        Me.LinkLabel11.Name = "LinkLabel11"
-        Me.LinkLabel11.Size = New System.Drawing.Size(0, 31)
-        Me.LinkLabel11.TabIndex = 14
-        Me.LinkLabel11.TabStop = True
-        Me.LinkLabel11.Text = "Manter os arquivos de MAIOR tamanho"
-        '
-        'LinkLabel10
-        '
-        Me.LinkLabel10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LinkLabel10.AutoEllipsis = True
-        Me.LinkLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.LinkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LinkLabel10.LinkColor = System.Drawing.Color.DarkGray
-        Me.LinkLabel10.Location = New System.Drawing.Point(32, 75)
-        Me.LinkLabel10.Name = "LinkLabel10"
-        Me.LinkLabel10.Size = New System.Drawing.Size(0, 35)
-        Me.LinkLabel10.TabIndex = 13
-        Me.LinkLabel10.TabStop = True
-        Me.LinkLabel10.Text = "Manter arquivos com data mais recentes"
-        '
-        'BTNMenuExpand
-        '
-        Me.BTNMenuExpand.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.BTNMenuExpand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNMenuExpand.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNMenuExpand.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNMenuExpand.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMenuExpand.Image = Global.TrevoWebMedia.My.Resources.Resources.menuDefault_min_17x17
-        Me.BTNMenuExpand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BTNMenuExpand.Location = New System.Drawing.Point(8, 24)
-        Me.BTNMenuExpand.Name = "BTNMenuExpand"
-        Me.BTNMenuExpand.Size = New System.Drawing.Size(28, 23)
-        Me.BTNMenuExpand.TabIndex = 2
-        Me.BTNMenuExpand.Tag = "Selecionar"
-        '
-        'Panel28
-        '
-        Me.Panel28.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Panel28.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel28.Location = New System.Drawing.Point(565, 0)
-        Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(1, 475)
-        Me.Panel28.TabIndex = 111
-        '
-        'TableLayoutPanel2
-        '
-        Me.TableLayoutPanel2.ColumnCount = 2
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Panel9, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.Panel6, 0, 0)
-        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 1
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(485, 104)
-        Me.TableLayoutPanel2.TabIndex = 0
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -675,7 +255,7 @@ Partial Class FRMDialogDecide
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 1
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(485, 104)
         Me.TableLayoutPanel3.TabIndex = 0
         '
@@ -902,6 +482,451 @@ Partial Class FRMDialogDecide
         Me.Label9.TabIndex = 7
         Me.Label9.Text = "<nome original do arquivo...>"
         '
+        'PanelItem
+        '
+        Me.PanelItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelItem.Controls.Add(Me.Panel15)
+        Me.PanelItem.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelItem.Location = New System.Drawing.Point(0, 0)
+        Me.PanelItem.Name = "PanelItem"
+        Me.PanelItem.Padding = New System.Windows.Forms.Padding(0, 0, 0, 1)
+        Me.PanelItem.Size = New System.Drawing.Size(485, 131)
+        Me.PanelItem.TabIndex = 1
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel15.Controls.Add(Me.Panel16)
+        Me.Panel15.Controls.Add(Me.Label10)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel15.Location = New System.Drawing.Point(0, 0)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(485, 130)
+        Me.Panel15.TabIndex = 0
+        '
+        'Panel16
+        '
+        Me.Panel16.Controls.Add(Me.TableLayoutPanel2)
+        Me.Panel16.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel16.Location = New System.Drawing.Point(0, 26)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(485, 104)
+        Me.Panel16.TabIndex = 9
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Panel9, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Panel6, 0, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 104.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(485, 104)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'Panel9
+        '
+        Me.Panel9.Controls.Add(Me.Panel10)
+        Me.Panel9.Controls.Add(Me.Panel11)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel9.Location = New System.Drawing.Point(245, 3)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(237, 98)
+        Me.Panel9.TabIndex = 9
+        '
+        'Panel10
+        '
+        Me.Panel10.Controls.Add(Me.Label4)
+        Me.Panel10.Controls.Add(Me.Label5)
+        Me.Panel10.Controls.Add(Me.LinkLabel2)
+        Me.Panel10.Controls.Add(Me.LinkLabel3)
+        Me.Panel10.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel10.Location = New System.Drawing.Point(81, 0)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Padding = New System.Windows.Forms.Padding(3, 10, 10, 10)
+        Me.Panel10.Size = New System.Drawing.Size(156, 98)
+        Me.Panel10.TabIndex = 2
+        '
+        'Label4
+        '
+        Me.Label4.AutoEllipsis = True
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.LightGray
+        Me.Label4.Location = New System.Drawing.Point(3, 51)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(143, 15)
+        Me.Label4.TabIndex = 9
+        Me.Label4.Text = "00 KB"
+        '
+        'Label5
+        '
+        Me.Label5.AutoEllipsis = True
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.LightGray
+        Me.Label5.Location = New System.Drawing.Point(3, 36)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(143, 15)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "00/00/00 00:00"
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoEllipsis = True
+        Me.LinkLabel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel2.Location = New System.Drawing.Point(3, 23)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(143, 13)
+        Me.LinkLabel2.TabIndex = 10
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "<Nome>"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoEllipsis = True
+        Me.LinkLabel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel3.Location = New System.Drawing.Point(3, 10)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(143, 13)
+        Me.LinkLabel3.TabIndex = 11
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "<caminho>"
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.Panel12)
+        Me.Panel11.Controls.Add(Me.CheckBox2)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel11.Location = New System.Drawing.Point(0, 0)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Padding = New System.Windows.Forms.Padding(5, 5, 0, 5)
+        Me.Panel11.Size = New System.Drawing.Size(81, 98)
+        Me.Panel11.TabIndex = 1
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(20, 5)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(61, 88)
+        Me.Panel12.TabIndex = 0
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.CheckAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.CheckBox2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.CheckBox2.Location = New System.Drawing.Point(5, 5)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(15, 88)
+        Me.CheckBox2.TabIndex = 1
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Panel6
+        '
+        Me.Panel6.Controls.Add(Me.Panel8)
+        Me.Panel6.Controls.Add(Me.Panel5)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(3, 3)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(236, 98)
+        Me.Panel6.TabIndex = 8
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.Label3)
+        Me.Panel8.Controls.Add(Me.Label2)
+        Me.Panel8.Controls.Add(Me.LNKLRenameSource)
+        Me.Panel8.Controls.Add(Me.LinkLabel1)
+        Me.Panel8.Controls.Add(Me.Panel29)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel8.Location = New System.Drawing.Point(81, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Padding = New System.Windows.Forms.Padding(3, 10, 10, 10)
+        Me.Panel8.Size = New System.Drawing.Size(155, 98)
+        Me.Panel8.TabIndex = 2
+        '
+        'Label3
+        '
+        Me.Label3.AutoEllipsis = True
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.LightGray
+        Me.Label3.Location = New System.Drawing.Point(3, 51)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(141, 15)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "00 KB"
+        '
+        'Label2
+        '
+        Me.Label2.AutoEllipsis = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.LightGray
+        Me.Label2.Location = New System.Drawing.Point(3, 36)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(141, 15)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "00/00/00 00:00"
+        '
+        'LNKLRenameSource
+        '
+        Me.LNKLRenameSource.AutoEllipsis = True
+        Me.LNKLRenameSource.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LNKLRenameSource.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLRenameSource.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLRenameSource.Location = New System.Drawing.Point(3, 23)
+        Me.LNKLRenameSource.Name = "LNKLRenameSource"
+        Me.LNKLRenameSource.Size = New System.Drawing.Size(141, 13)
+        Me.LNKLRenameSource.TabIndex = 10
+        Me.LNKLRenameSource.TabStop = True
+        Me.LNKLRenameSource.Text = "<Nome>"
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoEllipsis = True
+        Me.LinkLabel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel1.Location = New System.Drawing.Point(3, 10)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(141, 13)
+        Me.LinkLabel1.TabIndex = 11
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "<caminho>"
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.Panel4)
+        Me.Panel5.Controls.Add(Me.CheckBox1)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel5.Location = New System.Drawing.Point(0, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Padding = New System.Windows.Forms.Padding(5, 5, 0, 5)
+        Me.Panel5.Size = New System.Drawing.Size(81, 98)
+        Me.Panel5.TabIndex = 1
+        '
+        'Panel4
+        '
+        Me.Panel4.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.arquivo01
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(20, 5)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(61, 88)
+        Me.Panel4.TabIndex = 0
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.CheckAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.CheckBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.CheckBox1.Location = New System.Drawing.Point(5, 5)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(15, 88)
+        Me.CheckBox1.TabIndex = 1
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoEllipsis = True
+        Me.Label10.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Tai Le", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label10.Location = New System.Drawing.Point(0, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Padding = New System.Windows.Forms.Padding(0, 10, 0, 0)
+        Me.Label10.Size = New System.Drawing.Size(485, 26)
+        Me.Label10.TabIndex = 7
+        Me.Label10.Text = "<nome original do arquivo...>"
+        '
+        'Panel13
+        '
+        Me.Panel13.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel13.Controls.Add(Me.Panel1)
+        Me.Panel13.Controls.Add(Me.PanelDivisor)
+        Me.Panel13.Controls.Add(Me.Panel25)
+        Me.Panel13.Location = New System.Drawing.Point(17, 93)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(485, 319)
+        Me.Panel13.TabIndex = 105
+        '
+        'PanelDivisor
+        '
+        Me.PanelDivisor.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelDivisor.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelDivisor.Location = New System.Drawing.Point(0, 21)
+        Me.PanelDivisor.Name = "PanelDivisor"
+        Me.PanelDivisor.Size = New System.Drawing.Size(485, 1)
+        Me.PanelDivisor.TabIndex = 1
+        '
+        'Panel25
+        '
+        Me.Panel25.Controls.Add(Me.TableLayoutPanel4)
+        Me.Panel25.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel25.Location = New System.Drawing.Point(0, 0)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(485, 21)
+        Me.Panel25.TabIndex = 105
+        '
+        'TableLayoutPanel4
+        '
+        Me.TableLayoutPanel4.ColumnCount = 2
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.Controls.Add(Me.Panel32, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.Panel26, 1, 0)
+        Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 1
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(485, 21)
+        Me.TableLayoutPanel4.TabIndex = 0
+        '
+        'ChBMemorizarAcao
+        '
+        Me.ChBMemorizarAcao.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ChBMemorizarAcao.AutoEllipsis = True
+        Me.ChBMemorizarAcao.Location = New System.Drawing.Point(25, 418)
+        Me.ChBMemorizarAcao.Name = "ChBMemorizarAcao"
+        Me.ChBMemorizarAcao.Size = New System.Drawing.Size(318, 54)
+        Me.ChBMemorizarAcao.TabIndex = 106
+        Me.ChBMemorizarAcao.Text = "Ignorar arquivos com mesma data e tamanho."
+        Me.ChBMemorizarAcao.UseVisualStyleBackColor = True
+        '
+        'PanelConteudo
+        '
+        Me.PanelConteudo.Controls.Add(Me.ChBMemorizarAcao)
+        Me.PanelConteudo.Controls.Add(Me.Panel13)
+        Me.PanelConteudo.Controls.Add(Me.LBLFolderName)
+        Me.PanelConteudo.Controls.Add(Me.LBLTitle01)
+        Me.PanelConteudo.Controls.Add(Me.TableLayoutPanel1)
+        Me.PanelConteudo.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelConteudo.Location = New System.Drawing.Point(43, 0)
+        Me.PanelConteudo.Name = "PanelConteudo"
+        Me.PanelConteudo.Size = New System.Drawing.Size(522, 475)
+        Me.PanelConteudo.TabIndex = 108
+        '
+        'PanelMenuLateral
+        '
+        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel13)
+        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel12)
+        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel11)
+        Me.PanelMenuLateral.Controls.Add(Me.LinkLabel10)
+        Me.PanelMenuLateral.Controls.Add(Me.BTNMenuExpand)
+        Me.PanelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelMenuLateral.Location = New System.Drawing.Point(0, 0)
+        Me.PanelMenuLateral.Name = "PanelMenuLateral"
+        Me.PanelMenuLateral.Size = New System.Drawing.Size(43, 475)
+        Me.PanelMenuLateral.TabIndex = 109
+        '
+        'LinkLabel13
+        '
+        Me.LinkLabel13.ActiveLinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LinkLabel13.AutoEllipsis = True
+        Me.LinkLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LinkLabel13.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel13.LinkColor = System.Drawing.Color.DarkGray
+        Me.LinkLabel13.Location = New System.Drawing.Point(32, 117)
+        Me.LinkLabel13.Name = "LinkLabel13"
+        Me.LinkLabel13.Size = New System.Drawing.Size(0, 35)
+        Me.LinkLabel13.TabIndex = 16
+        Me.LinkLabel13.TabStop = True
+        Me.LinkLabel13.Text = "Manter arquivos com data mais antigos"
+        '
+        'LinkLabel12
+        '
+        Me.LinkLabel12.ActiveLinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LinkLabel12.AutoEllipsis = True
+        Me.LinkLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LinkLabel12.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel12.LinkColor = System.Drawing.Color.DarkGray
+        Me.LinkLabel12.Location = New System.Drawing.Point(32, 215)
+        Me.LinkLabel12.Name = "LinkLabel12"
+        Me.LinkLabel12.Size = New System.Drawing.Size(0, 31)
+        Me.LinkLabel12.TabIndex = 15
+        Me.LinkLabel12.TabStop = True
+        Me.LinkLabel12.Text = "Manter os arquivos de MENOR tamanho"
+        '
+        'LinkLabel11
+        '
+        Me.LinkLabel11.ActiveLinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LinkLabel11.AutoEllipsis = True
+        Me.LinkLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LinkLabel11.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel11.LinkColor = System.Drawing.Color.DarkGray
+        Me.LinkLabel11.Location = New System.Drawing.Point(32, 165)
+        Me.LinkLabel11.Name = "LinkLabel11"
+        Me.LinkLabel11.Size = New System.Drawing.Size(0, 31)
+        Me.LinkLabel11.TabIndex = 14
+        Me.LinkLabel11.TabStop = True
+        Me.LinkLabel11.Text = "Manter os arquivos de MAIOR tamanho"
+        '
+        'LinkLabel10
+        '
+        Me.LinkLabel10.ActiveLinkColor = System.Drawing.Color.Orange
+        Me.LinkLabel10.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LinkLabel10.AutoEllipsis = True
+        Me.LinkLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.LinkLabel10.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LinkLabel10.LinkColor = System.Drawing.Color.DarkGray
+        Me.LinkLabel10.Location = New System.Drawing.Point(32, 75)
+        Me.LinkLabel10.Name = "LinkLabel10"
+        Me.LinkLabel10.Size = New System.Drawing.Size(0, 35)
+        Me.LinkLabel10.TabIndex = 13
+        Me.LinkLabel10.TabStop = True
+        Me.LinkLabel10.Text = "Manter arquivos com data mais recentes"
+        '
+        'BTNMenuExpand
+        '
+        Me.BTNMenuExpand.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.BTNMenuExpand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNMenuExpand.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNMenuExpand.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNMenuExpand.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMenuExpand.Image = Global.TrevoWebMedia.My.Resources.Resources.menuDefault_min_17x17
+        Me.BTNMenuExpand.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BTNMenuExpand.Location = New System.Drawing.Point(8, 24)
+        Me.BTNMenuExpand.Name = "BTNMenuExpand"
+        Me.BTNMenuExpand.Size = New System.Drawing.Size(28, 23)
+        Me.BTNMenuExpand.TabIndex = 2
+        Me.BTNMenuExpand.Tag = "Selecionar"
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Panel28.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel28.Location = New System.Drawing.Point(565, 0)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(1, 475)
+        Me.Panel28.TabIndex = 111
+        '
         'Panel24
         '
         Me.Panel24.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
@@ -920,21 +945,33 @@ Partial Class FRMDialogDecide
         Me.Panel29.Size = New System.Drawing.Size(1, 78)
         Me.Panel29.TabIndex = 12
         '
-        'TableLayoutPanel4
+        'Panel32
         '
-        Me.TableLayoutPanel4.ColumnCount = 2
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Controls.Add(Me.Panel26, 0, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.Panel27, 0, 0)
-        Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
-        Me.TableLayoutPanel4.RowCount = 1
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(485, 21)
-        Me.TableLayoutPanel4.TabIndex = 0
+        Me.Panel32.Controls.Add(Me.Panel27)
+        Me.Panel32.Controls.Add(Me.Panel33)
+        Me.Panel32.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel32.Location = New System.Drawing.Point(3, 3)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(236, 15)
+        Me.Panel32.TabIndex = 107
+        '
+        'Panel33
+        '
+        Me.Panel33.Controls.Add(Me.Panel34)
+        Me.Panel33.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel33.Location = New System.Drawing.Point(226, 0)
+        Me.Panel33.Name = "Panel33"
+        Me.Panel33.Size = New System.Drawing.Size(10, 15)
+        Me.Panel33.TabIndex = 0
+        '
+        'Panel34
+        '
+        Me.Panel34.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Panel34.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel34.Location = New System.Drawing.Point(0, 0)
+        Me.Panel34.Name = "Panel34"
+        Me.Panel34.Size = New System.Drawing.Size(1, 15)
+        Me.Panel34.TabIndex = 13
         '
         'Panel27
         '
@@ -942,10 +979,10 @@ Partial Class FRMDialogDecide
         Me.Panel27.Controls.Add(Me.CheckBox6)
         Me.Panel27.Controls.Add(Me.Panel31)
         Me.Panel27.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel27.Location = New System.Drawing.Point(3, 3)
+        Me.Panel27.Location = New System.Drawing.Point(0, 0)
         Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(236, 15)
-        Me.Panel27.TabIndex = 10
+        Me.Panel27.Size = New System.Drawing.Size(226, 15)
+        Me.Panel27.TabIndex = 11
         '
         'LinkLabel9
         '
@@ -955,7 +992,7 @@ Partial Class FRMDialogDecide
         Me.LinkLabel9.LinkColor = System.Drawing.Color.Orange
         Me.LinkLabel9.Location = New System.Drawing.Point(90, 0)
         Me.LinkLabel9.Name = "LinkLabel9"
-        Me.LinkLabel9.Size = New System.Drawing.Size(146, 15)
+        Me.LinkLabel9.Size = New System.Drawing.Size(136, 15)
         Me.LinkLabel9.TabIndex = 12
         Me.LinkLabel9.TabStop = True
         Me.LinkLabel9.Text = "<caminho>"
@@ -971,6 +1008,14 @@ Partial Class FRMDialogDecide
         Me.CheckBox6.Text = "Arquivos de "
         Me.CheckBox6.UseVisualStyleBackColor = True
         '
+        'Panel31
+        '
+        Me.Panel31.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel31.Location = New System.Drawing.Point(0, 0)
+        Me.Panel31.Name = "Panel31"
+        Me.Panel31.Size = New System.Drawing.Size(5, 15)
+        Me.Panel31.TabIndex = 14
+        '
         'Panel26
         '
         Me.Panel26.Controls.Add(Me.LinkLabel8)
@@ -980,7 +1025,7 @@ Partial Class FRMDialogDecide
         Me.Panel26.Location = New System.Drawing.Point(245, 3)
         Me.Panel26.Name = "Panel26"
         Me.Panel26.Size = New System.Drawing.Size(237, 15)
-        Me.Panel26.TabIndex = 11
+        Me.Panel26.TabIndex = 113
         '
         'LinkLabel8
         '
@@ -1014,14 +1059,6 @@ Partial Class FRMDialogDecide
         Me.Panel30.Size = New System.Drawing.Size(5, 15)
         Me.Panel30.TabIndex = 13
         '
-        'Panel31
-        '
-        Me.Panel31.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Panel31.Location = New System.Drawing.Point(0, 0)
-        Me.Panel31.Name = "Panel31"
-        Me.Panel31.Size = New System.Drawing.Size(5, 15)
-        Me.Panel31.TabIndex = 14
-        '
         'FRMDialogDecide
         '
         Me.AcceptButton = Me.OK_Button
@@ -1044,22 +1081,6 @@ Partial Class FRMDialogDecide
         Me.Text = "Decidir sobre os arquivos"
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        Me.PanelItem.ResumeLayout(False)
-        Me.Panel15.ResumeLayout(False)
-        Me.Panel16.ResumeLayout(False)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel11.ResumeLayout(False)
-        Me.Panel11.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel13.ResumeLayout(False)
-        Me.Panel25.ResumeLayout(False)
-        Me.PanelConteudo.ResumeLayout(False)
-        Me.PanelMenuLateral.ResumeLayout(False)
-        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
@@ -1072,7 +1093,25 @@ Partial Class FRMDialogDecide
         Me.Panel21.ResumeLayout(False)
         Me.Panel22.ResumeLayout(False)
         Me.Panel22.PerformLayout()
+        Me.PanelItem.ResumeLayout(False)
+        Me.Panel15.ResumeLayout(False)
+        Me.Panel16.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel25.ResumeLayout(False)
         Me.TableLayoutPanel4.ResumeLayout(False)
+        Me.PanelConteudo.ResumeLayout(False)
+        Me.PanelMenuLateral.ResumeLayout(False)
+        Me.Panel32.ResumeLayout(False)
+        Me.Panel33.ResumeLayout(False)
         Me.Panel27.ResumeLayout(False)
         Me.Panel27.PerformLayout()
         Me.Panel26.ResumeLayout(False)
@@ -1144,15 +1183,18 @@ Partial Class FRMDialogDecide
     Friend WithEvents Panel23 As Panel
     Friend WithEvents CheckBox4 As CheckBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents Panel29 As Panel
     Friend WithEvents Panel24 As Panel
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
-    Friend WithEvents Panel26 As Panel
-    Friend WithEvents LinkLabel8 As LinkLabel
-    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents Panel29 As Panel
+    Friend WithEvents Panel32 As Panel
     Friend WithEvents Panel27 As Panel
     Friend WithEvents LinkLabel9 As LinkLabel
     Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents Panel30 As Panel
     Friend WithEvents Panel31 As Panel
+    Friend WithEvents Panel33 As Panel
+    Friend WithEvents Panel34 As Panel
+    Friend WithEvents Panel26 As Panel
+    Friend WithEvents LinkLabel8 As LinkLabel
+    Friend WithEvents CheckBox5 As CheckBox
+    Friend WithEvents Panel30 As Panel
 End Class

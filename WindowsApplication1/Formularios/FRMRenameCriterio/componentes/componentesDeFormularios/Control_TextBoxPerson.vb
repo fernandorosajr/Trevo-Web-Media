@@ -26,7 +26,7 @@ Public Class Control_TextBoxPerson
 
     Dim _minVerticalSize As Integer = 19
 
-    Dim _defaultPaddingText As New Padding(2, 2, 2, 2)
+    Dim _defaultPaddingText As New Padding(2, 3, 2, 2)
 
 
     ' Propriedades de Validação

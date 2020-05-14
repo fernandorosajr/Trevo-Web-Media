@@ -59,7 +59,7 @@ Partial Class Control_TextBoxPerson
         Me.PanelEnvolveTXT.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolveTXT.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolveTXT.Name = "PanelEnvolveTXT"
-        Me.PanelEnvolveTXT.Padding = New System.Windows.Forms.Padding(8, 2, 2, 2)
+        Me.PanelEnvolveTXT.Padding = New System.Windows.Forms.Padding(8, 4, 2, 2)
         Me.PanelEnvolveTXT.Size = New System.Drawing.Size(192, 19)
         Me.PanelEnvolveTXT.TabIndex = 0
         '
@@ -69,7 +69,7 @@ Partial Class Control_TextBoxPerson
         Me.TXTBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TXTBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TXTBox.ForeColor = System.Drawing.Color.DarkGray
-        Me.TXTBox.Location = New System.Drawing.Point(8, 2)
+        Me.TXTBox.Location = New System.Drawing.Point(8, 4)
         Me.TXTBox.Name = "TXTBox"
         Me.TXTBox.Size = New System.Drawing.Size(182, 13)
         Me.TXTBox.TabIndex = 0

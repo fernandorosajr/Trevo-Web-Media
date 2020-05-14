@@ -1057,4 +1057,7 @@ Public Class Control_ComboBoxPerson
         End If
     End Sub
 
+    Private Sub TXT_TextChanged(sender As Object, e As EventArgs) Handles TXT.TextChanged
+
+    End Sub
 End Class

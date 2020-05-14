@@ -95,6 +95,7 @@ Partial Class Control_ComboBoxPerson
         Me.LNKLLabelCombo.LinkColor = System.Drawing.Color.DarkGray
         Me.LNKLLabelCombo.Location = New System.Drawing.Point(8, 2)
         Me.LNKLLabelCombo.Name = "LNKLLabelCombo"
+        Me.LNKLLabelCombo.Padding = New System.Windows.Forms.Padding(0, 2, 0, 0)
         Me.LNKLLabelCombo.Size = New System.Drawing.Size(255, 15)
         Me.LNKLLabelCombo.TabIndex = 2
         Me.LNKLLabelCombo.TabStop = True

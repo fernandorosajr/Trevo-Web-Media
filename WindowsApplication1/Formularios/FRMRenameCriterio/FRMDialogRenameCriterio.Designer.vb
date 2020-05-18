@@ -35,10 +35,11 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
-        Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
-        Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
-        Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
+        Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
+        Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
+        Me.LBLTitle03 = New System.Windows.Forms.Label()
+        Me.Control_TextBoxPerson1 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -211,45 +212,6 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem.TabIndex = 7
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
-        'LNKLNomeDoExemplo
-        '
-        Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LNKLNomeDoExemplo.AutoEllipsis = True
-        Me.LNKLNomeDoExemplo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
-        Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(130, 36)
-        Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
-        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(464, 13)
-        Me.LNKLNomeDoExemplo.TabIndex = 11
-        Me.LNKLNomeDoExemplo.TabStop = True
-        Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
-        '
-        'LBLValue_NovoNome
-        '
-        Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLValue_NovoNome.AutoEllipsis = True
-        Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(127, 57)
-        Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
-        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(467, 13)
-        Me.LBLValue_NovoNome.TabIndex = 13
-        Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
-        '
-        'LBLTitle03
-        '
-        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.LBLTitle03.AutoEllipsis = True
-        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
-        Me.LBLTitle03.Name = "LBLTitle03"
-        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
-        Me.LBLTitle03.TabIndex = 4
-        Me.LBLTitle03.Text = "Visualizar exemplo"
-        '
         'TXTCNovoNome
         '
         Me.TXTCNovoNome.ActiveValidate = True
@@ -274,6 +236,95 @@ Partial Class FRMDialogRenameCriterio
         Me.TXTCNovoNome.ValueStr = Nothing
         Me.TXTCNovoNome.Visible = False
         '
+        'LBLValue_NovoNome
+        '
+        Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLValue_NovoNome.AutoEllipsis = True
+        Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.LBLValue_NovoNome.Location = New System.Drawing.Point(127, 57)
+        Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
+        Me.LBLValue_NovoNome.Size = New System.Drawing.Size(467, 13)
+        Me.LBLValue_NovoNome.TabIndex = 13
+        Me.LBLValue_NovoNome.Text = "Meu Arquivo.txt"
+        '
+        'LNKLNomeDoExemplo
+        '
+        Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LNKLNomeDoExemplo.AutoEllipsis = True
+        Me.LNKLNomeDoExemplo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
+        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(130, 36)
+        Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
+        Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(464, 13)
+        Me.LNKLNomeDoExemplo.TabIndex = 11
+        Me.LNKLNomeDoExemplo.TabStop = True
+        Me.LNKLNomeDoExemplo.Text = "Meu Arquivo.txt"
+        '
+        'LBLTitle03
+        '
+        Me.LBLTitle03.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBLTitle03.AutoEllipsis = True
+        Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
+        Me.LBLTitle03.Name = "LBLTitle03"
+        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
+        Me.LBLTitle03.TabIndex = 4
+        Me.LBLTitle03.Text = "Visualizar exemplo"
+        '
+        'Control_TextBoxPerson1
+        '
+        Me.Control_TextBoxPerson1.ActiveValidate = True
+        Me.Control_TextBoxPerson1.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Control_TextBoxPerson1.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson1.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Control_TextBoxPerson1.BorderColorError = System.Drawing.Color.Red
+        Me.Control_TextBoxPerson1.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Control_TextBoxPerson1.ByChar = False
+        Me.Control_TextBoxPerson1.ByText = False
+        Me.Control_TextBoxPerson1.ByValue = False
+        Me.Control_TextBoxPerson1.ChangeCursorFocus = False
+        Me.Control_TextBoxPerson1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.Control_TextBoxPerson1.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.Control_TextBoxPerson1.ErrorDisplay = False
+        Me.Control_TextBoxPerson1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson1.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson1.ForeColor = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson1.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson1.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.Control_TextBoxPerson1.HideSelection = True
+        Me.Control_TextBoxPerson1.LeftIndentation = 6
+        Me.Control_TextBoxPerson1.Location = New System.Drawing.Point(77, 454)
+        Me.Control_TextBoxPerson1.MultiLine = False
+        Me.Control_TextBoxPerson1.Name = "Control_TextBoxPerson1"
+        Me.Control_TextBoxPerson1.NoneOfThisChar = ""
+        Me.Control_TextBoxPerson1.NoneOfThisText = Nothing
+        Me.Control_TextBoxPerson1.NoneOfThisValue = Nothing
+        Me.Control_TextBoxPerson1.OnlyNumber = True
+        Me.Control_TextBoxPerson1.PaddingText = New System.Windows.Forms.Padding(2, 3, 2, 2)
+        Me.Control_TextBoxPerson1.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson1.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.Control_TextBoxPerson1.PersonCSSMargin = New System.Windows.Forms.Padding(0, 0, 0, 0)
+        Me.Control_TextBoxPerson1.Placeholder = Nothing
+        Me.Control_TextBoxPerson1.Read_Only = False
+        Me.Control_TextBoxPerson1.RequiredChar = ""
+        Me.Control_TextBoxPerson1.RequiredText = Nothing
+        Me.Control_TextBoxPerson1.RequiredValue = Nothing
+        Me.Control_TextBoxPerson1.RightIndentation = 0
+        Me.Control_TextBoxPerson1.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson1.Size = New System.Drawing.Size(191, 21)
+        Me.Control_TextBoxPerson1.SpaceError = False
+        Me.Control_TextBoxPerson1.TabIndex = 6
+        Me.Control_TextBoxPerson1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson1.ThisSize = New System.Drawing.Size(191, 21)
+        Me.Control_TextBoxPerson1.TXT = Nothing
+        Me.Control_TextBoxPerson1.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson1.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson1.WordWrap = True
+        '
         'FRMDialogRenameCriterio
         '
         Me.AcceptButton = Me.OK_Button
@@ -282,6 +333,7 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(678, 507)
+        Me.Controls.Add(Me.Control_TextBoxPerson1)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.LBLTitle03)
         Me.Controls.Add(Me.PanelRecebe)
@@ -321,4 +373,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LNKLNomeDoExemplo As LinkLabel
     Friend WithEvents LBLTitleOrigem As Label
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
+    Friend WithEvents Control_TextBoxPerson1 As Control_TextBoxPerson
 End Class

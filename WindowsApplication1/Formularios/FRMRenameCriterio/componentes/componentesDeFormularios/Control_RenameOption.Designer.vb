@@ -33,29 +33,29 @@ Partial Class Control_RenameOption
         Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Control_TextBoxPerson2 = New TrevoWebMedia.Control_TextBoxPerson()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TXTPPesquisar = New TrevoWebMedia.Control_TextBoxPerson()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.TableLPContainer = New System.Windows.Forms.TableLayoutPanel()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
+        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelEnvolve_ComBPMaster = New System.Windows.Forms.Panel()
         Me.Panel_Right = New System.Windows.Forms.Panel()
-        Me.PanelEnvolve_TXT = New System.Windows.Forms.Panel()
+        Me.PanelEnvolve_RightTXT = New System.Windows.Forms.Panel()
+        Me.TXTPValue = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelEnvolve_ComBRight = New System.Windows.Forms.Panel()
+        Me.ComBRight = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.BTNAddRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
-        Me.Control_TextBoxPerson2 = New TrevoWebMedia.Control_TextBoxPerson()
-        Me.TXTPPesquisar = New TrevoWebMedia.Control_TextBoxPerson()
-        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.TXTPValue = New TrevoWebMedia.Control_TextBoxPerson()
-        Me.ComBRight = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.PanelBase.SuspendLayout()
@@ -69,7 +69,7 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPSlave.SuspendLayout()
         Me.PanelEnvolve_ComBPMaster.SuspendLayout()
         Me.Panel_Right.SuspendLayout()
-        Me.PanelEnvolve_TXT.SuspendLayout()
+        Me.PanelEnvolve_RightTXT.SuspendLayout()
         Me.PanelEnvolve_ComBRight.SuspendLayout()
         Me.PanelRightButtons.SuspendLayout()
         Me.TableLPButtons.SuspendLayout()
@@ -192,6 +192,59 @@ Partial Class Control_RenameOption
         Me.Panel2.Size = New System.Drawing.Size(224, 21)
         Me.Panel2.TabIndex = 1
         '
+        'Control_TextBoxPerson2
+        '
+        Me.Control_TextBoxPerson2.ActiveValidate = False
+        Me.Control_TextBoxPerson2.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Control_TextBoxPerson2.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson2.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Control_TextBoxPerson2.BorderColorError = System.Drawing.Color.Red
+        Me.Control_TextBoxPerson2.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.Control_TextBoxPerson2.ByChar = False
+        Me.Control_TextBoxPerson2.ByText = False
+        Me.Control_TextBoxPerson2.ByValue = False
+        Me.Control_TextBoxPerson2.ChangeCursorFocus = True
+        Me.Control_TextBoxPerson2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.Control_TextBoxPerson2.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.Control_TextBoxPerson2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Control_TextBoxPerson2.ErrorDisplay = False
+        Me.Control_TextBoxPerson2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson2.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Control_TextBoxPerson2.ForeColor = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson2.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.Control_TextBoxPerson2.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.Control_TextBoxPerson2.HideSelection = True
+        Me.Control_TextBoxPerson2.LeftIndentation = 6
+        Me.Control_TextBoxPerson2.Location = New System.Drawing.Point(83, 0)
+        Me.Control_TextBoxPerson2.MultiLine = False
+        Me.Control_TextBoxPerson2.Name = "Control_TextBoxPerson2"
+        Me.Control_TextBoxPerson2.NoneOfThisChar = ""
+        Me.Control_TextBoxPerson2.NoneOfThisText = Nothing
+        Me.Control_TextBoxPerson2.NoneOfThisValue = Nothing
+        Me.Control_TextBoxPerson2.OnlyAlfaNumber = False
+        Me.Control_TextBoxPerson2.OnlyCaracterText = False
+        Me.Control_TextBoxPerson2.OnlyNumber = False
+        Me.Control_TextBoxPerson2.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.Control_TextBoxPerson2.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Control_TextBoxPerson2.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.Control_TextBoxPerson2.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.Control_TextBoxPerson2.Placeholder = Nothing
+        Me.Control_TextBoxPerson2.Read_Only = False
+        Me.Control_TextBoxPerson2.RequiredChar = ""
+        Me.Control_TextBoxPerson2.RequiredText = Nothing
+        Me.Control_TextBoxPerson2.RequiredValue = Nothing
+        Me.Control_TextBoxPerson2.RightIndentation = 0
+        Me.Control_TextBoxPerson2.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.Control_TextBoxPerson2.Size = New System.Drawing.Size(141, 21)
+        Me.Control_TextBoxPerson2.SpaceError = False
+        Me.Control_TextBoxPerson2.TabIndex = 1
+        Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(141, 21)
+        Me.Control_TextBoxPerson2.TXT = Nothing
+        Me.Control_TextBoxPerson2.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
+        Me.Control_TextBoxPerson2.WordWrap = True
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -211,6 +264,59 @@ Partial Class Control_RenameOption
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(224, 21)
         Me.Panel1.TabIndex = 0
+        '
+        'TXTPPesquisar
+        '
+        Me.TXTPPesquisar.ActiveValidate = False
+        Me.TXTPPesquisar.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTPPesquisar.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPPesquisar.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.TXTPPesquisar.BorderColorError = System.Drawing.Color.Red
+        Me.TXTPPesquisar.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TXTPPesquisar.ByChar = False
+        Me.TXTPPesquisar.ByText = False
+        Me.TXTPPesquisar.ByValue = False
+        Me.TXTPPesquisar.ChangeCursorFocus = True
+        Me.TXTPPesquisar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.TXTPPesquisar.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.TXTPPesquisar.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTPPesquisar.ErrorDisplay = False
+        Me.TXTPPesquisar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPPesquisar.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPPesquisar.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTPPesquisar.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.TXTPPesquisar.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.TXTPPesquisar.HideSelection = True
+        Me.TXTPPesquisar.LeftIndentation = 6
+        Me.TXTPPesquisar.Location = New System.Drawing.Point(68, 0)
+        Me.TXTPPesquisar.MultiLine = False
+        Me.TXTPPesquisar.Name = "TXTPPesquisar"
+        Me.TXTPPesquisar.NoneOfThisChar = ""
+        Me.TXTPPesquisar.NoneOfThisText = Nothing
+        Me.TXTPPesquisar.NoneOfThisValue = Nothing
+        Me.TXTPPesquisar.OnlyAlfaNumber = False
+        Me.TXTPPesquisar.OnlyCaracterText = False
+        Me.TXTPPesquisar.OnlyNumber = False
+        Me.TXTPPesquisar.PaddingText = New System.Windows.Forms.Padding(2)
+        Me.TXTPPesquisar.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TXTPPesquisar.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.TXTPPesquisar.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.TXTPPesquisar.Placeholder = Nothing
+        Me.TXTPPesquisar.Read_Only = False
+        Me.TXTPPesquisar.RequiredChar = ""
+        Me.TXTPPesquisar.RequiredText = Nothing
+        Me.TXTPPesquisar.RequiredValue = Nothing
+        Me.TXTPPesquisar.RightIndentation = 0
+        Me.TXTPPesquisar.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.TXTPPesquisar.Size = New System.Drawing.Size(156, 21)
+        Me.TXTPPesquisar.SpaceError = False
+        Me.TXTPPesquisar.TabIndex = 1
+        Me.TXTPPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TXTPPesquisar.ThisSize = New System.Drawing.Size(156, 21)
+        Me.TXTPPesquisar.TXT = Nothing
+        Me.TXTPPesquisar.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPPesquisar.UseSystemPasswordChar = False
+        Me.TXTPPesquisar.WordWrap = True
         '
         'Label1
         '
@@ -271,6 +377,73 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPSlave.Size = New System.Drawing.Size(161, 22)
         Me.PanelEnvolve_ComBPSlave.TabIndex = 5
         '
+        'ComBPSlave
+        '
+        Me.ComBPSlave.AutomaticSelect = True
+        Me.ComBPSlave.AutoSize = True
+        Me.ComBPSlave.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBPSlave.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBPSlave.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBPSlave.BorderColorError = System.Drawing.Color.Red
+        Me.ComBPSlave.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBPSlave.ComboBoxPersonMaster = Me.ComBPMaster
+        Me.ComBPSlave.ComboBoxPersonSlave = Nothing
+        Me.ComBPSlave.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPSlave.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DataReturn = Nothing
+        Me.ComBPSlave.DefaultOptionsList = CType(resources.GetObject("ComBPSlave.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DefaultOptionsListSlave = CType(resources.GetObject("ComBPSlave.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
+        Me.ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPSlave.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBPSlave.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.ComBPSlave.HideWhenEmptyList = False
+        Me.ComBPSlave.ListaDeOpçõesPadrão = Nothing
+        Me.ComBPSlave.Location = New System.Drawing.Point(0, 0)
+        Me.ComBPSlave.Name = "ComBPSlave"
+        Me.ComBPSlave.Nivel = 1
+        Me.ComBPSlave.OptionsList = CType(resources.GetObject("ComBPSlave.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.ReturnStringList = CType(resources.GetObject("ComBPSlave.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPSlave.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
+        Me.ComBPSlave.SelectedItem = Nothing
+        Me.ComBPSlave.ShortcutKeyDisplay = True
+        Me.ComBPSlave.Size = New System.Drawing.Size(161, 22)
+        Me.ComBPSlave.TabIndex = 1
+        Me.ComBPSlave.TextDisplay = "<Selecione>"
+        Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        '
+        'ComBPMaster
+        '
+        Me.ComBPMaster.AutomaticSelect = True
+        Me.ComBPMaster.AutoSize = True
+        Me.ComBPMaster.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBPMaster.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBPMaster.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBPMaster.BorderColorError = System.Drawing.Color.Red
+        Me.ComBPMaster.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBPMaster.ComboBoxPersonMaster = Nothing
+        Me.ComBPMaster.ComboBoxPersonSlave = Me.ComBPSlave
+        Me.ComBPMaster.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPMaster.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DataReturn = Nothing
+        Me.ComBPMaster.DefaultOptionsList = CType(resources.GetObject("ComBPMaster.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DefaultOptionsListSlave = CType(resources.GetObject("ComBPMaster.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
+        Me.ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBPMaster.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBPMaster.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.ComBPMaster.HideWhenEmptyList = False
+        Me.ComBPMaster.ListaDeOpçõesPadrão = Nothing
+        Me.ComBPMaster.Location = New System.Drawing.Point(0, 0)
+        Me.ComBPMaster.Name = "ComBPMaster"
+        Me.ComBPMaster.Nivel = 0
+        Me.ComBPMaster.OptionsList = CType(resources.GetObject("ComBPMaster.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.ReturnStringList = CType(resources.GetObject("ComBPMaster.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPMaster.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.MenuItemType
+        Me.ComBPMaster.ShortcutKeyDisplay = True
+        Me.ComBPMaster.Size = New System.Drawing.Size(161, 22)
+        Me.ComBPMaster.TabIndex = 0
+        Me.ComBPMaster.TextDisplay = "Texto"
+        Me.ComBPMaster.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        '
         'PanelEnvolve_ComBPMaster
         '
         Me.PanelEnvolve_ComBPMaster.Controls.Add(Me.ComBPMaster)
@@ -282,7 +455,7 @@ Partial Class Control_RenameOption
         '
         'Panel_Right
         '
-        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_TXT)
+        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_RightTXT)
         Me.Panel_Right.Controls.Add(Me.PanelEnvolve_ComBRight)
         Me.Panel_Right.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Right.Location = New System.Drawing.Point(349, 3)
@@ -290,14 +463,67 @@ Partial Class Control_RenameOption
         Me.Panel_Right.Size = New System.Drawing.Size(163, 22)
         Me.Panel_Right.TabIndex = 6
         '
-        'PanelEnvolve_TXT
+        'PanelEnvolve_RightTXT
         '
-        Me.PanelEnvolve_TXT.Controls.Add(Me.TXTPValue)
-        Me.PanelEnvolve_TXT.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_TXT.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolve_TXT.Name = "PanelEnvolve_TXT"
-        Me.PanelEnvolve_TXT.Size = New System.Drawing.Size(163, 22)
-        Me.PanelEnvolve_TXT.TabIndex = 3
+        Me.PanelEnvolve_RightTXT.Controls.Add(Me.TXTPValue)
+        Me.PanelEnvolve_RightTXT.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_RightTXT.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_RightTXT.Name = "PanelEnvolve_RightTXT"
+        Me.PanelEnvolve_RightTXT.Size = New System.Drawing.Size(163, 22)
+        Me.PanelEnvolve_RightTXT.TabIndex = 3
+        '
+        'TXTPValue
+        '
+        Me.TXTPValue.ActiveValidate = False
+        Me.TXTPValue.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTPValue.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPValue.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.TXTPValue.BorderColorError = System.Drawing.Color.Red
+        Me.TXTPValue.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TXTPValue.ByChar = False
+        Me.TXTPValue.ByText = False
+        Me.TXTPValue.ByValue = False
+        Me.TXTPValue.ChangeCursorFocus = True
+        Me.TXTPValue.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.TXTPValue.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.TXTPValue.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTPValue.ErrorDisplay = False
+        Me.TXTPValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPValue.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPValue.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTPValue.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.TXTPValue.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.TXTPValue.HideSelection = True
+        Me.TXTPValue.LeftIndentation = 6
+        Me.TXTPValue.Location = New System.Drawing.Point(0, 0)
+        Me.TXTPValue.MultiLine = False
+        Me.TXTPValue.Name = "TXTPValue"
+        Me.TXTPValue.NoneOfThisChar = ""
+        Me.TXTPValue.NoneOfThisText = Nothing
+        Me.TXTPValue.NoneOfThisValue = Nothing
+        Me.TXTPValue.OnlyAlfaNumber = False
+        Me.TXTPValue.OnlyCaracterText = False
+        Me.TXTPValue.OnlyNumber = False
+        Me.TXTPValue.PaddingText = New System.Windows.Forms.Padding(2, 3, 2, 2)
+        Me.TXTPValue.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TXTPValue.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.TXTPValue.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.TXTPValue.Placeholder = "Digite algo ..."
+        Me.TXTPValue.Read_Only = False
+        Me.TXTPValue.RequiredChar = ""
+        Me.TXTPValue.RequiredText = Nothing
+        Me.TXTPValue.RequiredValue = Nothing
+        Me.TXTPValue.RightIndentation = 0
+        Me.TXTPValue.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.TXTPValue.Size = New System.Drawing.Size(163, 21)
+        Me.TXTPValue.SpaceError = False
+        Me.TXTPValue.TabIndex = 2
+        Me.TXTPValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TXTPValue.ThisSize = New System.Drawing.Size(163, 21)
+        Me.TXTPValue.TXT = Nothing
+        Me.TXTPValue.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPValue.UseSystemPasswordChar = False
+        Me.TXTPValue.WordWrap = True
         '
         'PanelEnvolve_ComBRight
         '
@@ -307,6 +533,39 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBRight.Name = "PanelEnvolve_ComBRight"
         Me.PanelEnvolve_ComBRight.Size = New System.Drawing.Size(163, 22)
         Me.PanelEnvolve_ComBRight.TabIndex = 4
+        '
+        'ComBRight
+        '
+        Me.ComBRight.AutomaticSelect = True
+        Me.ComBRight.AutoSize = True
+        Me.ComBRight.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBRight.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBRight.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBRight.BorderColorError = System.Drawing.Color.Red
+        Me.ComBRight.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBRight.ComboBoxPersonMaster = Nothing
+        Me.ComBRight.ComboBoxPersonSlave = Nothing
+        Me.ComBRight.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBRight.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBRight.DataReturn = Nothing
+        Me.ComBRight.DefaultOptionsList = CType(resources.GetObject("ComBRight.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBRight.DefaultOptionsListSlave = CType(resources.GetObject("ComBRight.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBRight.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
+        Me.ComBRight.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComBRight.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBRight.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.ComBRight.HideWhenEmptyList = False
+        Me.ComBRight.ListaDeOpçõesPadrão = Nothing
+        Me.ComBRight.Location = New System.Drawing.Point(0, 0)
+        Me.ComBRight.Name = "ComBRight"
+        Me.ComBRight.Nivel = 0
+        Me.ComBRight.OptionsList = CType(resources.GetObject("ComBRight.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBRight.ReturnStringList = CType(resources.GetObject("ComBRight.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBRight.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
+        Me.ComBRight.ShortcutKeyDisplay = True
+        Me.ComBRight.Size = New System.Drawing.Size(163, 22)
+        Me.ComBRight.TabIndex = 0
+        Me.ComBRight.TextDisplay = "<Selecione>"
+        Me.ComBRight.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
         'PanelRightButtons
         '
@@ -378,256 +637,6 @@ Partial Class Control_RenameOption
         Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
         Me.PanelMagemBotton.TabIndex = 0
         '
-        'Control_TextBoxPerson2
-        '
-        Me.Control_TextBoxPerson2.ActiveValidate = False
-        Me.Control_TextBoxPerson2.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.Control_TextBoxPerson2.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson2.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.Control_TextBoxPerson2.BorderColorError = System.Drawing.Color.Red
-        Me.Control_TextBoxPerson2.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.Control_TextBoxPerson2.ByChar = False
-        Me.Control_TextBoxPerson2.ByText = False
-        Me.Control_TextBoxPerson2.ByValue = False
-        Me.Control_TextBoxPerson2.ChangeCursorFocus = True
-        Me.Control_TextBoxPerson2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.Control_TextBoxPerson2.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.Control_TextBoxPerson2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Control_TextBoxPerson2.ErrorDisplay = False
-        Me.Control_TextBoxPerson2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Control_TextBoxPerson2.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Control_TextBoxPerson2.ForeColor = System.Drawing.Color.DarkGray
-        Me.Control_TextBoxPerson2.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.Control_TextBoxPerson2.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.Control_TextBoxPerson2.HideSelection = True
-        Me.Control_TextBoxPerson2.LeftIndentation = 6
-        Me.Control_TextBoxPerson2.Location = New System.Drawing.Point(83, 0)
-        Me.Control_TextBoxPerson2.MultiLine = False
-        Me.Control_TextBoxPerson2.Name = "Control_TextBoxPerson2"
-        Me.Control_TextBoxPerson2.NoneOfThisChar = ""
-        Me.Control_TextBoxPerson2.NoneOfThisText = Nothing
-        Me.Control_TextBoxPerson2.NoneOfThisValue = Nothing
-        Me.Control_TextBoxPerson2.PaddingText = New System.Windows.Forms.Padding(2)
-        Me.Control_TextBoxPerson2.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Control_TextBoxPerson2.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.Control_TextBoxPerson2.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.Control_TextBoxPerson2.Placeholder = Nothing
-        Me.Control_TextBoxPerson2.Read_Only = False
-        Me.Control_TextBoxPerson2.RequiredChar = ""
-        Me.Control_TextBoxPerson2.RequiredText = Nothing
-        Me.Control_TextBoxPerson2.RequiredValue = Nothing
-        Me.Control_TextBoxPerson2.RightIndentation = 0
-        Me.Control_TextBoxPerson2.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.Control_TextBoxPerson2.Size = New System.Drawing.Size(141, 21)
-        Me.Control_TextBoxPerson2.SpaceError = False
-        Me.Control_TextBoxPerson2.TabIndex = 1
-        Me.Control_TextBoxPerson2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.Control_TextBoxPerson2.ThisSize = New System.Drawing.Size(141, 21)
-        Me.Control_TextBoxPerson2.TXT = Nothing
-        Me.Control_TextBoxPerson2.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Control_TextBoxPerson2.UseSystemPasswordChar = False
-        Me.Control_TextBoxPerson2.WordWrap = True
-        '
-        'TXTPPesquisar
-        '
-        Me.TXTPPesquisar.ActiveValidate = False
-        Me.TXTPPesquisar.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TXTPPesquisar.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPPesquisar.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.TXTPPesquisar.BorderColorError = System.Drawing.Color.Red
-        Me.TXTPPesquisar.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TXTPPesquisar.ByChar = False
-        Me.TXTPPesquisar.ByText = False
-        Me.TXTPPesquisar.ByValue = False
-        Me.TXTPPesquisar.ChangeCursorFocus = True
-        Me.TXTPPesquisar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.TXTPPesquisar.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.TXTPPesquisar.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TXTPPesquisar.ErrorDisplay = False
-        Me.TXTPPesquisar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPPesquisar.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPPesquisar.ForeColor = System.Drawing.Color.DarkGray
-        Me.TXTPPesquisar.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.TXTPPesquisar.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.TXTPPesquisar.HideSelection = True
-        Me.TXTPPesquisar.LeftIndentation = 6
-        Me.TXTPPesquisar.Location = New System.Drawing.Point(68, 0)
-        Me.TXTPPesquisar.MultiLine = False
-        Me.TXTPPesquisar.Name = "TXTPPesquisar"
-        Me.TXTPPesquisar.NoneOfThisChar = ""
-        Me.TXTPPesquisar.NoneOfThisText = Nothing
-        Me.TXTPPesquisar.NoneOfThisValue = Nothing
-        Me.TXTPPesquisar.PaddingText = New System.Windows.Forms.Padding(2)
-        Me.TXTPPesquisar.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TXTPPesquisar.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.TXTPPesquisar.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.TXTPPesquisar.Placeholder = Nothing
-        Me.TXTPPesquisar.Read_Only = False
-        Me.TXTPPesquisar.RequiredChar = ""
-        Me.TXTPPesquisar.RequiredText = Nothing
-        Me.TXTPPesquisar.RequiredValue = Nothing
-        Me.TXTPPesquisar.RightIndentation = 0
-        Me.TXTPPesquisar.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.TXTPPesquisar.Size = New System.Drawing.Size(156, 21)
-        Me.TXTPPesquisar.SpaceError = False
-        Me.TXTPPesquisar.TabIndex = 1
-        Me.TXTPPesquisar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.TXTPPesquisar.ThisSize = New System.Drawing.Size(156, 21)
-        Me.TXTPPesquisar.TXT = Nothing
-        Me.TXTPPesquisar.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPPesquisar.UseSystemPasswordChar = False
-        Me.TXTPPesquisar.WordWrap = True
-        '
-        'ComBPSlave
-        '
-        Me.ComBPSlave.AutomaticSelect = True
-        Me.ComBPSlave.AutoSize = True
-        Me.ComBPSlave.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBPSlave.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBPSlave.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBPSlave.BorderColorError = System.Drawing.Color.Red
-        Me.ComBPSlave.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBPSlave.ComboBoxPersonMaster = Me.ComBPMaster
-        Me.ComBPSlave.ComboBoxPersonSlave = Nothing
-        Me.ComBPSlave.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPSlave.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.DataReturn = Nothing
-        Me.ComBPSlave.DefaultOptionsList = CType(resources.GetObject("ComBPSlave.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.DefaultOptionsListSlave = CType(resources.GetObject("ComBPSlave.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
-        Me.ComBPSlave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComBPSlave.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.ComBPSlave.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.ComBPSlave.HideWhenEmptyList = False
-        Me.ComBPSlave.ListaDeOpçõesPadrão = Nothing
-        Me.ComBPSlave.Location = New System.Drawing.Point(0, 0)
-        Me.ComBPSlave.Name = "ComBPSlave"
-        Me.ComBPSlave.Nivel = 1
-        Me.ComBPSlave.OptionsList = CType(resources.GetObject("ComBPSlave.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.ReturnStringList = CType(resources.GetObject("ComBPSlave.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPSlave.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
-        Me.ComBPSlave.SelectedItem = Nothing
-        Me.ComBPSlave.ShortcutKeyDisplay = True
-        Me.ComBPSlave.Size = New System.Drawing.Size(161, 22)
-        Me.ComBPSlave.TabIndex = 1
-        Me.ComBPSlave.TextDisplay = "<Selecione>"
-        Me.ComBPSlave.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
-        'ComBPMaster
-        '
-        Me.ComBPMaster.AutomaticSelect = True
-        Me.ComBPMaster.AutoSize = True
-        Me.ComBPMaster.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBPMaster.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBPMaster.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBPMaster.BorderColorError = System.Drawing.Color.Red
-        Me.ComBPMaster.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBPMaster.ComboBoxPersonMaster = Nothing
-        Me.ComBPMaster.ComboBoxPersonSlave = Me.ComBPSlave
-        Me.ComBPMaster.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPMaster.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.DataReturn = Nothing
-        Me.ComBPMaster.DefaultOptionsList = CType(resources.GetObject("ComBPMaster.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.DefaultOptionsListSlave = CType(resources.GetObject("ComBPMaster.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
-        Me.ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComBPMaster.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.ComBPMaster.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.ComBPMaster.HideWhenEmptyList = False
-        Me.ComBPMaster.ListaDeOpçõesPadrão = Nothing
-        Me.ComBPMaster.Location = New System.Drawing.Point(0, 0)
-        Me.ComBPMaster.Name = "ComBPMaster"
-        Me.ComBPMaster.Nivel = 0
-        Me.ComBPMaster.OptionsList = CType(resources.GetObject("ComBPMaster.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.ReturnStringList = CType(resources.GetObject("ComBPMaster.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPMaster.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.MenuItemType
-        Me.ComBPMaster.ShortcutKeyDisplay = True
-        Me.ComBPMaster.Size = New System.Drawing.Size(161, 22)
-        Me.ComBPMaster.TabIndex = 0
-        Me.ComBPMaster.TextDisplay = "Texto"
-        Me.ComBPMaster.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
-        'TXTPValue
-        '
-        Me.TXTPValue.ActiveValidate = False
-        Me.TXTPValue.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TXTPValue.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPValue.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.TXTPValue.BorderColorError = System.Drawing.Color.Red
-        Me.TXTPValue.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TXTPValue.ByChar = False
-        Me.TXTPValue.ByText = False
-        Me.TXTPValue.ByValue = False
-        Me.TXTPValue.ChangeCursorFocus = True
-        Me.TXTPValue.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.TXTPValue.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.TXTPValue.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TXTPValue.ErrorDisplay = False
-        Me.TXTPValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPValue.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPValue.ForeColor = System.Drawing.Color.DarkGray
-        Me.TXTPValue.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.TXTPValue.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.TXTPValue.HideSelection = True
-        Me.TXTPValue.LeftIndentation = 6
-        Me.TXTPValue.Location = New System.Drawing.Point(0, 0)
-        Me.TXTPValue.MultiLine = False
-        Me.TXTPValue.Name = "TXTPValue"
-        Me.TXTPValue.NoneOfThisChar = ""
-        Me.TXTPValue.NoneOfThisText = Nothing
-        Me.TXTPValue.NoneOfThisValue = Nothing
-        Me.TXTPValue.PaddingText = New System.Windows.Forms.Padding(2, 3, 2, 2)
-        Me.TXTPValue.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TXTPValue.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.TXTPValue.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.TXTPValue.Placeholder = "Digite algo ..."
-        Me.TXTPValue.Read_Only = False
-        Me.TXTPValue.RequiredChar = ""
-        Me.TXTPValue.RequiredText = Nothing
-        Me.TXTPValue.RequiredValue = Nothing
-        Me.TXTPValue.RightIndentation = 0
-        Me.TXTPValue.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.TXTPValue.Size = New System.Drawing.Size(163, 21)
-        Me.TXTPValue.SpaceError = False
-        Me.TXTPValue.TabIndex = 2
-        Me.TXTPValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.TXTPValue.ThisSize = New System.Drawing.Size(163, 21)
-        Me.TXTPValue.TXT = Nothing
-        Me.TXTPValue.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPValue.UseSystemPasswordChar = False
-        Me.TXTPValue.WordWrap = True
-        '
-        'ComBRight
-        '
-        Me.ComBRight.AutomaticSelect = True
-        Me.ComBRight.AutoSize = True
-        Me.ComBRight.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBRight.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBRight.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBRight.BorderColorError = System.Drawing.Color.Red
-        Me.ComBRight.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBRight.ComboBoxPersonMaster = Nothing
-        Me.ComBRight.ComboBoxPersonSlave = Nothing
-        Me.ComBRight.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBRight.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBRight.DataReturn = Nothing
-        Me.ComBRight.DefaultOptionsList = CType(resources.GetObject("ComBRight.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBRight.DefaultOptionsListSlave = CType(resources.GetObject("ComBRight.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBRight.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
-        Me.ComBRight.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComBRight.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.ComBRight.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.ComBRight.HideWhenEmptyList = False
-        Me.ComBRight.ListaDeOpçõesPadrão = Nothing
-        Me.ComBRight.Location = New System.Drawing.Point(0, 0)
-        Me.ComBRight.Name = "ComBRight"
-        Me.ComBRight.Nivel = 0
-        Me.ComBRight.OptionsList = CType(resources.GetObject("ComBRight.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBRight.ReturnStringList = CType(resources.GetObject("ComBRight.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBRight.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
-        Me.ComBRight.ShortcutKeyDisplay = True
-        Me.ComBRight.Size = New System.Drawing.Size(163, 22)
-        Me.ComBRight.TabIndex = 0
-        Me.ComBRight.TextDisplay = "<Selecione>"
-        Me.ComBRight.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
         'Control_RenameOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -655,7 +664,7 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPMaster.ResumeLayout(False)
         Me.PanelEnvolve_ComBPMaster.PerformLayout()
         Me.Panel_Right.ResumeLayout(False)
-        Me.PanelEnvolve_TXT.ResumeLayout(False)
+        Me.PanelEnvolve_RightTXT.ResumeLayout(False)
         Me.PanelEnvolve_ComBRight.ResumeLayout(False)
         Me.PanelEnvolve_ComBRight.PerformLayout()
         Me.PanelRightButtons.ResumeLayout(False)
@@ -678,7 +687,7 @@ Partial Class Control_RenameOption
     Friend WithEvents ComBPSlave As Control_ComboBoxPerson
     Friend WithEvents Panel_Right As Panel
     Friend WithEvents TXTPValue As Control_TextBoxPerson
-    Friend WithEvents PanelEnvolve_TXT As Panel
+    Friend WithEvents PanelEnvolve_RightTXT As Panel
     Friend WithEvents PanelEnvolve_ComBRight As Panel
     Friend WithEvents ComBRight As Control_ComboBoxPerson
     Friend WithEvents PanelBase As Panel

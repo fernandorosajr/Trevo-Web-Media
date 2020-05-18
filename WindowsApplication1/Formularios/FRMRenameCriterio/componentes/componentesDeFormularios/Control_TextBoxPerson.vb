@@ -32,7 +32,6 @@ Public Class Control_TextBoxPerson
     ' Propriedades de Validação
     '------------------------------------------------
 
-
     Private _activeValidate As Boolean
     <Category("Validação")>
     <Description("Recebe caracteres .")>
@@ -43,6 +42,67 @@ Public Class Control_TextBoxPerson
         End Get
         Set(value As Boolean)
             _activeValidate = value
+
+        End Set
+    End Property
+
+
+    Private _onlyNumber As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property OnlyNumber As Boolean
+        Get
+            Return _onlyNumber
+
+        End Get
+        Set(value As Boolean)
+            _onlyNumber = value
+
+            If value = True Then
+                _onlyAlfaNumber = False
+                _onlyCaracterText = False
+
+            End If
+
+        End Set
+    End Property
+
+    Private _onlyAlfaNumber As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property OnlyAlfaNumber As Boolean
+        Get
+            Return _onlyAlfaNumber
+
+        End Get
+        Set(value As Boolean)
+            _onlyAlfaNumber = value
+
+            If value = True Then
+                _onlyNumber = False
+                _onlyCaracterText = False
+
+            End If
+
+        End Set
+    End Property
+
+    Private _onlyCaracterText As Boolean
+    <Category("Validação")>
+    <Description("Recebe caracteres .")>
+    Public Property OnlyCaracterText As Boolean
+        Get
+            Return _onlyCaracterText
+
+        End Get
+        Set(value As Boolean)
+            _onlyCaracterText = value
+
+            If value = True Then
+                _onlyAlfaNumber = False
+                _onlyNumber = False
+
+            End If
 
         End Set
     End Property
@@ -825,6 +885,8 @@ Public Class Control_TextBoxPerson
             PanelEnvolveTXT.Cursor = TXTBox.Cursor
         End If
 
+        ErrorDisplay = Validar(_txt)
+
     End Sub
 
     Private Sub TXTBox_GotFocus(sender As Object, e As EventArgs) Handles TXTBox.GotFocus
@@ -1000,7 +1062,7 @@ Public Class Control_TextBoxPerson
         TXTBox.Focus()
     End Sub
 
-    Function Validar(dadoStr As String) As Boolean
+    Public Function Validar(dataStr As String) As Boolean
 
         Dim foundError As Boolean = False
 
@@ -1015,12 +1077,17 @@ Public Class Control_TextBoxPerson
             Dim foundTextError As Boolean = False
             Dim foundRequiredTextError As Boolean = False
 
+            Dim foundOnlyNumberError As Boolean = False
+            Dim foundOnlyAlfaNumberError As Boolean = False
+            Dim foundOnlyCaracterTextError As Boolean = False
+
             Dim foundSpaceError As Boolean = False
+
 
 
             If ByValue = True Then
                 If _noneOfThisValue IsNot Nothing Or _noneOfThisValue <> "" Then
-                    If dadoStr = _noneOfThisValue Then
+                    If dataStr = _noneOfThisValue Then
                         foundValueError = True
                     Else
                         foundValueError = False
@@ -1031,7 +1098,7 @@ Public Class Control_TextBoxPerson
 
                 If _requiredValue IsNot Nothing Or _requiredValue <> "" Then
 
-                    If dadoStr <> _requiredValue Then
+                    If dataStr <> _requiredValue Then
                         foundRequiredValueError = True
 
                     Else
@@ -1045,7 +1112,7 @@ Public Class Control_TextBoxPerson
 
             If ByChar = True Then
                 If _noneOfThisChar IsNot Nothing Or _noneOfThisChar.Count > 0 Then
-                    If dadoStr.LastIndexOfAny(_noneOfThisChar) <> -1 Then
+                    If dataStr.LastIndexOfAny(_noneOfThisChar) <> -1 Then
                         foundCharError = True
 
                     Else
@@ -1056,14 +1123,14 @@ Public Class Control_TextBoxPerson
 
                 If _requiredChar IsNot Nothing Or _requiredChar.Count > 0 Then
 
-
+                    ' TEm que ter todos os caracteres determinados.
                     Dim _char As Char
                     For Each _char In _requiredChar
 
                         Dim _chars() As Char
                         _chars = {_char}
 
-                        foundRequiredCharError = ConfereChar(dadoStr, _chars)
+                        foundRequiredCharError = ConfereCharExist(dataStr, _chars)
 
                         If foundRequiredCharError = True Then Exit For
 
@@ -1077,7 +1144,7 @@ Public Class Control_TextBoxPerson
                 If _noneOfThisText IsNot Nothing Or _noneOfThisText <> "" Then
 
 
-                    If dadoStr.Contains(_noneOfThisText) = True Then
+                    If dataStr.Contains(_noneOfThisText) = True Then
                         foundTextError = True
 
                     Else
@@ -1086,7 +1153,7 @@ Public Class Control_TextBoxPerson
                 End If
 
                 If _requiredText IsNot Nothing Or _requiredText <> "" Then
-                    If dadoStr.Contains(_requiredText) = False Then
+                    If dataStr.Contains(_requiredText) = False Then
                         foundRequiredTextError = True
                     Else
 
@@ -1095,10 +1162,49 @@ Public Class Control_TextBoxPerson
                 End If
             End If
 
-            If _spaceError = True Then
-                If Trim(dadoStr) = "" Then
-                    foundSpaceError = True
+            If _onlyNumber = True Then
+                If Trim(dataStr) <> "" Then
+                    foundOnlyNumberError = Not (IsNumeric(dataStr))
 
+                Else
+                    foundOnlyNumberError = False
+
+                End If
+
+            End If
+
+            If _onlyAlfaNumber = True Then
+                Dim _charStr As String
+                Dim _charUpper As String
+                Dim _charLower As String
+
+
+                For i As Integer = 0 To dataStr.Length - 1
+
+                    _charStr = dataStr.Chars(i).ToString()
+                    _charUpper = _charStr.ToUpper.ToString()
+                    _charLower = _charStr.ToLower.ToString()
+
+                    If _charUpper = _charLower And IsNumeric(_charStr) = False Then
+                        foundOnlyAlfaNumberError = True
+
+                    Else
+                        foundOnlyAlfaNumberError = False
+
+                    End If
+                Next
+
+            End If
+
+            If _onlyCaracterText = True Then
+
+                foundOnlyAlfaNumberError = Not (funcoesDeString.TodosOsCaracteresSaoTexto(dataStr))
+
+            End If
+
+            If _spaceError = True Then
+                If Trim(dataStr) = "" Then
+                    foundSpaceError = True
                 Else
                     foundSpaceError = False
 
@@ -1114,7 +1220,10 @@ Public Class Control_TextBoxPerson
                foundCharError = True Or
                foundRequiredCharError = True Or
                foundTextError = True Or
-               foundRequiredTextError = True Then
+               foundRequiredTextError = True Or
+               foundOnlyNumberError = True Or
+               foundOnlyAlfaNumberError = True Or
+               foundOnlyCaracterTextError = True Then
 
                 foundError = True
 
@@ -1127,15 +1236,17 @@ Public Class Control_TextBoxPerson
 
     End Function
 
-    Function ConfereChar(dadoStr As String, _chars() As Char) As Boolean
-        Dim h As String
+    Function ConfereCharExist(dataStr As String, _chars() As Char) As Boolean
+        Dim str As String
         Dim foundRequiredCharError As Boolean = True
 
-        For i = 0 To dadoStr.Length - 1
+        ' Se o caracter existir, retorna false
+        ' Caso contrario, retorna true. 
+        For i = 0 To dataStr.Length - 1
 
-            h = dadoStr.Chars(i)
+            str = dataStr.Chars(i)
 
-            If h.LastIndexOfAny(_chars) = -1 Then
+            If str.LastIndexOfAny(_chars) = -1 Then
                 foundRequiredCharError = True
 
             Else

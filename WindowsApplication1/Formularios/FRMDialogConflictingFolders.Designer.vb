@@ -88,7 +88,7 @@ Partial Class FRMDialogConflictingFolders
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(136, 255)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(136, 247)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -179,7 +179,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLValueDestino.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValueDestino.Location = New System.Drawing.Point(204, 192)
         Me.LBLValueDestino.Name = "LBLValueDestino"
-        Me.LBLValueDestino.Size = New System.Drawing.Size(305, 17)
+        Me.LBLValueDestino.Size = New System.Drawing.Size(305, 16)
         Me.LBLValueDestino.TabIndex = 11
         Me.LBLValueDestino.Text = "<destino>"
         '
@@ -229,7 +229,7 @@ Partial Class FRMDialogConflictingFolders
         Me.LBLOutrasOpcoes.AutoEllipsis = True
         Me.LBLOutrasOpcoes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLOutrasOpcoes.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLOutrasOpcoes.Location = New System.Drawing.Point(136, 28)
+        Me.LBLOutrasOpcoes.Location = New System.Drawing.Point(136, 16)
         Me.LBLOutrasOpcoes.Name = "LBLOutrasOpcoes"
         Me.LBLOutrasOpcoes.Size = New System.Drawing.Size(373, 20)
         Me.LBLOutrasOpcoes.TabIndex = 20
@@ -247,7 +247,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNMesclar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNMesclar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BTNMesclar.ForeColor = System.Drawing.Color.LightGray
-        Me.BTNMesclar.Location = New System.Drawing.Point(11, 10)
+        Me.BTNMesclar.Location = New System.Drawing.Point(11, 20)
         Me.BTNMesclar.Name = "BTNMesclar"
         Me.BTNMesclar.Size = New System.Drawing.Size(373, 23)
         Me.BTNMesclar.TabIndex = 21
@@ -265,7 +265,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNSubstituir.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.BTNSubstituir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.BTNSubstituir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNSubstituir.Location = New System.Drawing.Point(11, 39)
+        Me.BTNSubstituir.Location = New System.Drawing.Point(11, 49)
         Me.BTNSubstituir.Name = "BTNSubstituir"
         Me.BTNSubstituir.Size = New System.Drawing.Size(373, 23)
         Me.BTNSubstituir.TabIndex = 22
@@ -281,7 +281,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNIgnorar.DialogResult = System.Windows.Forms.DialogResult.Ignore
         Me.BTNIgnorar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.BTNIgnorar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNIgnorar.Location = New System.Drawing.Point(11, 68)
+        Me.BTNIgnorar.Location = New System.Drawing.Point(11, 78)
         Me.BTNIgnorar.Name = "BTNIgnorar"
         Me.BTNIgnorar.Size = New System.Drawing.Size(373, 23)
         Me.BTNIgnorar.TabIndex = 23
@@ -293,7 +293,7 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolve_PanelDivisor.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelEnvolve_PanelDivisor.Controls.Add(Me.PanelDivisor)
-        Me.PanelEnvolve_PanelDivisor.Location = New System.Drawing.Point(136, 2)
+        Me.PanelEnvolve_PanelDivisor.Location = New System.Drawing.Point(136, -5)
         Me.PanelEnvolve_PanelDivisor.Name = "PanelEnvolve_PanelDivisor"
         Me.PanelEnvolve_PanelDivisor.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
         Me.PanelEnvolve_PanelDivisor.Size = New System.Drawing.Size(373, 21)
@@ -339,7 +339,7 @@ Partial Class FRMDialogConflictingFolders
         Me.Panel_LBLInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel_LBLInfo.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(43, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Panel_LBLInfo.Controls.Add(Me.PanelBorder_Panel_LBLInfo)
-        Me.Panel_LBLInfo.Location = New System.Drawing.Point(12, 300)
+        Me.Panel_LBLInfo.Location = New System.Drawing.Point(12, 301)
         Me.Panel_LBLInfo.Name = "Panel_LBLInfo"
         Me.Panel_LBLInfo.Size = New System.Drawing.Size(107, 111)
         Me.Panel_LBLInfo.TabIndex = 104
@@ -375,16 +375,16 @@ Partial Class FRMDialogConflictingFolders
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.LBLOutrasOpcoes)
         Me.Panel_LBLOutrasOpcoes.Controls.Add(Me.PanelEnvolveButtons)
         Me.Panel_LBLOutrasOpcoes.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel_LBLOutrasOpcoes.Location = New System.Drawing.Point(0, 287)
+        Me.Panel_LBLOutrasOpcoes.Location = New System.Drawing.Point(0, 291)
         Me.Panel_LBLOutrasOpcoes.Name = "Panel_LBLOutrasOpcoes"
-        Me.Panel_LBLOutrasOpcoes.Size = New System.Drawing.Size(521, 167)
+        Me.Panel_LBLOutrasOpcoes.Size = New System.Drawing.Size(521, 164)
         Me.Panel_LBLOutrasOpcoes.TabIndex = 106
         '
         'ChBMemorizarAcao
         '
         Me.ChBMemorizarAcao.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ChBMemorizarAcao.AutoSize = True
-        Me.ChBMemorizarAcao.Location = New System.Drawing.Point(135, 141)
+        Me.ChBMemorizarAcao.Location = New System.Drawing.Point(135, 138)
         Me.ChBMemorizarAcao.Name = "ChBMemorizarAcao"
         Me.ChBMemorizarAcao.Size = New System.Drawing.Size(101, 17)
         Me.ChBMemorizarAcao.TabIndex = 104
@@ -398,9 +398,9 @@ Partial Class FRMDialogConflictingFolders
         Me.PanelEnvolveButtons.Controls.Add(Me.BTNSubstituir)
         Me.PanelEnvolveButtons.Controls.Add(Me.BTNMesclar)
         Me.PanelEnvolveButtons.Controls.Add(Me.BTNIgnorar)
-        Me.PanelEnvolveButtons.Location = New System.Drawing.Point(124, 35)
+        Me.PanelEnvolveButtons.Location = New System.Drawing.Point(124, 22)
         Me.PanelEnvolveButtons.Name = "PanelEnvolveButtons"
-        Me.PanelEnvolveButtons.Size = New System.Drawing.Size(394, 100)
+        Me.PanelEnvolveButtons.Size = New System.Drawing.Size(394, 110)
         Me.PanelEnvolveButtons.TabIndex = 103
         '
         'PanelBorder_TXTNomeDaOrigem
@@ -473,7 +473,7 @@ Partial Class FRMDialogConflictingFolders
         Me.BTNRendo.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BTNRendo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.BTNRendo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNRendo.Location = New System.Drawing.Point(304, 258)
+        Me.BTNRendo.Location = New System.Drawing.Point(304, 250)
         Me.BTNRendo.Name = "BTNRendo"
         Me.BTNRendo.Size = New System.Drawing.Size(22, 23)
         Me.BTNRendo.TabIndex = 19
@@ -609,7 +609,7 @@ Partial Class FRMDialogConflictingFolders
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LNKLRenameDestination)
         Me.PanelEnvolve_LNKLRenomeDestino.Controls.Add(Me.LBLRenameDestino)
-        Me.PanelEnvolve_LNKLRenomeDestino.Location = New System.Drawing.Point(136, 207)
+        Me.PanelEnvolve_LNKLRenomeDestino.Location = New System.Drawing.Point(136, 208)
         Me.PanelEnvolve_LNKLRenomeDestino.Name = "PanelEnvolve_LNKLRenomeDestino"
         Me.PanelEnvolve_LNKLRenomeDestino.Size = New System.Drawing.Size(375, 13)
         Me.PanelEnvolve_LNKLRenomeDestino.TabIndex = 12
@@ -633,7 +633,7 @@ Partial Class FRMDialogConflictingFolders
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(521, 454)
+        Me.ClientSize = New System.Drawing.Size(521, 455)
         Me.Controls.Add(Me.Panel_LBLInfo)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDoDestino)
         Me.Controls.Add(Me.PanelEnvolve_TXTNomeDaOrigem)

@@ -189,6 +189,12 @@
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextConfirm.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextReplace.Designer.vb">
+      <DependentUpon>Control_TextReplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextReplace.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </Compile>
@@ -482,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextConfirm.resx">
       <DependentUpon>Control_TextConfirm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextReplace.resx">
+      <DependentUpon>Control_TextReplace.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
@@ -968,7 +977,9 @@
     <None Include="Resources\check_inativo.png" />
     <Content Include="Resources\fechar cinza.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\ComponenteDeSubst\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

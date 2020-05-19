@@ -6,6 +6,12 @@ Imports System.Reflection
 
 Public Class Control_RenameOption
 
+    'Criar componente
+    '--------------------------------------------------
+    Dim TextReplace As New Control_TextReplace
+    '--------------------------------------------------
+
+
     'Importação de Classes
     '--------------------------------------------------
     ReadOnly funcoesDeString As New StringFunctionsClass
@@ -37,6 +43,21 @@ Public Class Control_RenameOption
 
     Private Alfabeto As New List(Of Char)
 
+    Dim MonthList() As String = {
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro"
+    }
+
     Public OpcoreDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
     Public Enum OpcoesDeFormatacaoDeTextoEnum
 
@@ -45,9 +66,9 @@ Public Class Control_RenameOption
         todasMinusculas = 2
         PrimeirasLetrasMaiusculas = 3
         pRIMEIRASlETRASmINUSCULAS = 4
+        primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
 
     End Enum
-
 
     Public Enum SelectADataModeEnum
 
@@ -182,7 +203,10 @@ Public Class Control_RenameOption
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
         PanelBase.Visible = False
+
         PanelSubstituir.Visible = True
+        PanelDateConfig.Visible = False
+        PanelDateConfig.Visible = False
 
         TXTPValue.TXT = ""
         TXTPValue.Validar(TXTPValue.TXT)
@@ -208,8 +232,10 @@ Public Class Control_RenameOption
         PanelEnvolve_RightTXT.Visible = True
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
+
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
+        PanelDateConfig.Visible = False
 
         TXTPValue.TXT = ""
         TXTPValue.Validar(TXTPValue.TXT)
@@ -230,8 +256,10 @@ Public Class Control_RenameOption
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
         PanelBase.Visible = False
+
         PanelSubstituir.Visible = True
         PanelNomeDoArquivoAtualConfig.Visible = True
+        PanelDateConfig.Visible = False
 
         ComBPMaster.PerformAutomaticSelection(2)
 
@@ -281,8 +309,10 @@ Public Class Control_RenameOption
         TableLPContainer.Height = 28
         Me.Height = 86
         PanelBase.Visible = True
+
         PanelSubstituir.Visible = False
         PanelNomeDoArquivoAtualConfig.Visible = True
+        PanelDateConfig.Visible = False
 
     End Sub
 
@@ -294,6 +324,7 @@ Public Class Control_RenameOption
 
         PanelSubstituir.Visible = True
         PanelNomeDoArquivoAtualConfig.Visible = True
+        PanelDateConfig.Visible = False
 
     End Sub
 
@@ -305,8 +336,10 @@ Public Class Control_RenameOption
         PanelEnvolve_RightTXT.Visible = True
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = False
+
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
+        PanelDateConfig.Visible = False
 
         TXTPValue.Placeholder = "Digite um número para a sequência ..."
 
@@ -338,6 +371,7 @@ Public Class Control_RenameOption
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
         PanelNomeDoArquivoAtualConfig.Visible = True
+        PanelDateConfig.Visible = False
 
         TXTPValue.Placeholder = "Digite letra do Alfabeto..."
         TXTPValue.TXT = ChrW(65).ToString
@@ -365,9 +399,10 @@ Public Class Control_RenameOption
         PanelEnvolve_RightTXT.Visible = False
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
+
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
-
+        PanelDateConfig.Visible = False
 
         ComBPMaster.PerformAutomaticSelection(5)
 
@@ -390,6 +425,51 @@ Public Class Control_RenameOption
 
         ' _____-----------------------------------------------------_____
 
+
+        For Each item As ToolStripMenuItem In ComBRight.CMS_Menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf MostrarOcultarDataEHoraConfig)
+
+        Next
+    End Sub
+
+    Sub MostrarOcultarDataEHoraConfig()
+
+        Select Case ComBRight.SelectedItem.Tag.ID
+            Case DateFormatEnum.DiaDaSemana, DateFormatEnum.Mes_Escrito, DateFormatEnum.Semana_Dia_de_Mes_De_Ano
+                ExibirSubTelaDataEHoraConfig()
+
+            Case Else
+                OcultarSubTelaDataEHoraConfig()
+
+        End Select
+
+    End Sub
+
+    Sub ExibirSubTelaDataEHoraConfig()
+
+        PanelBase.Visible = True
+        PanelSubstituir.Visible = False
+        PanelNomeDoArquivoAtualConfig.Visible = False
+        PanelDateConfig.Visible = True
+
+        TableLPContainer.Dock = DockStyle.Top
+        TableLPContainer.Height = 28
+
+        PanelBase.Dock = DockStyle.Fill
+        Me.Height = 92
+
+    End Sub
+
+    Sub OcultarSubTelaDataEHoraConfig()
+
+        Me.Height = 54
+        TableLPContainer.Dock = DockStyle.Fill
+
+        PanelBase.Visible = False
+        PanelSubstituir.Visible = True
+        PanelNomeDoArquivoAtualConfig.Visible = True
+        PanelDateConfig.Visible = False
+
     End Sub
 
     Sub ExibirTelaMetadados()
@@ -398,8 +478,10 @@ Public Class Control_RenameOption
         PanelEnvolve_RightTXT.Visible = True
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
+
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
+        PanelDateConfig.Visible = False
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBRight)
         PanelEnvolve_RightTXT.Controls.Add(ComBPSlave)
@@ -434,8 +516,10 @@ Public Class Control_RenameOption
         PanelEnvolve_RightTXT.Visible = True
         PanelEnvolve_ComBPSlave.Visible = True
         PanelEnvolve_ComBRight.Visible = True
+
         PanelBase.Visible = False
         PanelSubstituir.Visible = True
+        PanelDateConfig.Visible = False
 
         Me.Height = 54
         TableLPContainer.Dock = DockStyle.Fill
@@ -458,6 +542,7 @@ Public Class Control_RenameOption
 
         End If
     End Sub
+
 
     Sub ExibirTelaSubstituicaoDeString()
 
@@ -588,6 +673,14 @@ Public Class Control_RenameOption
             End If
         End If
 
+        TextReplace.Dock = DockStyle.Fill
+
+        PanelSubstituir.Controls.Add(TextReplace)
+
+        TextReplace.AutomaticResult = False
+
+        TextReplace.Visible = True
+
         ApplyEventToSubItemsMenu(ComBPMaster.CMS_Menu)
 
         'TextValidateConfig()
@@ -596,6 +689,7 @@ Public Class Control_RenameOption
         FileExemple = "C:\Pasta Teste\Meu ArquivO arQUiVado.txt"
 
         AddHandler TXTPValue.TXTBox.LostFocus, New System.EventHandler(AddressOf TxtValue_Changed)
+        AddHandler TXTPSubstituirEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
 
         Dim s As New System.Text.StringBuilder()
 
@@ -745,8 +839,6 @@ Public Class Control_RenameOption
 
                     _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(ComBRight.SelectedItem.Tag.ID, _value)
 
-
-
                 Case SelectADataModeEnum.NumeroDeSequencia
 
                     Dim strValue As String
@@ -848,7 +940,6 @@ Public Class Control_RenameOption
 
             End Select
 
-            'TXTPValue.Validar(TXTPValue.TXT)
         End If
 
         _stringData = _dataStr
@@ -857,14 +948,13 @@ Public Class Control_RenameOption
 
     End Function
 
-
     Function OpcoesDeFormatacaoDeTextoParaComboPerson(index As OpcoesDeFormatacaoDeTextoEnum, _value As String)
 
         Dim _dataStr As String = _value
 
         Select Case index
-            Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
 
+            Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
                 _dataStr = _value.ToString()
 
             Case OpcoesDeFormatacaoDeTextoEnum.TODASMAIUSCULAS
@@ -875,8 +965,6 @@ Public Class Control_RenameOption
 
             Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
 
-                '  Dim fileName As String = _value
-
                 Dim new_value As String = funcoesDeString.ConvertTheFirstWordToUppercase(_value, Not (CKB_FirstLetterUpper.Checked))
 
                 If CKB_RemoveSpace.Checked = True Then
@@ -885,7 +973,6 @@ Public Class Control_RenameOption
                 _dataStr = new_value
 
             Case OpcoesDeFormatacaoDeTextoEnum.pRIMEIRASlETRASmINUSCULAS
-                ' Dim fileName As String = _value
 
                 Dim new_value As String = funcoesDeString.ConvertTheFirstLettersToLowercase(_value)
 
@@ -902,17 +989,20 @@ Public Class Control_RenameOption
         Dim _strDate As String = _date.ToLongDateString
 
         Dim ano As String = _date.Year.ToString
+
         Dim mes As String = funcoesDeString.RetornaStringComNumeroCaracter(_date.Month, 2) '_date.Month.ToString
+        Dim mesEscrito As String = MonthList(_date.Month - 1)    ' + " " + funcoesDeString.RetornaStringComNumeroCaracter(_date.Month, 2) '_date.Month.ToString
         Dim dia As String = funcoesDeString.RetornaStringComNumeroCaracter(_date.Day, 2) '_date.Day.ToString
 
-        Dim semana As String = _date.DayOfWeek.ToString
+        Dim semana As String = String.Format("{0:dddd}", _date)   ' _date.DayOfWeek.ToString
 
         Dim hora As String = funcoesDeString.RetornaStringComNumeroCaracter(_date.Hour, 2)
 
         Dim minuto As String = funcoesDeString.RetornaStringComNumeroCaracter(_date.Minute, 2)   '_date.Minute.ToString
         Dim segundo As String = funcoesDeString.RetornaStringComNumeroCaracter(_date.Second, 2) '_date.Second.ToString
 
-        'MsgBox(ano.Substring(2, 2))
+        ' MsgBox(String.Format("{0:dddd}", _date))
+        'MsgBox(Format(_strDate, "dddd"))
 
         Select Case ComBRight.SelectedItem.Tag.ID
 
@@ -936,8 +1026,12 @@ Public Class Control_RenameOption
             Case DateFormatEnum.DDMMAAAA
                 _strDate = dia + mes + ano
 
+
+
             Case DateFormatEnum.DiaDaSemana
-                _strDate = semana
+                _strDate = FormatDateText(semana)
+
+                _strDate = SubstituirEspaco(_strDate)
 
             Case DateFormatEnum.HH
                 _strDate = hora
@@ -949,7 +1043,32 @@ Public Class Control_RenameOption
                 _strDate = hora + minuto + segundo
 
             Case DateFormatEnum.Mes_Escrito
-                _strDate = mes
+
+
+                _strDate = FormatDateText(mesEscrito)
+
+                _strDate = SubstituirEspaco(_strDate)
+
+                'Select Case ComBPFormatText.SelectedItem.Tag.ID
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
+                '        _strDate = funcoesDeString.FirstLetterUpper(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
+                '        _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.pRIMEIRASlETRASmINUSCULAS
+                '        _strDate = funcoesDeString.ConvertTheFirstLettersToLowercase(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.TODASMAIUSCULAS
+                '        _strDate = _strDate.ToUpper
+                '    Case OpcoesDeFormatacaoDeTextoEnum.todasMinusculas
+                '        _strDate = _strDate.ToLower
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
+                '        _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+
+                'End Select
 
             Case DateFormatEnum.MinMin
                 _strDate = minuto
@@ -964,7 +1083,33 @@ Public Class Control_RenameOption
                 _strDate = mes + dia + ano
 
             Case DateFormatEnum.Semana_Dia_de_Mes_De_Ano
+
                 _strDate = _date.ToLongDateString
+
+                _strDate = FormatDateText(_strDate)
+
+                _strDate = SubstituirEspaco(_strDate)
+
+                'Select Case ComBPFormatText.SelectedItem.Tag.ID
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
+                '        _strDate = funcoesDeString.FirstLetterUpper(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
+                '        _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.pRIMEIRASlETRASmINUSCULAS
+                '        _strDate = funcoesDeString.ConvertTheFirstLettersToLowercase(_strDate)
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.TODASMAIUSCULAS
+                '        _strDate = _strDate.ToUpper
+                '    Case OpcoesDeFormatacaoDeTextoEnum.todasMinusculas
+                '        _strDate = _strDate.ToLower
+
+                '    Case OpcoesDeFormatacaoDeTextoEnum.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
+                '        _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+
+                'End Select
 
             Case DateFormatEnum.SS
                 _strDate = segundo
@@ -975,7 +1120,45 @@ Public Class Control_RenameOption
 
     End Function
 
+    Function SubstituirEspaco(_strDate As String) As String
+        If CHKSubstituirEspaco.Checked = True Then
+
+            _strDate = funcoesDeString.ReplacePhrase(_strDate, " ", TXTPSubstituirEspaco.TXT)
+            _strDate = funcoesDeString.ReplacePhrase(_strDate, ",", "")
+
+        End If
+
+        Return _strDate
+    End Function
+
+    Function FormatDateText(_strDate As String)
+        Select Case ComBPFormatText.SelectedItem.Tag.ID
+
+            Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
+                _strDate = funcoesDeString.FirstLetterUpper(_strDate)
+
+            Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
+                _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate)
+
+            Case OpcoesDeFormatacaoDeTextoEnum.pRIMEIRASlETRASmINUSCULAS
+                _strDate = funcoesDeString.ConvertTheFirstLettersToLowercase(_strDate)
+
+            Case OpcoesDeFormatacaoDeTextoEnum.TODASMAIUSCULAS
+                _strDate = _strDate.ToUpper
+            Case OpcoesDeFormatacaoDeTextoEnum.todasMinusculas
+                _strDate = _strDate.ToLower
+
+            Case OpcoesDeFormatacaoDeTextoEnum.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
+                _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+
+        End Select
+
+        Return _strDate
+
+    End Function
+
     Sub TxtValue_Changed()
+
         If ComBPMaster.SelectedItem IsNot Nothing Then
             Dim _id As Integer = ComBPMaster.SelectedItem.Tag.ID
 
@@ -1000,6 +1183,11 @@ Public Class Control_RenameOption
             TXTPValue.ErrorDisplay = TXTPValue.Validar(TXTPValue.TXT)
         End If
 
+    End Sub
+
+    Sub TXTPSubstituirEspaco_Changed()
+        TXTPSubstituirEspaco.TXT = funcoesDeString.RemoveChar(TXTPSubstituirEspaco.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
+        TXTPSubstituirEspaco.ErrorDisplay = TXTPSubstituirEspaco.Validar(TXTPSubstituirEspaco.TXT)
     End Sub
 
     Function FormatarNumberToQCaracter(value As String) As String
@@ -1137,5 +1325,14 @@ Public Class Control_RenameOption
         Dim _dataStr As String = ReturnStringData()
         MsgBox(_dataStr)
 
+    End Sub
+
+    Private Sub CHKSubstituirEspaco_CheckedChanged(sender As Object, e As EventArgs) Handles CHKSubstituirEspaco.CheckedChanged
+        TXTPSubstituirEspaco.Enabled = CHKSubstituirEspaco.Checked
+        If CHKSubstituirEspaco.Checked = False Then
+            TXTPSubstituirEspaco.TXT = ""
+        Else
+            TXTPSubstituirEspaco.Focus()
+        End If
     End Sub
 End Class

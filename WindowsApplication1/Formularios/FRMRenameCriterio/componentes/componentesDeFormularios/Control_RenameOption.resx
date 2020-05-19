@@ -117,6 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ComBPFormatText.ComboBoxPersonSlaveLists" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAvU3lzdGVtLkNvbGxlY3Rpb25z
+        LlNwZWNpYWxpemVkLlN0cmluZ0NvbGxlY3Rpb24BAAAABGRhdGEDHFN5c3RlbS5Db2xsZWN0aW9ucy5B
+        cnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRl
+        bXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAAAAAAAAAAAAAQBAAAAAAAAAAL
+</value>
+  </data>
+  <data name="ComBPFormatText.DefaultOptionsList" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAvU3lzdGVtLkNvbGxlY3Rpb25z
+        LlNwZWNpYWxpemVkLlN0cmluZ0NvbGxlY3Rpb24BAAAABGRhdGEDHFN5c3RlbS5Db2xsZWN0aW9ucy5B
+        cnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRl
+        bXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAABgAAABQAAAAQBAAAAAgAAAAGBQAAABogUHJpbWVpcmEg
+        bGV0cmEgbWFpw7pzY3VsYQYGAAAAEiBUT0RBUyBNQUnDmlNDVUxBUwYHAAAAEiB0b2RhcyBtaW7DunNj
+        dWxhcwYIAAAAHSBQcmltZWlyYXMgTGV0cmFzIE1hacO6c2N1bGFzBgkAAAAdIHBSSU1FSVJBUyBsRVRS
+        QVMgbUlOw5pTQ1VMQVMGCgAAADhwcmltZWlyYSBMZXRyYSBNaW7Dum5zY3VsYSwgT3V0cmFzIFByaW1l
+        cmlhcyBNYWnDunNjdWxhcw0CCw==
+</value>
+  </data>
+  <data name="ComBPFormatText.DefaultOptionsListSlave" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAvU3lzdGVtLkNvbGxlY3Rpb25z
+        LlNwZWNpYWxpemVkLlN0cmluZ0NvbGxlY3Rpb24BAAAABGRhdGEDHFN5c3RlbS5Db2xsZWN0aW9ucy5B
+        cnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRl
+        bXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAAAAAAAAAAAAAQBAAAAAAAAAAL
+</value>
+  </data>
+  <data name="ComBPFormatText.OptionsList" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAvU3lzdGVtLkNvbGxlY3Rpb25z
+        LlNwZWNpYWxpemVkLlN0cmluZ0NvbGxlY3Rpb24BAAAABGRhdGEDHFN5c3RlbS5Db2xsZWN0aW9ucy5B
+        cnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRl
+        bXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAABgAAABQAAAAQBAAAAAgAAAAGBQAAABogUHJpbWVpcmEg
+        bGV0cmEgbWFpw7pzY3VsYQYGAAAAEiBUT0RBUyBNQUnDmlNDVUxBUwYHAAAAEiB0b2RhcyBtaW7DunNj
+        dWxhcwYIAAAAHSBQcmltZWlyYXMgTGV0cmFzIE1hacO6c2N1bGFzBgkAAAAdIHBSSU1FSVJBUyBsRVRS
+        QVMgbUlOw5pTQ1VMQVMGCgAAADhwcmltZWlyYSBMZXRyYSBNaW7Dum5zY3VsYSwgT3V0cmFzIFByaW1l
+        cmlhcyBNYWnDunNjdWxhcw0CCw==
+</value>
+  </data>
+  <data name="ComBPFormatText.ReturnStringList" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0
+        cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAvU3lzdGVtLkNvbGxlY3Rpb25z
+        LlNwZWNpYWxpemVkLlN0cmluZ0NvbGxlY3Rpb24BAAAABGRhdGEDHFN5c3RlbS5Db2xsZWN0aW9ucy5B
+        cnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRl
+        bXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAAAAAAAAAAAAAQBAAAAAAAAAAL
+</value>
+  </data>
   <data name="ComBPMaster.ComboBoxPersonSlaveLists" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAElTeXN0ZW0sIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0

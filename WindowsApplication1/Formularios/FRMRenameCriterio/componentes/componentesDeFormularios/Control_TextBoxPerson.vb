@@ -552,6 +552,19 @@ Public Class Control_TextBoxPerson
     ' __________________________________________________________
     ' Propriedades de TXT
     '____________________________________________________________
+    Private _maxLength As Integer
+    <Category("Compotamento")>
+    <Description("Recebe caracteres .")>
+    Public Property MaxLength As Integer
+        Get
+            Return TXTBox.MaxLength
+        End Get
+        Set(value As Integer)
+            _maxLength = value
+            TXTBox.MaxLength = value
+
+        End Set
+    End Property
 
     Private _font As Font
     Public Property Fonte As Font

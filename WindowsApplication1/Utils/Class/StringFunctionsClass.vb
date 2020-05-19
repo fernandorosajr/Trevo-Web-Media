@@ -27,13 +27,47 @@
         Return list
     End Function
 
-    Function ConvertTheFirstWordToUppercase(textToConvert As String, firstLetterUpper As Boolean)
+    Overloads Function ConvertTheFirstWordToUppercase(textToConvert As String, firstLetterUpper As Boolean)
         Dim newPhrase As String = ""
         Dim charStr As String
         Dim convertToUpper As Boolean
         Dim fileName As String = textToConvert
 
         convertToUpper = firstLetterUpper
+
+        For x = 0 To textToConvert.Length - 1
+
+            charStr = fileName.Substring(x, 1)
+
+            If convertToUpper = True Then
+                charStr = StrConv(charStr, vbUpperCase)
+                'convertToUpper = False
+
+            Else
+                charStr = StrConv(charStr, vbLowerCase)
+            End If
+
+            newPhrase += charStr
+
+            If fileName.Chars(x) = " " Then
+                convertToUpper = True
+
+            Else
+                convertToUpper = False
+
+            End If
+        Next
+
+        Return newPhrase
+    End Function
+
+    Overloads Function ConvertTheFirstLettersToUppercase(textToConvert As String)
+        Dim newPhrase As String = ""
+        Dim charStr As String
+        Dim convertToUpper As Boolean
+        Dim fileName As String = textToConvert
+
+        convertToUpper = True
 
         For x = 0 To textToConvert.Length - 1
 
@@ -230,6 +264,26 @@
 
         _return = StrDup(qDeRepeticao, cadeia) + numberValue.ToString
         Return _return
+
+    End Function
+
+    Function FirstLetterUpper(phrase As String)
+
+        Dim newPhrase As String = ""
+        Dim firstLetter As String = phrase.Substring(0, 1)
+
+        For x = 0 To phrase.Length - 1
+            If x = 0 Then
+                newPhrase += phrase.Chars(x).ToString.ToUpper
+
+            Else
+                newPhrase += phrase.Chars(x).ToString.ToLower
+            End If
+
+
+        Next
+
+        Return newPhrase
 
     End Function
 

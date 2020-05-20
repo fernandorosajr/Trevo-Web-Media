@@ -6,6 +6,25 @@ Imports System.Reflection
 
 Public Class Control_RenameOption
 
+
+    Private Alfabeto As New List(Of Char)
+    Public LoadRenameOptionsParent As Control_LoadRenameOptions
+
+    ReadOnly MonthList() As String = {
+          "Janeiro",
+          "Fevereiro",
+          "Março",
+          "Abril",
+          "Maio",
+          "Junho",
+          "Julho",
+          "Agosto",
+          "Setembro",
+          "Outubro",
+          "Novembro",
+          "Dezembro"
+    }
+
     'Criar componente
     '--------------------------------------------------
     Dim TextReplace As New Control_TextReplace
@@ -19,8 +38,12 @@ Public Class Control_RenameOption
     Private usesFile As New UsesFilesClass
     ' -------------------------------------------------
 
-    ' Propriedades do Formulário
+
+    ' Propriedades 
     ' _____________________________________________
+
+    ' Propriedades do Formulário
+    '--------------------------------------------------
     Private _fileExemple As FileInfo
     Public Property FileExemple As String
         Get
@@ -38,90 +61,7 @@ Public Class Control_RenameOption
 
         End Set
     End Property
-
-    ' _____________________________________________
-
-    Private Alfabeto As New List(Of Char)
-
-    ReadOnly MonthList() As String = {
-          "Janeiro",
-          "Fevereiro",
-          "Março",
-          "Abril",
-          "Maio",
-          "Junho",
-          "Julho",
-          "Agosto",
-          "Setembro",
-          "Outubro",
-          "Novembro",
-          "Dezembro"
-    }
-
-    Public OpcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
-    Public Enum OpcoesDeFormatacaoDeTextoEnum
-
-        ComoOOriginal = 0
-        TODASMAIUSCULAS = 1
-        todasMinusculas = 2
-        PrimeirasLetrasMaiusculas = 3
-        pRIMEIRASlETRASmINUSCULAS = 4
-        primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
-
-    End Enum
-
-    Public Enum SelectADataModeEnum
-
-        Texto = 0
-        NovaExtensao = 1
-        NomeDoArquivoAtual = 2
-        NumeroDeSequencia = 3
-        LetraDaSequencia = 4
-        DataEHora = 5
-        Metadados = 6
-        NomeDaPasta = 7
-        SubstituicaoDeString = 8
-
-    End Enum
-
-    Public _dateFormat As DateFormatEnum
-    Public Enum DateFormatEnum
-
-        DDMMAAAA = 0
-        DDMMAA = 1
-        MMDDAAAA = 2
-        MMDDAA = 3
-        AAAAMMDD = 4
-        AAMMDD = 5
-        AAAA = 6
-        DD = 7
-        MM = 8
-        AA = 9
-        HHMMSS = 10
-        HHMM = 11
-        HH = 12
-        MinMin = 13
-        SS = 14
-        Semana_Dia_de_Mes_De_Ano = 15
-        Mes_Escrito = 16
-        DiaDaSemana = 17
-
-    End Enum
-
-    Private _selectADataModeEnum As SelectADataModeEnum
-    Public Property SelectDisplayTela As SelectADataModeEnum
-        Get
-            Return _selectADataModeEnum
-
-        End Get
-        Set(value As SelectADataModeEnum)
-            _selectADataModeEnum = value
-            DisplayScreenOfADataMode()
-
-        End Set
-    End Property
-
-    Public LoadRenameOptionsParent As Control_LoadRenameOption
+    '--------------------------------------------------
 
     Private _activeDelete As Boolean
     Public Property ActiveDelete As Boolean
@@ -180,6 +120,73 @@ Public Class Control_RenameOption
 
         End Set
     End Property
+
+    Private _selectADataModeEnum As SelectADataModeEnum
+    Public Property SelectDisplayTela As SelectADataModeEnum
+        Get
+            Return _selectADataModeEnum
+
+        End Get
+        Set(value As SelectADataModeEnum)
+            _selectADataModeEnum = value
+            DisplayScreenOfADataMode()
+
+        End Set
+    End Property
+
+    ' _____________________________________________
+
+
+    Public OpcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
+    Public Enum OpcoesDeFormatacaoDeTextoEnum
+
+        ComoOOriginal = 0
+        TODASMAIUSCULAS = 1
+        todasMinusculas = 2
+        PrimeirasLetrasMaiusculas = 3
+        pRIMEIRASlETRASmINUSCULAS = 4
+        primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
+
+    End Enum
+
+    Public Enum SelectADataModeEnum
+
+        Texto = 0
+        NovaExtensao = 1
+        NomeDoArquivoAtual = 2
+        NumeroDeSequencia = 3
+        LetraDaSequencia = 4
+        DataEHora = 5
+        Metadados = 6
+        NomeDaPasta = 7
+        SubstituicaoDeString = 8
+
+    End Enum
+
+    Public _dateFormat As DateFormatEnum
+    Public Enum DateFormatEnum
+
+        DDMMAAAA = 0
+        DDMMAA = 1
+        MMDDAAAA = 2
+        MMDDAA = 3
+        AAAAMMDD = 4
+        AAMMDD = 5
+        AAAA = 6
+        DD = 7
+        MM = 8
+        AA = 9
+        HHMMSS = 10
+        HHMM = 11
+        HH = 12
+        MinMin = 13
+        SS = 14
+        Semana_Dia_de_Mes_De_Ano = 15
+        Mes_Escrito = 16
+        DiaDaSemana = 17
+
+    End Enum
+
 
 
     Sub New()
@@ -666,7 +673,7 @@ Public Class Control_RenameOption
         ' TXTPerson.TXT = ID
 
         If Me.Parent.Parent.Parent.Parent IsNot Nothing Then
-            If TypeOf (Me.Parent.Parent.Parent.Parent) Is Control_LoadRenameOption Then
+            If TypeOf (Me.Parent.Parent.Parent.Parent) Is Control_LoadRenameOptions Then
                 LoadRenameOptionsParent = Me.Parent.Parent.Parent.Parent
 
             End If

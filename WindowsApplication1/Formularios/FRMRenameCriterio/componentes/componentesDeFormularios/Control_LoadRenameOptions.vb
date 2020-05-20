@@ -1,4 +1,4 @@
-﻿Public Class Control_LoadRenameOption
+﻿Public Class Control_LoadRenameOptions
     Dim CtlRenameOptionPrima As New Control_RenameOption
 
 

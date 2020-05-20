@@ -165,10 +165,10 @@
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOption.Designer.vb">
-      <DependentUpon>Control_LoadRenameOption.vb</DependentUpon>
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOptions.Designer.vb">
+      <DependentUpon>Control_LoadRenameOptions.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOption.vb">
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOptions.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.Designer.vb">
@@ -476,8 +476,9 @@
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.resx">
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOption.resx">
-      <DependentUpon>Control_LoadRenameOption.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_LoadRenameOptions.resx">
+      <DependentUpon>Control_LoadRenameOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_RenameOption.resx">
       <DependentUpon>Control_RenameOption.vb</DependentUpon>

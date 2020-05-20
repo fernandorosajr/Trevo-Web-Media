@@ -11,9 +11,7 @@ Public Class FRMDialogRenameCriterio
     ' TODO :https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-layer-objects-on-windows-forms
     ' https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-set-the-tab-order-on-windows-forms
 
-    Dim elementos As New Control_LoadRenameOption
-    'Dim comboBoxPerson01 As New Control_ComboBoxPerson
-    'Dim comboBoxPerson02 As New Control_ComboBoxPerson
+    Dim LoadRenameOptions As New Control_LoadRenameOptions
 
     Private Sub OK_Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK_Button.Click
         Me.DialogResult = System.Windows.Forms.DialogResult.OK
@@ -38,13 +36,13 @@ Public Class FRMDialogRenameCriterio
     'End Sub
 
     Private Sub FRMDialogRenameCriterio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        PanelRecebe.Controls.Add(elementos)
-        elementos.Top = 31
-        elementos.Left = 103
-        elementos.Width = LBLTitle01.Width
-        elementos.Height = 231
+        PanelRecebe.Controls.Add(LoadRenameOptions)
+        LoadRenameOptions.Top = 31
+        LoadRenameOptions.Left = 103
+        LoadRenameOptions.Width = LBLTitle01.Width
+        LoadRenameOptions.Height = 231
 
-        elementos.Dock = DockStyle.Fill
+        LoadRenameOptions.Dock = DockStyle.Fill
 
 
         'comboBoxPerson01.Width = 150

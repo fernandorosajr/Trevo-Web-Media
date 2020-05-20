@@ -1,4 +1,5 @@
-﻿Public Class StringFunctionsClass
+﻿
+Public Class StringFunctionsClass
     Function SepararPalavras(ByVal quebrarPalavras As String, ByVal delimitadores() As Char) As String()
 
         Dim palavras() As String
@@ -154,11 +155,89 @@
 
     End Function
 
-    Function ReplacePhrase(phrase As String, buscar As String, substituir As String)
+    Overloads Function ReplacePhrase(phrase As String, find As String, replacement As String)
+
         Dim newPhrase As String
-        newPhrase = phrase.Replace(buscar, substituir)
+        Dim count As Integer = -1
+        Dim start As Integer = 1
+
+        Dim compare As CompareMethod = CompareMethod.Binary
+
+        newPhrase = Replace(phrase, find, replacement, start, count, compare)
 
         Return newPhrase
+
+    End Function
+
+    Overloads Function ReplacePhrase(phrase As String, find As String, replacement As String, IgnorarMaiusEMinus As Boolean)
+
+        Dim newPhrase As String
+        Dim count As Integer = -1
+        Dim start As Integer = 1
+        Dim compare As CompareMethod
+
+        If IgnorarMaiusEMinus = True Then
+            compare = CompareMethod.Text
+
+        Else
+            compare = CompareMethod.Binary
+
+        End If
+
+        newPhrase = Replace(phrase, find, replacement, start, count, compare)
+
+        Return newPhrase
+
+    End Function
+
+    Overloads Function ReplacePhrase(phrase As String, find As String, replacement As String, IgnorarMaiusEMinus As Boolean, SubstituirTudo As Boolean)
+
+        Dim newPhrase As String
+        Dim count As Integer
+        Dim start As Integer = 1
+        Dim compare As CompareMethod
+
+        If IgnorarMaiusEMinus = True Then
+            compare = CompareMethod.Text
+
+        Else
+            compare = CompareMethod.Binary
+
+        End If
+
+        If SubstituirTudo = True Then
+            count = -1
+        Else
+            count = 1
+        End If
+
+        newPhrase = Replace(phrase, find, replacement, start, count, compare)
+
+        Return newPhrase
+
+    End Function
+
+    Overloads Function ReplacePhrase(phrase As String, find As String, replacement As String, IgnorarMaiusEMinus As Boolean, count As Integer)
+
+        Dim newPhrase As String
+
+        Dim start As Integer = 1
+        Dim compare As CompareMethod
+
+        ' count = -1
+
+        If IgnorarMaiusEMinus = True Then
+            compare = CompareMethod.Text
+
+        Else
+            compare = CompareMethod.Binary
+
+        End If
+
+        newPhrase = Replace(phrase, find, replacement, start, count, compare)
+
+        Return newPhrase
+
     End Function
 
     Function NumberCharExist(dataStr As String)
@@ -229,7 +308,7 @@
 
             End If
 
-                valStr += _char
+            valStr += _char
 
         Next
 

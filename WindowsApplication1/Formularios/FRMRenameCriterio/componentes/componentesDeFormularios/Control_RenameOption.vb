@@ -663,6 +663,8 @@ Public Class Control_RenameOption
 
         OrdenarRenameOption()
 
+        LoadRenameOptionsParent.Itens.Add(renameOption)
+
     End Sub
 
     Sub GravarStringData()

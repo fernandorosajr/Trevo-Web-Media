@@ -26,6 +26,7 @@ Partial Class Control_RenameOption
         Me.PanelElemento = New System.Windows.Forms.Panel()
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.PanelBase = New System.Windows.Forms.Panel()
+        Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.PanelDateConfig = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -53,7 +54,6 @@ Partial Class Control_RenameOption
         Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
-        Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.PanelBase.SuspendLayout()
@@ -108,6 +108,14 @@ Partial Class Control_RenameOption
         Me.PanelBase.Padding = New System.Windows.Forms.Padding(50, 5, 0, 0)
         Me.PanelBase.Size = New System.Drawing.Size(515, 66)
         Me.PanelBase.TabIndex = 6
+        '
+        'PanelSubstituir
+        '
+        Me.PanelSubstituir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelSubstituir.Location = New System.Drawing.Point(50, 5)
+        Me.PanelSubstituir.Name = "PanelSubstituir"
+        Me.PanelSubstituir.Size = New System.Drawing.Size(465, 61)
+        Me.PanelSubstituir.TabIndex = 1
         '
         'PanelDateConfig
         '
@@ -585,14 +593,6 @@ Partial Class Control_RenameOption
         Me.PanelMagemBotton.Name = "PanelMagemBotton"
         Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
         Me.PanelMagemBotton.TabIndex = 0
-        '
-        'PanelSubstituir
-        '
-        Me.PanelSubstituir.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelSubstituir.Location = New System.Drawing.Point(50, 5)
-        Me.PanelSubstituir.Name = "PanelSubstituir"
-        Me.PanelSubstituir.Size = New System.Drawing.Size(465, 61)
-        Me.PanelSubstituir.TabIndex = 1
         '
         'Control_RenameOption
         '

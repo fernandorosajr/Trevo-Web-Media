@@ -43,7 +43,7 @@ Public Class Control_RenameOption
 
     Private Alfabeto As New List(Of Char)
 
-    Dim MonthList() As String = {
+    ReadOnly MonthList() As String = {
           "Janeiro",
           "Fevereiro",
           "Março",
@@ -58,7 +58,7 @@ Public Class Control_RenameOption
           "Dezembro"
     }
 
-    Public OpcoreDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
+    Public OpcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
     Public Enum OpcoesDeFormatacaoDeTextoEnum
 
         ComoOOriginal = 0
@@ -84,7 +84,7 @@ Public Class Control_RenameOption
 
     End Enum
 
-    Public _DateFormat As DateFormatEnum
+    Public _dateFormat As DateFormatEnum
     Public Enum DateFormatEnum
 
         DDMMAAAA = 0
@@ -652,7 +652,6 @@ Public Class Control_RenameOption
         renameOption.ID = ID + 1
         renameOption.Width = Me.Parent.Width
         renameOption.ActiveDelete = True
-        ' renameOption.TXTPerson.TXT = "Saluton" + renameOption.ID.ToString
         renameOption.Visible = True
 
         OrdenarRenameOption()
@@ -673,20 +672,22 @@ Public Class Control_RenameOption
             End If
         End If
 
+        FileExemple = "C:\Pasta Teste\Meu ArquivO arQUiVado.txt"
+
         TextReplace.Dock = DockStyle.Fill
 
         PanelSubstituir.Controls.Add(TextReplace)
 
-        TextReplace.AutomaticResult = False
+        TextReplace.AutomaticResult = True
 
         TextReplace.Visible = True
+
+        TextReplace.Phrase = _fileExemple.Name
 
         ApplyEventToSubItemsMenu(ComBPMaster.CMS_Menu)
 
         'TextValidateConfig()
         ExibirTelaTexto()
-
-        FileExemple = "C:\Pasta Teste\Meu ArquivO arQUiVado.txt"
 
         AddHandler TXTPValue.TXTBox.LostFocus, New System.EventHandler(AddressOf TxtValue_Changed)
         AddHandler TXTPSubstituirEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
@@ -937,7 +938,7 @@ Public Class Control_RenameOption
                     _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(index, folder.Name)
 
                 Case SelectADataModeEnum.SubstituicaoDeString
-
+                    _dataStr = TextReplace.TratarPhrase()
             End Select
 
         End If

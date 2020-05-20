@@ -1,21 +1,32 @@
 ﻿Public Class Control_LoadRenameOption
-    Dim CtlRenameOptPrima As New Control_RenameOption
+    Dim CtlRenameOptionPrima As New Control_RenameOption
 
-    Private _listControl As New List(Of Control)
 
-    Public Property ListControl As List(Of Control)
+    Private _itens As New List(Of Control)
+    Public Property Itens As List(Of Control)
         Get
-            Return _listControl
+            Return _itens
 
         End Get
         Set(value As List(Of Control))
-            _listControl = value
+            _itens = value
 
         End Set
     End Property
 
+    Private _defaultItem As Control
+    Public Property DefaultItem As Control
+        Get
+            Return _defaultItem
 
-    Private Sub Control_LoadRenameOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        End Get
+        Set(value As Control)
+            _defaultItem = value
+
+        End Set
+    End Property
+
+    Private Sub Control_LoadRenameOptions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
@@ -24,14 +35,18 @@
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
 
-        ' Adicione qualquer inicialização após a chamada InitializeComponent().
-        Me.Panel_LoadRenameOption.Controls.Add(CtlRenameOptPrima)
-        CtlRenameOptPrima.Dock = DockStyle.Top
-        CtlRenameOptPrima.Visible = True
-        CtlRenameOptPrima.TabIndex = 0
+        If _defaultItem Is Nothing Then
+            _defaultItem = CtlRenameOptionPrima
+        End If
 
-        If CtlRenameOptPrima IsNot Nothing Then
-            _listControl.Add(CtlRenameOptPrima)
+        ' Adicione qualquer inicialização após a chamada InitializeComponent().
+        Me.Panel_LoadRenameOption.Controls.Add(_defaultItem)
+        _defaultItem.Dock = DockStyle.Top
+        _defaultItem.Visible = True
+        _defaultItem.TabIndex = 0
+
+        If _defaultItem IsNot Nothing Then
+            _itens.Add(_defaultItem)
 
         End If
 

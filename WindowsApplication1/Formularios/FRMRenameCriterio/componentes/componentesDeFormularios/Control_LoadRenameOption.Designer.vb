@@ -23,8 +23,8 @@ Partial Class Control_LoadRenameOption
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PanelBorder = New System.Windows.Forms.Panel()
-        Me.Panel_LoadRenameOption = New System.Windows.Forms.Panel()
         Me.PanelPadding = New System.Windows.Forms.Panel()
+        Me.Panel_LoadRenameOption = New System.Windows.Forms.Panel()
         Me.PanelBorder.SuspendLayout()
         Me.PanelPadding.SuspendLayout()
         Me.SuspendLayout()
@@ -40,16 +40,6 @@ Partial Class Control_LoadRenameOption
         Me.PanelBorder.Size = New System.Drawing.Size(311, 308)
         Me.PanelBorder.TabIndex = 112
         '
-        'Panel_LoadRenameOption
-        '
-        Me.Panel_LoadRenameOption.AutoScroll = True
-        Me.Panel_LoadRenameOption.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel_LoadRenameOption.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_LoadRenameOption.Location = New System.Drawing.Point(0, 0)
-        Me.Panel_LoadRenameOption.Name = "Panel_LoadRenameOption"
-        Me.Panel_LoadRenameOption.Size = New System.Drawing.Size(309, 306)
-        Me.Panel_LoadRenameOption.TabIndex = 9
-        '
         'PanelPadding
         '
         Me.PanelPadding.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
@@ -59,6 +49,16 @@ Partial Class Control_LoadRenameOption
         Me.PanelPadding.Name = "PanelPadding"
         Me.PanelPadding.Size = New System.Drawing.Size(309, 306)
         Me.PanelPadding.TabIndex = 10
+        '
+        'Panel_LoadRenameOption
+        '
+        Me.Panel_LoadRenameOption.AutoScroll = True
+        Me.Panel_LoadRenameOption.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel_LoadRenameOption.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_LoadRenameOption.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_LoadRenameOption.Name = "Panel_LoadRenameOption"
+        Me.Panel_LoadRenameOption.Size = New System.Drawing.Size(309, 306)
+        Me.Panel_LoadRenameOption.TabIndex = 9
         '
         'Control_LoadRenameOption
         '

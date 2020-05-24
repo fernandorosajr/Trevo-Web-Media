@@ -26,18 +26,21 @@ Partial Class Control_RenameOption
         Me.PanelElemento = New System.Windows.Forms.Panel()
         Me.PanelContainer = New System.Windows.Forms.Panel()
         Me.PanelBase = New System.Windows.Forms.Panel()
-        Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.PanelDateConfig = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.ComBPFormatText = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.TXTPSubstituirEspaco = New TrevoWebMedia.Control_TextBoxPerson()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.CHKSubstituirEspaco = New System.Windows.Forms.CheckBox()
         Me.PanelNomeDoArquivoAtualConfig = New System.Windows.Forms.Panel()
         Me.TableDoArquivoAtualConfig = New System.Windows.Forms.TableLayoutPanel()
         Me.CKB_RemoveSpace = New System.Windows.Forms.CheckBox()
         Me.CKB_FirstLetterUpper = New System.Windows.Forms.CheckBox()
+        Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.TableLPContainer = New System.Windows.Forms.TableLayoutPanel()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
         Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
@@ -61,6 +64,9 @@ Partial Class Control_RenameOption
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.PanelNomeDoArquivoAtualConfig.SuspendLayout()
         Me.TableDoArquivoAtualConfig.SuspendLayout()
         Me.TableLPContainer.SuspendLayout()
@@ -82,7 +88,7 @@ Partial Class Control_RenameOption
         Me.PanelElemento.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelElemento.Location = New System.Drawing.Point(0, 0)
         Me.PanelElemento.Name = "PanelElemento"
-        Me.PanelElemento.Size = New System.Drawing.Size(595, 121)
+        Me.PanelElemento.Size = New System.Drawing.Size(595, 107)
         Me.PanelElemento.TabIndex = 1
         '
         'PanelContainer
@@ -93,29 +99,21 @@ Partial Class Control_RenameOption
         Me.PanelContainer.Location = New System.Drawing.Point(0, 0)
         Me.PanelContainer.Name = "PanelContainer"
         Me.PanelContainer.Padding = New System.Windows.Forms.Padding(13)
-        Me.PanelContainer.Size = New System.Drawing.Size(541, 120)
+        Me.PanelContainer.Size = New System.Drawing.Size(541, 106)
         Me.PanelContainer.TabIndex = 4
         '
         'PanelBase
         '
         Me.PanelBase.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelBase.Controls.Add(Me.PanelSubstituir)
         Me.PanelBase.Controls.Add(Me.PanelDateConfig)
         Me.PanelBase.Controls.Add(Me.PanelNomeDoArquivoAtualConfig)
+        Me.PanelBase.Controls.Add(Me.PanelSubstituir)
         Me.PanelBase.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBase.Location = New System.Drawing.Point(13, 41)
         Me.PanelBase.Name = "PanelBase"
         Me.PanelBase.Padding = New System.Windows.Forms.Padding(50, 5, 0, 0)
-        Me.PanelBase.Size = New System.Drawing.Size(515, 66)
+        Me.PanelBase.Size = New System.Drawing.Size(515, 52)
         Me.PanelBase.TabIndex = 6
-        '
-        'PanelSubstituir
-        '
-        Me.PanelSubstituir.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelSubstituir.Location = New System.Drawing.Point(50, 5)
-        Me.PanelSubstituir.Name = "PanelSubstituir"
-        Me.PanelSubstituir.Size = New System.Drawing.Size(465, 61)
-        Me.PanelSubstituir.TabIndex = 1
         '
         'PanelDateConfig
         '
@@ -123,7 +121,7 @@ Partial Class Control_RenameOption
         Me.PanelDateConfig.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelDateConfig.Location = New System.Drawing.Point(50, 5)
         Me.PanelDateConfig.Name = "PanelDateConfig"
-        Me.PanelDateConfig.Size = New System.Drawing.Size(465, 61)
+        Me.PanelDateConfig.Size = New System.Drawing.Size(465, 47)
         Me.PanelDateConfig.TabIndex = 3
         '
         'TableLayoutPanel2
@@ -138,7 +136,7 @@ Partial Class Control_RenameOption
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(465, 61)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(465, 47)
         Me.TableLayoutPanel2.TabIndex = 0
         '
         'Panel4
@@ -185,13 +183,22 @@ Partial Class Control_RenameOption
         '
         'Panel5
         '
-        Me.Panel5.Controls.Add(Me.TXTPSubstituirEspaco)
-        Me.Panel5.Controls.Add(Me.CHKSubstituirEspaco)
+        Me.Panel5.Controls.Add(Me.Panel3)
+        Me.Panel5.Controls.Add(Me.Panel1)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel5.Location = New System.Drawing.Point(235, 3)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(227, 57)
         Me.Panel5.TabIndex = 5
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.TXTPSubstituirEspaco)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(105, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(122, 57)
+        Me.Panel3.TabIndex = 6
         '
         'TXTPSubstituirEspaco
         '
@@ -217,7 +224,7 @@ Partial Class Control_RenameOption
         Me.TXTPSubstituirEspaco.ForeColorPlaceholder = System.Drawing.Color.Gray
         Me.TXTPSubstituirEspaco.HideSelection = True
         Me.TXTPSubstituirEspaco.LeftIndentation = 6
-        Me.TXTPSubstituirEspaco.Location = New System.Drawing.Point(110, 0)
+        Me.TXTPSubstituirEspaco.Location = New System.Drawing.Point(0, 0)
         Me.TXTPSubstituirEspaco.MaxLength = 1
         Me.TXTPSubstituirEspaco.MultiLine = False
         Me.TXTPSubstituirEspaco.Name = "TXTPSubstituirEspaco"
@@ -238,15 +245,33 @@ Partial Class Control_RenameOption
         Me.TXTPSubstituirEspaco.RequiredValue = Nothing
         Me.TXTPSubstituirEspaco.RightIndentation = 0
         Me.TXTPSubstituirEspaco.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.TXTPSubstituirEspaco.Size = New System.Drawing.Size(117, 21)
+        Me.TXTPSubstituirEspaco.Size = New System.Drawing.Size(122, 21)
         Me.TXTPSubstituirEspaco.SpaceError = False
         Me.TXTPSubstituirEspaco.TabIndex = 4
         Me.TXTPSubstituirEspaco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.TXTPSubstituirEspaco.ThisSize = New System.Drawing.Size(117, 21)
+        Me.TXTPSubstituirEspaco.ThisSize = New System.Drawing.Size(122, 21)
         Me.TXTPSubstituirEspaco.TXT = Nothing
         Me.TXTPSubstituirEspaco.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.TXTPSubstituirEspaco.UseSystemPasswordChar = False
         Me.TXTPSubstituirEspaco.WordWrap = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(105, 57)
+        Me.Panel1.TabIndex = 5
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.CHKSubstituirEspaco)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(105, 21)
+        Me.Panel2.TabIndex = 4
         '
         'CHKSubstituirEspaco
         '
@@ -254,7 +279,7 @@ Partial Class Control_RenameOption
         Me.CHKSubstituirEspaco.Dock = System.Windows.Forms.DockStyle.Left
         Me.CHKSubstituirEspaco.Location = New System.Drawing.Point(0, 0)
         Me.CHKSubstituirEspaco.Name = "CHKSubstituirEspaco"
-        Me.CHKSubstituirEspaco.Size = New System.Drawing.Size(110, 57)
+        Me.CHKSubstituirEspaco.Size = New System.Drawing.Size(110, 21)
         Me.CHKSubstituirEspaco.TabIndex = 3
         Me.CHKSubstituirEspaco.Text = "Substituir espaço:"
         Me.CHKSubstituirEspaco.UseVisualStyleBackColor = True
@@ -265,7 +290,7 @@ Partial Class Control_RenameOption
         Me.PanelNomeDoArquivoAtualConfig.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelNomeDoArquivoAtualConfig.Location = New System.Drawing.Point(50, 5)
         Me.PanelNomeDoArquivoAtualConfig.Name = "PanelNomeDoArquivoAtualConfig"
-        Me.PanelNomeDoArquivoAtualConfig.Size = New System.Drawing.Size(465, 61)
+        Me.PanelNomeDoArquivoAtualConfig.Size = New System.Drawing.Size(465, 47)
         Me.PanelNomeDoArquivoAtualConfig.TabIndex = 2
         '
         'TableDoArquivoAtualConfig
@@ -281,7 +306,7 @@ Partial Class Control_RenameOption
         Me.TableDoArquivoAtualConfig.RowCount = 1
         Me.TableDoArquivoAtualConfig.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63.0!))
         Me.TableDoArquivoAtualConfig.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63.0!))
-        Me.TableDoArquivoAtualConfig.Size = New System.Drawing.Size(465, 61)
+        Me.TableDoArquivoAtualConfig.Size = New System.Drawing.Size(465, 47)
         Me.TableDoArquivoAtualConfig.TabIndex = 0
         '
         'CKB_RemoveSpace
@@ -303,6 +328,14 @@ Partial Class Control_RenameOption
         Me.CKB_FirstLetterUpper.TabIndex = 2
         Me.CKB_FirstLetterUpper.Text = "primeira Letra Minúscula"
         Me.CKB_FirstLetterUpper.UseVisualStyleBackColor = True
+        '
+        'PanelSubstituir
+        '
+        Me.PanelSubstituir.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelSubstituir.Location = New System.Drawing.Point(50, 5)
+        Me.PanelSubstituir.Name = "PanelSubstituir"
+        Me.PanelSubstituir.Size = New System.Drawing.Size(465, 47)
+        Me.PanelSubstituir.TabIndex = 1
         '
         'TableLPContainer
         '
@@ -531,7 +564,7 @@ Partial Class Control_RenameOption
         Me.PanelRightButtons.Dock = System.Windows.Forms.DockStyle.Right
         Me.PanelRightButtons.Location = New System.Drawing.Point(541, 0)
         Me.PanelRightButtons.Name = "PanelRightButtons"
-        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 120)
+        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 106)
         Me.PanelRightButtons.TabIndex = 3
         '
         'TableLPButtons
@@ -584,12 +617,13 @@ Partial Class Control_RenameOption
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "String"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
         '
         'PanelMagemBotton
         '
         Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 120)
+        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 106)
         Me.PanelMagemBotton.Name = "PanelMagemBotton"
         Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
         Me.PanelMagemBotton.TabIndex = 0
@@ -601,7 +635,7 @@ Partial Class Control_RenameOption
         Me.Controls.Add(Me.PanelElemento)
         Me.ForeColor = System.Drawing.Color.DarkGray
         Me.Name = "Control_RenameOption"
-        Me.Size = New System.Drawing.Size(595, 121)
+        Me.Size = New System.Drawing.Size(595, 107)
         Me.PanelElemento.ResumeLayout(False)
         Me.PanelContainer.ResumeLayout(False)
         Me.PanelBase.ResumeLayout(False)
@@ -610,7 +644,10 @@ Partial Class Control_RenameOption
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.PanelNomeDoArquivoAtualConfig.ResumeLayout(False)
         Me.TableDoArquivoAtualConfig.ResumeLayout(False)
         Me.TableDoArquivoAtualConfig.PerformLayout()
@@ -660,4 +697,7 @@ Partial Class Control_RenameOption
     Friend WithEvents TXTPSubstituirEspaco As Control_TextBoxPerson
     Friend WithEvents CHKSubstituirEspaco As CheckBox
     Friend WithEvents PanelSubstituir As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
 End Class

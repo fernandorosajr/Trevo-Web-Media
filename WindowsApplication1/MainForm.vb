@@ -768,6 +768,8 @@ Long, lpColorValues As Long) As Long
     End Sub
 
     Private Sub CheckBox20_Click(sender As Object, e As EventArgs) Handles CheckBox20.Click
+
+        FRMDialogRenameCriterio.FileExemple = "D:/Outra pasta/Arquivo Novo.docx"
         FRMDialogRenameCriterio.ShowDialog()
 
     End Sub

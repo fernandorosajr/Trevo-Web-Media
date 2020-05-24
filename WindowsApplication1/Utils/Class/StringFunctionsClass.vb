@@ -26,6 +26,7 @@ Public Class StringFunctionsClass
         list.AddRange(quebraPalavras.Split(delimitatores))
 
         Return list
+
     End Function
 
     Overloads Function ConvertTheFirstWordToUppercase(textToConvert As String, firstLetterUpper As Boolean)
@@ -358,7 +359,6 @@ Public Class StringFunctionsClass
             Else
                 newPhrase += phrase.Chars(x).ToString.ToLower
             End If
-
 
         Next
 

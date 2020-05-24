@@ -121,14 +121,14 @@ Public Class Control_RenameOption
         End Set
     End Property
 
-    Private _selectADataModeEnum As SelectADataModeEnum
+    Public _selectDisplayTela As SelectADataModeEnum
     Public Property SelectDisplayTela As SelectADataModeEnum
         Get
-            Return _selectADataModeEnum
+            Return _selectDisplayTela
 
         End Get
         Set(value As SelectADataModeEnum)
-            _selectADataModeEnum = value
+            _selectDisplayTela = value
             DisplayScreenOfADataMode()
 
         End Set
@@ -604,7 +604,6 @@ Public Class Control_RenameOption
         For Each item As Control_RenameOption In Me.Parent.Controls
             If item.ID > index Then
                 item.ID += 1
-                ' item.TXTPerson.TXT = "Saluton" + item.ID.ToString
 
             End If
         Next
@@ -616,7 +615,6 @@ Public Class Control_RenameOption
         For Each item As Control_RenameOption In Me.Parent.Controls
             If item.ID > index Then
                 item.ID -= 1
-                ' item.TXTPerson.TXT = "Saluton" + item.ID.ToString
 
             End If
         Next
@@ -642,6 +640,8 @@ Public Class Control_RenameOption
 
         End If
 
+        LoadRenameOptionsParent.AtualizarItensList()
+
     End Sub
 
     Private Sub BTNAddRenomeDeOrigem_Click(sender As Object, e As EventArgs) Handles BTNAddRenomeDeOrigem.Click
@@ -663,7 +663,9 @@ Public Class Control_RenameOption
 
         OrdenarRenameOption()
 
-        LoadRenameOptionsParent.Itens.Add(renameOption)
+        ' LoadRenameOptionsParent.Itens.Add(renameOption)
+        LoadRenameOptionsParent.AtualizarItensList()
+
 
     End Sub
 
@@ -672,7 +674,6 @@ Public Class Control_RenameOption
     End Sub
 
     Private Sub Control_RenameOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' TXTPerson.TXT = ID
 
         If Me.Parent.Parent.Parent.Parent IsNot Nothing Then
             If TypeOf (Me.Parent.Parent.Parent.Parent) Is Control_LoadRenameOptions Then
@@ -681,7 +682,8 @@ Public Class Control_RenameOption
             End If
         End If
 
-        FileExemple = "C:\Pasta Teste\Meu ArquivO arQUiVado.txt"
+        FileExemple = LoadRenameOptionsParent.FileExemple
+
 
         TextReplace.Dock = DockStyle.Fill
 
@@ -690,8 +692,7 @@ Public Class Control_RenameOption
         TextReplace.AutomaticResult = True
 
         TextReplace.Visible = True
-
-        TextReplace.Phrase = _fileExemple.Name
+        If _fileExemple IsNot Nothing Then TextReplace.Phrase = _fileExemple.Name
 
         ApplyEventToSubItemsMenu(ComBPMaster.CMS_Menu)
 
@@ -801,7 +802,13 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Public Function ReturnStringData()
+    Public Shadows Function Text()
+
+        Try
+
+        Catch ex As Exception
+
+        End Try
 
         Dim _dataStr As String = ""
 
@@ -818,16 +825,22 @@ Public Class Control_RenameOption
 
                     Dim ext As String = TXTPValue.TXT
                     'MsgBox(ext.First)
-                    If ext.Length > 0 Then
-                        If ext.First <> "." Then
-                            _dataStr = "." & ext
+                    If ext IsNot Nothing Then
+                        If ext.Length > 0 Then
+                            If ext.First <> "." Then
+                                _dataStr = "." & ext
+                            Else
+                                _dataStr = ext
+                            End If
+
                         Else
-                            _dataStr = ext
+                            _dataStr = "."
                         End If
 
                     Else
                         _dataStr = "."
                     End If
+
 
 
                 Case SelectADataModeEnum.NomeDoArquivoAtual
@@ -898,39 +911,6 @@ Public Class Control_RenameOption
                     End Select
 
                     _dataStr = TrasnformDate(_dataDete)
-
-                    'Obtem data e hora atual do sistema
-                    'MsgBox(Date.Now)
-
-                    ''Obtendo dia da semana
-
-                    'MsgBox(String.Format("{0:dddd}", Now))
-
-
-                    'MsgBox(Format(Date.Now, "Dddd, d de mm de aaaa"))
-                    ''Soma 20 dias a data atual
-
-                    'MsgBox(Date.Now.AddDays(20))
-
-                    ''Subtrai 15 dias da data atual
-
-                    'MsgBox(Date.Now.AddDays(-15))
-
-                    ''Exibe uma mensagem informando se o ano é bissexto
-
-                    'If Date.IsLeapYear(2007) = True Then
-
-                    '    MsgBox("Ano Bissexto")
-
-                    'Else
-
-                    '    MsgBox("Ano Não Bissexto")
-
-                    'End If
-
-                    ''Exibe o número de dias do mês para  o ano de 2007 e mes 2
-
-                    'MsgBox("O numero de dias do mês é: " & Date.DaysInMonth(2007, 2))
 
 
 
@@ -1214,7 +1194,7 @@ Public Class Control_RenameOption
                 numberValue = CUInt(_value)
 
             Else
-                MsgBox("Este campo só pode conter números.")
+                ' MsgBox("Este campo só pode conter números.")
             End If
         Else
             numberValue = 0
@@ -1295,7 +1275,6 @@ Public Class Control_RenameOption
         'Não pode ter Letras
         TXTPValue.ActiveValidate = True
         TXTPValue.ByChar = False
-        'TXTPValue.NoneOfThisChar = "|"
 
         TXTPValue.ByText = False
         TXTPValue.ByValue = False
@@ -1332,7 +1311,7 @@ Public Class Control_RenameOption
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim _dataStr As String = ReturnStringData()
+        Dim _dataStr As String = Text()
         MsgBox(_dataStr)
 
     End Sub

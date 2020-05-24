@@ -3,11 +3,37 @@ Imports System.ComponentModel
 Imports System.ComponentModel.Design
 Imports System.Collections.ObjectModel
 Imports System.Drawing.Design
-
+Imports System.IO
 Imports System.Windows.Forms
 'TODO: Remover controle em tenpos de execução : https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time
 
 Public Class FRMDialogRenameCriterio
+
+    Private _resultado As String
+    ' Propriedades de Formulários
+    ' ------------------------------------------------
+    Private _fileExemple As FileInfo
+    Public Property FileExemple As String
+        Get
+            Return _fileExemple.FullName
+
+        End Get
+        Set(value As String)
+
+            If value IsNot Nothing Or Trim(value) = "" Then
+                _fileExemple = New FileInfo(value)
+
+            Else
+                value = "C:\Pasta Teste\Arquivo.txt"
+                _fileExemple = New FileInfo(value)
+            End If
+
+            LoadRenameOptions.FileExemple = value
+
+        End Set
+    End Property
+    ' ------------------------------------------------
+
     ' TODO :https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-layer-objects-on-windows-forms
     ' https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-set-the-tab-order-on-windows-forms
 
@@ -35,35 +61,39 @@ Public Class FRMDialogRenameCriterio
 
     'End Sub
 
-    Private Sub FRMDialogRenameCriterio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Sub New()
+
+        ' Esta chamada é requerida pelo designer.
+        InitializeComponent()
+
         PanelRecebe.Controls.Add(LoadRenameOptions)
+        FileExemple = "C:\Pasta Teste\Meu ArquivO arQUiVado.txt"
+        LoadRenameOptions.FileExemple = FileExemple
+
         LoadRenameOptions.Top = 31
         LoadRenameOptions.Left = 103
         LoadRenameOptions.Width = LBLTitle01.Width
         LoadRenameOptions.Height = 231
 
         LoadRenameOptions.Dock = DockStyle.Fill
+        ' Adicione qualquer inicialização após a chamada InitializeComponent().
+
+    End Sub
+
+    Private Sub FRMDialogRenameCriterio_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
-        'comboBoxPerson01.Width = 150
+
+        'LoadRenameOptions.FileExemple = FileExemple
+        'PanelRecebe.Controls.Add(LoadRenameOptions)
+        'LoadRenameOptions.Top = 31
+        'LoadRenameOptions.Left = 103
+        'LoadRenameOptions.Width = LBLTitle01.Width
+        'LoadRenameOptions.Height = 231
+
+        'LoadRenameOptions.Dock = DockStyle.Fill
 
 
-        'Me.Controls.Add(comboBoxPerson01)
-        'comboBoxPerson01.BringToFront()
-        'comboBoxPerson01.ComboBoxPersonSlave = comboBoxPerson02
-
-        'comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("Eu sou o SubCombo")
-        'comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("Sou escravo do Combo 1")
-        'comboBoxPerson01.ComboBoxPersonSlave.OptionsList.Add("; OK")
-
-        'comboBoxPerson02.Left = comboBoxPerson01.Left + comboBoxPerson01.Width + 8
-
-        'Me.Controls.Add(comboBoxPerson02)
-
-        'comboBoxPerson01.Show()
-        'comboBoxPerson02.Show()
-
-        '  CBP_1.ComboBoxPersonSlave = CBP_2
 
     End Sub
 
@@ -87,4 +117,16 @@ Public Class FRMDialogRenameCriterio
         TXTCNovoNome.Visible = True
     End Sub
 
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+        _resultado = LoadRenameOptions.TextResult
+
+        If Trim(_resultado) = "" Then
+            LBLValue_NovoNome.Text = _fileExemple.Name
+
+        Else
+            LBLValue_NovoNome.Text = LoadRenameOptions.TextResult
+
+        End If
+
+    End Sub
 End Class

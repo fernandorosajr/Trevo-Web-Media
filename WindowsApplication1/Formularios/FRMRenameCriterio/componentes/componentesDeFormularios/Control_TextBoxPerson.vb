@@ -1068,6 +1068,7 @@ Public Class Control_TextBoxPerson
             Me.Height = _minVerticalSize
         End If
 
+        ' TODO: Excluir esta propriedade.
         _thisSize = New Size(Me.Width, Me.Height)
     End Sub
 
@@ -1097,6 +1098,9 @@ Public Class Control_TextBoxPerson
             Dim foundSpaceError As Boolean = False
 
 
+            If dataStr Is Nothing Then
+                Return foundError
+            End If
 
             If ByValue = True Then
                 If _noneOfThisValue IsNot Nothing Or _noneOfThisValue <> "" Then

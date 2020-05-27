@@ -134,11 +134,18 @@ Public Class Control_LoadRenameOptions
         Next
 
         If Trim(_nomeDoArquivo) = "" Then
-            _nomeDoArquivo = _fileExemple.Name.Replace(_fileExemple.Extension, "")
+
+            If _fileExemple.Extension <> "" Then
+                _nomeDoArquivo = _fileExemple.Name.Replace(_fileExemple.Extension, "")
+
+            Else
+                _nomeDoArquivo = _fileExemple.Name
+
+            End If
 
         End If
 
-        If Trim(_extDoArquivo) = "" Or Trim(_extDoArquivo) = "." Then
+            If Trim(_extDoArquivo) = "" Or Trim(_extDoArquivo) = "." Then
             _extDoArquivo = _fileExemple.Extension
 
         End If

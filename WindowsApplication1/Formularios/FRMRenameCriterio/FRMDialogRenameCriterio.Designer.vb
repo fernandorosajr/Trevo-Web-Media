@@ -41,6 +41,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.BTNVisulizar = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -222,7 +223,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TXTCNovoNome.ByText = False
         Me.TXTCNovoNome.ByValue = False
         Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(125, 34)
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
         Me.TXTCNovoNome.Name = "TXTCNovoNome"
         Me.TXTCNovoNome.NoneOfThisChar = ""
         Me.TXTCNovoNome.NoneOfThisText = Nothing
@@ -242,9 +243,10 @@ Partial Class FRMDialogRenameCriterio
         Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LNKLNomeDoExemplo.AutoEllipsis = True
+        Me.LNKLNomeDoExemplo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LNKLNomeDoExemplo.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.LNKLNomeDoExemplo.LinkColor = System.Drawing.Color.Orange
-        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(130, 36)
+        Me.LNKLNomeDoExemplo.Location = New System.Drawing.Point(128, 36)
         Me.LNKLNomeDoExemplo.Name = "LNKLNomeDoExemplo"
         Me.LNKLNomeDoExemplo.Size = New System.Drawing.Size(464, 13)
         Me.LNKLNomeDoExemplo.TabIndex = 11
@@ -256,6 +258,7 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLValue_NovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LBLValue_NovoNome.AutoEllipsis = True
+        Me.LBLValue_NovoNome.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLValue_NovoNome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.LBLValue_NovoNome.Location = New System.Drawing.Point(127, 57)
         Me.LBLValue_NovoNome.Name = "LBLValue_NovoNome"
@@ -280,6 +283,17 @@ Partial Class FRMDialogRenameCriterio
         '
         Me.Timer.Enabled = True
         '
+        'BTNVisulizar
+        '
+        Me.BTNVisulizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.BTNVisulizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNVisulizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNVisulizar.Location = New System.Drawing.Point(31, 457)
+        Me.BTNVisulizar.Name = "BTNVisulizar"
+        Me.BTNVisulizar.Size = New System.Drawing.Size(80, 23)
+        Me.BTNVisulizar.TabIndex = 16
+        Me.BTNVisulizar.Text = "Vizualizar"
+        '
         'FRMDialogRenameCriterio
         '
         Me.AcceptButton = Me.OK_Button
@@ -288,6 +302,7 @@ Partial Class FRMDialogRenameCriterio
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
         Me.ClientSize = New System.Drawing.Size(678, 507)
+        Me.Controls.Add(Me.BTNVisulizar)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.LBLTitle03)
         Me.Controls.Add(Me.PanelRecebe)
@@ -328,4 +343,5 @@ Partial Class FRMDialogRenameCriterio
     Friend WithEvents LBLTitleOrigem As Label
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
     Friend WithEvents Timer As Timer
+    Friend WithEvents BTNVisulizar As Button
 End Class

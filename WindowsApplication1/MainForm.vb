@@ -6,6 +6,9 @@ Imports System.ComponentModel
 Public Class MainForm
     Dim DriveMaster As DriveInfo
 
+    Public SelectedFoldersAndFiles As New List(Of Object)
+
+
     ' Carregar Controles acessorios
     ' -------------------------------------------------------
     Public controlPersonalListView As New ControlVerListas
@@ -193,6 +196,22 @@ Long, lpColorValues As Long) As Long
             Me.Refresh()
             Threading.Thread.Sleep(10)
         Next
+
+
+        Dim path As String = "C:\Minha Pasta\"
+        Dim folder As DirectoryInfo
+        Dim file As FileInfo
+        For x = 0 To 10
+
+            folder = New DirectoryInfo(path & "Nova Pasta " & x)
+            SelectedFoldersAndFiles.Add(folder)
+
+            For y = 0 To 10
+                file = New FileInfo(folder.FullName & "\" & "Arquivo " & y & ".txt")
+                SelectedFoldersAndFiles.Add(file)
+            Next
+        Next
+
     End Sub
     Public Function AdcionarItemNoView(Drive As DriveInfo, Numero As Integer)
         ' Cria os suobjetos semelhantes a pastas do picasa
@@ -767,9 +786,15 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
+    Private Sub CheckBox20_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox20.CheckedChanged
+
+    End Sub
+
     Private Sub CheckBox20_Click(sender As Object, e As EventArgs) Handles CheckBox20.Click
 
-        FRMDialogRenameCriterio.FileExemple = "D:/Outra pasta/Arquivo Novo.docx"
+        FRMDialogRenameCriterio.SelectedFoldersAndFiles.Clear()
+        FRMDialogRenameCriterio.SelectedFoldersAndFiles.AddRange(SelectedFoldersAndFiles)
+        FRMDialogRenameCriterio.FileExemple = "C:\Minha Pasta\Nome Antigo.txt"
         FRMDialogRenameCriterio.ShowDialog()
 
     End Sub

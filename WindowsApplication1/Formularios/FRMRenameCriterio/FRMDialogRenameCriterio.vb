@@ -9,9 +9,40 @@ Imports System.Windows.Forms
 
 Public Class FRMDialogRenameCriterio
 
+    'Importação de Classes
+    '--------------------------------------------------
+    ReadOnly funcoesDeString As New StringFunctionsClass
+    Private configs As Class_Configs
+    Private UsesDirectories As UsesDirectoriesClass
+
+    ' -------------------------------------------------
+
+    Public SelectedFoldersAndFiles As New List(Of Object)
+
     Private _resultado As String
     ' Propriedades de Formulários
     ' ------------------------------------------------
+
+    Private _dirExemple As DirectoryInfo
+    Public Property DirExemple As String
+        Get
+            Return _dirExemple.FullName
+
+        End Get
+        Set(value As String)
+
+            _dirExemple = New DirectoryInfo(value)
+
+            If value.Substring(value.Length - 1, 1) = "\" Or value.Substring(value.Length - 1, 1) = "/" Then
+                value = value.Substring(0, value.Length - 1)
+            End If
+
+            _fileExemple = New FileInfo(value & "\" & _fileExemple.Name)
+
+        End Set
+    End Property
+
+    Const _fileExempleDefault As String = "C:\Pasta Teste\Arquivo.txt"
     Private _fileExemple As FileInfo
     Public Property FileExemple As String
         Get
@@ -24,9 +55,14 @@ Public Class FRMDialogRenameCriterio
                 _fileExemple = New FileInfo(value)
 
             Else
-                value = "C:\Pasta Teste\Arquivo.txt"
+                value = _fileExempleDefault
                 _fileExemple = New FileInfo(value)
             End If
+
+            _dirExemple = New DirectoryInfo(_fileExemple.DirectoryName)
+
+            LBL_ValueOrigemDoExemplo.Text = _dirExemple.FullName
+            LNKLNomeDoExemplo.Text = _fileExemple.Name
 
             LoadRenameOptions.FileExemple = value
 
@@ -93,7 +129,25 @@ Public Class FRMDialogRenameCriterio
 
         'LoadRenameOptions.Dock = DockStyle.Fill
 
+        If SelectedFoldersAndFiles IsNot Nothing Then
+            If SelectedFoldersAndFiles.Count > 0 Then
 
+                For Each item In SelectedFoldersAndFiles
+
+                    If TypeOf item Is DirectoryInfo Then
+
+                    ElseIf TypeOf item Is FileInfo Then
+                        Dim itemFile As FileInfo = item
+                        FileExemple = itemFile.FullName
+                        Exit For
+
+                    End If
+                Next
+
+            End If
+
+
+        End If
 
     End Sub
 
@@ -118,13 +172,18 @@ Public Class FRMDialogRenameCriterio
     End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+        FileExemple = _dirExemple.FullName & "\" & LNKLNomeDoExemplo.Text
+
+        LBL_ValueOrigemDoExemplo.Text = _fileExemple.DirectoryName
+        LNKLNomeDoExemplo.Text = _fileExemple.Name
+
         _resultado = LoadRenameOptions.TextResult
 
         If Trim(_resultado) = "" Then
             LBLValue_NovoNome.Text = _fileExemple.Name
 
         Else
-            LBLValue_NovoNome.Text = LoadRenameOptions.TextResult
+            LBLValue_NovoNome.Text = _resultado
 
         End If
 

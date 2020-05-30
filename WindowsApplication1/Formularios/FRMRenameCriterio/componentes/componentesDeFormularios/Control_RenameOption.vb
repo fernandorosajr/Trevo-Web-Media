@@ -2,13 +2,12 @@
 
 Imports System.IO
 Imports System.Reflection
-
+Imports System.ComponentModel
 
 Public Class Control_RenameOption
 
 
     Private Alfabeto As New List(Of Char)
-    Public LoadRenameOptionsParent As Control_LoadRenameOptions
 
     ReadOnly MonthList() As String = {
           "Janeiro",
@@ -27,7 +26,10 @@ Public Class Control_RenameOption
 
     'Criar componente
     '--------------------------------------------------
+    Public LoadRenameOptionsParent As Control_LoadRenameOptions
+
     Dim TextReplace As New Control_TextReplace
+
     '--------------------------------------------------
 
 
@@ -36,6 +38,7 @@ Public Class Control_RenameOption
     ReadOnly funcoesDeString As New StringFunctionsClass
     Private configs As Class_Configs
     Private usesFile As New UsesFilesClass
+    Public DataRenameOption As New Class_DataRenameOption
     ' -------------------------------------------------
 
 
@@ -59,7 +62,10 @@ Public Class Control_RenameOption
                 _fileExemple = New FileInfo(value)
             End If
 
+            TextReplace.Phrase = _fileExemple.Name
         End Set
+
+
     End Property
     '--------------------------------------------------
 
@@ -129,13 +135,295 @@ Public Class Control_RenameOption
         End Get
         Set(value As SelectADataModeEnum)
             _selectDisplayTela = value
+
+            DataRenameOption.RenameTypeData.Tela = value
+
             DisplayScreenOfADataMode()
 
         End Set
     End Property
 
+    ' Proriedades de dados 
+    '----------------------------------------------
+    Private _textValue As String
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property TextValue As String
+        Get
+            Return _textValue
+
+        End Get
+        Set(value As String)
+            _textValue = value
+
+        End Set
+    End Property
+
+    Private _newExttValue As String
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property NewExtValue As String
+        Get
+            Return _newExttValue
+
+        End Get
+        Set(value As String)
+            _newExttValue = value
+
+        End Set
+    End Property
+
+    Private _fileNametValue As FileInfo
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property FileNametValue As String
+        Get
+            Return _fileNametValue.FullName
+
+        End Get
+        Set(value As String)
+            _fileNametValue = New FileInfo(value)
+
+        End Set
+    End Property
+
+    Private _nomeOuExtensaoDoArquivoAtual As NomeEExtensaoEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property NomeOuExtensaoDoArquivoAtual As NomeEExtensaoEnum
+        Get
+            Return _nomeOuExtensaoDoArquivoAtual
+
+        End Get
+        Set(value As NomeEExtensaoEnum)
+            _nomeOuExtensaoDoArquivoAtual = value
+
+        End Set
+    End Property
+
+    Private _opcoesDeFormatacaoDeTextoDoArquivoAtual As OpcoesDeFormatacaoDeTextoEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property OpcoesDeFormatacaoDeTextoDoArquivoAtual As OpcoesDeFormatacaoDeTextoEnum
+        Get
+            Return _opcoesDeFormatacaoDeTextoDoArquivoAtual
+
+        End Get
+        Set(value As OpcoesDeFormatacaoDeTextoEnum)
+            _opcoesDeFormatacaoDeTextoDoArquivoAtual = value
+
+        End Set
+    End Property
+
+    Private _primeiraLetraMinusculaDeNomeDeArquivo As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property PrimeiraLetraMinusculaDeNomeDeArquivo As Boolean
+        Get
+            Return _primeiraLetraMinusculaDeNomeDeArquivo
+        End Get
+        Set(value As Boolean)
+            _primeiraLetraMinusculaDeNomeDeArquivo = value
+
+        End Set
+    End Property
+
+    Private _removerEspacoDeNomeDeArquvo As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property RemoverEspacoDeNomeDeArquvo As Boolean
+        Get
+            Return _removerEspacoDeNomeDeArquvo
+        End Get
+        Set(value As Boolean)
+            _removerEspacoDeNomeDeArquvo = value
+
+        End Set
+    End Property
+
+
+    Private _numeroDeSequencia As Integer
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property NumeroDeSequencia As Integer
+        Get
+            Return _numeroDeSequencia
+        End Get
+        Set(value As Integer)
+            _numeroDeSequencia = value
+
+        End Set
+    End Property
+
+    Private _quantidadeDeDigitosDaSequenciaNumerica As Integer
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property QuantidadeDeDigitosDaSequenciaNumerica As Integer
+        Get
+            Return _quantidadeDeDigitosDaSequenciaNumerica
+        End Get
+        Set(value As Integer)
+            _quantidadeDeDigitosDaSequenciaNumerica = value
+
+        End Set
+    End Property
+
+    Private _opcoesDeFormatacaoDeSequenciaDeLetras As OpcoesDeFormatacaoDeSequenciaDeLetrasEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property OpcoesDeFormatacaoDeSequenciaDeLetras As OpcoesDeFormatacaoDeSequenciaDeLetrasEnum
+        Get
+            Return _opcoesDeFormatacaoDeSequenciaDeLetras
+        End Get
+        Set(value As OpcoesDeFormatacaoDeSequenciaDeLetrasEnum)
+            _opcoesDeFormatacaoDeSequenciaDeLetras = value
+
+        End Set
+    End Property
+
+    Private _tempoDaData As TempoDaDataEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property TempoDaData As TempoDaDataEnum
+        Get
+            Return _tempoDaData
+        End Get
+        Set(value As TempoDaDataEnum)
+            _tempoDaData = value
+
+        End Set
+    End Property
+
+    ' Public _dateFormat As DateFormatEnum
+    Private _dateFormat As DateFormatEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property DateFormat As DateFormatEnum
+        Get
+            Return _dateFormat
+        End Get
+        Set(value As DateFormatEnum)
+            _dateFormat = value
+
+        End Set
+    End Property
+
+    Private _opcoesDeFormatacaoDeTextoDeDataHora As OpcoesDeFormatacaoDeTextoEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property OpcoesDeFormatacaoDeTextoDeDataHora
+        Get
+            Return _opcoesDeFormatacaoDeTextoDeDataHora
+
+        End Get
+        Set(value)
+            _opcoesDeFormatacaoDeTextoDeDataHora = value
+
+        End Set
+    End Property
+
+    Private _substituirEspacoDaData As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property SubstituirEspacoDaData As Boolean
+        Get
+            Return _substituirEspacoDaData
+
+        End Get
+        Set(value As Boolean)
+            _substituirEspacoDaData = value
+
+        End Set
+    End Property
+
+    Private _caracterParaSubstituicaoDoEspaco As Char
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property CaracterParaSubstituicaoDoEspaco As String
+        Get
+            Return CStr(_caracterParaSubstituicaoDoEspaco)
+        End Get
+        Set(value As String)
+            _caracterParaSubstituicaoDoEspaco = CChar(value.Substring(0, 1))
+
+        End Set
+    End Property
+
+    Private _primeiraLetraMinusculaDeNomeDaPasta As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property PrimeiraLetraMinusculaDeNomeDaPasta As Boolean
+        Get
+            Return (_primeiraLetraMinusculaDeNomeDaPasta)
+        End Get
+        Set(value As Boolean)
+            _primeiraLetraMinusculaDeNomeDaPasta = value
+
+        End Set
+    End Property
+
+
+    Private _removerEspacoDeNomeDaPasta As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property RemoverEspacoDeNomeDaPasta As Boolean
+        Get
+            Return (_removerEspacoDeNomeDaPasta)
+        End Get
+        Set(value As Boolean)
+            _removerEspacoDeNomeDaPasta = value
+
+        End Set
+    End Property
+
+    Private _removerEspacoDeNomeDeArquivo As Boolean
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property RemoverEspacoDeNomeDeArquivo As Boolean
+        Get
+            Return (_removerEspacoDeNomeDeArquivo)
+        End Get
+        Set(value As Boolean)
+            _removerEspacoDeNomeDeArquivo = value
+
+        End Set
+    End Property
+
+    Private _opcoesDeFormatacaoDeTextoDaPasta As OpcoesDeFormatacaoDeTextoEnum
+    <Category("Variáveis de Renome")>
+    <Description(".")>
+    Public Property OpcoesDeFormatacaoDeTextoDaPasta As OpcoesDeFormatacaoDeTextoEnum
+        Get
+            Return (_opcoesDeFormatacaoDeTextoDaPasta)
+        End Get
+        Set(value As OpcoesDeFormatacaoDeTextoEnum)
+            _opcoesDeFormatacaoDeTextoDaPasta = value
+
+        End Set
+    End Property
+
+    '----------------------------------------------
+
+
     ' _____________________________________________
 
+
+    Public Enum OpcoesDeFormatacaoDeSequenciaDeLetrasEnum
+
+        TODASMAIUSCULAS = 0
+        todasMinusculas = 1
+
+    End Enum
+
+    Public Enum TempoDaDataEnum
+
+        DataDeCriacao = 0
+        DataDeModificacao = 1
+        Ontem = 2
+        Hoje = 3
+        Amanha = 4
+
+    End Enum
 
     Public OpcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
     Public Enum OpcoesDeFormatacaoDeTextoEnum
@@ -154,7 +442,7 @@ Public Class Control_RenameOption
         Texto = 0
         NovaExtensao = 1
         NomeDoArquivoAtual = 2
-        NumeroDeSequencia = 3
+        SequenciaNumerica = 3
         LetraDaSequencia = 4
         DataEHora = 5
         Metadados = 6
@@ -163,7 +451,14 @@ Public Class Control_RenameOption
 
     End Enum
 
-    Public _dateFormat As DateFormatEnum
+    Public _nomeEExtensao As NomeEExtensaoEnum
+    Public Enum NomeEExtensaoEnum
+        NomeEExtensao = 0
+        Nome = 1
+        Extensao = 2
+    End Enum
+
+
     Public Enum DateFormatEnum
 
         DDMMAAAA = 0
@@ -199,8 +494,13 @@ Public Class Control_RenameOption
 
         ActiveDelete = False
 
+        TextValue = ""
+
+
     End Sub
 
+    ' pROCEDIMENTOS DE Exibçao de tela
+    '___________________________________________________________
     Sub ExibirTelaTexto()
 
         TextValidateConfig()
@@ -216,6 +516,7 @@ Public Class Control_RenameOption
         PanelDateConfig.Visible = False
 
         TXTPValue.TXT = ""
+        _textValue = ""
         TXTPValue.Validar(TXTPValue.TXT)
 
         PanelEnvolve_ComBPSlave.Controls.Add(TXTPValue)
@@ -232,7 +533,7 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Sub ExibirNovaExtensao()
+    Sub ExibirTelaNovaExtensao()
         ExtensionValidateConfig()
 
         Panel_Right.Visible = False
@@ -244,7 +545,9 @@ Public Class Control_RenameOption
         PanelSubstituir.Visible = True
         PanelDateConfig.Visible = False
 
-        TXTPValue.TXT = ""
+        TXTPValue.TXT = "" '
+        _newExttValue = ""
+
         TXTPValue.Validar(TXTPValue.TXT)
 
         TXTPValue.Placeholder = "Digite uma extensão..."
@@ -272,7 +575,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         Panel_Right.Controls.Add(TXTPValue)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
         Me.Height = 54
         TableLPContainer.Dock = DockStyle.Fill
 
@@ -285,21 +588,29 @@ Public Class Control_RenameOption
 
         listItem.AddRange({" Como o Original", " TODAS MAIÚSCULAS", " todas minúsculas", "Primeiras Letras Maiúsculas", "pRIMEIRAS lETRAS mINÚSCULAS"})
 
-        ComBRight.OptionsList = listItem
-        ComBRight.PerformAutomaticSelection(0)
+        ComBPRight.OptionsList = listItem
+        ComBPRight.PerformAutomaticSelection(0)
 
         ' _____-----------------------------------------------------_____
 
-
-        For Each item As ToolStripMenuItem In ComBRight.CMS_Menu.Items
+        For Each item As ToolStripMenuItem In ComBPRight.CMS_Menu.Items
             AddHandler item.Click, New System.EventHandler(AddressOf ExibirSubTelaPrimeiraMaiuscDeNomeDoArquivoAtual)
 
         Next
 
+        For Each item As ToolStripMenuItem In ComBPSlave.CMS_Menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf ComBPSlave_Clicked)
+
+        Next
+
+        For Each item As ToolStripMenuItem In ComBPRight.CMS_Menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf ComBPRight_Clicked)
+
+        Next
     End Sub
 
     Sub ExibirSubTelaPrimeiraMaiuscDeNomeDoArquivoAtual()
-        If ComBRight.SelectedItem.Tag.ID = 3 Then
+        If ComBPRight.SelectedItem.Tag.ID = 3 Then
 
             ExibirSubTelaPrimeiraMinuscula()
 
@@ -308,7 +619,83 @@ Public Class Control_RenameOption
             OcultarSubTelaPrimeiraMinuscula()
 
         End If
+
     End Sub
+
+    Sub ComBPSlave_Clicked()
+
+        Dim _q As Integer = ComBPMaster.OptionsList.Count
+        Dim _id As Integer = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
+
+        Select Case _id
+            Case SelectADataModeEnum.NomeDoArquivoAtual
+
+                NomeOuExtensaoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - _q
+                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.NomeOuExtensaoDoArquivoAtual = _nomeOuExtensaoDoArquivoAtual
+
+            Case SelectADataModeEnum.DataEHora
+
+                _tempoDaData = ComBPSlave.SelectedItem.Tag.ID - _q
+                DataRenameOption.RenameTypeData.DadosDeTempo.TempoDaData = _tempoDaData
+
+            Case SelectADataModeEnum.NomeDaPasta
+                _opcoesDeFormatacaoDeTextoDaPasta = ComBPSlave.SelectedItem.Tag.ID - _q
+                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.OpcoesDeFormatacaoDeTextoDaPasta = _opcoesDeFormatacaoDeTextoDaPasta
+
+        End Select
+
+
+    End Sub
+
+    Sub ComBPRight_Clicked()
+
+        Dim _id As Integer = ComBPMaster.SelectedItem.Tag.ID
+
+        Select Case _id
+            Case SelectADataModeEnum.NomeDoArquivoAtual
+
+                _opcoesDeFormatacaoDeTextoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
+
+                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto = _opcoesDeFormatacaoDeTextoDoArquivoAtual
+
+                If ComBPRight.SelectedItem.Tag.ID = 3 Then
+
+                    _primeiraLetraMinusculaDeNomeDeArquivo = CKB_FirstLetterUpper.Checked
+                    DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
+
+                    _removerEspacoDeNomeDeArquvo = CKB_RemoveSpace.Checked
+                    DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _removerEspacoDeNomeDeArquvo
+
+                End If
+
+            Case SelectADataModeEnum.SequenciaNumerica
+
+                _quantidadeDeDigitosDaSequenciaNumerica = ComBPRight.SelectedItem.Tag.ID
+                DataRenameOption.RenameTypeData.DadosDeSequenciaNumerica.QuantidadeDeDigitosDaSequenciaNumerica = _quantidadeDeDigitosDaSequenciaNumerica
+
+            Case SelectADataModeEnum.LetraDaSequencia
+
+                _opcoesDeFormatacaoDeSequenciaDeLetras = ComBPRight.SelectedItem.Tag.ID
+                DataRenameOption.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
+
+            Case SelectADataModeEnum.DataEHora
+                _dateFormat = ComBPRight.SelectedItem.Tag.ID
+                DataRenameOption.RenameTypeData.DadosDeTempo.DateFormat = _dateFormat
+                '  DateFormatEnum
+        End Select
+    End Sub
+
+    Sub ComBPFormatText_Clicked()
+
+        _opcoesDeFormatacaoDeTextoDeDataHora = ComBPFormatText.SelectedItem.Tag.ID
+        DataRenameOption.RenameTypeData.DadosDeTempo.OpcoesDeFormatacaoDeTextoDeDataHora = _opcoesDeFormatacaoDeTextoDeDataHora
+
+    End Sub
+
+    Sub CombpMaster_Clicked()
+        DataRenameOption.RenameTypeData.Tela = ComBPMaster.SelectedItem.Tag.ID
+    End Sub
+
 
     Sub ExibirSubTelaPrimeiraMinuscula()
 
@@ -355,7 +742,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(TXTPValue)
         PanelEnvolve_RightTXT.Controls.Add(ComBPSlave)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
 
         Me.Height = 54
         TableLPContainer.Dock = DockStyle.Fill
@@ -389,7 +776,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(TXTPValue)
         PanelEnvolve_RightTXT.Controls.Add(ComBPSlave)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
 
         Me.Height = 54
         TableLPContainer.Dock = DockStyle.Fill
@@ -415,7 +802,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         PanelEnvolve_RightTXT.Controls.Add(TXTPValue)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
 
         Me.Height = 54
         TableLPContainer.Dock = DockStyle.Fill
@@ -427,13 +814,13 @@ Public Class Control_RenameOption
 
         listItem.AddRange({"DDMMAAAA", "DDMMAA", "MMDDAAAA", "MMDDAA", "AAAAMMDD", "AAMMDD", "AAAA", "DD", "MM", "AA", "HHMMSS", "HHMM", "HH", "MIN", "SS", "Semana, Dia de Mês de Ano", "Mês (escrito)", "Dia da Semana"})
 
-        ComBRight.OptionsList = listItem
-        ComBRight.PerformAutomaticSelection(0)
+        ComBPRight.OptionsList = listItem
+        ComBPRight.PerformAutomaticSelection(0)
 
         ' _____-----------------------------------------------------_____
 
 
-        For Each item As ToolStripMenuItem In ComBRight.CMS_Menu.Items
+        For Each item As ToolStripMenuItem In ComBPRight.CMS_Menu.Items
             AddHandler item.Click, New System.EventHandler(AddressOf MostrarOcultarDataEHoraConfig)
 
         Next
@@ -441,7 +828,7 @@ Public Class Control_RenameOption
 
     Sub MostrarOcultarDataEHoraConfig()
 
-        Select Case ComBRight.SelectedItem.Tag.ID
+        Select Case ComBPRight.SelectedItem.Tag.ID
             Case DateFormatEnum.DiaDaSemana, DateFormatEnum.Mes_Escrito, DateFormatEnum.Semana_Dia_de_Mes_De_Ano
                 ExibirSubTelaDataEHoraConfig()
 
@@ -490,7 +877,7 @@ Public Class Control_RenameOption
         PanelSubstituir.Visible = True
         PanelDateConfig.Visible = False
 
-        PanelEnvolve_ComBPSlave.Controls.Add(ComBRight)
+        PanelEnvolve_ComBPSlave.Controls.Add(ComBPRight)
         PanelEnvolve_RightTXT.Controls.Add(ComBPSlave)
         PanelEnvolve_ComBRight.Controls.Add(TXTPValue)
 
@@ -505,8 +892,8 @@ Public Class Control_RenameOption
 
         listItem.AddRange({"Título"})
 
-        ComBRight.OptionsList = listItem
-        ComBRight.PerformAutomaticSelection(0)
+        ComBPRight.OptionsList = listItem
+        ComBPRight.PerformAutomaticSelection(0)
 
         ' _____-----------------------------------------------------_____
     End Sub
@@ -516,7 +903,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         PanelEnvolve_RightTXT.Controls.Add(TXTPValue)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
 
 
         Panel_Right.Visible = False
@@ -555,7 +942,7 @@ Public Class Control_RenameOption
 
         PanelEnvolve_ComBPSlave.Controls.Add(ComBPSlave)
         PanelEnvolve_RightTXT.Controls.Add(TXTPValue)
-        PanelEnvolve_ComBRight.Controls.Add(ComBRight)
+        PanelEnvolve_ComBRight.Controls.Add(ComBPRight)
 
 
         Panel_Right.Visible = False
@@ -575,6 +962,7 @@ Public Class Control_RenameOption
         TableLPContainer.Height = 28
 
     End Sub
+    '___________________________________________________________
 
     Sub MostrarOrdem()
         For Each item In Me.Parent.Controls
@@ -692,7 +1080,9 @@ Public Class Control_RenameOption
         TextReplace.AutomaticResult = True
 
         TextReplace.Visible = True
-        If _fileExemple IsNot Nothing Then TextReplace.Phrase = _fileExemple.Name
+        ' If _fileExemple IsNot Nothing Then
+        TextReplace.Phrase = _fileExemple.Name
+        ' End If
 
         ApplyEventToSubItemsMenu(ComBPMaster.CMS_Menu)
 
@@ -700,13 +1090,32 @@ Public Class Control_RenameOption
         ExibirTelaTexto()
 
         AddHandler TXTPValue.TXTBox.LostFocus, New System.EventHandler(AddressOf TxtValue_Changed)
-        AddHandler TXTPSubstituirEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
+        AddHandler TXTPCaracterParaSubstituicaoDoEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
 
         Dim s As New System.Text.StringBuilder()
 
         For Each item As ToolStripMenuItem In ComBPMaster.CMS_Menu.Items
             If item.Text = "Metadados" Then item.Visible = False
+
+            AddHandler item.Click, New System.EventHandler(AddressOf CombpMaster_Clicked)
         Next
+
+        For Each item As ToolStripMenuItem In ComBPFormatText.CMS_Menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf ComBPFormatText_Clicked)
+
+        Next
+
+
+
+        AddHandler TextReplace.TXTPFind.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPFind_LostFocus)
+        AddHandler TextReplace.TXTPFind.TXTBox.TextChanged, New System.EventHandler(AddressOf TXTPFind_LostFocus)
+
+        AddHandler TextReplace.TXTPReplacement.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPReplacement_LostFocus)
+        AddHandler TextReplace.TXTPReplacement.TXTBox.TextChanged, New System.EventHandler(AddressOf TXTPReplacement_LostFocus)
+
+        AddHandler TextReplace.CHKIgnoreUpperLower.CheckedChanged, New System.EventHandler(AddressOf TextReplace_CHKIgnoreUpperLower_CheckedChanged)
+        AddHandler TextReplace.CHKReplaceAll.CheckedChanged, New System.EventHandler(AddressOf TextReplace_CHKReplaceAll_CheckedChanged)
+
 
         '' For i As Integer = 65 To 90
         'For i As Integer = 1 To 100
@@ -725,6 +1134,32 @@ Public Class Control_RenameOption
         'Next
 
         'MsgBox(s.ToString())
+
+
+
+        '        DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinuscula = True
+
+    End Sub
+
+    Sub TXTPFind_LostFocus()
+
+        DataRenameOption.RenameTypeData.DadosDeSubstituicao.Find = TextReplace.Find
+
+    End Sub
+
+    Sub TXTPReplacement_LostFocus()
+
+        DataRenameOption.RenameTypeData.DadosDeSubstituicao.Substituir = TextReplace.Find
+
+    End Sub
+
+    Sub TextReplace_CHKIgnoreUpperLower_CheckedChanged()
+        DataRenameOption.RenameTypeData.DadosDeSubstituicao.IgnorarMaiusculasEMinusculas = TextReplace.CHKIgnoreUpperLower.Checked
+
+    End Sub
+
+    Sub TextReplace_CHKReplaceAll_CheckedChanged()
+        DataRenameOption.RenameTypeData.DadosDeSubstituicao.SubstituirTudo = TextReplace.CHKReplaceAll.Checked
 
     End Sub
 
@@ -755,12 +1190,12 @@ Public Class Control_RenameOption
 
                 Case SelectADataModeEnum.NovaExtensao
 
-                    ExibirNovaExtensao()
+                    ExibirTelaNovaExtensao()
 
                 Case SelectADataModeEnum.NomeDoArquivoAtual
                     ExibirTelaNomeDoArquivoAtual()
 
-                Case SelectADataModeEnum.NumeroDeSequencia
+                Case SelectADataModeEnum.SequenciaNumerica
 
                     ExibirTelaNumeroDeSequencia()
 
@@ -856,13 +1291,18 @@ Public Class Control_RenameOption
                             _value = usesFile.FileNameWithoutExtension(_fileExemple)
 
                         Case 11
-                            _value = _fileExemple.Extension
+
+                            If _fileExemple.Extension.Length > 0 Then
+                                _value = _fileExemple.Extension.Substring(1)
+                            Else
+                                _value = _fileExemple.Extension
+                            End If
 
                     End Select
 
-                    _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(ComBRight.SelectedItem.Tag.ID, _value)
+                    _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(ComBPRight.SelectedItem.Tag.ID, _value)
 
-                Case SelectADataModeEnum.NumeroDeSequencia
+                Case SelectADataModeEnum.SequenciaNumerica
 
                     Dim strValue As String
                     'TODO: https://docs.microsoft.com/pt-br/dotnet/api/microsoft.visualbasic.strings.strdup?view=netcore-3.1#Microsoft_VisualBasic_Strings_StrDup_System_Int32_System_Char_
@@ -994,7 +1434,7 @@ Public Class Control_RenameOption
         ' MsgBox(String.Format("{0:dddd}", _date))
         'MsgBox(Format(_strDate, "dddd"))
 
-        Select Case ComBRight.SelectedItem.Tag.ID
+        Select Case ComBPRight.SelectedItem.Tag.ID
 
             Case DateFormatEnum.AA
                 _strDate = ano.Substring(2, 2)
@@ -1016,8 +1456,6 @@ Public Class Control_RenameOption
             Case DateFormatEnum.DDMMAAAA
                 _strDate = dia + mes + ano
 
-
-
             Case DateFormatEnum.DiaDaSemana
                 _strDate = FormatDateText(semana)
 
@@ -1033,8 +1471,6 @@ Public Class Control_RenameOption
                 _strDate = hora + minuto + segundo
 
             Case DateFormatEnum.Mes_Escrito
-
-
                 _strDate = FormatDateText(mesEscrito)
 
                 _strDate = SubstituirEspaco(_strDate)
@@ -1113,7 +1549,7 @@ Public Class Control_RenameOption
     Function SubstituirEspaco(_strDate As String) As String
         If CHKSubstituirEspaco.Checked = True Then
 
-            _strDate = funcoesDeString.ReplacePhrase(_strDate, " ", TXTPSubstituirEspaco.TXT)
+            _strDate = funcoesDeString.ReplacePhrase(_strDate, " ", TXTPCaracterParaSubstituicaoDoEspaco.TXT)
             _strDate = funcoesDeString.ReplacePhrase(_strDate, ",", "")
 
         End If
@@ -1147,6 +1583,7 @@ Public Class Control_RenameOption
 
     End Function
 
+
     Sub TxtValue_Changed()
 
         If ComBPMaster.SelectedItem IsNot Nothing Then
@@ -1156,18 +1593,27 @@ Public Class Control_RenameOption
 
                 Case SelectADataModeEnum.Texto
                     TXTPValue.TXT = funcoesDeString.RemoveChar(TXTPValue.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
+                    _textValue = TXTPValue.TXT
+
+                    DataRenameOption.RenameTypeData.Text = TXTPValue.TXT
 
                 Case SelectADataModeEnum.NovaExtensao
                     TXTPValue.TXT = funcoesDeString.RemoveChar(TXTPValue.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
+                    _newExttValue = TXTPValue.TXT
 
+                    DataRenameOption.RenameTypeData.Extensao = TXTPValue.TXT
 
-                Case SelectADataModeEnum.NumeroDeSequencia
+                Case SelectADataModeEnum.SequenciaNumerica
 
                     TXTPValue.TXT = FormatarNumberToQCaracter(TXTPValue.TXT)
+
+                    _numeroDeSequencia = CInt(TXTPValue.TXT)
+                    DataRenameOption.RenameTypeData.DadosDeSequenciaNumerica.NumeroDeSequencia = _numeroDeSequencia
 
 
                 Case SelectADataModeEnum.LetraDaSequencia
                     TXTPValue.TXT = FormatarLetraDoAlfabeto(TXTPValue.TXT)
+                    DataRenameOption.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = TXTPValue.TXT
 
             End Select
             TXTPValue.ErrorDisplay = TXTPValue.Validar(TXTPValue.TXT)
@@ -1176,8 +1622,12 @@ Public Class Control_RenameOption
     End Sub
 
     Sub TXTPSubstituirEspaco_Changed()
-        TXTPSubstituirEspaco.TXT = funcoesDeString.RemoveChar(TXTPSubstituirEspaco.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
-        TXTPSubstituirEspaco.ErrorDisplay = TXTPSubstituirEspaco.Validar(TXTPSubstituirEspaco.TXT)
+        TXTPCaracterParaSubstituicaoDoEspaco.TXT = funcoesDeString.RemoveChar(TXTPCaracterParaSubstituicaoDoEspaco.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
+        TXTPCaracterParaSubstituicaoDoEspaco.ErrorDisplay = TXTPCaracterParaSubstituicaoDoEspaco.Validar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
+
+        _caracterParaSubstituicaoDoEspaco = CChar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
+        DataRenameOption.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
+
     End Sub
 
     Function FormatarNumberToQCaracter(value As String) As String
@@ -1212,8 +1662,6 @@ Public Class Control_RenameOption
         'InStr()
         ' TODO : http://www.macoratti.net/valida.htm
     End Function
-
-
 
     Function FormatarLetraDoAlfabeto(value As String) As String
         Dim _dataStr As String = Trim(value)
@@ -1312,16 +1760,68 @@ Public Class Control_RenameOption
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Dim _dataStr As String = Text()
-        MsgBox(_dataStr)
+        MsgBox(_textValue)
+        MsgBox(_newExttValue)
 
     End Sub
 
     Private Sub CHKSubstituirEspaco_CheckedChanged(sender As Object, e As EventArgs) Handles CHKSubstituirEspaco.CheckedChanged
-        TXTPSubstituirEspaco.Enabled = CHKSubstituirEspaco.Checked
+
+        TXTPCaracterParaSubstituicaoDoEspaco.Enabled = CHKSubstituirEspaco.Checked
+
         If CHKSubstituirEspaco.Checked = False Then
-            TXTPSubstituirEspaco.TXT = ""
+            TXTPCaracterParaSubstituicaoDoEspaco.TXT = ""
         Else
-            TXTPSubstituirEspaco.Focus()
+            TXTPCaracterParaSubstituicaoDoEspaco.Focus()
         End If
+
+        _substituirEspacoDaData = CHKSubstituirEspaco.Checked
+
+
+        DataRenameOption.RenameTypeData.DadosDeTempo.SubstituirEspaco = _substituirEspacoDaData
+
+        _caracterParaSubstituicaoDoEspaco = CChar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
+
+        DataRenameOption.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
+
+    End Sub
+
+    Private Sub CKB_FirstLetterUpper_CheckedChanged(sender As Object, e As EventArgs) Handles CKB_FirstLetterUpper.CheckedChanged
+
+        Dim _id As Integer = ComBPMaster.SelectedItem.Tag.ID
+
+        Select Case _id
+            Case SelectADataModeEnum.NomeDoArquivoAtual
+
+                _primeiraLetraMinusculaDeNomeDeArquivo = CKB_FirstLetterUpper.Checked
+
+                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
+
+            Case SelectADataModeEnum.NomeDaPasta
+
+                _primeiraLetraMinusculaDeNomeDaPasta = CKB_FirstLetterUpper.Checked
+                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinusculaDeNomeDaPasta = _primeiraLetraMinusculaDeNomeDaPasta
+
+        End Select
+
+    End Sub
+
+    Private Sub CKB_RemoveSpace_CheckedChanged(sender As Object, e As EventArgs) Handles CKB_RemoveSpace.CheckedChanged
+        Dim _id As Integer = ComBPMaster.SelectedItem.Tag.ID
+
+        Select Case _id
+            Case SelectADataModeEnum.NomeDoArquivoAtual
+
+                _RemoverEspacoDeNomeDeArquivo = CKB_RemoveSpace.Checked
+
+                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _RemoverEspacoDeNomeDeArquivo
+
+            Case SelectADataModeEnum.NomeDaPasta
+
+                _RemoverEspacoDeNomeDaPasta = CKB_RemoveSpace.Checked
+                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.RemoverEspacoDeNomeDaPasta = _RemoverEspacoDeNomeDaPasta
+
+
+        End Select
     End Sub
 End Class

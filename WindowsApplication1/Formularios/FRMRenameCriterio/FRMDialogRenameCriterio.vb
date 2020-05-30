@@ -179,13 +179,36 @@ Public Class FRMDialogRenameCriterio
 
         _resultado = LoadRenameOptions.TextResult
 
-        If Trim(_resultado) = "" Then
-            LBLValue_NovoNome.Text = _fileExemple.Name
+        LBLValue_NovoNome.Text = _resultado
 
-        Else
-            LBLValue_NovoNome.Text = _resultado
+        'If Trim(_resultado) = "" Then
+        '    LBLValue_NovoNome.Text = _fileExemple.Name
 
-        End If
+        'Else
 
+        'End If
+
+    End Sub
+
+    Private Sub BTNVisulizar_Click(sender As Object, e As EventArgs) Handles BTNVisulizar.Click
+
+        Dim _dataRenameList As New List(Of Class_DataRenameOption)
+        Dim strDataRenameList As String = ""
+        ' Gerar Lista de comandos de renome
+
+        Dim _renameOption As Control_RenameOption
+        Dim x As Integer
+        Dim y As Integer = LoadRenameOptions.Itens.Count - 1
+
+        For x = 0 To y
+            y -= x
+
+            _renameOption = LoadRenameOptions.Itens.Item(y)
+            _dataRenameList.Add(_renameOption.DataRenameOption)
+            strDataRenameList = strDataRenameList & " " & _renameOption.DataRenameOption.RenameTypeData.Text
+
+        Next
+
+        MsgBox(strDataRenameList)
     End Sub
 End Class

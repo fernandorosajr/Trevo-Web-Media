@@ -36,12 +36,12 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.BTNVisulizar = New System.Windows.Forms.Button()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -214,30 +214,6 @@ Partial Class FRMDialogRenameCriterio
         Me.LBLTitleOrigem.TabIndex = 7
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
-        'TXTCNovoNome
-        '
-        Me.TXTCNovoNome.ActiveValidate = True
-        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TXTCNovoNome.ByChar = False
-        Me.TXTCNovoNome.ByText = False
-        Me.TXTCNovoNome.ByValue = False
-        Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
-        Me.TXTCNovoNome.Name = "TXTCNovoNome"
-        Me.TXTCNovoNome.NoneOfThisChar = ""
-        Me.TXTCNovoNome.NoneOfThisText = Nothing
-        Me.TXTCNovoNome.NoneOfThisValue = Nothing
-        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
-        Me.TXTCNovoNome.RequiredChar = ""
-        Me.TXTCNovoNome.RequiredText = Nothing
-        Me.TXTCNovoNome.RequiredValue = Nothing
-        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
-        Me.TXTCNovoNome.SpaceError = True
-        Me.TXTCNovoNome.TabIndex = 10
-        Me.TXTCNovoNome.ValueStr = Nothing
-        Me.TXTCNovoNome.Visible = False
-        '
         'LNKLNomeDoExemplo
         '
         Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -293,6 +269,30 @@ Partial Class FRMDialogRenameCriterio
         Me.BTNVisulizar.Size = New System.Drawing.Size(80, 23)
         Me.BTNVisulizar.TabIndex = 16
         Me.BTNVisulizar.Text = "Vizualizar"
+        '
+        'TXTCNovoNome
+        '
+        Me.TXTCNovoNome.ActiveValidate = True
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.ByChar = False
+        Me.TXTCNovoNome.ByText = False
+        Me.TXTCNovoNome.ByValue = False
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.NoneOfThisChar = ""
+        Me.TXTCNovoNome.NoneOfThisText = Nothing
+        Me.TXTCNovoNome.NoneOfThisValue = Nothing
+        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
+        Me.TXTCNovoNome.RequiredChar = ""
+        Me.TXTCNovoNome.RequiredText = Nothing
+        Me.TXTCNovoNome.RequiredValue = Nothing
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
+        Me.TXTCNovoNome.SpaceError = True
+        Me.TXTCNovoNome.TabIndex = 10
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
         '
         'FRMDialogRenameCriterio
         '

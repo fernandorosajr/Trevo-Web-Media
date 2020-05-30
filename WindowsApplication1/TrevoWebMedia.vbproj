@@ -159,7 +159,7 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\class\Class_RenameOption.vb" />
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\class\Class_DataRenameOption.vb" />
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.Designer.vb">
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </Compile>
@@ -381,6 +381,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Utils\Class\Class_CriterioDeRenome.vb" />
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />
     <Compile Include="Utils\Class\StringFunctionsClass.vb" />
     <Compile Include="Utils\Modules\StructuresModules.vb" />

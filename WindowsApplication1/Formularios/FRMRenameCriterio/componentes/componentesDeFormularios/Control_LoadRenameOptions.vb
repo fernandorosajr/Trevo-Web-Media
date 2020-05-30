@@ -108,9 +108,9 @@ Public Class Control_LoadRenameOptions
         Dim _nomeDoArquivo As String = ""
         Dim _extDoArquivo As String = ""
 
-        Dim x As Integer = 0
+        Dim x As Integer '= 0
         Dim y As Integer = _itens.Count - 1
-        Dim index As Integer = y - x
+        Dim index As Integer '= y - x
 
         For x = 0 To y
             index = y - x
@@ -139,7 +139,11 @@ Public Class Control_LoadRenameOptions
                 _nomeDoArquivo = _fileExemple.Name.Replace(_fileExemple.Extension, "")
 
             Else
-                _nomeDoArquivo = _fileExemple.Name
+
+                If item.Text <> "" Then
+                    _nomeDoArquivo = _fileExemple.Name
+
+                End If
 
             End If
 

@@ -513,16 +513,20 @@ Public Class Control_ComboBoxPerson
             End If
             x += 1
         Next
+
         Return StringList
+
     End Function
 
     Private Function Set_ListOptions(value As String) As ArrayList
+
         Dim valueInStringList As New ArrayList
 
         valueInStringList.Clear()
         valueInStringList.AddRange(funcoesDeString.SepararPalavras(value, separador))
 
         Return valueInStringList
+
     End Function
     '-----------------------------------------------------------------
 
@@ -539,9 +543,7 @@ Public Class Control_ComboBoxPerson
 
 
     Public Sub New()
-        Dim list As New Collections.Specialized.StringCollection 'From {
-        '   ""
-        '}
+        Dim list As New Collections.Specialized.StringCollection
 
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
@@ -583,7 +585,6 @@ Public Class Control_ComboBoxPerson
         AddMenuItens()
         If _textDisplay Is Nothing Then TextDisplay = _textDefault
 
-
         _nivel = 0
 
         _optionsList = list
@@ -611,7 +612,13 @@ Public Class Control_ComboBoxPerson
 
         AddMenuItens()
 
-        PerformAutomaticSelection(0)
+        If SelectedItem IsNot Nothing Then
+            PerformAutomaticSelection(SelectedItem.Tag.ID)
+
+        Else
+            PerformAutomaticSelection(0)
+
+        End If
 
     End Sub
 
@@ -906,7 +913,7 @@ Public Class Control_ComboBoxPerson
             For Each item In menuCombo.Items
                 item.ShortcutKeyDisplayString = x 'item.Tag
                 item.Width = Me.Width
-                x = x + 1
+                x += 1
             Next item
         End If
 

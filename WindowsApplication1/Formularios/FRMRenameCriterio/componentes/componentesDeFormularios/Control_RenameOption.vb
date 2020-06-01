@@ -692,7 +692,7 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Sub CombpMaster_Clicked()
+    Sub CombPMaster_Clicked()
         DataRenameOption.RenameTypeData.Tela = ComBPMaster.SelectedItem.Tag.ID
     End Sub
 
@@ -1057,10 +1057,6 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Sub GravarStringData()
-
-    End Sub
-
     Private Sub Control_RenameOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         If Me.Parent.Parent.Parent.Parent IsNot Nothing Then
@@ -1087,7 +1083,8 @@ Public Class Control_RenameOption
         ApplyEventToSubItemsMenu(ComBPMaster.CMS_Menu)
 
         'TextValidateConfig()
-        ExibirTelaTexto()
+        'ExibirTelaTexto()
+        AplicarTela()
 
         AddHandler TXTPValue.TXTBox.LostFocus, New System.EventHandler(AddressOf TxtValue_Changed)
         AddHandler TXTPCaracterParaSubstituicaoDoEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
@@ -1097,7 +1094,7 @@ Public Class Control_RenameOption
         For Each item As ToolStripMenuItem In ComBPMaster.CMS_Menu.Items
             If item.Text = "Metadados" Then item.Visible = False
 
-            AddHandler item.Click, New System.EventHandler(AddressOf CombpMaster_Clicked)
+            AddHandler item.Click, New System.EventHandler(AddressOf CombPMaster_Clicked)
         Next
 
         For Each item As ToolStripMenuItem In ComBPFormatText.CMS_Menu.Items
@@ -1214,7 +1211,7 @@ Public Class Control_RenameOption
                     ExibirTelaNomeDaPasta()
 
                 Case SelectADataModeEnum.SubstituicaoDeString
-                    SubstituicaoDeTextoValidateConfig()
+                    'SubstituicaoDeTextoValidateConfig()
                     ExibirTelaSubstituicaoDeString()
 
             End Select
@@ -1223,7 +1220,7 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Sub AplicarAcaoDeTela()
+    Sub AplicarTela()
         Me.SelectDisplayTela = Me.ComBPMaster.SelectedItem.Tag.ID
 
     End Sub
@@ -1231,7 +1228,7 @@ Public Class Control_RenameOption
     Sub ApplyEventToSubItemsMenu(menu As ContextMenuStrip)
 
         For Each item As ToolStripMenuItem In menu.Items
-            AddHandler item.Click, New System.EventHandler(AddressOf AplicarAcaoDeTela)
+            AddHandler item.Click, New System.EventHandler(AddressOf AplicarTela)
 
         Next
 
@@ -1317,40 +1314,41 @@ Public Class Control_RenameOption
 
                 Case SelectADataModeEnum.DataEHora
 
-                    Dim today As Date = Date.Now
-                    Dim _dataDete As Date
+                    Dim todayDate As Date = Date.Now
+                    Dim _dataDate As Date
 
-                    Dim dateCreation As Date = _fileExemple.CreationTime
-                    Dim dateLastWrite As Date = _fileExemple.LastWriteTime
-                    Dim ontem As Date = today.AddDays(-1)
-                    Dim amanha As Date = today.AddDays(+1)
+                    Dim creationTimeDate As Date = _fileExemple.CreationTime
+                    Dim lastWriteDate As Date = _fileExemple.LastWriteTime
 
-                    Dim semana As String = String.Format("{0:dddd}", Date.Now)
+                    Dim yesterdayDate As Date = todayDate.AddDays(-1)
+                    Dim tomorrowDate As Date = todayDate.AddDays(+1)
+
+                    Dim weekDate As String = String.Format("{0:dddd}", Date.Now)
 
 
                     Select Case ComBPSlave.SelectedItem.Tag.ID
                         Case 9
                             ' Data de criacao
-                            _dataDete = dateCreation
+                            _dataDate = creationTimeDate
                         Case 10
                             ' Data de modificacao
-                            _dataDete = dateLastWrite
+                            _dataDate = lastWriteDate
 
                         Case 11
                             'Ontem
-                            _dataDete = ontem
+                            _dataDate = yesterdayDate
 
                         Case 12
                             'Hoje
-                            _dataDete = today
+                            _dataDate = todayDate
 
                         Case 13
                             ' Amanha
-                            _dataDete = amanha
+                            _dataDate = tomorrowDate
 
                     End Select
 
-                    _dataStr = TrasnformDate(_dataDete)
+                    _dataStr = TrasnformDate(_dataDate)
 
 
 
@@ -1546,6 +1544,7 @@ Public Class Control_RenameOption
 
     End Function
 
+    ' TODO : Substituir estas funções pela classe
     Function SubstituirEspaco(_strDate As String) As String
         If CHKSubstituirEspaco.Checked = True Then
 
@@ -1744,9 +1743,9 @@ Public Class Control_RenameOption
 
     End Sub
 
-    Sub SubstituicaoDeTextoValidateConfig()
-        'Não pode ter caracteres não aceitos pela pasta
-    End Sub
+    'Sub SubstituicaoDeTextoValidateConfig()
+    '    'Não pode ter caracteres não aceitos pela pasta
+    'End Sub
 
     ' _________________________________________________
 

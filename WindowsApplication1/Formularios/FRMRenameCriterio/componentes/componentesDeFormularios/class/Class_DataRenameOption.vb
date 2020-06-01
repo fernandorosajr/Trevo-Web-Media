@@ -1,63 +1,87 @@
 ﻿Imports System.IO
 
-Public Enum NomeOuExtensaoDoArquivoAtualEnum
-    NomeEExtensao = 0
-    Nome = 1
-    Extensao = 2
-End Enum
-
-Public Enum OpcoesDeFormatacaoDeTextoEnum
-
-    ComoOOriginal = 0
-    TODASMAIUSCULAS = 1
-    todasMinusculas = 2
-    PrimeirasLetrasMaiusculas = 3
-    pRIMEIRASlETRASmINUSCULAS = 4
-    primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
-
-End Enum
-
-Public Enum OpcoesDeFormatacaoDeSequenciaDeLetrasEnum
-
-    TODASMAIUSCULAS = 0
-    todasMinusculas = 1
-
-End Enum
-
-Public Enum TempoDaDataEnum
-
-    DataDeCriacao = 0
-    DataDeModificacao = 1
-    Ontem = 2
-    Hoje = 3
-    Amanha = 4
-
-End Enum
-
-Public Enum DateFormatEnum
-
-    DDMMAAAA = 0
-    DDMMAA = 1
-    MMDDAAAA = 2
-    MMDDAA = 3
-    AAAAMMDD = 4
-    AAMMDD = 5
-    AAAA = 6
-    DD = 7
-    MM = 8
-    AA = 9
-    HHMMSS = 10
-    HHMM = 11
-    HH = 12
-    MinMin = 13
-    SS = 14
-    Semana_Dia_de_Mes_De_Ano = 15
-    Mes_Escrito = 16
-    DiaDaSemana = 17
-
-End Enum
 
 Public Class Class_DataRenameOption
+
+    ' Enums 
+
+    ' --------------------------------------------------
+
+    Public Enum SelectADataModeEnum
+
+        Texto = 0
+        NovaExtensao = 1
+        NomeDoArquivoAtual = 2
+        SequenciaNumerica = 3
+        LetraDaSequencia = 4
+        DataEHora = 5
+        Metadados = 6
+        NomeDaPasta = 7
+        SubstituicaoDeString = 8
+
+    End Enum
+
+    Public ListNomeOuExtensaoDoArquivoAtual As NomeOuExtensaoDoArquivoAtualEnum
+    Public Enum NomeOuExtensaoDoArquivoAtualEnum
+        NomeEExtensao = 0
+        Nome = 1
+        Extensao = 2
+    End Enum
+
+    Public Enum OpcoesDeFormatacaoDeTextoEnum
+
+        ComoOOriginal = 0
+        TODASMAIUSCULAS = 1
+        todasMinusculas = 2
+        PrimeirasLetrasMaiusculas = 3
+        pRIMEIRASlETRASmINUSCULAS = 4
+        primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
+
+    End Enum
+
+    Public Enum OpcoesDeFormatacaoDeSequenciaDeLetrasEnum
+
+        TODASMAIUSCULAS = 0
+        todasMinusculas = 1
+
+    End Enum
+
+    Public Enum TempoDaDataEnum
+
+        DataDeCriacao = 0
+        DataDeModificacao = 1
+        Ontem = 2
+        Hoje = 3
+        Amanha = 4
+
+    End Enum
+
+    Public Enum DateFormatEnum
+
+        DDMMAAAA = 0
+        DDMMAA = 1
+        MMDDAAAA = 2
+        MMDDAA = 3
+        AAAAMMDD = 4
+        AAMMDD = 5
+        AAAA = 6
+        DD = 7
+        MM = 8
+        AA = 9
+        HHMMSS = 10
+        HHMM = 11
+        HH = 12
+        MinMin = 13
+        SS = 14
+        Semana_Dia_de_Mes_De_Ano = 15
+        Mes_Escrito = 16
+        DiaDaSemana = 17
+
+    End Enum
+
+
+    ' Estruturas 
+    ' -------------------------------------------------------
     Public Structure RenameTypeDataStructure
 
         ' Tipo de tela

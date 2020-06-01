@@ -510,6 +510,7 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RadioButton22 = New System.Windows.Forms.RadioButton()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -3970,8 +3971,8 @@ Partial Class MainForm
         '
         'PanelSubMenuContorn
         '
-        Me.PanelSubMenuContorn.Controls.Add(Me.PanelFoto)
         Me.PanelSubMenuContorn.Controls.Add(Me.PanelArquivos)
+        Me.PanelSubMenuContorn.Controls.Add(Me.PanelFoto)
         Me.PanelSubMenuContorn.Controls.Add(Me.PanelMidia)
         Me.PanelSubMenuContorn.Controls.Add(Me.PanelLivros)
         Me.PanelSubMenuContorn.Controls.Add(Me.PanelMusica)
@@ -4061,6 +4062,7 @@ Partial Class MainForm
         Me.PanelArquivos.Controls.Add(Me.RadioButton63)
         Me.PanelArquivos.Controls.Add(Me.RadioButton64)
         Me.PanelArquivos.Controls.Add(Me.RadioButton65)
+        Me.PanelArquivos.Controls.Add(Me.RadioButton22)
         resources.ApplyResources(Me.PanelArquivos, "PanelArquivos")
         Me.PanelArquivos.Name = "PanelArquivos"
         '
@@ -4127,13 +4129,11 @@ Partial Class MainForm
         'RadioButton65
         '
         resources.ApplyResources(Me.RadioButton65, "RadioButton65")
-        Me.RadioButton65.Checked = True
         Me.RadioButton65.FlatAppearance.BorderSize = 0
         Me.RadioButton65.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
         Me.RadioButton65.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
         Me.RadioButton65.ForeColor = System.Drawing.Color.Silver
         Me.RadioButton65.Name = "RadioButton65"
-        Me.RadioButton65.TabStop = True
         Me.RadioButton65.UseVisualStyleBackColor = True
         '
         'PanelMidia
@@ -5009,6 +5009,17 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
         '
+        'RadioButton22
+        '
+        resources.ApplyResources(Me.RadioButton22, "RadioButton22")
+        Me.RadioButton22.Checked = True
+        Me.RadioButton22.FlatAppearance.BorderSize = 0
+        Me.RadioButton22.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton22.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton22.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton22.Name = "RadioButton22"
+        Me.RadioButton22.UseVisualStyleBackColor = True
+        '
         'MainForm
         '
         resources.ApplyResources(Me, "$this")
@@ -5734,4 +5745,5 @@ Partial Class MainForm
     Friend WithEvents Panel_RecebeMidiasAtivas As Panel
     Friend WithEvents PanelRecebeBiblio As Panel
     Friend WithEvents PanelEnvolveMidiaAberta As Panel
+    Friend WithEvents RadioButton22 As RadioButton
 End Class

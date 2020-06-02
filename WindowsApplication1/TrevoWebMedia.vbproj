@@ -382,7 +382,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Utils\Class\Class_Date.vb" />
-    <Compile Include="Utils\Class\Class_FormatarLetraDoAlfabeto.vb" />
+    <Compile Include="Utils\Class\Class_FormatAlphabetLetter.vb" />
     <Compile Include="Utils\Class\Class_RenameActions.vb" />
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />
     <Compile Include="Utils\Class\StringFunctionsClass.vb" />

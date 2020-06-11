@@ -159,7 +159,7 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\class\Class_DataRenameOption.vb" />
+    <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\class\Class_DataRenamingCriterion.vb" />
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.Designer.vb">
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>
     </Compile>
@@ -200,6 +200,18 @@
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogVisualizarRenome.Designer.vb">
+      <DependentUpon>FRMDialogVisualizarRenome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogVisualizarRenome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\FRM_Load.Designer.vb">
+      <DependentUpon>FRM_Load.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FRMRenameCriterio\FRM_Load.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utils\Class\Class_Configs.vb" />
@@ -383,6 +395,7 @@
     </Compile>
     <Compile Include="Utils\Class\Class_Date.vb" />
     <Compile Include="Utils\Class\Class_FormatAlphabetLetter.vb" />
+    <Compile Include="Utils\Class\Class_Number.vb" />
     <Compile Include="Utils\Class\Class_RenameActions.vb" />
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />
     <Compile Include="Utils\Class\StringFunctionsClass.vb" />
@@ -500,6 +513,12 @@
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
       <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogVisualizarRenome.resx">
+      <DependentUpon>FRMDialogVisualizarRenome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRM_Load.resx">
+      <DependentUpon>FRM_Load.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.af.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

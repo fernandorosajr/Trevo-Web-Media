@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 
 
-Public Class Class_DataRenameOption
+Public Class Class_DataRenamingCriterion
 
     ' Enums 
 
@@ -91,7 +91,7 @@ Public Class Class_DataRenameOption
         Public Text As String
 
         ' Para Tela Tipo Extensao
-        Public Extensao As String
+        Public Extension As String
 
         ' Para Tela Nome de Arquivo
         Public DadosDeNomeDeArquivoAtual As DadosDeNomeDeArquivoStructure
@@ -153,9 +153,9 @@ Public Class Class_DataRenameOption
 
     Public Structure DadosDeSubstituicaoStructure
         Public Find As String
-        Public Substituir As String
-        Public IgnorarMaiusculasEMinusculas As Boolean
-        Public SubstituirTudo As Boolean
+        Public Replacement As String
+        Public IgnoreUpperLower As Boolean
+        Public ReplaceAll As Boolean
     End Structure
 
     Public RenameTypeData As RenameTypeDataStructure

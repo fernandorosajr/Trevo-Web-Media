@@ -33,30 +33,30 @@ Partial Class Control_RenameOption
         Me.PanelDateConfig = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.ComBPFormatText = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TXTPCaracterParaSubstituicaoDoEspaco = New TrevoWebMedia.Control_TextBoxPerson()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.CHKSubstituirEspaco = New System.Windows.Forms.CheckBox()
         Me.PanelSubstituir = New System.Windows.Forms.Panel()
         Me.TableLPContainer = New System.Windows.Forms.TableLayoutPanel()
         Me.PanelEnvolve_ComBPSlave = New System.Windows.Forms.Panel()
-        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
-        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelEnvolve_ComBPMaster = New System.Windows.Forms.Panel()
         Me.Panel_Right = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_RightTXT = New System.Windows.Forms.Panel()
-        Me.TXTPValue = New TrevoWebMedia.Control_TextBoxPerson()
         Me.PanelEnvolve_ComBRight = New System.Windows.Forms.Panel()
-        Me.ComBPRight = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelRightButtons = New System.Windows.Forms.Panel()
         Me.TableLPButtons = New System.Windows.Forms.TableLayoutPanel()
         Me.BTNAddRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.BTNRemoveRenomeDeOrigem = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelMagemBotton = New System.Windows.Forms.Panel()
+        Me.ComBPFormatText = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.TXTPCaracterParaSubstituicaoDoEspaco = New TrevoWebMedia.Control_TextBoxPerson()
+        Me.ComBPSlave = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.ComBPMaster = New TrevoWebMedia.Control_ComboBoxPerson()
+        Me.TXTPValue = New TrevoWebMedia.Control_TextBoxPerson()
+        Me.ComBPRight = New TrevoWebMedia.Control_ComboBoxPerson()
         Me.PanelElemento.SuspendLayout()
         Me.PanelContainer.SuspendLayout()
         Me.PanelBase.SuspendLayout()
@@ -193,39 +193,6 @@ Partial Class Control_RenameOption
         Me.Panel4.Size = New System.Drawing.Size(226, 38)
         Me.Panel4.TabIndex = 4
         '
-        'ComBPFormatText
-        '
-        Me.ComBPFormatText.AutomaticSelect = True
-        Me.ComBPFormatText.AutoSize = True
-        Me.ComBPFormatText.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.ComBPFormatText.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.ComBPFormatText.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.ComBPFormatText.BorderColorError = System.Drawing.Color.Red
-        Me.ComBPFormatText.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.ComBPFormatText.ComboBoxPersonMaster = Nothing
-        Me.ComBPFormatText.ComboBoxPersonSlave = Nothing
-        Me.ComBPFormatText.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPFormatText.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
-        Me.ComBPFormatText.DataReturn = Nothing
-        Me.ComBPFormatText.DefaultOptionsList = CType(resources.GetObject("ComBPFormatText.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPFormatText.DefaultOptionsListSlave = CType(resources.GetObject("ComBPFormatText.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
-        Me.ComBPFormatText.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
-        Me.ComBPFormatText.Dock = System.Windows.Forms.DockStyle.Top
-        Me.ComBPFormatText.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.ComBPFormatText.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.ComBPFormatText.HideWhenEmptyList = False
-        Me.ComBPFormatText.ListaDeOpçõesPadrão = Nothing
-        Me.ComBPFormatText.Location = New System.Drawing.Point(0, 0)
-        Me.ComBPFormatText.Name = "ComBPFormatText"
-        Me.ComBPFormatText.Nivel = 0
-        Me.ComBPFormatText.OptionsList = CType(resources.GetObject("ComBPFormatText.OptionsList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPFormatText.ReturnStringList = CType(resources.GetObject("ComBPFormatText.ReturnStringList"), System.Collections.Specialized.StringCollection)
-        Me.ComBPFormatText.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
-        Me.ComBPFormatText.ShortcutKeyDisplay = True
-        Me.ComBPFormatText.Size = New System.Drawing.Size(226, 21)
-        Me.ComBPFormatText.TabIndex = 0
-        Me.ComBPFormatText.TextDisplay = "<Selecione>"
-        Me.ComBPFormatText.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.Panel3)
@@ -244,61 +211,6 @@ Partial Class Control_RenameOption
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(122, 57)
         Me.Panel3.TabIndex = 6
-        '
-        'TXTPCaracterParaSubstituicaoDoEspaco
-        '
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ActiveValidate = True
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.BorderColorError = System.Drawing.Color.Red
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByChar = True
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByText = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByValue = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ChangeCursorFocus = True
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.CursorTxt = System.Windows.Forms.Cursors.IBeam
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Enabled = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ErrorDisplay = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColor = System.Drawing.Color.DarkGray
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColorActive = System.Drawing.Color.DarkGray
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColorPlaceholder = System.Drawing.Color.Gray
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.HideSelection = True
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.LeftIndentation = 6
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Location = New System.Drawing.Point(0, 0)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.MaxLength = 1
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.MultiLine = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Name = "TXTPCaracterParaSubstituicaoDoEspaco"
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisChar = """\/|:*?<>"
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisText = Nothing
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisValue = Nothing
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyAlfaNumber = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyCaracterText = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyNumber = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.PaddingText = New System.Windows.Forms.Padding(2, 3, 2, 2)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.PersonBorder = New System.Windows.Forms.Padding(1)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.PersonCSSMargin = New System.Windows.Forms.Padding(0)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Placeholder = "Digite o caracter..."
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Read_Only = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredChar = ""
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredText = Nothing
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredValue = Nothing
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.RightIndentation = 0
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ScrollBar = System.Windows.Forms.ScrollBars.None
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.Size = New System.Drawing.Size(122, 21)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.SpaceError = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.TabIndex = 4
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.ThisSize = New System.Drawing.Size(122, 21)
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.TXT = Nothing
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.UseSystemPasswordChar = False
-        Me.TXTPCaracterParaSubstituicaoDoEspaco.WordWrap = True
         '
         'Panel1
         '
@@ -365,6 +277,202 @@ Partial Class Control_RenameOption
         Me.PanelEnvolve_ComBPSlave.Name = "PanelEnvolve_ComBPSlave"
         Me.PanelEnvolve_ComBPSlave.Size = New System.Drawing.Size(161, 22)
         Me.PanelEnvolve_ComBPSlave.TabIndex = 5
+        '
+        'PanelEnvolve_ComBPMaster
+        '
+        Me.PanelEnvolve_ComBPMaster.Controls.Add(Me.ComBPMaster)
+        Me.PanelEnvolve_ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_ComBPMaster.Location = New System.Drawing.Point(3, 3)
+        Me.PanelEnvolve_ComBPMaster.Name = "PanelEnvolve_ComBPMaster"
+        Me.PanelEnvolve_ComBPMaster.Size = New System.Drawing.Size(161, 22)
+        Me.PanelEnvolve_ComBPMaster.TabIndex = 4
+        '
+        'Panel_Right
+        '
+        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_RightTXT)
+        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_ComBRight)
+        Me.Panel_Right.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_Right.Location = New System.Drawing.Point(349, 3)
+        Me.Panel_Right.Name = "Panel_Right"
+        Me.Panel_Right.Size = New System.Drawing.Size(163, 22)
+        Me.Panel_Right.TabIndex = 6
+        '
+        'PanelEnvolve_RightTXT
+        '
+        Me.PanelEnvolve_RightTXT.Controls.Add(Me.TXTPValue)
+        Me.PanelEnvolve_RightTXT.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_RightTXT.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_RightTXT.Name = "PanelEnvolve_RightTXT"
+        Me.PanelEnvolve_RightTXT.Size = New System.Drawing.Size(163, 22)
+        Me.PanelEnvolve_RightTXT.TabIndex = 3
+        '
+        'PanelEnvolve_ComBRight
+        '
+        Me.PanelEnvolve_ComBRight.Controls.Add(Me.ComBPRight)
+        Me.PanelEnvolve_ComBRight.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelEnvolve_ComBRight.Location = New System.Drawing.Point(0, 0)
+        Me.PanelEnvolve_ComBRight.Name = "PanelEnvolve_ComBRight"
+        Me.PanelEnvolve_ComBRight.Size = New System.Drawing.Size(163, 22)
+        Me.PanelEnvolve_ComBRight.TabIndex = 4
+        '
+        'PanelRightButtons
+        '
+        Me.PanelRightButtons.Controls.Add(Me.TableLPButtons)
+        Me.PanelRightButtons.Controls.Add(Me.Button1)
+        Me.PanelRightButtons.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelRightButtons.Location = New System.Drawing.Point(541, 0)
+        Me.PanelRightButtons.Name = "PanelRightButtons"
+        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 106)
+        Me.PanelRightButtons.TabIndex = 3
+        '
+        'TableLPButtons
+        '
+        Me.TableLPButtons.ColumnCount = 2
+        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.Controls.Add(Me.BTNAddRenomeDeOrigem, 1, 0)
+        Me.TableLPButtons.Controls.Add(Me.BTNRemoveRenomeDeOrigem, 0, 0)
+        Me.TableLPButtons.Location = New System.Drawing.Point(0, 16)
+        Me.TableLPButtons.Name = "TableLPButtons"
+        Me.TableLPButtons.RowCount = 1
+        Me.TableLPButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
+        Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
+        Me.TableLPButtons.TabIndex = 1
+        '
+        'BTNAddRenomeDeOrigem
+        '
+        Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNAddRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNAddRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNAddRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNAddRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
+        Me.BTNAddRenomeDeOrigem.Name = "BTNAddRenomeDeOrigem"
+        Me.BTNAddRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNAddRenomeDeOrigem.TabIndex = 4
+        Me.BTNAddRenomeDeOrigem.Tag = ""
+        '
+        'BTNRemoveRenomeDeOrigem
+        '
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNRemoveRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
+        Me.BTNRemoveRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNRemoveRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderSize = 0
+        Me.BTNRemoveRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRemoveRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
+        Me.BTNRemoveRenomeDeOrigem.Name = "BTNRemoveRenomeDeOrigem"
+        Me.BTNRemoveRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
+        Me.BTNRemoveRenomeDeOrigem.TabIndex = 3
+        Me.BTNRemoveRenomeDeOrigem.Tag = ""
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(37, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(17, 18)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "String"
+        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
+        '
+        'PanelMagemBotton
+        '
+        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 106)
+        Me.PanelMagemBotton.Name = "PanelMagemBotton"
+        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
+        Me.PanelMagemBotton.TabIndex = 0
+        '
+        'ComBPFormatText
+        '
+        Me.ComBPFormatText.AutomaticSelect = True
+        Me.ComBPFormatText.AutoSize = True
+        Me.ComBPFormatText.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.ComBPFormatText.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.ComBPFormatText.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.ComBPFormatText.BorderColorError = System.Drawing.Color.Red
+        Me.ComBPFormatText.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.ComBPFormatText.ComboBoxPersonMaster = Nothing
+        Me.ComBPFormatText.ComboBoxPersonSlave = Nothing
+        Me.ComBPFormatText.ComboBoxPersonSlaveLists = CType(resources.GetObject("ComBPFormatText.ComboBoxPersonSlaveLists"), System.Collections.Specialized.StringCollection)
+        Me.ComBPFormatText.DataReturn = Nothing
+        Me.ComBPFormatText.DefaultOptionsList = CType(resources.GetObject("ComBPFormatText.DefaultOptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPFormatText.DefaultOptionsListSlave = CType(resources.GetObject("ComBPFormatText.DefaultOptionsListSlave"), System.Collections.Specialized.StringCollection)
+        Me.ComBPFormatText.DisplayAparence = TrevoWebMedia.Control_ComboBoxPerson.DisplayAparenceEnum.None
+        Me.ComBPFormatText.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ComBPFormatText.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.ComBPFormatText.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.ComBPFormatText.HideWhenEmptyList = False
+        Me.ComBPFormatText.ListaDeOpçõesPadrão = Nothing
+        Me.ComBPFormatText.Location = New System.Drawing.Point(0, 0)
+        Me.ComBPFormatText.Name = "ComBPFormatText"
+        Me.ComBPFormatText.Nivel = 0
+        Me.ComBPFormatText.OptionsList = CType(resources.GetObject("ComBPFormatText.OptionsList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPFormatText.ReturnStringList = CType(resources.GetObject("ComBPFormatText.ReturnStringList"), System.Collections.Specialized.StringCollection)
+        Me.ComBPFormatText.ReturnType = TrevoWebMedia.Control_ComboBoxPerson.ReturnTypeEnum.None
+        Me.ComBPFormatText.ShortcutKeyDisplay = True
+        Me.ComBPFormatText.Size = New System.Drawing.Size(226, 21)
+        Me.ComBPFormatText.TabIndex = 0
+        Me.ComBPFormatText.TextDisplay = "<Selecione>"
+        Me.ComBPFormatText.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        '
+        'TXTPCaracterParaSubstituicaoDoEspaco
+        '
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ActiveValidate = True
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.BackColorCursorMouseLeave = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.BgColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.BordeColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.BorderColorError = System.Drawing.Color.Red
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.BorderColorGotFocus = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(204, Byte), Integer))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByChar = True
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByText = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ByValue = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ChangeCursorFocus = True
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.CursorTxt = System.Windows.Forms.Cursors.IBeam
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Enabled = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ErrorDisplay = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Fonte = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColor = System.Drawing.Color.DarkGray
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColorActive = System.Drawing.Color.DarkGray
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ForeColorPlaceholder = System.Drawing.Color.Gray
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.HideSelection = True
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.LeftIndentation = 6
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Location = New System.Drawing.Point(0, 0)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.MaxLength = 1
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.MultiLine = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Name = "TXTPCaracterParaSubstituicaoDoEspaco"
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisChar = """\/|:*?<>"
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisText = Nothing
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.NoneOfThisValue = Nothing
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyAlfaNumber = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyCaracterText = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.OnlyNumber = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.PaddingText = New System.Windows.Forms.Padding(2, 3, 2, 2)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.PasswordChar = "" & Global.Microsoft.VisualBasic.ChrW(0)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.PersonBorder = New System.Windows.Forms.Padding(1)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.PersonCSSMargin = New System.Windows.Forms.Padding(0)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Placeholder = "Digite o caracter..."
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Read_Only = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredChar = ""
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredText = Nothing
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.RequiredValue = Nothing
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.RightIndentation = 0
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ScrollBar = System.Windows.Forms.ScrollBars.None
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.Size = New System.Drawing.Size(122, 21)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.SpaceError = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.TabIndex = 4
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.ThisSize = New System.Drawing.Size(122, 21)
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.TXT = Nothing
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.UseSystemPasswordChar = False
+        Me.TXTPCaracterParaSubstituicaoDoEspaco.WordWrap = True
         '
         'ComBPSlave
         '
@@ -433,34 +541,6 @@ Partial Class Control_RenameOption
         Me.ComBPMaster.TextDisplay = "Texto"
         Me.ComBPMaster.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         '
-        'PanelEnvolve_ComBPMaster
-        '
-        Me.PanelEnvolve_ComBPMaster.Controls.Add(Me.ComBPMaster)
-        Me.PanelEnvolve_ComBPMaster.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_ComBPMaster.Location = New System.Drawing.Point(3, 3)
-        Me.PanelEnvolve_ComBPMaster.Name = "PanelEnvolve_ComBPMaster"
-        Me.PanelEnvolve_ComBPMaster.Size = New System.Drawing.Size(161, 22)
-        Me.PanelEnvolve_ComBPMaster.TabIndex = 4
-        '
-        'Panel_Right
-        '
-        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_RightTXT)
-        Me.Panel_Right.Controls.Add(Me.PanelEnvolve_ComBRight)
-        Me.Panel_Right.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_Right.Location = New System.Drawing.Point(349, 3)
-        Me.Panel_Right.Name = "Panel_Right"
-        Me.Panel_Right.Size = New System.Drawing.Size(163, 22)
-        Me.Panel_Right.TabIndex = 6
-        '
-        'PanelEnvolve_RightTXT
-        '
-        Me.PanelEnvolve_RightTXT.Controls.Add(Me.TXTPValue)
-        Me.PanelEnvolve_RightTXT.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_RightTXT.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolve_RightTXT.Name = "PanelEnvolve_RightTXT"
-        Me.PanelEnvolve_RightTXT.Size = New System.Drawing.Size(163, 22)
-        Me.PanelEnvolve_RightTXT.TabIndex = 3
-        '
         'TXTPValue
         '
         Me.TXTPValue.ActiveValidate = False
@@ -515,15 +595,6 @@ Partial Class Control_RenameOption
         Me.TXTPValue.UseSystemPasswordChar = False
         Me.TXTPValue.WordWrap = True
         '
-        'PanelEnvolve_ComBRight
-        '
-        Me.PanelEnvolve_ComBRight.Controls.Add(Me.ComBPRight)
-        Me.PanelEnvolve_ComBRight.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelEnvolve_ComBRight.Location = New System.Drawing.Point(0, 0)
-        Me.PanelEnvolve_ComBRight.Name = "PanelEnvolve_ComBRight"
-        Me.PanelEnvolve_ComBRight.Size = New System.Drawing.Size(163, 22)
-        Me.PanelEnvolve_ComBRight.TabIndex = 4
-        '
         'ComBPRight
         '
         Me.ComBPRight.AutomaticSelect = True
@@ -556,76 +627,6 @@ Partial Class Control_RenameOption
         Me.ComBPRight.TabIndex = 0
         Me.ComBPRight.TextDisplay = "<Selecione>"
         Me.ComBPRight.TXTBoxBackColorLostFocus = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        '
-        'PanelRightButtons
-        '
-        Me.PanelRightButtons.Controls.Add(Me.TableLPButtons)
-        Me.PanelRightButtons.Controls.Add(Me.Button1)
-        Me.PanelRightButtons.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelRightButtons.Location = New System.Drawing.Point(541, 0)
-        Me.PanelRightButtons.Name = "PanelRightButtons"
-        Me.PanelRightButtons.Size = New System.Drawing.Size(54, 106)
-        Me.PanelRightButtons.TabIndex = 3
-        '
-        'TableLPButtons
-        '
-        Me.TableLPButtons.ColumnCount = 2
-        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.Controls.Add(Me.BTNAddRenomeDeOrigem, 1, 0)
-        Me.TableLPButtons.Controls.Add(Me.BTNRemoveRenomeDeOrigem, 0, 0)
-        Me.TableLPButtons.Location = New System.Drawing.Point(0, 16)
-        Me.TableLPButtons.Name = "TableLPButtons"
-        Me.TableLPButtons.RowCount = 1
-        Me.TableLPButtons.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLPButtons.Size = New System.Drawing.Size(42, 21)
-        Me.TableLPButtons.TabIndex = 1
-        '
-        'BTNAddRenomeDeOrigem
-        '
-        Me.BTNAddRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNAddRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNAddRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNAddRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNAddRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNAddRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNAddRenomeDeOrigem.Location = New System.Drawing.Point(24, 3)
-        Me.BTNAddRenomeDeOrigem.Name = "BTNAddRenomeDeOrigem"
-        Me.BTNAddRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNAddRenomeDeOrigem.TabIndex = 4
-        Me.BTNAddRenomeDeOrigem.Tag = ""
-        '
-        'BTNRemoveRenomeDeOrigem
-        '
-        Me.BTNRemoveRenomeDeOrigem.BackgroundImage = CType(resources.GetObject("BTNRemoveRenomeDeOrigem.BackgroundImage"), System.Drawing.Image)
-        Me.BTNRemoveRenomeDeOrigem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNRemoveRenomeDeOrigem.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.BTNRemoveRenomeDeOrigem.FlatAppearance.BorderSize = 0
-        Me.BTNRemoveRenomeDeOrigem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNRemoveRenomeDeOrigem.Location = New System.Drawing.Point(3, 3)
-        Me.BTNRemoveRenomeDeOrigem.Name = "BTNRemoveRenomeDeOrigem"
-        Me.BTNRemoveRenomeDeOrigem.Size = New System.Drawing.Size(15, 15)
-        Me.BTNRemoveRenomeDeOrigem.TabIndex = 3
-        Me.BTNRemoveRenomeDeOrigem.Tag = ""
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(37, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(17, 18)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "String"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'PanelMagemBotton
-        '
-        Me.PanelMagemBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelMagemBotton.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelMagemBotton.Location = New System.Drawing.Point(0, 106)
-        Me.PanelMagemBotton.Name = "PanelMagemBotton"
-        Me.PanelMagemBotton.Size = New System.Drawing.Size(595, 1)
-        Me.PanelMagemBotton.TabIndex = 0
         '
         'Control_RenameOption
         '

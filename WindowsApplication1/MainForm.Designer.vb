@@ -404,13 +404,6 @@ Partial Class MainForm
         Me.PanelRecebe = New System.Windows.Forms.Panel()
         Me.PanelSubMenu = New System.Windows.Forms.Panel()
         Me.PanelSubMenuContorn = New System.Windows.Forms.Panel()
-        Me.PanelFoto = New System.Windows.Forms.Panel()
-        Me.RadioButton39 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton38 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton31 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton35 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton36 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton37 = New System.Windows.Forms.RadioButton()
         Me.PanelArquivos = New System.Windows.Forms.Panel()
         Me.RadioButton21 = New System.Windows.Forms.RadioButton()
         Me.RadioButton17 = New System.Windows.Forms.RadioButton()
@@ -419,6 +412,14 @@ Partial Class MainForm
         Me.RadioButton63 = New System.Windows.Forms.RadioButton()
         Me.RadioButton64 = New System.Windows.Forms.RadioButton()
         Me.RadioButton65 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton22 = New System.Windows.Forms.RadioButton()
+        Me.PanelFoto = New System.Windows.Forms.Panel()
+        Me.RadioButton39 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton38 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton31 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton35 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton36 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton37 = New System.Windows.Forms.RadioButton()
         Me.PanelMidia = New System.Windows.Forms.Panel()
         Me.RadioButton72 = New System.Windows.Forms.RadioButton()
         Me.RadioButton66 = New System.Windows.Forms.RadioButton()
@@ -510,7 +511,6 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RadioButton22 = New System.Windows.Forms.RadioButton()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -689,8 +689,8 @@ Partial Class MainForm
         Me.Panel79.SuspendLayout()
         Me.PanelSubMenu.SuspendLayout()
         Me.PanelSubMenuContorn.SuspendLayout()
-        Me.PanelFoto.SuspendLayout()
         Me.PanelArquivos.SuspendLayout()
+        Me.PanelFoto.SuspendLayout()
         Me.PanelMidia.SuspendLayout()
         Me.PanelLivros.SuspendLayout()
         Me.PanelMusica.SuspendLayout()
@@ -3980,79 +3980,6 @@ Partial Class MainForm
         resources.ApplyResources(Me.PanelSubMenuContorn, "PanelSubMenuContorn")
         Me.PanelSubMenuContorn.Name = "PanelSubMenuContorn"
         '
-        'PanelFoto
-        '
-        Me.PanelFoto.Controls.Add(Me.RadioButton39)
-        Me.PanelFoto.Controls.Add(Me.RadioButton38)
-        Me.PanelFoto.Controls.Add(Me.RadioButton31)
-        Me.PanelFoto.Controls.Add(Me.RadioButton35)
-        Me.PanelFoto.Controls.Add(Me.RadioButton36)
-        Me.PanelFoto.Controls.Add(Me.RadioButton37)
-        resources.ApplyResources(Me.PanelFoto, "PanelFoto")
-        Me.PanelFoto.Name = "PanelFoto"
-        '
-        'RadioButton39
-        '
-        resources.ApplyResources(Me.RadioButton39, "RadioButton39")
-        Me.RadioButton39.FlatAppearance.BorderSize = 0
-        Me.RadioButton39.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton39.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton39.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton39.Name = "RadioButton39"
-        Me.RadioButton39.UseVisualStyleBackColor = True
-        '
-        'RadioButton38
-        '
-        resources.ApplyResources(Me.RadioButton38, "RadioButton38")
-        Me.RadioButton38.FlatAppearance.BorderSize = 0
-        Me.RadioButton38.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton38.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton38.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton38.Name = "RadioButton38"
-        Me.RadioButton38.UseVisualStyleBackColor = True
-        '
-        'RadioButton31
-        '
-        resources.ApplyResources(Me.RadioButton31, "RadioButton31")
-        Me.RadioButton31.FlatAppearance.BorderSize = 0
-        Me.RadioButton31.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton31.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton31.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton31.Name = "RadioButton31"
-        Me.RadioButton31.UseVisualStyleBackColor = True
-        '
-        'RadioButton35
-        '
-        resources.ApplyResources(Me.RadioButton35, "RadioButton35")
-        Me.RadioButton35.FlatAppearance.BorderSize = 0
-        Me.RadioButton35.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton35.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton35.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton35.Name = "RadioButton35"
-        Me.RadioButton35.UseVisualStyleBackColor = True
-        '
-        'RadioButton36
-        '
-        resources.ApplyResources(Me.RadioButton36, "RadioButton36")
-        Me.RadioButton36.FlatAppearance.BorderSize = 0
-        Me.RadioButton36.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton36.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton36.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton36.Name = "RadioButton36"
-        Me.RadioButton36.UseVisualStyleBackColor = True
-        '
-        'RadioButton37
-        '
-        resources.ApplyResources(Me.RadioButton37, "RadioButton37")
-        Me.RadioButton37.Checked = True
-        Me.RadioButton37.FlatAppearance.BorderSize = 0
-        Me.RadioButton37.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton37.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton37.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton37.Name = "RadioButton37"
-        Me.RadioButton37.TabStop = True
-        Me.RadioButton37.UseVisualStyleBackColor = True
-        '
         'PanelArquivos
         '
         Me.PanelArquivos.Controls.Add(Me.RadioButton21)
@@ -4135,6 +4062,91 @@ Partial Class MainForm
         Me.RadioButton65.ForeColor = System.Drawing.Color.Silver
         Me.RadioButton65.Name = "RadioButton65"
         Me.RadioButton65.UseVisualStyleBackColor = True
+        '
+        'RadioButton22
+        '
+        resources.ApplyResources(Me.RadioButton22, "RadioButton22")
+        Me.RadioButton22.Checked = True
+        Me.RadioButton22.FlatAppearance.BorderSize = 0
+        Me.RadioButton22.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton22.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton22.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton22.Name = "RadioButton22"
+        Me.RadioButton22.TabStop = True
+        Me.RadioButton22.UseVisualStyleBackColor = True
+        '
+        'PanelFoto
+        '
+        Me.PanelFoto.Controls.Add(Me.RadioButton39)
+        Me.PanelFoto.Controls.Add(Me.RadioButton38)
+        Me.PanelFoto.Controls.Add(Me.RadioButton31)
+        Me.PanelFoto.Controls.Add(Me.RadioButton35)
+        Me.PanelFoto.Controls.Add(Me.RadioButton36)
+        Me.PanelFoto.Controls.Add(Me.RadioButton37)
+        resources.ApplyResources(Me.PanelFoto, "PanelFoto")
+        Me.PanelFoto.Name = "PanelFoto"
+        '
+        'RadioButton39
+        '
+        resources.ApplyResources(Me.RadioButton39, "RadioButton39")
+        Me.RadioButton39.FlatAppearance.BorderSize = 0
+        Me.RadioButton39.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton39.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton39.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton39.Name = "RadioButton39"
+        Me.RadioButton39.UseVisualStyleBackColor = True
+        '
+        'RadioButton38
+        '
+        resources.ApplyResources(Me.RadioButton38, "RadioButton38")
+        Me.RadioButton38.FlatAppearance.BorderSize = 0
+        Me.RadioButton38.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton38.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton38.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton38.Name = "RadioButton38"
+        Me.RadioButton38.UseVisualStyleBackColor = True
+        '
+        'RadioButton31
+        '
+        resources.ApplyResources(Me.RadioButton31, "RadioButton31")
+        Me.RadioButton31.FlatAppearance.BorderSize = 0
+        Me.RadioButton31.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton31.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton31.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton31.Name = "RadioButton31"
+        Me.RadioButton31.UseVisualStyleBackColor = True
+        '
+        'RadioButton35
+        '
+        resources.ApplyResources(Me.RadioButton35, "RadioButton35")
+        Me.RadioButton35.FlatAppearance.BorderSize = 0
+        Me.RadioButton35.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton35.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton35.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton35.Name = "RadioButton35"
+        Me.RadioButton35.UseVisualStyleBackColor = True
+        '
+        'RadioButton36
+        '
+        resources.ApplyResources(Me.RadioButton36, "RadioButton36")
+        Me.RadioButton36.FlatAppearance.BorderSize = 0
+        Me.RadioButton36.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton36.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton36.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton36.Name = "RadioButton36"
+        Me.RadioButton36.UseVisualStyleBackColor = True
+        '
+        'RadioButton37
+        '
+        resources.ApplyResources(Me.RadioButton37, "RadioButton37")
+        Me.RadioButton37.Checked = True
+        Me.RadioButton37.FlatAppearance.BorderSize = 0
+        Me.RadioButton37.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.RadioButton37.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton37.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton37.Name = "RadioButton37"
+        Me.RadioButton37.TabStop = True
+        Me.RadioButton37.UseVisualStyleBackColor = True
         '
         'PanelMidia
         '
@@ -5009,17 +5021,6 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
         '
-        'RadioButton22
-        '
-        resources.ApplyResources(Me.RadioButton22, "RadioButton22")
-        Me.RadioButton22.Checked = True
-        Me.RadioButton22.FlatAppearance.BorderSize = 0
-        Me.RadioButton22.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.RadioButton22.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RadioButton22.ForeColor = System.Drawing.Color.Silver
-        Me.RadioButton22.Name = "RadioButton22"
-        Me.RadioButton22.UseVisualStyleBackColor = True
-        '
         'MainForm
         '
         resources.ApplyResources(Me, "$this")
@@ -5227,8 +5228,8 @@ Partial Class MainForm
         Me.Panel79.ResumeLayout(False)
         Me.PanelSubMenu.ResumeLayout(False)
         Me.PanelSubMenuContorn.ResumeLayout(False)
-        Me.PanelFoto.ResumeLayout(False)
         Me.PanelArquivos.ResumeLayout(False)
+        Me.PanelFoto.ResumeLayout(False)
         Me.PanelMidia.ResumeLayout(False)
         Me.PanelLivros.ResumeLayout(False)
         Me.PanelMusica.ResumeLayout(False)

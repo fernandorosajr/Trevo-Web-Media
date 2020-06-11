@@ -362,4 +362,11 @@ Public Class UsesDirectoriesClass
         Return dir.Parent.FullName
     End Function
 
+    Public Function IsFolderType(var As Object)
+        Dim _isFolderType As Boolean
+        _isFolderType = TypeOf var Is DirectoryInfo
+
+        Return _isFolderType
+
+    End Function
 End Class

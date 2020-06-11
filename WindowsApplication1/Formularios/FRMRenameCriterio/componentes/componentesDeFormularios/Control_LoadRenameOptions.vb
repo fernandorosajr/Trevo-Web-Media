@@ -105,8 +105,10 @@ Public Class Control_LoadRenameOptions
         Dim _textResult As String = ""
         Dim item As Control_RenameOption
         Dim temExtensao As Boolean = False
-        Dim _nomeDoArquivo As String = ""
-        Dim _extDoArquivo As String = ""
+        Dim nomeDoArquivo As String = ""
+        Dim extDoArquivo As String = ""
+
+        Dim item_text As String
 
         Dim x As Integer '= 0
         Dim y As Integer = _itens.Count - 1
@@ -116,7 +118,7 @@ Public Class Control_LoadRenameOptions
             index = y - x
 
             item = _itens(index)
-
+            item_text = item.Text
 #Disable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
             If item.SelectDisplayTela = item._selectDisplayTela.NovaExtensao Then
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
@@ -125,36 +127,40 @@ Public Class Control_LoadRenameOptions
             End If
 
             If temExtensao = False Then
-                _nomeDoArquivo += item.Text
+                nomeDoArquivo += item_text ' item.Text
             Else
 
-                _extDoArquivo += item.Text
+                extDoArquivo += item_text     'item.Text
             End If
 
         Next
 
-        If Trim(_nomeDoArquivo) = "" Then
+        ' TODO: Pode transformar em uma Função
+        ' ---------------------------------------------------------
+        If Trim(nomeDoArquivo) = "" Then
 
             If _fileExemple.Extension <> "" Then
-                _nomeDoArquivo = _fileExemple.Name.Replace(_fileExemple.Extension, "")
+                nomeDoArquivo = _fileExemple.Name.Replace(_fileExemple.Extension, "")
 
             Else
 
-                If item.Text <> "" Then
-                    _nomeDoArquivo = _fileExemple.Name
+                'If item.Text <> "" Then
+                nomeDoArquivo = _fileExemple.Name
 
-                End If
+                'End If
 
             End If
 
         End If
 
-            If Trim(_extDoArquivo) = "" Or Trim(_extDoArquivo) = "." Then
-            _extDoArquivo = _fileExemple.Extension
+
+        If Trim(extDoArquivo) = "" Or Trim(extDoArquivo) = "." Then
+            extDoArquivo = _fileExemple.Extension
 
         End If
 
-        _textResult = _nomeDoArquivo + _extDoArquivo
+        _textResult = nomeDoArquivo + extDoArquivo
+        ' ---------------------------------------------------------
 
 
         Return _textResult

@@ -38,7 +38,8 @@ Public Class Control_RenameOption
     ReadOnly funcoesDeString As New StringFunctionsClass
     Private configs As Class_Configs
     Private usesFile As New UsesFilesClass
-    Public DataRenameOption As New Class_DataRenameOption
+    Public DataRenamingCriterion As New Class_DataRenamingCriterion
+    Dim FormatAlphabetLetter As New Class_FormatAlphabetLetter
     ' -------------------------------------------------
 
 
@@ -136,7 +137,7 @@ Public Class Control_RenameOption
         Set(value As SelectADataModeEnum)
             _selectDisplayTela = value
 
-            DataRenameOption.RenameTypeData.Tela = value
+            DataRenamingCriterion.RenameTypeData.Tela = value
 
             DisplayScreenOfADataMode()
 
@@ -631,16 +632,16 @@ Public Class Control_RenameOption
             Case SelectADataModeEnum.NomeDoArquivoAtual
 
                 NomeOuExtensaoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - _q
-                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.NomeOuExtensaoDoArquivoAtual = _nomeOuExtensaoDoArquivoAtual
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.NomeOuExtensaoDoArquivoAtual = _nomeOuExtensaoDoArquivoAtual
 
             Case SelectADataModeEnum.DataEHora
 
                 _tempoDaData = ComBPSlave.SelectedItem.Tag.ID - _q
-                DataRenameOption.RenameTypeData.DadosDeTempo.TempoDaData = _tempoDaData
+                DataRenamingCriterion.RenameTypeData.DadosDeTempo.TempoDaData = _tempoDaData
 
             Case SelectADataModeEnum.NomeDaPasta
                 _opcoesDeFormatacaoDeTextoDaPasta = ComBPSlave.SelectedItem.Tag.ID - _q
-                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.OpcoesDeFormatacaoDeTextoDaPasta = _opcoesDeFormatacaoDeTextoDaPasta
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDaPasta.OpcoesDeFormatacaoDeTextoDaPasta = _opcoesDeFormatacaoDeTextoDaPasta
 
         End Select
 
@@ -656,31 +657,32 @@ Public Class Control_RenameOption
 
                 _opcoesDeFormatacaoDeTextoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
 
-                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto = _opcoesDeFormatacaoDeTextoDoArquivoAtual
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto = _opcoesDeFormatacaoDeTextoDoArquivoAtual
 
                 If ComBPRight.SelectedItem.Tag.ID = 3 Then
 
                     _primeiraLetraMinusculaDeNomeDeArquivo = CKB_FirstLetterUpper.Checked
-                    DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
+                    DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
 
                     _removerEspacoDeNomeDeArquvo = CKB_RemoveSpace.Checked
-                    DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _removerEspacoDeNomeDeArquvo
+                    DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _removerEspacoDeNomeDeArquvo
 
                 End If
 
             Case SelectADataModeEnum.SequenciaNumerica
 
-                _quantidadeDeDigitosDaSequenciaNumerica = ComBPRight.SelectedItem.Tag.ID
-                DataRenameOption.RenameTypeData.DadosDeSequenciaNumerica.QuantidadeDeDigitosDaSequenciaNumerica = _quantidadeDeDigitosDaSequenciaNumerica
+                _quantidadeDeDigitosDaSequenciaNumerica = (ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1
+                'ComBPRight.SelectedItem.Tag.ID
+                DataRenamingCriterion.RenameTypeData.DadosDeSequenciaNumerica.QuantidadeDeDigitosDaSequenciaNumerica = _quantidadeDeDigitosDaSequenciaNumerica
 
             Case SelectADataModeEnum.LetraDaSequencia
 
                 _opcoesDeFormatacaoDeSequenciaDeLetras = ComBPRight.SelectedItem.Tag.ID
-                DataRenameOption.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
+                DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
 
             Case SelectADataModeEnum.DataEHora
                 _dateFormat = ComBPRight.SelectedItem.Tag.ID
-                DataRenameOption.RenameTypeData.DadosDeTempo.DateFormat = _dateFormat
+                DataRenamingCriterion.RenameTypeData.DadosDeTempo.DateFormat = _dateFormat
                 '  DateFormatEnum
         End Select
     End Sub
@@ -688,12 +690,12 @@ Public Class Control_RenameOption
     Sub ComBPFormatText_Clicked()
 
         _opcoesDeFormatacaoDeTextoDeDataHora = ComBPFormatText.SelectedItem.Tag.ID
-        DataRenameOption.RenameTypeData.DadosDeTempo.OpcoesDeFormatacaoDeTextoDeDataHora = _opcoesDeFormatacaoDeTextoDeDataHora
+        DataRenamingCriterion.RenameTypeData.DadosDeTempo.OpcoesDeFormatacaoDeTextoDeDataHora = _opcoesDeFormatacaoDeTextoDeDataHora
 
     End Sub
 
     Sub CombPMaster_Clicked()
-        DataRenameOption.RenameTypeData.Tela = ComBPMaster.SelectedItem.Tag.ID
+        DataRenamingCriterion.RenameTypeData.Tela = ComBPMaster.SelectedItem.Tag.ID
     End Sub
 
 
@@ -1089,7 +1091,7 @@ Public Class Control_RenameOption
         AddHandler TXTPValue.TXTBox.LostFocus, New System.EventHandler(AddressOf TxtValue_Changed)
         AddHandler TXTPCaracterParaSubstituicaoDoEspaco.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPSubstituirEspaco_Changed)
 
-        Dim s As New System.Text.StringBuilder()
+
 
         For Each item As ToolStripMenuItem In ComBPMaster.CMS_Menu.Items
             If item.Text = "Metadados" Then item.Visible = False
@@ -1113,7 +1115,7 @@ Public Class Control_RenameOption
         AddHandler TextReplace.CHKIgnoreUpperLower.CheckedChanged, New System.EventHandler(AddressOf TextReplace_CHKIgnoreUpperLower_CheckedChanged)
         AddHandler TextReplace.CHKReplaceAll.CheckedChanged, New System.EventHandler(AddressOf TextReplace_CHKReplaceAll_CheckedChanged)
 
-
+        'Dim s As New System.Text.StringBuilder()
         '' For i As Integer = 65 To 90
         'For i As Integer = 1 To 100
         '    If i = 65 Or i = 91 Then
@@ -1131,6 +1133,8 @@ Public Class Control_RenameOption
         'Next
 
         'MsgBox(s.ToString())
+        'MsgBox(Chr(65))
+        'MsgBox(Chr(90))
 
 
 
@@ -1140,23 +1144,23 @@ Public Class Control_RenameOption
 
     Sub TXTPFind_LostFocus()
 
-        DataRenameOption.RenameTypeData.DadosDeSubstituicao.Find = TextReplace.Find
+        DataRenamingCriterion.RenameTypeData.DadosDeSubstituicao.Find = TextReplace.Find
 
     End Sub
 
     Sub TXTPReplacement_LostFocus()
 
-        DataRenameOption.RenameTypeData.DadosDeSubstituicao.Substituir = TextReplace.Find
+        DataRenamingCriterion.RenameTypeData.DadosDeSubstituicao.Replacement = TextReplace.Find
 
     End Sub
 
     Sub TextReplace_CHKIgnoreUpperLower_CheckedChanged()
-        DataRenameOption.RenameTypeData.DadosDeSubstituicao.IgnorarMaiusculasEMinusculas = TextReplace.CHKIgnoreUpperLower.Checked
+        DataRenamingCriterion.RenameTypeData.DadosDeSubstituicao.IgnoreUpperLower = TextReplace.CHKIgnoreUpperLower.Checked
 
     End Sub
 
     Sub TextReplace_CHKReplaceAll_CheckedChanged()
-        DataRenameOption.RenameTypeData.DadosDeSubstituicao.SubstituirTudo = TextReplace.CHKReplaceAll.Checked
+        DataRenamingCriterion.RenameTypeData.DadosDeSubstituicao.ReplaceAll = TextReplace.CHKReplaceAll.Checked
 
     End Sub
 
@@ -1256,56 +1260,30 @@ Public Class Control_RenameOption
                 Case SelectADataModeEnum.NovaExtensao
 
                     Dim ext As String = TXTPValue.TXT
-                    'MsgBox(ext.First)
-                    If ext IsNot Nothing Then
-                        If ext.Length > 0 Then
-                            If ext.First <> "." Then
-                                _dataStr = "." & ext
-                            Else
-                                _dataStr = ext
-                            End If
 
-                        Else
-                            _dataStr = "."
-                        End If
-
-                    Else
-                        _dataStr = "."
-                    End If
-
-
+                    _dataStr = usesFile.ReturnExt(ext)
 
                 Case SelectADataModeEnum.NomeDoArquivoAtual
 
                     Dim _value As String = ""
 
-                    Select Case ComBPSlave.SelectedItem.Tag.ID
+                    Dim _i As Integer = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
 
-                        Case 9
-                            _value = _fileExemple.Name
-
-                        Case 10
-                            _value = usesFile.FileNameWithoutExtension(_fileExemple)
-
-                        Case 11
-
-                            If _fileExemple.Extension.Length > 0 Then
-                                _value = _fileExemple.Extension.Substring(1)
-                            Else
-                                _value = _fileExemple.Extension
-                            End If
-
-                    End Select
-
+                    _value = usesFile.ReturnFileNameAndOrExtension(_fileExemple, _i)
                     _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(ComBPRight.SelectedItem.Tag.ID, _value)
 
                 Case SelectADataModeEnum.SequenciaNumerica
 
-                    Dim strValue As String
                     'TODO: https://docs.microsoft.com/pt-br/dotnet/api/microsoft.visualbasic.strings.strdup?view=netcore-3.1#Microsoft_VisualBasic_Strings_StrDup_System_Int32_System_Char_
 
+                    Dim strValue As String
+
+                    Dim qDeRepeticao As Integer = ((ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1) '- (numberValue.ToString.Length)
+
                     strValue = TXTPValue.TXT
-                    _dataStr = FormatarNumberToQCaracter(strValue)
+
+                    'FormatAlphabetLetter.funcoesDeString
+                    _dataStr = FormatAlphabetLetter.StringFunctions.AddCaracterDeRepeticao(strValue, qDeRepeticao)
 
                 Case SelectADataModeEnum.LetraDaSequencia
 
@@ -1366,6 +1344,7 @@ Public Class Control_RenameOption
 
                 Case SelectADataModeEnum.SubstituicaoDeString
                     _dataStr = TextReplace.TratarPhrase()
+
             End Select
 
         End If
@@ -1393,7 +1372,7 @@ Public Class Control_RenameOption
 
             Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
 
-                Dim new_value As String = funcoesDeString.ConvertTheFirstWordToUppercase(_value, Not (CKB_FirstLetterUpper.Checked))
+                Dim new_value As String = funcoesDeString.ConvertTheFirstLettersToUppercase(_value, Not (CKB_FirstLetterUpper.Checked))
 
                 If CKB_RemoveSpace.Checked = True Then
                     new_value = funcoesDeString.ReplacePhrase(new_value, " ", "")
@@ -1574,7 +1553,7 @@ Public Class Control_RenameOption
                 _strDate = _strDate.ToLower
 
             Case OpcoesDeFormatacaoDeTextoEnum.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
-                _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+                _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate, False)
 
         End Select
 
@@ -1594,25 +1573,27 @@ Public Class Control_RenameOption
                     TXTPValue.TXT = funcoesDeString.RemoveChar(TXTPValue.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
                     _textValue = TXTPValue.TXT
 
-                    DataRenameOption.RenameTypeData.Text = TXTPValue.TXT
+                    DataRenamingCriterion.RenameTypeData.Text = TXTPValue.TXT
 
                 Case SelectADataModeEnum.NovaExtensao
                     TXTPValue.TXT = funcoesDeString.RemoveChar(TXTPValue.TXT, "\" & "/" & "|" & ":" & "*" & "?" & """" & "<" & ">")
                     _newExttValue = TXTPValue.TXT
 
-                    DataRenameOption.RenameTypeData.Extensao = TXTPValue.TXT
+                    DataRenamingCriterion.RenameTypeData.Extension = TXTPValue.TXT
 
                 Case SelectADataModeEnum.SequenciaNumerica
 
-                    TXTPValue.TXT = FormatarNumberToQCaracter(TXTPValue.TXT)
+                    Dim qDeRepeticao As Integer = ((ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1) '- (numberValue.ToString.Length)
+
+                    TXTPValue.TXT = FormatAlphabetLetter.StringFunctions.AddCaracterDeRepeticao(TXTPValue.TXT, qDeRepeticao)
 
                     _numeroDeSequencia = CInt(TXTPValue.TXT)
-                    DataRenameOption.RenameTypeData.DadosDeSequenciaNumerica.NumeroDeSequencia = _numeroDeSequencia
-
+                    DataRenamingCriterion.RenameTypeData.DadosDeSequenciaNumerica.NumeroDeSequencia = CInt(_numeroDeSequencia)
+                    DataRenamingCriterion.RenameTypeData.DadosDeSequenciaNumerica.QuantidadeDeDigitosDaSequenciaNumerica = qDeRepeticao
 
                 Case SelectADataModeEnum.LetraDaSequencia
                     TXTPValue.TXT = FormatarLetraDoAlfabeto(TXTPValue.TXT)
-                    DataRenameOption.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = TXTPValue.TXT
+                    DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = TXTPValue.TXT
 
             End Select
             TXTPValue.ErrorDisplay = TXTPValue.Validar(TXTPValue.TXT)
@@ -1625,43 +1606,46 @@ Public Class Control_RenameOption
         TXTPCaracterParaSubstituicaoDoEspaco.ErrorDisplay = TXTPCaracterParaSubstituicaoDoEspaco.Validar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
 
         _caracterParaSubstituicaoDoEspaco = CChar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
-        DataRenameOption.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
+        DataRenamingCriterion.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
 
     End Sub
 
-    Function FormatarNumberToQCaracter(value As String) As String
-        Dim _dataStr As String
-        Dim cadeia As String = "0"
+    '' TODO :  Remover esta função e substituir pela funcao em StringFunctions
+    'Function FormatarNumberToQCaracter(value As String) As String
+    '    Dim _dataStr As String
+    '    Dim cadeia As String = "0"
 
-        Dim _value As String = funcoesDeString.ReplacePhrase(value, " ", "")
+    '    Dim _value As String = funcoesDeString.ReplacePhrase(value, " ", "")
 
-        Dim numberValue As Integer
-        Dim qDeRepeticao As Integer
+    '    Dim numberValue As Integer
+    '    Dim qDeRepeticao As Integer
 
-        If Trim(_value) <> "" Then
-            If IsNumeric(_value) = True Then
-                numberValue = CUInt(_value)
+    '    If Trim(_value) <> "" Then
+    '        If IsNumeric(_value) = True Then
+    '            numberValue = CUInt(_value)
 
-            Else
-                ' MsgBox("Este campo só pode conter números.")
-            End If
-        Else
-            numberValue = 0
+    '        Else
+    '            ' MsgBox("Este campo só pode conter números.")
+    '        End If
+    '    Else
+    '        numberValue = 0
 
-        End If
+    '    End If
 
-        qDeRepeticao = ((ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1) - (numberValue.ToString.Length)
+    '    qDeRepeticao = ((ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1) - (numberValue.ToString.Length)
 
-        If qDeRepeticao < 0 Then qDeRepeticao = 0
+    '    If qDeRepeticao < 0 Then qDeRepeticao = 0
 
-        _dataStr = StrDup(qDeRepeticao, cadeia) & numberValue.ToString
+    '    _dataStr = StrDup(qDeRepeticao, cadeia) & numberValue.ToString
 
-        Return _dataStr
+    '    Return _dataStr
 
-        'InStr()
-        ' TODO : http://www.macoratti.net/valida.htm
-    End Function
+    '    'InStr()
+    '    ' TODO : http://www.macoratti.net/valida.htm
+    'End Function
 
+    ' TODO : Remover esta função e substituir por Classe Class_FormatAlphabetLetter
+    ' ----------------------------------------------------------------------------
     Function FormatarLetraDoAlfabeto(value As String) As String
         Dim _dataStr As String = Trim(value)
 
@@ -1674,7 +1658,9 @@ Public Class Control_RenameOption
 
         If funcoesDeString.TodosOsCaracteresSaoTexto(_dataStr) = False Then
             ' MsgBox(funcoesDeString.IsWord("a"c))
-            _dataStr = funcoesDeString.SubstituirNumeroPorLetra(_dataStr)
+            _dataStr = FormatAlphabetLetter.SubstituirNumeroPorLetra(_dataStr)
+            'Dim FormatAlphabetLetter As New Class_FormatAlphabetLetter
+
         End If
 
         Select Case ComBPSlave.SelectedItem.Tag.ID
@@ -1690,6 +1676,7 @@ Public Class Control_RenameOption
         Return _dataStr
 
     End Function
+    ' ----------------------------------------------------------------------------
 
     ' Codigos de validação 
     ' _________________________________________________
@@ -1777,11 +1764,13 @@ Public Class Control_RenameOption
         _substituirEspacoDaData = CHKSubstituirEspaco.Checked
 
 
-        DataRenameOption.RenameTypeData.DadosDeTempo.SubstituirEspaco = _substituirEspacoDaData
+        DataRenamingCriterion.RenameTypeData.DadosDeTempo.SubstituirEspaco = _substituirEspacoDaData
 
         _caracterParaSubstituicaoDoEspaco = CChar(TXTPCaracterParaSubstituicaoDoEspaco.TXT)
 
-        DataRenameOption.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
+        DataRenamingCriterion.RenameTypeData.DadosDeTempo.CaracterParaSubstituicaoDoEspaco = _caracterParaSubstituicaoDoEspaco
+
+        '  DataRenameOption.RenameTypeData.DadosDeSequenciaNumerica.NumeroDeSequencia
 
     End Sub
 
@@ -1794,12 +1783,12 @@ Public Class Control_RenameOption
 
                 _primeiraLetraMinusculaDeNomeDeArquivo = CKB_FirstLetterUpper.Checked
 
-                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.PrimeiraLetraMinusculaDeNomeDeArquivo = _primeiraLetraMinusculaDeNomeDeArquivo
 
             Case SelectADataModeEnum.NomeDaPasta
 
                 _primeiraLetraMinusculaDeNomeDaPasta = CKB_FirstLetterUpper.Checked
-                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinusculaDeNomeDaPasta = _primeiraLetraMinusculaDeNomeDaPasta
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinusculaDeNomeDaPasta = _primeiraLetraMinusculaDeNomeDaPasta
 
         End Select
 
@@ -1811,14 +1800,14 @@ Public Class Control_RenameOption
         Select Case _id
             Case SelectADataModeEnum.NomeDoArquivoAtual
 
-                _RemoverEspacoDeNomeDeArquivo = CKB_RemoveSpace.Checked
+                _removerEspacoDeNomeDeArquivo = CKB_RemoveSpace.Checked
 
-                DataRenameOption.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _RemoverEspacoDeNomeDeArquivo
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.RemoverEspacoDeNomeDeArquivo = _removerEspacoDeNomeDeArquivo
 
             Case SelectADataModeEnum.NomeDaPasta
 
-                _RemoverEspacoDeNomeDaPasta = CKB_RemoveSpace.Checked
-                DataRenameOption.RenameTypeData.DadosDeNomeDaPasta.RemoverEspacoDeNomeDaPasta = _RemoverEspacoDeNomeDaPasta
+                _removerEspacoDeNomeDaPasta = CKB_RemoveSpace.Checked
+                DataRenamingCriterion.RenameTypeData.DadosDeNomeDaPasta.RemoverEspacoDeNomeDaPasta = _removerEspacoDeNomeDaPasta
 
 
         End Select

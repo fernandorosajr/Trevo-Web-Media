@@ -153,7 +153,7 @@
     ' Métodos de Eventos 
     ' -------------------------------------------------
     Private Sub Control_TextReplace_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        _phrase = "Maria, Maria é um sol, é uma certa magia, é uma força que nos alerta! Maria é dom é cor é suor. Maria, Maria."
+        ' _phrase = "Maria, Maria é um sol, é uma certa magia, é uma força que nos alerta! Maria é dom é cor é suor. Maria, Maria."
     End Sub
 
     Private Sub CHKIgnoreUpperLower_CheckedChanged(sender As Object, e As EventArgs) Handles CHKIgnoreUpperLower.CheckedChanged

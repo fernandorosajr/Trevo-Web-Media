@@ -14,12 +14,13 @@ Public Class FRMDialogRenameCriterio
     ReadOnly funcoesDeString As New StringFunctionsClass
     Private configs As Class_Configs
     Private UsesDirectories As UsesDirectoriesClass
+    Private RenameActions As New Class_RenameActions
 
     ' -------------------------------------------------
 
     Public SelectedFoldersAndFiles As New List(Of Object)
-
-    Private _resultado As String
+    Public Renamed_SelectedFoldersAndFiles As New List(Of Object)
+    Private resultado As String
     ' Propriedades de Formulários
     ' ------------------------------------------------
 
@@ -177,9 +178,9 @@ Public Class FRMDialogRenameCriterio
         LBL_ValueOrigemDoExemplo.Text = _fileExemple.DirectoryName
         LNKLNomeDoExemplo.Text = _fileExemple.Name
 
-        _resultado = LoadRenameOptions.TextResult
+        resultado = LoadRenameOptions.TextResult
 
-        LBLValue_NovoNome.Text = _resultado
+        LBLValue_NovoNome.Text = resultado
 
         'If Trim(_resultado) = "" Then
         '    LBLValue_NovoNome.Text = _fileExemple.Name
@@ -192,23 +193,40 @@ Public Class FRMDialogRenameCriterio
 
     Private Sub BTNVisulizar_Click(sender As Object, e As EventArgs) Handles BTNVisulizar.Click
 
-        Dim _dataRenameList As New List(Of Class_DataRenameOption)
-        Dim strDataRenameList As String = ""
+        Dim dataRenameCriteriaList As New List(Of Class_DataRenamingCriterion)
+        Dim strDataRenameList As String
         ' Gerar Lista de comandos de renome
 
-        Dim _renameOption As Control_RenameOption
+        Dim renameOption As Control_RenameOption
         Dim x As Integer
-        Dim y As Integer = LoadRenameOptions.Itens.Count - 1
+        Dim y As Integer
+        Dim z As Integer = LoadRenameOptions.Itens.Count - 1
 
-        For x = 0 To y
-            y -= x
 
-            _renameOption = LoadRenameOptions.Itens.Item(y)
-            _dataRenameList.Add(_renameOption.DataRenameOption)
-            strDataRenameList = strDataRenameList & " " & _renameOption.DataRenameOption.RenameTypeData.Text
+        For x = 0 To z
+            y = z - x
+
+            renameOption = LoadRenameOptions.Itens.Item(y)
+            dataRenameCriteriaList.Add(renameOption.DataRenamingCriterion)
+            '  strDataRenameList = strDataRenameList & " " & renameOption.DataRenamingCriterion.RenameTypeData.Text
 
         Next
 
-        MsgBox(strDataRenameList)
+        Renamed_SelectedFoldersAndFiles.Clear()
+
+        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList)
+
+
+        strDataRenameList = "" ' "RENOMEADOS: " & Chr(13) & "--------------" & Chr(13) & Chr(13)
+
+
+        FRMDialogVisualizarRenome.Width = Me.Width
+        FRMDialogVisualizarRenome.Height = Me.Height
+
+        FRMDialogVisualizarRenome.SelectedFoldersAndFiles = SelectedFoldersAndFiles
+        FRMDialogVisualizarRenome.Renamed_SelectedFoldersAndFiles = Renamed_SelectedFoldersAndFiles
+
+        FRMDialogVisualizarRenome.ShowDialog()
+
     End Sub
 End Class

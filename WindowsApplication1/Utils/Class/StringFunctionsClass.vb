@@ -1,5 +1,11 @@
 ﻿
 Public Class StringFunctionsClass
+
+    ' Importação de classes
+    ' ------------------------------------------------------------
+    ' Dim FormatAlphabetLetter As New Class_FormatAlphabetLetter
+    ' ------------------------------------------------------------
+
     Function SepararPalavras(ByVal quebrarPalavras As String, ByVal delimitadores() As Char) As String()
 
         Dim palavras() As String
@@ -8,7 +14,7 @@ Public Class StringFunctionsClass
 
     End Function
 
-    Function ConverterParaListChar(ByVal Quebra As String, ByVal delimitadores() As Char) As List(Of Char)
+    Public Overloads Function ConverterParaListChar(ByVal Quebra As String, ByVal delimitadores() As Char) As List(Of Char)
         Dim palavras() As String
         Dim caracteres As List(Of Char) = New List(Of Char)
 
@@ -20,6 +26,19 @@ Public Class StringFunctionsClass
         Return caracteres
     End Function
 
+    Public Overloads Function ConverterParaListChar(ByVal texto As String) As List(Of Char)
+        Dim listChar As New List(Of Char)
+        listChar.Clear()
+
+        For x = 0 To texto.Length - 1
+            listChar.Add(texto.Chars(x))
+        Next
+
+        Return listChar
+
+    End Function
+
+
     Function ConverteStringEmColectionString(ByVal quebraPalavras As String, ByVal delimitatores() As Char) As Collections.Specialized.StringCollection
         Dim list As New Collections.Specialized.StringCollection
 
@@ -29,7 +48,7 @@ Public Class StringFunctionsClass
 
     End Function
 
-    Overloads Function ConvertTheFirstWordToUppercase(textToConvert As String, firstLetterUpper As Boolean)
+    Overloads Function ConvertTheFirstLettersToUppercase(textToConvert As String, firstLetterUpper As Boolean)
         Dim newPhrase As String = ""
         Dim charStr As String
         Dim convertToUpper As Boolean
@@ -287,35 +306,7 @@ Public Class StringFunctionsClass
 
     End Function
 
-    Function SubstituirNumeroPorLetra(dataStr As String) As String
 
-        Dim valStr As String = ""
-        Dim _char As String
-        Dim varChar As Integer
-
-        For i = 0 To dataStr.Length - 1
-            _char = dataStr.Chars(i).ToString
-
-            If IsNumeric(_char) = True Then
-
-                varChar = CInt(_char) + 65
-                If varChar > 91 Then varChar = 65
-
-                _char = ChrW(varChar)
-            Else
-                If IsWord(CChar(_char)) = False Then
-                    _char = ""
-                End If
-
-            End If
-
-            valStr += _char
-
-        Next
-
-        Return valStr
-
-    End Function
 
     Function IsWord(_char As Char) As Boolean
 
@@ -364,6 +355,63 @@ Public Class StringFunctionsClass
 
         Return newPhrase
 
+    End Function
+
+
+
+    Public Function FormatarNumberToQCaracter(value As String) As String
+
+        Dim numberValue As Integer
+        Dim _value As String = ReplacePhrase(value, " ", "")
+
+        If Trim(_value) <> "" Then
+            If IsNumeric(_value) = True Then
+                numberValue = CUInt(_value)
+
+            Else
+                ' MsgBox("Este campo só pode conter números.")
+            End If
+        Else
+            numberValue = 0
+
+        End If
+
+        Return numberValue
+
+    End Function
+
+    Function AddCaracterDeRepeticao(value As String, qDeRepeticao As Integer) As String
+        Dim _dataStr As String
+        Dim cadeia As String = "0"
+
+        ' Dim _value As String = ReplacePhrase(value, " ", "")
+
+        Dim numberValue As Integer = FormatarNumberToQCaracter(value)
+
+
+        'If Trim(_value) <> "" Then
+        '    If IsNumeric(_value) = True Then
+        '        numberValue = CUInt(_value)
+
+        '    Else
+        '        ' MsgBox("Este campo só pode conter números.")
+        '    End If
+        'Else
+        '    numberValue = 0
+
+        'End If
+
+        '  qDeRepeticao = ((ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1) - (numberValue.ToString.Length)
+        qDeRepeticao -= (numberValue.ToString.Length)
+
+        If qDeRepeticao < 0 Then qDeRepeticao = 0
+
+        _dataStr = StrDup(qDeRepeticao, cadeia) & numberValue.ToString
+
+        Return _dataStr
+
+        'InStr()
+        ' TODO : http://www.macoratti.net/valida.htm
     End Function
 
 End Class

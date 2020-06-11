@@ -57,4 +57,129 @@ Public Class UsesFilesClass
 
         Return _fileNameWithoutExtension
     End Function
+
+    Public Overloads Function ReturnExt(extension As String)
+        Dim ext As String = extension
+
+        Dim strData As String
+
+        If ext IsNot Nothing Then
+            If ext.Length > 0 Then
+                If ext.First <> "." Then
+                    strData = "." & ext
+                Else
+                    strData = ext
+                End If
+
+            Else
+                strData = "."
+            End If
+
+        Else
+            strData = "."
+        End If
+
+        Return strData
+    End Function
+
+
+    Public Overloads Function ReturnExt(file As FileInfo)
+        Dim extension As String = file.Extension
+
+        Dim _strData As String
+
+        If extension IsNot Nothing Then
+            If extension.Length > 0 Then
+                If extension.First <> "." Then
+                    _strData = "." & extension
+                Else
+                    _strData = extension
+                End If
+
+            Else
+                _strData = "."
+            End If
+
+        Else
+            _strData = "."
+        End If
+
+        Return _strData
+    End Function
+
+    Public Overloads Function ReturnExt(file As Object)
+        Dim extension As String = file.Extension
+
+        Dim _strData As String
+
+        If extension IsNot Nothing Then
+            If extension.Length > 0 Then
+                If extension.First <> "." Then
+                    _strData = "." & extension
+                Else
+                    _strData = extension
+                End If
+
+            Else
+                _strData = "."
+            End If
+
+        Else
+            _strData = "."
+        End If
+
+        Return _strData
+    End Function
+
+    Public Overloads Function ReturnFileNameAndOrExtension(file As FileInfo, _i As Integer)
+
+        Dim _value As String = "Null" '  file.Name
+
+        Select Case _i
+
+            Case 0
+                _value = file.Name
+
+            Case 1
+                _value = FileNameWithoutExtension(file)
+
+            Case 2
+
+                If file.Extension.Length > 0 Then
+                    _value = file.Extension.Substring(1)
+                Else
+                    _value = file.Extension
+                End If
+
+        End Select
+
+        Return _value
+
+    End Function
+
+    Public Overloads Function ReturnFileNameAndOrExtension(obj As Object, _i As Integer)
+
+        Dim _value As String = "Null" '  file.Name
+
+        Select Case _i
+
+            Case 0
+                _value = obj.Name
+
+            Case 1
+                _value = FileNameWithoutExtension(obj)
+
+            Case 2
+
+                If obj.Extension.Length > 0 Then
+                    _value = obj.Extension.Substring(1)
+                Else
+                    _value = obj.Extension
+                End If
+
+        End Select
+
+        Return _value
+
+    End Function
 End Class

@@ -139,7 +139,7 @@
 
     'End Function
 
-    Public Overloads Function TrasnformDate(_date As Date, _criterion As Class_DataRenameOption)  ' As DateFormatEnum)
+    Public Overloads Function TrasnformDate(_date As Date, _criterion As Class_DataRenamingCriterion)  ' As DateFormatEnum)
 
         ' Dim _id As Integer = 0 ' ComBPRight.SelectedItem.Tag.ID
 
@@ -251,7 +251,7 @@
         Return _strDate
     End Function
 
-    Public Overloads Function SubstituirEspaco(_strDate As String, _criterion As Class_DataRenameOption) As String
+    Public Overloads Function SubstituirEspaco(_strDate As String, _criterion As Class_DataRenamingCriterion) As String
         '  If CHKSubstituirEspaco.Checked = True Then
 
         Dim _caracterParaSubstituicaoDoEspaco As Char = _criterion.DadosDeTempo.CaracterParaSubstituicaoDoEspaco
@@ -266,7 +266,7 @@
 
     Public Overloads Function FormatDateText(_strDate As String, _opcoesDeFormatacaoDeTexto As Integer)
 
-        Dim _opcoesDeFormatacaoDeTextoParaData As Class_DataRenameOption.OpcoesDeFormatacaoDeTextoEnum
+        Dim _opcoesDeFormatacaoDeTextoParaData As Class_DataRenamingCriterion.OpcoesDeFormatacaoDeTextoEnum
 
 
         Select Case _opcoesDeFormatacaoDeTexto   '  ComBPFormatText.SelectedItem.Tag.ID
@@ -287,7 +287,7 @@
                 _strDate = _strDate.ToLower
 
             Case _opcoesDeFormatacaoDeTextoParaData.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
-                _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+                _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate, False)
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância
 
         End Select
@@ -296,7 +296,7 @@
 
     End Function
 
-    Public Overloads Function FormatDateText(_strDate As String, _criterion As Class_DataRenameOption)
+    Public Overloads Function FormatDateText(_strDate As String, _criterion As Class_DataRenamingCriterion)
 
         'Dim _criterion As Class_DataRenameOption.OpcoesDeFormatacaoDeTextoEnum
 
@@ -320,7 +320,7 @@
                 _strDate = _strDate.ToLower
 
             Case _criterion.OpcoesDeFormatacaoDeTextoEnum.primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas
-                _strDate = funcoesDeString.ConvertTheFirstWordToUppercase(_strDate, False)
+                _strDate = funcoesDeString.ConvertTheFirstLettersToUppercase(_strDate, False)
 
         End Select
 #Enable Warning BC42025 ' Acesso do membro compartilhado, membro constante, membro enumerado ou tipo aninhado por meio de uma instância

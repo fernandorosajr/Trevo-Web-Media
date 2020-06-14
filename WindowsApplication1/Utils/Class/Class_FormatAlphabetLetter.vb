@@ -152,6 +152,8 @@
 
         Dim a As Integer
 
+        Dim position As Integer
+
         Dim retonar As String = ""
         Dim listChar As List(Of Char)
         '  Dim listChar_Reverse() As Char
@@ -178,22 +180,34 @@
             Letra = listChar(z).ToString
             LASC = Asc(Letra) + index
 
-            If LASC > 90 Then
+            position = LASC - 65
 
-                a = LASC - 26
-
-                newChar = (Chr(a))
-
+            If position > 25 Then
                 sobeUm = True
+                newChar = TratarEDevolverCaracteresDoAlfabeto(position - 26)
                 NewCharString.Add(newChar)
 
-            Else
-
+            ElseIf position < 25 Then
                 If sobeUm = True Then
-                    LASC += 1
-                    sobeUm = False
+                    newChar = TratarEDevolverCaracteresDoAlfabeto(position + 1)
+
+                Else
+                    newChar = TratarEDevolverCaracteresDoAlfabeto(position)
+
                 End If
-                newChar = TratarEDevolverCaracteresDoAlfabeto(LASC - 65)
+
+                sobeUm = False
+                NewCharString.Add(newChar)
+
+            ElseIf position = 25 Then
+                If sobeUm = True Then
+                    newChar = TratarEDevolverCaracteresDoAlfabeto(position - 25)
+
+                Else
+                    newChar = TratarEDevolverCaracteresDoAlfabeto(position)
+                    sobeUm = True
+
+                End If
                 NewCharString.Add(newChar)
 
             End If
@@ -202,10 +216,7 @@
 
         Next
 
-        If sobeUm = True Then
-            newChar = (Chr(65))
-            NewCharString.Add(newChar)
-        End If
+
 
 
         y = NewCharString.Count - 1
@@ -220,57 +231,64 @@
         Next
 
 
-        'Letra = _dataStr.Chars(_dataStr.Length - 1) 'listChar(listChar.Count - 1)
 
-        'LASC = Asc(Letra)
+        '    If LASC > 90 Then
 
-        'If LASC + index <= 90 Then
-        '    NewLASC = LASC + index
-        '    newChar = Chr((NewLASC))
+        '        a = LASC - 26
 
-        'Else
-        '    x = ((LASC + index)) - 26
+        '        newChar = (Chr(a))
 
-        '    newChar = Chr(65) + TratarEDevolverCaracteresDoAlfabeto(x)
-        'End If
-
-        'For y = 0 To _dataStr.Length - 1
-        '    If y = _dataStr.Length - 1 Then
+        '        sobeUm = True
         '        NewCharString.Add(newChar)
 
         '    Else
-        '        NewCharString.Add(_dataStr.Chars(y))
+
+        '        If sobeUm = True Then
+        '            LASC += 1
+        '            sobeUm = False
+        '        End If
+        '        newChar = TratarEDevolverCaracteresDoAlfabeto(LASC - 65)
+        '        NewCharString.Add(newChar)
 
         '    End If
+
+        '    z = y - x
+
         'Next
 
-        'For Each str As String In NewCharString
+        'If sobeUm = True Then
+        '    newChar = (Chr(65))
+        '    NewCharString.Add(newChar)
+        'End If
 
-        '    retonar = retonar + str
+
+        'y = NewCharString.Count - 1
+        'z = NewCharString.Count - 1
+
+
+        'For x = 0 To NewCharString.Count - 1
+
+        '    retonar += NewCharString(z)
+        '    z = y - x
+
         'Next
 
 
+        ''Letra = _dataStr.Chars(_dataStr.Length - 1) 'listChar(listChar.Count - 1)
 
-        ''listChar = StringFunctions.ConverterParaListChar(_dataStr)
-
-        ''Letra = listChar(listChar.Count - 1)
-
-
+        ''LASC = Asc(Letra)
 
         ''If LASC + index <= 90 Then
         ''    NewLASC = LASC + index
-        ''    newChar = Chr(NewLASC)
+        ''    newChar = Chr((NewLASC))
 
         ''Else
-        ''    ' x = (lastCharASC + index) - 65
-        ''    x = (LASC + index)
+        ''    x = ((LASC + index)) - 26
 
-        ''    newChar = TratarEDevolverCaracteresDoAlfabeto(x)
-
+        ''    newChar = Chr(65) + TratarEDevolverCaracteresDoAlfabeto(x)
         ''End If
 
         ''For y = 0 To _dataStr.Length - 1
-
         ''    If y = _dataStr.Length - 1 Then
         ''        NewCharString.Add(newChar)
 
@@ -278,35 +296,71 @@
         ''        NewCharString.Add(_dataStr.Chars(y))
 
         ''    End If
-
         ''Next
 
-        ''If LASC + index <= 90 Then
+        ''For Each str As String In NewCharString
 
-        ''End If
+        ''    retonar = retonar + str
+        ''Next
+
+
+
         '''listChar = StringFunctions.ConverterParaListChar(_dataStr)
 
-        '''lastCharAss = Asc(listChar(listChar.Count - 1).ToString())
+        '''Letra = listChar(listChar.Count - 1)
 
-        '''_index = index + lastCharAss
 
-        '''If _index > 90 Then
-        '''    x = _index - 90
-        '''    str += ChrW(65).ToString()
 
-        '''    str += TratarEDevolverCaracteresDoAlfabeto(x)
+        '''If LASC + index <= 90 Then
+        '''    NewLASC = LASC + index
+        '''    newChar = Chr(NewLASC)
 
         '''Else
+        '''    ' x = (lastCharASC + index) - 65
+        '''    x = (LASC + index)
 
-        '''    If _index >= 65 Then
-        '''        str += ChrW(_index).ToString()
+        '''    newChar = TratarEDevolverCaracteresDoAlfabeto(x)
+
+        '''End If
+
+        '''For y = 0 To _dataStr.Length - 1
+
+        '''    If y = _dataStr.Length - 1 Then
+        '''        NewCharString.Add(newChar)
 
         '''    Else
-        '''        str += ChrW(65).ToString()
+        '''        NewCharString.Add(_dataStr.Chars(y))
 
         '''    End If
 
+        '''Next
+
+        '''If LASC + index <= 90 Then
+
         '''End If
+        ''''listChar = StringFunctions.ConverterParaListChar(_dataStr)
+
+        ''''lastCharAss = Asc(listChar(listChar.Count - 1).ToString())
+
+        ''''_index = index + lastCharAss
+
+        ''''If _index > 90 Then
+        ''''    x = _index - 90
+        ''''    str += ChrW(65).ToString()
+
+        ''''    str += TratarEDevolverCaracteresDoAlfabeto(x)
+
+        ''''Else
+
+        ''''    If _index >= 65 Then
+        ''''        str += ChrW(_index).ToString()
+
+        ''''    Else
+        ''''        str += ChrW(65).ToString()
+
+        ''''    End If
+
+        ''''End If
 
         Return retonar
 

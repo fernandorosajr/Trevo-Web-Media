@@ -114,28 +114,14 @@
 
         ElseIf index > 25 Then
 
-            qCharParaMenos = numberClass.ArredondarParaMenos(qChar)
+            qCharParaMenos = numberClass.ArredondarParaMenos(qChar) - 1
             qCharParaMais = qCharParaMenos + 1
-            ' TODO: Testar aqui como 26
-            If qCharParaMenos <= 26 Then
 
-                If qCharParaMenos <> 0 Then
-                    value += Chr((qCharParaMenos - 1) + 65)
+            If qCharParaMenos <= 25 Then
 
-                Else
-                    value += Chr(qCharParaMenos + 65)
-
-                End If
+                value += Chr(qCharParaMenos + 65)
 
             Else
-                Dim resto2 As Integer
-
-                resto2 = qCharParaMenos Mod 26
-
-                'If resto2 = 0 Then
-                '    value += TratarEDevolverCaracteresDoAlfabeto(CDbl(qCharParaMenos - 1))
-
-                'End If
 
                 value += TratarEDevolverCaracteresDoAlfabeto(CDbl(qCharParaMenos))
 
@@ -156,134 +142,153 @@
         Return str
 
 
-        'If index >= 1 And index < 25 Then
-        '    value = Chr(index + 65)
-
-        'ElseIf index > 25 Then
-        '    qChar = index / 25
-
-        '    'MsgBox(index Mod 25)
-        '    'MsgBox(qChar)
+    End Function
 
 
-        '    qCharInt = qChar
+    Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(_dataStr As String, index As Integer) As String
+        Dim x As Integer
+        Dim y As Integer
+        Dim z As Integer
 
-        '    ' Arredondar qChar para o menor valor
-        '    ' ---------------------------------------
-        '    qCharStr = qChar.ToString
+        Dim a As Integer
 
-        '    position = InStr(qCharStr, ",", CompareMethod.Binary) - 1
+        Dim retonar As String = ""
+        Dim listChar As List(Of Char)
+        '  Dim listChar_Reverse() As Char
 
-        '    If position < 0 Then position = 0
+        Dim LASC As Integer
+        Dim NewLASC As Integer
+        Dim newChar As String
+        Dim NewCharString As New List(Of String)
 
-        '    If position = 0 Then
-        '        qCharParaMenos = CInt(qCharStr)
-        '    Else
+        Dim Letra As String
 
-        '        qCharParaMenos = CInt(qCharStr.Substring(0, position))
-        '    End If
-        '    ' ---------------------------------------
-        '    ' MsgBox()
-
-        '    ' Arredondar qChar para o Maior valor
-        '    qCharParaMais = qCharParaMenos + 1
-
-        '    ' Definir numero de voltas
-
-        '    nDeVoltas = 1
+        Dim _index As Integer
 
 
-        '    For x = 0 To qCharParaMenos
-        '        If x = qCharParaMenos Then
-        '            If CDbl(qCharParaMais) > qChar Then
-        '                voltaChar.Add(qChar - CDbl(qCharParaMenos))
-        '            End If
+        listChar = StringFunctions.ConverterParaListChar(_dataStr)
 
-        '        Else
-        '            voltaChar.Add(qCharParaMenos)
+        Dim sobeUm As Boolean
 
-        '        End If
-        '    Next
+        y = listChar.Count - 1
+        z = listChar.Count - 1
 
-        '    For x = 0 To voltaChar.Count - 1
-        '        value = value + TratarEDevolverCaracteresDoAlfabeto(voltaChar(x))
-        '    Next
+        For x = 0 To listChar.Count - 1
 
-        'ElseIf index < 1 Then
-        '    Dim i As Integer
-        '    i = index * 25
-        '    value = TratarEDevolverCaracteresDoAlfabeto(i)
+            Letra = listChar(z).ToString
+            LASC = Asc(Letra) + index
 
+            If LASC > 90 Then
+
+                a = LASC - 26
+
+                newChar = (Chr(a))
+
+                sobeUm = True
+                NewCharString.Add(newChar)
+
+            Else
+
+                If sobeUm = True Then
+                    LASC += 1
+                    sobeUm = False
+                End If
+                newChar = TratarEDevolverCaracteresDoAlfabeto(LASC - 65)
+                NewCharString.Add(newChar)
+
+            End If
+
+            z = y - x
+
+        Next
+
+        If sobeUm = True Then
+            newChar = (Chr(65))
+            NewCharString.Add(newChar)
+        End If
+
+
+        y = NewCharString.Count - 1
+        z = NewCharString.Count - 1
+
+
+        For x = 0 To NewCharString.Count - 1
+
+            retonar += NewCharString(z)
+            z = y - x
+
+        Next
+
+
+        'Letra = _dataStr.Chars(_dataStr.Length - 1) 'listChar(listChar.Count - 1)
+
+        'LASC = Asc(Letra)
+
+        'If LASC + index <= 90 Then
+        '    NewLASC = LASC + index
+        '    newChar = Chr((NewLASC))
+
+        'Else
+        '    x = ((LASC + index)) - 26
+
+        '    newChar = Chr(65) + TratarEDevolverCaracteresDoAlfabeto(x)
         'End If
 
-        'str = value
+        'For y = 0 To _dataStr.Length - 1
+        '    If y = _dataStr.Length - 1 Then
+        '        NewCharString.Add(newChar)
 
-        'Return str
+        '    Else
+        '        NewCharString.Add(_dataStr.Chars(y))
+
+        '    End If
+        'Next
+
+        'For Each str As String In NewCharString
+
+        '    retonar = retonar + str
+        'Next
 
 
 
+        ''listChar = StringFunctions.ConverterParaListChar(_dataStr)
 
-        ''If index >= 0 And index < 25 Then
-        ''    value = Chr(index + 65)
+        ''Letra = listChar(listChar.Count - 1)
+
+
+
+        ''If LASC + index <= 90 Then
+        ''    NewLASC = LASC + index
+        ''    newChar = Chr(NewLASC)
 
         ''Else
+        ''    ' x = (lastCharASC + index) - 65
+        ''    x = (LASC + index)
 
-        ''    If index > 25 Then
-        ''        qChar = index / 25
+        ''    newChar = TratarEDevolverCaracteresDoAlfabeto(x)
 
-        ''        qCharInt = qChar
+        ''End If
 
-        ''        ' Arredondar qChar para o menor valor
-        ''        ' ---------------------------------------
-        ''        qCharStr = qChar.ToString
+        ''For y = 0 To _dataStr.Length - 1
 
-        ''        position = InStr(qCharStr, ",", CompareMethod.Binary) - 1
+        ''    If y = _dataStr.Length - 1 Then
+        ''        NewCharString.Add(newChar)
 
-        ''        If position < 0 Then position = 0
-
-        ''        If position = 0 Then
-        ''            qCharParaMenos = CInt(qCharStr)
-        ''        Else
-
-        ''            qCharParaMenos = CInt(qCharStr.Substring(0, position))
-        ''        End If
-        ''        ' ---------------------------------------
-
-
-        ''        ' Arredondar qChar para o Maior valor
-        ''        qCharParaMais = qCharParaMenos + 1
-
-
-        ''        For x = 0 To qCharParaMenos
-        ''            If x = qCharParaMenos Then
-        ''                If CDbl(qCharParaMais) > qChar Then
-        ''                    voltaChar.Add(qChar - CDbl(qCharParaMenos))
-        ''                End If
-
-        ''            Else
-        ''                voltaChar.Add(0)
-
-        ''            End If
-        ''        Next
+        ''    Else
+        ''        NewCharString.Add(_dataStr.Chars(y))
 
         ''    End If
 
-        ''    For x = 0 To voltaChar.Count - 1
-        ''        value = value + TratarEDevolverCaracteresDoAlfabeto(voltaChar(x))
-        ''    Next
+        ''Next
+
+        ''If LASC + index <= 90 Then
+
         ''End If
+        '''listChar = StringFunctions.ConverterParaListChar(_dataStr)
 
-        ''If index < 1 Then
-        ''    Dim i As Integer
-        ''    i = index * 25
-        ''    value = TratarEDevolverCaracteresDoAlfabeto(i)
-        ''End If
+        '''lastCharAss = Asc(listChar(listChar.Count - 1).ToString())
 
-        ''str = value
-
-        ''Return str
-
-        '''Dim x As Integer
+        '''_index = index + lastCharAss
 
         '''If _index > 90 Then
         '''    x = _index - 90
@@ -293,66 +298,19 @@
 
         '''Else
 
-        '''    x = _index + 65
-
-        '''    If x > 90 Then
-        '''        str += TratarEDevolverCaracteresDoAlfabeto(x)
-
+        '''    If _index >= 65 Then
+        '''        str += ChrW(_index).ToString()
 
         '''    Else
-        '''        str += ChrW(x).ToString()
+        '''        str += ChrW(65).ToString()
 
         '''    End If
 
-        '''    'If _index >= 65 Then
-        '''    '    str += ChrW(_index).ToString()
-
-        '''    'Else
-        '''    '    str += ChrW(65).ToString()
-
-        '''    'End If
-
         '''End If
 
+        Return retonar
 
     End Function
-
-
-    'Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(_dataStr As String, index As Integer) As String
-    '    Dim x As Integer
-    '    Dim str As String = ""
-    '    Dim listChar As List(Of Char)
-    '    Dim lastCharAss As Integer
-
-    '    Dim _index As Integer
-
-    '    listChar = StringFunctions.ConverterParaListChar(_dataStr)
-
-    '    lastCharAss = Asc(listChar(listChar.Count - 1).ToString())
-
-    '    _index = index + lastCharAss
-
-    '    If _index > 90 Then
-    '        x = _index - 90
-    '        str += ChrW(90).ToString()
-
-    '        str += TratarEDevolverCaracteresDoAlfabeto(x)
-
-    '    Else
-
-    '        If _index >= 65 Then
-    '            str += ChrW(_index).ToString()
-
-    '        Else
-    '            str += ChrW(65).ToString()
-
-    '        End If
-
-    '    End If
-
-    '    Return str
-
-    'End Function
 
 
 
@@ -377,7 +335,7 @@
                 _dataStr = SubstituirNumeroPorLetra(_dataStr)
             End If
 
-            _dataStr = TratarEDevolverCaracteresDoAlfabeto(_dataStr)
+            _dataStr = TratarEDevolverCaracteresDoAlfabeto(_dataStr, index)
         End If
 
         Select Case _criterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras     'ComBPSlave.SelectedItem.Tag.ID

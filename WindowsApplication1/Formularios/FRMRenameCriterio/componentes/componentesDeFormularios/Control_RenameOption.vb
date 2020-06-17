@@ -627,8 +627,8 @@ Public Class Control_RenameOption
 
         Dim _q As Integer = ComBPMaster.OptionsList.Count
         Dim _id As Integer = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
-
-        Select Case _id
+        MsgBox("ComBPSlave_Clicked")
+        Select Case _q
             Case SelectADataModeEnum.NomeDoArquivoAtual
 
                 NomeOuExtensaoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - _q
@@ -642,6 +642,13 @@ Public Class Control_RenameOption
             Case SelectADataModeEnum.NomeDaPasta
                 _opcoesDeFormatacaoDeTextoDaPasta = ComBPSlave.SelectedItem.Tag.ID - _q
                 DataRenamingCriterion.RenameTypeData.DadosDeNomeDaPasta.OpcoesDeFormatacaoDeTextoDaPasta = _opcoesDeFormatacaoDeTextoDaPasta
+
+            Case SelectADataModeEnum.LetraDaSequencia
+
+                MsgBox("Slave")
+                _opcoesDeFormatacaoDeSequenciaDeLetras = ComBPSlave.SelectedItem.Tag.ID - _q
+                DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
+
 
         End Select
 
@@ -677,7 +684,8 @@ Public Class Control_RenameOption
 
             Case SelectADataModeEnum.LetraDaSequencia
 
-                _opcoesDeFormatacaoDeSequenciaDeLetras = ComBPRight.SelectedItem.Tag.ID
+                MsgBox("ssss")
+                _opcoesDeFormatacaoDeSequenciaDeLetras = (ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count) + 1  'ComBPRight.SelectedItem.Tag.ID
                 DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
 
             Case SelectADataModeEnum.DataEHora
@@ -1104,6 +1112,10 @@ Public Class Control_RenameOption
 
         Next
 
+        For Each item As ToolStripMenuItem In ComBPSlave.CMS_Menu.Items
+            AddHandler item.Click, New System.EventHandler(AddressOf ComBPSlave_Clicked)
+
+        Next
 
 
         AddHandler TextReplace.TXTPFind.TXTBox.LostFocus, New System.EventHandler(AddressOf TXTPFind_LostFocus)
@@ -1594,6 +1606,12 @@ Public Class Control_RenameOption
                 Case SelectADataModeEnum.LetraDaSequencia
                     TXTPValue.TXT = FormatarLetraDoAlfabeto(TXTPValue.TXT)
                     DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = TXTPValue.TXT
+
+                    'MsgBox("Slave")
+                    _opcoesDeFormatacaoDeSequenciaDeLetras = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
+                    DataRenamingCriterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras = _opcoesDeFormatacaoDeSequenciaDeLetras
+
+
 
             End Select
             TXTPValue.ErrorDisplay = TXTPValue.Validar(TXTPValue.TXT)

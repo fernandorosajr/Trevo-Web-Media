@@ -511,6 +511,9 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PanelEnvolvePanelLeft = New System.Windows.Forms.Panel()
+        Me.RadioButton23 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton24 = New System.Windows.Forms.RadioButton()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -710,6 +713,7 @@ Partial Class MainForm
         Me.Panel213.SuspendLayout()
         Me.Panel214.SuspendLayout()
         Me.CTMenuVisualizacao.SuspendLayout()
+        Me.PanelEnvolvePanelLeft.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelTitleBar
@@ -1190,14 +1194,9 @@ Partial Class MainForm
         '
         'PanelTeste
         '
-        Me.PanelTeste.Controls.Add(Me.Panel_MediasExplorer)
-        Me.PanelTeste.Controls.Add(Me.Panel_RecebeExplorer)
-        Me.PanelTeste.Controls.Add(Me.PanelToolBar)
-        Me.PanelTeste.Controls.Add(Me.SPRedimVisualizarMidia)
-        Me.PanelTeste.Controls.Add(Me.PanelEnvolveMidiaAberta)
-        Me.PanelTeste.Controls.Add(Me.Splitter7)
-        Me.PanelTeste.Controls.Add(Me.Panel_Recebe_Filtro)
+        Me.PanelTeste.Controls.Add(Me.PanelEnvolvePanelLeft)
         Me.PanelTeste.Controls.Add(Me.PanelToolBarBotton)
+        Me.PanelTeste.Controls.Add(Me.PanelToolBar)
         resources.ApplyResources(Me.PanelTeste, "PanelTeste")
         Me.PanelTeste.Name = "PanelTeste"
         '
@@ -1290,6 +1289,8 @@ Partial Class MainForm
         'Panel41
         '
         Me.Panel41.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.Panel41.Controls.Add(Me.RadioButton24)
+        Me.Panel41.Controls.Add(Me.RadioButton23)
         Me.Panel41.Controls.Add(Me.RB_Explorerr)
         Me.Panel41.Controls.Add(Me.RB_Midias)
         resources.ApplyResources(Me.Panel41, "Panel41")
@@ -1299,6 +1300,7 @@ Partial Class MainForm
         '
         resources.ApplyResources(Me.RB_Explorerr, "RB_Explorerr")
         Me.RB_Explorerr.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_Explorerr.Cursor = System.Windows.Forms.Cursors.Hand
         Me.RB_Explorerr.FlatAppearance.BorderSize = 0
         Me.RB_Explorerr.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RB_Explorerr.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
@@ -1311,6 +1313,7 @@ Partial Class MainForm
         resources.ApplyResources(Me.RB_Midias, "RB_Midias")
         Me.RB_Midias.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.RB_Midias.Checked = True
+        Me.RB_Midias.Cursor = System.Windows.Forms.Cursors.Hand
         Me.RB_Midias.FlatAppearance.BorderSize = 0
         Me.RB_Midias.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.RB_Midias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
@@ -5021,6 +5024,41 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
         '
+        'PanelEnvolvePanelLeft
+        '
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.Panel_MediasExplorer)
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.Panel_RecebeExplorer)
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.SPRedimVisualizarMidia)
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.PanelEnvolveMidiaAberta)
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.Splitter7)
+        Me.PanelEnvolvePanelLeft.Controls.Add(Me.Panel_Recebe_Filtro)
+        resources.ApplyResources(Me.PanelEnvolvePanelLeft, "PanelEnvolvePanelLeft")
+        Me.PanelEnvolvePanelLeft.Name = "PanelEnvolvePanelLeft"
+        '
+        'RadioButton23
+        '
+        resources.ApplyResources(Me.RadioButton23, "RadioButton23")
+        Me.RadioButton23.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RadioButton23.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RadioButton23.FlatAppearance.BorderSize = 0
+        Me.RadioButton23.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RadioButton23.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton23.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton23.Name = "RadioButton23"
+        Me.RadioButton23.UseVisualStyleBackColor = False
+        '
+        'RadioButton24
+        '
+        resources.ApplyResources(Me.RadioButton24, "RadioButton24")
+        Me.RadioButton24.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RadioButton24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RadioButton24.FlatAppearance.BorderSize = 0
+        Me.RadioButton24.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RadioButton24.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RadioButton24.ForeColor = System.Drawing.Color.Silver
+        Me.RadioButton24.Name = "RadioButton24"
+        Me.RadioButton24.UseVisualStyleBackColor = False
+        '
         'MainForm
         '
         resources.ApplyResources(Me, "$this")
@@ -5256,6 +5294,7 @@ Partial Class MainForm
         Me.Panel214.ResumeLayout(False)
         Me.Panel214.PerformLayout()
         Me.CTMenuVisualizacao.ResumeLayout(False)
+        Me.PanelEnvolvePanelLeft.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -5747,4 +5786,7 @@ Partial Class MainForm
     Friend WithEvents PanelRecebeBiblio As Panel
     Friend WithEvents PanelEnvolveMidiaAberta As Panel
     Friend WithEvents RadioButton22 As RadioButton
+    Friend WithEvents PanelEnvolvePanelLeft As Panel
+    Friend WithEvents RadioButton24 As RadioButton
+    Friend WithEvents RadioButton23 As RadioButton
 End Class

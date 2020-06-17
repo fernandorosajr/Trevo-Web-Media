@@ -19,8 +19,17 @@ Public Class FRMDialogVisualizarRenome
 
     Private Sub FRMDialogVisualizarRenome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        Timer1.Enabled = True
+
+    End Sub
+
+    Sub Load_List()
+
         Dim x As Integer
         Dim numeroDeItens As Integer = Renamed_SelectedFoldersAndFiles.Count
+        Dim textItem As String
+
+        Timer1.Enabled = False
 
         FRM_Load.ProgressBar1.Value = 0
         FRM_Load.ProgressBar1.Minimum = 0
@@ -31,14 +40,20 @@ Public Class FRMDialogVisualizarRenome
 
         LBRenomeados.Items.Clear()
 
+        'TVWRenomeados.Nodes.Clear()
+
+
         For Each Renamed_selectedItem In Renamed_SelectedFoldersAndFiles
             FRM_Load.ProgressBar1.Value = x
 
             If SelectedFoldersAndFiles(x).FullName <> Renamed_selectedItem.FullName Then
 
-                LBRenomeados.Items.Add("[" & x & "]   " & SelectedFoldersAndFiles(x).FullName & "        =>      " & Renamed_selectedItem.FullName)
+                textItem = "[" & x & "]   " & SelectedFoldersAndFiles(x).FullName & "        =>      " & Renamed_selectedItem.FullName
+                LBRenomeados.Items.Add(textItem)
                 LBRenomeados.Items.Add("")
 
+                'TVWRenomeados.Nodes.Add(textItem)
+                'TVWRenomeados.Nodes.Add("")
             End If
 
             ' strDataRenameList = strDataRenameList + str
@@ -47,14 +62,54 @@ Public Class FRMDialogVisualizarRenome
 
 
         If LBRenomeados.Items.Count > 0 Then
-            LBLExplicacao.Text = "Veja abaixo a previsão de renome de " & numeroDeItens & " item (s)."
+            LBLExplicacao.Text = "Veja abaixo a previsão de renome de " & numeroDeItens & " item(ns)."
         Else
             LBLExplicacao.Text = "Nenhuma previsão de renome."
         End If
 
         FRM_Load.Close()
 
+
     End Sub
+
+    Private Sub LBRenomeados_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LBRenomeados.SelectedIndexChanged
+
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Load_List()
+
+    End Sub
+
+    Private Sub LBRenomeados_Click(sender As Object, e As EventArgs) Handles LBRenomeados.Click
+
+    End Sub
+
+    Private Sub LBRenomeados_DoubleClick(sender As Object, e As EventArgs) Handles LBRenomeados.DoubleClick
+        Dim info As String
+
+        Dim indice As Long
+
+        If LBRenomeados.SelectedIndex = 0 Then
+            indice = 0
+        Else
+            indice = LBRenomeados.SelectedIndex / 2
+        End If
+
+        If LBRenomeados.SelectedIndex Mod 2 = 0 Then
+
+            info = "Nome Original: " & Chr(13) & SelectedFoldersAndFiles(indice).FullName & Chr(13) & Chr(13) &
+                         "Renomear para : " & Chr(13) & Renamed_SelectedFoldersAndFiles(indice).FullName
+
+            MsgBox(info, MsgBoxStyle.OkOnly, "Item selecionado")
+
+        End If
+
+
+
+    End Sub
+
 
     'Postada em 9/9/2003 por The Matrix            
 
@@ -80,6 +135,9 @@ Public Class FRMDialogVisualizarRenome
     Public Const COLOR_BTNTEXT = 18 'Button text
     Public Const COLOR_INACTIVECAPTIONTEXT = 19 'Text of inactive window
     Public Const COLOR_BTNHIGHLIGHT = 20 '3D highlight of button
+
+
+
     'Form
 
 

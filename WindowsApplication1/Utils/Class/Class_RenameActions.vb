@@ -355,13 +355,13 @@ Public Class Class_RenameActions
 
                 Case _selectADataModeEnum.NomeDaPasta
 
-                    Dim parentPath As DirectoryInfo = New DirectoryInfo("")
+                    Dim parentPath As DirectoryInfo ' = New DirectoryInfo("")
 
                     If TypeOf obj Is DirectoryInfo Then
                         aFolder = obj
                         parentPath = New DirectoryInfo(aFolder.Parent.FullName)
 
-                    ElseIf TypeOf obj Is DirectoryInfo Then
+                    ElseIf TypeOf obj Is FileInfo Then
                         aFile = obj
                         parentPath = New DirectoryInfo(aFile.DirectoryName)
 

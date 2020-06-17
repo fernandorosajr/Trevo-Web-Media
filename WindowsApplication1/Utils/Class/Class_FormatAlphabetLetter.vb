@@ -93,16 +93,17 @@
 
     End Function
 
-    Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(index As Double) As String
+    Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(index As Long) As String
         Dim str As String
         Dim value As String = ""
 
         Dim qChar As Double
 
-        Dim qCharParaMenos As Integer
-        Dim qCharParaMais As Integer
+        Dim qCharParaMenos As Long
+        Dim qCharParaMais As Long
 
         ' Dim voltaChar As New List(Of Double)
+
 
         Dim resto As Integer
 
@@ -123,7 +124,7 @@
 
             Else
 
-                value += TratarEDevolverCaracteresDoAlfabeto(CDbl(qCharParaMenos))
+                value += TratarEDevolverCaracteresDoAlfabeto(CLng(qCharParaMenos))
 
                 value += Chr(resto + 65)
 
@@ -144,223 +145,85 @@
 
     End Function
 
-
-    Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(_dataStr As String, index As Integer) As String
+    Public Overloads Function TratarEDevolverCaracteresDoAlfabeto(_dataStr As String, index As Long) As String
         Dim x As Integer
         Dim y As Integer
         Dim z As Integer
 
-        Dim a As Integer
-
-        Dim position As Integer
+        Dim position As Long
 
         Dim retonar As String = ""
-        Dim listChar As List(Of Char)
-        '  Dim listChar_Reverse() As Char
+
+        Dim charList As List(Of Char)
 
         Dim LASC As Integer
-        Dim NewLASC As Integer
+
         Dim newChar As String
+
         Dim NewCharString As New List(Of String)
 
         Dim Letra As String
 
-        Dim _index As Integer
+        Dim qChar As Double
 
 
-        listChar = StringFunctions.ConverterParaListChar(_dataStr)
+        Dim numberChar As Byte
 
-        Dim sobeUm As Boolean
+        Dim sequenciaDeCasas As New List(Of Long)
 
-        y = listChar.Count - 1
-        z = listChar.Count - 1
+        _dataStr = _dataStr.ToUpper
+        charList = StringFunctions.ConverterParaListChar(_dataStr)
 
-        For x = 0 To listChar.Count - 1
+        qChar = charList.Count
+        y = charList.Count - 1
+        z = charList.Count - 1
 
-            Letra = listChar(z).ToString
+        If qChar = 1 Then
+
+            Letra = charList(z).ToString
             LASC = Asc(Letra) + index
+            position = (LASC - 65)
 
-            position = LASC - 65
+            If position >= 0 Then
 
-            If position > 25 Then
-                sobeUm = True
-                newChar = TratarEDevolverCaracteresDoAlfabeto(position - 26)
-                NewCharString.Add(newChar)
+                newChar = TratarEDevolverCaracteresDoAlfabeto(position)
+                retonar = newChar
 
-            ElseIf position < 25 Then
-                If sobeUm = True Then
-                    newChar = TratarEDevolverCaracteresDoAlfabeto(position + 1)
-
-                Else
-                    newChar = TratarEDevolverCaracteresDoAlfabeto(position)
-
-                End If
-
-                sobeUm = False
-                NewCharString.Add(newChar)
-
-            ElseIf position = 25 Then
-                If sobeUm = True Then
-                    newChar = TratarEDevolverCaracteresDoAlfabeto(position - 25)
-
-                Else
-                    newChar = TratarEDevolverCaracteresDoAlfabeto(position)
-                    sobeUm = True
-
-                End If
-                NewCharString.Add(newChar)
-
+                Return retonar
             End If
 
-            z = y - x
+        Else
 
-        Next
+            sequenciaDeCasas.Clear()
 
+            For x = 0 To qChar - 1
+                Letra = charList(z).ToString
+                LASC = Asc(Letra)
+                numberChar = LASC - 64
 
+                If x = 0 Then
+                    sequenciaDeCasas.Add(numberChar)
 
+                Else
+                    sequenciaDeCasas.Add(numberChar * (26 ^ x))
 
-        y = NewCharString.Count - 1
-        z = NewCharString.Count - 1
+                End If
 
+                z = y - (x + 1)
+            Next
 
-        For x = 0 To NewCharString.Count - 1
+            For x = 0 To sequenciaDeCasas.Count - 1
+                position += sequenciaDeCasas(x)
+            Next
 
-            retonar += NewCharString(z)
-            z = y - x
+            position -= 1
 
-        Next
+            newChar = TratarEDevolverCaracteresDoAlfabeto(position + index)
 
+            retonar = newChar
 
+        End If
 
-        '    If LASC > 90 Then
-
-        '        a = LASC - 26
-
-        '        newChar = (Chr(a))
-
-        '        sobeUm = True
-        '        NewCharString.Add(newChar)
-
-        '    Else
-
-        '        If sobeUm = True Then
-        '            LASC += 1
-        '            sobeUm = False
-        '        End If
-        '        newChar = TratarEDevolverCaracteresDoAlfabeto(LASC - 65)
-        '        NewCharString.Add(newChar)
-
-        '    End If
-
-        '    z = y - x
-
-        'Next
-
-        'If sobeUm = True Then
-        '    newChar = (Chr(65))
-        '    NewCharString.Add(newChar)
-        'End If
-
-
-        'y = NewCharString.Count - 1
-        'z = NewCharString.Count - 1
-
-
-        'For x = 0 To NewCharString.Count - 1
-
-        '    retonar += NewCharString(z)
-        '    z = y - x
-
-        'Next
-
-
-        ''Letra = _dataStr.Chars(_dataStr.Length - 1) 'listChar(listChar.Count - 1)
-
-        ''LASC = Asc(Letra)
-
-        ''If LASC + index <= 90 Then
-        ''    NewLASC = LASC + index
-        ''    newChar = Chr((NewLASC))
-
-        ''Else
-        ''    x = ((LASC + index)) - 26
-
-        ''    newChar = Chr(65) + TratarEDevolverCaracteresDoAlfabeto(x)
-        ''End If
-
-        ''For y = 0 To _dataStr.Length - 1
-        ''    If y = _dataStr.Length - 1 Then
-        ''        NewCharString.Add(newChar)
-
-        ''    Else
-        ''        NewCharString.Add(_dataStr.Chars(y))
-
-        ''    End If
-        ''Next
-
-        ''For Each str As String In NewCharString
-
-        ''    retonar = retonar + str
-        ''Next
-
-
-
-        '''listChar = StringFunctions.ConverterParaListChar(_dataStr)
-
-        '''Letra = listChar(listChar.Count - 1)
-
-
-
-        '''If LASC + index <= 90 Then
-        '''    NewLASC = LASC + index
-        '''    newChar = Chr(NewLASC)
-
-        '''Else
-        '''    ' x = (lastCharASC + index) - 65
-        '''    x = (LASC + index)
-
-        '''    newChar = TratarEDevolverCaracteresDoAlfabeto(x)
-
-        '''End If
-
-        '''For y = 0 To _dataStr.Length - 1
-
-        '''    If y = _dataStr.Length - 1 Then
-        '''        NewCharString.Add(newChar)
-
-        '''    Else
-        '''        NewCharString.Add(_dataStr.Chars(y))
-
-        '''    End If
-
-        '''Next
-
-        '''If LASC + index <= 90 Then
-
-        '''End If
-        ''''listChar = StringFunctions.ConverterParaListChar(_dataStr)
-
-        ''''lastCharAss = Asc(listChar(listChar.Count - 1).ToString())
-
-        ''''_index = index + lastCharAss
-
-        ''''If _index > 90 Then
-        ''''    x = _index - 90
-        ''''    str += ChrW(65).ToString()
-
-        ''''    str += TratarEDevolverCaracteresDoAlfabeto(x)
-
-        ''''Else
-
-        ''''    If _index >= 65 Then
-        ''''        str += ChrW(_index).ToString()
-
-        ''''    Else
-        ''''        str += ChrW(65).ToString()
-
-        ''''    End If
-
-        ''''End If
 
         Return retonar
 
@@ -394,10 +257,10 @@
 
         Select Case _criterion.RenameTypeData.DadosDeSequenciaDeLetras.OpcoesDeFormatacaoDeSequenciaDeLetras     'ComBPSlave.SelectedItem.Tag.ID
 
-            Case 9
+            Case 0
                 _dataStr = _dataStr.ToUpper
 
-            Case 10
+            Case 1
                 _dataStr = _dataStr.ToLower
 
         End Select

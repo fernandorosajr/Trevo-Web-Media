@@ -69,7 +69,6 @@ Public Class FRMDialogVisualizarRenome
 
         FRM_Load.Close()
 
-
     End Sub
 
     Private Sub LBRenomeados_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LBRenomeados.SelectedIndexChanged

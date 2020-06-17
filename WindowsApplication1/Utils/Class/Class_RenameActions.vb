@@ -4,15 +4,21 @@ Public Class Class_RenameActions
     '  Dim c As New Class_DataRenameOption
     ReadOnly _selectADataModeEnum As New Class_DataRenamingCriterion.SelectADataModeEnum
     ReadOnly _opcoesDeFormatacaoDeTexto As New Class_DataRenamingCriterion.OpcoesDeFormatacaoDeTextoEnum
-    ' Importação de classes 
-    '-------------------------------------------------
+
+    'Importação de Classes
+    '--------------------------------------------------
+    'ReadOnly funcoesDeString As New StringFunctionsClass
     Dim dateFunctions As New Class_Date
     Dim FormatAlphabetLetter As New Class_FormatAlphabetLetter
     Dim UsesFile As New UsesFilesClass
     '-------------------------------------------------
 
     Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion)) As List(Of Object)
-        Dim index As Integer = 0 '18251
+        Dim index As Integer = 0 '402882 '92486 '17601 '17575 '18251
+
+        ' caso aquele valoer seja 25 usar 
+        'index  = 17575
+
         Dim Renamed_SelectedFoldersAndFiles As New List(Of Object)
 
         '' TODO:  Listar todas as pastas em ListFolder da lista SelectedFoldersAndFiles
@@ -204,7 +210,7 @@ Public Class Class_RenameActions
 
                     Dim _value As String = ""
 
-                    _value = UsesFile.ReturnFileNameAndOrExtension(file, _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto)
+                    _value = UsesFile.ReturnFileNameOrFolderAndOrExtension(file, _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto)
                     _strData = _value
 
                 Case _selectADataModeEnum.NovaExtensao
@@ -419,7 +425,16 @@ Public Class Class_RenameActions
 
                     Dim _value As String = ""
 
-                    _value = UsesFile.ReturnFileNameAndOrExtension(obj, _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto)
+
+                    Dim _nomeOuExtensaoDoArquivoAtual As Integer = _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual.NomeOuExtensaoDoArquivoAtual
+                    Dim _opcoesDeFormatacaoDeTexto As Integer = _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto
+                    Dim dadosDeNomeDeArquivoAtual As Class_DataRenamingCriterion.DadosDeNomeDeArquivoStructure
+                    dadosDeNomeDeArquivoAtual = _criterion.RenameTypeData.DadosDeNomeDeArquivoAtual
+
+                    _value = UsesFile.ReturnFileNameOrFolderAndOrExtension(obj, _nomeOuExtensaoDoArquivoAtual)
+
+                    _value = OpcoesDeFormatacaoDeTextoParaComboPerson(_opcoesDeFormatacaoDeTexto, _value, dadosDeNomeDeArquivoAtual)
+
                     _strData = _value
 
                 Case _selectADataModeEnum.NovaExtensao
@@ -507,4 +522,57 @@ Public Class Class_RenameActions
         Return newObj
 
     End Function
+
+
+    Function OpcoesDeFormatacaoDeTextoParaComboPerson(_opcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum, _value As String, dadosDeNomeDeArquivo As Class_DataRenamingCriterion.DadosDeNomeDeArquivoStructure)
+
+        '  Dim criterio As Class_DataRenamingCriterion.DadosDeNomeDeArquivoStructure
+        Dim _dataStr As String = _value
+
+        Dim removeSpace As Boolean = dadosDeNomeDeArquivo.RemoverEspacoDeNomeDeArquivo
+        Dim firstLetterUpper As Boolean = dadosDeNomeDeArquivo.PrimeiraLetraMinusculaDeNomeDeArquivo
+
+        Select Case _opcoesDeFormatacaoDeTexto
+
+            Case OpcoesDeFormatacaoDeTextoEnum.ComoOOriginal
+                _dataStr = _value.ToString()
+
+            Case OpcoesDeFormatacaoDeTextoEnum.TODASMAIUSCULAS
+                _dataStr = _value.ToString.ToUpper()
+
+            Case OpcoesDeFormatacaoDeTextoEnum.todasMinusculas
+                _dataStr = _value.ToString.ToLower()
+
+            Case OpcoesDeFormatacaoDeTextoEnum.PrimeirasLetrasMaiusculas
+
+                Dim new_value As String = FormatAlphabetLetter.StringFunctions.ConvertTheFirstLettersToUppercase(_value, Not (firstLetterUpper))
+
+                If removeSpace = True Then
+                    new_value = FormatAlphabetLetter.StringFunctions.ReplacePhrase(new_value, " ", "")
+                End If
+                _dataStr = new_value
+
+            Case OpcoesDeFormatacaoDeTextoEnum.pRIMEIRASlETRASmINUSCULAS
+
+                Dim new_value As String = FormatAlphabetLetter.StringFunctions.ConvertTheFirstLettersToLowercase(_value)
+
+                _dataStr = new_value
+
+        End Select
+
+        Return _dataStr
+
+    End Function
+
+    Public OpcoesDeFormatacaoDeTexto As OpcoesDeFormatacaoDeTextoEnum
+    Public Enum OpcoesDeFormatacaoDeTextoEnum
+
+        ComoOOriginal = 0
+        TODASMAIUSCULAS = 1
+        todasMinusculas = 2
+        PrimeirasLetrasMaiusculas = 3
+        pRIMEIRASlETRASmINUSCULAS = 4
+        primeiraLetraMinúnsculaDemaisPrimeriasMaiúsculas = 5
+
+    End Enum
 End Class

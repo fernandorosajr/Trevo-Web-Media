@@ -625,13 +625,22 @@ Public Class Control_RenameOption
 
     Sub ComBPSlave_Clicked()
 
+        Dim _selectedMaster As Integer = ComBPMaster.SelectedItem.Tag.ID
+
+        ' TODO: Estas variveis abaixo deveriam ser do tipo BYTE ...
+        '... pois assim ocupariam menos espaço na memoria.
+
         Dim _q As Integer = ComBPMaster.OptionsList.Count
         Dim _id As Integer = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
-        MsgBox("ComBPSlave_Clicked")
-        Select Case _q
+
+        Select Case _selectedMaster
             Case SelectADataModeEnum.NomeDoArquivoAtual
 
                 NomeOuExtensaoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - _q
+
+                ' TODO: Estas DataRenamingCriterion deveriam está todas nas propriedades ...
+                '... pois assim seria mais facil de encontrar.
+
                 DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.NomeOuExtensaoDoArquivoAtual = _nomeOuExtensaoDoArquivoAtual
 
             Case SelectADataModeEnum.DataEHora
@@ -662,7 +671,7 @@ Public Class Control_RenameOption
         Select Case _id
             Case SelectADataModeEnum.NomeDoArquivoAtual
 
-                _opcoesDeFormatacaoDeTextoDoArquivoAtual = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
+                _opcoesDeFormatacaoDeTextoDoArquivoAtual = ComBPRight.SelectedItem.Tag.ID   ' ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
 
                 DataRenamingCriterion.RenameTypeData.DadosDeNomeDeArquivoAtual.OpcoesDeFormatacaoDeTexto = _opcoesDeFormatacaoDeTextoDoArquivoAtual
 
@@ -1281,7 +1290,7 @@ Public Class Control_RenameOption
 
                     Dim _i As Integer = ComBPSlave.SelectedItem.Tag.ID - ComBPMaster.OptionsList.Count
 
-                    _value = usesFile.ReturnFileNameAndOrExtension(_fileExemple, _i)
+                    _value = usesFile.ReturnFileNameOrFolderAndOrExtension(_fileExemple, _i)
                     _dataStr = OpcoesDeFormatacaoDeTextoParaComboPerson(ComBPRight.SelectedItem.Tag.ID, _value)
 
                 Case SelectADataModeEnum.SequenciaNumerica

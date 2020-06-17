@@ -26,7 +26,7 @@ Public Class UsesFilesClass
             For x As Integer = 0 To fileArrayList.Count
                 Dim _fileNameWithoutExtension As String
 
-                _fileNameWithoutExtension = FileNameWithoutExtension(DestinationFileName)
+                _fileNameWithoutExtension = FileOrFolderNameWithoutExtension(DestinationFileName)
 
                 pesquisa = _fileNameWithoutExtension & " (" & x + 2 & ")"
 
@@ -50,10 +50,15 @@ Public Class UsesFilesClass
         ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/strings/how-to-search-within-a-string
     End Function
 
-    Function FileNameWithoutExtension(fileInfo As FileInfo) As String
+    Function FileOrFolderNameWithoutExtension(fileInfo As Object) As String
+
+        'Dim folder As DirectoryInfo
+
+        'folder.Extension.Count
+        'fileInfo.Extension.Count
 
         Dim _fileNameWithoutExtension As String
-        _fileNameWithoutExtension = fileInfo.Name.Substring(0, fileInfo.Name.Count - (fileInfo.Extension.Count))
+        _fileNameWithoutExtension = fileInfo.Name.Substring(0, fileInfo.Name.ToString.Length - (fileInfo.Extension.ToString.Length))
 
         Return _fileNameWithoutExtension
     End Function
@@ -131,7 +136,7 @@ Public Class UsesFilesClass
         Return _strData
     End Function
 
-    Public Overloads Function ReturnFileNameAndOrExtension(file As FileInfo, _i As Integer)
+    Public Overloads Function ReturnFileNameOrFolderAndOrExtension(file As FileInfo, _i As Integer)
 
         Dim _value As String = "Null" '  file.Name
 
@@ -141,7 +146,7 @@ Public Class UsesFilesClass
                 _value = file.Name
 
             Case 1
-                _value = FileNameWithoutExtension(file)
+                _value = FileOrFolderNameWithoutExtension(file)
 
             Case 2
 
@@ -157,7 +162,7 @@ Public Class UsesFilesClass
 
     End Function
 
-    Public Overloads Function ReturnFileNameAndOrExtension(obj As Object, _i As Integer)
+    Public Overloads Function ReturnFileNameOrFolderAndOrExtension(obj As Object, _i As Integer)
 
         Dim _value As String = "Null" '  file.Name
 
@@ -167,7 +172,7 @@ Public Class UsesFilesClass
                 _value = obj.Name
 
             Case 1
-                _value = FileNameWithoutExtension(obj)
+                _value = FileOrFolderNameWithoutExtension(obj)
 
             Case 2
 

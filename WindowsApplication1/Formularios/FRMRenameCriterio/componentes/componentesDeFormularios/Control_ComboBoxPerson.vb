@@ -623,6 +623,8 @@ Public Class Control_ComboBoxPerson
     End Sub
 
     Public Sub PerformAutomaticSelection(index As Integer)
+        'TODO: Pode manter integer para caso o usuari queira criar mais de 255 itens.
+
         Dim y As Integer = CMS_Menu.Items.Count - 1
 
         If _automaticSelect = True Then

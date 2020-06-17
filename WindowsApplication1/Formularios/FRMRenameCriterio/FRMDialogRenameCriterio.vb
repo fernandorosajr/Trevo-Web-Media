@@ -7,7 +7,7 @@ Imports System.IO
 Imports System.Windows.Forms
 'TODO: Remover controle em tenpos de execução : https://docs.microsoft.com/pt-br/dotnet/framework/winforms/controls/how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time
 
-Public Class FRMDialogRenameCriterio
+Public Class FRMDialogRenameCriterion
 
     'Importação de Classes
     '--------------------------------------------------
@@ -193,6 +193,9 @@ Public Class FRMDialogRenameCriterio
 
     Private Sub BTNVisulizar_Click(sender As Object, e As EventArgs) Handles BTNVisulizar.Click
 
+        Timer.Enabled = False
+        Me.UseWaitCursor = True
+
         Dim dataRenameCriteriaList As New List(Of Class_DataRenamingCriterion)
         Dim strDataRenameList As String
         ' Gerar Lista de comandos de renome
@@ -222,11 +225,14 @@ Public Class FRMDialogRenameCriterio
 
         FRMDialogVisualizarRenome.Width = Me.Width
         FRMDialogVisualizarRenome.Height = Me.Height
+        FRMDialogVisualizarRenome.LBLExplicacao.Text = "Carregando ..."
 
         FRMDialogVisualizarRenome.SelectedFoldersAndFiles = SelectedFoldersAndFiles
         FRMDialogVisualizarRenome.Renamed_SelectedFoldersAndFiles = Renamed_SelectedFoldersAndFiles
 
         FRMDialogVisualizarRenome.ShowDialog()
 
+        Me.UseWaitCursor = False
+        Timer.Enabled = True
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FRMDialogRenameCriterio
+Partial Class FRMDialogRenameCriterion
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -55,11 +55,11 @@ Partial Class FRMDialogRenameCriterio
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(502, 454)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(482, 454)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(146, 29)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(166, 29)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'OK_Button
@@ -72,9 +72,9 @@ Partial Class FRMDialogRenameCriterio
         Me.OK_Button.ForeColor = System.Drawing.Color.LightGray
         Me.OK_Button.Location = New System.Drawing.Point(3, 3)
         Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(67, 23)
+        Me.OK_Button.Size = New System.Drawing.Size(77, 23)
         Me.OK_Button.TabIndex = 14
-        Me.OK_Button.Text = "OK"
+        Me.OK_Button.Text = "&Renomear"
         Me.OK_Button.UseVisualStyleBackColor = False
         '
         'Cancel_Button
@@ -83,7 +83,7 @@ Partial Class FRMDialogRenameCriterio
         Me.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Cancel_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Cancel_Button.Location = New System.Drawing.Point(76, 3)
+        Me.Cancel_Button.Location = New System.Drawing.Point(91, 3)
         Me.Cancel_Button.Name = "Cancel_Button"
         Me.Cancel_Button.Size = New System.Drawing.Size(67, 23)
         Me.Cancel_Button.TabIndex = 15
@@ -268,7 +268,7 @@ Partial Class FRMDialogRenameCriterio
         Me.BTNVisulizar.Name = "BTNVisulizar"
         Me.BTNVisulizar.Size = New System.Drawing.Size(80, 23)
         Me.BTNVisulizar.TabIndex = 16
-        Me.BTNVisulizar.Text = "Vizualizar"
+        Me.BTNVisulizar.Text = "Detalhar"
         '
         'TXTCNovoNome
         '
@@ -294,7 +294,7 @@ Partial Class FRMDialogRenameCriterio
         Me.TXTCNovoNome.ValueStr = Nothing
         Me.TXTCNovoNome.Visible = False
         '
-        'FRMDialogRenameCriterio
+        'FRMDialogRenameCriterion
         '
         Me.AcceptButton = Me.OK_Button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -314,7 +314,7 @@ Partial Class FRMDialogRenameCriterio
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "FRMDialogRenameCriterio"
+        Me.Name = "FRMDialogRenameCriterion"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FRMDialogRenameCriterio"

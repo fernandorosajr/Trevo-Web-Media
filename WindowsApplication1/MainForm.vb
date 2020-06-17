@@ -201,12 +201,12 @@ Long, lpColorValues As Long) As Long
         Dim path As String = "C:\Minha Pasta\"
         Dim folder As DirectoryInfo
         Dim file As FileInfo
-        For x = 0 To 400
+        For x = 0 To 10
 
             folder = New DirectoryInfo(path & "Nova Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 200
+            For y = 0 To 10
                 file = New FileInfo(folder.FullName & "\" & "Arquivo " & y & ".jpg")
                 SelectedFoldersAndFiles.Add(file)
             Next
@@ -796,10 +796,10 @@ Long, lpColorValues As Long) As Long
 
     Private Sub CheckBox20_Click(sender As Object, e As EventArgs) Handles CheckBox20.Click
 
-        FRMDialogRenameCriterio.SelectedFoldersAndFiles.Clear()
-        FRMDialogRenameCriterio.SelectedFoldersAndFiles.AddRange(SelectedFoldersAndFiles)
-        FRMDialogRenameCriterio.FileExemple = "C:\Minha Pasta\Nome Antigo.txt"
-        FRMDialogRenameCriterio.ShowDialog()
+        FRMDialogRenameCriterion.SelectedFoldersAndFiles.Clear()
+        FRMDialogRenameCriterion.SelectedFoldersAndFiles.AddRange(SelectedFoldersAndFiles)
+        FRMDialogRenameCriterion.FileExemple = "C:\Minha Pasta\Nome Antigo.txt"
+        FRMDialogRenameCriterion.ShowDialog()
 
     End Sub
 

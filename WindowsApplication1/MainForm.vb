@@ -201,12 +201,12 @@ Long, lpColorValues As Long) As Long
         Dim path As String = "C:\Minha Pasta\"
         Dim folder As DirectoryInfo
         Dim file As FileInfo
-        For x = 0 To 10
+        For x = 0 To 100
 
             folder = New DirectoryInfo(path & "Nova Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 10
+            For y = 0 To 100
                 file = New FileInfo(folder.FullName & "\" & "Arquivo " & y & ".jpg")
                 SelectedFoldersAndFiles.Add(file)
             Next
@@ -313,21 +313,36 @@ Long, lpColorValues As Long) As Long
         me_redim = False
     End Sub
 
-    Private Sub RB_Explorerr_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RB_Explorerr.CheckedChanged
+    Private Sub RB_Explorerr_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RB_Explorer.CheckedChanged
 
-        Panel_MediasExplorer.Visible = Not (RB_Explorerr.Checked)
+        Panel_MediasExplorer.Visible = Not (RB_Explorer.Checked)
+        Panel_RecebeExplorer.Visible = RB_Explorer.Checked
+        Panel_Recebe_Filtro.Visible = Not (RB_Explorer.Checked)
 
-        Panel_RecebeExplorer.Visible = RB_Explorerr.Checked
         ' PanelEnvolveMidiaAberta.Visible = True
         ' SPRedimVisualizarMidia.Visible = True
 
+        If RB_Explorer.Checked = True Then
+            RB_Explorer.Image = My.Resources.computer_Hover35
+        Else
+            RB_Explorer.Image = My.Resources.computer35
 
+        End If
 
     End Sub
 
     Private Sub RB_Midias_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RB_Midias.CheckedChanged
         Panel_MediasExplorer.Visible = RB_Midias.Checked
         Panel_RecebeExplorer.Visible = Not (RB_Midias.Checked)
+        Panel_Recebe_Filtro.Visible = Not (RB_Midias.Checked)
+
+        If RB_Midias.Checked = True Then
+            RB_Midias.Image = My.Resources.dvd_face6_Hover
+
+        Else
+            RB_Midias.Image = My.Resources.dvd_face6
+        End If
+
 
         'If RB_Bibliotecas.Checked Then
         '    PanelEnvolveMidiaAberta.Visible = False
@@ -588,12 +603,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub ChBFiltro_CheckedChanged(sender As Object, e As EventArgs) Handles ChBFiltro.CheckedChanged
-        Panel_Recebe_Filtro.Visible = ChBFiltro.Checked
-        Splitter7.Visible = ChBFiltro.Checked
-
-    End Sub
-
     Private Sub PanelRecebe_Paint(sender As Object, e As PaintEventArgs) Handles PanelRecebe.Paint
 
     End Sub
@@ -807,4 +816,112 @@ Long, lpColorValues As Long) As Long
         FRMDialogConflictingFolders.ShowDialog()
 
     End Sub
+
+    Private Sub RB_Midias_MouseHover(sender As Object, e As EventArgs) Handles RB_Midias.MouseHover
+        RB_Midias.Image = My.Resources.dvd_face6_Hover
+    End Sub
+
+    Private Sub RB_Midias_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Midias.MouseMove
+        RB_Midias.Image = My.Resources.dvd_face6_Hover
+
+    End Sub
+
+    Private Sub RB_Midias_MouseLeave(sender As Object, e As EventArgs) Handles RB_Midias.MouseLeave
+        If RB_Midias.Checked = False Then
+            RB_Midias.Image = My.Resources.dvd_face6
+
+        End If
+
+    End Sub
+
+    Private Sub RB_Explorer_MouseHover(sender As Object, e As EventArgs) Handles RB_Explorer.MouseHover
+        RB_Explorer.Image = My.Resources.computer_Hover35
+
+    End Sub
+
+    Private Sub RB_Explorer_MouseLeave(sender As Object, e As EventArgs) Handles RB_Explorer.MouseLeave
+        If RB_Explorer.Checked = False Then
+            RB_Explorer.Image = My.Resources.computer35
+        End If
+    End Sub
+
+    Private Sub RB_Explorer_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Explorer.MouseMove
+        RB_Explorer.Image = My.Resources.computer_Hover35
+
+    End Sub
+
+    Private Sub RB_PastaProcesso_CheckedChanged(sender As Object, e As EventArgs) Handles RB_PastaProcesso.CheckedChanged
+        If RB_PastaProcesso.Checked = True Then
+            RB_PastaProcesso.Image = My.Resources.pastaProcesso35_Hover
+        Else
+            RB_PastaProcesso.Image = My.Resources.pastaProcesso35
+
+        End If
+    End Sub
+
+    Private Sub RB_PastaProcesso_MouseHover(sender As Object, e As EventArgs) Handles RB_PastaProcesso.MouseHover
+        RB_PastaProcesso.Image = My.Resources.pastaProcesso35_Hover
+
+    End Sub
+
+
+    Private Sub RB_PastaProcesso_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_PastaProcesso.MouseMove
+        RB_PastaProcesso.Image = My.Resources.pastaProcesso35_Hover
+
+    End Sub
+
+    Private Sub RB_PastaProcesso_MouseLeave(sender As Object, e As EventArgs) Handles RB_PastaProcesso.MouseLeave
+        If RB_PastaProcesso.Checked = False Then
+            RB_PastaProcesso.Image = My.Resources.pastaProcesso35
+
+        End If
+    End Sub
+
+    Private Sub RB_Filter_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Filter.CheckedChanged
+        Panel_Recebe_Filtro.Dock = DockStyle.Fill
+
+        If RB_Filter.Checked = True Then
+            RB_Filter.Image = My.Resources.filter_Hover35
+        Else
+            RB_Filter.Image = My.Resources.filter_35
+
+        End If
+
+        Panel_MediasExplorer.Visible = Not (RB_Filter.Checked)
+        Panel_RecebeExplorer.Visible = Not (RB_Filter.Checked)
+        Panel_Recebe_Filtro.Visible = (RB_Filter.Checked)
+
+    End Sub
+
+    Private Sub RB_Filter_MouseHover(sender As Object, e As EventArgs) Handles RB_Filter.MouseHover
+        RB_Filter.Image = My.Resources.filter_Hover35
+
+    End Sub
+
+    Private Sub RB_Clipboard_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Clipboard.CheckedChanged
+
+    End Sub
+
+    Private Sub SPRedimVisualizarMidia_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles SPRedimVisualizarMidia.SplitterMoved
+
+    End Sub
+
+    Private Sub RB_Filter_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Filter.MouseMove
+        RB_Filter.Image = My.Resources.filter_Hover35
+
+    End Sub
+
+    Private Sub Splitter7_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles Splitter7.SplitterMoved
+
+    End Sub
+
+    Private Sub RB_Filter_MouseLeave(sender As Object, e As EventArgs) Handles RB_Filter.MouseLeave
+        If RB_Filter.Checked = False Then
+            RB_Filter.Image = My.Resources.filter_35
+
+        End If
+
+    End Sub
+
+
 End Class

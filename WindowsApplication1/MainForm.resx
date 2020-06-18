@@ -9890,7 +9890,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
-        BAAAAk1TRnQBSQFMAwEBAAGIAQsBiAELARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        BAAAAk1TRnQBSQFMAwEBAAFQAQwBUAEMARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
         ARADAAEBAQABIAYAARAqAAMQARYDGAEiAxoBJAMUARwDCgEOAwEBAuAAAzABSwNfAfMDKwH8AfIC8wH/
         A/oB/wNfAfMDYQHmA0ABcAMLAQ/YAANkAecBsAHbAccB/wG/AboBvAH/A9AB/wPhAf8D9An/A/sB/wNd
         AcoDEAEVzwABAQNkAewBlgKXAf8DrQH/AcABwgHBAf8DywH/A+EB/wP3Ef8DXAHJAwoBDcgAAzABSwGr
@@ -9915,10 +9915,10 @@
     <value>Fill</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+    <value>0, 25</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 114</value>
+    <value>231, 119</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -9939,10 +9939,10 @@
     <value>Fill</value>
   </data>
   <data name="PanelRecebeBiblio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
+    <value>0, 25</value>
   </data>
   <data name="PanelRecebeBiblio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 114</value>
+    <value>231, 119</value>
   </data>
   <data name="PanelRecebeBiblio.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -9987,7 +9987,7 @@
     <value>Bottom</value>
   </data>
   <data name="PanelBaseLuzLeft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 28</value>
+    <value>1, 23</value>
   </data>
   <data name="PanelBaseLuzLeft.Size" type="System.Drawing.Size, System.Drawing">
     <value>230, 2</value>
@@ -10020,10 +10020,10 @@
     <value>NoControl</value>
   </data>
   <data name="RB_Bibliotecas.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 0</value>
+    <value>89, 1</value>
   </data>
   <data name="RB_Bibliotecas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 30</value>
+    <value>92, 24</value>
   </data>
   <data name="RB_Bibliotecas.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -10059,10 +10059,10 @@
     <value>NoControl</value>
   </data>
   <data name="RB_ExibePanelMidiaAtiva.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 1</value>
   </data>
   <data name="RB_ExibePanelMidiaAtiva.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 30</value>
+    <value>89, 24</value>
   </data>
   <data name="RB_ExibePanelMidiaAtiva.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -10091,8 +10091,11 @@
   <data name="Panel274.Location" type="System.Drawing.Point, System.Drawing">
     <value>1, 0</value>
   </data>
+  <data name="Panel274.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
   <data name="Panel274.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 30</value>
+    <value>230, 25</value>
   </data>
   <data name="Panel274.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -10119,7 +10122,7 @@
     <value>1, 0, 0, 0</value>
   </data>
   <data name="PanelToolBar_MediasExplorer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 30</value>
+    <value>231, 25</value>
   </data>
   <data name="PanelToolBar_MediasExplorer.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -10261,6 +10264,9 @@
   </data>
   <data name="Splitter7.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="Splitter7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;Splitter7.Name" xml:space="preserve">
     <value>Splitter7</value>
@@ -10536,131 +10542,188 @@
   <data name="&gt;&gt;PanelToolBarBotton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="RadioButton24.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+  <data name="RB_Clipboard.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
-  <data name="RadioButton24.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="RB_Clipboard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="RadioButton24.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="RB_Clipboard.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="RadioButton24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RB_Clipboard.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="RB_Clipboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="RadioButton24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 201</value>
+  <data name="RB_Clipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 274</value>
   </data>
-  <data name="RadioButton24.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RB_Clipboard.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 57</value>
   </data>
-  <data name="RadioButton24.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="RB_Clipboard.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="RadioButton24.Text" xml:space="preserve">
-    <value>Filtro</value>
+  <data name="RB_Clipboard.Text" xml:space="preserve">
+    <value>Clipboard</value>
   </data>
-  <data name="RadioButton24.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="RB_Clipboard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;RadioButton24.Name" xml:space="preserve">
-    <value>RadioButton24</value>
+  <data name="&gt;&gt;RB_Clipboard.Name" xml:space="preserve">
+    <value>RB_Clipboard</value>
   </data>
-  <data name="&gt;&gt;RadioButton24.Type" xml:space="preserve">
+  <data name="&gt;&gt;RB_Clipboard.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RadioButton24.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RB_Clipboard.Parent" xml:space="preserve">
     <value>Panel41</value>
   </data>
-  <data name="&gt;&gt;RadioButton24.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RB_Clipboard.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="RadioButton23.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+  <data name="RB_Filter.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
-  <data name="RadioButton23.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="RB_Filter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="RadioButton23.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="RB_Filter.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="RadioButton23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RB_Filter.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="RB_Filter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="RadioButton23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 144</value>
+  <data name="RB_Filter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 217</value>
   </data>
-  <data name="RadioButton23.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RB_Filter.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 57</value>
   </data>
-  <data name="RadioButton23.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="RB_Filter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="RadioButton23.Text" xml:space="preserve">
-    <value>Pasta Processo</value>
+  <data name="RB_Filter.Text" xml:space="preserve">
+    <value>Filtro</value>
   </data>
-  <data name="RadioButton23.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="RB_Filter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;RadioButton23.Name" xml:space="preserve">
-    <value>RadioButton23</value>
+  <data name="&gt;&gt;RB_Filter.Name" xml:space="preserve">
+    <value>RB_Filter</value>
   </data>
-  <data name="&gt;&gt;RadioButton23.Type" xml:space="preserve">
+  <data name="&gt;&gt;RB_Filter.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RadioButton23.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RB_Filter.Parent" xml:space="preserve">
     <value>Panel41</value>
   </data>
-  <data name="&gt;&gt;RadioButton23.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RB_Filter.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="RB_Explorerr.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+  <data name="RB_PastaProcesso.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
-  <data name="RB_Explorerr.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="RB_PastaProcesso.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="RB_Explorerr.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="RB_PastaProcesso.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="RB_Explorerr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RB_PastaProcesso.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="RB_PastaProcesso.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="RB_Explorerr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 87</value>
+  <data name="RB_PastaProcesso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 144</value>
   </data>
-  <data name="RB_Explorerr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 57</value>
+  <data name="RB_PastaProcesso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 73</value>
   </data>
-  <data name="RB_Explorerr.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="RB_PastaProcesso.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="RB_Explorerr.Text" xml:space="preserve">
-    <value>Explorer</value>
+  <data name="RB_PastaProcesso.Text" xml:space="preserve">
+    <value>Pasta Processo</value>
   </data>
-  <data name="RB_Explorerr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="RB_PastaProcesso.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;RB_Explorerr.Name" xml:space="preserve">
-    <value>RB_Explorerr</value>
+  <data name="&gt;&gt;RB_PastaProcesso.Name" xml:space="preserve">
+    <value>RB_PastaProcesso</value>
   </data>
-  <data name="&gt;&gt;RB_Explorerr.Type" xml:space="preserve">
+  <data name="&gt;&gt;RB_PastaProcesso.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RB_Explorerr.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RB_PastaProcesso.Parent" xml:space="preserve">
     <value>Panel41</value>
   </data>
-  <data name="&gt;&gt;RB_Explorerr.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RB_PastaProcesso.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="RB_Explorer.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="RB_Explorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="RB_Explorer.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RB_Explorer.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="RB_Explorer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RB_Explorer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 87</value>
+  </data>
+  <data name="RB_Explorer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 57</value>
+  </data>
+  <data name="RB_Explorer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RB_Explorer.Text" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="RB_Explorer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;RB_Explorer.Name" xml:space="preserve">
+    <value>RB_Explorer</value>
+  </data>
+  <data name="&gt;&gt;RB_Explorer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RB_Explorer.Parent" xml:space="preserve">
+    <value>Panel41</value>
+  </data>
+  <data name="&gt;&gt;RB_Explorer.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="RB_Midias.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
+  </data>
+  <data name="RB_Midias.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="RB_Midias.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="RB_Midias.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
+  </data>
+  <data name="RB_Midias.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
   <data name="RB_Midias.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -10678,7 +10741,7 @@
     <value>Mídias</value>
   </data>
   <data name="RB_Midias.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>BottomCenter</value>
   </data>
   <data name="&gt;&gt;RB_Midias.Name" xml:space="preserve">
     <value>RB_Midias</value>
@@ -10690,7 +10753,7 @@
     <value>Panel41</value>
   </data>
   <data name="&gt;&gt;RB_Midias.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Panel41.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -22651,7 +22714,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        ZgAAAk1TRnQBSQFMAgEBGgEAAVABBwFQAQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        ZgAAAk1TRnQBSQFMAgEBGgEAARgBCAEYAQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABcAMAAQEBAAEgBgABcGIAAYcB3wL/tgAB5QH/AwAB/yYAAdMB/wIAAdkB/xAAAY0B4gL/AYkB4AL/
         GAACYAFZAeuaAAHmAf8CAAHlAf8CAAGGAf8eAAHcAf8CAAHbAf8CAAG5Af8IAAMWAR8BlAHkAv8BkAHj
         Av8BjAHhAv8BAAHHAeoB/wEAAcsB7wH/AQABzwHyAf8BAAHTAfUB/wEAAdcB+AH/AcMCAAH/AegBlwEA

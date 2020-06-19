@@ -124,7 +124,7 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitle02.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitle02.Location = New System.Drawing.Point(31, 83)
         Me.LBLTitle02.Name = "LBLTitle02"
-        Me.LBLTitle02.Size = New System.Drawing.Size(612, 29)
+        Me.LBLTitle02.Size = New System.Drawing.Size(612, 17)
         Me.LBLTitle02.TabIndex = 2
         Me.LBLTitle02.Text = "Lista dos critérios"
         '
@@ -169,11 +169,13 @@ Partial Class FRMDialogRenameCriterion
         '
         'LBL_ValueOrigemDoExemplo
         '
-        Me.LBL_ValueOrigemDoExemplo.AutoSize = True
+        Me.LBL_ValueOrigemDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.LBL_ValueOrigemDoExemplo.AutoEllipsis = True
         Me.LBL_ValueOrigemDoExemplo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBL_ValueOrigemDoExemplo.Location = New System.Drawing.Point(127, 15)
         Me.LBL_ValueOrigemDoExemplo.Name = "LBL_ValueOrigemDoExemplo"
-        Me.LBL_ValueOrigemDoExemplo.Size = New System.Drawing.Size(97, 13)
+        Me.LBL_ValueOrigemDoExemplo.Size = New System.Drawing.Size(465, 13)
         Me.LBL_ValueOrigemDoExemplo.TabIndex = 8
         Me.LBL_ValueOrigemDoExemplo.Text = "C:/MinhaPasta/"
         '
@@ -251,7 +253,7 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
         Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
         Me.LBLTitle03.Name = "LBLTitle03"
-        Me.LBLTitle03.Size = New System.Drawing.Size(612, 30)
+        Me.LBLTitle03.Size = New System.Drawing.Size(612, 18)
         Me.LBLTitle03.TabIndex = 4
         Me.LBLTitle03.Text = "Visualizar exemplo"
         '

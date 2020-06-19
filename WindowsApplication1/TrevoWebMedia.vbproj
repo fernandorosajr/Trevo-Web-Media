@@ -196,10 +196,10 @@
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextReplace.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.Designer.vb">
-      <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterion.Designer.vb">
+      <DependentUpon>FRMDialogRenameCriterion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.vb">
+    <Compile Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterion.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FRMRenameCriterio\FRMDialogVisualizarRenome.Designer.vb">
@@ -510,8 +510,8 @@
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_TextReplace.resx">
       <DependentUpon>Control_TextReplace.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterio.resx">
-      <DependentUpon>FRMDialogRenameCriterio.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogRenameCriterion.resx">
+      <DependentUpon>FRMDialogRenameCriterion.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FRMRenameCriterio\FRMDialogVisualizarRenome.resx">

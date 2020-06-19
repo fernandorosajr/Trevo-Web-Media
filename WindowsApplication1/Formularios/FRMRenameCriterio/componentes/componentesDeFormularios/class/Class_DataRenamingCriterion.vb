@@ -143,8 +143,7 @@ Public Class Class_DataRenamingCriterion
     End Structure
 
     Public Structure DadosDeNomeDaPastaStructure
-        'Public PrimeiraLetraMinuscula As Boolean
-        'Public RemoverEspaco As Boolean
+
         Public PrimeiraLetraMinusculaDeNomeDaPasta As Boolean
         Public RemoverEspacoDeNomeDaPasta As Boolean
 

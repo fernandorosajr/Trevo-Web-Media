@@ -21,7 +21,7 @@ Public Class Class_RenameActions
 
         Dim Renamed_SelectedFoldersAndFiles As New List(Of Object)
 
-        '' TODO:  Listar todas as pastas em ListFolder da lista SelectedFoldersAndFiles
+        '' TODO:  Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
         'Dim listFolders As New List(Of DirectoryInfo)
 
         'For Each obj As Object In SelectedFoldersAndFiles
@@ -174,9 +174,9 @@ Public Class Class_RenameActions
 
                         Case _opcoesDeFormatacaoDeTexto.PrimeirasLetrasMaiusculas
 
-                            Dim _firstLetterUpper As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinuscula
+                            Dim _firstLetterUpper As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinusculaDeNomeDaPasta
 
-                            Dim _removeSpace As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.RemoverEspaco
+                            Dim _removeSpace As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.RemoverEspacoDeNomeDaPasta
 
                             Dim new_value As String = FormatAlphabetLetter.StringFunctions.ConvertTheFirstLettersToUppercase(_strData, _firstLetterUpper)
 
@@ -226,8 +226,8 @@ Public Class Class_RenameActions
                     Dim _replacement As String = _criterion.RenameTypeData.DadosDeSubstituicao.Replacement
                     'TXTPReplacement.TXT
 
-                    Dim _ignoreUpperLower As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.IgnoreUpperLower
-                    Dim _replaceAll As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.ReplaceAll
+                    Dim _ignoreUpperLower As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.IgnoreUpperLowerOfReplacementData
+                    Dim _replaceAll As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.ReplaceAllReplacementData
 
                     _strData = FormatAlphabetLetter.StringFunctions.ReplacePhrase(file.Name, _find, _replacement, _ignoreUpperLower, _replaceAll)
 
@@ -321,24 +321,29 @@ Public Class Class_RenameActions
                     Dim yesterdayDate As Date = todayDate.AddDays(-1)
                     Dim tomorrowDate As Date = todayDate.AddDays(+1)
 
+                    Dim tempoDaData As Class_DataRenamingCriterion.TempoDaDataEnum
+
                     Select Case _criterion.RenameTypeData.DadosDeTempo.TempoDaData
 
-                        Case 9
+                        Case tempoDaData.DataDeCriacao
                             ' Data de criacao
                             _dataDate = creationTimeDate
-                        Case 10
+
+                        Case tempoDaData.DataDeModificacao
+
                             ' Data de modificacao
                             _dataDate = lastWriteDate
 
-                        Case 11
+                        Case tempoDaData.Ontem
+
                             'Ontem
                             _dataDate = yesterdayDate
 
-                        Case 12
+                        Case tempoDaData.Hoje
                             'Hoje
                             _dataDate = todayDate
 
-                        Case 13
+                        Case tempoDaData.Amanha
                             ' Amanha
                             _dataDate = tomorrowDate
 
@@ -381,9 +386,9 @@ Public Class Class_RenameActions
 
                         Case _opcoesDeFormatacaoDeTexto.PrimeirasLetrasMaiusculas
 
-                            Dim _firstLetterUpper As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinuscula
+                            Dim _firstLetterUpper As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.PrimeiraLetraMinusculaDeNomeDaPasta
 
-                            Dim _removeSpace As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.RemoverEspaco
+                            Dim _removeSpace As Boolean = _criterion.RenameTypeData.DadosDeNomeDaPasta.RemoverEspacoDeNomeDaPasta
 
                             Dim new_value As String = FormatAlphabetLetter.StringFunctions.ConvertTheFirstLettersToUppercase(_strData, _firstLetterUpper)
 
@@ -450,8 +455,8 @@ Public Class Class_RenameActions
                     Dim _replacement As String = _criterion.RenameTypeData.DadosDeSubstituicao.Replacement
                     'TXTPReplacement.TXT
 
-                    Dim _ignoreUpperLower As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.IgnoreUpperLower
-                    Dim _replaceAll As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.ReplaceAll
+                    Dim _ignoreUpperLower As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.IgnoreUpperLowerOfReplacementData
+                    Dim _replaceAll As Boolean = _criterion.RenameTypeData.DadosDeSubstituicao.ReplaceAllReplacementData
 
                     _strData = FormatAlphabetLetter.StringFunctions.ReplacePhrase(obj.Name, _find, _replacement, _ignoreUpperLower, _replaceAll)
 

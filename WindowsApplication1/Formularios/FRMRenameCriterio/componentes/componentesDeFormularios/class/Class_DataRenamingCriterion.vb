@@ -143,8 +143,8 @@ Public Class Class_DataRenamingCriterion
     End Structure
 
     Public Structure DadosDeNomeDaPastaStructure
-        Public PrimeiraLetraMinuscula As Boolean
-        Public RemoverEspaco As Boolean
+        'Public PrimeiraLetraMinuscula As Boolean
+        'Public RemoverEspaco As Boolean
         Public PrimeiraLetraMinusculaDeNomeDaPasta As Boolean
         Public RemoverEspacoDeNomeDaPasta As Boolean
 
@@ -154,8 +154,8 @@ Public Class Class_DataRenamingCriterion
     Public Structure DadosDeSubstituicaoStructure
         Public Find As String
         Public Replacement As String
-        Public IgnoreUpperLower As Boolean
-        Public ReplaceAll As Boolean
+        Public IgnoreUpperLowerOfReplacementData As Boolean
+        Public ReplaceAllReplacementData As Boolean
     End Structure
 
     Public RenameTypeData As RenameTypeDataStructure

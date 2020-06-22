@@ -42,9 +42,16 @@ Partial Class FRMDialogRenameCriterion
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.BTNVisulizar = New System.Windows.Forms.Button()
         Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TableLayoutPanel1
@@ -55,7 +62,7 @@ Partial Class FRMDialogRenameCriterion
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(482, 454)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(482, 526)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -130,13 +137,11 @@ Partial Class FRMDialogRenameCriterion
         '
         'PanelRecebe
         '
-        Me.PanelRecebe.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelRecebe.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
-        Me.PanelRecebe.Location = New System.Drawing.Point(31, 103)
+        Me.PanelRecebe.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelRecebe.Location = New System.Drawing.Point(0, 0)
         Me.PanelRecebe.Name = "PanelRecebe"
-        Me.PanelRecebe.Size = New System.Drawing.Size(614, 213)
+        Me.PanelRecebe.Size = New System.Drawing.Size(614, 221)
         Me.PanelRecebe.TabIndex = 3
         '
         'PanelBorder_Visualizar
@@ -145,7 +150,7 @@ Partial Class FRMDialogRenameCriterion
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelBorder_Visualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelBorder_Visualizar.Controls.Add(Me.PanelVisualizar)
-        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 346)
+        Me.PanelBorder_Visualizar.Location = New System.Drawing.Point(31, 418)
         Me.PanelBorder_Visualizar.Name = "PanelBorder_Visualizar"
         Me.PanelBorder_Visualizar.Padding = New System.Windows.Forms.Padding(1)
         Me.PanelBorder_Visualizar.Size = New System.Drawing.Size(614, 94)
@@ -251,7 +256,7 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitle03.AutoEllipsis = True
         Me.LBLTitle03.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LBLTitle03.ForeColor = System.Drawing.Color.DarkGray
-        Me.LBLTitle03.Location = New System.Drawing.Point(31, 326)
+        Me.LBLTitle03.Location = New System.Drawing.Point(31, 398)
         Me.LBLTitle03.Name = "LBLTitle03"
         Me.LBLTitle03.Size = New System.Drawing.Size(612, 18)
         Me.LBLTitle03.TabIndex = 4
@@ -266,7 +271,7 @@ Partial Class FRMDialogRenameCriterion
         Me.BTNVisulizar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.BTNVisulizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.BTNVisulizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNVisulizar.Location = New System.Drawing.Point(31, 457)
+        Me.BTNVisulizar.Location = New System.Drawing.Point(31, 529)
         Me.BTNVisulizar.Name = "BTNVisulizar"
         Me.BTNVisulizar.Size = New System.Drawing.Size(80, 23)
         Me.BTNVisulizar.TabIndex = 16
@@ -296,6 +301,49 @@ Partial Class FRMDialogRenameCriterion
         Me.TXTCNovoNome.ValueStr = Nothing
         Me.TXTCNovoNome.Visible = False
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(24, 17)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(150, 17)
+        Me.CheckBox1.TabIndex = 17
+        Me.CheckBox1.Text = "Fluxo contínuo de renome"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel1.Controls.Add(Me.PanelRecebe)
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Location = New System.Drawing.Point(31, 103)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(614, 273)
+        Me.Panel1.TabIndex = 18
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Panel3)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel2.Location = New System.Drawing.Point(0, 221)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Padding = New System.Windows.Forms.Padding(1, 0, 1, 1)
+        Me.Panel2.Size = New System.Drawing.Size(614, 52)
+        Me.Panel2.TabIndex = 4
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.CheckBox1)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(1, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(612, 51)
+        Me.Panel3.TabIndex = 0
+        '
         'FRMDialogRenameCriterion
         '
         Me.AcceptButton = Me.OK_Button
@@ -303,11 +351,11 @@ Partial Class FRMDialogRenameCriterion
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(678, 507)
+        Me.ClientSize = New System.Drawing.Size(678, 579)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BTNVisulizar)
         Me.Controls.Add(Me.PanelBorder_Visualizar)
         Me.Controls.Add(Me.LBLTitle03)
-        Me.Controls.Add(Me.PanelRecebe)
         Me.Controls.Add(Me.LBLTitle02)
         Me.Controls.Add(Me.LBLExplicacao)
         Me.Controls.Add(Me.LBLTitle01)
@@ -324,6 +372,10 @@ Partial Class FRMDialogRenameCriterion
         Me.PanelBorder_Visualizar.ResumeLayout(False)
         Me.PanelVisualizar.ResumeLayout(False)
         Me.PanelVisualizar.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -346,4 +398,8 @@ Partial Class FRMDialogRenameCriterion
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
     Friend WithEvents Timer As Timer
     Friend WithEvents BTNVisulizar As Button
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
 End Class

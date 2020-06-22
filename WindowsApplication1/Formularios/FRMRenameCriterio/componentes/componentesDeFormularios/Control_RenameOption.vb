@@ -701,7 +701,7 @@ Public Class Control_RenameOption
 
             Case SelectADataModeEnum.DataEHora
 
-                _tempoDaData = ComBPSlave.SelectedItem.Tag.ID - _q
+                TempoDaData = ComBPSlave.SelectedItem.Tag.ID - _q
 
             Case SelectADataModeEnum.NomeDaPasta
                 OpcoesDeFormatacaoDeTextoDaPasta = ComBPSlave.SelectedItem.Tag.ID - _q

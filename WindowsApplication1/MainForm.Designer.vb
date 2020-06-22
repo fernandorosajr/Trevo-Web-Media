@@ -55,7 +55,7 @@ Partial Class MainForm
         Me.ChkWinStyle = New System.Windows.Forms.CheckBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
         Me.Button40 = New System.Windows.Forms.Button()
-        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.PanelToobarEndereco = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel35 = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -76,7 +76,6 @@ Partial Class MainForm
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ILMidias = New System.Windows.Forms.ImageList(Me.components)
         Me.Panel_Left = New System.Windows.Forms.Panel()
         Me.PanelMedia = New System.Windows.Forms.Panel()
@@ -454,7 +453,7 @@ Partial Class MainForm
         Me.RadioButton34 = New System.Windows.Forms.RadioButton()
         Me.PanelBaseLuz = New System.Windows.Forms.Panel()
         Me.Panel196 = New System.Windows.Forms.Panel()
-        Me.Panel194 = New System.Windows.Forms.Panel()
+        Me.PanelPrimaMenu = New System.Windows.Forms.Panel()
         Me.BTNMenu01 = New System.Windows.Forms.Button()
         Me.Panel76 = New System.Windows.Forms.Panel()
         Me.RBVideos = New System.Windows.Forms.RadioButton()
@@ -464,7 +463,7 @@ Partial Class MainForm
         Me.RBMidias = New System.Windows.Forms.RadioButton()
         Me.RBArquivos = New System.Windows.Forms.RadioButton()
         Me.RadioButton61 = New System.Windows.Forms.RadioButton()
-        Me.Panel197 = New System.Windows.Forms.Panel()
+        Me.PanelToobarBotton = New System.Windows.Forms.Panel()
         Me.PanelFundao = New System.Windows.Forms.Panel()
         Me.Panel199 = New System.Windows.Forms.Panel()
         Me.Panel200 = New System.Windows.Forms.Panel()
@@ -522,7 +521,7 @@ Partial Class MainForm
         Me.PanelMBase.SuspendLayout()
         Me.PanelMainMenu.SuspendLayout()
         Me.FLPMenu.SuspendLayout()
-        Me.Panel7.SuspendLayout()
+        Me.PanelToobarEndereco.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel35.SuspendLayout()
         Me.Panel36.SuspendLayout()
@@ -701,9 +700,9 @@ Partial Class MainForm
         Me.PanelMusica.SuspendLayout()
         Me.PanelVideos.SuspendLayout()
         Me.PanelBaseLuz.SuspendLayout()
-        Me.Panel194.SuspendLayout()
+        Me.PanelPrimaMenu.SuspendLayout()
         Me.Panel76.SuspendLayout()
-        Me.Panel197.SuspendLayout()
+        Me.PanelToobarBotton.SuspendLayout()
         Me.PanelFundao.SuspendLayout()
         Me.Panel200.SuspendLayout()
         Me.Panel201.SuspendLayout()
@@ -980,20 +979,20 @@ Partial Class MainForm
         Me.Button40.Name = "Button40"
         Me.Button40.UseVisualStyleBackColor = False
         '
-        'Panel7
+        'PanelToobarEndereco
         '
-        Me.Panel7.BackColor = System.Drawing.Color.Transparent
-        Me.Panel7.Controls.Add(Me.Panel9)
-        Me.Panel7.Controls.Add(Me.Panel15)
-        Me.Panel7.Controls.Add(Me.Button4)
-        Me.Panel7.Controls.Add(Me.Button3)
-        Me.Panel7.Controls.Add(Me.Button2)
-        Me.Panel7.Controls.Add(Me.Button1)
-        Me.Panel7.Controls.Add(Me.Panel14)
-        Me.Panel7.Controls.Add(Me.Panel16)
-        Me.Panel7.Controls.Add(Me.Panel8)
-        resources.ApplyResources(Me.Panel7, "Panel7")
-        Me.Panel7.Name = "Panel7"
+        Me.PanelToobarEndereco.BackColor = System.Drawing.Color.White
+        Me.PanelToobarEndereco.Controls.Add(Me.Panel9)
+        Me.PanelToobarEndereco.Controls.Add(Me.Panel15)
+        Me.PanelToobarEndereco.Controls.Add(Me.Button4)
+        Me.PanelToobarEndereco.Controls.Add(Me.Button3)
+        Me.PanelToobarEndereco.Controls.Add(Me.Button2)
+        Me.PanelToobarEndereco.Controls.Add(Me.Button1)
+        Me.PanelToobarEndereco.Controls.Add(Me.Panel14)
+        Me.PanelToobarEndereco.Controls.Add(Me.Panel16)
+        Me.PanelToobarEndereco.Controls.Add(Me.Panel8)
+        resources.ApplyResources(Me.PanelToobarEndereco, "PanelToobarEndereco")
+        Me.PanelToobarEndereco.Name = "PanelToobarEndereco"
         '
         'Panel9
         '
@@ -1158,13 +1157,6 @@ Partial Class MainForm
         Me.Panel8.Cursor = System.Windows.Forms.Cursors.Default
         resources.ApplyResources(Me.Panel8, "Panel8")
         Me.Panel8.Name = "Panel8"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.Linen
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        resources.ApplyResources(Me.TextBox1, "TextBox1")
-        Me.TextBox1.Name = "TextBox1"
         '
         'ILMidias
         '
@@ -4008,7 +4000,7 @@ Partial Class MainForm
         Me.Panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel79.Controls.Add(Me.PanelRecebe)
         Me.Panel79.Controls.Add(Me.PanelSubMenu)
-        Me.Panel79.Controls.Add(Me.Panel197)
+        Me.Panel79.Controls.Add(Me.PanelToobarBotton)
         resources.ApplyResources(Me.Panel79, "Panel79")
         Me.Panel79.Name = "Panel79"
         '
@@ -4023,7 +4015,7 @@ Partial Class MainForm
         Me.PanelSubMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelSubMenu.Controls.Add(Me.PanelSubMenuContorn)
         Me.PanelSubMenu.Controls.Add(Me.PanelBaseLuz)
-        Me.PanelSubMenu.Controls.Add(Me.Panel194)
+        Me.PanelSubMenu.Controls.Add(Me.PanelPrimaMenu)
         resources.ApplyResources(Me.PanelSubMenu, "PanelSubMenu")
         Me.PanelSubMenu.Name = "PanelSubMenu"
         '
@@ -4520,13 +4512,13 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel196, "Panel196")
         Me.Panel196.Name = "Panel196"
         '
-        'Panel194
+        'PanelPrimaMenu
         '
-        Me.Panel194.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel194.Controls.Add(Me.BTNMenu01)
-        Me.Panel194.Controls.Add(Me.Panel76)
-        resources.ApplyResources(Me.Panel194, "Panel194")
-        Me.Panel194.Name = "Panel194"
+        Me.PanelPrimaMenu.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelPrimaMenu.Controls.Add(Me.BTNMenu01)
+        Me.PanelPrimaMenu.Controls.Add(Me.Panel76)
+        resources.ApplyResources(Me.PanelPrimaMenu, "PanelPrimaMenu")
+        Me.PanelPrimaMenu.Name = "PanelPrimaMenu"
         '
         'BTNMenu01
         '
@@ -4622,12 +4614,12 @@ Partial Class MainForm
         Me.RadioButton61.TabStop = True
         Me.RadioButton61.UseVisualStyleBackColor = True
         '
-        'Panel197
+        'PanelToobarBotton
         '
-        Me.Panel197.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
-        Me.Panel197.Controls.Add(Me.PanelFundao)
-        resources.ApplyResources(Me.Panel197, "Panel197")
-        Me.Panel197.Name = "Panel197"
+        Me.PanelToobarBotton.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
+        Me.PanelToobarBotton.Controls.Add(Me.PanelFundao)
+        resources.ApplyResources(Me.PanelToobarBotton, "PanelToobarBotton")
+        Me.PanelToobarBotton.Name = "PanelToobarBotton"
         '
         'PanelFundao
         '
@@ -5083,14 +5075,13 @@ Partial Class MainForm
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.Controls.Add(Me.PanelR)
         Me.Controls.Add(Me.Splitter10)
         Me.Controls.Add(Me.PanelLateralDirContorno)
         Me.Controls.Add(Me.Splitter5)
         Me.Controls.Add(Me.Panel_Left)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Panel7)
+        Me.Controls.Add(Me.PanelToobarEndereco)
         Me.Controls.Add(Me.Panel_MenuBar)
         Me.Controls.Add(Me.PanelMainMenu)
         Me.Controls.Add(Me.PanelMEsq)
@@ -5112,7 +5103,7 @@ Partial Class MainForm
         Me.PanelMainMenu.PerformLayout()
         Me.FLPMenu.ResumeLayout(False)
         Me.FLPMenu.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
+        Me.PanelToobarEndereco.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
         Me.Panel35.ResumeLayout(False)
         Me.Panel35.PerformLayout()
@@ -5294,9 +5285,9 @@ Partial Class MainForm
         Me.PanelMusica.ResumeLayout(False)
         Me.PanelVideos.ResumeLayout(False)
         Me.PanelBaseLuz.ResumeLayout(False)
-        Me.Panel194.ResumeLayout(False)
+        Me.PanelPrimaMenu.ResumeLayout(False)
         Me.Panel76.ResumeLayout(False)
-        Me.Panel197.ResumeLayout(False)
+        Me.PanelToobarBotton.ResumeLayout(False)
         Me.PanelFundao.ResumeLayout(False)
         Me.Panel200.ResumeLayout(False)
         Me.Panel200.PerformLayout()
@@ -5316,7 +5307,6 @@ Partial Class MainForm
         Me.Panel214.PerformLayout()
         Me.CTMenuVisualizacao.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents PanelTitleBar As System.Windows.Forms.Panel
@@ -5346,13 +5336,12 @@ Partial Class MainForm
     Friend WithEvents PanelFormMargBase As System.Windows.Forms.Panel
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents Panel7 As System.Windows.Forms.Panel
+    Friend WithEvents PanelToobarEndereco As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Panel13 As System.Windows.Forms.Panel
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
@@ -5692,7 +5681,7 @@ Partial Class MainForm
     Friend WithEvents LBLSkin As Label
     Friend WithEvents Panel10 As Panel
     Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents Panel194 As Panel
+    Friend WithEvents PanelPrimaMenu As Panel
     Friend WithEvents PanelBaseLuz As Panel
     Friend WithEvents Panel196 As Panel
     Friend WithEvents CTMenuVisualizacao As ContextMenuStrip
@@ -5710,7 +5699,7 @@ Partial Class MainForm
     Friend WithEvents VídeosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents Panel197 As Panel
+    Friend WithEvents PanelToobarBotton As Panel
     Friend WithEvents PanelFundao As Panel
     Friend WithEvents Panel199 As Panel
     Friend WithEvents Panel200 As Panel

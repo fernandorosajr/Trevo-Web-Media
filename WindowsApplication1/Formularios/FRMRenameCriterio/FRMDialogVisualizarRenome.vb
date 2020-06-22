@@ -26,7 +26,7 @@ Public Class FRMDialogVisualizarRenome
     Sub Load_List()
 
         Dim x As Integer
-        Dim numeroDeItens As Integer = Renamed_SelectedFoldersAndFiles.Count
+        Dim numeroDeItens As Integer = 0 ' = Renamed_SelectedFoldersAndFiles.Count
         Dim textItem As String
 
         Timer1.Enabled = False
@@ -42,15 +42,26 @@ Public Class FRMDialogVisualizarRenome
 
         'TVWRenomeados.Nodes.Clear()
 
-
+        Dim info As String
         For Each Renamed_selectedItem In Renamed_SelectedFoldersAndFiles
             FRM_Load.ProgressBar1.Value = x
 
             If SelectedFoldersAndFiles(x).FullName <> Renamed_selectedItem.FullName Then
 
-                textItem = "[" & x & "]   " & SelectedFoldersAndFiles(x).FullName & "        =>      " & Renamed_selectedItem.FullName
+                If Renamed_selectedItem.FullName.ToString.Length > 260 Then
+                    info = "  -  [!] - Caminho com número exedente de caracteres."
+
+                Else
+                    info = ""
+                End If
+
+                textItem = "[" & x & "]   " & info & SelectedFoldersAndFiles(x).FullName &
+                           "        =>      " & Renamed_selectedItem.FullName
+
                 LBRenomeados.Items.Add(textItem)
                 LBRenomeados.Items.Add("")
+
+                numeroDeItens += 1
 
                 'TVWRenomeados.Nodes.Add(textItem)
                 'TVWRenomeados.Nodes.Add("")

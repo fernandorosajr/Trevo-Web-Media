@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ControlPainel_Desktop
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,21 +20,19 @@ Partial Class ControlPainel_Desktop
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Desktop))
         Me.TVWFilesAndFolders = New System.Windows.Forms.TreeView()
         Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
+        Me.PanelBorderTVW = New System.Windows.Forms.Panel()
+        Me.PanelBaseLuzLeft = New System.Windows.Forms.Panel()
+        Me.PanelBorder_OpcoesDeProcessos = New System.Windows.Forms.Panel()
         Me.Panel36 = New System.Windows.Forms.Panel()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes = New System.Windows.Forms.Panel()
-        Me.CHK_ShowCheck = New System.Windows.Forms.CheckBox()
         Me.PanelEnvolve_BTN_NewFolder = New System.Windows.Forms.Panel()
-        Me.BTN_NewFolder = New System.Windows.Forms.Button()
         Me.CMItens = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ExpandirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -56,16 +54,24 @@ Partial Class ControlPainel_Desktop
         Me.NovaPastaProcessoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CHK_ShowCheck = New System.Windows.Forms.CheckBox()
+        Me.BTN_NewFolder = New System.Windows.Forms.Button()
+        Me.ProcessarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PanelOpcoesDeProcessos = New System.Windows.Forms.Panel()
+        Me.PanelSombra = New System.Windows.Forms.Panel()
+        Me.PanelBackgroundTVW = New System.Windows.Forms.Panel()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.PanelOpcoesDeProcessos.SuspendLayout()
+        Me.PanelBorderTVW.SuspendLayout()
+        Me.PanelBaseLuzLeft.SuspendLayout()
+        Me.PanelBorder_OpcoesDeProcessos.SuspendLayout()
         Me.Panel36.SuspendLayout()
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.SuspendLayout()
         Me.PanelEnvolve_BTN_NewFolder.SuspendLayout()
         Me.CMItens.SuspendLayout()
+        Me.PanelOpcoesDeProcessos.SuspendLayout()
+        Me.PanelBackgroundTVW.SuspendLayout()
         Me.SuspendLayout()
         '
         'TVWFilesAndFolders
@@ -79,11 +85,11 @@ Partial Class ControlPainel_Desktop
         Me.TVWFilesAndFolders.HideSelection = False
         Me.TVWFilesAndFolders.ImageIndex = 0
         Me.TVWFilesAndFolders.ImageList = Me.IMGList
-        Me.TVWFilesAndFolders.Location = New System.Drawing.Point(1, 1)
+        Me.TVWFilesAndFolders.Location = New System.Drawing.Point(0, 3)
         Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
         Me.TVWFilesAndFolders.SelectedImageIndex = 0
         Me.TVWFilesAndFolders.ShowLines = False
-        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(306, 308)
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(322, 404)
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'IMGList
@@ -108,45 +114,46 @@ Partial Class ControlPainel_Desktop
         'PanelBorder_TVWDesktop
         '
         Me.PanelBorder_TVWDesktop.BackColor = System.Drawing.Color.DimGray
-        Me.PanelBorder_TVWDesktop.Controls.Add(Me.Panel2)
-        Me.PanelBorder_TVWDesktop.Controls.Add(Me.Panel1)
-        Me.PanelBorder_TVWDesktop.Controls.Add(Me.PanelOpcoesDeProcessos)
+        Me.PanelBorder_TVWDesktop.Controls.Add(Me.PanelBorderTVW)
+        Me.PanelBorder_TVWDesktop.Controls.Add(Me.PanelBorder_OpcoesDeProcessos)
         Me.PanelBorder_TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBorder_TVWDesktop.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TVWDesktop.Name = "PanelBorder_TVWDesktop"
-        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(308, 341)
+        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(324, 436)
         Me.PanelBorder_TVWDesktop.TabIndex = 4
         '
-        'Panel2
+        'PanelBorderTVW
         '
-        Me.Panel2.Controls.Add(Me.TVWFilesAndFolders)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 31)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel2.Size = New System.Drawing.Size(308, 310)
-        Me.Panel2.TabIndex = 99
+        Me.PanelBorderTVW.Controls.Add(Me.PanelBackgroundTVW)
+        Me.PanelBorderTVW.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorderTVW.Location = New System.Drawing.Point(0, 27)
+        Me.PanelBorderTVW.Name = "PanelBorderTVW"
+        Me.PanelBorderTVW.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorderTVW.Size = New System.Drawing.Size(324, 409)
+        Me.PanelBorderTVW.TabIndex = 99
         '
-        'Panel1
+        'PanelBaseLuzLeft
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 28)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(308, 3)
-        Me.Panel1.TabIndex = 98
+        Me.PanelBaseLuzLeft.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
+        Me.PanelBaseLuzLeft.Controls.Add(Me.PanelSombra)
+        Me.PanelBaseLuzLeft.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelBaseLuzLeft.Location = New System.Drawing.Point(1, 25)
+        Me.PanelBaseLuzLeft.Name = "PanelBaseLuzLeft"
+        Me.PanelBaseLuzLeft.Size = New System.Drawing.Size(322, 2)
+        Me.PanelBaseLuzLeft.TabIndex = 98
         '
-        'PanelOpcoesDeProcessos
+        'PanelBorder_OpcoesDeProcessos
         '
-        Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel36)
-        Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(0, 0)
-        Me.PanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
-        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(308, 28)
-        Me.PanelOpcoesDeProcessos.TabIndex = 97
+        Me.PanelBorder_OpcoesDeProcessos.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_OpcoesDeProcessos.Controls.Add(Me.PanelBaseLuzLeft)
+        Me.PanelBorder_OpcoesDeProcessos.Controls.Add(Me.PanelOpcoesDeProcessos)
+        Me.PanelBorder_OpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBorder_OpcoesDeProcessos.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder_OpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelBorder_OpcoesDeProcessos.Name = "PanelBorder_OpcoesDeProcessos"
+        Me.PanelBorder_OpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(1, 1, 1, 0)
+        Me.PanelBorder_OpcoesDeProcessos.Size = New System.Drawing.Size(324, 27)
+        Me.PanelBorder_OpcoesDeProcessos.TabIndex = 97
         '
         'Panel36
         '
@@ -156,7 +163,7 @@ Partial Class ControlPainel_Desktop
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
-        Me.Panel36.Size = New System.Drawing.Size(298, 26)
+        Me.Panel36.Size = New System.Drawing.Size(312, 24)
         Me.Panel36.TabIndex = 0
         '
         'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
@@ -166,25 +173,8 @@ Partial Class ControlPainel_Desktop
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Location = New System.Drawing.Point(32, 1)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Name = "PanelEnvolveCHK_ShowPanelAllProcessosAcoes"
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 24)
+        Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.Size = New System.Drawing.Size(32, 22)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.TabIndex = 115
-        '
-        'CHK_ShowCheck
-        '
-        Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.CHK_ShowCheck.BackgroundImage = CType(resources.GetObject("CHK_ShowCheck.BackgroundImage"), System.Drawing.Image)
-        Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CHK_ShowCheck.FlatAppearance.BorderSize = 0
-        Me.CHK_ShowCheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
-        Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
-        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 22)
-        Me.CHK_ShowCheck.TabIndex = 19
-        Me.CHK_ShowCheck.UseVisualStyleBackColor = False
         '
         'PanelEnvolve_BTN_NewFolder
         '
@@ -193,24 +183,8 @@ Partial Class ControlPainel_Desktop
         Me.PanelEnvolve_BTN_NewFolder.Location = New System.Drawing.Point(0, 1)
         Me.PanelEnvolve_BTN_NewFolder.Name = "PanelEnvolve_BTN_NewFolder"
         Me.PanelEnvolve_BTN_NewFolder.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 24)
+        Me.PanelEnvolve_BTN_NewFolder.Size = New System.Drawing.Size(32, 22)
         Me.PanelEnvolve_BTN_NewFolder.TabIndex = 114
-        '
-        'BTN_NewFolder
-        '
-        Me.BTN_NewFolder.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.BTN_NewFolder.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
-        Me.BTN_NewFolder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTN_NewFolder.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTN_NewFolder.FlatAppearance.BorderSize = 0
-        Me.BTN_NewFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTN_NewFolder.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTN_NewFolder.Location = New System.Drawing.Point(1, 1)
-        Me.BTN_NewFolder.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTN_NewFolder.Name = "BTN_NewFolder"
-        Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 22)
-        Me.BTN_NewFolder.TabIndex = 20
-        Me.BTN_NewFolder.UseVisualStyleBackColor = False
         '
         'CMItens
         '
@@ -337,13 +311,6 @@ Partial Class ControlPainel_Desktop
         Me.ToolStripMenuItem2.Size = New System.Drawing.Size(183, 22)
         Me.ToolStripMenuItem2.Text = "..."
         '
-        'ProcessarToolStripMenuItem
-        '
-        Me.ProcessarToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.avancar_1
-        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
-        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
-        Me.ProcessarToolStripMenuItem.Text = "Processar"
-        '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
@@ -355,20 +322,94 @@ Partial Class ControlPainel_Desktop
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
+        'CHK_ShowCheck
+        '
+        Me.CHK_ShowCheck.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CHK_ShowCheck.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.CHK_ShowCheck.BackgroundImage = CType(resources.GetObject("CHK_ShowCheck.BackgroundImage"), System.Drawing.Image)
+        Me.CHK_ShowCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CHK_ShowCheck.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CHK_ShowCheck.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CHK_ShowCheck.FlatAppearance.BorderSize = 0
+        Me.CHK_ShowCheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CHK_ShowCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CHK_ShowCheck.Location = New System.Drawing.Point(1, 1)
+        Me.CHK_ShowCheck.Name = "CHK_ShowCheck"
+        Me.CHK_ShowCheck.Size = New System.Drawing.Size(30, 20)
+        Me.CHK_ShowCheck.TabIndex = 19
+        Me.CHK_ShowCheck.UseVisualStyleBackColor = False
+        '
+        'BTN_NewFolder
+        '
+        Me.BTN_NewFolder.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.BTN_NewFolder.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.Nova_pasta_em_agrupamentos
+        Me.BTN_NewFolder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTN_NewFolder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTN_NewFolder.FlatAppearance.BorderSize = 0
+        Me.BTN_NewFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTN_NewFolder.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTN_NewFolder.Location = New System.Drawing.Point(1, 1)
+        Me.BTN_NewFolder.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTN_NewFolder.Name = "BTN_NewFolder"
+        Me.BTN_NewFolder.Size = New System.Drawing.Size(30, 20)
+        Me.BTN_NewFolder.TabIndex = 20
+        Me.BTN_NewFolder.UseVisualStyleBackColor = False
+        '
+        'ProcessarToolStripMenuItem
+        '
+        Me.ProcessarToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.avancar_1
+        Me.ProcessarToolStripMenuItem.Name = "ProcessarToolStripMenuItem"
+        Me.ProcessarToolStripMenuItem.Size = New System.Drawing.Size(242, 22)
+        Me.ProcessarToolStripMenuItem.Text = "Processar"
+        '
+        'PanelOpcoesDeProcessos
+        '
+        Me.PanelOpcoesDeProcessos.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelOpcoesDeProcessos.Controls.Add(Me.Panel36)
+        Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(1, 1)
+        Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
+        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(322, 26)
+        Me.PanelOpcoesDeProcessos.TabIndex = 1
+        '
+        'PanelSombra
+        '
+        Me.PanelSombra.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.PanelSombra.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelSombra.Location = New System.Drawing.Point(0, 1)
+        Me.PanelSombra.Name = "PanelSombra"
+        Me.PanelSombra.Size = New System.Drawing.Size(322, 1)
+        Me.PanelSombra.TabIndex = 95
+        '
+        'PanelBackgroundTVW
+        '
+        Me.PanelBackgroundTVW.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelBackgroundTVW.Controls.Add(Me.TVWFilesAndFolders)
+        Me.PanelBackgroundTVW.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackgroundTVW.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBackgroundTVW.Name = "PanelBackgroundTVW"
+        Me.PanelBackgroundTVW.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
+        Me.PanelBackgroundTVW.Size = New System.Drawing.Size(322, 407)
+        Me.PanelBackgroundTVW.TabIndex = 4
+        '
         'ControlPainel_Desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelBorder_TVWDesktop)
         Me.Name = "ControlPainel_Desktop"
-        Me.Size = New System.Drawing.Size(308, 341)
+        Me.Size = New System.Drawing.Size(324, 436)
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.PanelOpcoesDeProcessos.ResumeLayout(False)
+        Me.PanelBorderTVW.ResumeLayout(False)
+        Me.PanelBaseLuzLeft.ResumeLayout(False)
+        Me.PanelBorder_OpcoesDeProcessos.ResumeLayout(False)
         Me.Panel36.ResumeLayout(False)
         Me.PanelEnvolveCHK_ShowPanelAllProcessosAcoes.ResumeLayout(False)
         Me.PanelEnvolve_BTN_NewFolder.ResumeLayout(False)
         Me.CMItens.ResumeLayout(False)
+        Me.PanelOpcoesDeProcessos.ResumeLayout(False)
+        Me.PanelBackgroundTVW.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -376,10 +417,10 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents TVWFilesAndFolders As TreeView
     Friend WithEvents PanelBorder_TVWDesktop As Panel
     Friend WithEvents IMGList As ImageList
-    Friend WithEvents PanelOpcoesDeProcessos As Panel
+    Friend WithEvents PanelBorder_OpcoesDeProcessos As Panel
     Friend WithEvents Panel36 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PanelBorderTVW As Panel
+    Friend WithEvents PanelBaseLuzLeft As Panel
     Friend WithEvents PanelEnvolve_BTN_NewFolder As Panel
     Friend WithEvents BTN_NewFolder As Button
     Friend WithEvents PanelEnvolveCHK_ShowPanelAllProcessosAcoes As Panel
@@ -408,4 +449,7 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
     Friend WithEvents AbrirComExplorerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem18 As ToolStripSeparator
+    Friend WithEvents PanelOpcoesDeProcessos As Panel
+    Friend WithEvents PanelSombra As Panel
+    Friend WithEvents PanelBackgroundTVW As Panel
 End Class

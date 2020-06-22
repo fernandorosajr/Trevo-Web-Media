@@ -201,12 +201,12 @@ Long, lpColorValues As Long) As Long
         Dim path As String = "C:\Minha Pasta\"
         Dim folder As DirectoryInfo
         Dim file As FileInfo
-        For x = 0 To 100
+        For x = 0 To 2
 
             folder = New DirectoryInfo(path & "Nova Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 100
+            For y = 0 To 2
                 file = New FileInfo(folder.FullName & "\" & "Arquivo " & y & ".jpg")
                 SelectedFoldersAndFiles.Add(file)
             Next

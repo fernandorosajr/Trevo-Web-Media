@@ -22,8 +22,11 @@ Partial Class ControlPainel_Filtro
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Arquivos")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Incluir Pastas")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nó5")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Nó8")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Filtrar por tipo de arquivo", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Filtro))
         Me.TVWFiltro = New System.Windows.Forms.TreeView()
         Me.Panel_Border = New System.Windows.Forms.Panel()
@@ -60,24 +63,38 @@ Partial Class ControlPainel_Filtro
         Me.TVWFiltro.FullRowSelect = True
         Me.TVWFiltro.Location = New System.Drawing.Point(3, 3)
         Me.TVWFiltro.Name = "TVWFiltro"
+        TreeNode1.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
         TreeNode1.Checked = True
-        TreeNode1.ImageKey = "Pasta.ico"
-        TreeNode1.Name = "Node2"
-        TreeNode1.SelectedImageKey = "Pasta.ico"
-        TreeNode1.Text = "Incluir Pastas"
+        TreeNode1.ImageKey = "arquivo.ico"
+        TreeNode1.Name = "Node1"
+        TreeNode1.SelectedImageKey = "arquivo.ico"
+        TreeNode1.Text = "Incluir Arquivos"
+        TreeNode2.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
         TreeNode2.Checked = True
-        TreeNode2.ImageKey = "arquivo.ico"
-        TreeNode2.Name = "Node1"
-        TreeNode2.SelectedImageKey = "arquivo.ico"
-        TreeNode2.Text = "Incluir Arquivos"
-        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2})
+        TreeNode2.ImageKey = "Pasta.ico"
+        TreeNode2.Name = "Node2"
+        TreeNode2.SelectedImageKey = "Pasta.ico"
+        TreeNode2.Text = "Incluir Pastas"
+        TreeNode3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
+        TreeNode3.Checked = True
+        TreeNode3.Name = "Nó5"
+        TreeNode3.Text = "Nó5"
+        TreeNode4.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(56, Byte), Integer))
+        TreeNode4.Checked = True
+        TreeNode4.Name = "Nó8"
+        TreeNode4.Text = "Nó8"
+        TreeNode5.BackColor = System.Drawing.Color.FromArgb(CType(CType(73, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(76, Byte), Integer))
+        TreeNode5.Checked = True
+        TreeNode5.Name = "Nó3"
+        TreeNode5.Text = "Filtrar por tipo de arquivo"
+        Me.TVWFiltro.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode5})
         Me.TVWFiltro.ShowLines = False
-        Me.TVWFiltro.Size = New System.Drawing.Size(316, 232)
+        Me.TVWFiltro.Size = New System.Drawing.Size(316, 231)
         Me.TVWFiltro.TabIndex = 2
         '
         'Panel_Border
         '
-        Me.Panel_Border.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Panel_Border.BackColor = System.Drawing.Color.DimGray
         Me.Panel_Border.Controls.Add(Me.Panel_Explorer_Prima)
         Me.Panel_Border.Controls.Add(Me.Panel_LBLTitle)
         Me.Panel_Border.Dock = System.Windows.Forms.DockStyle.Fill
@@ -95,7 +112,6 @@ Partial Class ControlPainel_Filtro
         Me.Panel_Explorer_Prima.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_Explorer_Prima.Location = New System.Drawing.Point(1, 30)
         Me.Panel_Explorer_Prima.Name = "Panel_Explorer_Prima"
-        Me.Panel_Explorer_Prima.Padding = New System.Windows.Forms.Padding(0, 1, 0, 0)
         Me.Panel_Explorer_Prima.Size = New System.Drawing.Size(322, 264)
         Me.Panel_Explorer_Prima.TabIndex = 4
         '
@@ -104,10 +120,10 @@ Partial Class ControlPainel_Filtro
         Me.Panel_ExplorarPorFiltro.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Panel_ExplorarPorFiltro.Controls.Add(Me.TVWFiltro)
         Me.Panel_ExplorarPorFiltro.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel_ExplorarPorFiltro.Location = New System.Drawing.Point(0, 26)
+        Me.Panel_ExplorarPorFiltro.Location = New System.Drawing.Point(0, 27)
         Me.Panel_ExplorarPorFiltro.Name = "Panel_ExplorarPorFiltro"
         Me.Panel_ExplorarPorFiltro.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(322, 238)
+        Me.Panel_ExplorarPorFiltro.Size = New System.Drawing.Size(322, 237)
         Me.Panel_ExplorarPorFiltro.TabIndex = 1
         '
         'PanelTXTFiltrar
@@ -115,10 +131,10 @@ Partial Class ControlPainel_Filtro
         Me.PanelTXTFiltrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelTXTFiltrar.Controls.Add(Me.PanelBorder_TXTFiltrar)
         Me.PanelTXTFiltrar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelTXTFiltrar.Location = New System.Drawing.Point(0, 1)
+        Me.PanelTXTFiltrar.Location = New System.Drawing.Point(0, 0)
         Me.PanelTXTFiltrar.Name = "PanelTXTFiltrar"
         Me.PanelTXTFiltrar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelTXTFiltrar.Size = New System.Drawing.Size(322, 25)
+        Me.PanelTXTFiltrar.Size = New System.Drawing.Size(322, 27)
         Me.PanelTXTFiltrar.TabIndex = 4
         '
         'PanelBorder_TXTFiltrar
@@ -129,7 +145,7 @@ Partial Class ControlPainel_Filtro
         Me.PanelBorder_TXTFiltrar.Location = New System.Drawing.Point(3, 3)
         Me.PanelBorder_TXTFiltrar.Name = "PanelBorder_TXTFiltrar"
         Me.PanelBorder_TXTFiltrar.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_TXTFiltrar.Size = New System.Drawing.Size(316, 19)
+        Me.PanelBorder_TXTFiltrar.Size = New System.Drawing.Size(316, 21)
         Me.PanelBorder_TXTFiltrar.TabIndex = 19
         '
         'PanelEnvolve_TXTFiltrar
@@ -141,7 +157,7 @@ Partial Class ControlPainel_Filtro
         Me.PanelEnvolve_TXTFiltrar.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_TXTFiltrar.Name = "PanelEnvolve_TXTFiltrar"
         Me.PanelEnvolve_TXTFiltrar.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_TXTFiltrar.Size = New System.Drawing.Size(314, 17)
+        Me.PanelEnvolve_TXTFiltrar.Size = New System.Drawing.Size(314, 19)
         Me.PanelEnvolve_TXTFiltrar.TabIndex = 93
         '
         'TXTFiltrar
@@ -169,7 +185,7 @@ Partial Class ControlPainel_Filtro
         Me.BTN_TXTFiltrar.Location = New System.Drawing.Point(296, 3)
         Me.BTN_TXTFiltrar.Margin = New System.Windows.Forms.Padding(0)
         Me.BTN_TXTFiltrar.Name = "BTN_TXTFiltrar"
-        Me.BTN_TXTFiltrar.Size = New System.Drawing.Size(15, 11)
+        Me.BTN_TXTFiltrar.Size = New System.Drawing.Size(15, 13)
         Me.BTN_TXTFiltrar.TabIndex = 18
         Me.BTN_TXTFiltrar.UseVisualStyleBackColor = False
         '
@@ -183,6 +199,7 @@ Partial Class ControlPainel_Filtro
         Me.Panel_LBLTitle.Name = "Panel_LBLTitle"
         Me.Panel_LBLTitle.Size = New System.Drawing.Size(322, 29)
         Me.Panel_LBLTitle.TabIndex = 5
+        Me.Panel_LBLTitle.Visible = False
         '
         'LBLTitle
         '

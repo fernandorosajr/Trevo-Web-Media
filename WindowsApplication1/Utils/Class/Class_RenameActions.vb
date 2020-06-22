@@ -1,4 +1,6 @@
 ﻿Imports System.IO
+Imports System.Collections
+Imports System.Collections.Generic
 ' Trata os as listas de arquivos e pastas e os renomeiam segundo criterios.
 Public Class Class_RenameActions
     '  Dim c As New Class_DataRenameOption
@@ -14,92 +16,231 @@ Public Class Class_RenameActions
     '-------------------------------------------------
 
     Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion)) As List(Of Object)
-        Dim index As Integer = 0 '402882 '92486 '17601 '17575 '18251
-
-        ' caso aquele valoer seja 25 usar 
-        'index  = 17575
-
+        Dim index As Long = 0
+        Dim index2 As Long
         Dim Renamed_SelectedFoldersAndFiles As New List(Of Object)
+        Dim _selectedFoldersAndFiles As New List(Of String)
+        ' TODO:  Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
+        Dim listFolders As New ArrayList
+        'Dim obj As Object
 
-        '' TODO:  Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
-        'Dim listFolders As New List(Of DirectoryInfo)
+        ' TODO: (1) listFolders pode se tornar uma matriz bidimensional contendo em 
+        ' 0 = nome original
+        ' 1 = nome renomedo
+        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/arrays/
 
-        'For Each obj As Object In SelectedFoldersAndFiles
-        '    If TypeOf obj Is DirectoryInfo Then
-        '        listFolders.Add(obj)
-        '    End If
-        'Next
+        Dim dir As DirectoryInfo
+        Dim dirRename As DirectoryInfo
+        Dim indexfolder As Long
+        Dim ultimoIndexChecado As Long
 
-        '' TODO: pecorrer ListFolder e dentro deste pecorrer SelectedFoldersAndFiles e ...
-        '' ... renomear  as pastas dos arquivos e as pastas de SelectedFoldersAndFiles.
-        'Dim folderParent As DirectoryInfo
+        For Each obj As Object In SelectedFoldersAndFiles
+            If TypeOf obj Is DirectoryInfo Then
 
-        'Dim file As FileInfo
-        'Dim folder As DirectoryInfo
-        'Dim _newfileStr As String
+                Dim listFoldersArray(1) As DirectoryInfo
 
-        'Dim indexfolder As Integer
+                dir = obj
 
-        'For Each subFolder In listFolders
+                dirRename = RenameAccordingToCriterion(obj, dataRenameCriteriaList, indexfolder)
 
-        '    For Each obj In SelectedFoldersAndFiles
+                listFoldersArray(0) = New DirectoryInfo(dir.FullName)
+                listFoldersArray(1) = New DirectoryInfo(dirRename.FullName)
 
-        '        If TypeOf obj Is FileInfo Then
 
-        '            file = obj
-        '            folderParent = New DirectoryInfo(file.DirectoryName)
+                listFolders.Add(listFoldersArray)
 
-        '            If folderParent.FullName = subFolder.FullName Then
 
-        '                ' Function Renomear sub pasta do arquivo
-        '                ' -------------------------------------
-        '                folderParent = RenameAccordingToCriterion(folderParent, dataRenameCriteriaList, indexfolder)
+                indexfolder += 1
+            End If
+        Next
 
-        '                _newfileStr = folderParent.FullName.ToString & "\" & file.Name.ToString
+        indexfolder = 0
+        ' TODO: pecorrer ListFolder e dentro deste pecorrer SelectedFoldersAndFiles e ...
+        ' ... renomear  as pastas dos arquivos e as pastas de SelectedFoldersAndFiles.
+        Dim folderParent As DirectoryInfo
 
-        '                file = New FileInfo(_newfileStr)
+        Dim file As FileInfo
+        Dim folder As DirectoryInfo
 
-        '                ' -------------------------------------
-        '            End If
 
-        '        ElseIf TypeOf obj Is DirectoryInfo Then
+        ' Dim indexfolder As Integer
 
-        '            folder = obj
-        '            ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.findindex?view=netcore-3.1
-        '            listFolders.FindIndex(folder)
-        '            folder = RenameAccordingToCriterion(folder, dataRenameCriteriaList, indexfolder)
+        _selectedFoldersAndFiles.Clear()
 
-        '            obj = folder
+        For Each obj As Object In SelectedFoldersAndFiles
 
-        '        End If
+            If TypeOf obj Is FileInfo Then
 
-        '    Next
+                file = obj
 
-        '    indexfolder += 1
+                _selectedFoldersAndFiles.Add(file.FullName)
 
-        'Next
+            ElseIf TypeOf obj Is DirectoryInfo Then
+                folder = obj
+                _selectedFoldersAndFiles.Add(folder.FullName)
+
+
+            End If
+
+        Next
+
+        Dim i As Long
+
+        Dim ii As Long = 0
+
+
+
+        For Each subFolder In listFolders
+
+            Do While i > -1 'SelectedFoldersAndFiles.Count
+
+                'Array.FindIndex(Of (planets, Function(element)()
+                'Return element.StartsWith("M")
+                '                      End Function))
+
+
+                If TypeOf SelectedFoldersAndFiles(i) Is FileInfo Then
+
+                    file = New FileInfo(_selectedFoldersAndFiles(i))
+                    folderParent = New DirectoryInfo(file.DirectoryName)
+
+
+                    If subFolder(0).FullName = folderParent.FullName Then
+                        folderParent = subFolder(1)
+                        ' RenameAccordingToCriterion(folderParent, dataRenameCriteriaList, indexfolder)
+
+                        ' TODO: (2) Aqui acessa a matriz de pastas renomeadas ai inves de renomea-la...
+                        ' todas as vezes que passar por aqui.
+                        file = New FileInfo(folderParent.FullName & "\" & file.Name)
+                    End If
+
+                    _selectedFoldersAndFiles(i) = file.FullName
+
+
+                ElseIf TypeOf SelectedFoldersAndFiles(i) Is DirectoryInfo Then
+
+                    folder = New DirectoryInfo(_selectedFoldersAndFiles(i))
+
+
+                    If subFolder(0).FullName = folder.FullName Then
+
+                        ' TODO: (3) Aqui acessa a matriz de pastas renomeadas ao inves de renomea-la...
+                        ' todas as vezes que passar por aqui.
+
+                        folder = subFolder(1) 'RenameAccordingToCriterion(folder, dataRenameCriteriaList, indexfolder)
+
+                    End If
+                    _selectedFoldersAndFiles(i) = folder.FullName
+
+                End If
+
+                If i <> -1 Then i += 1
+
+                i = Array.FindIndex(SelectedFoldersAndFiles.ToArray, i, Function(path)
+
+                                                                            Dim valor As Boolean = False
+
+                                                                            If TypeOf path Is FileInfo Then
+
+                                                                                If path.DirectoryName = subFolder(0).FullName Then
+                                                                                    valor = True
+                                                                                    'Else
+                                                                                    '    valor = False
+                                                                                End If
+
+
+                                                                            ElseIf TypeOf path Is DirectoryInfo Then
+
+                                                                                If path.FullName = subFolder(0).FullName Then
+                                                                                    valor = True
+                                                                                    'Else
+                                                                                    '    valor = False
+                                                                                End If
+
+                                                                            End If
+
+                                                                            Return valor
+
+                                                                        End Function)
+
+
+                If i > -1 Then ultimoIndexChecado = i
+            Loop
+
+            i = ultimoIndexChecado
+
+            indexfolder += 1
+        Next
+
+
+        ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.findindex?view=netcore-3.1
+        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/procedures/lambda-expressions
+        ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.exists?view=netcore-3.1#System_Array_Exists__1___0___System_Predicate___0__
 
 
         ' TODO: Pecorrer SelectedFoldersAndFiles e Renomear somente os arquivos
 
-        For Each obj As Object In SelectedFoldersAndFiles
-            Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(obj, dataRenameCriteriaList, index))
+        ' Dim i As Long
+        indexfolder = 0
+
+        For Each obj As Object In _selectedFoldersAndFiles
+            Dim id As Long
+            Dim _obj As Object = obj
+
+            If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
+
+                id = Array.FindIndex(listFolders.ToArray, Function(_array)
+                                                              Dim value As Boolean = False
+                                                              dir = New DirectoryInfo(obj)
+
+                                                              If dir.FullName = _array(1).FullName Then
+                                                                  value = True
+                                                              End If
+
+                                                              Return value
+
+                                                          End Function)
+
+                If id > -1 Then
+                    _obj = (listFolders.Item(id)(1))
+
+                    Renamed_SelectedFoldersAndFiles.Add(_obj)  'RenameAccordingToCriterion(_obj, dataRenameCriteriaList, indexfolder))
+
+                    index2 = 0
+                Else
+                    _obj = New DirectoryInfo(obj)
+
+                    Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
+                End If
+
+            ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
+                _obj = New FileInfo(obj)
+
+                Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
+                index2 += 1
+            End If
 
             index += 1
+
+
         Next
 
         Return Renamed_SelectedFoldersAndFiles
+
     End Function
 
+    'Private Overloads Function RenameAccordingToCriterion(obj As Object, dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), indexfolder As Long) As DirectoryInfo
+    '    Throw New NotImplementedException()
+    'End Function
 
-    Public Overloads Function RenameAccordingToCriterion(file As FileInfo, criteria As List(Of Class_DataRenamingCriterion), index As Integer)
-        Dim _newName As String = ""
+    Public Overloads Function RenameAccordingToCriterion(file As FileInfo, criteria As List(Of Class_DataRenamingCriterion), index As Long)
+        Dim _newName As String '= ""
         Dim _newFile As FileInfo
 
         Dim _strData As String = ""
 
-        Dim nomeDoArquivo As String
-        Dim extDoArquivo As String
+        Dim nomeDoArquivo As String = ""
+        Dim extDoArquivo As String = ""
         Dim temExtensao As Boolean = False
 
 
@@ -236,10 +377,10 @@ Public Class Class_RenameActions
 
 
             If temExtensao = False Then
-                nomeDoArquivo = nomeDoArquivo + _strData
+                nomeDoArquivo += _strData
 
             Else
-                extDoArquivo = extDoArquivo + _strData
+                extDoArquivo += _strData
 
             End If
         Next
@@ -261,8 +402,8 @@ Public Class Class_RenameActions
     '    Return _newName
     'End Function
 
-    Public Overloads Function RenameAccordingToCriterion(obj As Object, criteria As List(Of Class_DataRenamingCriterion), index As Integer)
-        Dim newName As String = ""
+    Public Overloads Function RenameAccordingToCriterion(obj As Object, criteria As List(Of Class_DataRenamingCriterion), index As Long)
+        Dim newName As String '= ""
         Dim newFullName As String = ""
 
         Dim aFile As FileInfo
@@ -275,8 +416,8 @@ Public Class Class_RenameActions
 
         Dim _strData As String = ""
 
-        Dim nomeDoArquivo As String
-        Dim extDoArquivo As String
+        Dim nomeDoArquivo As String = ""
+        Dim extDoArquivo As String = ""
         Dim _isExtension As Boolean = False
 
         ' Define o tipo do obj 
@@ -465,10 +606,10 @@ Public Class Class_RenameActions
 
 
             If _isExtension = False Then
-                nomeDoArquivo = nomeDoArquivo + _strData
+                nomeDoArquivo += _strData
 
             Else
-                extDoArquivo = extDoArquivo + _strData
+                extDoArquivo += _strData
 
             End If
         Next
@@ -505,8 +646,12 @@ Public Class Class_RenameActions
         End If
 
 
-        ' TODO: Aqui tem que retornar newObject e deve ser igual a pasta ou a arquivo 
-        ' de acordo com o objeto
+        ' TODO: Inserir tratamento de tamanho de nome de de arquivo de diretório.
+
+        'System.IO.PathTooLongException
+        'O caminho especificado, o nome do arquivo ou ambos são muito longos.
+        'O nome de arquivo totalmente qualificado deve ter menos de 260 
+        ' caracteres e o nome do diretório menos de 248 caracteres.'
 
         If objIsDirectory <> objIsFile Then
             If objIsDirectory = True Then
@@ -581,3 +726,31 @@ Public Class Class_RenameActions
 
     End Enum
 End Class
+
+
+
+
+Module Example
+    Public Sub Main()
+        ' Get an array of n random integers.
+        Dim values() As Integer = GetArray(50, 0, 1000)
+        Dim lBound As Integer = 300
+        Dim uBound As Integer = 600
+        Dim matchedItems() As Integer = Array.FindAll(values,
+                                            Function(x) x >= lBound And x <= uBound)
+        For ctr As Integer = 0 To matchedItems.Length - 1
+            Console.Write("{0}  ", matchedItems(ctr))
+            If (ctr + 1) Mod 12 = 0 Then Console.WriteLine()
+        Next
+    End Sub
+
+    Private Function GetArray(n As Integer, lower As Integer,
+                             upper As Integer) As Integer()
+        Dim rnd As New Random()
+        Dim list As New List(Of Integer)
+        For ctr As Integer = 1 To n
+            list.Add(rnd.Next(lower, upper + 1))
+        Next
+        Return list.ToArray()
+    End Function
+End Module

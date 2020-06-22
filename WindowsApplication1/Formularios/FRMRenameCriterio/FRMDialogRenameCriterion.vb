@@ -21,6 +21,8 @@ Public Class FRMDialogRenameCriterion
     Public SelectedFoldersAndFiles As New List(Of Object)
     Public Renamed_SelectedFoldersAndFiles As New List(Of Object)
     Private resultado As String
+
+    Public fuxoContinuoDeRenome As Boolean
     ' Propriedades de Formulários
     ' ------------------------------------------------
 
@@ -229,5 +231,9 @@ Public Class FRMDialogRenameCriterion
 
         Me.UseWaitCursor = False
         Timer.Enabled = True
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

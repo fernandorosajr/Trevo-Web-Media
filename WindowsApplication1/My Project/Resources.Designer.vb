@@ -1783,6 +1783,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property remove_selection_cursor() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("remove-selection-cursor", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Renome2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Renome2", resourceCulture)
@@ -1866,6 +1876,36 @@ Namespace My.Resources
         Friend ReadOnly Property seleccionar_tudo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("seleccionar tudo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property selection_cursor() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("selection_cursor", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property selection_cursor01() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("selection_cursor01", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property selection_cursor01_Hover() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("selection_cursor01_Hover", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -2036,6 +2076,36 @@ Namespace My.Resources
         Friend ReadOnly Property usu() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("usu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property verify_Clipboard_Hover() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("verify_Clipboard_Hover", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property verify_Clipboard01_35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("verify_Clipboard01_35", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property verify_Clipboard35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("verify_Clipboard35", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

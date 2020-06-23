@@ -893,14 +893,43 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
+    Private Sub RB_Selecao_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Selecao.CheckedChanged
+        If RB_Selecao.Checked = True Then
+            RB_Selecao.Image = My.Resources.selection_cursor01_Hover
+
+        Else
+            RB_Selecao.Image = My.Resources.selection_cursor01
+
+        End If
+
+    End Sub
+
+    Private Sub RB_Selecao_MouseHover(sender As Object, e As EventArgs) Handles RB_Selecao.MouseHover
+        RB_Selecao.Image = My.Resources.selection_cursor01_Hover
+
+    End Sub
+
+    Private Sub RB_Selecao_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Selecao.MouseMove
+        RB_Selecao.Image = My.Resources.selection_cursor01_Hover
+
+    End Sub
+
+
+    Private Sub RB_Selecao_MouseLeave(sender As Object, e As EventArgs) Handles RB_Selecao.MouseLeave
+
+        If RB_Selecao.Checked = False Then
+            RB_Selecao.Image = My.Resources.selection_cursor01
+
+        End If
+
+    End Sub
+
     Private Sub RB_Filter_MouseHover(sender As Object, e As EventArgs) Handles RB_Filter.MouseHover
         RB_Filter.Image = My.Resources.filter_Hover35
 
     End Sub
 
-    Private Sub RB_Clipboard_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Clipboard.CheckedChanged
 
-    End Sub
 
     Private Sub SPRedimVisualizarMidia_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles SPRedimVisualizarMidia.SplitterMoved
 
@@ -908,10 +937,6 @@ Long, lpColorValues As Long) As Long
 
     Private Sub RB_Filter_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Filter.MouseMove
         RB_Filter.Image = My.Resources.filter_Hover35
-
-    End Sub
-
-    Private Sub Splitter7_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles Splitter7.SplitterMoved
 
     End Sub
 
@@ -923,5 +948,28 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
+    Private Sub RB_Clipboard_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Clipboard.CheckedChanged
+        If RB_Clipboard.Checked = True Then
+            RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
+        Else
+            RB_Clipboard.Image = My.Resources.verify_Clipboard01_35
 
+        End If
+    End Sub
+
+    Private Sub RB_Clipboard_MouseHover(sender As Object, e As EventArgs) Handles RB_Clipboard.MouseHover
+        RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
+
+    End Sub
+
+    Private Sub RB_Clipboard_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Clipboard.MouseMove
+        RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
+
+    End Sub
+
+    Private Sub RB_Clipboard_MouseLeave(sender As Object, e As EventArgs) Handles RB_Clipboard.MouseLeave
+        If RB_Clipboard.Checked = False Then
+            RB_Clipboard.Image = My.Resources.verify_Clipboard01_35
+        End If
+    End Sub
 End Class

@@ -862,6 +862,13 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\verify_Clipboard01_35.png" />
+    <None Include="Resources\verify_Clipboard35.png" />
+    <None Include="Resources\verify_Clipboard_Hover.png" />
+    <None Include="Resources\selection_cursor01_Hover.png" />
+    <None Include="Resources\selection_cursor01.png" />
+    <None Include="Resources\selection_cursor.png" />
+    <None Include="Resources\remove-selection-cursor.png" />
     <None Include="Resources\pastaProcesso35.png" />
     <None Include="Resources\pastaProcesso35_Hover.png" />
     <None Include="Resources\filter_35.png" />

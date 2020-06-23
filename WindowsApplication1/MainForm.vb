@@ -25,7 +25,7 @@ Public Class MainForm
     Public toolBar_ViewMenu As New Control_ViewMenuBar
     Public toolBar_BurnMenu As New Control_BurnMenuBar
     Public toolBar_OrganizeMenu02 As New Control_OrganizeMenuBar
-
+    Public panel_Clipboard As New Control_Clipboard
 
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
@@ -189,6 +189,10 @@ Long, lpColorValues As Long) As Long
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
         _controlSelectFileAndFolderPanel.Visible = True
 
+        Panel_RecebeClipboad.Controls.Add(panel_Clipboard)
+        panel_Clipboard.Dock = DockStyle.Fill
+        panel_Clipboard.Visible = True
+
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
 
         For fadein = 0.0 To 1.1 Step 0.1
@@ -319,6 +323,11 @@ Long, lpColorValues As Long) As Long
         Panel_RecebeExplorer.Visible = RB_Explorer.Checked
         Panel_Recebe_Filtro.Visible = Not (RB_Explorer.Checked)
 
+        Panel_RecebeClipboad.Visible = Not (RB_Explorer.Checked)
+        Panel_RecebeSelecao.Visible = Not (RB_Explorer.Checked)
+
+        Panel_RecebePastaProcesso.Visible = Not (RB_Explorer.Checked)
+
         ' PanelEnvolveMidiaAberta.Visible = True
         ' SPRedimVisualizarMidia.Visible = True
 
@@ -335,6 +344,10 @@ Long, lpColorValues As Long) As Long
         Panel_MediasExplorer.Visible = RB_Midias.Checked
         Panel_RecebeExplorer.Visible = Not (RB_Midias.Checked)
         Panel_Recebe_Filtro.Visible = Not (RB_Midias.Checked)
+
+        Panel_RecebeClipboad.Visible = Not (RB_Midias.Checked)
+        Panel_RecebeSelecao.Visible = Not (RB_Midias.Checked)
+        Panel_RecebePastaProcesso.Visible = Not (RB_Midias.Checked)
 
         If RB_Midias.Checked = True Then
             RB_Midias.Image = My.Resources.dvd_face6_Hover
@@ -857,6 +870,15 @@ Long, lpColorValues As Long) As Long
             RB_PastaProcesso.Image = My.Resources.pastaProcesso35
 
         End If
+
+        Panel_MediasExplorer.Visible = Not (RB_PastaProcesso.Checked)
+        Panel_RecebeExplorer.Visible = Not (RB_PastaProcesso.Checked)
+        Panel_Recebe_Filtro.Visible = Not (RB_PastaProcesso.Checked)
+
+        Panel_RecebeClipboad.Visible = Not (RB_PastaProcesso.Checked)
+        Panel_RecebeSelecao.Visible = Not (RB_PastaProcesso.Checked)
+        Panel_RecebePastaProcesso.Visible = (RB_PastaProcesso.Checked)
+
     End Sub
 
     Private Sub RB_PastaProcesso_MouseHover(sender As Object, e As EventArgs) Handles RB_PastaProcesso.MouseHover
@@ -891,9 +913,23 @@ Long, lpColorValues As Long) As Long
         Panel_RecebeExplorer.Visible = Not (RB_Filter.Checked)
         Panel_Recebe_Filtro.Visible = (RB_Filter.Checked)
 
+        Panel_RecebeClipboad.Visible = Not (RB_Filter.Checked)
+        Panel_RecebeSelecao.Visible = Not (RB_Filter.Checked)
+        Panel_RecebePastaProcesso.Visible = Not (RB_Filter.Checked)
+
     End Sub
 
     Private Sub RB_Selecao_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Selecao.CheckedChanged
+
+        Panel_MediasExplorer.Visible = Not (RB_Selecao.Checked)
+        Panel_RecebeExplorer.Visible = Not (RB_Selecao.Checked)
+        Panel_Recebe_Filtro.Visible = Not (RB_Selecao.Checked)
+
+        Panel_RecebeClipboad.Visible = Not (RB_Selecao.Checked)
+        Panel_RecebeSelecao.Visible = (RB_Selecao.Checked)
+
+        Panel_RecebePastaProcesso.Visible = Not (RB_Selecao.Checked)
+
         If RB_Selecao.Checked = True Then
             RB_Selecao.Image = My.Resources.selection_cursor01_Hover
 
@@ -949,6 +985,16 @@ Long, lpColorValues As Long) As Long
     End Sub
 
     Private Sub RB_Clipboard_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Clipboard.CheckedChanged
+
+        Panel_MediasExplorer.Visible = Not (RB_Clipboard.Checked)
+        Panel_RecebeExplorer.Visible = Not (RB_Clipboard.Checked)
+        Panel_Recebe_Filtro.Visible = Not (RB_Clipboard.Checked)
+
+        Panel_RecebeClipboad.Visible = (RB_Clipboard.Checked)
+        Panel_RecebeSelecao.Visible = Not (RB_Clipboard.Checked)
+        Panel_RecebePastaProcesso.Visible = Not (RB_Clipboard.Checked)
+
+
         If RB_Clipboard.Checked = True Then
             RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
         Else

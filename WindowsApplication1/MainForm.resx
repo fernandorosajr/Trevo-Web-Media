@@ -9869,7 +9869,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
-        BAAAAk1TRnQBSQFMAwEBAAHAAQwBwAEMARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        BAAAAk1TRnQBSQFMAwEBAAHIAQwByAEMARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
         ARADAAEBAQABIAYAARAqAAMQARYDGAEiAxoBJAMUARwDCgEOAwEBAuAAAzABSwNfAfMDKwH8AfIC8wH/
         A/oB/wNfAfMDYQHmA0ABcAMLAQ/YAANkAecBsAHbAccB/wG/AboBvAH/A9AB/wPhAf8D9An/A/sB/wNd
         AcoDEAEVzwABAQNkAewBlgKXAf8DrQH/AcABwgHBAf8DywH/A+EB/wP3Ef8DXAHJAwoBDcgAAzABSwGr
@@ -9889,6 +9889,87 @@
         ASgDAAFAAwABEAMAAQEBAAEBBQABgBcAA/8BAAH8AQ8GAAHwAQcGAAHgAQMGAAGAAQEGAAGABwABgAcA
         AYAHAAGABwABgAcAAYAHAAGABwABgAEBBgABwAEBBgAB4AEDBgAB8AEHBgAC/wYACw==
 </value>
+  </data>
+  <data name="Panel_RecebePastaProcesso.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel_RecebePastaProcesso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel_RecebePastaProcesso.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 1</value>
+  </data>
+  <data name="Panel_RecebePastaProcesso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 145</value>
+  </data>
+  <data name="Panel_RecebePastaProcesso.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebePastaProcesso.Name" xml:space="preserve">
+    <value>Panel_RecebePastaProcesso</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebePastaProcesso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebePastaProcesso.Parent" xml:space="preserve">
+    <value>PanelEnvolvePanelLeft</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebePastaProcesso.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel_RecebeClipboad.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel_RecebeClipboad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel_RecebeClipboad.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 1</value>
+  </data>
+  <data name="Panel_RecebeClipboad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 145</value>
+  </data>
+  <data name="Panel_RecebeClipboad.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeClipboad.Name" xml:space="preserve">
+    <value>Panel_RecebeClipboad</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeClipboad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeClipboad.Parent" xml:space="preserve">
+    <value>PanelEnvolvePanelLeft</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeClipboad.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel_RecebeSelecao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel_RecebeSelecao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel_RecebeSelecao.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 1</value>
+  </data>
+  <data name="Panel_RecebeSelecao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 145</value>
+  </data>
+  <data name="Panel_RecebeSelecao.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeSelecao.Name" xml:space="preserve">
+    <value>Panel_RecebeSelecao</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeSelecao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeSelecao.Parent" xml:space="preserve">
+    <value>PanelEnvolvePanelLeft</value>
+  </data>
+  <data name="&gt;&gt;Panel_RecebeSelecao.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="Panel_RecebeMidiasAtivas.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -10143,7 +10224,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;Panel_MediasExplorer.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="Panel_RecebeExplorer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -10170,7 +10251,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;Panel_RecebeExplorer.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="SPRedimVisualizarMidia.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -10200,7 +10281,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;SPRedimVisualizarMidia.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="PanelEnvolveMidiaAberta.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -10227,7 +10308,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;PanelEnvolveMidiaAberta.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="Splitter7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -10257,7 +10338,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;Splitter7.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="Panel_Recebe_Filtro.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -10284,7 +10365,7 @@
     <value>PanelEnvolvePanelLeft</value>
   </data>
   <data name="&gt;&gt;Panel_Recebe_Filtro.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="PanelEnvolvePanelLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -22735,7 +22816,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        ZgAAAk1TRnQBSQFMAgEBGgEAAYgBCAGIAQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        ZgAAAk1TRnQBSQFMAgEBGgEAAZABCAGQAQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABcAMAAQEBAAEgBgABcGIAAYcB3wL/tgAB5QH/AwAB/yYAAdMB/wIAAdkB/xAAAY0B4gL/AYkB4AL/
         GAACYAFZAeuaAAHmAf8CAAHlAf8CAAGGAf8eAAHcAf8CAAHbAf8CAAG5Af8IAAMWAR8BlAHkAv8BkAHj
         Av8BjAHhAv8BAAHHAeoB/wEAAcsB7wH/AQABzwHyAf8BAAHTAfUB/wEAAdcB+AH/AcMCAAH/AegBlwEA
@@ -25942,7 +26023,7 @@
     <value>0, 0</value>
   </data>
   <data name="TrackBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 45</value>
+    <value>162, 23</value>
   </data>
   <data name="TrackBar1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

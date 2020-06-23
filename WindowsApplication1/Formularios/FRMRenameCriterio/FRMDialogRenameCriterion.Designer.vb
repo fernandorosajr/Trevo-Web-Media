@@ -36,13 +36,13 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.BTNVisulizar = New System.Windows.Forms.Button()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CHK_FuxoContinuoDeRenome = New System.Windows.Forms.CheckBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -221,6 +221,30 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitleOrigem.TabIndex = 7
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
+        'TXTCNovoNome
+        '
+        Me.TXTCNovoNome.ActiveValidate = True
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.ByChar = False
+        Me.TXTCNovoNome.ByText = False
+        Me.TXTCNovoNome.ByValue = False
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.NoneOfThisChar = ""
+        Me.TXTCNovoNome.NoneOfThisText = Nothing
+        Me.TXTCNovoNome.NoneOfThisValue = Nothing
+        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
+        Me.TXTCNovoNome.RequiredChar = ""
+        Me.TXTCNovoNome.RequiredText = Nothing
+        Me.TXTCNovoNome.RequiredValue = Nothing
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
+        Me.TXTCNovoNome.SpaceError = True
+        Me.TXTCNovoNome.TabIndex = 10
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
+        '
         'LNKLNomeDoExemplo
         '
         Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -277,39 +301,15 @@ Partial Class FRMDialogRenameCriterion
         Me.BTNVisulizar.TabIndex = 16
         Me.BTNVisulizar.Text = "Detalhar"
         '
-        'TXTCNovoNome
+        'CHK_FuxoContinuoDeRenome
         '
-        Me.TXTCNovoNome.ActiveValidate = True
-        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TXTCNovoNome.ByChar = False
-        Me.TXTCNovoNome.ByText = False
-        Me.TXTCNovoNome.ByValue = False
-        Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
-        Me.TXTCNovoNome.Name = "TXTCNovoNome"
-        Me.TXTCNovoNome.NoneOfThisChar = ""
-        Me.TXTCNovoNome.NoneOfThisText = Nothing
-        Me.TXTCNovoNome.NoneOfThisValue = Nothing
-        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
-        Me.TXTCNovoNome.RequiredChar = ""
-        Me.TXTCNovoNome.RequiredText = Nothing
-        Me.TXTCNovoNome.RequiredValue = Nothing
-        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
-        Me.TXTCNovoNome.SpaceError = True
-        Me.TXTCNovoNome.TabIndex = 10
-        Me.TXTCNovoNome.ValueStr = Nothing
-        Me.TXTCNovoNome.Visible = False
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(24, 17)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(150, 17)
-        Me.CheckBox1.TabIndex = 17
-        Me.CheckBox1.Text = "Fluxo contínuo de renome"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.CHK_FuxoContinuoDeRenome.AutoSize = True
+        Me.CHK_FuxoContinuoDeRenome.Location = New System.Drawing.Point(24, 17)
+        Me.CHK_FuxoContinuoDeRenome.Name = "CHK_FuxoContinuoDeRenome"
+        Me.CHK_FuxoContinuoDeRenome.Size = New System.Drawing.Size(150, 17)
+        Me.CHK_FuxoContinuoDeRenome.TabIndex = 17
+        Me.CHK_FuxoContinuoDeRenome.Text = "Fluxo contínuo de renome"
+        Me.CHK_FuxoContinuoDeRenome.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -337,7 +337,7 @@ Partial Class FRMDialogRenameCriterion
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.CheckBox1)
+        Me.Panel3.Controls.Add(Me.CHK_FuxoContinuoDeRenome)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(1, 0)
         Me.Panel3.Name = "Panel3"
@@ -398,7 +398,7 @@ Partial Class FRMDialogRenameCriterion
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
     Friend WithEvents Timer As Timer
     Friend WithEvents BTNVisulizar As Button
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CHK_FuxoContinuoDeRenome As CheckBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel

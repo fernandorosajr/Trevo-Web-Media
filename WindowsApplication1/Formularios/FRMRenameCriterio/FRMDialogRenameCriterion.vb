@@ -218,6 +218,7 @@ Public Class FRMDialogRenameCriterion
 
         Renamed_SelectedFoldersAndFiles.Clear()
 
+        ' TODO:(1) Estabelecer quais condições serão impostas o index 
         Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList)
 
         FRMDialogVisualizarRenome.Width = Me.Width
@@ -233,7 +234,8 @@ Public Class FRMDialogRenameCriterion
         Timer.Enabled = True
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+    Private Sub CHK_FuxoContinuoDeRenome_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_FuxoContinuoDeRenome.CheckedChanged
+        fuxoContinuoDeRenome = CHK_FuxoContinuoDeRenome.Checked
 
     End Sub
 End Class

@@ -219,7 +219,7 @@ Public Class FRMDialogRenameCriterion
         Renamed_SelectedFoldersAndFiles.Clear()
 
         ' TODO:(1) Estabelecer quais condições serão impostas o index 
-        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList)
+        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList, fuxoContinuoDeRenome)
 
         FRMDialogVisualizarRenome.Width = Me.Width
         FRMDialogVisualizarRenome.Height = Me.Height

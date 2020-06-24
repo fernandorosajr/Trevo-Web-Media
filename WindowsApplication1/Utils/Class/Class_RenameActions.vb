@@ -15,7 +15,7 @@ Public Class Class_RenameActions
     Dim UsesFile As New UsesFilesClass
     '-------------------------------------------------
 
-    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion)) As List(Of Object)
+    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean) As List(Of Object)
 
         ' TODO: (2) Receber valor de index esxternamente.
         ' TODO (3) Estabelecer interação com a variavel fuxoContinuoDeRenome.
@@ -57,14 +57,16 @@ Public Class Class_RenameActions
                 folder = obj
                 _selectedFoldersAndFiles.Add(folder.FullName)
 
+                If fuxoContinuoDeRenome = False Then
 
-                ' Criar Lista de pasta renomeada e seus nomes originais
-                ' --------------------------------------------------------------------------
-                listFolders.AddRange(CriarListaDePastasRenomedasEOriginais(obj, dataRenameCriteriaList, indexfolder))
+                    ' Criar Lista de pasta renomeada e seus nomes originais
+                    ' --------------------------------------------------------------------------
+                    listFolders.AddRange(CriarListaDePastasRenomedasEOriginais(obj, dataRenameCriteriaList, indexfolder))
 
-                indexfolder += 1
+                    indexfolder += 1
 
-                ' --------------------------------------------------------------------------
+                    ' --------------------------------------------------------------------------
+                End If
 
             End If
 
@@ -72,66 +74,120 @@ Public Class Class_RenameActions
 
         indexfolder = 0
 
-        Dim i As Long
+            'End If
 
+            Dim i As Long
         ' Renomeia pastas e pastas pai de um arquivo em uma lista de seleção
         ' ---------------------------------------------------------------------------
 
-        _selectedFoldersAndFiles = CriarListaDePastasOriginaisERenomeadas(listFolders, SelectedFoldersAndFiles, _selectedFoldersAndFiles, i)
+        _selectedFoldersAndFiles = RenomearPastasEPastasPaiEmUmaListaDeSelecao(listFolders, SelectedFoldersAndFiles, _selectedFoldersAndFiles, i)
 
 
-        ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.findindex?view=netcore-3.1
-        ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/procedures/lambda-expressions
-        ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.exists?view=netcore-3.1#System_Array_Exists__1___0___System_Predicate___0__
+            ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.findindex?view=netcore-3.1
+            ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/procedures/lambda-expressions
+            ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.exists?view=netcore-3.1#System_Array_Exists__1___0___System_Predicate___0__
 
 
-        ' Pecorrer SelectedFoldersAndFiles e Renomeia somente os arquivos
 
-        indexfolder = 0
+
+            ' Pecorrer SelectedFoldersAndFiles e Renomeia somente os arquivos
+
+            indexfolder = 0
 
         For Each obj As Object In _selectedFoldersAndFiles
             Dim id As Long
             Dim _obj As Object = obj
+            If fuxoContinuoDeRenome = False Then
+                If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
 
-            If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
 
-                id = Array.FindIndex(listFolders.ToArray, Function(_array)
-                                                              Dim value As Boolean = False
-                                                              dir = New DirectoryInfo(obj)
 
-                                                              If dir.FullName = _array(1).FullName Then
-                                                                  value = True
-                                                              End If
+                    id = Array.FindIndex(listFolders.ToArray, Function(_array)
+                                                                  Dim value As Boolean = False
+                                                                  dir = New DirectoryInfo(obj)
 
-                                                              Return value
+                                                                  If dir.FullName = _array(1).FullName Then
+                                                                      value = True
+                                                                  End If
 
-                                                          End Function)
+                                                                  Return value
 
-                If id > -1 Then
-                    _obj = (listFolders.Item(id)(1))
+                                                              End Function)
 
-                    Renamed_SelectedFoldersAndFiles.Add(_obj)
+                    If id > -1 Then
 
-                    index2 = 0
-                Else
+                        Dim pastaRenomeda As DirectoryInfo = (listFolders.Item(id)(1))
 
-                    _obj = New DirectoryInfo(obj)
-                    ' se achar pasta adiciona no listFolder o nome original e o nome renomedo
+                        _obj = pastaRenomeda '(listFolders.Item(id)(1))
+
+                        Renamed_SelectedFoldersAndFiles.Add(_obj)
+
+                        index2 = 0
+                    Else
+
+                        _obj = New DirectoryInfo(obj)
+                        ' se achar pasta adiciona no listFolder o nome original e o nome renomedo
+                        Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
+
+                    End If
+
+                ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
+                    _obj = New FileInfo(obj)
+
                     Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
+                    index2 += 1 'indexFile
+                End If
+
+                index += 1
+
+            ElseIf fuxoContinuoDeRenome = True Then
+
+
+                '_obj = obj
+                dir = New DirectoryInfo(obj)
+
+                If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
+
+
+                    listFolders.AddRange(CriarListaDePastasRenomedasEOriginais(_obj, dataRenameCriteriaList, index))
+                    Renamed_SelectedFoldersAndFiles.Add(listFolders(listFolders.Count - 1)(1))                '(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index))
+
+
+                ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
+
+                    file = New FileInfo(_selectedFoldersAndFiles(index))
+                    file = RenomearPastasEPastasPaiEmUmaListaDeSelecao2(file, listFolders)
+                    Dim arqAchado As Object = file ' New FileInfo(_obj)
+
+                    Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(arqAchado, dataRenameCriteriaList, index))
+
+                    ' Função RenomarPastaOuPastaPai
+
+                    'Dim folderParent As DirectoryInfo
+
+
+                    'Renamed_SelectedFoldersAndFiles.Add(file)
+                    ' Renomear
+                    'If subFolder(0).FullName = folderParent.FullName Then
+                    '    folderParent = subFolder(1)
+
+                    '    file = New FileInfo(folderParent.FullName & "\" & file.Name)
+
+                    'End If
 
                 End If
 
-            ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
-                _obj = New FileInfo(obj)
 
-                Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
-                index2 += 1
+                index += 1
+
+
             End If
 
-            index += 1
 
 
         Next
+
+
 
         ' Renomeia as pastas pai nos arquivos
 
@@ -146,13 +202,18 @@ Public Class Class_RenameActions
         ' --------------------------------------------------------------------------
 
         Dim listFoldersArray(1) As DirectoryInfo
-        Dim dir As DirectoryInfo
+        Dim dir As Object
         Dim dirRename As DirectoryInfo
         Dim listFolders As New ArrayList
 
-        dir = obj
+        If TypeOf obj Is String Then
+            dir = New DirectoryInfo(obj)
+        Else
+            dir = obj
+        End If
 
-        dirRename = RenameAccordingToCriterion(obj, dataRenameCriteriaList, indexfolder)
+
+        dirRename = RenameAccordingToCriterion(dir, dataRenameCriteriaList, indexfolder)
 
         listFoldersArray(0) = New DirectoryInfo(dir.FullName)
         listFoldersArray(1) = New DirectoryInfo(dirRename.FullName)
@@ -164,7 +225,50 @@ Public Class Class_RenameActions
         ' --------------------------------------------------------------------------
     End Function
 
-    Public Function CriarListaDePastasOriginaisERenomeadas(listFolders As ArrayList, SelectedFoldersAndFiles As List(Of Object), _selectedFoldersAndFiles As List(Of String), index As Long) As List(Of String)
+    Public Overloads Function RenomearPastasEPastasPaiEmUmaListaDeSelecao2(fileSelected As FileInfo, listFolders As ArrayList)
+        Dim pathFileRenamed As FileInfo
+        Dim folderParent As New DirectoryInfo(fileSelected.DirectoryName)
+        Dim newPath As String = fileSelected.FullName
+
+        For Each subFolder In listFolders
+
+            If subFolder(0).FullName = folderParent.FullName Then
+
+                newPath = subFolder(1).FullName & "\" & fileSelected.Name
+
+                Exit For
+
+            End If
+
+        Next
+
+        pathFileRenamed = New FileInfo(newPath)
+
+        Return pathFileRenamed
+
+    End Function
+
+    Public Overloads Function RenomearPastasEPastasPaiEmUmaListaDeSelecao2(folderSelected As DirectoryInfo, listFolders As ArrayList)
+        Dim pathRenamed As DirectoryInfo = folderSelected
+
+        For Each subFolder In listFolders
+
+            If subFolder(0).FullName = folderSelected.FullName Then
+
+                pathRenamed = subFolder(1)
+
+                Exit For
+
+            End If
+
+        Next
+
+
+        Return pathRenamed
+
+    End Function
+
+    Public Overloads Function RenomearPastasEPastasPaiEmUmaListaDeSelecao(listFolders As ArrayList, SelectedFoldersAndFiles As List(Of Object), _selectedFoldersAndFiles As List(Of String), index As Long) As List(Of String)
 
         ' Renomeia pastas e pastas pai de um arquivo em uma lista de seleção
         ' ---------------------------------------------------------------------------

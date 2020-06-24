@@ -142,10 +142,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Componentes\Paneis\PaineisEsq\Control_Clipboard.Designer.vb">
-      <DependentUpon>Control_Clipboard.vb</DependentUpon>
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Clipboard.Designer.vb">
+      <DependentUpon>ControlPainel_Clipboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="Componentes\Paneis\PaineisEsq\Control_Clipboard.vb">
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Clipboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastasProcesso.Designer.vb">
+      <DependentUpon>ControlPainel_PastasProcesso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastasProcesso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Selected.Designer.vb">
+      <DependentUpon>ControlPainel_Selected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Selected.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Formularios\FRMDialogConflictingFolders.Designer.vb">
@@ -462,8 +474,14 @@
     <EmbeddedResource Include="Componentes\Paneis\PaineisDir\PainelDetalhes\Control_EnvolveLstBGeral.resx">
       <DependentUpon>Control_EnvolveLstBGeral.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\Control_Clipboard.resx">
-      <DependentUpon>Control_Clipboard.vb</DependentUpon>
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Clipboard.resx">
+      <DependentUpon>ControlPainel_Clipboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_PastasProcesso.resx">
+      <DependentUpon>ControlPainel_PastasProcesso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Paneis\PaineisEsq\ControlPainel_Selected.resx">
+      <DependentUpon>ControlPainel_Selected.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\Paneis\UserControl1.resx">
       <DependentUpon>UserControl1.vb</DependentUpon>

@@ -82,6 +82,9 @@ Partial Class MainForm
         Me.PanelEnvoveMidia = New System.Windows.Forms.Panel()
         Me.PanelTeste = New System.Windows.Forms.Panel()
         Me.PanelEnvolvePanelLeft = New System.Windows.Forms.Panel()
+        Me.Panel_RecebePastaProcesso = New System.Windows.Forms.Panel()
+        Me.Panel_RecebeClipboad = New System.Windows.Forms.Panel()
+        Me.Panel_RecebeSelecao = New System.Windows.Forms.Panel()
         Me.Panel_MediasExplorer = New System.Windows.Forms.Panel()
         Me.Panel_RecebeMidiasAtivas = New System.Windows.Forms.Panel()
         Me.PanelRecebeBiblio = New System.Windows.Forms.Panel()
@@ -515,9 +518,6 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel_RecebeSelecao = New System.Windows.Forms.Panel()
-        Me.Panel_RecebeClipboad = New System.Windows.Forms.Panel()
-        Me.Panel_RecebePastaProcesso = New System.Windows.Forms.Panel()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -1210,6 +1210,24 @@ Partial Class MainForm
         Me.PanelEnvolvePanelLeft.Controls.Add(Me.Panel_Recebe_Filtro)
         resources.ApplyResources(Me.PanelEnvolvePanelLeft, "PanelEnvolvePanelLeft")
         Me.PanelEnvolvePanelLeft.Name = "PanelEnvolvePanelLeft"
+        '
+        'Panel_RecebePastaProcesso
+        '
+        Me.Panel_RecebePastaProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
+        resources.ApplyResources(Me.Panel_RecebePastaProcesso, "Panel_RecebePastaProcesso")
+        Me.Panel_RecebePastaProcesso.Name = "Panel_RecebePastaProcesso"
+        '
+        'Panel_RecebeClipboad
+        '
+        Me.Panel_RecebeClipboad.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
+        resources.ApplyResources(Me.Panel_RecebeClipboad, "Panel_RecebeClipboad")
+        Me.Panel_RecebeClipboad.Name = "Panel_RecebeClipboad"
+        '
+        'Panel_RecebeSelecao
+        '
+        Me.Panel_RecebeSelecao.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
+        resources.ApplyResources(Me.Panel_RecebeSelecao, "Panel_RecebeSelecao")
+        Me.Panel_RecebeSelecao.Name = "Panel_RecebeSelecao"
         '
         'Panel_MediasExplorer
         '
@@ -5091,24 +5109,6 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.ForeColor = System.Drawing.Color.Gainsboro
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
-        '
-        'Panel_RecebeSelecao
-        '
-        Me.Panel_RecebeSelecao.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
-        resources.ApplyResources(Me.Panel_RecebeSelecao, "Panel_RecebeSelecao")
-        Me.Panel_RecebeSelecao.Name = "Panel_RecebeSelecao"
-        '
-        'Panel_RecebeClipboad
-        '
-        Me.Panel_RecebeClipboad.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
-        resources.ApplyResources(Me.Panel_RecebeClipboad, "Panel_RecebeClipboad")
-        Me.Panel_RecebeClipboad.Name = "Panel_RecebeClipboad"
-        '
-        'Panel_RecebePastaProcesso
-        '
-        Me.Panel_RecebePastaProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer))
-        resources.ApplyResources(Me.Panel_RecebePastaProcesso, "Panel_RecebePastaProcesso")
-        Me.Panel_RecebePastaProcesso.Name = "Panel_RecebePastaProcesso"
         '
         'MainForm
         '

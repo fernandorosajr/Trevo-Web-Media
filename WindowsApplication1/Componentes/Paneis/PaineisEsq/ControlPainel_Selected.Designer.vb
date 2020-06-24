@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Control_Clipboard
+Partial Class ControlPainel_Selected
     Inherits System.Windows.Forms.UserControl
 
     'O UserControl substitui o descarte para limpar a lista de componentes.
@@ -22,7 +22,7 @@ Partial Class Control_Clipboard
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_Clipboard))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Selected))
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
         Me.PanelBorderTVW = New System.Windows.Forms.Panel()
         Me.PanelBackgroundTVW = New System.Windows.Forms.Panel()
@@ -55,8 +55,8 @@ Partial Class Control_Clipboard
         Me.PanelBorder_TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBorder_TVWDesktop.Location = New System.Drawing.Point(0, 0)
         Me.PanelBorder_TVWDesktop.Name = "PanelBorder_TVWDesktop"
-        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(325, 444)
-        Me.PanelBorder_TVWDesktop.TabIndex = 5
+        Me.PanelBorder_TVWDesktop.Size = New System.Drawing.Size(305, 455)
+        Me.PanelBorder_TVWDesktop.TabIndex = 6
         '
         'PanelBorderTVW
         '
@@ -65,7 +65,7 @@ Partial Class Control_Clipboard
         Me.PanelBorderTVW.Location = New System.Drawing.Point(0, 27)
         Me.PanelBorderTVW.Name = "PanelBorderTVW"
         Me.PanelBorderTVW.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorderTVW.Size = New System.Drawing.Size(325, 417)
+        Me.PanelBorderTVW.Size = New System.Drawing.Size(305, 428)
         Me.PanelBorderTVW.TabIndex = 99
         '
         'PanelBackgroundTVW
@@ -76,7 +76,7 @@ Partial Class Control_Clipboard
         Me.PanelBackgroundTVW.Location = New System.Drawing.Point(1, 1)
         Me.PanelBackgroundTVW.Name = "PanelBackgroundTVW"
         Me.PanelBackgroundTVW.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
-        Me.PanelBackgroundTVW.Size = New System.Drawing.Size(323, 415)
+        Me.PanelBackgroundTVW.Size = New System.Drawing.Size(303, 426)
         Me.PanelBackgroundTVW.TabIndex = 4
         '
         'TVWFilesAndFolders
@@ -91,7 +91,7 @@ Partial Class Control_Clipboard
         Me.TVWFilesAndFolders.Location = New System.Drawing.Point(0, 3)
         Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
         Me.TVWFilesAndFolders.ShowLines = False
-        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(323, 412)
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(303, 423)
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'PanelBorder_OpcoesDeProcessos
@@ -104,7 +104,7 @@ Partial Class Control_Clipboard
         Me.PanelBorder_OpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelBorder_OpcoesDeProcessos.Name = "PanelBorder_OpcoesDeProcessos"
         Me.PanelBorder_OpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(1, 1, 1, 0)
-        Me.PanelBorder_OpcoesDeProcessos.Size = New System.Drawing.Size(325, 27)
+        Me.PanelBorder_OpcoesDeProcessos.Size = New System.Drawing.Size(305, 27)
         Me.PanelBorder_OpcoesDeProcessos.TabIndex = 97
         '
         'PanelBaseLuzLeft
@@ -114,7 +114,7 @@ Partial Class Control_Clipboard
         Me.PanelBaseLuzLeft.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PanelBaseLuzLeft.Location = New System.Drawing.Point(1, 25)
         Me.PanelBaseLuzLeft.Name = "PanelBaseLuzLeft"
-        Me.PanelBaseLuzLeft.Size = New System.Drawing.Size(323, 2)
+        Me.PanelBaseLuzLeft.Size = New System.Drawing.Size(303, 2)
         Me.PanelBaseLuzLeft.TabIndex = 98
         '
         'PanelSombra
@@ -123,7 +123,7 @@ Partial Class Control_Clipboard
         Me.PanelSombra.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PanelSombra.Location = New System.Drawing.Point(0, 1)
         Me.PanelSombra.Name = "PanelSombra"
-        Me.PanelSombra.Size = New System.Drawing.Size(323, 1)
+        Me.PanelSombra.Size = New System.Drawing.Size(303, 1)
         Me.PanelSombra.TabIndex = 95
         '
         'PanelOpcoesDeProcessos
@@ -134,7 +134,7 @@ Partial Class Control_Clipboard
         Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(1, 1)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
         Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(323, 26)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(303, 26)
         Me.PanelOpcoesDeProcessos.TabIndex = 1
         '
         'Panel36
@@ -145,7 +145,7 @@ Partial Class Control_Clipboard
         Me.Panel36.Location = New System.Drawing.Point(5, 2)
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Padding = New System.Windows.Forms.Padding(0, 1, 0, 1)
-        Me.Panel36.Size = New System.Drawing.Size(313, 24)
+        Me.Panel36.Size = New System.Drawing.Size(293, 24)
         Me.Panel36.TabIndex = 0
         '
         'PanelEnvolveCHK_ShowPanelAllProcessosAcoes
@@ -201,13 +201,13 @@ Partial Class Control_Clipboard
         Me.BTN_NewFolder.TabIndex = 20
         Me.BTN_NewFolder.UseVisualStyleBackColor = False
         '
-        'Control_Clipboard
+        'Control_Selected
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelBorder_TVWDesktop)
-        Me.Name = "Control_Clipboard"
-        Me.Size = New System.Drawing.Size(325, 444)
+        Me.Name = "Control_Selected"
+        Me.Size = New System.Drawing.Size(305, 455)
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
         Me.PanelBorderTVW.ResumeLayout(False)
         Me.PanelBackgroundTVW.ResumeLayout(False)

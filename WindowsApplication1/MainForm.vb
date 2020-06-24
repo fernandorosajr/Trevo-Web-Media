@@ -25,7 +25,10 @@ Public Class MainForm
     Public toolBar_ViewMenu As New Control_ViewMenuBar
     Public toolBar_BurnMenu As New Control_BurnMenuBar
     Public toolBar_OrganizeMenu02 As New Control_OrganizeMenuBar
-    Public panel_Clipboard As New Control_Clipboard
+
+    Public painel_Clipboard As New ControlPainel_Clipboard
+    Public painel_PastaProcesso As New ControlPainel_PastasProcesso
+    Public painel_Selected As New ControlPainel_Selected
 
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
@@ -189,9 +192,17 @@ Long, lpColorValues As Long) As Long
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
         _controlSelectFileAndFolderPanel.Visible = True
 
-        Panel_RecebeClipboad.Controls.Add(panel_Clipboard)
-        panel_Clipboard.Dock = DockStyle.Fill
-        panel_Clipboard.Visible = True
+        Panel_RecebeClipboad.Controls.Add(painel_Clipboard)
+        painel_Clipboard.Dock = DockStyle.Fill
+        painel_Clipboard.Visible = True
+
+        Panel_RecebeSelecao.Controls.Add(painel_Selected)
+        painel_Selected.Dock = DockStyle.Fill
+        painel_Selected.Visible = True
+
+        Panel_RecebePastaProcesso.Controls.Add(painel_PastaProcesso)
+        painel_PastaProcesso.Dock = DockStyle.Fill
+        painel_PastaProcesso.Visible = True
 
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
 
@@ -205,13 +216,18 @@ Long, lpColorValues As Long) As Long
         Dim path As String = "C:\Minha Pasta\"
         Dim folder As DirectoryInfo
         Dim file As FileInfo
-        For x = 0 To 2
+        For x = 0 To 20
 
             folder = New DirectoryInfo(path & "Nova Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 2
+            For y = 0 To 20
                 file = New FileInfo(folder.FullName & "\" & "Arquivo " & y & ".jpg")
+                SelectedFoldersAndFiles.Add(file)
+            Next
+
+            For y = 0 To 20
+                file = New FileInfo(folder.FullName & "\" & "Documento Trevo Writer " & y & ".docx")
                 SelectedFoldersAndFiles.Add(file)
             Next
         Next

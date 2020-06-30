@@ -414,6 +414,7 @@
     </Compile>
     <Compile Include="Utils\Class\Class_Date.vb" />
     <Compile Include="Utils\Class\Class_FormatAlphabetLetter.vb" />
+    <Compile Include="Utils\Class\Class_NodeManipulator.vb" />
     <Compile Include="Utils\Class\Class_Number.vb" />
     <Compile Include="Utils\Class\Class_RenameActions.vb" />
     <Compile Include="Utils\Class\DriveAnalysisClass.vb" />

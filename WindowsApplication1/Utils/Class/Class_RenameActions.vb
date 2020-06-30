@@ -13,12 +13,14 @@ Public Class Class_RenameActions
     Dim dateFunctions As New Class_Date
     Dim FormatAlphabetLetter As New Class_FormatAlphabetLetter
     Dim UsesFile As New UsesFilesClass
+    Dim ManipuladorDeNodos As New Class_NodeManipulator
+
     '-------------------------------------------------
 
     Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean) As List(Of Object)
 
         ' TODO: (2) Receber valor de index esxternamente.
-        ' TODO (3) Estabelecer interação com a variavel fuxoContinuoDeRenome.
+        ' TODO (3) Corrigir erro Minha "Pastinha Livre".
 
         ' Renomeia e devolve a lista de objetos renomedos baseado em critérios
 
@@ -39,6 +41,88 @@ Public Class Class_RenameActions
 
         Dim file As FileInfo
         Dim folder As DirectoryInfo
+
+
+        Dim node As New TreeNode
+        Dim TreeViewList As New TreeView    'New List(Of TreeNode)
+        Dim _nodeTreeList As New TreeNode   'New List(Of TreeNode)
+
+        ' AdicionarRoot
+        For Each obj As Object In SelectedFoldersAndFiles
+            Dim nodeRoot As New TreeNode
+            Dim _node As TreeNode
+            Dim addNode As Boolean
+            ' checar se existe root
+            'MsgBox(nodeTreeList.Nodes.Item("C:\").Name)
+
+            If TreeViewList.Nodes.Count > 0 Then
+                For Each _node In TreeViewList.Nodes
+                    Dim pathCompare As String = ""
+
+                    If TypeOf obj Is FileInfo Then
+                        pathCompare = obj.Directory.Root.FullName.ToString
+
+                    ElseIf TypeOf obj Is DirectoryInfo Then
+                        pathCompare = obj.Root.FullName.ToString
+
+                    End If
+
+                    If _node.FullPath.ToString = pathCompare Then
+                        nodeRoot = _node
+                        addNode = False
+                        Exit For
+
+                    Else
+                        addNode = True
+                    End If
+                Next
+
+                If addNode = True Then
+                    Dim nome As String = obj.Root.FullName.ToString
+                    Dim key As String = obj.Root.FullName.ToString
+                    Dim directory As New DirectoryInfo(obj.Root.FullName.ToString)
+
+                    nodeRoot = ManipuladorDeNodos.AdicionarDiretorioNoNodo(key, nome, directory)
+                    TreeViewList.Nodes.Add(nodeRoot)
+
+                    addNode = False
+                End If
+
+            Else
+                Dim nome As String = obj.Root.FullName.ToString
+                Dim key As String = obj.Root.FullName.ToString
+                Dim directory As New DirectoryInfo(obj.Root.FullName.ToString)
+
+                nodeRoot = ManipuladorDeNodos.AdicionarDiretorioNoNodo(key, nome, directory)
+                TreeViewList.Nodes.Add(nodeRoot)
+                nodeRoot = TreeViewList.Nodes.Item(nodeRoot.Name)
+
+                addNode = False
+            End If
+
+
+
+            If TypeOf obj Is FileInfo Then
+                file = obj
+
+                ' Separar nomes de pastas e arquivos em ArrayStrings
+                ' Em um for pecorrer a arrayString e ...
+                ' Pesquisar pelo node igual a array
+                '       se nao achar igual criar novo
+                '       se achar, selecionar o node e pecorrer para proximo arrayString
+                '       ' Use Path.Combine para escrever a key do node:
+                '       ' o name da key pai combinando com o nome da pasta filho
+                ' file vai ser adicionado no ultimo node criado.
+
+                nodeRoot = (ManipuladorDeNodos.CriarArvoreDeNodo(nodeRoot, file))
+
+            ElseIf TypeOf obj Is DirectoryInfo Then
+                folder = obj
+
+                nodeRoot = (ManipuladorDeNodos.CriarArvoreDeNodo(nodeRoot, folder))
+
+            End If
+        Next
 
         ' Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
         '--------------------------------------------------------------------------------------
@@ -275,45 +359,93 @@ Public Class Class_RenameActions
         ' Dim _selectedFoldersAndFiles As New List(Of String)
 
         Dim file As FileInfo
+        Dim filePath As String '= file.FullName.ToString
+
         Dim folder As DirectoryInfo
         Dim folderParent As DirectoryInfo
+        Dim folderPath As String
+
+        Dim parte1_DoCaminho As String
+        Dim parte2_DoCaminho As String
+        Dim qDeCharDaParte1_DoCaminho As Integer
+        Dim qDeCharDaParte2_DoCaminho As Integer
+        Dim caminhoParaConferir As String
+        Dim diretorioNoCaminhoDadoAchado As New ArrayList
 
         Dim ultimoIndexChecado As Long
         Dim indexfolder As Long
 
+        Dim x As Integer
         For Each subFolder In listFolders
 
             Do While index > -1
 
+                'FormatAlphabetLetter.StringFunctions.
+
                 If TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
+                    diretorioNoCaminhoDadoAchado.Clear()
 
                     file = New FileInfo(_selectedFoldersAndFiles(index))
                     folderParent = New DirectoryInfo(file.DirectoryName)
 
 
-                    If subFolder(0).FullName = folderParent.FullName Then
-                        folderParent = subFolder(1)
+                    diretorioNoCaminhoDadoAchado.AddRange(ProcuraDiretorioNoCaminhoDado(folderParent, subFolder(0)))
+                    caminhoParaConferir = diretorioNoCaminhoDadoAchado(0)
+                    parte2_DoCaminho = diretorioNoCaminhoDadoAchado(1)
+
+
+                    If subFolder(0).FullName = caminhoParaConferir Then
+                        folderParent = New DirectoryInfo(subFolder(1).FullName.ToString & parte2_DoCaminho)
 
                         file = New FileInfo(folderParent.FullName & "\" & file.Name)
 
                     End If
+
+
+                    '' TODO: (3) Subistituir esta condição por :
+                    '' if trim(parte2_DoCaminho) = ""  then
+
+                    'If subFolder(0).FullName.ToString.Length = caminhoParaConferir.Length Then
+                    '    folder = subFolder(1)
+
+                    'Else
+                    '    folder = New DirectoryInfo(subFolder(1).ToString & "\" & parte2_DoCaminho)
+                    'End If
+
+
 
                     _selectedFoldersAndFiles(index) = file.FullName
 
 
                 ElseIf TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
 
+                    ' Function ProcuraDiretorioNoCaminhoDado
+
+                    diretorioNoCaminhoDadoAchado.Clear()
                     folder = New DirectoryInfo(_selectedFoldersAndFiles(index))
 
 
-                    If subFolder(0).FullName = folder.FullName Then
+                    diretorioNoCaminhoDadoAchado.AddRange(ProcuraDiretorioNoCaminhoDado(folder, subFolder(0)))
+                    caminhoParaConferir = diretorioNoCaminhoDadoAchado(0)
+                    parte2_DoCaminho = diretorioNoCaminhoDadoAchado(1)
 
-                        ' TODO: (3) Aqui acessa a matriz de pastas renomeadas ao inves de renomea-la...
-                        ' todas as vezes que passar por aqui.
+                    Dim subListFolder As New ArrayList
+                    Dim listFoldersArray(1) As DirectoryInfo
+                    If subFolder(0).FullName = caminhoParaConferir Then
 
-                        folder = subFolder(1)
+                        ' TODO: (3) Subistituir esta condição por :
+                        ' if trim(parte2_DoCaminho) = ""  then
+
+                        If subFolder(0).FullName.ToString.Length = caminhoParaConferir.Length Then
+                            folder = New DirectoryInfo(subFolder(1).ToString & parte2_DoCaminho)
+
+
+                        Else
+                            folder = New DirectoryInfo(subFolder(1).ToString & parte2_DoCaminho)
+                        End If
 
                     End If
+
                     _selectedFoldersAndFiles(index) = folder.FullName
 
                 End If
@@ -326,21 +458,14 @@ Public Class Class_RenameActions
 
                                                                                     If TypeOf path Is FileInfo Then
 
-                                                                                        If path.DirectoryName = subFolder(0).FullName Then
-                                                                                            valor = True
-                                                                                            'Else
-                                                                                            '    valor = False
-                                                                                        End If
 
+                                                                                        valor = ChecarSePastaEhSubPasta(path.Directory, subFolder(0))
 
                                                                                     ElseIf TypeOf path Is DirectoryInfo Then
 
-                                                                                        If path.FullName = subFolder(0).FullName Then
-                                                                                            valor = True
-                                                                                            'Else
-                                                                                            '    valor = False
-                                                                                        End If
 
+
+                                                                                        valor = ChecarSePastaEhSubPasta(path, subFolder(0))
                                                                                     End If
 
                                                                                     Return valor
@@ -357,6 +482,73 @@ Public Class Class_RenameActions
         Next
 
         Return _selectedFoldersAndFiles
+
+    End Function
+
+    Public Function ProcuraDiretorioNoCaminhoDado(caminhoDado As DirectoryInfo, diretorioParaPesquisa As DirectoryInfo)
+
+        Dim caminhoDado_str As String
+        Dim x As Integer
+        Dim qDeCharDaParte1_DoCaminho As Integer
+        Dim caminhoParaConferir As String
+        Dim value As New ArrayList
+
+        Dim parte2_DoCaminho As String
+
+        caminhoDado_str = caminhoDado.FullName.ToString
+
+        x = caminhoDado_str.IndexOf(diretorioParaPesquisa.FullName)
+
+        If x < 0 Then
+            caminhoParaConferir = caminhoDado.FullName
+            parte2_DoCaminho = ""
+
+        Else
+
+            qDeCharDaParte1_DoCaminho = diretorioParaPesquisa.FullName.ToString.Length
+
+            caminhoParaConferir = (caminhoDado_str.Substring(x, qDeCharDaParte1_DoCaminho))
+            parte2_DoCaminho = caminhoDado_str.Substring(diretorioParaPesquisa.FullName.ToString.Length, caminhoDado_str.Length - diretorioParaPesquisa.FullName.ToString.Length)
+
+        End If
+
+        value.Add(caminhoParaConferir)
+        value.Add(parte2_DoCaminho)
+
+        Return value
+
+    End Function
+
+    Public Function ChecarSePastaEhSubPasta(caminhoDaSubPasta As DirectoryInfo, caminhoDaPasta As DirectoryInfo)
+        Dim value As Boolean = False
+        ' Dim folder As DirectoryInfo
+        Dim subFolderPath_Str As String
+        Dim x As Integer
+        Dim qDeCharDaParte1_DoCaminho As Integer
+
+        Dim caminhoParaConferir As String
+
+        subFolderPath_Str = caminhoDaSubPasta.FullName.ToString
+
+        x = subFolderPath_Str.IndexOf(caminhoDaPasta.FullName)
+        If x < 0 Then
+            value = False
+            caminhoParaConferir = caminhoDaSubPasta.FullName
+
+        Else
+
+            qDeCharDaParte1_DoCaminho = caminhoDaPasta.FullName.ToString.Length
+
+            caminhoParaConferir = subFolderPath_Str.Substring(x, qDeCharDaParte1_DoCaminho)
+
+        End If
+
+
+        If caminhoParaConferir = caminhoDaPasta.FullName Then
+            value = True
+        End If
+
+        Return value
 
     End Function
 

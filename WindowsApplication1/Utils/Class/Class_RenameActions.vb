@@ -124,6 +124,47 @@ Public Class Class_RenameActions
             End If
         Next
 
+        ' Renomear os ojetos no TreeView na ordem de seleção.
+        '--------------------------------------------------------------------------------------
+        For Each obj As Object In SelectedFoldersAndFiles
+
+            Dim selectedObj As Object
+            Dim selectedNode As TreeNode
+            Dim path As String
+
+            'If TypeOf obj Is DirectoryInfo Then
+            '    folder = obj
+            '    path = folder.FullName
+            'End If
+
+            'If TypeOf obj Is FileInfo Then
+            '    file = obj
+            '    path = file.FullName
+            'End If
+
+            path = obj.FullName
+
+            selectedNode = ManipuladorDeNodos.PesquisaESelecionarNode(TreeViewList.Nodes, path, 1)
+
+            selectedObj = (RenameAccordingToCriterion(obj, dataRenameCriteriaList, index))
+            Renamed_SelectedFoldersAndFiles.Add(selectedObj)
+            'Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(obj, dataRenameCriteriaList, index))
+
+            MsgBox(selectedNode.FullPath)
+
+            MsgBox(selectedNode.Text)
+
+            selectedNode.Text = selectedObj.Name
+
+            MsgBox(selectedNode.FullPath)
+
+            MsgBox(selectedNode.Name)
+
+            index += 1
+
+        Next
+
+
         ' Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
         '--------------------------------------------------------------------------------------
 

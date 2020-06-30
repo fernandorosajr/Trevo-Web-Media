@@ -21,11 +21,19 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Function PesquisaNode(nodeAPesquisar As TreeNodeCollection, nomesDasPastas As Array, nivel As Integer)
+    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, _path As String, nivel As Integer)
         Dim montagemDeNome As New List(Of String)
         Dim key As String
 
         Dim node As New TreeNode
+
+        Dim delimitadoresSeCaminhoDePasta() As Char = {"\"c, "/"c}
+
+        Dim nomesDasPastas() As String
+
+        ' Separar nomes de pastas e arquivos em ArrayStrings
+        nomesDasPastas = stringFunctions.SepararPalavras(_path, delimitadoresSeCaminhoDePasta)
+        nomesDasPastas(0) = nomesDasPastas(0) + "\"
 
         If nivel < nomesDasPastas.Length Then
 
@@ -39,7 +47,7 @@ Public Class Class_NodeManipulator
 
                         If nodo.GetNodeCount(True) > 0 Then
                             If x < nomesDasPastas.Length - 1 Then
-                                node = PesquisaNode(nodo.Nodes, nomesDasPastas, x + 1)
+                                node = PesquisaESelecionarNode(nodo.Nodes, nomesDasPastas, x + 1)
 
                             Else
                                 node = nodo
@@ -57,7 +65,49 @@ Public Class Class_NodeManipulator
             Next
 
         Else
-            'node = nodeAPesquisar
+
+        End If
+        Return node
+
+    End Function
+
+    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, nomesDasPastas As Array, nivel As Integer)
+        Dim montagemDeNome As New List(Of String)
+        Dim key As String
+
+        Dim node As New TreeNode
+
+        If nivel < nomesDasPastas.Length Then
+
+            For x = 0 To nivel
+                montagemDeNome.Add(nomesDasPastas(x))
+
+                key = Path.Combine(montagemDeNome.ToArray)
+
+                For Each nodo As TreeNode In nodeAPesquisar
+                    If nodo.Name = key Then
+
+                        If nodo.GetNodeCount(True) > 0 Then
+                            If x < nomesDasPastas.Length - 1 Then
+                                node = PesquisaESelecionarNode(nodo.Nodes, nomesDasPastas, x + 1)
+
+                            Else
+                                node = nodo
+                            End If
+                        Else
+                            node = nodo
+                        End If
+
+                        Exit For
+
+                    End If
+                Next
+
+
+            Next
+
+        Else
+
         End If
         Return node
 
@@ -66,9 +116,9 @@ Public Class Class_NodeManipulator
     Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, folder As DirectoryInfo)
         Dim delimitadoresSeCaminhoDePasta() As Char = {"\"c, "/"c}
 
-        Dim _path As String = folder.FullName
-
         Dim nomesDasPastas() As String
+
+        Dim _path As String = folder.FullName
 
         Dim montagemDeNome As New List(Of String)
         Dim key As String
@@ -152,7 +202,7 @@ Public Class Class_NodeManipulator
         nomesDasPastas(0) = nomesDasPastas(0) + "\"
 
         Dim nodo As TreeNode
-        nodo = PesquisaNode(node.Nodes, nomesDasPastas, 1)
+        nodo = PesquisaESelecionarNode(node.Nodes, nomesDasPastas, 1)
 
         nodo.Nodes.Add(file.FullName, file.Name).Tag = New FileInfo(file.FullName)
 

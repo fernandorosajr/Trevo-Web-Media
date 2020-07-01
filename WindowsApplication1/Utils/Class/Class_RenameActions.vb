@@ -47,13 +47,10 @@ Public Class Class_RenameActions
         Dim TreeViewList As New TreeView    'New List(Of TreeNode)
         Dim _nodeTreeList As New TreeNode   'New List(Of TreeNode)
 
-        ' AdicionarRoot
         For Each obj As Object In SelectedFoldersAndFiles
             Dim nodeRoot As New TreeNode
             Dim _node As TreeNode
             Dim addNode As Boolean
-            ' checar se existe root
-            'MsgBox(nodeTreeList.Nodes.Item("C:\").Name)
 
             If TreeViewList.Nodes.Count > 0 Then
                 For Each _node In TreeViewList.Nodes
@@ -100,8 +97,6 @@ Public Class Class_RenameActions
                 addNode = False
             End If
 
-
-
             If TypeOf obj Is FileInfo Then
                 file = obj
 
@@ -124,92 +119,167 @@ Public Class Class_RenameActions
             End If
         Next
 
-        ' Renomear os ojetos no TreeView na ordem de seleção.
+        If fuxoContinuoDeRenome = True Then
+            ' Renomear os ojetos no TreeView na ordem de seleção.
+            '--------------------------------------------------------------------------------------
+            For Each obj As Object In SelectedFoldersAndFiles
+
+                Dim selectedObj As Object
+                Dim selectedNode As TreeNode
+                Dim path As String
+
+                Dim newObj As Object
+
+                path = obj.FullName
+
+                selectedNode = ManipuladorDeNodos.PesquisaESelecionarNode(TreeViewList.Nodes, path, 1)
+
+                selectedObj = RenameAccordingToCriterion(obj, dataRenameCriteriaList, index)
+
+                selectedNode.Text = selectedObj.Name
+
+                If TypeOf selectedNode.Tag Is DirectoryInfo Then
+                    newObj = New DirectoryInfo(selectedNode.FullPath)
+
+                ElseIf TypeOf selectedNode.Tag Is FileInfo Then
+                    newObj = New FileInfo(selectedNode.FullPath)
+
+                ElseIf TypeOf selectedNode.Tag Is DriveInfo Then
+                    newObj = New DriveInfo(selectedNode.FullPath)
+
+                End If
+
+                Renamed_SelectedFoldersAndFiles.Add(newObj)
+
+                index += 1
+
+            Next
+
+        Else
+
+            Dim listaDeNodes As New List(Of List(Of TreeNode))
+            Dim checarNodoPai As TreeNode
+            Dim achouNodoPai As Boolean
+
+            For Each obj As Object In SelectedFoldersAndFiles
+                Dim selectedNode As TreeNode
+
+                Dim path As String = obj.FullName
+
+                Dim nodeIrmaos As List(Of TreeNode)
+
+
+
+                selectedNode = ManipuladorDeNodos.PesquisaESelecionarNode(TreeViewList.Nodes, path, 1)
+                nodeIrmaos = ManipuladorDeNodos.ListarNodosIrmaos(selectedNode, True)
+
+                If listaDeNodes.Count > 0 Then
+                    checarNodoPai = listaDeNodes(listaDeNodes.Count - 1)(0).Parent
+                    achouNodoPai = False
+
+                    For Each subListNode As List(Of TreeNode) In listaDeNodes
+                        checarNodoPai = subListNode(0).Parent
+
+                        If checarNodoPai.FullPath = nodeIrmaos(0).Parent.FullPath Then
+                            achouNodoPai = True
+                            Exit For
+                        End If
+                    Next
+                End If
+
+                If nodeIrmaos.Count > 0 Then
+
+                    If achouNodoPai = False Then
+                        listaDeNodes.Add(nodeIrmaos)
+
+                    End If
+                End If
+
+                If nodeIrmaos.Count > 0 Then
+
+                    If TypeOf obj Is DirectoryInfo Then
+
+                    ElseIf TypeOf obj Is FileInfo Then
+
+                    End If
+
+
+                End If
+
+
+            Next
+
+            For Each subList As List(Of TreeNode) In listaDeNodes
+                index2 = 0
+
+                For Each childNode As TreeNode In subList
+                    If TypeOf childNode.Tag Is DirectoryInfo Then
+
+                        Dim newFolder As DirectoryInfo
+
+                        newFolder = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, index2))
+                        childNode.Text = newFolder.Name
+
+
+                        index2 += 1
+                    ElseIf TypeOf childNode.Tag Is FileInfo Then
+                        Dim newFile As FileInfo
+
+                        newFile = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, index2))
+                        childNode.Text = newFile.Name
+
+
+                        index2 += 1
+                    ElseIf TypeOf childNode.Tag Is DriveInfo Then
+
+                    End If
+                Next
+
+                index += 1
+
+            Next
+
+            For Each obj As Object In SelectedFoldersAndFiles
+                Dim path As String
+                Dim selectedNode As TreeNode
+
+                path = obj.FullName
+
+                selectedNode = ManipuladorDeNodos.PesquisaESelecionarNode(TreeViewList.Nodes, path, 1)
+
+                If TypeOf obj Is DirectoryInfo Then
+
+                    folder = New DirectoryInfo(selectedNode.FullPath)
+
+                    Renamed_SelectedFoldersAndFiles.Add(folder)
+
+                ElseIf TypeOf obj Is FileInfo Then
+
+                    file = New FileInfo(selectedNode.FullPath)
+
+                    Renamed_SelectedFoldersAndFiles.Add(file)
+
+
+                ElseIf TypeOf obj Is DriveInfo Then
+
+                End If
+            Next
+
+
+        End If
+
+
+        ' Renomear os ojetos no TreeView na ordem das pastas;
         '--------------------------------------------------------------------------------------
-        For Each obj As Object In SelectedFoldersAndFiles
 
-            Dim selectedObj As Object
-            Dim selectedNode As TreeNode
-            Dim path As String
+        ' Procurar pastas na lista de seleção
+        ' Se achar entao
+        '           ' ExistePasta = True
+        '           ' Criar uma lista de pastas na ordem que se apresenta na lista de seleção
+        '           ' Criar uma varivel X de nível baseado na maior profundidade de niveis da pasta encontrada
+        '           ' Dividir em uma matriz de indice X e salvar a lista de 
+        ' Pesquisar correr
 
-            Dim newObj As Object
-            'If TypeOf obj Is DirectoryInfo Then
-            '    folder = obj
-            '    path = folder.FullName
-            'End If
-
-            'If TypeOf obj Is FileInfo Then
-            '    file = obj
-            '    path = file.FullName
-            'End If
-
-            path = obj.FullName
-
-            selectedNode = ManipuladorDeNodos.PesquisaESelecionarNode(TreeViewList.Nodes, path, 1)
-
-            selectedObj = (RenameAccordingToCriterion(obj, dataRenameCriteriaList, index))
-            'Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(obj, dataRenameCriteriaList, index))
-
-            selectedNode.Text = selectedObj.Name
-
-            If TypeOf selectedNode.Tag Is DirectoryInfo Then
-                newObj = New DirectoryInfo(selectedNode.FullPath)
-
-            ElseIf TypeOf selectedNode.Tag Is FileInfo Then
-                newObj = New FileInfo(selectedNode.FullPath)
-
-            ElseIf TypeOf selectedNode.Tag Is DriveInfo Then
-                newObj = New DriveInfo(selectedNode.FullPath)
-
-            End If
-
-            Renamed_SelectedFoldersAndFiles.Add(newObj)
-
-            index += 1
-
-        Next
-
-        ' Listar todas as pastas da lista SelectedFoldersAndFiles em ListFolder
-        '--------------------------------------------------------------------------------------
-
-        _selectedFoldersAndFiles.Clear()
-
-        'For Each obj As Object In SelectedFoldersAndFiles
-
-        '    If TypeOf obj Is FileInfo Then
-
-        '        file = obj
-        '        _selectedFoldersAndFiles.Add(file.FullName)
-
-        '    ElseIf TypeOf obj Is DirectoryInfo Then
-
-        '        folder = obj
-        '        _selectedFoldersAndFiles.Add(folder.FullName)
-
-        '        If fuxoContinuoDeRenome = False Then
-
-        '            ' Criar Lista de pasta renomeada e seus nomes originais
-        '            ' --------------------------------------------------------------------------
-        '            listFolders.AddRange(CriarListaDePastasRenomedasEOriginais(obj, dataRenameCriteriaList, indexfolder))
-
-        '            indexfolder += 1
-
-        '            ' --------------------------------------------------------------------------
-        '        End If
-
-        '    End If
-
-        'Next
-
-        'indexfolder = 0
-
-        '    'End If
-
-        '    Dim i As Long
-        '' Renomeia pastas e pastas pai de um arquivo em uma lista de seleção
-        '' ---------------------------------------------------------------------------
-
-        '_selectedFoldersAndFiles = RenomearPastasEPastasPaiEmUmaListaDeSelecao(listFolders, SelectedFoldersAndFiles, _selectedFoldersAndFiles, i)
 
 
         '    ' https://docs.microsoft.com/pt-br/dotnet/api/system.array.findindex?view=netcore-3.1
@@ -218,107 +288,6 @@ Public Class Class_RenameActions
 
 
 
-
-        '    ' Pecorrer SelectedFoldersAndFiles e Renomeia somente os arquivos
-
-        '    indexfolder = 0
-
-        'For Each obj As Object In _selectedFoldersAndFiles
-        '    Dim id As Long
-        '    Dim _obj As Object = obj
-        '    If fuxoContinuoDeRenome = False Then
-        '        If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
-
-
-
-        '            id = Array.FindIndex(listFolders.ToArray, Function(_array)
-        '                                                          Dim value As Boolean = False
-        '                                                          dir = New DirectoryInfo(obj)
-
-        '                                                          If dir.FullName = _array(1).FullName Then
-        '                                                              value = True
-        '                                                          End If
-
-        '                                                          Return value
-
-        '                                                      End Function)
-
-        '            If id > -1 Then
-
-        '                Dim pastaRenomeda As DirectoryInfo = (listFolders.Item(id)(1))
-
-        '                _obj = pastaRenomeda '(listFolders.Item(id)(1))
-
-        '                Renamed_SelectedFoldersAndFiles.Add(_obj)
-
-        '                index2 = 0
-        '            Else
-
-        '                _obj = New DirectoryInfo(obj)
-        '                ' se achar pasta adiciona no listFolder o nome original e o nome renomedo
-        '                Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
-
-        '            End If
-
-        '        ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
-        '            _obj = New FileInfo(obj)
-
-        '            Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index2))
-        '            index2 += 1 'indexFile
-        '        End If
-
-        '        index += 1
-
-        '    ElseIf fuxoContinuoDeRenome = True Then
-
-
-        '        '_obj = obj
-        '        dir = New DirectoryInfo(obj)
-
-        '        If TypeOf SelectedFoldersAndFiles(index) Is DirectoryInfo Then
-
-
-        '            listFolders.AddRange(CriarListaDePastasRenomedasEOriginais(_obj, dataRenameCriteriaList, index))
-        '            Renamed_SelectedFoldersAndFiles.Add(listFolders(listFolders.Count - 1)(1))                '(RenameAccordingToCriterion(_obj, dataRenameCriteriaList, index))
-
-
-        '        ElseIf TypeOf SelectedFoldersAndFiles(index) Is FileInfo Then
-
-        '            file = New FileInfo(_selectedFoldersAndFiles(index))
-        '            file = RenomearPastasEPastasPaiEmUmaListaDeSelecao2(file, listFolders)
-        '            Dim arqAchado As Object = file ' New FileInfo(_obj)
-
-        '            Renamed_SelectedFoldersAndFiles.Add(RenameAccordingToCriterion(arqAchado, dataRenameCriteriaList, index))
-
-        '            ' Função RenomarPastaOuPastaPai
-
-        '            'Dim folderParent As DirectoryInfo
-
-
-        '            'Renamed_SelectedFoldersAndFiles.Add(file)
-        '            ' Renomear
-        '            'If subFolder(0).FullName = folderParent.FullName Then
-        '            '    folderParent = subFolder(1)
-
-        '            '    file = New FileInfo(folderParent.FullName & "\" & file.Name)
-
-        '            'End If
-
-        '        End If
-
-
-        '        index += 1
-
-
-        '    End If
-
-
-
-        'Next
-
-
-
-        ' Renomeia as pastas pai nos arquivos
 
         Return Renamed_SelectedFoldersAndFiles
 

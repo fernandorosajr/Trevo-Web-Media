@@ -7,6 +7,7 @@ Public Class Class_NodeManipulator
     'Importação de Classes
     '--------------------------------------------------
     ReadOnly stringFunctions As New StringFunctionsClass
+    'Public renameActions As New Class_RenameActions
     '--------------------------------------------------
 
     Public Function AdicionarDiretorioNoNodo(key As String, name As String, tag As Object) As TreeNode
@@ -18,6 +19,70 @@ Public Class Class_NodeManipulator
         nodeAdiciondo.Tag = tag
 
         Return nodeAdiciondo
+
+    End Function
+
+    Public Overloads Function ListarNodosIrmaos(node As TreeNode, selected As Boolean) As List(Of TreeNode)
+
+        Dim nodeListChecked As New List(Of TreeNode)
+        Dim nodeListUnChecked As New List(Of TreeNode)
+        Dim nodeListReturn As List(Of TreeNode)
+
+        Dim nodeParent As TreeNode
+
+        nodeParent = node.Parent
+
+        For Each childNode As TreeNode In nodeParent.Nodes
+
+            If childNode.Checked = True Then
+                nodeListChecked.Add(childNode)
+            Else
+                nodeListUnChecked.Add(childNode)
+            End If
+
+        Next
+
+        If selected = True Then
+            nodeListReturn = nodeListChecked
+        Else
+            nodeListReturn = nodeListUnChecked
+        End If
+
+        Return nodeListReturn
+
+    End Function
+
+    Public Overloads Function ListarNodosIrmaos(node As TreeNode) As TreeNodeCollection
+        Dim nodeParent As TreeNode
+        nodeParent = node.Parent
+
+        Return nodeParent.Nodes
+
+    End Function
+
+    Public Function ListarNodosFilhos(selectedNode As TreeNode, dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), Renamed_SelectedFoldersAndFiles As List(Of Object), index As Long)
+        Dim file As FileInfo
+        Dim folder As DirectoryInfo
+        Dim indexFile As Long = index
+        Dim indexFolder As Long = index
+        If selectedNode.GetNodeCount(True) > 0 Then
+
+        End If
+
+        For Each child As TreeNode In selectedNode.Nodes
+            If TypeOf child.Tag Is DirectoryInfo Then
+
+                For Each selected In Renamed_SelectedFoldersAndFiles
+
+                Next
+
+            ElseIf TypeOf child.Tag Is FileInfo Then
+                'file = renameActions.RenameAccordingToCriterion(child, dataRenameCriteriaList, indexFile)
+                child.Text = file.Name
+                indexFile = +1
+            End If
+        Next
+
 
     End Function
 
@@ -202,9 +267,14 @@ Public Class Class_NodeManipulator
         nomesDasPastas(0) = nomesDasPastas(0) + "\"
 
         Dim nodo As TreeNode
+        Dim changeNode As TreeNode
         nodo = PesquisaESelecionarNode(node.Nodes, nomesDasPastas, 1)
 
-        nodo.Nodes.Add(file.FullName, file.Name).Tag = New FileInfo(file.FullName)
+        nodo.Checked = False
+
+        changeNode = nodo.Nodes.Add(file.FullName, file.Name)
+        changeNode.Tag = New FileInfo(file.FullName)
+        changeNode.Checked = True
 
         Return node
 
@@ -228,6 +298,7 @@ Public Class Class_NodeManipulator
 
         Else
 
+            nodeRoot.Checked = True
             node = nodeRoot
         End If
 

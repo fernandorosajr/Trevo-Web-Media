@@ -881,6 +881,9 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\listFluxoIniciodeterminadoParaItemESubIntem35.png" />
+    <None Include="Resources\listReiniciarNoSubItem35.png" />
+    <None Include="Resources\listFluxoContinuo35.png" />
     <None Include="Resources\verify_Clipboard01_35.png" />
     <None Include="Resources\verify_Clipboard35.png" />
     <None Include="Resources\verify_Clipboard_Hover.png" />

@@ -216,37 +216,44 @@ Long, lpColorValues As Long) As Long
         Dim path As String = "C:\Minha Pasta\"
         Dim folder As DirectoryInfo
         Dim folder2 As DirectoryInfo
+        Dim folderImpar As DirectoryInfo
         Dim file As FileInfo
 
 
-        For x = 0 To 1
+        For x = 0 To 100
             folder = New DirectoryInfo(path & "Teste de Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
 
-            For y = 0 To 1
-                file = New FileInfo(folder.FullName & "\Minha Pastinha Livre\" & "foto " & y & ".jpg")
+            For y = 0 To 25
+                file = New FileInfo(folder.FullName & "\foto " & y & ".jpg")
                 SelectedFoldersAndFiles.Add(file)
             Next
 
-            For y = 0 To 1
+            For y = 0 To 25
                 folder2 = New DirectoryInfo(folder.FullName & "\" & "Outra Pasta " & y)
                 SelectedFoldersAndFiles.Add(folder2)
             Next
         Next
 
-        path = "F:\Meus Documentos\"
-        For x = 0 To 1
+        path = "F:\"
+        For x = 0 To 100
             folder = New DirectoryInfo(path & "IMAGENS " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 1
+            For y = 0 To 50
                 folder2 = New DirectoryInfo(folder.FullName & "\" & "Outra Pasta " & y)
                 SelectedFoldersAndFiles.Add(folder2)
             Next
 
 
         Next
+
+        'folderImpar = New DirectoryInfo("F:\Folder Impar")
+        'SelectedFoldersAndFiles.Add(folderImpar)
+
+
+
     End Sub
     Public Function AdcionarItemNoView(Drive As DriveInfo, Numero As Integer)
         ' Cria os suobjetos semelhantes a pastas do picasa

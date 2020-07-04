@@ -1053,6 +1053,36 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property listFluxoContinuo35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("listFluxoContinuo35", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property listFluxoIniciodeterminadoParaItemESubIntem35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("listFluxoIniciodeterminadoParaItemESubIntem35", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property listReiniciarNoSubItem35() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("listReiniciarNoSubItem35", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property lixeira() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("lixeira", resourceCulture)

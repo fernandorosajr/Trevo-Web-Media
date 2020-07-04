@@ -42,10 +42,12 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitle03 = New System.Windows.Forms.Label()
         Me.Timer = New System.Windows.Forms.Timer(Me.components)
         Me.BTNVisulizar = New System.Windows.Forms.Button()
-        Me.CHK_FuxoContinuoDeRenome = New System.Windows.Forms.CheckBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.RB_InicioDeterminadoParaItemESubitem = New System.Windows.Forms.RadioButton()
+        Me.RB_ReiniciarNoSubItem = New System.Windows.Forms.RadioButton()
+        Me.RB_FuxoContinuoDeRenome = New System.Windows.Forms.RadioButton()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -62,11 +64,11 @@ Partial Class FRMDialogRenameCriterion
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(482, 526)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(492, 526)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(166, 29)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(160, 29)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'OK_Button
@@ -79,7 +81,7 @@ Partial Class FRMDialogRenameCriterion
         Me.OK_Button.ForeColor = System.Drawing.Color.LightGray
         Me.OK_Button.Location = New System.Drawing.Point(3, 3)
         Me.OK_Button.Name = "OK_Button"
-        Me.OK_Button.Size = New System.Drawing.Size(77, 23)
+        Me.OK_Button.Size = New System.Drawing.Size(74, 23)
         Me.OK_Button.TabIndex = 14
         Me.OK_Button.Text = "&Renomear"
         Me.OK_Button.UseVisualStyleBackColor = False
@@ -90,7 +92,7 @@ Partial Class FRMDialogRenameCriterion
         Me.Cancel_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Cancel_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.Cancel_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Cancel_Button.Location = New System.Drawing.Point(91, 3)
+        Me.Cancel_Button.Location = New System.Drawing.Point(86, 3)
         Me.Cancel_Button.Name = "Cancel_Button"
         Me.Cancel_Button.Size = New System.Drawing.Size(67, 23)
         Me.Cancel_Button.TabIndex = 15
@@ -301,16 +303,6 @@ Partial Class FRMDialogRenameCriterion
         Me.BTNVisulizar.TabIndex = 16
         Me.BTNVisulizar.Text = "Detalhar"
         '
-        'CHK_FuxoContinuoDeRenome
-        '
-        Me.CHK_FuxoContinuoDeRenome.AutoSize = True
-        Me.CHK_FuxoContinuoDeRenome.Location = New System.Drawing.Point(24, 17)
-        Me.CHK_FuxoContinuoDeRenome.Name = "CHK_FuxoContinuoDeRenome"
-        Me.CHK_FuxoContinuoDeRenome.Size = New System.Drawing.Size(150, 17)
-        Me.CHK_FuxoContinuoDeRenome.TabIndex = 17
-        Me.CHK_FuxoContinuoDeRenome.Text = "Fluxo contínuo de renome"
-        Me.CHK_FuxoContinuoDeRenome.UseVisualStyleBackColor = True
-        '
         'Panel1
         '
         Me.Panel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -337,12 +329,58 @@ Partial Class FRMDialogRenameCriterion
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.CHK_FuxoContinuoDeRenome)
+        Me.Panel3.Controls.Add(Me.RB_ReiniciarNoSubItem)
+        Me.Panel3.Controls.Add(Me.RB_FuxoContinuoDeRenome)
+        Me.Panel3.Controls.Add(Me.RB_InicioDeterminadoParaItemESubitem)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(1, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(612, 51)
         Me.Panel3.TabIndex = 0
+        '
+        'RB_InicioDeterminadoParaItemESubitem
+        '
+        Me.RB_InicioDeterminadoParaItemESubitem.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RB_InicioDeterminadoParaItemESubitem.Checked = True
+        Me.RB_InicioDeterminadoParaItemESubitem.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RB_InicioDeterminadoParaItemESubitem.FlatAppearance.BorderSize = 0
+        Me.RB_InicioDeterminadoParaItemESubitem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_InicioDeterminadoParaItemESubitem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RB_InicioDeterminadoParaItemESubitem.Image = Global.TrevoWebMedia.My.Resources.Resources.listFluxoIniciodeterminadoParaItemESubIntem35
+        Me.RB_InicioDeterminadoParaItemESubitem.Location = New System.Drawing.Point(0, 0)
+        Me.RB_InicioDeterminadoParaItemESubitem.Name = "RB_InicioDeterminadoParaItemESubitem"
+        Me.RB_InicioDeterminadoParaItemESubitem.Size = New System.Drawing.Size(63, 51)
+        Me.RB_InicioDeterminadoParaItemESubitem.TabIndex = 23
+        Me.RB_InicioDeterminadoParaItemESubitem.TabStop = True
+        Me.RB_InicioDeterminadoParaItemESubitem.UseVisualStyleBackColor = True
+        '
+        'RB_ReiniciarNoSubItem
+        '
+        Me.RB_ReiniciarNoSubItem.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RB_ReiniciarNoSubItem.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RB_ReiniciarNoSubItem.FlatAppearance.BorderSize = 0
+        Me.RB_ReiniciarNoSubItem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_ReiniciarNoSubItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RB_ReiniciarNoSubItem.Image = Global.TrevoWebMedia.My.Resources.Resources.listReiniciarNoSubItem35
+        Me.RB_ReiniciarNoSubItem.Location = New System.Drawing.Point(128, 0)
+        Me.RB_ReiniciarNoSubItem.Name = "RB_ReiniciarNoSubItem"
+        Me.RB_ReiniciarNoSubItem.Size = New System.Drawing.Size(67, 51)
+        Me.RB_ReiniciarNoSubItem.TabIndex = 22
+        Me.RB_ReiniciarNoSubItem.UseVisualStyleBackColor = True
+        '
+        'RB_FuxoContinuoDeRenome
+        '
+        Me.RB_FuxoContinuoDeRenome.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RB_FuxoContinuoDeRenome.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RB_FuxoContinuoDeRenome.FlatAppearance.BorderSize = 0
+        Me.RB_FuxoContinuoDeRenome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_FuxoContinuoDeRenome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RB_FuxoContinuoDeRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.listFluxoContinuo35
+        Me.RB_FuxoContinuoDeRenome.Location = New System.Drawing.Point(63, 0)
+        Me.RB_FuxoContinuoDeRenome.Name = "RB_FuxoContinuoDeRenome"
+        Me.RB_FuxoContinuoDeRenome.Size = New System.Drawing.Size(65, 51)
+        Me.RB_FuxoContinuoDeRenome.TabIndex = 21
+        Me.RB_FuxoContinuoDeRenome.UseVisualStyleBackColor = True
         '
         'FRMDialogRenameCriterion
         '
@@ -375,7 +413,6 @@ Partial Class FRMDialogRenameCriterion
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -398,8 +435,10 @@ Partial Class FRMDialogRenameCriterion
     Friend WithEvents TXTCNovoNome As Control_TextConfirm
     Friend WithEvents Timer As Timer
     Friend WithEvents BTNVisulizar As Button
-    Friend WithEvents CHK_FuxoContinuoDeRenome As CheckBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents RB_InicioDeterminadoParaItemESubitem As RadioButton
+    Friend WithEvents RB_ReiniciarNoSubItem As RadioButton
+    Friend WithEvents RB_FuxoContinuoDeRenome As RadioButton
 End Class

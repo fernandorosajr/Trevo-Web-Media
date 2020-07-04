@@ -207,6 +207,8 @@ Public Class FRMDialogRenameCriterion
         Dim y As Integer
         Dim z As Integer = LoadRenameOptions.Itens.Count - 1
 
+        Dim index As Long
+
 
         For x = 0 To z
             y = z - x
@@ -214,12 +216,17 @@ Public Class FRMDialogRenameCriterion
             renameOption = LoadRenameOptions.Itens.Item(y)
             dataRenameCriteriaList.Add(renameOption.DataRenamingCriterion)
 
+            If renameOption.DataRenamingCriterion.RenameTypeData.Tela = 3 Then
+                index = renameOption.DataRenamingCriterion.RenameTypeData.DadosDeSequenciaNumerica.NumeroDeSequencia
+            End If
+
+
         Next
 
         Renamed_SelectedFoldersAndFiles.Clear()
 
         ' TODO:(1) Estabelecer quais condições serão impostas o index 
-        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList, fuxoContinuoDeRenome)
+        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList, fuxoContinuoDeRenome, Index)
 
         FRMDialogVisualizarRenome.Width = Me.Width
         FRMDialogVisualizarRenome.Height = Me.Height
@@ -234,8 +241,8 @@ Public Class FRMDialogRenameCriterion
         Timer.Enabled = True
     End Sub
 
-    Private Sub CHK_FuxoContinuoDeRenome_CheckedChanged(sender As Object, e As EventArgs) Handles CHK_FuxoContinuoDeRenome.CheckedChanged
-        fuxoContinuoDeRenome = CHK_FuxoContinuoDeRenome.Checked
 
+    Private Sub RB_FuxoContinuoDeRenome_CheckedChanged(sender As Object, e As EventArgs) Handles RB_FuxoContinuoDeRenome.CheckedChanged
+        fuxoContinuoDeRenome = RB_FuxoContinuoDeRenome.Checked
     End Sub
 End Class

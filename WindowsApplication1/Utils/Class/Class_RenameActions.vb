@@ -17,14 +17,14 @@ Public Class Class_RenameActions
 
     '-------------------------------------------------
 
-    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean) As List(Of Object)
+    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean, index As Long) As List(Of Object)
 
         ' TODO: (2) Receber valor de index esxternamente.
         ' TODO (3) Corrigir erro Minha "Pastinha Livre".
 
         ' Renomeia e devolve a lista de objetos renomedos baseado em critérios
 
-        Dim index As Long = 0
+        'Dim index As Long = 0
         Dim index2 As Long
         Dim Renamed_SelectedFoldersAndFiles As New List(Of Object)
         Dim _selectedFoldersAndFiles As New List(Of String)
@@ -180,10 +180,15 @@ Public Class Class_RenameActions
                     For Each subListNode As List(Of TreeNode) In listaDeNodes
                         checarNodoPai = subListNode(0).Parent
 
-                        If checarNodoPai.FullPath = nodeIrmaos(0).Parent.FullPath Then
-                            achouNodoPai = True
-                            Exit For
+                        If nodeIrmaos.Count > 0 Then
+
+                            If checarNodoPai.FullPath = nodeIrmaos(0).Parent.FullPath Then
+                                achouNodoPai = True
+                                Exit For
+                            End If
+
                         End If
+
                     Next
                 End If
 
@@ -195,47 +200,70 @@ Public Class Class_RenameActions
                     End If
                 End If
 
-                If nodeIrmaos.Count > 0 Then
-
-                    If TypeOf obj Is DirectoryInfo Then
-
-                    ElseIf TypeOf obj Is FileInfo Then
-
-                    End If
-
-
-                End If
-
 
             Next
 
             For Each subList As List(Of TreeNode) In listaDeNodes
-                index2 = 0
+                index2 = 0 'index
+                indexfolder = 0 'index
+                Dim nivel As Integer = 0
+                Dim parentCheck As TreeNode
+
+                If subList.Count > 0 Then
+                    nivel = subList(0).Level
+                    If subList(0).Parent IsNot Nothing Then parentCheck = subList(0).Parent
+                End If
 
                 For Each childNode As TreeNode In subList
                     If TypeOf childNode.Tag Is DirectoryInfo Then
 
                         Dim newFolder As DirectoryInfo
 
-                        newFolder = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, index2))
+                        newFolder = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, indexfolder))
                         childNode.Text = newFolder.Name
 
+                        If childNode.Level <> nivel Then
+                            indexfolder = 0
+                        Else
+                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
+                                indexfolder = 0
 
-                        index2 += 1
+                            Else
+                                indexfolder += 1
+
+                            End If
+
+                        End If
+
                     ElseIf TypeOf childNode.Tag Is FileInfo Then
                         Dim newFile As FileInfo
 
                         newFile = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, index2))
                         childNode.Text = newFile.Name
 
+                        If childNode.Level <> nivel Then
+                            index2 = 0
+                        Else
+                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
+                                index2 = 0
 
-                        index2 += 1
+                            Else
+                                index2 += 1
+
+                            End If
+
+                        End If
+
+
+                        'index2 += 1
+
+
                     ElseIf TypeOf childNode.Tag Is DriveInfo Then
 
                     End If
                 Next
 
-                index += 1
+                'index += 1
 
             Next
 

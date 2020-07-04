@@ -181,9 +181,11 @@ Public Class Class_NodeManipulator
     Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, folder As DirectoryInfo)
         Dim delimitadoresSeCaminhoDePasta() As Char = {"\"c, "/"c}
 
+        Dim selected As Boolean
         Dim nomesDasPastas() As String
 
         Dim _path As String = folder.FullName
+        Dim folderTest As DirectoryInfo
 
         Dim montagemDeNome As New List(Of String)
         Dim key As String
@@ -216,21 +218,32 @@ Public Class Class_NodeManipulator
 
             texto = nomesDasPastas(x)
 
+            folderTest = New DirectoryInfo(key)
+
+            If folderTest.FullName = folder.FullName Then
+                selected = True
+            Else
+                selected = False
+
+            End If
+
             If node.GetNodeCount(True) > 0 Then
+
 
                 If node.Nodes.Item(key) IsNot Nothing Then
 
                     subNode = node.Nodes.Item(key)
-                    CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1)
+
+                    CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected)
 
                     Exit For
 
                 Else
 
-                    subNode = node.Nodes.Add(key, texto).Clone
+                    subNode = nodeAtual.Nodes.Add(key, texto) 'node.Nodes.Add(key, texto)
                     subNode.Tag = New DirectoryInfo(key)
 
-                    node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1))
+                    node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
                     Exit For
 
                 End If
@@ -238,7 +251,7 @@ Public Class Class_NodeManipulator
             Else
                 subNode = nodeAtual.Nodes.Add(key, texto).Clone
                 subNode.Tag = New DirectoryInfo(key)
-                node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1))
+                node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
 
                 Exit For
             End If
@@ -270,7 +283,7 @@ Public Class Class_NodeManipulator
         Dim changeNode As TreeNode
         nodo = PesquisaESelecionarNode(node.Nodes, nomesDasPastas, 1)
 
-        nodo.Checked = False
+        'nodo.Checked = False
 
         changeNode = nodo.Nodes.Add(file.FullName, file.Name)
         changeNode.Tag = New FileInfo(file.FullName)
@@ -280,7 +293,7 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Function CriarArvoreDeNodo2(nodeRoot As TreeNode, nomesDasPastas As Array, nivel As Integer)
+    Public Function CriarArvoreDeNodo2(nodeRoot As TreeNode, nomesDasPastas As Array, nivel As Integer, selected As Boolean)
 
         Dim montagemDeNome As New List(Of String)
         Dim key As String
@@ -298,7 +311,7 @@ Public Class Class_NodeManipulator
 
         Else
 
-            nodeRoot.Checked = True
+            nodeRoot.Checked = selected
             node = nodeRoot
         End If
 
@@ -307,13 +320,21 @@ Public Class Class_NodeManipulator
             key = Path.Combine(montagemDeNome.ToArray)
             texto = nomesDasPastas(x)
 
+            If nomesDasPastas(nomesDasPastas.Length - 1) = montagemDeNome(montagemDeNome.Count - 1) Then
+                selected = True
+            Else
+                selected = False
+
+            End If
+
             If node.GetNodeCount(True) > 0 Then
+
 
                 If node.Nodes.Item(key) IsNot Nothing Then
 
                     subNode = node.Nodes.Item(key)
 
-                    CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1)
+                    CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected)
 
                     Exit For
                 Else
@@ -321,7 +342,7 @@ Public Class Class_NodeManipulator
                     subNode = nodeAtual.Nodes.Add(key, texto)
                     subNode.Tag = New DirectoryInfo(key)
 
-                    node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1))
+                    node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
 
                     Exit For
                 End If
@@ -330,7 +351,7 @@ Public Class Class_NodeManipulator
 
                 subNode = nodeAtual.Nodes.Add(key, texto).Clone
                 subNode.Tag = New DirectoryInfo(key)
-                node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1))
+                node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
 
                 Exit For
 

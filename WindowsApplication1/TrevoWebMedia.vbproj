@@ -142,6 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Componentes\Control_AddressBar.Designer.vb">
+      <DependentUpon>Control_AddressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Componentes\Control_AddressBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Componentes\Paneis\PaineisEsq\ControlPainel_Clipboard.Designer.vb">
       <DependentUpon>ControlPainel_Clipboard.vb</DependentUpon>
     </Compile>
@@ -432,6 +438,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\ControlListView\SubControls\ControlListIcone.resx">
       <DependentUpon>ControlListIcone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Componentes\Control_AddressBar.resx">
+      <DependentUpon>Control_AddressBar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Componentes\OutrosComponentes\CustomControl_Test.resx">
       <DependentUpon>CustomControl_Test.vb</DependentUpon>

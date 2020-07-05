@@ -17,7 +17,7 @@ Public Class Class_RenameActions
 
     '-------------------------------------------------
 
-    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean, index As Long) As List(Of Object)
+    Public Overloads Function Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles As List(Of Object), dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), fuxoContinuoDeRenome As Boolean, reiniciarNoSubItem As Boolean, index As Long) As List(Of Object)
 
         ' TODO: (2) Receber valor de index esxternamente.
         ' TODO (3) Corrigir erro Minha "Pastinha Livre".
@@ -25,7 +25,6 @@ Public Class Class_RenameActions
         ' Renomeia e devolve a lista de objetos renomedos baseado em critérios
 
         'Dim index As Long = 0
-        Dim index2 As Long
         Dim Renamed_SelectedFoldersAndFiles As New List(Of Object)
         Dim _selectedFoldersAndFiles As New List(Of String)
 
@@ -35,9 +34,13 @@ Public Class Class_RenameActions
 
         Dim dir As DirectoryInfo
 
-        Dim indexfolder As Long
+        Dim indexFile As Long
+        Dim indexFolder As Long
 
-        indexfolder = 0
+        Dim indexFile_Aux As Long
+        Dim indexFolder_Aux As Long
+
+        indexFolder = 0
 
         Dim file As FileInfo
         Dim folder As DirectoryInfo
@@ -203,11 +206,30 @@ Public Class Class_RenameActions
 
             Next
 
+            'TODO: Seria melhor por isto fora do for
+            Dim sequnciaDaLetraInicial(dataRenameCriteriaList.Count - 1) As String
+
+            If reiniciarNoSubItem = True Then
+                Dim i As Integer = 0
+                For Each criterion As Class_DataRenamingCriterion In dataRenameCriteriaList
+                    sequnciaDaLetraInicial(i) = criterion.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra
+
+                    i += 1
+                Next
+
+            End If
+
             For Each subList As List(Of TreeNode) In listaDeNodes
-                index2 = 0 'index
-                indexfolder = 0 'index
+                indexFile = 0 'index
+                indexFolder = 0 'index
                 Dim nivel As Integer = 0
                 Dim parentCheck As TreeNode
+                Dim parentAnterior As TreeNode
+                Dim itemAnterior As TreeNode
+
+                Dim reiniciarAgora As Boolean
+
+
 
                 If subList.Count > 0 Then
                     nivel = subList(0).Level
@@ -219,17 +241,67 @@ Public Class Class_RenameActions
 
                         Dim newFolder As DirectoryInfo
 
-                        newFolder = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, indexfolder))
-                        childNode.Text = newFolder.Name
 
-                        If childNode.Level <> nivel Then
-                            indexfolder = 0
-                        Else
-                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
-                                indexfolder = 0
+                        If parentAnterior IsNot Nothing Then
+
+                            If parentAnterior.Tag.FullName <> childNode.Parent.Tag.FullName Then
+
+                                indexFolder_Aux = 0
+
+                                If reiniciarNoSubItem = True Then reiniciarAgora = True
 
                             Else
-                                indexfolder += 1
+
+                            End If
+
+                            If TypeOf itemAnterior.Tag IsNot DirectoryInfo Then
+
+                                indexFolder_Aux = 0
+
+                                If reiniciarNoSubItem = True Then reiniciarAgora = True
+                            End If
+                        End If
+
+                        If reiniciarNoSubItem = True Then
+
+                            If reiniciarAgora = True Then
+                                'ReiniciarSequenciaDeLetra()
+
+                                For Each criterion As Class_DataRenamingCriterion In dataRenameCriteriaList
+                                    criterion.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = "A"
+                                Next
+
+                                'reiniciarAgora = False
+                            Else
+
+                                For ii = 0 To sequnciaDaLetraInicial.Length - 1
+                                    dataRenameCriteriaList(ii).RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = sequnciaDaLetraInicial(ii)
+
+                                Next
+
+                            End If
+
+                        End If
+
+                        newFolder = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, indexFolder_Aux))
+
+                        childNode.Text = newFolder.Name
+
+                        parentAnterior = parentCheck
+                        itemAnterior = childNode
+
+                        If childNode.Level <> nivel Then
+                            indexFolder_Aux = indexFolder
+                            reiniciarAgora = True
+
+                        Else
+                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
+                                indexFolder_Aux = indexFolder
+                                reiniciarAgora = True
+                            Else
+                                indexFolder_Aux += 1
+
+                                reiniciarAgora = False
 
                             End If
 
@@ -238,17 +310,63 @@ Public Class Class_RenameActions
                     ElseIf TypeOf childNode.Tag Is FileInfo Then
                         Dim newFile As FileInfo
 
-                        newFile = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, index2))
-                        childNode.Text = newFile.Name
 
-                        If childNode.Level <> nivel Then
-                            index2 = 0
-                        Else
-                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
-                                index2 = 0
+                        If parentAnterior IsNot Nothing Then
+
+
+                            If parentAnterior.Tag.FullName <> childNode.Parent.Tag.FullName Then
+                                indexFile_Aux = 0
+                                If reiniciarNoSubItem = True Then reiniciarAgora = True
 
                             Else
-                                index2 += 1
+                                If TypeOf itemAnterior.Tag IsNot FileInfo Then
+                                    indexFile_Aux = 0
+                                    If reiniciarNoSubItem = True Then reiniciarAgora = True
+                                End If
+                            End If
+                        End If
+
+                        If reiniciarNoSubItem = True Then
+                            If reiniciarAgora = True Then
+                                'ReiniciarSequenciaDeLetra()
+
+                                For Each criterion As Class_DataRenamingCriterion In dataRenameCriteriaList
+                                    criterion.RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = "A"
+                                Next
+
+                                'reiniciarAgora = False
+                            Else
+
+                                For ii = 0 To sequnciaDaLetraInicial.Length - 1
+                                    dataRenameCriteriaList(ii).RenameTypeData.DadosDeSequenciaDeLetras.SequenciaDeLetra = sequnciaDaLetraInicial(ii)
+
+                                Next
+
+                            End If
+
+                        End If
+
+                        newFile = (RenameAccordingToCriterion(childNode.Tag, dataRenameCriteriaList, indexFile_Aux))
+
+                        childNode.Text = newFile.Name
+
+
+                        parentAnterior = parentCheck
+                        itemAnterior = childNode
+
+
+                        If childNode.Level <> nivel Then
+                            indexFile_Aux = indexFile
+                            reiniciarAgora = False
+
+                        Else
+                            If parentCheck.FullPath <> childNode.Parent.FullPath Then
+                                indexFile_Aux = indexFile
+                                reiniciarAgora = True
+
+                            Else
+                                indexFile_Aux += 1
+                                reiniciarAgora = False
 
                             End If
 

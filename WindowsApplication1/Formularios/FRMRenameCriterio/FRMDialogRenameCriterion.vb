@@ -23,6 +23,7 @@ Public Class FRMDialogRenameCriterion
     Private resultado As String
 
     Public fuxoContinuoDeRenome As Boolean
+    Dim reiniciarNoSubItem As Boolean
     ' Propriedades de Formulários
     ' ------------------------------------------------
 
@@ -200,6 +201,7 @@ Public Class FRMDialogRenameCriterion
 
         Dim dataRenameCriteriaList As New List(Of Class_DataRenamingCriterion)
 
+
         ' Gerar Lista de comandos de renome
 
         Dim renameOption As Control_RenameOption
@@ -226,7 +228,7 @@ Public Class FRMDialogRenameCriterion
         Renamed_SelectedFoldersAndFiles.Clear()
 
         ' TODO:(1) Estabelecer quais condições serão impostas o index 
-        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList, fuxoContinuoDeRenome, Index)
+        Renamed_SelectedFoldersAndFiles = RenameActions.Rename_SELECTED_LIST_AccordingToCriterion(SelectedFoldersAndFiles, dataRenameCriteriaList, fuxoContinuoDeRenome, reiniciarNoSubItem, index)
 
         FRMDialogVisualizarRenome.Width = Me.Width
         FRMDialogVisualizarRenome.Height = Me.Height
@@ -244,5 +246,9 @@ Public Class FRMDialogRenameCriterion
 
     Private Sub RB_FuxoContinuoDeRenome_CheckedChanged(sender As Object, e As EventArgs) Handles RB_FuxoContinuoDeRenome.CheckedChanged
         fuxoContinuoDeRenome = RB_FuxoContinuoDeRenome.Checked
+    End Sub
+
+    Private Sub RB_ReiniciarNoSubItem_CheckedChanged(sender As Object, e As EventArgs) Handles RB_ReiniciarNoSubItem.CheckedChanged
+        reiniciarNoSubItem = RB_ReiniciarNoSubItem.Checked
     End Sub
 End Class

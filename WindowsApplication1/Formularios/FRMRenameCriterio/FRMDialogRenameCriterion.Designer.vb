@@ -36,7 +36,6 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLNovoNome = New System.Windows.Forms.Label()
         Me.LBLNomeDoExemplo = New System.Windows.Forms.Label()
         Me.LBLTitleOrigem = New System.Windows.Forms.Label()
-        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.LNKLNomeDoExemplo = New System.Windows.Forms.LinkLabel()
         Me.LBLValue_NovoNome = New System.Windows.Forms.Label()
         Me.LBLTitle03 = New System.Windows.Forms.Label()
@@ -45,9 +44,10 @@ Partial Class FRMDialogRenameCriterion
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.RB_InicioDeterminadoParaItemESubitem = New System.Windows.Forms.RadioButton()
         Me.RB_ReiniciarNoSubItem = New System.Windows.Forms.RadioButton()
         Me.RB_FuxoContinuoDeRenome = New System.Windows.Forms.RadioButton()
+        Me.RB_InicioDeterminadoParaItemESubitem = New System.Windows.Forms.RadioButton()
+        Me.TXTCNovoNome = New TrevoWebMedia.Control_TextConfirm()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.PanelBorder_Visualizar.SuspendLayout()
         Me.PanelVisualizar.SuspendLayout()
@@ -223,30 +223,6 @@ Partial Class FRMDialogRenameCriterion
         Me.LBLTitleOrigem.TabIndex = 7
         Me.LBLTitleOrigem.Text = "Origem de exemplo:"
         '
-        'TXTCNovoNome
-        '
-        Me.TXTCNovoNome.ActiveValidate = True
-        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TXTCNovoNome.ByChar = False
-        Me.TXTCNovoNome.ByText = False
-        Me.TXTCNovoNome.ByValue = False
-        Me.TXTCNovoNome.Filho = Nothing
-        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
-        Me.TXTCNovoNome.Name = "TXTCNovoNome"
-        Me.TXTCNovoNome.NoneOfThisChar = ""
-        Me.TXTCNovoNome.NoneOfThisText = Nothing
-        Me.TXTCNovoNome.NoneOfThisValue = Nothing
-        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
-        Me.TXTCNovoNome.RequiredChar = ""
-        Me.TXTCNovoNome.RequiredText = Nothing
-        Me.TXTCNovoNome.RequiredValue = Nothing
-        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
-        Me.TXTCNovoNome.SpaceError = True
-        Me.TXTCNovoNome.TabIndex = 10
-        Me.TXTCNovoNome.ValueStr = Nothing
-        Me.TXTCNovoNome.Visible = False
-        '
         'LNKLNomeDoExemplo
         '
         Me.LNKLNomeDoExemplo.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -338,6 +314,35 @@ Partial Class FRMDialogRenameCriterion
         Me.Panel3.Size = New System.Drawing.Size(612, 51)
         Me.Panel3.TabIndex = 0
         '
+        'RB_ReiniciarNoSubItem
+        '
+        Me.RB_ReiniciarNoSubItem.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RB_ReiniciarNoSubItem.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RB_ReiniciarNoSubItem.FlatAppearance.BorderSize = 0
+        Me.RB_ReiniciarNoSubItem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_ReiniciarNoSubItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RB_ReiniciarNoSubItem.Image = Global.TrevoWebMedia.My.Resources.Resources.listReiniciarNoSubItem35
+        Me.RB_ReiniciarNoSubItem.Location = New System.Drawing.Point(128, 0)
+        Me.RB_ReiniciarNoSubItem.Name = "RB_ReiniciarNoSubItem"
+        Me.RB_ReiniciarNoSubItem.Size = New System.Drawing.Size(67, 51)
+        Me.RB_ReiniciarNoSubItem.TabIndex = 22
+        Me.RB_ReiniciarNoSubItem.UseVisualStyleBackColor = True
+        Me.RB_ReiniciarNoSubItem.Visible = False
+        '
+        'RB_FuxoContinuoDeRenome
+        '
+        Me.RB_FuxoContinuoDeRenome.Appearance = System.Windows.Forms.Appearance.Button
+        Me.RB_FuxoContinuoDeRenome.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RB_FuxoContinuoDeRenome.FlatAppearance.BorderSize = 0
+        Me.RB_FuxoContinuoDeRenome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_FuxoContinuoDeRenome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.RB_FuxoContinuoDeRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.listFluxoContinuo35
+        Me.RB_FuxoContinuoDeRenome.Location = New System.Drawing.Point(63, 0)
+        Me.RB_FuxoContinuoDeRenome.Name = "RB_FuxoContinuoDeRenome"
+        Me.RB_FuxoContinuoDeRenome.Size = New System.Drawing.Size(65, 51)
+        Me.RB_FuxoContinuoDeRenome.TabIndex = 21
+        Me.RB_FuxoContinuoDeRenome.UseVisualStyleBackColor = True
+        '
         'RB_InicioDeterminadoParaItemESubitem
         '
         Me.RB_InicioDeterminadoParaItemESubitem.Appearance = System.Windows.Forms.Appearance.Button
@@ -354,33 +359,29 @@ Partial Class FRMDialogRenameCriterion
         Me.RB_InicioDeterminadoParaItemESubitem.TabStop = True
         Me.RB_InicioDeterminadoParaItemESubitem.UseVisualStyleBackColor = True
         '
-        'RB_ReiniciarNoSubItem
+        'TXTCNovoNome
         '
-        Me.RB_ReiniciarNoSubItem.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RB_ReiniciarNoSubItem.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RB_ReiniciarNoSubItem.FlatAppearance.BorderSize = 0
-        Me.RB_ReiniciarNoSubItem.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_ReiniciarNoSubItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RB_ReiniciarNoSubItem.Image = Global.TrevoWebMedia.My.Resources.Resources.listReiniciarNoSubItem35
-        Me.RB_ReiniciarNoSubItem.Location = New System.Drawing.Point(128, 0)
-        Me.RB_ReiniciarNoSubItem.Name = "RB_ReiniciarNoSubItem"
-        Me.RB_ReiniciarNoSubItem.Size = New System.Drawing.Size(67, 51)
-        Me.RB_ReiniciarNoSubItem.TabIndex = 22
-        Me.RB_ReiniciarNoSubItem.UseVisualStyleBackColor = True
-        '
-        'RB_FuxoContinuoDeRenome
-        '
-        Me.RB_FuxoContinuoDeRenome.Appearance = System.Windows.Forms.Appearance.Button
-        Me.RB_FuxoContinuoDeRenome.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RB_FuxoContinuoDeRenome.FlatAppearance.BorderSize = 0
-        Me.RB_FuxoContinuoDeRenome.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_FuxoContinuoDeRenome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.RB_FuxoContinuoDeRenome.Image = Global.TrevoWebMedia.My.Resources.Resources.listFluxoContinuo35
-        Me.RB_FuxoContinuoDeRenome.Location = New System.Drawing.Point(63, 0)
-        Me.RB_FuxoContinuoDeRenome.Name = "RB_FuxoContinuoDeRenome"
-        Me.RB_FuxoContinuoDeRenome.Size = New System.Drawing.Size(65, 51)
-        Me.RB_FuxoContinuoDeRenome.TabIndex = 21
-        Me.RB_FuxoContinuoDeRenome.UseVisualStyleBackColor = True
+        Me.TXTCNovoNome.ActiveValidate = True
+        Me.TXTCNovoNome.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TXTCNovoNome.ByChar = False
+        Me.TXTCNovoNome.ByText = False
+        Me.TXTCNovoNome.ByValue = False
+        Me.TXTCNovoNome.Filho = Nothing
+        Me.TXTCNovoNome.Location = New System.Drawing.Point(123, 34)
+        Me.TXTCNovoNome.Name = "TXTCNovoNome"
+        Me.TXTCNovoNome.NoneOfThisChar = ""
+        Me.TXTCNovoNome.NoneOfThisText = Nothing
+        Me.TXTCNovoNome.NoneOfThisValue = Nothing
+        Me.TXTCNovoNome.Placeholder = "Entre com um dado...."
+        Me.TXTCNovoNome.RequiredChar = ""
+        Me.TXTCNovoNome.RequiredText = Nothing
+        Me.TXTCNovoNome.RequiredValue = Nothing
+        Me.TXTCNovoNome.Size = New System.Drawing.Size(469, 42)
+        Me.TXTCNovoNome.SpaceError = True
+        Me.TXTCNovoNome.TabIndex = 10
+        Me.TXTCNovoNome.ValueStr = Nothing
+        Me.TXTCNovoNome.Visible = False
         '
         'FRMDialogRenameCriterion
         '

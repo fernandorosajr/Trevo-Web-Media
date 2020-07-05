@@ -220,28 +220,28 @@ Long, lpColorValues As Long) As Long
         Dim file As FileInfo
 
 
-        For x = 0 To 100
+        For x = 0 To 1
             folder = New DirectoryInfo(path & "Teste de Pasta " & x)
             SelectedFoldersAndFiles.Add(folder)
 
 
-            For y = 0 To 25
+            For y = 0 To 1
                 file = New FileInfo(folder.FullName & "\foto " & y & ".jpg")
                 SelectedFoldersAndFiles.Add(file)
             Next
 
-            For y = 0 To 25
+            For y = 0 To 1
                 folder2 = New DirectoryInfo(folder.FullName & "\" & "Outra Pasta " & y)
                 SelectedFoldersAndFiles.Add(folder2)
             Next
         Next
 
         path = "F:\"
-        For x = 0 To 100
+        For x = 0 To 1
             folder = New DirectoryInfo(path & "IMAGENS " & x)
             SelectedFoldersAndFiles.Add(folder)
 
-            For y = 0 To 50
+            For y = 0 To 1
                 folder2 = New DirectoryInfo(folder.FullName & "\" & "Outra Pasta " & y)
                 SelectedFoldersAndFiles.Add(folder2)
             Next

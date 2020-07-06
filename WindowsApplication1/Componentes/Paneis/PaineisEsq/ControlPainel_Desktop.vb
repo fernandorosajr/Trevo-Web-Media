@@ -147,6 +147,7 @@ Public Class ControlPainel_Desktop
         _caminho = TVWFilesAndFolders.SelectedNode.Tag
         Load_MainDirectories(tsNode)
 
+
     End Sub
 
     Private Sub TVWFilesAndFolders_AfterExpand(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterExpand

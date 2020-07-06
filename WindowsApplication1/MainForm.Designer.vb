@@ -25,6 +25,10 @@ Partial Class MainForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.PanelTitleBar = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button38 = New System.Windows.Forms.Button()
+        Me.Button37 = New System.Windows.Forms.Button()
+        Me.Button36 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -49,11 +53,18 @@ Partial Class MainForm
         Me.ChBGravar = New System.Windows.Forms.CheckBox()
         Me.ChBExibir = New System.Windows.Forms.CheckBox()
         Me.ChkWinStyle = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.Button40 = New System.Windows.Forms.Button()
         Me.PanelToobarEndereco = New System.Windows.Forms.Panel()
         Me.PanelRecebe_AddressBar = New System.Windows.Forms.Panel()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
@@ -83,9 +94,17 @@ Partial Class MainForm
         Me.PanelToolBarBotton = New System.Windows.Forms.Panel()
         Me.PanelBottonLuz = New System.Windows.Forms.Panel()
         Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.ChBFiltro = New System.Windows.Forms.CheckBox()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.Button13 = New System.Windows.Forms.Button()
         Me.PanelToolBar = New System.Windows.Forms.Panel()
         Me.Panel41 = New System.Windows.Forms.Panel()
+        Me.RB_Clipboard = New System.Windows.Forms.RadioButton()
+        Me.RB_Filter = New System.Windows.Forms.RadioButton()
+        Me.RB_Selecao = New System.Windows.Forms.RadioButton()
+        Me.RB_PastaProcesso = New System.Windows.Forms.RadioButton()
+        Me.RB_Explorer = New System.Windows.Forms.RadioButton()
+        Me.RB_Midias = New System.Windows.Forms.RadioButton()
         Me.PanelHome = New System.Windows.Forms.Panel()
         Me.PanelSofts = New System.Windows.Forms.Panel()
         Me.Panel158 = New System.Windows.Forms.Panel()
@@ -93,6 +112,10 @@ Partial Class MainForm
         Me.Panel160 = New System.Windows.Forms.Panel()
         Me.Panel161 = New System.Windows.Forms.Panel()
         Me.Panel162 = New System.Windows.Forms.Panel()
+        Me.Button78 = New System.Windows.Forms.Button()
+        Me.Button79 = New System.Windows.Forms.Button()
+        Me.Button82 = New System.Windows.Forms.Button()
+        Me.Button83 = New System.Windows.Forms.Button()
         Me.Label78 = New System.Windows.Forms.Label()
         Me.Panel164 = New System.Windows.Forms.Panel()
         Me.Label79 = New System.Windows.Forms.Label()
@@ -105,6 +128,9 @@ Partial Class MainForm
         Me.Label80 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel14 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel176 = New System.Windows.Forms.Panel()
+        Me.Button103 = New System.Windows.Forms.Button()
+        Me.Button104 = New System.Windows.Forms.Button()
+        Me.Button105 = New System.Windows.Forms.Button()
         Me.Label81 = New System.Windows.Forms.Label()
         Me.Panel177 = New System.Windows.Forms.Panel()
         Me.Panel178 = New System.Windows.Forms.Panel()
@@ -128,8 +154,16 @@ Partial Class MainForm
         Me.Panel65 = New System.Windows.Forms.Panel()
         Me.Panel68 = New System.Windows.Forms.Panel()
         Me.Panel69 = New System.Windows.Forms.Panel()
+        Me.Button48 = New System.Windows.Forms.Button()
+        Me.Button49 = New System.Windows.Forms.Button()
+        Me.Button50 = New System.Windows.Forms.Button()
+        Me.Button51 = New System.Windows.Forms.Button()
+        Me.Button52 = New System.Windows.Forms.Button()
+        Me.Button53 = New System.Windows.Forms.Button()
+        Me.Button54 = New System.Windows.Forms.Button()
         Me.Panel71 = New System.Windows.Forms.Panel()
         Me.Button55 = New System.Windows.Forms.Button()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
         Me.Label54 = New System.Windows.Forms.Label()
         Me.Panel73 = New System.Windows.Forms.Panel()
         Me.Label48 = New System.Windows.Forms.Label()
@@ -142,12 +176,33 @@ Partial Class MainForm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel11 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel118 = New System.Windows.Forms.Panel()
+        Me.Button56 = New System.Windows.Forms.Button()
+        Me.Button57 = New System.Windows.Forms.Button()
+        Me.Button58 = New System.Windows.Forms.Button()
         Me.Panel119 = New System.Windows.Forms.Panel()
+        Me.Button59 = New System.Windows.Forms.Button()
+        Me.Button60 = New System.Windows.Forms.Button()
+        Me.Button61 = New System.Windows.Forms.Button()
         Me.Panel120 = New System.Windows.Forms.Panel()
+        Me.Button62 = New System.Windows.Forms.Button()
+        Me.Button63 = New System.Windows.Forms.Button()
+        Me.Button64 = New System.Windows.Forms.Button()
         Me.Panel121 = New System.Windows.Forms.Panel()
+        Me.Button65 = New System.Windows.Forms.Button()
+        Me.Button66 = New System.Windows.Forms.Button()
+        Me.Button67 = New System.Windows.Forms.Button()
         Me.Panel122 = New System.Windows.Forms.Panel()
+        Me.Button68 = New System.Windows.Forms.Button()
+        Me.Button69 = New System.Windows.Forms.Button()
+        Me.Button70 = New System.Windows.Forms.Button()
         Me.Panel123 = New System.Windows.Forms.Panel()
+        Me.Button71 = New System.Windows.Forms.Button()
+        Me.Button72 = New System.Windows.Forms.Button()
+        Me.Button73 = New System.Windows.Forms.Button()
         Me.Panel124 = New System.Windows.Forms.Panel()
+        Me.Button74 = New System.Windows.Forms.Button()
+        Me.Button75 = New System.Windows.Forms.Button()
+        Me.Button76 = New System.Windows.Forms.Button()
         Me.Label47 = New System.Windows.Forms.Label()
         Me.Panel125 = New System.Windows.Forms.Panel()
         Me.Panel126 = New System.Windows.Forms.Panel()
@@ -173,85 +228,113 @@ Partial Class MainForm
         Me.Panel131 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel9 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel22 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel23 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel24 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
         Me.Panel132 = New System.Windows.Forms.Panel()
         Me.Panel137 = New System.Windows.Forms.Panel()
         Me.Panel138 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel6 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel11 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Label46 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel12 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Label49 = New System.Windows.Forms.Label()
         Me.Label50 = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Panel139 = New System.Windows.Forms.Panel()
         Me.Panel140 = New System.Windows.Forms.Panel()
         Me.Panel141 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel7 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel13 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.Label52 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel14 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel15 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.Label57 = New System.Windows.Forms.Label()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.Panel142 = New System.Windows.Forms.Panel()
         Me.Panel143 = New System.Windows.Forms.Panel()
         Me.Panel144 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel8 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel16 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel17 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.Label59 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel18 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.Label60 = New System.Windows.Forms.Label()
         Me.Label61 = New System.Windows.Forms.Label()
         Me.Label62 = New System.Windows.Forms.Label()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
         Me.Panel145 = New System.Windows.Forms.Panel()
         Me.Panel146 = New System.Windows.Forms.Panel()
         Me.Panel147 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel10 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel19 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel20 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.Label64 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel21 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
         Me.Label65 = New System.Windows.Forms.Label()
         Me.Label66 = New System.Windows.Forms.Label()
         Me.Label67 = New System.Windows.Forms.Label()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
         Me.Panel148 = New System.Windows.Forms.Panel()
         Me.Panel149 = New System.Windows.Forms.Panel()
         Me.Panel150 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel12 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel25 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
         Me.Label68 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel26 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox38 = New System.Windows.Forms.PictureBox()
         Me.Label69 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel27 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox39 = New System.Windows.Forms.PictureBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.Label71 = New System.Windows.Forms.Label()
         Me.Label72 = New System.Windows.Forms.Label()
+        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
         Me.Panel151 = New System.Windows.Forms.Panel()
         Me.Panel152 = New System.Windows.Forms.Panel()
         Me.Panel153 = New System.Windows.Forms.Panel()
         Me.FlowLayoutPanel13 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TableLayoutPanel28 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
         Me.Label73 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel29 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
         Me.Label74 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel30 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
         Me.Label75 = New System.Windows.Forms.Label()
         Me.Label76 = New System.Windows.Forms.Label()
         Me.Label77 = New System.Windows.Forms.Label()
+        Me.PictureBox44 = New System.Windows.Forms.PictureBox()
         Me.Panel157 = New System.Windows.Forms.Panel()
         Me.RadioButton18 = New System.Windows.Forms.RadioButton()
         Me.RBTNEnd = New System.Windows.Forms.RadioButton()
@@ -281,6 +364,9 @@ Partial Class MainForm
         Me.Label85 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel15 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel187 = New System.Windows.Forms.Panel()
+        Me.Button85 = New System.Windows.Forms.Button()
+        Me.Button86 = New System.Windows.Forms.Button()
+        Me.Button87 = New System.Windows.Forms.Button()
         Me.Label86 = New System.Windows.Forms.Label()
         Me.Panel188 = New System.Windows.Forms.Panel()
         Me.Panel189 = New System.Windows.Forms.Panel()
@@ -364,6 +450,7 @@ Partial Class MainForm
         Me.PanelBaseLuz = New System.Windows.Forms.Panel()
         Me.Panel196 = New System.Windows.Forms.Panel()
         Me.PanelPrimaMenu = New System.Windows.Forms.Panel()
+        Me.BTNMenu01 = New System.Windows.Forms.Button()
         Me.Panel76 = New System.Windows.Forms.Panel()
         Me.RBVideos = New System.Windows.Forms.RadioButton()
         Me.RBImagens = New System.Windows.Forms.RadioButton()
@@ -382,6 +469,15 @@ Partial Class MainForm
         Me.CheckBox36 = New System.Windows.Forms.CheckBox()
         Me.Panel203 = New System.Windows.Forms.Panel()
         Me.Panel248 = New System.Windows.Forms.Panel()
+        Me.Button81 = New System.Windows.Forms.Button()
+        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox25 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
         Me.Panel202 = New System.Windows.Forms.Panel()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Panel224 = New System.Windows.Forms.Panel()
@@ -389,7 +485,13 @@ Partial Class MainForm
         Me.CheckBox27 = New System.Windows.Forms.CheckBox()
         Me.CheckBox28 = New System.Windows.Forms.CheckBox()
         Me.Panel213 = New System.Windows.Forms.Panel()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
         Me.Panel214 = New System.Windows.Forms.Panel()
+        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
         Me.Label88 = New System.Windows.Forms.Label()
         Me.Label89 = New System.Windows.Forms.Label()
         Me.Splitter10 = New System.Windows.Forms.Splitter()
@@ -408,109 +510,8 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BTNMenu01 = New System.Windows.Forms.Button()
-        Me.Button81 = New System.Windows.Forms.Button()
-        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox25 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
-        Me.ChBFiltro = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.RB_Clipboard = New System.Windows.Forms.RadioButton()
-        Me.RB_Filter = New System.Windows.Forms.RadioButton()
-        Me.RB_Selecao = New System.Windows.Forms.RadioButton()
-        Me.RB_PastaProcesso = New System.Windows.Forms.RadioButton()
-        Me.RB_Explorer = New System.Windows.Forms.RadioButton()
-        Me.RB_Midias = New System.Windows.Forms.RadioButton()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.Button40 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button38 = New System.Windows.Forms.Button()
-        Me.Button37 = New System.Windows.Forms.Button()
-        Me.Button36 = New System.Windows.Forms.Button()
-        Me.Button78 = New System.Windows.Forms.Button()
-        Me.Button79 = New System.Windows.Forms.Button()
-        Me.Button82 = New System.Windows.Forms.Button()
-        Me.Button83 = New System.Windows.Forms.Button()
-        Me.Button103 = New System.Windows.Forms.Button()
-        Me.Button104 = New System.Windows.Forms.Button()
-        Me.Button105 = New System.Windows.Forms.Button()
-        Me.Button48 = New System.Windows.Forms.Button()
-        Me.Button49 = New System.Windows.Forms.Button()
-        Me.Button50 = New System.Windows.Forms.Button()
-        Me.Button51 = New System.Windows.Forms.Button()
-        Me.Button52 = New System.Windows.Forms.Button()
-        Me.Button53 = New System.Windows.Forms.Button()
-        Me.Button54 = New System.Windows.Forms.Button()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
-        Me.Button56 = New System.Windows.Forms.Button()
-        Me.Button57 = New System.Windows.Forms.Button()
-        Me.Button58 = New System.Windows.Forms.Button()
-        Me.Button59 = New System.Windows.Forms.Button()
-        Me.Button60 = New System.Windows.Forms.Button()
-        Me.Button61 = New System.Windows.Forms.Button()
-        Me.Button62 = New System.Windows.Forms.Button()
-        Me.Button63 = New System.Windows.Forms.Button()
-        Me.Button64 = New System.Windows.Forms.Button()
-        Me.Button65 = New System.Windows.Forms.Button()
-        Me.Button66 = New System.Windows.Forms.Button()
-        Me.Button67 = New System.Windows.Forms.Button()
-        Me.Button68 = New System.Windows.Forms.Button()
-        Me.Button69 = New System.Windows.Forms.Button()
-        Me.Button70 = New System.Windows.Forms.Button()
-        Me.Button71 = New System.Windows.Forms.Button()
-        Me.Button72 = New System.Windows.Forms.Button()
-        Me.Button73 = New System.Windows.Forms.Button()
-        Me.Button74 = New System.Windows.Forms.Button()
-        Me.Button75 = New System.Windows.Forms.Button()
-        Me.Button76 = New System.Windows.Forms.Button()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox38 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox39 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox44 = New System.Windows.Forms.PictureBox()
-        Me.Button85 = New System.Windows.Forms.Button()
-        Me.Button86 = New System.Windows.Forms.Button()
-        Me.Button87 = New System.Windows.Forms.Button()
         Me.PanelTitleBar.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
         Me.PanelMDir.SuspendLayout()
         Me.PanelMBase.SuspendLayout()
@@ -558,6 +559,7 @@ Partial Class MainForm
         Me.Panel68.SuspendLayout()
         Me.Panel69.SuspendLayout()
         Me.Panel71.SuspendLayout()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel114.SuspendLayout()
         Me.PanelEnvolveSugestão.SuspendLayout()
         Me.Panel115.SuspendLayout()
@@ -583,50 +585,78 @@ Partial Class MainForm
         Me.Panel131.SuspendLayout()
         Me.FlowLayoutPanel9.SuspendLayout()
         Me.TableLayoutPanel22.SuspendLayout()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel23.SuspendLayout()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel24.SuspendLayout()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel132.SuspendLayout()
         Me.Panel137.SuspendLayout()
         Me.Panel138.SuspendLayout()
         Me.FlowLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel10.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel11.SuspendLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel12.SuspendLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel139.SuspendLayout()
         Me.Panel140.SuspendLayout()
         Me.Panel141.SuspendLayout()
         Me.FlowLayoutPanel7.SuspendLayout()
         Me.TableLayoutPanel13.SuspendLayout()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel14.SuspendLayout()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel15.SuspendLayout()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel142.SuspendLayout()
         Me.Panel143.SuspendLayout()
         Me.Panel144.SuspendLayout()
         Me.FlowLayoutPanel8.SuspendLayout()
         Me.TableLayoutPanel16.SuspendLayout()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel17.SuspendLayout()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel18.SuspendLayout()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel145.SuspendLayout()
         Me.Panel146.SuspendLayout()
         Me.Panel147.SuspendLayout()
         Me.FlowLayoutPanel10.SuspendLayout()
         Me.TableLayoutPanel19.SuspendLayout()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel20.SuspendLayout()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel21.SuspendLayout()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel148.SuspendLayout()
         Me.Panel149.SuspendLayout()
         Me.Panel150.SuspendLayout()
         Me.FlowLayoutPanel12.SuspendLayout()
         Me.TableLayoutPanel25.SuspendLayout()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel26.SuspendLayout()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel27.SuspendLayout()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel151.SuspendLayout()
         Me.Panel152.SuspendLayout()
         Me.Panel153.SuspendLayout()
         Me.FlowLayoutPanel13.SuspendLayout()
         Me.TableLayoutPanel28.SuspendLayout()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel29.SuspendLayout()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel30.SuspendLayout()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel157.SuspendLayout()
         Me.PanelSkin.SuspendLayout()
         Me.Panel163.SuspendLayout()
@@ -676,36 +706,6 @@ Partial Class MainForm
         Me.Panel213.SuspendLayout()
         Me.Panel214.SuspendLayout()
         Me.CTMenuVisualizacao.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelTitleBar
@@ -722,6 +722,45 @@ Partial Class MainForm
         Me.PanelTitleBar.Controls.Add(Me.Panel6)
         resources.ApplyResources(Me.PanelTitleBar, "PanelTitleBar")
         Me.PanelTitleBar.Name = "PanelTitleBar"
+        '
+        'PictureBox2
+        '
+        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.TabStop = False
+        '
+        'Button38
+        '
+        resources.ApplyResources(Me.Button38, "Button38")
+        Me.Button38.FlatAppearance.BorderSize = 0
+        Me.Button38.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
+        Me.Button38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button38.Name = "Button38"
+        Me.Button38.UseVisualStyleBackColor = True
+        '
+        'Button37
+        '
+        resources.ApplyResources(Me.Button37, "Button37")
+        Me.Button37.FlatAppearance.BorderSize = 0
+        Me.Button37.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
+        Me.Button37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button37.Name = "Button37"
+        Me.Button37.UseVisualStyleBackColor = True
+        '
+        'Button36
+        '
+        resources.ApplyResources(Me.Button36, "Button36")
+        Me.Button36.FlatAppearance.BorderSize = 0
+        Me.Button36.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.Button36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.Button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
+        Me.Button36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button36.Name = "Button36"
+        Me.Button36.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -912,6 +951,26 @@ Partial Class MainForm
         Me.ChkWinStyle.Name = "ChkWinStyle"
         Me.ChkWinStyle.UseVisualStyleBackColor = True
         '
+        'CheckBox5
+        '
+        resources.ApplyResources(Me.CheckBox5, "CheckBox5")
+        Me.CheckBox5.BackColor = System.Drawing.Color.White
+        Me.CheckBox5.FlatAppearance.BorderSize = 0
+        Me.CheckBox5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
+        Me.CheckBox5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro
+        Me.CheckBox5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.UseVisualStyleBackColor = False
+        '
+        'Button40
+        '
+        Me.Button40.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button40, "Button40")
+        Me.Button40.FlatAppearance.BorderSize = 0
+        Me.Button40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button40.Name = "Button40"
+        Me.Button40.UseVisualStyleBackColor = False
+        '
         'PanelToobarEndereco
         '
         Me.PanelToobarEndereco.BackColor = System.Drawing.Color.White
@@ -954,6 +1013,51 @@ Partial Class MainForm
         resources.ApplyResources(Me.TextBox2, "TextBox2")
         Me.TextBox2.ForeColor = System.Drawing.Color.DimGray
         Me.TextBox2.Name = "TextBox2"
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button5, "Button5")
+        Me.Button5.FlatAppearance.BorderSize = 0
+        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button5.Name = "Button5"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button4, "Button4")
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button4.Name = "Button4"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button3, "Button3")
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button3.Name = "Button3"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button2.Name = "Button2"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel14
         '
@@ -1172,6 +1276,30 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel33, "Panel33")
         Me.Panel33.Name = "Panel33"
         '
+        'ChBFiltro
+        '
+        resources.ApplyResources(Me.ChBFiltro, "ChBFiltro")
+        Me.ChBFiltro.Checked = True
+        Me.ChBFiltro.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.ChBFiltro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ChBFiltro.FlatAppearance.BorderSize = 0
+        Me.ChBFiltro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.ChBFiltro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.ChBFiltro.ForeColor = System.Drawing.Color.Silver
+        Me.ChBFiltro.Name = "ChBFiltro"
+        Me.ChBFiltro.UseVisualStyleBackColor = True
+        '
+        'CheckBox8
+        '
+        resources.ApplyResources(Me.CheckBox8, "CheckBox8")
+        Me.CheckBox8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox8.FlatAppearance.BorderSize = 0
+        Me.CheckBox8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CheckBox8.ForeColor = System.Drawing.Color.Silver
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
         'Button13
         '
         resources.ApplyResources(Me.Button13, "Button13")
@@ -1200,6 +1328,86 @@ Partial Class MainForm
         Me.Panel41.Controls.Add(Me.RB_Midias)
         resources.ApplyResources(Me.Panel41, "Panel41")
         Me.Panel41.Name = "Panel41"
+        '
+        'RB_Clipboard
+        '
+        resources.ApplyResources(Me.RB_Clipboard, "RB_Clipboard")
+        Me.RB_Clipboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.RB_Clipboard.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_Clipboard.FlatAppearance.BorderSize = 0
+        Me.RB_Clipboard.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(54, Byte), Integer))
+        Me.RB_Clipboard.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_Clipboard.ForeColor = System.Drawing.Color.Silver
+        Me.RB_Clipboard.Image = Global.TrevoWebMedia.My.Resources.Resources.verify_Clipboard01_35
+        Me.RB_Clipboard.Name = "RB_Clipboard"
+        Me.RB_Clipboard.UseVisualStyleBackColor = False
+        '
+        'RB_Filter
+        '
+        resources.ApplyResources(Me.RB_Filter, "RB_Filter")
+        Me.RB_Filter.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_Filter.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_Filter.FlatAppearance.BorderSize = 0
+        Me.RB_Filter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RB_Filter.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_Filter.ForeColor = System.Drawing.Color.Silver
+        Me.RB_Filter.Image = Global.TrevoWebMedia.My.Resources.Resources.filter_35
+        Me.RB_Filter.Name = "RB_Filter"
+        Me.RB_Filter.UseVisualStyleBackColor = False
+        '
+        'RB_Selecao
+        '
+        resources.ApplyResources(Me.RB_Selecao, "RB_Selecao")
+        Me.RB_Selecao.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_Selecao.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_Selecao.FlatAppearance.BorderSize = 0
+        Me.RB_Selecao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RB_Selecao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_Selecao.ForeColor = System.Drawing.Color.Silver
+        Me.RB_Selecao.Image = Global.TrevoWebMedia.My.Resources.Resources.selection_cursor01
+        Me.RB_Selecao.Name = "RB_Selecao"
+        Me.RB_Selecao.UseVisualStyleBackColor = False
+        '
+        'RB_PastaProcesso
+        '
+        resources.ApplyResources(Me.RB_PastaProcesso, "RB_PastaProcesso")
+        Me.RB_PastaProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_PastaProcesso.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_PastaProcesso.FlatAppearance.BorderSize = 0
+        Me.RB_PastaProcesso.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RB_PastaProcesso.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_PastaProcesso.ForeColor = System.Drawing.Color.Silver
+        Me.RB_PastaProcesso.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaProcesso35
+        Me.RB_PastaProcesso.Name = "RB_PastaProcesso"
+        Me.RB_PastaProcesso.UseVisualStyleBackColor = False
+        '
+        'RB_Explorer
+        '
+        resources.ApplyResources(Me.RB_Explorer, "RB_Explorer")
+        Me.RB_Explorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_Explorer.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_Explorer.FlatAppearance.BorderSize = 0
+        Me.RB_Explorer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RB_Explorer.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_Explorer.ForeColor = System.Drawing.Color.Silver
+        Me.RB_Explorer.Image = Global.TrevoWebMedia.My.Resources.Resources.computer35
+        Me.RB_Explorer.Name = "RB_Explorer"
+        Me.RB_Explorer.UseVisualStyleBackColor = False
+        '
+        'RB_Midias
+        '
+        resources.ApplyResources(Me.RB_Midias, "RB_Midias")
+        Me.RB_Midias.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.RB_Midias.Checked = True
+        Me.RB_Midias.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.RB_Midias.FlatAppearance.BorderSize = 0
+        Me.RB_Midias.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.RB_Midias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.RB_Midias.ForeColor = System.Drawing.Color.Silver
+        Me.RB_Midias.Image = Global.TrevoWebMedia.My.Resources.Resources.dvd_face6_Hover
+        Me.RB_Midias.Name = "RB_Midias"
+        Me.RB_Midias.TabStop = True
+        Me.RB_Midias.UseVisualStyleBackColor = False
         '
         'PanelHome
         '
@@ -1259,6 +1467,58 @@ Partial Class MainForm
         Me.Panel162.Controls.Add(Me.Button82)
         Me.Panel162.Controls.Add(Me.Button83)
         Me.Panel162.Name = "Panel162"
+        '
+        'Button78
+        '
+        Me.Button78.AutoEllipsis = True
+        Me.Button78.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button78, "Button78")
+        Me.Button78.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button78.FlatAppearance.BorderSize = 0
+        Me.Button78.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button78.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button78.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button78.Name = "Button78"
+        Me.Button78.UseVisualStyleBackColor = False
+        '
+        'Button79
+        '
+        Me.Button79.AutoEllipsis = True
+        Me.Button79.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button79, "Button79")
+        Me.Button79.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button79.FlatAppearance.BorderSize = 0
+        Me.Button79.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button79.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button79.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button79.Name = "Button79"
+        Me.Button79.UseVisualStyleBackColor = False
+        '
+        'Button82
+        '
+        Me.Button82.AutoEllipsis = True
+        Me.Button82.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button82, "Button82")
+        Me.Button82.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button82.FlatAppearance.BorderSize = 0
+        Me.Button82.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button82.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button82.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button82.Name = "Button82"
+        Me.Button82.UseVisualStyleBackColor = False
+        '
+        'Button83
+        '
+        Me.Button83.AutoEllipsis = True
+        Me.Button83.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button83, "Button83")
+        Me.Button83.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button83.FlatAppearance.BorderSize = 0
+        Me.Button83.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button83.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button83.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button83.Name = "Button83"
+        Me.Button83.UseVisualStyleBackColor = False
         '
         'Label78
         '
@@ -1353,6 +1613,45 @@ Partial Class MainForm
         Me.Panel176.Controls.Add(Me.Button105)
         resources.ApplyResources(Me.Panel176, "Panel176")
         Me.Panel176.Name = "Panel176"
+        '
+        'Button103
+        '
+        Me.Button103.AutoEllipsis = True
+        Me.Button103.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button103, "Button103")
+        Me.Button103.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button103.FlatAppearance.BorderSize = 0
+        Me.Button103.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button103.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button103.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button103.Name = "Button103"
+        Me.Button103.UseVisualStyleBackColor = False
+        '
+        'Button104
+        '
+        Me.Button104.AutoEllipsis = True
+        Me.Button104.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button104, "Button104")
+        Me.Button104.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button104.FlatAppearance.BorderSize = 0
+        Me.Button104.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button104.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button104.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button104.Name = "Button104"
+        Me.Button104.UseVisualStyleBackColor = False
+        '
+        'Button105
+        '
+        Me.Button105.AutoEllipsis = True
+        Me.Button105.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button105, "Button105")
+        Me.Button105.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button105.FlatAppearance.BorderSize = 0
+        Me.Button105.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button105.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button105.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button105.Name = "Button105"
+        Me.Button105.UseVisualStyleBackColor = False
         '
         'Label81
         '
@@ -1562,6 +1861,97 @@ Partial Class MainForm
         Me.Panel69.Controls.Add(Me.Button54)
         Me.Panel69.Name = "Panel69"
         '
+        'Button48
+        '
+        Me.Button48.AutoEllipsis = True
+        Me.Button48.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button48, "Button48")
+        Me.Button48.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button48.FlatAppearance.BorderSize = 0
+        Me.Button48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button48.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button48.Name = "Button48"
+        Me.Button48.UseVisualStyleBackColor = False
+        '
+        'Button49
+        '
+        Me.Button49.AutoEllipsis = True
+        Me.Button49.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button49, "Button49")
+        Me.Button49.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button49.FlatAppearance.BorderSize = 0
+        Me.Button49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button49.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button49.Name = "Button49"
+        Me.Button49.UseVisualStyleBackColor = False
+        '
+        'Button50
+        '
+        Me.Button50.AutoEllipsis = True
+        Me.Button50.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button50, "Button50")
+        Me.Button50.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button50.FlatAppearance.BorderSize = 0
+        Me.Button50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button50.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button50.Name = "Button50"
+        Me.Button50.UseVisualStyleBackColor = False
+        '
+        'Button51
+        '
+        Me.Button51.AutoEllipsis = True
+        Me.Button51.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button51, "Button51")
+        Me.Button51.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button51.FlatAppearance.BorderSize = 0
+        Me.Button51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button51.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button51.Name = "Button51"
+        Me.Button51.UseVisualStyleBackColor = False
+        '
+        'Button52
+        '
+        Me.Button52.AutoEllipsis = True
+        Me.Button52.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button52, "Button52")
+        Me.Button52.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button52.FlatAppearance.BorderSize = 0
+        Me.Button52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button52.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button52.Name = "Button52"
+        Me.Button52.UseVisualStyleBackColor = False
+        '
+        'Button53
+        '
+        Me.Button53.AutoEllipsis = True
+        Me.Button53.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button53, "Button53")
+        Me.Button53.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button53.FlatAppearance.BorderSize = 0
+        Me.Button53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button53.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button53.Name = "Button53"
+        Me.Button53.UseVisualStyleBackColor = False
+        '
+        'Button54
+        '
+        Me.Button54.AutoEllipsis = True
+        Me.Button54.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button54, "Button54")
+        Me.Button54.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button54.FlatAppearance.BorderSize = 0
+        Me.Button54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button54.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button54.Name = "Button54"
+        Me.Button54.UseVisualStyleBackColor = False
+        '
         'Panel71
         '
         resources.ApplyResources(Me.Panel71, "Panel71")
@@ -1581,6 +1971,12 @@ Partial Class MainForm
         Me.Button55.ForeColor = System.Drawing.Color.Gainsboro
         Me.Button55.Name = "Button55"
         Me.Button55.UseVisualStyleBackColor = False
+        '
+        'PictureBox28
+        '
+        resources.ApplyResources(Me.PictureBox28, "PictureBox28")
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.TabStop = False
         '
         'Label54
         '
@@ -1681,6 +2077,45 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel118, "Panel118")
         Me.Panel118.Name = "Panel118"
         '
+        'Button56
+        '
+        Me.Button56.AutoEllipsis = True
+        Me.Button56.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button56, "Button56")
+        Me.Button56.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button56.FlatAppearance.BorderSize = 0
+        Me.Button56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button56.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button56.Name = "Button56"
+        Me.Button56.UseVisualStyleBackColor = False
+        '
+        'Button57
+        '
+        Me.Button57.AutoEllipsis = True
+        Me.Button57.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button57, "Button57")
+        Me.Button57.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button57.FlatAppearance.BorderSize = 0
+        Me.Button57.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button57.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button57.Name = "Button57"
+        Me.Button57.UseVisualStyleBackColor = False
+        '
+        'Button58
+        '
+        Me.Button58.AutoEllipsis = True
+        Me.Button58.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button58, "Button58")
+        Me.Button58.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button58.FlatAppearance.BorderSize = 0
+        Me.Button58.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button58.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button58.Name = "Button58"
+        Me.Button58.UseVisualStyleBackColor = False
+        '
         'Panel119
         '
         Me.Panel119.Controls.Add(Me.Button59)
@@ -1688,6 +2123,45 @@ Partial Class MainForm
         Me.Panel119.Controls.Add(Me.Button61)
         resources.ApplyResources(Me.Panel119, "Panel119")
         Me.Panel119.Name = "Panel119"
+        '
+        'Button59
+        '
+        Me.Button59.AutoEllipsis = True
+        Me.Button59.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button59, "Button59")
+        Me.Button59.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button59.FlatAppearance.BorderSize = 0
+        Me.Button59.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button59.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button59.Name = "Button59"
+        Me.Button59.UseVisualStyleBackColor = False
+        '
+        'Button60
+        '
+        Me.Button60.AutoEllipsis = True
+        Me.Button60.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button60, "Button60")
+        Me.Button60.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button60.FlatAppearance.BorderSize = 0
+        Me.Button60.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button60.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button60.Name = "Button60"
+        Me.Button60.UseVisualStyleBackColor = False
+        '
+        'Button61
+        '
+        Me.Button61.AutoEllipsis = True
+        Me.Button61.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button61, "Button61")
+        Me.Button61.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button61.FlatAppearance.BorderSize = 0
+        Me.Button61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button61.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button61.Name = "Button61"
+        Me.Button61.UseVisualStyleBackColor = False
         '
         'Panel120
         '
@@ -1697,6 +2171,45 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel120, "Panel120")
         Me.Panel120.Name = "Panel120"
         '
+        'Button62
+        '
+        Me.Button62.AutoEllipsis = True
+        Me.Button62.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button62, "Button62")
+        Me.Button62.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button62.FlatAppearance.BorderSize = 0
+        Me.Button62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button62.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button62.Name = "Button62"
+        Me.Button62.UseVisualStyleBackColor = False
+        '
+        'Button63
+        '
+        Me.Button63.AutoEllipsis = True
+        Me.Button63.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button63, "Button63")
+        Me.Button63.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button63.FlatAppearance.BorderSize = 0
+        Me.Button63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button63.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button63.Name = "Button63"
+        Me.Button63.UseVisualStyleBackColor = False
+        '
+        'Button64
+        '
+        Me.Button64.AutoEllipsis = True
+        Me.Button64.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button64, "Button64")
+        Me.Button64.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button64.FlatAppearance.BorderSize = 0
+        Me.Button64.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button64.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button64.Name = "Button64"
+        Me.Button64.UseVisualStyleBackColor = False
+        '
         'Panel121
         '
         Me.Panel121.Controls.Add(Me.Button65)
@@ -1704,6 +2217,45 @@ Partial Class MainForm
         Me.Panel121.Controls.Add(Me.Button67)
         resources.ApplyResources(Me.Panel121, "Panel121")
         Me.Panel121.Name = "Panel121"
+        '
+        'Button65
+        '
+        Me.Button65.AutoEllipsis = True
+        Me.Button65.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button65, "Button65")
+        Me.Button65.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button65.FlatAppearance.BorderSize = 0
+        Me.Button65.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button65.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button65.Name = "Button65"
+        Me.Button65.UseVisualStyleBackColor = False
+        '
+        'Button66
+        '
+        Me.Button66.AutoEllipsis = True
+        Me.Button66.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button66, "Button66")
+        Me.Button66.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button66.FlatAppearance.BorderSize = 0
+        Me.Button66.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button66.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button66.Name = "Button66"
+        Me.Button66.UseVisualStyleBackColor = False
+        '
+        'Button67
+        '
+        Me.Button67.AutoEllipsis = True
+        Me.Button67.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button67, "Button67")
+        Me.Button67.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button67.FlatAppearance.BorderSize = 0
+        Me.Button67.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button67.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button67.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button67.Name = "Button67"
+        Me.Button67.UseVisualStyleBackColor = False
         '
         'Panel122
         '
@@ -1713,6 +2265,45 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel122, "Panel122")
         Me.Panel122.Name = "Panel122"
         '
+        'Button68
+        '
+        Me.Button68.AutoEllipsis = True
+        Me.Button68.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button68, "Button68")
+        Me.Button68.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button68.FlatAppearance.BorderSize = 0
+        Me.Button68.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button68.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button68.Name = "Button68"
+        Me.Button68.UseVisualStyleBackColor = False
+        '
+        'Button69
+        '
+        Me.Button69.AutoEllipsis = True
+        Me.Button69.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button69, "Button69")
+        Me.Button69.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button69.FlatAppearance.BorderSize = 0
+        Me.Button69.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button69.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button69.Name = "Button69"
+        Me.Button69.UseVisualStyleBackColor = False
+        '
+        'Button70
+        '
+        Me.Button70.AutoEllipsis = True
+        Me.Button70.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button70, "Button70")
+        Me.Button70.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button70.FlatAppearance.BorderSize = 0
+        Me.Button70.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button70.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button70.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button70.Name = "Button70"
+        Me.Button70.UseVisualStyleBackColor = False
+        '
         'Panel123
         '
         Me.Panel123.Controls.Add(Me.Button71)
@@ -1721,6 +2312,45 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel123, "Panel123")
         Me.Panel123.Name = "Panel123"
         '
+        'Button71
+        '
+        Me.Button71.AutoEllipsis = True
+        Me.Button71.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button71, "Button71")
+        Me.Button71.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button71.FlatAppearance.BorderSize = 0
+        Me.Button71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button71.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button71.Name = "Button71"
+        Me.Button71.UseVisualStyleBackColor = False
+        '
+        'Button72
+        '
+        Me.Button72.AutoEllipsis = True
+        Me.Button72.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button72, "Button72")
+        Me.Button72.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button72.FlatAppearance.BorderSize = 0
+        Me.Button72.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button72.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button72.Name = "Button72"
+        Me.Button72.UseVisualStyleBackColor = False
+        '
+        'Button73
+        '
+        Me.Button73.AutoEllipsis = True
+        Me.Button73.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button73, "Button73")
+        Me.Button73.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button73.FlatAppearance.BorderSize = 0
+        Me.Button73.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button73.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button73.Name = "Button73"
+        Me.Button73.UseVisualStyleBackColor = False
+        '
         'Panel124
         '
         Me.Panel124.Controls.Add(Me.Button74)
@@ -1728,6 +2358,45 @@ Partial Class MainForm
         Me.Panel124.Controls.Add(Me.Button76)
         resources.ApplyResources(Me.Panel124, "Panel124")
         Me.Panel124.Name = "Panel124"
+        '
+        'Button74
+        '
+        Me.Button74.AutoEllipsis = True
+        Me.Button74.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button74, "Button74")
+        Me.Button74.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button74.FlatAppearance.BorderSize = 0
+        Me.Button74.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button74.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button74.Name = "Button74"
+        Me.Button74.UseVisualStyleBackColor = False
+        '
+        'Button75
+        '
+        Me.Button75.AutoEllipsis = True
+        Me.Button75.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button75, "Button75")
+        Me.Button75.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button75.FlatAppearance.BorderSize = 0
+        Me.Button75.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button75.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button75.Name = "Button75"
+        Me.Button75.UseVisualStyleBackColor = False
+        '
+        'Button76
+        '
+        Me.Button76.AutoEllipsis = True
+        Me.Button76.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button76, "Button76")
+        Me.Button76.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button76.FlatAppearance.BorderSize = 0
+        Me.Button76.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button76.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button76.Name = "Button76"
+        Me.Button76.UseVisualStyleBackColor = False
         '
         'Label47
         '
@@ -1948,6 +2617,12 @@ Partial Class MainForm
         Me.TableLayoutPanel22.Controls.Add(Me.Label40, 1, 0)
         Me.TableLayoutPanel22.Name = "TableLayoutPanel22"
         '
+        'PictureBox29
+        '
+        resources.ApplyResources(Me.PictureBox29, "PictureBox29")
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.TabStop = False
+        '
         'Label40
         '
         Me.Label40.BackColor = System.Drawing.Color.Transparent
@@ -1962,6 +2637,12 @@ Partial Class MainForm
         Me.TableLayoutPanel23.Controls.Add(Me.Label41, 1, 0)
         Me.TableLayoutPanel23.Name = "TableLayoutPanel23"
         '
+        'PictureBox30
+        '
+        resources.ApplyResources(Me.PictureBox30, "PictureBox30")
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.TabStop = False
+        '
         'Label41
         '
         Me.Label41.BackColor = System.Drawing.Color.Transparent
@@ -1975,6 +2656,12 @@ Partial Class MainForm
         Me.TableLayoutPanel24.Controls.Add(Me.PictureBox31, 0, 0)
         Me.TableLayoutPanel24.Controls.Add(Me.Label42, 1, 0)
         Me.TableLayoutPanel24.Name = "TableLayoutPanel24"
+        '
+        'PictureBox31
+        '
+        resources.ApplyResources(Me.PictureBox31, "PictureBox31")
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.TabStop = False
         '
         'Label42
         '
@@ -1996,6 +2683,12 @@ Partial Class MainForm
         Me.Label44.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label44, "Label44")
         Me.Label44.Name = "Label44"
+        '
+        'PictureBox32
+        '
+        resources.ApplyResources(Me.PictureBox32, "PictureBox32")
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.TabStop = False
         '
         'Panel132
         '
@@ -2036,6 +2729,12 @@ Partial Class MainForm
         Me.TableLayoutPanel10.Controls.Add(Me.Label45, 1, 0)
         Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
         '
+        'PictureBox4
+        '
+        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.TabStop = False
+        '
         'Label45
         '
         Me.Label45.BackColor = System.Drawing.Color.Transparent
@@ -2050,6 +2749,12 @@ Partial Class MainForm
         Me.TableLayoutPanel11.Controls.Add(Me.Label46, 1, 0)
         Me.TableLayoutPanel11.Name = "TableLayoutPanel11"
         '
+        'PictureBox17
+        '
+        resources.ApplyResources(Me.PictureBox17, "PictureBox17")
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.TabStop = False
+        '
         'Label46
         '
         Me.Label46.BackColor = System.Drawing.Color.Transparent
@@ -2063,6 +2768,12 @@ Partial Class MainForm
         Me.TableLayoutPanel12.Controls.Add(Me.PictureBox18, 0, 0)
         Me.TableLayoutPanel12.Controls.Add(Me.Label49, 1, 0)
         Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
+        '
+        'PictureBox18
+        '
+        resources.ApplyResources(Me.PictureBox18, "PictureBox18")
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.TabStop = False
         '
         'Label49
         '
@@ -2084,6 +2795,12 @@ Partial Class MainForm
         Me.Label51.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label51, "Label51")
         Me.Label51.Name = "Label51"
+        '
+        'PictureBox19
+        '
+        resources.ApplyResources(Me.PictureBox19, "PictureBox19")
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.TabStop = False
         '
         'Panel139
         '
@@ -2124,6 +2841,12 @@ Partial Class MainForm
         Me.TableLayoutPanel13.Controls.Add(Me.Label52, 1, 0)
         Me.TableLayoutPanel13.Name = "TableLayoutPanel13"
         '
+        'PictureBox20
+        '
+        resources.ApplyResources(Me.PictureBox20, "PictureBox20")
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.TabStop = False
+        '
         'Label52
         '
         Me.Label52.BackColor = System.Drawing.Color.Transparent
@@ -2138,6 +2861,12 @@ Partial Class MainForm
         Me.TableLayoutPanel14.Controls.Add(Me.Label53, 1, 0)
         Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
         '
+        'PictureBox21
+        '
+        resources.ApplyResources(Me.PictureBox21, "PictureBox21")
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.TabStop = False
+        '
         'Label53
         '
         Me.Label53.BackColor = System.Drawing.Color.Transparent
@@ -2151,6 +2880,12 @@ Partial Class MainForm
         Me.TableLayoutPanel15.Controls.Add(Me.PictureBox22, 0, 0)
         Me.TableLayoutPanel15.Controls.Add(Me.Label55, 1, 0)
         Me.TableLayoutPanel15.Name = "TableLayoutPanel15"
+        '
+        'PictureBox22
+        '
+        resources.ApplyResources(Me.PictureBox22, "PictureBox22")
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.TabStop = False
         '
         'Label55
         '
@@ -2172,6 +2907,12 @@ Partial Class MainForm
         Me.Label57.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label57, "Label57")
         Me.Label57.Name = "Label57"
+        '
+        'PictureBox23
+        '
+        resources.ApplyResources(Me.PictureBox23, "PictureBox23")
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.TabStop = False
         '
         'Panel142
         '
@@ -2212,6 +2953,12 @@ Partial Class MainForm
         Me.TableLayoutPanel16.Controls.Add(Me.Label58, 1, 0)
         Me.TableLayoutPanel16.Name = "TableLayoutPanel16"
         '
+        'PictureBox24
+        '
+        resources.ApplyResources(Me.PictureBox24, "PictureBox24")
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.TabStop = False
+        '
         'Label58
         '
         Me.Label58.BackColor = System.Drawing.Color.Transparent
@@ -2226,6 +2973,12 @@ Partial Class MainForm
         Me.TableLayoutPanel17.Controls.Add(Me.Label59, 1, 0)
         Me.TableLayoutPanel17.Name = "TableLayoutPanel17"
         '
+        'PictureBox25
+        '
+        resources.ApplyResources(Me.PictureBox25, "PictureBox25")
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.TabStop = False
+        '
         'Label59
         '
         Me.Label59.BackColor = System.Drawing.Color.Transparent
@@ -2239,6 +2992,12 @@ Partial Class MainForm
         Me.TableLayoutPanel18.Controls.Add(Me.PictureBox26, 0, 0)
         Me.TableLayoutPanel18.Controls.Add(Me.Label60, 1, 0)
         Me.TableLayoutPanel18.Name = "TableLayoutPanel18"
+        '
+        'PictureBox26
+        '
+        resources.ApplyResources(Me.PictureBox26, "PictureBox26")
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.TabStop = False
         '
         'Label60
         '
@@ -2260,6 +3019,12 @@ Partial Class MainForm
         Me.Label62.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label62, "Label62")
         Me.Label62.Name = "Label62"
+        '
+        'PictureBox27
+        '
+        resources.ApplyResources(Me.PictureBox27, "PictureBox27")
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.TabStop = False
         '
         'Panel145
         '
@@ -2300,6 +3065,12 @@ Partial Class MainForm
         Me.TableLayoutPanel19.Controls.Add(Me.Label63, 1, 0)
         Me.TableLayoutPanel19.Name = "TableLayoutPanel19"
         '
+        'PictureBox33
+        '
+        resources.ApplyResources(Me.PictureBox33, "PictureBox33")
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.TabStop = False
+        '
         'Label63
         '
         Me.Label63.BackColor = System.Drawing.Color.Transparent
@@ -2314,6 +3085,12 @@ Partial Class MainForm
         Me.TableLayoutPanel20.Controls.Add(Me.Label64, 1, 0)
         Me.TableLayoutPanel20.Name = "TableLayoutPanel20"
         '
+        'PictureBox34
+        '
+        resources.ApplyResources(Me.PictureBox34, "PictureBox34")
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.TabStop = False
+        '
         'Label64
         '
         Me.Label64.BackColor = System.Drawing.Color.Transparent
@@ -2327,6 +3104,12 @@ Partial Class MainForm
         Me.TableLayoutPanel21.Controls.Add(Me.PictureBox35, 0, 0)
         Me.TableLayoutPanel21.Controls.Add(Me.Label65, 1, 0)
         Me.TableLayoutPanel21.Name = "TableLayoutPanel21"
+        '
+        'PictureBox35
+        '
+        resources.ApplyResources(Me.PictureBox35, "PictureBox35")
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.TabStop = False
         '
         'Label65
         '
@@ -2348,6 +3131,12 @@ Partial Class MainForm
         Me.Label67.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label67, "Label67")
         Me.Label67.Name = "Label67"
+        '
+        'PictureBox36
+        '
+        resources.ApplyResources(Me.PictureBox36, "PictureBox36")
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.TabStop = False
         '
         'Panel148
         '
@@ -2388,6 +3177,12 @@ Partial Class MainForm
         Me.TableLayoutPanel25.Controls.Add(Me.Label68, 1, 0)
         Me.TableLayoutPanel25.Name = "TableLayoutPanel25"
         '
+        'PictureBox37
+        '
+        resources.ApplyResources(Me.PictureBox37, "PictureBox37")
+        Me.PictureBox37.Name = "PictureBox37"
+        Me.PictureBox37.TabStop = False
+        '
         'Label68
         '
         Me.Label68.BackColor = System.Drawing.Color.Transparent
@@ -2402,6 +3197,12 @@ Partial Class MainForm
         Me.TableLayoutPanel26.Controls.Add(Me.Label69, 1, 0)
         Me.TableLayoutPanel26.Name = "TableLayoutPanel26"
         '
+        'PictureBox38
+        '
+        resources.ApplyResources(Me.PictureBox38, "PictureBox38")
+        Me.PictureBox38.Name = "PictureBox38"
+        Me.PictureBox38.TabStop = False
+        '
         'Label69
         '
         Me.Label69.BackColor = System.Drawing.Color.Transparent
@@ -2415,6 +3216,12 @@ Partial Class MainForm
         Me.TableLayoutPanel27.Controls.Add(Me.PictureBox39, 0, 0)
         Me.TableLayoutPanel27.Controls.Add(Me.Label70, 1, 0)
         Me.TableLayoutPanel27.Name = "TableLayoutPanel27"
+        '
+        'PictureBox39
+        '
+        resources.ApplyResources(Me.PictureBox39, "PictureBox39")
+        Me.PictureBox39.Name = "PictureBox39"
+        Me.PictureBox39.TabStop = False
         '
         'Label70
         '
@@ -2436,6 +3243,12 @@ Partial Class MainForm
         Me.Label72.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label72, "Label72")
         Me.Label72.Name = "Label72"
+        '
+        'PictureBox40
+        '
+        resources.ApplyResources(Me.PictureBox40, "PictureBox40")
+        Me.PictureBox40.Name = "PictureBox40"
+        Me.PictureBox40.TabStop = False
         '
         'Panel151
         '
@@ -2476,6 +3289,12 @@ Partial Class MainForm
         Me.TableLayoutPanel28.Controls.Add(Me.Label73, 1, 0)
         Me.TableLayoutPanel28.Name = "TableLayoutPanel28"
         '
+        'PictureBox41
+        '
+        resources.ApplyResources(Me.PictureBox41, "PictureBox41")
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.TabStop = False
+        '
         'Label73
         '
         Me.Label73.BackColor = System.Drawing.Color.Transparent
@@ -2490,6 +3309,12 @@ Partial Class MainForm
         Me.TableLayoutPanel29.Controls.Add(Me.Label74, 1, 0)
         Me.TableLayoutPanel29.Name = "TableLayoutPanel29"
         '
+        'PictureBox42
+        '
+        resources.ApplyResources(Me.PictureBox42, "PictureBox42")
+        Me.PictureBox42.Name = "PictureBox42"
+        Me.PictureBox42.TabStop = False
+        '
         'Label74
         '
         Me.Label74.BackColor = System.Drawing.Color.Transparent
@@ -2503,6 +3328,12 @@ Partial Class MainForm
         Me.TableLayoutPanel30.Controls.Add(Me.PictureBox43, 0, 0)
         Me.TableLayoutPanel30.Controls.Add(Me.Label75, 1, 0)
         Me.TableLayoutPanel30.Name = "TableLayoutPanel30"
+        '
+        'PictureBox43
+        '
+        resources.ApplyResources(Me.PictureBox43, "PictureBox43")
+        Me.PictureBox43.Name = "PictureBox43"
+        Me.PictureBox43.TabStop = False
         '
         'Label75
         '
@@ -2524,6 +3355,12 @@ Partial Class MainForm
         Me.Label77.ForeColor = System.Drawing.Color.Gainsboro
         resources.ApplyResources(Me.Label77, "Label77")
         Me.Label77.Name = "Label77"
+        '
+        'PictureBox44
+        '
+        resources.ApplyResources(Me.PictureBox44, "PictureBox44")
+        Me.PictureBox44.Name = "PictureBox44"
+        Me.PictureBox44.TabStop = False
         '
         'Panel157
         '
@@ -2778,6 +3615,45 @@ Partial Class MainForm
         Me.Panel187.Controls.Add(Me.Button87)
         resources.ApplyResources(Me.Panel187, "Panel187")
         Me.Panel187.Name = "Panel187"
+        '
+        'Button85
+        '
+        Me.Button85.AutoEllipsis = True
+        Me.Button85.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button85, "Button85")
+        Me.Button85.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button85.FlatAppearance.BorderSize = 0
+        Me.Button85.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button85.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button85.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button85.Name = "Button85"
+        Me.Button85.UseVisualStyleBackColor = False
+        '
+        'Button86
+        '
+        Me.Button86.AutoEllipsis = True
+        Me.Button86.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button86, "Button86")
+        Me.Button86.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button86.FlatAppearance.BorderSize = 0
+        Me.Button86.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button86.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button86.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button86.Name = "Button86"
+        Me.Button86.UseVisualStyleBackColor = False
+        '
+        'Button87
+        '
+        Me.Button87.AutoEllipsis = True
+        Me.Button87.BackColor = System.Drawing.Color.Transparent
+        resources.ApplyResources(Me.Button87, "Button87")
+        Me.Button87.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button87.FlatAppearance.BorderSize = 0
+        Me.Button87.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
+        Me.Button87.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Button87.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button87.Name = "Button87"
+        Me.Button87.UseVisualStyleBackColor = False
         '
         'Label86
         '
@@ -3601,6 +4477,15 @@ Partial Class MainForm
         resources.ApplyResources(Me.PanelPrimaMenu, "PanelPrimaMenu")
         Me.PanelPrimaMenu.Name = "PanelPrimaMenu"
         '
+        'BTNMenu01
+        '
+        Me.BTNMenu01.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
+        resources.ApplyResources(Me.BTNMenu01, "BTNMenu01")
+        Me.BTNMenu01.FlatAppearance.BorderSize = 0
+        Me.BTNMenu01.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.BTNMenu01.Name = "BTNMenu01"
+        Me.BTNMenu01.UseVisualStyleBackColor = False
+        '
         'Panel76
         '
         Me.Panel76.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
@@ -3780,6 +4665,103 @@ Partial Class MainForm
         resources.ApplyResources(Me.Panel248, "Panel248")
         Me.Panel248.Name = "Panel248"
         '
+        'Button81
+        '
+        Me.Button81.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Button81.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.lixeira1
+        resources.ApplyResources(Me.Button81, "Button81")
+        Me.Button81.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button81.FlatAppearance.BorderSize = 0
+        Me.Button81.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Button81.Name = "Button81"
+        Me.Button81.UseVisualStyleBackColor = False
+        '
+        'CheckBox19
+        '
+        resources.ApplyResources(Me.CheckBox19, "CheckBox19")
+        Me.CheckBox19.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox19.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox19.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox19.ForeColor = System.Drawing.Color.White
+        Me.CheckBox19.Name = "CheckBox19"
+        Me.CheckBox19.UseVisualStyleBackColor = False
+        '
+        'CheckBox20
+        '
+        resources.ApplyResources(Me.CheckBox20, "CheckBox20")
+        Me.CheckBox20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox20.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox20.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox20.ForeColor = System.Drawing.Color.White
+        Me.CheckBox20.Name = "CheckBox20"
+        Me.CheckBox20.UseVisualStyleBackColor = True
+        '
+        'CheckBox21
+        '
+        resources.ApplyResources(Me.CheckBox21, "CheckBox21")
+        Me.CheckBox21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox21.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox21.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox21.ForeColor = System.Drawing.Color.White
+        Me.CheckBox21.Name = "CheckBox21"
+        Me.CheckBox21.UseVisualStyleBackColor = True
+        '
+        'CheckBox22
+        '
+        resources.ApplyResources(Me.CheckBox22, "CheckBox22")
+        Me.CheckBox22.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox22.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox22.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox22.ForeColor = System.Drawing.Color.White
+        Me.CheckBox22.Name = "CheckBox22"
+        Me.CheckBox22.UseVisualStyleBackColor = False
+        '
+        'CheckBox23
+        '
+        resources.ApplyResources(Me.CheckBox23, "CheckBox23")
+        Me.CheckBox23.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox23.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox23.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox23.ForeColor = System.Drawing.Color.White
+        Me.CheckBox23.Name = "CheckBox23"
+        Me.CheckBox23.UseVisualStyleBackColor = False
+        '
+        'CheckBox24
+        '
+        resources.ApplyResources(Me.CheckBox24, "CheckBox24")
+        Me.CheckBox24.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox24.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox24.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox24.ForeColor = System.Drawing.Color.White
+        Me.CheckBox24.Name = "CheckBox24"
+        Me.CheckBox24.UseVisualStyleBackColor = False
+        '
+        'CheckBox25
+        '
+        resources.ApplyResources(Me.CheckBox25, "CheckBox25")
+        Me.CheckBox25.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox25.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox25.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox25.ForeColor = System.Drawing.Color.White
+        Me.CheckBox25.Name = "CheckBox25"
+        Me.CheckBox25.UseVisualStyleBackColor = False
+        '
+        'CheckBox26
+        '
+        resources.ApplyResources(Me.CheckBox26, "CheckBox26")
+        Me.CheckBox26.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox26.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox26.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox26.ForeColor = System.Drawing.Color.White
+        Me.CheckBox26.Name = "CheckBox26"
+        Me.CheckBox26.UseVisualStyleBackColor = False
+        '
         'Panel202
         '
         Me.Panel202.Controls.Add(Me.TrackBar1)
@@ -3838,6 +4820,61 @@ Partial Class MainForm
         Me.Panel213.Controls.Add(Me.CheckBox18)
         Me.Panel213.Name = "Panel213"
         '
+        'CheckBox14
+        '
+        resources.ApplyResources(Me.CheckBox14, "CheckBox14")
+        Me.CheckBox14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox14.FlatAppearance.BorderSize = 0
+        Me.CheckBox14.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox14.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox14.ForeColor = System.Drawing.Color.White
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        resources.ApplyResources(Me.CheckBox15, "CheckBox15")
+        Me.CheckBox15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox15.FlatAppearance.BorderSize = 0
+        Me.CheckBox15.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox15.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox15.ForeColor = System.Drawing.Color.White
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        resources.ApplyResources(Me.CheckBox16, "CheckBox16")
+        Me.CheckBox16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox16.FlatAppearance.BorderSize = 0
+        Me.CheckBox16.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox16.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox16.ForeColor = System.Drawing.Color.White
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'CheckBox17
+        '
+        resources.ApplyResources(Me.CheckBox17, "CheckBox17")
+        Me.CheckBox17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox17.FlatAppearance.BorderSize = 0
+        Me.CheckBox17.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox17.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox17.ForeColor = System.Drawing.Color.White
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
+        'CheckBox18
+        '
+        resources.ApplyResources(Me.CheckBox18, "CheckBox18")
+        Me.CheckBox18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox18.FlatAppearance.BorderSize = 0
+        Me.CheckBox18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
+        Me.CheckBox18.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox18.ForeColor = System.Drawing.Color.White
+        Me.CheckBox18.Name = "CheckBox18"
+        Me.CheckBox18.UseVisualStyleBackColor = True
+        '
         'Panel214
         '
         resources.ApplyResources(Me.Panel214, "Panel214")
@@ -3846,6 +4883,17 @@ Partial Class MainForm
         Me.Panel214.Controls.Add(Me.Label88)
         Me.Panel214.Controls.Add(Me.Label89)
         Me.Panel214.Name = "Panel214"
+        '
+        'CheckBox31
+        '
+        resources.ApplyResources(Me.CheckBox31, "CheckBox31")
+        Me.CheckBox31.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.CheckBox31.FlatAppearance.BorderSize = 0
+        Me.CheckBox31.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CheckBox31.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
+        Me.CheckBox31.ForeColor = System.Drawing.Color.White
+        Me.CheckBox31.Name = "CheckBox31"
+        Me.CheckBox31.UseVisualStyleBackColor = True
         '
         'Label88
         '
@@ -3980,1054 +5028,6 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
         '
-        'BTNMenu01
-        '
-        Me.BTNMenu01.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        resources.ApplyResources(Me.BTNMenu01, "BTNMenu01")
-        Me.BTNMenu01.FlatAppearance.BorderSize = 0
-        Me.BTNMenu01.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.BTNMenu01.Name = "BTNMenu01"
-        Me.BTNMenu01.UseVisualStyleBackColor = False
-        '
-        'Button81
-        '
-        Me.Button81.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Button81.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.lixeira1
-        resources.ApplyResources(Me.Button81, "Button81")
-        Me.Button81.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button81.FlatAppearance.BorderSize = 0
-        Me.Button81.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button81.Name = "Button81"
-        Me.Button81.UseVisualStyleBackColor = False
-        '
-        'CheckBox19
-        '
-        resources.ApplyResources(Me.CheckBox19, "CheckBox19")
-        Me.CheckBox19.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox19.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox19.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox19.ForeColor = System.Drawing.Color.White
-        Me.CheckBox19.Name = "CheckBox19"
-        Me.CheckBox19.UseVisualStyleBackColor = False
-        '
-        'CheckBox20
-        '
-        resources.ApplyResources(Me.CheckBox20, "CheckBox20")
-        Me.CheckBox20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox20.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox20.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox20.ForeColor = System.Drawing.Color.White
-        Me.CheckBox20.Name = "CheckBox20"
-        Me.CheckBox20.UseVisualStyleBackColor = True
-        '
-        'CheckBox21
-        '
-        resources.ApplyResources(Me.CheckBox21, "CheckBox21")
-        Me.CheckBox21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox21.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox21.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox21.ForeColor = System.Drawing.Color.White
-        Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.UseVisualStyleBackColor = True
-        '
-        'CheckBox22
-        '
-        resources.ApplyResources(Me.CheckBox22, "CheckBox22")
-        Me.CheckBox22.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox22.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox22.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox22.ForeColor = System.Drawing.Color.White
-        Me.CheckBox22.Name = "CheckBox22"
-        Me.CheckBox22.UseVisualStyleBackColor = False
-        '
-        'CheckBox23
-        '
-        resources.ApplyResources(Me.CheckBox23, "CheckBox23")
-        Me.CheckBox23.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox23.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox23.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox23.ForeColor = System.Drawing.Color.White
-        Me.CheckBox23.Name = "CheckBox23"
-        Me.CheckBox23.UseVisualStyleBackColor = False
-        '
-        'CheckBox24
-        '
-        resources.ApplyResources(Me.CheckBox24, "CheckBox24")
-        Me.CheckBox24.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox24.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox24.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox24.ForeColor = System.Drawing.Color.White
-        Me.CheckBox24.Name = "CheckBox24"
-        Me.CheckBox24.UseVisualStyleBackColor = False
-        '
-        'CheckBox25
-        '
-        resources.ApplyResources(Me.CheckBox25, "CheckBox25")
-        Me.CheckBox25.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox25.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox25.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox25.ForeColor = System.Drawing.Color.White
-        Me.CheckBox25.Name = "CheckBox25"
-        Me.CheckBox25.UseVisualStyleBackColor = False
-        '
-        'CheckBox26
-        '
-        resources.ApplyResources(Me.CheckBox26, "CheckBox26")
-        Me.CheckBox26.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox26.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox26.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox26.ForeColor = System.Drawing.Color.White
-        Me.CheckBox26.Name = "CheckBox26"
-        Me.CheckBox26.UseVisualStyleBackColor = False
-        '
-        'CheckBox14
-        '
-        resources.ApplyResources(Me.CheckBox14, "CheckBox14")
-        Me.CheckBox14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox14.FlatAppearance.BorderSize = 0
-        Me.CheckBox14.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox14.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox14.ForeColor = System.Drawing.Color.White
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.UseVisualStyleBackColor = True
-        '
-        'CheckBox15
-        '
-        resources.ApplyResources(Me.CheckBox15, "CheckBox15")
-        Me.CheckBox15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox15.FlatAppearance.BorderSize = 0
-        Me.CheckBox15.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox15.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox15.ForeColor = System.Drawing.Color.White
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.UseVisualStyleBackColor = True
-        '
-        'CheckBox16
-        '
-        resources.ApplyResources(Me.CheckBox16, "CheckBox16")
-        Me.CheckBox16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox16.FlatAppearance.BorderSize = 0
-        Me.CheckBox16.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox16.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox16.ForeColor = System.Drawing.Color.White
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.UseVisualStyleBackColor = True
-        '
-        'CheckBox17
-        '
-        resources.ApplyResources(Me.CheckBox17, "CheckBox17")
-        Me.CheckBox17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox17.FlatAppearance.BorderSize = 0
-        Me.CheckBox17.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox17.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox17.ForeColor = System.Drawing.Color.White
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.UseVisualStyleBackColor = True
-        '
-        'CheckBox18
-        '
-        resources.ApplyResources(Me.CheckBox18, "CheckBox18")
-        Me.CheckBox18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox18.FlatAppearance.BorderSize = 0
-        Me.CheckBox18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.CheckBox18.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox18.ForeColor = System.Drawing.Color.White
-        Me.CheckBox18.Name = "CheckBox18"
-        Me.CheckBox18.UseVisualStyleBackColor = True
-        '
-        'CheckBox31
-        '
-        resources.ApplyResources(Me.CheckBox31, "CheckBox31")
-        Me.CheckBox31.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.CheckBox31.FlatAppearance.BorderSize = 0
-        Me.CheckBox31.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox31.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.CheckBox31.ForeColor = System.Drawing.Color.White
-        Me.CheckBox31.Name = "CheckBox31"
-        Me.CheckBox31.UseVisualStyleBackColor = True
-        '
-        'ChBFiltro
-        '
-        resources.ApplyResources(Me.ChBFiltro, "ChBFiltro")
-        Me.ChBFiltro.Checked = True
-        Me.ChBFiltro.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.ChBFiltro.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ChBFiltro.FlatAppearance.BorderSize = 0
-        Me.ChBFiltro.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.ChBFiltro.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.ChBFiltro.ForeColor = System.Drawing.Color.Silver
-        Me.ChBFiltro.Name = "ChBFiltro"
-        Me.ChBFiltro.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        resources.ApplyResources(Me.CheckBox8, "CheckBox8")
-        Me.CheckBox8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox8.FlatAppearance.BorderSize = 0
-        Me.CheckBox8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CheckBox8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CheckBox8.ForeColor = System.Drawing.Color.Silver
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'RB_Clipboard
-        '
-        resources.ApplyResources(Me.RB_Clipboard, "RB_Clipboard")
-        Me.RB_Clipboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.RB_Clipboard.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_Clipboard.FlatAppearance.BorderSize = 0
-        Me.RB_Clipboard.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(66, Byte), Integer), CType(CType(86, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.RB_Clipboard.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Clipboard.ForeColor = System.Drawing.Color.Silver
-        Me.RB_Clipboard.Image = Global.TrevoWebMedia.My.Resources.Resources.verify_Clipboard01_35
-        Me.RB_Clipboard.Name = "RB_Clipboard"
-        Me.RB_Clipboard.UseVisualStyleBackColor = False
-        '
-        'RB_Filter
-        '
-        resources.ApplyResources(Me.RB_Filter, "RB_Filter")
-        Me.RB_Filter.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_Filter.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_Filter.FlatAppearance.BorderSize = 0
-        Me.RB_Filter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.RB_Filter.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Filter.ForeColor = System.Drawing.Color.Silver
-        Me.RB_Filter.Image = Global.TrevoWebMedia.My.Resources.Resources.filter_35
-        Me.RB_Filter.Name = "RB_Filter"
-        Me.RB_Filter.UseVisualStyleBackColor = False
-        '
-        'RB_Selecao
-        '
-        resources.ApplyResources(Me.RB_Selecao, "RB_Selecao")
-        Me.RB_Selecao.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_Selecao.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_Selecao.FlatAppearance.BorderSize = 0
-        Me.RB_Selecao.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.RB_Selecao.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Selecao.ForeColor = System.Drawing.Color.Silver
-        Me.RB_Selecao.Image = Global.TrevoWebMedia.My.Resources.Resources.selection_cursor01
-        Me.RB_Selecao.Name = "RB_Selecao"
-        Me.RB_Selecao.UseVisualStyleBackColor = False
-        '
-        'RB_PastaProcesso
-        '
-        resources.ApplyResources(Me.RB_PastaProcesso, "RB_PastaProcesso")
-        Me.RB_PastaProcesso.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_PastaProcesso.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_PastaProcesso.FlatAppearance.BorderSize = 0
-        Me.RB_PastaProcesso.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.RB_PastaProcesso.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_PastaProcesso.ForeColor = System.Drawing.Color.Silver
-        Me.RB_PastaProcesso.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaProcesso35
-        Me.RB_PastaProcesso.Name = "RB_PastaProcesso"
-        Me.RB_PastaProcesso.UseVisualStyleBackColor = False
-        '
-        'RB_Explorer
-        '
-        resources.ApplyResources(Me.RB_Explorer, "RB_Explorer")
-        Me.RB_Explorer.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_Explorer.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_Explorer.FlatAppearance.BorderSize = 0
-        Me.RB_Explorer.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.RB_Explorer.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Explorer.ForeColor = System.Drawing.Color.Silver
-        Me.RB_Explorer.Image = Global.TrevoWebMedia.My.Resources.Resources.computer35
-        Me.RB_Explorer.Name = "RB_Explorer"
-        Me.RB_Explorer.UseVisualStyleBackColor = False
-        '
-        'RB_Midias
-        '
-        resources.ApplyResources(Me.RB_Midias, "RB_Midias")
-        Me.RB_Midias.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(48, Byte), Integer))
-        Me.RB_Midias.Checked = True
-        Me.RB_Midias.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.RB_Midias.FlatAppearance.BorderSize = 0
-        Me.RB_Midias.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.RB_Midias.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight
-        Me.RB_Midias.ForeColor = System.Drawing.Color.Silver
-        Me.RB_Midias.Image = Global.TrevoWebMedia.My.Resources.Resources.dvd_face6_Hover
-        Me.RB_Midias.Name = "RB_Midias"
-        Me.RB_Midias.TabStop = True
-        Me.RB_Midias.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button5, "Button5")
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button5.Name = "Button5"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button4, "Button4")
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button3, "Button3")
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button3.Name = "Button3"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button2, "Button2")
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'CheckBox5
-        '
-        resources.ApplyResources(Me.CheckBox5, "CheckBox5")
-        Me.CheckBox5.BackColor = System.Drawing.Color.White
-        Me.CheckBox5.FlatAppearance.BorderSize = 0
-        Me.CheckBox5.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.CheckBox5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro
-        Me.CheckBox5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.UseVisualStyleBackColor = False
-        '
-        'Button40
-        '
-        Me.Button40.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Button40, "Button40")
-        Me.Button40.FlatAppearance.BorderSize = 0
-        Me.Button40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button40.Name = "Button40"
-        Me.Button40.UseVisualStyleBackColor = False
-        '
-        'PictureBox2
-        '
-        resources.ApplyResources(Me.PictureBox2, "PictureBox2")
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.TabStop = False
-        '
-        'Button38
-        '
-        resources.ApplyResources(Me.Button38, "Button38")
-        Me.Button38.FlatAppearance.BorderSize = 0
-        Me.Button38.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
-        Me.Button38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button38.Name = "Button38"
-        Me.Button38.UseVisualStyleBackColor = True
-        '
-        'Button37
-        '
-        resources.ApplyResources(Me.Button37, "Button37")
-        Me.Button37.FlatAppearance.BorderSize = 0
-        Me.Button37.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
-        Me.Button37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button37.Name = "Button37"
-        Me.Button37.UseVisualStyleBackColor = True
-        '
-        'Button36
-        '
-        resources.ApplyResources(Me.Button36, "Button36")
-        Me.Button36.FlatAppearance.BorderSize = 0
-        Me.Button36.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver
-        Me.Button36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
-        Me.Button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black
-        Me.Button36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button36.Name = "Button36"
-        Me.Button36.UseVisualStyleBackColor = True
-        '
-        'Button78
-        '
-        Me.Button78.AutoEllipsis = True
-        Me.Button78.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button78, "Button78")
-        Me.Button78.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button78.FlatAppearance.BorderSize = 0
-        Me.Button78.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button78.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button78.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button78.Name = "Button78"
-        Me.Button78.UseVisualStyleBackColor = False
-        '
-        'Button79
-        '
-        Me.Button79.AutoEllipsis = True
-        Me.Button79.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button79, "Button79")
-        Me.Button79.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button79.FlatAppearance.BorderSize = 0
-        Me.Button79.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button79.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button79.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button79.Name = "Button79"
-        Me.Button79.UseVisualStyleBackColor = False
-        '
-        'Button82
-        '
-        Me.Button82.AutoEllipsis = True
-        Me.Button82.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button82, "Button82")
-        Me.Button82.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button82.FlatAppearance.BorderSize = 0
-        Me.Button82.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button82.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button82.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button82.Name = "Button82"
-        Me.Button82.UseVisualStyleBackColor = False
-        '
-        'Button83
-        '
-        Me.Button83.AutoEllipsis = True
-        Me.Button83.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button83, "Button83")
-        Me.Button83.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button83.FlatAppearance.BorderSize = 0
-        Me.Button83.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button83.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button83.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button83.Name = "Button83"
-        Me.Button83.UseVisualStyleBackColor = False
-        '
-        'Button103
-        '
-        Me.Button103.AutoEllipsis = True
-        Me.Button103.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button103, "Button103")
-        Me.Button103.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button103.FlatAppearance.BorderSize = 0
-        Me.Button103.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button103.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button103.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button103.Name = "Button103"
-        Me.Button103.UseVisualStyleBackColor = False
-        '
-        'Button104
-        '
-        Me.Button104.AutoEllipsis = True
-        Me.Button104.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button104, "Button104")
-        Me.Button104.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button104.FlatAppearance.BorderSize = 0
-        Me.Button104.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button104.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button104.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button104.Name = "Button104"
-        Me.Button104.UseVisualStyleBackColor = False
-        '
-        'Button105
-        '
-        Me.Button105.AutoEllipsis = True
-        Me.Button105.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button105, "Button105")
-        Me.Button105.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button105.FlatAppearance.BorderSize = 0
-        Me.Button105.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button105.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button105.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button105.Name = "Button105"
-        Me.Button105.UseVisualStyleBackColor = False
-        '
-        'Button48
-        '
-        Me.Button48.AutoEllipsis = True
-        Me.Button48.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button48, "Button48")
-        Me.Button48.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button48.FlatAppearance.BorderSize = 0
-        Me.Button48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button48.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button48.Name = "Button48"
-        Me.Button48.UseVisualStyleBackColor = False
-        '
-        'Button49
-        '
-        Me.Button49.AutoEllipsis = True
-        Me.Button49.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button49, "Button49")
-        Me.Button49.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button49.FlatAppearance.BorderSize = 0
-        Me.Button49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button49.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button49.Name = "Button49"
-        Me.Button49.UseVisualStyleBackColor = False
-        '
-        'Button50
-        '
-        Me.Button50.AutoEllipsis = True
-        Me.Button50.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button50, "Button50")
-        Me.Button50.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button50.FlatAppearance.BorderSize = 0
-        Me.Button50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button50.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button50.Name = "Button50"
-        Me.Button50.UseVisualStyleBackColor = False
-        '
-        'Button51
-        '
-        Me.Button51.AutoEllipsis = True
-        Me.Button51.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button51, "Button51")
-        Me.Button51.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button51.FlatAppearance.BorderSize = 0
-        Me.Button51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button51.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button51.Name = "Button51"
-        Me.Button51.UseVisualStyleBackColor = False
-        '
-        'Button52
-        '
-        Me.Button52.AutoEllipsis = True
-        Me.Button52.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button52, "Button52")
-        Me.Button52.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button52.FlatAppearance.BorderSize = 0
-        Me.Button52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button52.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button52.Name = "Button52"
-        Me.Button52.UseVisualStyleBackColor = False
-        '
-        'Button53
-        '
-        Me.Button53.AutoEllipsis = True
-        Me.Button53.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button53, "Button53")
-        Me.Button53.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button53.FlatAppearance.BorderSize = 0
-        Me.Button53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button53.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button53.Name = "Button53"
-        Me.Button53.UseVisualStyleBackColor = False
-        '
-        'Button54
-        '
-        Me.Button54.AutoEllipsis = True
-        Me.Button54.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button54, "Button54")
-        Me.Button54.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button54.FlatAppearance.BorderSize = 0
-        Me.Button54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button54.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button54.Name = "Button54"
-        Me.Button54.UseVisualStyleBackColor = False
-        '
-        'PictureBox28
-        '
-        resources.ApplyResources(Me.PictureBox28, "PictureBox28")
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.TabStop = False
-        '
-        'Button56
-        '
-        Me.Button56.AutoEllipsis = True
-        Me.Button56.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button56, "Button56")
-        Me.Button56.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button56.FlatAppearance.BorderSize = 0
-        Me.Button56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button56.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button56.Name = "Button56"
-        Me.Button56.UseVisualStyleBackColor = False
-        '
-        'Button57
-        '
-        Me.Button57.AutoEllipsis = True
-        Me.Button57.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button57, "Button57")
-        Me.Button57.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button57.FlatAppearance.BorderSize = 0
-        Me.Button57.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button57.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button57.Name = "Button57"
-        Me.Button57.UseVisualStyleBackColor = False
-        '
-        'Button58
-        '
-        Me.Button58.AutoEllipsis = True
-        Me.Button58.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button58, "Button58")
-        Me.Button58.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button58.FlatAppearance.BorderSize = 0
-        Me.Button58.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button58.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button58.Name = "Button58"
-        Me.Button58.UseVisualStyleBackColor = False
-        '
-        'Button59
-        '
-        Me.Button59.AutoEllipsis = True
-        Me.Button59.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button59, "Button59")
-        Me.Button59.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button59.FlatAppearance.BorderSize = 0
-        Me.Button59.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button59.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button59.Name = "Button59"
-        Me.Button59.UseVisualStyleBackColor = False
-        '
-        'Button60
-        '
-        Me.Button60.AutoEllipsis = True
-        Me.Button60.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button60, "Button60")
-        Me.Button60.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button60.FlatAppearance.BorderSize = 0
-        Me.Button60.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button60.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button60.Name = "Button60"
-        Me.Button60.UseVisualStyleBackColor = False
-        '
-        'Button61
-        '
-        Me.Button61.AutoEllipsis = True
-        Me.Button61.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button61, "Button61")
-        Me.Button61.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button61.FlatAppearance.BorderSize = 0
-        Me.Button61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button61.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button61.Name = "Button61"
-        Me.Button61.UseVisualStyleBackColor = False
-        '
-        'Button62
-        '
-        Me.Button62.AutoEllipsis = True
-        Me.Button62.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button62, "Button62")
-        Me.Button62.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button62.FlatAppearance.BorderSize = 0
-        Me.Button62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button62.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button62.Name = "Button62"
-        Me.Button62.UseVisualStyleBackColor = False
-        '
-        'Button63
-        '
-        Me.Button63.AutoEllipsis = True
-        Me.Button63.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button63, "Button63")
-        Me.Button63.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button63.FlatAppearance.BorderSize = 0
-        Me.Button63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button63.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button63.Name = "Button63"
-        Me.Button63.UseVisualStyleBackColor = False
-        '
-        'Button64
-        '
-        Me.Button64.AutoEllipsis = True
-        Me.Button64.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button64, "Button64")
-        Me.Button64.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button64.FlatAppearance.BorderSize = 0
-        Me.Button64.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button64.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button64.Name = "Button64"
-        Me.Button64.UseVisualStyleBackColor = False
-        '
-        'Button65
-        '
-        Me.Button65.AutoEllipsis = True
-        Me.Button65.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button65, "Button65")
-        Me.Button65.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button65.FlatAppearance.BorderSize = 0
-        Me.Button65.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button65.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button65.Name = "Button65"
-        Me.Button65.UseVisualStyleBackColor = False
-        '
-        'Button66
-        '
-        Me.Button66.AutoEllipsis = True
-        Me.Button66.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button66, "Button66")
-        Me.Button66.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button66.FlatAppearance.BorderSize = 0
-        Me.Button66.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button66.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button66.Name = "Button66"
-        Me.Button66.UseVisualStyleBackColor = False
-        '
-        'Button67
-        '
-        Me.Button67.AutoEllipsis = True
-        Me.Button67.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button67, "Button67")
-        Me.Button67.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button67.FlatAppearance.BorderSize = 0
-        Me.Button67.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button67.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button67.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button67.Name = "Button67"
-        Me.Button67.UseVisualStyleBackColor = False
-        '
-        'Button68
-        '
-        Me.Button68.AutoEllipsis = True
-        Me.Button68.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button68, "Button68")
-        Me.Button68.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button68.FlatAppearance.BorderSize = 0
-        Me.Button68.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button68.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button68.Name = "Button68"
-        Me.Button68.UseVisualStyleBackColor = False
-        '
-        'Button69
-        '
-        Me.Button69.AutoEllipsis = True
-        Me.Button69.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button69, "Button69")
-        Me.Button69.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button69.FlatAppearance.BorderSize = 0
-        Me.Button69.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button69.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button69.Name = "Button69"
-        Me.Button69.UseVisualStyleBackColor = False
-        '
-        'Button70
-        '
-        Me.Button70.AutoEllipsis = True
-        Me.Button70.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button70, "Button70")
-        Me.Button70.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button70.FlatAppearance.BorderSize = 0
-        Me.Button70.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button70.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button70.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button70.Name = "Button70"
-        Me.Button70.UseVisualStyleBackColor = False
-        '
-        'Button71
-        '
-        Me.Button71.AutoEllipsis = True
-        Me.Button71.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button71, "Button71")
-        Me.Button71.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button71.FlatAppearance.BorderSize = 0
-        Me.Button71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button71.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button71.Name = "Button71"
-        Me.Button71.UseVisualStyleBackColor = False
-        '
-        'Button72
-        '
-        Me.Button72.AutoEllipsis = True
-        Me.Button72.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button72, "Button72")
-        Me.Button72.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button72.FlatAppearance.BorderSize = 0
-        Me.Button72.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button72.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button72.Name = "Button72"
-        Me.Button72.UseVisualStyleBackColor = False
-        '
-        'Button73
-        '
-        Me.Button73.AutoEllipsis = True
-        Me.Button73.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button73, "Button73")
-        Me.Button73.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button73.FlatAppearance.BorderSize = 0
-        Me.Button73.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button73.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button73.Name = "Button73"
-        Me.Button73.UseVisualStyleBackColor = False
-        '
-        'Button74
-        '
-        Me.Button74.AutoEllipsis = True
-        Me.Button74.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button74, "Button74")
-        Me.Button74.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button74.FlatAppearance.BorderSize = 0
-        Me.Button74.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button74.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button74.Name = "Button74"
-        Me.Button74.UseVisualStyleBackColor = False
-        '
-        'Button75
-        '
-        Me.Button75.AutoEllipsis = True
-        Me.Button75.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button75, "Button75")
-        Me.Button75.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button75.FlatAppearance.BorderSize = 0
-        Me.Button75.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button75.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button75.Name = "Button75"
-        Me.Button75.UseVisualStyleBackColor = False
-        '
-        'Button76
-        '
-        Me.Button76.AutoEllipsis = True
-        Me.Button76.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button76, "Button76")
-        Me.Button76.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button76.FlatAppearance.BorderSize = 0
-        Me.Button76.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button76.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button76.Name = "Button76"
-        Me.Button76.UseVisualStyleBackColor = False
-        '
-        'PictureBox29
-        '
-        resources.ApplyResources(Me.PictureBox29, "PictureBox29")
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.TabStop = False
-        '
-        'PictureBox30
-        '
-        resources.ApplyResources(Me.PictureBox30, "PictureBox30")
-        Me.PictureBox30.Name = "PictureBox30"
-        Me.PictureBox30.TabStop = False
-        '
-        'PictureBox31
-        '
-        resources.ApplyResources(Me.PictureBox31, "PictureBox31")
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.TabStop = False
-        '
-        'PictureBox32
-        '
-        resources.ApplyResources(Me.PictureBox32, "PictureBox32")
-        Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.TabStop = False
-        '
-        'PictureBox4
-        '
-        resources.ApplyResources(Me.PictureBox4, "PictureBox4")
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox17
-        '
-        resources.ApplyResources(Me.PictureBox17, "PictureBox17")
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.TabStop = False
-        '
-        'PictureBox18
-        '
-        resources.ApplyResources(Me.PictureBox18, "PictureBox18")
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.TabStop = False
-        '
-        'PictureBox19
-        '
-        resources.ApplyResources(Me.PictureBox19, "PictureBox19")
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.TabStop = False
-        '
-        'PictureBox20
-        '
-        resources.ApplyResources(Me.PictureBox20, "PictureBox20")
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.TabStop = False
-        '
-        'PictureBox21
-        '
-        resources.ApplyResources(Me.PictureBox21, "PictureBox21")
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.TabStop = False
-        '
-        'PictureBox22
-        '
-        resources.ApplyResources(Me.PictureBox22, "PictureBox22")
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.TabStop = False
-        '
-        'PictureBox23
-        '
-        resources.ApplyResources(Me.PictureBox23, "PictureBox23")
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.TabStop = False
-        '
-        'PictureBox24
-        '
-        resources.ApplyResources(Me.PictureBox24, "PictureBox24")
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.TabStop = False
-        '
-        'PictureBox25
-        '
-        resources.ApplyResources(Me.PictureBox25, "PictureBox25")
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.TabStop = False
-        '
-        'PictureBox26
-        '
-        resources.ApplyResources(Me.PictureBox26, "PictureBox26")
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.TabStop = False
-        '
-        'PictureBox27
-        '
-        resources.ApplyResources(Me.PictureBox27, "PictureBox27")
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.TabStop = False
-        '
-        'PictureBox33
-        '
-        resources.ApplyResources(Me.PictureBox33, "PictureBox33")
-        Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.TabStop = False
-        '
-        'PictureBox34
-        '
-        resources.ApplyResources(Me.PictureBox34, "PictureBox34")
-        Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.TabStop = False
-        '
-        'PictureBox35
-        '
-        resources.ApplyResources(Me.PictureBox35, "PictureBox35")
-        Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.TabStop = False
-        '
-        'PictureBox36
-        '
-        resources.ApplyResources(Me.PictureBox36, "PictureBox36")
-        Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.TabStop = False
-        '
-        'PictureBox37
-        '
-        resources.ApplyResources(Me.PictureBox37, "PictureBox37")
-        Me.PictureBox37.Name = "PictureBox37"
-        Me.PictureBox37.TabStop = False
-        '
-        'PictureBox38
-        '
-        resources.ApplyResources(Me.PictureBox38, "PictureBox38")
-        Me.PictureBox38.Name = "PictureBox38"
-        Me.PictureBox38.TabStop = False
-        '
-        'PictureBox39
-        '
-        resources.ApplyResources(Me.PictureBox39, "PictureBox39")
-        Me.PictureBox39.Name = "PictureBox39"
-        Me.PictureBox39.TabStop = False
-        '
-        'PictureBox40
-        '
-        resources.ApplyResources(Me.PictureBox40, "PictureBox40")
-        Me.PictureBox40.Name = "PictureBox40"
-        Me.PictureBox40.TabStop = False
-        '
-        'PictureBox41
-        '
-        resources.ApplyResources(Me.PictureBox41, "PictureBox41")
-        Me.PictureBox41.Name = "PictureBox41"
-        Me.PictureBox41.TabStop = False
-        '
-        'PictureBox42
-        '
-        resources.ApplyResources(Me.PictureBox42, "PictureBox42")
-        Me.PictureBox42.Name = "PictureBox42"
-        Me.PictureBox42.TabStop = False
-        '
-        'PictureBox43
-        '
-        resources.ApplyResources(Me.PictureBox43, "PictureBox43")
-        Me.PictureBox43.Name = "PictureBox43"
-        Me.PictureBox43.TabStop = False
-        '
-        'PictureBox44
-        '
-        resources.ApplyResources(Me.PictureBox44, "PictureBox44")
-        Me.PictureBox44.Name = "PictureBox44"
-        Me.PictureBox44.TabStop = False
-        '
-        'Button85
-        '
-        Me.Button85.AutoEllipsis = True
-        Me.Button85.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button85, "Button85")
-        Me.Button85.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button85.FlatAppearance.BorderSize = 0
-        Me.Button85.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button85.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button85.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button85.Name = "Button85"
-        Me.Button85.UseVisualStyleBackColor = False
-        '
-        'Button86
-        '
-        Me.Button86.AutoEllipsis = True
-        Me.Button86.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button86, "Button86")
-        Me.Button86.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button86.FlatAppearance.BorderSize = 0
-        Me.Button86.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button86.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button86.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button86.Name = "Button86"
-        Me.Button86.UseVisualStyleBackColor = False
-        '
-        'Button87
-        '
-        Me.Button87.AutoEllipsis = True
-        Me.Button87.BackColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Button87, "Button87")
-        Me.Button87.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button87.FlatAppearance.BorderSize = 0
-        Me.Button87.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black
-        Me.Button87.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Button87.ForeColor = System.Drawing.Color.Gainsboro
-        Me.Button87.Name = "Button87"
-        Me.Button87.UseVisualStyleBackColor = False
-        '
         'MainForm
         '
         resources.ApplyResources(Me, "$this")
@@ -5052,6 +5052,7 @@ Partial Class MainForm
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.PanelTitleBar.ResumeLayout(False)
         Me.PanelTitleBar.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelMEsq.ResumeLayout(False)
         Me.PanelMDir.ResumeLayout(False)
         Me.PanelMBase.ResumeLayout(False)
@@ -5103,6 +5104,7 @@ Partial Class MainForm
         Me.Panel68.ResumeLayout(False)
         Me.Panel69.ResumeLayout(False)
         Me.Panel71.ResumeLayout(False)
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel114.ResumeLayout(False)
         Me.PanelEnvolveSugestão.ResumeLayout(False)
         Me.Panel115.ResumeLayout(False)
@@ -5128,50 +5130,78 @@ Partial Class MainForm
         Me.Panel131.ResumeLayout(False)
         Me.FlowLayoutPanel9.ResumeLayout(False)
         Me.TableLayoutPanel22.ResumeLayout(False)
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel23.ResumeLayout(False)
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel24.ResumeLayout(False)
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel132.ResumeLayout(False)
         Me.Panel137.ResumeLayout(False)
         Me.Panel138.ResumeLayout(False)
         Me.FlowLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel10.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel11.ResumeLayout(False)
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel12.ResumeLayout(False)
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel139.ResumeLayout(False)
         Me.Panel140.ResumeLayout(False)
         Me.Panel141.ResumeLayout(False)
         Me.FlowLayoutPanel7.ResumeLayout(False)
         Me.TableLayoutPanel13.ResumeLayout(False)
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel14.ResumeLayout(False)
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel15.ResumeLayout(False)
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel142.ResumeLayout(False)
         Me.Panel143.ResumeLayout(False)
         Me.Panel144.ResumeLayout(False)
         Me.FlowLayoutPanel8.ResumeLayout(False)
         Me.TableLayoutPanel16.ResumeLayout(False)
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel17.ResumeLayout(False)
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel18.ResumeLayout(False)
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel145.ResumeLayout(False)
         Me.Panel146.ResumeLayout(False)
         Me.Panel147.ResumeLayout(False)
         Me.FlowLayoutPanel10.ResumeLayout(False)
         Me.TableLayoutPanel19.ResumeLayout(False)
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel20.ResumeLayout(False)
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel21.ResumeLayout(False)
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel148.ResumeLayout(False)
         Me.Panel149.ResumeLayout(False)
         Me.Panel150.ResumeLayout(False)
         Me.FlowLayoutPanel12.ResumeLayout(False)
         Me.TableLayoutPanel25.ResumeLayout(False)
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel26.ResumeLayout(False)
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel27.ResumeLayout(False)
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel151.ResumeLayout(False)
         Me.Panel152.ResumeLayout(False)
         Me.Panel153.ResumeLayout(False)
         Me.FlowLayoutPanel13.ResumeLayout(False)
         Me.TableLayoutPanel28.ResumeLayout(False)
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel29.ResumeLayout(False)
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel30.ResumeLayout(False)
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel157.ResumeLayout(False)
         Me.PanelSkin.ResumeLayout(False)
         Me.Panel163.ResumeLayout(False)
@@ -5228,36 +5258,6 @@ Partial Class MainForm
         Me.Panel214.ResumeLayout(False)
         Me.Panel214.PerformLayout()
         Me.CTMenuVisualizacao.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

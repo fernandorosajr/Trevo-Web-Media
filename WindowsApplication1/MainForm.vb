@@ -2,6 +2,7 @@
 Imports System.Windows.Forms
 Imports System.Diagnostics
 Imports System.ComponentModel
+Imports System.Reflection
 
 Public Class MainForm
     Dim DriveMaster As DriveInfo
@@ -145,6 +146,8 @@ Long, lpColorValues As Long) As Long
 
         Label1.Text = Me.Text
 
+        ' Controles de Usuário de MainForm
+        ' ---------------------------------------------
         PanelRecebeBiblio.Controls.Add(painel_BibliotecaDeMidias)
         painel_BibliotecaDeMidias.Dock = DockStyle.Fill
         painel_BibliotecaDeMidias.Visible = True
@@ -208,6 +211,10 @@ Long, lpColorValues As Long) As Long
         PanelRecebe_AddressBar.Controls.Add(addressBar)
         addressBar.Dock = DockStyle.Fill
         addressBar.Visible = True
+        ' ---------------------------------------------
+
+
+        AddHandler painel_Desktop.TVWFilesAndFolders.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf Painel_Desktop_AfterSelect)
 
 
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
@@ -255,14 +262,22 @@ Long, lpColorValues As Long) As Long
 
         Next
 
-        'folderImpar = New DirectoryInfo("F:\Folder Impar")
-        'SelectedFoldersAndFiles.Add(folderImpar)
+        folderImpar = New DirectoryInfo("F:\Folder Impar")
+        SelectedFoldersAndFiles.Add(folderImpar)
 
 
 
     End Sub
-    Public Function AdcionarItemNoView(Drive As DriveInfo, Numero As Integer)
-        ' Cria os suobjetos semelhantes a pastas do picasa
+
+    Sub Painel_Desktop_AfterSelect()
+
+        addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
+        'MsgBox(addressBar.SelectedNode.Tag)
+
+    End Sub
+
+    Public Function AdicionarItemNoView(Drive As DriveInfo, Numero As Integer)
+        ' Cria os subobjetos semelhantes a pastas do picasa
         PanelRecebe.Controls.Add(controlPersonalListView)
         controlPersonalListView.Visible = True
         controlPersonalListView.Dock = DockStyle.Fill

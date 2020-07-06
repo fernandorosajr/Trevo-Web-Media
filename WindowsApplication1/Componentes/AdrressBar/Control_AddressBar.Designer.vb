@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Control_AddressBar
     Inherits System.Windows.Forms.UserControl
 
     'O UserControl substitui o descarte para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,14 @@ Partial Class Control_AddressBar
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_AddressBar))
         Me.PanelBorder = New System.Windows.Forms.Panel()
         Me.PanelBackgroundAddress = New System.Windows.Forms.Panel()
         Me.PanelAddress = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PanelRecebeControlesDePastas = New System.Windows.Forms.Panel()
-        Me.PanelControleDePasta = New System.Windows.Forms.Panel()
-        Me.PanelBackgroundControleDePAsta = New System.Windows.Forms.Panel()
-        Me.PanelBorder_BTNMenu = New System.Windows.Forms.Panel()
-        Me.BTNMenu = New System.Windows.Forms.Button()
-        Me.BTNLabel = New System.Windows.Forms.Button()
         Me.Panel_EnvolveTXT = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.BTNExpandir = New System.Windows.Forms.Button()
@@ -43,10 +39,7 @@ Partial Class Control_AddressBar
         Me.PanelBorder.SuspendLayout()
         Me.PanelBackgroundAddress.SuspendLayout()
         Me.PanelAddress.SuspendLayout()
-        Me.PanelRecebeControlesDePastas.SuspendLayout()
-        Me.PanelControleDePasta.SuspendLayout()
-        Me.PanelBackgroundControleDePAsta.SuspendLayout()
-        Me.PanelBorder_BTNMenu.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.Panel_EnvolveTXT.SuspendLayout()
         Me.PanelBorderReflesh.SuspendLayout()
         Me.PanelBackgroundRefresh.SuspendLayout()
@@ -79,7 +72,7 @@ Partial Class Control_AddressBar
         '
         'PanelAddress
         '
-        Me.PanelAddress.Controls.Add(Me.PanelRecebeControlesDePastas)
+        Me.PanelAddress.Controls.Add(Me.Panel1)
         Me.PanelAddress.Controls.Add(Me.Panel_EnvolveTXT)
         Me.PanelAddress.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAddress.Location = New System.Drawing.Point(30, 0)
@@ -87,84 +80,23 @@ Partial Class Control_AddressBar
         Me.PanelAddress.Size = New System.Drawing.Size(602, 59)
         Me.PanelAddress.TabIndex = 20
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.PanelRecebeControlesDePastas)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(602, 59)
+        Me.Panel1.TabIndex = 10
+        '
         'PanelRecebeControlesDePastas
         '
-        Me.PanelRecebeControlesDePastas.Controls.Add(Me.PanelControleDePasta)
-        Me.PanelRecebeControlesDePastas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelRecebeControlesDePastas.AutoSize = True
+        Me.PanelRecebeControlesDePastas.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelRecebeControlesDePastas.Location = New System.Drawing.Point(0, 0)
         Me.PanelRecebeControlesDePastas.Name = "PanelRecebeControlesDePastas"
-        Me.PanelRecebeControlesDePastas.Size = New System.Drawing.Size(602, 59)
+        Me.PanelRecebeControlesDePastas.Size = New System.Drawing.Size(0, 59)
         Me.PanelRecebeControlesDePastas.TabIndex = 19
-        '
-        'PanelControleDePasta
-        '
-        Me.PanelControleDePasta.AutoSize = True
-        Me.PanelControleDePasta.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.PanelControleDePasta.Controls.Add(Me.PanelBackgroundControleDePAsta)
-        Me.PanelControleDePasta.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelControleDePasta.Location = New System.Drawing.Point(0, 0)
-        Me.PanelControleDePasta.Name = "PanelControleDePasta"
-        Me.PanelControleDePasta.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelControleDePasta.Size = New System.Drawing.Size(105, 59)
-        Me.PanelControleDePasta.TabIndex = 0
-        '
-        'PanelBackgroundControleDePAsta
-        '
-        Me.PanelBackgroundControleDePAsta.AutoSize = True
-        Me.PanelBackgroundControleDePAsta.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.PanelBackgroundControleDePAsta.Controls.Add(Me.PanelBorder_BTNMenu)
-        Me.PanelBackgroundControleDePAsta.Controls.Add(Me.BTNLabel)
-        Me.PanelBackgroundControleDePAsta.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBackgroundControleDePAsta.Location = New System.Drawing.Point(1, 1)
-        Me.PanelBackgroundControleDePAsta.Name = "PanelBackgroundControleDePAsta"
-        Me.PanelBackgroundControleDePAsta.Size = New System.Drawing.Size(103, 57)
-        Me.PanelBackgroundControleDePAsta.TabIndex = 0
-        '
-        'PanelBorder_BTNMenu
-        '
-        Me.PanelBorder_BTNMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.PanelBorder_BTNMenu.Controls.Add(Me.BTNMenu)
-        Me.PanelBorder_BTNMenu.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PanelBorder_BTNMenu.Location = New System.Drawing.Point(87, 0)
-        Me.PanelBorder_BTNMenu.Name = "PanelBorder_BTNMenu"
-        Me.PanelBorder_BTNMenu.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
-        Me.PanelBorder_BTNMenu.Size = New System.Drawing.Size(16, 57)
-        Me.PanelBorder_BTNMenu.TabIndex = 0
-        '
-        'BTNMenu
-        '
-        Me.BTNMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.BTNMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNMenu.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNMenu.FlatAppearance.BorderSize = 0
-        Me.BTNMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.BTNMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMenu.Image = CType(resources.GetObject("BTNMenu.Image"), System.Drawing.Image)
-        Me.BTNMenu.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNMenu.Location = New System.Drawing.Point(1, 0)
-        Me.BTNMenu.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTNMenu.Name = "BTNMenu"
-        Me.BTNMenu.Size = New System.Drawing.Size(15, 57)
-        Me.BTNMenu.TabIndex = 17
-        Me.BTNMenu.UseVisualStyleBackColor = False
-        '
-        'BTNLabel
-        '
-        Me.BTNLabel.AutoSize = True
-        Me.BTNLabel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.BTNLabel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNLabel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.BTNLabel.FlatAppearance.BorderSize = 0
-        Me.BTNLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BTNLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNLabel.Location = New System.Drawing.Point(0, 0)
-        Me.BTNLabel.Margin = New System.Windows.Forms.Padding(0)
-        Me.BTNLabel.Name = "BTNLabel"
-        Me.BTNLabel.Size = New System.Drawing.Size(87, 57)
-        Me.BTNLabel.TabIndex = 19
-        Me.BTNLabel.Text = "Este Computador"
-        Me.BTNLabel.UseVisualStyleBackColor = False
         '
         'Panel_EnvolveTXT
         '
@@ -287,13 +219,8 @@ Partial Class Control_AddressBar
         Me.PanelBorder.ResumeLayout(False)
         Me.PanelBackgroundAddress.ResumeLayout(False)
         Me.PanelAddress.ResumeLayout(False)
-        Me.PanelRecebeControlesDePastas.ResumeLayout(False)
-        Me.PanelRecebeControlesDePastas.PerformLayout()
-        Me.PanelControleDePasta.ResumeLayout(False)
-        Me.PanelControleDePasta.PerformLayout()
-        Me.PanelBackgroundControleDePAsta.ResumeLayout(False)
-        Me.PanelBackgroundControleDePAsta.PerformLayout()
-        Me.PanelBorder_BTNMenu.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.Panel_EnvolveTXT.ResumeLayout(False)
         Me.Panel_EnvolveTXT.PerformLayout()
         Me.PanelBorderReflesh.ResumeLayout(False)
@@ -314,9 +241,5 @@ Partial Class Control_AddressBar
     Friend WithEvents Panel_EnvolveTXT As Panel
     Friend WithEvents PanelAddress As Panel
     Friend WithEvents PanelRecebeControlesDePastas As Panel
-    Friend WithEvents PanelControleDePasta As Panel
-    Friend WithEvents PanelBackgroundControleDePAsta As Panel
-    Friend WithEvents PanelBorder_BTNMenu As Panel
-    Friend WithEvents BTNMenu As Button
-    Friend WithEvents BTNLabel As Button
+    Friend WithEvents Panel1 As Panel
 End Class

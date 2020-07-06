@@ -23,172 +23,300 @@ Partial Class Control_AddressBar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_AddressBar))
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.PanelBorder = New System.Windows.Forms.Panel()
+        Me.PanelBackgroundAddress = New System.Windows.Forms.Panel()
+        Me.PanelAddress = New System.Windows.Forms.Panel()
+        Me.PanelRecebeControlesDePastas = New System.Windows.Forms.Panel()
+        Me.PanelControleDePasta = New System.Windows.Forms.Panel()
+        Me.PanelBackgroundControleDePAsta = New System.Windows.Forms.Panel()
+        Me.PanelBorder_BTNMenu = New System.Windows.Forms.Panel()
+        Me.BTNMenu = New System.Windows.Forms.Button()
+        Me.BTNLabel = New System.Windows.Forms.Button()
+        Me.Panel_EnvolveTXT = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Panel36 = New System.Windows.Forms.Panel()
-        Me.Panel37 = New System.Windows.Forms.Panel()
-        Me.Button18 = New System.Windows.Forms.Button()
-        Me.Panel9.SuspendLayout()
-        Me.Panel35.SuspendLayout()
-        Me.Panel36.SuspendLayout()
-        Me.Panel37.SuspendLayout()
+        Me.BTNExpandir = New System.Windows.Forms.Button()
+        Me.BTNExpandePrincipal = New System.Windows.Forms.Button()
+        Me.BTNPrincipal = New System.Windows.Forms.Button()
+        Me.PanelBorderReflesh = New System.Windows.Forms.Panel()
+        Me.PanelBackgroundRefresh = New System.Windows.Forms.Panel()
+        Me.BTNRefresh = New System.Windows.Forms.Button()
+        Me.PanelBorder.SuspendLayout()
+        Me.PanelBackgroundAddress.SuspendLayout()
+        Me.PanelAddress.SuspendLayout()
+        Me.PanelRecebeControlesDePastas.SuspendLayout()
+        Me.PanelControleDePasta.SuspendLayout()
+        Me.PanelBackgroundControleDePAsta.SuspendLayout()
+        Me.PanelBorder_BTNMenu.SuspendLayout()
+        Me.Panel_EnvolveTXT.SuspendLayout()
+        Me.PanelBorderReflesh.SuspendLayout()
+        Me.PanelBackgroundRefresh.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel9
+        'PanelBorder
         '
-        Me.Panel9.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel9.Controls.Add(Me.Panel35)
-        Me.Panel9.Controls.Add(Me.Panel36)
-        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel9.Location = New System.Drawing.Point(0, 0)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Padding = New System.Windows.Forms.Padding(1)
-        Me.Panel9.Size = New System.Drawing.Size(677, 76)
-        Me.Panel9.TabIndex = 18
+        Me.PanelBorder.BackColor = System.Drawing.Color.Gainsboro
+        Me.PanelBorder.Controls.Add(Me.PanelBackgroundAddress)
+        Me.PanelBorder.Controls.Add(Me.PanelBorderReflesh)
+        Me.PanelBorder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBorder.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBorder.Name = "PanelBorder"
+        Me.PanelBorder.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBorder.Size = New System.Drawing.Size(677, 61)
+        Me.PanelBorder.TabIndex = 18
         '
-        'Panel35
+        'PanelBackgroundAddress
         '
-        Me.Panel35.BackColor = System.Drawing.Color.White
-        Me.Panel35.Controls.Add(Me.TextBox3)
-        Me.Panel35.Controls.Add(Me.Button17)
-        Me.Panel35.Controls.Add(Me.Button16)
-        Me.Panel35.Controls.Add(Me.Button15)
-        Me.Panel35.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel35.Location = New System.Drawing.Point(1, 1)
-        Me.Panel35.Name = "Panel35"
-        Me.Panel35.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel35.Size = New System.Drawing.Size(647, 74)
-        Me.Panel35.TabIndex = 8
+        Me.PanelBackgroundAddress.BackColor = System.Drawing.Color.White
+        Me.PanelBackgroundAddress.Controls.Add(Me.PanelAddress)
+        Me.PanelBackgroundAddress.Controls.Add(Me.BTNExpandir)
+        Me.PanelBackgroundAddress.Controls.Add(Me.BTNExpandePrincipal)
+        Me.PanelBackgroundAddress.Controls.Add(Me.BTNPrincipal)
+        Me.PanelBackgroundAddress.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackgroundAddress.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBackgroundAddress.Name = "PanelBackgroundAddress"
+        Me.PanelBackgroundAddress.Size = New System.Drawing.Size(647, 59)
+        Me.PanelBackgroundAddress.TabIndex = 8
+        '
+        'PanelAddress
+        '
+        Me.PanelAddress.Controls.Add(Me.PanelRecebeControlesDePastas)
+        Me.PanelAddress.Controls.Add(Me.Panel_EnvolveTXT)
+        Me.PanelAddress.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelAddress.Location = New System.Drawing.Point(30, 0)
+        Me.PanelAddress.Name = "PanelAddress"
+        Me.PanelAddress.Size = New System.Drawing.Size(602, 59)
+        Me.PanelAddress.TabIndex = 20
+        '
+        'PanelRecebeControlesDePastas
+        '
+        Me.PanelRecebeControlesDePastas.Controls.Add(Me.PanelControleDePasta)
+        Me.PanelRecebeControlesDePastas.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelRecebeControlesDePastas.Location = New System.Drawing.Point(0, 0)
+        Me.PanelRecebeControlesDePastas.Name = "PanelRecebeControlesDePastas"
+        Me.PanelRecebeControlesDePastas.Size = New System.Drawing.Size(602, 59)
+        Me.PanelRecebeControlesDePastas.TabIndex = 19
+        '
+        'PanelControleDePasta
+        '
+        Me.PanelControleDePasta.AutoSize = True
+        Me.PanelControleDePasta.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.PanelControleDePasta.Controls.Add(Me.PanelBackgroundControleDePAsta)
+        Me.PanelControleDePasta.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelControleDePasta.Location = New System.Drawing.Point(0, 0)
+        Me.PanelControleDePasta.Name = "PanelControleDePasta"
+        Me.PanelControleDePasta.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelControleDePasta.Size = New System.Drawing.Size(105, 59)
+        Me.PanelControleDePasta.TabIndex = 0
+        '
+        'PanelBackgroundControleDePAsta
+        '
+        Me.PanelBackgroundControleDePAsta.AutoSize = True
+        Me.PanelBackgroundControleDePAsta.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.PanelBackgroundControleDePAsta.Controls.Add(Me.PanelBorder_BTNMenu)
+        Me.PanelBackgroundControleDePAsta.Controls.Add(Me.BTNLabel)
+        Me.PanelBackgroundControleDePAsta.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackgroundControleDePAsta.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBackgroundControleDePAsta.Name = "PanelBackgroundControleDePAsta"
+        Me.PanelBackgroundControleDePAsta.Size = New System.Drawing.Size(103, 57)
+        Me.PanelBackgroundControleDePAsta.TabIndex = 0
+        '
+        'PanelBorder_BTNMenu
+        '
+        Me.PanelBorder_BTNMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.PanelBorder_BTNMenu.Controls.Add(Me.BTNMenu)
+        Me.PanelBorder_BTNMenu.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelBorder_BTNMenu.Location = New System.Drawing.Point(87, 0)
+        Me.PanelBorder_BTNMenu.Name = "PanelBorder_BTNMenu"
+        Me.PanelBorder_BTNMenu.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
+        Me.PanelBorder_BTNMenu.Size = New System.Drawing.Size(16, 57)
+        Me.PanelBorder_BTNMenu.TabIndex = 0
+        '
+        'BTNMenu
+        '
+        Me.BTNMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.BTNMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNMenu.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNMenu.FlatAppearance.BorderSize = 0
+        Me.BTNMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.BTNMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMenu.Image = CType(resources.GetObject("BTNMenu.Image"), System.Drawing.Image)
+        Me.BTNMenu.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNMenu.Location = New System.Drawing.Point(1, 0)
+        Me.BTNMenu.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNMenu.Name = "BTNMenu"
+        Me.BTNMenu.Size = New System.Drawing.Size(15, 57)
+        Me.BTNMenu.TabIndex = 17
+        Me.BTNMenu.UseVisualStyleBackColor = False
+        '
+        'BTNLabel
+        '
+        Me.BTNLabel.AutoSize = True
+        Me.BTNLabel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.BTNLabel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNLabel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNLabel.FlatAppearance.BorderSize = 0
+        Me.BTNLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BTNLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNLabel.Location = New System.Drawing.Point(0, 0)
+        Me.BTNLabel.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNLabel.Name = "BTNLabel"
+        Me.BTNLabel.Size = New System.Drawing.Size(87, 57)
+        Me.BTNLabel.TabIndex = 19
+        Me.BTNLabel.Text = "Este Computador"
+        Me.BTNLabel.UseVisualStyleBackColor = False
+        '
+        'Panel_EnvolveTXT
+        '
+        Me.Panel_EnvolveTXT.Controls.Add(Me.TextBox3)
+        Me.Panel_EnvolveTXT.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel_EnvolveTXT.Location = New System.Drawing.Point(0, 0)
+        Me.Panel_EnvolveTXT.Name = "Panel_EnvolveTXT"
+        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(602, 59)
+        Me.Panel_EnvolveTXT.TabIndex = 21
         '
         'TextBox3
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox3.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox3.Location = New System.Drawing.Point(33, 3)
+        Me.TextBox3.Location = New System.Drawing.Point(0, 0)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(596, 13)
+        Me.TextBox3.Size = New System.Drawing.Size(602, 13)
         Me.TextBox3.TabIndex = 9
         Me.TextBox3.Text = "Pesquisar"
         '
-        'Button17
+        'BTNExpandir
         '
-        Me.Button17.BackColor = System.Drawing.Color.White
-        Me.Button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button17.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button17.FlatAppearance.BorderSize = 0
-        Me.Button17.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.Button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button17.Image = CType(resources.GetObject("Button17.Image"), System.Drawing.Image)
-        Me.Button17.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button17.Location = New System.Drawing.Point(629, 3)
-        Me.Button17.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(15, 68)
-        Me.Button17.TabIndex = 18
-        Me.Button17.UseVisualStyleBackColor = False
+        Me.BTNExpandir.BackColor = System.Drawing.Color.White
+        Me.BTNExpandir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNExpandir.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BTNExpandir.FlatAppearance.BorderSize = 0
+        Me.BTNExpandir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.BTNExpandir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNExpandir.Image = CType(resources.GetObject("BTNExpandir.Image"), System.Drawing.Image)
+        Me.BTNExpandir.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNExpandir.Location = New System.Drawing.Point(632, 0)
+        Me.BTNExpandir.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNExpandir.Name = "BTNExpandir"
+        Me.BTNExpandir.Size = New System.Drawing.Size(15, 59)
+        Me.BTNExpandir.TabIndex = 18
+        Me.BTNExpandir.UseVisualStyleBackColor = False
         '
-        'Button16
+        'BTNExpandePrincipal
         '
-        Me.Button16.BackColor = System.Drawing.Color.White
-        Me.Button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button16.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button16.FlatAppearance.BorderSize = 0
-        Me.Button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button16.Image = CType(resources.GetObject("Button16.Image"), System.Drawing.Image)
-        Me.Button16.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button16.Location = New System.Drawing.Point(18, 3)
-        Me.Button16.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(15, 68)
-        Me.Button16.TabIndex = 16
-        Me.Button16.UseVisualStyleBackColor = False
+        Me.BTNExpandePrincipal.BackColor = System.Drawing.Color.White
+        Me.BTNExpandePrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNExpandePrincipal.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNExpandePrincipal.FlatAppearance.BorderSize = 0
+        Me.BTNExpandePrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.BTNExpandePrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNExpandePrincipal.Image = CType(resources.GetObject("BTNExpandePrincipal.Image"), System.Drawing.Image)
+        Me.BTNExpandePrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(15, 0)
+        Me.BTNExpandePrincipal.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNExpandePrincipal.Name = "BTNExpandePrincipal"
+        Me.BTNExpandePrincipal.Size = New System.Drawing.Size(15, 59)
+        Me.BTNExpandePrincipal.TabIndex = 16
+        Me.BTNExpandePrincipal.UseVisualStyleBackColor = False
         '
-        'Button15
+        'BTNPrincipal
         '
-        Me.Button15.BackColor = System.Drawing.Color.White
-        Me.Button15.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_1
-        Me.Button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button15.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Button15.FlatAppearance.BorderSize = 0
-        Me.Button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button15.ImageKey = "(nenhum/a)"
-        Me.Button15.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button15.Location = New System.Drawing.Point(3, 3)
-        Me.Button15.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(15, 68)
-        Me.Button15.TabIndex = 15
-        Me.Button15.UseVisualStyleBackColor = False
+        Me.BTNPrincipal.BackColor = System.Drawing.Color.White
+        Me.BTNPrincipal.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.pasta_1
+        Me.BTNPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNPrincipal.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BTNPrincipal.FlatAppearance.BorderSize = 0
+        Me.BTNPrincipal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.BTNPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNPrincipal.ImageKey = "(nenhum/a)"
+        Me.BTNPrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNPrincipal.Location = New System.Drawing.Point(0, 0)
+        Me.BTNPrincipal.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNPrincipal.Name = "BTNPrincipal"
+        Me.BTNPrincipal.Size = New System.Drawing.Size(15, 59)
+        Me.BTNPrincipal.TabIndex = 15
+        Me.BTNPrincipal.UseVisualStyleBackColor = False
         '
-        'Panel36
+        'PanelBorderReflesh
         '
-        Me.Panel36.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel36.Controls.Add(Me.Panel37)
-        Me.Panel36.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel36.Location = New System.Drawing.Point(648, 1)
-        Me.Panel36.Name = "Panel36"
-        Me.Panel36.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
-        Me.Panel36.Size = New System.Drawing.Size(28, 74)
-        Me.Panel36.TabIndex = 21
+        Me.PanelBorderReflesh.BackColor = System.Drawing.Color.Gainsboro
+        Me.PanelBorderReflesh.Controls.Add(Me.PanelBackgroundRefresh)
+        Me.PanelBorderReflesh.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PanelBorderReflesh.Location = New System.Drawing.Point(648, 1)
+        Me.PanelBorderReflesh.Name = "PanelBorderReflesh"
+        Me.PanelBorderReflesh.Padding = New System.Windows.Forms.Padding(1, 0, 0, 0)
+        Me.PanelBorderReflesh.Size = New System.Drawing.Size(28, 59)
+        Me.PanelBorderReflesh.TabIndex = 21
         '
-        'Panel37
+        'PanelBackgroundRefresh
         '
-        Me.Panel37.BackColor = System.Drawing.Color.White
-        Me.Panel37.Controls.Add(Me.Button18)
-        Me.Panel37.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel37.Location = New System.Drawing.Point(1, 0)
-        Me.Panel37.Name = "Panel37"
-        Me.Panel37.Padding = New System.Windows.Forms.Padding(3)
-        Me.Panel37.Size = New System.Drawing.Size(27, 74)
-        Me.Panel37.TabIndex = 8
+        Me.PanelBackgroundRefresh.BackColor = System.Drawing.Color.White
+        Me.PanelBackgroundRefresh.Controls.Add(Me.BTNRefresh)
+        Me.PanelBackgroundRefresh.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PanelBackgroundRefresh.Location = New System.Drawing.Point(1, 0)
+        Me.PanelBackgroundRefresh.Name = "PanelBackgroundRefresh"
+        Me.PanelBackgroundRefresh.Padding = New System.Windows.Forms.Padding(3)
+        Me.PanelBackgroundRefresh.Size = New System.Drawing.Size(27, 59)
+        Me.PanelBackgroundRefresh.TabIndex = 8
         '
-        'Button18
+        'BTNRefresh
         '
-        Me.Button18.BackColor = System.Drawing.Color.White
-        Me.Button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button18.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button18.FlatAppearance.BorderSize = 0
-        Me.Button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
-        Me.Button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button18.Image = CType(resources.GetObject("Button18.Image"), System.Drawing.Image)
-        Me.Button18.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Button18.Location = New System.Drawing.Point(3, 3)
-        Me.Button18.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(21, 68)
-        Me.Button18.TabIndex = 17
-        Me.Button18.UseVisualStyleBackColor = False
+        Me.BTNRefresh.BackColor = System.Drawing.Color.White
+        Me.BTNRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNRefresh.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNRefresh.FlatAppearance.BorderSize = 0
+        Me.BTNRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender
+        Me.BTNRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNRefresh.Image = CType(resources.GetObject("BTNRefresh.Image"), System.Drawing.Image)
+        Me.BTNRefresh.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNRefresh.Location = New System.Drawing.Point(3, 3)
+        Me.BTNRefresh.Margin = New System.Windows.Forms.Padding(0)
+        Me.BTNRefresh.Name = "BTNRefresh"
+        Me.BTNRefresh.Size = New System.Drawing.Size(21, 53)
+        Me.BTNRefresh.TabIndex = 17
+        Me.BTNRefresh.UseVisualStyleBackColor = False
         '
         'Control_AddressBar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Controls.Add(Me.Panel9)
+        Me.Controls.Add(Me.PanelBorder)
         Me.Name = "Control_AddressBar"
-        Me.Size = New System.Drawing.Size(677, 76)
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel35.ResumeLayout(False)
-        Me.Panel35.PerformLayout()
-        Me.Panel36.ResumeLayout(False)
-        Me.Panel37.ResumeLayout(False)
+        Me.Size = New System.Drawing.Size(677, 61)
+        Me.PanelBorder.ResumeLayout(False)
+        Me.PanelBackgroundAddress.ResumeLayout(False)
+        Me.PanelAddress.ResumeLayout(False)
+        Me.PanelRecebeControlesDePastas.ResumeLayout(False)
+        Me.PanelRecebeControlesDePastas.PerformLayout()
+        Me.PanelControleDePasta.ResumeLayout(False)
+        Me.PanelControleDePasta.PerformLayout()
+        Me.PanelBackgroundControleDePAsta.ResumeLayout(False)
+        Me.PanelBackgroundControleDePAsta.PerformLayout()
+        Me.PanelBorder_BTNMenu.ResumeLayout(False)
+        Me.Panel_EnvolveTXT.ResumeLayout(False)
+        Me.Panel_EnvolveTXT.PerformLayout()
+        Me.PanelBorderReflesh.ResumeLayout(False)
+        Me.PanelBackgroundRefresh.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Panel35 As Panel
+    Friend WithEvents PanelBorder As Panel
+    Friend WithEvents PanelBackgroundAddress As Panel
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Panel36 As Panel
-    Friend WithEvents Panel37 As Panel
-    Friend WithEvents Button18 As Button
+    Friend WithEvents BTNExpandir As Button
+    Friend WithEvents BTNExpandePrincipal As Button
+    Friend WithEvents BTNPrincipal As Button
+    Friend WithEvents PanelBorderReflesh As Panel
+    Friend WithEvents PanelBackgroundRefresh As Panel
+    Friend WithEvents BTNRefresh As Button
+    Friend WithEvents Panel_EnvolveTXT As Panel
+    Friend WithEvents PanelAddress As Panel
+    Friend WithEvents PanelRecebeControlesDePastas As Panel
+    Friend WithEvents PanelControleDePasta As Panel
+    Friend WithEvents PanelBackgroundControleDePAsta As Panel
+    Friend WithEvents PanelBorder_BTNMenu As Panel
+    Friend WithEvents BTNMenu As Button
+    Friend WithEvents BTNLabel As Button
 End Class

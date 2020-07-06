@@ -32,6 +32,7 @@ Public Class MainForm
 
     Public _controlSelectFileAndFolderPanel As New ControlSelectFileAndFoldePanel
 
+    Public addressBar As New Control_AddressBar
     ' -------------------------------------------------------
 
 
@@ -203,6 +204,11 @@ Long, lpColorValues As Long) As Long
         Panel_RecebePastaProcesso.Controls.Add(painel_PastaProcesso)
         painel_PastaProcesso.Dock = DockStyle.Fill
         painel_PastaProcesso.Visible = True
+
+        PanelRecebe_AddressBar.Controls.Add(addressBar)
+        addressBar.Dock = DockStyle.Fill
+        addressBar.Visible = True
+
 
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
 

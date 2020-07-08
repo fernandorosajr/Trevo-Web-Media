@@ -271,8 +271,11 @@ Long, lpColorValues As Long) As Long
 
     Sub Painel_Desktop_AfterSelect()
 
+        addressBar.ControlesDePastas.Clear()
+        addressBar.PanelRecebeControlesDePastas.Controls.Clear()
+
         addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
-        'MsgBox(addressBar.SelectedNode.Tag)
+        addressBar.ConferirItensExistentes(addressBar.SelectedNode)
 
     End Sub
 

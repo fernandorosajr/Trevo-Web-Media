@@ -1,4 +1,6 @@
-﻿Public Class Control_ControleDePasta
+﻿Imports System.IO
+
+Public Class Control_ControleDePasta
     Dim texto As String
     Dim number1 As Integer = 0
 
@@ -14,6 +16,74 @@
 
         End Set
     End Property
+
+    Dim _mostrarBTNMenu As Boolean
+    Public Property MostrarBTNMenu As Boolean
+        Get
+            Return _mostrarBTNMenu
+        End Get
+        Set(value As Boolean)
+            _mostrarBTNMenu = value
+            BTNMenu.Parent.Visible = value
+        End Set
+    End Property
+
+    Private _folderInfo As DirectoryInfo
+    Public Property FolderInfo As DirectoryInfo
+        Get
+            Return _folderInfo
+        End Get
+        Set(value As DirectoryInfo)
+            _folderInfo = value
+
+        End Set
+    End Property
+
+    Private _driveInfo As DriveInfo
+    Public Property DriveInfo As DriveInfo
+        Get
+            Return _driveInfo
+        End Get
+        Set(value As DriveInfo)
+            _driveInfo = value
+        End Set
+    End Property
+
+    Private _selectedTreeView As TreeView
+    Public Property SelectedTreeView As TreeView
+        Get
+            Return _selectedTreeView
+
+        End Get
+        Set(value As TreeView)
+            _selectedTreeView = value
+
+        End Set
+    End Property
+
+    Private _selectedNode As TreeNode
+    Public Property SelectedNode As TreeNode
+        Get
+            Return _selectedNode
+        End Get
+
+        Set(value As TreeNode)
+            _selectedNode = value
+
+            Text = value.Text
+
+            If value IsNot Nothing And value.Tag IsNot Nothing Then
+                If TypeOf value.Tag Is String Then
+                    Dim caminho As String = value.Tag
+
+                    _folderInfo = New DirectoryInfo(caminho)
+                    _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
+
+                End If
+            End If
+        End Set
+    End Property
+
 
     ' Propriedades de cores
     ' -----------------------------------------------
@@ -69,34 +139,13 @@
     End Property
     ' -----------------------------------------------
 
-    Private _selectedTreeView As TreeView
-    Public Property SelectedTreeView As TreeView
-        Get
-            Return _selectedTreeView
-
-        End Get
-        Set(value As TreeView)
-            _selectedTreeView = value
-
-        End Set
-    End Property
-
-    Private _selectedNode As TreeNode
-    Public Property SelectedNode As TreeNode
-        Get
-            Return _selectedNode
-        End Get
-
-        Set(value As TreeNode)
-            _selectedNode = value
-        End Set
-    End Property
 
     Public Sub New()
 
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
 
+        ' Adicione qualquer inicialização após a chamada InitializeComponent().
         Me.BackColor = Color.Transparent
 
         _borderColorMouseLeave = Color.Transparent
@@ -116,12 +165,55 @@
         PanelBorder_ControleDePasta.BackColor = _borderColorMouseLeave
 
 
-        ' Adicione qualquer inicialização após a chamada InitializeComponent().
     End Sub
 
     Private Sub Control_ControleDePasta_Load(sender As Object, e As EventArgs) Handles Me.Load
         'BTNLabel.Width = 10
 
+        Try
+            If Me.FolderInfo IsNot Nothing Then
+
+                If Me.FolderInfo.GetDirectories.Length > 0 Then
+                    MostrarBTNMenu = True
+                    CarregarMenuPersonalizado()
+                Else
+                    MostrarBTNMenu = False
+                End If
+
+            End If
+
+        Catch ex As Exception
+            MostrarBTNMenu = True
+        End Try
+
+    End Sub
+
+    'Private Overloads Sub CarregarMenuPersonalizado(DriveInfo As DriveInfo)
+    '    ContextMenuStrip1.Items.Clear()
+
+    '    For Each folder As DirectoryInfo In DriveInfo.GetDirectories
+    '        Dim newMenuItem As New ToolStripMenuItem With {
+    '            .Text = folder.Name,
+    '            .Tag = folder,
+    '            .Image = My.Resources.pasta_1
+    '        }
+
+    '        ContextMenuStrip1.Items.Add(newMenuItem)
+    '    Next
+    'End Sub
+
+    Private Overloads Sub CarregarMenuPersonalizado()
+        ContextMenuStrip1.Items.Clear()
+
+        For Each folder As DirectoryInfo In FolderInfo.GetDirectories
+            Dim newMenuItem As New ToolStripMenuItem With {
+                .Text = folder.Name,
+                .Tag = folder,
+                .Image = My.Resources.pasta_1
+            }
+
+            ContextMenuStrip1.Items.Add(newMenuItem)
+        Next
     End Sub
 
     Private Sub BTNs_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNLabel.MouseMove, BTNMenu.MouseMove
@@ -147,16 +239,8 @@
     End Sub
 
     Private Sub BTNMenu_Click(sender As Object, e As EventArgs) Handles BTNMenu.Click
-        'Dim controleDePasta As New Control_ControleDePasta
-        'Me.Parent.Controls.Add(controleDePasta)
-        'controleDePasta.BTNLabel.Text = number1
-        'controleDePasta.BTNLabel.Width = 1
-        ''Me.Width = 10
-        'controleDePasta.Dock = DockStyle.Right
-        ''controleDePasta.BringToFront()
-        'controleDePasta.Visible = True
+        Dim btn As Button = CType(sender, Button)
 
-        'number1 = number1 + 1
-
+        btn.ContextMenuStrip.Show(btn, -20, btn.Height)
     End Sub
 End Class

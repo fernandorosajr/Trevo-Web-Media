@@ -22,15 +22,20 @@ Partial Class Control_ControleDePasta
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Control_ControleDePasta))
         Me.PanelBorder_ControleDePasta = New System.Windows.Forms.Panel()
         Me.PanelBackgroundControleDePAsta = New System.Windows.Forms.Panel()
         Me.PanelBorder_BTNMenu = New System.Windows.Forms.Panel()
         Me.BTNMenu = New System.Windows.Forms.Button()
         Me.BTNLabel = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_ControleDePasta.SuspendLayout()
         Me.PanelBackgroundControleDePAsta.SuspendLayout()
         Me.PanelBorder_BTNMenu.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelBorder_ControleDePasta
@@ -72,6 +77,7 @@ Partial Class Control_ControleDePasta
         '
         Me.BTNMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.BTNMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNMenu.ContextMenuStrip = Me.ContextMenuStrip1
         Me.BTNMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNMenu.FlatAppearance.BorderSize = 0
         Me.BTNMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
@@ -104,6 +110,41 @@ Partial Class Control_ControleDePasta
         Me.BTNLabel.Text = "Este Computador"
         Me.BTNLabel.UseVisualStyleBackColor = False
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.White
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ItemToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ContextMenuStrip1.ShowCheckMargin = True
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(203, 48)
+        '
+        'ItemToolStripMenuItem
+        '
+        Me.ItemToolStripMenuItem.Name = "ItemToolStripMenuItem"
+        Me.ItemToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.ItemToolStripMenuItem.Text = "Item"
+        '
+        'IMGList
+        '
+        Me.IMGList.ImageStream = CType(resources.GetObject("IMGList.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.IMGList.TransparentColor = System.Drawing.Color.Transparent
+        Me.IMGList.Images.SetKeyName(0, "Desktop")
+        Me.IMGList.Images.SetKeyName(1, "Computador")
+        Me.IMGList.Images.SetKeyName(2, "Imagens")
+        Me.IMGList.Images.SetKeyName(3, "Documentos")
+        Me.IMGList.Images.SetKeyName(4, "Musicas")
+        Me.IMGList.Images.SetKeyName(5, "pastaAberta")
+        Me.IMGList.Images.SetKeyName(6, "pastaFechada")
+        Me.IMGList.Images.SetKeyName(7, "hd")
+        Me.IMGList.Images.SetKeyName(8, "DVD")
+        Me.IMGList.Images.SetKeyName(9, "UnidadeVazia")
+        Me.IMGList.Images.SetKeyName(10, "info")
+        Me.IMGList.Images.SetKeyName(11, "Videos")
+        Me.IMGList.Images.SetKeyName(12, "down")
+        Me.IMGList.Images.SetKeyName(13, "Pen.ico")
+        '
         'Control_ControleDePasta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -117,6 +158,7 @@ Partial Class Control_ControleDePasta
         Me.PanelBackgroundControleDePAsta.ResumeLayout(False)
         Me.PanelBackgroundControleDePAsta.PerformLayout()
         Me.PanelBorder_BTNMenu.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -127,4 +169,7 @@ Partial Class Control_ControleDePasta
     Friend WithEvents PanelBorder_BTNMenu As Panel
     Friend WithEvents BTNMenu As Button
     Friend WithEvents BTNLabel As Button
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents ItemToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IMGList As ImageList
 End Class

@@ -141,6 +141,8 @@ Public Class ControlPainel_Desktop
 
     Private Sub TVWFilesAndFolders_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles TVWFilesAndFolders.AfterSelect
 
+        ' TODO: Descobrir porque que quando seleciona um node parent...
+        ' ...não executa o AfterSelect.  
         Dim tsNode As TreeNode
 
         tsNode = TVWFilesAndFolders.SelectedNode

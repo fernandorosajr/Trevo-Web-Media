@@ -13,10 +13,18 @@
         Set(value As TreeNode)
 
             _selectedNode = value
-            AdicionarAtualizarSequenciaDeItems(value)
+            'AdicionarAtualizarSequenciaDeItems(value)
+            AtualizarSequenciaDeItens(value)
+            'ModificarLista()
+
         End Set
     End Property
 
+    Sub ModificarLista()
+        For Each item As Control_ControleDePasta In ControlesDePastas
+            item.Text = "Teste"
+        Next
+    End Sub
 
     Public Sub New()
 
@@ -30,6 +38,103 @@
 
     Private Sub Control_AddressBar_Load(sender As Object, e As EventArgs) Handles Me.Load
         'AdicionarUmItem()
+
+    End Sub
+
+    Public Overloads Sub AtualizarSequenciaDeItens(node As TreeNode)
+
+        Dim nivel As Integer = node.Level
+        Dim controleDePasta As Control_ControleDePasta
+        Dim parentNode As TreeNode = node.Parent
+
+        Dim nivelDosItens As Integer = PanelRecebeControlesDePastas.Controls.Count - 1
+        Dim nivelDoNodo As Integer = node.Level
+
+        If nivelDosItens < 0 Then
+            AdicionarAtualizarSequenciaDeItems(node)
+
+        ElseIf nivelDoNodo > nivelDosItens Then
+            controleDePasta = AdicionarUmItem(node)
+            controleDePasta.BringToFront()
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+        ElseIf nivelDoNodo = nivelDosItens Then
+            'ControlesDePastas
+            controleDePasta = ControlesDePastas(nivelDoNodo)
+
+            If controleDePasta.SelectedNode.Name <> node.Name Then
+                controleDePasta.SelectedNode.Name = node.Name
+                ' TODO: Atualizar ControlesDePastas
+            End If
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+
+        ElseIf nivelDoNodo < nivelDosItens Then
+
+            For x = 0 To PanelRecebeControlesDePastas.Controls.Count - 1
+
+                controleDePasta = PanelRecebeControlesDePastas.Controls(x)
+
+                If controleDePasta.SelectedNode.Level < nivelDoNodo Then
+                    PanelRecebeControlesDePastas.Controls.Remove(controleDePasta)
+                    ControlesDePastas.Remove(controleDePasta)
+                End If
+
+            Next
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+        End If
+
+
+
+
+    End Sub
+
+    Public Overloads Sub AtualizarSequenciaDeItens(node As TreeNode, nivel As Integer)
+
+        Dim controleDePasta As Control_ControleDePasta
+        Dim parentNode As TreeNode = node.Parent
+
+        Dim nivelDosItens As Integer = PanelRecebeControlesDePastas.Controls.Count - 1
+        Dim nivelDoNodo As Integer = node.Level
+
+        If nivelDosItens < 0 Then
+            AdicionarAtualizarSequenciaDeItems(node)
+
+        ElseIf nivelDoNodo > nivelDosItens Then
+            controleDePasta = AdicionarUmItem(node)
+            controleDePasta.BringToFront()
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+        ElseIf nivelDoNodo = nivelDosItens Then
+            'ControlesDePastas
+            controleDePasta = ControlesDePastas(nivelDoNodo)
+
+            If controleDePasta.SelectedNode.Name <> node.Name Then
+                controleDePasta.SelectedNode.Name = node.Name
+                ' TODO: Atualizar ControlesDePastas
+            End If
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+
+        ElseIf nivelDoNodo < nivelDosItens Then
+
+            For x = 0 To PanelRecebeControlesDePastas.Controls.Count - 1
+
+                controleDePasta = PanelRecebeControlesDePastas.Controls(x)
+
+                If controleDePasta.SelectedNode.Level > nivelDoNodo Then
+                    If nivel = nivelDoNodo Then
+                        PanelRecebeControlesDePastas.Controls.Remove(controleDePasta)
+                        ControlesDePastas.Remove(controleDePasta)
+                    End If
+                End If
+
+            Next
+
+            AtualizarSequenciaDeItens(parentNode, nivel)
+        End If
+
 
     End Sub
 
@@ -52,35 +157,38 @@
         Next
     End Sub
 
-    Public Overloads Sub AdicionarUmItem()
+    Public Overloads Function AdicionarUmItem()
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = New TreeNode(defaultText)
         }
 
         ' .Text = defaultText,
+
         controleDePasta.SelectedNode.Tag = controleDePasta.Text
 
         ControlesDePastas.Add(controleDePasta)
         PanelRecebeControlesDePastas.Controls.Add(controleDePasta)
 
         controleDePasta.Visible = True
-    End Sub
 
+        Return controleDePasta
+    End Function
 
-
-    Public Overloads Sub AdicionarUmItem(node As TreeNode)
+    Public Overloads Function AdicionarUmItem(node As TreeNode)
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = node
         }
+
         ' .Text = node.Text,
 
-
-
-        ControlesDePastas.Add(controleDePasta)
+        'ControlesDePastas.Add(controleDePasta)
         PanelRecebeControlesDePastas.Controls.Add(controleDePasta)
+        ControlesDePastas.Insert(0, controleDePasta)
 
         controleDePasta.Visible = True
-    End Sub
+
+        Return controleDePasta
+    End Function
 End Class

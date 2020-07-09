@@ -271,8 +271,8 @@ Long, lpColorValues As Long) As Long
 
     Sub Painel_Desktop_AfterSelect()
 
-        addressBar.ControlesDePastas.Clear()
-        addressBar.PanelRecebeControlesDePastas.Controls.Clear()
+        'addressBar.ControlesDePastas.Clear()
+        'addressBar.PanelRecebeControlesDePastas.Controls.Clear()
 
         addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
         addressBar.ConferirItensExistentes(addressBar.SelectedNode)

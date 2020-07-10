@@ -78,6 +78,8 @@ Public Class Control_ControleDePasta
 
                     _folderInfo = New DirectoryInfo(caminho)
                     _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
+                    CarregarMenuPersonalizado()
+
 
                 End If
             End If
@@ -203,17 +205,24 @@ Public Class Control_ControleDePasta
     'End Sub
 
     Private Overloads Sub CarregarMenuPersonalizado()
-        ContextMenuStrip1.Items.Clear()
 
-        For Each folder As DirectoryInfo In FolderInfo.GetDirectories
-            Dim newMenuItem As New ToolStripMenuItem With {
-                .Text = folder.Name,
-                .Tag = folder,
-                .Image = My.Resources.pasta_1
-            }
+        Try
+            ContextMenuStrip1.Items.Clear()
 
-            ContextMenuStrip1.Items.Add(newMenuItem)
-        Next
+            For Each folder As DirectoryInfo In _folderInfo.GetDirectories
+                Dim newMenuItem As New ToolStripMenuItem With {
+                    .Text = folder.Name,
+                    .Tag = folder,
+                    .Image = My.Resources.pasta_1
+                }
+
+                ContextMenuStrip1.Items.Add(newMenuItem)
+            Next
+        Catch ex As Exception
+            ContextMenuStrip1.Items.Clear()
+            MsgBox(ex.Message)
+        End Try
+
     End Sub
 
     Private Sub BTNs_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNLabel.MouseMove, BTNMenu.MouseMove

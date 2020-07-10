@@ -275,7 +275,6 @@ Long, lpColorValues As Long) As Long
         'addressBar.PanelRecebeControlesDePastas.Controls.Clear()
 
         addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
-        addressBar.ConferirItensExistentes(addressBar.SelectedNode)
 
     End Sub
 
@@ -677,7 +676,7 @@ Long, lpColorValues As Long) As Long
     Private Sub RBBiblioteca_CheckedChanged_1(sender As Object, e As EventArgs)
 
     End Sub
-
+    'TODO: Remove isto.
     Private Sub PanelRecebe_Paint(sender As Object, e As PaintEventArgs) Handles PanelRecebe.Paint
 
     End Sub

@@ -1,8 +1,6 @@
 ﻿Public Class ControlPainel_Atividades
     Dim Item_Infor As New Control_Infor
-    Private Sub PanelLoad_ControlInfor_Paint(sender As Object, e As PaintEventArgs) Handles PanelLoad_ControlInfor.Paint
 
-    End Sub
 
     Private Sub ControlPainel_Atividades_Load(sender As Object, e As EventArgs) Handles Me.Load
         For x = 0 To 5

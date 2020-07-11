@@ -271,9 +271,6 @@ Long, lpColorValues As Long) As Long
 
     Sub Painel_Desktop_AfterSelect()
 
-        'addressBar.ControlesDePastas.Clear()
-        'addressBar.PanelRecebeControlesDePastas.Controls.Clear()
-
         addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
 
     End Sub
@@ -286,20 +283,21 @@ Long, lpColorValues As Long) As Long
     End Function
 
     Private Sub ClickingMouseRedim()
+
         me_w = Me.Width
         me_h = Me.Height
         me_redim = True
+
     End Sub
+
     Private Sub PanelMDir_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseDown
         Call ClickingMouseRedim()
-
 
     End Sub
 
     Private Sub PanelMDir_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseMove
         If me_redim Then
             Me.Width = Me.Size.Width + e.X
-
         End If
 
     End Sub
@@ -642,18 +640,9 @@ Long, lpColorValues As Long) As Long
         PanelSkin.Visible = RBTNSkin.Checked
     End Sub
 
-    Private Sub ControlInterruptor1_Load(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub BTNMenu01_Click(sender As Object, e As EventArgs) Handles BTNMenu01.Click
 
-
-
-        'CTMenuVisualizacao.Top = Int(pMouse.Y)  ' + BTNMenu01.Height
-        'CTMenuVisualizacao.Left = Int(pMouse.X)
-        CTMenuVisualizacao.Show(BTNMenu01, 0, BTNMenu01.Height) '(pMouse)
-
+        CTMenuVisualizacao.Show(BTNMenu01, 0, BTNMenu01.Height)
 
     End Sub
 

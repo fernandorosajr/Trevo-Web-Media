@@ -69,20 +69,23 @@
 
         ElseIf qAddressBar > node.Level Then
             ' Remove e atualiza itens 
-
+            Dim ControlesDePastasParaExcluir As New List(Of Control_ControleDePasta)
             For x = 0 To qAddressBar
                 If x > node.Level Then
-                    ' TODO : Pode criar uma função para remover itens
-                    Dim controleDePasta As Control_ControleDePasta
-                    controleDePasta = ControlesDePastas(x) 'PanelRecebeControlesDePastas.Controls.Item(x)
 
-                    PanelRecebeControlesDePastas.Controls.Remove(controleDePasta)
-                    ControlesDePastas.Remove(controleDePasta)
+                    ' TODO : Pode criar uma função para remover itens
+
+                    ControlesDePastasParaExcluir.Add(ControlesDePastas(x))
 
                 Else
                     AtualizarItensExistentes(node)
 
                 End If
+            Next
+
+            For Each controleDePasta In ControlesDePastasParaExcluir
+                PanelRecebeControlesDePastas.Controls.Remove(controleDePasta)
+                ControlesDePastas.Remove(controleDePasta)
             Next
 
         ElseIf qAddressBar < node.Level Then

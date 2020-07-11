@@ -4,6 +4,18 @@
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
+    Private _selectedTreeView As TreeView
+    Public Property SelectedTreeView As TreeView
+        Get
+            Return _selectedTreeView
+
+        End Get
+        Set(value As TreeView)
+            _selectedTreeView = value
+
+        End Set
+    End Property
+
     Private _selectedNode As TreeNode
     Public Property SelectedNode As TreeNode
         Get
@@ -13,18 +25,16 @@
         Set(value As TreeNode)
 
             _selectedNode = value
-            'AdicionarAtualizarSequenciaDeItems(value)
+
             AtualizarSequenciaDeItens(value)
-            'ModificarLista()
+
+            If value.TreeView IsNot Nothing Then
+                _selectedTreeView = value.TreeView
+            End If
 
         End Set
     End Property
 
-    Sub ModificarLista()
-        For Each item As Control_ControleDePasta In ControlesDePastas
-            item.Text = "Teste"
-        Next
-    End Sub
 
     Public Sub New()
 
@@ -161,7 +171,8 @@
     Public Overloads Function AdicionarUmItem()
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
-            .SelectedNode = New TreeNode(defaultText)
+            .SelectedNode = New TreeNode(defaultText),
+            .AddressBar = Me
         }
 
         ' .Text = defaultText,
@@ -180,7 +191,8 @@
     Public Overloads Function AdicionarUmItem(node As TreeNode, pos As Integer)
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
-            .SelectedNode = node
+            .SelectedNode = node,
+             .AddressBar = Me
         }
 
         ' .Text = node.Text,
@@ -197,7 +209,8 @@
     Public Overloads Function AdicionarUmItem(node As TreeNode)
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
-            .SelectedNode = node
+            .SelectedNode = node,
+             .AddressBar = Me
         }
 
         ' .Text = node.Text,

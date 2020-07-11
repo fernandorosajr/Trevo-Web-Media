@@ -28,9 +28,9 @@ Partial Class Control_ControleDePasta
         Me.PanelBackgroundControleDePAsta = New System.Windows.Forms.Panel()
         Me.PanelBorder_BTNMenu = New System.Windows.Forms.Panel()
         Me.BTNMenu = New System.Windows.Forms.Button()
-        Me.BTNLabel = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BTNLabel = New System.Windows.Forms.Button()
         Me.IMGList = New System.Windows.Forms.ImageList(Me.components)
         Me.PanelBorder_ControleDePasta.SuspendLayout()
         Me.PanelBackgroundControleDePAsta.SuspendLayout()
@@ -91,6 +91,22 @@ Partial Class Control_ControleDePasta
         Me.BTNMenu.TabIndex = 17
         Me.BTNMenu.UseVisualStyleBackColor = False
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.White
+        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ItemToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.ContextMenuStrip1.ShowCheckMargin = True
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(203, 48)
+        '
+        'ItemToolStripMenuItem
+        '
+        Me.ItemToolStripMenuItem.Name = "ItemToolStripMenuItem"
+        Me.ItemToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
+        Me.ItemToolStripMenuItem.Text = "Item"
+        '
         'BTNLabel
         '
         Me.BTNLabel.AutoSize = True
@@ -109,22 +125,6 @@ Partial Class Control_ControleDePasta
         Me.BTNLabel.TabIndex = 19
         Me.BTNLabel.Text = "Este Computador"
         Me.BTNLabel.UseVisualStyleBackColor = False
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.White
-        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ItemToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ContextMenuStrip1.ShowCheckMargin = True
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(203, 48)
-        '
-        'ItemToolStripMenuItem
-        '
-        Me.ItemToolStripMenuItem.Name = "ItemToolStripMenuItem"
-        Me.ItemToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
-        Me.ItemToolStripMenuItem.Text = "Item"
         '
         'IMGList
         '

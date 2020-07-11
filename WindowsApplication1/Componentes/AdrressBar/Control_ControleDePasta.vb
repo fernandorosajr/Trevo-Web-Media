@@ -4,6 +4,17 @@ Public Class Control_ControleDePasta
     Dim texto As String
     Dim number1 As Integer = 0
 
+    Private _addressBar As Control_AddressBar
+    Public Property AddressBar As Control_AddressBar
+        Get
+            Return _addressBar
+        End Get
+        Set(value As Control_AddressBar)
+            _addressBar = value
+
+        End Set
+    End Property
+
     Private _text As String
     Public Overrides Property Text As String
         Get
@@ -80,7 +91,10 @@ Public Class Control_ControleDePasta
                     _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
                     CarregarMenuPersonalizado()
 
+                End If
 
+                If value.TreeView IsNot Nothing Then
+                    _selectedTreeView = value.TreeView
                 End If
             End If
         End Set
@@ -172,58 +186,100 @@ Public Class Control_ControleDePasta
     Private Sub Control_ControleDePasta_Load(sender As Object, e As EventArgs) Handles Me.Load
         'BTNLabel.Width = 10
 
-        Try
-            If Me.FolderInfo IsNot Nothing Then
-
-                If Me.FolderInfo.GetDirectories.Length > 0 Then
-                    MostrarBTNMenu = True
-                    CarregarMenuPersonalizado()
-                Else
-                    MostrarBTNMenu = False
-                End If
-
-            End If
-
-        Catch ex As Exception
-            MostrarBTNMenu = True
-        End Try
+        MostrarBTNMenu = CarregarMenuPersonalizado()
 
     End Sub
 
-    'Private Overloads Sub CarregarMenuPersonalizado(DriveInfo As DriveInfo)
-    '    ContextMenuStrip1.Items.Clear()
+    Function NewSubMenuItem_Clicked(sender As Object, e As EventArgs)
+        Dim subMenu As ToolStripMenuItem
+        subMenu = CType(sender, ToolStripMenuItem)
+        AddressBar.SelectedNode = subMenu.Tag
 
-    '    For Each folder As DirectoryInfo In DriveInfo.GetDirectories
-    '        Dim newMenuItem As New ToolStripMenuItem With {
-    '            .Text = folder.Name,
-    '            .Tag = folder,
-    '            .Image = My.Resources.pasta_1
-    '        }
+        SelectSubMenu(subMenu)
 
-    '        ContextMenuStrip1.Items.Add(newMenuItem)
-    '    Next
-    'End Sub
 
-    Private Overloads Sub CarregarMenuPersonalizado()
+    End Function
 
+    Sub SelectSubMenu(subMenu As ToolStripMenuItem)
+
+        For Each item As ToolStripMenuItem In ContextMenuStrip1.Items
+            If item Is subMenu Then
+                item.Checked = True
+
+            Else
+                item.Checked = False
+            End If
+            'MsgBox(item.Tag.Text)
+            'MsgBox(item.Name)
+            'MsgBox(item.Tag.fullPath)
+        Next
+
+    End Sub
+
+    Private Overloads Function CarregarMenuPersonalizado() As Boolean
+        Dim mostrarBotaoDeNMenu As Boolean
         Try
             ContextMenuStrip1.Items.Clear()
 
-            For Each folder As DirectoryInfo In _folderInfo.GetDirectories
-                Dim newMenuItem As New ToolStripMenuItem With {
-                    .Text = folder.Name,
-                    .Tag = folder,
-                    .Image = My.Resources.pasta_1
-                }
+            For Each child As TreeNode In _selectedNode.Nodes
 
-                ContextMenuStrip1.Items.Add(newMenuItem)
+                MsgBox(child.Name)
+                ' TODO: Se Name = execao entao ?
+                ' = carregando
+
+                Dim newSubMenuItem As New ToolStripMenuItem With {
+                     .Text = child.Text,
+                     .Tag = child, 'New DirectoryInfo(child.Tag),
+                     .Image = My.Resources.pasta_1
+                 }
+
+                AddHandler newSubMenuItem.Click, New System.EventHandler(AddressOf NewSubMenuItem_Clicked)
+
+                If child.Name <> "carregando" Then ContextMenuStrip1.Items.Add(newSubMenuItem)
             Next
+
+            If _selectedNode.Nodes.Count > 0 Then
+                mostrarBotaoDeNMenu = True
+
+            Else
+                mostrarBotaoDeNMenu = False
+            End If
+
+            Return mostrarBotaoDeNMenu
+
+            'If _folderInfo.Exists = True Then
+            '    For Each folder As DirectoryInfo In _folderInfo.GetDirectories
+            '        Dim newMenuItem As New ToolStripMenuItem With {
+            '            .Text = folder.Name,
+            '            .Tag = folder,
+            '            .Image = My.Resources.pasta_1
+            '        }
+
+            '        ContextMenuStrip1.Items.Add(newMenuItem)
+            '    Next
+
+            'ElseIf _folderInfo.Exists = False Then
+            '    For Each child As TreeNode In _selectedNode.Nodes
+
+            '        Dim newMenuItem As New ToolStripMenuItem With {
+            '         .Text = child.Text,
+            '         .Tag = New DirectoryInfo(child.Tag),
+            '         .Image = My.Resources.pasta_1
+            '     }
+
+            '        ContextMenuStrip1.Items.Add(newMenuItem)
+            '    Next
+            'End If
+
         Catch ex As Exception
             ContextMenuStrip1.Items.Clear()
             MsgBox(ex.Message)
+
+            Return False
+
         End Try
 
-    End Sub
+    End Function
 
     Private Sub BTNs_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNLabel.MouseMove, BTNMenu.MouseMove
 
@@ -252,4 +308,5 @@ Public Class Control_ControleDePasta
 
         btn.ContextMenuStrip.Show(btn, -20, btn.Height)
     End Sub
+
 End Class

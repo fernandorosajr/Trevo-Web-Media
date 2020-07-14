@@ -4,6 +4,7 @@
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
+
     Private _selectedTreeView As TreeView
     Public Property SelectedTreeView As TreeView
         Get
@@ -26,11 +27,13 @@
 
             _selectedNode = value
 
-            AtualizarSequenciaDeItens(value)
-
             If value.TreeView IsNot Nothing Then
                 _selectedTreeView = value.TreeView
+                _selectedTreeView.SelectedNode = value
+
             End If
+            AtualizarSequenciaDeItens(value)
+
 
         End Set
     End Property
@@ -63,7 +66,8 @@
             parentNode = node.Parent
             AtualizarItensExistentes(parentNode)
         End If
-
+        'TODO: Talvez funcione se atualizar a sequencia de menu tb aqui.
+        ' Onde está sendo atualizada a sequencia de menu?
     End Sub
 
     Public Overloads Sub AtualizarSequenciaDeItens(node As TreeNode)
@@ -82,8 +86,6 @@
             Dim ControlesDePastasParaExcluir As New List(Of Control_ControleDePasta)
             For x = 0 To qAddressBar
                 If x > node.Level Then
-
-                    ' TODO : Pode criar uma função para remover itens
 
                     ControlesDePastasParaExcluir.Add(ControlesDePastas(x))
 
@@ -117,7 +119,9 @@
 
                 Else
                     controleDePasta = AdicionarUmItem(nodeParentList(x))
+                    If x - 1 >= 0 Then   controleDePasta.Master = ControlesDePastas(x - 1)
                     controleDePasta.BringToFront()
+
                 End If
             Next
 
@@ -153,18 +157,20 @@
 
 
 
-    Public Sub CriarSequenciaDeItems(node As TreeNode)
+    Public Function CriarSequenciaDeItems(node As TreeNode)
 
+        Dim item As Control_ControleDePasta
         Dim parentNode As TreeNode
-        AdicionarUmItem(node, 0)
+        item = AdicionarUmItem(node, 0)
 
         If node.Parent IsNot Nothing Then
             parentNode = node.Parent
-            CriarSequenciaDeItems(parentNode)
+            item.Master = CriarSequenciaDeItems(parentNode)
 
         End If
 
-    End Sub
+        Return item
+    End Function
 
 
 
@@ -192,7 +198,8 @@
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = node,
-             .AddressBar = Me
+            .AddressBar = Me,
+            .Level = node.Level
         }
 
         ' .Text = node.Text,

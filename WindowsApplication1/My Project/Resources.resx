@@ -217,8 +217,8 @@
   <data name="filter35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\filter35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Imagem sem título" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Imagem sem título.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,9 +253,6 @@
   <data name="pastaprocesso01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pastaprocesso01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="seta para baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\seta para baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="menu3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu3.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -274,9 +271,6 @@
   <data name="dvd_face6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dvd_face6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nivel acima" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nivel acima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="processoRenomearGrupo04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\processoRenomearGrupo04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -286,11 +280,14 @@
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arquivo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arquivo1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="seta para baixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seta para baixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grupoTipoExclusao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grupo024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listFluxoIniciodeterminadoParaItemESubIntem35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listFluxoIniciodeterminadoParaItemESubIntem35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RodarDireita" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RodarDireita.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,8 +310,8 @@
   <data name="pasta-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pasta-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Imagem sem título" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Imagem sem título.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nivel acima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nivel acima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="select" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\select.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -325,8 +322,14 @@
   <data name="AgruparExibicao02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AgruparExibicao02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Estrelaoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Estrelaoff.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pasta-Aberta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pasta-Aberta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="colar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\colar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,9 +361,6 @@
   <data name="NovoProcessoMover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NovoProcessoMover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="processo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\processo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="selection_cursor01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\selection_cursor01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -378,9 +378,6 @@
   </data>
   <data name="NovaPasta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NovaPasta.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu2.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -487,6 +484,9 @@
   <data name="addi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\addi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="arquivo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arquivo1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="processoRenomearGrupo02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\processoRenomearGrupo02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -514,8 +514,8 @@
   <data name="avancar inativo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avancar inativo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Estrelaoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Estrelaoff.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="processo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\processo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="information (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -601,8 +601,8 @@
   <data name="imageres_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\imageres_4.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menuDefault_min_17x17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menuDefault_min_17x17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="renomearEmLote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renomearEmLote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="seta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -636,6 +636,9 @@
   </data>
   <data name="exibirNomeDoArquivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exibirNomeDoArquivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restaurar branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restaurar branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="editar item4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editar item4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -681,6 +684,9 @@
   </data>
   <data name="sinalizadaVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sinalizadaVerde.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setaQuebradaParaDireita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setaQuebradaParaDireita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="abort" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -730,8 +736,8 @@
   <data name="NovoProcessoCopiar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NovoProcessoCopiar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="renomearEmLote" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\renomearEmLote.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pastaProcesso35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pastaProcesso35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -742,10 +748,10 @@
   <data name="grupo022" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grupo022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Restaurar branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Restaurar branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuDefault_min_17x17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuDefault_min_17x17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="listFluxoIniciodeterminadoParaItemESubIntem35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listFluxoIniciodeterminadoParaItemESubIntem35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="setaQuebradaParaBaixo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setaQuebradaParaBaixo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

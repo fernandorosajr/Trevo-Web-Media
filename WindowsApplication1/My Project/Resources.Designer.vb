@@ -1963,6 +1963,26 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property setaQuebradaParaBaixo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("setaQuebradaParaBaixo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property setaQuebradaParaDireita() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("setaQuebradaParaDireita", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property sinalizada() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("sinalizada", resourceCulture)

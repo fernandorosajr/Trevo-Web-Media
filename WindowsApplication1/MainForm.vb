@@ -271,8 +271,9 @@ Long, lpColorValues As Long) As Long
 
     Sub Painel_Desktop_AfterSelect()
 
-        addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
-
+        If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
+            addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
+        End If
     End Sub
 
     Public Function AdicionarItemNoView(Drive As DriveInfo, Numero As Integer)

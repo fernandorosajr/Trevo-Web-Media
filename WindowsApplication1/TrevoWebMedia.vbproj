@@ -899,6 +899,8 @@
     <None Include="Resources\sinalizadaVerde.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\setaQuebradaParaBaixo.png" />
+    <None Include="Resources\setaQuebradaParaDireita.png" />
     <None Include="Resources\listFluxoIniciodeterminadoParaItemESubIntem35.png" />
     <None Include="Resources\listReiniciarNoSubItem35.png" />
     <None Include="Resources\listFluxoContinuo35.png" />

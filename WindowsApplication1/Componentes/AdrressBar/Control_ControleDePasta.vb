@@ -4,6 +4,47 @@ Public Class Control_ControleDePasta
     Dim texto As String
     Dim number1 As Integer = 0
 
+    Private _master As Control_ControleDePasta
+    Public Property Master As Control_ControleDePasta
+        Get
+            Return _master
+        End Get
+        Set(value As Control_ControleDePasta)
+            _master = value
+
+            If _master.Slave IsNot Me Then
+                _master.Slave = Me
+            End If
+
+        End Set
+    End Property
+
+    Private _slave As Control_ControleDePasta
+    Public Property Slave As Control_ControleDePasta
+        Get
+            Return _slave
+        End Get
+        Set(value As Control_ControleDePasta)
+            _slave = value
+
+            If _slave.Master IsNot Me Then
+                _slave.Master = Me
+
+            End If
+        End Set
+    End Property
+
+    Private _level As Integer
+    Public Property Level As Integer
+        Get
+            Return _level
+
+        End Get
+        Set(value As Integer)
+            _level = value
+        End Set
+    End Property
+
     Private _addressBar As Control_AddressBar
     Public Property AddressBar As Control_AddressBar
         Get
@@ -89,7 +130,8 @@ Public Class Control_ControleDePasta
 
                     _folderInfo = New DirectoryInfo(caminho)
                     _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
-                    CarregarMenuPersonalizado()
+                    MostrarBTNMenu = CarregarMenuPersonalizado()
+                    'CarregarMenuPersonalizado()
 
                 End If
 
@@ -186,16 +228,27 @@ Public Class Control_ControleDePasta
     Private Sub Control_ControleDePasta_Load(sender As Object, e As EventArgs) Handles Me.Load
         'BTNLabel.Width = 10
 
+
         MostrarBTNMenu = CarregarMenuPersonalizado()
 
     End Sub
 
     Function NewSubMenuItem_Clicked(sender As Object, e As EventArgs)
         Dim subMenu As ToolStripMenuItem
+
         subMenu = CType(sender, ToolStripMenuItem)
-        AddressBar.SelectedNode = subMenu.Tag
+
+        Dim node As TreeNode = subMenu.Tag
+
+        AddressBar.SelectedNode = node
+
+        'If node.Parent Is Nothing Then
+        '    MostrarBTNMenu = CarregarMenuPersonalizado()
+        'End If
 
         SelectSubMenu(subMenu)
+
+        BTNMenu.Image = My.Resources.setaQuebradaParaDireita
 
 
     End Function
@@ -218,15 +271,27 @@ Public Class Control_ControleDePasta
 
     Private Overloads Function CarregarMenuPersonalizado() As Boolean
         Dim mostrarBotaoDeNMenu As Boolean
+        Dim recarregar As Boolean = False
+        Dim child As TreeNode
+
+        'AddressBar.SelectedNode = SelectedNode
+
         Try
+
             ContextMenuStrip1.Items.Clear()
+            For Each child In _selectedNode.Nodes
+                If child.Name = "carregando" Then
+                    SelectedTreeView.SelectedNode = child.Parent
+                    mostrarBotaoDeNMenu = False
+                    Exit Function
+                End If
 
-            For Each child As TreeNode In _selectedNode.Nodes
-
-                MsgBox(child.Name)
+                'MsgBox(child.Name)
                 ' TODO: Se Name = execao entao ?
                 ' = carregando
-
+                If child.Level = 0 Then
+                    MsgBox(child.Name)
+                End If
                 Dim newSubMenuItem As New ToolStripMenuItem With {
                      .Text = child.Text,
                      .Tag = child, 'New DirectoryInfo(child.Tag),
@@ -235,8 +300,18 @@ Public Class Control_ControleDePasta
 
                 AddHandler newSubMenuItem.Click, New System.EventHandler(AddressOf NewSubMenuItem_Clicked)
 
-                If child.Name <> "carregando" Then ContextMenuStrip1.Items.Add(newSubMenuItem)
+                ContextMenuStrip1.Items.Add(newSubMenuItem)
+
+                'If child.Name = "carregando" Then
+                '    'ContextMenuStrip1.Items.Add(newSubMenuItem)
+                '    recarregar = True
+                '    Exit For
+                'Else
+                '    ContextMenuStrip1.Items.Add(newSubMenuItem)
+                'End If
             Next
+
+            'If recarregar = True Then child.TreeView.SelectedNode = child.Parent
 
             If _selectedNode.Nodes.Count > 0 Then
                 mostrarBotaoDeNMenu = True
@@ -300,13 +375,28 @@ Public Class Control_ControleDePasta
     End Sub
 
     Private Sub BTNLabel_Click(sender As Object, e As EventArgs) Handles BTNLabel.Click
-
+        If SelectedNode.TreeView IsNot Nothing Then
+            SelectedNode.TreeView.SelectedNode = SelectedNode
+        End If
     End Sub
 
     Private Sub BTNMenu_Click(sender As Object, e As EventArgs) Handles BTNMenu.Click
-        Dim btn As Button = CType(sender, Button)
 
+        Me.ParentForm.UseWaitCursor = True
+        MostrarBTNMenu = CarregarMenuPersonalizado()
+
+        Dim btn As Button = CType(sender, Button)
         btn.ContextMenuStrip.Show(btn, -20, btn.Height)
+        BTNMenu.Image = My.Resources.setaQuebradaParaBaixo
+
+        'If node.Parent Is Nothing Then
+        'End If
+
+        Me.ParentForm.UseWaitCursor = False
+
     End Sub
 
+    Private Sub ContextMenuStrip1_Closed(sender As Object, e As ToolStripDropDownClosedEventArgs) Handles ContextMenuStrip1.Closed
+        BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+    End Sub
 End Class

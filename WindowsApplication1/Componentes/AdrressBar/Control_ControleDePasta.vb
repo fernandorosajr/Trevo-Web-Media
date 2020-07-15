@@ -4,6 +4,51 @@ Public Class Control_ControleDePasta
     Dim texto As String
     Dim number1 As Integer = 0
 
+    Public Enum styleEnum
+        _Default = 0
+        OnlyImage = 1
+        ImageAndText = 2
+    End Enum
+
+    Private _style As styleEnum
+    Public Property Style As styleEnum
+        Get
+            Return _style
+
+        End Get
+        Set(value As styleEnum)
+            _style = value
+
+            Select Case value
+                Case _style._Default
+                    BTNLabel.Visible = True
+                    BTNImage.Visible = False
+
+                Case _style.OnlyImage
+                    BTNLabel.Visible = False
+                    BTNImage.Visible = True
+
+                Case _style.ImageAndText
+                    BTNLabel.Visible = True
+                    BTNImage.Visible = True
+
+            End Select
+
+        End Set
+    End Property
+
+    Private _image As Image
+    Public Property Image As Image
+        Get
+            Return _image
+
+        End Get
+        Set(value As Image)
+            _image = value
+
+        End Set
+    End Property
+
     Private _master As Control_ControleDePasta
     Public Property Master As Control_ControleDePasta
         Get
@@ -12,8 +57,10 @@ Public Class Control_ControleDePasta
         Set(value As Control_ControleDePasta)
             _master = value
 
-            If _master.Slave IsNot Me Then
-                _master.Slave = Me
+            If _master IsNot Nothing Then
+                If _master.Slave IsNot Me Then
+                    _master.Slave = Me
+                End If
             End If
 
         End Set
@@ -27,10 +74,14 @@ Public Class Control_ControleDePasta
         Set(value As Control_ControleDePasta)
             _slave = value
 
-            If _slave.Master IsNot Me Then
-                _slave.Master = Me
+            If _slave IsNot Nothing Then
 
+                If _slave.Master IsNot Me Then
+                    _slave.Master = Me
+
+                End If
             End If
+
         End Set
     End Property
 
@@ -69,14 +120,28 @@ Public Class Control_ControleDePasta
         End Set
     End Property
 
-    Dim _mostrarBTNMenu As Boolean
-    Public Property MostrarBTNMenu As Boolean
+    Dim _forceExpandButtonDisplay As Boolean
+    Public Property ForceExpandButtonDisplay As Boolean
         Get
-            Return _mostrarBTNMenu
+            Return _forceExpandButtonDisplay
+
         End Get
         Set(value As Boolean)
-            _mostrarBTNMenu = value
+            _forceExpandButtonDisplay = value
+            DisplayBTNMenu = value
+
+        End Set
+    End Property
+
+    Dim _displayBTNMenu As Boolean
+    Public Property DisplayBTNMenu As Boolean
+        Get
+            Return _displayBTNMenu
+        End Get
+        Set(value As Boolean)
+            _displayBTNMenu = value
             BTNMenu.Parent.Visible = value
+
         End Set
     End Property
 
@@ -122,22 +187,29 @@ Public Class Control_ControleDePasta
         Set(value As TreeNode)
             _selectedNode = value
 
-            Text = value.Text
 
-            If value IsNot Nothing And value.Tag IsNot Nothing Then
-                If TypeOf value.Tag Is String Then
-                    Dim caminho As String = value.Tag
+            If value IsNot Nothing Then
 
-                    _folderInfo = New DirectoryInfo(caminho)
-                    _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
-                    MostrarBTNMenu = CarregarMenuPersonalizado()
-                    'CarregarMenuPersonalizado()
+                Text = value.Text
+                If value.Tag IsNot Nothing Then
+                    If TypeOf value.Tag Is String Then
+                        Dim caminho As String = value.Tag
+
+                        _folderInfo = New DirectoryInfo(caminho)
+                        _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
+                        DisplayBTNMenu = CarregarMenuPersonalizado()
+                        'CarregarMenuPersonalizado()
+
+                    End If
+
+                    If value.TreeView IsNot Nothing Then
+                        _selectedTreeView = value.TreeView
+                    End If
 
                 End If
 
-                If value.TreeView IsNot Nothing Then
-                    _selectedTreeView = value.TreeView
-                End If
+            Else
+                Text = ""
             End If
         End Set
     End Property
@@ -215,12 +287,16 @@ Public Class Control_ControleDePasta
 
         BTNLabel.BackColor = _backgroundColorMouseLeave
         BTNMenu.BackColor = _backgroundColorMouseLeave
+        BTNImage.BackColor = _backgroundColorMouseLeave
 
         BTNLabel.FlatAppearance.MouseOverBackColor = _mouseOverBackColor
         BTNMenu.FlatAppearance.MouseOverBackColor = _mouseOverBackColor
+        BTNImage.FlatAppearance.MouseOverBackColor = _mouseOverBackColor
+
 
         PanelBorder_BTNMenu.BackColor = _borderColorMouseLeave
         PanelBorder_ControleDePasta.BackColor = _borderColorMouseLeave
+
 
 
     End Sub
@@ -228,8 +304,10 @@ Public Class Control_ControleDePasta
     Private Sub Control_ControleDePasta_Load(sender As Object, e As EventArgs) Handles Me.Load
         'BTNLabel.Width = 10
 
+        If ForceExpandButtonDisplay = True Then
 
-        MostrarBTNMenu = CarregarMenuPersonalizado()
+        End If
+        DisplayBTNMenu = CarregarMenuPersonalizado()
 
     End Sub
 
@@ -278,6 +356,35 @@ Public Class Control_ControleDePasta
 
         Try
 
+            If _forceExpandButtonDisplay = False Then
+
+                If _selectedNode Is Nothing Then
+
+                    Exit Function
+
+                Else
+                    If _selectedNode.Nodes.Count > 0 Then
+                        mostrarBotaoDeNMenu = True
+
+                    Else
+                        mostrarBotaoDeNMenu = False
+                    End If
+                End If
+
+
+            Else
+                mostrarBotaoDeNMenu = True
+
+                Return mostrarBotaoDeNMenu
+            End If
+
+            'If _selectedNode Is Nothing Then
+
+            '    Exit Function
+
+            'End If
+
+
             ContextMenuStrip1.Items.Clear()
             For Each child In _selectedNode.Nodes
                 If child.Name = "carregando" Then
@@ -302,49 +409,10 @@ Public Class Control_ControleDePasta
 
                 ContextMenuStrip1.Items.Add(newSubMenuItem)
 
-                'If child.Name = "carregando" Then
-                '    'ContextMenuStrip1.Items.Add(newSubMenuItem)
-                '    recarregar = True
-                '    Exit For
-                'Else
-                '    ContextMenuStrip1.Items.Add(newSubMenuItem)
-                'End If
             Next
 
-            'If recarregar = True Then child.TreeView.SelectedNode = child.Parent
-
-            If _selectedNode.Nodes.Count > 0 Then
-                mostrarBotaoDeNMenu = True
-
-            Else
-                mostrarBotaoDeNMenu = False
-            End If
 
             Return mostrarBotaoDeNMenu
-
-            'If _folderInfo.Exists = True Then
-            '    For Each folder As DirectoryInfo In _folderInfo.GetDirectories
-            '        Dim newMenuItem As New ToolStripMenuItem With {
-            '            .Text = folder.Name,
-            '            .Tag = folder,
-            '            .Image = My.Resources.pasta_1
-            '        }
-
-            '        ContextMenuStrip1.Items.Add(newMenuItem)
-            '    Next
-
-            'ElseIf _folderInfo.Exists = False Then
-            '    For Each child As TreeNode In _selectedNode.Nodes
-
-            '        Dim newMenuItem As New ToolStripMenuItem With {
-            '         .Text = child.Text,
-            '         .Tag = New DirectoryInfo(child.Tag),
-            '         .Image = My.Resources.pasta_1
-            '     }
-
-            '        ContextMenuStrip1.Items.Add(newMenuItem)
-            '    Next
-            'End If
 
         Catch ex As Exception
             ContextMenuStrip1.Items.Clear()
@@ -356,34 +424,40 @@ Public Class Control_ControleDePasta
 
     End Function
 
-    Private Sub BTNs_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNLabel.MouseMove, BTNMenu.MouseMove
+    Private Sub BTNs_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNLabel.MouseMove, BTNMenu.MouseMove, BTNImage.MouseMove
 
         BTNLabel.BackColor = _backgroundColorMouseMove
         BTNMenu.BackColor = _backgroundColorMouseMove
+        BTNImage.BackColor = _backgroundColorMouseMove
 
         PanelBorder_BTNMenu.BackColor = _borderColorMouseMove
         PanelBorder_ControleDePasta.BackColor = _borderColorMouseMove
 
     End Sub
 
-    Private Sub BTNLabel_MouseLeave(sender As Object, e As EventArgs) Handles BTNLabel.MouseLeave, BTNMenu.MouseLeave
+    Private Sub BTNLabel_MouseLeave(sender As Object, e As EventArgs) Handles BTNLabel.MouseLeave, BTNMenu.MouseLeave, BTNImage.MouseLeave
         BTNLabel.BackColor = _backgroundColorMouseLeave
         BTNMenu.BackColor = _backgroundColorMouseLeave
+        BTNImage.BackColor = _backgroundColorMouseLeave
 
         PanelBorder_BTNMenu.BackColor = _borderColorMouseLeave
         PanelBorder_ControleDePasta.BackColor = _borderColorMouseLeave
     End Sub
 
-    Private Sub BTNLabel_Click(sender As Object, e As EventArgs) Handles BTNLabel.Click
-        If SelectedNode.TreeView IsNot Nothing Then
-            SelectedNode.TreeView.SelectedNode = SelectedNode
+    Private Sub BTNLabel_Click(sender As Object, e As EventArgs) Handles BTNLabel.Click, BTNImage.Click
+
+        If SelectedNode IsNot Nothing Then
+            If SelectedNode.TreeView IsNot Nothing Then
+                SelectedNode.TreeView.SelectedNode = SelectedNode
+            End If
         End If
     End Sub
 
     Private Sub BTNMenu_Click(sender As Object, e As EventArgs) Handles BTNMenu.Click
 
         Me.ParentForm.UseWaitCursor = True
-        MostrarBTNMenu = CarregarMenuPersonalizado()
+
+        DisplayBTNMenu = CarregarMenuPersonalizado()
 
         Dim btn As Button = CType(sender, Button)
         btn.ContextMenuStrip.Show(btn, -20, btn.Height)

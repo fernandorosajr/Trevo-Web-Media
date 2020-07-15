@@ -33,6 +33,7 @@ Partial Class Control_AddressBar
         Me.BTNExpandir = New System.Windows.Forms.Button()
         Me.BTNExpandePrincipal = New System.Windows.Forms.Button()
         Me.BTNPrincipal = New System.Windows.Forms.Button()
+        Me.MainFolderControl = New TrevoWebMedia.Control_ControleDePasta()
         Me.PanelBorderReflesh = New System.Windows.Forms.Panel()
         Me.PanelBackgroundRefresh = New System.Windows.Forms.Panel()
         Me.BTNRefresh = New System.Windows.Forms.Button()
@@ -64,6 +65,7 @@ Partial Class Control_AddressBar
         Me.PanelBackgroundAddress.Controls.Add(Me.BTNExpandir)
         Me.PanelBackgroundAddress.Controls.Add(Me.BTNExpandePrincipal)
         Me.PanelBackgroundAddress.Controls.Add(Me.BTNPrincipal)
+        Me.PanelBackgroundAddress.Controls.Add(Me.MainFolderControl)
         Me.PanelBackgroundAddress.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBackgroundAddress.Location = New System.Drawing.Point(1, 1)
         Me.PanelBackgroundAddress.Name = "PanelBackgroundAddress"
@@ -75,9 +77,9 @@ Partial Class Control_AddressBar
         Me.PanelAddress.Controls.Add(Me.Panel1)
         Me.PanelAddress.Controls.Add(Me.Panel_EnvolveTXT)
         Me.PanelAddress.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAddress.Location = New System.Drawing.Point(30, 0)
+        Me.PanelAddress.Location = New System.Drawing.Point(74, 0)
         Me.PanelAddress.Name = "PanelAddress"
-        Me.PanelAddress.Size = New System.Drawing.Size(602, 59)
+        Me.PanelAddress.Size = New System.Drawing.Size(558, 59)
         Me.PanelAddress.TabIndex = 20
         '
         'Panel1
@@ -86,7 +88,7 @@ Partial Class Control_AddressBar
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(602, 59)
+        Me.Panel1.Size = New System.Drawing.Size(558, 59)
         Me.Panel1.TabIndex = 10
         '
         'PanelRecebeControlesDePastas
@@ -104,7 +106,7 @@ Partial Class Control_AddressBar
         Me.Panel_EnvolveTXT.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_EnvolveTXT.Location = New System.Drawing.Point(0, 0)
         Me.Panel_EnvolveTXT.Name = "Panel_EnvolveTXT"
-        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(602, 59)
+        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(558, 59)
         Me.Panel_EnvolveTXT.TabIndex = 21
         '
         'TextBox3
@@ -114,7 +116,7 @@ Partial Class Control_AddressBar
         Me.TextBox3.ForeColor = System.Drawing.Color.DimGray
         Me.TextBox3.Location = New System.Drawing.Point(0, 0)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(602, 13)
+        Me.TextBox3.Size = New System.Drawing.Size(558, 13)
         Me.TextBox3.TabIndex = 9
         Me.TextBox3.Text = "Pesquisar"
         '
@@ -145,12 +147,13 @@ Partial Class Control_AddressBar
         Me.BTNExpandePrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNExpandePrincipal.Image = CType(resources.GetObject("BTNExpandePrincipal.Image"), System.Drawing.Image)
         Me.BTNExpandePrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(15, 0)
+        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(59, 0)
         Me.BTNExpandePrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNExpandePrincipal.Name = "BTNExpandePrincipal"
         Me.BTNExpandePrincipal.Size = New System.Drawing.Size(15, 59)
         Me.BTNExpandePrincipal.TabIndex = 16
         Me.BTNExpandePrincipal.UseVisualStyleBackColor = False
+        Me.BTNExpandePrincipal.Visible = False
         '
         'BTNPrincipal
         '
@@ -163,12 +166,40 @@ Partial Class Control_AddressBar
         Me.BTNPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNPrincipal.ImageKey = "(nenhum/a)"
         Me.BTNPrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPrincipal.Location = New System.Drawing.Point(0, 0)
+        Me.BTNPrincipal.Location = New System.Drawing.Point(44, 0)
         Me.BTNPrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNPrincipal.Name = "BTNPrincipal"
         Me.BTNPrincipal.Size = New System.Drawing.Size(15, 59)
         Me.BTNPrincipal.TabIndex = 15
         Me.BTNPrincipal.UseVisualStyleBackColor = False
+        Me.BTNPrincipal.Visible = False
+        '
+        'MainFolderControl
+        '
+        Me.MainFolderControl.AddressBar = Nothing
+        Me.MainFolderControl.AutoSize = True
+        Me.MainFolderControl.BackColor = System.Drawing.Color.Transparent
+        Me.MainFolderControl.BackgroundColorMouseLeave = System.Drawing.Color.Transparent
+        Me.MainFolderControl.BackgroundColorMouseMove = System.Drawing.Color.LightCyan
+        Me.MainFolderControl.BordeColorMouseLeave = System.Drawing.Color.Transparent
+        Me.MainFolderControl.BorderColorMouseMove = System.Drawing.Color.SkyBlue
+        Me.MainFolderControl.DisplayBTNMenu = True
+        Me.MainFolderControl.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MainFolderControl.DriveInfo = Nothing
+        Me.MainFolderControl.FolderInfo = Nothing
+        Me.MainFolderControl.ForceExpandButtonDisplay = True
+        Me.MainFolderControl.Image = Nothing
+        Me.MainFolderControl.Level = 0
+        Me.MainFolderControl.Location = New System.Drawing.Point(0, 0)
+        Me.MainFolderControl.Master = Nothing
+        Me.MainFolderControl.MouseOverBackColor = System.Drawing.Color.LightCyan
+        Me.MainFolderControl.Name = "MainFolderControl"
+        Me.MainFolderControl.SelectedNode = Nothing
+        Me.MainFolderControl.SelectedTreeView = Nothing
+        Me.MainFolderControl.Size = New System.Drawing.Size(44, 59)
+        Me.MainFolderControl.Slave = Nothing
+        Me.MainFolderControl.Style = TrevoWebMedia.Control_ControleDePasta.styleEnum.OnlyImage
+        Me.MainFolderControl.TabIndex = 21
         '
         'PanelBorderReflesh
         '
@@ -218,6 +249,7 @@ Partial Class Control_AddressBar
         Me.Size = New System.Drawing.Size(677, 61)
         Me.PanelBorder.ResumeLayout(False)
         Me.PanelBackgroundAddress.ResumeLayout(False)
+        Me.PanelBackgroundAddress.PerformLayout()
         Me.PanelAddress.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -242,4 +274,5 @@ Partial Class Control_AddressBar
     Friend WithEvents PanelAddress As Panel
     Friend WithEvents PanelRecebeControlesDePastas As Panel
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents MainFolderControl As Control_ControleDePasta
 End Class

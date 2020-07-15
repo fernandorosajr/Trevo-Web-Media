@@ -50,7 +50,7 @@
 
 
     Private Sub Control_AddressBar_Load(sender As Object, e As EventArgs) Handles Me.Load
-        'AdicionarUmItem()
+
 
     End Sub
 

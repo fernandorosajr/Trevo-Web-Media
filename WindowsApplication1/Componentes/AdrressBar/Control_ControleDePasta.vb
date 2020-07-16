@@ -45,7 +45,7 @@ Public Class Control_ControleDePasta
         End Get
         Set(value As Image)
             _image = value
-
+            BTNImage.Image = value
         End Set
     End Property
 
@@ -352,65 +352,62 @@ Public Class Control_ControleDePasta
         Dim recarregar As Boolean = False
         Dim child As TreeNode
 
-        'AddressBar.SelectedNode = SelectedNode
-
         Try
 
-            If _forceExpandButtonDisplay = False Then
+            ContextMenuStrip1.Items.Clear()
 
-                If _selectedNode Is Nothing Then
 
-                    Exit Function
+            If _selectedNode Is Nothing Then
 
-                Else
-                    If _selectedNode.Nodes.Count > 0 Then
-                        mostrarBotaoDeNMenu = True
-
-                    Else
-                        mostrarBotaoDeNMenu = False
-                    End If
-                End If
-
+                mostrarBotaoDeNMenu = _forceExpandButtonDisplay
 
             Else
-                mostrarBotaoDeNMenu = True
 
-                Return mostrarBotaoDeNMenu
+                For Each child In _selectedNode.Nodes
+                    If child.Name = "carregando" Then
+                        SelectedTreeView.SelectedNode = child.Parent
+                        mostrarBotaoDeNMenu = False
+                        Exit Function
+                    End If
+
+                    'MsgBox(child.Name)
+                    ' TODO: Se Name = execao entao ?
+                    ' = carregando
+                    If child.Level = 0 Then
+                        MsgBox(child.Name)
+                    End If
+
+                    Dim img As Image
+
+                    Dim newSubMenuItem As New ToolStripMenuItem With {
+                         .Text = child.Text,
+                         .Tag = child, 'New DirectoryInfo(child.Tag),
+                         .Image = My.Resources.pasta_1
+                     }
+
+                    If child.TreeView IsNot Nothing Then
+                        If child.TreeView.ImageList IsNot Nothing Then
+                            img = child.TreeView.ImageList.Images.Item(child.ImageKey)
+                            newSubMenuItem.Image = img
+                        End If
+                    End If
+
+                    AddHandler newSubMenuItem.Click, New System.EventHandler(AddressOf NewSubMenuItem_Clicked)
+
+                    ContextMenuStrip1.Items.Add(newSubMenuItem)
+
+                Next
+
+                If _forceExpandButtonDisplay = False Then
+
+                    mostrarBotaoDeNMenu = _selectedNode.Nodes.Count > 0
+
+                Else
+                    mostrarBotaoDeNMenu = True
+                End If
+
+
             End If
-
-            'If _selectedNode Is Nothing Then
-
-            '    Exit Function
-
-            'End If
-
-
-            ContextMenuStrip1.Items.Clear()
-            For Each child In _selectedNode.Nodes
-                If child.Name = "carregando" Then
-                    SelectedTreeView.SelectedNode = child.Parent
-                    mostrarBotaoDeNMenu = False
-                    Exit Function
-                End If
-
-                'MsgBox(child.Name)
-                ' TODO: Se Name = execao entao ?
-                ' = carregando
-                If child.Level = 0 Then
-                    MsgBox(child.Name)
-                End If
-                Dim newSubMenuItem As New ToolStripMenuItem With {
-                     .Text = child.Text,
-                     .Tag = child, 'New DirectoryInfo(child.Tag),
-                     .Image = My.Resources.pasta_1
-                 }
-
-                AddHandler newSubMenuItem.Click, New System.EventHandler(AddressOf NewSubMenuItem_Clicked)
-
-                ContextMenuStrip1.Items.Add(newSubMenuItem)
-
-            Next
-
 
             Return mostrarBotaoDeNMenu
 

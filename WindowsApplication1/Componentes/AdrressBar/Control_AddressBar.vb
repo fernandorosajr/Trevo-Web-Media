@@ -4,6 +4,44 @@
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
+    Private _selectedImage As Image
+    Public Property SelectedImage As Image
+        Get
+            Return _selectedImage
+        End Get
+        Set(value As Image)
+            _selectedImage = value
+
+        End Set
+    End Property
+
+    Private _imageList As ImageList
+    Public Property ImageList As ImageList
+        Get
+            Return _imageList
+
+        End Get
+        Set(value As ImageList)
+            _imageList = value
+        End Set
+    End Property
+
+    Private _mainNode As TreeNode
+    Public Property MainNode As TreeNode
+        Get
+            Return _mainNode
+        End Get
+        Set(value As TreeNode)
+            _mainNode = value
+
+            If value IsNot Nothing Then
+                MainFolderControl.SelectedNode = value
+
+                MainFolderControl.Image = _mainNode.TreeView.ImageList.Images.Item(_mainNode.ImageKey)
+
+            End If
+        End Set
+    End Property
 
     Private _selectedTreeView As TreeView
     Public Property SelectedTreeView As TreeView
@@ -27,11 +65,22 @@
 
             _selectedNode = value
 
+
+
             If value.TreeView IsNot Nothing Then
                 _selectedTreeView = value.TreeView
                 _selectedTreeView.SelectedNode = value
 
+                If _imageList Is Nothing Then
+                    _imageList = SelectedTreeView.ImageList
+                End If
+
+                If _imageList IsNot Nothing Then
+                    MainFolderControl.Image = _imageList.Images.Item(_selectedNode.ImageKey)
+
+                End If
             End If
+
             AtualizarSequenciaDeItens(value)
 
 
@@ -45,7 +94,7 @@
         InitializeComponent()
 
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
-
+        MainFolderControl.AddressBar = Me
     End Sub
 
 

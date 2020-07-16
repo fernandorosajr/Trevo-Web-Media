@@ -210,6 +210,8 @@ Long, lpColorValues As Long) As Long
 
         PanelRecebe_AddressBar.Controls.Add(addressBar)
         addressBar.Dock = DockStyle.Fill
+        addressBar.MainNode = painel_Desktop.TVWFilesAndFolders.Nodes.Item(0)
+
         addressBar.Visible = True
         ' ---------------------------------------------
 

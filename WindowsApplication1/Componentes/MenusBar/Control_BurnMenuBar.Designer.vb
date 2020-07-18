@@ -75,7 +75,7 @@ Partial Class Control_BurnMenuBar
         Me.PanelEnvolve_SelecaoDeAgrupamento = New System.Windows.Forms.Panel()
         Me.PanelBorder_CKBMostrarAgrupamentos = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_CKBMostrarAgrupamentos = New System.Windows.Forms.Panel()
-        Me.CKBMostrarAgrupamentos = New System.Windows.Forms.CheckBox()
+        Me.CKBMostrarGruposDeAcoes = New System.Windows.Forms.CheckBox()
         Me.PanelEspacamento03 = New System.Windows.Forms.Panel()
         Me.PanelBorder_LBL_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_LBL_ComBSelectAgrupamento = New System.Windows.Forms.Panel()
@@ -709,35 +709,35 @@ Partial Class Control_BurnMenuBar
         '
         'PanelEnvolve_CKBMostrarAgrupamentos
         '
-        Me.PanelEnvolve_CKBMostrarAgrupamentos.Controls.Add(Me.CKBMostrarAgrupamentos)
+        Me.PanelEnvolve_CKBMostrarAgrupamentos.Controls.Add(Me.CKBMostrarGruposDeAcoes)
         Me.PanelEnvolve_CKBMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_CKBMostrarAgrupamentos.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_CKBMostrarAgrupamentos.Name = "PanelEnvolve_CKBMostrarAgrupamentos"
         Me.PanelEnvolve_CKBMostrarAgrupamentos.Size = New System.Drawing.Size(185, 21)
         Me.PanelEnvolve_CKBMostrarAgrupamentos.TabIndex = 0
         '
-        'CKBMostrarAgrupamentos
+        'CKBMostrarGruposDeAcoes
         '
-        Me.CKBMostrarAgrupamentos.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CKBMostrarAgrupamentos.BackColor = System.Drawing.Color.Transparent
-        Me.CKBMostrarAgrupamentos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CKBMostrarAgrupamentos.FlatAppearance.BorderSize = 0
-        Me.CKBMostrarAgrupamentos.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.CKBMostrarAgrupamentos.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
-        Me.CKBMostrarAgrupamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CKBMostrarAgrupamentos.ForeColor = System.Drawing.Color.Black
-        Me.CKBMostrarAgrupamentos.Image = Global.TrevoWebMedia.My.Resources.Resources.GrupoMiniatura
-        Me.CKBMostrarAgrupamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CKBMostrarAgrupamentos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.CKBMostrarAgrupamentos.Location = New System.Drawing.Point(0, 0)
-        Me.CKBMostrarAgrupamentos.Margin = New System.Windows.Forms.Padding(0)
-        Me.CKBMostrarAgrupamentos.Name = "CKBMostrarAgrupamentos"
-        Me.CKBMostrarAgrupamentos.Size = New System.Drawing.Size(185, 21)
-        Me.CKBMostrarAgrupamentos.TabIndex = 18
-        Me.CKBMostrarAgrupamentos.Text = "Mostrar agrupamentos"
-        Me.CKBMostrarAgrupamentos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.CKBMostrarAgrupamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
-        Me.CKBMostrarAgrupamentos.UseVisualStyleBackColor = False
+        Me.CKBMostrarGruposDeAcoes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CKBMostrarGruposDeAcoes.BackColor = System.Drawing.Color.Transparent
+        Me.CKBMostrarGruposDeAcoes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CKBMostrarGruposDeAcoes.FlatAppearance.BorderSize = 0
+        Me.CKBMostrarGruposDeAcoes.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.CKBMostrarGruposDeAcoes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.CKBMostrarGruposDeAcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CKBMostrarGruposDeAcoes.ForeColor = System.Drawing.Color.Black
+        Me.CKBMostrarGruposDeAcoes.Image = Global.TrevoWebMedia.My.Resources.Resources.GrupoMiniatura
+        Me.CKBMostrarGruposDeAcoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.CKBMostrarGruposDeAcoes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.CKBMostrarGruposDeAcoes.Location = New System.Drawing.Point(0, 0)
+        Me.CKBMostrarGruposDeAcoes.Margin = New System.Windows.Forms.Padding(0)
+        Me.CKBMostrarGruposDeAcoes.Name = "CKBMostrarGruposDeAcoes"
+        Me.CKBMostrarGruposDeAcoes.Size = New System.Drawing.Size(185, 21)
+        Me.CKBMostrarGruposDeAcoes.TabIndex = 18
+        Me.CKBMostrarGruposDeAcoes.Text = "Mostrar Grupos de Ações"
+        Me.CKBMostrarGruposDeAcoes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CKBMostrarGruposDeAcoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.CKBMostrarGruposDeAcoes.UseVisualStyleBackColor = False
         '
         'PanelEspacamento03
         '
@@ -1027,7 +1027,7 @@ Partial Class Control_BurnMenuBar
     Friend WithEvents PanelEspacamento02 As Panel
     Friend WithEvents PanelEspacamento01 As Panel
     Friend WithEvents PanelEnvolve_ComBSelectAgrupamento As Panel
-    Friend WithEvents CKBMostrarAgrupamentos As CheckBox
+    Friend WithEvents CKBMostrarGruposDeAcoes As CheckBox
     Friend WithEvents PanelEspacamento03 As Panel
     Friend WithEvents PanelEspacamento04 As Panel
     Friend WithEvents BTNAbortar As Button

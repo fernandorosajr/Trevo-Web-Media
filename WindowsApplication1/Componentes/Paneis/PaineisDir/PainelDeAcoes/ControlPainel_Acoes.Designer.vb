@@ -41,7 +41,7 @@ Partial Class ControlPainel_Acoes
         Dim TreeNode16 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Rótulo")
         Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Local")
         Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Gravar", New System.Windows.Forms.TreeNode() {TreeNode16, TreeNode17})
-        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Processo 01", New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode7, TreeNode11, TreeNode13, TreeNode15, TreeNode18})
+        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Ações 01", New System.Windows.Forms.TreeNode() {TreeNode3, TreeNode7, TreeNode11, TreeNode13, TreeNode15, TreeNode18})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Acoes))
         Me.Panel77 = New System.Windows.Forms.Panel()
         Me.PanelAllProcessosAcoes = New System.Windows.Forms.Panel()
@@ -323,7 +323,7 @@ Partial Class ControlPainel_Acoes
         TreeNode19.Name = "Node1"
         TreeNode19.NodeFont = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
         TreeNode19.SelectedImageKey = "processo.ico"
-        TreeNode19.Text = "Processo 01"
+        TreeNode19.Text = "Ações 01"
         Me.TVW_ListaDeProcessos.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode19})
         Me.TVW_ListaDeProcessos.SelectedImageIndex = 0
         Me.TVW_ListaDeProcessos.ShowLines = False
@@ -586,7 +586,7 @@ Partial Class ControlPainel_Acoes
         Me.BTNAddProcesso.Name = "BTNAddProcesso"
         Me.BTNAddProcesso.Size = New System.Drawing.Size(299, 22)
         Me.BTNAddProcesso.TabIndex = 24
-        Me.BTNAddProcesso.Text = "         Adcionar um processo"
+        Me.BTNAddProcesso.Text = "         Adcionar uma ação"
         Me.BTNAddProcesso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BTNAddProcesso.UseVisualStyleBackColor = False
         '
@@ -1198,7 +1198,7 @@ Partial Class ControlPainel_Acoes
         Me.TXTNomeDoGrupo.Name = "TXTNomeDoGrupo"
         Me.TXTNomeDoGrupo.Size = New System.Drawing.Size(193, 13)
         Me.TXTNomeDoGrupo.TabIndex = 4
-        Me.TXTNomeDoGrupo.Text = "Agrupamento 01"
+        Me.TXTNomeDoGrupo.Text = "Grupo 01"
         '
         'PanelME
         '
@@ -1392,7 +1392,7 @@ Partial Class ControlPainel_Acoes
         Me.LBLAcoes.Padding = New System.Windows.Forms.Padding(5)
         Me.LBLAcoes.Size = New System.Drawing.Size(292, 31)
         Me.LBLAcoes.TabIndex = 2
-        Me.LBLAcoes.Text = "Ações"
+        Me.LBLAcoes.Text = "Grupo de Ações"
         '
         'BTNExpandAcoes
         '

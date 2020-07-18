@@ -39,6 +39,11 @@
 
                 MainFolderControl.Image = _mainNode.TreeView.ImageList.Images.Item(_mainNode.ImageKey)
 
+                If _selectedTreeView Is Nothing Then
+                    _selectedTreeView = _mainNode.TreeView
+                    MainFolderControl.SelectedTreeView = _mainNode.TreeView
+                End If
+
             End If
         End Set
     End Property
@@ -65,8 +70,6 @@
 
             _selectedNode = value
 
-
-
             If value.TreeView IsNot Nothing Then
                 _selectedTreeView = value.TreeView
                 _selectedTreeView.SelectedNode = value
@@ -83,8 +86,8 @@
 
             AtualizarSequenciaDeItens(value)
 
-
         End Set
+
     End Property
 
 

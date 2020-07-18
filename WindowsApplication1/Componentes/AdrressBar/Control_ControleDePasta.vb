@@ -192,6 +192,11 @@ Public Class Control_ControleDePasta
 
                 Text = value.Text
                 If value.Tag IsNot Nothing Then
+
+                    If value.TreeView IsNot Nothing Then
+                        _selectedTreeView = value.TreeView
+                    End If
+
                     If TypeOf value.Tag Is String Then
                         Dim caminho As String = value.Tag
 
@@ -202,9 +207,6 @@ Public Class Control_ControleDePasta
 
                     End If
 
-                    If value.TreeView IsNot Nothing Then
-                        _selectedTreeView = value.TreeView
-                    End If
 
                 End If
 
@@ -302,11 +304,7 @@ Public Class Control_ControleDePasta
     End Sub
 
     Private Sub Control_ControleDePasta_Load(sender As Object, e As EventArgs) Handles Me.Load
-        'BTNLabel.Width = 10
 
-        If ForceExpandButtonDisplay = True Then
-
-        End If
         DisplayBTNMenu = CarregarMenuPersonalizado()
 
     End Sub
@@ -444,9 +442,11 @@ Public Class Control_ControleDePasta
     Private Sub BTNLabel_Click(sender As Object, e As EventArgs) Handles BTNLabel.Click, BTNImage.Click
 
         If SelectedNode IsNot Nothing Then
+
             If SelectedNode.TreeView IsNot Nothing Then
                 SelectedNode.TreeView.SelectedNode = SelectedNode
             End If
+
         End If
     End Sub
 

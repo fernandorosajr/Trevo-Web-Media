@@ -39,7 +39,7 @@ Public Class MainForm
 
 
     Dim pMouse As Point
-    Dim state As Integer
+    Dim state As Byte
     Dim px, py As Integer
     Dim mover As Boolean
 
@@ -69,16 +69,16 @@ Long, lpColorValues As Long) As Long
 
 
 
-    Private Sub Button38_Click(sender As System.Object, e As System.EventArgs) Handles Button38.Click
+    Private Sub BTNMinimize_Click(sender As System.Object, e As System.EventArgs) Handles BTNMinimize.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Button37_Click(sender As System.Object, e As System.EventArgs) Handles Button37.Click
+    Private Sub BTNRestaureMaximize_Click(sender As System.Object, e As System.EventArgs) Handles BTNRestaureMaximize.Click
         Call winstate()
 
     End Sub
 
-    Private Sub Button36_Click(sender As System.Object, e As System.EventArgs) Handles Button36.Click
+    Private Sub BTNClose_Click(sender As System.Object, e As System.EventArgs) Handles BTNClose.Click
         Me.Close()
     End Sub
 
@@ -95,26 +95,26 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub Label1_DoubleClick(sender As Object, e As System.EventArgs) Handles Label1.DoubleClick
+    Private Sub LBLTitle_DoubleClick(sender As Object, e As System.EventArgs) Handles LBLTitle.DoubleClick
         Call winstate()
 
     End Sub
 
-    Private Sub Label1_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Label1.MouseMove
+    Private Sub Label1_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles LBLTitle.MouseMove
         If mover Then
             Me.Location = Me.PointToScreen(New Point(Me.MousePosition.X - Me.Location.X - px, Me.MousePosition.Y - Me.Location.Y - py))
 
         End If
     End Sub
 
-    Private Sub Label1_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Label1.MouseDown
+    Private Sub LBLTitle_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles LBLTitle.MouseDown
         px = e.X
         py = e.Y
         mover = True
     End Sub
 
 
-    Private Sub Label1_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Label1.MouseUp
+    Private Sub LBLTitle_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles LBLTitle.MouseUp
         mover = False
 
     End Sub
@@ -144,11 +144,13 @@ Long, lpColorValues As Long) As Long
         ' TODO: Se um componente construido herdar ...
         ' ...o outro construido ele pode interagir um com o outro.
 
-        Label1.Text = Me.Text
+        LBLTitle.Text = Me.Text
 
         ' Controles de Usuário de MainForm
         ' ---------------------------------------------
-        PanelRecebeBiblio.Controls.Add(painel_BibliotecaDeMidias)
+        Panel_RecebeBiblio.Visible = True
+
+        Panel_RecebeBiblio.Controls.Add(painel_BibliotecaDeMidias)
         painel_BibliotecaDeMidias.Dock = DockStyle.Fill
         painel_BibliotecaDeMidias.Visible = True
 
@@ -164,15 +166,15 @@ Long, lpColorValues As Long) As Long
         painel_MidiasAtivas.Dock = DockStyle.Fill
         painel_MidiasAtivas.Visible = True
 
-        PanelAtividade.Controls.Add(painel_Atividades)
+        Panel_RecebeAtividade.Controls.Add(painel_Atividades)
         painel_Atividades.Dock = DockStyle.Fill
         painel_Atividades.Visible = True
 
-        PanelDetalhe.Controls.Add(painel_Detalhes)
+        Panel_RecebeDetalhe.Controls.Add(painel_Detalhes)
         painel_Detalhes.Dock = DockStyle.Fill
         painel_Detalhes.Visible = True
 
-        PanelAcoes.Controls.Add(painel_Acoes)
+        Panel_RecebeAcoes.Controls.Add(painel_Acoes)
         painel_Acoes.Dock = DockStyle.Fill
         painel_Acoes.Visible = True
 
@@ -200,8 +202,14 @@ Long, lpColorValues As Long) As Long
         painel_Clipboard.Dock = DockStyle.Fill
         painel_Clipboard.Visible = True
 
+        'Panel_RecebeSelecao.Controls.Add(_controlSelectFileAndFolderPanel)
+        '_controlSelectFileAndFolderPanel.Dock = DockStyle.Top
+        '_controlSelectFileAndFolderPanel.Height = 55
+        '_controlSelectFileAndFolderPanel.Visible = True
+
         Panel_RecebeSelecao.Controls.Add(painel_Selected)
         painel_Selected.Dock = DockStyle.Fill
+        painel_Selected.BringToFront()
         painel_Selected.Visible = True
 
         Panel_RecebePastaProcesso.Controls.Add(painel_PastaProcesso)
@@ -267,8 +275,6 @@ Long, lpColorValues As Long) As Long
         folderImpar = New DirectoryInfo("F:\Folder Impar")
         SelectedFoldersAndFiles.Add(folderImpar)
 
-
-
     End Sub
 
     Sub Painel_Desktop_AfterSelect()
@@ -276,6 +282,7 @@ Long, lpColorValues As Long) As Long
         If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
             addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
         End If
+
     End Sub
 
     Public Function AdicionarItemNoView(Drive As DriveInfo, Numero As Integer)
@@ -293,45 +300,45 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub PanelMDir_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseDown
+    Private Sub PanelMDir_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseDown, PanelSubMarginRight.MouseDown
         Call ClickingMouseRedim()
 
     End Sub
 
-    Private Sub PanelMDir_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseMove
+    Private Sub PanelMDir_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseMove, PanelSubMarginRight.MouseMove
         If me_redim Then
             Me.Width = Me.Size.Width + e.X
         End If
 
     End Sub
 
-    Private Sub PanelMDir_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseUp
+    Private Sub PanelMDir_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMDir.MouseUp, PanelSubMarginRight.MouseUp
         me_redim = False
 
     End Sub
 
-    Private Sub PanelMBase_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseDown
+    Private Sub PanelMBase_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseDown, PanelSubMarginBase.MouseDown
         Call ClickingMouseRedim()
 
     End Sub
 
-    Private Sub PanelMBase_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseMove
+    Private Sub PanelMBase_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseMove, PanelSubMarginBase.MouseMove
         If me_redim Then
             Me.Height = Me.Size.Height + e.Y
 
         End If
     End Sub
 
-    Private Sub PanelMBase_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseUp
+    Private Sub PanelMBase_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMBase.MouseUp, PanelSubMarginBase.MouseUp
         me_redim = False
 
     End Sub
 
-    Private Sub PanelPonta_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelPonta.MouseDown
+    Private Sub PanelPonta_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelSubMarginBaseRight.MouseDown
         Call ClickingMouseRedim()
     End Sub
 
-    Private Sub PanelPonta_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelPonta.MouseMove
+    Private Sub PanelPonta_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelSubMarginBaseRight.MouseMove
         If me_redim Then
             Me.Height = Me.Size.Height + e.Y
             Me.Width = Me.Size.Width + e.X
@@ -340,11 +347,11 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub PanelPonta_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelPonta.MouseUp
+    Private Sub PanelPonta_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelSubMarginBaseRight.MouseUp
         me_redim = False
     End Sub
 
-    Private Sub PanelMEsq_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseDown
+    Private Sub PanelMEsq_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseDown, PanelSubMarginLeft.MouseDown
         me_w = Me.Width
         me_h = Me.Height
 
@@ -354,7 +361,7 @@ Long, lpColorValues As Long) As Long
         me_redim = True
     End Sub
 
-    Private Sub PanelMEsq_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseMove
+    Private Sub PanelMEsq_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseMove, PanelSubMarginLeft.MouseMove
         If me_redim Then
 
             'Me.Size = New Point(Me.Size.Width - e.X, me_h)
@@ -375,26 +382,27 @@ Long, lpColorValues As Long) As Long
         End If
     End Sub
 
-    Private Sub PanelMEsq_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseUp
+    Private Sub PanelMEsq_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles PanelMEsq.MouseUp, PanelSubMarginLeft.MouseUp
         me_redim = False
     End Sub
 
     Private Sub RB_Explorerr_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RB_Explorer.CheckedChanged
 
-        Panel_MediasExplorer.Visible = Not (RB_Explorer.Checked)
-        Panel_RecebeExplorer.Visible = RB_Explorer.Checked
-        Panel_Recebe_Filtro.Visible = Not (RB_Explorer.Checked)
+        'Panel_MediasExplorer.Visible = Not (RB_Explorer.Checked)
+        'Panel_RecebeExplorer.Visible = RB_Explorer.Checked
+        'Panel_Recebe_Filtro.Visible = Not (RB_Explorer.Checked)
+        'Panel_RecebeClipboad.Visible = Not (RB_Explorer.Checked)
+        'Panel_RecebeSelecao.Visible = Not (RB_Explorer.Checked)
+        'Panel_RecebePastaProcesso.Visible = Not (RB_Explorer.Checked)
 
-        Panel_RecebeClipboad.Visible = Not (RB_Explorer.Checked)
-        Panel_RecebeSelecao.Visible = Not (RB_Explorer.Checked)
 
-        Panel_RecebePastaProcesso.Visible = Not (RB_Explorer.Checked)
 
         ' PanelEnvolveMidiaAberta.Visible = True
         ' SPRedimVisualizarMidia.Visible = True
 
         If RB_Explorer.Checked = True Then
             RB_Explorer.Image = My.Resources.computer_Hover35
+            Panel_RecebeExplorer.BringToFront()
         Else
             RB_Explorer.Image = My.Resources.computer35
 
@@ -403,16 +411,18 @@ Long, lpColorValues As Long) As Long
     End Sub
 
     Private Sub RB_Midias_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles RB_Midias.CheckedChanged
-        Panel_MediasExplorer.Visible = RB_Midias.Checked
-        Panel_RecebeExplorer.Visible = Not (RB_Midias.Checked)
-        Panel_Recebe_Filtro.Visible = Not (RB_Midias.Checked)
 
-        Panel_RecebeClipboad.Visible = Not (RB_Midias.Checked)
-        Panel_RecebeSelecao.Visible = Not (RB_Midias.Checked)
-        Panel_RecebePastaProcesso.Visible = Not (RB_Midias.Checked)
+        'Panel_MediasExplorer.Visible = RB_Midias.Checked
+        'Panel_RecebeExplorer.Visible = Not (RB_Midias.Checked)
+        'Panel_Recebe_Filtro.Visible = Not (RB_Midias.Checked)
+        'Panel_RecebeClipboad.Visible = Not (RB_Midias.Checked)
+        'Panel_RecebeSelecao.Visible = Not (RB_Midias.Checked)
+        'Panel_RecebePastaProcesso.Visible = Not (RB_Midias.Checked)
+
 
         If RB_Midias.Checked = True Then
             RB_Midias.Image = My.Resources.dvd_face6_Hover
+            Panel_MediasExplorer.BringToFront()
 
         Else
             RB_Midias.Image = My.Resources.dvd_face6
@@ -456,14 +466,7 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub Button39_Click(sender As System.Object, e As System.EventArgs) Handles Button39.Click
-        Call ChecarCheckBoxs()
-        If PanelHome.Visible Then
-            PanelHome.Visible = False
-        Else
-            PanelHome.Visible = True
-        End If
-    End Sub
+
 
     Private Sub MenuItem_Click(sender As Object, e As System.EventArgs) Handles ChBInicio.Click, ChBOrganizar.Click, ChBGravar.Click, ChBExibir.Click
 
@@ -525,12 +528,18 @@ Long, lpColorValues As Long) As Long
                     Me.MinimizeBox = True
                     Me.ShowIcon = True
                     PanelTitleBar.Visible = False
-                    PanelFormMargDir.Visible = False
-                    PanelMBase.Visible = False
-                    PanelMEsq.Visible = False
-                    PanelMDir.Visible = False
 
-                    Call Form_Resize()
+                    'PanelMBase.Visible = False
+                    'PanelMEsq.Visible = False
+                    'PanelMDir.Visible = False
+
+                    PanelSubMarginBase.Visible = False
+                    PanelSubMarginBaseRight.Visible = False
+                    PanelSubMarginBaseLeft.Visible = False
+                    PanelSubMarginLeft.Visible = False
+                    PanelSubMarginRight.Visible = False
+
+                    'Call Form_Resize()
                 End If
             Next
 
@@ -551,11 +560,17 @@ Long, lpColorValues As Long) As Long
                     Me.Opacity = 0
 
                     PanelTitleBar.Visible = True
-                    PanelFormMargDir.Visible = True
-                    PanelMBase.Visible = True
-                    PanelMEsq.Visible = True
-                    PanelMDir.Visible = True
-                    Call Form_Resize()
+
+                    'PanelMBase.Visible = True
+                    'PanelMEsq.Visible = True
+                    'PanelMDir.Visible = True
+                    ''Call Form_Resize()
+
+                    PanelSubMarginBase.Visible = True
+                    PanelSubMarginBaseRight.Visible = True
+                    PanelSubMarginBaseLeft.Visible = True
+                    PanelSubMarginLeft.Visible = True
+                    PanelSubMarginRight.Visible = True
                 End If
 
             Next
@@ -571,77 +586,24 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub MainForm_Resize(sender As Object, e As EventArgs) Handles Me.Resize
 
-        Call Form_Resize()
 
-    End Sub
-    Sub Form_Resize()
-        If Me.FormBorderStyle = FormBorderStyle.None Then
-            PanelHome.Top = PanelMainMenu.Top + PanelMainMenu.Height + 1
-            PanelHome.Width = Me.Width - 4
-            PanelHome.Height = (Me.Height - (PanelMainMenu.Top + PanelMainMenu.Height + 1)) - 2
-            PanelHome.Left = 2
-        Else
-
-            PanelHome.Top = PanelMainMenu.Top + PanelMainMenu.Height + 1
-            PanelHome.Width = Me.Width - 16
-            PanelHome.Height = (Me.Height - (PanelMainMenu.Top + PanelMainMenu.Height + 1)) - 39
-            PanelHome.Left = 0
-        End If
-
-    End Sub
+    'Sub Form_Resize()
 
     Private Sub RBAtividade_CheckedChanged(sender As Object, e As EventArgs) Handles RBAtividade.CheckedChanged
-        PanelAtividade.Visible = RBAtividade.Checked
+        'Panel_RecebeAtividade.Visible = RBAtividade.Checked
+        Panel_RecebeAtividade.BringToFront()
 
     End Sub
 
     Private Sub RBDetalhe_CheckedChanged(sender As Object, e As EventArgs) Handles RBDetalhe.CheckedChanged
-        PanelDetalhe.Visible = RBDetalhe.Checked
+        'Panel_RecebeDetalhe.Visible = RBDetalhe.Checked
+        Panel_RecebeDetalhe.BringToFront()
 
     End Sub
 
-    Private Sub Button39_MouseLeave(sender As Object, e As EventArgs) Handles Button39.MouseLeave
-        PanelHome.BackColor = Button39.BackColor
-    End Sub
-
-    Private Sub RBTNWelcome_CheckedChanged(sender As Object, e As EventArgs) Handles RBTNWelcome.CheckedChanged
-
-        PanelWelcome.Visible = RBTNWelcome.Checked
-
-    End Sub
-
-    Private Sub RBTNSofts_CheckedChanged(sender As Object, e As EventArgs) Handles RBTNSofts.CheckedChanged
-        PanelSofts.Visible = RBTNSofts.Checked
-
-    End Sub
-
-    Private Sub RBTNEnd_CheckedChanged(sender As Object, e As EventArgs) Handles RBTNEnd.CheckedChanged
-
-        If RBTNEnd.Checked = True Then
-            Dim Q = MsgBox("Tem certeza que deseja sair?", MsgBoxStyle.YesNo, Me.Text)
-            If Q = 6 Then
-                Me.Close()
-                End
-            ElseIf Q = 7 Then
-                RBTNWelcome.Checked = True
-                RBTNWelcome.Checked = False
-            End If
 
 
-        End If
-
-
-    End Sub
-
-    Private Sub Button39_MouseEnter(sender As Object, e As EventArgs) Handles Button39.MouseEnter
-        PanelHome.BackColor = Color.FromName("Highlight")
-    End Sub
-
-    Private Sub RBTNSkin_CheckedChanged(sender As Object, e As EventArgs) Handles RBTNSkin.CheckedChanged
-        PanelSkin.Visible = RBTNSkin.Checked
-    End Sub
 
     Private Sub BTNMenu01_Click(sender As Object, e As EventArgs) Handles BTNMenu01.Click
 
@@ -650,24 +612,12 @@ Long, lpColorValues As Long) As Long
     End Sub
 
     Private Sub RBAcoes_CheckedChanged(sender As Object, e As EventArgs) Handles RBAcoes.CheckedChanged
-        PanelAcoes.Visible = RBAcoes.Checked
+        'Panel_RecebeAcoes.Visible = RBAcoes.Checked
+        Panel_RecebeAcoes.BringToFront()
+
         ' PanelSelecao.Visible = Not (RBAcoes.Checked)
     End Sub
 
-    Private Sub Panel225_Paint(sender As Object, e As PaintEventArgs)
-    End Sub
-
-    Private Sub Panel226_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
-    Private Sub RBMidiaAtiva_CheckedChanged_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub RBBiblioteca_CheckedChanged_1(sender As Object, e As EventArgs)
-
-    End Sub
 
 
     Private Sub Button81_Click(sender As Object, e As EventArgs) Handles Button81.Click
@@ -680,14 +630,8 @@ Long, lpColorValues As Long) As Long
     Private Sub RB_Bibliotecas_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Bibliotecas.CheckedChanged
 
         'PanelMidiaAtiva.Visible = Not (RB_ExibeDesktopExplorer.Checked)
-        PanelRecebeBiblio.Visible = RB_Bibliotecas.Checked
+        Panel_RecebeBiblio.Visible = RB_Bibliotecas.Checked
         Panel_RecebeMidiasAtivas.Visible = Not (RB_Bibliotecas.Checked)
-
-        ' PanelEnvolveMidiaAberta.Visible = False
-        ' SPRedimVisualizarMidia.Visible = False
-
-
-
 
     End Sub
 
@@ -695,7 +639,7 @@ Long, lpColorValues As Long) As Long
         'PanelMidiaAtiva.Visible = RB_ExibePanelMidiaAtiva.Checked
 
 
-        PanelRecebeBiblio.Visible = Not (RB_ExibePanelMidiaAtiva.Checked)
+        Panel_RecebeBiblio.Visible = Not (RB_ExibePanelMidiaAtiva.Checked)
         Panel_RecebeMidiasAtivas.Visible = RB_ExibePanelMidiaAtiva.Checked
 
         ' PanelEnvolveMidiaAberta.Visible = True
@@ -705,27 +649,13 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub TVFiles_AfterSelect(sender As Object, e As TreeViewEventArgs)
-
-    End Sub
-
     Private Sub MainForm_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         PanelRecebe.Controls.Remove(controlPersonalListView)
     End Sub
 
-
-
     Private Sub BTNMenu01_MouseMove(sender As Object, e As MouseEventArgs) Handles BTNMenu01.MouseMove
 
         pMouse = System.Windows.Forms.Cursor.Position
-    End Sub
-
-    Private Sub RB_Fechar_Modo_Isolamento_CheckedChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub RB_Modo_Isolamento_CheckedChanged(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub RBArquivos_CheckedChanged(sender As Object, e As EventArgs) Handles RBArquivos.CheckedChanged
@@ -780,7 +710,6 @@ Long, lpColorValues As Long) As Long
         Else
 
             PanelMusica.Visible = False
-
 
         End If
     End Sub
@@ -858,14 +787,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Private Sub CheckBox20_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox20.CheckedChanged
-
-    End Sub
-
-    Private Sub RadioButton61_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton61.CheckedChanged
-
-    End Sub
-
     Private Sub CheckBox20_Click(sender As Object, e As EventArgs) Handles CheckBox20.Click
 
         FRMDialogRenameCriterion.SelectedFoldersAndFiles.Clear()
@@ -916,18 +837,19 @@ Long, lpColorValues As Long) As Long
     Private Sub RB_PastaProcesso_CheckedChanged(sender As Object, e As EventArgs) Handles RB_PastaProcesso.CheckedChanged
         If RB_PastaProcesso.Checked = True Then
             RB_PastaProcesso.Image = My.Resources.pastaProcesso35_Hover
+            Panel_RecebePastaProcesso.BringToFront()
         Else
             RB_PastaProcesso.Image = My.Resources.pastaProcesso35
 
         End If
 
-        Panel_MediasExplorer.Visible = Not (RB_PastaProcesso.Checked)
-        Panel_RecebeExplorer.Visible = Not (RB_PastaProcesso.Checked)
-        Panel_Recebe_Filtro.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_MediasExplorer.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_RecebeExplorer.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_Recebe_Filtro.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_RecebeClipboad.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_RecebeSelecao.Visible = Not (RB_PastaProcesso.Checked)
+        'Panel_RecebePastaProcesso.Visible = (RB_PastaProcesso.Checked)
 
-        Panel_RecebeClipboad.Visible = Not (RB_PastaProcesso.Checked)
-        Panel_RecebeSelecao.Visible = Not (RB_PastaProcesso.Checked)
-        Panel_RecebePastaProcesso.Visible = (RB_PastaProcesso.Checked)
 
     End Sub
 
@@ -954,34 +876,36 @@ Long, lpColorValues As Long) As Long
 
         If RB_Filter.Checked = True Then
             RB_Filter.Image = My.Resources.filter_Hover35
+            Panel_Recebe_Filtro.BringToFront()
         Else
             RB_Filter.Image = My.Resources.filter_35
 
         End If
 
-        Panel_MediasExplorer.Visible = Not (RB_Filter.Checked)
-        Panel_RecebeExplorer.Visible = Not (RB_Filter.Checked)
-        Panel_Recebe_Filtro.Visible = (RB_Filter.Checked)
+        'Panel_MediasExplorer.Visible = Not (RB_Filter.Checked)
+        'Panel_RecebeExplorer.Visible = Not (RB_Filter.Checked)
+        'Panel_Recebe_Filtro.Visible = (RB_Filter.Checked)
+        'Panel_RecebeClipboad.Visible = Not (RB_Filter.Checked)
+        'Panel_RecebeSelecao.Visible = Not (RB_Filter.Checked)
+        'Panel_RecebePastaProcesso.Visible = Not (RB_Filter.Checked)
 
-        Panel_RecebeClipboad.Visible = Not (RB_Filter.Checked)
-        Panel_RecebeSelecao.Visible = Not (RB_Filter.Checked)
-        Panel_RecebePastaProcesso.Visible = Not (RB_Filter.Checked)
 
     End Sub
 
     Private Sub RB_Selecao_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Selecao.CheckedChanged
 
-        Panel_MediasExplorer.Visible = Not (RB_Selecao.Checked)
-        Panel_RecebeExplorer.Visible = Not (RB_Selecao.Checked)
-        Panel_Recebe_Filtro.Visible = Not (RB_Selecao.Checked)
+        'Panel_MediasExplorer.Visible = Not (RB_Selecao.Checked)
+        'Panel_RecebeExplorer.Visible = Not (RB_Selecao.Checked)
+        'Panel_Recebe_Filtro.Visible = Not (RB_Selecao.Checked)
+        'Panel_RecebeClipboad.Visible = Not (RB_Selecao.Checked)
+        'Panel_RecebeSelecao.Visible = (RB_Selecao.Checked)
+        'Panel_RecebePastaProcesso.Visible = Not (RB_Selecao.Checked)
 
-        Panel_RecebeClipboad.Visible = Not (RB_Selecao.Checked)
-        Panel_RecebeSelecao.Visible = (RB_Selecao.Checked)
 
-        Panel_RecebePastaProcesso.Visible = Not (RB_Selecao.Checked)
 
         If RB_Selecao.Checked = True Then
             RB_Selecao.Image = My.Resources.selection_cursor01_Hover
+            Panel_RecebeSelecao.BringToFront()
 
         Else
             RB_Selecao.Image = My.Resources.selection_cursor01
@@ -1015,12 +939,6 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-
-
-    Private Sub SPRedimVisualizarMidia_SplitterMoved(sender As Object, e As SplitterEventArgs) Handles SPRedimVisualizarMidia.SplitterMoved
-
-    End Sub
-
     Private Sub RB_Filter_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Filter.MouseMove
         RB_Filter.Image = My.Resources.filter_Hover35
 
@@ -1036,17 +954,17 @@ Long, lpColorValues As Long) As Long
 
     Private Sub RB_Clipboard_CheckedChanged(sender As Object, e As EventArgs) Handles RB_Clipboard.CheckedChanged
 
-        Panel_MediasExplorer.Visible = Not (RB_Clipboard.Checked)
-        Panel_RecebeExplorer.Visible = Not (RB_Clipboard.Checked)
-        Panel_Recebe_Filtro.Visible = Not (RB_Clipboard.Checked)
-
-        Panel_RecebeClipboad.Visible = (RB_Clipboard.Checked)
-        Panel_RecebeSelecao.Visible = Not (RB_Clipboard.Checked)
-        Panel_RecebePastaProcesso.Visible = Not (RB_Clipboard.Checked)
+        'Panel_MediasExplorer.Visible = Not (RB_Clipboard.Checked)
+        'Panel_RecebeExplorer.Visible = Not (RB_Clipboard.Checked)
+        'Panel_Recebe_Filtro.Visible = Not (RB_Clipboard.Checked)
+        'Panel_RecebeClipboad.Visible = (RB_Clipboard.Checked)
+        'Panel_RecebeSelecao.Visible = Not (RB_Clipboard.Checked)
+        'Panel_RecebePastaProcesso.Visible = Not (RB_Clipboard.Checked)
 
 
         If RB_Clipboard.Checked = True Then
             RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
+            Panel_RecebeClipboad.BringToFront()
         Else
             RB_Clipboard.Image = My.Resources.verify_Clipboard01_35
 
@@ -1056,6 +974,10 @@ Long, lpColorValues As Long) As Long
     Private Sub RB_Clipboard_MouseHover(sender As Object, e As EventArgs) Handles RB_Clipboard.MouseHover
         RB_Clipboard.Image = My.Resources.verify_Clipboard_Hover
 
+    End Sub
+
+    Private Sub RBSelecao_CheckedChanged(sender As Object, e As EventArgs) Handles RBSelecao.CheckedChanged
+        Panel_RecebeSelecao.BringToFront()
     End Sub
 
     Private Sub RB_Clipboard_MouseMove(sender As Object, e As MouseEventArgs) Handles RB_Clipboard.MouseMove

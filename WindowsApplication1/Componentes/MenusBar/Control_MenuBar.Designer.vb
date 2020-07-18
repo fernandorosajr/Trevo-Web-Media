@@ -96,8 +96,8 @@ Partial Class Control_MenuBar
         Me.Panel70 = New System.Windows.Forms.Panel()
         Me.PanelBorder_BTNMaisProcessos = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNMaisProcessos = New System.Windows.Forms.Panel()
-        Me.BTNMaisProcessos = New System.Windows.Forms.Button()
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.BTNMaisGruposDeAcoes = New System.Windows.Forms.Button()
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.TSMenuItemTipoComposto = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoCriacao = New System.Windows.Forms.ToolStripMenuItem()
@@ -108,7 +108,7 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoRenome = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMenuItemSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.TSMenuItemTipoExclusao = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BTNOpcoes_BTNMaisProcessos = New System.Windows.Forms.Button()
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes = New System.Windows.Forms.Button()
         Me.PanelBorder_BTNNovaMidia = New System.Windows.Forms.Panel()
         Me.PanelEnvolve_BTNNovaMidia = New System.Windows.Forms.Panel()
         Me.BTNNovaMidia = New System.Windows.Forms.Button()
@@ -167,7 +167,7 @@ Partial Class Control_MenuBar
         Me.Panel70.SuspendLayout()
         Me.PanelBorder_BTNMaisProcessos.SuspendLayout()
         Me.PanelEnvolve_BTNMaisProcessos.SuspendLayout()
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.SuspendLayout()
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.SuspendLayout()
         Me.PanelBorder_BTNNovaMidia.SuspendLayout()
         Me.PanelEnvolve_BTNNovaMidia.SuspendLayout()
         Me.PanelBorder_BTNNovaPasta.SuspendLayout()
@@ -199,7 +199,7 @@ Partial Class Control_MenuBar
         '
         Me.PanelEnvolve_PanelAgrupaOrganizar.Controls.Add(Me.PanelOrganizar)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(635, 0)
+        Me.PanelEnvolve_PanelAgrupaOrganizar.Location = New System.Drawing.Point(655, 0)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Name = "PanelEnvolve_PanelAgrupaOrganizar"
         Me.PanelEnvolve_PanelAgrupaOrganizar.Padding = New System.Windows.Forms.Padding(3)
         Me.PanelEnvolve_PanelAgrupaOrganizar.Size = New System.Drawing.Size(391, 89)
@@ -609,7 +609,7 @@ Partial Class Control_MenuBar
         '
         Me.PanelEnvolve_PanelAgrupaGerenciar.Controls.Add(Me.PanelGerenciar)
         Me.PanelEnvolve_PanelAgrupaGerenciar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelEnvolve_PanelAgrupaGerenciar.Location = New System.Drawing.Point(281, 0)
+        Me.PanelEnvolve_PanelAgrupaGerenciar.Location = New System.Drawing.Point(301, 0)
         Me.PanelEnvolve_PanelAgrupaGerenciar.Name = "PanelEnvolve_PanelAgrupaGerenciar"
         Me.PanelEnvolve_PanelAgrupaGerenciar.Padding = New System.Windows.Forms.Padding(3)
         Me.PanelEnvolve_PanelAgrupaGerenciar.Size = New System.Drawing.Size(354, 89)
@@ -996,7 +996,7 @@ Partial Class Control_MenuBar
         Me.PanelEnvolve_PanelAgrupaNova.Location = New System.Drawing.Point(0, 0)
         Me.PanelEnvolve_PanelAgrupaNova.Name = "PanelEnvolve_PanelAgrupaNova"
         Me.PanelEnvolve_PanelAgrupaNova.Padding = New System.Windows.Forms.Padding(3)
-        Me.PanelEnvolve_PanelAgrupaNova.Size = New System.Drawing.Size(281, 89)
+        Me.PanelEnvolve_PanelAgrupaNova.Size = New System.Drawing.Size(301, 89)
         Me.PanelEnvolve_PanelAgrupaNova.TabIndex = 5
         '
         'PanelNova
@@ -1007,7 +1007,7 @@ Partial Class Control_MenuBar
         Me.PanelNova.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelNova.Location = New System.Drawing.Point(3, 3)
         Me.PanelNova.Name = "PanelNova"
-        Me.PanelNova.Size = New System.Drawing.Size(275, 83)
+        Me.PanelNova.Size = New System.Drawing.Size(295, 83)
         Me.PanelNova.TabIndex = 6
         '
         'PanelAgrupaNova
@@ -1016,7 +1016,7 @@ Partial Class Control_MenuBar
         Me.PanelAgrupaNova.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelAgrupaNova.Location = New System.Drawing.Point(0, 0)
         Me.PanelAgrupaNova.Name = "PanelAgrupaNova"
-        Me.PanelAgrupaNova.Size = New System.Drawing.Size(274, 70)
+        Me.PanelAgrupaNova.Size = New System.Drawing.Size(294, 70)
         Me.PanelAgrupaNova.TabIndex = 11
         '
         'Panel70
@@ -1027,7 +1027,7 @@ Partial Class Control_MenuBar
         Me.Panel70.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel70.Location = New System.Drawing.Point(0, 0)
         Me.Panel70.Name = "Panel70"
-        Me.Panel70.Size = New System.Drawing.Size(274, 70)
+        Me.Panel70.Size = New System.Drawing.Size(294, 70)
         Me.Panel70.TabIndex = 20
         '
         'PanelBorder_BTNMaisProcessos
@@ -1037,48 +1037,48 @@ Partial Class Control_MenuBar
         Me.PanelBorder_BTNMaisProcessos.Location = New System.Drawing.Point(150, 0)
         Me.PanelBorder_BTNMaisProcessos.Name = "PanelBorder_BTNMaisProcessos"
         Me.PanelBorder_BTNMaisProcessos.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorder_BTNMaisProcessos.Size = New System.Drawing.Size(124, 70)
+        Me.PanelBorder_BTNMaisProcessos.Size = New System.Drawing.Size(144, 70)
         Me.PanelBorder_BTNMaisProcessos.TabIndex = 2
         '
         'PanelEnvolve_BTNMaisProcessos
         '
-        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNMaisProcessos)
-        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNOpcoes_BTNMaisProcessos)
+        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNMaisGruposDeAcoes)
+        Me.PanelEnvolve_BTNMaisProcessos.Controls.Add(Me.BTNOpcoes_BTNMaisGruposDeAcoes)
         Me.PanelEnvolve_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelEnvolve_BTNMaisProcessos.Location = New System.Drawing.Point(1, 1)
         Me.PanelEnvolve_BTNMaisProcessos.Name = "PanelEnvolve_BTNMaisProcessos"
-        Me.PanelEnvolve_BTNMaisProcessos.Size = New System.Drawing.Size(122, 68)
+        Me.PanelEnvolve_BTNMaisProcessos.Size = New System.Drawing.Size(142, 68)
         Me.PanelEnvolve_BTNMaisProcessos.TabIndex = 10
         '
-        'BTNMaisProcessos
+        'BTNMaisGruposDeAcoes
         '
-        Me.BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
-        Me.BTNMaisProcessos.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupo02
-        Me.BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.BTNMaisProcessos.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisProcessos
-        Me.BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BTNMaisProcessos.FlatAppearance.BorderSize = 0
-        Me.BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNMaisProcessos.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack
-        Me.BTNMaisProcessos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNMaisProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNMaisProcessos.ForeColor = System.Drawing.Color.Black
-        Me.BTNMaisProcessos.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.BTNMaisProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNMaisProcessos.Location = New System.Drawing.Point(0, 0)
-        Me.BTNMaisProcessos.Name = "BTNMaisProcessos"
-        Me.BTNMaisProcessos.Size = New System.Drawing.Size(122, 48)
-        Me.BTNMaisProcessos.TabIndex = 8
-        Me.BTNMaisProcessos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.BTNMaisProcessos.UseVisualStyleBackColor = False
+        Me.BTNMaisGruposDeAcoes.BackColor = System.Drawing.Color.Transparent
+        Me.BTNMaisGruposDeAcoes.BackgroundImage = Global.TrevoWebMedia.My.Resources.Resources.grupo02
+        Me.BTNMaisGruposDeAcoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.BTNMaisGruposDeAcoes.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes
+        Me.BTNMaisGruposDeAcoes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BTNMaisGruposDeAcoes.FlatAppearance.BorderSize = 0
+        Me.BTNMaisGruposDeAcoes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNMaisGruposDeAcoes.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.HotTrack
+        Me.BTNMaisGruposDeAcoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNMaisGruposDeAcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNMaisGruposDeAcoes.ForeColor = System.Drawing.Color.Black
+        Me.BTNMaisGruposDeAcoes.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.BTNMaisGruposDeAcoes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNMaisGruposDeAcoes.Location = New System.Drawing.Point(0, 0)
+        Me.BTNMaisGruposDeAcoes.Name = "BTNMaisGruposDeAcoes"
+        Me.BTNMaisGruposDeAcoes.Size = New System.Drawing.Size(142, 48)
+        Me.BTNMaisGruposDeAcoes.TabIndex = 8
+        Me.BTNMaisGruposDeAcoes.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.BTNMaisGruposDeAcoes.UseVisualStyleBackColor = False
         '
-        'CMenuS_BTNOpcoes_BTNMaisProcessos
+        'CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes
         '
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Name = "ContextMenuStrip1"
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(156, 160)
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMenuItemTipoComposto, Me.TSMenuItemSeparator1, Me.TSMenuItemTipoCriacao, Me.TSMenuItemTipoCopia, Me.TSMenuItemSeparator2, Me.TSMenuItemTipoMover, Me.TSMenuItemSeparator3, Me.TSMenuItemTipoRenome, Me.TSMenuItemSeparator4, Me.TSMenuItemTipoExclusao})
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.Name = "ContextMenuStrip1"
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.Size = New System.Drawing.Size(156, 160)
         '
         'TSMenuItemTipoComposto
         '
@@ -1161,27 +1161,27 @@ Partial Class Control_MenuBar
         Me.TSMenuItemTipoExclusao.Size = New System.Drawing.Size(155, 22)
         Me.TSMenuItemTipoExclusao.Text = "Tipo exclusão..."
         '
-        'BTNOpcoes_BTNMaisProcessos
+        'BTNOpcoes_BTNMaisGruposDeAcoes
         '
-        Me.BTNOpcoes_BTNMaisProcessos.BackColor = System.Drawing.Color.Transparent
-        Me.BTNOpcoes_BTNMaisProcessos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNOpcoes_BTNMaisProcessos.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisProcessos
-        Me.BTNOpcoes_BTNMaisProcessos.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.BorderSize = 0
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
-        Me.BTNOpcoes_BTNMaisProcessos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
-        Me.BTNOpcoes_BTNMaisProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BTNOpcoes_BTNMaisProcessos.ForeColor = System.Drawing.Color.Black
-        Me.BTNOpcoes_BTNMaisProcessos.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
-        Me.BTNOpcoes_BTNMaisProcessos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.BTNOpcoes_BTNMaisProcessos.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNOpcoes_BTNMaisProcessos.Location = New System.Drawing.Point(0, 48)
-        Me.BTNOpcoes_BTNMaisProcessos.Name = "BTNOpcoes_BTNMaisProcessos"
-        Me.BTNOpcoes_BTNMaisProcessos.Size = New System.Drawing.Size(122, 20)
-        Me.BTNOpcoes_BTNMaisProcessos.TabIndex = 9
-        Me.BTNOpcoes_BTNMaisProcessos.Text = "Mais agrupamentos"
-        Me.BTNOpcoes_BTNMaisProcessos.UseVisualStyleBackColor = False
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.BackColor = System.Drawing.Color.Transparent
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.ContextMenuStrip = Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.FlatAppearance.BorderSize = 0
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PowderBlue
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.ForeColor = System.Drawing.Color.Black
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Image = Global.TrevoWebMedia.My.Resources.Resources.seta_para_baixo
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Location = New System.Drawing.Point(0, 48)
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Name = "BTNOpcoes_BTNMaisGruposDeAcoes"
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Size = New System.Drawing.Size(142, 20)
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.TabIndex = 9
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.Text = "Mais Grupos de Ações"
+        Me.BTNOpcoes_BTNMaisGruposDeAcoes.UseVisualStyleBackColor = False
         '
         'PanelBorder_BTNNovaMidia
         '
@@ -1297,21 +1297,21 @@ Partial Class Control_MenuBar
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaToolStripMenuItem, Me.NovaPastaProcessoToolStripMenuItem})
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.Name = "CMenuS_BTNOpcoes_BTNNovaPasta"
         Me.CMenuS_BTNOpcoes_BTNNovaPasta.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(286, 48)
+        Me.CMenuS_BTNOpcoes_BTNNovaPasta.Size = New System.Drawing.Size(185, 48)
         '
         'NovaPastaToolStripMenuItem
         '
         Me.NovaPastaToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pasta_winphone1
         Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
-        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(285, 22)
+        Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.NovaPastaToolStripMenuItem.Text = "Nova pasta"
         '
         'NovaPastaProcessoToolStripMenuItem
         '
         Me.NovaPastaProcessoToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.pastaprocesso01
         Me.NovaPastaProcessoToolStripMenuItem.Name = "NovaPastaProcessoToolStripMenuItem"
-        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(285, 22)
-        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova pasta para um novo agrupamento"
+        Me.NovaPastaProcessoToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.NovaPastaProcessoToolStripMenuItem.Text = "Nova pasta de Ações"
         '
         'BTNOpcoes_BTNNovaPasta
         '
@@ -1339,7 +1339,7 @@ Partial Class Control_MenuBar
         '
         Me.Panel67.BackColor = System.Drawing.Color.LightGray
         Me.Panel67.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel67.Location = New System.Drawing.Point(274, 0)
+        Me.Panel67.Location = New System.Drawing.Point(294, 0)
         Me.Panel67.Name = "Panel67"
         Me.Panel67.Size = New System.Drawing.Size(1, 70)
         Me.Panel67.TabIndex = 10
@@ -1352,7 +1352,7 @@ Partial Class Control_MenuBar
         Me.LBLNova.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.LBLNova.Location = New System.Drawing.Point(0, 70)
         Me.LBLNova.Name = "LBLNova"
-        Me.LBLNova.Size = New System.Drawing.Size(275, 13)
+        Me.LBLNova.Size = New System.Drawing.Size(295, 13)
         Me.LBLNova.TabIndex = 6
         Me.LBLNova.Text = "Nova"
         Me.LBLNova.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1416,7 +1416,7 @@ Partial Class Control_MenuBar
         Me.Panel70.ResumeLayout(False)
         Me.PanelBorder_BTNMaisProcessos.ResumeLayout(False)
         Me.PanelEnvolve_BTNMaisProcessos.ResumeLayout(False)
-        Me.CMenuS_BTNOpcoes_BTNMaisProcessos.ResumeLayout(False)
+        Me.CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes.ResumeLayout(False)
         Me.PanelBorder_BTNNovaMidia.ResumeLayout(False)
         Me.PanelEnvolve_BTNNovaMidia.ResumeLayout(False)
         Me.PanelBorder_BTNNovaPasta.ResumeLayout(False)
@@ -1435,8 +1435,8 @@ Partial Class Control_MenuBar
     Friend WithEvents Panel67 As Panel
     Friend WithEvents LBLNova As Label
     Friend WithEvents PanelBorder_BTNMaisProcessos As Panel
-    Friend WithEvents BTNOpcoes_BTNMaisProcessos As Button
-    Friend WithEvents BTNMaisProcessos As Button
+    Friend WithEvents BTNOpcoes_BTNMaisGruposDeAcoes As Button
+    Friend WithEvents BTNMaisGruposDeAcoes As Button
     Friend WithEvents PanelBorder_BTNNovaMidia As Panel
     Friend WithEvents BTNOpcoes_BTNNovaMidia As Button
     Friend WithEvents BTNNovaMidia As Button
@@ -1501,7 +1501,7 @@ Partial Class Control_MenuBar
     Friend WithEvents CMenuS_BTNOpcoes_BTNNovaPasta As ContextMenuStrip
     Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NovaPastaProcessoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CMenuS_BTNOpcoes_BTNMaisProcessos As ContextMenuStrip
+    Friend WithEvents CMenuS_BTNOpcoes_BTNMaisGruposDeAcoes As ContextMenuStrip
     Friend WithEvents CMenuS_BTNOpcoes_BTNMover As ContextMenuStrip
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem

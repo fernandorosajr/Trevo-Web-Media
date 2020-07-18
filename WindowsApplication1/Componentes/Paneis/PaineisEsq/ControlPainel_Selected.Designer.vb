@@ -22,6 +22,10 @@ Partial Class ControlPainel_Selected
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo1.txt")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Pasta Nova")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Arquivo02.bmp")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Seleção 01", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ControlPainel_Selected))
         Me.PanelBorder_TVWDesktop = New System.Windows.Forms.Panel()
         Me.PanelBorderTVW = New System.Windows.Forms.Panel()
@@ -49,7 +53,7 @@ Partial Class ControlPainel_Selected
         '
         'PanelBorder_TVWDesktop
         '
-        Me.PanelBorder_TVWDesktop.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_TVWDesktop.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelBorder_TVWDesktop.Controls.Add(Me.PanelBorderTVW)
         Me.PanelBorder_TVWDesktop.Controls.Add(Me.PanelBorder_OpcoesDeProcessos)
         Me.PanelBorder_TVWDesktop.Dock = System.Windows.Forms.DockStyle.Fill
@@ -60,43 +64,53 @@ Partial Class ControlPainel_Selected
         '
         'PanelBorderTVW
         '
+        Me.PanelBorderTVW.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.PanelBorderTVW.Controls.Add(Me.PanelBackgroundTVW)
         Me.PanelBorderTVW.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBorderTVW.Location = New System.Drawing.Point(0, 27)
+        Me.PanelBorderTVW.Location = New System.Drawing.Point(0, 30)
         Me.PanelBorderTVW.Name = "PanelBorderTVW"
-        Me.PanelBorderTVW.Padding = New System.Windows.Forms.Padding(1)
-        Me.PanelBorderTVW.Size = New System.Drawing.Size(305, 428)
+        Me.PanelBorderTVW.Padding = New System.Windows.Forms.Padding(7)
+        Me.PanelBorderTVW.Size = New System.Drawing.Size(305, 425)
         Me.PanelBorderTVW.TabIndex = 99
         '
         'PanelBackgroundTVW
         '
-        Me.PanelBackgroundTVW.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.PanelBackgroundTVW.BackColor = System.Drawing.Color.DimGray
         Me.PanelBackgroundTVW.Controls.Add(Me.TVWFilesAndFolders)
         Me.PanelBackgroundTVW.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelBackgroundTVW.Location = New System.Drawing.Point(1, 1)
+        Me.PanelBackgroundTVW.Location = New System.Drawing.Point(7, 7)
         Me.PanelBackgroundTVW.Name = "PanelBackgroundTVW"
-        Me.PanelBackgroundTVW.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
-        Me.PanelBackgroundTVW.Size = New System.Drawing.Size(303, 426)
+        Me.PanelBackgroundTVW.Padding = New System.Windows.Forms.Padding(1)
+        Me.PanelBackgroundTVW.Size = New System.Drawing.Size(291, 411)
         Me.PanelBackgroundTVW.TabIndex = 4
         '
         'TVWFilesAndFolders
         '
-        Me.TVWFilesAndFolders.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TVWFilesAndFolders.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(37, Byte), Integer))
         Me.TVWFilesAndFolders.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TVWFilesAndFolders.CheckBoxes = True
         Me.TVWFilesAndFolders.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TVWFilesAndFolders.ForeColor = System.Drawing.Color.Gainsboro
         Me.TVWFilesAndFolders.FullRowSelect = True
         Me.TVWFilesAndFolders.HideSelection = False
-        Me.TVWFilesAndFolders.Location = New System.Drawing.Point(0, 3)
+        Me.TVWFilesAndFolders.Location = New System.Drawing.Point(1, 1)
         Me.TVWFilesAndFolders.Name = "TVWFilesAndFolders"
+        TreeNode1.Name = "Nó1"
+        TreeNode1.Text = "Arquivo1.txt"
+        TreeNode2.Name = "Nó2"
+        TreeNode2.Text = "Pasta Nova"
+        TreeNode3.Name = "Nó3"
+        TreeNode3.Text = "Arquivo02.bmp"
+        TreeNode4.Name = "Nó0"
+        TreeNode4.Text = "Seleção 01"
+        Me.TVWFilesAndFolders.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode4})
         Me.TVWFilesAndFolders.ShowLines = False
-        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(303, 423)
+        Me.TVWFilesAndFolders.Size = New System.Drawing.Size(289, 409)
         Me.TVWFilesAndFolders.TabIndex = 3
         '
         'PanelBorder_OpcoesDeProcessos
         '
-        Me.PanelBorder_OpcoesDeProcessos.BackColor = System.Drawing.Color.DimGray
+        Me.PanelBorder_OpcoesDeProcessos.BackColor = System.Drawing.Color.Transparent
         Me.PanelBorder_OpcoesDeProcessos.Controls.Add(Me.PanelBaseLuzLeft)
         Me.PanelBorder_OpcoesDeProcessos.Controls.Add(Me.PanelOpcoesDeProcessos)
         Me.PanelBorder_OpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Top
@@ -104,7 +118,7 @@ Partial Class ControlPainel_Selected
         Me.PanelBorder_OpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelBorder_OpcoesDeProcessos.Name = "PanelBorder_OpcoesDeProcessos"
         Me.PanelBorder_OpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(1, 1, 1, 0)
-        Me.PanelBorder_OpcoesDeProcessos.Size = New System.Drawing.Size(305, 27)
+        Me.PanelBorder_OpcoesDeProcessos.Size = New System.Drawing.Size(305, 30)
         Me.PanelBorder_OpcoesDeProcessos.TabIndex = 97
         '
         'PanelBaseLuzLeft
@@ -112,7 +126,7 @@ Partial Class ControlPainel_Selected
         Me.PanelBaseLuzLeft.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.PanelBaseLuzLeft.Controls.Add(Me.PanelSombra)
         Me.PanelBaseLuzLeft.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelBaseLuzLeft.Location = New System.Drawing.Point(1, 25)
+        Me.PanelBaseLuzLeft.Location = New System.Drawing.Point(1, 28)
         Me.PanelBaseLuzLeft.Name = "PanelBaseLuzLeft"
         Me.PanelBaseLuzLeft.Size = New System.Drawing.Size(303, 2)
         Me.PanelBaseLuzLeft.TabIndex = 98
@@ -133,8 +147,8 @@ Partial Class ControlPainel_Selected
         Me.PanelOpcoesDeProcessos.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelOpcoesDeProcessos.Location = New System.Drawing.Point(1, 1)
         Me.PanelOpcoesDeProcessos.Name = "PanelOpcoesDeProcessos"
-        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 0)
-        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(303, 26)
+        Me.PanelOpcoesDeProcessos.Padding = New System.Windows.Forms.Padding(5, 2, 5, 3)
+        Me.PanelOpcoesDeProcessos.Size = New System.Drawing.Size(303, 29)
         Me.PanelOpcoesDeProcessos.TabIndex = 1
         '
         'Panel36
@@ -201,12 +215,12 @@ Partial Class ControlPainel_Selected
         Me.BTN_NewFolder.TabIndex = 20
         Me.BTN_NewFolder.UseVisualStyleBackColor = False
         '
-        'Control_Selected
+        'ControlPainel_Selected
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.PanelBorder_TVWDesktop)
-        Me.Name = "Control_Selected"
+        Me.Name = "ControlPainel_Selected"
         Me.Size = New System.Drawing.Size(305, 455)
         Me.PanelBorder_TVWDesktop.ResumeLayout(False)
         Me.PanelBorderTVW.ResumeLayout(False)

@@ -4,31 +4,31 @@ Public Class Control_ControleDePasta
     Dim texto As String
     Dim number1 As Integer = 0
 
-    Public Enum styleEnum
+    Public Enum StyleEnum
         _Default = 0
         OnlyImage = 1
         ImageAndText = 2
     End Enum
 
-    Private _style As styleEnum
-    Public Property Style As styleEnum
+    Private _style As StyleEnum
+    Public Property Style As StyleEnum
         Get
             Return _style
 
         End Get
-        Set(value As styleEnum)
+        Set(value As StyleEnum)
             _style = value
 
             Select Case value
-                Case _style._Default
+                Case StyleEnum._Default     '_style._Default
                     BTNLabel.Visible = True
                     BTNImage.Visible = False
 
-                Case _style.OnlyImage
+                Case StyleEnum.OnlyImage         '_style.OnlyImage
                     BTNLabel.Visible = False
                     BTNImage.Visible = True
 
-                Case _style.ImageAndText
+                Case StyleEnum.ImageAndText    '_style.ImageAndText
                     BTNLabel.Visible = True
                     BTNImage.Visible = True
 
@@ -116,6 +116,28 @@ Public Class Control_ControleDePasta
             _text = value
             BTNLabel.Text = value
             BTNLabel.Width = 10
+
+        End Set
+    End Property
+
+    Private _displayExpandOptionsButton As Boolean
+    Public Property DisplayExpandOptionsButton As Boolean
+        Get
+            Return _displayExpandOptionsButton
+
+        End Get
+        Set(value As Boolean)
+            _displayExpandOptionsButton = value
+
+
+            If _displayExpandOptionsButton = True Then
+                ForceExpandButtonDisplay = True
+                BTNMenu.Image = My.Resources.seta_para_baixo
+
+            Else
+                BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+
+            End If
 
         End Set
     End Property
@@ -324,7 +346,13 @@ Public Class Control_ControleDePasta
 
         SelectSubMenu(subMenu)
 
-        BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+        If _displayExpandOptionsButton = False Then
+            BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+
+        Else
+            BTNMenu.Image = My.Resources.seta_para_baixo
+
+        End If
 
 
     End Function
@@ -458,16 +486,27 @@ Public Class Control_ControleDePasta
 
         Dim btn As Button = CType(sender, Button)
         btn.ContextMenuStrip.Show(btn, -20, btn.Height)
-        BTNMenu.Image = My.Resources.setaQuebradaParaBaixo
 
-        'If node.Parent Is Nothing Then
-        'End If
+        If _displayExpandOptionsButton = False Then
+            BTNMenu.Image = My.Resources.setaQuebradaParaBaixo
+
+        Else
+            BTNMenu.Image = My.Resources.seta_para_baixo
+        End If
 
         Me.ParentForm.UseWaitCursor = False
 
     End Sub
 
     Private Sub ContextMenuStrip1_Closed(sender As Object, e As ToolStripDropDownClosedEventArgs) Handles ContextMenuStrip1.Closed
-        BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+
+        If _displayExpandOptionsButton = False Then
+            BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+
+        Else
+            BTNMenu.Image = My.Resources.seta_para_baixo
+
+        End If
+
     End Sub
 End Class

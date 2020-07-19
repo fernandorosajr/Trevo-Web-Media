@@ -4,6 +4,47 @@
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
+    Public Enum DisplayModeEnum
+        FoldersControlsMode = 0
+        TextMode = 1
+    End Enum
+
+    Dim colorLostFocus As Color = Color.Gainsboro
+    Dim colorFocus As Color = Color.SkyBlue ' ColorTranslator.FromHtml(KnownColor.Highlight)
+
+    Private _displayMode As DisplayModeEnum
+    Public Property DisplayMode As DisplayModeEnum
+        Get
+            Return _displayMode
+
+        End Get
+        Set(value As DisplayModeEnum)
+            _displayMode = value
+
+            Select Case value
+
+                Case DisplayModeEnum.FoldersControlsMode
+                    PanelExibirControlesDePastas.BringToFront()
+                    BorderColorChange(colorLostFocus)
+
+                Case DisplayModeEnum.TextMode
+                    BorderColorChange(colorFocus)
+
+                    If _selectedNode IsNot Nothing Then
+                        TXTWriteAddress.Text = SelectedNode.Tag
+
+                    ElseIf _mainNode IsNot Nothing Then
+                        TXTWriteAddress.Text = MainNode.Tag
+
+                    End If
+
+                    TXTWriteAddress.Focus()
+                    Panel_EnvolveTXT.BringToFront()
+
+            End Select
+        End Set
+    End Property
+
     Private _selectedImage As Image
     Public Property SelectedImage As Image
         Get
@@ -32,7 +73,12 @@
             Return _mainNode
         End Get
         Set(value As TreeNode)
+
             _mainNode = value
+
+            If TypeOf _mainNode.Tag Is String Then
+                TXTWriteAddress.Text = _mainNode.Tag
+            End If
 
             If value IsNot Nothing Then
                 MainFolderControl.SelectedNode = value
@@ -46,6 +92,7 @@
 
             End If
         End Set
+
     End Property
 
     Private _selectedTreeView As TreeView
@@ -70,6 +117,10 @@
 
             _selectedNode = value
 
+            If TypeOf _selectedNode.Tag Is String Then
+                TXTWriteAddress.Text = _selectedNode.Tag
+            End If
+
             If value.TreeView IsNot Nothing Then
                 _selectedTreeView = value.TreeView
                 _selectedTreeView.SelectedNode = value
@@ -90,7 +141,6 @@
 
     End Property
 
-
     Public Sub New()
 
         ' Esta chamada é requerida pelo designer.
@@ -98,11 +148,7 @@
 
         ' Adicione qualquer inicialização após a chamada InitializeComponent().
         MainFolderControl.AddressBar = Me
-    End Sub
-
-
-    Private Sub Control_AddressBar_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        PanelExibirControlesDePastas.BringToFront()
 
     End Sub
 
@@ -281,4 +327,29 @@
 
         Return controleDePasta
     End Function
+
+    Private Sub PanelExibirControlesDePastas_Click(sender As Object, e As EventArgs) Handles PanelExibirControlesDePastas.Click
+
+        DisplayMode = DisplayModeEnum.TextMode
+
+    End Sub
+
+    Private Sub TXTWriteAddress_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTWriteAddress.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+
+            DisplayMode = DisplayModeEnum.FoldersControlsMode
+
+        End If
+    End Sub
+
+    Private Sub BorderColorChange(color As Color)
+        PanelBorder.BackColor = color
+        PanelBorderReflesh.BackColor = color
+    End Sub
+
+
+    Private Sub TXTWriteAddress_LostFocus(sender As Object, e As EventArgs) Handles TXTWriteAddress.LostFocus
+        DisplayMode = DisplayModeEnum.FoldersControlsMode
+
+    End Sub
 End Class

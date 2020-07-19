@@ -204,6 +204,7 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.BordeColorMouseLeave = System.Drawing.Color.Transparent
         Me.MainFolderControl.BorderColorMouseMove = System.Drawing.Color.SkyBlue
         Me.MainFolderControl.DisplayBTNMenu = True
+        Me.MainFolderControl.DisplayExpandOptionsButton = False
         Me.MainFolderControl.Dock = System.Windows.Forms.DockStyle.Left
         Me.MainFolderControl.DriveInfo = Nothing
         Me.MainFolderControl.FolderInfo = Nothing
@@ -218,7 +219,7 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.SelectedTreeView = Nothing
         Me.MainFolderControl.Size = New System.Drawing.Size(44, 21)
         Me.MainFolderControl.Slave = Nothing
-        Me.MainFolderControl.Style = TrevoWebMedia.Control_ControleDePasta.styleEnum.OnlyImage
+        Me.MainFolderControl.Style = TrevoWebMedia.Control_ControleDePasta.StyleEnum.OnlyImage
         Me.MainFolderControl.TabIndex = 21
         '
         'PanelBorderReflesh

@@ -83,6 +83,10 @@
             If value IsNot Nothing Then
                 MainFolderControl.SelectedNode = value
 
+                If _selectedNode Is Nothing Then
+                    SelectedNode = value
+                End If
+
                 MainFolderControl.Image = _mainNode.TreeView.ImageList.Images.Item(_mainNode.ImageKey)
 
                 If _selectedTreeView Is Nothing Then
@@ -152,7 +156,7 @@
 
     End Sub
 
-    Public Sub AtualizarItensExistentes(node As TreeNode)
+    Public Overloads Sub AtualizarItensExistentes(node As TreeNode)
         Dim parentNode As TreeNode
 
         If ControlesDePastas(node.Level).SelectedNode IsNot node Then
@@ -164,20 +168,39 @@
             parentNode = node.Parent
             AtualizarItensExistentes(parentNode)
         End If
+
         'TODO: Talvez funcione se atualizar a sequencia de menu tb aqui.
         ' Onde está sendo atualizada a sequencia de menu?
     End Sub
 
     Public Overloads Sub AtualizarSequenciaDeItens(node As TreeNode)
+        Dim item As Control_ControleDePasta
 
         Dim qAddressBar As Integer = PanelRecebeControlesDePastas.Controls.Count - 1
 
         If qAddressBar < 0 Then
-            CriarSequenciaDeItems(node)
+
+            item = CriarSequenciaDeItems(node)
+
+            If node.Name <> "Computador" Then
+                'If nodo.GetNodeCount(True) > 0 Then
+                If node.GetNodeCount(True) = 0 Then
+                    item.DisplayExpandOptionsButton = True
+
+                End If
+            End If
+
 
         ElseIf qAddressBar = node.Level Then
             ' Atualiza itens
             AtualizarItensExistentes(node)
+
+            If node.GetNodeCount(True) = 0 Then
+                ControlesDePastas(node.Level).DisplayExpandOptionsButton = True
+            Else
+                ControlesDePastas(node.Level).DisplayExpandOptionsButton = False
+
+            End If
 
         ElseIf qAddressBar > node.Level Then
             ' Remove e atualiza itens 
@@ -189,7 +212,10 @@
 
                 Else
                     AtualizarItensExistentes(node)
-
+                    'item.DisplayExpandOptionsButton = True
+                    If node.Name <> "Computador" Then
+                        If node.GetNodeCount(True) = 0 Then ControlesDePastas(node.Level).DisplayExpandOptionsButton = True
+                    End If
                 End If
             Next
 
@@ -199,12 +225,12 @@
             Next
 
         ElseIf qAddressBar < node.Level Then
+
             ' Adicionar item na lista(na última posição) e no panel.
 
             Dim controleDePasta As Control_ControleDePasta
+
             Dim nodeParentList As New List(Of TreeNode)
-
-
 
             nodeParentList = CriarUmaListaDeNodeParent(node)
 
@@ -214,11 +240,20 @@
                     If ControlesDePastas(x).SelectedNode IsNot nodeParentList(x) Then
                         ControlesDePastas(x).SelectedNode = nodeParentList(x)
                     End If
+                    ControlesDePastas(x).DisplayExpandOptionsButton = False
 
                 Else
                     controleDePasta = AdicionarUmItem(nodeParentList(x))
                     If x - 1 >= 0 Then   controleDePasta.Master = ControlesDePastas(x - 1)
                     controleDePasta.BringToFront()
+
+                    If x = node.Level Then
+                        If node.GetNodeCount(True) = 0 Then controleDePasta.DisplayExpandOptionsButton = True
+
+                    Else
+                        controleDePasta.DisplayExpandOptionsButton = False
+
+                    End If
 
                 End If
             Next

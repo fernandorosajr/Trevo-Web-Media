@@ -28,7 +28,7 @@ Partial Class Control_ControleDePasta
         Me.PanelBackgroundControleDePAsta = New System.Windows.Forms.Panel()
         Me.PanelBorder_BTNMenu = New System.Windows.Forms.Panel()
         Me.BTNMenu = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.CMenuPrincipal = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ItemToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BTNLabel = New System.Windows.Forms.Button()
         Me.BTNImage = New System.Windows.Forms.Button()
@@ -36,7 +36,7 @@ Partial Class Control_ControleDePasta
         Me.PanelBorder_ControleDePasta.SuspendLayout()
         Me.PanelBackgroundControleDePAsta.SuspendLayout()
         Me.PanelBorder_BTNMenu.SuspendLayout()
-        Me.ContextMenuStrip1.SuspendLayout()
+        Me.CMenuPrincipal.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelBorder_ControleDePasta
@@ -79,7 +79,7 @@ Partial Class Control_ControleDePasta
         '
         Me.BTNMenu.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.BTNMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.BTNMenu.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.BTNMenu.ContextMenuStrip = Me.CMenuPrincipal
         Me.BTNMenu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BTNMenu.FlatAppearance.BorderSize = 0
         Me.BTNMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightCyan
@@ -93,20 +93,20 @@ Partial Class Control_ControleDePasta
         Me.BTNMenu.TabIndex = 17
         Me.BTNMenu.UseVisualStyleBackColor = False
         '
-        'ContextMenuStrip1
+        'CMenuPrincipal
         '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.White
-        Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ItemToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ContextMenuStrip1.ShowCheckMargin = True
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(119, 26)
+        Me.CMenuPrincipal.BackColor = System.Drawing.Color.White
+        Me.CMenuPrincipal.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CMenuPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ItemToolStripMenuItem})
+        Me.CMenuPrincipal.Name = "ContextMenuStrip1"
+        Me.CMenuPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.CMenuPrincipal.ShowCheckMargin = True
+        Me.CMenuPrincipal.Size = New System.Drawing.Size(203, 48)
         '
         'ItemToolStripMenuItem
         '
         Me.ItemToolStripMenuItem.Name = "ItemToolStripMenuItem"
-        Me.ItemToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.ItemToolStripMenuItem.Size = New System.Drawing.Size(202, 22)
         Me.ItemToolStripMenuItem.Text = "Item"
         '
         'BTNLabel
@@ -184,7 +184,7 @@ Partial Class Control_ControleDePasta
         Me.PanelBackgroundControleDePAsta.ResumeLayout(False)
         Me.PanelBackgroundControleDePAsta.PerformLayout()
         Me.PanelBorder_BTNMenu.ResumeLayout(False)
-        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.CMenuPrincipal.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -195,7 +195,7 @@ Partial Class Control_ControleDePasta
     Friend WithEvents PanelBorder_BTNMenu As Panel
     Friend WithEvents BTNMenu As Button
     Friend WithEvents BTNLabel As Button
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents CMenuPrincipal As ContextMenuStrip
     Friend WithEvents ItemToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IMGList As ImageList
     Friend WithEvents BTNImage As Button

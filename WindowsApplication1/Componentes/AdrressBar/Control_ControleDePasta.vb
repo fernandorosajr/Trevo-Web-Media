@@ -10,6 +10,18 @@ Public Class Control_ControleDePasta
         ImageAndText = 2
     End Enum
 
+    Private _cMenuToExpandOptionsButton As ContextMenuStrip
+    Public Property CMenuToExpandOptionsButton As ContextMenuStrip
+        Get
+            Return _cMenuToExpandOptionsButton
+
+        End Get
+        Set(value As ContextMenuStrip)
+            _cMenuToExpandOptionsButton = value
+
+        End Set
+    End Property
+
     Private _style As StyleEnum
     Public Property Style As StyleEnum
         Get
@@ -134,8 +146,18 @@ Public Class Control_ControleDePasta
                 ForceExpandButtonDisplay = True
                 BTNMenu.Image = My.Resources.seta_para_baixo
 
+                If _cMenuToExpandOptionsButton IsNot Nothing Then
+                    If BTNMenu.ContextMenuStrip IsNot _cMenuToExpandOptionsButton Then
+                        BTNMenu.ContextMenuStrip = _cMenuToExpandOptionsButton
+                    End If
+                End If
+
             Else
-                BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+                    BTNMenu.Image = My.Resources.setaQuebradaParaDireita
+
+                If BTNMenu.ContextMenuStrip IsNot CMenuPrincipal Then
+                    BTNMenu.ContextMenuStrip = CMenuPrincipal
+                End If
 
             End If
 
@@ -359,7 +381,7 @@ Public Class Control_ControleDePasta
 
     Sub SelectSubMenu(subMenu As ToolStripMenuItem)
 
-        For Each item As ToolStripMenuItem In ContextMenuStrip1.Items
+        For Each item As ToolStripMenuItem In CMenuPrincipal.Items
             If item Is subMenu Then
                 item.Checked = True
 
@@ -380,7 +402,7 @@ Public Class Control_ControleDePasta
 
         Try
 
-            ContextMenuStrip1.Items.Clear()
+            CMenuPrincipal.Items.Clear()
 
 
             If _selectedNode Is Nothing Then
@@ -420,7 +442,7 @@ Public Class Control_ControleDePasta
 
                     AddHandler newSubMenuItem.Click, New System.EventHandler(AddressOf NewSubMenuItem_Clicked)
 
-                    ContextMenuStrip1.Items.Add(newSubMenuItem)
+                    CMenuPrincipal.Items.Add(newSubMenuItem)
 
                 Next
 
@@ -438,7 +460,7 @@ Public Class Control_ControleDePasta
             Return mostrarBotaoDeNMenu
 
         Catch ex As Exception
-            ContextMenuStrip1.Items.Clear()
+            CMenuPrincipal.Items.Clear()
             MsgBox(ex.Message)
 
             Return False
@@ -498,7 +520,7 @@ Public Class Control_ControleDePasta
 
     End Sub
 
-    Private Sub ContextMenuStrip1_Closed(sender As Object, e As ToolStripDropDownClosedEventArgs) Handles ContextMenuStrip1.Closed
+    Private Sub ContextMenuStrip1_Closed(sender As Object, e As ToolStripDropDownClosedEventArgs) Handles CMenuPrincipal.Closed
 
         If _displayExpandOptionsButton = False Then
             BTNMenu.Image = My.Resources.setaQuebradaParaDireita

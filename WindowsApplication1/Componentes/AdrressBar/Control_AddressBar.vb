@@ -12,6 +12,59 @@
     Dim colorLostFocus As Color = Color.Gainsboro
     Dim colorFocus As Color = Color.SkyBlue ' ColorTranslator.FromHtml(KnownColor.Highlight)
 
+    'Public SomaDeMenus As New ContextMenuStrip
+
+    Private _cMenuToExpandOptionsButton As ContextMenuStrip
+    Public Property CMenuToExpandOptionsButton As ContextMenuStrip
+
+        Get
+            Return _cMenuToExpandOptionsButton
+        End Get
+        Set(value As ContextMenuStrip)
+            _cMenuToExpandOptionsButton = value
+        End Set
+    End Property
+
+    'Private _menus As New List(Of ContextMenuStrip)
+    'Public Property Menus As List(Of ContextMenuStrip)
+    '    Get
+    '        Return _menus
+
+    '    End Get
+    '    Set(value As List(Of ContextMenuStrip))
+
+    '        _menus = value
+
+    '        If value IsNot Nothing Then
+    '            For Each menuItem As ContextMenuStrip In value
+
+    '                If menuItem.Text IsNot Nothing Then
+    '                    If Trim(menuItem.Text) <> "" Then
+    '                        Dim itemPrincipal As New ToolStripMenuItem
+
+    '                        itemPrincipal.Text = menuItem.Text
+    '                        itemPrincipal.DropDownItems.AddRange(menuItem.Items)
+
+    '                        SomaDeMenus.Items.Add(itemPrincipal)
+    '                    Else
+    '                        For Each item In menuItem.Items
+    '                            Dim obj As New Object
+    '                            'Dim click As EventHandler(Of ItemActivation)
+    '                            'click = item.Click, AddressOf Me.menuItem1_Click
+    '                            obj = New ToolStripMenuItem(item.Text, item.Image)
+    '                            SomaDeMenus.Items.Add(obj)
+
+    '                        Next
+    '                        'SomaDeMenus.Items.AddRange(menuItem.Items)
+    '                    End If
+    '                End If
+
+    '            Next
+    '        End If
+
+    '    End Set
+    'End Property
+
     Private _displayMode As DisplayModeEnum
     Public Property DisplayMode As DisplayModeEnum
         Get
@@ -156,7 +209,7 @@
 
     End Sub
 
-    Public Overloads Sub AtualizarItensExistentes(node As TreeNode)
+    Public Sub AtualizarItensExistentes(node As TreeNode)
         Dim parentNode As TreeNode
 
         If ControlesDePastas(node.Level).SelectedNode IsNot node Then
@@ -244,7 +297,7 @@
 
                 Else
                     controleDePasta = AdicionarUmItem(nodeParentList(x))
-                    If x - 1 >= 0 Then   controleDePasta.Master = ControlesDePastas(x - 1)
+                    If x - 1 >= 0 Then controleDePasta.Master = ControlesDePastas(x - 1)
                     controleDePasta.BringToFront()
 
                     If x = node.Level Then
@@ -311,7 +364,8 @@
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = New TreeNode(defaultText),
-            .AddressBar = Me
+            .AddressBar = Me,
+            .CMenuToExpandOptionsButton = _cMenuToExpandOptionsButton
         }
 
         ' .Text = defaultText,
@@ -332,7 +386,8 @@
             .Dock = DockStyle.Left,
             .SelectedNode = node,
             .AddressBar = Me,
-            .Level = node.Level
+            .Level = node.Level,
+            .CMenuToExpandOptionsButton = _cMenuToExpandOptionsButton
         }
 
         ' .Text = node.Text,
@@ -350,7 +405,8 @@
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = node,
-             .AddressBar = Me
+             .AddressBar = Me,
+            .CMenuToExpandOptionsButton = _cMenuToExpandOptionsButton
         }
 
         ' .Text = node.Text,

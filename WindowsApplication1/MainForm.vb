@@ -178,21 +178,21 @@ Long, lpColorValues As Long) As Long
         painel_Acoes.Dock = DockStyle.Fill
         painel_Acoes.Visible = True
 
-        Panel_MenuBar.Controls.Add(toolBar_Menu)
+        PanelMenuBar.Controls.Add(toolBar_Menu)
         toolBar_Menu.Dock = DockStyle.Fill
-        toolBar_Menu.Visible = False
+        toolBar_Menu.Visible = True  'False  '
 
-        Panel_MenuBar.Controls.Add(toolBar_ViewMenu)
+        PanelMenuBar.Controls.Add(toolBar_ViewMenu)
         toolBar_ViewMenu.Dock = DockStyle.Fill
-        toolBar_ViewMenu.Visible = False
+        toolBar_ViewMenu.Visible = True 'False 
 
-        Panel_MenuBar.Controls.Add(toolBar_BurnMenu)
+        PanelMenuBar.Controls.Add(toolBar_BurnMenu)
         toolBar_BurnMenu.Dock = DockStyle.Fill
-        toolBar_BurnMenu.Visible = False
+        toolBar_BurnMenu.Visible = True 'False   
 
-        Panel_MenuBar.Controls.Add(toolBar_OrganizeMenu02)
+        PanelMenuBar.Controls.Add(toolBar_OrganizeMenu02)
         toolBar_OrganizeMenu02.Dock = DockStyle.Fill
-        toolBar_OrganizeMenu02.Visible = False
+        toolBar_OrganizeMenu02.Visible = True  '  False
 
         PanelLoad_ControlSelectFileAndFoldePanel.Controls.Add(_controlSelectFileAndFolderPanel)
         _controlSelectFileAndFolderPanel.Dock = DockStyle.Fill
@@ -220,11 +220,19 @@ Long, lpColorValues As Long) As Long
         addressBar.Dock = DockStyle.Fill
         addressBar.MainNode = painel_Desktop.TVWFilesAndFolders.Nodes.Item(0)
 
+        'Dim listaDeMenus As New List(Of ContextMenuStrip) From {
+        '    CMenuParaPastaVazia
+        '}
+
+        'addressBar.Menus = listaDeMenus
+        addressBar.CMenuToExpandOptionsButton = CMenuParaPastaSemSubPasta
+
         addressBar.Visible = True
         ' ---------------------------------------------
 
-
-        AddHandler painel_Desktop.TVWFilesAndFolders.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf Painel_Desktop_AfterSelect)
+        AddHandler painel_BibliotecaDeMidias.TVFilesAndFoldersOfTheOpenMedia.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
+        AddHandler painel_MidiasAtivas.TVFilesAndFoldersOfTheOpenMedia.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
+        AddHandler painel_Desktop.TVWFilesAndFolders.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
 
 
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
@@ -277,11 +285,17 @@ Long, lpColorValues As Long) As Long
 
     End Sub
 
-    Sub Painel_Desktop_AfterSelect()
+    Sub TreeViews_AfterSelect(sender As Object, e As TreeViewEventArgs)
+        Dim tvw As TreeView
+        tvw = CType(sender, TreeView)
 
-        If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
-            addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
+        If addressBar.SelectedNode IsNot tvw.SelectedNode Then
+            addressBar.SelectedNode = tvw.SelectedNode
         End If
+
+        'If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
+        '    addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
+        'End If
 
     End Sub
 
@@ -439,7 +453,7 @@ Long, lpColorValues As Long) As Long
         'End If
     End Sub
 
-    Private Sub ChecarCheckBoxs()
+    Private Sub PanelMenuBar_CheckedCheckBoxToShowOrHide()
         Dim ChckB As New CheckBox
         Dim _visible As Boolean
 
@@ -462,7 +476,7 @@ Long, lpColorValues As Long) As Long
             End If
         Next
 
-        Panel_MenuBar.Visible = _visible
+        PanelMenuBar.Visible = _visible
 
     End Sub
 
@@ -480,17 +494,7 @@ Long, lpColorValues As Long) As Long
             chk = CType(sender, Object)
         End If
 
-        'ChBInicio.Checked = False
-        'ChBOrganizar.Checked = False
-        'ChBGravar.Checked = False
-        'ChBExibir.Checked = False
 
-        'If sender.Checked = True Then
-        '    chk.Checked = True
-        'Else
-        '    chk.Checked = False
-
-        'End If
         Dim ChckB As New Object
 
         For Each ctr As Control In Me.FLPMenu.Controls
@@ -499,16 +503,14 @@ Long, lpColorValues As Long) As Long
                 ChckB = ctr
 
                 If ChckB.Name <> chk.name Then
-                    '    ChckB.Checked = chk.Checked
 
-                    'Else
                     ChckB.Checked = False
 
                 End If
             End If
         Next
 
-        Call ChecarCheckBoxs()
+        Call PanelMenuBar_CheckedCheckBoxToShowOrHide()
 
     End Sub
 
@@ -737,10 +739,25 @@ Long, lpColorValues As Long) As Long
 
         chk = CType(sender, CheckBox)
 
-        toolBar_Menu.Visible = ChBInicio.Checked
-        toolBar_ViewMenu.Visible = ChBExibir.Checked
-        toolBar_BurnMenu.Visible = ChBGravar.Checked
-        toolBar_OrganizeMenu02.Visible = ChBOrganizar.Checked
+        Select Case chk.Name
+            Case "ChBInicio"
+                If chk.Checked = True Then toolBar_Menu.BringToFront()
+
+            Case "ChBExibir"
+                If chk.Checked = True Then toolBar_ViewMenu.BringToFront()
+
+            Case "ChBGravar"
+                If chk.Checked = True Then toolBar_BurnMenu.BringToFront()
+
+            Case "ChBOrganizar"
+                If chk.Checked = True Then toolBar_OrganizeMenu02.BringToFront()
+
+        End Select
+
+        'toolBar_Menu.Visible = ChBInicio.Checked
+        'toolBar_ViewMenu.Visible = ChBExibir.Checked
+        'toolBar_BurnMenu.Visible = ChBGravar.Checked
+        'toolBar_OrganizeMenu02.Visible = ChBOrganizar.Checked
 
     End Sub
 
@@ -989,5 +1006,31 @@ Long, lpColorValues As Long) As Long
         If RB_Clipboard.Checked = False Then
             RB_Clipboard.Image = My.Resources.verify_Clipboard01_35
         End If
+    End Sub
+
+    Private Sub PropriedadesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PropriedadesToolStripMenuItem.Click
+        RBDetalhe.Checked = True
+    End Sub
+
+    'Private Sub RB_Midias_MouseDown(sender As Object, e As MouseEventArgs) Handles RB_Midias.MouseDown
+    '    Dim radio As RadioButton
+    '    radio = CType(sender, RadioButton)
+    '    'If radio.Checked = True Then
+
+    '    radio.Checked = Not (radio.Checked)
+    '    'End If
+
+    'End Sub
+
+    Private Sub RB_Midias_DoubleClick(sender As Object, e As EventArgs) Handles RB_Midias.DoubleClick, RB_Explorer.DoubleClick, RB_PastaProcesso.DoubleClick, RB_Selecao.DoubleClick, RB_Filter.DoubleClick
+        Dim radio As RadioButton
+        radio = CType(sender, RadioButton)
+
+        radio.Checked = Not (radio.Checked)
+    End Sub
+
+    Private Sub ChBOrganizar_DoubleClick(sender As Object, e As EventArgs) Handles ChBOrganizar.DoubleClick
+        MsgBox("sss")
+
     End Sub
 End Class

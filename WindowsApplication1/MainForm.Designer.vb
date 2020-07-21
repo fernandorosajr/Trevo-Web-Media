@@ -42,7 +42,7 @@ Partial Class MainForm
         Me.PanelSubMarginBase = New System.Windows.Forms.Panel()
         Me.PanelSubMarginBaseLeft = New System.Windows.Forms.Panel()
         Me.PanelSubMarginBaseRight = New System.Windows.Forms.Panel()
-        Me.Panel_MenuBar = New System.Windows.Forms.Panel()
+        Me.PanelMenuBar = New System.Windows.Forms.Panel()
         Me.PanelMainMenu = New System.Windows.Forms.Panel()
         Me.FLPMenu = New System.Windows.Forms.FlowLayoutPanel()
         Me.MainBTNTrevoWebMenu = New System.Windows.Forms.Button()
@@ -230,6 +230,29 @@ Partial Class MainForm
         Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CMenuParaPastaSemSubPasta = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CopiarComoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RenomearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExcluirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AbrirComExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem18 = New System.Windows.Forms.ToolStripSeparator()
+        Me.MoverParaUmGrupoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AgrupamentoSelecionadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.MoverParaUmaPastaComAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NovaPastaComAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExecutarAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelTitleBar.SuspendLayout()
         CType(Me.PCBoxLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelMEsq.SuspendLayout()
@@ -283,6 +306,7 @@ Partial Class MainForm
         Me.Panel213.SuspendLayout()
         Me.Panel214.SuspendLayout()
         Me.CTMenuVisualizacao.SuspendLayout()
+        Me.CMenuParaPastaSemSubPasta.SuspendLayout()
         Me.SuspendLayout()
         '
         'PanelTitleBar
@@ -428,11 +452,11 @@ Partial Class MainForm
         resources.ApplyResources(Me.PanelSubMarginBaseRight, "PanelSubMarginBaseRight")
         Me.PanelSubMarginBaseRight.Name = "PanelSubMarginBaseRight"
         '
-        'Panel_MenuBar
+        'PanelMenuBar
         '
-        Me.Panel_MenuBar.BackColor = System.Drawing.Color.WhiteSmoke
-        resources.ApplyResources(Me.Panel_MenuBar, "Panel_MenuBar")
-        Me.Panel_MenuBar.Name = "Panel_MenuBar"
+        Me.PanelMenuBar.BackColor = System.Drawing.Color.WhiteSmoke
+        resources.ApplyResources(Me.PanelMenuBar, "PanelMenuBar")
+        Me.PanelMenuBar.Name = "PanelMenuBar"
         '
         'PanelMainMenu
         '
@@ -2089,7 +2113,7 @@ Partial Class MainForm
         '
         'CTMenuVisualizacao
         '
-        Me.CTMenuVisualizacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CTMenuVisualizacao.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.CTMenuVisualizacao.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem7, Me.ToolStripSeparator1, Me.ToolStripMenuItem3, Me.ToolStripMenuItem1, Me.MúsicasToolStripMenuItem, Me.VídeosToolStripMenuItem, Me.DocumentosToolStripMenuItem, Me.ToolStripMenuItem2, Me.ToolStripMenuItem4, Me.MostrarArquivosToolStripMenuItem, Me.MostrarPastasToolStripMenuItem, Me.ToolStripMenuItem6, Me.ToolStripMenuItem5, Me.MostrarBarraDeVisualizaçãoToolStripMenuItem})
         Me.CTMenuVisualizacao.Name = "CTMenuVisualizacao"
         Me.CTMenuVisualizacao.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -2201,6 +2225,128 @@ Partial Class MainForm
         Me.MostrarBarraDeVisualizaçãoToolStripMenuItem.Name = "MostrarBarraDeVisualizaçãoToolStripMenuItem"
         resources.ApplyResources(Me.MostrarBarraDeVisualizaçãoToolStripMenuItem, "MostrarBarraDeVisualizaçãoToolStripMenuItem")
         '
+        'CMenuParaPastaSemSubPasta
+        '
+        Me.CMenuParaPastaSemSubPasta.BackColor = System.Drawing.Color.White
+        Me.CMenuParaPastaSemSubPasta.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaToolStripMenuItem, Me.AdicionarAcoesAEstaPastaToolStripMenuItem, Me.ToolStripSeparator2, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ExcluirToolStripMenuItem, Me.ToolStripSeparator9, Me.AbrirComExplorerToolStripMenuItem, Me.ToolStripMenuItem18, Me.MoverParaUmGrupoToolStripMenuItem, Me.MoverParaUmaPastaComAcoesToolStripMenuItem, Me.ExecutarAcoesToolStripMenuItem, Me.ToolStripSeparator6, Me.PropriedadesToolStripMenuItem})
+        Me.CMenuParaPastaSemSubPasta.Name = "CMItens"
+        Me.CMenuParaPastaSemSubPasta.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        resources.ApplyResources(Me.CMenuParaPastaSemSubPasta, "CMenuParaPastaSemSubPasta")
+        '
+        'NovaPastaToolStripMenuItem
+        '
+        Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
+        resources.ApplyResources(Me.NovaPastaToolStripMenuItem, "NovaPastaToolStripMenuItem")
+        '
+        'AdicionarAcoesAEstaPastaToolStripMenuItem
+        '
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Name = "AdicionarAcoesAEstaPastaToolStripMenuItem"
+        resources.ApplyResources(Me.AdicionarAcoesAEstaPastaToolStripMenuItem, "AdicionarAcoesAEstaPastaToolStripMenuItem")
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        resources.ApplyResources(Me.ToolStripSeparator2, "ToolStripSeparator2")
+        '
+        'CopiarComoToolStripMenuItem
+        '
+        Me.CopiarComoToolStripMenuItem.Name = "CopiarComoToolStripMenuItem"
+        resources.ApplyResources(Me.CopiarComoToolStripMenuItem, "CopiarComoToolStripMenuItem")
+        '
+        'CopiarParaToolStripMenuItem
+        '
+        Me.CopiarParaToolStripMenuItem.Name = "CopiarParaToolStripMenuItem"
+        resources.ApplyResources(Me.CopiarParaToolStripMenuItem, "CopiarParaToolStripMenuItem")
+        '
+        'CopiarParaÁreaDeTranferênciaToolStripMenuItem
+        '
+        Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem.Name = "CopiarParaÁreaDeTranferênciaToolStripMenuItem"
+        resources.ApplyResources(Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, "CopiarParaÁreaDeTranferênciaToolStripMenuItem")
+        '
+        'RenomearToolStripMenuItem
+        '
+        Me.RenomearToolStripMenuItem.Name = "RenomearToolStripMenuItem"
+        resources.ApplyResources(Me.RenomearToolStripMenuItem, "RenomearToolStripMenuItem")
+        '
+        'ExcluirToolStripMenuItem
+        '
+        Me.ExcluirToolStripMenuItem.Name = "ExcluirToolStripMenuItem"
+        resources.ApplyResources(Me.ExcluirToolStripMenuItem, "ExcluirToolStripMenuItem")
+        '
+        'ToolStripSeparator9
+        '
+        Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
+        resources.ApplyResources(Me.ToolStripSeparator9, "ToolStripSeparator9")
+        '
+        'AbrirComExplorerToolStripMenuItem
+        '
+        Me.AbrirComExplorerToolStripMenuItem.Name = "AbrirComExplorerToolStripMenuItem"
+        resources.ApplyResources(Me.AbrirComExplorerToolStripMenuItem, "AbrirComExplorerToolStripMenuItem")
+        '
+        'ToolStripMenuItem18
+        '
+        Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
+        resources.ApplyResources(Me.ToolStripMenuItem18, "ToolStripMenuItem18")
+        '
+        'MoverParaUmGrupoToolStripMenuItem
+        '
+        Me.MoverParaUmGrupoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoAgrupamentoToolStripMenuItem, Me.AgrupamentoSelecionadoToolStripMenuItem, Me.ToolStripSeparator4})
+        Me.MoverParaUmGrupoToolStripMenuItem.Name = "MoverParaUmGrupoToolStripMenuItem"
+        resources.ApplyResources(Me.MoverParaUmGrupoToolStripMenuItem, "MoverParaUmGrupoToolStripMenuItem")
+        '
+        'NovoAgrupamentoToolStripMenuItem
+        '
+        Me.NovoAgrupamentoToolStripMenuItem.Name = "NovoAgrupamentoToolStripMenuItem"
+        resources.ApplyResources(Me.NovoAgrupamentoToolStripMenuItem, "NovoAgrupamentoToolStripMenuItem")
+        '
+        'AgrupamentoSelecionadoToolStripMenuItem
+        '
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Name = "AgrupamentoSelecionadoToolStripMenuItem"
+        resources.ApplyResources(Me.AgrupamentoSelecionadoToolStripMenuItem, "AgrupamentoSelecionadoToolStripMenuItem")
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        resources.ApplyResources(Me.ToolStripSeparator4, "ToolStripSeparator4")
+        '
+        'MoverParaUmaPastaComAcoesToolStripMenuItem
+        '
+        Me.MoverParaUmaPastaComAcoesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovaPastaComAcoesToolStripMenuItem, Me.ToolStripSeparator5, Me.ToolStripMenuItem8})
+        Me.MoverParaUmaPastaComAcoesToolStripMenuItem.Name = "MoverParaUmaPastaComAcoesToolStripMenuItem"
+        resources.ApplyResources(Me.MoverParaUmaPastaComAcoesToolStripMenuItem, "MoverParaUmaPastaComAcoesToolStripMenuItem")
+        '
+        'NovaPastaComAcoesToolStripMenuItem
+        '
+        Me.NovaPastaComAcoesToolStripMenuItem.Name = "NovaPastaComAcoesToolStripMenuItem"
+        resources.ApplyResources(Me.NovaPastaComAcoesToolStripMenuItem, "NovaPastaComAcoesToolStripMenuItem")
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        resources.ApplyResources(Me.ToolStripSeparator5, "ToolStripSeparator5")
+        '
+        'ToolStripMenuItem8
+        '
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        resources.ApplyResources(Me.ToolStripMenuItem8, "ToolStripMenuItem8")
+        '
+        'ExecutarAcoesToolStripMenuItem
+        '
+        Me.ExecutarAcoesToolStripMenuItem.Image = Global.TrevoWebMedia.My.Resources.Resources.avancar_1
+        Me.ExecutarAcoesToolStripMenuItem.Name = "ExecutarAcoesToolStripMenuItem"
+        resources.ApplyResources(Me.ExecutarAcoesToolStripMenuItem, "ExecutarAcoesToolStripMenuItem")
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        resources.ApplyResources(Me.ToolStripSeparator6, "ToolStripSeparator6")
+        '
+        'PropriedadesToolStripMenuItem
+        '
+        Me.PropriedadesToolStripMenuItem.Name = "PropriedadesToolStripMenuItem"
+        resources.ApplyResources(Me.PropriedadesToolStripMenuItem, "PropriedadesToolStripMenuItem")
+        '
         'MainForm
         '
         resources.ApplyResources(Me, "$this")
@@ -2212,7 +2358,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.Splitter5)
         Me.Controls.Add(Me.Panel_Left)
         Me.Controls.Add(Me.PanelToobarEndereco)
-        Me.Controls.Add(Me.Panel_MenuBar)
+        Me.Controls.Add(Me.PanelMenuBar)
         Me.Controls.Add(Me.PanelMainMenu)
         Me.Controls.Add(Me.PanelMEsq)
         Me.Controls.Add(Me.PanelMDir)
@@ -2286,6 +2432,7 @@ Partial Class MainForm
         Me.Panel214.ResumeLayout(False)
         Me.Panel214.PerformLayout()
         Me.CTMenuVisualizacao.ResumeLayout(False)
+        Me.CMenuParaPastaSemSubPasta.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2301,7 +2448,7 @@ Partial Class MainForm
     Friend WithEvents PanelTitleBarMarginBotton As System.Windows.Forms.Panel
     Friend WithEvents PanelMDir As System.Windows.Forms.Panel
     Friend WithEvents PanelMBase As System.Windows.Forms.Panel
-    Friend WithEvents Panel_MenuBar As System.Windows.Forms.Panel
+    Friend WithEvents PanelMenuBar As System.Windows.Forms.Panel
     Friend WithEvents PanelMainMenu As System.Windows.Forms.Panel
     Friend WithEvents FLPMenu As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents ChBInicio As System.Windows.Forms.CheckBox
@@ -2495,4 +2642,27 @@ Partial Class MainForm
     Friend WithEvents PanelSubMarginBase As Panel
     Friend WithEvents PanelSubMarginLeft As Panel
     Friend WithEvents PanelSubMarginRight As Panel
+    Friend WithEvents CMenuParaPastaSemSubPasta As ContextMenuStrip
+    Friend WithEvents NovaPastaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AdicionarAcoesAEstaPastaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents CopiarComoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CopiarParaÁreaDeTranferênciaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents RenomearToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExcluirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator9 As ToolStripSeparator
+    Friend WithEvents AbrirComExplorerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem18 As ToolStripSeparator
+    Friend WithEvents MoverParaUmGrupoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovoAgrupamentoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AgrupamentoSelecionadoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents MoverParaUmaPastaComAcoesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NovaPastaComAcoesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents ExecutarAcoesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
+    Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
 End Class

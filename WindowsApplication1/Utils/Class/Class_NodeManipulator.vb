@@ -54,15 +54,23 @@ Public Class Class_NodeManipulator
 
     Public Overloads Function ListarNodosIrmaos(node As TreeNode) As TreeNodeCollection
         Dim nodeParent As TreeNode
+        Dim nodeIrmaos As TreeNodeCollection
+
         nodeParent = node.Parent
 
-        Return nodeParent.Nodes
+        If nodeParent IsNot Nothing Then
+            nodeIrmaos = nodeParent.Nodes
+        Else
+            nodeIrmaos = Nothing
+        End If
+
+        Return nodeIrmaos
 
     End Function
 
     Public Function ListarNodosFilhos(selectedNode As TreeNode, dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), Renamed_SelectedFoldersAndFiles As List(Of Object), index As Long)
         Dim file As FileInfo
-        Dim folder As DirectoryInfo
+
         Dim indexFile As Long = index
         Dim indexFolder As Long = index
         If selectedNode.GetNodeCount(True) > 0 Then

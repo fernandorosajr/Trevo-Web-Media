@@ -46,6 +46,7 @@ Public Class ControlPainel_Desktop
         ' This call is required by the designer.
         InitializeComponent()
         LoadTree()
+
         'PopulateTreeView()
         ' Add any initialization after the InitializeComponent() call.
 
@@ -55,8 +56,8 @@ Public Class ControlPainel_Desktop
 
         If CHK_ShowCheck.Checked = 1 Then
             'TVWFilesAndFolders.CheckBoxes = True
-
         End If
+
         TVWFilesAndFolders.CheckBoxes = CHK_ShowCheck.Checked
 
     End Sub
@@ -69,10 +70,10 @@ Public Class ControlPainel_Desktop
 
         Dim _path As New DirectoryInfo(node.Tag)
 
-        If node.Name = "Computador" Then
+        If node.Name = "Este Computador" Then
             TVWFilesAndFolders.LabelEdit = False
 
-        ElseIf node.Parent.Name = "Computador" Then
+        ElseIf node.Parent.Name = "Este Computador" Then
 
             If driveAnalysis.IsDrive(node.Tag) = True Then
                 TVWFilesAndFolders.LabelEdit = _path.Exists
@@ -156,8 +157,8 @@ Public Class ControlPainel_Desktop
 
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
-        If node.Name = "Computador" Then Exit Sub
-        If node.Name <> "Desktop" And node.Parent.Name <> "Computador" Then
+        If node.Name = "Este Computador" Then Exit Sub
+        If node.Name <> "Desktop" And node.Parent.Name <> "Este Computador" Then
             node.ImageKey = "pastaAberta"
             node.SelectedImageKey = "pastaAberta"
         End If
@@ -168,8 +169,8 @@ Public Class ControlPainel_Desktop
 
         Dim node As TreeNode
         node = CType(e.Node, TreeNode)
-        If node.Name = "Computador" Then Exit Sub
-        If node.Name <> "Desktop" And node.Parent.Name <> "Computador" Then
+        If node.Name = "Este Computador" Then Exit Sub
+        If node.Name <> "Desktop" And node.Parent.Name <> "Este Computador" Then
             node.ImageKey = "pastaFechada"
             node.SelectedImageKey = "pastaFechada"
         End If
@@ -186,7 +187,9 @@ Public Class ControlPainel_Desktop
         tipoDeArquivo = "*.*"
 
         ' Cria o nódulo "Computador", seus submódulos e o expande
-        tvRoot = TVWFilesAndFolders.Nodes.Add("Computador", "Computador", "Computador", "Computador")
+
+        'tvRoot = TVWFilesAndFolders.Nodes.Add("Computador", "Este Computador", "Computador", "Computador")
+        tvRoot = TVWFilesAndFolders.Nodes.Add("Este Computador", "Este Computador", "Computador", "Computador")
         tvNodeDeComputador = tvRoot
         tvNodeDeComputador.Tag = "Computador"
 
@@ -194,15 +197,19 @@ Public Class ControlPainel_Desktop
         tvNodeDeDesktop = tvRoot
         tvNodeDeDesktop.Tag = SpecialDirectories.Desktop
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("Documentos", "Documentos", "Documentos", "Documentos")
+        'tvRoot = tvNodeDeComputador.Nodes.Add("Documentos", "Documentos", "Documentos", "Documentos")
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Documentos", "Documentos", "Documentos", "Documentos")
         tvRoot.Tag = SpecialDirectories.MyDocuments
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("MyMusic", "Músicas", "Musicas", "Musicas")
+        'tvRoot = tvNodeDeComputador.Nodes.Add("MyMusic", "Músicas", "Musicas", "Musicas")
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Músicas", "Músicas", "Musicas", "Musicas")
         tvRoot.Tag = SpecialDirectories.MyMusic
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add("MyPictures", "Imagens", "Imagens", "Imagens")
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Imagens", "Imagens", "Imagens", "Imagens")
+
+        'tvRoot = tvNodeDeComputador.Nodes.Add("MyPictures", "Imagens", "Imagens", "Imagens")
         tvRoot.Tag = SpecialDirectories.MyPictures
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
@@ -218,7 +225,8 @@ Public Class ControlPainel_Desktop
             MkDir(caminhoDaPastaDoUsuario & "\Videos")
         End If
 
-        tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Videos", "Videos", "Videos", "Videos")
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Videos", "Videos", "Videos", "Videos")
+        'tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Videos", "Videos", "Videos", "Videos")
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
@@ -231,7 +239,8 @@ Public Class ControlPainel_Desktop
             MkDir(caminhoDaPastaDoUsuario & "\Downloads")
         End If
 
-        tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Downloads", "Downloads", "down", "down")
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Downloads", "Downloads", "down", "down")
+        'tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Downloads", "Downloads", "down", "down")
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Downloads"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
@@ -250,7 +259,7 @@ Public Class ControlPainel_Desktop
 
         For Each drD In dirDir01
             nome = drD.Name
-            tvRoot = tvNodeDeDesktop.Nodes.Add("Desktop\" & nome, nome, "pastaFechada", "pastaFechada")
+            tvRoot = tvNodeDeDesktop.Nodes.Add(tvNodeDeComputador.Name & "\Desktop\" & nome, nome, "pastaFechada", "pastaFechada")
             tvRoot.Tag = drD.FullName
             tvRoot.ContextMenuStrip = Me.CMItens
 
@@ -332,13 +341,13 @@ Public Class ControlPainel_Desktop
     End Sub
 
 
-    Sub Load_MainDirectories(node As TreeNode)
+    Public Sub Load_MainDirectories(node As TreeNode)
 
         Try
             ' TODO: http://www.macoratti.net/13/12/vbn_list1.htm
 
             Select Case node.Name
-                Case "Computador"
+                Case "Este Computador"
 
                 Case "Desktop"
 
@@ -867,4 +876,19 @@ Public Class ControlPainel_Desktop
         If TVWFilesAndFolders.LabelEdit = True Then EditeNode(TVWFilesAndFolders.SelectedNode)
     End Sub
 
+    Private Sub NodeInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NodeInfoToolStripMenuItem.Click
+        ExibirDados(TVWFilesAndFolders.SelectedNode)
+
+    End Sub
+
+    Sub ExibirDados(node As TreeNode)
+        Dim info As String
+
+        info = "TEXT: " & node.Text & Chr(13) &
+               "NAME: " & node.Name & Chr(13) &
+               "FULLPATH: " & node.FullPath &
+               "TAG :" & node.Tag
+
+        MsgBox(info)
+    End Sub
 End Class

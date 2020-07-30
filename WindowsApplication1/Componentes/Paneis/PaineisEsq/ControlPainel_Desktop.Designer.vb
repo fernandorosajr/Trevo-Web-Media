@@ -42,6 +42,8 @@ Partial Class ControlPainel_Desktop
         Me.ExpandirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.NovaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
         Me.CopiarComoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CopiarParaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,10 +53,10 @@ Partial Class ControlPainel_Desktop
         Me.ToolStripSeparator9 = New System.Windows.Forms.ToolStripSeparator()
         Me.AbrirComExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem18 = New System.Windows.Forms.ToolStripSeparator()
-        Me.AdicionarAcoesAEstaPastaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MoverParaUmGrupoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovoAgrupamentoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgrupamentoSelecionadoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.MoverParaUmaPastaComAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NovaPastaComAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
@@ -62,8 +64,7 @@ Partial Class ControlPainel_Desktop
         Me.ExecutarAcoesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.PropriedadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.NodeInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PanelBorder_TVWDesktop.SuspendLayout()
         Me.PanelBorderTVW.SuspendLayout()
         Me.PanelBackgroundTVW.SuspendLayout()
@@ -254,9 +255,9 @@ Partial Class ControlPainel_Desktop
         '
         'CMItens
         '
-        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpandirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.AdicionarAcoesAEstaPastaToolStripMenuItem, Me.ToolStripMenuItem3, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.ToolStripSeparator9, Me.AbrirComExplorerToolStripMenuItem, Me.ToolStripMenuItem18, Me.MoverParaUmGrupoToolStripMenuItem, Me.MoverParaUmaPastaComAcoesToolStripMenuItem, Me.ExecutarAcoesToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem})
+        Me.CMItens.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExpandirToolStripMenuItem, Me.ToolStripSeparator1, Me.NovaPastaToolStripMenuItem, Me.AdicionarAcoesAEstaPastaToolStripMenuItem, Me.ToolStripMenuItem3, Me.CopiarComoToolStripMenuItem, Me.CopiarParaToolStripMenuItem, Me.CopiarParaÁreaDeTranferênciaToolStripMenuItem, Me.RenomearToolStripMenuItem, Me.ToolStripSeparator2, Me.ExcluirToolStripMenuItem, Me.ToolStripSeparator9, Me.AbrirComExplorerToolStripMenuItem, Me.ToolStripMenuItem18, Me.MoverParaUmGrupoToolStripMenuItem, Me.MoverParaUmaPastaComAcoesToolStripMenuItem, Me.ExecutarAcoesToolStripMenuItem, Me.ToolStripSeparator3, Me.PropriedadesToolStripMenuItem, Me.NodeInfoToolStripMenuItem})
         Me.CMItens.Name = "CMItens"
-        Me.CMItens.Size = New System.Drawing.Size(253, 348)
+        Me.CMItens.Size = New System.Drawing.Size(253, 370)
         '
         'ExpandirToolStripMenuItem
         '
@@ -275,6 +276,17 @@ Partial Class ControlPainel_Desktop
         Me.NovaPastaToolStripMenuItem.Name = "NovaPastaToolStripMenuItem"
         Me.NovaPastaToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
         Me.NovaPastaToolStripMenuItem.Text = "Nova Pasta...."
+        '
+        'AdicionarAcoesAEstaPastaToolStripMenuItem
+        '
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Name = "AdicionarAcoesAEstaPastaToolStripMenuItem"
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
+        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Text = "Adicionar ações a esta pasta..."
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(249, 6)
         '
         'CopiarComoToolStripMenuItem
         '
@@ -328,12 +340,6 @@ Partial Class ControlPainel_Desktop
         Me.ToolStripMenuItem18.Name = "ToolStripMenuItem18"
         Me.ToolStripMenuItem18.Size = New System.Drawing.Size(249, 6)
         '
-        'AdicionarAcoesAEstaPastaToolStripMenuItem
-        '
-        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Name = "AdicionarAcoesAEstaPastaToolStripMenuItem"
-        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
-        Me.AdicionarAcoesAEstaPastaToolStripMenuItem.Text = "Adicionar ações a esta pasta..."
-        '
         'MoverParaUmGrupoToolStripMenuItem
         '
         Me.MoverParaUmGrupoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NovoAgrupamentoToolStripMenuItem, Me.AgrupamentoSelecionadoToolStripMenuItem, Me.ToolStripMenuItem1})
@@ -350,8 +356,13 @@ Partial Class ControlPainel_Desktop
         'AgrupamentoSelecionadoToolStripMenuItem
         '
         Me.AgrupamentoSelecionadoToolStripMenuItem.Name = "AgrupamentoSelecionadoToolStripMenuItem"
-        Me.AgrupamentoSelecionadoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AgrupamentoSelecionadoToolStripMenuItem.Size = New System.Drawing.Size(187, 22)
         Me.AgrupamentoSelecionadoToolStripMenuItem.Text = "Grupo selecionado"
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(184, 6)
         '
         'MoverParaUmaPastaComAcoesToolStripMenuItem
         '
@@ -395,15 +406,11 @@ Partial Class ControlPainel_Desktop
         Me.PropriedadesToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
         Me.PropriedadesToolStripMenuItem.Text = "Mostrar detalhes"
         '
-        'ToolStripMenuItem1
+        'NodeInfoToolStripMenuItem
         '
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(177, 6)
-        '
-        'ToolStripMenuItem3
-        '
-        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(249, 6)
+        Me.NodeInfoToolStripMenuItem.Name = "NodeInfoToolStripMenuItem"
+        Me.NodeInfoToolStripMenuItem.Size = New System.Drawing.Size(252, 22)
+        Me.NodeInfoToolStripMenuItem.Text = "Node Info"
         '
         'ControlPainel_Desktop
         '
@@ -466,4 +473,5 @@ Partial Class ControlPainel_Desktop
     Friend WithEvents PanelBackgroundTVW As Panel
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem3 As ToolStripSeparator
+    Friend WithEvents NodeInfoToolStripMenuItem As ToolStripMenuItem
 End Class

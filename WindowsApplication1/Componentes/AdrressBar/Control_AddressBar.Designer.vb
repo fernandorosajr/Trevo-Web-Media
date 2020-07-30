@@ -97,6 +97,9 @@ Partial Class Control_AddressBar
         '
         'TXTWriteAddress
         '
+        Me.TXTWriteAddress.AutoCompleteCustomSource.AddRange(New String() {"Computador", "Maria", "Bionica"})
+        Me.TXTWriteAddress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
+        Me.TXTWriteAddress.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.TXTWriteAddress.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TXTWriteAddress.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TXTWriteAddress.ForeColor = System.Drawing.SystemColors.ControlText
@@ -203,6 +206,7 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.BackgroundColorMouseMove = System.Drawing.Color.LightCyan
         Me.MainFolderControl.BordeColorMouseLeave = System.Drawing.Color.Transparent
         Me.MainFolderControl.BorderColorMouseMove = System.Drawing.Color.SkyBlue
+        Me.MainFolderControl.CMenuToExpandOptionsButton = Nothing
         Me.MainFolderControl.DisplayBTNMenu = True
         Me.MainFolderControl.DisplayExpandOptionsButton = False
         Me.MainFolderControl.Dock = System.Windows.Forms.DockStyle.Left

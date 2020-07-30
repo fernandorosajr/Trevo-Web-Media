@@ -233,6 +233,7 @@ Long, lpColorValues As Long) As Long
         AddHandler painel_BibliotecaDeMidias.TVFilesAndFoldersOfTheOpenMedia.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
         AddHandler painel_MidiasAtivas.TVFilesAndFoldersOfTheOpenMedia.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
         AddHandler painel_Desktop.TVWFilesAndFolders.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
+        'AddHandler painel_Desktop.TVWFilesAndFolders.AfterSelect, New System.Windows.Forms.TreeViewEventHandler(AddressOf TreeViews_AfterSelect)
 
 
         ' Painel_MidiasAtivas.TVMedias_NodeMouseClick(sender, e)
@@ -292,11 +293,22 @@ Long, lpColorValues As Long) As Long
         If addressBar.SelectedNode IsNot tvw.SelectedNode Then
             addressBar.SelectedNode = tvw.SelectedNode
         End If
-
+        ExibirDados(addressBar.SelectedNode)
         'If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
         '    addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
         'End If
 
+    End Sub
+
+    Sub ExibirDados(node As TreeNode)
+        Dim info As String
+
+        info = "TEXT: " & node.Text & Chr(13) &
+               "NAME: " & node.Name & Chr(13) &
+               "FULLPATH: " & node.FullPath & Chr(13) &
+               "TAG :" & node.Tag
+
+        MsgBox(info)
     End Sub
 
     Public Function AdicionarItemNoView(Drive As DriveInfo, Numero As Integer)

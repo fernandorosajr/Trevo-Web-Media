@@ -227,6 +227,7 @@ Long, lpColorValues As Long) As Long
         'addressBar.Menus = listaDeMenus
         addressBar.CMenuToExpandOptionsButton = CMenuParaPastaSemSubPasta
 
+        'addressBar.Keyword()
         addressBar.Visible = True
         ' ---------------------------------------------
 
@@ -1024,6 +1025,18 @@ Long, lpColorValues As Long) As Long
         RBDetalhe.Checked = True
     End Sub
 
+    Private Sub CheckBox20_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox20.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox21_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox21.CheckedChanged
+
+    End Sub
+
+    Private Sub CheckBox22_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox22.CheckedChanged
+
+    End Sub
+
     'Private Sub RB_Midias_MouseDown(sender As Object, e As MouseEventArgs) Handles RB_Midias.MouseDown
     '    Dim radio As RadioButton
     '    radio = CType(sender, RadioButton)
@@ -1043,6 +1056,11 @@ Long, lpColorValues As Long) As Long
 
     Private Sub ChBOrganizar_DoubleClick(sender As Object, e As EventArgs) Handles ChBOrganizar.DoubleClick
         MsgBox("sss")
+
+    End Sub
+
+    Private Sub CheckBox22_Click(sender As Object, e As EventArgs) Handles CheckBox22.Click
+        Form1.ShowDialog()
 
     End Sub
 End Class

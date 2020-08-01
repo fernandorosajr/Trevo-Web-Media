@@ -194,6 +194,7 @@ Partial Class Form1
         Me.BTN_FechaPanelOpcoesDeProcessos = New System.Windows.Forms.Button()
         Me.Panel_Envolve = New System.Windows.Forms.Panel()
         Me.PanelCarregaFolder = New System.Windows.Forms.Panel()
+        Me.PanelSeparador = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel205.SuspendLayout()
         Me.PanelAllLocalizar.SuspendLayout()
@@ -1677,20 +1678,21 @@ Partial Class Form1
         Me.Panel13.Controls.Add(Me.Panel16)
         Me.Panel13.Controls.Add(Me.PanelMarginNameAndExtencao)
         Me.Panel13.Controls.Add(Me.Panel14)
+        Me.Panel13.Controls.Add(Me.PanelSeparador)
         Me.Panel13.Controls.Add(Me.PanelMarginPath)
         Me.Panel13.Controls.Add(Me.Panel15)
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel13.Location = New System.Drawing.Point(0, 15)
+        Me.Panel13.Location = New System.Drawing.Point(0, 23)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Padding = New System.Windows.Forms.Padding(5)
-        Me.Panel13.Size = New System.Drawing.Size(240, 225)
+        Me.Panel13.Size = New System.Drawing.Size(240, 217)
         Me.Panel13.TabIndex = 1
         '
         'Panel16
         '
         Me.Panel16.Controls.Add(Me.Panel17)
         Me.Panel16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel16.Location = New System.Drawing.Point(5, 79)
+        Me.Panel16.Location = New System.Drawing.Point(5, 89)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Padding = New System.Windows.Forms.Padding(5, 10, 5, 10)
         Me.Panel16.Size = New System.Drawing.Size(230, 21)
@@ -1710,7 +1712,7 @@ Partial Class Form1
         Me.PanelMarginNameAndExtencao.BackColor = System.Drawing.Color.Transparent
         Me.PanelMarginNameAndExtencao.Controls.Add(Me.PanelNameAndExtencao)
         Me.PanelMarginNameAndExtencao.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelMarginNameAndExtencao.Location = New System.Drawing.Point(5, 52)
+        Me.PanelMarginNameAndExtencao.Location = New System.Drawing.Point(5, 62)
         Me.PanelMarginNameAndExtencao.Name = "PanelMarginNameAndExtencao"
         Me.PanelMarginNameAndExtencao.Padding = New System.Windows.Forms.Padding(3)
         Me.PanelMarginNameAndExtencao.Size = New System.Drawing.Size(230, 27)
@@ -1815,7 +1817,7 @@ Partial Class Form1
         Me.Panel14.Controls.Add(Me.FlowLayoutPanel2)
         Me.Panel14.Controls.Add(Me.FlowLayoutPanel1)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel14.Location = New System.Drawing.Point(5, 40)
+        Me.Panel14.Location = New System.Drawing.Point(5, 50)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(230, 12)
         Me.Panel14.TabIndex = 98
@@ -1989,7 +1991,7 @@ Partial Class Form1
         Me.Panel12.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel12.Location = New System.Drawing.Point(0, 0)
         Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(240, 15)
+        Me.Panel12.Size = New System.Drawing.Size(240, 23)
         Me.Panel12.TabIndex = 0
         '
         'BTN_FechaPanelOpcoesDeProcessos
@@ -2004,7 +2006,7 @@ Partial Class Form1
         Me.BTN_FechaPanelOpcoesDeProcessos.Location = New System.Drawing.Point(219, 0)
         Me.BTN_FechaPanelOpcoesDeProcessos.Margin = New System.Windows.Forms.Padding(0)
         Me.BTN_FechaPanelOpcoesDeProcessos.Name = "BTN_FechaPanelOpcoesDeProcessos"
-        Me.BTN_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(21, 15)
+        Me.BTN_FechaPanelOpcoesDeProcessos.Size = New System.Drawing.Size(21, 23)
         Me.BTN_FechaPanelOpcoesDeProcessos.TabIndex = 32
         Me.BTN_FechaPanelOpcoesDeProcessos.UseVisualStyleBackColor = False
         '
@@ -2027,6 +2029,14 @@ Partial Class Form1
         Me.PanelCarregaFolder.Name = "PanelCarregaFolder"
         Me.PanelCarregaFolder.Size = New System.Drawing.Size(411, 546)
         Me.PanelCarregaFolder.TabIndex = 1
+        '
+        'PanelSeparador
+        '
+        Me.PanelSeparador.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelSeparador.Location = New System.Drawing.Point(5, 40)
+        Me.PanelSeparador.Name = "PanelSeparador"
+        Me.PanelSeparador.Size = New System.Drawing.Size(230, 10)
+        Me.PanelSeparador.TabIndex = 102
         '
         'Form1
         '
@@ -2251,4 +2261,5 @@ Partial Class Form1
     Friend WithEvents BTN_TXTPath As Button
     Friend WithEvents Panel16 As Panel
     Friend WithEvents Panel17 As Panel
+    Friend WithEvents PanelSeparador As Panel
 End Class

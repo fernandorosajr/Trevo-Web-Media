@@ -2672,8 +2672,4 @@ Partial Class MainForm
     Friend WithEvents ExecutarAcoesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator6 As ToolStripSeparator
     Friend WithEvents PropriedadesToolStripMenuItem As ToolStripMenuItem
-    'Friend WithEvents Control_AddressBar1 As Control_AddressBar
-    'Friend WithEvents Control_AddressBar2 As Control_AddressBar
-    ''Friend WithEvents Control_AddressBar2 As Control_AddressBar
-    'Friend WithEvents Control_AddressBar1 As Control_AddressBar
 End Class

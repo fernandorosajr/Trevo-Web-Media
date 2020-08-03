@@ -148,25 +148,25 @@ Public Class Control_AddressBar
     '    End Set
     'End Property
 
-    Private _keyword As New Keyword
-    Public Property Keyword() As Keyword
+    Private _keyword As New KeywordItem
+    Public Property Keyword() As KeywordItem
         Get
             Return _keyword
 
         End Get
-        Set(value As Keyword)
+        Set(value As KeywordItem)
             _keyword = value
 
         End Set
     End Property
 
-    Private _keywords2 As New Keyword
-    Public Property Keywords2() As Keyword
+    Private _keywords2 As New KeywordItem
+    Public Property Keywords2() As KeywordItem
         Get
             Return _keywords2
 
         End Get
-        Set(value As Keyword)
+        Set(value As KeywordItem)
             _keyword = value
 
         End Set

@@ -4,10 +4,6 @@
 
     Private Shared Instancias As Integer
 
-    Public Sub New()
-        Instancias += 1
-
-    End Sub
 
     Private _items As New Collection      ' New List(Of Keyword)
     Public Property Items As Collection  ' As List(Of Keyword)
@@ -20,43 +16,129 @@
     End Property
 
 
-End Class
-
-Public Class Keyword
-    Private Shared Instancias As Integer
-
     Public Sub New()
         Instancias += 1
 
     End Sub
 
-    Public Sub New(keyword As String, node As TreeNode)
+    Public Sub New(keywordText As String, node As TreeNode)
+
+        Dim keywordItem As New KeywordItem(keywordText, node)
+        Items.Add(keywordItem)
+
+    End Sub
+
+    Public Sub New(keywordItem As KeywordItem)
+        Dim keyText As String = keywordItem.KeywordText
+        Dim list As New List(Of TreeNode)
+
+        list = keywordItem.NodeAssociated
+        Dim keyItem As New KeywordItem(keyText, list)
+
+        Items.Add(keywordItem)
+
+        Instancias += 1
+    End Sub
+
+    Public Overloads Sub Add(keywordItem As KeywordItem)
+        Items.Add(keywordItem)
+        Instancias += 1
+
+    End Sub
+
+    Public Overloads Sub Add(keyword As String, treeNode As TreeNode)
+        Dim keywordItem As New KeywordItem(keyword, treeNode)
+        Items.Add(keywordItem)
+    End Sub
+
+End Class
+
+Public Class KeywordItem
+    Public Shared Property Instancias As Integer
+    Private Const titulo As String = "Keyword"
+
+    Public Sub New()
+        Dim title As String = titulo + " " + Instancias.ToString
+        Me.KeywordText = title
+
+        Me.NodeAssociated.Add(New TreeNode("Node Associated " + Instancias.ToString))
+
+        Instancias += 1
+
+    End Sub
+
+    Public Sub New(keywordText As String, node As TreeNode)
+
+        Me.KeywordText = keywordText
+        Me.NodeAssociated.Add(node)
+
         Instancias += 1
 
     End Sub
 
     Public Sub New(node As TreeNode)
+
+        Me.KeywordText = node.Text
+        Me.NodeAssociated.Add(node)
+
         Instancias += 1
 
     End Sub
 
-    Public Sub New(node As List(Of TreeNode))
+    Public Sub New(treeNodeList As List(Of TreeNode))
+        Dim title As String = titulo + " " + Instancias.ToString
+
+        Me.KeywordText = title
+
+        For Each node As TreeNode In treeNodeList
+            Me.NodeAssociated.Add(node)
+        Next
+
         Instancias += 1
 
     End Sub
+
+    Public Sub New(keywordText As String, treeNodeList As List(Of TreeNode))
+
+        Me.KeywordText = keywordText
+
+        For Each node As TreeNode In treeNodeList
+            Me.NodeAssociated.Add(node)
+        Next
+
+        Instancias += 1
+
+    End Sub
+
 
     Public Sub New(TreeNodeCollection As TreeNodeCollection)
+
+        Dim title As String = titulo + " " + Instancias
+
+        Me.KeywordText = title
+
+        For Each node As TreeNode In TreeNodeCollection
+            Me.NodeAssociated.Add(node)
+        Next
+
         Instancias += 1
 
     End Sub
 
-    Public Sub New(keyword As String, TreeNodeCollection As TreeNodeCollection)
+    Public Sub New(keywordText As String, TreeNodeCollection As TreeNodeCollection)
+
+        Me.KeywordText = keywordText
+
+        For Each node As TreeNode In TreeNodeCollection
+            Me.NodeAssociated.Add(node)
+        Next
+
         Instancias += 1
 
     End Sub
 
     Private _keyWordDeClass_Keywords As String
-    Public Property Keyword As String
+    Public Property KeywordText As String
         Get
             Return _keyWordDeClass_Keywords
 

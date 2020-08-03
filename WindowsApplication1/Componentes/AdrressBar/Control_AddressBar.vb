@@ -152,12 +152,12 @@ Public Class Control_AddressBar
 
 
 
-    Private _keywords As New Class_KeywordsCollections
-    Public Property NodesCollectionWithKeywords() As Class_KeywordsCollections
+    Private _keywords As New Class_NodesCollectionWithKeywords
+    Public Property NodesCollectionWithKeywords() As Class_NodesCollectionWithKeywords
         Get
             Return _keywords
         End Get
-        Set(value As Class_KeywordsCollections)
+        Set(value As Class_NodesCollectionWithKeywords)
             _keywords = value
 
         End Set

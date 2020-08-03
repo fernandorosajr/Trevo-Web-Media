@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
 
-Public Class Class_KeywordsCollections
+Public Class Class_NodesCollectionWithKeywords
     ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/
     ' http://www.macoratti.net/vbn_ams1.htm
 

@@ -136,45 +136,24 @@ Public Class Control_AddressBar
     'End Property
 
 
-    'Public _keyword As New List(Of Class_Keywords)
-    'Public Property Keyword As List(Of Class_Keywords)
-    '    Get
-    '        Return _keyword
 
-    '    End Get
-    '    Set(value As List(Of Class_Keywords))
-    '        _keyword = value
 
-    '    End Set
-    'End Property
-
-    Private _keyword As New KeywordItem
-    Public Property Keyword() As KeywordItem
+    Private _keyword As New KeywordsItem
+    Public Property Keyword() As KeywordsItem
         Get
             Return _keyword
 
         End Get
-        Set(value As KeywordItem)
+        Set(value As KeywordsItem)
             _keyword = value
 
         End Set
     End Property
 
-    Private _keywords2 As New KeywordItem
-    Public Property Keywords2() As KeywordItem
-        Get
-            Return _keywords2
-
-        End Get
-        Set(value As KeywordItem)
-            _keyword = value
-
-        End Set
-    End Property
 
 
     Private _keywords As New Class_KeywordsCollections
-    Public Property Keywords() As Class_KeywordsCollections
+    Public Property NodesCollectionWithKeywords() As Class_KeywordsCollections
         Get
             Return _keywords
         End Get
@@ -183,6 +162,17 @@ Public Class Control_AddressBar
 
         End Set
     End Property
+
+    'Private _keywords2 As List(Of KeywordItem.KeywordNode)
+    'Public Property Keywords2() As List(Of KeywordItem.KeywordNode)
+    '    Get
+    '        Return _keywords2
+    '    End Get
+    '    Set(value As List(Of KeywordItem.KeywordNode))
+    '        _keywords2 = value
+
+    '    End Set
+    'End Property
 
     'Private _keyword As List(Of Class_KeywordsCollections.KeywordNode)
     'Public Property Keyword() As List(Of Class_KeywordsCollections.KeywordNode)
@@ -554,7 +544,6 @@ Public Class Control_AddressBar
 
         'Dim teste As New KeywordNode
         'KeywordsList.Add(teste)
-
 
     End Sub
 

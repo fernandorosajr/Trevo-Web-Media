@@ -25,44 +25,44 @@ Public Class Class_NodesCollectionWithKeywords
 
     Public Sub New(keywordText As String, node As TreeNode)
 
-        Dim keywordItem As New KeywordsItem(keywordText, node)
+        Dim keywordItem As New NodeWithKeywordsItem(keywordText, node)
         Items.Add(keywordItem)
 
     End Sub
 
     Public Sub New(keywordsCollections As Collections.Specialized.StringCollection, node As TreeNode)
 
-        Dim keywordItem As New KeywordsItem(keywordsCollections, node)
+        Dim keywordItem As New NodeWithKeywordsItem(keywordsCollections, node)
         Items.Add(keywordItem)
 
     End Sub
 
-    Public Sub New(keywordItem As KeywordsItem)
+    Public Sub New(keywordItem As NodeWithKeywordsItem)
         Dim keyText As Collections.Specialized.StringCollection = keywordItem.Keywords
         Dim nodeAssociated As New TreeNode
 
         nodeAssociated = keywordItem.NodeAssociated
-        Dim keyItem As New KeywordsItem(keyText, nodeAssociated)
+        Dim keyItem As New NodeWithKeywordsItem(keyText, nodeAssociated)
 
         Items.Add(keywordItem)
 
         Instancias += 1
     End Sub
 
-    Public Overloads Sub Add(keywordItem As KeywordsItem)
+    Public Overloads Sub Add(keywordItem As NodeWithKeywordsItem)
         Items.Add(keywordItem)
         Instancias += 1
 
     End Sub
 
     Public Overloads Sub Add(keyword As String, treeNode As TreeNode)
-        Dim keywordItem As New KeywordsItem(keyword, treeNode)
+        Dim keywordItem As New NodeWithKeywordsItem(keyword, treeNode)
         Items.Add(keywordItem)
     End Sub
 
 End Class
 
-Public Class KeywordsItem
+Public Class NodeWithKeywordsItem
     Public Shared Property Instancias As Integer
     Private Const titulo As String = "Keyword"
 

@@ -138,13 +138,13 @@ Public Class Control_AddressBar
 
 
 
-    Private _keyword As New KeywordsItem
-    Public Property Keyword() As KeywordsItem
+    Private _keyword As New NodeWithKeywordsItem
+    Public Property Keyword() As NodeWithKeywordsItem
         Get
             Return _keyword
 
         End Get
-        Set(value As KeywordsItem)
+        Set(value As NodeWithKeywordsItem)
             _keyword = value
 
         End Set

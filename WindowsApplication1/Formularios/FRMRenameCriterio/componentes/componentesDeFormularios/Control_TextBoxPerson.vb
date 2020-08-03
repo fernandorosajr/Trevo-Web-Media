@@ -536,7 +536,7 @@ Public Class Control_TextBoxPerson
     End Property
 
 
-    Private Property _foreColorPlaceholder As Color
+    Private _foreColorPlaceholder As Color
     Public Property ForeColorPlaceholder As Color
         Get
             Return _foreColorPlaceholder

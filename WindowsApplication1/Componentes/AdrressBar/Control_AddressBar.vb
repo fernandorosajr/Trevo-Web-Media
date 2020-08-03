@@ -1,10 +1,61 @@
 ﻿Imports System.Data.SqlTypes
 Imports System.IO
-
-
-
+Imports System.Security.Cryptography
 
 Public Class Control_AddressBar
+
+    'Private _structureTeste As Stru_Usu
+    'Public Property StructureTeste As Stru_Usu
+    '    Get
+    '        Return _structureTeste
+    '    End Get
+    '    Set(value As Stru_Usu)
+    '        _structureTeste = value
+    '        y
+    '    End Set
+    'End Property
+
+    'Structure Stru_Usu
+    '    Dim Nome As String
+    '    Dim Cidade As String
+    '    Private LCDataNacimento As Date
+    '    Private LcIdade As Integer
+    '    Private LcUf As String
+    '    Public Property DataNacimento() As Date
+    '        Get
+    '            Return LCDataNacimento
+    '        End Get
+    '        Set(ByVal Value As Date)
+    '            LCDataNacimento = Value
+    '            LcIdade = System.DateTime.Now.Year - LCDataNacimento.Year
+    '        End Set
+    '    End Property
+    '    Public ReadOnly Property Idade() As Integer
+    '        Get
+    '            Return LcIdade
+    '        End Get
+    '    End Property
+    '    Public Property UF() As String
+    '        Get
+    '            Return LcUf
+    '        End Get
+    '        Set(ByVal Value As String)
+    '            If Value = "" Then
+    '                LcUf = Value
+    '            Else
+    '                Dim listaUF() As String = {"RJ", "SP"}
+    '                Value = Value.ToUpper
+    '                If Array.BinarySearch(listaUF, Value) < 0 Then
+    '                    RaiseEvent InvalidUF(Value)
+    '                Else
+    '                    LcUf = Value
+    '                End If
+    '            End If
+    '        End Set
+    '    End Property
+    '    Public Event InvalidUF(ByVal UF As String)
+    'End Structure
+
 
     Dim confirmar As Byte
     'Importar Classes
@@ -62,6 +113,137 @@ Public Class Control_AddressBar
     '    End Set
     'End Property
 
+
+    'Public _keyword As New List(Of Class_Keywords)
+    'Public Property Keyword As List(Of Class_Keywords.KeywordNode)
+    '    Get
+    '        Dim classKey As New List(Of Class_Keywords.KeywordNode)
+
+    '        For Each item As Class_Keywords In _keyword
+    '            classKey(x) = item.KeywordNode
+
+    '        Next
+    '        classKey.KeywordNode = _keyword
+    '        Return _keyword.
+    '    End Get
+    '    Set(value As List(Of Class_Keywords.KeywordNode))
+
+
+    '        _keyword = value
+
+
+    '    End Set
+    'End Property
+
+
+    'Public _keyword As New List(Of Class_Keywords)
+    'Public Property Keyword As List(Of Class_Keywords)
+    '    Get
+    '        Return _keyword
+
+    '    End Get
+    '    Set(value As List(Of Class_Keywords))
+    '        _keyword = value
+
+    '    End Set
+    'End Property
+
+    Private _keyword As New Keyword
+    Public Property Keyword() As Keyword
+        Get
+            Return _keyword
+
+        End Get
+        Set(value As Keyword)
+            _keyword = value
+
+        End Set
+    End Property
+
+    Private _keywords2 As New Keyword
+    Public Property Keywords2() As Keyword
+        Get
+            Return _keywords2
+
+        End Get
+        Set(value As Keyword)
+            _keyword = value
+
+        End Set
+    End Property
+
+
+    Private _keywords As New Class_KeywordsCollections
+    Public Property Keywords() As Class_KeywordsCollections
+        Get
+            Return _keywords
+        End Get
+        Set(value As Class_KeywordsCollections)
+            _keywords = value
+
+        End Set
+    End Property
+
+    'Private _keyword As List(Of Class_KeywordsCollections.KeywordNode)
+    'Public Property Keyword() As List(Of Class_KeywordsCollections.KeywordNode)
+    '    Get
+    '        Return _keyword
+    '    End Get
+    '    Set(value As List(Of Class_KeywordsCollections.KeywordNode))
+    '        _keyword = value
+    '    End Set
+    'End Property
+
+    'Dim nodeTeste As TreeNode = New TreeNode("Meu Nó")
+
+    'Dim nodeList As New List(Of TreeNode) From {
+    '    nodeTeste
+    '}
+
+
+    'Dim teste As Class_Keywords = New Class_Keywords With {
+    '    .Keyword = "teste",
+    '    .NodeAssociated = nodeList
+    '}
+
+    'Private _keywordsList As New Class_KeywordsCollections
+    'Public Property KeywordsList() As Class_KeywordsCollections
+    '    Get
+    '        Return _keywordsList
+    '    End Get
+    '    Set(value As Class_KeywordsCollections)
+    '        _keywordsList = value
+    '    End Set
+    'End Property
+
+
+
+    'Public Structure KeywordNode
+
+    '    Private _keyword As String
+    '    Public Property Keyword As String
+    '        Get
+    '            Return _keyword
+    '        End Get
+    '        Set(value As String)
+    '            _keyword = value
+    '        End Set
+    '    End Property
+
+    '    Private _nodeAssociated As List(Of TreeNode)
+    '    Public Property NodeAssociated() As List(Of TreeNode)
+    '        Get
+
+    '            Return _nodeAssociated
+    '        End Get
+    '        Set(value As List(Of TreeNode))
+
+    '            _nodeAssociated = value
+
+    '        End Set
+
+    '    End Property
+    'End Structure
 
     Private _treeNode As New TreeNode
     Public Property TreeNode As TreeNodeCollection

@@ -189,7 +189,7 @@
     <Compile Include="Formularios\FRMDialogFileConflictForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Utils\Class\DataClass\Class_Keywords.vb" />
+    <Compile Include="Utils\Class\DataClass\Class_KeywordsCollections.vb" />
     <Compile Include="Utils\Class\DataClass\Class_DataRenamingCriterion.vb" />
     <Compile Include="Formularios\FRMRenameCriterio\componentes\componentesDeFormularios\Control_ComboBoxPerson.Designer.vb">
       <DependentUpon>Control_ComboBoxPerson.vb</DependentUpon>

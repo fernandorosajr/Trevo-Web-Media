@@ -41,6 +41,18 @@ Public Class ControlPainel_Desktop
         End Set
     End Property
 
+
+    Private _nodesCollectionWithKeywords As New Class_NodesCollectionWithKeywords
+    Public Property NodesCollectionWithKeywords() As Class_NodesCollectionWithKeywords
+        Get
+            Return _nodesCollectionWithKeywords
+        End Get
+        Set(value As Class_NodesCollectionWithKeywords)
+            _nodesCollectionWithKeywords = value
+
+        End Set
+    End Property
+
     Public Sub New()
 
         ' This call is required by the designer.
@@ -193,26 +205,67 @@ Public Class ControlPainel_Desktop
         tvNodeDeComputador = tvRoot
         tvNodeDeComputador.Tag = "Computador"
 
+        Dim computerKeys As New Collections.Specialized.StringCollection From {
+            "Este Computador",
+            "Computer",
+            "Meu Computador",
+            "My Computer"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvNodeDeComputador)
+
         tvRoot = tvNodeDeComputador.Nodes.Add("Desktop", "Área de Trabalho", "Desktop", "Desktop")
         tvNodeDeDesktop = tvRoot
         tvNodeDeDesktop.Tag = SpecialDirectories.Desktop
+
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Desktop",
+            "Área de Trabalho"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvNodeDeDesktop)
 
         'tvRoot = tvNodeDeComputador.Nodes.Add("Documentos", "Documentos", "Documentos", "Documentos")
         tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Documentos", "Documentos", "Documentos", "Documentos")
         tvRoot.Tag = SpecialDirectories.MyDocuments
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Documentos",
+            "Documents",
+            "Meus Documentos",
+            "My Documents"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvRoot)
+
         'tvRoot = tvNodeDeComputador.Nodes.Add("MyMusic", "Músicas", "Musicas", "Musicas")
         tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Músicas", "Músicas", "Musicas", "Musicas")
         tvRoot.Tag = SpecialDirectories.MyMusic
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
-        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Imagens", "Imagens", "Imagens", "Imagens")
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Músicas",
+            "Minhas Músicas",
+            "My Music",
+            "Musics"
+        }
 
+        _nodesCollectionWithKeywords.Add(computerKeys, tvRoot)
+
+        tvRoot = tvNodeDeComputador.Nodes.Add(tvNodeDeComputador.Name & "\Imagens", "Imagens", "Imagens", "Imagens")
         'tvRoot = tvNodeDeComputador.Nodes.Add("MyPictures", "Imagens", "Imagens", "Imagens")
         tvRoot.Tag = SpecialDirectories.MyPictures
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Imagens",
+            "Pictures",
+            "My Pictures",
+            "Minhas Imagens"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvRoot)
 
         Dim listaDeDiretorios As String()
         Dim caminhoDaPastaDoUsuario As String
@@ -230,6 +283,15 @@ Public Class ControlPainel_Desktop
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Videos"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Vídeos",
+            "Meus Vídeos",
+            "My Videos",
+            "Videos"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvRoot)
+
         listaDeDiretorios = StringFunctions.SepararPalavras(SpecialDirectories.CurrentUserApplicationData, delimitadoresDeCaminhoDePasta)
 
         caminhoDaPastaDoUsuario = listaDeDiretorios(0) & "\" & listaDeDiretorios(1) & "\" & listaDeDiretorios(2)
@@ -243,6 +305,14 @@ Public Class ControlPainel_Desktop
         'tvRoot = tvNodeDeComputador.Nodes.Add(caminhoDaPastaDoUsuario & "\Downloads", "Downloads", "down", "down")
         tvRoot.Tag = caminhoDaPastaDoUsuario & "\Downloads"
         tvRoot.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
+
+        computerKeys = New Collections.Specialized.StringCollection From {
+            "Downloads",
+            "My Downloads",
+            "Meus Downloads"
+        }
+
+        _nodesCollectionWithKeywords.Add(computerKeys, tvRoot)
 
         Dim AreaDeTrabalho As String
         Dim NomeDasSubPastasDaAreaDeTrabalho() As String
@@ -337,6 +407,7 @@ Public Class ControlPainel_Desktop
             tvNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
 
         Next
+        TVWFilesAndFolders.Tag = _nodesCollectionWithKeywords
 
     End Sub
 

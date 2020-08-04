@@ -219,12 +219,39 @@ Long, lpColorValues As Long) As Long
         PanelRecebe_AddressBar.Controls.Add(addressBar)
         addressBar.Dock = DockStyle.Fill
         addressBar.MainNode = painel_Desktop.TVWFilesAndFolders.Nodes.Item(0)
+        'addressBar.NodesCollectionWithKeywords = painel_Desktop.NodesCollectionWithKeywords
+        'Dim nodeTest As New TreeNode
+        'nodeTest = painel_Desktop.TVWFilesAndFolders.Nodes.Item(0)
 
-        'Dim listaDeMenus As New List(Of ContextMenuStrip) From {
-        '    CMenuParaPastaVazia
-        '}
+        'Dim nodeWithKeywords As New NodeWithKeywordsItem("Minha Key", nodeTest)
 
-        'addressBar.Menus = listaDeMenus
+        'Dim keywords As New Class_NodesCollectionWithKeywords(nodeWithKeywords)
+
+
+
+        'nodeWithKeywords.Keywords.Add("Nó 01")
+
+        ''keyword.NodeAssociated = (nodeTest)
+
+        ''keywords.Items.Add(keyword)
+
+        'addressBar.NodesCollectionWithKeywords = keywords
+
+        ''keywordTest. = "Computer"
+        ''keywordTest.NodeAssociated.Add(nodeTest)
+        ''addressBar.KeywordsList.Add(keywordTest)
+
+
+        ''addressBar.KeywordsList = New List(Of Class_Keywords) From {
+        ''    keywordTest
+        ''}
+
+
+        '''Dim listaDeMenus As New List(Of ContextMenuStrip) From {
+        '''    CMenuParaPastaVazia
+        '''}
+
+        '''addressBar.Menus = listaDeMenus
         addressBar.CMenuToExpandOptionsButton = CMenuParaPastaSemSubPasta
 
         'addressBar.Keyword()

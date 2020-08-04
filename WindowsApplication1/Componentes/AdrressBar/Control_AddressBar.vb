@@ -4,58 +4,6 @@ Imports System.Security.Cryptography
 
 Public Class Control_AddressBar
 
-    'Private _structureTeste As Stru_Usu
-    'Public Property StructureTeste As Stru_Usu
-    '    Get
-    '        Return _structureTeste
-    '    End Get
-    '    Set(value As Stru_Usu)
-    '        _structureTeste = value
-    '        y
-    '    End Set
-    'End Property
-
-    'Structure Stru_Usu
-    '    Dim Nome As String
-    '    Dim Cidade As String
-    '    Private LCDataNacimento As Date
-    '    Private LcIdade As Integer
-    '    Private LcUf As String
-    '    Public Property DataNacimento() As Date
-    '        Get
-    '            Return LCDataNacimento
-    '        End Get
-    '        Set(ByVal Value As Date)
-    '            LCDataNacimento = Value
-    '            LcIdade = System.DateTime.Now.Year - LCDataNacimento.Year
-    '        End Set
-    '    End Property
-    '    Public ReadOnly Property Idade() As Integer
-    '        Get
-    '            Return LcIdade
-    '        End Get
-    '    End Property
-    '    Public Property UF() As String
-    '        Get
-    '            Return LcUf
-    '        End Get
-    '        Set(ByVal Value As String)
-    '            If Value = "" Then
-    '                LcUf = Value
-    '            Else
-    '                Dim listaUF() As String = {"RJ", "SP"}
-    '                Value = Value.ToUpper
-    '                If Array.BinarySearch(listaUF, Value) < 0 Then
-    '                    RaiseEvent InvalidUF(Value)
-    '                Else
-    '                    LcUf = Value
-    '                End If
-    '            End If
-    '        End Set
-    '    End Property
-    '    Public Event InvalidUF(ByVal UF As String)
-    'End Structure
-
 
     Dim confirmar As Byte
     'Importar Classes
@@ -66,75 +14,6 @@ Public Class Control_AddressBar
 
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
-
-    'Public Structure KeywordNode
-    '    'Dim keyword As String
-    '    'Dim nodeAssociated As TreeNode
-
-    '    Private _keyword As String
-    '    Public Property Keyword As String
-    '        Get
-    '            Return _keyword
-    '        End Get
-    '        Set(value As String)
-    '            _keyword = value
-
-    '        End Set
-    '    End Property
-
-    '    Private _nodeAssociated As TreeNodeCollection
-    '    Public Property NodeAssociated As TreeNodeCollection
-    '        Get
-    '            Return _nodeAssociated
-    '        End Get
-    '        Set(value As TreeNodeCollection)
-    '            _nodeAssociated = value
-
-    '            'If value Is Nothing Then
-    '            '    value = New TreeNodeCollection
-    '            'End If
-
-
-    '        End Set
-
-    '    End Property
-
-    'End Structure
-
-    'Private _keywordsList As New List(Of KeywordNode)
-
-    'Public Property KeywordsList As List(Of KeywordNode)
-    '    Get
-    '        Return _keywordsList
-
-    '    End Get
-    '    Set(value As List(Of KeywordNode))
-    '        _keywordsList = value
-    '    End Set
-    'End Property
-
-
-    'Public _keyword As New List(Of Class_Keywords)
-    'Public Property Keyword As List(Of Class_Keywords.KeywordNode)
-    '    Get
-    '        Dim classKey As New List(Of Class_Keywords.KeywordNode)
-
-    '        For Each item As Class_Keywords In _keyword
-    '            classKey(x) = item.KeywordNode
-
-    '        Next
-    '        classKey.KeywordNode = _keyword
-    '        Return _keyword.
-    '    End Get
-    '    Set(value As List(Of Class_Keywords.KeywordNode))
-
-
-    '        _keyword = value
-
-
-    '    End Set
-    'End Property
-
 
 
 
@@ -152,88 +31,17 @@ Public Class Control_AddressBar
 
 
 
-    Private _keywords As New Class_NodesCollectionWithKeywords
+    Private _nodesCollectionWithKeywords As New Class_NodesCollectionWithKeywords
     Public Property NodesCollectionWithKeywords() As Class_NodesCollectionWithKeywords
         Get
-            Return _keywords
+            Return _nodesCollectionWithKeywords
         End Get
         Set(value As Class_NodesCollectionWithKeywords)
-            _keywords = value
+            _nodesCollectionWithKeywords = value
 
         End Set
     End Property
 
-    'Private _keywords2 As List(Of KeywordItem.KeywordNode)
-    'Public Property Keywords2() As List(Of KeywordItem.KeywordNode)
-    '    Get
-    '        Return _keywords2
-    '    End Get
-    '    Set(value As List(Of KeywordItem.KeywordNode))
-    '        _keywords2 = value
-
-    '    End Set
-    'End Property
-
-    'Private _keyword As List(Of Class_KeywordsCollections.KeywordNode)
-    'Public Property Keyword() As List(Of Class_KeywordsCollections.KeywordNode)
-    '    Get
-    '        Return _keyword
-    '    End Get
-    '    Set(value As List(Of Class_KeywordsCollections.KeywordNode))
-    '        _keyword = value
-    '    End Set
-    'End Property
-
-    'Dim nodeTeste As TreeNode = New TreeNode("Meu Nó")
-
-    'Dim nodeList As New List(Of TreeNode) From {
-    '    nodeTeste
-    '}
-
-
-    'Dim teste As Class_Keywords = New Class_Keywords With {
-    '    .Keyword = "teste",
-    '    .NodeAssociated = nodeList
-    '}
-
-    'Private _keywordsList As New Class_KeywordsCollections
-    'Public Property KeywordsList() As Class_KeywordsCollections
-    '    Get
-    '        Return _keywordsList
-    '    End Get
-    '    Set(value As Class_KeywordsCollections)
-    '        _keywordsList = value
-    '    End Set
-    'End Property
-
-
-
-    'Public Structure KeywordNode
-
-    '    Private _keyword As String
-    '    Public Property Keyword As String
-    '        Get
-    '            Return _keyword
-    '        End Get
-    '        Set(value As String)
-    '            _keyword = value
-    '        End Set
-    '    End Property
-
-    '    Private _nodeAssociated As List(Of TreeNode)
-    '    Public Property NodeAssociated() As List(Of TreeNode)
-    '        Get
-
-    '            Return _nodeAssociated
-    '        End Get
-    '        Set(value As List(Of TreeNode))
-
-    '            _nodeAssociated = value
-
-    '        End Set
-
-    '    End Property
-    'End Structure
 
     Private _treeNode As New TreeNode
     Public Property TreeNode As TreeNodeCollection
@@ -350,46 +158,6 @@ Public Class Control_AddressBar
         End Set
     End Property
 
-    'Private _menus As New List(Of ContextMenuStrip)
-    'Public Property Menus As List(Of ContextMenuStrip)
-    '    Get
-    '        Return _menus
-
-    '    End Get
-    '    Set(value As List(Of ContextMenuStrip))
-
-    '        _menus = value
-
-    '        If value IsNot Nothing Then
-    '            For Each menuItem As ContextMenuStrip In value
-
-    '                If menuItem.Text IsNot Nothing Then
-    '                    If Trim(menuItem.Text) <> "" Then
-    '                        Dim itemPrincipal As New ToolStripMenuItem
-
-    '                        itemPrincipal.Text = menuItem.Text
-    '                        itemPrincipal.DropDownItems.AddRange(menuItem.Items)
-
-    '                        SomaDeMenus.Items.Add(itemPrincipal)
-    '                    Else
-    '                        For Each item In menuItem.Items
-    '                            Dim obj As New Object
-    '                            'Dim click As EventHandler(Of ItemActivation)
-    '                            'click = item.Click, AddressOf Me.menuItem1_Click
-    '                            obj = New ToolStripMenuItem(item.Text, item.Image)
-    '                            SomaDeMenus.Items.Add(obj)
-
-    '                        Next
-    '                        'SomaDeMenus.Items.AddRange(menuItem.Items)
-    '                    End If
-    '                End If
-
-    '            Next
-    '        End If
-
-    '    End Set
-    'End Property
-
     Private _displayMode As DisplayModeEnum
     Public Property DisplayMode As DisplayModeEnum
         Get
@@ -489,6 +257,12 @@ Public Class Control_AddressBar
         Set(value As TreeView)
             _selectedTreeView = value
 
+            If value IsNot Nothing Then
+                If TypeOf value.Tag Is Class_NodesCollectionWithKeywords Then
+                    _nodesCollectionWithKeywords = value.Tag
+                End If
+            End If
+
         End Set
     End Property
 
@@ -510,7 +284,7 @@ Public Class Control_AddressBar
                 End If
 
                 If value.TreeView IsNot Nothing Then
-                    _selectedTreeView = value.TreeView
+                    SelectedTreeView = value.TreeView
                     '_selectedTreeView.SelectedNode = value
 
                     If _imageList Is Nothing Then

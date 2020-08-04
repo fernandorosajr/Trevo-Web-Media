@@ -9824,7 +9824,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABk
-        BAAAAk1TRnQBSQFMAwEBAAEwAQ8BMAEPARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
+        BAAAAk1TRnQBSQFMAwEBAAHIAQ8ByAEPARABAAEQAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABQAMA
         ARADAAEBAQABIAYAARAqAAMQARYDGAEiAxoBJAMUARwDCgEOAwEBAuAAAzABSwNfAfMDKwH8AfIC8wH/
         A/oB/wNfAfMDYQHmA0ABcAMLAQ/YAANkAecBsAHbAccB/wG/AboBvAH/A9AB/wPhAf8D9An/A/sB/wNd
         AcoDEAEVzwABAQNkAewBlgKXAf8DrQH/AcABwgHBAf8DywH/A+EB/wP3Ef8DXAHJAwoBDcgAAzABSwGr
@@ -11933,7 +11933,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAY
-        ZgAAAk1TRnQBSQFMAgEBGgEAAfgBCgH4AQoBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        ZgAAAk1TRnQBSQFMAgEBGgEAAZABCwGQAQsBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABcAMAAQEBAAEgBgABcGIAAYcB3wL/tgAB5QH/AwAB/yYAAdMB/wIAAdkB/xAAAY0B4gL/AYkB4AL/
         GAACYAFZAeuaAAHmAf8CAAHlAf8CAAGGAf8eAAHcAf8CAAHbAf8CAAG5Af8IAAMWAR8BlAHkAv8BkAHj
         Av8BjAHhAv8BAAHHAeoB/wEAAcsB7wH/AQABzwHyAf8BAAHTAfUB/wEAAdcB+AH/AcMCAAH/AegBlwEA
@@ -12371,6 +12371,105 @@
         AQEB/AEDAf8BAQHAAQMBwAEBAf4BBwH/AYMBwAEDAcABAQb/AcABAQs=
 </value>
   </data>
+  <data name="&gt;&gt;Panel79.Name" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;Panel79.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel79.Parent" xml:space="preserve">
+    <value>PanelR</value>
+  </data>
+  <data name="&gt;&gt;Panel79.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelR.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 172</value>
+  </data>
+  <data name="PanelR.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 5, 0, 5</value>
+  </data>
+  <data name="PanelR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>704, 552</value>
+  </data>
+  <data name="PanelR.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;PanelR.Name" xml:space="preserve">
+    <value>PanelR</value>
+  </data>
+  <data name="&gt;&gt;PanelR.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelR.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PanelR.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PanelRecebe.Name" xml:space="preserve">
+    <value>PanelRecebe</value>
+  </data>
+  <data name="&gt;&gt;PanelRecebe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelRecebe.Parent" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;PanelRecebe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PanelSubMenu.Name" xml:space="preserve">
+    <value>PanelSubMenu</value>
+  </data>
+  <data name="&gt;&gt;PanelSubMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelSubMenu.Parent" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;PanelSubMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Name" xml:space="preserve">
+    <value>PanelToobarBotton</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Parent" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Panel79.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel79.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 5</value>
+  </data>
+  <data name="Panel79.Size" type="System.Drawing.Size, System.Drawing">
+    <value>704, 542</value>
+  </data>
+  <data name="Panel79.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel79.Name" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;Panel79.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel79.Parent" xml:space="preserve">
+    <value>PanelR</value>
+  </data>
+  <data name="&gt;&gt;Panel79.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="PanelRecebe.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -12457,901 +12556,6 @@
   </data>
   <data name="&gt;&gt;PanelSubMenu.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="Panel199.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Panel199.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Panel199.Size" type="System.Drawing.Size, System.Drawing">
-    <value>702, 1</value>
-  </data>
-  <data name="Panel199.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;Panel199.Name" xml:space="preserve">
-    <value>Panel199</value>
-  </data>
-  <data name="&gt;&gt;Panel199.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel199.Parent" xml:space="preserve">
-    <value>PanelFundao</value>
-  </data>
-  <data name="&gt;&gt;Panel199.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Panel201.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CheckBox29.Name" xml:space="preserve">
-    <value>CheckBox29</value>
-  </data>
-  <data name="&gt;&gt;CheckBox29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox29.Parent" xml:space="preserve">
-    <value>Panel201</value>
-  </data>
-  <data name="&gt;&gt;CheckBox29.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CheckBox35.Name" xml:space="preserve">
-    <value>CheckBox35</value>
-  </data>
-  <data name="&gt;&gt;CheckBox35.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox35.Parent" xml:space="preserve">
-    <value>Panel201</value>
-  </data>
-  <data name="&gt;&gt;CheckBox35.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CheckBox36.Name" xml:space="preserve">
-    <value>CheckBox36</value>
-  </data>
-  <data name="&gt;&gt;CheckBox36.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox36.Parent" xml:space="preserve">
-    <value>Panel201</value>
-  </data>
-  <data name="&gt;&gt;CheckBox36.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Panel201.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Panel201.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 1</value>
-  </data>
-  <data name="Panel201.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 23</value>
-  </data>
-  <data name="Panel201.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="&gt;&gt;Panel201.Name" xml:space="preserve">
-    <value>Panel201</value>
-  </data>
-  <data name="&gt;&gt;Panel201.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel201.Parent" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel201.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Panel203.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;Button81.Name" xml:space="preserve">
-    <value>Button81</value>
-  </data>
-  <data name="&gt;&gt;Button81.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button81.Parent" xml:space="preserve">
-    <value>Panel248</value>
-  </data>
-  <data name="&gt;&gt;Button81.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Panel248.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Panel248.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Panel248.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 3, 1, 3</value>
-  </data>
-  <data name="Panel248.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 23</value>
-  </data>
-  <data name="Panel248.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="&gt;&gt;Panel248.Name" xml:space="preserve">
-    <value>Panel248</value>
-  </data>
-  <data name="&gt;&gt;Panel248.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel248.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;Panel248.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CheckBox19.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox19.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAF5JREFUOE/tzDEKwCAYxWCv5f0PVimkW4YIdmoDbxD8/vF6c87rHs8zPUd3B/cM
-        lME9A2Vwz0AZ3DNQBvcMlME9A2Vwz0AZ3DNQBvcMlME9A2VwL33a7T/65aNnGmMBSZga9Hb1HkQAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="CheckBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 0</value>
-  </data>
-  <data name="CheckBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox19.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;CheckBox19.Name" xml:space="preserve">
-    <value>CheckBox19</value>
-  </data>
-  <data name="&gt;&gt;CheckBox19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox19.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox19.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CheckBox20.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox20.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGdJREFUOE/tlMEJwDAIRV3Kk67mDm6cIphLMQpNWhD64CN6eOhFeBVmHog4rPpo
-        HxOKiAmfJKa/VFXT3hOTbTpFC6Elpjo/EVpiPt30LlqIY6rzi8T0k1r10T6/tIl0fn4iOic9B8AFnzn2
-        r8w1oaEAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="CheckBox20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 0</value>
-  </data>
-  <data name="CheckBox20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox20.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="&gt;&gt;CheckBox20.Name" xml:space="preserve">
-    <value>CheckBox20</value>
-  </data>
-  <data name="&gt;&gt;CheckBox20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox20.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox20.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="CheckBox21.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox21.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox21.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox21.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAF1JREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+v337
-        lmgM0gc1AhOMGjpq6FAyFESTgi0tLYkzFCpEORg1dIgYCiv5ra2tqWcodQADAwC5ASZaXmGMwQAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
-  <data name="CheckBox21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 0</value>
-  </data>
-  <data name="CheckBox21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox21.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
-  <data name="&gt;&gt;CheckBox21.Name" xml:space="preserve">
-    <value>CheckBox21</value>
-  </data>
-  <data name="&gt;&gt;CheckBox21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox21.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox21.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="CheckBox22.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox22.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox22.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox22.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox22.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+H7h7
-        gGgM0gc1AhOgG+q51ZMgHjV01FASDCUWE2UoiCYFW1paEmcoVIhyMGroEDEUVvJbW1tTz1DqAAYGALOa
-        uOOZrfE0AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CheckBox22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 0</value>
-  </data>
-  <data name="CheckBox22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox22.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="&gt;&gt;CheckBox22.Name" xml:space="preserve">
-    <value>CheckBox22</value>
-  </data>
-  <data name="&gt;&gt;CheckBox22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox22.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox22.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="CheckBox23.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox23.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox23.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox23.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox23.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+m0Yt
-        Ix4D9UGNwATohjrmnyOIRw0dNZQEQ4nGxBgKoknBlpaWxBkKFaIcjBo6RAyFlfzW1tbUM5Q6gIEBAPLZ
-        nMytcfqPAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CheckBox23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 0</value>
-  </data>
-  <data name="CheckBox23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox23.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
-  </data>
-  <data name="&gt;&gt;CheckBox23.Name" xml:space="preserve">
-    <value>CheckBox23</value>
-  </data>
-  <data name="&gt;&gt;CheckBox23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox23.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox23.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="CheckBox24.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox24.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox24.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox24.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox24.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+Xzj+
-        nmgM0gc1AhOgG1rucpsgHjV01FASDCUWE2UoiCYFW1paEmcoVIhyMGroEDEUVvJbW1tTz1DqAAYGAEIZ
-        0hjEmO7RAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CheckBox24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 0</value>
-  </data>
-  <data name="CheckBox24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox24.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;CheckBox24.Name" xml:space="preserve">
-    <value>CheckBox24</value>
-  </data>
-  <data name="&gt;&gt;CheckBox24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox24.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox24.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="CheckBox25.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox25.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox25.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox25.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+LzO1
-        JBqD9EGNwATohp5zcCWIRw0dNZQEQ4nFRBkKoknBlpaWxBkKFaIcjBo6RAyFlfzW1tbUM5Q6gIEBAEvW
-        jZOWeJnPAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CheckBox25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 0</value>
-  </data>
-  <data name="CheckBox25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox25.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;CheckBox25.Name" xml:space="preserve">
-    <value>CheckBox25</value>
-  </data>
-  <data name="&gt;&gt;CheckBox25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox25.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox25.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="CheckBox26.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-  </data>
-  <data name="CheckBox26.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CheckBox26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="CheckBox26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="CheckBox26.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+v3q9
-        h2gM0gc1AhOgG3r5mgZBPGroqKEkGEosJspQEE0KtrS0JM5QqBDlYNTQIWIorOS3tramnqHUAQwMAF/O
-        4imDOCyqAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="CheckBox26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CheckBox26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>219, 0</value>
-  </data>
-  <data name="CheckBox26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 23</value>
-  </data>
-  <data name="CheckBox26.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;CheckBox26.Name" xml:space="preserve">
-    <value>CheckBox26</value>
-  </data>
-  <data name="&gt;&gt;CheckBox26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox26.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;CheckBox26.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;TrackBar1.Name" xml:space="preserve">
-    <value>TrackBar1</value>
-  </data>
-  <data name="&gt;&gt;TrackBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TrackBar1.Parent" xml:space="preserve">
-    <value>Panel202</value>
-  </data>
-  <data name="&gt;&gt;TrackBar1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Panel202.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Panel202.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 0</value>
-  </data>
-  <data name="Panel202.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 23</value>
-  </data>
-  <data name="Panel202.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
-  </data>
-  <data name="&gt;&gt;Panel202.Name" xml:space="preserve">
-    <value>Panel202</value>
-  </data>
-  <data name="&gt;&gt;Panel202.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel202.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;Panel202.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="Panel224.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Panel224.Location" type="System.Drawing.Point, System.Drawing">
-    <value>408, 0</value>
-  </data>
-  <data name="Panel224.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 23</value>
-  </data>
-  <data name="Panel224.TabIndex" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="&gt;&gt;Panel224.Name" xml:space="preserve">
-    <value>Panel224</value>
-  </data>
-  <data name="&gt;&gt;Panel224.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel224.Parent" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;Panel224.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Panel203.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Panel203.Location" type="System.Drawing.Point, System.Drawing">
-    <value>272, 1</value>
-  </data>
-  <data name="Panel203.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 23</value>
-  </data>
-  <data name="Panel203.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;Panel203.Name" xml:space="preserve">
-    <value>Panel203</value>
-  </data>
-  <data name="&gt;&gt;Panel203.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel203.Parent" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel203.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Panel212.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CheckBox27.Name" xml:space="preserve">
-    <value>CheckBox27</value>
-  </data>
-  <data name="&gt;&gt;CheckBox27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox27.Parent" xml:space="preserve">
-    <value>Panel212</value>
-  </data>
-  <data name="&gt;&gt;CheckBox27.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CheckBox28.Name" xml:space="preserve">
-    <value>CheckBox28</value>
-  </data>
-  <data name="&gt;&gt;CheckBox28.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox28.Parent" xml:space="preserve">
-    <value>Panel212</value>
-  </data>
-  <data name="&gt;&gt;CheckBox28.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Panel212.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Panel212.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 1</value>
-  </data>
-  <data name="Panel212.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 23</value>
-  </data>
-  <data name="Panel212.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
-  </data>
-  <data name="&gt;&gt;Panel212.Name" xml:space="preserve">
-    <value>Panel212</value>
-  </data>
-  <data name="&gt;&gt;Panel212.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel212.Parent" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel212.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Panel213.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CheckBox14.Name" xml:space="preserve">
-    <value>CheckBox14</value>
-  </data>
-  <data name="&gt;&gt;CheckBox14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox14.Parent" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;CheckBox14.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CheckBox15.Name" xml:space="preserve">
-    <value>CheckBox15</value>
-  </data>
-  <data name="&gt;&gt;CheckBox15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox15.Parent" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;CheckBox15.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CheckBox16.Name" xml:space="preserve">
-    <value>CheckBox16</value>
-  </data>
-  <data name="&gt;&gt;CheckBox16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox16.Parent" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;CheckBox16.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CheckBox17.Name" xml:space="preserve">
-    <value>CheckBox17</value>
-  </data>
-  <data name="&gt;&gt;CheckBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox17.Parent" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;CheckBox17.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CheckBox18.Name" xml:space="preserve">
-    <value>CheckBox18</value>
-  </data>
-  <data name="&gt;&gt;CheckBox18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox18.Parent" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;CheckBox18.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Panel213.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Panel213.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 1</value>
-  </data>
-  <data name="Panel213.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 23</value>
-  </data>
-  <data name="Panel213.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
-  </data>
-  <data name="&gt;&gt;Panel213.Name" xml:space="preserve">
-    <value>Panel213</value>
-  </data>
-  <data name="&gt;&gt;Panel213.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel213.Parent" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel213.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Panel214.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;CheckBox31.Name" xml:space="preserve">
-    <value>CheckBox31</value>
-  </data>
-  <data name="&gt;&gt;CheckBox31.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox31.Parent" xml:space="preserve">
-    <value>Panel214</value>
-  </data>
-  <data name="&gt;&gt;CheckBox31.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Label88.Name" xml:space="preserve">
-    <value>Label88</value>
-  </data>
-  <data name="&gt;&gt;Label88.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label88.Parent" xml:space="preserve">
-    <value>Panel214</value>
-  </data>
-  <data name="&gt;&gt;Label88.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label89.Name" xml:space="preserve">
-    <value>Label89</value>
-  </data>
-  <data name="&gt;&gt;Label89.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label89.Parent" xml:space="preserve">
-    <value>Panel214</value>
-  </data>
-  <data name="&gt;&gt;Label89.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Panel214.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="Panel214.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
-  </data>
-  <data name="Panel214.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 23</value>
-  </data>
-  <data name="Panel214.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;Panel214.Name" xml:space="preserve">
-    <value>Panel214</value>
-  </data>
-  <data name="&gt;&gt;Panel214.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel214.Parent" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel214.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Panel200.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Panel200.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Panel200.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="Panel200.Size" type="System.Drawing.Size, System.Drawing">
-    <value>702, 25</value>
-  </data>
-  <data name="Panel200.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;Panel200.Name" xml:space="preserve">
-    <value>Panel200</value>
-  </data>
-  <data name="&gt;&gt;Panel200.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel200.Parent" xml:space="preserve">
-    <value>PanelFundao</value>
-  </data>
-  <data name="&gt;&gt;Panel200.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="PanelFundao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelFundao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1</value>
-  </data>
-  <data name="PanelFundao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>702, 25</value>
-  </data>
-  <data name="PanelFundao.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;PanelFundao.Name" xml:space="preserve">
-    <value>PanelFundao</value>
-  </data>
-  <data name="&gt;&gt;PanelFundao.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelFundao.Parent" xml:space="preserve">
-    <value>PanelToobarBotton</value>
-  </data>
-  <data name="&gt;&gt;PanelFundao.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PanelToobarBotton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="PanelToobarBotton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 514</value>
-  </data>
-  <data name="PanelToobarBotton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 1, 0, 0</value>
-  </data>
-  <data name="PanelToobarBotton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>702, 26</value>
-  </data>
-  <data name="PanelToobarBotton.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;PanelToobarBotton.Name" xml:space="preserve">
-    <value>PanelToobarBotton</value>
-  </data>
-  <data name="&gt;&gt;PanelToobarBotton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelToobarBotton.Parent" xml:space="preserve">
-    <value>Panel79</value>
-  </data>
-  <data name="&gt;&gt;PanelToobarBotton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Panel79.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Panel79.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
-  </data>
-  <data name="Panel79.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 542</value>
-  </data>
-  <data name="Panel79.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Panel79.Name" xml:space="preserve">
-    <value>Panel79</value>
-  </data>
-  <data name="&gt;&gt;Panel79.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Panel79.Parent" xml:space="preserve">
-    <value>PanelR</value>
-  </data>
-  <data name="&gt;&gt;Panel79.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PanelR.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelR.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 172</value>
-  </data>
-  <data name="PanelR.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 5, 0, 5</value>
-  </data>
-  <data name="PanelR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 552</value>
-  </data>
-  <data name="PanelR.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;PanelR.Name" xml:space="preserve">
-    <value>PanelR</value>
-  </data>
-  <data name="&gt;&gt;PanelR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelR.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PanelR.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;PanelArquivos.Name" xml:space="preserve">
     <value>PanelArquivos</value>
@@ -16135,6 +15339,267 @@
   <data name="&gt;&gt;RadioButton61.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;PanelFundao.Name" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.Parent" xml:space="preserve">
+    <value>PanelToobarBotton</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelToobarBotton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="PanelToobarBotton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 514</value>
+  </data>
+  <data name="PanelToobarBotton.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 1, 0, 0</value>
+  </data>
+  <data name="PanelToobarBotton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>702, 26</value>
+  </data>
+  <data name="PanelToobarBotton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Name" xml:space="preserve">
+    <value>PanelToobarBotton</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.Parent" xml:space="preserve">
+    <value>Panel79</value>
+  </data>
+  <data name="&gt;&gt;PanelToobarBotton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Name" xml:space="preserve">
+    <value>Panel199</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Parent" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;Panel199.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Name" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Parent" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;Panel200.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PanelFundao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelFundao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="PanelFundao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>702, 25</value>
+  </data>
+  <data name="PanelFundao.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.Name" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.Parent" xml:space="preserve">
+    <value>PanelToobarBotton</value>
+  </data>
+  <data name="&gt;&gt;PanelFundao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel199.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Panel199.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel199.Size" type="System.Drawing.Size, System.Drawing">
+    <value>702, 1</value>
+  </data>
+  <data name="Panel199.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Name" xml:space="preserve">
+    <value>Panel199</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel199.Parent" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;Panel199.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Name" xml:space="preserve">
+    <value>Panel201</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel201.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Name" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel203.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Name" xml:space="preserve">
+    <value>Panel212</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel212.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Name" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel213.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Name" xml:space="preserve">
+    <value>Panel214</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel214.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Panel200.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Panel200.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel200.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 1, 1, 1</value>
+  </data>
+  <data name="Panel200.Size" type="System.Drawing.Size, System.Drawing">
+    <value>702, 25</value>
+  </data>
+  <data name="Panel200.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Name" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel200.Parent" xml:space="preserve">
+    <value>PanelFundao</value>
+  </data>
+  <data name="&gt;&gt;Panel200.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel201.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CheckBox29.Name" xml:space="preserve">
+    <value>CheckBox29</value>
+  </data>
+  <data name="&gt;&gt;CheckBox29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox29.Parent" xml:space="preserve">
+    <value>Panel201</value>
+  </data>
+  <data name="&gt;&gt;CheckBox29.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CheckBox35.Name" xml:space="preserve">
+    <value>CheckBox35</value>
+  </data>
+  <data name="&gt;&gt;CheckBox35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox35.Parent" xml:space="preserve">
+    <value>Panel201</value>
+  </data>
+  <data name="&gt;&gt;CheckBox35.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CheckBox36.Name" xml:space="preserve">
+    <value>CheckBox36</value>
+  </data>
+  <data name="&gt;&gt;CheckBox36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox36.Parent" xml:space="preserve">
+    <value>Panel201</value>
+  </data>
+  <data name="&gt;&gt;CheckBox36.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Panel201.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel201.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 1</value>
+  </data>
+  <data name="Panel201.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 23</value>
+  </data>
+  <data name="Panel201.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Name" xml:space="preserve">
+    <value>Panel201</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel201.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel201.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="CheckBox29.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -16243,6 +15708,204 @@
   <data name="&gt;&gt;CheckBox36.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="Panel203.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Name" xml:space="preserve">
+    <value>Panel248</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel248.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Name" xml:space="preserve">
+    <value>CheckBox19</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Name" xml:space="preserve">
+    <value>CheckBox20</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Name" xml:space="preserve">
+    <value>CheckBox21</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Name" xml:space="preserve">
+    <value>CheckBox22</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Name" xml:space="preserve">
+    <value>CheckBox23</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Name" xml:space="preserve">
+    <value>CheckBox24</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Name" xml:space="preserve">
+    <value>CheckBox25</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Name" xml:space="preserve">
+    <value>CheckBox26</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Name" xml:space="preserve">
+    <value>Panel202</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel202.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Name" xml:space="preserve">
+    <value>Panel224</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel224.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Panel203.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel203.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 1</value>
+  </data>
+  <data name="Panel203.Size" type="System.Drawing.Size, System.Drawing">
+    <value>429, 23</value>
+  </data>
+  <data name="Panel203.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Name" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel203.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel203.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Button81.Name" xml:space="preserve">
+    <value>Button81</value>
+  </data>
+  <data name="&gt;&gt;Button81.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button81.Parent" xml:space="preserve">
+    <value>Panel248</value>
+  </data>
+  <data name="&gt;&gt;Button81.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel248.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel248.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel248.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>1, 3, 1, 3</value>
+  </data>
+  <data name="Panel248.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 23</value>
+  </data>
+  <data name="Panel248.TabIndex" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Name" xml:space="preserve">
+    <value>Panel248</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel248.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel248.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Button81.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -16276,6 +15939,394 @@
   <data name="&gt;&gt;Button81.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="CheckBox19.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox19.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox19.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox19.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAF5JREFUOE/tzDEKwCAYxWCv5f0PVimkW4YIdmoDbxD8/vF6c87rHs8zPUd3B/cM
+        lME9A2Vwz0AZ3DNQBvcMlME9A2Vwz0AZ3DNQBvcMlME9A2VwL33a7T/65aNnGmMBSZga9Hb1HkQAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="CheckBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 0</value>
+  </data>
+  <data name="CheckBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox19.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Name" xml:space="preserve">
+    <value>CheckBox19</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox19.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CheckBox20.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox20.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox20.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox20.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGdJREFUOE/tlMEJwDAIRV3Kk67mDm6cIphLMQpNWhD64CN6eOhFeBVmHog4rPpo
+        HxOKiAmfJKa/VFXT3hOTbTpFC6Elpjo/EVpiPt30LlqIY6rzi8T0k1r10T6/tIl0fn4iOic9B8AFnzn2
+        r8w1oaEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="CheckBox20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 0</value>
+  </data>
+  <data name="CheckBox20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox20.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Name" xml:space="preserve">
+    <value>CheckBox20</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox20.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CheckBox21.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox21.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox21.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox21.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAF1JREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+v337
+        lmgM0gc1AhOMGjpq6FAyFESTgi0tLYkzFCpEORg1dIgYCiv5ra2tqWcodQADAwC5ASZaXmGMwQAAAABJ
+        RU5ErkJggg==
+</value>
+  </data>
+  <data name="CheckBox21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 0</value>
+  </data>
+  <data name="CheckBox21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox21.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Name" xml:space="preserve">
+    <value>CheckBox21</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox21.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CheckBox22.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox22.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox22.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox22.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+H7h7
+        gGgM0gc1AhOgG+q51ZMgHjV01FASDCUWE2UoiCYFW1paEmcoVIhyMGroEDEUVvJbW1tTz1DqAAYGALOa
+        uOOZrfE0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CheckBox22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 0</value>
+  </data>
+  <data name="CheckBox22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox22.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Name" xml:space="preserve">
+    <value>CheckBox22</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox22.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CheckBox23.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox23.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox23.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox23.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+m0Yt
+        Ix4D9UGNwATohjrmnyOIRw0dNZQEQ4nGxBgKoknBlpaWxBkKFaIcjBo6RAyFlfzW1tbUM5Q6gIEBAPLZ
+        nMytcfqPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CheckBox23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 0</value>
+  </data>
+  <data name="CheckBox23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox23.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Name" xml:space="preserve">
+    <value>CheckBox23</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox23.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CheckBox24.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox24.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox24.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox24.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+Xzj+
+        nmgM0gc1AhOgG1rucpsgHjV01FASDCUWE2UoiCYFW1paEmcoVIhyMGroEDEUVvJbW1tTz1DqAAYGAEIZ
+        0hjEmO7RAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CheckBox24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 0</value>
+  </data>
+  <data name="CheckBox24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox24.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Name" xml:space="preserve">
+    <value>CheckBox24</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox24.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CheckBox25.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox25.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox25.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox25.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+LzO1
+        JBqD9EGNwATohp5zcCWIRw0dNZQEQ4nFRBkKoknBlpaWxBkKFaIcjBo6RAyFlfzW1tbUM5Q6gIEBAEvW
+        jZOWeJnPAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CheckBox25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 0</value>
+  </data>
+  <data name="CheckBox25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox25.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Name" xml:space="preserve">
+    <value>CheckBox25</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox25.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="CheckBox26.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="CheckBox26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CheckBox26.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="CheckBox26.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CheckBox26.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAGhJREFUOE9joDmwsbH5b2pq+h9EQ4UoByADFy9eDDaYFIzXESAFIEM7Ojr+v3q9
+        h2gM0gc1AhOgG3r5mgZBPGroqKEkGEosJspQEE0KtrS0JM5QqBDlYNTQIWIorOS3tramnqHUAQwMAF/O
+        4imDOCyqAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CheckBox26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CheckBox26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 0</value>
+  </data>
+  <data name="CheckBox26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 23</value>
+  </data>
+  <data name="CheckBox26.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Name" xml:space="preserve">
+    <value>CheckBox26</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;CheckBox26.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TrackBar1.Name" xml:space="preserve">
+    <value>TrackBar1</value>
+  </data>
+  <data name="&gt;&gt;TrackBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TrackBar1.Parent" xml:space="preserve">
+    <value>Panel202</value>
+  </data>
+  <data name="&gt;&gt;TrackBar1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Panel202.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel202.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 0</value>
+  </data>
+  <data name="Panel202.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 23</value>
+  </data>
+  <data name="Panel202.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Name" xml:space="preserve">
+    <value>Panel202</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel202.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel202.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
   <data name="TrackBar1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -16302,6 +16353,81 @@
   </data>
   <data name="&gt;&gt;TrackBar1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Panel224.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Panel224.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 0</value>
+  </data>
+  <data name="Panel224.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 23</value>
+  </data>
+  <data name="Panel224.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Name" xml:space="preserve">
+    <value>Panel224</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel224.Parent" xml:space="preserve">
+    <value>Panel203</value>
+  </data>
+  <data name="&gt;&gt;Panel224.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Panel212.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CheckBox27.Name" xml:space="preserve">
+    <value>CheckBox27</value>
+  </data>
+  <data name="&gt;&gt;CheckBox27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox27.Parent" xml:space="preserve">
+    <value>Panel212</value>
+  </data>
+  <data name="&gt;&gt;CheckBox27.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CheckBox28.Name" xml:space="preserve">
+    <value>CheckBox28</value>
+  </data>
+  <data name="&gt;&gt;CheckBox28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox28.Parent" xml:space="preserve">
+    <value>Panel212</value>
+  </data>
+  <data name="&gt;&gt;CheckBox28.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Panel212.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel212.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 1</value>
+  </data>
+  <data name="Panel212.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 23</value>
+  </data>
+  <data name="Panel212.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Name" xml:space="preserve">
+    <value>Panel212</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel212.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel212.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="CheckBox27.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -16374,6 +16500,93 @@
   </data>
   <data name="&gt;&gt;CheckBox28.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Panel213.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CheckBox14.Name" xml:space="preserve">
+    <value>CheckBox14</value>
+  </data>
+  <data name="&gt;&gt;CheckBox14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox14.Parent" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;CheckBox14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CheckBox15.Name" xml:space="preserve">
+    <value>CheckBox15</value>
+  </data>
+  <data name="&gt;&gt;CheckBox15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox15.Parent" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;CheckBox15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CheckBox16.Name" xml:space="preserve">
+    <value>CheckBox16</value>
+  </data>
+  <data name="&gt;&gt;CheckBox16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox16.Parent" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;CheckBox16.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CheckBox17.Name" xml:space="preserve">
+    <value>CheckBox17</value>
+  </data>
+  <data name="&gt;&gt;CheckBox17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox17.Parent" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;CheckBox17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CheckBox18.Name" xml:space="preserve">
+    <value>CheckBox18</value>
+  </data>
+  <data name="&gt;&gt;CheckBox18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox18.Parent" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;CheckBox18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Panel213.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel213.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 1</value>
+  </data>
+  <data name="Panel213.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="Panel213.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Name" xml:space="preserve">
+    <value>Panel213</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel213.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel213.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="CheckBox14.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -16593,6 +16806,69 @@
     <value>Panel213</value>
   </data>
   <data name="&gt;&gt;CheckBox18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Panel214.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;CheckBox31.Name" xml:space="preserve">
+    <value>CheckBox31</value>
+  </data>
+  <data name="&gt;&gt;CheckBox31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox31.Parent" xml:space="preserve">
+    <value>Panel214</value>
+  </data>
+  <data name="&gt;&gt;CheckBox31.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label88.Name" xml:space="preserve">
+    <value>Label88</value>
+  </data>
+  <data name="&gt;&gt;Label88.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label88.Parent" xml:space="preserve">
+    <value>Panel214</value>
+  </data>
+  <data name="&gt;&gt;Label88.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label89.Name" xml:space="preserve">
+    <value>Label89</value>
+  </data>
+  <data name="&gt;&gt;Label89.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label89.Parent" xml:space="preserve">
+    <value>Panel214</value>
+  </data>
+  <data name="&gt;&gt;Label89.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Panel214.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="Panel214.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 1</value>
+  </data>
+  <data name="Panel214.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 23</value>
+  </data>
+  <data name="Panel214.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Name" xml:space="preserve">
+    <value>Panel214</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel214.Parent" xml:space="preserve">
+    <value>Panel200</value>
+  </data>
+  <data name="&gt;&gt;Panel214.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="CheckBox31.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">

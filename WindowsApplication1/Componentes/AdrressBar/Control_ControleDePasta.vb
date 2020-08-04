@@ -497,7 +497,26 @@ Public Class Control_ControleDePasta
                 SelectedNode.TreeView.SelectedNode = SelectedNode
             End If
 
+
         End If
+
+        'Dim NodesCollection As Class_NodesCollectionWithKeywords
+        'NodesCollection = _addressBar.Keywords
+
+        'For Each keysItems As NodeWithKeywordsItem In _addressBar.NodesCollectionWithKeywords.Items
+        '    For Each keyword As String In keysItems.Keywords
+        '        MsgBox("keyword = " & keyword & Chr(13) & "NodeAssociated= " & keysItems.NodeAssociated.FullPath)
+
+        '    Next
+
+        'Next
+
+        'MsgBox(_addressBar.NodesCollectionWithKeywords.Items(1).NodeAssociated.ToString)
+        'MsgBox(_addressBar.NodesCollectionWithKeywords.Items(1).NodeAssociated.Text)
+        ''MsgBox(_addressBar.Keywords.Items(1).NodeAssociated.Item(0).ToString)
+
+        ''_addressBar.SelectedNode = _addressBar.NodesCollectionWithKeywords.Items(1).NodeAssociated
+
     End Sub
 
     Private Sub BTNMenu_Click(sender As Object, e As EventArgs) Handles BTNMenu.Click

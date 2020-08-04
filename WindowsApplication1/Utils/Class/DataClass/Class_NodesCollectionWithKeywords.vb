@@ -60,6 +60,10 @@ Public Class Class_NodesCollectionWithKeywords
         Items.Add(keywordItem)
     End Sub
 
+    Public Overloads Sub Add(keywords As Collections.Specialized.StringCollection, treeNode As TreeNode)
+        Dim keywordItem As New NodeWithKeywordsItem(keywords, treeNode)
+        Items.Add(keywordItem)
+    End Sub
 End Class
 
 Public Class NodeWithKeywordsItem

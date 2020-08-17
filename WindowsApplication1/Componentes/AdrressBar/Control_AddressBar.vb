@@ -10,7 +10,7 @@ Public Class Control_AddressBar
     '------------------------------------------------------
     Dim nodeManipulatior As New Class_NodeManipulator
 
-    'Private Shadows keyPress As Char
+    Private Shadows keyPress As Char
     Dim podeBuscarSugestoes As Boolean
 
 
@@ -685,7 +685,7 @@ Public Class Control_AddressBar
     End Function
 
     ' Colocar esta função em uma classe especifica
-    Function ListarArquivosOuPastasParentes(path As String)
+    Overloads Function ListarArquivosOuPastasParentes(path As String)
         Dim folder As New DirectoryInfo(path)
         Dim listaDePastasEArquivos As New List(Of String)
 
@@ -705,19 +705,33 @@ Public Class Control_AddressBar
         ElseIf folder.Root.FullName = folder.FullName Then
             'MsgBox("VVV")
             listaDePastasEArquivos.Clear()
+
+            listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(folder))
+
             Return listaDePastasEArquivos.ToArray
         End If
-        Try
-            If folder.Exists = True Then
-                listaDePastasEArquivos.AddRange(subPasta.GetDirectories().Select(Function(subFolder) subFolder.FullName))
-                listaDePastasEArquivos.AddRange(subPasta.GetFiles().Select(Function(file) file.FullName))
-                'listaDePastasEArquivos.AddRange(New System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)).GetFiles.Select(Function(f) f.FullName))
-            End If
-        Catch ex As Exception
-        End Try
+
+        listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(subPasta))
 
         Return listaDePastasEArquivos.ToArray
 
+    End Function
+
+    Overloads Function ListarArquivosOuPastasParentes(folder As DirectoryInfo)
+        Dim listaDePastasEArquivos As New List(Of String)
+
+        Try
+            If folder.Exists = True Then
+                listaDePastasEArquivos.AddRange(folder.GetDirectories().Select(Function(subFolder) subFolder.FullName))
+                listaDePastasEArquivos.AddRange(folder.GetFiles().Select(Function(file) file.FullName))
+                'listaDePastasEArquivos.AddRange(New System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)).GetFiles.Select(Function(f) f.FullName))
+            End If
+
+        Catch ex As Exception
+            Return listaDePastasEArquivos.ToArray
+        End Try
+
+        Return listaDePastasEArquivos.ToArray
     End Function
 
     Overloads Function ListarNodesFilhos(node As TreeNode) As String()

@@ -207,6 +207,7 @@ Public Class ControlPainel_Desktop
 
         Dim computerKeys As New Collections.Specialized.StringCollection From {
             "Este Computador",
+            "Computador",
             "Computer",
             "Meu Computador",
             "My Computer"

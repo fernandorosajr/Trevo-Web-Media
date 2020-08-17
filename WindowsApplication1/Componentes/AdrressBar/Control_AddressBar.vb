@@ -10,11 +10,25 @@ Public Class Control_AddressBar
     '------------------------------------------------------
     Dim nodeManipulatior As New Class_NodeManipulator
 
+    'Private Shadows keyPress As Char
+    Dim podeBuscarSugestoes As Boolean
+
+
     Dim ForceTextMode As Boolean
 
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
+    Private _initialPath As String
+    Private Property InitialPath As String
+        Get
+            Return _initialPath
+        End Get
+        Set(value As String)
+            _initialPath = value
+
+        End Set
+    End Property
 
 
     Private _keyword As New NodeWithKeywordsItem
@@ -300,9 +314,6 @@ Public Class Control_AddressBar
                 AtualizarSequenciaDeItens(value)
             End If
 
-
-
-
         End Set
 
     End Property
@@ -563,23 +574,23 @@ Public Class Control_AddressBar
 
     End Sub
 
-    Overloads Function CriarListaDeOpcoesParaAutoCompleteCustomSource()
+    Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource()
         TXTWriteAddress.AutoCompleteCustomSource.Clear()
 
         'ListarAutoCompleteCustomSource(_selectedNode)
 
         TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(_selectedNode))
 
-    End Function
+    End Sub
 
-    Overloads Function CriarListaDeOpcoesParaAutoCompleteCustomSource(path As String)
+    Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource(path As String)
         TXTWriteAddress.AutoCompleteCustomSource.Clear()
 
         'ListarAutoCompleteCustomSource(_selectedNode)
 
         TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(path))
 
-    End Function
+    End Sub
 
     Overloads Function ListarAutoCompleteCustomSource(node As TreeNode) As String()
         Dim folder As DirectoryInfo
@@ -696,15 +707,15 @@ Public Class Control_AddressBar
             listaDePastasEArquivos.Clear()
             Return listaDePastasEArquivos.ToArray
         End If
+        Try
+            If folder.Exists = True Then
+                listaDePastasEArquivos.AddRange(subPasta.GetDirectories().Select(Function(subFolder) subFolder.FullName))
+                listaDePastasEArquivos.AddRange(subPasta.GetFiles().Select(Function(file) file.FullName))
+                'listaDePastasEArquivos.AddRange(New System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)).GetFiles.Select(Function(f) f.FullName))
+            End If
+        Catch ex As Exception
+        End Try
 
-        If folder.Exists = True Then
-            listaDePastasEArquivos.AddRange(subPasta.GetDirectories().Select(Function(subFolder) subFolder.FullName))
-            listaDePastasEArquivos.AddRange(subPasta.GetFiles().Select(Function(file) file.FullName))
-
-            'listaDePastasEArquivos.AddRange(New System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)).GetFiles.Select(Function(f) f.FullName))
-
-
-        End If
         Return listaDePastasEArquivos.ToArray
 
     End Function
@@ -761,71 +772,136 @@ Public Class Control_AddressBar
 
     Private Sub TXTWriteAddress_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTWriteAddress.KeyPress
 
-        ''ForceFoldersControlsMode = True
+        keyPress = e.KeyChar
 
-        'Dim pathStr As String
-        'pathStr = TXTWriteAddress.Text
+        If Asc(e.KeyChar) = 13 Then
 
-        ''MsgBox(Asc(e.KeyChar))
+            'DisplayMode = DisplayModeEnum.FoldersControlsMode
+            'ForceTextMode = False
 
-        'If Asc(e.KeyChar) = 13 Then
+            'ElseIf e.KeyChar = _selectedTreeView.PathSeparator Then
 
-        '    DisplayMode = DisplayModeEnum.FoldersControlsMode
-        '    ForceTextMode = False
+            '    SendKeys.Send((e.KeyChar))
+            '    CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
 
-        '    'ElseIf e.KeyChar = _selectedTreeView.PathSeparator Then
+            'ChecarSePathEhKeywordESelecionarNodeAssociado()
 
-        '    '    SendKeys.Send((e.KeyChar))
-        '    '    CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
-
-        'End If
-
-
-
+        End If
 
 
     End Sub
 
+    Function ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr As String) As Boolean
+        ' Procedimento para Função ChecarKeywordInNode
+        '------------------------------------------------------------
+
+
+        Dim selected As Boolean
+        For Each nodeWithKeyword As NodeWithKeywordsItem In _nodesCollectionWithKeywords.Items
+
+
+            For Each key In nodeWithKeyword.Keywords
+
+                If key = pathStr Then
+                    'Dim node As TreeNode
+                    If SelectedNode IsNot nodeWithKeyword.NodeAssociated Then
+                        SelectedNode = nodeWithKeyword.NodeAssociated
+                    End If
+
+                    ForceTextMode = False
+                    selected = True
+                    DisplayMode = DisplayModeEnum.FoldersControlsMode
+                    Return selected
+
+                End If
+
+            Next
+
+        Next
+        Return selected
+        '------------------------------------------------------------
+    End Function
+
     Private Sub TXTWriteAddress_KeyDown(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyDown
-        '    'Dim tc As New System.ComponentModel.TypeConverter
-        '    'MsgBox()
-        '    Dim KeyPress As String = Chr(e.KeyValue)
-        '    Dim pathStr As String
-        '    pathStr = TXTWriteAddress.Text
 
-        '    MsgBox(e.KeyCode)
+        Dim lastChar As New List(Of Char)
+        Dim lastCharStr As String
+        Dim pathStr As String
+
+        pathStr = TXTWriteAddress.Text
+
+        If e.KeyCode = Keys.Back Then
+
+            If pathStr.Length > 0 Then
+                lastChar.Add(pathStr.Chars(pathStr.Length - 1).ToString)
+                lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
+            End If
 
 
-        '    'MsgBox(tc.ConvertFromString(_selectedTreeView.PathSeparator).ToString)
+            If lastCharStr = _selectedTreeView.PathSeparator Then
 
-        '    If Keys.OemPip = _selectedTreeView.PathSeparator Then
-        '        CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
-        '    End If
+                podeBuscarSugestoes = True
+
+            End If
+
+        End If
+
     End Sub
 
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
 
         ForceTextMode = True
 
-        Dim last As String
+        Dim lastChar As New List(Of Char)
+        Dim lastCharStr As String = ""
         Dim pathStr As String
+        Dim kc As KeysConverter = New KeysConverter()
 
         pathStr = TXTWriteAddress.Text
 
+
         If pathStr.Length > 0 Then
-            last = pathStr.Chars(pathStr.Length - 1).ToString
+            lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
 
         End If
 
 
-        If last = _selectedTreeView.PathSeparator Then
+        If lastCharStr = _selectedTreeView.PathSeparator Then
 
             CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
+
+        Else
+            If e.KeyCode = Keys.Back Then
+
+                If podeBuscarSugestoes = True Then
+                    Dim pastasEmStringCollection As Collections.Specialized.StringCollection
+                    Dim newPath As String
+                    pastasEmStringCollection = nodeManipulatior.stringFunctions.ConverteStringEmColectionString(pathStr, _selectedTreeView.PathSeparator.ToCharArray)
+
+                    Dim pastasEmList As New List(Of String)
+                    For Each str As String In pastasEmStringCollection
+                        If Trim(str) <> "" Then pastasEmList.Add(str)
+                    Next
+                    pastasEmList.Remove(pastasEmList.Count - 1)
+                    newPath = Path.Combine(pastasEmList.ToArray)
+
+                    If _selectedTreeView.PathSeparator <> "\" Then
+                        newPath.Replace("\"c, _selectedTreeView.PathSeparator)
+                    End If
+
+                    podeBuscarSugestoes = False
+
+                    CriarListaDeOpcoesParaAutoCompleteCustomSource(newPath)
+                End If
+
+            End If
         End If
 
         If e.KeyCode = Keys.Enter Then
             Dim arquivo As FileInfo
             Dim caminho As DirectoryInfo
+
+            If ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr) = True Then Exit Sub
 
             arquivo = New FileInfo(pathStr)
 
@@ -854,9 +930,7 @@ Public Class Control_AddressBar
 
             End If
 
-
         End If
-
 
     End Sub
 

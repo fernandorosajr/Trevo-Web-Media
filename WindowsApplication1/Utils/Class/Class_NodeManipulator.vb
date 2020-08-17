@@ -6,7 +6,7 @@ Public Class Class_NodeManipulator
 
     'Importação de Classes
     '--------------------------------------------------
-    ReadOnly stringFunctions As New StringFunctionsClass
+    Public ReadOnly stringFunctions As New StringFunctionsClass
     'Public renameActions As New Class_RenameActions
     '--------------------------------------------------
 

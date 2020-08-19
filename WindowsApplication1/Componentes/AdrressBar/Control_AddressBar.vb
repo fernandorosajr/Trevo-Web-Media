@@ -12,7 +12,7 @@ Public Class Control_AddressBar
 
     Private Shadows keyPress As Char
     Dim podeBuscarSugestoes As Boolean
-
+    Dim temSeparador As Boolean
 
     Dim ForceTextMode As Boolean
 
@@ -30,6 +30,15 @@ Public Class Control_AddressBar
         End Set
     End Property
 
+    Private _folderMode As Boolean
+    Public Property FolderMode As Boolean
+        Get
+            Return _folderMode
+        End Get
+        Set(value As Boolean)
+            _folderMode = value
+        End Set
+    End Property
 
     Private _keyword As New NodeWithKeywordsItem
     Public Property Keyword() As NodeWithKeywordsItem
@@ -262,6 +271,22 @@ Public Class Control_AddressBar
 
     End Property
 
+    Private _pathSeparator As String
+    Public Property PathSeparator As String
+        Get
+            Return _pathSeparator
+        End Get
+        Set(value As String)
+            _pathSeparator = value
+
+            If _selectedTreeView IsNot Nothing Then
+                _selectedTreeView.PathSeparator = value
+
+            End If
+        End Set
+    End Property
+
+
     Private _selectedTreeView As TreeView
     Public Property SelectedTreeView As TreeView
         Get
@@ -269,7 +294,10 @@ Public Class Control_AddressBar
 
         End Get
         Set(value As TreeView)
+
             _selectedTreeView = value
+
+            _pathSeparator = _selectedTreeView.PathSeparator
 
             If value IsNot Nothing Then
                 If TypeOf value.Tag Is Class_NodesCollectionWithKeywords Then
@@ -329,6 +357,11 @@ Public Class Control_AddressBar
 
         'Dim teste As New KeywordNode
         'KeywordsList.Add(teste)
+
+        If _selectedTreeView IsNot Nothing Then
+            _pathSeparator = _selectedTreeView.PathSeparator
+
+        End If
 
     End Sub
 
@@ -636,34 +669,22 @@ Public Class Control_AddressBar
     End Function
 
     Overloads Function ListarAutoCompleteCustomSource(path As String) As String()
-        Dim folder As New DirectoryInfo(path)
+        Dim folder As DirectoryInfo
         Dim autoCompleteString As String()
         Dim autoComplete As New List(Of String)
 
+        'If Trim(path) <> "" Then
+        folder = New DirectoryInfo(path)
 
         If folder.Exists Then
             autoCompleteString = ListarArquivosOuPastasParentes(path)
-
-
         End If
 
         If autoCompleteString IsNot Nothing Then
             autoComplete.AddRange(autoCompleteString)
 
         End If
-
-        'Dim irmaos As TreeNodeCollection
-        'irmaos = nodeManipulatior.ListarNodosIrmaos(node)
-
-        'If irmaos IsNot Nothing Then
-        '    autoCompleteString = ListarNodesFilhos(irmaos)
-        'Else
-        '    autoCompleteString = ListarNodesFilhos(node)
         'End If
-
-        'For Each str As String In autoCompleteString
-        '    autoComplete.Add(str)
-        'Next
 
         Return autoComplete.ToArray
 
@@ -869,16 +890,33 @@ Public Class Control_AddressBar
         Dim lastChar As New List(Of Char)
         Dim lastCharStr As String = ""
         Dim pathStr As String
-        Dim kc As KeysConverter = New KeysConverter()
+        'Dim kc As KeysConverter = New KeysConverter()
+        Dim caminhoValido As Boolean
+
+        Dim arquivo As FileInfo
+        Dim caminho As DirectoryInfo
 
         pathStr = TXTWriteAddress.Text
+
+        'If _folderMode = True Then
+
+        '    arquivo = New FileInfo(pathStr)
+        '    If arquivo.Exists = True Then
+        '        caminho = New DirectoryInfo(arquivo.DirectoryName)
+        '    Else
+        '        caminho = New DirectoryInfo(pathStr)
+        '    End If
+
+        'End If
+
+
+
+
 
 
         If pathStr.Length > 0 Then
             lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
-
         End If
-
 
         If lastCharStr = _selectedTreeView.PathSeparator Then
 
@@ -912,38 +950,39 @@ Public Class Control_AddressBar
         End If
 
         If e.KeyCode = Keys.Enter Then
-            Dim arquivo As FileInfo
-            Dim caminho As DirectoryInfo
 
+
+            ' Checa os Keywords e seleciona
             If ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr) = True Then Exit Sub
 
             arquivo = New FileInfo(pathStr)
-
             If arquivo.Exists = True Then
                 caminho = New DirectoryInfo(arquivo.DirectoryName)
-
             Else
                 caminho = New DirectoryInfo(pathStr)
             End If
 
 
-            If caminho.Exists = False And arquivo.Exists = False Then
+            caminhoValido = (caminho.Exists = True And arquivo.Exists = True) Or
+                (caminho.Exists = True And caminho.FullName = arquivo.FullName)
 
-                DisplayMode = DisplayModeEnum.TextMode
-                ForceTextMode = True
-                If confirmar <> 1 Then
-                    confirmar = MsgBox("O " & My.Application.Info.Title & " não encotrou o caminho " & """" & TXTWriteAddress.Text & """")
-                End If
+            ForceTextMode = Not (caminhoValido)
 
-                TXTWriteAddress.Focus()
+            Select Case caminhoValido
+                Case True
+                    DisplayMode = DisplayModeEnum.FoldersControlsMode
 
+                Case False
 
-            Else
-                DisplayMode = DisplayModeEnum.FoldersControlsMode
-                ForceTextMode = False
+                    DisplayMode = DisplayModeEnum.TextMode
 
-            End If
+                    If confirmar <> 1 Then
+                        confirmar = MsgBox("O " & My.Application.Info.Title & " não encotrou o caminho " & """" & TXTWriteAddress.Text & """")
+                    End If
 
+                    TXTWriteAddress.Focus()
+
+            End Select
         End If
 
     End Sub

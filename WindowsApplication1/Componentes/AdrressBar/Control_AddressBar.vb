@@ -9,6 +9,8 @@ Public Class Control_AddressBar
     'Importar Classes
     '------------------------------------------------------
     Dim nodeManipulatior As New Class_NodeManipulator
+    Dim usesDirectories As New UsesDirectoriesClass
+    '------------------------------------------------------
 
     Private Shadows keyPress As Char
     Dim podeBuscarSugestoes As Boolean
@@ -363,6 +365,7 @@ Public Class Control_AddressBar
 
         End If
 
+        'AddHandler TXTWriteAddress.KeyPress, AddressOf keyPressed
     End Sub
 
     Public Sub AtualizarItensExistentes(node As TreeNode)
@@ -721,7 +724,7 @@ Public Class Control_AddressBar
 
             End If
 
-
+            subPasta = folder
 
         ElseIf folder.Root.FullName = folder.FullName Then
             'MsgBox("VVV")
@@ -860,7 +863,7 @@ Public Class Control_AddressBar
     Private Sub TXTWriteAddress_KeyDown(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyDown
 
         Dim lastChar As New List(Of Char)
-        Dim lastCharStr As String
+        Dim lastCharStr As String = ""
         Dim pathStr As String
 
         pathStr = TXTWriteAddress.Text
@@ -868,8 +871,13 @@ Public Class Control_AddressBar
         If e.KeyCode = Keys.Back Then
 
             If pathStr.Length > 0 Then
-                lastChar.Add(pathStr.Chars(pathStr.Length - 1).ToString)
-                lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
+                Dim index As Integer = pathStr.Length - 1
+
+                If index >= 0 Then
+                    lastChar.Add(pathStr.Chars(index).ToString)
+                    lastCharStr = pathStr.Chars(index).ToString
+                End If
+
             End If
 
 
@@ -884,7 +892,6 @@ Public Class Control_AddressBar
     End Sub
 
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
-
         ForceTextMode = True
 
         Dim lastChar As New List(Of Char)
@@ -898,7 +905,87 @@ Public Class Control_AddressBar
 
         pathStr = TXTWriteAddress.Text
 
-        'If _folderMode = True Then
+        ' Programar 3 modos para pesquisa de endereço
+        ' MODODiretorio
+        ' MODOKey
+        ' MODOFullName
+
+
+        ' No MODODirectorio 
+        ' Se o final do caminho  <> "\" entao
+        ' Checar se o caminho longo é uma pasta valida
+        ' se for add subpasta a lista de sugestoes
+        ' se nao subir um nivel 
+        ' checar se é pasta valida
+
+        ' TODO: Refaturar codigo que adiciona itens nas opçoes
+        ' TODO: Fazer com que ele nao atualize a lista de seleção toda a vez que atualiza...
+        ' TODO: ... a caixa de endereços.
+
+        If pathStr.Length > 0 Then
+            lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
+        End If
+
+        If lastCharStr <> _selectedTreeView.PathSeparator Then
+            caminho = New DirectoryInfo(pathStr)
+            Dim subCaminho As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(caminho))
+
+            If subCaminho.Exists = True Then
+                CriarListaDeOpcoesParaAutoCompleteCustomSource(subCaminho.FullName.ToString)
+            End If
+
+        End If
+
+
+        ''MsgBox(ChrW(e.KeyCode))
+        ''MsgBox(Asc(e.KeyValue))
+        ''MsgBox(ChrW(Asc(e.KeyData)))
+
+
+
+
+
+
+        'If pathStr.Length > 0 Then
+        '    lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
+        'End If
+
+        'If lastCharStr = _selectedTreeView.PathSeparator Then
+
+        '    CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
+
+        'Else
+        '    If e.KeyCode = Keys.Back Then
+
+        '        If podeBuscarSugestoes = True Then
+        '            Dim pastasEmStringCollection As Collections.Specialized.StringCollection
+        '            Dim newPath As String
+        '            pastasEmStringCollection = nodeManipulatior.stringFunctions.ConverteStringEmColectionString(pathStr, _selectedTreeView.PathSeparator.ToCharArray)
+
+        '            Dim pastasEmList As New List(Of String)
+        '            For Each str As String In pastasEmStringCollection
+        '                If Trim(str) <> "" Then pastasEmList.Add(str)
+        '            Next
+        '            pastasEmList.Remove(pastasEmList.Count - 1)
+        '            newPath = Path.Combine(pastasEmList.ToArray)
+
+        '            If _selectedTreeView.PathSeparator <> "\" Then
+        '                newPath.Replace("\"c, _selectedTreeView.PathSeparator)
+        '            End If
+
+        '            podeBuscarSugestoes = False
+
+        '            CriarListaDeOpcoesParaAutoCompleteCustomSource(newPath)
+        '        End If
+
+        '    End If
+        'End If
+
+        'If e.KeyCode = Keys.Enter Then
+
+
+        '    ' Checa os Keywords e seleciona
+        '    If ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr) = True Then Exit Sub
 
         '    arquivo = New FileInfo(pathStr)
         '    If arquivo.Exists = True Then
@@ -907,84 +994,35 @@ Public Class Control_AddressBar
         '        caminho = New DirectoryInfo(pathStr)
         '    End If
 
+
+        '    caminhoValido = (caminho.Exists = True And arquivo.Exists = True) Or
+        '        (caminho.Exists = True And caminho.FullName = arquivo.FullName)
+
+        '    ForceTextMode = Not (caminhoValido)
+
+        '    Select Case caminhoValido
+        '        Case True
+        '            DisplayMode = DisplayModeEnum.FoldersControlsMode
+
+        '        Case False
+
+        '            DisplayMode = DisplayModeEnum.TextMode
+
+        '            If confirmar <> 1 Then
+        '                confirmar = MsgBox("O " & My.Application.Info.Title & " não encotrou o caminho " & """" & TXTWriteAddress.Text & """")
+        '            End If
+
+        '            TXTWriteAddress.Focus()
+
+        '    End Select
         'End If
 
-
-
-
-
-
-        If pathStr.Length > 0 Then
-            lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
-        End If
-
-        If lastCharStr = _selectedTreeView.PathSeparator Then
-
-            CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
-
-        Else
-            If e.KeyCode = Keys.Back Then
-
-                If podeBuscarSugestoes = True Then
-                    Dim pastasEmStringCollection As Collections.Specialized.StringCollection
-                    Dim newPath As String
-                    pastasEmStringCollection = nodeManipulatior.stringFunctions.ConverteStringEmColectionString(pathStr, _selectedTreeView.PathSeparator.ToCharArray)
-
-                    Dim pastasEmList As New List(Of String)
-                    For Each str As String In pastasEmStringCollection
-                        If Trim(str) <> "" Then pastasEmList.Add(str)
-                    Next
-                    pastasEmList.Remove(pastasEmList.Count - 1)
-                    newPath = Path.Combine(pastasEmList.ToArray)
-
-                    If _selectedTreeView.PathSeparator <> "\" Then
-                        newPath.Replace("\"c, _selectedTreeView.PathSeparator)
-                    End If
-
-                    podeBuscarSugestoes = False
-
-                    CriarListaDeOpcoesParaAutoCompleteCustomSource(newPath)
-                End If
-
-            End If
-        End If
-
-        If e.KeyCode = Keys.Enter Then
-
-
-            ' Checa os Keywords e seleciona
-            If ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr) = True Then Exit Sub
-
-            arquivo = New FileInfo(pathStr)
-            If arquivo.Exists = True Then
-                caminho = New DirectoryInfo(arquivo.DirectoryName)
-            Else
-                caminho = New DirectoryInfo(pathStr)
-            End If
-
-
-            caminhoValido = (caminho.Exists = True And arquivo.Exists = True) Or
-                (caminho.Exists = True And caminho.FullName = arquivo.FullName)
-
-            ForceTextMode = Not (caminhoValido)
-
-            Select Case caminhoValido
-                Case True
-                    DisplayMode = DisplayModeEnum.FoldersControlsMode
-
-                Case False
-
-                    DisplayMode = DisplayModeEnum.TextMode
-
-                    If confirmar <> 1 Then
-                        confirmar = MsgBox("O " & My.Application.Info.Title & " não encotrou o caminho " & """" & TXTWriteAddress.Text & """")
-                    End If
-
-                    TXTWriteAddress.Focus()
-
-            End Select
-        End If
-
     End Sub
+
+    'Private Sub keyPressed(ByVal o As [Object], ByVal e As KeyPressEventArgs)
+    '    If e.KeyChar = "\" Then
+    '        MsgBox("\")
+    '    End If
+    'End Sub
 
 End Class

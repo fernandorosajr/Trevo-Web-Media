@@ -97,7 +97,6 @@ Partial Class Control_AddressBar
         '
         'TXTWriteAddress
         '
-        Me.TXTWriteAddress.AutoCompleteCustomSource.AddRange(New String() {"Computador", "Maria", "Bionica"})
         Me.TXTWriteAddress.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.TXTWriteAddress.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.TXTWriteAddress.BorderStyle = System.Windows.Forms.BorderStyle.None

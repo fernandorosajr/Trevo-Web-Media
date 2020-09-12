@@ -369,4 +369,29 @@ Public Class UsesDirectoriesClass
         Return _isFolderType
 
     End Function
+
+    Public Function SubirNivelACima(path As DirectoryInfo)
+        Dim nivelAcima As DirectoryInfo = path.Parent
+
+        Return nivelAcima
+    End Function
+
+    Public Function SubirAteUmNivelValido(path As DirectoryInfo) As DirectoryInfo
+        Dim nivelAcima As DirectoryInfo
+
+        If path.Parent IsNot Nothing Then
+            nivelAcima = path.Parent
+
+            If nivelAcima.Exists = False Then
+                nivelAcima = SubirAteUmNivelValido(nivelAcima)
+            End If
+
+        Else
+            nivelAcima = path
+        End If
+
+        Return nivelAcima
+
+    End Function
+
 End Class

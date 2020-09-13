@@ -321,10 +321,9 @@ Long, lpColorValues As Long) As Long
         If addressBar.SelectedNode IsNot tvw.SelectedNode Then
             addressBar.SelectedNode = tvw.SelectedNode
         End If
-        ExibirDados(addressBar.SelectedNode)
-        'If addressBar.SelectedNode IsNot painel_Desktop.TVWFilesAndFolders.SelectedNode Then
-        '    addressBar.SelectedNode = painel_Desktop.TVWFilesAndFolders.SelectedNode
-        'End If
+        'ExibirDados(addressBar.SelectedNode)
+
+
 
     End Sub
 

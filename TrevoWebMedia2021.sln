@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TrevoWebMedia", "WindowsApplication1\TrevoWebMedia.vbproj", "{08464C97-6454-410F-A6F0-63184CE79EF7}"
 EndProject
@@ -26,9 +26,9 @@ Global
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|s.ActiveCfg = Debug|x64
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|s.Build.0 = Debug|x64
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|s.Deploy.0 = Debug|x64
-		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.ActiveCfg = Debug|x86
-		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.Build.0 = Debug|x86
-		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.Deploy.0 = Debug|x86
+		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.ActiveCfg = Debug|x64
+		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.Build.0 = Debug|x64
+		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x64.Deploy.0 = Debug|x64
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x86.ActiveCfg = Debug|x86
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Debug|x86.Build.0 = Debug|x86
 		{08464C97-6454-410F-A6F0-63184CE79EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -50,5 +50,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA017463-44B3-4958-9091-CF18ABB9B99B}
 	EndGlobalSection
 EndGlobal

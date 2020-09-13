@@ -124,9 +124,10 @@ Public Class ControlPainel_Desktop
                 Dim title As String
                 Dim defaultResponse As String
 
-                prompt = "Digite o nome da nova pasta que será criada em:" & Chr(13) & node.Tag & "."
+                prompt = "Digite o nome da nova pasta que será criada em:" & ChrW(13) & node.Tag.ToString & "."
+
                 title = "Criar nova pasta"
-                defaultResponse = usesDirectoriesClass.ReturnNonExistentFolderName(node.Tag, "Nova pasta")
+                defaultResponse = usesDirectoriesClass.ReturnNonExistentFolderName(node.Tag.ToString, "Nova pasta")
                 folderName = InputBox(prompt, title, defaultResponse)
 
 
@@ -136,8 +137,8 @@ Public Class ControlPainel_Desktop
                 ' se existe, perguntar para qual nome renomear ou mesclar.
 
                 If _novaPastaFoiCriada = True Then
-                    subNode = node.Nodes.Add(node.Tag & "\" & folderName, folderName, "pastaFechada", "pastaFechada")
-                    subNode.Tag = node.Tag & "\" & folderName
+                    subNode = node.Nodes.Add(node.Tag.ToString & "\" & folderName, folderName, "pastaFechada", "pastaFechada")
+                    subNode.Tag = node.Tag.ToString & "\" & folderName
 
                     subNode.Nodes.Add("carregando", "Clique na pasta para carregar.", "info", "info").Tag = "carregando"
                     subNode.ContextMenuStrip = CMItens

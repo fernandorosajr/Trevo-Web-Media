@@ -310,7 +310,7 @@ Public Class UsesDirectoriesClass
 
     End Function
 
-    Public Function ReturnNonExistentFolderName(path As String, folderNameForSearch As String)
+    Public Function ReturnNonExistentFolderName(path As String, folderNameForSearch As String) As String
         Dim directoryArrayList As New ArrayList
         Dim drive As New DirectoryInfo(path)
         Dim destinationDrive As New DirectoryInfo(path & "\" & folderNameForSearch)

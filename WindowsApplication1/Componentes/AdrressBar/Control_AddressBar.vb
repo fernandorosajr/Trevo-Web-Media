@@ -15,10 +15,13 @@ Public Class Control_AddressBar
     Private Shadows keyPress As Char
     Dim precionadaBarra As Boolean
     Dim ultimoEhBarra As Boolean
-    Dim podeBuscarSugestoes As Boolean
+    Dim podeBuscarSugestoes As Boolean = True
     Dim caminhoSugerido As String
     Dim backspacePress As Boolean
     Dim lastCharStr As String = ""
+
+    Dim caminho As String
+    Dim caminhoParent As String
 
     Dim contador As Integer
 
@@ -724,6 +727,8 @@ Public Class Control_AddressBar
 
         Dim subPasta As DirectoryInfo
 
+        If _selectedTreeView Is Nothing Then Exit Function
+
         If folder.Parent IsNot Nothing Then
             If path.Chars(path.Length - 1).ToString = _selectedTreeView.PathSeparator Then
                 subPasta = folder
@@ -814,6 +819,48 @@ Public Class Control_AddressBar
 
     Private Sub TXTWriteAddress_TextChanged(sender As Object, e As EventArgs) Handles TXTWriteAddress.TextChanged
         confirmar = 0
+
+        Try
+            caminho = TXTWriteAddress.Text
+
+            Dim folder As DirectoryInfo
+            Dim folderParent As DirectoryInfo
+
+            folder = New DirectoryInfo(caminho)
+
+            Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
+
+            If caminhoParent <> _caminhoParent Then
+                caminhoParent = _caminhoParent
+                folderParent = New DirectoryInfo(caminhoParent)
+                podeBuscarSugestoes = True
+
+                If folder.Exists Then
+                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+
+                Else
+                    CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+
+                End If
+
+            Else
+
+                If folder.Exists = False Then
+                    If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+                    podeBuscarSugestoes = False
+
+                Else
+                    If precionadaBarra = False Then
+                        CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+                        podeBuscarSugestoes = True
+                    End If
+                End If
+
+            End If
+
+        Catch ex As Exception
+            podeBuscarSugestoes = True
+        End Try
     End Sub
 
     Function ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr As String) As Boolean
@@ -890,80 +937,87 @@ Public Class Control_AddressBar
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
         ForceTextMode = True
 
-        Dim lastChar As New List(Of Char)
-        Dim lastCharStr As String = ""
-        Dim pathStr As String
-        'Dim kc As KeysConverter = New KeysConverter()
-        Dim caminhoValido As Boolean
+        'Dim lastChar As New List(Of Char)
+        'Dim lastCharStr As String = ""
+        'Dim pathStr As String
+        ''Dim kc As KeysConverter = New KeysConverter()
+        'Dim caminhoValido As Boolean
 
-        Dim arquivo As FileInfo
-        Dim folder As DirectoryInfo
+        'Dim arquivo As FileInfo
+        'Dim folder As DirectoryInfo
 
-        pathStr = TXTWriteAddress.Text
+        'pathStr = TXTWriteAddress.Text
 
-        Try
-
-
-            ' Programar 3 modos para pesquisa de endereço
-            ' MODODiretorio
-            ' MODOKey
-            ' MODOFullName
-
-            ' TODO: Refaturar codigo que adiciona itens nas opçoes
-
-            folder = New DirectoryInfo(pathStr)
-
-            Dim parentFolder As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(folder))
+        'Try
 
 
-            If backspacePress = False Then
-                If ultimoEhBarra = False And precionadaBarra = True Then
-                    podeBuscarSugestoes = (caminhoSugerido <> folder.FullName)
+        '    ' Programar 3 modos para pesquisa de endereço
+        '    ' MODODiretorio
+        '    ' MODOKey
+        '    ' MODOFullName
 
-                    If folder.Exists Then
-                        'If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-                        caminhoSugerido = folder.FullName
-                        contador = 0
-                    End If
+        '    ' TODO: Refaturar codigo que adiciona itens nas opçoes
 
-                ElseIf ultimoEhBarra = True And precionadaBarra = False Then
-                    contador += 1
+        '    folder = New DirectoryInfo(pathStr)
 
-                ElseIf ultimoEhBarra = False And precionadaBarra = False Then
-                    podeBuscarSugestoes = (caminhoSugerido <> parentFolder.FullName) And contador = 0
+        '    Dim parentFolder As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(folder))
 
-                    If lastCharStr = ":" Then podeBuscarSugestoes = True
-                    If folder.Exists Then
-                        If keyPress = ":" Then
 
-                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.Root.FullName.ToString)
-                        Else
-                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+        '    If backspacePress = False Then
+        '        If ultimoEhBarra = False And precionadaBarra = True Then
+        '            podeBuscarSugestoes = (caminhoSugerido <> folder.FullName)
 
-                        End If
-                        contador += 1
-                    Else
-                        If podeBuscarSugestoes = True Then
-                            CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
-                            contador += 1
-                        End If
-                    End If
+        '            If folder.Exists Then
+        '                'If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+        '                caminhoSugerido = folder.FullName
+        '                contador = 0
+        '            End If
 
-                    caminhoSugerido = parentFolder.FullName
-                End If
+        '        ElseIf ultimoEhBarra = True And precionadaBarra = False Then
+        '            contador += 1
 
-            Else
-                If ultimoEhBarra = True Then
-                    If ultimoEhBarra = True Then
-                        'TODO : Reconhecer drive aqui
-                        CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
-                    End If
-                End If
-            End If
-        Catch ex As Exception
-            contador = 0
+        '        ElseIf ultimoEhBarra = False And precionadaBarra = False Then
+        '            podeBuscarSugestoes = (caminhoSugerido <> parentFolder.FullName) And contador = 0
 
-        End Try
+        '            If lastCharStr = ":" Then podeBuscarSugestoes = True
+        '            If folder.Exists Then
+        '                If keyPress = ":" Then
+
+        '                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.Root.FullName.ToString)
+        '                Else
+        '                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+
+        '                End If
+        '                contador += 1
+        '            Else
+        '                If podeBuscarSugestoes = True Then
+        '                    CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
+        '                    contador += 1
+        '                End If
+        '            End If
+
+        '            caminhoSugerido = parentFolder.FullName
+        '        End If
+
+        '    Else
+        '        If ultimoEhBarra = True Then
+        '            If ultimoEhBarra = True Then
+        '                'TODO : Reconhecer drive aqui
+        '                CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
+        '            End If
+        '        End If
+        '    End If
+        '    MsgBox(TXTWriteAddress.Modified)
+        'Catch ex As Exception
+        '    contador = 0
+
+        'End Try
+
+    End Sub
+
+    Private Sub TXTWriteAddress_ModifiedChanged(sender As Object, e As EventArgs) Handles TXTWriteAddress.ModifiedChanged
+
+
 
     End Sub
 

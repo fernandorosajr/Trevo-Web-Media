@@ -17,7 +17,13 @@ Public Class Control_AddressBar
     Dim ultimoEhBarra As Boolean
     Dim podeBuscarSugestoes As Boolean
     Dim caminhoSugerido As String
+    Dim backspacePress As Boolean
+    Dim lastCharStr As String = ""
+
+    Dim contador As Integer
+
     Dim temSeparador As Boolean
+
 
     Dim ForceTextMode As Boolean
 
@@ -845,14 +851,10 @@ Public Class Control_AddressBar
     Private Sub TXTWriteAddress_KeyDown(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyDown
 
         Dim lastChar As New List(Of Char)
-        Dim lastCharStr As String = ""
+
         Dim pathStr As String
 
         pathStr = TXTWriteAddress.Text
-
-
-
-        'If e.KeyCode = Keys.Back Then
 
         If pathStr.Length > 0 Then
                 Dim index As Integer = pathStr.Length - 1
@@ -864,53 +866,24 @@ Public Class Control_AddressBar
 
         End If
 
+        backspacePress = (e.KeyData = Keys.Back)
+
         ultimoEhBarra = (lastCharStr = _selectedTreeView.PathSeparator)
-
-
-        'End If
 
     End Sub
 
     Private Sub TXTWriteAddress_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TXTWriteAddress.KeyPress
-        Dim path As New DirectoryInfo(TXTWriteAddress.Text)
 
         keyPress = e.KeyChar
 
         If Asc(e.KeyChar) = 13 Then
 
-            'DisplayMode = DisplayModeEnum.FoldersControlsMode
-            'ForceTextMode = False
-
-            'ElseIf e.KeyChar = _selectedTreeView.PathSeparator Then
-
-            '    SendKeys.Send((e.KeyChar))
-            '    CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
-
-            'ChecarSePathEhKeywordESelecionarNodeAssociado()
+            DisplayMode = DisplayModeEnum.FoldersControlsMode
+            ForceTextMode = False
 
         End If
 
-
         precionadaBarra = (keyPress = _selectedTreeView.PathSeparator)
-        'If keyPress = _selectedTreeView.PathSeparator Then
-
-        '    ' Checasr se o caracter prescionado = "\"
-        '    ' se for entao...
-        '    ' checar se o caminho presente é valido 
-        '    ' se for entao....
-        '    ' criar uma lista de sugestoes com subpasta 
-        '    ' Adicionar as sugestoes as pastas parentes
-
-        '    'If path.Exists Then
-
-        '    '    '
-
-
-        '    'End If
-        '    ' SendKeys.Send(keyPress)
-        '    ' TXTWriteAddress.Focus()
-        '    ' TXTWriteAddress.Text = TXTWriteAddress.Text + keyPress
-        'End If
 
     End Sub
 
@@ -928,156 +901,69 @@ Public Class Control_AddressBar
 
         pathStr = TXTWriteAddress.Text
 
-        ' Programar 3 modos para pesquisa de endereço
-        ' MODODiretorio
-        ' MODOKey
-        ' MODOFullName
-
-        ' TODO: Refaturar codigo que adiciona itens nas opçoes
-        ' TODO: Fazer com que ele nao atualize a lista de seleção toda a vez que atualiza...
-        ' TODO: ... a caixa de endereços.
-        folder = New DirectoryInfo(pathStr)
-
-        Dim parentFolder2 As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(folder))
-
-        'If folder.Exists Then
-        '    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-        'Else
-        '    CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder2.FullName.ToString)
-        'End If
+        Try
 
 
-        If ultimoEhBarra = False And precionadaBarra = True Then
-            podeBuscarSugestoes = Not (caminhoSugerido = folder.FullName)
+            ' Programar 3 modos para pesquisa de endereço
+            ' MODODiretorio
+            ' MODOKey
+            ' MODOFullName
 
-            If folder.Exists Then
-                'If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-                caminhoSugerido = folder.FullName
-            End If
+            ' TODO: Refaturar codigo que adiciona itens nas opçoes
 
-        ElseIf ultimoEhBarra = False And precionadaBarra = False Then
-            podeBuscarSugestoes = Not (caminhoSugerido = parentFolder2.FullName)
-            'If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder2.FullName.ToString)
+            folder = New DirectoryInfo(pathStr)
 
-            If folder.Exists Then
-                CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+            Dim parentFolder As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(folder))
+
+
+            If backspacePress = False Then
+                If ultimoEhBarra = False And precionadaBarra = True Then
+                    podeBuscarSugestoes = (caminhoSugerido <> folder.FullName)
+
+                    If folder.Exists Then
+                        'If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+                        caminhoSugerido = folder.FullName
+                        contador = 0
+                    End If
+
+                ElseIf ultimoEhBarra = True And precionadaBarra = False Then
+                    contador += 1
+
+                ElseIf ultimoEhBarra = False And precionadaBarra = False Then
+                    podeBuscarSugestoes = (caminhoSugerido <> parentFolder.FullName) And contador = 0
+
+                    If lastCharStr = ":" Then podeBuscarSugestoes = True
+                    If folder.Exists Then
+                        If keyPress = ":" Then
+
+                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.Root.FullName.ToString)
+                        Else
+                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+
+                        End If
+                        contador += 1
+                    Else
+                        If podeBuscarSugestoes = True Then
+                            CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
+                            contador += 1
+                        End If
+                    End If
+
+                    caminhoSugerido = parentFolder.FullName
+                End If
+
             Else
-                If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder2.FullName.ToString)
+                If ultimoEhBarra = True Then
+                    If ultimoEhBarra = True Then
+                        'TODO : Reconhecer drive aqui
+                        CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
+                    End If
+                End If
             End If
+        Catch ex As Exception
+            contador = 0
 
-            caminhoSugerido = parentFolder2.FullName
-            End If
-
-
-
-        'If pathStr.Length > 0 Then
-        '    lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
-        'End If
-
-        'If lastCharStr <> _selectedTreeView.PathSeparator Then
-        '    folder = New DirectoryInfo(pathStr)
-        '    Dim parentFolder As DirectoryInfo = (usesDirectories.SubirAteUmNivelValido(folder))
-
-        '    podeBuscarSugestoes = Not (caminhoSugerido = parentFolder.FullName)
-
-        '    If podeBuscarSugestoes = True Then
-        '        If parentFolder.Exists = True Then
-        '            If precionadaBarra = True Then
-        '                CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-        '            Else
-        '                CriarListaDeOpcoesParaAutoCompleteCustomSource(parentFolder.FullName.ToString)
-        '            End If
-        '            ' 
-        '        End If
-        '        caminhoSugerido = parentFolder.FullName
-        '    Else
-
-        '    End If
-
-        'Else
-
-        'End If
-
-
-        ''MsgBox(ChrW(e.KeyCode))
-        ''MsgBox(Asc(e.KeyValue))
-        ''MsgBox(ChrW(Asc(e.KeyData)))
-
-
-
-
-
-
-        'If pathStr.Length > 0 Then
-        '    lastCharStr = pathStr.Chars(pathStr.Length - 1).ToString
-        'End If
-
-        'If lastCharStr = _selectedTreeView.PathSeparator Then
-
-        '    CriarListaDeOpcoesParaAutoCompleteCustomSource(pathStr)
-
-        'Else
-        '    If e.KeyCode = Keys.Back Then
-
-        '        If podeBuscarSugestoes = True Then
-        '            Dim pastasEmStringCollection As Collections.Specialized.StringCollection
-        '            Dim newPath As String
-        '            pastasEmStringCollection = nodeManipulatior.stringFunctions.ConverteStringEmColectionString(pathStr, _selectedTreeView.PathSeparator.ToCharArray)
-
-        '            Dim pastasEmList As New List(Of String)
-        '            For Each str As String In pastasEmStringCollection
-        '                If Trim(str) <> "" Then pastasEmList.Add(str)
-        '            Next
-        '            pastasEmList.Remove(pastasEmList.Count - 1)
-        '            newPath = Path.Combine(pastasEmList.ToArray)
-
-        '            If _selectedTreeView.PathSeparator <> "\" Then
-        '                newPath.Replace("\"c, _selectedTreeView.PathSeparator)
-        '            End If
-
-        '            podeBuscarSugestoes = False
-
-        '            CriarListaDeOpcoesParaAutoCompleteCustomSource(newPath)
-        '        End If
-
-        '    End If
-        'End If
-
-        'If e.KeyCode = Keys.Enter Then
-
-
-        '    ' Checa os Keywords e seleciona
-        '    If ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr) = True Then Exit Sub
-
-        '    arquivo = New FileInfo(pathStr)
-        '    If arquivo.Exists = True Then
-        '        caminho = New DirectoryInfo(arquivo.DirectoryName)
-        '    Else
-        '        caminho = New DirectoryInfo(pathStr)
-        '    End If
-
-
-        '    caminhoValido = (caminho.Exists = True And arquivo.Exists = True) Or
-        '        (caminho.Exists = True And caminho.FullName = arquivo.FullName)
-
-        '    ForceTextMode = Not (caminhoValido)
-
-        '    Select Case caminhoValido
-        '        Case True
-        '            DisplayMode = DisplayModeEnum.FoldersControlsMode
-
-        '        Case False
-
-        '            DisplayMode = DisplayModeEnum.TextMode
-
-        '            If confirmar <> 1 Then
-        '                confirmar = MsgBox("O " & My.Application.Info.Title & " não encotrou o caminho " & """" & TXTWriteAddress.Text & """")
-        '            End If
-
-        '            TXTWriteAddress.Focus()
-
-        '    End Select
-        'End If
+        End Try
 
     End Sub
 

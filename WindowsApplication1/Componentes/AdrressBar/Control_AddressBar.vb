@@ -13,6 +13,8 @@ Public Class Control_AddressBar
     '------------------------------------------------------
 
     Private Shadows keyPress As Char
+    Dim keyUpDown As Boolean
+
     Dim precionadaBarra As Boolean
     Dim ultimoEhBarra As Boolean
     Dim podeBuscarSugestoes As Boolean = True
@@ -820,47 +822,54 @@ Public Class Control_AddressBar
     Private Sub TXTWriteAddress_TextChanged(sender As Object, e As EventArgs) Handles TXTWriteAddress.TextChanged
         confirmar = 0
 
-        Try
-            caminho = TXTWriteAddress.Text
+        'Try
+        '    caminho = TXTWriteAddress.Text
+        '    MsgBox(keyUpDown)
+        '    If keyUpDown = False Then
 
-            Dim folder As DirectoryInfo
-            Dim folderParent As DirectoryInfo
+        '        Dim folder As DirectoryInfo
+        '        Dim folderParent As DirectoryInfo
 
-            folder = New DirectoryInfo(caminho)
+        '        folder = New DirectoryInfo(caminho)
 
-            Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
+        '        Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
 
-            If caminhoParent <> _caminhoParent Then
-                caminhoParent = _caminhoParent
-                folderParent = New DirectoryInfo(caminhoParent)
-                podeBuscarSugestoes = True
+        '        If caminhoParent <> _caminhoParent Then
+        '            caminhoParent = _caminhoParent
+        '            folderParent = New DirectoryInfo(caminhoParent)
+        '            podeBuscarSugestoes = True
 
-                If folder.Exists Then
-                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+        '            If folder.Exists Then
+        '                CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
 
-                Else
-                    CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+        '            Else
+        '                CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
 
-                End If
+        '            End If
 
-            Else
+        '        Else
 
-                If folder.Exists = False Then
-                    If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
-                    podeBuscarSugestoes = False
+        '            If folder.Exists = False Then
+        '                If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+        '                podeBuscarSugestoes = False
 
-                Else
-                    If precionadaBarra = False Then
-                        CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-                        podeBuscarSugestoes = True
-                    End If
-                End If
+        '            Else
+        '                If precionadaBarra = False Then
+        '                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+        '                    podeBuscarSugestoes = True
+        '                End If
+        '            End If
 
-            End If
+        '        End If
+        '    End If
 
-        Catch ex As Exception
-            podeBuscarSugestoes = True
-        End Try
+
+
+
+
+        'Catch ex As Exception
+        '    podeBuscarSugestoes = True
+        'End Try
     End Sub
 
     Function ChecarSePathEhKeywordESelecionarNodeAssociado(pathStr As String) As Boolean
@@ -897,7 +906,7 @@ Public Class Control_AddressBar
 
     Private Sub TXTWriteAddress_KeyDown(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyDown
 
-        Dim lastChar As New List(Of Char)
+        ForceTextMode = Not (e.KeyCode = Keys.Enter)
 
         Dim pathStr As String
 
@@ -906,10 +915,9 @@ Public Class Control_AddressBar
         If pathStr.Length > 0 Then
                 Dim index As Integer = pathStr.Length - 1
 
-                If index >= 0 Then
-                    lastChar.Add(pathStr.Chars(index))
-                    lastCharStr = pathStr.Chars(index).ToString
-                End If
+            If index >= 0 Then
+                lastCharStr = pathStr.Chars(index).ToString
+            End If
 
         End If
 
@@ -925,8 +933,8 @@ Public Class Control_AddressBar
 
         If Asc(e.KeyChar) = 13 Then
 
-            DisplayMode = DisplayModeEnum.FoldersControlsMode
             ForceTextMode = False
+            DisplayMode = DisplayModeEnum.FoldersControlsMode
 
         End If
 
@@ -935,7 +943,58 @@ Public Class Control_AddressBar
     End Sub
 
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
-        ForceTextMode = True
+
+        If ForceTextMode = False Then
+            DisplayMode = DisplayModeEnum.FoldersControlsMode
+        End If
+
+        keyUpDown = (e.KeyValue = Keys.Up) Or (e.KeyValue = Keys.Down)
+
+        Try
+            caminho = TXTWriteAddress.Text
+
+            If keyUpDown = False Then
+
+                Dim folder As DirectoryInfo
+                Dim folderParent As DirectoryInfo
+
+                folder = New DirectoryInfo(caminho)
+
+                Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
+
+                If caminhoParent <> _caminhoParent Then
+                    caminhoParent = _caminhoParent
+                    folderParent = New DirectoryInfo(caminhoParent)
+                    podeBuscarSugestoes = True
+
+                    If folder.Exists Then
+                        CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+
+                    Else
+                        CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+
+                    End If
+
+                Else
+
+                    If folder.Exists = False Then
+                        If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+                        podeBuscarSugestoes = False
+
+                    Else
+                        If precionadaBarra = False Then
+                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+                            podeBuscarSugestoes = True
+                        End If
+                    End If
+
+                End If
+            End If
+
+
+        Catch ex As Exception
+            podeBuscarSugestoes = True
+        End Try
 
         'Dim lastChar As New List(Of Char)
         'Dim lastCharStr As String = ""

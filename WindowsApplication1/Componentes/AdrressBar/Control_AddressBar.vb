@@ -17,7 +17,7 @@ Public Class Control_AddressBar
 
     Dim precionadaBarra As Boolean
     Dim ultimoEhBarra As Boolean
-    Dim podeBuscarSugestoes As Boolean = True
+    Dim podeBuscarSugestoes As Boolean '= True
     Dim caminhoSugerido As String
     Dim backspacePress As Boolean
     Dim lastCharStr As String = ""
@@ -492,9 +492,7 @@ Public Class Control_AddressBar
         Dim nodeParentList As New List(Of TreeNode)
         Dim _nodeParentList As New List(Of TreeNode)
 
-
         Dim parentNode As TreeNode
-
 
         If node.Parent IsNot Nothing Then
             parentNode = node.Parent
@@ -913,7 +911,7 @@ Public Class Control_AddressBar
         pathStr = TXTWriteAddress.Text
 
         If pathStr.Length > 0 Then
-                Dim index As Integer = pathStr.Length - 1
+            Dim index As Integer = pathStr.Length - 1
 
             If index >= 0 Then
                 lastCharStr = pathStr.Chars(index).ToString
@@ -962,10 +960,12 @@ Public Class Control_AddressBar
 
                 Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
 
+                ' If backspacePress = False 
+                '------------------------------------------------------------------------------------------------
                 If caminhoParent <> _caminhoParent Then
                     caminhoParent = _caminhoParent
                     folderParent = New DirectoryInfo(caminhoParent)
-                    podeBuscarSugestoes = True
+                    'podeBuscarSugestoes = True
 
                     If folder.Exists Then
                         CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
@@ -983,14 +983,15 @@ Public Class Control_AddressBar
 
                     Else
                         If precionadaBarra = False Then
-                            CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+                            If backspacePress = False Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
                             podeBuscarSugestoes = True
                         End If
                     End If
-
                 End If
-            End If
+                ' --------------------------------------
+                ' Else
 
+            End If
 
         Catch ex As Exception
             podeBuscarSugestoes = True

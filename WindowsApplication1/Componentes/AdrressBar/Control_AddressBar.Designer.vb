@@ -81,9 +81,9 @@ Partial Class Control_AddressBar
         Me.PanelAddress.Controls.Add(Me.Panel_EnvolveTXT)
         Me.PanelAddress.Controls.Add(Me.PanelExibirControlesDePastas)
         Me.PanelAddress.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAddress.Location = New System.Drawing.Point(163, 0)
+        Me.PanelAddress.Location = New System.Drawing.Point(86, 0)
         Me.PanelAddress.Name = "PanelAddress"
-        Me.PanelAddress.Size = New System.Drawing.Size(469, 21)
+        Me.PanelAddress.Size = New System.Drawing.Size(546, 21)
         Me.PanelAddress.TabIndex = 20
         '
         'Panel_EnvolveTXT
@@ -94,7 +94,7 @@ Partial Class Control_AddressBar
         Me.Panel_EnvolveTXT.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_EnvolveTXT.Location = New System.Drawing.Point(0, 0)
         Me.Panel_EnvolveTXT.Name = "Panel_EnvolveTXT"
-        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(469, 21)
+        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(546, 21)
         Me.Panel_EnvolveTXT.TabIndex = 21
         '
         'TXTWriteAddress
@@ -106,7 +106,7 @@ Partial Class Control_AddressBar
         Me.TXTWriteAddress.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TXTWriteAddress.Location = New System.Drawing.Point(6, 4)
         Me.TXTWriteAddress.Name = "TXTWriteAddress"
-        Me.TXTWriteAddress.Size = New System.Drawing.Size(463, 13)
+        Me.TXTWriteAddress.Size = New System.Drawing.Size(540, 13)
         Me.TXTWriteAddress.TabIndex = 9
         Me.TXTWriteAddress.Text = "Pesquisar"
         '
@@ -115,7 +115,7 @@ Partial Class Control_AddressBar
         Me.PanelMarginTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelMarginTop.Location = New System.Drawing.Point(6, 0)
         Me.PanelMarginTop.Name = "PanelMarginTop"
-        Me.PanelMarginTop.Size = New System.Drawing.Size(463, 4)
+        Me.PanelMarginTop.Size = New System.Drawing.Size(540, 4)
         Me.PanelMarginTop.TabIndex = 10
         '
         'Panel1
@@ -132,7 +132,7 @@ Partial Class Control_AddressBar
         Me.PanelExibirControlesDePastas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelExibirControlesDePastas.Location = New System.Drawing.Point(0, 0)
         Me.PanelExibirControlesDePastas.Name = "PanelExibirControlesDePastas"
-        Me.PanelExibirControlesDePastas.Size = New System.Drawing.Size(469, 21)
+        Me.PanelExibirControlesDePastas.Size = New System.Drawing.Size(546, 21)
         Me.PanelExibirControlesDePastas.TabIndex = 10
         '
         'PanelRecebeControlesDePastas
@@ -171,7 +171,7 @@ Partial Class Control_AddressBar
         Me.BTNExpandePrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNExpandePrincipal.Image = CType(resources.GetObject("BTNExpandePrincipal.Image"), System.Drawing.Image)
         Me.BTNExpandePrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(148, 0)
+        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(71, 0)
         Me.BTNExpandePrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNExpandePrincipal.Name = "BTNExpandePrincipal"
         Me.BTNExpandePrincipal.Size = New System.Drawing.Size(15, 21)
@@ -190,7 +190,7 @@ Partial Class Control_AddressBar
         Me.BTNPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNPrincipal.ImageKey = "(nenhum/a)"
         Me.BTNPrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPrincipal.Location = New System.Drawing.Point(133, 0)
+        Me.BTNPrincipal.Location = New System.Drawing.Point(56, 0)
         Me.BTNPrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNPrincipal.Name = "BTNPrincipal"
         Me.BTNPrincipal.Size = New System.Drawing.Size(15, 21)
@@ -216,7 +216,7 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.ForceExpandButtonDisplay = True
         Me.MainFolderControl.Image = Nothing
         Me.MainFolderControl.Level = 0
-        Me.MainFolderControl.Location = New System.Drawing.Point(89, 0)
+        Me.MainFolderControl.Location = New System.Drawing.Point(12, 0)
         Me.MainFolderControl.Master = Nothing
         Me.MainFolderControl.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.MainFolderControl.Name = "MainFolderControl"
@@ -251,7 +251,7 @@ Partial Class Control_AddressBar
         Me.TempControl.Name = "TempControl"
         Me.TempControl.SelectedNode = Nothing
         Me.TempControl.SelectedTreeView = Nothing
-        Me.TempControl.Size = New System.Drawing.Size(89, 21)
+        Me.TempControl.Size = New System.Drawing.Size(12, 21)
         Me.TempControl.Slave = Nothing
         Me.TempControl.Style = TrevoWebMedia.Control_ControleDePasta.StyleEnum._Default
         Me.TempControl.TabIndex = 22

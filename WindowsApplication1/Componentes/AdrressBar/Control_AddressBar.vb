@@ -5,11 +5,11 @@ Imports System.Security.Cryptography
 Public Class Control_AddressBar
 
 
-    Dim confirmar As Byte
-    'Importar Classes
+    'Dim confirmar As Byte
+    'Importação de Classes
     '------------------------------------------------------
-    Dim nodeManipulatior As New Class_NodeManipulator
-    Dim usesDirectories As New UsesDirectoriesClass
+    'Dim nodeManipulatior As New Class_NodeManipulator
+    Private ReadOnly usesDirectories As New UsesDirectoriesClass
     '------------------------------------------------------
 
     Private Shadows keyPress As Char
@@ -17,10 +17,13 @@ Public Class Control_AddressBar
 
     Dim precionadaBarra As Boolean
     Dim ultimoEhBarra As Boolean
-    Dim podeBuscarSugestoes As Boolean '= True
-    Dim caminhoSugerido As String
+    Dim podeBuscarSugestoes As Boolean = True
+    ReadOnly caminhoSugerido As String
     Dim backspacePress As Boolean
     Dim lastCharStr As String = ""
+
+    Dim folder As DirectoryInfo
+    Dim folderParent As DirectoryInfo
 
     Dim autoCompleteCustomSourcePath As New AutoCompleteStringCollection
     Dim autoCompleteCustomSourceParentPath As New AutoCompleteStringCollection
@@ -29,9 +32,9 @@ Public Class Control_AddressBar
     Dim caminho As String
     Dim caminhoParent As String
 
-    Dim contador As Integer
+    ReadOnly contador As Integer
 
-    Dim temSeparador As Boolean
+    'Dim temSeparador As Boolean
 
 
     Dim ForceTextMode As Boolean
@@ -39,16 +42,16 @@ Public Class Control_AddressBar
     Public ControlesDePastas As New List(Of Control_ControleDePasta)
     Const defaultText As String = "Node"
 
-    Private _initialPath As String
-    Private Property InitialPath As String
-        Get
-            Return _initialPath
-        End Get
-        Set(value As String)
-            _initialPath = value
+    'Private _initialPath As String
+    'Private Property InitialPath As String
+    '    Get
+    '        Return _initialPath
+    '    End Get
+    '    Set(value As String)
+    '        _initialPath = value
 
-        End Set
-    End Property
+    '    End Set
+    'End Property
 
     Private _folderMode As Boolean
     Public Property FolderMode As Boolean
@@ -86,7 +89,7 @@ Public Class Control_AddressBar
     End Property
 
 
-    Private _treeNode As New TreeNode
+    Private ReadOnly _treeNode As New TreeNode
     Public Property TreeNode As TreeNodeCollection
         Get
             Return _treeNode.Nodes
@@ -185,8 +188,8 @@ Public Class Control_AddressBar
         TextMode = 1
     End Enum
 
-    Dim colorLostFocus As Color = Color.Gainsboro
-    Dim colorFocus As Color = Color.SkyBlue ' ColorTranslator.FromHtml(KnownColor.Highlight)
+    ReadOnly colorLostFocus As Color = Color.Gainsboro
+    ReadOnly colorFocus As Color = Color.SkyBlue ' ColorTranslator.FromHtml(KnownColor.Highlight)
 
     'Public SomaDeMenus As New ContextMenuStrip
 
@@ -223,7 +226,7 @@ Public Class Control_AddressBar
                         'TXTWriteAddress.Text = SelectedNode.Tag
 
                     ElseIf _mainNode IsNot Nothing Then
-                        TXTWriteAddress.Text = MainNode.Tag
+                        TXTWriteAddress.Text = MainNode.Tag.ToString
 
                     End If
 
@@ -270,7 +273,7 @@ Public Class Control_AddressBar
             If value IsNot Nothing Then
 
                 If TypeOf _mainNode.Tag Is String Then
-                    TXTWriteAddress.Text = _mainNode.Tag
+                    TXTWriteAddress.Text = _mainNode.Tag.ToString
                 End If
 
                 MainFolderControl.SelectedNode = value
@@ -321,7 +324,7 @@ Public Class Control_AddressBar
 
             If value IsNot Nothing Then
                 If TypeOf value.Tag Is Class_NodesCollectionWithKeywords Then
-                    _nodesCollectionWithKeywords = value.Tag
+                    _nodesCollectionWithKeywords = CType(value.Tag, Class_NodesCollectionWithKeywords)
                 End If
             End If
 
@@ -338,10 +341,13 @@ Public Class Control_AddressBar
 
             _selectedNode = value
 
-            CriarListaDeOpcoesParaAutoCompleteCustomSource()
+            'CriarListaDeOpcoesParaAutoCompleteCustomSource()
+
+            ListarArquivosOuPastasParentes(_selectedNode.Tag)
+
             If value IsNot Nothing Then
                 If TypeOf _selectedNode.Tag Is String Then
-                    TXTWriteAddress.Text = _selectedNode.Tag
+                    TXTWriteAddress.Text = _selectedNode.Tag.ToString
                     'caminhoSugerido = (usesDirectories.SubirAteUmNivelValido(New DirectoryInfo(_selectedNode.Tag.ToString))).FullName
                 End If
 
@@ -382,7 +388,7 @@ Public Class Control_AddressBar
             _pathSeparator = _selectedTreeView.PathSeparator
 
         End If
-
+        TXTWriteAddress.AutoCompleteCustomSource = autoCompleteCustomSourcePath
         'AddHandler TXTWriteAddress.KeyPress, AddressOf keyPressed
     End Sub
 
@@ -460,9 +466,9 @@ Public Class Control_AddressBar
 
             Dim controleDePasta As Control_ControleDePasta
 
-            Dim nodeParentList As New List(Of TreeNode)
+            'Dim unused As New List(Of TreeNode)
 
-            nodeParentList = CriarUmaListaDeNodeParent(node)
+            Dim nodeParentList As List(Of TreeNode) = CriarUmaListaDeNodeParent(node)
 
             For x = 0 To node.Level
                 If x <= qAddressBar Then
@@ -494,14 +500,14 @@ Public Class Control_AddressBar
 
     Function CriarUmaListaDeNodeParent(node As TreeNode) As List(Of TreeNode)
         Dim nodeParentList As New List(Of TreeNode)
-        Dim _nodeParentList As New List(Of TreeNode)
+        'Dim unused As New List(Of TreeNode)
 
         Dim parentNode As TreeNode
 
         If node.Parent IsNot Nothing Then
             parentNode = node.Parent
 
-            _nodeParentList = CriarUmaListaDeNodeParent(parentNode)
+            Dim _nodeParentList As List(Of TreeNode) = CriarUmaListaDeNodeParent(parentNode)
 
             For Each item As TreeNode In _nodeParentList
 
@@ -518,7 +524,7 @@ Public Class Control_AddressBar
 
 
 
-    Public Function CriarSequenciaDeItems(node As TreeNode)
+    Public Function CriarSequenciaDeItems(node As TreeNode) As Control_ControleDePasta
 
         Dim item As Control_ControleDePasta
         Dim parentNode As TreeNode
@@ -543,7 +549,7 @@ Public Class Control_AddressBar
 
 
 
-    Public Overloads Function AdicionarUmItem()
+    Public Overloads Function AdicionarUmItem() As Control_ControleDePasta
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = New TreeNode(defaultText),
@@ -564,7 +570,7 @@ Public Class Control_AddressBar
 
     End Function
 
-    Public Overloads Function AdicionarUmItem(node As TreeNode, pos As Integer)
+    Public Overloads Function AdicionarUmItem(node As TreeNode, pos As Integer) As Control_ControleDePasta
 
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
@@ -587,7 +593,7 @@ Public Class Control_AddressBar
 
     End Function
 
-    Public Overloads Function AdicionarUmItem(node As TreeNode)
+    Public Overloads Function AdicionarUmItem(node As TreeNode) As Control_ControleDePasta
         Dim controleDePasta As New Control_ControleDePasta With {
             .Dock = DockStyle.Left,
             .SelectedNode = node,
@@ -626,142 +632,157 @@ Public Class Control_AddressBar
 
     End Sub
 
-    Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource()
-        TXTWriteAddress.AutoCompleteCustomSource.Clear()
+    'Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource()
+    '    TXTWriteAddress.AutoCompleteCustomSource.Clear()
 
-        'ListarAutoCompleteCustomSource(_selectedNode)
+    '    'ListarAutoCompleteCustomSource(_selectedNode)
 
-        TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(_selectedNode))
+    '    TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(_selectedNode))
 
-    End Sub
+    'End Sub
 
-    Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource(path As String)
-        TXTWriteAddress.AutoCompleteCustomSource.Clear()
+    'Overloads Sub CriarListaDeOpcoesParaAutoCompleteCustomSource(path As String)
+    '    TXTWriteAddress.AutoCompleteCustomSource.Clear()
 
-        'ListarAutoCompleteCustomSource(_selectedNode)
+    '    'ListarAutoCompleteCustomSource(_selectedNode)
 
-        TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(path + " "))
-        'TXTWriteAddress.AutoCompleteCustomSource
+    '    TXTWriteAddress.AutoCompleteCustomSource.AddRange(ListarAutoCompleteCustomSource(path + " "))
+    '    'TXTWriteAddress.AutoCompleteCustomSource
 
-    End Sub
+    'End Sub
 
-    Overloads Function ListarAutoCompleteCustomSource(node As TreeNode) As String()
-        Dim folder As DirectoryInfo
-        Dim autoCompleteString As String()
-        Dim autoComplete As New List(Of String)
-
-
-        If node IsNot Nothing Then
-
-            If node.Tag IsNot Nothing Then
-
-            End If
-
-            folder = New DirectoryInfo(node.Tag)
-
-            If folder.Exists Then
-                autoCompleteString = ListarArquivosOuPastasParentes(node.Tag)
-            End If
-
-            If autoCompleteString IsNot Nothing Then
-                autoComplete.AddRange(autoCompleteString)
-
-            End If
-
-        End If
+    'Overloads Function ListarAutoCompleteCustomSource(node As TreeNode) As String()
+    '    Dim folder As DirectoryInfo
+    '    Dim autoCompleteString As String()
+    '    Dim autoComplete As New List(Of String)
 
 
-        'Dim irmaos As TreeNodeCollection
-        'irmaos = nodeManipulatior.ListarNodosIrmaos(node)
+    '    If node IsNot Nothing Then
 
-        'If irmaos IsNot Nothing Then
-        '    autoCompleteString = ListarNodesFilhos(irmaos)
-        'Else
-        '    autoCompleteString = ListarNodesFilhos(node)
-        'End If
+    '        If node.Tag IsNot Nothing Then
 
-        'For Each str As String In autoCompleteString
-        '    autoComplete.Add(str)
-        'Next
+    '        End If
 
-        Return autoComplete.ToArray
+    '        folder = New DirectoryInfo(node.Tag)
 
-    End Function
+    '        If folder.Exists Then
+    '            autoCompleteString = ListarArquivosOuPastasParentes(node.Tag)
+    '        End If
 
-    Overloads Function ListarAutoCompleteCustomSource(path As String) As String()
-        Dim folder As DirectoryInfo
-        Dim autoCompleteString As String()
-        'Dim autoComplete As New List(Of String)
+    '        If autoCompleteString IsNot Nothing Then
+    '            autoComplete.AddRange(autoCompleteString)
 
-        'If Trim(path) <> "" Then
-        folder = New DirectoryInfo(Trim(path))
+    '        End If
 
-        If folder.Exists Then
-            autoCompleteString = ListarArquivosOuPastasParentes(path)
-        End If
+    '    End If
 
-        'If autoCompleteString IsNot Nothing Then
-        '    autoComplete.AddRange(autoCompleteString)
 
-        'End If
-        'End If
+    '    'Dim irmaos As TreeNodeCollection
+    '    'irmaos = nodeManipulatior.ListarNodosIrmaos(node)
 
-        ' Return autoComplete.ToArray
-        Return autoCompleteString.ToArray
+    '    'If irmaos IsNot Nothing Then
+    '    '    autoCompleteString = ListarNodesFilhos(irmaos)
+    '    'Else
+    '    '    autoCompleteString = ListarNodesFilhos(node)
+    '    'End If
 
-    End Function
+    '    'For Each str As String In autoCompleteString
+    '    '    autoComplete.Add(str)
+    '    'Next
 
-    Function ListarItensParentes(path As String)
-        Dim listaDeItens As List(Of String)
+    '    Return autoComplete.ToArray
+
+    'End Function
+
+    'Overloads Function ListarAutoCompleteCustomSource(path As String) As String()
+    '    Dim folder As DirectoryInfo
+    '    Dim autoCompleteString As String()
+    '    'Dim autoComplete As New List(Of String)
+
+    '    'If Trim(path) <> "" Then
+    '    folder = New DirectoryInfo(Trim(path))
+
+    '    If folder.Exists Then
+    '        autoCompleteString = ListarArquivosOuPastasParentes(path)
+    '    End If
+
+    '    'If autoCompleteString IsNot Nothing Then
+    '    '    autoComplete.AddRange(autoCompleteString)
+
+    '    'End If
+    '    'End If
+
+    '    ' Return autoComplete.ToArray
+    '    Return autoCompleteString.ToArray
+
+    'End Function
+
+    Function ListarItensParentes(path As String) As List(Of String)
+        Dim listaDeItens As New List(Of String)
+
         ' Lista os arquivos e pastas que são parentes ao item do caminho apresentado
         Dim folder As New DirectoryInfo(path)
 
         If folder.Exists = True Then
             ' Lista os arquivos e pastas parentes
-            ' adiciona na lsita para retornar
+            ' adiciona na lista para retornar
+            listaDeItens.Add(folder.Parent.FullName.ToString)
         Else
             ' Localizar o node com base no caminho apresentado
             ' Se Existir o node então ...
             '       Lista os nodes parentes
         End If
+        Return listaDeItens
     End Function
 
     ' Colocar esta função em uma classe especifica
-    Overloads Function ListarArquivosOuPastasParentes(path As String)
+
+    Overloads Function ListarArquivosOuPastasParentes(path As String, forceListParentFolder As Boolean) As String()
+
         Dim folder As New DirectoryInfo(Trim(path))
+        Dim parentFolder As DirectoryInfo
         Dim listaDePastasEArquivos As New List(Of String)
 
-        Dim subPasta As DirectoryInfo
+        If forceListParentFolder = True Then
+            'If folder.Exists Then
 
-        If _selectedTreeView Is Nothing Then Exit Function
+            parentFolder = usesDirectories.SubirAteUmNivelValido(folder)
+                listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(parentFolder))
 
-        If folder.Parent IsNot Nothing Then
-            If path.Chars(Trim(path).Length - 1).ToString = _selectedTreeView.PathSeparator Then
-                subPasta = folder
+            'End If
 
+        Else
+            If folder.Exists Then
+                listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(folder))
             Else
-                subPasta = folder.Parent
-
+                parentFolder = usesDirectories.SubirAteUmNivelValido(folder)
+                listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(parentFolder))
             End If
 
-            subPasta = folder
-
-        ElseIf folder.Root.FullName = folder.FullName Then
-            'MsgBox("VVV")
-            listaDePastasEArquivos.Clear()
-
-            listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(folder))
-
-            Return listaDePastasEArquivos.ToArray
         End If
 
-        listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(subPasta))
+        Return listaDePastasEArquivos.ToArray
+    End Function
+
+    Overloads Function ListarArquivosOuPastasParentes(path As String) As String()
+
+        Dim folder As New DirectoryInfo(Trim(path))
+        Dim parentFolder As DirectoryInfo
+
+        Dim listaDePastasEArquivos As New List(Of String)
+
+        If folder.Exists Then
+            listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(folder))
+        Else
+            parentFolder = usesDirectories.SubirAteUmNivelValido(folder)
+            listaDePastasEArquivos.AddRange(ListarArquivosOuPastasParentes(parentFolder))
+        End If
 
         Return listaDePastasEArquivos.ToArray
 
     End Function
 
-    Overloads Function ListarArquivosOuPastasParentes(folder As DirectoryInfo)
+    Overloads Function ListarArquivosOuPastasParentes(folder As DirectoryInfo) As String()
         Dim listaDePastasEArquivos As New List(Of String)
 
         Try
@@ -781,8 +802,8 @@ Public Class Control_AddressBar
     Overloads Function ListarNodesFilhos(node As TreeNode) As String()
 
         Dim autoComplete As New List(Of String)
-        Dim autoCompleteString As String()
-        autoComplete.Add(node.Tag)
+        Dim autoCompleteString As String() = {}
+        autoComplete.Add(node.Tag.ToString)
 
         If node.GetNodeCount(True) > 0 Then
 
@@ -824,7 +845,7 @@ Public Class Control_AddressBar
     End Function
 
     Private Sub TXTWriteAddress_TextChanged(sender As Object, e As EventArgs) Handles TXTWriteAddress.TextChanged
-        confirmar = 0
+        'confirmar = 0
 
         'Try
         '    caminho = TXTWriteAddress.Text
@@ -965,95 +986,184 @@ Public Class Control_AddressBar
         keyUpDown = (e.KeyValue = Keys.Up) Or (e.KeyValue = Keys.Down)
 
         Try
-            caminho = TXTWriteAddress.Text
 
             If keyUpDown = False Then
 
-                Dim folder As DirectoryInfo
-                Dim folderParent As DirectoryInfo
-
                 folder = New DirectoryInfo(TXTWriteAddress.Text)
 
-                Dim _caminhoParent As String = (usesDirectories.SubirAteUmNivelValido(folder).FullName)
+                Dim _caminhoParent As String = usesDirectories.SubirAteUmNivelValido(folder).FullName
 
                 folderParent = New DirectoryInfo(_caminhoParent)
 
-                'MsgBox(ultimoEhBarra & " " & caminhoParent & " | é igual : " & (caminhoParent = _caminhoParent))
+                ' Atualizar listas 
+
+                'autoCompleteCustomSourcePath
+                'autoCompleteCustomSourceParentPath
+
+                'autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
 
                 'If folder.Exists Then
-                '    autoCompleteCustomSourcePath.Clear()
-                '    autoCompleteCustomSourcePath.AddRange(ListarAutoCompleteCustomSource(folder.FullName.ToString))
+                '    'Dim _autoCompleteCustomSourcePath As New AutoCompleteStringCollection
+                '    '_autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+
                 'End If
 
-                'autoCompleteCustomSourceParentPath.Clear()
-                'autoCompleteCustomSourceParentPath.AddRange(ListarAutoCompleteCustomSource(folderParent.FullName.ToString))
 
                 If backspacePress = False Then
+                    If ultimoEhBarra = True Then
+                        If folder.Exists Then
+                            autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
 
-                    Select Case caminhoParent
+                        Else
+                            autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+                        End If
+                    End If
+                    'Dim result As String
 
-                        Case Nothing
-                            caminhoParent = _caminhoParent
-                            folderParent = New DirectoryInfo(caminhoParent)
+                    'result = "Private Shadows keyPress As Char" & ChrW(13) &
+                    'keyPress & ChrW(13) & ChrW(13) &
+                    '"Dim keyUpDown As Boolean" & ChrW(13) &
+                    ' keyUpDown & ChrW(13) & ChrW(13) &
+                    '"Dim precionadaBarra As Boolean" & ChrW(13) &
+                    ' precionadaBarra & ChrW(13) & ChrW(13) &
+                    '"Dim ultimoEhBarra As Boolean" & ChrW(13) &
+                    ' ultimoEhBarra & ChrW(13) & ChrW(13) &
+                    '"Dim podeBuscarSugestoes As Boolean" & ChrW(13) &
+                    ' podeBuscarSugestoes & ChrW(13) & ChrW(13) &
+                    '"Dim caminhoSugerido As String" & ChrW(13) &
+                    ' caminhoSugerido & ChrW(13) & ChrW(13) &
+                    '"Dim backspacePress As Boolean" & ChrW(13) &
+                    ' backspacePress & ChrW(13) & ChrW(13) &
+                    '"Dim lastCharStr As String" & ChrW(13) &
+                    ' lastCharStr & ChrW(13) & ChrW(13) &
+                    '"Dim caminho As String" & ChrW(13) &
+                    ' caminho & ChrW(13) & ChrW(13) &
+                    '"Dim caminhoParent As String" & ChrW(13) &
+                    ' caminhoParent & ChrW(13) & ChrW(13) &
+                    ' "Dim _caminhoParent As String" & ChrW(13) &
+                    ' _caminhoParent & ChrW(13) & ChrW(13) &
+                    '"Dim contador As Integer" & ChrW(13) &
+                    ' contador & ChrW(13) & ChrW(13)
 
-                            If folder.Exists Then
-                                CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
+                    'MsgBox(result)
 
-                            Else
-                                CriarListaDeOpcoesParaAutoCompleteCustomSource(folderParent.FullName.ToString)
+                    'Select Case caminho
+                    '    Case Nothing
 
-                            End If
-                            podeBuscarSugestoes = False
+                    '        If precionadaBarra = True Then
 
-                        Case _caminhoParent
-                            If folder.Exists = False Then
-                                'MsgBox(podeBuscarSugestoes)
-                                If podeBuscarSugestoes = True Then CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
-                                podeBuscarSugestoes = False
+                    '        Else
 
-                            Else
-                                If precionadaBarra = False Then
-                                    CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-                                    podeBuscarSugestoes = True
-                                End If
-                            End If
+                    '        End If
 
-                        Case Else
-                            caminhoParent = _caminhoParent
-                            folderParent = New DirectoryInfo(caminhoParent)
-                            'podeBuscarSugestoes = True
+                    '        If folder.Parent IsNot Nothing Then
+                    '            autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
 
-                            If folder.Exists Then
-                                If ultimoEhBarra = False Then CriarListaDeOpcoesParaAutoCompleteCustomSource(folder.FullName.ToString)
-                                If ultimoEhBarra = True Then caminho = TXTWriteAddress.Text
-                            Else
-                                'If caminho <> caminhoParent & _selectedTreeView.PathSeparator Then
-                                If podeBuscarSugestoes = True Then
-                                    CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
-                                    podeBuscarSugestoes = False
-                                End If
-                                'End If
+                    '        Else
+                    '            autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
 
-                            End If
-                    End Select
+                    '        End If
+
+                    '    Case _caminhoParent
+
+                    '        If precionadaBarra = False Then
+
+                    '            If folder.Parent IsNot Nothing Then
+                    '                autoCompleteCustomSourcePath.Clear()
+
+                    '                autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+
+                    '            Else
+                    '                autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
+
+                    '            End If
+
+                    '            TXTWriteAddress.AutoCompleteCustomSource = autoCompleteCustomSourcePath
+
+                    '            'podeBuscarSugestoes = True
+
+                    '        End If
+                    '    Case Else
+
+                    '        If folder.Exists Then
+                    '            If precionadaBarra = False Then autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
+                    '        End If
+
+                    'End Select
 
                 Else
-                    If caminhoParent <> _caminhoParent Then
-                        caminhoParent = _caminhoParent
-                        folderParent = New DirectoryInfo(caminhoParent)
+                    If ultimoEhBarra = False Then
+                        If folder.Exists Then
+                            autoCompleteCustomSourcePath.Clear()
+                            If folder.Parent IsNot Nothing Then
+                                autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+                            Else
+                                autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
 
-                        If ultimoEhBarra = True Then
-                            'MsgBox(ultimoEhBarra & " " & caminhoParent & " | é igual : " & (caminhoParent <> _caminhoParent))
-                            CriarListaDeOpcoesParaAutoCompleteCustomSource(caminhoParent)
+                            End If
                         End If
 
                     End If
+                    'Dim result As String
 
+                    'result = "Private Shadows keyPress As Char" & ChrW(13) &
+                    'keyPress & ChrW(13) & ChrW(13) &
+                    '"Dim keyUpDown As Boolean" & ChrW(13) &
+                    ' keyUpDown & ChrW(13) & ChrW(13) &
+                    '"Dim precionadaBarra As Boolean" & ChrW(13) &
+                    ' precionadaBarra & ChrW(13) & ChrW(13) &
+                    '"Dim ultimoEhBarra As Boolean" & ChrW(13) &
+                    ' ultimoEhBarra & ChrW(13) & ChrW(13) &
+                    '"Dim podeBuscarSugestoes As Boolean" & ChrW(13) &
+                    ' podeBuscarSugestoes & ChrW(13) & ChrW(13) &
+                    '"Dim caminhoSugerido As String" & ChrW(13) &
+                    ' caminhoSugerido & ChrW(13) & ChrW(13) &
+                    '"Dim backspacePress As Boolean" & ChrW(13) &
+                    ' backspacePress & ChrW(13) & ChrW(13) &
+                    '"Dim lastCharStr As String" & ChrW(13) &
+                    ' lastCharStr & ChrW(13) & ChrW(13) &
+                    '"Dim caminho As String" & ChrW(13) &
+                    ' caminho & ChrW(13) & ChrW(13) &
+                    '"Dim caminhoParent As String" & ChrW(13) &
+                    ' caminhoParent & ChrW(13) & ChrW(13) &
+                    ' "Dim _caminhoParent As String" & ChrW(13) &
+                    ' _caminhoParent & ChrW(13) & ChrW(13) &
+                    '"Dim contador As Integer" & ChrW(13) &
+                    ' contador & ChrW(13) & ChrW(13)
 
+                    'MsgBox(result)
+
+                    'If caminhoParent <> _caminhoParent Then
+                    '    caminhoParent = _caminhoParent
+                    '    folderParent = New DirectoryInfo(caminhoParent)
+
+                    '    podeBuscarSugestoes = ultimoEhBarra
+                    '    ' MsgBox(result)
+                    '    If podeBuscarSugestoes = True Then
+                    '        autoCompleteCustomSourcePath.Clear()
+                    '        autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString, True))
+
+                    '        TXTWriteAddress.AutoCompleteCustomSource = autoCompleteCustomSourcePath
+                    '        podeBuscarSugestoes = False
+                    '    End If
+
+                    '    'End If
+
+                    'Else
+                    '    If ultimoEhBarra = False Then
+                    '        If folder.Exists Then
+                    '            autoCompleteCustomSourcePath.Clear()
+                    '            autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folderParent.FullName.ToString, True))
+
+                    '            TXTWriteAddress.AutoCompleteCustomSource = autoCompleteCustomSourcePath
+                    '        End If
+                    '    End If
+                    'End If
 
                 End If
             End If
 
+            caminho = TXTWriteAddress.Text
         Catch ex As Exception
             podeBuscarSugestoes = True
         End Try

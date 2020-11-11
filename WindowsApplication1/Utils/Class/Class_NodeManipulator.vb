@@ -68,11 +68,12 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Function ListarNodosFilhos(selectedNode As TreeNode, dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), Renamed_SelectedFoldersAndFiles As List(Of Object), index As Long)
-        Dim file As FileInfo
+    Public Sub ListarNodosFilhos(selectedNode As TreeNode, dataRenameCriteriaList As List(Of Class_DataRenamingCriterion), Renamed_SelectedFoldersAndFiles As List(Of Object), index As Long)
+        Dim file As New FileInfo("")
 
         Dim indexFile As Long = index
         Dim indexFolder As Long = index
+
         If selectedNode.GetNodeCount(True) > 0 Then
 
         End If
@@ -88,13 +89,13 @@ Public Class Class_NodeManipulator
                 'file = renameActions.RenameAccordingToCriterion(child, dataRenameCriteriaList, indexFile)
                 child.Text = file.Name
                 indexFile = +1
+
             End If
         Next
 
+    End Sub
 
-    End Function
-
-    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, _path As String, nivel As Integer)
+    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, _path As String, nivel As Integer) As TreeNode
         Dim montagemDeNome As New List(Of String)
         Dim key As String
 
@@ -144,7 +145,7 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, nomesDasPastas As Array, nivel As Integer)
+    Public Overloads Function PesquisaESelecionarNode(nodeAPesquisar As TreeNodeCollection, nomesDasPastas As Array, nivel As Integer) As TreeNode
         Dim montagemDeNome As New List(Of String)
         Dim key As String
 
@@ -153,7 +154,9 @@ Public Class Class_NodeManipulator
         If nivel < nomesDasPastas.Length Then
 
             For x = 0 To nivel
-                montagemDeNome.Add(nomesDasPastas(x))
+#Disable Warning BC42017 ' Resolução de ligação tardia
+                montagemDeNome.Add(CType(nomesDasPastas(x), String))
+#Enable Warning BC42017 ' Resolução de ligação tardia
 
                 key = Path.Combine(montagemDeNome.ToArray)
 
@@ -186,7 +189,7 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, folder As DirectoryInfo)
+    Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, folder As DirectoryInfo) As TreeNode
         Dim delimitadoresSeCaminhoDePasta() As Char = {"\"c, "/"c}
 
         Dim selected As Boolean
@@ -202,7 +205,7 @@ Public Class Class_NodeManipulator
         Dim x As Integer
 
         Dim node As New TreeNode
-        Dim subNode As New TreeNode
+        Dim subNode As TreeNode
         Dim nodeAtual As New TreeNode
 
         ' Separar nomes de pastas e arquivos em ArrayStrings
@@ -251,15 +254,19 @@ Public Class Class_NodeManipulator
                     subNode = nodeAtual.Nodes.Add(key, texto) 'node.Nodes.Add(key, texto)
                     subNode.Tag = New DirectoryInfo(key)
 
+#Disable Warning BC42017 ' Resolução de ligação tardia
                     node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
+#Enable Warning BC42017 ' Resolução de ligação tardia
                     Exit For
 
                 End If
 
             Else
-                subNode = nodeAtual.Nodes.Add(key, texto).Clone
+                subNode = CType(nodeAtual.Nodes.Add(key, texto).Clone, TreeNode)
                 subNode.Tag = New DirectoryInfo(key)
+#Disable Warning BC42017 ' Resolução de ligação tardia
                 node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
+#Enable Warning BC42017 ' Resolução de ligação tardia
 
                 Exit For
             End If
@@ -269,7 +276,7 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, file As FileInfo)
+    Public Overloads Function CriarArvoreDeNodo(nodeRoot As TreeNode, file As FileInfo) As TreeNode
 
         Dim delimitadoresSeCaminhoDePasta() As Char = {"\"c, "/"c}
         Dim _path As String = file.DirectoryName
@@ -301,7 +308,7 @@ Public Class Class_NodeManipulator
 
     End Function
 
-    Public Function CriarArvoreDeNodo2(nodeRoot As TreeNode, nomesDasPastas As Array, nivel As Integer, selected As Boolean)
+    Public Function CriarArvoreDeNodo2(nodeRoot As TreeNode, nomesDasPastas As Array, nivel As Integer, selected As Boolean) As TreeNode
 
         Dim montagemDeNome As New List(Of String)
         Dim key As String
@@ -314,7 +321,9 @@ Public Class Class_NodeManipulator
         If nivel < nomesDasPastas.Length Then
 
             For x = 0 To nivel
-                montagemDeNome.Add(nomesDasPastas(x))
+#Disable Warning BC42017 ' Resolução de ligação tardia
+                montagemDeNome.Add(CType(nomesDasPastas(x), String))
+#Enable Warning BC42017 ' Resolução de ligação tardia
             Next
 
         Else
@@ -326,9 +335,13 @@ Public Class Class_NodeManipulator
         For x = nivel To nomesDasPastas.Length - 1
             node = nodeRoot
             key = Path.Combine(montagemDeNome.ToArray)
-            texto = nomesDasPastas(x)
+#Disable Warning BC42017 ' Resolução de ligação tardia
+            texto = CType(nomesDasPastas(x), String)
+#Enable Warning BC42017 ' Resolução de ligação tardia
 
-            If nomesDasPastas(nomesDasPastas.Length - 1) = montagemDeNome(montagemDeNome.Count - 1) Then
+#Disable Warning BC42017 ' Resolução de ligação tardia
+            If CType(nomesDasPastas(nomesDasPastas.Length - 1), String) = montagemDeNome(montagemDeNome.Count - 1) Then
+#Enable Warning BC42017 ' Resolução de ligação tardia
                 selected = True
             Else
                 selected = False
@@ -357,7 +370,7 @@ Public Class Class_NodeManipulator
 
             Else
 
-                subNode = nodeAtual.Nodes.Add(key, texto).Clone
+                subNode = CType(nodeAtual.Nodes.Add(key, texto).Clone, TreeNode)
                 subNode.Tag = New DirectoryInfo(key)
                 node.Nodes.Add(CriarArvoreDeNodo2(subNode, nomesDasPastas, x + 1, selected))
 

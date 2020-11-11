@@ -13,14 +13,15 @@
 
     End Sub
 
-    Function AdcionarItemDePasta(Quant As Integer)
+    Sub AdcionarItemDePasta(Quant As Integer)
         For x = 0 To Quant
             ControlIDePasta = New ControlItenDePasta
             FLPanelRecebe.Controls.Add(ControlIDePasta)
             ControlIDePasta.Width = ControlIDePasta.Parent.Width
             ControlIDePasta.Visible = True
         Next
-    End Function
+    End Sub
+
     Private Sub FLPanelRecebe_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles FLPanelRecebe.Paint
 
     End Sub

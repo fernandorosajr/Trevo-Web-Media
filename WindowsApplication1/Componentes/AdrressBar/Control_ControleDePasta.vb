@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 
 Public Class Control_ControleDePasta
-    Dim texto As String
-    Dim number1 As Integer = 0
+    ReadOnly texto As String
+    ReadOnly number1 As Integer = 0
 
     Public Enum StyleEnum
         _Default = 0
@@ -242,7 +242,7 @@ Public Class Control_ControleDePasta
                     End If
 
                     If TypeOf value.Tag Is String Then
-                        Dim caminho As String = value.Tag
+                        Dim caminho As String = value.Tag.ToString
 
                         _folderInfo = New DirectoryInfo(caminho)
                         _driveInfo = New DriveInfo(_folderInfo.Root.FullName)
@@ -353,12 +353,12 @@ Public Class Control_ControleDePasta
 
     End Sub
 
-    Function NewSubMenuItem_Clicked(sender As Object, e As EventArgs)
+    Sub NewSubMenuItem_Clicked(sender As Object, e As EventArgs)
         Dim subMenu As ToolStripMenuItem
 
         subMenu = CType(sender, ToolStripMenuItem)
 
-        Dim node As TreeNode = subMenu.Tag
+        Dim node As TreeNode = CType(subMenu.Tag, TreeNode)
 
         AddressBar.SelectedNode = node
 
@@ -377,7 +377,7 @@ Public Class Control_ControleDePasta
         End If
 
 
-    End Function
+    End Sub
 
     Sub SelectSubMenu(subMenu As ToolStripMenuItem)
 
@@ -415,7 +415,7 @@ Public Class Control_ControleDePasta
                     If child.Name = "carregando" Then
                         SelectedTreeView.SelectedNode = child.Parent
                         mostrarBotaoDeNMenu = False
-                        Exit Function
+                        Return mostrarBotaoDeNMenu
                     End If
 
                     'MsgBox(child.Name)

@@ -36,7 +36,6 @@ Partial Class Control_AddressBar
         Me.BTNExpandePrincipal = New System.Windows.Forms.Button()
         Me.BTNPrincipal = New System.Windows.Forms.Button()
         Me.MainFolderControl = New TrevoWebMedia.Control_ControleDePasta()
-        Me.TempControl = New TrevoWebMedia.Control_ControleDePasta()
         Me.PanelBorderReflesh = New System.Windows.Forms.Panel()
         Me.PanelBackgroundRefresh = New System.Windows.Forms.Panel()
         Me.BTNRefresh = New System.Windows.Forms.Button()
@@ -69,7 +68,6 @@ Partial Class Control_AddressBar
         Me.PanelBackgroundAddress.Controls.Add(Me.BTNExpandePrincipal)
         Me.PanelBackgroundAddress.Controls.Add(Me.BTNPrincipal)
         Me.PanelBackgroundAddress.Controls.Add(Me.MainFolderControl)
-        Me.PanelBackgroundAddress.Controls.Add(Me.TempControl)
         Me.PanelBackgroundAddress.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelBackgroundAddress.Location = New System.Drawing.Point(1, 1)
         Me.PanelBackgroundAddress.Name = "PanelBackgroundAddress"
@@ -81,9 +79,9 @@ Partial Class Control_AddressBar
         Me.PanelAddress.Controls.Add(Me.Panel_EnvolveTXT)
         Me.PanelAddress.Controls.Add(Me.PanelExibirControlesDePastas)
         Me.PanelAddress.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelAddress.Location = New System.Drawing.Point(86, 0)
+        Me.PanelAddress.Location = New System.Drawing.Point(74, 0)
         Me.PanelAddress.Name = "PanelAddress"
-        Me.PanelAddress.Size = New System.Drawing.Size(546, 21)
+        Me.PanelAddress.Size = New System.Drawing.Size(558, 21)
         Me.PanelAddress.TabIndex = 20
         '
         'Panel_EnvolveTXT
@@ -94,7 +92,7 @@ Partial Class Control_AddressBar
         Me.Panel_EnvolveTXT.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel_EnvolveTXT.Location = New System.Drawing.Point(0, 0)
         Me.Panel_EnvolveTXT.Name = "Panel_EnvolveTXT"
-        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(546, 21)
+        Me.Panel_EnvolveTXT.Size = New System.Drawing.Size(558, 21)
         Me.Panel_EnvolveTXT.TabIndex = 21
         '
         'TXTWriteAddress
@@ -106,7 +104,7 @@ Partial Class Control_AddressBar
         Me.TXTWriteAddress.ForeColor = System.Drawing.SystemColors.ControlText
         Me.TXTWriteAddress.Location = New System.Drawing.Point(6, 4)
         Me.TXTWriteAddress.Name = "TXTWriteAddress"
-        Me.TXTWriteAddress.Size = New System.Drawing.Size(540, 13)
+        Me.TXTWriteAddress.Size = New System.Drawing.Size(552, 13)
         Me.TXTWriteAddress.TabIndex = 9
         Me.TXTWriteAddress.Text = "Pesquisar"
         '
@@ -115,7 +113,7 @@ Partial Class Control_AddressBar
         Me.PanelMarginTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelMarginTop.Location = New System.Drawing.Point(6, 0)
         Me.PanelMarginTop.Name = "PanelMarginTop"
-        Me.PanelMarginTop.Size = New System.Drawing.Size(540, 4)
+        Me.PanelMarginTop.Size = New System.Drawing.Size(552, 4)
         Me.PanelMarginTop.TabIndex = 10
         '
         'Panel1
@@ -132,7 +130,7 @@ Partial Class Control_AddressBar
         Me.PanelExibirControlesDePastas.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelExibirControlesDePastas.Location = New System.Drawing.Point(0, 0)
         Me.PanelExibirControlesDePastas.Name = "PanelExibirControlesDePastas"
-        Me.PanelExibirControlesDePastas.Size = New System.Drawing.Size(546, 21)
+        Me.PanelExibirControlesDePastas.Size = New System.Drawing.Size(558, 21)
         Me.PanelExibirControlesDePastas.TabIndex = 10
         '
         'PanelRecebeControlesDePastas
@@ -171,7 +169,7 @@ Partial Class Control_AddressBar
         Me.BTNExpandePrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNExpandePrincipal.Image = CType(resources.GetObject("BTNExpandePrincipal.Image"), System.Drawing.Image)
         Me.BTNExpandePrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(71, 0)
+        Me.BTNExpandePrincipal.Location = New System.Drawing.Point(59, 0)
         Me.BTNExpandePrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNExpandePrincipal.Name = "BTNExpandePrincipal"
         Me.BTNExpandePrincipal.Size = New System.Drawing.Size(15, 21)
@@ -190,7 +188,7 @@ Partial Class Control_AddressBar
         Me.BTNPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BTNPrincipal.ImageKey = "(nenhum/a)"
         Me.BTNPrincipal.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.BTNPrincipal.Location = New System.Drawing.Point(56, 0)
+        Me.BTNPrincipal.Location = New System.Drawing.Point(44, 0)
         Me.BTNPrincipal.Margin = New System.Windows.Forms.Padding(0)
         Me.BTNPrincipal.Name = "BTNPrincipal"
         Me.BTNPrincipal.Size = New System.Drawing.Size(15, 21)
@@ -216,7 +214,7 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.ForceExpandButtonDisplay = True
         Me.MainFolderControl.Image = Nothing
         Me.MainFolderControl.Level = 0
-        Me.MainFolderControl.Location = New System.Drawing.Point(12, 0)
+        Me.MainFolderControl.Location = New System.Drawing.Point(0, 0)
         Me.MainFolderControl.Master = Nothing
         Me.MainFolderControl.MouseOverBackColor = System.Drawing.Color.LightCyan
         Me.MainFolderControl.Name = "MainFolderControl"
@@ -226,36 +224,6 @@ Partial Class Control_AddressBar
         Me.MainFolderControl.Slave = Nothing
         Me.MainFolderControl.Style = TrevoWebMedia.Control_ControleDePasta.StyleEnum.OnlyImage
         Me.MainFolderControl.TabIndex = 21
-        '
-        'TempControl
-        '
-        Me.TempControl.AddressBar = Nothing
-        Me.TempControl.AutoSize = True
-        Me.TempControl.BackColor = System.Drawing.Color.Transparent
-        Me.TempControl.BackgroundColorMouseLeave = System.Drawing.Color.Transparent
-        Me.TempControl.BackgroundColorMouseMove = System.Drawing.Color.LightCyan
-        Me.TempControl.BordeColorMouseLeave = System.Drawing.Color.Transparent
-        Me.TempControl.BorderColorMouseMove = System.Drawing.Color.SkyBlue
-        Me.TempControl.CMenuToExpandOptionsButton = Nothing
-        Me.TempControl.DisplayBTNMenu = False
-        Me.TempControl.DisplayExpandOptionsButton = False
-        Me.TempControl.Dock = System.Windows.Forms.DockStyle.Left
-        Me.TempControl.DriveInfo = Nothing
-        Me.TempControl.FolderInfo = Nothing
-        Me.TempControl.ForceExpandButtonDisplay = False
-        Me.TempControl.Image = Nothing
-        Me.TempControl.Level = 0
-        Me.TempControl.Location = New System.Drawing.Point(0, 0)
-        Me.TempControl.Master = Nothing
-        Me.TempControl.MouseOverBackColor = System.Drawing.Color.LightCyan
-        Me.TempControl.Name = "TempControl"
-        Me.TempControl.SelectedNode = Nothing
-        Me.TempControl.SelectedTreeView = Nothing
-        Me.TempControl.Size = New System.Drawing.Size(12, 21)
-        Me.TempControl.Slave = Nothing
-        Me.TempControl.Style = TrevoWebMedia.Control_ControleDePasta.StyleEnum._Default
-        Me.TempControl.TabIndex = 22
-        Me.TempControl.Visible = False
         '
         'PanelBorderReflesh
         '
@@ -331,8 +299,6 @@ Partial Class Control_AddressBar
     Friend WithEvents PanelRecebeControlesDePastas As Panel
     Friend WithEvents PanelExibirControlesDePastas As Panel
     Friend WithEvents MainFolderControl As Control_ControleDePasta
-    Friend WithEvents TempControl As Control_ControleDePasta
-
     Friend WithEvents PanelMarginTop As Panel
     Friend WithEvents Panel1 As Panel
 End Class

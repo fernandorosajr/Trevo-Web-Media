@@ -2,7 +2,10 @@
 Imports System.IO
 Imports System.Security.Cryptography
 
+
 Public Class Control_AddressBar
+
+    'Inherits UsesDirectoriesClass
 
 
     'Dim confirmar As Byte
@@ -148,6 +151,7 @@ Public Class Control_AddressBar
 
             max = Math.Max(_valueCount, _nodeAssociated2Count)
             min = Math.Min(_valueCount, _nodeAssociated2Count)
+
             If max >= 0 Then
 
                 For x = 0 To max
@@ -631,11 +635,9 @@ Public Class Control_AddressBar
     Private Sub PanelExibirControlesDePastas_Click(sender As Object, e As EventArgs) Handles PanelExibirControlesDePastas.Click
 
         DisplayMode = DisplayModeEnum.TextMode
-        ForceTextMode = True
+        'ForceTextMode = True
 
     End Sub
-
-
 
     Private Sub BorderColorChange(color As Color)
         PanelBorder.BackColor = color
@@ -915,19 +917,22 @@ Public Class Control_AddressBar
 
         'ForceTextMode = Not (e.KeyCode = Keys.Enter)
 
-        If e.KeyCode = Keys.Enter Then
-            ForceTextMode = False
-            ' TODO: ForceTextMode vai ser true quando: 
+        'If e.KeyCode = Keys.Enter Then
+        '    ForceTextMode = False
 
-            ' Checar se o caminho é valido:
-            ' Se ccaminho é valido entao 
-            '       ForceTextMode = False
-            'Senao 
-            '       ForceTextMode = true
-            '       mensagem de erro
-        Else
-            ForceTextMode = True
-        End If
+
+        '    ' TODO: ForceTextMode vai ser true quando: 
+
+        '    ' Checar se o caminho é valido:
+        '    ' Se ccaminho é valido entao 
+        '    '       ForceTextMode = False
+        '    'Senao 
+        '    '       ForceTextMode = true
+        '    '       mensagem de erro
+
+        'Else
+        '    ForceTextMode = True
+        'End If
 
 
 
@@ -961,6 +966,43 @@ Public Class Control_AddressBar
 
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
 
+        folder = New DirectoryInfo(_address)
+
+        Dim _caminhoParent As String = usesDirectories.SubirAteUmNivelValido(folder).FullName
+
+        folderParent = New DirectoryInfo(_caminhoParent)
+
+        If e.KeyCode = Keys.Enter Then
+
+
+            If folderParent.Exists Then
+                If folder.Exists Then
+                    ForceTextMode = False
+
+                Else
+                    ForceTextMode = True
+                    MsgBox("O Trevo Web Media não pode encontrar o caminho " + "'" + folder.FullName.ToString + "'" + ". certifique-se de que digitou o caminho corretamente.", MsgBoxStyle.Exclamation)
+                    Exit Sub
+                End If
+            Else
+                ForceTextMode = True
+
+            End If
+
+            ' TODO: ForceTextMode vai ser true quando: 
+
+            ' Checar se o caminho é valido:
+            ' Se ccaminho é valido entao 
+            '       ForceTextMode = False
+            'Senao 
+            '       ForceTextMode = true
+            '       mensagem de erro
+
+        Else
+            ForceTextMode = True
+        End If
+
+
         If ForceTextMode = False Then
             DisplayMode = DisplayModeEnum.FoldersControlsMode
             TXTWriteAddress.Text = Trim(_address)
@@ -976,7 +1018,7 @@ Public Class Control_AddressBar
 
                 folder = New DirectoryInfo(_address)
 
-                Dim _caminhoParent As String = usesDirectories.SubirAteUmNivelValido(folder).FullName
+                _caminhoParent = usesDirectories.SubirAteUmNivelValido(folder).FullName
 
                 folderParent = New DirectoryInfo(_caminhoParent)
 

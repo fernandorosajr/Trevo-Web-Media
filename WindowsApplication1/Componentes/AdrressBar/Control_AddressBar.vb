@@ -33,13 +33,10 @@ Public Class Control_AddressBar
     Private _autoCompleteCustomSourcePath As New AutoCompleteStringCollection
     Dim autoCompleteCustomSourceParentPath As New AutoCompleteStringCollection
 
-
     Dim caminho As String
     Dim caminhoParent As String
 
     ReadOnly contador As Integer
-
-
 
     Dim ForceTextMode As Boolean
 
@@ -543,8 +540,6 @@ Public Class Control_AddressBar
         Return nodeParentList
     End Function
 
-
-
     Public Function CriarSequenciaDeItems(node As TreeNode) As Control_ControleDePasta
 
         Dim item As Control_ControleDePasta
@@ -966,6 +961,8 @@ Public Class Control_AddressBar
 
     Private Sub TXTWriteAddress_KeyUp(sender As Object, e As KeyEventArgs) Handles TXTWriteAddress.KeyUp
 
+        If _address = "" Then Exit Sub
+
         folder = New DirectoryInfo(_address)
 
         Dim _caminhoParent As String = usesDirectories.SubirAteUmNivelValido(folder).FullName
@@ -980,23 +977,23 @@ Public Class Control_AddressBar
                     ForceTextMode = False
 
                 Else
+
+                    ' TODO:  Opçoes de checagem
+                    ' Checar as Chaves
+                    ' Se a chaves exixtirem escrever
+                    ' Se nao Executar code abaixo
+
+                    MsgBox(_nodesCollectionWithKeywords)
+
                     ForceTextMode = True
-                    MsgBox("O Trevo Web Media não pode encontrar o caminho " + "'" + folder.FullName.ToString + "'" + ". certifique-se de que digitou o caminho corretamente.", MsgBoxStyle.Exclamation)
+                    MsgBox("O Trevo Web Media não pode encontrar o caminho " + "'" + folder.FullName.ToString + "'" + ". certifique-se de que digitou o caminho corretamente.", MsgBoxStyle.Critical)
+                    ForceTextMode = False
                     Exit Sub
                 End If
             Else
                 ForceTextMode = True
 
             End If
-
-            ' TODO: ForceTextMode vai ser true quando: 
-
-            ' Checar se o caminho é valido:
-            ' Se ccaminho é valido entao 
-            '       ForceTextMode = False
-            'Senao 
-            '       ForceTextMode = true
-            '       mensagem de erro
 
         Else
             ForceTextMode = True
@@ -1042,7 +1039,10 @@ Public Class Control_AddressBar
                             _autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.FullName.ToString))
 
                         Else
-                            _autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+                            If folder.Parent IsNot Nothing Then
+
+                                _autoCompleteCustomSourcePath.AddRange(ListarArquivosOuPastasParentes(folder.Parent.FullName.ToString))
+                            End If
                         End If
                     End If
                     'Dim result As String

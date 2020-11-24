@@ -7,12 +7,12 @@ Public Class Class_NodesCollectionWithKeywords
     Private Shared Instancias As Integer
 
 
-    Private _items As New Collection      ' New List(Of Keyword)
-    Public Property Items As Collection  ' As List(Of Keyword)
+    Private _items As New Collection
+    Public Property Items As Collection
         Get
             Return _items
         End Get
-        Set(value As Collection)      'As List(Of Keyword))
+        Set(value As Collection)
             _items = value
         End Set
     End Property
@@ -180,7 +180,6 @@ Public Class NodeWithKeywordsItem
     End Sub
 
     Public Structure KeywordNode
-
 
         Dim _keywords As Collections.Specialized.StringCollection
         <Category("Dados")>

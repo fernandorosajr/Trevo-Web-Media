@@ -1,18 +1,18 @@
 ﻿Imports System.ComponentModel
 
-Public Class Class_NodesCollectionWithKeywords
+Public Class Class_KeywordsNodeCollections
     ' https://docs.microsoft.com/pt-br/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/
     ' http://www.macoratti.net/vbn_ams1.htm
 
     Private Shared Instancias As Integer
 
 
-    Private _items As New Collection
-    Public Property Items As Collection
+    Private _items As New List(Of KeywordsNodeItem)
+    Public Property KeywordsNodeItens As List(Of KeywordsNodeItem)
         Get
             Return _items
         End Get
-        Set(value As Collection)
+        Set(value As List(Of KeywordsNodeItem))
             _items = value
         End Set
     End Property
@@ -25,48 +25,48 @@ Public Class Class_NodesCollectionWithKeywords
 
     Public Sub New(keywordText As String, node As TreeNode)
 
-        Dim keywordItem As New NodeWithKeywordsItem(keywordText, node)
-        Items.Add(keywordItem)
+        Dim keywordItem As New KeywordsNodeItem(keywordText, node)
+        KeywordsNodeItens.Add(keywordItem)
 
     End Sub
 
     Public Sub New(keywordsCollections As Collections.Specialized.StringCollection, node As TreeNode)
 
-        Dim keywordItem As New NodeWithKeywordsItem(keywordsCollections, node)
-        Items.Add(keywordItem)
+        Dim keywordItem As New KeywordsNodeItem(keywordsCollections, node)
+        KeywordsNodeItens.Add(keywordItem)
 
     End Sub
 
-    Public Sub New(keywordItem As NodeWithKeywordsItem)
+    Public Sub New(keywordItem As KeywordsNodeItem)
         Dim keyText As Collections.Specialized.StringCollection = keywordItem.Keywords
         Dim nodeAssociated As New TreeNode
 
         nodeAssociated = keywordItem.NodeAssociated
-        Dim keyItem As New NodeWithKeywordsItem(keyText, nodeAssociated)
+        Dim keyItem As New KeywordsNodeItem(keyText, nodeAssociated)
 
-        Items.Add(keywordItem)
+        KeywordsNodeItens.Add(keywordItem)
 
         Instancias += 1
     End Sub
 
-    Public Overloads Sub Add(keywordItem As NodeWithKeywordsItem)
-        Items.Add(keywordItem)
+    Public Overloads Sub Add(keywordItem As KeywordsNodeItem)
+        KeywordsNodeItens.Add(keywordItem)
         Instancias += 1
 
     End Sub
 
     Public Overloads Sub Add(keyword As String, treeNode As TreeNode)
-        Dim keywordItem As New NodeWithKeywordsItem(keyword, treeNode)
-        Items.Add(keywordItem)
+        Dim keywordItem As New KeywordsNodeItem(keyword, treeNode)
+        KeywordsNodeItens.Add(keywordItem)
     End Sub
 
     Public Overloads Sub Add(keywords As Collections.Specialized.StringCollection, treeNode As TreeNode)
-        Dim keywordItem As New NodeWithKeywordsItem(keywords, treeNode)
-        Items.Add(keywordItem)
+        Dim keywordItem As New KeywordsNodeItem(keywords, treeNode)
+        KeywordsNodeItens.Add(keywordItem)
     End Sub
 End Class
 
-Public Class NodeWithKeywordsItem
+Public Class KeywordsNodeItem
     Public Shared Property Instancias As Integer
     Private Const titulo As String = "Keyword"
 
@@ -131,7 +131,7 @@ Public Class NodeWithKeywordsItem
 
     End Sub
 
-    Dim _keywords As New Collections.Specialized.StringCollection
+    Private _keywords As New Collections.Specialized.StringCollection
     <Category("Dados")>
     <Description("Determina uma lista em formato texto para ser retornada na ordem da lista de opções.")>
     <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
@@ -157,7 +157,7 @@ Public Class NodeWithKeywordsItem
     'End Property
 
 
-    Public _nodeAssociated As New TreeNode
+    Private _nodeAssociated As New TreeNode
     Public Property NodeAssociated() As TreeNode
         Get
 
@@ -179,45 +179,45 @@ Public Class NodeWithKeywordsItem
 
     End Sub
 
-    Public Structure KeywordNode
+    'Public Structure KeywordNode
 
-        Dim _keywords As Collections.Specialized.StringCollection
-        <Category("Dados")>
-        <Description("Determina uma lista em formato texto para ser retornada na ordem da lista de opções.")>
-        <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
-        Public Property Keywords() As Collections.Specialized.StringCollection
-            'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
-            Get
-                Return _keywords
-            End Get
-            Set(ByVal value As Collections.Specialized.StringCollection)
-                _keywords = value
-            End Set
-        End Property
+    '    Dim _keywords As Collections.Specialized.StringCollection
+    '    <Category("Dados")>
+    '    <Description("Determina uma lista em formato texto para ser retornada na ordem da lista de opções.")>
+    '    <Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design", "System.Drawing.Design.UITypeEditor, System.Drawing")>
+    '    Public Property Keywords() As Collections.Specialized.StringCollection
+    '        'http://www.vbforums.com/showthread.php?862825-Accessing-UI-Type-Editor
+    '        Get
+    '            Return _keywords
+    '        End Get
+    '        Set(ByVal value As Collections.Specialized.StringCollection)
+    '            _keywords = value
+    '        End Set
+    '    End Property
 
-        Private _keyword As String
-        Public Property Keyword As String
-            Get
-                Return _keyword
-            End Get
-            Set(value As String)
-                _keyword = value
-            End Set
-        End Property
+    '    Private _keyword As String
+    '    Public Property Keyword As String
+    '        Get
+    '            Return _keyword
+    '        End Get
+    '        Set(value As String)
+    '            _keyword = value
+    '        End Set
+    '    End Property
 
-        Private _nodeAssociated As TreeNode
-        Public Property NodeAssociated() As TreeNode
-            Get
+    '    Private _nodeAssociated As TreeNode
+    '    Public Property NodeAssociated() As TreeNode
+    '        Get
 
-                Return _nodeAssociated
-            End Get
-            Set(value As TreeNode)
+    '            Return _nodeAssociated
+    '        End Get
+    '        Set(value As TreeNode)
 
-                _nodeAssociated = value
+    '            _nodeAssociated = value
 
-            End Set
+    '        End Set
 
-        End Property
-    End Structure
+    '    End Property
+    'End Structure
 
 End Class

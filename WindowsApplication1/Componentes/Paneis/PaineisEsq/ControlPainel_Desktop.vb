@@ -44,12 +44,12 @@ Public Class ControlPainel_Desktop
     End Property
 
 
-    Private _nodesCollectionWithKeywords As New Class_NodesCollectionWithKeywords
-    Public Property NodesCollectionWithKeywords() As Class_NodesCollectionWithKeywords
+    Private _nodesCollectionWithKeywords As New Class_KeywordsNodeCollections
+    Public Property NodesCollectionWithKeywords() As Class_KeywordsNodeCollections
         Get
             Return _nodesCollectionWithKeywords
         End Get
-        Set(value As Class_NodesCollectionWithKeywords)
+        Set(value As Class_KeywordsNodeCollections)
             _nodesCollectionWithKeywords = value
 
         End Set

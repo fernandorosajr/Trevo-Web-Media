@@ -231,7 +231,6 @@ Public Class Control_ControleDePasta
         Set(value As TreeNode)
             _selectedNode = value
 
-
             If value IsNot Nothing Then
 
                 Text = value.Text
@@ -251,7 +250,6 @@ Public Class Control_ControleDePasta
 
                     End If
 
-
                 End If
 
             Else
@@ -259,7 +257,6 @@ Public Class Control_ControleDePasta
             End If
         End Set
     End Property
-
 
     ' Propriedades de cores
     ' -----------------------------------------------
@@ -315,7 +312,6 @@ Public Class Control_ControleDePasta
     End Property
     ' -----------------------------------------------
 
-
     Public Sub New()
 
         ' Esta chamada é requerida pelo designer.
@@ -339,11 +335,8 @@ Public Class Control_ControleDePasta
         BTNMenu.FlatAppearance.MouseOverBackColor = _mouseOverBackColor
         BTNImage.FlatAppearance.MouseOverBackColor = _mouseOverBackColor
 
-
         PanelBorder_BTNMenu.BackColor = _borderColorMouseLeave
         PanelBorder_ControleDePasta.BackColor = _borderColorMouseLeave
-
-
 
     End Sub
 
@@ -375,7 +368,6 @@ Public Class Control_ControleDePasta
             BTNMenu.Image = My.Resources.seta_para_baixo
 
         End If
-
 
     End Sub
 

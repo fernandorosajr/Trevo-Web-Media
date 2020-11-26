@@ -64,31 +64,28 @@ Public Class Control_AddressBar
         End Set
     End Property
 
-    Private _keyword As New NodeWithKeywordsItem
-    Public Property Keyword() As NodeWithKeywordsItem
+    Private _keyword As New KeywordsNodeItem
+    Public Property Keyword() As KeywordsNodeItem
         Get
             Return _keyword
 
         End Get
-        Set(value As NodeWithKeywordsItem)
+        Set(value As KeywordsNodeItem)
             _keyword = value
 
         End Set
     End Property
 
-
-
-    Private _nodesCollectionWithKeywords As New Class_NodesCollectionWithKeywords
-    Public Property NodesCollectionWithKeywords() As Class_NodesCollectionWithKeywords
+    Private _keywordsNodeCollecions As New Class_KeywordsNodeCollections
+    Public Property KeywordsNodeCollections() As Class_KeywordsNodeCollections
         Get
-            Return _nodesCollectionWithKeywords
+            Return _keywordsNodeCollecions
         End Get
-        Set(value As Class_NodesCollectionWithKeywords)
-            _nodesCollectionWithKeywords = value
+        Set(value As Class_KeywordsNodeCollections)
+            _keywordsNodeCollecions = value
 
         End Set
     End Property
-
 
     Private ReadOnly _treeNode As New TreeNode
     Public Property TreeNode As TreeNodeCollection
@@ -96,7 +93,6 @@ Public Class Control_AddressBar
             Return _treeNode.Nodes
         End Get
         Set(value As TreeNodeCollection)
-
 
             If _treeNode.Nodes.Count > value.Count Then
 
@@ -252,6 +248,7 @@ Public Class Control_AddressBar
             End If
 
             _address = value
+
         End Set
     End Property
 
@@ -285,8 +282,6 @@ Public Class Control_AddressBar
         Set(value As TreeNode)
 
             _mainNode = value
-
-
 
             If value IsNot Nothing Then
 
@@ -327,7 +322,6 @@ Public Class Control_AddressBar
         End Set
     End Property
 
-
     Private _selectedTreeView As TreeView
     Public Property SelectedTreeView As TreeView
         Get
@@ -341,8 +335,8 @@ Public Class Control_AddressBar
             _pathSeparator = _selectedTreeView.PathSeparator
 
             If value IsNot Nothing Then
-                If TypeOf value.Tag Is Class_NodesCollectionWithKeywords Then
-                    _nodesCollectionWithKeywords = CType(value.Tag, Class_NodesCollectionWithKeywords)
+                If TypeOf value.Tag Is Class_KeywordsNodeCollections Then
+                    _keywordsNodeCollecions = CType(value.Tag, Class_KeywordsNodeCollections)
                 End If
             End If
 
@@ -562,8 +556,6 @@ Public Class Control_AddressBar
 
         Return item
     End Function
-
-
 
     Public Overloads Function AdicionarUmItem() As Control_ControleDePasta
         Dim controleDePasta As New Control_ControleDePasta With {
@@ -865,7 +857,7 @@ Public Class Control_AddressBar
 
 
         Dim selected As Boolean
-        For Each nodeWithKeyword As NodeWithKeywordsItem In _nodesCollectionWithKeywords.Items
+        For Each nodeWithKeyword As KeywordsNodeItem In _keywordsNodeCollecions.KeywordsNodeItens
 
 
             For Each key In nodeWithKeyword.Keywords
@@ -983,14 +975,37 @@ Public Class Control_AddressBar
                     ' Se a chaves exixtirem escrever
                     ' Se nao Executar code abaixo
 
-                    MsgBox(_nodesCollectionWithKeywords)
+                    Dim keyExists As Boolean = False
+                    For Each _kwNItem As KeywordsNodeItem In _keywordsNodeCollecions.KeywordsNodeItens
 
-                    ForceTextMode = True
-                    MsgBox("O Trevo Web Media não pode encontrar o caminho " + "'" + folder.FullName.ToString + "'" + ". certifique-se de que digitou o caminho corretamente.", MsgBoxStyle.Critical)
-                    ForceTextMode = False
-                    Exit Sub
+                        For Each _keyword As String In _kwNItem.Keywords
+                            MsgBox(_keyword)
+                            If TXTWriteAddress.Text = _keyword Then
+
+                                TXTWriteAddress.Text = _kwNItem.NodeAssociated.Tag
+                                ' TODO: Selecionar o node associado 
+                                keyExists = True
+                                Exit For
+                            End If
+
+                        Next
+
+                        If keyExists = True Then Exit For
+
+                    Next
+
+
+                    If keyExists = False Then
+                        ForceTextMode = True
+                        MsgBox("O Trevo Web Media não pode encontrar o caminho " + "'" + folder.FullName.ToString + "'" + ". certifique-se de que digitou o caminho corretamente.", MsgBoxStyle.Critical)
+                        ForceTextMode = False
+                        Exit Sub
+
+                    End If
+
+
                 End If
-            Else
+                    Else
                 ForceTextMode = True
 
             End If

@@ -136,6 +136,7 @@ Public Class Control_AddressBar
             Dim x As Integer
             Dim _valueCount As Integer
             Dim _nodeAssociated2Count As Integer
+
             Dim max As Integer
             Dim min As Integer
 
@@ -553,7 +554,6 @@ Public Class Control_AddressBar
 
         End If
 
-
         Return item
     End Function
 
@@ -564,8 +564,6 @@ Public Class Control_AddressBar
             .AddressBar = Me,
             .CMenuToExpandOptionsButton = _cMenuToExpandOptionsButton
         }
-
-        ' .Text = defaultText,
 
         controleDePasta.SelectedNode.Tag = controleDePasta.Text
 
@@ -590,8 +588,6 @@ Public Class Control_AddressBar
             controleDePasta.Level = node.Level
         End If
 
-        ' .Text = node.Text,
-
         PanelRecebeControlesDePastas.Controls.Add(controleDePasta)
         ControlesDePastas.Insert(pos, controleDePasta)
 
@@ -608,8 +604,6 @@ Public Class Control_AddressBar
              .AddressBar = Me,
             .CMenuToExpandOptionsButton = _cMenuToExpandOptionsButton
         }
-
-        ' .Text = node.Text,
 
         ControlesDePastas.Add(controleDePasta)
         PanelRecebeControlesDePastas.Controls.Add(controleDePasta)
